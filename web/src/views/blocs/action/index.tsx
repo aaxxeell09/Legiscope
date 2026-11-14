@@ -4,7 +4,6 @@ import type { Action, Argument, DeputeAction, FichesIndex } from "@contracts/ind
 import { Etat, Meta, Pourquoi } from "../../../components";
 import { useData } from "../../../lib/data";
 import {
-  FONDEMENT,
   GROUPE_ACTION,
   POSITION_DECIDEUR,
   ROLE_DECIDEUR,
@@ -184,10 +183,9 @@ function ColonneGroupe({
   disponibles: string[] | null;
 }) {
   const navigate = useNavigate();
-  const [developpe, setDeveloppe] = useState(false);
-  const visibles = developpe ? lignes : lignes.slice(0, 5);
+  const categorie = titre === "Positions convergentes" ? "allies" : titre === "Positions opposées" ? "perdus" : "actionnables";
   return (
-    <div className="p7-col">
+    <div className={`p7-col action-position-category action-position-category-${categorie}`}>
       <h4>
         {titre}
         <span className="text-2">{lignes.length}</span>
@@ -195,8 +193,8 @@ function ColonneGroupe({
       {lignes.length === 0 ? (
         <div className="p7-vide">aucun · {raisonVide}</div>
       ) : (
-        <ul className="p7-list">
-          {visibles.map((d) => {
+        <ul className="p7-list action-position-grid">
+          {lignes.map((d) => {
             // fiche: true dans action.json ; l'index des fiches, s'il est chargé, a le dernier mot.
             const fiche = d.fiche && (disponibles === null || disponibles.includes(d.depute_id));
             const ouvrir = () => navigate(`/dossier/${dossier}/depute/${d.depute_id}`);
@@ -223,9 +221,10 @@ function ColonneGroupe({
                   <span className="p7-nom">{annuaire.nom(d.depute_id)}</span>
                   <Tag annuaire={annuaire} groupeId={d.groupe_id} />
                 </div>
-                <div>{d.raison}</div>
-                <div className="p7-ligne">
-                  <span className="text-2">{d.position_connue ? d.fondement.map((f) => FONDEMENT[f]).join(", ") : "Inconnue"}</span>
+                <span className="action-position-status">{categorie === "allies" ? "Position convergente" : categorie === "perdus" ? "Position opposée" : "Position à préciser"}</span>
+                <div className="action-position-reason">{raisonProfessionnelle(d, categorie)}</div>
+                <div className="p7-ligne action-position-proof">
+                  <span className="text-2">{d.position_connue ? fondementLisible(d) : "Position inconnue"}</span>
                   {!fiche && <span className="text-2">fiche en cours</span>}
                   <span className="p7-droite" onClick={(e) => e.stopPropagation()} onKeyDown={(e) => e.stopPropagation()}>
                     <Pourquoi preuve={d.preuve} />
@@ -236,9 +235,24 @@ function ColonneGroupe({
           })}
         </ul>
       )}
-      {lignes.length > 5 && <button type="button" className="p7-voir-plus" onClick={() => setDeveloppe((v) => !v)}>{developpe ? "Réduire" : `Voir les ${lignes.length} positions`}</button>}
     </div>
   );
+}
+
+function raisonProfessionnelle(d: DeputeAction, categorie: Categorie): string {
+  const nombres = d.raison.match(/(\d+) acte\(s\) pour la mesure, (\d+) contre/);
+  const favorables = Number(nombres?.[1] ?? 0);
+  const defavorables = Number(nombres?.[2] ?? 0);
+  if (favorables > 0 && defavorables > 0) return "A soutenu des amendements dans les deux sens.";
+  if (categorie === "allies" || defavorables > 0) return "A pris position contre la mesure.";
+  if (categorie === "perdus") return "A pris position en faveur de la mesure.";
+  if (favorables > 0) return "A soutenu la mesure ; une ouverture au dialogue reste à confirmer.";
+  return "Position personnelle à préciser à partir des actes documentés.";
+}
+
+function fondementLisible(d: DeputeAction): string {
+  const libelles = d.fondement.map((fondement) => fondement === "vote" ? "Vote" : fondement === "depose" ? "Dépôt d’amendement" : "Prise de parole");
+  return [...new Set(libelles)].join(" · ");
 }
 
 function ColonneArguments({ titre, args, annuaire, raisonVide }: { titre: string; args: Argument[]; annuaire: Annuaire; raisonVide: string }) {
