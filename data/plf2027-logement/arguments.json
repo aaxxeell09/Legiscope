@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:54:34+01:00",
+    "generated_at": "2026-11-14T17:15:17+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -215,111 +215,166 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627016_compte-rendu"
       }
     ],
-    "limits": "354 prises de parole sur le sujet lues dans 51 comptes rendus (91 comptes rendus parcourus) ; 38 classées, 38 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 0 rejetées pour citation inexacte, 0 écartées car le second avis du modèle contredit le camp ; 2 pour et 32 contre après dédoublonnage. Version rapide : camp déduit par règles de mots (supprimer, rétablir les crédits, baisse = contre la baisse ; maîtrise, économies = pour), sans modèle, chaque argument à relire. Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
+    "limits": "354 prises de parole sur le sujet lues dans 51 comptes rendus (91 comptes rendus parcourus) ; 333 classées, 80 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 21 rejetées pour citation inexacte, 18 écartées car le second avis du modèle contredit le camp ; 11 pour et 19 contre après dédoublonnage. Classement par le modèle Featherless (354 appels à cette exécution, cache sur disque). Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
     "producer": "pipeline/debats",
     "dossier_id": "plf2027-logement"
   },
   "pour": [
     {
-      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Kasbarian veut retirer de l’argent aux bailleurs sociaux, faire des économies sur les services publics ; de l’autre, il veut ici permettre à une infime partie de la population, celle qui en a la capacité, de donner jusqu’à 100 000 euros d’argent liquide – on ne parle pas ici d’héritage ni de patrimoine – à ses descendants.",
+      "argument": "Le texte couvre des besoins constatés et consolide les avancées budgétaires pour les aides au logement.",
+      "citation": "Le texte prévoit 645 millions d’euros supplémentaires pour les aides personnelles au logement, 211 millions pour l’allocation aux adultes handicapés, 104 millions pour la prime d’activité. Là aussi, il ne s’agit pas de créer de nouveaux droits, mais de couvrir des besoins constatés.",
+      "orateur_id": "PA346782",
+      "groupe_id": "PO845425",
+      "date": "2026-11-12",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-12-novembre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du jeudi 12 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-12-novembre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Philippe Juvin, rapporteur général) la défend : « Le texte couvre des besoins constatés pour les aides personnelles au logement et son adoption est indispensable à la bonne exécution budgétaire. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Mme Estelle Mercier (SOC) (séance du 2026-11-12).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La réforme des APL est nécessaire pour dégager des économies budgétaires et réduire le déficit.",
+      "citation": "le reste serait venu de la réforme touchant les APL dont j’ai parlé tout à l’heure. Nous l’avions envisagée l’année dernière lors des débats budgétaires, mais elle n’avait pas été menée à terme, et je regrette qu’elle ne figure pas dans ce PLF.",
+      "orateur_id": "PA794802",
+      "groupe_id": "PO845407",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 18 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Charles Sitzenstuhl, rapporteur spécial) la défend : « La réforme des APL est nécessaire pour dégager des économies budgétaires et réduire le déficit. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Charles Sitzenstuhl (commission du 2026-10-20).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure soutient l'accès des familles à un logement permanent plutôt qu'à la rente touristique.",
+      "citation": "Non seulement nous soutenons l’élargissement du prêt à taux zéro, mais, par nos amendements, nous proposons d’aller plus loin que les mesures prévues par le projet du gouvernement en prolongeant le PTZ jusqu’à 2030 et en l’ouvrant aux acquéreurs successifs en bail réel solidaire (BRS).",
+      "orateur_id": "PA794094",
+      "groupe_id": "PO845419",
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du vendredi 30 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Mickaël Bouloux) la défend : « La mesure permet de soutenir l'accès des familles à un logement permanent plutôt que la rente touristique. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'augmentation des APL est un outil de lutte contre la pauvreté et de prévention des expulsions.",
+      "citation": "Le groupe LFI propose d’augmenter de 10 % le montant des APL, qui constituent un outil de lutte contre la pauvreté et de prévention des impayés et des expulsions. Ces aides ciblent les ménages les plus modestes, dont les ressources moyennes avoisinent 0,75 Smic.",
+      "orateur_id": "PA841729",
+      "groupe_id": "PO845413",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Abdelkader Lahmar) la défend : « L'augmentation des APL est un outil de lutte contre la pauvreté et de prévention des expulsions pour les ménages modestes. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La suppression du mois de carence est nécessaire pour éviter de mettre en difficulté les étudiants.",
+      "citation": "Il s’agit de majorer de 250 millions les crédits dédiés aux APL afin de supprimer le mois de carence qui précède l’ouverture des droits. Ce délai met spécialement en difficulté les étudiants qui, à la sortie du bac et alors qu’ils s’installent dans une nouvelle vie, doivent attendre deux mois avant de toucher leurs APL.",
       "orateur_id": "PA794854",
       "groupe_id": "PO845419",
-      "date": "2026-10-16",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Deuxième séance du vendredi 16 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Iñaki Echaniz) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Pour des raisons d’économies budgétaires, le Rassemblement national souhaite responsabiliser les bailleurs sociaux, notamment en supprimant l’exonération de taxe foncière, qui coûterait trop cher à l’État.",
-      "orateur_id": "PA795422",
-      "groupe_id": "PO845413",
-      "date": "2026-10-08",
+      "date": "2026-10-20",
       "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (Damien Maudet) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    }
-  ],
-  "contre": [
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Cet extrême centre est prêt à toutes les compromissions avec l’extrême droite pour supprimer la contribution sur les bénéfices des grandes entreprises, pour allonger la liste des niches fiscales favorables aux plus riches, pour rejeter la taxe Zucman, le plafonnement du prix de l’essence ou la réforme du pacte Dutreil, ou encore pour attaquer les bailleurs sociaux, donc les plus modestes.",
-      "orateur_id": "PA605745",
-      "groupe_id": "PO845514",
-      "date": "2026-11-04",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Deuxième séance du mercredi 04 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Nicolas Sansu) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Iñaki Echaniz) la défend : « La suppression du mois de carence est nécessaire pour éviter de mettre en difficulté les étudiants à leur installation. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Elle est intéressante, même s’il faut veiller à ne pas ouvrir le PTZ sans conditions, ce qui reviendrait à supprimer les taux d’intérêt pour tout le monde.",
-      "orateur_id": "PA719372",
-      "groupe_id": "PO845407",
-      "date": "2026-10-30",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
+      "argument": "Élargir l'accès aux APL aux étudiants étrangers non boursiers pour renforcer l'égalité.",
+      "citation": "Nous voulons permettre aux étudiants extracommunautaires non boursiers de bénéficier des APL.",
+      "orateur_id": "PA794854",
+      "groupe_id": "PO845419",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Première séance du vendredi 30 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Guillaume Kasbarian) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Iñaki Echaniz) la défend : « Élargir l'accès aux APL aux étudiants étrangers non boursiers pour renforcer l'égalité de traitement. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Je suis favorable à un prêt à taux zéro pour les classes moyennes : la natalité française ne baisse pas parce que les gens ne veulent plus d’enfants – je me méfie de ces discours moralisateurs – mais parce que des classes moyennes et populaires qui souhaitent en avoir n’ont pas les moyens matériels de les accueillir.",
-      "orateur_id": null,
-      "groupe_id": null,
-      "date": "2026-10-30",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
+      "argument": "La réduction de la ponction sur les bailleurs sociaux relance la production et la rénovation.",
+      "citation": "Toutefois, je partage ce combat : ministre, j’ai poussé pour qu’on réduise la ponction sur les bailleurs sociaux, ce qui a tout de suite relancé la production et accéléré la rénovation énergétique.",
+      "orateur_id": "PA227089",
+      "groupe_id": "PO845485",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Première séance du vendredi 30 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Valérie Létard) la défend : « La réduction de la ponction sur les bailleurs sociaux relance la production et accélère la rénovation énergétique. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « coupe » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Cette coupe dans les APL ne fait qu’ajouter de l’huile sur le feu.",
+      "argument": "Le plafonnement des APL à 90 % du loyer plus le forfait de charges évite les surallocations.",
+      "citation": "Il s’agit de plafonner le montant des APL à 90 % du loyer, auquel on ajoute le forfait de charges. Il arrive en effet que le montant des charges réelles soit inférieur au forfait de charges.",
+      "orateur_id": "PA793246",
+      "groupe_id": "PO845401",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Frédéric Falcon) la défend : « Le plafonnement des APL à 90 % du loyer plus le forfait de charges évite les surallocations lorsque les charges réelles sont inférieures au forfait. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Les crédits sont nécessaires compte tenu de la situation difficile des collectivités et du logement.",
+      "citation": "Ces gains ne sont pas négligeables étant donné la situation des collectivités et du logement dans son ensemble. Je modifie donc mon avis initial et appelle à voter en faveur de ces crédits.",
       "orateur_id": "PA793756",
       "groupe_id": "PO845413",
       "date": "2026-10-20",
@@ -332,12 +387,280 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « coupe » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« coupe »), sans modèle, à relire.",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) la défend : « Les crédits sont nécessaires compte tenu de la situation difficile des collectivités et du logement. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+      "argument": "La commission soutient l'adoption des crédits de la mission Cohésion des territoires.",
+      "citation": "La commission émet un avis favorable à l’adoption des crédits de la mission Cohésion des territoires, modifiés.",
+      "orateur_id": "PA793756",
+      "groupe_id": "PO845413",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) la défend : « La commission soutient l'adoption des crédits de la mission Cohésion des territoires. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La réversibilité permet d'indexer les APL en cours d'année pour corriger les décisions budgétaires.",
+      "citation": "Nous proposons d’aller au-delà : nous donnons législativement, dans le cadre du PLF et du PLFSS, la capacité d’indexer, en cours d’année, par décret, les retraites, la prime d’activité, les APL, afin de revenir sur les décisions qui auraient été prises dans les budgets que nous présentons.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-10-01",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 3 du 01/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (David Amiel, ministre, sans identifiant de député dans deputes.json) la défend : « La réversibilité permet d'indexer les APL en cours d'année pour corriger les décisions budgétaires. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "contre": [
+    {
+      "argument": "Le gel des APL pèse sur le pouvoir d'achat des ménages modestes et aggrave la précarité sociale.",
+      "citation": "Une personne est expulsée de son logement toutes les dix-sept minutes, et vous gelez les APL.",
+      "orateur_id": "PA794686",
+      "groupe_id": "PO845413",
+      "date": "2026-10-01",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 3 du 01/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Marianne Maximi) s'y oppose ou veut la réduire : « Le gel des APL est une violence sociale qui aggrave la précarité des ménages face aux expulsions. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Mme Marianne Maximi (séance du 2025-10-21), Mme Estelle Mercier (séance du 2026-10-13), M. Aurélien Le Coq (séance du 2026-10-14), Mme Marianne Maximi (séance du 2026-10-14), Mme Marianne Maximi (séance du 2026-10-16), Mme Zahia Hamdane (séance du 2026-10-20), M. Aurélien Le Coq (séance du 2026-11-04), Aurélien Le Coq (commission du 2026-10-01), Aurélien Le Coq (commission du 2026-10-09), Aurélien Le Coq (commission du 2026-10-09), Abdelkader Lahmar (commission du 2026-10-20), Abdelkader Lahmar (commission du 2026-10-20), Iñaki Echaniz (commission du 2026-10-20), François Piquemal (commission du 2026-10-20).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure est injuste car elle fait payer les allocataires pour compenser les cadeaux fiscaux aux riches.",
+      "citation": "Pour combler les déficits creusés par dix ans de cadeaux fiscaux aux multinationales et aux plus aisés, le gouvernement veut en effet faire payer tout le monde : les retraités, les allocataires des aides personnelles au logement (APL), les malades en affection longue durée, les fonctionnaires.",
+      "orateur_id": "PA610002",
+      "groupe_id": "PO845439",
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du mercredi 04 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Eva Sas (EcoS)) s'y oppose ou veut la réduire : « La baisse des crédits APL est injuste car elle fait payer les allocataires pour combler les déficits creusés par les cadeaux fiscaux aux riches. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez M. Éric Coquerel (séance du 2026-10-13), Mme Eva Sas (EcoS) (séance du 2026-10-13), Mme Eva Sas (EcoS) (séance du 2026-10-13), M. Nicolas Sansu (GDR) (séance du 2026-10-14), M. Éric Coquerel (séance du 2026-10-15), Mme Shéhérazade Bentorki (LFI-NFP) (séance du 2026-11-03), M. Nicolas Sansu (séance du 2026-11-04), Eva Sas (commission du 2026-10-01), Nicolas Sansu (commission du 2026-10-01), Damien Maudet (commission du 2026-10-07), Eva Sas (commission du 2026-10-09), Ersilia Soudais (commission du 2026-10-20).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La baisse des crédits fragilise les bailleurs sociaux et réduit la production et la rénovation de logements.",
+      "citation": "Les bailleurs sociaux manquent d’argent et vous voulez les mettre encore plus en difficulté ?",
+      "orateur_id": "PA841515",
+      "groupe_id": "PO845413",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Aurélien Le Coq) s'y oppose ou veut la réduire : « La baisse des crédits met en difficulté les bailleurs sociaux et aggrave la précarité du logement. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez M. Charles de Courson (LIOT) (séance du 2026-04-28), M. Guillaume Kasbarian (séance du 2026-10-30), Mme Shéhérazade Bentorki (séance du 2026-10-30), Shéhérazade Bentorki (commission du 2026-10-07), Joël Bruneau (commission du 2026-10-07), Aurélien Le Coq (commission du 2026-10-08), Valérie Létard (commission du 2026-10-20), François Piquemal (commission du 2026-10-20).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La réforme introduit une discrimination raciste et une préférence nationale dans l'accès aux APL.",
+      "citation": "Des hommes et des femmes qui travaillent en France et cotisent sur leur salaire, comme les autres, n’auront pas droit aux APL. Que voulez-vous ? Qu’ils dorment dans la rue avec des enfants en bas âge pendant un an ? C’est une mesure raciste, bête et mesquine qui, à elle seule, mérite censure.",
+      "orateur_id": "PA793452",
+      "groupe_id": "PO845439",
+      "date": "2026-10-20",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mardi 20 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Hendrik Davi) s'y oppose ou veut la réduire : « La mesure prive des travailleurs cotisants des APL, ce qui est injuste et raciste. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez M. Louis Boyard (séance du 2026-10-28), Abdelkader Lahmar (commission du 2026-10-20), Valérie Létard (commission du 2026-10-20).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le gel des APL est injuste car il ne s'accompagne pas d'un gel des loyers, pénalisant les locataires.",
+      "citation": "Afin de répartir cet effort plus justement, la non-revalorisation des APL doit se coupler à un blocage des loyers, sans quoi l’intégralité de l’effort sera assumée par les locataires qui verront leur pouvoir d’achat diminuer. S’il y a un gel des APL, il faut un gel des loyers.",
+      "orateur_id": "PA841885",
+      "groupe_id": "PO845439",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Arnaud Bonnet) s'y oppose ou veut la réduire : « La non-revalorisation des APL est injuste car elle pèse entièrement sur les locataires sans gel des loyers. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Mme Shéhérazade Bentorki (séance du 2026-10-30), Shéhérazade Bentorki (commission du 2026-10-08), François Piquemal (commission du 2026-10-20).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le projet de budget est insuffisant face à l'urgence de la crise du logement et de la précarité.",
+      "citation": "Pourtant, le projet de loi de finances pour 2026 ne contient aucune mesure à la hauteur de l'urgence. Ni plan de relance significatif de la construction, ni rééquilibrage du soutien fiscal à l'investissement locatif, ni clarification du statut du bailleur privé – un sujet débattu ces derniers mois –,…",
+      "orateur_id": "PA793520",
+      "groupe_id": "PO845454",
+      "date": "2025-10-21",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance unique du mardi 21 octobre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Mickaël Cosson) s'y oppose ou veut la réduire : « Le projet de loi de finances ne contient aucune mesure à la hauteur de l'urgence de la crise du logement. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Aurélien Le Coq (commission du 2026-10-08), Abdelkader Lahmar (commission du 2026-10-20), Charles Fournier (commission du 2026-10-20).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le gel des APL réduit la demande intérieure et a un effet récessif sur la croissance économique.",
+      "citation": "Vous avez oublié que quand les gens n'ont pas d'argent parce que vous gelez les APL et les retraites et parce que vous taillez dans les salaires des enseignants, ils dépensent moins, ce qui engendre une baisse de l'activité économique.",
+      "orateur_id": "PA841515",
+      "groupe_id": "PO845413",
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du vendredi 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Aurélien Le Coq) s'y oppose ou veut la réduire : « Le gel des APL réduit le pouvoir d'achat et l'activité économique, ce qui nuit à la croissance. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Aurélien Le Coq (commission du 2026-10-01), Aurélien Le Coq (commission du 2026-10-07).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Les bailleurs sociaux bénéficient déjà d'avantages excessifs et doivent être responsabilisés.",
+      "citation": "Alors que les finances publiques souffrent de carences, nous ne pouvons plus alimenter un puits sans fond : il faut responsabiliser les bailleurs sociaux.",
+      "orateur_id": "PA793246",
+      "groupe_id": "PO845401",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Frédéric Falcon) s'y oppose ou veut la réduire : « Les bailleurs sociaux sont financés par la PEEC et doivent être responsabilisés plutôt que d'alimenter un puits sans fond. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Frédéric Falcon (commission du 2026-10-07), Frédéric Falcon (commission du 2026-10-08).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La réforme est incohérente car elle place les étudiants en dépendance familiale au lieu de corriger les inégalités.",
+      "citation": "Quant à l'alternative entre APL et avantage fiscal pour les parents, imposée aux étudiants, elle place les jeunes en situation de dépendance familiale. Si l'on veut corriger le cumul d'avantages des ménages aisés, c'est le quotient familial qu'il faut plafonner, plutôt que de rogner le droit au logement.",
+      "orateur_id": "PA793756",
+      "groupe_id": "PO845413",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) s'y oppose ou veut la réduire : « La réforme place les étudiants en dépendance familiale et rogne le droit au logement au lieu de corriger le cumul d'avantages des aisés. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Aurélien Le Coq (commission du 2026-10-08).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le gel des APL est qualifié de mensonge et d'injustice par rapport aux promesses de revalorisation.",
+      "citation": "Vous n'auriez pas dû mentir en disant que les bourses seraient indexées sur l'inflation, alors que vous ne rattrapez pas les trois dernières années de gel et que vous continuez même de geler les APL.",
+      "orateur_id": "PA795318",
+      "groupe_id": "PO845413",
+      "date": "2026-10-28",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 28 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Louis Boyard) s'y oppose ou veut la réduire : « Le gel des APL est qualifié de mensonge et d'injustice, s'opposant à la politique de baisse des aides. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Les APL sont des prestations redistributives essentielles dont la coupe est inacceptable.",
+      "citation": "Les charges contre les APL sont tout aussi inadmissibles. Ces aides à la personne sont parmi les prestations sociales les plus redistributives de notre système socio-fiscal. Contrairement à ce que beaucoup disent, elles ont un impact marqué sur le taux d’effort des ménages.",
+      "orateur_id": "PA794854",
+      "groupe_id": "PO845419",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Iñaki Echaniz) s'y oppose ou veut la réduire : « Les APL sont des prestations redistributives essentielles qui réduisent le taux d'effort des ménages, rendant les coupes budgétaires inacceptables. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure crée des complexités administratives pour la CAF pour un gain budgétaire limité.",
+      "citation": "Une telle mesure créerait des complexités nouvelles pour la caisse d’allocations familiales, pour un gain budgétaire très limité.",
+      "orateur_id": "PA793756",
+      "groupe_id": "PO845413",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) s'y oppose ou veut la réduire : « La mesure crée des complexités administratives pour la CAF pour un gain budgétaire très limité. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La commission des finances adopte les amendements visant à supprimer l'article 78.",
       "citation": "La commission adopte les amendements, exprimant ainsi un avis favorable à la suppression de l’article 78.",
       "orateur_id": "PA793756",
       "groupe_id": "PO845413",
@@ -351,15 +674,15 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) s'y oppose ou veut la réduire : « La commission des finances adopte les amendements visant à supprimer l'article 78. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Le premier quinquennat d’Emmanuel Macron a commencé par une baisse des APL et se terminera par un gel de celles-ci.",
-      "orateur_id": "PA794854",
-      "groupe_id": "PO845419",
+      "argument": "L'orateur propose de restreindre l'accès aux APL par des conditions de résidence ou de cotisation.",
+      "citation": "Cet amendement vise à instaurer la priorité nationale dans le versement des APL. Je défendrai également, par la même occasion, les amendements II-CE51 et II-CE52, qui sont des amendements de repli : le premier a pour objet de conditionner le versement des APL à cinq ans d’activité sur le territoire français, tandis que le second, très proche de ce que proposait la loi Darmanin, conditionne le versement des APL, aides non contributives, à deux ans et demi de cotisations ou à une affiliation de trois ans au titre d’une activité professionnelle en France.",
+      "orateur_id": "PA793246",
+      "groupe_id": "PO845401",
       "date": "2026-10-20",
       "lieu": "commission",
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
@@ -370,90 +693,14 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Iñaki Echaniz) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Frédéric Falcon) s'y oppose ou veut la réduire : « L'orateur propose de restreindre l'accès aux APL en instaurant des conditions de résidence ou de cotisation, ce qui réduit la mesure. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Alors que l’urgence climatique devrait en faire une priorité nationale et le chantier du siècle, le programme 135 subit une nouvelle baisse (– 8 %).",
-      "orateur_id": "PA793980",
-      "groupe_id": "PO845439",
-      "date": "2026-10-20",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Charles Fournier) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Le programme 109, qui finance les aides personnelles au logement, voit ses crédits baisser à nouveau, à hauteur de 0,31 %, du fait notamment du gel du barème.",
-      "orateur_id": "PA793980",
-      "groupe_id": "PO845439",
-      "date": "2026-10-20",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Charles Fournier) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Nous avions proposé de mettre fin à la réduction d’impôt sur le revenu sur les frais de scolarité et de désindexer ou de supprimer le bénéfice des APL pour les revenus les plus élevés.",
-      "orateur_id": "PA794802",
-      "groupe_id": "PO845407",
-      "date": "2026-10-20",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 18 du 20/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Charles Sitzenstuhl, rapporteur spécial) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Votre politique familiale, c’est l’asphyxie : gel des APL, blocage des prestations familiales à leur niveau de 2026, suppression de 600 millions d’euros sur l’allocation de rentrée scolaire.",
-      "orateur_id": "PA841947",
-      "groupe_id": "PO845413",
-      "date": "2026-10-20",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mardi 20 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Zahia Hamdane) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Le Gouvernement propose de geler les APL, le Rassemblement national voulant, quant à lui, carrément les supprimer pour les non-Français, alors que 5,7 millions de ménages supportent un taux d’effort excessif et que 1,2 million de locataires seraient en situation d’impayés.",
-      "orateur_id": "PA841729",
+      "argument": "La mesure s'attaque aux bailleurs sociaux et aux personnes les plus précaires.",
+      "citation": "Encore une fois, le Rassemblement national s’attaque aux bailleurs sociaux et, à travers eux, aux personnes les plus précaires. Loin d’être un parti populaire, il n’est là que pour défendre les ultrariches.",
+      "orateur_id": "PA795466",
       "groupe_id": "PO845413",
       "date": "2026-10-20",
       "lieu": "commission",
@@ -465,69 +712,12 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Abdelkader Lahmar) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Ersilia Soudais) s'y oppose ou veut la réduire : « La mesure s'attaque aux bailleurs sociaux et aux personnes les plus précaires. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Vous voulez supprimer à l’aveugle un outil qui aide le logement social.",
-      "orateur_id": "PA841531",
-      "groupe_id": "PO845413",
-      "date": "2026-10-16",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Deuxième séance du vendredi 16 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Shéhérazade Bentorki) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Le livret A est conçu pour financer le logement social, et c’est très bien ainsi car c’est selon nous un chantier prioritaire si l’on veut faire baisser les prix du logement dans le pays.",
-      "orateur_id": "PA721202",
-      "groupe_id": "PO845413",
-      "date": "2026-10-16",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Troisième séance du vendredi 16 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Éric Coquerel, président de la commission des finances) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Vous avez oublié que quand les gens n’ont pas d’argent parce que vous gelez les APL et les retraites et parce que vous taillez dans les salaires des enseignants, ils dépensent moins, ce qui engendre une baisse de l’activité économique.",
-      "orateur_id": "PA841515",
-      "groupe_id": "PO845413",
-      "date": "2026-10-16",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du vendredi 16 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Aurélien Le Coq) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "argument": "La baisse des APL frappe des familles ultramarines déjà pauvres et logées dans des logements chers.",
       "citation": "Nos familles vivent massivement en dessous du seuil de pauvreté et nos logements sociaux, insuffisants, figurent parmi les plus chers de France, mais ils n’échapperont pas à la baisse des APL ni au coup de rabot sur la ligne budgétaire unique (LBU).",
       "orateur_id": "PA795998",
       "groupe_id": "PO845514",
@@ -541,148 +731,53 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Émeline K/Bidi (GDR)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Émeline K/Bidi (GDR)) s'y oppose ou veut la réduire : « La baisse des APL frappe des familles ultramarines déjà pauvres et logées dans des logements sociaux parmi les plus chers de France. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baissez » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Vous baissez la contribution exceptionnelle sur les bénéfices des grandes entreprises de 2,3 milliards d’euros ; vous épargnez les hauts patrimoines et les grands héritages ; vous n’avez pas le courage de vous attaquer aux surprofits des groupes pétroliers ; au contraire, vous mettez à contribution les retraités, les allocataires d’APL, les malades en affection de longue durée (ALD), les fonctionnaires.",
-      "orateur_id": "PA610002",
-      "groupe_id": "PO845439",
-      "date": "2026-10-13",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Deuxième séance du mardi 13 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Eva Sas (EcoS)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baissez » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baissez »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Nous voulons supprimer les nouveaux avantages créés par l’article pour les bailleurs sociaux.",
-      "orateur_id": "PA793246",
-      "groupe_id": "PO845401",
-      "date": "2026-10-08",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Frédéric Falcon) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Or vous voulez supprimer le plafond de ressources du PTZ « parentalité » sans même avoir mené d’étude d’impact.",
-      "orateur_id": "PA794854",
-      "groupe_id": "PO845419",
-      "date": "2026-10-08",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Iñaki Echaniz) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Falcon, qui avait pour objectif la suppression sèche de l’exonération de taxe foncière accordée aux bailleurs sociaux.",
-      "orateur_id": "PA719372",
-      "groupe_id": "PO845407",
-      "date": "2026-10-08",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Guillaume Kasbarian) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Il me semble paradoxal de priver les bailleurs sociaux d’une ressource puis de demander au contribuable de compenser cette baisse.",
-      "orateur_id": "PA719372",
-      "groupe_id": "PO845407",
-      "date": "2026-10-08",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Guillaume Kasbarian) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Il s’agit de supprimer le PTZ « parentalité », destiné aux familles déjà propriétaires qui comptent au moins un enfant de moins de 3 ans.",
-      "orateur_id": "PA841885",
-      "groupe_id": "PO845439",
-      "date": "2026-10-08",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Arnaud Bonnet) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Ils demandent la rénovation des bâtiments, l’embauche de personnel, la création de 150 000 places supplémentaires dans l’enseignement supérieur, la revalorisation des bourses et des APL (aides personnelles au logement), que vous voulez geler, ou encore la suppression de la CVEC (contribution de vie étudiante et de campus) et des frais d’inscriptions racistes s’appliquant aux étudiantes et étudiants étrangers.",
+      "argument": "Le gel des APL est une coupe budgétaire injuste qu'il faut faire reculer.",
+      "citation": "Il reste à obtenir des reculs sur le gel des allocations familiales et des APL, ainsi que sur les coupes budgétaires prévues dans l’enseignement supérieur, la vie étudiante ou encore l’enseignement supérieur, sans parler des 1 600 professeurs non recrutés.",
       "orateur_id": "PA841515",
       "groupe_id": "PO845413",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Commission des finances, réunion n° 9 du 08/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+            "label": "Commission des finances, réunion n° 12 du 09/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Aurélien Le Coq) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Aurélien Le Coq) s'y oppose ou veut la réduire : « Le gel des APL est une coupe budgétaire injuste qu'il faut faire reculer. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Quel affront pour celles et ceux qui verront leurs APL ne pas progresser, leur salaire rester bloqué, notamment par le gel du point d’indice des fonctionnaires, ou leur pension baisser, du fait de leur désindexation, et qui subiront aussi, indirectement, la tension sur les budgets des collectivités locales !",
-      "orateur_id": "PA605745",
-      "groupe_id": "PO845514",
+      "argument": "Il est injuste de faire financer le logement social par l'épargne des plus pauvres au détriment des riches.",
+      "citation": "Ce n’est pas à l’épargne populaire de financer le logement social. Ce n’est pas aux plus pauvres de financer le logement des pauvres pendant que les riches, eux, font des placements à 6 ou 8 %.",
+      "orateur_id": "PA795778",
+      "groupe_id": "PO845401",
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Jean-Philippe Tanguy) s'y oppose ou veut la réduire : « Il est injuste de faire financer le logement social par l'épargne des plus pauvres au détriment des riches. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le gel des APL fait partie des efforts imposés aux ménages dans un plan d'économies global jugé excessif.",
+      "citation": "Derrière ces chiffres, il y a la désindexation des retraites, le gel du point d'indice, des APL et de la prime d'activité, une moins bonne couverture des arrêts maladie et la réduction de l'investissement de nos collectivités.",
+      "orateur_id": "PA794094",
+      "groupe_id": "PO845419",
       "date": "2026-10-01",
       "lieu": "commission",
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu",
@@ -693,178 +788,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Nicolas Sansu) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Je ne vois pas comment l’augmentation de la consommation pourrait doubler, passant de + 0,4 % à + 0,8 %, au moment même où le revenu disponible des ménages va baisser du fait de l’amputation des revenus du travail de 2,5 milliards d’euros, du gel des APL, du point d’indice des fonctionnaires et des pensions de retraite, de la fiscalisation des indemnités journalières et de la hausse des frais de scolarité.",
-      "orateur_id": "PA841515",
-      "groupe_id": "PO845413",
-      "date": "2026-10-01",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 2 du 01/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Aurélien Le Coq) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Face au manque de logements pour les agents publics et à la crise du logement en général, l’urgence est d’investir massivement pour produire plus de logements sociaux, de supprimer la réduction de loyer de solidarité pour redonner de l’air aux bailleurs sociaux (M.",
-      "orateur_id": "PA796018",
-      "groupe_id": "PO845439",
-      "date": "2026-06-17",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 17 juin 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Danielle Simonnet) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Les chiffres au 1er janvier 2024 sont édifiants : 2,6 millions de ménages attendent un logement social ; en un an, les attributions ont chuté de 6 %, la plus forte baisse hors période de pandémie de covid, et le délai d’attente moyen pour un logement frôle désormais les 540 jours.",
-      "orateur_id": "PA793520",
-      "groupe_id": "PO845454",
-      "date": "2026-06-17",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 17 juin 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Mickaël Cosson) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Vous ne pouvez pas, d’un côté, balayer d’un revers de main les solutions que nous proposons – qu’il s’agisse de la diminution, voire de la suppression de la réduction de loyer de solidarité (RLS), qui redonnerait enfin de l’air aux bailleurs sociaux, ou tout simplement de la revalorisation des salaires des agents publics – et, de l’autre, vous émouvoir des difficultés que rencontrent nos concitoyens pour se loger, alors que cela fait dix ans que vous êtes aux responsabilités.",
-      "orateur_id": "PA794854",
-      "groupe_id": "PO845419",
-      "date": "2026-06-17",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 17 juin 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Iñaki Echaniz) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "La baisse des crédits ne relève donc pas simplement d’un ajustement budgétaire mais bien d’une rupture profonde dans la capacité même à produire du logement social.",
-      "orateur_id": "PA795762",
-      "groupe_id": "PO845419",
-      "date": "2026-04-28",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Troisième séance du mardi 28 avril 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Elie Califer (SOC)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Un effort important a été consenti en 2026, avec une baisse du montant de la réduction de loyer de solidarité et un financement de l’aide à la pierre, afin d’accompagner le monde du logement social.",
-      "orateur_id": null,
-      "groupe_id": null,
-      "date": "2026-04-28",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Troisième séance du mardi 28 avril 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Vincent Jeanbrun, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Nous le savons tous, la France fait face à une grave crise du logement : l’offre locative a chuté de 15 % en cinq ans, touchant particulièrement les étudiants, les apprentis et les jeunes actifs ; les mises en chantier de logements ont considérablement baissé ; il y a pratiquement 3 millions de dossiers de demande d’un logement social en attente.",
-      "orateur_id": "PA794430",
-      "groupe_id": "PO845470",
-      "date": "2026-04-28",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Troisième séance du mardi 28 avril 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Michel Criaud (HOR)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Il faut rappeler que les organismes HLM ont été fragilisés par certaines décisions, notamment la réduction de loyer de solidarité (RLS), qui leur a fait supporter une partie de la baisse des aides personnalisées au logement (APL) : ces mesures ont réduit leur capacité d’investissement et la production de logements sociaux est ainsi passée d’environ 120 000 par an à près de 80 000, soit une baisse d’un tiers.",
-      "orateur_id": "PA942",
-      "groupe_id": "PO845485",
-      "date": "2026-04-28",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Troisième séance du mardi 28 avril 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Charles de Courson (LIOT)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
-      "citation": "Benjamin Lucas-Lundy applaudit également.) Tout le monde passe à la caisse : les apprentis, avec la baisse des salaires ; les locataires, avec le gel des APL ; les retraités, avec le gel des pensions ; les travailleurs, avec la hausse de l’impôt sur le revenu ; les plus vulnérables, avec le gel des prestations sociales ; les patients, avec le doublement des franchises, et les malades en affection de longue durée (ALD), avec des taxes sur leurs indemnités.",
-      "orateur_id": "PA794686",
-      "groupe_id": "PO845413",
-      "date": "2025-10-21",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Séance unique du mardi 21 octobre 2025",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Marianne Maximi) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mickaël Bouloux) s'y oppose ou veut la réduire : « Le gel des APL fait partie des efforts imposés aux ménages dans le cadre d'un plan d'économies global jugé excessif. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.80.",
         "nature": "deduction"
       }
     }
