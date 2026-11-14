@@ -56,13 +56,13 @@ function rapporteurs(dossier: any): { pa: string; type: string }[] {
 }
 
 export function contexte(d: Dossier): CtxDossierPlus {
-  const { avant } = coupure(d);
+  const { avant, depot } = coupure(d);
   const amdts = amendementsDuSujet(d);
   const lies = scrutinsLies(d, scrutins, amdts, avant);
   // Seuls les groupes de groupes.json comptent (un ancien groupe dissous n'a plus de sièges).
   const garder = (m: Map<string, any>) => new Map([...m].filter(([g]) => groupes.has(g)));
   const posS = garder(positionsDepuisScrutins(lies));
-  const posA = garder(positionsDepuisAmendements(amdts, avant));
+  const posA = garder(positionsDepuisAmendements(amdts, depot));
   const sourcePositions = posS.size >= 3 ? "scrutins" : posA.size > 0 ? "amendements" : "aucune";
   const positions = sourcePositions === "scrutins" ? posS : posA;
   const texteRaw = lireJson(join(DATA, "raw", d.id, "texte.json"));

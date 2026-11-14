@@ -57,15 +57,15 @@ function predictionOrcet(dossierId: string, uid: string, avant: (x: string | nul
 // ---------- texte.json ----------
 export async function construireTexte(ctx: CtxDossierPlus) {
   const { d, positions, sourcePositions, lies, amdts, groupes, deputes } = ctx;
-  const { ref, avant } = coupure(d);
+  const { ref, avant, depot } = coupure(d);
   const exclus = { irrecevables: 0, hors_deputes: 0, apres_ref: 0, hors_sujet: 0 };
   const natures = ctx.natures;
-  const lot = await naturesEnLot(amdts.filter((a) => a.texte === d.mesure.texte_id && a.pertinent && avant(a.dateDepot)), d.mesure.label);
+  const lot = await naturesEnLot(amdts.filter((a) => a.texte === d.mesure.texte_id && a.pertinent && depot(a.dateDepot)), d.mesure.label);
   const amendements: any[] = [];
   for (const a of amdts) {
     if (a.texte !== d.mesure.texte_id) continue;
     if (!a.pertinent) { exclus.hors_sujet++; continue; }
-    if (!avant(a.dateDepot)) { exclus.apres_ref++; continue; }
+    if (!depot(a.dateDepot)) { exclus.apres_ref++; continue; }
     const s = sortUnifie(a, avant);
     if (s.sort === null) { exclus.irrecevables++; continue; }
     // Auteur : député en exercice, gouvernement, ou commission (rapporteur au nom de la commission).
@@ -126,7 +126,7 @@ export async function construireTexte(ctx: CtxDossierPlus) {
         { label: "Texte", url: texteUrl },
       ],
       limits:
-        `Données au plus tard le ${ref}. Amendements du sujet : amendements de l'article de la mesure, plus ceux qui citent un mot-clé de la configuration dans leur dispositif. ${exclus.hors_sujet} amendements qui ne le citent que dans l'exposé sont écartés (ex. retraites, crédits de seconde partie). ` +
+        `Dépôts au plus tard le ${ref} ; sorts, scrutins et séances strictement avant (matin du ${ref}). Amendements du sujet : amendements de l'article de la mesure, plus ceux qui citent un mot-clé de la configuration dans leur dispositif. ${exclus.hors_sujet} amendements qui ne le citent que dans l'exposé sont écartés (ex. retraites, crédits de seconde partie). ` +
         `Exclus : ${exclus.irrecevables} irrecevables ou retirés avant publication, ${exclus.hors_deputes} déposés par un ancien député, ${exclus.apres_ref} déposés après la date de référence. Amendements du gouvernement et de la commission inclus (auteur_type). ` +
         `Nature vis-à-vis de la mesure : règle d'abord (suppression, montant, création, réduction), sinon modèle de langage contrôlé (citation exacte du dispositif ou de l'exposé exigée), sinon « autre » (nature_mode « defaut »). ` +
         `Un sort postérieur à la date de référence est « en_attente ». « non_examine » regroupe ici les amendements non soutenus (écrit dans le résumé). ` +
@@ -164,7 +164,7 @@ function actes(dossier: any): Acte[] {
 
 export function etapeEtActes(ctx: CtxDossierPlus) {
   const { d } = ctx;
-  const { ref, avant } = coupure(d);
+  const { ref, avant, depot } = coupure(d);
   const tous = actes(ctx.texteRaw?.dossier);
   const vu = (code: string) => tous.filter((a) => a.code === code && a.date && avant(a.date));
   const premier = (code: string) => vu(code).map((a) => a.date!).sort()[0] ?? null;
@@ -191,7 +191,7 @@ export function etapeEtActes(ctx: CtxDossierPlus) {
 
 export function construireEtat(ctx: CtxDossierPlus) {
   const { d, amdts, lies, deputes, groupes } = ctx;
-  const { avant, ref } = coupure(d);
+  const { avant, ref, depot } = coupure(d);
   const { etapes, etape, decAN1 } = etapeEtActes(ctx);
   const art = articleMesure(d) ?? "";
   const surMes = amdts.filter((a) => a.sur_mesure && a.texte === d.mesure.texte_id);
@@ -233,7 +233,7 @@ export function construireEtat(ctx: CtxDossierPlus) {
   if (horsTexte) {
     // La mesure n'est pas dans le texte du gouvernement : elle vit dans des amendements qui la créent.
     dansLeTexte = false;
-    const crees = amdts.filter((a) => a.texte === d.mesure.texte_id && a.pertinent && a.sens > 0 && !enCommission(a) && avant(a.dateDepot));
+    const crees = amdts.filter((a) => a.texte === d.mesure.texte_id && a.pertinent && a.sens > 0 && !enCommission(a) && depot(a.dateDepot));
     const votes = crees.filter((a) => a.dateSort && avant(a.dateSort));
     const adoptesC = votes.filter((a) => a.sort === "Adopté");
     const groupesC = [...new Set(crees.map((a) => (a.groupe ? groupes.get(a.groupe)?.sigle : null)).filter(Boolean))].join(", ");
@@ -262,10 +262,10 @@ export function construireEtat(ctx: CtxDossierPlus) {
   if (decAN1 && suppression) redaction = `Article ${art} du texte du gouvernement. Supprimé en séance le ${suppression.dateSort} (amendement n° ${suppression.numero}), mais l'Assemblée a rejeté le texte le ${decAN1.date} : le Sénat examine le texte initial du gouvernement, où l'article ${art} figure.`;
   else if (decAN1) redaction = `Article ${art} du texte initial du gouvernement ; l'Assemblée a rejeté le texte le ${decAN1.date}, le Sénat examine le texte du gouvernement.`;
   else if (suppression) { dansLeTexte = false; redaction = `Article ${art} supprimé le ${suppression.dateSort} (amendement n° ${suppression.numero}).`; }
-  else redaction = `Article ${art} du texte initial du gouvernement, ${modifications.filter((m) => m.par.endsWith("en séance")).length ? `modifié en séance par ${modifications.filter((m) => m.par.endsWith("en séance")).length} amendement(s)` : "non modifié en séance à cette date"}${modifications.some((m) => m.par.endsWith("en commission des finances")) ? ` (${modifications.filter((m) => m.par.endsWith("en commission des finances")).length} amendement(s) adopté(s) en commission, sans effet sur le texte examiné en séance)` : ""}. ${surMes.filter((a) => avant(a.dateDepot) && (!a.dateSort || !avant(a.dateSort)) && !/^Irrecevable/.test(a.etat ?? "")).length} amendements sur l'article restent à examiner.`;
+  else redaction = `Article ${art} du texte initial du gouvernement, ${modifications.filter((m) => m.par.endsWith("en séance")).length ? `modifié en séance par ${modifications.filter((m) => m.par.endsWith("en séance")).length} amendement(s)` : "non modifié en séance à cette date"}${modifications.some((m) => m.par.endsWith("en commission des finances")) ? ` (${modifications.filter((m) => m.par.endsWith("en commission des finances")).length} amendement(s) adopté(s) en commission, sans effet sur le texte examiné en séance)` : ""}. ${surMes.filter((a) => depot(a.dateDepot) && (!a.dateSort || !avant(a.dateSort)) && !/^Irrecevable/.test(a.etat ?? "")).length} amendements sur l'article restent à examiner.`;
   }
   // Articles du sujet : l'article de la mesure.
-  const sortsArt = surMes.filter((a) => avant(a.dateDepot));
+  const sortsArt = surMes.filter((a) => depot(a.dateDepot));
   const enAttente = sortsArt.filter((a) => sortUnifie(a, avant).sort === "en_attente").length;
   const articles = art
     ? [{
@@ -284,7 +284,7 @@ export function construireEtat(ctx: CtxDossierPlus) {
         { label: "Amendements, open data Assemblée nationale", url: URL_AMDTS_OD },
         { label: "Dossier sur le site de l'Assemblée", url: ctx.texteRaw?.url_dossier ?? URL_DOSSIERS_OD },
       ],
-      limits: `État au ${ref} (actes et sorts datés au plus tard ce jour). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.`,
+      limits: `État au matin du ${ref} (dépôts du jour connus ; sorts, scrutins, séances et décisions du jour inconnus). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.`,
       producer: PRODUCER,
       dossier_id: d.id,
     },
@@ -327,7 +327,7 @@ type Acte2 = { sens: "pour" | "contre"; fondement: "vote" | "depose" | "dit"; so
 
 export function actesPropres(ctx: CtxDossierPlus): Map<string, Acte2[]> {
   const { d, lies, amdts } = ctx;
-  const { avant } = coupure(d);
+  const { avant, depot } = coupure(d);
   const res = new Map<string, Acte2[]>();
   const push = (pa: string, a: Acte2) => { if (!res.has(pa)) res.set(pa, []); res.get(pa)!.push(a); };
   for (const s of lies) {
@@ -338,7 +338,7 @@ export function actesPropres(ctx: CtxDossierPlus): Map<string, Acte2[]> {
     }
   }
   for (const a of amdts) {
-    if (!a.sens || !avant(a.dateDepot)) continue;
+    if (!a.sens || !depot(a.dateDepot)) continue;
     const p = a.sens > 0 ? "pour" : "contre";
     for (const pa of [a.auteur, ...a.cosignataires].filter(Boolean) as string[]) push(pa, { sens: p, fondement: "depose", source: { label: `Amendement n° ${a.numero}`, url: a.url } });
   }
@@ -352,7 +352,7 @@ export function actesPropres(ctx: CtxDossierPlus): Map<string, Acte2[]> {
 
 export function construireGroupesAction(ctx: CtxDossierPlus, decideurs: any[]) {
   const { d, positions, groupes, deputes, scrutins } = ctx;
-  const { ref, avant } = coupure(d);
+  const { ref, avant, depot } = coupure(d);
   const cible = d.objectifs[0].position_cible;
   const oppose = cible === "pour" ? "contre" : "pour";
   const loy = loyautes(scrutins.filter((s) => avant(s.date)), moinsJours(ref, 365), ref, new Set(groupes.keys()));
@@ -403,7 +403,7 @@ export function construireGroupesAction(ctx: CtxDossierPlus, decideurs: any[]) {
         { label: "Amendements, open data Assemblée nationale", url: URL_AMDTS_OD },
       ],
       limits:
-        `Données au plus tard le ${ref}. Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés${lireJson(join(DATA, d.id, "arguments.json")) ? ", interventions classées par A2" : " ; interventions non encore disponibles"}), jamais sur le groupe seul. ` +
+        `Dépôts au plus tard le ${ref} ; sorts, scrutins et séances strictement avant (matin du ${ref}). Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés${lireJson(join(DATA, d.id, "arguments.json")) ? ", interventions classées par A2" : " ; interventions non encore disponibles"}), jamais sur le groupe seul. ` +
         `Totaux avant coupe : ${totaux.allies} alliés, ${totaux.perdus} perdus, ${totaux.actionnables} actionnables ; ${CAP} gardés par catégorie (score décroissant). Les ${position_inconnue.length} députés sans acte personnel sur la mesure sont tous dans position_inconnue, avec la position de leur groupe en contexte. Députés en exercice seulement. ` +
         `Perdus = actes contre la cible et loyauté sur 12 mois d'au moins 0,85 envers un groupe lui-même opposé. Sens des amendements lu par règles : déduction de l'outil.`,
       producer: PRODUCER,
@@ -420,7 +420,7 @@ export function construireGroupesAction(ctx: CtxDossierPlus, decideurs: any[]) {
 // ---------- décideurs ----------
 export function construireDecideurs(ctx: CtxDossierPlus) {
   const { d, deputes, groupes, amdts } = ctx;
-  const { avant } = coupure(d);
+  const { avant, depot } = coupure(d);
   const actes = actesPropres(ctx);
   const res: any[] = [];
   const posPropre = (pa: string) => {
@@ -465,7 +465,7 @@ export function construireDecideurs(ctx: CtxDossierPlus) {
   // Chefs de file : député du groupe qui a déposé le plus d'amendements du sujet (déduction).
   for (const g of groupes.keys()) {
     const c = new Map<string, number>();
-    for (const a of amdts) if (a.groupe === g && a.auteur && avant(a.dateDepot) && deputes.get(a.auteur)?.groupe_id === g && a.pertinent) c.set(a.auteur, (c.get(a.auteur) ?? 0) + 1);
+    for (const a of amdts) if (a.groupe === g && a.auteur && depot(a.dateDepot) && deputes.get(a.auteur)?.groupe_id === g && a.pertinent) c.set(a.auteur, (c.get(a.auteur) ?? 0) + 1);
     const top = [...c.entries()].sort((x, y) => y[1] - x[1])[0];
     if (!top || top[1] < 2) continue;
     ajouter("chef_de_file", top[0], "Chef de file", `Chef de file présumé du groupe ${groupes.get(g)!.sigle} : auteur de ${top[1]} amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée).`, { label: "Amendements du sujet", url: URL_AMDTS_OD });

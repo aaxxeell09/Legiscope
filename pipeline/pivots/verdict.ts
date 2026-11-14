@@ -58,7 +58,7 @@ function nombres(s: string): string[] {
 
 export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: any, ga: any) {
   const { d, groupes, positions, sourcePositions, lies, amdts, deputes } = ctx;
-  const { ref, avant } = coupure(d);
+  const { ref, avant, depot } = coupure(d);
   const effectifs = new Map([...groupes].map(([g, x]) => [g, x.effectif]));
   const sigle = (g: string | null) => (g ? groupes.get(g)?.sigle ?? g : "non-inscrit");
   const gouv = ga.decideurs.find((x: any) => x.role === "gouvernement");
@@ -72,10 +72,10 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
   const j7 = moinsJours(ref, 7);
   const avant7 = (x: string | null | undefined) => !!x && x.slice(0, 10) <= j7;
   const lies7 = lies.filter((s) => avant7(s.date));
-  const pos7brut = sourcePositions === "scrutins" ? positionsDepuisScrutins(lies7) : positionsDepuisAmendements(amdts, avant7);
+  const pos7brut = sourcePositions === "scrutins" ? positionsDepuisScrutins(lies7) : positionsDepuisAmendements(amdts, avant7);  // à J-7 : dépôts au plus tard J-7
   const pos7 = new Map([...pos7brut].filter(([g]) => groupes.has(g)));
 
-  const enAttente = (a: AmdtSujet, f: (x: string | null | undefined) => boolean) => a.texte === d.mesure.texte_id && f(a.dateDepot) && sortUnifie(a, f as any).sort === "en_attente" && !!a.auteur;
+  const enAttente = (a: AmdtSujet) => a.texte === d.mesure.texte_id && depot(a.dateDepot) && sortUnifie(a, avant as any).sort === "en_attente" && (!!a.auteur || a.typeAuteur !== "Député");
   const nGroupes = groupes.size;
   const cpt = (p: Map<string, any>) => {
     const v = [...groupes.keys()].map((g) => p.get(g)?.position ?? null);
@@ -105,19 +105,19 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
         const m = new Map<string, Pos>();
         // Soutien du repli : groupes auteurs d'amendements de repli, ou contre la mesure. Opposition : groupes qui la renforcent.
         for (const a of porteurs) if (a.groupe && groupes.has(a.groupe) && f(a.dateDepot)) m.set(a.groupe, cible);
-        const p = f === avant ? positions : pos7;
+        const p = f === depot ? positions : pos7;
         for (const [g, x] of p) if (x.position === cible && !m.has(g)) m.set(g, cible);
         for (const a of opposes) if (a.groupe && groupes.has(a.groupe) && f(a.dateDepot) && !m.has(a.groupe)) m.set(a.groupe, cible === "contre" ? "pour" : "contre");
         return m;
       };
-      base = fabrique(avant);
+      base = fabrique(depot);
       base7 = fabrique(avant7);
-      niveau = porteurs.some((a) => avant(a.dateDepot)) ? "moyenne" : "faible";
+      niveau = porteurs.some((a) => depot(a.dateDepot)) ? "moyenne" : "faible";
     }
 
     const s0 = scoreSieges(base, cible, effectifs);
     const s7 = scoreSieges(base7, cible, effectifs);
-    const pend = porteurs.filter((a) => enAttente(a, avant));
+    const pend = porteurs.filter((a) => enAttente(a));
     const orc = orcetMoyen(ctx, pend, ref);
     // proba_pour d'un amendement qui porte la position du client : plus elle est haute, mieux c'est pour lui.
     const corrige = (s: number | null) => (s === null ? null : orc ? (1 - POIDS_ORCET) * s + POIDS_ORCET * orc.moyenne : s);
@@ -133,7 +133,7 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
     if (obj.rang === 1) {
       if (sourcePositions === "scrutins") etabli.push(`Positions de ${connus.length} groupes sur ${nLies} scrutins nominatifs liés à la mesure`);
       else etabli.push(`Positions de ${connus.length} groupes lues sur leurs amendements à la mesure (aucun scrutin nominatif lié au plus tard le ${ref})`);
-    } else etabli.push(`${porteurs.filter((a) => avant(a.dateDepot)).length} amendements de repli déposés au plus tard le ${ref}`);
+    } else etabli.push(`${porteurs.filter((a) => depot(a.dateDepot)).length} amendements de repli déposés au plus tard le ${ref}`);
     if (gouv && gouv.position !== "inconnue") etabli.push(`Le gouvernement est ${gouv.position} la mesure`);
     if (etat?.texte_etat && etat?.mesure && (etat.texte_etat.statut !== "en_discussion" || etat.mesure.dans_le_texte === false)) {
       etabli.push(`État du texte : ${etat.texte_etat.libelle}`);
@@ -183,7 +183,7 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
       preuve: { sources: srcPos, raisonnement: obj.rang === 1 ? `Position majoritaire de chaque groupe ${sourcePositions === "scrutins" ? "sur les scrutins liés" : "dans ses amendements à la mesure"}.` : "Groupes auteurs d'amendements de nature « aggrave ».", nature: "deduction" },
     });
     if (rg && rg.position !== "inconnue") (rg.position === cible ? favorable : bloquant).push({ titre: `Le rapporteur général ${rg.nom} a agi ${rg.position} la mesure`, detail: rg.preuve.raisonnement, preuve: rg.preuve });
-    if (obj.rang > 1 && !porteurs.some((a) => avant(a.dateDepot))) inconnu.unshift(`Aucun amendement ${obj.rang === 2 ? "de réduction" : "de report"} déposé au plus tard le ${ref}`);
+    if (obj.rang > 1 && !porteurs.some((a) => depot(a.dateDepot))) inconnu.unshift(`Aucun amendement ${obj.rang === 2 ? "de réduction" : "de report"} déposé au plus tard le ${ref}`);
 
     // ---- cause du changement (nouveautes.json d'A4) ----
     let cause: any = null;
@@ -270,7 +270,7 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
         { label: "Texte", url: urlTexte },
       ],
       limits:
-        `Verdict proposé, le cabinet décide. Données au plus tard le ${ref}. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), ` +
+        `Verdict proposé, le cabinet décide. Dépôts au plus tard le ${ref} ; sorts, scrutins et séances strictement avant (matin du ${ref}). Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), ` +
         `corrigé à ${POIDS_ORCET * 100} % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de ${SEUIL_FAVORABLE}, défavorable sous ${SEUIL_DEFAVORABLE}, « insuffisant » sous 3 groupes de position connue. ` +
         `Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de nature « reduit » (réduire) ou « reporte » (repousser), ou opposés à la mesure, contre groupes auteurs d'amendements « aggrave ». Le score se lit « part des sièges favorables à l'objectif », jamais comme une probabilité. ` +
         `Avis du rapporteur et du gouvernement non publiés. Traces : ${traces}.` +

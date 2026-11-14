@@ -15,13 +15,19 @@ export type Dossier = {
 
 export const AUJOURDHUI = new Date().toISOString().slice(0, 10);
 
-/** Date de coupure : on ne retient que ce qui est daté au plus tard date_reference. */
-export function coupure(d: Dossier): { ref: string; avant: (date: string | null | undefined) => boolean } {
+/**
+ * Date de coupure (règle du « matin de date_reference », décision du 14 novembre 14 h 57) :
+ * - depot : un dépôt, une publication ou une annonce est connu s'il est daté au plus tard ce jour-là ;
+ * - avant : un sort, un scrutin, une séance ou une décision n'est connu que s'il est daté strictement avant.
+ * Sans date_reference : tout ce qui est daté au plus tard aujourd'hui.
+ */
+export function coupure(d: Dossier): { ref: string; avant: (date: string | null | undefined) => boolean; depot: (date: string | null | undefined) => boolean } {
   if (d.date_reference) {
     const ref = d.date_reference;
-    return { ref, avant: (x) => !!x && x.slice(0, 10) <= ref };
+    return { ref, avant: (x) => !!x && x.slice(0, 10) < ref, depot: (x) => !!x && x.slice(0, 10) <= ref };
   }
-  return { ref: AUJOURDHUI, avant: (x) => !!x && x.slice(0, 10) <= AUJOURDHUI };
+  const f = (x: string | null | undefined) => !!x && x.slice(0, 10) <= AUJOURDHUI;
+  return { ref: AUJOURDHUI, avant: f, depot: f };
 }
 
 export function moinsJours(date: string, n: number): string {
