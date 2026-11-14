@@ -42,6 +42,8 @@ export const VerdictObjectifSchema = z.object({
   situation: SituationSchema,
   // Probabilité que l'objectif soit atteint ; null quand la situation est « insuffisant ».
   score: Proba.nullable(),
+  // Complément 4 (14 h 05) : le score est un rapport de forces, jamais une probabilité.
+  score_libelle: z.string().min(1).optional(),
   tendance: TendanceSchema,
   confiance: ConfianceSchema,
   lecture: LectureSchema,

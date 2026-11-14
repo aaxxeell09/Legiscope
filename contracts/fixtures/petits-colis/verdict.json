@@ -113,7 +113,8 @@
           "raisonnement": "Déposé le 19 novembre 2025 ; retire à LFI son motif d'abstention.",
           "nature": "fait"
         }
-      }
+      },
+      "score_libelle": "part des sièges favorables à l'objectif"
     },
     {
       "objectif_rang": 2,
@@ -162,7 +163,8 @@
           }
         }
       ],
-      "cause_du_changement": null
+      "cause_du_changement": null,
+      "score_libelle": "part des sièges favorables à l'objectif"
     },
     {
       "objectif_rang": 3,
@@ -238,7 +240,8 @@
           "raisonnement": "Scrutin n° 4401.",
           "nature": "fait"
         }
-      }
+      },
+      "score_libelle": "part des sièges favorables à l'objectif"
     }
   ]
 }

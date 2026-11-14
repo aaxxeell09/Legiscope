@@ -119,7 +119,11 @@
         "confiance": 0.6,
         "modele": "orcet-v2",
         "date": "2026-11-03"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test S",
+      "nature": "autre",
+      "nature_mode": "defaut"
     },
     {
       "id": "AMANR5L17PO59048B3210P1D1N002841",
@@ -138,7 +142,11 @@
         "confiance": 0.8,
         "modele": "orcet-v2",
         "date": "2026-11-03"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test J",
+      "nature": "autre",
+      "nature_mode": "defaut"
     },
     {
       "id": "AMANR5L17PO59048B3210P1D1N002988",
@@ -156,7 +164,11 @@
         "confiance": 0.82,
         "modele": "orcet-v2",
         "date": "2026-11-03"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test P",
+      "nature": "autre",
+      "nature_mode": "defaut"
     },
     {
       "id": "AMANR5L17PO59048B3210P1D1N003107",
@@ -175,7 +187,11 @@
         "confiance": 0.63,
         "modele": "orcet-v2",
         "date": "2026-11-03"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test F",
+      "nature": "autre",
+      "nature_mode": "defaut"
     },
     {
       "id": "AMANR5L17PO59048B3210P1D1N001187",
@@ -194,7 +210,11 @@
         "confiance": 0.7,
         "modele": "orcet-v2",
         "date": "2026-11-03"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test A",
+      "nature": "supprime",
+      "nature_mode": "regle"
     },
     {
       "id": "AMANR5L17PO59048B3210P1D1N003301",
@@ -210,7 +230,11 @@
         "confiance": 0.55,
         "modele": "orcet-v2",
         "date": "2026-11-03"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test E",
+      "nature": "autre",
+      "nature_mode": "defaut"
     },
     {
       "id": "AMANR5L17PO59048B3210P1D1N003550",
@@ -226,7 +250,11 @@
         "confiance": 0.77,
         "modele": "orcet-v2",
         "date": "2026-11-03"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test AH",
+      "nature": "reduit",
+      "nature_mode": "regle"
     },
     {
       "id": "AMANR5L17PO59048B3210P1D1N003602",
@@ -239,7 +267,11 @@
       "groupe_id": "PO845470",
       "resume": "Exonère les holdings qui réinvestissent leur actif dans les 24 mois.",
       "sort": "tombe",
-      "prediction": null
+      "prediction": null,
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test V",
+      "nature": "reduit",
+      "nature_mode": "regle"
     }
   ]
 }

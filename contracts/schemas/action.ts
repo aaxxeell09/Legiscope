@@ -39,6 +39,15 @@ export const DecideurSchema = z.object({
 });
 export type Decideur = z.infer<typeof DecideurSchema>;
 
+// Complément 5 (14 h 05) : député suivi sans acte personnel lié à la mesure, position de son groupe en contexte.
+export const PositionInconnueSchema = z.object({
+  depute_id: z.string().min(1),
+  groupe_id: z.string().nullable(),
+  position_groupe: z.string().nullable(),
+  preuve: PreuveSchema,
+});
+export type PositionInconnue = z.infer<typeof PositionInconnueSchema>;
+
 // « pour » et « contre » sont relatifs à la MESURE, pas à l'objectif du client.
 export const ArgumentSchema = z.object({
   argument: z.string().min(1),
@@ -71,6 +80,7 @@ export const ActionSchema = z.object({
     actionnables: z.array(DeputeActionSchema),
     allies: z.array(DeputeActionSchema),
     perdus: z.array(DeputeActionSchema),
+    position_inconnue: z.array(PositionInconnueSchema).optional(),
   }),
   arguments: z.object({
     pour: z.array(ArgumentSchema),
@@ -86,6 +96,7 @@ export const GroupesActionSchema = z.object({
   actionnables: z.array(DeputeActionSansFicheSchema),
   allies: z.array(DeputeActionSansFicheSchema),
   perdus: z.array(DeputeActionSansFicheSchema),
+  position_inconnue: z.array(PositionInconnueSchema).optional(),
   decideurs: z.array(DecideurSchema),
 });
 export type GroupesAction = z.infer<typeof GroupesActionSchema>;

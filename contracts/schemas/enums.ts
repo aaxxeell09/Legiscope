@@ -86,3 +86,13 @@ export type PositionDecideur = z.infer<typeof PositionDecideurSchema>;
 // Sur quoi un député est classé : ses propres actes seulement, jamais son groupe seul.
 export const FondementSchema = z.enum(["dit", "depose", "vote"]);
 export type Fondement = z.infer<typeof FondementSchema>;
+
+// Compléments d'Axel, 14 h 05.
+export const AuteurTypeSchema = z.enum(["depute", "gouvernement", "commission"]);
+export type AuteurType = z.infer<typeof AuteurTypeSchema>;
+export const NatureAmendementSchema = z.enum(["supprime", "reduit", "reporte", "aggrave", "autre"]);
+export type NatureAmendement = z.infer<typeof NatureAmendementSchema>;
+export const NatureModeSchema = z.enum(["regle", "llm", "defaut"]);
+export type NatureMode = z.infer<typeof NatureModeSchema>;
+export const TexteStatutSchema = z.enum(["en_discussion", "adopte", "rejete", "retire"]);
+export type TexteStatut = z.infer<typeof TexteStatutSchema>;

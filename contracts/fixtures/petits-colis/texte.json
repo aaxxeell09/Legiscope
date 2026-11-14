@@ -118,7 +118,11 @@
         "confiance": 0.78,
         "modele": "orcet-v2",
         "date": "2025-11-19"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test B",
+      "nature": "supprime",
+      "nature_mode": "regle"
     },
     {
       "id": "AMANR5L17PO59048B1906P1D1N002231",
@@ -137,7 +141,11 @@
         "confiance": 0.8,
         "modele": "orcet-v2",
         "date": "2025-11-19"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test D",
+      "nature": "autre",
+      "nature_mode": "defaut"
     },
     {
       "id": "AMANR5L17PO59048B1906P1D1N002384",
@@ -155,7 +163,11 @@
         "confiance": 0.73,
         "modele": "orcet-v2",
         "date": "2025-11-19"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test B",
+      "nature": "aggrave",
+      "nature_mode": "regle"
     },
     {
       "id": "AMANR5L17PO59048B1906P1D1N002470",
@@ -173,7 +185,11 @@
         "confiance": 0.66,
         "modele": "orcet-v2",
         "date": "2025-11-19"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test N",
+      "nature": "autre",
+      "nature_mode": "defaut"
     },
     {
       "id": "AMANR5L17PO59048B1906P1D1N002512",
@@ -191,7 +207,11 @@
         "confiance": 0.7,
         "modele": "orcet-v2",
         "date": "2025-11-19"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test I",
+      "nature": "autre",
+      "nature_mode": "defaut"
     },
     {
       "id": "AMANR5L17PO59048B1906P1D1N002601",
@@ -204,7 +224,11 @@
       "groupe_id": "PO845419",
       "resume": "Affecte le produit de la taxe au fonds de soutien au commerce de proximité.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": null,
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test J",
+      "nature": "autre",
+      "nature_mode": "defaut"
     },
     {
       "id": "AMANR5L17PO59048B1906P1D1N002733",
@@ -220,7 +244,11 @@
         "confiance": 0.51,
         "modele": "orcet-v2",
         "date": "2025-11-19"
-      }
+      },
+      "auteur_type": "depute",
+      "auteur_libelle": "Député Test AI",
+      "nature": "reduit",
+      "nature_mode": "regle"
     }
   ]
 }

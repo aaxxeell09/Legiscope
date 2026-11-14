@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { DateISO, MetaSchema, Proba, Url } from "./meta";
-import { PositionSchema, SortSchema } from "./enums";
+import { PositionSchema, SortSchema, AuteurTypeSchema, NatureAmendementSchema, NatureModeSchema } from "./enums";
 
 export const PositionGroupeSchema = z.object({
   groupe_id: z.string().min(1),
@@ -38,6 +38,11 @@ export const AmendementTexteSchema = z.object({
   // Dates de l'open data (P1), pour les nouveautés (A4). Optionnelles tant que P3 ne les recopie pas.
   date_depot: DateISO.nullable().optional(),
   date_sort: DateISO.nullable().optional(),
+  // Compléments 14 h 05 (optionnels) : auteur non député, nature vis-à-vis de la mesure.
+  auteur_type: AuteurTypeSchema.optional(),
+  auteur_libelle: z.string().min(1).optional(),
+  nature: NatureAmendementSchema.optional(),
+  nature_mode: NatureModeSchema.optional(),
 });
 export type AmendementTexte = z.infer<typeof AmendementTexteSchema>;
 
