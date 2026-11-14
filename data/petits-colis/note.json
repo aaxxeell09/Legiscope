@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:44:45Z",
+    "generated_at": "2026-11-14T12:58:31Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -23,7 +23,7 @@
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       }
     ],
-    "limits": "Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes ; députés à approcher pas encore disponibles.",
+    "limits": "Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes.",
     "producer": "pipeline/note",
     "dossier_id": "petits-colis"
   },
@@ -45,7 +45,7 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Pour Alibaba France. Objectif principal, « Empêcher que la taxe soit votée » : mal engagé, chances estimées par l'outil 26 %, tendance stable. À l'Assemblée nationale, en première lecture, la situation est défavorable car la mesure est portée par le gouvernement et soutenue par 7 groupes, face à un seul groupe contre. Ce qui joue pour le client : amendement de suppression de l'article 22 déposé par le groupe RN. Ce qui coince : mesure portée par le gouvernement. Prochaine date : 18 novembre 2025, commission des finances : Examen du texte (09 h 30). Dernière occasion d'agir : 19 novembre 2025, séance publique du 19 novembre 2025 : examen de l'article 22 et de ses amendements, dernier moment pour faire adopter la suppression à l'Assemblée en première lecture.",
+  "texte": "Verdict proposé : l'objectif principal d'empêcher le vote de la taxe est mal engagé, avec des chances estimées à 26 % selon l'outil. La situation est défavorable car la mesure est portée par le gouvernement et soutenue par 7 groupes, face à un seul groupe contre. Ce qui a bougé le 18 novembre 2025 : 2 amendements identiques (n° 61, n° 255) (LFI-NFP) adoptés, défavorables au client, et l'amendement n° 806 (RN) déposé pour supprimer l'article 22, favorable au client. Prochaine date : 18 novembre 2025, commission des finances : Examen du texte (09 h 30). Dernière occasion d'agir : 19 novembre 2025, séance publique : examen de l'article 22 et de ses amendements, dernier moment pour faire adopter la suppression à l'Assemblée en première lecture. Sur qui agir : le gouvernement (pour la mesure), Philippe Juvin (contre la mesure). Députés sur qui agir en priorité : Nicole Sanquer (LIOT), Blandine Brocard (DEM), Fabrice Brun (DR). Limites : Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes",
   "chiffres_utilises": [
     "0.26",
     "26",
@@ -57,7 +57,12 @@
     "09",
     "30",
     "2025-11-19",
-    "19"
+    "19",
+    "2",
+    "61",
+    "255",
+    "806",
+    "9"
   ],
   "sources": [
     {
@@ -75,10 +80,22 @@
     {
       "label": "Séance publique du 19 novembre 2025 : examen de l'article 22 et de ses amendements, dernier moment pour faire adopter la suppression à l'Assemblée en première lecture",
       "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428"
+    },
+    {
+      "label": "Intervention du 2025-10-22",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "label": "2 amendements identiques (n° 61, n° 255) (LFI-NFP) adoptés : Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59051B1906P2D1N000061"
+    },
+    {
+      "label": "Amendement n° 806 (RN) déposé : Supprime l'article 22",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
     }
   ],
-  "limites": "Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes ; députés à approcher pas encore disponibles.",
-  "mode": "gabarit",
-  "modele": null,
+  "limites": "Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes.",
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
   "verifie": true
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:44:40Z",
+    "generated_at": "2026-11-14T12:58:30Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -23,7 +23,7 @@
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       }
     ],
-    "limits": "amendements sans prédiction Orcet exclus des comptes ; députés à approcher pas encore disponibles.",
+    "limits": "amendements sans prédiction Orcet exclus des comptes.",
     "producer": "pipeline/note",
     "dossier_id": "plf2027-holdings"
   },
@@ -45,16 +45,19 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Pour Afep. Objectif principal, « Empêcher la taxe sur les holdings et la fortune improductive » : en bonne voie, chances estimées par l'outil 66 %, tendance stable. Au Sénat, en première lecture, la situation est favorable car la mesure, absente du texte du gouvernement et rejetée par l'Assemblée, est contestée par 7 groupes contre 4, ce qui limite les chances de son adoption. Ce qui joue pour le client : la taxe ne figure pas dans le texte du gouvernement. Ce qui coince : 4 groupe(s) pour la mesure : LFI-NFP, SOC, ECOS, GDR. Sur 7 amendements du sujet dotés d'une prédiction, 7 sont en attente. Amendement n° 1965 (ECOS), permettre l’expérimentation, pour une durée de 5 ans, de dispositifs de sécurité… : Orcet prédit en moyenne 35 % de votes pour.",
+  "texte": "Verdict proposé : l'objectif principal d'empêcher la taxe sur les holdings et la fortune improductive est en bonne voie, avec des chances estimées à 66 % selon l'outil. La situation est favorable car la mesure, absente du texte du gouvernement et rejetée par l'Assemblée, est contestée par 7 groupes contre 4 au Sénat en première lecture. Ce qui a bougé : le 4 novembre 2026, l'amendement n° 40 (SOC) a été adopté, ce qui est favorable au client, tandis que 2 amendements identiques (n° 872, n° 2618) de LFI-NFP ont été rejetés, ce qui est défavorable. Les prochaines dates et la dernière occasion d'agir restent à préciser, mais l'Assemblée n'est pas l'issue finale. Sur qui agir : ceux qui décident sont Philippe Juvin (contre la mesure) et Éric Coquerel (pour la mesure). Les députés sur qui agir en priorité sont Christophe Blanchet (DEM), Paul-André Colombani (LIOT) et Loïc Prud'homme (LFI-NFP). Limites : amendements sans prédiction Orcet exclus des comptes.",
   "chiffres_utilises": [
     "0.66",
     "66",
     "4",
     "7",
-    "1965",
-    "0.35",
-    "5",
-    "35"
+    "2026-11-04",
+    "2026",
+    "40",
+    "2",
+    "872",
+    "2618",
+    "04"
   ],
   "sources": [
     {
@@ -72,10 +75,18 @@
     {
       "label": "Amendement n° 2765",
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002765"
+    },
+    {
+      "label": "Amendement n° 40 (SOC) adopté : Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO420120B3210P2D1N000040"
+    },
+    {
+      "label": "2 amendements identiques (n° 872, n° 2618) (LFI-NFP) rejetés : Par cet amendement, le groupe LFI prévoit de supprimer la niche Copé, niche permettant…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000872"
     }
   ],
-  "limites": "amendements sans prédiction Orcet exclus des comptes ; députés à approcher pas encore disponibles.",
-  "mode": "gabarit",
-  "modele": null,
+  "limites": "amendements sans prédiction Orcet exclus des comptes.",
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
   "verifie": true
 }
