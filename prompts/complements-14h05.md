@@ -78,7 +78,7 @@ Tout le monde code tout de suite contre ces noms ; P0 les ajoute dans `contracts
 
 **X2** : rien de nouveau.
 
-## Décision de 15 h 05 : date de référence petits colis = matin du 19 novembre 2025
+## Décision de 14 h 57 : date de référence petits colis = matin du 19 novembre 2025
 
 Arbitré par Ilan. Le compromis du gouvernement (I-4086, article 22) est déposé le 19 novembre 2025, jour du vote. Avec la date au 18 il est invisible ; au 19 « plein », le vote 208 contre 87 entre et la chute de la démo est dévoilée. On retient le **matin du 19**.
 
