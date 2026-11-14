@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:11:42.424Z",
+    "generated_at": "2026-11-14T13:13:00.919Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -549,14 +549,17 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Paul-André Colombani est probablement contre la mesure, comme en témoignent les amendements qu'il a cosignés, dont l'amendement n° 3221 qui a été rejeté.",
-    "argument": "Présenter à ce député le rejet de son amendement n° 3221, car il a déjà cosigné des textes visant à plafonner les montants de l'article 3, ce qui montre son intérêt pour la réduction de la charge fiscale.",
+    "position_probable": "A cosigné l'amendement n° 3182, tombé (« Article 3 : Rédiger ainsi l’alinéa 2 :« 1° La première phrase est complétée par les mots : « , dont 2 200 € au maximum pour les contribuables célibataires, veufs, séparés… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 3182 (« Article 3 : Rédiger ainsi l’alinéa 2 :« 1° La première phrase est complétée par les mots : « , dont 2 200 € au maximum pour les contribuables célibataires, veufs, séparés… »).",
     "chiffres_utilises": [
-      "3221",
-      "3"
+      "3182",
+      "3",
+      "2",
+      "1",
+      "2200"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

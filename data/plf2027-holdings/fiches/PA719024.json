@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:11:34.528Z",
+    "generated_at": "2026-11-14T13:13:00.916Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -403,15 +403,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Christophe Blanchet est probablement contre la mesure, comme en témoignent les amendements qu'il a déposés ou cosignés, dont le numéro 3821 a été rejeté.",
-    "argument": "Présenter à ce député que son amendement n° 3821, qui visait à instituer une contribution après l'article 977 du code général des impôts, a été rejeté, afin de montrer que la mesure n° 3140 ne répond pas à ses attentes sur la fiscalité des holdings.",
+    "position_probable": "A déposé l'amendement n° 1282, tombé (« Article 3 : Compléter cet article par l’alinéa suivant :« 4° Après la première phrase, est insérée une phrase ainsi rédigée : « Au titre des pensions de retraite… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1282 (« Article 3 : Compléter cet article par l’alinéa suivant :« 4° Après la première phrase, est insérée une phrase ainsi rédigée : « Au titre des pensions de retraite… »).",
     "chiffres_utilises": [
-      "3821",
-      "3140",
-      "977"
+      "1282",
+      "3",
+      "4"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

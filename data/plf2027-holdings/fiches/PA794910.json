@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:12:24.342Z",
+    "generated_at": "2026-11-14T13:13:00.926Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -549,14 +549,16 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Melouka Hadj-Mimoune a cosigné l'amendement n° 471, qui a été rejeté, et son groupe soutient la mesure, ce qui indique probablement une position favorable à la taxe.",
-    "argument": "Présenter à ce député que son amendement n° 471, cosigné et rejeté, a déjà montré sa vigilance sur la fiscalité des entreprises, ce qui permet d'aborder les risques de la taxe de 0,5 % sur les holdings patrimoniales.",
+    "position_probable": "A cosigné l'amendement n° 470, adopté (« Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié :1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 470 (« Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié :1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «… »).",
     "chiffres_utilises": [
-      "471",
-      "0.5"
+      "470",
+      "5",
+      "167",
+      "1"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

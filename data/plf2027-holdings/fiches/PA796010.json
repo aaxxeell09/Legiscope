@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:08:36.097Z",
+    "generated_at": "2026-11-14T13:13:00.984Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1172,15 +1172,17 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Frédéric Maillot est probablement contre la mesure, comme en témoignent ses cosignatures sur l'amendement supprimant l'article 3, qui a été adopté, et sa déclaration du 15 octobre 2026 en séance où il annonce la suppression de cet article.",
-    "argument": "Présenter à ce député la suppression de l'article 3 qu'il a cosignée et qui a été adoptée, car il a déclaré en séance le 15 octobre 2026 vouloir supprimer cet article.",
+    "position_probable": "A cosigné l'amendement n° 1816, adopté (« Supprime l'article 3 »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1816 et de sa déclaration du 15 octobre 2026 en séance : « Vous êtes en décalage avec la réalité, notamment avec celle des outre-mer. La preuve ? »",
     "chiffres_utilises": [
+      "1816",
       "3",
-      "2026",
-      "15"
+      "2026-10-15",
+      "15",
+      "2026"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

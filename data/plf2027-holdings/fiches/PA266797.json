@@ -1,0 +1,466 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:13:00.940Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA266797",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de la justice",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national pénitentiaire",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des directeurs pénitentiaires",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "UFAP UNSa Justice",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CGT pénitentiaire",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "FO Justice",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SNEPAP FSU",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat Pénitentiaire des Surveillants non gradés (SPS)",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVII.html",
+      "date": "2026-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction interministérielle de la transformation publique (DITP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE) du ministère de l’Action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des outre-mer (DGOM) du ministère des Outre-mer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Préfecture de Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Rectorat de Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe des instituts du service public (G-ISP)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut régional d’administration de Lille",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de la Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université des Antilles",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Guyane",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Mayotte",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des anciens élèves des IRA (AAEIRA)",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000001",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 3.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000001"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001504",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 3.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001504"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "784668618",
+      "nom": "MOUVEMENT DES ENTREPRISES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668618",
+      "objet": "PLF 2026 : alerter sur les incohérences de la rédaction du projet de taxe sur les holdings patrimoniales par rapport aux objectifs annoncés",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "326943016",
+      "nom": "ASSO FRANCAI ENTREPRIS PRIVEES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=326943016",
+      "objet": "PLF 2026 - TAXE HOLDING SUR LES BIENS SOMPTUAIRES : EXONERER LES OEUVRES D'ART EXPOSEES OU ACQUISES EN VUE D'EXPOSITION AU PUBLIC",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784855876",
+      "nom": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876",
+      "objet": "PLF 2026 : soutenir la sécurisation de la taxe sur les holdings patrimoniales en en limitant l'assiette aux biens dits somptuaires non affectés à une activité professionnelle",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "349889154",
+      "nom": "OXFAM FRANCE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=349889154",
+      "objet": "Inciter à l'instauration d'un impôt plancher sur le patrimoine des ultra-riches (taxe zucman)\n",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "582041943",
+      "nom": "PERNOD RICARD",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=582041943",
+      "objet": "EXPLIQUER EN QUOI L’AUGMENTATION DES TAXES SUR LE PATRIMOINE SERAIENT PREJUDICIABLE EN MATIERE DE SOUVERAINETE ECONOMIQUE POUR DES ENTREPRISES FAMILIALES COMME PERNOD RICARD",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "420077562",
+      "nom": "ASSOCIATION A T T A C",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=420077562",
+      "objet": "Faire adopter au Sénat l'impôt plancher sur la fortune (IPF) / taxe Zucman",
+      "actions": [
+        "transmission d'expertise",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "PLF 2025 : Modifier l'assiette de l'impôt sur la fortune improductive pour en dissocier les fonds monétaires",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "341737062",
+      "nom": "CNP ASSURANCES",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=341737062",
+      "objet": "Projet de loi de finances 2026 (PLF 2026) : expliquer en quoi l'inclusion de l'assurance vie dans l'assiette de l'impôt sur la fortune immobilière serait préjudiciable.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784358970",
+      "nom": "COMITE PROFESSION GALERIE ART",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784358970",
+      "objet": "PLF 2026 : Maintenir un cadre fiscal équitable pour le marché de l'art en France",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "303215016",
+      "nom": "CONFEDERATION DES PETITES ET MOYENNES ENTREPRISES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=303215016",
+      "objet": "PLF 2026 - Supprimer la taxe sur le patrimoine financier des holdings patrimoniales",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "434255329",
+      "nom": "CPME CORREZE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434255329",
+      "objet": "Oeuvrer pour ne pas taxer davantage les holdings ce qui reviendrait à pénaliser l’investissement, la transmission et la solidité du tissu entrepreneurial ",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "552081317",
+      "nom": "ELECTRICITE DE FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=552081317",
+      "objet": "Eviter le risque d’exclusion d'acteurs labélisés RGE détenus par une holding ne pouvant pas avoir cette qualification pour la réalisation de travaux de rénovation énergétique (PPL Cazenave)",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "431853530",
+      "nom": "ESL & NETWORK FRANCE SAS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=431853530",
+      "objet": "PLF 2026 : alerter sur l'impact pour l'épargne d'un amendement visant à transformer l’Impôt sur la Fortune Immobilière (IFI) en Impôt sur le Patrimoine Improductif (IPI)",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784409013",
+      "nom": "FEDERATION FRANCAISE DE L ASSURANCE (FFA)",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784409013",
+      "objet": "PLF 2026 : expliquer en quoi l'inclusion de l'assurance vie dans l'assiette de l'impôt sur la fortune immobilière serait préjudiciable",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "302998554",
+      "nom": "FEDERATION NATIONALE DE LA PROPRIETE PRIVEE RURALE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302998554",
+      "objet": "Projet de loi de finances 2026 et \"impôt sur la fortune improductive\": Exclure de l'IFI les terres agricoles qui sont des biens productifs",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "304426240",
+      "nom": "FEDERATION NATIONALE MUTUALITE FRANCAISE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=304426240",
+      "objet": "PLF 2025* : Empêcher la diminution du taux de réduction des dons déductibles de l’impôt sur la fortune immobilière ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "349165779",
+      "nom": "FRANCE INVEST",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=349165779",
+      "objet": "LF 2026 : Eviter les dispositifs fiscaux entrainant des freins au financement des entreprises via les acteurs du Capital Investissement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "532572112",
+      "nom": "IMAGE 7",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112",
+      "objet": "Défense du régime fiscal de l'apport-cession permettant le report dans le temps des plus-values imposables lorsque les titres sont cédés par la société holding (art 150 OB ter du CGI). ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "945408011",
+      "nom": "INSTITUT NATIONAL BITCOIN",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=945408011",
+      "objet": "Obtenir l'ouverture de la procédure de contrôle des investissements étrangers dans le cadre de la cession d'Exaion à Mara Holdings et la suppression de la clause de non-concurrence imposée à EDF",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "880044755",
+      "nom": "MOBILIS FAMILY OFFICE HOLDIN",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=880044755",
+      "objet": "Expliquer les impacts économiques, juridiques et patrimoniaux de la taxe sur les holdings et contribuer aux échanges sur son évolution afin d’en préserver la cohérence.",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "388522286",
+      "nom": "UI DES COTES D'ARMOR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=388522286",
+      "objet": "S’opposer à une taxation des holdings qui soutiennent l’investissement patrimonial de nos entreprises, afin d’éviter une dépendance accrue vis‑à‑vis de capitaux issus de fonds de pension étrangers.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "W751003603",
+      "nom": "UNION NATIONALE DES PROPRIETAIRES IMMOBILIERS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751003603",
+      "objet": "Transformation de l'IFI en un impôt sur la fortune improductive excluant les biens mis en location",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "777461146",
+      "nom": "UNION PATRONALE DES INDUSTRIES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777461146",
+      "objet": "S’opposer à une taxation des holdings qui soutiennent l’investissement patrimonial de nos entreprises, afin d’éviter une dépendance accrue vis‑à‑vis de capitaux issus de fonds de pension étrangers.",
+      "actions": [
+        "rencontre"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 2,
+    "comptes_rendus_lus": 83
+  },
+  "synthese": {
+    "position_probable": "A cosigné l'amendement n° 1, adopté (« Supprime l'article 3 »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1 (« Supprime l'article 3 »).",
+    "chiffres_utilises": [
+      "1",
+      "3"
+    ],
+    "mode": "gabarit",
+    "modele": null,
+    "verifie": true,
+    "date": "2026-11-14"
+  }
+}
