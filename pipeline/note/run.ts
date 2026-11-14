@@ -163,17 +163,32 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
 
 /** Formulations interdites (rendu final) ou non fondées sur les faits fournis. Renvoie les extraits fautifs. */
 function interdits(texte: string, f: Faits): string[] {
-  const regles: RegExp[] = [
+  const absolus: RegExp[] = [
     /chances? d'adoption/i, /probabilit\S* (que la loi|d'adoption)/i, /influençable/i,
-    /\b\d{1,2} ?h ?\d{2}\b/,
-    /(il faut|il convient d['e]|nous recommandons?|il est recommandé) [^.]*/i, /(rejet|adoption) (probable|improbable|quasi certain)/i, /perspectives? d'adoption/i, /rend\S* (leur|son|sa|un|une) (rejet|adoption)/i, /ciblant [^.]*/i, /sur qui agir ?:[^.]*/i, /en priorité ceux [^.]*/i, /(cibler|consolider) [^.]*/i,
-    /(sera|seront|devrait être) (adopté|rejeté)e?s?/i, /le plus probable à être/i,
+    /\b\d{1,2} ?h ?\d{2}\b/, /(rejet|adoption) (probable|improbable|quasi certain)/i, /perspectives? d'adoption/i,
+    /rend\S* (leur|son|sa|un|une) (rejet|adoption)/i, /(sera|seront|devrait être) (adopté|rejeté)e?s?/i, /le plus probable à être/i, /dans les faits|faits fournis|faits vérifiés/i,
   ];
+  // Conseils : permis seulement s'ils nomment des personnes de la liste fournie (décideurs, députés sur qui agir).
+  const conseils: RegExp[] = [
+    /(il faut|il convient d['e]|nous recommandons?|il est recommandé) [^.]*/i, /ciblant [^.]*/i,
+    /sur qui agir ?:[^.]*/i, /en priorité ceux [^.]*/i, /(cibler|consolider) [^.]*/i,
+  ];
+  const noms = f.phrases
+    .filter((p) => p.startsWith("Députés sur qui agir") || p.startsWith("Ceux qui décident"))
+    .flatMap((p) => p.slice(p.indexOf(":") + 1).replace(/\.$/, "").split(","))
+    .map((n) => n.replace(/\(.*?\)/g, "").trim())
+    .filter((n) => n.length > 3);
   const faits = f.phrases.join(" ").toLowerCase();
-  return regles.flatMap((re) => {
+  const fautes: string[] = [];
+  for (const re of absolus) {
     const m = texte.match(re);
-    return m && !faits.includes(m[0].toLowerCase()) ? [m[0]] : [];
-  });
+    if (m && !faits.includes(m[0].toLowerCase())) fautes.push(m[0]);
+  }
+  for (const re of conseils) {
+    const m = texte.match(re);
+    if (m && !faits.includes(m[0].toLowerCase()) && !noms.some((n) => m[0].includes(n))) fautes.push(m[0]);
+  }
+  return fautes;
 }
 
 function dedoublonnerSources(src: Source[]): Source[] {
