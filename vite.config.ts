@@ -25,6 +25,21 @@ const MIME: Record<string, string> = {
  * Le dossier `data/raw/` (réponses brutes de l'API, volumineux) est retiré de `dist/`.
  */
 function fixturesPlugin(): Plugin {
+  const rejectMissingJson = (root: string) => (req: import("node:http").IncomingMessage, res: import("node:http").ServerResponse, next: () => void) => {
+    const url = (req.url ?? "").split("?")[0] ?? "";
+    if (!url.endsWith(".json") || url.startsWith("/fixtures/")) return next();
+    const rel = normalize(decodeURIComponent(url.slice(1)));
+    if (rel.startsWith("..")) {
+      res.statusCode = 403;
+      res.setHeader("Content-Type", "application/json; charset=utf-8");
+      return res.end(JSON.stringify({ error: "chemin JSON interdit" }));
+    }
+    const file = join(root, rel);
+    if (existsSync(file) && statSync(file).isFile()) return next();
+    res.statusCode = 404;
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
+    return res.end(JSON.stringify({ error: `fichier JSON absent : /${rel}` }));
+  };
   return {
     name: "bascule-fixtures",
     configureServer(server) {
@@ -46,6 +61,10 @@ function fixturesPlugin(): Plugin {
         res.setHeader("Cache-Control", "no-store");
         createReadStream(file).pipe(res);
       });
+      server.middlewares.use(rejectMissingJson(dataDir));
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use(rejectMissingJson(outDir));
     },
     closeBundle() {
       if (existsSync(fixturesDir)) {
