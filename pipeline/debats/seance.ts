@@ -149,7 +149,8 @@ export async function lireSeances(dossier: DossierConfig, log: (s: string) => vo
     const xml = readFileSync(f, "utf8");
     const meta = metadonnees(xml);
     if (!meta) continue;
-    if (dossier.date_reference && meta.date > dossier.date_reference) continue;
+    // date_reference est lue comme le matin de ce jour : une séance datée de ce jour n'est pas encore connue.
+    if (dossier.date_reference && meta.date >= dossier.date_reference) continue;
     const plat = sansAccents(xml);
     if (marquePLF && !plat.includes(marquePLF)) continue;
     scannees += 1;

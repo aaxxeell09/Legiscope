@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:01:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés petits colis, colis, franchise douanière ou article 22 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du 2025-11-19 (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/petits-colis/groupes-action.json et data/petits-colis/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA841955",
+  "debats": [
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Je suis surpris par cette proposition des Républicains visant à instaurer une taxe de 25 euros par colis, dont le seul effet réel serait de pénaliser le secteur de la logistique en France. L’objectif recherché par l’amendement est louable, mais il faut trouver un autre moyen de l’atteindre.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Par ailleurs, nous oublions l’importance des accords postaux, établis dans le cadre de l’Union postale universelle et qui impliquent le subventionnement de l’importation de produits venus de nombreux pays – parmi lesquels la Chine jusqu’en 2019 – par l’intermédiaire des tarifs terminaux de La Poste. Cette aide au développement qui ne dit pas son nom pourrait aussi être remise en cause.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Enfin, il serait judicieux de réfléchir à l’introduction d’une nouvelle catégorie de pratiques anticoncurrentielles – en plus de l’entente et de l’abus de position dominante – concernant ces produits importés par colis. En effet, nombre d’entre eux sont des malfaçons et ne respectent pas nos normes.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

@@ -134,7 +134,7 @@ export async function lireCommission(dossier: DossierConfig, log: (s: string) =>
       log(`commission ${uidCommission(session, n)} : date introuvable, ignorée`);
       continue;
     }
-    if (date > limite) {
+    if (date >= limite) { // réunion du jour de référence ou après : pas encore connue ce matin-là
       tropTard += 1;
       if (tropTard >= 8) break;
       continue;

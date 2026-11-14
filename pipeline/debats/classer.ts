@@ -212,7 +212,13 @@ export async function regrouper(
   elements: { argument: string; citation: string }[],
   log: (s: string) => void,
 ): Promise<Groupe[] | null> {
-  if (!cleDisponible() || elements.length < 2) return null;
+  if (elements.length < 2) return null;
+  // Cache par contenu : une relance sans nouvelle intervention rend le même regroupement.
+  const fc = fichierCache(dossier.id);
+  const cle = `groupes#${camp}#${Bun.hash(JSON.stringify(elements.map((e) => e.argument + "|" + e.citation))).toString(16)}`;
+  const cache: Record<string, unknown> = existsSync(fc) ? JSON.parse(readFileSync(fc, "utf8")) : {};
+  if (cle in cache) return cache[cle] as Groupe[];
+  if (!cleDisponible()) return null;
   const system = [
     `Tu regroupes des arguments entendus dans un débat parlementaire, tous ${camp === "pour" ? "en faveur de" : "contre"} la mesure : ${dossier.mesure.label}.`,
     "Deux arguments vont dans le même groupe s'ils avancent la même raison (même idée, même mécanisme), même formulés différemment. Un argument qui ne ressemble à aucun autre forme un groupe seul.",
@@ -244,6 +250,9 @@ export async function regrouper(
         groupes.push({ argument: g.argument.trim() || elements[meilleure].argument, membres, meilleure });
       }
       for (let i = 0; i < elements.length; i++) if (!vus.has(i)) groupes.push({ argument: elements[i].argument, membres: [i], meilleure: i });
+      const frais: Record<string, unknown> = existsSync(fc) ? JSON.parse(readFileSync(fc, "utf8")) : {};
+      frais[cle] = groupes;
+      writeFileSync(fc, JSON.stringify(frais, null, 2));
       return groupes;
     } catch (e) {
       log(`regroupement ${camp} : ${String(e).slice(0, 160)}`);
