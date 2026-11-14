@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:17:56Z",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      }
+    ],
+    "limits": "amendements sans prédiction Orcet exclus des comptes ; députés à approcher pas encore disponibles.",
+    "producer": "pipeline/note",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "client": "U2P",
+  "objectifs": [
+    {
+      "rang": 1,
+      "texte": "Maintenir les aides à l'embauche d'apprentis à leur niveau de 2026",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 2,
+      "texte": "Limiter la baisse aux grandes entreprises",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 3,
+      "texte": "Reporter la baisse à 2028",
+      "position_cible": "contre"
+    }
+  ],
+  "texte": "Verdict proposé : l'objectif principal de maintenir les aides à l'embauche d'apprentis à leur niveau de 2026 est incertain, avec 51 % des sièges favorables à l'objectif et une tendance stable. Au Sénat, 7 groupes sont contre la mesure, mais le gouvernement la porte et 4 groupes la soutiennent. L'amendement de suppression de l'article 88 déposé par le groupe SOC joue pour le client. Sur 24 amendements du sujet dotés d'une prédiction, 24 sont en attente. Orcet prédit en moyenne 35 % de votes pour l'amendement n° 1500 (SOC), qui supprime l'article 88. La dernière occasion d'agir est l'examen au Sénat, avant le retour du texte à l'Assemblée. Les étapes suivantes sont la commission mixte paritaire puis la nouvelle lecture à l'Assemblée. Députés sur qui agir en priorité : non disponibles. Limites : amendements sans prédiction Orcet exclus des comptes ; députés à approcher pas encore disponibles.",
+  "chiffres_utilises": [
+    "0.51",
+    "2026",
+    "51",
+    "4",
+    "7",
+    "88",
+    "24",
+    "0.35",
+    "35",
+    "1500"
+  ],
+  "sources": [
+    {
+      "label": "Amendement n° 1500",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001500"
+    },
+    {
+      "label": "Texte du projet de loi",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    },
+    {
+      "label": "Amendement n° 94",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000094"
+    },
+    {
+      "label": "Examen au Sénat : prochaine occasion d'obtenir la suppression ou la réduction de la mesure, avant le retour du texte à l'Assemblée",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+    },
+    {
+      "label": "Commission mixte paritaire",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    }
+  ],
+  "limites": "amendements sans prédiction Orcet exclus des comptes ; députés à approcher pas encore disponibles.",
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
+  "verifie": true
+}
