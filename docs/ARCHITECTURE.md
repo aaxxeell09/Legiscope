@@ -2,7 +2,7 @@
 
 LegiSpot est un tableau de bord pour cabinets d'affaires publiques : un tableau par dossier (client, sujet, mesure suivie, objectifs hiérarchisés), lu en cinq blocs (Verdict, Nouveautés, Suite, Action, Compte rendu). Le dépôt s'appelle « Legiscope ». Projet construit le 14 novembre 2026 au Hackathon Open Data (swanbase et Hémicycle, Paris).
 
-Ce document décrit le code et les données tels qu'ils ont été lus le 14 novembre 2026 vers 17 h. Chaque chemin cité existe dans le dépôt. Les organisations clientes affichées (Alibaba France, Afep, U2P, FNSEA, Union sociale pour l'habitat, CAPEB) sont illustratives : aucune n'est cliente du projet.
+Ce document décrit les règles, les chemins et les mécanismes du dépôt. Chaque chemin cité existe. Les valeurs qui changent avec les données (comptes par dossier, mode de rédaction, résultats des commandes de contrôle) n'y figurent pas : elles sont dans [docs/ETAT.md](ETAT.md), généré par `node docs/mesurer.mjs`. Les organisations clientes affichées (Alibaba France, Afep, U2P, FNSEA, Union sociale pour l'habitat, CAPEB) sont illustratives : aucune n'est cliente du projet.
 
 Principe : pas de serveur applicatif. Des scripts produisent des fichiers JSON, des schémas Zod les décrivent, un site statique les lit.
 
@@ -10,14 +10,15 @@ Principe : pas de serveur applicatif. Des scripts produisent des fichiers JSON, 
 
 | Dossier ou fichier | Rôle |
 |---|---|
-| `pipeline/` | Scripts TypeScript lancés avec Bun, un sous-dossier par étape. `pipeline/lib/` contient le client Featherless (`llm.ts`) et le vérificateur de nombres (`verif.ts`) |
-| `data/` | Sortie du pipeline, lue par le front : `config.json`, `groupes.json`, `deputes.json`, `cohesion.json`, puis un sous-dossier par dossier. `data/raw/` (archives et réponses brutes) est exclu par `.gitignore` |
+| `pipeline/` | Scripts TypeScript lancés avec Bun, un sous-dossier par étape. `pipeline/lib/` contient le client Featherless (`llm.ts`) et le vérificateur de nombres (`verif.ts`). `pipeline/publication.mjs` (Node) scelle les dossiers produits |
+| `data/` | Sortie du pipeline, lue par le front : `config.json`, `groupes.json`, `deputes.json`, `cohesion.json`, puis un sous-dossier par dossier, chacun avec son sceau `publication.json`. `data/raw/` (archives et réponses brutes) est exclu par `.gitignore` |
 | `contracts/` | Schémas Zod (`contracts/schemas/*.ts`, 21 fichiers), point d'entrée `contracts/index.ts` (map `SCHEMAS`, fonction `dataPath`), jeu d'exemple `contracts/fixtures/` produit par `contracts/generer-fixtures.ts` |
 | `web/` | Front : Vite, React, react-router, Recharts. Configuration dans `vite.config.ts` à la racine |
 | `qa/` | Validation : `check.ts`, `croise.ts`, `verif.ts`, `verif.test.ts` |
 | `prompts/`, `status/`, `demo/` | Consignes des sessions de construction, journaux d'avancement, supports de démonstration |
 | `.interface-design/` | Notes de conception de l'interface (`system.md`) |
-| `dist/` | Sortie de `bun run build`, exclue par `.gitignore` |
+| `dist/` | Sortie de `npm run build`, exclue par `.gitignore` |
+| `vercel.json`, `.vercelignore` | Déploiement statique sur Vercel : installation et build avec Bun, sortie `dist/`, réécriture des routes vers `index.html` ; `data/raw/` est exclu de l'envoi. `status/P0.md` (17 h 15) consigne une mise en production sur https://bascule-two.vercel.app |
 | `.env.example` | Deux clés : `HEMICYCLE_API_KEY`, `FEATHERLESS_API_KEY`. Elles ne servent qu'à régénérer les données |
 
 `data/config.json` déclare six dossiers : `petits-colis` (état `clos`, `date_reference` 2025-11-19, dossier de démonstration), `plf2027-holdings`, `plf2027-apprentissage`, `plf2027-agriculture`, `plf2027-logement`, `plf2027-renovation`. Chaque entrée porte `client`, `mesure`, `objectifs` (rangs 1 à 3), `sujet.mots_cles`, `texte_id`.
@@ -40,6 +41,8 @@ flowchart TD
   J[("data/*.json<br/>data/&lt;dossier&gt;/*.json")]
   K["contracts/<br/>schémas Zod"]
   Q["Validation<br/>qa/check.ts, qa/croise.ts"]
+  P["Publication<br/>pipeline/publication.mjs"]
+  S[("data/&lt;dossier&gt;/publication.json<br/>sceau SHA-256")]
   W["web/<br/>React"]
   OD --> C
   HV --> C
@@ -56,17 +59,20 @@ flowchart TD
   A --> J
   J --> Q
   K --> Q
+  Q -- "dossier validé" --> P
+  P --> S
+  S -. "vérifié avant vite build" .-> W
   J --> W
   K --> W
 ```
 
-Place d'Orcet. Orcet n'est appelé que dans `pipeline/collecte/api.ts` (et dans le script de test `pipeline/collecte/orcet-test.ts`) : un `POST /orcet/predictions` par amendement en attente, avec un plafond par dossier (`ORCET_MAX`, 25 par défaut). La réponse est écrite dans `data/raw/<dossier>/orcet/<id>.json`. Elle est relue par `pipeline/pivots/definitif.ts` (`predictionOrcet`, qui recopie `moyenne_probabilites_pour` dans `texte.json`, clé `amendements[].prediction.proba_pour`) et par `pipeline/pivots/verdict.ts` (`orcetMoyen`). `pipeline/suite/run.ts` reprend ensuite la valeur depuis `texte.json` (`probables[].proba`). Cette valeur est la moyenne des probabilités individuelles de voter pour un amendement. Ce n'est jamais une probabilité d'adoption d'une loi.
+Place d'Orcet. Orcet n'est appelé que dans `pipeline/collecte/api.ts` (et dans le script de test `pipeline/collecte/orcet-test.ts`) : un `POST /orcet/predictions` par amendement en attente, avec un plafond par dossier (`ORCET_MAX`, 25 par défaut). La réponse est écrite dans `data/raw/<dossier>/orcet/<id>.json`. Elle est relue par `pipeline/pivots/definitif.ts` (`predictionOrcet`, qui recopie `moyenne_probabilites_pour` dans `texte.json`, clé `amendements[].prediction.proba_pour`) et par `pipeline/pivots/verdict.ts` (`orcetMoyen`). `pipeline/suite/run.ts` reprend ensuite la valeur depuis `texte.json` (`probables[].proba`). Cette valeur est la moyenne des probabilités individuelles de voter pour un amendement. Ce n'est jamais une probabilité d'adoption d'une loi. Quand des amendements en attente qui portent la position du client ont une prédiction, leur moyenne entre pour 30 % dans le score du verdict de l'objectif principal (section 4). Dans l'interface, Orcet n'apparaît que dans le bloc Suite (section repliée « Scénarios documentés ») et dans les « Fondements » du Verdict. Le composant `web/src/components/Proba.tsx` n'est importé par aucune vue. Les comptes de prédictions par dossier sont dans [docs/ETAT.md](ETAT.md).
 
 Place de Featherless. `pipeline/lib/llm.ts` est un client compatible OpenAI (paquet `openai`, adresse `https://api.featherless.ai/v1`), modèle `Qwen/Qwen3.8-27B` par défaut (variable `FEATHERLESS_MODEL`). Il est appelé par les étapes d'analyse, jamais par le front. Le front ne fait que deux types de requêtes : `config.json` et les fichiers de données (`web/src/lib/config.tsx`, `web/src/lib/data.ts`).
 
 ## 3. Étapes du pipeline
 
-Une étape par sous-dossier de `pipeline/`, lancée par le script du même nom dans `package.json` (`bun run <étape>`, soit `bun pipeline/<étape>/run.ts`). `<d>` désigne `data/<dossier>`.
+Une étape par sous-dossier de `pipeline/`, lancée par le script du même nom dans `package.json` (`bun run <étape>`, soit `bun pipeline/<étape>/run.ts`). La dernière étape, la publication, est le script `publish:data` (`node pipeline/publication.mjs`). `<d>` désigne `data/<dossier>`.
 
 | Étape | Lit | Écrit | Modèle de langage |
 |---|---|---|---|
@@ -79,13 +85,15 @@ Une étape par sous-dossier de `pipeline/`, lancée par le script du même nom d
 | `fiches` | `texte`, `pivots`, `etat`, `hatvp`, `groupes-action`, `arguments`, et les dossiers `auditions/`, `debats/`, `amendements/` | `<d>/fiches/<PA>.json`, `<d>/fiches/index.json`, `<d>/nouveautes.json`, `<d>/action.json` | Oui : synthèse de chaque fiche et contre-arguments (`lib/redaction.ts`). Option `--gabarit` : aucun appel |
 | `suite` | `data/cohesion.json`, `<d>/texte.json`, `<d>/etat.json`, archives des dossiers législatifs et de l'agenda | `<d>/suite.json` | Non |
 | `note` | `<d>/verdict.json`, `suite.json`, `texte.json`, `nouveautes.json`, `etat.json`, chacun validé par son schéma | `<d>/note.json` | Oui : rédaction du compte rendu, puis garde-fous propres à la note (deux relances au plus, sinon gabarit) |
+| `publish:data` | Dix fichiers par dossier : `verdict`, `nouveautes`, `suite`, `action`, `note`, `etat`, `texte`, `pivots`, `hatvp`, `fiches/index` | `<d>/publication.json` | Non |
 
 Précisions vérifiées dans le code :
 
 - `pipeline/collecte/run.ts` enchaîne `groupes-deputes.ts`, `scrutins-opendata.ts`, `amendements-opendata.ts`, `dossiers-opendata.ts`, `hatvp.ts`, `api.ts`. `api.ts` s'arrête sans erreur si `HEMICYCLE_API_KEY` est vide. `lib/hemicycle.ts` compte les crédits et arrête la collecte sous un plancher de 150.
 - `api.ts` collecte aussi les agrégats `accord-groupes` et `loyaute-deputes` dans `data/raw/`. Aucun autre script de `pipeline/` ne les relit : la cohésion et la loyauté sont recalculées à partir des scrutins de l'open data.
 - Le script `verdict` de `package.json` lance le même fichier que `pivots`. `pipeline/verdict/` et `pipeline/action/` ne contiennent que des consignes et des gabarits (`prompts/*.md`).
-- Aucun script n'enchaîne toutes les étapes. L'ordre découle des lectures ci-dessus, avec deux retours : `pivots` relit `arguments.json` (produit par `debats`) et `nouveautes.json` (produit par `fiches`). Le relancer après ces deux étapes complète le classement des députés et la cause du changement du verdict.
+- Aucun script n'enchaîne les étapes de production. L'ordre découle des lectures ci-dessus, avec deux retours : `pivots` relit `arguments.json` (produit par `debats`) et `nouveautes.json` (produit par `fiches`). Le relancer après ces deux étapes complète le classement des députés et la cause du changement du verdict. `publish:data` ne produit aucune donnée : il vient après toutes les autres étapes.
+- Publication (`pipeline/publication.mjs`). Pour chaque dossier de `data/config.json`, le script lance `qa/check.ts --root data --dossier <id>`, puis écrit `data/<dossier>/publication.json` : pour chacun des dix fichiers, l'empreinte SHA-256, `generated_at` et `producer`. Un dossier dont la validation échoue n'est pas scellé. Avec `--check`, le script n'écrit rien : il recalcule les empreintes et sort en code 1 si un fichier scellé a changé ou manque, ou si un dossier complet n'a pas de sceau. `npm run build` et `bun run check` lancent ce contrôle. Toute modification d'un fichier scellé demande donc un nouveau `bun run publish:data` avant le build.
 - Dossier rejoué : quand `date_reference` est posée, `coupure()` (`pipeline/pivots/lib/sujet.ts`) garde les dépôts datés au plus tard ce jour-là, et les sorts, scrutins et séances datés strictement avant.
 - Plusieurs étapes se replient sur `contracts/fixtures/config.json` quand `data/config.json` manque.
 
@@ -113,8 +121,9 @@ Repli sur gabarit. `redigerVerifie` (`pipeline/lib/llm.ts`) fait jusqu'à trois 
 - Emplacement : un schéma par type de fichier dans `contracts/schemas/`, exportés par `contracts/index.ts` avec les types inférés, la map `SCHEMAS` (nom logique vers schéma) et `dataPath(dossierId, kind, pa?, root?)`.
 - Usage côté pipeline : plusieurs étapes valident ce qu'elles écrivent (`note` avec `NoteSchema`, `fiches` qui relit chaque fichier écrit, `suite`, `cohesion`).
 - Usage côté front : `vite.config.ts` déclare le module virtuel `virtual:contracts` (plugin `contractsPlugin`). Si `contracts/index.ts` existe, le module le réexporte et pose `CONTRACTS_PRESENT = true`. Sinon il n'exporte que `CONTRACTS_PRESENT = false`. `web/src/lib/contracts.ts` y cherche le schéma d'un type (`<Kind>Schema` ou `SCHEMAS[kind]`) et refuse toute donnée sans schéma. Les types sont importés par l'alias `@contracts/index`.
-- Bloc `meta` (`contracts/schemas/meta.ts`), présent dans chaque fichier : `generated_at`, `sources` (liste de `label` et `url`), `limits`, `producer`, `dossier_id` (null pour les fichiers de la racine).
-- Bloc `preuve` (`contracts/schemas/preuve.ts`), porté par chaque élément affiché : `sources` (au moins une), `raisonnement`, `nature`. La nature vaut `fait` (publié), `deduction` (lecture de l'outil) ou `inconnue`. Le composant `web/src/components/Pourquoi.tsx` l'affiche.
+- Bloc `meta` (`contracts/schemas/meta.ts`), présent dans chaque fichier décrit par un schéma : `generated_at`, `sources` (liste de `label` et `url`), `limits`, `producer`, `dossier_id` (null pour les fichiers de la racine).
+- Bloc `preuve` (`contracts/schemas/preuve.ts`) : `sources` (au moins une), `raisonnement`, `nature`. La nature vaut `fait` (publié), `deduction` (lecture de l'outil) ou `inconnue`. Cinq schémas l'utilisent : `action`, `etat`, `suite`, `verdict`, `nouveautes`. Le composant `web/src/components/Pourquoi.tsx` l'affiche. Les amendements de la Base, la note et les données HATVP n'ont pas de bloc `preuve` : ils portent une URL ou une liste de sources.
+- `publication.json` n'a pas de schéma Zod. Son format est défini et contrôlé par `pipeline/publication.mjs`.
 - Règles portées par les schémas : dates ISO, probabilités entre 0 et 1, `accord` null si et seulement si `n_scrutins` vaut 0 (`cohesion.ts`), un seul objectif et un seul verdict de rang 1 (`config.ts`, `verdict.ts`). La règle « `mode: "gabarit"` implique `modele: null` » est contrôlée par `qa/check.ts`, pas par un schéma.
 
 ## 6. Chargement côté React
@@ -145,21 +154,24 @@ Routes de `web/src/App.tsx` :
 | Route | Vue | Fichiers chargés par `useData` |
 |---|---|---|
 | `/` | redirection vers `/dossier/<dossier_demo>` | aucun |
-| `/dossier/:id` | `web/src/views/dossier/index.tsx` et les cinq blocs de `web/src/views/blocs/` | `etat`, `verdict`, `nouveautes`, `suite`, `action`, `fiches/index`, `note` ; `cohesion` et `groupes` pour la courbe |
+| `/dossier/:id` | `web/src/views/dossier/index.tsx` et les cinq blocs de `web/src/views/blocs/` | Verdict : `verdict`, plus `cohesion` et `groupes` pour la courbe. Nouveautés : `nouveautes`. Suite : `suite`. Action : `action` et `fiches/index`. Compte rendu : `note` |
 | `/dossier/:id/depute/:pa` | `web/src/views/depute/index.tsx` | `fiches/index`, `action`, `fiches/<pa>`, `deputes`, `groupes` |
 | `/dossier/:id/base` | `web/src/views/base/index.tsx` | `etat`, `texte`, `groupes`, `deputes` |
-| `/sources` | `web/src/views/sources/index.tsx` | aucun : liste fixe de quatre liens officiels |
+| `/sources` | `web/src/views/sources/index.tsx` | aucun : liste fixe de liens institutionnels, écrite dans le composant |
 
-Le repli sur `contracts/fixtures/` se décide une fois, au niveau de `config.json`. En mode `live`, un fichier absent ou invalide donne un message d'erreur dans le bloc concerné (`web/src/components/Etat.tsx`), et chaque bloc est isolé par un `ErrorBoundary`. Recharts n'est utilisé que dans `web/src/views/blocs/verdict/Tendance.tsx`. La barre du haut affiche `config.produit.nom`, « LegiSpot » à défaut (`web/src/components/TopBar.tsx`).
+Le repli sur `contracts/fixtures/` se décide une fois, au niveau de `config.json`. En mode `live`, un fichier absent ou invalide donne un message d'erreur dans le bloc concerné (`web/src/components/Etat.tsx`), et chaque bloc est isolé par un `ErrorBoundary`. Recharts n'est utilisé que dans `web/src/views/blocs/verdict/Tendance.tsx`. La barre latérale affiche `config.produit.nom`, « LegiSpot » à défaut (`web/src/components/TopBar.tsx`, élément `aside`).
 
 ## 7. Contrôles
 
-- `qa/check.ts` (`bun run check`) : valide chaque fichier contre son schéma, puis l'intégrité croisée. Sans option il contrôle `data/` et `contracts/fixtures/`. Il vérifie que `meta.dossier_id` égale le dossier du chemin, que tout `groupe_id` existe dans `groupes.json` et tout identifiant de député dans `deputes.json`, que les sous-dossiers présents sont ceux de `config.dossiers`, que chaque pivot a ses fichiers `auditions`, `debats`, `amendements` et une fiche (sauf s'il est listé dans `absents`), que la fiche reprend à l'identique ces trois fichiers et `hatvp.json`, que `note.client` et `note.objectifs` égalent la configuration, qu'il y a un verdict par objectif et que `cause_du_changement.evenement_id` existe dans `nouveautes.json`. Avec une `date_reference` : aucun événement, sort, scrutin ou intervention postérieur, aucune échéance déjà passée. Il repasse enfin le vérificateur sur chaque texte rédigé contre son champ `chiffres_utilises`. Sortie : une ligne `fichier | champ | valeur | message` par erreur, code 1 s'il y en a.
-- `qa/croise.ts` (appelé par `check.ts`) : un même fait a la même valeur partout. Sort et nature d'un amendement (référence `texte.json`), groupe d'un député (référence `deputes.json`), aucun député sans fondement hors de `position_inconnue`, situation et score de l'objectif principal repris dans le texte de la note (référence `verdict.json`), cohérence de `etat.json`.
+- `qa/check.ts` : valide des fichiers contre leur schéma, puis l'intégrité croisée. Options : `--root` (une ou plusieurs racines séparées par des virgules) et `--dossier` (un ou plusieurs dossiers). Sans option il contrôle `data/` et `contracts/fixtures/`. Portée : les quatre fichiers de la racine, les douze fichiers principaux de chaque dossier, et les fichiers par député (`auditions`, `debats`, `amendements`, fiche) des seuls députés listés dans `pivots.json`. Il ne valide donc pas chaque JSON de `data/` : les fichiers des autres députés suivis et les `publication.json` ne passent par aucun schéma. Il vérifie que `meta.dossier_id` égale le dossier du chemin, que tout `groupe_id` existe dans `groupes.json` et tout identifiant de député dans `deputes.json`, que les sous-dossiers présents sont ceux de `config.dossiers`, que chaque pivot a ses fichiers `auditions`, `debats`, `amendements` et une fiche (sauf s'il est listé dans `absents`), que la fiche reprend à l'identique ces trois fichiers et `hatvp.json`, que `note.client` et `note.objectifs` égalent la configuration, qu'il y a un verdict par objectif et que `cause_du_changement.evenement_id` existe dans `nouveautes.json`. Avec une `date_reference` : aucun événement, sort, scrutin ou intervention postérieur, aucune échéance déjà passée. Il repasse enfin le vérificateur sur chaque texte rédigé contre son champ `chiffres_utilises`. Sortie : une ligne `fichier | champ | valeur | message` par erreur, code 1 s'il y en a.
+- `qa/croise.ts` (appelé par `check.ts`, sans ligne de commande propre) : un même fait a la même valeur partout. Sort et nature d'un amendement (référence `texte.json`), groupe d'un député (référence `deputes.json`), aucun député sans fondement hors de `position_inconnue`, cohérence de `etat.json`. Pour la note : le texte doit contenir un mot qui correspond à la situation de l'objectif principal (référence `verdict.json`). Le score n'est comparé à celui du verdict que si la note cite un pourcentage « des sièges » ; une note qui ne cite aucun pourcentage passe ce contrôle.
+- Sceau de publication : `node pipeline/publication.mjs --check` compare les dix fichiers scellés de chaque dossier à `publication.json` (section 3).
+- `bun run check` enchaîne `bun qa/check.ts` et le contrôle du sceau. `npm run build` lance le contrôle du sceau, puis `vite build`.
 - `qa/verif.ts` : réexport de `pipeline/lib/verif.ts`, pour que le pipeline et le contrôle utilisent le même vérificateur.
-- Tests : `qa/verif.test.ts` (10 tests du vérificateur, lancés par `bun run test`) et `pipeline/lib/llm.test.ts` (9 tests de `redigerVerifie` et `appelStructure`, lancés par `bun test pipeline/lib`). `bun run typecheck` lance `tsc --noEmit`.
+- Tests : `bun test` lance 19 tests dans deux fichiers, `qa/verif.test.ts` (10 tests du vérificateur) et `pipeline/lib/llm.test.ts` (9 tests de `redigerVerifie` et `appelStructure`). `bun run test` ne lance que ceux de `qa/`. `npm run typecheck` lance `tsc --noEmit`.
+- Limites : aucun test automatique ne porte sur la règle du verdict ni sur le rattachement des amendements à la mesure. Ces deux calculs ne sont couverts que par les contrôles de cohérence ci-dessus.
 
-Relevé du 14 novembre 2026 vers 17 h, sur cette copie : les deux jeux de tests passent, `tsc --noEmit` sort sans erreur, `bun qa/check.ts --root contracts/fixtures` valide 72 fichiers. `bun qa/check.ts --root data` signale 56 erreurs, aucune sur `petits-colis` ni `plf2027-holdings`. Elles portent sur `plf2027-logement` et `plf2027-renovation` (pas encore de `action.json`, `nouveautes.json` ni `fiches/`), et sur le score absent du texte de trois notes.
+Les résultats de ces commandes sur l'état livré ne sont pas recopiés ici. Ils sont mesurés dans [docs/ETAT.md](ETAT.md), généré par `node docs/mesurer.mjs`.
 
 ## 8. Exemple de bout en bout : l'amendement n° 4086 du Gouvernement (dossier `petits-colis`)
 
@@ -168,15 +180,16 @@ Relevé du 14 novembre 2026 vers 17 h, sur cette copie : les deux jeux de tests 
 3. Structure normalisée. `chargerAmendements` (`pipeline/pivots/lib/opendata.ts`) produit le type `AmdtC` (`id`, `numero`, `typeAuteur`, `article`, `dispositif`, `expose`, `dateDepot`, `dateSort`, `sort`). `amendementsDuSujet` (`pipeline/pivots/lib/sujet.ts`) y ajoute `sens`, `sens_raison`, `sur_mesure`, `pertinent`.
 4. Analyse. `construireTexte` (`pipeline/pivots/definitif.ts`) traduit `typeAuteur: "Gouvernement"` en `auteur_type: "gouvernement"` et `auteur_id: "GOUVERNEMENT"`. `sortUnifie` applique la règle du dossier rejoué : le sort est daté du 19 novembre 2025, jour de la `date_reference`, donc il n'est pas encore connu ce matin-là et l'amendement reste `en_attente`, bien que la source le donne adopté.
 5. Fichiers JSON où il apparaît :
-   - `data/petits-colis/texte.json`, tableau `amendements`, entrée dont `numero` vaut `"4086"` (index 76 à la lecture) : `sort: "en_attente"`, `nature: "autre"`, `nature_mode: "defaut"`, `prediction: null`.
-   - `data/petits-colis/nouveautes.json`, `evenements[0]` : `id: "ev-4086"`, `type: "amendement_depose"`, `importance: 3`, `effet: "affaiblit"`, `objectif_rang: 1`, `preuve.nature: "deduction"`. Produit par `pipeline/fiches/lib/nouveautes.ts`.
-   - `data/petits-colis/verdict.json`, `verdicts[0].bloquant[1]` (« Le gouvernement a déposé l'amendement n° 4086 sur l'article 22 ») et `verdicts[0].cause_du_changement.evenement_id: "ev-4086"`. Produit par `pipeline/pivots/verdict.ts`.
-   - `data/petits-colis/suite.json`, `probables[2]` : `proba: null`, le titre précise qu'il n'y a pas de prédiction Orcet à cette date. Produit par `pipeline/suite/run.ts`.
-   - `data/petits-colis/note.json` : le numéro est cité dans `texte`, figure dans `chiffres_utilises`, et l'amendement est en `sources[1]`. Champs `mode: "llm"`, `modele: "Qwen/Qwen3.8-27B"`, `verifie: true`.
-6. Contrôle. `qa/check.ts` vérifie pour ce cas que `ev-4086` existe dans `nouveautes.json`, que l'amendement n'est pas déposé après la date de référence, qu'un sort daté de ce jour reste `en_attente`, et que 4086 figure dans les `chiffres_utilises` de la note.
+   - `data/petits-colis/texte.json`, tableau `amendements`, entrée dont `numero` vaut `"4086"` : `auteur_type: "gouvernement"`, `date_depot: "2025-11-19"`, `sort: "en_attente"`, `nature: "autre"`, `nature_mode: "defaut"`, `prediction: null`. L'entrée ne porte pas de `date_sort`.
+   - `data/petits-colis/nouveautes.json`, tableau `evenements`, entrée d'identifiant `ev-depot-4086` : `type: "amendement_depose"`, `importance: 3`, `effet: "affaiblit"`, `objectif_rang: 1`, `preuve.nature: "deduction"`. Produit par `pipeline/fiches/lib/nouveautes.ts`. La forme `ev-depot-<numéro>` des identifiants de dépôt a été généralisée aux fichiers existants par `pipeline/migrations/stabiliser-ids-evenements.mjs`.
+   - `data/petits-colis/verdict.json`, verdict dont `objectif_rang` vaut 1 : une entrée de `bloquant` (« Le gouvernement a déposé l'amendement n° 4086 sur l'article 22 ») et `cause_du_changement.evenement_id: "ev-depot-4086"`. Produit par `pipeline/pivots/verdict.ts`.
+   - `data/petits-colis/suite.json`, tableau `probables`, entrée dont le titre cite le n° 4086 : `proba: null`, le titre précise qu'il n'y a pas de prédiction Orcet à cette date. Produit par `pipeline/suite/run.ts`.
+   - `data/petits-colis/note.json` : le numéro est cité dans `texte`, figure dans `chiffres_utilises`, et `sources` contient une entrée de libellé « Amendement n° 4086 ». Les champs `mode`, `modele` et `verifie` disent comment le texte a été produit.
+   - `data/petits-colis/publication.json` : les cinq fichiers ci-dessus font partie des fichiers scellés.
+6. Contrôle. `qa/check.ts` vérifie pour ce cas que `ev-depot-4086` existe dans `nouveautes.json`, que l'amendement n'est pas déposé après la date de référence, et que le nombre 4086, cité dans le texte de la note, figure dans ses `chiffres_utilises`. Sa règle « un sort daté du jour de référence reste `en_attente` » ne joue que sur une entrée qui porte `date_sort`, ce qui n'est pas le cas ici : pour cet amendement, la règle est appliquée en amont par `sortUnifie`. `node pipeline/publication.mjs --check` vérifie ensuite que ces fichiers n'ont pas changé depuis le sceau.
 7. Affichage :
    - `/dossier/petits-colis/base` : `web/src/views/base/index.tsx` charge `texte.json` et rend une ligne du tableau (numéro en lien vers la page de l'Assemblée, auteur « Gouvernement », résumé, nature).
    - `/dossier/petits-colis`, bloc Nouveautés : `web/src/views/blocs/nouveautes/index.tsx` affiche l'événement avec la marque « Prioritaire », son effet, et le bouton `Pourquoi` qui ouvre la preuve.
    - Bloc Verdict : `web/src/views/blocs/verdict/index.tsx` l'affiche dans la colonne « Ce qui coince » et dans la ligne de cause du changement.
-   - Bloc Suite : `web/src/views/blocs/suite/index.tsx` l'affiche parmi les scénarios, avec « Sans indicateur » puisque `proba` vaut null.
+   - Bloc Suite : `web/src/views/blocs/suite/index.tsx` l'affiche dans la section repliée « Scénarios documentés », avec « Sans indicateur » puisque `proba` vaut null.
    - Bloc Compte rendu : `web/src/views/blocs/compte-rendu/index.tsx` affiche le texte de la note.
