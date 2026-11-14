@@ -1,8 +1,8 @@
 # LegiSpot
 
-**Le tableau de bord parlementaire des cabinets d'affaires publiques : une mesure, un client, des objectifs, et la preuve de chaque analyse.**
+**Le tableau de bord parlementaire des cabinets d'affaires publiques : une mesure, un client, des objectifs, et des analyses sourcées.**
 
-LegiSpot transforme les données ouvertes du Parlement en un tableau de bord par dossier. Un dossier, c'est un client, la mesure législative qui le touche et ses objectifs classés par priorité. Le consultant y lit où en est la mesure, ce qui vient de changer, ce qui arrive, sur qui agir et ce qu'il peut écrire à son client. Chaque information renvoie à sa source officielle ou au raisonnement qui l'a produite.
+LegiSpot transforme les données ouvertes du Parlement en un tableau de bord par dossier. Un dossier, c'est un client, la mesure législative qui le touche et ses objectifs classés par priorité. Le consultant y lit où en est la mesure, ce qui vient de changer, ce qui arrive, sur qui agir et ce qu'il peut écrire à son client. Les analyses portent leur preuve : la source officielle, ou le raisonnement suivi quand il s'agit d'une déduction.
 
 Projet construit le 14 novembre 2026 pendant le Hackathon Open Data (swanbase et Hémicycle, Paris). Nom du produit : LegiSpot. Nom du dépôt : `Legiscope`.
 
@@ -19,8 +19,9 @@ Projet construit le 14 novembre 2026 pendant le Hackathon Open Data (swanbase et
 | 3 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Comprendre le système et suivre un amendement de la source à l'écran |
 | 4 | [docs/DATA_AND_AI.md](docs/DATA_AND_AI.md) | Sources, règles de calcul, rôle exact du modèle de langage et d'Orcet |
 | 5 | [docs/REPRODUCE.md](docs/REPRODUCE.md) | Lancer, vérifier, régénérer |
-| 6 | [contracts/README.md](contracts/README.md) | Les contrats de données (schémas Zod) |
-| 7 | [AGENTS.md](AGENTS.md) | Repères pour un agent de code : structure, commandes, points d'entrée |
+| 6 | [docs/ETAT.md](docs/ETAT.md) | L'état mesuré du dépôt : chiffres par dossier et résultats des commandes, générés par script |
+| 7 | [contracts/README.md](contracts/README.md) | Les contrats de données (schémas Zod). Écrit pendant la construction : la description des pages y est antérieure à l'interface finale |
+| 8 | [AGENTS.md](AGENTS.md) | Repères pour un agent de code : structure, commandes, points d'entrée |
 
 Les documents de la journée de construction (plan, consignes des sessions, journaux) sont conservés et listés dans [docs/HISTORIQUE.md](docs/HISTORIQUE.md). Ils peuvent contredire l'état final : la référence est cette page et le dossier `docs/`.
 
@@ -62,23 +63,24 @@ Chaque ligne renvoie au code qui la réalise. Le détail, avec les fichiers de d
 | Interventions en séance et en commission, classées pour ou contre | [pipeline/debats/](pipeline/debats/) |
 | Organisations déclarées au répertoire HATVP | [pipeline/collecte/hatvp.ts](pipeline/collecte/hatvp.ts) |
 | Compte rendu rédigé par un modèle, nombres contrôlés, repli sur gabarit | [pipeline/note/run.ts](pipeline/note/run.ts), [pipeline/lib/llm.ts](pipeline/lib/llm.ts), [pipeline/lib/verif.ts](pipeline/lib/verif.ts) |
-| Preuve sur chaque information : fait, déduction ou inconnue | [contracts/schemas/preuve.ts](contracts/schemas/preuve.ts), [web/src/components/Pourquoi.tsx](web/src/components/Pourquoi.tsx) |
+| Preuve sur les analyses : fait, déduction ou inconnue | [contracts/schemas/preuve.ts](contracts/schemas/preuve.ts), [web/src/components/Pourquoi.tsx](web/src/components/Pourquoi.tsx) |
 | Contrats de données et validation | [contracts/schemas/](contracts/schemas/), [qa/check.ts](qa/check.ts), [qa/croise.ts](qa/croise.ts) |
+| Sceau de publication : empreinte de chaque fichier validé, contrôlée au build | [pipeline/publication.mjs](pipeline/publication.mjs) |
 
 ## Démonstration
 
-Les dossiers sont déclarés dans [data/config.json](data/config.json). Après `npm run dev`, chacun s'ouvre à l'adresse `http://localhost:5173/dossier/<identifiant>`.
+Les dossiers sont déclarés dans [data/config.json](data/config.json). Après `npm run dev`, chacun s'ouvre à l'adresse `http://localhost:5173/dossier/<identifiant>`. Une version en ligne a été déployée par l'équipe le 14 novembre 2026 : https://bascule-two.vercel.app (configuration dans [vercel.json](vercel.json)).
 
 | Identifiant | Client d'exemple | Mesure suivie | Ce que le dossier montre |
 |---|---|---|---|
 | `petits-colis` | Alibaba France | Taxe de 2 euros par article sur les petits colis (budget 2026, article 22) | Relecture historique : tout est vu au matin du 19 novembre 2025, rien de postérieur n'est utilisé |
-| `plf2027-holdings` | Afep | Taxe sur les holdings et la fortune improductive (budget 2027) | Dossier en cours, 21 scrutins nominatifs liés à la mesure |
-| `plf2027-apprentissage` | U2P | Baisse des crédits de l'apprentissage et des aides à l'embauche (budget 2027) | Dossier en cours avec prédictions Orcet sur des amendements en attente, visibles dans le bloc Suite |
-| `plf2027-agriculture` | FNSEA | Baisse des crédits des filières agricoles (budget 2027) | Dossier ajouté en fin de journée, traitement rapide |
-| `plf2027-logement` | Union sociale pour l'habitat | APL et aides à la pierre (budget 2027) | Dossier ajouté en fin de journée, traitement rapide |
-| `plf2027-renovation` | CAPEB | MaPrimeRénov' (budget 2027) | Dossier ajouté en fin de journée, traitement rapide |
+| `plf2027-holdings` | Afep | Taxe sur les holdings et la fortune improductive (budget 2027) | Dossier en cours, positions des groupes lues sur des scrutins nominatifs |
+| `plf2027-apprentissage` | U2P | Baisse des crédits de l'apprentissage et des aides à l'embauche (budget 2027) | Dossier en cours, prédictions Orcet sur les amendements en attente |
+| `plf2027-agriculture` | FNSEA | Baisse des crédits des filières agricoles (budget 2027) | Dossier ajouté en fin de journée par une entrée de configuration, avec prédictions Orcet |
+| `plf2027-logement` | Union sociale pour l'habitat | APL et aides à la pierre (budget 2027) | Idem |
+| `plf2027-renovation` | CAPEB | MaPrimeRénov' (budget 2027) | Idem |
 
-Les trois premiers dossiers sont les plus complets. Les trois derniers ont été ajoutés en fin de journée pour montrer que la chaîne s'applique à un nouveau sujet par une entrée de configuration : une partie de leurs analyses repose sur des règles de mots et des gabarits plutôt que sur le modèle de langage, et certains blocs peuvent manquer. Les limites de chaque fichier sont écrites dans son bloc `meta.limits`.
+Les dossiers n'ont pas tous la même profondeur de traitement : selon le dossier, les arguments des débats sont classés par le modèle ou par des règles de mots, et les synthèses de fiche député sont rédigées par le modèle ou produites par gabarit. Le détail mesuré, dossier par dossier, est dans [docs/ETAT.md](docs/ETAT.md). Les limites de chaque fichier sont écrites dans son bloc `meta.limits`.
 
 **Les organisations affichées comme clients sont des exemples choisis pour la démonstration.** Aucune n'est cliente du projet ni associée à lui.
 
@@ -89,15 +91,17 @@ Autres vues :
 | `/dossier/:id` | Tableau de bord du dossier |
 | `/dossier/:id/base` | Base documentaire : état de la mesure, articles, amendements |
 | `/dossier/:id/depute/:pa` | Fiche d'un député sur ce dossier |
-| `/sources` | Sources institutionnelles utilisées |
+| `/sources` | Liens vers les sources institutionnelles |
 
-| Verdict | Action |
+| Verdict | Prédictions Orcet dans le bloc Suite |
 |---|---|
-| ![Bloc Verdict](docs/assets/verdict.png) | ![Bloc Action](docs/assets/action.png) |
+| ![Bloc Verdict](docs/assets/verdict.png) | ![Prédictions Orcet, dossier apprentissage](docs/assets/orcet.png) |
+
+Autres captures : [Nouveautés](docs/assets/nouveautes.png), [Action](docs/assets/action.png), [Base documentaire](docs/assets/base.png).
 
 ## Architecture
 
-Pas de serveur applicatif. Le pipeline prépare des fichiers JSON, l'interface les lit. Les données de démonstration sont conservées dans le dépôt : ce qui est affiché est reproductible à partir de `data/`. Ce n'est pas une application en temps réel : les données sont celles de la dernière exécution du pipeline.
+Pas de serveur applicatif. Le pipeline prépare des fichiers JSON, l'interface les lit. Les données de démonstration sont conservées dans le dépôt : l'interface se rejoue à l'identique à partir de `data/`. Les régénérer demande les clés et les données brutes, qui ne sont pas versionnées. Ce n'est pas une application en temps réel : les données sont celles de la dernière exécution du pipeline.
 
 ```mermaid
 flowchart LR
@@ -131,8 +135,8 @@ flowchart LR
 
 - **L'open data de l'Assemblée nationale** fournit l'essentiel : dossiers, amendements, scrutins et votes nominatifs, comptes rendus.
 - **L'API Hémicycle** fournit les prédictions du modèle Orcet et, en option, un flux d'événements parlementaires, voir [pipeline/collecte/api.ts](pipeline/collecte/api.ts) et [pipeline/fiches/lib/evenements-api.ts](pipeline/fiches/lib/evenements-api.ts).
-- **Orcet** donne, pour un amendement en attente, la moyenne des probabilités individuelles de voter pour. Ce n'est pas une probabilité d'adoption. Sans prédiction, rien n'est affiché.
-- **Featherless** donne accès au modèle de langage (`Qwen/Qwen3.8-27B` par défaut, voir [pipeline/lib/llm.ts](pipeline/lib/llm.ts)). Il extrait les personnes entendues dans les rapports, classe les interventions des débats et la nature de certains amendements, et rédige des textes à partir de chiffres déjà calculés. Il ne voit aucun vote et ne calcule aucun chiffre.
+- **Orcet** donne, pour un amendement en attente, la moyenne des probabilités individuelles de voter pour. Ce n'est pas une probabilité d'adoption. Sans prédiction, rien n'est affiché. Quand des amendements en attente portent la position du client, leur moyenne Orcet entre pour 30 % dans le score du verdict ([pipeline/pivots/verdict.ts](pipeline/pivots/verdict.ts)).
+- **Featherless** donne accès au modèle de langage (`Qwen/Qwen3.8-27B` par défaut, voir [pipeline/lib/llm.ts](pipeline/lib/llm.ts)). Il extrait les personnes entendues dans les rapports, classe les interventions des débats et la nature de certains amendements, et rédige des textes à partir de chiffres déjà calculés. Il ne calcule aucun chiffre : un vérificateur rejette tout texte qui contient un nombre absent de la liste fournie, et après trois essais le texte est produit par un gabarit sans modèle.
 - **Le verdict et le classement des députés sont calculés par des règles**, pas par le modèle. Le score du verdict est un indicateur descriptif construit par le projet, pas une prédiction validée statistiquement.
 
 Détail dans [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) et [docs/DATA_AND_AI.md](docs/DATA_AND_AI.md).
@@ -166,11 +170,13 @@ Régénérer les données demande [Bun](https://bun.sh) et deux clés (`HEMICYCL
 | Commande | Ce qu'elle vérifie |
 |---|---|
 | `npm run typecheck` | Les types TypeScript de tout le dépôt |
-| `npm run build` | La construction du site statique dans `dist/` |
-| `bun run check` | Chaque fichier de `data/` et du jeu d'exemple contre son schéma Zod, et les contrôles croisés entre fichiers |
+| `npm run build` | Le sceau de publication de chaque dossier, puis la construction du site statique dans `dist/`. Échoue si un fichier scellé de `data/` a changé depuis sa publication |
+| `bun run check` | Les fichiers principaux de `data/` et du jeu d'exemple contre leur schéma Zod, les contrôles croisés entre fichiers, puis le sceau de publication |
+| `bun run publish:data` | Valide puis scelle chaque dossier (empreinte SHA-256 dans `data/<dossier>/publication.json`). À relancer après toute régénération |
 | `bun test` | Les tests du vérificateur de nombres et de l'appel au modèle |
+| `node docs/mesurer.mjs --commandes` | Mesure l'état du dépôt et lance les commandes ci-dessus |
 
-Les résultats obtenus sur une copie fraîche du dépôt sont consignés dans [docs/REPRODUCE.md](docs/REPRODUCE.md).
+Les résultats obtenus sur l'état livré, avec le commit et l'heure, sont dans [docs/ETAT.md](docs/ETAT.md). Ce fichier est généré par script, aucun chiffre n'y est écrit à la main.
 
 ## Sources de données
 
@@ -184,16 +190,18 @@ Les résultats obtenus sur une copie fraîche du dépôt sont consignés dans [d
 ## Limites
 
 - **L'outil propose, le cabinet décide.** Le verdict est une proposition avec ses raisons. Il peut dire qu'il n'y a pas assez d'information pour conclure.
-- **Le score du verdict est une règle du projet** (part pondérée des sièges favorables à l'objectif), pas une prédiction validée.
+- **Le score du verdict est une règle du projet** (part pondérée des sièges favorables à l'objectif, corrigée par la moyenne Orcet quand elle existe), pas une prédiction validée. Aucun test automatique ne couvre cette règle.
 - **Une prédiction Orcet n'est pas une probabilité d'adoption.**
-- **La validation automatique contrôle la forme et la cohérence des nombres, pas l'exactitude des conclusions.**
+- **La validation automatique contrôle la forme et la cohérence des nombres, pas l'exactitude des conclusions.** Les fichiers par député ne sont validés que pour les députés retenus dans `pivots.json`.
+- **La preuve détaillée (fait, déduction, inconnue) couvre les blocs Verdict, Nouveautés, Suite, Action et l'état de la mesure.** Les amendements de la base, le compte rendu et les organisations HATVP renvoient à une adresse ou à une liste de sources.
+- **Une partie des textes est produite par gabarit, sans modèle.** Le champ `mode` de chaque texte le dit.
 - **La mesure est déclarée à la main** dans `data/config.json` et suivie par ses mots-clés et son article. Le filtre peut retenir un amendement à tort. Sur le dossier `plf2027-holdings`, le rapprochement entre plusieurs propositions fiscales voisines n'est pas entièrement validé.
 - **Relecture historique.** Sur `petits-colis`, un sort d'amendement sans date publiée n'est pas listé comme événement daté.
 - **L'Assemblée n'est pas l'issue finale.** Les votes et les débats du Sénat ne sont pas analysés.
 - **Un député n'est classé que sur ce qu'il a lui-même dit, déposé ou voté.** Quand sa position n'est pas connue, c'est écrit.
 - **Auditions et débats : couverture partielle.** Tous les rapports n'ont pas de liste de personnes entendues. Seules les interventions dont l'orateur est identifié sont gardées.
 - **HATVP.** Les données sont déclaratives. Le filtre par mots-clés peut retenir une organisation à tort.
-- **Hors périmètre.** Vue sur plusieurs dossiers à la fois, presse, alertes, mise en ligne.
+- **Hors périmètre.** Vue sur plusieurs dossiers à la fois, presse, alertes.
 - **Projet de hackathon**, construit en une journée. Il n'a pas été audité.
 
 ## Équipe et crédits
