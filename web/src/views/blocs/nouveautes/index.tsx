@@ -49,7 +49,7 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
   const evenements = useMemo(() => classement === "importance" ? trier(r.data?.evenements ?? []) : chronologique(r.data?.evenements ?? []), [r.data, classement]);
   const types = useMemo(() => Array.from(new Set(evenements.map((e) => e.type))), [evenements]);
   const filtres = filtre ? evenements.filter((e) => e.type === filtre) : evenements;
-  const visibles = toutVoir ? filtres : filtres.slice(0, 8);
+  const visibles = toutVoir ? filtres : filtres.slice(0, 5);
   const qui = evenements.filter((e) => e.importance === 3).length;
 
   return (
@@ -95,12 +95,6 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
                       <span>{TYPE_LABEL[e.type]}</span>
                     </div>
                     <button type="button" className="nv-titre" aria-expanded={ouvert === e.id} onClick={() => setOuvert((id) => id === e.id ? null : e.id)}>{e.titre}</button>
-                    <div className="nv-detail-ligne">
-                      <span className="nv-detail" title={e.detail}>
-                        {e.detail}
-                      </span>
-                      <Pourquoi preuve={e.preuve} />
-                    </div>
                     {ouvert === e.id && <div className="nv-detail-ouvert">
                       <div><strong>Effet proposé sur l’objectif :</strong> {EFFET_LABEL[e.effet]}</div>
                       <p>{e.detail}</p>
@@ -109,7 +103,7 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
                   </li>
                 ))}
               </ul>
-              {filtres.length > 8 && (
+              {filtres.length > 5 && (
                 <button type="button" className="nv-voir-tout" onClick={() => setToutVoir((v) => !v)}>
                   {toutVoir ? "Réduire la liste" : `Voir tous les événements (${filtres.length})`}
                 </button>
