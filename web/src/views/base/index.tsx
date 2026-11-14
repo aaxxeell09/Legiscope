@@ -166,35 +166,30 @@ export default function BaseView() {
         <Link className="btn-secondary" to={`/dossier/${id}`}>Retour au tableau de bord</Link>
       </header>
 
-      <Etat titre="Textes législatifs" state={texte} aside={texte.data?.texte.etape}>
+      <Etat titre="Documents législatifs" state={texte}>
         {(t) => (
-          <div className="base-document-row">
-            <div><span className="base-document-kind">Texte suivi</span><strong>{t.texte.titre}</strong></div>
-            <span className="text-2">{t.texte.etape}</span>
-            <a href={t.texte.url} target="_blank" rel="noreferrer">Voir le texte officiel</a>
-          </div>
-        )}
-      </Etat>
-
-      <Etat titre="Articles" state={etat} aside={etat.data ? `${etat.data.articles.length} documenté${etat.data.articles.length > 1 ? "s" : ""}` : undefined}>
-        {(e) => (
-          <>
-            {e.articles.length === 0 ? (
-              <div className="status">Aucun article structuré disponible.</div>
-            ) : (
-              <ul className="base-liste">
-                {e.articles.map((a) => (
-                  <li key={a.numero}>
-                    <a href={a.url} target="_blank" rel="noreferrer">
-                      article {a.numero}
-                    </a>
-                    <span>{a.titre}</span>
-                    <span className={`base-statut base-statut-${a.statut}`}>{ARTICLE_LABEL[a.statut]}</span>
-                  </li>
-                ))}
-              </ul>
+          <div className="base-document-index">
+            <div className="base-document-main">
+              <div><span className="base-document-kind">Texte suivi</span><strong>{t.texte.titre}</strong></div>
+              <span className="base-document-step">{t.texte.etape}</span>
+              <a href={t.texte.url} target="_blank" rel="noreferrer">Voir le texte officiel</a>
+            </div>
+            {etat.status === "loading" && <div className="status">Chargement des articles</div>}
+            {etat.status === "error" && <div className="status status-error">Articles indisponibles</div>}
+            {etat.data && (
+              etat.data.articles.length === 0 ? <div className="base-document-empty">Aucun article structuré disponible.</div> : (
+                <ul className="base-document-articles">
+                  {etat.data.articles.map((article) => (
+                    <li key={article.numero}>
+                      <a href={article.url} target="_blank" rel="noreferrer">Article {article.numero}</a>
+                      <span>{article.titre}</span>
+                      <span className={`base-statut base-statut-${article.statut}`}>{ARTICLE_LABEL[article.statut]}</span>
+                    </li>
+                  ))}
+                </ul>
+              )
             )}
-          </>
+          </div>
         )}
       </Etat>
 
