@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:54:31+01:00",
+    "generated_at": "2026-11-14T17:26:25+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -227,35 +227,56 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627016_compte-rendu"
       }
     ],
-    "limits": "656 prises de parole sur le sujet lues dans 54 comptes rendus (91 comptes rendus parcourus) ; 48 classées, 48 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 0 rejetées pour citation inexacte, 0 écartées car le second avis du modèle contredit le camp ; 2 pour et 39 contre après dédoublonnage. Version rapide : camp déduit par règles de mots (supprimer, rétablir les crédits, baisse = contre la baisse ; maîtrise, économies = pour), sans modèle, chaque argument à relire. Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
+    "limits": "656 prises de parole sur le sujet lues dans 54 comptes rendus (91 comptes rendus parcourus) ; 603 classées, 52 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 53 rejetées pour citation inexacte, 23 écartées car le second avis du modèle contredit le camp ; 2 pour et 32 contre après dédoublonnage. Classement par le modèle Featherless (656 appels à cette exécution, cache sur disque). Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
     "producer": "pipeline/debats",
     "dossier_id": "plf2027-agriculture"
   },
   "pour": [
     {
-      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur agriculture et filières",
-      "citation": "Un rapport a montré qu’à l’échelle du continent européen, ce sont des milliers de milliards qu’il faudrait mettre à la disposition des économies européennes pour financer la transition énergétique, pour construire des véhicules et des usines propres, pour développer l’agriculture du XXIe siècle.",
-      "orateur_id": "PA795778",
-      "groupe_id": "PO845401",
-      "date": "2026-10-14",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026",
+      "argument": "Le renforcement du FNGRA permet de répondre aux besoins des agriculteurs en difficulté.",
+      "citation": "Enfin, cette mesure permettra de renforcer le FNGRA et ainsi de répondre à l’ensemble des besoins des agriculteurs",
+      "orateur_id": "PA840685",
+      "groupe_id": "PO872880",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Deuxième séance du mercredi 14 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026"
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Jean-Philippe Tanguy, rapporteur spécial) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) la défend : « La mesure permet de renforcer le FNGRA pour répondre aux besoins des agriculteurs. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Jean-René Cazeneuve (commission du 2026-10-22).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur agriculture et filières",
-      "citation": "J’aimerais qu’un jour, on se penche sur les mesures d’économies possibles au ministère de l’agriculture.",
-      "orateur_id": "PA332228",
-      "groupe_id": "PO845470",
+      "argument": "La rapporteure émet un avis favorable à l'adoption des crédits modifiés de la mission Agriculture.",
+      "citation": "J’émets un avis favorable à l’adoption des crédits de la mission, tels que nous les avons modifiés.",
+      "orateur_id": "PA794354",
+      "groupe_id": "PO845401",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 8 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) la défend : « La rapporteure soutient l'adoption des crédits de la mission Agriculture tels que modifiés. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "contre": [
+    {
+      "argument": "La baisse des crédits fragilise un secteur vulnérable et compromet la souveraineté alimentaire face aux crises.",
+      "citation": "S’il y a un budget qui ne devait pas diminuer, c’est bien celui de l’agriculture.",
+      "orateur_id": "PA794354",
+      "groupe_id": "PO845401",
       "date": "2026-10-13",
       "lieu": "commission",
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
@@ -266,147 +287,50 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (Thierry Benoit) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « Le budget de l'agriculture ne devait pas diminuer en raison des difficultés rencontrées par les agriculteurs. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Émeline K/Bidi (commission du 2026-10-22), Hélène Laporte (commission du 2026-10-13), Hélène Laporte (commission du 2026-10-13), Julien Brugerolles (commission du 2026-10-13), Hélène Laporte (commission du 2026-10-13), Manon Meunier (commission du 2026-10-13).",
         "nature": "deduction"
       }
-    }
-  ],
-  "contre": [
+    },
     {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières",
-      "citation": "Monsieur le ministre, vous ne pouvez pas dire que compenser la suppression de la taxe sur la vente des produits phytosanitaires par une majoration de la redevance sur pollutions diffuses serait une augmentation massive des impôts pour les agriculteurs.",
-      "orateur_id": "PA841955",
+      "argument": "La baisse des crédits est injustifiée car les agriculteurs ont besoin de la puissance publique pour affronter la crise.",
+      "citation": "la copie que le Gouvernement nous présente en cette dernière année du macronisme prévoit une baisse de 150 millions d’euros, si l’on neutralise les suppressions, les transferts de programmes et d’actions afférents. Cette copie est à l’image de la couardise doublée de pusillanimité dont font montre, depuis dix ans, les sachants et les tenants du pouvoir, incapables de répondre aux enjeux d’un secteur qu’ils n’ont cessé d’abîmer par inattention coupable, lâcheté ou volonté inavouable.",
+      "orateur_id": "PA841825",
       "groupe_id": "PO845401",
-      "date": "2026-11-04",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 04 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Matthias Renault) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières",
-      "citation": "Il vise à supprimer l’indexation sur l’inflation des tarifs de la redevance pour pollutions diffuses, que paient nos agriculteurs sur chaque produit phytopharmaceutique et que les négoces collectent pour les agences de l’eau, en avançant l’argent avant même de l’avoir encaissé.",
-      "orateur_id": "PA794206",
-      "groupe_id": "PO845407",
-      "date": "2026-11-04",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 04 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Christophe Marion) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières",
-      "citation": "Nous sommes donc favorables à la suppression de l’article 77.",
-      "orateur_id": "PA840135",
-      "groupe_id": "PO845401",
-      "date": "2026-10-22",
+      "date": "2026-10-13",
       "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Alexandre Dufosset) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Patrice Martin) s'y oppose ou veut la réduire : « La baisse des crédits est une couardise qui aggrave les difficultés d'un secteur déjà abîmé par l'inattention du gouvernement. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Vincent Trébuchet (commission du 2026-10-22), Manon Meunier (commission du 2026-10-13), Mélanie Thomin (commission du 2026-10-13).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Nous constatons ainsi une baisse de près de 24 millions pour l’agriculture des départements d’outre-mer.",
-      "orateur_id": "PA795998",
-      "groupe_id": "PO845514",
-      "date": "2026-10-22",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Émeline K/Bidi) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières",
-      "citation": "Quatorze amendements de suppression de l’article 77 ont été déposés par sept groupes différents : c’est dire !",
-      "orateur_id": "PA608172",
+      "argument": "La suppression de la dotation régionale réduit les marges de manœuvre pour l'installation et la transition agricole.",
+      "citation": "Enfin, je dénonce très vivement l’article 77, qui supprime la dotation annuelle de cent millions aux régions, réduisant ainsi leurs marges de manœuvre en matière d’aide à l’installation des jeunes agriculteurs et d’accompagnement à la transition.",
+      "orateur_id": "PA793816",
       "groupe_id": "PO845419",
-      "date": "2026-10-22",
+      "date": "2026-10-13",
       "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Christine Pirès Beaune) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mélanie Thomin) s'y oppose ou veut la réduire : « La suppression de la dotation réduit les marges de manœuvre des régions pour aider l'installation et la transition agricole. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Julien Dive (commission du 2026-10-13), Hélène Laporte (commission du 2026-10-13).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Tout d’abord, les crédits sont en baisse constante depuis quatre ans, ce qui est scandaleux vis-à-vis des agriculteurs.",
-      "orateur_id": "PA840685",
-      "groupe_id": "PO872880",
-      "date": "2026-10-22",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières",
-      "citation": "Article 77 : Suppression de la dotation annuelle versée aux régions au titre de la gestion du Fonds européen agricole pour le développement rural (FEADER)",
-      "orateur_id": "PA840685",
-      "groupe_id": "PO872880",
-      "date": "2026-10-22",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baissera » dans une phrase sur agriculture et filières",
+      "argument": "La baisse des crédits crée un manque de financement pour le soutien aux agriculteurs, aggravé par la baisse de la PAC.",
       "citation": "Mais il y a manifestement un manque très important dans le financement du soutien aux agriculteurs en France, dans un contexte où la PAC baissera en euros constants de manière très importante.",
       "orateur_id": "PA840685",
       "groupe_id": "PO872880",
@@ -420,15 +344,15 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baissera » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baissera »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « La baisse des crédits crée un manque important de financement pour le soutien aux agriculteurs, aggravé par la baisse de la PAC. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Mélanie Thomin (commission du 2026-10-13).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « suppressione » dans une phrase sur agriculture et filières",
-      "citation": "Par ailleurs, l’article 77, qui a fait l’objet de nombreux amendements demandant sa suppressione tout le monde a amendé, retire 100 millions d’aides aux régions, alors au prétexte que le ministère ne connaissait pas précisément l’usage de ces fonds.",
-      "orateur_id": "PA840685",
-      "groupe_id": "PO872880",
+      "argument": "La baisse des crédits empêche d'atteindre l'objectif de 500 000 agriculteurs et de renouveler les générations.",
+      "citation": "Aussi notre amendement II-CF1145 vise-t-il à dégager une enveloppe permettant l’installation de nombreux paysans. L’objectif que nous nous sommes fixé collectivement, dans la loi d’orientation agricole, est d’atteindre 500 000 agriculteurs d’ici à 2035 – cette cible, somme toute raisonnable, suppose d’en installer en moyenne 30 000 par an, soit deux fois plus qu’actuellement – et de maintenir au moins 400 000 exploitations.",
+      "orateur_id": "PA795482",
+      "groupe_id": "PO845413",
       "date": "2026-10-22",
       "lieu": "commission",
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
@@ -439,203 +363,13 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppressione » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppressione »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Manon Meunier) s'y oppose ou veut la réduire : « La baisse des crédits empêche d'atteindre l'objectif de 500 000 agriculteurs et de renouveler les générations face au changement climatique. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Robert Le Bourgeois (commission du 2026-10-13).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières",
-      "citation": "Après l’été caniculaire que nous venons de vivre, qui a sinistré les exploitations, il serait vraiment incohérent de supprimer ce levier qui contribue directement au renouvellement des exploitations et des générations, et à la transition écologique de l’agriculture.",
-      "orateur_id": "PA794702",
-      "groupe_id": "PO845454",
-      "date": "2026-10-22",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Delphine Lingemann) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimeriez » dans une phrase sur agriculture et filières",
-      "citation": "Moi aussi, j’aime l’agriculture, les employeurs de travailleurs saisonniers ; mais vous supprimeriez toute participation de ces salariés temporaires à la solidarité collective, et pour eux-mêmes toute constitution de droits – à une retraite, notamment, ou aux indemnités chômage.",
-      "orateur_id": "PA642847",
-      "groupe_id": "PO845425",
-      "date": "2026-10-21",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 21 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Thibault Bazin, rapporteur général) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimeriez » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimeriez »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Par cet amendement, nous demandons une baisse des crédits dédiés au programme de renforcement des capacités commerciale (PRCC) : pourquoi financer des stratégies commerciales en faveur de produits venant concurrencer ceux de nos agriculteurs sur le marché européen ?",
-      "orateur_id": "PA795974",
-      "groupe_id": "PO845401",
-      "date": "2026-10-20",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627019_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 19 du 20/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627019_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Philippe Lottiaux) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Les agriculteurs déjà équipés sont pris en étau : l’emprunt reste, mais la recette baisse ; pour tous les autres, c’est pire : si la parole de l’État ne vaut plus rien, les banques et les développeurs ne financeront plus les prochains hangars.",
-      "orateur_id": "PA719890",
-      "groupe_id": "PO845407",
-      "date": "2026-10-19",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 13 du 19/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Danielle Brulebois) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur agriculture et filières",
-      "citation": "En payant moins, vous feriez baisser les revenus des agriculteurs.",
-      "orateur_id": null,
-      "groupe_id": null,
-      "date": "2026-10-14",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 14 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Benjamin Haddad, ministre délégué, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Les agriculteurs et les pêcheurs, qui consomment du GNR, profiteront également d’une baisse des prix qu’ils paient actuellement, tandis que le prix du litre de fioul domestique diminuera aussi.",
-      "orateur_id": null,
-      "groupe_id": null,
-      "date": "2026-10-14",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 14 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Maud Bregeon, ministre déléguée, porte-parole du gouvernement, et ministre déléguée chargée de l’énergie, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Pendant ce temps, dans ce même texte, des missions entières sont en baisse ou en stagnation : la mission Travail, emploi et administrations des ministères sociaux baisse de 10 % ; la mission Agriculture et alimentation baisse de 13 % ; la mission Culture diminue elle-même de 2,5 %.",
-      "orateur_id": "PA793624",
-      "groupe_id": null,
-      "date": "2026-10-14",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 14 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Philippe Brun (NI)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Il faut dire les choses : l’agriculture va très mal et son budget est en baisse.",
-      "orateur_id": "PA794354",
-      "groupe_id": "PO845401",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Le programme 149, cœur de la politique agricole, subit une nouvelle baisse de 450 millions d’euros.",
-      "orateur_id": "PA793816",
-      "groupe_id": "PO845419",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mélanie Thomin) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières",
-      "citation": "La commission adopte les amendements, exprimant ainsi un avis favorable à la suppression de l’article 77.",
-      "orateur_id": "PA794354",
-      "groupe_id": "PO845401",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 8 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières",
-      "citation": "L’agriculture biologique est en recul dans certains territoires ; supprimer les crédits de l’Agence bio n’enverrait pas le bon message.",
+      "argument": "La suppression de la dotation de 100 M€ aux régions prive les filières d'un financement prévu jusqu'en 2027.",
+      "citation": "L’article 77 supprime la dotation annuelle de 100 millions d’euros versée aux régions pour accompagner la mise en œuvre des aides du Feader, alors qu’elle était programmée pour être reconduite jusqu’en 2027.",
       "orateur_id": "PA712015",
       "groupe_id": "PO845425",
       "date": "2026-10-13",
@@ -648,12 +382,50 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Julien Dive) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Julien Dive) s'y oppose ou veut la réduire : « La suppression de la dotation de 100 millions d'euros aux régions prive les filières agricoles d'un accompagnement financier prévu jusqu'en 2027. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Mathilde Hignet (commission du 2026-10-13).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières",
+      "argument": "La suppression de la dotation met en péril plus de 250 M€ d'investissements agricoles et les aides non surfaciques.",
+      "citation": "l’article 77 supprime la dotation de cent millions d’euros versée aux régions pour soutenir l’installation et les investissements, mettant en péril plus de deux cent cinquante millions d’euros d’investissements agricoles : nous demandons sa suppression.",
+      "orateur_id": "PA793796",
+      "groupe_id": "PO845485",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (David Taupiac) s'y oppose ou veut la réduire : « La suppression de la dotation met en péril plus de 250 millions d'euros d'investissements agricoles. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Julien Dive (commission du 2026-10-13).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La baisse des crédits est disproportionnée par rapport aux besoins de la planification écologique et de la gestion des risques.",
+      "citation": "Les documents budgétaires font apparaître, pour l'action 29 du programme 149, 41 millions en autorisations d'engagement et 69 millions en crédits de paiement, contre 1 milliard d'euros dans la loi de finances pour 2024 !",
+      "orateur_id": "PA794354",
+      "groupe_id": "PO845401",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « La baisse des crédits est disproportionnée par rapport aux besoins de la planification écologique. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.80. Même argument entendu aussi chez Mélanie Thomin (commission du 2026-10-13).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La suppression de l'article 77 est nécessaire et fait consensus dans la commission.",
       "citation": "Là encore, nous partageons plusieurs constats, notamment la nécessité, qui me semble faire consensus dans la commission, de supprimer l’article 77.",
       "orateur_id": "PA794354",
       "groupe_id": "PO845401",
@@ -667,13 +439,241 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « La suppression de l'article 77 est nécessaire et fait consensus dans la commission. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Hélène Laporte (commission du 2026-10-13).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « retablir les credits » dans une phrase sur agriculture et filières",
-      "citation": "Votre amendement vise à créer un programme de 189 millions pour rétablir les crédits de la planification écologique en agriculture, notamment le plan Haies et le plan Protéines.",
+      "argument": "La baisse des crédits du Casdar compromet le financement des projets Parsada essentiels pour éviter les impasses techniques agricoles.",
+      "citation": "Or ces nouveaux projets sont désormais financés par le Casdar, dont les crédits sont eux-mêmes en baisse. Le gouvernement doit clarifier les moyens disponibles.",
+      "orateur_id": "PA840685",
+      "groupe_id": "PO872880",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « La baisse des crédits du Casdar compromet le financement des projets Parsada essentiels pour éviter les impasses techniques agricoles. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La baisse des crédits crée une inégalité de traitement entre la métropole et l'outre-mer, justifiant leur rétablissement.",
+      "citation": "C’est pourquoi cet amendement vise à rétablir 25 millions d’euros de crédits afin de garantir une égalité de traitement dans le secteur agricole entre la métropole et l’outre-mer.",
+      "orateur_id": "PA841955",
+      "groupe_id": "PO845401",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Matthias Renault) s'y oppose ou veut la réduire : « La baisse des crédits crée une inégalité de traitement entre la métropole et l'outre-mer, justifiant leur rétablissement. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'absence de crédits spécifiques pour l'agriculture outre-mer dans le PLF est une erreur majeure.",
+      "citation": "Or, pour la première fois depuis 2008, le gouvernement n’a prévu, dans le PLF (projet de loi de finances), aucun crédit qui leur soit véritablement destiné.",
+      "orateur_id": "PA722366",
+      "groupe_id": "PO845407",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Jean-Luc Fugit) s'y oppose ou veut la réduire : « L'absence de crédits spécifiques pour l'agriculture outre-mer dans le PLF est une erreur majeure. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le transfert de crédits nationaux est inefficace car le barème de l'écorégime relève de la PAC et ne peut pas être modifié ainsi.",
+      "citation": "Or le barème de l’écorégime relève de la PAC (politique agricole commune) : un simple transfert de crédits nationaux ne permet pas de le modifier. Par ailleurs, l’amendement n’évalue pas les surfaces qui seraient éligibles à cette hausse.",
+      "orateur_id": "PA840685",
+      "groupe_id": "PO872880",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « Le transfert de crédits nationaux est inefficace car le barème de l'écorégime relève de la PAC et ne peut pas être modifié ainsi. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le rehaussement des crédits subventionne un marché sans débouchés viables à long terme.",
+      "citation": "Inonder de subventions un marché qui présente peu de débouchés pousse des exploitants à la conversion, alors qu’ils ne pourront poursuivre une activité viable sur le long terme. Je ne suis donc pas favorable à un rehaussement des crédits.",
+      "orateur_id": "PA840685",
+      "groupe_id": "PO872880",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « Le rehaussement des crédits subventionne un marché sans débouchés viables à long terme. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La ponction sur le programme 149 fragilise les dispositifs existants sans garantie d'efficacité supplémentaire.",
+      "citation": "Enfin, la création d’un nouveau programme de 60 millions, financé par une ponction sur le programme 149, risque de fragiliser les dispositifs existants sans garantie d’efficacité supplémentaire. Avis défavorable.",
+      "orateur_id": "PA840685",
+      "groupe_id": "PO872880",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « La ponction sur le programme 149 fragilise les dispositifs existants sans garantie d'efficacité supplémentaire. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le transfert des crédits de la mission Agriculture vers la mission Écologie est une erreur car la forêt est une filière de production liée à l'agriculture.",
+      "citation": "je tiens à indiquer en préambule que le choix du gouvernement de transférer ses crédits de la mission Agriculture vers la mission Écologie nous semble être une erreur. En effet, la forêt française est une forêt de production ; détenue aux trois quarts par des propriétaires privés, elle est le socle d’une filière qui fait vivre nos territoires ruraux.",
+      "orateur_id": "PA719640",
+      "groupe_id": "PO845454",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Sophie Mette) s'y oppose ou veut la réduire : « Le transfert des crédits de la mission Agriculture vers la mission Écologie est une erreur car la forêt est une filière de production liée à l'agriculture. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le maintien de la baisse des crédits provoque des conflits récurrents entre Bercy et le ministère, au détriment des agriculteurs.",
+      "citation": "Si aucun changement n’est apporté, nous serons condamnés chaque année, particulièrement au mois d’octobre, à assister à un bras de fer entre le ministère de l’agriculture et Bercy, le plus souvent au détriment des agriculteurs.",
+      "orateur_id": "PA840685",
+      "groupe_id": "PO872880",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « Le maintien de la baisse des crédits provoque des conflits récurrents entre Bercy et le ministère, au détriment des agriculteurs. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le transfert de crédits vers l'égalité des genres détourne des fonds des urgences que sont l'installation et le renouvellement des générations agricoles.",
+      "citation": "Enlever 100 millions d’euros au programme Compétitivité et durabilité de l’agriculture et de l’agroalimentaire pour abonder un nouveau fonds pour l’égalité des genres dans le secteur agricole, voilà qui me semble passer à côté des véritables urgences. La priorité est l’installation des jeunes agriculteurs, femmes comme hommes, qui n’ont pas la chance de bénéficier d’une transmission familiale.",
+      "orateur_id": "PA793892",
+      "groupe_id": "PO845401",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Stéphanie Galzy) s'y oppose ou veut la réduire : « Le transfert de crédits vers l'égalité des genres détourne des fonds des urgences que sont l'installation et le renouvellement des générations agricoles. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La centralisation parisienne est inefficace et les régions doivent gérer les fonds pour soutenir l'agriculture familiale.",
+      "citation": "Tout gérer depuis Paris, on a vu ce que cela donnait : une agriculture qui a besoin de moyens. Nous sommes donc favorables à la suppression de l’article 77.",
+      "orateur_id": "PA840135",
+      "groupe_id": "PO845401",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Alexandre Dufosset) s'y oppose ou veut la réduire : « La centralisation parisienne est inefficace et les régions doivent gérer les fonds pour soutenir l'agriculture familiale. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure est irresponsable car elle met en danger les cofinancements européens et impose une charge aux régions sans étude d'impact.",
+      "citation": "De plus, cela met en danger des cofinancements européens. Ce pied-de-nez aux agriculteurs est irresponsable. Nous devons, à l’unanimité, supprimer cet article.",
+      "orateur_id": "PA840685",
+      "groupe_id": "PO872880",
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Vincent Trébuchet, rapporteur spécial) s'y oppose ou veut la réduire : « La mesure est irresponsable car elle met en danger les cofinancements européens et impose une charge aux régions sans étude d'impact. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le plafonnement des crédits à 80 millions au lieu de 100 millions réduit les moyens réels disponibles pour les filières.",
+      "citation": "Alors que les fonds du programme Mieux manger pour tous devaient atteindre 100 millions en 2027, leur montant plafonne à 80 millions d’euros depuis 2025, tandis que l’inflation réduit encore les moyens réellement disponibles.",
+      "orateur_id": "PA794130",
+      "groupe_id": "PO845413",
+      "date": "2026-10-21",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627020_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 20 du 21/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627020_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Andy Kerbrat) s'y oppose ou veut la réduire : « Le plafonnement des crédits à 80 millions au lieu de 100 millions réduit les moyens réels disponibles pour les filières. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La baisse des crédits nuit à la modernisation des exploitations et à la transmission, alors que les fermes disparaissent.",
+      "citation": "Le présent amendement vise à augmenter de 500 000 euros en autorisations d’engagement (AE) et en crédits de paiement (CP) les crédits dédiés au DiNA Cuma au sein du programme 149, soit une hausse de 50 % de l’enveloppe, afin d’accroître les capacités d’investissement collectif des Cuma et de permettre à davantage d’agriculteurs d’accéder à des équipements adaptés aux enjeux économiques, climatiques et environnementaux.",
       "orateur_id": "PA794354",
       "groupe_id": "PO845401",
       "date": "2026-10-13",
@@ -686,51 +686,13 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « retablir les credits » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« retablir les credits »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « L'augmentation des crédits est nécessaire pour accroître les capacités d'investissement collectif des Cuma. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières",
-      "citation": "Reste que, comme vous, je déplore la suppression des cent millions d’euros de crédits destinés aux régions pour accompagner l’installation des jeunes agriculteurs, alors que deux à trois fermes cessent leur activité tous les jours en France.",
-      "orateur_id": "PA712015",
-      "groupe_id": "PO845425",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Julien Dive) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières",
-      "citation": "Enfin, l’article 77 supprime la dotation de cent millions d’euros versée aux régions pour soutenir l’installation et les investissements, mettant en péril plus de deux cent cinquante millions d’euros d’investissements agricoles : nous demandons sa suppression.",
-      "orateur_id": "PA793796",
-      "groupe_id": "PO845485",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (David Taupiac) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières",
-      "citation": "Je me doutais que vous y seriez défavorable : le groupe Rassemblement national avait déposé un amendement visant à supprimer l’Agence Agence française pour le développement et la promotion de l’agriculture biologique, dite « Agence bio » – il a sans doute été retiré depuis.",
+      "argument": "La baisse des crédits empêche de financer la structuration des filières locales et les projets alimentaires territoriaux.",
+      "citation": "Il faut financer la structuration de filières locales durables à travers des projets alimentaires territoriaux (PAT) et des outils de transformation et d’aide, pour permettre à la restauration collective de s’approvisionner en produits bio et assurer des débouchés stables et rémunérateurs aux agriculteurs et aux agricultrices.",
       "orateur_id": "PA794082",
       "groupe_id": "PO845413",
       "date": "2026-10-13",
@@ -743,13 +705,127 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mathilde Hignet) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mathilde Hignet) s'y oppose ou veut la réduire : « La baisse des crédits empêche de financer la structuration des filières locales et les projets alimentaires territoriaux. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baisses » dans une phrase sur agriculture et filières",
-      "citation": "Dans ma commune, la direction régionale de l’alimentation, de l’agriculture et de la forêt (Draaf) et la région Bretagne sont contraintes de fermer une formation pour adulte dans les métiers de l’agriculture et de l’entretien paysager – voilà où nous mènent les baisses de dotation !",
+      "argument": "La baisse des crédits est un artifice comptable qui masque la réduction réelle des moyens dédiés aux politiques agricoles.",
+      "citation": "Mais c’est un artifice : les moyens réellement dédiés aux politiques agricoles sont en train de fondre.",
+      "orateur_id": "PA793816",
+      "groupe_id": "PO845419",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mélanie Thomin) s'y oppose ou veut la réduire : « La baisse des crédits est un artifice comptable qui masque la réduction réelle des moyens dédiés aux politiques agricoles. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La baisse des crédits est insuffisante pour permettre aux agriculteurs de retrouver un équilibre financier.",
+      "citation": "Mon amendement vise à prévoir une enveloppe spécifique en vue de la prise en charge des intérêts de prêt, un décalage de paiement du capital ou toute autre structuration utile, afin de permettre aux agriculteurs de retrouver un équilibre financier acceptable dans les années à venir.",
+      "orateur_id": "PA841825",
+      "groupe_id": "PO845401",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Patrice Martin) s'y oppose ou veut la réduire : « La baisse des crédits est insuffisante pour permettre aux agriculteurs de retrouver un équilibre financier. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le budget de l'agriculture est en recul, ce qui fragilise l'indemnisation des pertes climatiques.",
+      "citation": "le budget de l’agriculture sera de nouveau en recul en 2027. Cette fragilité apparaît avec une particulière clarté s’agissant de l’indemnisation des pertes climatiques",
+      "orateur_id": "PA794354",
+      "groupe_id": "PO845401",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « Le budget de l'agriculture est en recul, ce qui fragilise l'indemnisation des pertes climatiques. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure supprime une avancée pour les filières agricoles en difficulté, aggravant leur situation.",
+      "citation": "un texte dont l’examen est à venir et qui a pour objectif affirmé de supprimer l’infinitésimale avancée des filières les plus en difficulté.",
+      "orateur_id": "PA841825",
+      "groupe_id": "PO845401",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Patrice Martin) s'y oppose ou veut la réduire : « La mesure supprime une avancée pour les filières agricoles en difficulté, aggravant leur situation. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Les crédits supprimés sont compensés par des aides insuffisantes et inéquitables qui laissent la majorité des agriculteurs sans soutien.",
+      "citation": "Or, non seulement cette somme correspond peu ou prou aux crédits supprimés par le Gouvernement au cours des deux dernières années – ce n’est donc pas un « cadeau » –, mais le plan Climat, adaptation, sécheresse, incendies (Casi) est nul : il laisse de côté quatre agriculteurs sur cinq et ne distribue que des miettes, alors que des dizaines de milliers d’exploitations agricoles risquent une faillite imminente.",
+      "orateur_id": "PA795482",
+      "groupe_id": "PO845413",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Manon Meunier) s'y oppose ou veut la réduire : « Les crédits supprimés sont compensés par des aides insuffisantes et inéquitables qui laissent la majorité des agriculteurs sans soutien. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'augmentation des crédits du programme 149 est nécessaire pour financer une aide exceptionnelle aux exploitations agricoles en difficulté.",
+      "citation": "Nous proposons d’abonder le programme 149, Compétitivité et durabilité de l’agriculture et de l’agroalimentaire, à hauteur de 50 millions d’euros.",
+      "orateur_id": "PA794354",
+      "groupe_id": "PO845401",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « L'augmentation des crédits du programme 149 est nécessaire pour financer une aide exceptionnelle aux exploitations agricoles en difficulté. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La réduction de la dotation du fonds Avenir bio est inadaptée au recul des surfaces et du nombre de fermes biologiques.",
+      "citation": "en mai 2025, le ministère de l’agriculture l’a ramenée à 8,6 millions. Ce montant ne correspond plus à la situation de la filière : si la consommation de produits biologiques a augmenté de 3,6 % en 2025, atteignant 12,6 milliards d’euros, les surfaces reculent, pour la troisième année consécutive et, pour la première fois, le nombre de fermes biologiques diminue.",
       "orateur_id": "PA793816",
       "groupe_id": "PO845419",
       "date": "2026-10-13",
@@ -762,254 +838,45 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mélanie Thomin) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisses » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisses »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mélanie Thomin) s'y oppose ou veut la réduire : « La réduction de la dotation du fonds Avenir bio est inadaptée au recul des surfaces et du nombre de fermes biologiques. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Ce très mauvais budget s’inscrit dans la triste continuité de la baisse, budget après budget, des crédits de la mission, alors que nos agriculteurs affrontent des crises sans précédent (crises climatiques, sanitaires et économiques), la question des prix et des revenus n’ayant pas été traitée.",
-      "orateur_id": "PA794710",
-      "groupe_id": "PO845514",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Julien Brugerolles) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Après le plan de 1 milliard d’euros proposé par la ministre de l’agriculture pour tenter de remédier aux conséquences d’aléas climatiques amenés à se multiplier, dont on peine à percevoir la mise en œuvre réelle, la copie que le Gouvernement nous présente en cette dernière année du macronisme prévoit une baisse de 150 millions d’euros, si l’on neutralise les suppressions, les transferts de programmes et d’actions afférents.",
-      "orateur_id": "PA841825",
-      "groupe_id": "PO845401",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Patrice Martin) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières",
-      "citation": "Qu’on en juge : un projet de loi d’orientation agricole sans vision claire, un texte visant à lever les entraves à l’exercice du métier d’agriculteur édulcoré, un projet de loi dit « d’urgence agricole » qui n’en a que le nom, puisque la moindre mesure visant à alléger les contraintes imposées par Bruxelles a été emportée par la vindicte des adeptes de la décroissance et, enfin, un texte dont l’examen est à venir et qui a pour objectif affirmé de supprimer l’infinitésimale avancée des filières les plus en difficulté.",
-      "orateur_id": "PA841825",
-      "groupe_id": "PO845401",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Patrice Martin) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Sur le terrain, celle-ci entraîne une baisse systématique des prix, au détriment notamment des agriculteurs.",
-      "orateur_id": "PA841367",
-      "groupe_id": "PO845419",
-      "date": "2026-10-09",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627011_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 11 du 09/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627011_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Christophe Proença) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières",
-      "citation": "Néanmoins, le texte comporte des mesures positives en faveur de l’égalité des droits – non-imposition des pensions alimentaires –, de la prise en compte de la crise de l’essence – relèvement du barème kilométrique –, du travail – déplafonnement de la défiscalisation des heures supplémentaires –, de l’innovation – jeunes docteurs –, des entreprises – pacte Dutreil ‑, de l’écologie – verdissement des flottes d’entreprises –, de l’agriculture – épargne de précaution – et des jeunes – suppression des droits d’inscription en BTS et en classes prépas.",
-      "orateur_id": "PA795664",
-      "groupe_id": "PO845407",
-      "date": "2026-10-09",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 12 du 09/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Paul Midy) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières",
-      "citation": "Nous proposons donc de supprimer ce crédit d’impôt et de rediriger ses moyens vers l’accompagnement des agriculteurs dans une véritable transition agroécologique.",
-      "orateur_id": "PA794154",
-      "groupe_id": "PO845439",
-      "date": "2026-10-08",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 9 du 08/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Jean-Claude Raux) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Inaction climatique, ensuite, inaction coupable : comment expliquer qu’après l’été que nous avons connu, vous présentiez un budget de l’écologie raboté, affichant une baisse des crédits de paiement en euros constants et un recul de 860 millions d’euros des autorisations d’engagement, hors budget de la forêt que vous avez fait passer, par un jeu de bonneteau dont vous êtes coutumier, de la mission Agriculture et alimentation à celle d’Écologie, développement et mobilités durables ?",
-      "orateur_id": "PA610002",
-      "groupe_id": "PO845439",
-      "date": "2026-10-01",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 3 du 01/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Eva Sas) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « coupe » dans une phrase sur agriculture et filières",
-      "citation": "S’agissant du système assurantiel, il importe que tous les agriculteurs s’assurent… ( Le temps de parole étant écoulé, Mme la présidente coupe le micro de Mme la ministre.)",
-      "orateur_id": null,
-      "groupe_id": null,
-      "date": "2026-07-07",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-extraordinaire-de-2025-2026/premiere-seance-du-mardi-07-juillet-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mardi 07 juillet 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-extraordinaire-de-2025-2026/premiere-seance-du-mardi-07-juillet-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Annie Genevard, ministre de l’agriculture, de l’agroalimentaire et de la souveraineté alimentaire, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « coupe » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« coupe »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières",
-      "citation": "Le Parlement et les filières agricoles ont besoin de visibilité, et votre proposition de supprimer l’alinéa 10 n’est pas acceptable.",
+      "argument": "La réduction des crédits nationaux diminue les crédits européens mobilisables, aggravant le manque à gagner.",
+      "citation": "En outre, en réduisant la contribution de l'État, le Gouvernement risque de diminuer les crédits européens que nous pouvons mobiliser au bénéfice des agriculteurs français. Le manque à gagner lié à cette mesure sera donc nettement supérieur à 100 millions d’euros.",
       "orateur_id": "PA794354",
       "groupe_id": "PO845401",
-      "date": "2026-05-19",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Première séance du mardi 19 mai 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+            "label": "Commission des affaires économiques, réunion n° 8 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Hélène Laporte) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Hélène Laporte, rapporteure pour avis) s'y oppose ou veut la réduire : « La réduction des crédits nationaux diminue les crédits européens mobilisables, aggravant le manque à gagner. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières",
-      "citation": "Nous en sommes arrivés au point où les agriculteurs eux-mêmes nous demandent de supprimer des articles de ce projet de loi pour éviter de telles usines à gaz.",
-      "orateur_id": "PA840685",
-      "groupe_id": "PO872880",
-      "date": "2026-05-19",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mardi 19 mai 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Vincent Trébuchet) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "Au contraire, nous sommes convaincus que c’est cette logique de mise en concurrence permanente des agricultures qui nourrit la baisse du nombre d’exploitations et la pression sur les prix d’achat, et finit par remettre en cause la qualité des productions comme la sécurité alimentaire des Français.",
-      "orateur_id": "PA794710",
-      "groupe_id": "PO845514",
-      "date": "2026-05-19",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mardi 19 mai 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Julien Brugerolles) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières",
-      "citation": "C’est la conséquence directe de dizaines d’années d’une politique agricole basée sur le seul principe de la compétitivité internationale, et qui n’a toujours eu qu’un seul effet : la baisse du nombre d’agriculteurs. (Mêmes mouvements.) Et votre seule réponse à cela, madame la ministre, c’est ce projet de loi, par lequel vous poursuivez la même trajectoire sans vous poser de questions.",
-      "orateur_id": "PA795482",
+      "argument": "La politique agricole du gouvernement a détruit le secteur, rendant toute critique ou leçon de sa part illégitime.",
+      "citation": "Vous avez saccagé l’agriculture et vous nous donnez des leçons ?",
+      "orateur_id": "PA721960",
       "groupe_id": "PO845413",
-      "date": "2026-05-19",
+      "date": "2026-05-27",
       "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026",
       "preuve": {
         "sources": [
           {
-            "label": "Première séance du mardi 19 mai 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+            "label": "Première séance du mercredi 27 mai 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Manon Meunier) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur agriculture et filières",
-      "citation": "…alors que ces biocarburants sont issus de l’agriculture française, font baisser de 60 % les émissions de CO2 et servent la compétitivité des transporteurs et le pouvoir d’achat de 1 million d’automobilistes ?",
-      "orateur_id": "PA793632",
-      "groupe_id": "PO845401",
-      "date": "2025-10-21",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Séance unique du mardi 21 octobre 2025",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Timothée Houssin) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur agriculture et filières ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Danièle Obono) s'y oppose ou veut la réduire : « La politique agricole du gouvernement a détruit le secteur, rendant toute critique ou leçon de sa part illégitime. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.75.",
         "nature": "deduction"
       }
     }
