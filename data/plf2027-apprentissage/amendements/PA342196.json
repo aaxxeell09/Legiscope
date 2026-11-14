@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:15:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-apprentissage/amendements.json (P1, open data Assemblée nationale), 429 amendements lus, 222 sur le sujet. Sujet = mots-clés de config.json (apprenti, apprentissage, aide à l'embauche, France compétences, article 88, article 89) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 88, 89. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA342196",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000022",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 39.",
+      "sort": "adopte",
+      "travaille_avec": [
+        "Régions de France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000022",
+      "numero": "I-22",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-03",
+      "date_sort": "2026-10-19",
+      "article": "ART. 39"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001614",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 42 : I. – Le V de l’article L. 6242‑1 du code du travail est complété par deux alinéas ainsi rédigés : « Pour les employeurs relevant de l’économie sociale et…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "l’Union des employeurs de l’économie sociale et solidaire"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001614",
+      "numero": "I-CF1614",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-09",
+      "article": "APRÈS ART. 42"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001616",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 42 : I. – La seconde phrase du second alinéa du I de l’article L. 6241‑1 du code du travail est supprimée. II. – Après le 2° du III du même article, il est inséré…",
+      "sort": "non_examine",
+      "travaille_avec": [
+        "l’Union des employeurs de l’économie sociale et solidaire"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001616",
+      "numero": "I-CF1616",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-09",
+      "article": "APRÈS ART. 42"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002932",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 42 : I. – Le V de l’article L. 6242‑1 du code du travail est complété par deux alinéas ainsi rédigés : « Pour les employeurs relevant de l’économie sociale et…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "l’Union des employeurs de l’économie sociale et solidaire"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002932",
+      "numero": "I-2932",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-11-04",
+      "article": "APRÈS ART. 42"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003135",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée. 2° Après le 2° du III, il est inséré…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "l’Union des employeurs de l’économie sociale et solidaire"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003135",
+      "numero": "I-3135",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-11-04",
+      "article": "APRÈS ART. 42"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000114",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement des députés socialistes et apparentés vise à rétablir en 2027 les crédits alloués à France compétences à leur niveau de 2026. France compétences…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000114",
+      "numero": "II-114",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-13",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59047B3210P2D1N000011",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose d’accroître les moyens alloués à l’apprentissage de la langue française. En effet, notre politique d’accueil nécessite tout à la fois…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59047B3210P2D1N000011",
+      "numero": "II-AE11",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-15",
+      "date_sort": "2026-10-28",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000486",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à porter à 60 millions d'euros au moins les crédits du Fonds national pour l'emploi pérenne dans le…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000486",
+      "numero": "II-CF486",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-15",
+      "date_sort": "2026-10-21",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000487",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à dénoncer les baisses de crédits pour le soutien à l'emploi et structurations des professions, de plus…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000487",
+      "numero": "II-CF487",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-15",
+      "date_sort": "2026-10-21",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002428",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à créer un fonds national dédié à la rénovation et à la modernisation des piscines publiques en France. La France compte environ 6 050…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002428",
+      "numero": "II-CF2428",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-20",
+      "date_sort": "2026-10-26",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000996",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à créer un fonds national dédié à la rénovation et à la modernisation des piscines publiques en France. La France compte environ 6 050…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000996",
+      "numero": "II-996",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-26",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001500",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 88.",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001500",
+      "numero": "II-1500",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-29",
+      "date_sort": null,
+      "article": "ART. 88"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002397",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à créer un fonds national dédié à la rénovation et à la modernisation des piscines publiques en France. La France compte environ 6 050…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002397",
+      "numero": "II-2397",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-11-02",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002654",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés propose d’accroître les moyens alloués à l’apprentissage de la langue française. En effet, notre politique…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002654",
+      "numero": "II-2654",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-11-02",
+      "date_sort": null,
+      "article": "ETAT B"
+    }
+  ]
+}

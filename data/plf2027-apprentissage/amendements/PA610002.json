@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:15:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-apprentissage/amendements.json (P1, open data Assemblée nationale), 429 amendements lus, 222 sur le sujet. Sujet = mots-clés de config.json (apprenti, apprentissage, aide à l'embauche, France compétences, article 88, article 89) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 88, 89. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA610002",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002528",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 42 : I. – Le V de l’article L. 6242‑1 du code du travail est complété par deux alinéas ainsi rédigés : « Pour les employeurs relevant de l’économie sociale et…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "l’Union des employeurs de l’économie sociale et solidaire"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002528",
+      "numero": "I-2528",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-11-04",
+      "article": "APRÈS ART. 42"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002916",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée ; 2° Le 4° du III de l’article L.…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "le Centre français des Fonds et Fondations"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002916",
+      "numero": "I-2916",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-11-04",
+      "article": "APRÈS ART. 42"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000535",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le présent amendement propose de diminuer les aides publiques à l’apprentissage pour les formations préparant un diplôme de niveau 7 ou 8. L’extension de…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000535",
+      "numero": "II-CF535",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-15",
+      "date_sort": "2026-10-29",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000707",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Écologiste et Social vise à créer 13 480 postes supplémentaires d’enseignants dans l’enseignement public, dont 3 250 postes dans les…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000707",
+      "numero": "II-CF707",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-29",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000715",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Écologiste et Social vise à annuler les suppressions de postes d’enseignants prévues dans le projet de loi de finances pour 2027 dans…",
+      "sort": "retire",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000715",
+      "numero": "II-CF715",
+      "sort_libelle": "Retiré",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-29",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000721",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Ecologiste et Social vise à garantir à chaque élève en situation de handicap l'accès au matériel pédagogique adapté dont il a besoin…",
+      "sort": "adopte",
+      "travaille_avec": [
+        "le Collectif Handicaps"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000721",
+      "numero": "II-CF721",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-29",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001750",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement a été rédigé en collaboration avec la Fédération des structures indépendantes de création et de production artistique (FSICPA). Cet amendement…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "la Fédération des structures indépendantes de création et de production artistique"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001750",
+      "numero": "II-CF1750",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-21",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001803",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 88 : dispositif non publié.",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001803",
+      "numero": "II-CF1803",
+      "sort_libelle": "Irrecevable 40 (Charge)",
+      "date_depot": "2026-10-16",
+      "date_sort": null,
+      "article": "ART. 88"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000618",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : La vétusté du bâti scolaire de notre pays constitue un sujet de préoccupation majeure. De nombreux établissements sont installés dans des bâtiments anciens…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000618",
+      "numero": "II-618",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-21",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001389",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : La vétusté du bâti scolaire de notre pays constitue un sujet de préoccupation majeure. De nombreux établissements sont installés dans des bâtiments anciens…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001389",
+      "numero": "II-1389",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-29",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001391",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Écologiste et Social vise à créer 13 480 postes supplémentaires d’enseignants dans l’enseignement public, dont 3 250 postes dans les…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001391",
+      "numero": "II-1391",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-29",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001398",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Écologiste et Social vise à annuler les suppressions de postes d’enseignants prévues dans le projet de loi de finances pour 2027 dans…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001398",
+      "numero": "II-1398",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-29",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002087",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement a été rédigé en collaboration avec la Fédération des structures indépendantes de création et de production artistique (FSICPA). Cet amendement…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Fédération des structures indépendantes de création et de production artistique"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002087",
+      "numero": "II-2087",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002483",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le présent amendement propose de diminuer les aides publiques à l’apprentissage pour les formations préparant un diplôme de niveau 7 ou 8. L’extension de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002483",
+      "numero": "II-2483",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-11-02",
+      "date_sort": null,
+      "article": "ETAT B"
+    }
+  ]
+}

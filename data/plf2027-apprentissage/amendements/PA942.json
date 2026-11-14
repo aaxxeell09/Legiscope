@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:15:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-apprentissage/amendements.json (P1, open data Assemblée nationale), 429 amendements lus, 222 sur le sujet. Sujet = mots-clés de config.json (apprenti, apprentissage, aide à l'embauche, France compétences, article 88, article 89) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 88, 89. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA942",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003256",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 39.",
+      "sort": "adopte",
+      "travaille_avec": [
+        "Régions de France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003256",
+      "numero": "I-3256",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-10-19",
+      "article": "ART. 39"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002200",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 88 : dispositif non publié.",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002200",
+      "numero": "II-CF2200",
+      "sort_libelle": "Irrecevable 40 (Charge)",
+      "date_depot": "2026-10-16",
+      "date_sort": null,
+      "article": "ART. 88"
+    }
+  ]
+}
