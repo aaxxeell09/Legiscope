@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:58:04Z",
+    "generated_at": "2026-11-14T16:02:18Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, agenda des réunions",
@@ -133,6 +133,63 @@
       }
     },
     {
+      "titre": "Amendement n° 2322 (DEM) : 89 % de votes pour prédits par Orcet, adoption probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.89,
+      "detail": "Orcet : 0,89 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 77. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 2322",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002322"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,58. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "Amendement n° 2222 (SOC) : 20 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.2,
+      "detail": "Orcet : 0,20 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement vise élargir les aides aux CUMA à la transformation des légumineuses pour l'alimentation humaine. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 2222",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002222"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,89. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "Amendement n° 2358 (UDR) : 28 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.28,
+      "detail": "Orcet : 0,28 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 77. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 2358",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002358"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,94. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
       "titre": "Amendement n° 527 (RN) : 31 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.31,
       "detail": "Orcet : 0,31 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 77. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
@@ -152,15 +209,15 @@
       }
     },
     {
-      "titre": "Amendement n° 78 (DR) : 31 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "titre": "Amendement n° 1583 (EPR) : 31 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.31,
-      "detail": "Orcet : 0,31 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement tire les conséquences budgétaires de la crise structurelle profonde qui frappe la viticulture française et, par ricochet, le premier maillon de sa chaîne : la pépinière viticole. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "detail": "Orcet : 0,31 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 77. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {
         "nature": "deduction",
         "sources": [
           {
-            "label": "Amendement n° 78",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000078"
+            "label": "Amendement n° 1583",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001583"
           },
           {
             "label": "Prédictions Orcet (Hémicycle)",
@@ -171,60 +228,41 @@
       }
     },
     {
-      "titre": "Amendement n° 80 (DR) : 33 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.33,
-      "detail": "Orcet : 0,33 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 77. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "titre": "Amendement n° 2306 (SOC) : 31 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.31,
+      "detail": "Orcet : 0,31 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 77. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {
         "nature": "deduction",
         "sources": [
           {
-            "label": "Amendement n° 80",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000080"
+            "label": "Amendement n° 2306",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002306"
           },
           {
             "label": "Prédictions Orcet (Hémicycle)",
             "url": "https://api.hemicycle.ai/v1/orcet/predictions"
           }
         ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,92. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,74. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
       }
     },
     {
-      "titre": "Amendement n° 67 (HOR) : 44 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.44,
-      "detail": "Orcet : 0,44 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 77. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "titre": "Amendement n° 2346 (EPR) : 31 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.31,
+      "detail": "Orcet : 0,31 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 77. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {
         "nature": "deduction",
         "sources": [
           {
-            "label": "Amendement n° 67",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000067"
+            "label": "Amendement n° 2346",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002346"
           },
           {
             "label": "Prédictions Orcet (Hémicycle)",
             "url": "https://api.hemicycle.ai/v1/orcet/predictions"
           }
         ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,90. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
-      }
-    },
-    {
-      "titre": "Amendement n° 186 (DR) : 44 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.44,
-      "detail": "Orcet : 0,44 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 77. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
-      "preuve": {
-        "nature": "deduction",
-        "sources": [
-          {
-            "label": "Amendement n° 186",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000186"
-          },
-          {
-            "label": "Prédictions Orcet (Hémicycle)",
-            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
-          }
-        ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,90. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,74. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
       }
     },
     {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:58:04Z",
+    "generated_at": "2026-11-14T16:02:18Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, agenda des réunions",
@@ -114,6 +114,25 @@
       }
     },
     {
+      "titre": "Amendement n° 677 (RN) : 25 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.25,
+      "detail": "Orcet : 0,25 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 78. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 677",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000677"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,97. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
       "titre": "Amendement n° 107 (RN) : 26 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.26,
       "detail": "Orcet : 0,26 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement vise à créer un dispositif « 100 % Rénov » ayant vocation à se substituer à MaPrimeRénov’, afin de financer massivement la rénovation énergétique et l’adaptation des logements aux épisodes de fortes chaleurs sans imposer a... Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
@@ -133,6 +152,44 @@
       }
     },
     {
+      "titre": "Amendement n° 528 (RN) : 31 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.31,
+      "detail": "Orcet : 0,31 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 78. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 528",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000528"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,85. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "Amendement n° 2502 (LFI-NFP) : 33 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.33,
+      "detail": "Orcet : 0,33 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 78. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 2502",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002502"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,99. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
       "titre": "Amendement n° 337 (RN) : 38 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.38,
       "detail": "Orcet : 0,38 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Le présent amendement vise à mesurer spécifiquement les délais d’accès au logement social des familles nombreuses. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
@@ -149,6 +206,63 @@
           }
         ],
         "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,98. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "Amendement n° 1096 (HOR) : 44 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.44,
+      "detail": "Orcet : 0,44 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 78. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 1096",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001096"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,90. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "Amendement n° 1386 (HOR) : 44 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.44,
+      "detail": "Orcet : 0,44 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 78. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 1386",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001386"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,90. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "Amendement n° 2519 (HOR) : 44 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.44,
+      "detail": "Orcet : 0,44 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Supprime l'article 78. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 2519",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002519"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,90. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
       }
     },
     {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:57:59+01:00",
+    "generated_at": "2026-11-14T17:02:14+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -42,7 +42,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la situation est défavorable : 7 groupes soutiennent la baisse des crédits, tandis que le texte a été rejeté à l'Assemblée.",
+        "texte": "Au Sénat, la situation est défavorable car 7 groupes soutiennent la baisse des crédits, tandis que le texte a été rejeté à l'Assemblée.",
         "chiffres_utilises": [
           "7"
         ],
@@ -144,7 +144,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la situation est favorable car la mesure est absente du texte, malgré l'absence d'amendements de repli déposés.",
+        "texte": "Au Sénat, en première lecture, la mesure est absente du texte, ce qui est favorable à l'objectif, bien que le rapporteur général l'ait soutenue.",
         "chiffres_utilises": [],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -208,10 +208,8 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la situation est favorable car 3 groupes soutiennent le report, mais aucun amendement n'est encore déposé.",
-        "chiffres_utilises": [
-          "3"
-        ],
+        "texte": "Au Sénat, la situation est favorable car la mesure est absente du texte, mais aucun amendement de report n'a été déposé.",
+        "chiffres_utilises": [],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
         "verifie": true

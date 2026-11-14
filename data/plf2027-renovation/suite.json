@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:58:05Z",
+    "generated_at": "2026-11-14T16:02:18Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, agenda des réunions",
@@ -130,6 +130,44 @@
           }
         ],
         "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,96. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "Amendement n° 1666 (EPR) : 53 % de votes pour prédits par Orcet, adoption probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.53,
+      "detail": "Orcet : 0,53 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). L’article 173 de la loi de finances pour 2025 a modifié l’identification des bénéficiaires après la suppression de la taxe d’habitation. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 1666",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001666"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,84. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "Amendement n° 1670 (EPR) : 53 % de votes pour prédits par Orcet, adoption probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.53,
+      "detail": "Orcet : 0,53 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Le présent amendement propose de créer un nouvel indicateur rattaché au programme 174 « Énergie, climat et après-mines », portant sur l’automaticité du versement du chèque énergie. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 1670",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001670"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,84. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
       }
     },
     {

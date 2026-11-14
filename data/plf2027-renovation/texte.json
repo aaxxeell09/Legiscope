@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:57:45+01:00",
+    "generated_at": "2026-11-14T17:02:02+01:00",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -622,7 +622,12 @@
       "groupe_id": "PO845407",
       "resume": "L’article 173 de la loi de finances pour 2025 a modifié l’identification des bénéficiaires après la suppression de la taxe d’habitation.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.53,
+        "confiance": 0.84,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N001670",
@@ -638,7 +643,12 @@
       "groupe_id": "PO845407",
       "resume": "Le présent amendement propose de créer un nouvel indicateur rattaché au programme 174 « Énergie, climat et après-mines », portant sur l’automaticité du versement du chèque énergie.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.53,
+        "confiance": 0.84,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P1D1N001745",

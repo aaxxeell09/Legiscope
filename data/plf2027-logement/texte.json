@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:56:14+01:00",
+    "generated_at": "2026-11-14T17:01:51+01:00",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -258,7 +258,12 @@
       "groupe_id": "PO845401",
       "resume": "Supprime l'article 78.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.31,
+        "confiance": 0.85,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N000677",
@@ -380,7 +385,12 @@
       "groupe_id": "PO845401",
       "resume": "Supprime l'article 78.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.25,
+        "confiance": 0.97,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P2D1N000704",
@@ -706,7 +716,12 @@
       "groupe_id": "PO845470",
       "resume": "Supprime l'article 78.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N001386",
@@ -722,7 +737,12 @@
       "groupe_id": "PO845470",
       "resume": "Supprime l'article 78.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P2D1N001386",
@@ -1077,7 +1097,12 @@
       "groupe_id": "PO845413",
       "resume": "Supprime l'article 78.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.33,
+        "confiance": 0.99,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N002519",
@@ -1093,7 +1118,12 @@
       "groupe_id": "PO845470",
       "resume": "Supprime l'article 78.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P2D1N002620",
@@ -1633,7 +1663,12 @@
       "groupe_id": "PO845470",
       "resume": "L’article 126 de la loi de finances pour 2018 a créé un dispositif de réduction de loyer de solidarité (RLS) applicable dans les logements ouvrant droit à l’APL et gérés par les organismes Hlm, à l’exception des logements foyers conventi...",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P1D1N001204",
@@ -1738,7 +1773,12 @@
       "groupe_id": "PO845407",
       "resume": "La suppression de cette prestation réduit les dépenses du Fonds national d’aide au logement et, par conséquent, le montant de la contribution d’équilibre versée par l’État au FNAL depuis le programme 109 « Aide à l’accès au logement ».",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N001494",
@@ -1765,7 +1805,12 @@
       "groupe_id": "PO845407",
       "resume": "Le présent amendement réduit de moitié, à compter du 1 er janvier 2027, le montant de l’aide personnalisée au logement (APL) versée aux ménages occupant un logement du parc locatif social ordinaire géré par un organisme d’habitations à l...",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P1D1N001545",
@@ -1996,7 +2041,12 @@
       "groupe_id": "PO845470",
       "resume": "L’article 126 de la loi de finances pour 2018 a créé un dispositif de réduction de loyer de solidarité (RLS) applicable dans les logements ouvrant droit à l’APL et gérés par les organismes Hlm, à l’exception des logements foyers conventi...",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P2D1N002755",

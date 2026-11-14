@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:53:36+01:00",
+    "generated_at": "2026-11-14T17:02:13+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -143,162 +143,162 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627010_compte-rendu"
       }
     ],
-    "limits": "94 prises de parole sur le sujet lues dans 33 comptes rendus (90 comptes rendus parcourus) ; 8 classées, 8 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 0 rejetées pour citation inexacte, 0 écartées car le second avis du modèle contredit le camp ; 3 pour et 5 contre après dédoublonnage. Version rapide : camp déduit par règles de mots (supprimer, rétablir les crédits, baisse = contre la baisse ; maîtrise, économies = pour), sans modèle, chaque argument à relire. Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
+    "limits": "94 prises de parole sur le sujet lues dans 33 comptes rendus (90 comptes rendus parcourus) ; 84 classées, 16 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 10 rejetées pour citation inexacte, 7 écartées car le second avis du modèle contredit le camp ; 3 pour et 5 contre après dédoublonnage. Classement par le modèle Featherless (94 appels à cette exécution, cache sur disque). Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
     "producer": "pipeline/debats",
     "dossier_id": "plf2027-renovation"
   },
   "pour": [
     {
-      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements",
-      "citation": "Je vous propose de réaliser une économie de 800 millions d’euros en supprimant le chèque énergie, mais je suppose que cette mesure sera, cette année encore, refusée parce que vous ne voulez pas faire d’économies.",
-      "orateur_id": "PA719372",
-      "groupe_id": "PO845407",
-      "date": "2026-10-21",
+      "argument": "La rigueur budgétaire est indispensable pour redresser les finances publiques et garantir la pérennité de MaPrimeRénov'.",
+      "citation": "Nous avons choisi la rigueur, car c’est elle qui nous sauvera et qui nous permettra de continuer à parler des services publics et de MaPrimeRénov’ dans deux ans. Si le gouvernement se montrait trop généreux, on lui reprocherait de laisser filer la dette.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-10-14",
       "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627009_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Commission des finances, réunion n° 21 du 21/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+            "label": "Commission du développement durable, réunion n° 9 du 14/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627009_compte-rendu"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (Guillaume Kasbarian) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Françoise Gatel, ministre, sans identifiant de député dans deputes.json) la défend : « La rigueur budgétaire est nécessaire pour sauver la dette et garantir la pérennité de MaPrimeRénov' à moyen terme. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Françoise Gatel (commission du 2026-10-14).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements",
-      "citation": "Ainsi, les 1 233 projets de rénovation énergétique financés en 2025 permettent de réaliser des gains d’économies d’énergie de l’ordre de 59 %.",
-      "orateur_id": "PA793520",
-      "groupe_id": "PO845454",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission du développement durable, réunion n° 6 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (Mickaël Cosson, rapporteur pour avis (Politiques de développement durable)) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements",
-      "citation": "C’est le sens de nos propositions : un capital de départ pour la jeunesse, une contribution additionnelle à l’impôt sur la fortune immobilière (IFI) pour financer la rénovation énergétique ou encore un prêt adossé aux économies d’énergie de demain.",
-      "orateur_id": "PA722162",
-      "groupe_id": "PO845454",
-      "date": "2026-10-13",
+      "argument": "La suppression de MaPrimeRénov' est une erreur car elle accompagne la rénovation énergétique et la transition écologique.",
+      "citation": "Il accompagne aussi la rénovation énergétique et la transition écologique. Dans cet hémicycle, certains cherchent tout simplement à supprimer MaPrimeRénov’.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-11-04",
       "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
       "preuve": {
         "sources": [
           {
-            "label": "Première séance du mardi 13 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+            "label": "Première séance du mercredi 04 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Nicolas Turquois) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Vincent Jeanbrun, ministre, sans identifiant de député dans deputes.json) la défend : « La suppression de MaPrimeRénov' est une erreur car elle accompagne la rénovation énergétique et la transition écologique. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La prorogation de l'exonération est nécessaire car le dispositif fonctionne bien et met du temps à se mettre en place.",
+      "citation": "L’amendement I-CF1341 vise à proroger jusqu’au 31 décembre 2030, soit pour trois années supplémentaires, l’exonération de droits de donation des dons familiaux consentis pour l’acquisition d’un logement neuf destiné à la résidence principale ou pour la réalisation de travaux de rénovation énergétique. Un tel dispositif met quelque temps à se mettre en place. Celui-ci, instauré dans la loi de finances de 2025, fonctionne bien mais arrive à son terme à la fin de l’année.",
+      "orateur_id": "PA719778",
+      "groupe_id": "PO845470",
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (François Jolivet) la défend : « La prorogation de l'exonération est nécessaire car le dispositif fonctionne bien et met du temps à se mettre en place. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
         "nature": "deduction"
       }
     }
   ],
   "contre": [
     {
-      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur rénovation énergétique des logements",
-      "citation": "Dans cet hémicycle, certains cherchent tout simplement à supprimer MaPrimeRénov’.",
-      "orateur_id": null,
-      "groupe_id": null,
-      "date": "2026-11-04",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 04 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Vincent Jeanbrun, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « supprimeraient » dans une phrase sur rénovation énergétique des logements",
-      "citation": "Ce faisant, ils supprimeraient des milliards d’euros de soutien à la rénovation énergétique, et donc à nos artisans !",
-      "orateur_id": null,
-      "groupe_id": null,
-      "date": "2026-11-04",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Première séance du mercredi 04 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Vincent Jeanbrun, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimeraient » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimeraient »), sans modèle, à relire.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur rénovation énergétique des logements",
-      "citation": "La suppression de la taxe d’habitation ayant mis fin à l’automaticité du chèque énergie, le nombre de ses bénéficiaires a reculé, alors même que la précarité énergétique augmente.",
+      "argument": "La baisse des crédits prive les territoires et les collectivités des outils financiers nécessaires pour protéger les citoyens.",
+      "citation": "Après les coupes incessantes qu’a subies MaPrimeRénov, vous avez encore amputé le fonds Vert et comptez désormais vous attaquer à l’Ademe. Vous privez nos territoires des principaux outils à leur disposition pour nous protéger.",
       "orateur_id": "PA794146",
       "groupe_id": "PO845439",
-      "date": "2026-10-21",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu",
+      "date": "2026-06-17",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
       "preuve": {
         "sources": [
           {
-            "label": "Commission des finances, réunion n° 21 du 21/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+            "label": "Première séance du mercredi 17 juin 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Julie Laernoes) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Julie Laernoes) s'y oppose ou veut la réduire : « Les coupes successives sur MaPrimeRénov privent les territoires des outils nécessaires pour protéger les citoyens du réchauffement climatique. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Anne Stambach-Terrenoir (commission du 2026-10-14), Mickaël Cosson (commission du 2026-10-14).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur rénovation énergétique des logements",
-      "citation": "Les AE de l’action 01, Performance environnementale, qui porte quasi-exclusivement sur la rénovation énergétique, passent de 221 millions à 350 millions d’euros, tandis que les CP sont en baisse, de 547 millions à 424 millions d’euros.",
-      "orateur_id": "PA793520",
-      "groupe_id": "PO845454",
-      "date": "2026-10-13",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu",
+      "argument": "Les crédits actuels sont insuffisants face aux objectifs climatiques et doivent être augmentés pour intensifier la rénovation.",
+      "citation": "Le gouvernement est-il prêt à reprendre notre proposition de loi contre les bouilloires thermiques, à adapter les critères des aides à l’isolation de MaPrimeRénov' et à lui consacrer les moyens nécessaires ?",
+      "orateur_id": "PA841507",
+      "groupe_id": "PO845439",
+      "date": "2026-06-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026",
       "preuve": {
         "sources": [
           {
-            "label": "Commission du développement durable, réunion n° 6 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu"
+            "label": "Première séance du mardi 16 juin 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Mickaël Cosson, rapporteur pour avis (Politiques de développement durable)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Nicolas Bonnet) s'y oppose ou veut la réduire : « La baisse des crédits est inadaptée car il faut au contraire adapter et financer MaPrimeRénov' pour lutter contre la chaleur. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Sylvie Ferrer (commission du 2026-10-14), Lisa Belluco (commission du 2026-10-14).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur rénovation énergétique des logements",
-      "citation": "En effet, alors que le nombre de ménages en situation de précarité énergétique est estimé à 3,1 millions par l’observatoire national chargé du suivi de cette question, 1,8 million d’entre eux ne bénéficient plus du chèque énergie depuis la suppression de la taxe d’habitation.",
-      "orateur_id": "PA795516",
+      "argument": "La réduction des crédits est un renoncement inacceptable à la transition écologique en pleine crise climatique.",
+      "citation": "Avec ce PLF pour 2027, et après un été caniculaire que certains de nos concitoyens ont vécu durement dans leur chair, la rénovation énergétique est sous-financée, à rebours du réchauffement climatique en cours.",
+      "orateur_id": "PA794870",
       "groupe_id": "PO845413",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627009_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Commission du développement durable, réunion n° 6 du 13/10/2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu"
+            "label": "Commission du développement durable, réunion n° 9 du 14/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627009_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Maxime Laisney) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Sylvie Ferrer) s'y oppose ou veut la réduire : « La rénovation énergétique est sous-financée, ce qui est à rebours de la lutte contre le réchauffement climatique. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Mme Estelle Mercier (SOC) (séance du 2026-11-12).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La baisse des crédits a un impact négatif sur l'investissement des ménages, l'activité économique et les entreprises.",
+      "citation": "Deuxièmement, les revirements qui ont touché MaPrimeRénov ont eu un impact très négatif sur l’investissement des ménages. Confirmez-vous le rôle positif que peut jouer cet outil sur l’activité ? Si oui, ne faut-il pas porter son montant de 3,6 à 5 milliards d’euros, et surtout améliorer sa gestion et stabiliser ses critères ?",
+      "orateur_id": "PA610002",
+      "groupe_id": "PO845439",
+      "date": "2026-10-01",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 2 du 01/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Eva Sas) s'y oppose ou veut la réduire : « La baisse des crédits est inefficace car elle a un impact négatif sur l'investissement des ménages et l'activité. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Marie-Philippe Lubet (commission du 2026-10-14).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'instabilité et les changements fréquents des règles de MaPrimeRénov' nuisent à la confiance et à l'efficacité du dispositif.",
+      "citation": "À ce propos, quid de MaPrimeRénov', qui perd un peu tout le monde ? Arrêtons de jouer au yo-yo avec ce dispositif. Je crois qu'il faut aussi reconnaître la possibilité d'un parcours de rénovation pluriannuel, ce qui permettrait d'étendre quelque peu la dépense et de mieux l'amortir.",
+      "orateur_id": "PA266797",
+      "groupe_id": "PO845425",
+      "date": "2026-04-28",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du mardi 28 avril 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Philippe Gosselin (DR)) s'y oppose ou veut la réduire : « Le dispositif MaPrimeRénov' est instable et inefficace, il faut arrêter de jouer au yo-yo et prévoir un parcours pluriannuel. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Fabrice Barusseau (commission du 2026-10-14).",
         "nature": "deduction"
       }
     }

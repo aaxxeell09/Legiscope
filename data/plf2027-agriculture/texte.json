@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:53:55+01:00",
+    "generated_at": "2026-11-14T17:01:36+01:00",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -575,7 +575,12 @@
       "groupe_id": "PO845407",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N000979",
@@ -591,7 +596,12 @@
       "groupe_id": "PO845425",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.33,
+        "confiance": 0.92,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P2D1N001208",
@@ -660,7 +670,12 @@
       "groupe_id": "PO845407",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N001368",
@@ -746,7 +761,12 @@
       "groupe_id": "PO845413",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.35,
+        "confiance": 0.99,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P2D1N001486",
@@ -789,7 +809,12 @@
       "groupe_id": "PO845425",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.46,
+        "confiance": 0.78,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N001583",
@@ -813,7 +838,12 @@
       "groupe_id": "PO845407",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.31,
+        "confiance": 0.74,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P2D1N001683",
@@ -957,7 +987,12 @@
       "groupe_id": "PO845470",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P2D1N002088",
@@ -1028,7 +1063,12 @@
       "groupe_id": "PO845485",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.57,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N002151",
@@ -1058,7 +1098,12 @@
       "groupe_id": "PO845419",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.36,
+        "confiance": 0.92,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N002190",
@@ -1111,7 +1156,12 @@
       "groupe_id": "PO845439",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.35,
+        "confiance": 0.99,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO59048B3210P2D1N002202",
@@ -1213,7 +1263,12 @@
       "groupe_id": "PO845419",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.31,
+        "confiance": 0.74,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N002322",
@@ -1266,7 +1321,12 @@
       "groupe_id": "PO845454",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.89,
+        "confiance": 0.58,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N002346",
@@ -1282,7 +1342,12 @@
       "groupe_id": "PO845407",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.31,
+        "confiance": 0.74,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N002358",
@@ -1305,7 +1370,12 @@
       "groupe_id": "PO872880",
       "resume": "Supprime l'article 77.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.28,
+        "confiance": 0.94,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P1D1N000035",
@@ -1932,7 +2002,12 @@
       "groupe_id": "PO845419",
       "resume": "Cet amendement vise élargir les aides aux CUMA à la transformation des légumineuses pour l'alimentation humaine.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.2,
+        "confiance": 0.89,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P1D1N002262",
@@ -1983,7 +2058,12 @@
       "groupe_id": "PO845514",
       "resume": "La souveraineté alimentaire des dits outre-mer exige une visibilité pluriannuelle des moyens publics et une connaissance précise de leur exécution.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.33,
+        "confiance": 0.92,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P2D1N002848",
@@ -2016,7 +2096,12 @@
       "groupe_id": "PO845514",
       "resume": "La lutte contre la vie chère dans les outre-mer ne peut se limiter à la seule observation des prix payés par les consommateurs.",
       "sort": "en_attente",
-      "prediction": null
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.9,
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "date": "2026-11-14"
+      }
     },
     {
       "id": "AMANR5L17PO838901B3210P1D1N002878",

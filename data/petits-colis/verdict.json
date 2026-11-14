@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:51:24+01:00",
+    "generated_at": "2026-11-14T17:01:20+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -187,7 +187,7 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée, en première lecture, la situation est défavorable car le gouvernement porte la mesure et 7 groupes s'opposent à sa réduction.",
+        "texte": "À l'Assemblée, en première lecture, la situation est défavorable car le gouvernement porte la mesure et 7 groupes s'opposent à la réduction du montant.",
         "chiffres_utilises": [
           "7"
         ],
@@ -305,7 +305,7 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée, en première lecture, la situation est défavorable car le gouvernement porte la mesure et 8 groupes s'y opposent, face à un seul groupe.",
+        "texte": "À l'Assemblée, en première lecture, la situation est défavorable car le gouvernement porte la mesure et 8 groupes s'y opposent.",
         "chiffres_utilises": [
           "8"
         ],
