@@ -51,6 +51,12 @@
   padding: 11px 0;
   border-top: 1px solid var(--border-soft);
 }
+.suite-echeance-prioritaire { margin-bottom:var(--space-2); padding:14px; border:1px solid var(--border-soft); border-radius:var(--radius); background:var(--surface-2); }
+.suite-echeance-prioritaire .suite-date { color:var(--text); }
+.suite-autres,.suite-scenarios { border-top:1px solid var(--border-soft); padding-top:var(--space-3); }
+.suite-autres > summary,.suite-scenarios > summary { display:flex; align-items:center; justify-content:space-between; gap:12px; color:var(--text-2); font-size:var(--fs-sm); cursor:pointer; }
+.suite-autres > summary span,.suite-scenarios > summary span { display:grid; place-items:center; min-width:22px; height:20px; padding:0 6px; border-radius:var(--radius-pill); background:var(--surface-2); font-size:var(--fs-xs); }
+.suite-autres[open] > summary,.suite-scenarios[open] > summary { margin-bottom:var(--space-2); color:var(--text); }
 
 .suite-date {
   font-weight: 600;
@@ -76,7 +82,7 @@
 }
 
 .suite-echeance { position: relative; }
-.suite-echeance:not(:last-child)::after { content:""; position:absolute; left:7px; top:31px; bottom:-12px; width:1px; background:var(--border); }
+.suite-liste .suite-echeance:not(:last-child)::after { content:""; position:absolute; left:7px; top:31px; bottom:-12px; width:1px; background:var(--border); }
 .suite-date { position:relative; display:flex; gap:var(--space-2); align-items:center; }
 .suite-marker { width:15px; height:15px; flex:none; border:4px solid var(--surface); border-radius:50%; background:var(--text-3); box-shadow:0 0 0 1px var(--border); }
 .suite-avertissement { margin:0 0 var(--space-2); color:var(--text-2); font-size:var(--fs-xs); }

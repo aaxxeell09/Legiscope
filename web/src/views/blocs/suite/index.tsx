@@ -25,6 +25,8 @@ export default function SuiteBloc({ dossier }: { dossier: string }) {
 
 function SuiteContenu({ s }: { s: Suite }) {
   const echeances = [...s.echeances].sort((a, b) => (a.date ?? "9999").localeCompare(b.date ?? "9999"));
+  const premiere = echeances[0];
+  const suivantes = echeances.slice(1);
   return (
     <div className="suite">
       {s.derniere_occasion && (
@@ -45,25 +47,12 @@ function SuiteContenu({ s }: { s: Suite }) {
             aucune échéance connue{s.meta.limits ? ` ; ${s.meta.limits}` : ""}
           </p>
         ) : (
-          <ul className="suite-liste">
-            {echeances.map((e, i) => (
-              <li key={`${e.date}-${i}`} className={`suite-echeance nature-${e.preuve.nature}`}>
-                <span className="suite-date"><span className="suite-marker" aria-hidden="true" />{e.date ? formatDate(e.date) : "Date à confirmer"}</span>
-                <span>
-                  <a href={e.url} target="_blank" rel="noreferrer">
-                    {e.titre}
-                  </a>{" "}
-                  <span className="text-2">{LIEU[e.lieu]}</span> <Nature n={e.preuve.nature} />{" "}
-                  <Pourquoi preuve={e.preuve} />
-                </span>
-              </li>
-            ))}
-          </ul>
+          <><EcheanceLigne e={premiere} prioritaire />{suivantes.length > 0 && <details className="suite-autres"><summary>Voir les autres échéances <span>{suivantes.length}</span></summary><div className="suite-liste">{suivantes.map((e, i) => <EcheanceLigne key={`${e.date}-${i}`} e={e} />)}</div></details>}</>
         )}
       </section>
 
-      <section>
-        <h4 className="suite-titre">Scénarios documentés</h4>
+      <details className="suite-scenarios">
+        <summary>Scénarios documentés <span>{s.probables.length}</span></summary>
         {s.probables.length === 0 ? (
           <p className="text-2">Pas de prédiction disponible.</p>
         ) : (
@@ -73,11 +62,18 @@ function SuiteContenu({ s }: { s: Suite }) {
             ))}
           </ul></>
         )}
-      </section>
+      </details>
 
       <Meta meta={s.meta} />
     </div>
   );
+}
+
+function EcheanceLigne({ e, prioritaire = false }: { e: Echeance; prioritaire?: boolean }) {
+  return <div className={`suite-echeance nature-${e.preuve.nature}${prioritaire ? " suite-echeance-prioritaire" : ""}`}>
+    <span className="suite-date"><span className="suite-marker" aria-hidden="true" />{e.date ? formatDate(e.date) : "Date à confirmer"}</span>
+    <span><a href={e.url} target="_blank" rel="noreferrer">{e.titre}</a>{" "}<span className="text-2">{LIEU[e.lieu]}</span> <Nature n={e.preuve.nature} />{" "}<Pourquoi preuve={e.preuve} /></span>
+  </div>;
 }
 
 function ProbableLigne({ p }: { p: Probable }) {
