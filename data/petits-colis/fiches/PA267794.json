@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:34:32.509Z",
+    "generated_at": "2026-11-14T13:49:43.976Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -666,11 +666,10 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Michèle Tabarot est probablement favorable à la mesure, car elle a cosigné l'amendement 1775 qui a été rejeté.",
-    "argument": "Présenter à ce député que l'amendement 1775, qu'il a cosigné et qui est rejeté, montre qu'il a déjà examiné le mécanisme de la taxe sur le commerce électronique, ce qui lui permet de comprendre l'impact concret de la mesure sur les colis de moins de 150 euros.",
+    "position_probable": "Elle a cosigné l'amendement 1775, rejeté, qui soutient la mesure, ce qui indique qu'elle est probablement pour.",
+    "argument": "Présenter à ce député le rejet de l'amendement 1775 qu'il a cosigné, car cet acte personnel montre qu'il soutient la mesure, ce qui rend un premier contact difficile.",
     "chiffres_utilises": [
-      "1775",
-      "150"
+      "1775"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

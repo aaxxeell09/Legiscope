@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:32:45.410Z",
+    "generated_at": "2026-11-14T13:49:43.902Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1252,13 +1252,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Fabrice Brun est probablement favorable à la mesure, comme en témoignent ses cosignatures sur les amendements 1774 et 1775, respectivement tombé et rejeté.",
-    "argument": "Présenter à ce député l'impact de la taxe de 2 euros sur les colis de moins de 150 euros, car il a cosigné l'amendement 1774 qui proposait de porter ce montant à 25 euros et qui est tombé.",
+    "position_probable": "Fabrice Brun est probablement favorable à la mesure, car il a cosigné l'amendement 1774 qui a été tombé et l'amendement 1775 qui a été rejeté.",
+    "argument": "Présenter à ce député le fait que l'amendement 1774, qu'il a cosigné pour porter la taxe à 25 euros, est tombé, afin de lui montrer que la mesure initiale de 2 euros par article reste l'option la plus réaliste pour Alibaba France.",
     "chiffres_utilises": [
       "1774",
       "1775",
       "2",
-      "150",
       "25"
     ],
     "mode": "llm",

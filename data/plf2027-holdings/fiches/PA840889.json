@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:27:29.734Z",
+    "generated_at": "2026-11-14T13:46:37.964Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -386,12 +386,10 @@
   },
   "synthese": {
     "position_probable": "A cosigné l'amendement n° 1415, adopté (« Supprime l'article 3 »).",
-    "argument": "Présenter à ce député que la suppression de l'article 3, cosignée par lui et adoptée, protège directement les holdings patrimoniales de la taxe de 0,5 % prévue par le texte n° 3140.",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1415 (« Supprime l'article 3 »).",
     "chiffres_utilises": [
       "1415",
-      "3",
-      "0.5",
-      "3140"
+      "3"
     ],
     "mode": "gabarit",
     "modele": null,

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:29:28.170Z",
+    "generated_at": "2026-11-14T13:48:16.048Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -44,6 +44,11 @@
       "role": "membre",
       "organisations": [
         {
+          "nom": "université Paris Cité",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
           "nom": "Organisation de coopération et de développement économiques (OCDE)",
           "type": "autre",
           "hatvp_id": null
@@ -54,13 +59,28 @@
           "hatvp_id": null
         },
         {
+          "nom": "Centre national de la recherche scientifique (CNRS)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut des politiques publiques (IPP)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "université Bourgogne Europe",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
           "nom": "Association française des acteurs de l’éducation",
           "type": "association",
           "hatvp_id": null
         },
         {
-          "nom": "Média « Le café pédagogique »",
-          "type": "entreprise",
+          "nom": "Le café pédagogique",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -90,7 +110,7 @@
         },
         {
           "nom": "Secrétariat général de l’enseignement catholique",
-          "type": "administration",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -115,7 +135,7 @@
         },
         {
           "nom": "Syndicat national des lycées, collèges, écoles et du supérieur (Snalc)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -326,7 +346,7 @@
       "organisations": [
         {
           "nom": "Centre national de la musique (CNM)",
-          "type": "administration",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -335,7 +355,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Association de centres de développement chorégraphique nationaux (A‑CDCN)",
+          "nom": "Association de centres de développement chorégraphique nationaux (A-CDCN)",
           "type": "association",
           "hatvp_id": null
         },
@@ -350,43 +370,48 @@
           "hatvp_id": null
         },
         {
+          "nom": "Réunion des opéras de France (ROF)",
+          "type": "association",
+          "hatvp_id": "784358970"
+        },
+        {
           "nom": "Syndicat national des entreprises artistiques et culturelles (Syndéac)",
           "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Scènes Ensemble",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Forces Musicales",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Sociétés des auteurs et compositeurs dramatiques (SACD)",
-          "type": "federation",
+          "type": "autre",
           "hatvp_id": null
         },
         {
           "nom": "Sociétés des auteurs, compositeurs et éditeurs de musique (Sacem)",
-          "type": "federation",
+          "type": "autre",
           "hatvp_id": null
         },
         {
           "nom": "Administration des droits des artistes et musiciens interprètes (Adami)",
-          "type": "federation",
+          "type": "autre",
           "hatvp_id": null
         },
         {
           "nom": "Société civile des auteurs multimédias (Scam)",
-          "type": "federation",
+          "type": "autre",
           "hatvp_id": null
         },
         {
           "nom": "Société de perception et de distribution des droits des artistes-interprètes (Spedidam)",
-          "type": "federation",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -395,33 +420,33 @@
           "hatvp_id": null
         },
         {
-          "nom": "Association nationale des écoles supérieures d’art (ANdÉA)",
+          "nom": "Association nationale des écoles supérieures d'art (ANdÉA)",
           "type": "association",
           "hatvp_id": null
         },
         {
-          "nom": "Association nationale d’établissements d’enseignement supérieur de la création artistique arts de la scène (Anescas)",
+          "nom": "Association nationale d'établissements d'enseignement supérieur de la création artistique arts de la scène (Anescas)",
           "type": "association",
           "hatvp_id": null
         },
         {
-          "nom": "Ministère de la culture",
+          "nom": "Ministère de la culture – Direction générale de la création artistique (DGCA)",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Ekhoscènes",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat des musiques actuelles (SMA)",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "France festivals",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -430,62 +455,57 @@
           "hatvp_id": null
         },
         {
+          "nom": "Ministère de la culture – Direction générale de la démocratie culturelle, des enseignements et de la recherche (DGDCER)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
           "nom": "Syndicat des cirques et compagnies de création (SCC)",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat national des arts vivants (Synavi)",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "La scène indépendante",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Crazy Horse Paris",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "L’ange bleu",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "La belle entrée",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "L’élégance",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "L’étoile bleue",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Le grand cabaret",
-          "type": "autre",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Madame Simone",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Moulin rouge",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Paradis Latin",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
-          "nom": "Ministère de l’économie, des finances et de la souveraineté industrielle, énergétique et numérique",
+          "nom": "Ministère de la culture – Direction générale des médias et des industries culturelles (DGmic)",
           "type": "administration",
           "hatvp_id": null
         }
@@ -499,7 +519,7 @@
       "organisations": [
         {
           "nom": "Santé publique France",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -519,7 +539,7 @@
         },
         {
           "nom": "Association des maires de France et des présidents d’intercommunalité",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -539,7 +559,7 @@
         },
         {
           "nom": "Comité paralympique et sportif français (CPSF)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -564,7 +584,7 @@
         },
         {
           "nom": "Comité d'organisation des jeux olympiques et paralympiques des Alpes françaises 2030",
-          "type": "association",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -579,66 +599,6 @@
         },
         {
           "nom": "Institut national du sport, de l'expertise et de la performance",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Caisse nationale d’allocations familiales",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Défense mobilité",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Établissement public territorial Paris Est Marne & bois",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Fédération des professionnels de la piscine et du spa",
-          "type": "federation",
-          "hatvp_id": null
-        },
-        {
-          "nom": "France travail",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Métropole du Grand Paris",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Ministère de l’éducation nationale, direction générale de l’enseignement scolaire",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Ministère de l’intérieur, direction générale de la gendarmerie nationale",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Mutualité sociale agricole",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Syndicat national professionnel des maîtres-nageurs sauveteurs",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Ville de Plouescat",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Voies navigables de France",
           "type": "administration",
           "hatvp_id": null
         }
@@ -1139,12 +1099,9 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Soumya Bourouaha est probablement pour la mesure, car elle a cosigné un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député que la mesure n° 3140 vise une taxe de 0,5 % sur les holdings patrimoniales, un sujet qu'il a déjà traité en cosignant l'amendement n° 1847, rejeté, qui modifiait le code général des impôts.",
+    "position_probable": "Soumya Bourouaha est probablement favorable à la mesure, comme l'indique sa cosignature de l'amendement 1847, rejeté, qui modifie le code général des impôts.",
+    "argument": "Présenter à ce député que son groupe GDR soutient la mesure, ce qui contraste avec sa cosignature de l'amendement n° 1847 rejeté.",
     "chiffres_utilises": [
-      "3",
-      "0.5",
-      "3140",
       "1847"
     ],
     "mode": "llm",

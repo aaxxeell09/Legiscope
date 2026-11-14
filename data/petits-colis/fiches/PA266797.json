@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:34:15.587Z",
+    "generated_at": "2026-11-14T13:49:43.967Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -561,10 +561,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Philippe Gosselin est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 1774, tombé, qui proposait d'augmenter le montant de la taxe.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui propose de porter la taxe à 25 euros, a été tombée, pour montrer que son soutien à la mesure est conditionné par un niveau de taxation plus élevé.",
+    "position_probable": "Philippe Gosselin est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'il a cosignés et qui sont tombés ou rejetés.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros, a été tombé, pour lui montrer que la mesure actuelle reste plus favorable à son groupe que la version initiale.",
     "chiffres_utilises": [
       "1774",
+      "1775",
       "25"
     ],
     "mode": "llm",

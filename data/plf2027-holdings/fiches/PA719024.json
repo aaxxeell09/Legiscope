@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:26:34.067Z",
+    "generated_at": "2026-11-14T13:45:20.458Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -403,9 +403,10 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Christophe Blanchet a cosigné l'amendement n° 3821, rejeté, qui institue une contribution, ce qui indique qu'il est probablement contre la mesure.",
-    "argument": "Présenter à ce député que son amendement n° 3821, qui institue une contribution, a été rejeté, afin de montrer que la mesure actuelle reste une option viable pour le client.",
+    "position_probable": "Les actes de Christophe Blanchet vont dans les deux sens, car il a déposé des amendements qui tombent ou sont rejetés et cosigné d'autres qui tombent ou sont rejetés, sans que sa position personnelle sur la mesure ne soit tranchée.",
+    "argument": "Présenter à ce député que son amendement n° 3821, qui institue une contribution, a été rejeté, ce qui montre qu'il cherche à limiter la portée de la mesure, tout en précisant que KNDS France a été entendue par les rapporteurs de sa commission, un indice plus faible qu'un acte personnel.",
     "chiffres_utilises": [
+      "2",
       "3821"
     ],
     "mode": "llm",

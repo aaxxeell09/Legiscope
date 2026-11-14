@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:30:09.749Z",
+    "generated_at": "2026-11-14T13:48:49.886Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -50,12 +50,12 @@
         },
         {
           "nom": "Brittany Ferries",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Corsica Linea",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "nom": "Établissement national des invalides de la Marine (Enim)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -80,12 +80,12 @@
         },
         {
           "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
+          "nom": "Confédération française de l’encadrement – Confédération générale des cadres (CFE-CGC) Marine",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "nom": "Comité national de la conchyliculture",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -325,6 +325,11 @@
           "hatvp_id": null
         },
         {
+          "nom": "Mission interministérielle pour la protection des femmes contre les violences et la lutte contre la traite des êtres humains (Miprof)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
           "nom": "Départements de France",
           "type": "federation",
           "hatvp_id": null
@@ -359,12 +364,12 @@
         },
         {
           "nom": "Office central de lutte contre le travail illégal (OCLTI)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Observatoire de l’immigration et de la démographie (OID)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -396,26 +401,6 @@
           "nom": "Groupement des hôtelleries & restaurations de France (GHR)",
           "type": "federation",
           "hatvp_id": null
-        },
-        {
-          "nom": "Force ouvrière (FO)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française des travailleurs chrétiens (CFTC)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Mouvement des entreprises de France (Medef)",
-          "type": "federation",
-          "hatvp_id": "784668618"
         }
       ]
     }
@@ -808,17 +793,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Hendrik Davi est probablement favorable à la mesure, comme l'indiquent les amendements n° 18, 43, 174, 208, 38, 47 et 56 qu'il a cosignés et qui ont été rejetés.",
-    "argument": "Présenter à ce député que son amendement n° 18, qui rétablit le chapitre Ier bis du code général des impôts, a été rejeté, afin de souligner que la mesure n° 3140 ne repose pas sur des bases fiscales déjà validées.",
+    "position_probable": "Hendrik Davi est probablement favorable à la mesure, comme l'indiquent les amendements n° 18, n° 43, n° 174, n° 208 et n° 38 qu'il a cosignés et qui ont été rejetés.",
+    "argument": "Présenter à ce député le fait que son amendement n° 18, qui rétablit le chapitre Ier bis du code général des impôts, a été rejeté, afin de souligner que sa position en faveur de la mesure ne s'appuie plus sur ce texte spécifique.",
     "chiffres_utilises": [
       "18",
       "43",
       "174",
       "208",
-      "38",
-      "47",
-      "56",
-      "3140"
+      "38"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

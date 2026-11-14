@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:33:10.755Z",
+    "generated_at": "2026-11-14T13:49:43.919Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -863,11 +863,13 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Hubert Brigand est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'il a cosignés, tombé et rejeté respectivement.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui proposait de porter la taxe à 25 euros et qui est tombé, montre qu'il soutient la mesure, ce qui rend difficile pour Alibaba France de le convaincre de s'y opposer.",
+    "position_probable": "Hubert Brigand est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'il a cosignés et qui ont été respectivement tombé et rejeté.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros, a été tombé, pour lui montrer que la mesure actuelle de 2 euros reste en vigueur et que son soutien à la hausse ne protège pas les petits colis de moins de 150 euros.",
     "chiffres_utilises": [
       "1774",
       "1775",
+      "2",
+      "150",
       "25"
     ],
     "mode": "llm",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:32:36.679Z",
+    "generated_at": "2026-11-14T13:49:43.890Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1366,11 +1366,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Antoine Vermorel est probablement favorable à la mesure, comme en témoigne son amendement n° 719, adopté, qui précise le dispositif sur les importations d'articles de faible valeur.",
-    "argument": "Présenter à ce député l'amendement 719, adopté, qui réécrit l'article 22 pour cibler les importations d'articles de faible valeur, afin de démontrer que la mesure peut être ajustée pour exclure les acteurs français et limiter l'impact sur Alibaba France.",
+    "position_probable": "Antoine Vermorel est probablement favorable à la mesure, comme le montrent ses amendements 719 et 720, respectivement adopté et tombé.",
+    "argument": "Présenter à ce député le fait que son amendement n° 719, qui a été adopté, vise à préciser que la taxe concerne les petits colis importés, afin de montrer que sa position sur la mesure est déjà tranchée.",
     "chiffres_utilises": [
       "719",
-      "22"
+      "720"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:35:20.229Z",
+    "generated_at": "2026-11-14T13:49:44.003Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -542,12 +542,13 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, et la position pour de son groupe ne suffit pas à la définir.",
-    "argument": "Présenter à ce député que la Direction générale des douanes et droits indirects a été entendue par les rapporteurs de sa commission le 18 novembre 2025, ce qui constitue un indice plus faible qu'un acte personnel pour appuyer la position contre la mesure.",
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe soutient la mesure.",
+    "argument": "Présenter à ce député que la Direction générale des douanes et droits indirects a été entendue par les rapporteurs de sa commission le 18 novembre 2025, ce qui constitue un indice plus faible qu'un acte personnel pour appuyer la position de son client contre la mesure.",
     "chiffres_utilises": [
       "2",
       "150",
       "0.75",
+      "0",
       "2025",
       "11",
       "13",

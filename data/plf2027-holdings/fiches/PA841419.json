@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:27:37.172Z",
+    "generated_at": "2026-11-14T13:46:41.838Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -439,16 +439,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Damien Girard est probablement favorable à la mesure, comme l'indiquent les amendements 18, 43, 174, 208, 38, 47 et 56 qu'il a cosignés et qui ont été rejetés.",
-    "argument": "Présenter à ce député le fait qu'il a cosigné l'amendement n° 18, rejeté, qui modifie le code général des impôts, pour appuyer la position de l'Afep contre la mesure.",
+    "position_probable": "Sa position probable est favorable à la mesure, comme l'indiquent les amendements n° 18, 43, 174, 208 et 38 qu'il a cosignés et qui ont été rejetés.",
+    "argument": "Présenter à ce député que le groupe Écologiste soutient la mesure, ce qui contraste avec ses cosignatures sur les amendements 18 et 43 rejetés, pour lui rappeler que son vote en faveur de la taxe s'aligne sur la position de son groupe.",
     "chiffres_utilises": [
       "18",
       "43",
       "174",
       "208",
-      "38",
-      "47",
-      "56"
+      "38"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

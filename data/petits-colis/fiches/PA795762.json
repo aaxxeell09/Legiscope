@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:33:53.583Z",
+    "generated_at": "2026-11-14T13:49:43.952Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -471,12 +471,10 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Elie Califer est probablement contre la mesure, comme l'indique l'amendement 452 qu'il a déposé et qui est en attente.",
-    "argument": "Présenter à ce député l'amendement 452 qu'il a déposé et qui est en attente, car il vise à exclure certaines importations de la taxe de 2 euros par article sur les colis de moins de 150 euros, ce qui correspond à l'objectif d'Alibaba France.",
+    "position_probable": "Elie Califer est probablement contre la mesure, car il a déposé l'amendement 452, qui est en attente.",
+    "argument": "Présenter à ce député l'amendement 452 qu'il a déposé pour exclure certaines importations de la taxe, afin de confirmer son soutien à la position d'Alibaba France contre la mesure.",
     "chiffres_utilises": [
-      "452",
-      "2",
-      "150"
+      "452"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

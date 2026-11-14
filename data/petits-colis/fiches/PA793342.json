@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:33:29.247Z",
+    "generated_at": "2026-11-14T13:49:43.932Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -863,11 +863,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Alexandra Martin (Alpes-Maritimes) est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'elle a cosignés et qui ont respectivement été tombé et rejeté.",
-    "argument": "Présenter à ce député le fait que son amendement n° 1774, qui proposait de porter la taxe à 25 euros, est tombé, pour lui montrer que la mesure actuelle reste plus favorable à son client que la version qu'il a soutenue.",
+    "position_probable": "Alexandra Martin (Alpes-Maritimes) est probablement pour la mesure, car elle a cosigné l'amendement 1774 qui a été tombé et l'amendement 1775 qui a été rejeté.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros, a été tombée, pour lui montrer que la mesure initiale de 2 euros reste en vigueur et qu'il peut agir pour la réduire.",
     "chiffres_utilises": [
       "1774",
       "1775",
+      "2",
       "25"
     ],
     "mode": "llm",

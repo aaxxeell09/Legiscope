@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:28:19.122Z",
+    "generated_at": "2026-11-14T13:47:19.235Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -50,12 +50,12 @@
         },
         {
           "nom": "Brittany Ferries",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Corsica Linea",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "nom": "Établissement national des invalides de la Marine (Enim)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -80,12 +80,12 @@
         },
         {
           "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
+          "nom": "Confédération française de l’encadrement – Confédération générale des cadres (CFE-CGC) Marine",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "nom": "Comité national de la conchyliculture",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -143,6 +143,11 @@
         },
         {
           "nom": "Caisse nationale des allocations familiales (Cnaf)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mission interministérielle pour la protection des femmes contre les violences et la lutte contre la traite des êtres humains (Miprof)",
           "type": "administration",
           "hatvp_id": null
         },
@@ -181,12 +186,12 @@
         },
         {
           "nom": "Office central de lutte contre le travail illégal (OCLTI)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Observatoire de l’immigration et de la démographie (OID)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -218,26 +223,6 @@
           "nom": "Groupement des hôtelleries & restaurations de France (GHR)",
           "type": "federation",
           "hatvp_id": null
-        },
-        {
-          "nom": "Force ouvrière (FO)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française des travailleurs chrétiens (CFTC)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Mouvement des entreprises de France (Medef)",
-          "type": "federation",
-          "hatvp_id": "784668618"
         }
       ]
     }
@@ -532,7 +517,7 @@
   },
   "synthese": {
     "position_probable": "Didier Le Gac est probablement contre la mesure, comme l'indique son cosignature d'un amendement tombé.",
-    "argument": "Présenter à ce député son cosignature de l'amendement tombé qui modifie le 34° du II de la section 5 du code général des impôts, car cet acte montre qu'il s'oppose à la mesure dans le sens du client.",
+    "argument": "Présenter à ce député que son groupe EPR est contre la mesure, ce qui renforce son rôle d'allié pour le client.",
     "chiffres_utilises": [
       "3",
       "0.5",

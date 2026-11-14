@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:33:45.615Z",
+    "generated_at": "2026-11-14T13:49:43.943Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -561,8 +561,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Michel Castellani est probablement contre la mesure, comme en témoignent les amendements 1834 et 2820 qu'il a cosignés pour exclure les biens d'occasion de la taxe, dont le premier a été retiré et le second est en attente.",
-    "argument": "Présenter à ce député l'amendement 1834, tombé, qui excluait les biens d'occasion de la taxe, car il a cosigné ce texte et l'organisation a été entendue par les rapporteurs de sa commission.",
+    "position_probable": "Michel Castellani est probablement contre la mesure, car il a cosigné les amendements 1834 et 2820 qui excluent les biens d'occasion de la taxe, dont le premier est tombé et le second est en attente.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 2820, qui exclut les biens d'occasion de la taxe et est en attente, aligne sa position contre la mesure avec l'objectif d'Alibaba France.",
     "chiffres_utilises": [
       "1834",
       "2820"

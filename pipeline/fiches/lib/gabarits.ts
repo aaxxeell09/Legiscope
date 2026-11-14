@@ -80,6 +80,8 @@ export type EntreeSynthese = {
   auditions: { date: string; role: string; entendu_par?: string; organisations: string[] }[];
   /** Classement du cabinet (groupes-action.json, P3) : la synthèse ne doit pas le contredire. */
   classement_du_cabinet?: { liste: string; position_sur_la_mesure: "pour" | "contre" | null; raison: string; fondement: string[] } | null;
+  /** Actes personnels comptés depuis la `nature` de ses amendements (texte.json) : aggrave = pour la mesure ; supprime, reduit, reporte = contre. */
+  actes_personnels?: { pour_la_mesure: number; contre_la_mesure: number; position_deduite: "pour" | "contre" | null; detail: string };
 };
 export type EcartsPivot = { n_ecarts: number; loyaute_12m: number } | null;
 export type Gabarise = { position_probable: string; argument: string; chiffres: string[]; origine: "x3" | "local" };

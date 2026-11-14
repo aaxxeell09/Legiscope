@@ -49,6 +49,18 @@ export function contreditLeClassement(texte: string, position: "pour" | "contre"
   return (position === "pour" && ditContre && !ditPour) || (position === "contre" && ditPour && !ditContre);
 }
 
+/** Actes personnels du député lus dans la nature de ses amendements (texte.json, champ posé par P3). */
+function actesPersonnels(ctx: Contexte, fiche: Omit<Fiche, "synthese">): EntreeSynthese["actes_personnels"] {
+  let pour = 0, contre = 0;
+  for (const a of fiche.amendements) {
+    const n = (amendementDuTexte(ctx, a.id) as any)?.nature;
+    if (n === "aggrave") pour += 1;
+    else if (n === "supprime" || n === "reduit" || n === "reporte") contre += 1;
+  }
+  const position = pour > contre ? "pour" : contre > pour ? "contre" : null;
+  return { pour_la_mesure: pour, contre_la_mesure: contre, position_deduite: position, detail: `${pour} amendement(s) déposé(s) ou cosigné(s) qui aggravent la mesure, ${contre} qui la suppriment, la réduisent ou la reportent` };
+}
+
 async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<{ s: Synthese; origine: "x3" | "local" }> {
   const pa = fiche.depute_id;
   const depute = ctx.deputes.deputes.find((d) => d.id === pa);
@@ -72,6 +84,7 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
     // Complément 1 : le rôle dit si le député a lui-même entendu (rapporteur) ou si les organisations ont été
     // entendues par les rapporteurs de sa commission (membre) ; le prompt de X3 lit `entendu_par`.
     classement_du_cabinet: classementDe(ctx, pa),
+    actes_personnels: actesPersonnels(ctx, fiche),
     auditions: fiche.auditions.filter((a) => !posterieur(a.date, ref)).map((a) => ({ date: a.date, role: a.role, entendu_par: a.role.startsWith("rapporteur") ? "le député lui-même, comme rapporteur" : "les rapporteurs de sa commission, pas le député lui-même", organisations: a.organisations.map((o) => o.nom) })),
   };
   const pivot = ctx.pivots?.deputes.find((p) => p.id === pa);
@@ -80,7 +93,9 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
   const entreeModele = { ...entree, amendements: entree.amendements.map(({ id: _id, ...reste }) => reste) };
   const prompt = lirePrompt(PROMPT_SYNTHESE);
   const sansCache = regenerer.has(pa);
-  const attendu = entree.classement_du_cabinet?.position_sur_la_mesure ?? null;
+  // Position attendue : le classement de P3, sinon les actes personnels lus dans la nature des amendements.
+  const attendu = entree.classement_du_cabinet?.position_sur_la_mesure ?? entree.actes_personnels?.position_deduite ?? null;
+  let positionEnGabarit = false;
   const etiquette = `${ctx.dossier.id}/fiches/${pa}`;
   let position = await rediger({ prompt, champ: "position_probable", entree: entreeModele, gabarit: gabarit.position_probable, chiffresGabarit: gabarit.chiffres, etiquette: `${etiquette} position_probable`, sansCache });
   // Cohérence avec le classement de P3 (X1, 14 h 30) : une synthèse qui dit le contraire est rappelée une fois, puis remplacée par le gabarit.
@@ -90,9 +105,13 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
     if (position.mode === "llm" && contreditLeClassement(position.texte, attendu)) {
       noter(`${etiquette} : toujours contraire au classement, gabarit`);
       position = { texte: gabarit.position_probable, mode: "gabarit", modele: null, chiffres_utilises: gabarit.chiffres, verifie: true, fautifs: [] };
+      positionEnGabarit = true;
     }
   }
-  const argument = await rediger({ prompt, champ: "argument", entree: entreeModele, gabarit: gabarit.argument, chiffresGabarit: gabarit.chiffres, etiquette: `${etiquette} argument`, sansCache });
+  // Si la position est en gabarit, l'argument l'est aussi : il ne doit pas s'appuyer sur une lecture rejetée.
+  const argument = positionEnGabarit
+    ? { texte: gabarit.argument, mode: "gabarit" as const, modele: null, chiffres_utilises: gabarit.chiffres, verifie: true, fautifs: [] }
+    : await rediger({ prompt, champ: "argument", entree: entreeModele, gabarit: gabarit.argument, chiffresGabarit: gabarit.chiffres, etiquette: `${etiquette} argument`, sansCache });
   const mode = position.mode === "llm" && argument.mode === "llm" ? "llm" : "gabarit";
   return { origine: gabarit.origine, s: {
     position_probable: position.texte,

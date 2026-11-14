@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:35:19.590Z",
+    "generated_at": "2026-11-14T13:49:44.001Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -844,12 +844,13 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue car il n'a déposé aucun amendement et n'a pas pris la parole, mais son groupe EPR est favorable à la mesure.",
-    "argument": "Présenter à ce député que la Cour des comptes a été entendue par les rapporteurs de sa commission le 13 novembre 2025, ce qui constitue un indice plus faible qu'un acte personnel pour aborder la taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe.",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, et la position de son groupe est pour la mesure.",
+    "argument": "Présenter à ce député que la Cour des comptes a été entendue par les rapporteurs de sa commission le 13 novembre 2025, ce qui constitue un indice plus faible qu'un acte personnel, pour appuyer la position d'Alibaba France contre la taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe.",
     "chiffres_utilises": [
       "2",
       "150",
       "0.62",
+      "0",
       "2025",
       "11",
       "13",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:31:11.616Z",
+    "generated_at": "2026-11-14T13:49:09.087Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -385,8 +385,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sébastien Saint-Pasteur a cosigné l'amendement n° 364, qui a été rejeté, ce qui indique qu'il est probablement favorable à la mesure.",
-    "argument": "Présenter à ce député que l'Afep s'oppose à la taxe sur la fortune improductive et à la taxe de 0,5 % sur les holdings patrimoniales, en s'appuyant sur le fait que KNDS France a été entendue par les rapporteurs de sa commission le 22 octobre 2026, ce qui constitue un indice plus faible qu'un acte personnel.",
+    "position_probable": "Sébastien Saint-Pasteur est probablement favorable à la mesure, comme en témoigne son cosignature de l'amendement n° 364, qui a été rejeté.",
+    "argument": "Présenter à ce député que l'Afep s'oppose à la taxe sur la fortune improductive et à la taxe de 0,5 % sur les holdings patrimoniales, car il a cosigné l'amendement n° 364, rejeté, qui rétablit l'impôt plancher, et que KNDS France a été entendue par les rapporteurs de sa commission le 22 octobre 2026.",
     "chiffres_utilises": [
       "364",
       "0.5",

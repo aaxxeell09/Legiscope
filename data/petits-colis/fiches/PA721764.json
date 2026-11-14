@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:34:07.628Z",
+    "generated_at": "2026-11-14T13:49:43.962Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -713,16 +713,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Olivia Grégoire est probablement contre la mesure, comme en témoignent ses amendements 4037, 4038, 4039, 4040 et 4059, tous retirés, qui visaient à réduire le montant de la taxe ou à en modifier le périmètre.",
-    "argument": "Présenter à ce député l'amendement 459, en attente, qui vise à porter la taxe à 25 euros, car il a cosigné ce texte avec l'entreprise Kiabi.",
+    "position_probable": "Olivia Grégoire est probablement contre la mesure, comme l'indique son amendement n° 4037 retiré qui visait à réduire le montant de la taxe.",
+    "argument": "Présenter à ce député l'amendement 459, en attente, qui porte la taxe à 25 euros, pour rappeler qu'il a déjà cosigné ce texte avec l'entreprise Kiabi et qu'il a retiré ses propres amendements 4037, 4038, 4039, 4040 et 4059.",
     "chiffres_utilises": [
       "4037",
+      "459",
+      "25",
       "4038",
       "4039",
       "4040",
-      "4059",
-      "459",
-      "25"
+      "4059"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

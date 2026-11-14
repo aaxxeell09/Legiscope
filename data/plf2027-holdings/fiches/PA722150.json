@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:29:45.170Z",
+    "generated_at": "2026-11-14T13:48:34.253Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -49,13 +49,13 @@
           "hatvp_id": null
         },
         {
-          "nom": "Syndicat national pénitentiaire",
-          "type": "autre",
+          "nom": "Syndicat national pénitentiaire – FO Direction",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
-          "nom": "Syndicat national des directeurs pénitentiaires",
-          "type": "autre",
+          "nom": "Syndicat national des directeurs pénitentiaires – CFDT",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -80,7 +80,7 @@
         },
         {
           "nom": "Syndicat Pénitentiaire des Surveillants non gradés (SPS)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         }
       ]
@@ -102,6 +102,11 @@
           "hatvp_id": null
         },
         {
+          "nom": "Direction générale de l’administration et de la fonction publique (DGAFP) ministère de l’Action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
           "nom": "Direction générale des outre-mer (DGOM) du ministère des Outre-mer",
           "type": "administration",
           "hatvp_id": null
@@ -118,7 +123,7 @@
         },
         {
           "nom": "Groupe des instituts du service public (G-ISP)",
-          "type": "entreprise",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -132,7 +137,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Université des Antilles",
+          "nom": "Université des Antilles – Guadeloupe",
           "type": "administration",
           "hatvp_id": null
         },
@@ -149,6 +154,44 @@
         {
           "nom": "Association des anciens élèves des IRA (AAEIRA)",
           "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université Paris 1 Panthéon-Sorbonne",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVIII.html",
+      "date": "2026-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Club des juristes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Toulouse Capitole",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université Sorbonne Nouvelle – Paris III",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Strasbourg",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École de droit de Sciences Po Paris",
+          "type": "administration",
           "hatvp_id": null
         }
       ]
@@ -466,15 +509,30 @@
   ],
   "couverture": {
     "rapports_total": 4,
-    "rapports_avec_liste": 2,
+    "rapports_avec_liste": 3,
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sacha Houlié est probablement favorable à la mesure, comme en témoigne son cosignature d'un amendement sur l'article 5 qui a été adopté.",
-    "argument": "Présenter à ce député le rejet de l'amendement qu'il a cosigné sur l'article 5, afin de montrer que la mesure n° 3140 ne s'appliquera pas comme prévu.",
+    "position_probable": "Sacha Houlié a cosigné plusieurs amendements, dont un adopté et trois rejetés, qui modifient le code général des impôts, ce qui indique qu'il soutient probablement la mesure.",
+    "argument": "Présenter à ce député que son groupe soutient la mesure, ce qui contraste avec son classement de perdu pour le client, afin de clarifier sa position réelle avant tout contact.",
     "chiffres_utilises": [
+      "3",
+      "0.5",
+      "3140",
+      "0.76",
       "5",
-      "3140"
+      "167",
+      "1",
+      "15",
+      "220",
+      "60",
+      "8",
+      "0",
+      "0.87",
+      "2026",
+      "11",
+      "6",
+      "12"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

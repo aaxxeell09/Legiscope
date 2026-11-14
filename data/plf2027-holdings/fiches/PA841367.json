@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:31:03.298Z",
+    "generated_at": "2026-11-14T13:49:08.706Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -49,22 +49,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Direction du Budget, 7e sous-direction",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Direction générale du Trésor, services des Politiques macroéconomiques et des affaires européennes",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
           "nom": "Ministère de l’Europe et des affaires étrangères",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Direction de l’Union européenne",
           "type": "administration",
           "hatvp_id": null
         }
@@ -88,12 +73,7 @@
         },
         {
           "nom": "Société nationale de sauvetage en mer (SNSM)",
-          "type": "entreprise",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Vice-amiral d’escadre Emmanuel de Oliveira, président",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -174,7 +154,7 @@
         },
         {
           "nom": "EURODOM",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -197,17 +177,17 @@
       "organisations": [
         {
           "nom": "Conseil d’État",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat des juridictions financières (SJF)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat de la juridiction administrative (SJA)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -222,7 +202,7 @@
         },
         {
           "nom": "Cour nationale du droit d’asile (CNDA)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -260,7 +240,7 @@
         },
         {
           "nom": "Pôles régionaux de l’immobilier de l’État (Prie)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": "302998554"
         }
       ]
@@ -278,7 +258,7 @@
         },
         {
           "nom": "Institut de gestion sociale des armées (IGESA)",
-          "type": "entreprise",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -288,6 +268,11 @@
         },
         {
           "nom": "Direction du budget, bureau 5BDM",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut des Invalides",
           "type": "administration",
           "hatvp_id": null
         },
@@ -323,22 +308,22 @@
         },
         {
           "nom": "Le Souvenir Français",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
-          "nom": "La Direction générale de l’enseignement scolaire du ministère de l’Éducation nationale",
+          "nom": "Direction générale de l’enseignement scolaire du ministère de l’Éducation nationale",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Mémorial de la Shoah",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Commune de Noyant-d’Allier",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -358,7 +343,7 @@
         },
         {
           "nom": "Fédération Nationale des Victimes d’Attentats et d’Accidents Collectifs",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         }
       ]
@@ -371,17 +356,17 @@
       "organisations": [
         {
           "nom": "Syndicat des musiques actuelles (SMA)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat national de l’édition phonographique (SNEP)",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Union des producteurs phonographiques français indépendants (UPFI)",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -401,7 +386,7 @@
         },
         {
           "nom": "Ekhoscènes",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -431,7 +416,7 @@
         },
         {
           "nom": "France Festivals",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -461,27 +446,27 @@
         },
         {
           "nom": "Société des Auteurs, Compositeurs et Éditeurs de Musique (SACEM)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Administration des Droits des Artistes et Musiciens Interprètes (ADAMI)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Société de Perception et de Distribution des Droits des Artistes-Interprètes",
-          "type": "entreprise",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "COPIE France",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Société civile des Producteurs de Phonogrammes en France (SPPF)",
-          "type": "entreprise",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -546,13 +531,8 @@
           "hatvp_id": null
         },
         {
-          "nom": "François Reydellet, directeur adjoint",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
           "nom": "Groupe des Instituts du Service Public (GISP)",
-          "type": "entreprise",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -897,10 +877,11 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Christophe Proença a cosigné l'amendement n° 364, rejeté, qui rétablit un impôt plancher, ce qui indique qu'il est probablement favorable à la mesure.",
-    "argument": "Présenter à ce député l'amendement n° 364 qu'il a cosigné et qui a été rejeté, afin de montrer que la mesure qu'il a tenté de modifier n'a pas abouti.",
+    "position_probable": "Christophe Proença est probablement favorable à la mesure, comme l'indique sa cosignature de l'amendement 364, rejeté, et de l'amendement 471, rejeté.",
+    "argument": "Présenter à ce député que son amendement n° 364, qui rétablit l'impôt plancher, a été rejeté, afin de l'inviter à soutenir la suppression de la taxe sur la fortune improductive.",
     "chiffres_utilises": [
-      "364"
+      "364",
+      "471"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

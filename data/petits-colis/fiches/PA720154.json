@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:35:07.904Z",
+    "generated_at": "2026-11-14T13:49:43.997Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -462,11 +462,12 @@
   },
   "synthese": {
     "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est favorable à la mesure.",
-    "argument": "Présenter à ce député l'absence d'acte personnel sur la taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe, car un premier contact reste à établir.",
+    "argument": "Présenter à ce député l'absence totale d'actes personnels sur la mesure, car il n'a ni déposé d'amendement ni pris la parole, ce qui rend un premier contact nécessaire pour établir sa position réelle.",
     "chiffres_utilises": [
       "2",
       "150",
-      "0.62"
+      "0.62",
+      "0"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

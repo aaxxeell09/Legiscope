@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:27:16.031Z",
+    "generated_at": "2026-11-14T13:46:24.997Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -49,13 +49,13 @@
           "hatvp_id": null
         },
         {
-          "nom": "Syndicat national pénitentiaire",
-          "type": "autre",
+          "nom": "Syndicat national pénitentiaire – FO Direction",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
-          "nom": "Syndicat national des directeurs pénitentiaires",
-          "type": "autre",
+          "nom": "Syndicat national des directeurs pénitentiaires – CFDT",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -80,7 +80,7 @@
         },
         {
           "nom": "Syndicat Pénitentiaire des Surveillants non gradés (SPS)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         }
       ]
@@ -102,6 +102,11 @@
           "hatvp_id": null
         },
         {
+          "nom": "Direction générale de l’administration et de la fonction publique (DGAFP) ministère de l’Action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
           "nom": "Direction générale des outre-mer (DGOM) du ministère des Outre-mer",
           "type": "administration",
           "hatvp_id": null
@@ -118,7 +123,7 @@
         },
         {
           "nom": "Groupe des instituts du service public (G-ISP)",
-          "type": "entreprise",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -132,7 +137,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Université des Antilles",
+          "nom": "Université des Antilles – Guadeloupe",
           "type": "administration",
           "hatvp_id": null
         },
@@ -149,6 +154,44 @@
         {
           "nom": "Association des anciens élèves des IRA (AAEIRA)",
           "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université Paris 1 Panthéon-Sorbonne",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVIII.html",
+      "date": "2026-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Club des juristes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Toulouse Capitole",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université Sorbonne Nouvelle – Paris III",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Strasbourg",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École de droit de Sciences Po Paris",
+          "type": "administration",
           "hatvp_id": null
         }
       ]
@@ -655,22 +698,17 @@
   ],
   "couverture": {
     "rapports_total": 4,
-    "rapports_avec_liste": 2,
+    "rapports_avec_liste": 3,
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 756, rejeté (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Avant le chapitre II du titre IV de la première partie du livre Ier, il est inséré un chapitre I ter… »).",
-    "argument": "Présenter à ce député le rejet de l'amendement 756 qu'il a cosigné, afin de montrer que la suppression de la taxe sur la fortune improductive (article 3) et de la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) est déjà actée par son action parlementaire.",
+    "position_probable": "Jean-François Coulomme est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 756, rejeté.",
+    "argument": "Présenter à ce député que son amendement n° 756, cosigné et rejeté, visait à modifier le code général des impôts, ce qui montre son intérêt pour la fiscalité, alors que le client Afep s'oppose à la mesure.",
     "chiffres_utilises": [
-      "756",
-      "4",
-      "1",
-      "3",
-      "0.5",
-      "3140"
+      "756"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

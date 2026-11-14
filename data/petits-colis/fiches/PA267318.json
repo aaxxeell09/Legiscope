@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:34:25.290Z",
+    "generated_at": "2026-11-14T13:49:43.972Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -471,8 +471,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Jean-Carles Grelier est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 3395, actuellement en attente.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 3395, actuellement en attente, vise à limiter la taxe aux colis de moins de 2 kilos, ce qui pourrait réduire l'impact de la mesure sur les petits colis de moins de 150 euros.",
+    "position_probable": "Il est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 3395, actuellement en attente.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 3395, actuellement en attente, renforce la taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe, ce qui va à l'encontre des intérêts d'Alibaba France.",
     "chiffres_utilises": [
       "3395",
       "2",

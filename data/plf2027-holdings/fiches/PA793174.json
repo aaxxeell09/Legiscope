@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:30:09.298Z",
+    "generated_at": "2026-11-14T13:48:42.813Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -50,12 +50,12 @@
         },
         {
           "nom": "Brittany Ferries",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Corsica Linea",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "nom": "Établissement national des invalides de la Marine (Enim)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -80,12 +80,12 @@
         },
         {
           "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
+          "nom": "Confédération française de l’encadrement – Confédération générale des cadres (CFE-CGC) Marine",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "nom": "Comité national de la conchyliculture",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -143,6 +143,11 @@
         },
         {
           "nom": "Caisse nationale des allocations familiales (Cnaf)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mission interministérielle pour la protection des femmes contre les violences et la lutte contre la traite des êtres humains (Miprof)",
           "type": "administration",
           "hatvp_id": null
         },
@@ -181,12 +186,12 @@
         },
         {
           "nom": "Office central de lutte contre le travail illégal (OCLTI)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Observatoire de l’immigration et de la démographie (OID)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -218,26 +223,6 @@
           "nom": "Groupement des hôtelleries & restaurations de France (GHR)",
           "type": "federation",
           "hatvp_id": null
-        },
-        {
-          "nom": "Force ouvrière (FO)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française des travailleurs chrétiens (CFTC)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Mouvement des entreprises de France (Medef)",
-          "type": "federation",
-          "hatvp_id": "784668618"
         }
       ]
     }
@@ -558,10 +543,10 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Yannick Monnet est probablement favorable à la mesure, comme l'indique son cosignature d'un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement supprimant l'article 3 a été adoptée, ce qui confirme son opposition à la taxe sur la fortune improductive défendue par l'Afep.",
+    "position_probable": "Yannick Monnet est probablement favorable à la mesure, car il a cosigné l'amendement n° 1847, qui a été rejeté.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement n° 1847, rejeté, montre qu'il a déjà tenté de modifier le cadre fiscal, ce qui permet d'aborder les impacts concrets de la mesure sur les entreprises.",
     "chiffres_utilises": [
-      "3"
+      "1847"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

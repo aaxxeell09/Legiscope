@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:35:13.572Z",
+    "generated_at": "2026-11-14T13:49:43.999Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -542,12 +542,13 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, et le groupe DR est pour la mesure.",
-    "argument": "Présenter à ce député que la direction du budget a été entendue par les rapporteurs de sa commission le 12 novembre 2025, ce qui constitue un indice plus faible qu'un acte personnel pour aborder la taxe de 2 euros sur les colis de moins de 150 euros.",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, mais son groupe est favorable à la mesure.",
+    "argument": "Présenter à ce député que la direction du budget a été entendue par les rapporteurs de sa commission le 12 novembre 2025, ce qui constitue un indice plus faible qu'un acte personnel pour appuyer la position de son groupe contre la mesure.",
     "chiffres_utilises": [
       "2",
       "150",
       "0.76",
+      "0",
       "2025",
       "11",
       "12",

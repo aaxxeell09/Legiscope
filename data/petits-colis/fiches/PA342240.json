@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:34:49.555Z",
+    "generated_at": "2026-11-14T13:49:43.986Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1225,12 +1225,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Jean-Luc Bourgeaux est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'il a cosignés et qui ont été respectivement tombé et rejeté.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui proposait de porter la taxe à 25 euros et a été tombé, montre qu'il soutient une fiscalité plus lourde sur les colis de moins de 150 euros, ce qui va à l'encontre de l'objectif d'Alibaba France.",
+    "position_probable": "Jean-Luc Bourgeaux est probablement pour la mesure, comme l'indiquent les amendements 1774 et 1775 qu'il a cosignés et qui ont été respectivement tombé et rejeté.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros, a été rejetée, pour lui montrer que la mesure actuelle de 2 euros est déjà une limite qu'il a lui-même tenté de dépasser.",
     "chiffres_utilises": [
       "1774",
       "1775",
-      "150",
+      "2",
       "25"
     ],
     "mode": "llm",

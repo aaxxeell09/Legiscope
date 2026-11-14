@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:31:24.832Z",
+    "generated_at": "2026-11-14T13:49:18.272Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -50,7 +50,7 @@
         },
         {
           "nom": "Comité national de la conchyliculture (CNC)",
-          "type": "administration",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "nom": "Caisse centrale de réassurance (CCR)",
-          "type": "administration",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -95,7 +95,7 @@
         },
         {
           "nom": "Institut des risques majeurs (IRMa)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -110,12 +110,12 @@
         },
         {
           "nom": "Association des maires de France (AMF)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Conseil national de l’ordre des architectes",
-          "type": "administration",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -153,12 +153,12 @@
         },
         {
           "nom": "Réseau de transport d’électricité (RTE)",
-          "type": "administration",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Enedis",
-          "type": "administration",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -168,7 +168,7 @@
         },
         {
           "nom": "Territoire d’énergie de l’Ardèche",
-          "type": "entreprise",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -178,7 +178,7 @@
         },
         {
           "nom": "Amorce",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -197,8 +197,13 @@
           "hatvp_id": null
         },
         {
+          "nom": "Cabinet Blue Star Stratégies",
+          "type": "cabinet",
+          "hatvp_id": null
+        },
+        {
           "nom": "Mobilians",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -208,7 +213,7 @@
         },
         {
           "nom": "Médiateur de l’énergie",
-          "type": "entreprise",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -218,7 +223,12 @@
         },
         {
           "nom": "Charge France",
-          "type": "entreprise",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "NSI Group",
+          "type": "cabinet",
           "hatvp_id": null
         },
         {
@@ -236,7 +246,17 @@
       "organisations": [
         {
           "nom": "Association des sociétés françaises d’autoroutes (ASFA)",
-          "type": "association",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Eiffage",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Vinci Autoroutes",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -256,12 +276,12 @@
         },
         {
           "nom": "Délégation à la sécurité routière (DSR)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Agence de financement des infrastructures de transport de France (Afitf)",
-          "type": "entreprise",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -271,6 +291,11 @@
         },
         {
           "nom": "Groupe SNCF",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SNCF Réseau",
           "type": "entreprise",
           "hatvp_id": null
         },
@@ -296,7 +321,7 @@
         },
         {
           "nom": "Départements de France",
-          "type": "federation",
+          "type": "administration",
           "hatvp_id": null
         }
       ]
@@ -319,7 +344,7 @@
         },
         {
           "nom": "Syndicat national des contrôleurs du trafic aérien (SNCTA)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -348,13 +373,23 @@
           "hatvp_id": null
         },
         {
+          "nom": "I4CE",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
           "nom": "Centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement (Cerema)",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Banque des territoires",
-          "type": "entreprise",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse des Dépôts",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -386,6 +421,21 @@
           "hatvp_id": null
         },
         {
+          "nom": "Parc national des Cévennes",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Parc national de La Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif des Parcs nationaux",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
           "nom": "Ligue pour la protection des oiseaux (LPO)",
           "type": "association",
           "hatvp_id": null
@@ -407,12 +457,12 @@
         },
         {
           "nom": "Syndicat national unifié des personnels des forêts et des espaces naturels (Snupfen)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Canopée",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -422,7 +472,7 @@
         },
         {
           "nom": "Bloom",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -432,7 +482,7 @@
         },
         {
           "nom": "MedPAN",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -452,22 +502,22 @@
         },
         {
           "nom": "Agence de l’eau Loire-Bretagne",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Agence de l’eau Seine-Normandie",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "Agence de l’eau Rhône Méditerranée",
-          "type": "autre",
+          "nom": "Agence de l’eau Rhône Méditerranée – Corse",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Guyane Nature Environnement",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -477,7 +527,7 @@
         },
         {
           "nom": "Météo France",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -509,8 +559,33 @@
           "hatvp_id": null
         },
         {
-          "nom": "Union syndicale de l’aviation civile",
+          "nom": "Union syndicale de l’aviation civile - CGT (USAC-CGT)",
           "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale de l’aviation civile (ENAC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Toulouse School of Economics (TSE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Lille",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre lillois d’études et de recherches sociologiques et économiques (Clersé)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université d’Angers",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -520,7 +595,7 @@
         },
         {
           "nom": "Aéroport de La Réunion Roland-Garros",
-          "type": "entreprise",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -535,7 +610,7 @@
         },
         {
           "nom": "Collectif « Défense guyanaise pour l’accès aux transports » (DGAT)",
-          "type": "administration",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -545,11 +620,11 @@
         },
         {
           "nom": "Corsair",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
-          "nom": "Air France",
+          "nom": "Air France – KLM",
           "type": "entreprise",
           "hatvp_id": null
         },
@@ -560,11 +635,11 @@
         },
         {
           "nom": "Agence de l’outre-mer pour la mobilité (Ladom)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "Direction du budget",
+          "nom": "Direction du budget – Bureau de l’économie, des finances et de l’outre-mer",
           "type": "administration",
           "hatvp_id": null
         },
@@ -575,7 +650,7 @@
         },
         {
           "nom": "Air Tahiti Nui",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -585,7 +660,7 @@
         },
         {
           "nom": "Aircalin",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         }
       ]
@@ -598,12 +673,12 @@
       "organisations": [
         {
           "nom": "Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Surfrider Foundation Europe",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -612,8 +687,13 @@
           "hatvp_id": null
         },
         {
+          "nom": "EDF",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
           "nom": "Ailes Marines (Iberdrola)",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -632,8 +712,13 @@
           "hatvp_id": null
         },
         {
+          "nom": "Ai2P",
+          "type": "cabinet",
+          "hatvp_id": null
+        },
+        {
           "nom": "Cluster maritime français",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -657,18 +742,18 @@
           "hatvp_id": null
         },
         {
-          "nom": "Lycée de la mer & pôle de formation maritime Paul Bousquet",
-          "type": "autre",
+          "nom": "Lycée de la mer & pôle de formation maritime Paul Bousquet – Sète",
+          "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "Lycée Professionnel Maritime et Aquacole Daniel Rigolet",
-          "type": "autre",
+          "nom": "Lycée Professionnel Maritime et Aquacole Daniel Rigolet – Cherbourg",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Lycée professionnel maritime de Ciboure",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -693,17 +778,17 @@
         },
         {
           "nom": "Transports & Environnement (T&E)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Société nationale du sauvetage en mer (SNSM)",
-          "type": "entreprise",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -741,12 +826,12 @@
         },
         {
           "nom": "Agence parisienne du climat",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "NegaWatt",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -761,7 +846,7 @@
         },
         {
           "nom": "Observatoire national de la précarité énergétique (ONPE)",
-          "type": "administration",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -771,12 +856,12 @@
         },
         {
           "nom": "Association Force ouvrière consommateurs (Afoc)",
-          "type": "syndicat",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Union nationale des locataires indépendants (Unli)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -786,12 +871,12 @@
         },
         {
           "nom": "Confédération nationale du Logement (CNL)",
-          "type": "administration",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Confédération Consommation, Logement, Cadre de Vie (CLCV)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -805,8 +890,8 @@
           "hatvp_id": null
         },
         {
-          "nom": "Entreprises sociales pour l’habitat",
-          "type": "autre",
+          "nom": "Entreprises sociales pour l’habitat - Fédération nationale des sociétés anonymes d’Habitat à loyer modéré - HLM ‑ (FNSAHLM)",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -1225,18 +1310,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Lisa Belluco a cosigné plusieurs amendements, dont les numéros 18, 43, 38, 47, 174, 208 et 56, tous rejetés, ce qui indique qu'elle est probablement favorable à la mesure.",
-    "argument": "Présenter à ce député que la mesure n° 3140 prévoit une taxe de 0,5 % sur les holdings patrimoniaux, un point qui rejoint les amendements qu'il a cosignés et qui ont été rejetés.",
+    "position_probable": "Lisa Belluco est probablement favorable à la mesure, comme l'indiquent les 5 amendements qu'elle a cosignés et qui ont été rejetés.",
+    "argument": "Présenter à ce député que son amendement n° 18, qui rétablit le chapitre Ier bis du code général des impôts, a été rejeté, afin de montrer que la suppression de la taxe sur la fortune improductive et de la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) reste l'issue la plus cohérente avec le sort de ses propositions.",
     "chiffres_utilises": [
-      "18",
-      "43",
-      "174",
-      "208",
-      "38",
-      "47",
-      "56",
+      "5",
       "0.5",
-      "3140"
+      "3140",
+      "18"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

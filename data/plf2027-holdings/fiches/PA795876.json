@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:31:28.187Z",
+    "generated_at": "2026-11-14T13:49:23.012Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -51,11 +51,6 @@
         {
           "nom": "Ministère des armées, direction générale des relations internationales et de la stratégie (DGRIS)",
           "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Capitaine Romain Euvrard",
-          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -382,10 +377,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Davy Rimane a cosigné un amendement supprimant l'article 3, qui a été adopté, ce qui indique qu'il est probablement contre la mesure.",
-    "argument": "Présenter à ce député l'adoption de l'amendement cosigné supprimant l'article 3, car cet acte montre qu'il soutient la suppression de la taxe sur la fortune improductive, ce qui correspond à l'objectif de l'Afep.",
+    "position_probable": "Davy Rimane est probablement favorable à la mesure, comme l'indique sa cosignature de l'amendement n° 1847, rejeté, et de l'amendement n° 3931, rejeté.",
+    "argument": "Présenter à ce député l'amendement n° 1847, cosigné par lui et rejeté, qui visait à modifier le code général des impôts après l'article 4, afin de l'orienter vers la suppression de l'article 3, une position qu'il a déjà soutenue en cosignant un amendement supprimant cet article et qui a été adopté.",
     "chiffres_utilises": [
-      "3"
+      "1847",
+      "3931",
+      "3",
+      "4"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

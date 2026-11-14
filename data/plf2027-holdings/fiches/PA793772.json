@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:31:36.504Z",
+    "generated_at": "2026-11-14T13:49:31.776Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -556,9 +556,10 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Christophe Bex a cosigné un amendement visant à supprimer l'article 3, qui a été adopté.",
-    "argument": "Présenter à ce député l'amendement cosigné supprimant l'article 3, qui a été adopté, pour appuyer la position de l'Afep contre la mesure.",
+    "position_probable": "Christophe Bex a cosigné l'amendement 756, rejeté, qui vise à modifier le code général des impôts, ce qui indique qu'il est probablement favorable à la mesure.",
+    "argument": "Présenter à ce député l'amendement cosigné qui supprime l'article 3, adopté, pour appuyer la position de l'Afep contre la mesure.",
     "chiffres_utilises": [
+      "756",
       "3"
     ],
     "mode": "llm",

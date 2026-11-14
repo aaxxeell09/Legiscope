@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:27:46.082Z",
+    "generated_at": "2026-11-14T13:46:49.891Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -386,7 +386,7 @@
   },
   "synthese": {
     "position_probable": "A cosigné l'amendement n° 1415, adopté (« Supprime l'article 3 »).",
-    "argument": "Présenter à ce député le fait qu'il a cosigné un amendement supprimant l'article 3, adopté, pour appuyer la position de l'Afep contre la taxe sur la fortune improductive.",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1415 (« Supprime l'article 3 »).",
     "chiffres_utilises": [
       "1415",
       "3"

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:33:19.314Z",
+    "generated_at": "2026-11-14T13:49:43.925Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1252,8 +1252,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Jean-Yves Bony devrait probablement se montrer favorable à la mesure, car il a cosigné l'amendement 1774 qui a été tombé et l'amendement 1775 qui a été rejeté.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui proposait de porter la taxe à 25 euros, a été tombé, afin de lui montrer que la mesure actuelle de 2 euros est déjà une concession par rapport à sa proposition initiale.",
+    "position_probable": "Jean-Yves Bony est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'il a cosignés et qui ont été respectivement tombé et rejeté.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui propose de porter la taxe à 25 euros, a été tombé, afin de lui montrer que la mesure actuelle de 2 euros reste la seule issue viable pour son groupe.",
     "chiffres_utilises": [
       "1774",
       "1775",

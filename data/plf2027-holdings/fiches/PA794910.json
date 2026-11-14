@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:27:07.694Z",
+    "generated_at": "2026-11-14T13:46:20.970Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -50,12 +50,12 @@
         },
         {
           "nom": "Brittany Ferries",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Corsica Linea",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -70,7 +70,7 @@
         },
         {
           "nom": "Établissement national des invalides de la Marine (Enim)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -80,12 +80,12 @@
         },
         {
           "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
+          "nom": "Confédération française de l’encadrement – Confédération générale des cadres (CFE-CGC) Marine",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "nom": "Comité national de la conchyliculture",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -143,6 +143,11 @@
         },
         {
           "nom": "Caisse nationale des allocations familiales (Cnaf)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mission interministérielle pour la protection des femmes contre les violences et la lutte contre la traite des êtres humains (Miprof)",
           "type": "administration",
           "hatvp_id": null
         },
@@ -181,12 +186,12 @@
         },
         {
           "nom": "Office central de lutte contre le travail illégal (OCLTI)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Observatoire de l’immigration et de la démographie (OID)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -218,26 +223,6 @@
           "nom": "Groupement des hôtelleries & restaurations de France (GHR)",
           "type": "federation",
           "hatvp_id": null
-        },
-        {
-          "nom": "Force ouvrière (FO)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française des travailleurs chrétiens (CFTC)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Mouvement des entreprises de France (Medef)",
-          "type": "federation",
-          "hatvp_id": "784668618"
         }
       ]
     }
@@ -549,8 +534,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Melouka Hadj-Mimoune a cosigné l'amendement n° 471, rejeté, qui visait à rétablir un chapitre du code général des impôts, ce qui indique probablement une position contre la mesure.",
-    "argument": "Présenter à ce député que son amendement n° 471, cosigné et rejeté, a déjà montré son attachement à la stabilité fiscale, ce qui rejoint l'objectif de l'Afep de limiter l'impact de la taxe sur les holdings patrimoniales.",
+    "position_probable": "Ses actes vont dans des sens opposés, car il a cosigné l'amendement n° 471 rejeté ainsi que d'autres amendements adoptés ou rejetés, sans que sa position personnelle sur la mesure ne soit tranchée.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement n° 471, rejeté, montre qu'il a déjà testé une modification du code général des impôts, ce qui permet d'aborder la taxe sur la fortune improductive en s'appuyant sur ses travaux antérieurs.",
     "chiffres_utilises": [
       "471"
     ],

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:34:00.015Z",
+    "generated_at": "2026-11-14T13:49:43.956Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -679,8 +679,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Emmanuelle Hoffman est probablement contre la mesure, car elle a cosigné l'amendement 302, qui est tombé, et l'amendement 460, qui est en attente.",
-    "argument": "Présenter à ce député l'amendement 302, tombé, qu'elle a cosigné avec l'Alliance Française des Places de Marchés pour exclure certaines marchandises de la taxe, afin de confirmer son soutien à la position d'Alibaba France contre la mesure.",
+    "position_probable": "Emmanuelle Hoffman est probablement contre la mesure, car elle a cosigné les amendements 302 et 460 qui en excluent certains articles, le premier étant tombé et le second en attente.",
+    "argument": "Présenter à ce député l'amendement 302, tombé, qu'elle a cosigné avec l'Alliance Française des Places de Marchés pour exclure certains articles de la taxe, afin de soutenir sa position contre la mesure.",
     "chiffres_utilises": [
       "302",
       "460"

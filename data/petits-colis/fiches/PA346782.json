@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:33:18.993Z",
+    "generated_at": "2026-11-14T13:49:43.924Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -674,15 +674,14 @@
   },
   "synthese": {
     "position_probable": "Philippe Juvin est probablement favorable à la mesure, comme en témoignent ses amendements 1859, 3016 et 3126 ainsi que ses déclarations en commission le 22 octobre 2025.",
-    "argument": "Présenter à ce député le fait que la taxe de 2 euros par article sur les colis de moins de 150 euros ne compense pas la différence de prix avec les plateformes, car il a déclaré en commission le 22 octobre 2025 que ce montant n'est pas à la hauteur de l'enjeu et a déposé l'amendement 1859, rejeté, pour réécrire l'article 22.",
+    "argument": "Présenter à ce député que le montant de 2 euros par article est jugé insuffisant pour compenser la différence de prix avec les plateformes, car il a déclaré en commission le 22 octobre 2025 que cette somme ne suffit pas à sauver le petit commerce.",
     "chiffres_utilises": [
       "1859",
       "22",
       "3016",
       "3126",
       "2025",
-      "2",
-      "150"
+      "2"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

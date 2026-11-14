@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:32:45.399Z",
+    "generated_at": "2026-11-14T13:49:43.901Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -552,10 +552,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Blandine Brocard est probablement favorable à la mesure, comme en témoigne le cosignature de l'amendement 3395 qui est en attente.",
-    "argument": "Présenter à ce député l'amendement 3395 qu'elle a cosigné, actuellement en attente, qui vise à préciser le seuil de poids des colis exonérés, afin de montrer que sa vigilance sur les critères d'application rejoint l'objectif d'Alibaba France de limiter l'impact de la taxe.",
+    "position_probable": "Elle devrait être favorable à la mesure, comme l'indique son cosignature de l'amendement 3395, actuellement en attente.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 3395, actuellement en attente, renforce la taxe de 2 euros par article sur les colis de moins de 150 euros, ce qui va à l'encontre des intérêts d'Alibaba France.",
     "chiffres_utilises": [
-      "3395"
+      "3395",
+      "2",
+      "150"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",
