@@ -1,5 +1,7 @@
 # Lancement des sessions (14 novembre 2026)
 
+> **14 h 10, compléments d'Axel** : chaque machine fait `git pull`, puis dans chaque session concernée (P0, P1, P3, P5, P6, P7, P8 ; A1, A4 ; X1, X3) colle : « Lis `prompts/complements-14h05.md`, fais ta section, commit, push, status. » Fini avant 15 h 45.
+
 ## Sur chaque machine, une fois
 
 ```
