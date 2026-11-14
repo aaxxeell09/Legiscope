@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:00:42.775Z",
+    "generated_at": "2026-11-14T14:04:02.868Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1287,12 +1287,13 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Fabrice Brun est probablement favorable à la mesure, car il a cosigné l'amendement 1774, tombé, qui propose de porter le montant à 25 euros.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros, a été tombé, afin de lui montrer que la mesure initiale de 2 euros reste le seul texte viable pour son groupe.",
+    "position_probable": "Fabrice Brun est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'il a cosignés et qui ont été respectivement tombé et rejeté.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros, est tombé, pour lui montrer que la mesure initiale de 2 euros reste l'option la plus favorable à son client Alibaba France.",
     "chiffres_utilises": [
       "1774",
-      "25",
-      "2"
+      "1775",
+      "2",
+      "25"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

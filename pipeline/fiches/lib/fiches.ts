@@ -1,6 +1,8 @@
 // Fiches par député : fusion pure de auditions/<PA>, debats/<PA>, amendements/<PA>
 // et hatvp.json, plus la synthèse (llm vérifié ou gabarit). Et fiches/index.json.
 
+import { readdirSync, unlinkSync } from "node:fs";
+import { dirname, join } from "node:path";
 import { dataPath, type Fiche, type FichesIndex, type Synthese } from "../../../contracts/index";
 import { amendementDuTexte, nomDepute, positionGroupe, sigleGroupe, type Contexte } from "./contexte";
 import { aujourdhui, ecrireJson, fusionnerSources, lireKind, maintenant, noter, pasEncoreConnu, posterieur } from "./io";
@@ -196,6 +198,11 @@ export async function construireFiches(ctx: Contexte): Promise<FichesIndex> {
     absents,
   };
   ecrireJson(dataPath(dossier.id, "fiches-index", undefined, root), index);
+  // Fiches orphelines : un député sorti des listes de P3 n'a plus de fiche sur disque (P0, 15 h 03).
+  const dossierFiches = dirname(dataPath(dossier.id, "fiches-index", undefined, root));
+  const orphelines = readdirSync(dossierFiches).filter((n) => /^PA\d+\.json$/.test(n) && !disponibles.includes(n.slice(0, -5)));
+  for (const n of orphelines) unlinkSync(join(dossierFiches, n));
+  if (orphelines.length > 0) noter(`${dossier.id}/fiches : ${orphelines.length} fiche(s) orpheline(s) supprimée(s) (${orphelines.map((n) => n.slice(0, -5)).join(", ")})`);
   noter(`${dossier.id}/fiches : ${disponibles.length} disponibles (${modes.join(", ") || "aucune"}), ${absents.length} absents`);
   return index;
 }

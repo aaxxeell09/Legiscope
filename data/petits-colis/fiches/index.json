@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:01:22.506Z",
+    "generated_at": "2026-11-14T14:04:02.976Z",
     "sources": [],
-    "limits": "49 fiche(s) produite(s) sur 49 député(s) de groupes-action.json et pivots.json.",
+    "limits": "47 fiche(s) produite(s) sur 48 député(s) de groupes-action.json et pivots.json. Absents : PA342384 : auditions, debats manquant ou invalide.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -32,7 +32,6 @@
     "PA795820",
     "PA841709",
     "PA841955",
-    "PA842029",
     "PA942",
     "PA721764",
     "PA719640",
@@ -49,7 +48,6 @@
     "PA342240",
     "PA588884",
     "PA606545",
-    "PA608416",
     "PA720446",
     "PA720154",
     "PA842121",
@@ -57,5 +55,7 @@
     "PA719118",
     "PA722150"
   ],
-  "absents": []
+  "absents": [
+    "PA342384"
+  ]
 }

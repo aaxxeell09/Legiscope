@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:00:42.828Z",
+    "generated_at": "2026-11-14T14:04:02.919Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -683,11 +683,12 @@
   },
   "synthese": {
     "position_probable": "Jean-Philippe Tanguy est probablement contre la mesure, comme l'indiquent ses déclarations en commission le 22 octobre 2025 et en séance le 18 novembre 2025.",
-    "argument": "Présenter à ce député son intervention en commission du 22 octobre 2025, où il dénonce l'inefficacité de la taxe face aux contournements, pour appuyer la position d'Alibaba France contre la mesure.",
+    "argument": "Présenter à ce député la citation du 22 octobre 2025 en commission où il affirme que la mesure ne sauvera aucun petit commerce, car il est l'auteur de l'amendement 4081 en attente qui modifie l'article 22.",
     "chiffres_utilises": [
       "22",
       "2025",
-      "18"
+      "18",
+      "4081"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:52:44.514Z",
+    "generated_at": "2026-11-14T14:04:02.802Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -23,7 +23,7 @@
         "url": "https://hemicycle.ai"
       }
     ],
-    "limits": "data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/plf2027-holdings/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip). 22 sort(s) d'amendement sans date publiée : non listé(s) comme événement daté (aucune date de repli).",
+    "limits": "data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/plf2027-holdings/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. 29 sort(s) d'amendement sans date publiée : non listé(s) comme événement daté (aucune date de repli). Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip).",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
