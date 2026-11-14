@@ -1,0 +1,6 @@
+data/raw
+node_modules
+dist
+pipeline/*/.cache
+.cache
+*.log
