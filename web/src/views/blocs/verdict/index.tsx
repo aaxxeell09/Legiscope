@@ -57,10 +57,7 @@ function VerdictContenu({ verdict, dossier, objectifRang }: { verdict: Verdict; 
       </div>
 
       <Tendance dossier={dossierCfg} />
-      <details className="verdict-fondements">
-        <summary>Fondements techniques et sources</summary>
-        <Meta meta={verdict.meta} />
-      </details>
+      <Meta meta={verdict.meta} />
     </div>
   );
 }

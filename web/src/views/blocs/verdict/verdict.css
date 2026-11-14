@@ -81,10 +81,6 @@
   flex-wrap: wrap;
   gap: var(--space-2) var(--space-6);
 }
-.verdict-fondements { padding-top:var(--space-3); border-top:1px solid var(--border-soft); }
-.verdict-fondements > summary { color:var(--text-2); font-size:var(--fs-sm); cursor:pointer; }
-.verdict-fondements[open] > summary { margin-bottom:var(--space-3); color:var(--text); }
-.verdict-fondements .meta { margin-top:var(--space-3); }
 .verdict-voir-plus { width:100%; min-height:32px; margin-top:var(--space-2); border-color:transparent; background:var(--surface-2); color:var(--text-2); font-size:var(--fs-sm); }
 
 .verdict-score {
