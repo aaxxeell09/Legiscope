@@ -38,8 +38,8 @@
   "mesure": {
     "label": "Taxe sur la fortune improductive (article 3) et taxe de 0,5 % sur les holdings patrimoniales (n° 3140)",
     "article": "3",
-    "dans_le_texte": true,
-    "redaction_actuelle": "Projet initial du gouvernement : article 3, taxe sur la fortune improductive. La taxe de 0,5 % sur les holdings patrimoniales (n° 3140, article 3 bis) et l'exclusion des holdings animatrices (n° 3107) sont tombées avec le rejet de la première partie le 4 novembre 2026.",
+    "dans_le_texte": false,
+    "redaction_actuelle": "Première partie rejetée le 4 novembre 2026 : la mesure n'est plus dans un texte en discussion à l'Assemblée ; elle peut revenir au Sénat ou en nouvelle lecture.",
     "modifications": [
       {
         "date": "2026-11-02",

@@ -89,24 +89,6 @@
         "raisonnement": "Cosignature du n° 3140 ; LIOT sans position majoritaire sur les 2 scrutins liés.",
         "nature": "deduction"
       }
-    },
-    {
-      "depute_id": "PA727852",
-      "groupe_id": "PO845425",
-      "score": 0.5,
-      "raison": "Position personnelle non connue : aucun dépôt, vote nominatif ou intervention sur la mesure ; son groupe est contre, ce qui ne suffit pas à le classer.",
-      "fondement": [],
-      "position_connue": false,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Hémicycle API scrutins",
-            "url": "https://api.hemicycle.ai/v1/scrutins"
-          }
-        ],
-        "raisonnement": "Absent des 2 scrutins liés ; aucune cosignature ni intervention repérée.",
-        "nature": "inconnue"
-      }
     }
   ],
   "allies": [
@@ -284,5 +266,21 @@
       }
     }
   ],
-  "position_inconnue": []
+  "position_inconnue": [
+    {
+      "depute_id": "PA727852",
+      "groupe_id": "PO845425",
+      "position_groupe": "divise",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Hémicycle API scrutins",
+            "url": "https://api.hemicycle.ai/v1/scrutins"
+          }
+        ],
+        "raisonnement": "Aucun acte personnel lié à la mesure (ni dit, ni déposé, ni voté) ; position de son groupe : divisée."
+      }
+    }
+  ]
 }
