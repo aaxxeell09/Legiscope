@@ -87,6 +87,48 @@
         ]
       },
       "pivot_demo": "PA794118"
+    },
+    {
+      "id": "plf2027-apprentissage",
+      "label": "PLF 2027, apprentissage (aides à l'embauche)",
+      "texte_id": "PRJLANR5L17B3210",
+      "etat": "en_cours",
+      "client": "U2P",
+      "mesure": {
+        "label": "Baisse des crédits de l'apprentissage et des aides à l'embauche d'apprentis (mission Travail et emploi, état B ; articles 88 et 89)",
+        "article": "88",
+        "texte_id": "PRJLANR5L17B3210"
+      },
+      "objectifs": [
+        {
+          "rang": 1,
+          "texte": "Maintenir les aides à l'embauche d'apprentis à leur niveau de 2026",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 2,
+          "texte": "Limiter la baisse aux grandes entreprises",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 3,
+          "texte": "Reporter la baisse à 2028",
+          "position_cible": "contre"
+        }
+      ],
+      "date_reference": null,
+      "sujet": {
+        "label": "Apprentissage et aides à l'embauche",
+        "mots_cles": [
+          "apprenti",
+          "apprentissage",
+          "aide à l'embauche",
+          "France compétences",
+          "article 88",
+          "article 89"
+        ]
+      },
+      "pivot_demo": null
     }
   ],
   "dossier_demo": "petits-colis",

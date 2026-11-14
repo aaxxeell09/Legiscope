@@ -9,7 +9,9 @@ try {
   // Orcet d'abord (le plus utile au verdict) : amendements en attente des dossiers, 50 crédits chacun, 404 non facturé.
   for (const dos of cfg.dossiers) {
     const am = JSON.parse(readFileSync(ROOT + `data/raw/${dos.id}/amendements.json`, "utf8")).amendements;
-    const attente = am.filter((a: any) => !a.sort && /traitement/i.test(a.etat ?? ""));
+    // Plafond par dossier (P0, 16 h 05) : ORCET_MAX amendements en attente au plus, 50 crédits chacun. Défaut 25.
+    const orcetMax = Number(process.env.ORCET_MAX ?? 25);
+    const attente = am.filter((a: any) => !a.sort && /traitement/i.test(a.etat ?? "")).slice(0, orcetMax);
     mkdirSync(ROOT + `data/raw/${dos.id}/orcet`, { recursive: true });
     for (const a of attente) {
       const f = ROOT + `data/raw/${dos.id}/orcet/${a.id}.json`; if (existsSync(f)) continue;
