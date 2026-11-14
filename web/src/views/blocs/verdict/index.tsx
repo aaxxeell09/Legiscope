@@ -143,19 +143,28 @@ function Colonne({ titre, vide, raisons }: { titre: string; vide: string; raison
         <p className="text-2">{vide}</p>
       ) : (
         <ul className="verdict-raisons">
-          {raisons.map((r, i) => (
-            <li key={`${r.titre}-${i}`} className={natureClass(r.preuve.nature)} data-nature={r.preuve.nature}>
-              <div className="verdict-raison-titre">
-                {r.titre} <NatureMarque nature={r.preuve.nature} />{" "}
-                <Pourquoi preuve={r.preuve} />
-              </div>
-              <div className="verdict-raison-detail">{r.detail}</div>
-            </li>
-          ))}
+          {raisons.map((r, i) => {
+            const detail = detailLisible(r.detail);
+            return <li key={`${r.titre}-${i}`} className={natureClass(r.preuve.nature)} data-nature={r.preuve.nature}>
+                <div className="verdict-raison-titre">
+                  {r.titre} <NatureMarque nature={r.preuve.nature} />{" "}
+                  <Pourquoi preuve={r.preuve} />
+                </div>
+                {detail && <div className="verdict-raison-detail">{detail}</div>}
+              </li>;
+          })}
         </ul>
       )}
     </div>
   );
+}
+
+/** Retire uniquement les clauses de calcul prédictif ; la donnée et les preuves restent intactes. */
+function detailLisible(detail: string): string {
+  return detail
+    .replace(/\s*[;,.—–]\s*Orcet\s*:\s*.*$/i, "")
+    .replace(/\s*[;,.—–]\s*(?:la\s+)?moyenne\s+des\s+probabilités\s+individuelles.*$/i, "")
+    .trim();
 }
 
 /** « fait » sobre, « déduction » marqué, « inconnue » en texte secondaire. */

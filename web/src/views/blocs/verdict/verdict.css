@@ -2,6 +2,7 @@
 .verdict {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   gap: var(--space-4);
 }
 
@@ -50,6 +51,7 @@
   align-items: baseline;
   gap: 8px 12px;
   padding:10px 0;
+  min-width:0;
 }
 
 .verdict-dimension { flex-basis:100%; color:var(--text-3); font-size:11px; font-weight:650; letter-spacing:.055em; text-transform:uppercase; }
@@ -107,6 +109,7 @@
   padding:10px 12px;
   border-radius: var(--radius);
   background: var(--surface-2);
+  min-width:0;
 }
 
 .verdict-confiance-ligne {
@@ -114,6 +117,7 @@
   gap: 2px;
   margin-top: var(--space-2);
   font-size: var(--fs-sm);
+  overflow-wrap:anywhere;
 }
 
 .verdict-tendance-valeur,.verdict-confiance-valeur { font-size:14px; font-weight:650; }
@@ -129,10 +133,13 @@
   border-radius: var(--radius);
   border:1px solid var(--border-soft);
   background:var(--surface-2);
+  min-width:0;
 }
+.verdict-cause > * { min-width:0; }
+.verdict-cause > :nth-child(2) { overflow-wrap:anywhere; }
 .verdict-cause-label { color:var(--text-3); font-size:11px; font-weight:650; letter-spacing:.045em; text-transform:uppercase; }
 
-.verdict-analyse { display:grid; grid-template-columns:120px minmax(0,1fr); gap:4px 16px; align-items:start; }
+.verdict-analyse { display:grid; grid-template-columns:120px minmax(0,1fr); gap:4px 16px; align-items:start; min-width:0; }
 .verdict-analyse-label { padding-top:3px; color:var(--text-3); font-size:11px; font-weight:650; letter-spacing:.055em; text-transform:uppercase; }
 
 .verdict-lecture {
@@ -179,7 +186,8 @@
   font-weight: 600;
 }
 
-.verdict-raisons li { display:grid; grid-template-columns:minmax(200px,.8fr) minmax(0,1.2fr); gap:8px 20px; padding:10px 0; border-bottom:1px solid var(--border-soft); }
+.verdict-raisons li { display:grid; grid-template-columns:minmax(200px,.8fr) minmax(0,1.2fr); gap:8px 20px; min-width:0; padding:10px 0; border-bottom:1px solid var(--border-soft); }
+.verdict-raison-titre,.verdict-raison-detail { min-width:0; overflow-wrap:anywhere; }
 
 .verdict-raison-detail {
   color: var(--text-2);
@@ -257,10 +265,17 @@
   background: var(--accent-soft);
 }
 
+@media (max-width: 1180px) {
+  .verdict-bandeau { grid-template-columns:minmax(250px,1.2fr) minmax(0,1fr); }
+  .verdict-situation-bloc { grid-row:1 / span 2; }
+  .verdict-tendance,.verdict-confiance { grid-column:2; }
+}
+
 @media (max-width: 900px) {
   .verdict-bandeau {
     grid-template-columns: 1fr;
   }
+  .verdict-situation-bloc,.verdict-tendance,.verdict-confiance { grid-column:auto; grid-row:auto; }
   .verdict-analyse { grid-template-columns:1fr; }
   .verdict-lecture-suite { grid-column:1; }
   .verdict-cause { grid-template-columns:1fr auto; }
