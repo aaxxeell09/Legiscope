@@ -55,6 +55,10 @@ function connuA(ev: { date: string; type: string }, ref: string | null): boolean
   if (!ref) return true;
   return TYPES_DECISION.has(ev.type) ? ev.date < ref : ev.date <= ref;
 }
+/** Un événement dont la preuve dit que la date n'est pas publiée (date de repli) n'est jamais cité avec une date. */
+function datePasPubliee(ev: { preuve: { raisonnement: string } }): boolean {
+  return /date[^.;]{0,30}non publiée|date de repli|daté par repli/i.test(ev.preuve.raisonnement);
+}
 const pct = (p: number) => `${Math.round(p * 100)} %`;
 const dateFr = (iso: string) => {
   const [a, m, j] = iso.split("-").map(Number);
@@ -337,7 +341,7 @@ function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
   const EFF: Record<string, string> = { renforce: "favorable au client", affaiblit: "défavorable au client", neutre: "sans effet sur le verdict" };
   const v1 = x.v.verdicts.find((y) => y.objectif_rang === 1)!;
   const ref = d.date_reference;
-  const evs = (x.n?.evenements ?? []).filter((ev) => connuA(ev, ref));
+  const evs = (x.n?.evenements ?? []).filter((ev) => connuA(ev, ref) && !datePasPubliee(ev));
   const vars: Record<string, string> = {
     client: d.client,
     mesure_label: sansPoint(d.mesure.label),
@@ -414,7 +418,7 @@ async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: str
   const f = construireFaits(d, v, s, a, t, groupes, deputes, limites);
   // Ce qui a bougé (nouveautes.json, déjà trié par importance) : les deux premiers événements datés au plus tard à la référence.
   const EFFET: Record<string, string> = { renforce: "favorable au client", affaiblit: "défavorable au client", neutre: "sans effet sur le verdict" };
-  for (const ev of (n?.evenements ?? []).filter((x) => connuA(x, d.date_reference)).slice(0, 2)) {
+  for (const ev of (n?.evenements ?? []).filter((x) => connuA(x, d.date_reference) && !datePasPubliee(x)).slice(0, 2)) {
     const ph = `Nouveau le ${dateFr(ev.date)} : ${min1(ev.titre.replace(/\.$/, ""))} (${EFFET[ev.effet]}).`;
     f.phrases.push(ph);
     f.prios.push(3);
@@ -436,6 +440,9 @@ async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: str
     const out: string[] = [];
     if (v0 && !(MOTS[v0.situation] ?? []).some((m) => t.includes(m))) out.push(`situation (${MOTS[v0.situation]?.[0]})`);
     if (pctScore && !t.includes(pctScore) && !t.includes(pctScore.replace(" %", "%"))) out.push(`score « ${pctScore} des sièges favorables à l'objectif »`);
+    // La tendance écrite est celle de verdict.json (« s'est dégradée » interdit si la tendance est stable).
+    if (v0 && v0.tendance !== "degradation" && /(s'est|se sont|a) (dégradée?s?|détérioré)|se dégrade|en dégradation/i.test(texte)) out.push(`tendance ${TENDANCE[v0.tendance]}, pas de dégradation`);
+    if (v0 && v0.tendance !== "amelioration" && /(s'est|se sont|a) (améliorée?s?)|s'améliore|en amélioration/i.test(texte)) out.push(`tendance ${TENDANCE[v0.tendance]}, pas d'amélioration`);
     const num = v0?.bloquant.slice(1).find((b) => /n° \d/.test(b.titre))?.titre.match(/n° (\d+)/)?.[1];
     if (num && !t.includes(num)) out.push(`ce qui coince : l'amendement n° ${num}`);
     return out;

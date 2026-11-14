@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:02:59Z",
+    "generated_at": "2026-11-14T14:14:08Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -45,18 +45,20 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Verdict proposé : l'objectif principal est mal engagé, avec 23 % des sièges favorables à l'objectif, la tendance étant en dégradation. L'amendement n° 974 visant à supprimer l'article 22 a été rejeté. Le gouvernement a déposé l'amendement n° 4086 sur l'article 22. La mesure est portée par le gouvernement. Le 19 novembre 2025, la séance publique examine l'article 22 et ses amendements, dernier moment pour faire adopter la suppression à l'Assemblée en première lecture. Le 20 novembre 2025, la séance publique se poursuit. Ceux qui décident : le gouvernement (pour la mesure), Philippe Juvin (pour la mesure). Députés sur qui agir en priorité : Nicole Sanquer (LIOT), Blandine Brocard (DEM), Fabrice Brun (DR). Limites : Rejoué à la date de référence du 19 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes",
+  "texte": "Verdict proposé : l'objectif principal d'empêcher le vote de la taxe est mal engagé, avec 23 % des sièges favorables à l'objectif, la tendance se dégradant. À l'Assemblée, en première lecture, la situation est défavorable car le gouvernement et 8 groupes soutiennent la mesure, face à un seul groupe contre. L'amendement n° 806 du groupe RN vise à supprimer l'article 22, tandis que le gouvernement a déposé l'amendement n° 4086 sur le même article, défavorable au client. Le 19 novembre 2025, la séance publique examine l'article 22 et ses amendements, constituant la dernière occasion d'agir pour faire adopter la suppression en première lecture. Le 20 novembre 2025, la discussion du projet de loi de finances pour 2026 se poursuit. Le gouvernement et Philippe Juvin sont pour la mesure. Députés sur qui agir en priorité : Nicole Sanquer, Blandine Brocard, Fabrice Brun. Limites : Rejoué à la date de référence du 19 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes.",
   "chiffres_utilises": [
     "0.23",
     "23",
+    "8",
     "22",
     "4086",
-    "974",
     "2025-11-20",
     "20",
     "2025",
+    "2026",
     "2025-11-19",
-    "19"
+    "19",
+    "806"
   ],
   "sources": [
     {
@@ -72,10 +74,6 @@
       "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
     },
     {
-      "label": "Amendement n° 974",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
-    },
-    {
       "label": "Séance publique de l'Assemblée : Suite de la discussion du projet de loi de finances pour 2026 (première partie) (3 réunions, dès 09 h 00)",
       "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428"
     },
@@ -86,6 +84,10 @@
     {
       "label": "Intervention du 2025-10-22",
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "label": "Amendement n° 4086 (Gouvernement) déposé : Le présent amendement a pour objet de modifier le redevable de la taxe afin de l’aligner…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004086"
     },
     {
       "label": "Amendement n° 806 (RN) déposé : Supprime l'article 22",
