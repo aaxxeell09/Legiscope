@@ -1,87 +1,30 @@
-/* Bloc Suite (P5). */
-.suite {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-}
-
-.suite-occasion {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-  padding: var(--space-3) var(--space-4);
-  background: var(--warning-soft);
-  border: 1px solid transparent;
-  border-radius: var(--radius);
-}
-
-.suite-occasion-date {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--warning);
-}
-
-.suite-occasion-titre {
-  font-size: var(--fs-base);
-}
-
-.suite-titre {
-  margin: 0 0 var(--space-2);
-  font-size: var(--fs-sm);
-  color: var(--text-2);
-}
-
-.suite-liste {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.suite-echeance,
-.suite-probable {
-  display: grid;
-  grid-template-columns: 8.5em minmax(0, 1fr);
-  gap: var(--space-3);
-  align-items: baseline;
-  padding: 11px 0;
-  border-top: 1px solid var(--border-soft);
-}
-.suite-echeance-prioritaire { margin-bottom:var(--space-2); padding:14px; border:1px solid var(--border-soft); border-radius:var(--radius); background:var(--surface-2); }
-.suite-echeance-prioritaire .suite-date { color:var(--text); }
-.suite-autres,.suite-scenarios { border-top:1px solid var(--border-soft); padding-top:var(--space-3); }
-.suite-autres > summary,.suite-scenarios > summary { display:flex; align-items:center; justify-content:space-between; gap:12px; color:var(--text-2); font-size:var(--fs-sm); cursor:pointer; }
-.suite-autres > summary span,.suite-scenarios > summary span { display:grid; place-items:center; min-width:22px; height:20px; padding:0 6px; border-radius:var(--radius-pill); background:var(--surface-2); font-size:var(--fs-sm); }
-.suite-autres[open] > summary,.suite-scenarios[open] > summary { margin-bottom:var(--space-2); color:var(--text); }
-
-.suite-date {
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.suite-echeance a {
-  color: var(--text);
-}
-
-.suite-proba {
-  text-align: right;
-}
-
-.suite-probable-titre {
-  font-weight: 600;
-}
-
-.suite-detail {
-  display: block;
-  color: var(--text-2);
-  font-size: var(--fs-sm);
-}
-
-.suite-echeance { position: relative; }
-.suite-liste .suite-echeance:not(:last-child)::after { content:""; position:absolute; left:7px; top:31px; bottom:-12px; width:1px; background:var(--border); }
-.suite-date { position:relative; display:flex; gap:var(--space-2); align-items:center; }
-.suite-marker { width:15px; height:15px; flex:none; border:4px solid var(--surface); border-radius:50%; background:var(--text-3); box-shadow:0 0 0 1px var(--border); }
-.suite-avertissement { margin:0 0 var(--space-2); color:var(--text-2); font-size:var(--fs-sm); }
+/* Suite : une chronologie procédurale compacte, faits avant hypothèses. */
+.suite { display:flex; flex-direction:column; gap:var(--space-5); }
+.suite-occasion { display:grid; grid-template-columns:minmax(0, 1fr) auto; gap:var(--space-1) var(--space-4); padding:var(--space-3) var(--space-4); border-left:3px solid var(--warning); border-radius:0 var(--radius) var(--radius) 0; background:var(--warning-soft); }
+.suite-occasion > .text-2 { font-size:var(--fs-sm); font-weight:500; }
+.suite-occasion-date { grid-row:1 / span 2; grid-column:2; align-self:center; color:var(--warning); font-size:var(--fs-card); font-weight:650; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.suite-occasion-titre { color:var(--text); font-size:var(--fs-base); line-height:1.45; }
+.suite-titre { margin:0 0 var(--space-2); color:var(--text); font-size:var(--fs-card); font-weight:600; }
+.suite-liste { display:flex; flex-direction:column; margin:0; padding:0; list-style:none; }
+.suite-echeance, .suite-probable { display:grid; grid-template-columns:9.5rem minmax(0, 1fr); gap:var(--space-3); align-items:start; padding:var(--space-3) 0; border-top:1px solid var(--border-soft); }
+.suite-echeance { position:relative; }
+.suite-echeance-prioritaire { margin-bottom:var(--space-2); padding:var(--space-3); border:0; border-radius:var(--radius); background:var(--surface-2); }
+.suite-date { position:relative; display:flex; align-items:center; gap:var(--space-2); color:var(--text-2); font-size:var(--fs-sm); font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.suite-marker { width:13px; height:13px; flex:none; border:3px solid var(--surface); border-radius:50%; background:var(--accent); box-shadow:0 0 0 1px var(--border); }
+.suite-echeance a { color:var(--text); font-weight:550; }
+.suite-liste .suite-echeance:not(:last-child)::after { position:absolute; top:29px; bottom:-13px; left:6px; width:1px; background:var(--border-soft); content:""; }
+.suite-autres, .suite-scenarios { padding-top:var(--space-3); border-top:1px solid var(--border-soft); }
+.suite-autres > summary, .suite-scenarios > summary { display:flex; align-items:center; justify-content:space-between; gap:var(--space-3); min-height:40px; color:var(--text-2); font-size:var(--fs-sm); font-weight:550; cursor:pointer; }
+.suite-autres > summary span, .suite-scenarios > summary span { display:grid; min-width:24px; height:22px; place-items:center; padding:0 var(--space-2); border-radius:var(--radius-pill); background:var(--surface-2); font-variant-numeric:tabular-nums; }
+.suite-autres[open] > summary, .suite-scenarios[open] > summary { margin-bottom:var(--space-2); color:var(--text); }
+.suite-proba { color:var(--text); text-align:left; font-variant-numeric:tabular-nums; }
+.suite-proba strong { color:var(--accent); font-size:var(--fs-card); }
 .suite-proba small { display:block; color:var(--text-3); font-size:var(--fs-sm); font-weight:400; }
+.suite-probable-titre { font-weight:600; }
+.suite-detail { display:block; margin-top:var(--space-1); color:var(--text-2); font-size:var(--fs-sm); line-height:1.45; }
+.suite-avertissement { margin:0 0 var(--space-2); color:var(--text-3); font-size:var(--fs-sm); }
+@media (max-width:640px) {
+  .suite-occasion { grid-template-columns:1fr; }
+  .suite-occasion-date { grid-row:auto; grid-column:auto; }
+  .suite-echeance, .suite-probable { grid-template-columns:1fr; gap:var(--space-1); }
+}

@@ -6,15 +6,15 @@ import { formatDate } from "../../../lib/format";
 import "./nouveautes.css";
 
 export const TYPE_LABEL: Record<Evenement["type"], string> = {
-  amendement_depose: "dépôt d'amendement",
-  amendement_sort: "sort d'amendement",
-  scrutin: "scrutin",
-  rapport: "rapport",
-  audition: "audition",
-  seance: "séance",
-  commission: "commission",
+  amendement_depose: "Dépôt d'amendement",
+  amendement_sort: "Sort d'amendement",
+  scrutin: "Scrutin",
+  rapport: "Rapport",
+  audition: "Audition",
+  seance: "Séance",
+  commission: "Commission",
   hatvp: "HATVP",
-  agenda: "agenda",
+  agenda: "Agenda",
 };
 
 export const EFFET_LABEL: Record<Evenement["effet"], string> = {
@@ -47,7 +47,7 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
   const evenements = useMemo(() => classement === "importance" ? trier(r.data?.evenements ?? []) : chronologique(r.data?.evenements ?? []), [r.data, classement]);
   const types = useMemo(() => Array.from(new Set(evenements.map((e) => e.type))), [evenements]);
   const filtres = filtre ? evenements.filter((e) => e.type === filtre) : evenements;
-  const visibles = toutVoir ? filtres : filtres.slice(0, 3);
+  const visibles = toutVoir ? filtres : filtres.slice(0, 5);
   const qui = evenements.filter((e) => e.importance === 3).length;
 
   return (
@@ -100,7 +100,7 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
                   </li>
                 ))}
               </ul>
-              {filtres.length > 3 && (
+              {filtres.length > 5 && (
                 <button type="button" className="nv-voir-tout" onClick={() => setToutVoir((v) => !v)}>
                   {toutVoir ? "Réduire la liste" : `Voir tous les événements (${filtres.length})`}
                 </button>

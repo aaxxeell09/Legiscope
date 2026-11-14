@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useMemo, type ReactNode } from "react";
 import type { Note } from "@contracts/index";
 import { Etat, Meta } from "../../../components";
 import { useDossier } from "../../../lib/config";
@@ -19,19 +19,12 @@ export default function CompteRenduBloc({ dossier }: { dossier: string }) {
 
 function CompteRenduContenu({ n }: { n: Note }) {
   const dossier = useDossier();
-  const [edition, setEdition] = useState(false);
   const texteInitial = useMemo(() => nettoyerTexte(n.texte), [n.texte]);
-  const [texte, setTexte] = useState(texteInitial);
   const autorises = chiffresAutorises(n.chiffres_utilises);
-  const { essentiel, paragraphes } = structurerTexte(texte);
+  const { essentiel, paragraphes } = structurerTexte(texteInitial);
   const titre = dossier.status === "ok" ? dossier.label : null;
   const dateReference = dossier.status === "ok" && dossier.dateReference ? formatDate(dossier.dateReference) : null;
   const metaNote = useMemo(() => ({ ...n.meta, sources: n.sources }), [n.meta, n.sources]);
-
-  useEffect(() => {
-    setTexte(texteInitial);
-    setEdition(false);
-  }, [texteInitial]);
 
   return (
     <div className="note-layout">
@@ -42,57 +35,23 @@ function CompteRenduContenu({ n }: { n: Note }) {
           {dateReference && <p className="note-date">Date de référence : {dateReference}.</p>}
         </header>
 
-        {edition ? (
-          <div className="note-editing">
-            <textarea className="note-editor" value={texte} onChange={(e) => setTexte(e.target.value)} aria-label="Modifier localement la note" />
-            <p className="note-local-hint">Modification locale uniquement — elle n’est pas enregistrée dans les données.</p>
-          </div>
-        ) : (
-          <div className="note-reading">
-            <section className="note-essential" aria-labelledby="note-essentiel">
-              <h4 id="note-essentiel">L’essentiel</h4>
-              <p>{rendreChiffres(essentiel, autorises, "essentiel")}</p>
+        <div className="note-reading">
+          <section className="note-essential" aria-labelledby="note-essentiel">
+            <h4 id="note-essentiel">L’essentiel</h4>
+            <p>{rendreChiffres(essentiel, autorises, "essentiel")}</p>
+          </section>
+          {paragraphes.length > 0 && (
+            <section className="note-body" aria-label="Synthèse complète">
+              {paragraphes.map((paragraphe, i) => <p key={i}>{rendreChiffres(paragraphe, autorises, `corps-${i}`)}</p>)}
             </section>
-            {paragraphes.length > 0 && (
-              <section className="note-body" aria-label="Synthèse complète">
-                {paragraphes.map((paragraphe, i) => <p key={i}>{rendreChiffres(paragraphe, autorises, `corps-${i}`)}</p>)}
-              </section>
-            )}
-          </div>
-        )}
+          )}
+        </div>
 
-        <div className="note-toolbar" aria-label="Actions de la note">
-          <BoutonCopier texte={texte} />
-          <button type="button" className="note-edit" onClick={() => setEdition((v) => !v)}>{edition ? "Terminer" : "Modifier"}</button>
+        <div className="note-sources">
           <Meta meta={metaNote} />
         </div>
       </article>
     </div>
-  );
-}
-
-function BoutonCopier({ texte }: { texte: string }) {
-  const [etat, setEtat] = useState<"" | "copié" | "copie impossible">("");
-  async function copier() {
-    try {
-      await navigator.clipboard.writeText(texte);
-      setEtat("copié");
-    } catch {
-      setEtat("copie impossible");
-    }
-    window.setTimeout(() => setEtat(""), 2000);
-  }
-  return (
-    <>
-      <button type="button" className="note-copy" onClick={copier}>
-        {etat === "copié" ? "Copié" : "Copier la note"}
-      </button>
-      {etat && (
-        <span className="text-2" role="status">
-          {etat}
-        </span>
-      )}
-    </>
   );
 }
 
