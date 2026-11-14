@@ -1,0 +1,1400 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:19:59.513Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA842073",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html",
+      "date": "2026-11-04",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Conseil supérieur de la marine marchande",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Brittany Ferries",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Corsica Linea",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de la sécurité sociale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Établissement national des invalides de la Marine (Enim)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil supérieur des gens de mer (CSGM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération française de l’encadrement – Confédération générale des cadres (CFE-CGC) Marine",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des syndicats maritimes (CGT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union fédérale maritime (CFDT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des officiers de la marine marchande (Fomm‑Ugict‑CGT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des marins pêcheurs (CFTC)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national de la conchyliculture",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tII.html",
+      "date": "2026-11-09",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Fondation des Femmes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif féministe contre le viol (CFCV)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des centres d’information sur les droits des femmes et des familles (FNCIDFF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale Solidarité Femmes (FNSF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse nationale des allocations familiales (Cnaf)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mission interministérielle pour la protection des femmes contre les violences et la lutte contre la traite des êtres humains (Miprof)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse centrale de la mutualité sociale agricole (CCMSA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Réseau Restart",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la cohésion sociale (DGCS)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIII.html",
+      "date": "2026-11-09",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction générale du travail",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office central de lutte contre le travail illégal (OCLTI)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Observatoire de l’immigration et de la démographie (OID)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Urssaf Caisse nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse centrale de la mutualité sociale agricole (CCMSA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française du bâtiment (FFB)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des syndicats d’exploitants agricoles (FNSEA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des métiers et des industries de l’hôtellerie (Umih)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupement des hôtelleries & restaurations de France (GHR)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000545",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – Après l’alinéa 15, insérer l’alinéa suivant : « 4° un bâtiment d’habitation collectif acquis en l’état futur d’achèvement, neuf ou rénové à neuf au sens…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000545"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000687",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "ETAT B : Le programme 103 soutient la politique gouvernementale en matière d’emploi, avec pour objectif de favoriser « la dynamique de l’alternance au service de…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000687"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000851",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le rapporteur spécial propose de rétablir les 414 postes d'enseignants du premier degré public supprimés dans le PLF pour 2027. Le maintien des postes…",
+      "sort": "retire",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000851"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000511",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "ETAT B : Le programme 103 soutient la politique gouvernementale en matière d’emploi, avec pour objectif de favoriser « la dynamique de l’alternance au service de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000511"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000674",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 89 : Après l’article 89, insérer un nouvel article rédigé comme suit : Après l’article L. 213‑3 du code monétaire et financier, il est inséré un article L. 213‑3‑1…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000674"
+    },
+    {
+      "id": "AMANR5L17PO420120B3210P2D1N000274",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 89.",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO420120B3210P2D1N000274"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001842",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le rapporteur spécial propose de rétablir les 414 postes d'enseignants du premier degré public supprimés dans le PLF pour 2027. Le maintien des postes…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001842"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "349681098",
+      "nom": "UNION DES ENTREPRISES DE PROXIMITE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=349681098",
+      "objet": "PLF 2025 : maintenir le niveau de l’aide à l’embauche d’un apprenti pour les plus petites entreprises",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "rencontre",
+        "Autres : à préciser",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "PLF pour 2026 : Déduire la participation obligatoire des entreprises de l'aide versée pour l'embauche d'un apprenti pour simplifier les flux financiers et alléger les CFA",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "784668618",
+      "nom": "MOUVEMENT DES ENTREPRISES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668618",
+      "objet": "Défendre l'apprentissage et s'opposer aux rabots sur les niveaux 6 et 7\n",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784409013",
+      "nom": "FEDERATION FRANCAISE DE L ASSURANCE (FFA)",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784409013",
+      "objet": "Apprentissage : alerter sur l'impact de la baisse de l'aide à l'apprentissage sur le secteur de l'assurance",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "378794796",
+      "nom": "M&M CONSEIL",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=378794796",
+      "objet": "Favoriser un choc de simplification dans l'apprentissage en allégeant les contraintes administratives portant sur les CFA / OFA",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "501168223",
+      "nom": "GALILEO GLOBAL EDUCATION FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=501168223",
+      "objet": "PLF pour 2026 : Obtenir une trajectoire pérenne et pluriannuelle de financement de l’apprentissage (maintien des aides à l’embauche, des exonérations de cotisations salariales des apprentis, etc.) ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "450089107",
+      "nom": "ANTHENOR PUBLIC AFFAIRS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=450089107",
+      "objet": "PLFSS 2026 : Maintenir un cadre fiscal incitatif pour la signature de contrats d'apprentissage (maintien des exonérations sociales sur la signature du contrat)",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "187500046",
+      "nom": "CMA FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=187500046",
+      "objet": "Demander une régulation du financement de l'apprentissage prennant en compte la qualité de la formation, le coût des investissements et la situation territoriale",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "445260169",
+      "nom": "ORGANISATION ET DEVELOPPEMENT",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=445260169",
+      "objet": "Conditionner une partie de l'aide à l'embauche à la transformation en emploi durable pour les entreprises qui transforment un tiers de leurs contrats d'apprentissage en CDD ou CDI",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "transmission d'expertise",
+        "campagne publique",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "182800011",
+      "nom": "CHAMBRE DE COMMERCE ET D'INDUSTRIE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=182800011",
+      "objet": "Réintégration des niveaux 5 à 7 dans le dispositif d'aides à l'apprentissage (modification du décret d’application PLF 2026 du 1er janvier)",
+      "actions": [
+        "correspondance",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "434987582",
+      "nom": "FEDERATION BANCAIRE FRANCAISE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434987582",
+      "objet": "Faire des propositions visant à améliorer les dispositifs actuels d'apprentissage, de reconversion et de formation avec un objectif d’insertion efficace et pérenne",
+      "actions": [
+        "rencontre",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "534389309",
+      "nom": "TADDEO",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=534389309",
+      "objet": "Défendre le maintien de la participation de l’État dans le financement de l’apprentissage et renforcer l’importance du critère de la qualité des formations dans les possibilités de financement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "340388479",
+      "nom": "COMMUNICATION & INSTITUTIONS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=340388479",
+      "objet": "Défendre le maintien du soutien à l'apprentissage dans le supérieur, en recentrant les aides sur les formations de qualité reconnues par le Ministère de l'Enseignement Supérieur (MESRI).",
+      "actions": [
+        "transmission d'expertise",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "784409211",
+      "nom": "CONFED NAT ARTISAN DES METIER ET SERVICE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784409211",
+      "objet": "Demande de pérennisation de l'aide à l'apprentissage pour les entreprises de moins de 50 salariés dans le PLF 2026. Confirmer l'abaissement des seuil de TVA pour les microentreprises. ",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784669152",
+      "nom": "CONFEDERATION DES GROSSISTES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784669152",
+      "objet": "Demander le maintien des aides à l'apprentissage, en particulier pour les TPE et les PME",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "304426240",
+      "nom": "FEDERATION NATIONALE MUTUALITE FRANCAISE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=304426240",
+      "objet": "PLF 2025 : Supprimer la mesure tendant à la fin d’exonération de la taxe d’apprentissage des ESMS mutualistes",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "398542571",
+      "nom": "LES ACTEURS DE LA COMPETENCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=398542571",
+      "objet": "Maintenir dans la loi la liberté de mobiliser tous ses droits inscrits au Compte Personnel de Formation pour une formation enregistrée au Répertoire spécifique de France compétences",
+      "actions": [
+        "transmission d'expertise",
+        "correspondance",
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "384718839",
+      "nom": "SYNTEC INGENIERIE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=384718839",
+      "objet": "PLF/PLFSS : Maintenir les montants de l'aide à l'apprentissage pour tous les niveaux d'études et toutes les tailles d'entreprises. ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "333645034",
+      "nom": "UNION REG MUTUALITE FRANCAISE REG CENTRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=333645034",
+      "objet": "Projet de loi de Finances pour 2025: retirer amendement I-1569 visant à\nrevenir sur l’exonération de la taxe d'apprentissage dont bénéficient les organismes\nmutualistes",
+      "actions": [
+        "correspondance",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "429580368",
+      "nom": "ASS CONFERENCE DES GRANDES ECOLES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=429580368",
+      "objet": "Contribuer à la réflexion sur la régulation de l'enseignement supérieur lucratif et l'utilisation de l'argent public issu de l'apprentissage",
+      "actions": [
+        "transmission d'expertise",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "130017270",
+      "nom": "CHAMBRE DE COMMERCE ET D INDUSTRIE DE REGION PARIS ILE DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130017270",
+      "objet": "Promouvoir la mission enseignement de la CCI Paris IDF, mettre en avant des propositions pour le développement de l'apprentissage. Mener des recherches de financements complémentaires.",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "130022676",
+      "nom": "CHAMBRE DE COMMERCE ET D'INDUSTRIE TERRITORIALE ALSACE EUROMETROPOLE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130022676",
+      "objet": "Influencer la politique publique d'aide à la formation et à l'apprentissage",
+      "actions": [
+        "rencontre",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "186702239",
+      "nom": "CHAMBRE DE METIERS D'ALSACE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=186702239",
+      "objet": "Financement de l'apprentissage. Alerter sur les conséquences de la baisse de financement des coûts contrats d'apprentissage. Menace sur la qualité des formations et leur pérennité. ",
+      "actions": [
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "130027949",
+      "nom": "CHAMBRE DE METIERS ET DE L'ARTISANAT DE REGION BRETAGNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130027949",
+      "objet": "INSTAURER LA PRISE EN CHARGE FINANCIERE PAR L'EDUCATION NATIONALE DES INDEMNITES ET DES FRAIS DE DEPLACEMENT DES EXPERTS DE LA MISSION DE CONTROLE PEDAGOGIQUE DES FORMATIONS PAR APPRENTISSAGE (MCPFA)",
+      "actions": [
+        "correspondance",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "130020878",
+      "nom": "CHAMBRE DE METIERS ET DE L'ARTISANAT DE REGION PROVENCE-ALPES-COTE D'AZUR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130020878",
+      "objet": "prise en compte de l'intérêt de soutenir l'artisanat, l'apprentissage, l’emploi et le\nrenouvellement du secteur artisanal dans les politiques régionales et départementales",
+      "actions": [
+        "correspondance",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "303215016",
+      "nom": "CONFEDERATION DES PETITES ET MOYENNES ENTREPRISES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=303215016",
+      "objet": "PLF 2025 - s'opposer à l’augmentation du coût de l’embauche d’un apprenti",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "518147202",
+      "nom": "CONFERENCE DES DIRECTEURS DES ECOLES FRANCAISES D'INGENIEURS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=518147202",
+      "objet": "DÉFENDRE LE MAINTIEN DU SOUTIEN À L'APPRENTISSAGE DANS LE SUPÉRIEUR, EN RECENTRANT LES AIDES SUR LES FORMATIONS DE QUALITÉ RECONNUES PAR LE MINISTÈRE DE L'ENSEIGNEMENT SUPÉRIEUR (MESRI).",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "504248626",
+      "nom": "CONFERENCE DES PRESIDENTS D UNIVERSITE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=504248626",
+      "objet": "\nContribuer à la réflexion sur la prise en compte de l'apprentissage comme politique-levier de promotion sociale, d'accès à l'emploi et de professionnalisation des jeunes publics",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "946750650",
+      "nom": "DSM NUTRITIONAL PRODUCTS FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=946750650",
+      "objet": "concurrence et compétitivité facilitées par certains états, sur la règlementation qui devient une source de non- compétitivité ainsi que sur les derniers débats concernant l’apprentissage.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "839335254",
+      "nom": "EDTECH FRANCE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=839335254",
+      "objet": "COMBATTRE LA MESURE DU PLF QUI MINORE LES NIVEAUX DE PRIX EN CHARGE POUR L'APPRENTISSAGE À DISTANCE",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784854937",
+      "nom": "FEDE NAT SYNDIC EXPL AGRICOLE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784854937",
+      "objet": "Formation par apprentissage : demander une évolution de la méthodologie de calcul des \"coûts contrats\" (NPEC) pour prendre en compte certains enjeux ruraux et agricoles",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784179426",
+      "nom": "FEDER SYND SOC ETUDES CONSEILS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784179426",
+      "objet": "Plaider pour le maintien du système de financement de la formation professionnelle et de l’apprentissage dans l’enseignement supérieur dans les textes budgétaires pour 2026",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "439676578",
+      "nom": "FEDERATION DE L'HOSPITALISATION PRIVEE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=439676578",
+      "objet": "Défendre les moyens de la formation et de l'apprentissage pour les professionnels de santé paramédicaux dans le cadre de l'OPCO santé",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "308185081",
+      "nom": "FEDERATION DES ETABLISSEMENTS D'ENSEIGNEMENT SUPERIEUR D'INTERET COLLECTIF",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=308185081",
+      "objet": "Révision de la loi ORE : sensibiliser les pouvoirs publics à la nécessité d'un meilleur fléchage des fonds de l'apprentissage. ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "491820510",
+      "nom": "FEDERATION DU SERVICE AUX PARTICULIERS F.E.S.P.",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=491820510",
+      "objet": "demander de dispositifs de soutien à la professionnalisation pour les métiers en tension suite au décret du 01/05/2025 qui supprime l'aide à l'embauche des salariés en contrat de professionnalisation",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "398533257",
+      "nom": "FEDERATION FRANCAISE DES GEIQ",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=398533257",
+      "objet": "Inscrire les Geiq sur la liste nationale des acteurs habilité à percevoir le solde de la taxe d'apprentissage ",
+      "actions": [
+        "correspondance",
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "379706344",
+      "nom": "KNDS FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=379706344",
+      "objet": "Sensibiliser les acteurs publics aux enjeux relatifs à l'apprentissage et au crédit impôt recherche",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "977901974",
+      "nom": "LA LOBA",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=977901974",
+      "objet": "Signaler aux autorités la complexité des référentiels d'évaluation gérés par France Compétences sur l'apprentissage dans l'enseignement supérieur privé",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "403860638",
+      "nom": "MOUVEMENT DES ENTREPRISES DE TAILLE INTERMEDIAIRE LES ENTREPRISES DE LONG TERME",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=403860638",
+      "objet": "Préserver un cadre favorable à l’apprentissage pour les entreprises de taille intermédiaire",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "443873930",
+      "nom": "MUTUALITE FRANCAISE BRETAGNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=443873930",
+      "objet": "PLF 2025 : Supprimer la mesure tendant à la fin d’exonération de la taxe d’apprentissage des ESMS mutualistes",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "444628275",
+      "nom": "MUTUALITE FRANCAISE NORMANDIE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=444628275",
+      "objet": "PLF 2025 : Supprimer la mesure tendant à la fin d’exonération de la taxe d’apprentissage des ESMS mutualistes",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "308961978",
+      "nom": "SAVEURS COMMERCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=308961978",
+      "objet": "Améliorer l’orientation des jeunes et renforcer significativement la communication sur l’accès aux métiers",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784718033",
+      "nom": "SYND FEDERATION  FRANCAISE DU BATIMENT GRAND PARIS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784718033",
+      "objet": "Maintenir la prime de 6 000 euros versée aux entreprises pour les contrats d’apprentissage",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "440687226",
+      "nom": "SYND NAT ETS RETRAITE PERSONNES AGEES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=440687226",
+      "objet": "Emploi : préserver les budgets formation et apprentissage pour le secteur du grand âge particulièrement sous tension, en vue des besoins de personnels à horizon 2030",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "envoi de propositions de rédaction",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "382110799",
+      "nom": "SYND NATIONAL PROFESSION DU CHIEN & CHAT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=382110799",
+      "objet": "Demander le maintien du montant des aides à l'apprentissage pour les formations relevant des métiers du chien et du chat",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "448564526",
+      "nom": "U2P LOIRE ATLANTIQUE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=448564526",
+      "objet": "maintenir l’aide à l’embauche d’un apprenti au niveau de 6000 euros pour les entreprises qui emploient moins de 250 salariés. ",
+      "actions": [
+        "Autres : à préciser"
+      ]
+    },
+    {
+      "hatvp_id": "776743825",
+      "nom": "UNION DEP DES TRANSPORTEURS ROUTIERS 12",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=776743825",
+      "objet": "Demander des aides pour les formations en apprentissage ",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "453957623",
+      "nom": "UNION DES GRANDES ECOLES INDEPENDANTES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=453957623",
+      "objet": "Préserver le financement de l'apprentissage dans le supérieur à hauteur de son coût réel pour les écoles et le réserver aux établissements présentant des garanties suffisantes de qualité",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784717191",
+      "nom": "UNION DES INDUSTRIES ET DES METIERS DE LA METALLURGIE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784717191",
+      "objet": "Mettre en garde sur la baisse des primes à l'embauche des apprentis et la complexité du dispositif, qui risque de freiner la dynamique de l'apprentissage",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "829807809",
+      "nom": "UNION ENTREPRISES PROXIMITE HTS FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=829807809",
+      "objet": "Opposition à la Suppression de l'Aide à l'Apprentissage",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "442467940",
+      "nom": "VYV 3",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=442467940",
+      "objet": "Revenir la fin de l'exonération de la taxe d'apprentissage pour les organismes mutualistes de Livre 3",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "484841333",
+      "nom": "A LATERE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=484841333",
+      "objet": "Faire prendre en compte les spécificités des entreprises de la restauration collective dans le cadre du PLF pour 2025 et du PLFSS pour 2025",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "302664784",
+      "nom": "ASS NATIONALE IND. AGRO ALIMENTAIRES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302664784",
+      "objet": "Petit-déjeuner parlementaire : Développer l'apprentissage pour favoriser l'insertion professionnelle dans les industries alimentaires",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "428721260",
+      "nom": "ASSEMBLEE DES DIRECTEURS D'IUT",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=428721260",
+      "objet": "PLF 2025 : maintenir un financement équilibré pour l'apprentissage",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "775663958",
+      "nom": "ASSOCIATION GROUPE ESSEC",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775663958",
+      "objet": "Apprentissage : Partager le modèle de l'ESSEC et identifier les leviers permettant de sanctuariser ce modèle de formation",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "444560080",
+      "nom": "CENTRE FRANCAIS DES FONDS ET FONDATIONS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=444560080",
+      "objet": "Maintenir l'exonération de taxe d'apprentissage dont bénéficiaient les organismes sans but lucratif",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "130004609",
+      "nom": "CHAMBRE DE COMMERCE D INDUSTRIE DE MAINE LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130004609",
+      "objet": "Rencontrer un Sénateur pour évoquer les sujets économiques et territoriaux et rendre compte des difficultés de certains dispositifs",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "189740111",
+      "nom": "CHAMBRE DE METIERS ET DE L'ARTISANAT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=189740111",
+      "objet": "Augmenter la valeur des coûts contrats apprentissage (NPEC) en outre mer.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "130027972",
+      "nom": "CHAMBRE DE METIERS ET DE L'ARTISANAT DE REGION ILE-DE-FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130027972",
+      "objet": "Maintenir le niveau de prise en charge des contrats d'apprentissage dans l'artisanat par France compétences au niveau antérieur à septembre 2023.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "130027923",
+      "nom": "CHAMBRE DE METIERS ET DE L'ARTISANAT DE REGION NOUVELLE AQUITAINE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130027923",
+      "objet": "Campagne en vu d'empêcher puis limiter l'impact de la baisse décidée par France compétence des niveaux de prise en charge des couts des contrats d'apprentissage publiés au décret 2023-858 ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "447800475",
+      "nom": "CLARIANE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=447800475",
+      "objet": "Pallier à la pénurie de soignants en développant les parcours de formation et apprentissage, valorisant les salaires, améliorant les conditions de travail et, simplifiant le système de classifications",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "892318882",
+      "nom": "CLARIANE FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=892318882",
+      "objet": "Pallier la pénurie de soignants en développant les parcours de formation et d’apprentissage, valorisant les salaires, améliorant les conditions de travail et, simplifiant le système de classifications",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784717225",
+      "nom": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784717225",
+      "objet": "Maintien de l’aide unique aux employeurs d’apprentis et sécurisation du financement de l’apprentissage",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "908936438",
+      "nom": "CORIOLINK AFFAIRES PUBLIQUES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=908936438",
+      "objet": "Contribution à la sensibilisation des décideurs publics sur les conséquences liés à la baisse de financement de l'apprentissage",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "389143009",
+      "nom": "CPME RHONE ",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=389143009",
+      "objet": "Plaider pour une meilleure accessibilité des dispositifs de soutien à l’apprentissage pour les TPE",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "786116723",
+      "nom": "ESSCA",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786116723",
+      "objet": "Projet de loi des finances 2025 : Garantir le maintien des aides d’Etat en matière d'apprentissage sur les niveaux 6 et 7.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "775666209",
+      "nom": "FEDER HOSPITALIER ASSIST PRIVE (FEHAP)",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775666209",
+      "objet": "Alerter sur les conséquences économiques et sociales de la suppression de l'exonération relative à la taxe sur l'apprentissage dans le cadre du PLF 2026.",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "777748807",
+      "nom": "FEDERATION BATIMENT TP ILLE ET VILAINE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777748807",
+      "objet": "Proposer 10 mesures urgentes : rétablir un PTZ universel, adapter le ZAN aux réalités des territoires, arrêt de la surenchère réglementaire, REP, apprentissage, franchise de TVA et dialogue social",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784359788",
+      "nom": "FEDERATION NATIONALE DES TP - FNTP",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784359788",
+      "objet": "Préserver le financement de l'apprentissage notamment dans le cadre des lois de finances",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "883094518",
+      "nom": "GREENLOBBY CONSULTING",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=883094518",
+      "objet": "Inscription de la formation de Cultive au Registre Spécifique de France Compétences",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "W751046479",
+      "nom": "INSTITUT DE GESTION SOCIALE (IGS)",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751046479",
+      "objet": "Apprentissage : sensibiliser à l'importance du maintien des dispositifs de soutien aux entreprises",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "775684897",
+      "nom": "INSTITUT PASTEUR",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775684897",
+      "objet": "PLF 2026 : rétablir la suppression de l'exonération pour les FRUP de la taxe d'apprentissage via le dépôt d'amendements",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "781361530",
+      "nom": "MAISON FAMILIALE RURALE EDUCATION ORIENT",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781361530",
+      "objet": "Rencontre d'un député, Benoit BITEAU pour échanger sur l'apprentissage, le règlementation de l'apprentissage (aides aux employeurs...), les stages pour les jeunes de moins de 14 ans.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "433565678",
+      "nom": "MOUVEMENT DES ENTREPRISES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=433565678",
+      "objet": "Prévenir des impacts négatifs pour l'emploi des jeunes de la réforme des aides à l'apprentissage aux entreprises et échanges sur politique d' apprentissage ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "390917664",
+      "nom": "MUTUALITE FRANCAISE AUVERGNE RHONE ALPES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=390917664",
+      "objet": "Projet de loi de finances 2025 : supprimer la mesure tendant à la fin d'exonération de la taxe d'apprentissage des établissements sociaux et médico-sociaux mutualistes.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "518102975",
+      "nom": "MUTUALITE FRANCAISE ILE DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=518102975",
+      "objet": "Porter la position de la Mutualité Française dans le cadre du PLF 2025 qui propose d'éviter la fin d’exonération de la taxe d’apprentissage des établissements sanitaires et médico-sociaux mutualistes ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "438320632",
+      "nom": "MUTUALITE FRANCAISE OCCITANIE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=438320632",
+      "objet": "Convaincre de supprimer la mesure tendant à la fin d’exonération de la taxe d’apprentissage des ESMS mutualistes",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "817664659",
+      "nom": "NEXEM",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=817664659",
+      "objet": "PLF pour 2026 : maintenir l'exonération sur la taxe d’apprentissage pour le secteur associatif",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "493861363",
+      "nom": "OPENCLASSROOMS",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=493861363",
+      "objet": "Sécuriser le financement de l'apprentissage et des formations en ligne",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "434428470",
+      "nom": "ORGANIS.TRANSPORTEURS ROUTIERS EUROPEENS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434428470",
+      "objet": "Sensibiliser, dans le PLFSS 2025, aux défis d'attractivité et de recrutement des métiers du transport routier en soutenant les politiques d'apprentissage",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "H771956256",
+      "nom": "PLEAD",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H771956256",
+      "objet": "proposer une pérennisation du dispositif fiscal de soutien au développement de l’apprentissage",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "793795352",
+      "nom": "STAN",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=793795352",
+      "objet": "Présenter les préoccupations d’un établissement d’enseignement supérieur sur l’évolution de la taxe d’apprentissage et solliciter le soutien du député",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "422475962",
+      "nom": "SYND NAT DE LA RESTAURATION COLLECTIVE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=422475962",
+      "objet": "Faire prendre en compte les spécificités des entreprises de la restauration collective dans le cadre du PLF pour 2025 et du PLFSS pour 2025",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784357550",
+      "nom": "SYNDICAT ENTREPRISES DE GENIE ELECTRIQUE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784357550",
+      "objet": "Audition dans le cadre d'un rapport budgétaire sur l'enseignement supérieur (PLF26): maintenir le niveau d'ambition du soutien public à l'apprentissage",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "788740926",
+      "nom": "UNION DES ENTREPRISES DE PROXIMITE CENTRE-VAL DE LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=788740926",
+      "objet": "Défense et revendications des entreprises de proximité : retraite, emploi, protection sociale, chômage, apprentissage, représentativité patronale, élections européennes et législatives...",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "529168593",
+      "nom": "UNION DES ENTREPRISES DE PROXIMITE DE BRETAGNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=529168593",
+      "objet": "PRINTEMPS de la PROXIMITE : invitation de parlementaires à échanger avec des entreprises de proximité sur l'actualité et projets de loi ( Projet de loi SIMPLIFICATION)",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "783414220",
+      "nom": "UNION ENTR ARTISANS DU BTP DE MEUSE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=783414220",
+      "objet": "10 propositions FFB pour un pacte constructif au sujet de: PTZ, statut du bailleur privé, ZAN, MPR, surenchère réglementaire, REP, sous-traitance, apprentissage, franchise de TVA et dialogue social",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "302991591",
+      "nom": "UNION NATIONALE DES PROFESSIONS LIBERALES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302991591",
+      "objet": "Maintenir le niveau de l’aide à l’embauche d’un apprenti pour les petites entreprises dans le PLF 2025",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "479286098",
+      "nom": "UNION PROF ARTISANALE DU TARN",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=479286098",
+      "objet": "Etudier les problèmes départementaux intéressant l'activité générale des entreprises de l'artisanat, du commerce, de l'économie de proximité et les directives données par le Conseil National de l'U2P",
+      "actions": [
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "500536834",
+      "nom": "UNION PROFESSIONNELLE ARTISANALE DE LA VENDEE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=500536834",
+      "objet": "\nmaintenir l’aide à l’embauche d’un apprenti au niveau de 6000 euros pour les entreprises qui emploient moins de 250 salariés. ",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "517784088",
+      "nom": "UNION REGIONALE MUTUALITE FRANCAISE GRAND EST",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=517784088",
+      "objet": "Projet de Loi de financement : rétablir l’exonération de la taxe d’apprentissage pour les organismes de l’économie sociale et solidaire\n",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "824613640",
+      "nom": "UPA  NOUVELLE - AQUITAINE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=824613640",
+      "objet": "PLF 2025 : maintenir l’aide à l’embauche d’un apprenti au niveau de 6000 euros pour les entreprises qui emploient moins de 250 salariés.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "443805197",
+      "nom": "VAE SOLIS COMMUNICATIONS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=443805197",
+      "objet": "Modifier les règles applicables au financement de l'apprentissage dans le domaine de la culture ",
+      "actions": [
+        "rencontre",
+        "campagne publique",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 3,
+    "rapports_avec_liste": 3,
+    "comptes_rendus_lus": 88
+  },
+  "synthese": {
+    "position_probable": "A déposé l'amendement n° 687, rejeté (« ETAT B : Le programme 103 soutient la politique gouvernementale en matière d’emploi, avec pour objectif de favoriser « la dynamique de l’alternance au service de… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 687 (« ETAT B : Le programme 103 soutient la politique gouvernementale en matière d’emploi, avec pour objectif de favoriser « la dynamique de l’alternance au service de… »).",
+    "chiffres_utilises": [
+      "687",
+      "103"
+    ],
+    "mode": "gabarit",
+    "modele": null,
+    "verifie": true,
+    "date": "2026-11-14"
+  }
+}
