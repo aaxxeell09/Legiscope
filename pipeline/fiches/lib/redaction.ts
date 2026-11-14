@@ -51,7 +51,14 @@ export function coutLlm(): { appels: number; dollars: number } | null {
   return { appels: Number(c?.appels ?? 0), dollars: Number(c?.dollars ?? 0) };
 }
 
-async function chargerLlm(): Promise<any | null> {
+let chargement: Promise<any | null> | undefined;
+/** Chargement unique du module P8, partagé entre appels concurrents (deux fiches à la fois). */
+function chargerLlm(): Promise<any | null> {
+  if (!chargement) chargement = chargerLlmUneFois();
+  return chargement;
+}
+
+async function chargerLlmUneFois(): Promise<any | null> {
   if (moduleLlm !== undefined) return moduleLlm;
   moduleLlm = null;
   if (forceGabarit) raisonGabarit = "gabarit forcé (--gabarit)";

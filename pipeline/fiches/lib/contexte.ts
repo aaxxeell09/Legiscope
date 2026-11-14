@@ -1,6 +1,6 @@
 // Contexte d'un dossier : tout ce que les trois constructions lisent.
 
-import type { Config, Deputes, DossierConfig, Etat, Groupes, Hatvp, Pivots, Texte } from "../../../contracts/index";
+import type { Config, Deputes, DossierConfig, Etat, Groupes, GroupesAction, Hatvp, Pivots, Texte } from "../../../contracts/index";
 import { lireKind } from "./io";
 
 export type Contexte = {
@@ -13,6 +13,7 @@ export type Contexte = {
   hatvp: Hatvp | null;
   pivots: Pivots | null;
   etat: Etat | null;
+  groupesAction: GroupesAction | null;
 };
 
 export function chargerContexte(root: string, config: Config, groupes: Groupes, deputes: Deputes, dossier: DossierConfig): Contexte {
@@ -26,6 +27,7 @@ export function chargerContexte(root: string, config: Config, groupes: Groupes, 
     hatvp: lireKind(root, dossier.id, "hatvp"),
     pivots: lireKind(root, dossier.id, "pivots"),
     etat: lireKind(root, dossier.id, "etat"),
+    groupesAction: lireKind(root, dossier.id, "groupes-action"),
   };
 }
 

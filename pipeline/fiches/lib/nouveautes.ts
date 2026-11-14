@@ -17,13 +17,19 @@ import { datesDepotDepuisEvenements, lireEvenementsTexte, type EvenementsTexte }
 
 type Camp = "contre_mesure" | "pour_mesure" | "inconnu";
 
-const MOTS_ADOUCIT = /supprim|rel[eè]ve le seuil|relever|exon[eéè]r|exclut|exclu|r[eé]duit|r[eé]duire|abaiss|report|repouss|diff[eéè]r|limite|plafonn|all[eéè]g/i;
-const MOTS_DURCIT = /augment|porte (?:la|le|les|l')? ?.{0,30}? à|avance|[eé]tend|[eé]largi|renforc|cr[eé]e une taxe|instaure|rel[eè]ve le taux|double/i;
+// « relever » n'adoucit que pour un seuil, une franchise ou un plafond ; relever le montant, le taux ou la taxe aggrave (P3, 14 h 20 : n° 938).
+const MOTS_ADOUCIT = /supprim|rel[eè]ve(?:r)? (?:le |du |la |de la )?(?:seuil|franchise|plafond)|exon[eéè]r|exclut|exclu|r[eé]duit|r[eé]duire|abaiss|report|repouss|diff[eéè]r|limite|plafonn|all[eéè]g/i;
+const MOTS_DURCIT = /augment|porte (?:la|le|les|l')? ?.{0,30}? à|rel[eè]ve(?:r)? (?:le |la |du )?(?:montant|taux|taxe)|avance|[eé]tend|[eé]largi|renforc|cr[eé]e une taxe|instaure|double/i;
 const MOTS_CALENDRIER = /entr[eé]e en vigueur|report|repouss|diff[eéè]r|application|calendrier|à compter/i;
 const MOTS_MONTANT = /seuil|montant|taux|assiette|plafon|exon[eéè]r|exclu|euros|%|franchise|r[eé]duit|abaiss|all[eéè]g/i;
 
 /** Camp de l'amendement par rapport à la mesure : son résumé, sinon la position du groupe de l'auteur. */
-export function campAmendement(ctx: Contexte, a: AmendementTexte): { camp: Camp; raison: string; fonde: "resume" | "groupe" | "aucun" } {
+export function campAmendement(ctx: Contexte, a: AmendementTexte): { camp: Camp; raison: string; fonde: "nature" | "resume" | "groupe" | "aucun" } {
+  // Complément 3 : `nature` posée par P3 (supprime, reduit, reporte, aggrave, autre) prime sur la lecture du résumé.
+  const nature = natureDe(a);
+  if (nature === "supprime" || nature === "reduit" || nature === "reporte") return { camp: "contre_mesure", raison: `nature « ${nature} » (texte.json)`, fonde: "nature" };
+  if (nature === "aggrave") return { camp: "pour_mesure", raison: "nature « aggrave » (texte.json)", fonde: "nature" };
+  if (nature === "autre") return { camp: "inconnu", raison: "nature « autre » (texte.json) : sans effet sur la mesure", fonde: "nature" };
   if (/supprim/i.test(a.resume)) return { camp: "contre_mesure", raison: "amendement de suppression", fonde: "resume" };
   if (/demande (?:d'|un )?rapport|rapport au parlement|remise d'un rapport|r[eé]dactionnel|de coordination|de pr[eé]cision/i.test(a.resume)) return { camp: "inconnu", raison: "demande de rapport ou amendement rédactionnel, sans effet sur la mesure", fonde: "aucun" };
   if (MOTS_DURCIT.test(a.resume)) return { camp: "pour_mesure", raison: "le résumé renforce ou étend la mesure", fonde: "resume" };
@@ -35,11 +41,23 @@ export function campAmendement(ctx: Contexte, a: AmendementTexte): { camp: Camp;
   return { camp: "inconnu", raison: "résumé neutre et pas de position de groupe connue", fonde: "aucun" };
 }
 
+type Nature = "supprime" | "reduit" | "reporte" | "aggrave" | "autre";
+/** `nature` de l'amendement vis-à-vis de la mesure, quand texte.json la porte (champ optionnel, P3). */
+export function natureDe(a: AmendementTexte): Nature | null {
+  const n = (a as any).nature;
+  return n === "supprime" || n === "reduit" || n === "reporte" || n === "aggrave" || n === "autre" ? n : null;
+}
+
 /** L'objectif visé : repli « repousser » pour le calendrier, repli « réduire/limiter » pour le montant, sinon le principal. */
 export function objectifVise(ctx: Contexte, a: AmendementTexte): number {
   const objectifs = ctx.dossier.objectifs;
-  if (/supprim/i.test(a.resume)) return objectifs[0].rang;
   const parMots = (re: RegExp) => objectifs.find((o) => o.rang !== objectifs[0].rang && re.test(o.texte));
+  const nature = natureDe(a);
+  if (nature === "supprime") return objectifs[0].rang;
+  if (nature === "reporte") return parMots(/repouss|report|entr[eé]e en vigueur|application|diff[eé]r/i)?.rang ?? objectifs[0].rang;
+  if (nature === "reduit") return parMots(/r[eé]duire|montant|assiette|limiter|taux|seuil|all[eéè]g/i)?.rang ?? objectifs[0].rang;
+  if (nature === "aggrave") return parMots(/r[eé]duire|montant|assiette|limiter|taux|seuil|all[eéè]g/i)?.rang ?? objectifs[0].rang;
+  if (/supprim/i.test(a.resume)) return objectifs[0].rang;
   if (MOTS_CALENDRIER.test(a.resume)) {
     const o = parMots(/repouss|report|entr[eé]e en vigueur|application|diff[eé]r/i);
     if (o) return o.rang;
@@ -221,8 +239,8 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   // Un amendement du texte n'est un événement du dossier que si son résumé cite la mesure (mots-clés du sujet,
   // article de la mesure) ou s'il a été travaillé avec le client : les autres amendements du même article ou du
   // même texte sont écartés et comptés (P0, 14 h 05 : un amendement sur les pensions remontait en cause du verdict).
-  const toucheLaMesure = (a: AmendementTexte) => citeSujet(a) || citeArticle(a) || avecClient.has(a.id) || retenusA3.has(a.id);
-  const supprimeLaMesure = (a: AmendementTexte) => /supprim/i.test(a.resume) && (citeArticle(a) || citeSujet(a));
+  const toucheLaMesure = (a: AmendementTexte) => (natureDe(a) !== null && natureDe(a) !== "autre") || citeSujet(a) || citeArticle(a) || avecClient.has(a.id) || retenusA3.has(a.id);
+  const supprimeLaMesure = (a: AmendementTexte) => natureDe(a) === "supprime" || (natureDe(a) === null && /supprim/i.test(a.resume) && (citeArticle(a) || citeSujet(a)));
   const cleGroupe = (a: AmendementTexte) => `${a.resume.toLowerCase().replace(/\s+/g, " ").slice(0, 80)}|${a.groupe_id ?? "NI"}|${a.sort}`;
   const groupesAm = new Map<string, AmendementTexte[]>();
   for (const a of ctx.texte?.amendements ?? []) {
@@ -251,7 +269,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
     }
     const { camp: campBrut, raison, fonde } = campAmendement(ctx, a);
     // Effet et importance ne s'appuient que sur un camp lu dans le résumé ; le groupe seul ne suffit pas.
-    const camp: Camp = fonde === "resume" ? campBrut : "inconnu";
+    const camp: Camp = fonde === "resume" || fonde === "nature" ? campBrut : "inconnu";
     const rang = objectifVise(ctx, a);
     const groupe = sigleGroupe(ctx, a.groupe_id);
     const srcAm: Source[] = liste.slice(0, 3).map((x) => ({ label: `Amendement n° ${x.numero}`, url: x.url }));

@@ -95,12 +95,30 @@ export async function construireAction(ctx: Contexte, index: FichesIndex): Promi
   const ar = lireArguments(ctx, limites);
   const disponibles = new Set(index.disponibles);
 
-  const avecFiche = (liste: GroupesAction["actionnables"]) => liste.map((d) => ({ ...d, fiche: disponibles.has(d.depute_id) }));
+  // Complément 5 : un député n'entre dans alliés, actionnables ou perdus que sur un acte personnel (fondement non vide) ;
+  // les autres rejoignent `position_inconnue` (recopiée de groupes-action.json quand P3 la fournit).
+  const sansFondement: any[] = [];
+  const avecFiche = (liste: GroupesAction["actionnables"]) => liste
+    .filter((d) => {
+      if (d.fondement.length > 0 && d.position_connue) return true;
+      sansFondement.push(d);
+      return false;
+    })
+    .map((d) => ({ ...d, fiche: disponibles.has(d.depute_id) }));
   const groupes = {
     actionnables: avecFiche(ga?.actionnables ?? []),
     allies: avecFiche(ga?.allies ?? []),
     perdus: avecFiche(ga?.perdus ?? []),
   };
+  const positionGroupeDe = (groupeId: string) => ctx.texte?.positions.find((p) => p.groupe_id === groupeId)?.position ?? null;
+  const dejaInconnus = new Set<string>();
+  const position_inconnue: any[] = [];
+  for (const d of [...(((ga as any)?.position_inconnue ?? []) as any[]), ...sansFondement.map((d) => ({ depute_id: d.depute_id, groupe_id: d.groupe_id, position_groupe: positionGroupeDe(d.groupe_id), preuve: d.preuve }))]) {
+    if (!d?.depute_id || dejaInconnus.has(d.depute_id)) continue;
+    dejaInconnus.add(d.depute_id);
+    position_inconnue.push({ depute_id: d.depute_id, groupe_id: d.groupe_id, position_groupe: d.position_groupe ?? null, fiche: disponibles.has(d.depute_id), preuve: d.preuve });
+  }
+  if (sansFondement.length > 0) limites.push(`${sansFondement.length} député(s) sans acte personnel retiré(s) des trois listes et placé(s) en position_inconnue.`);
 
   const filtre = (liste: Argument[]) => liste.filter((a) => !posterieur(a.date, ref));
   const argumentsFiltres = { pour: filtre(ar?.pour ?? []), contre: filtre(ar?.contre ?? []) };
@@ -128,7 +146,7 @@ export async function construireAction(ctx: Contexte, index: FichesIndex): Promi
       dossier_id: dossier.id,
     },
     decideurs: ga?.decideurs ?? [],
-    groupes,
+    groupes: { ...groupes, ...(position_inconnue.length > 0 ? { position_inconnue } : {}) } as Action["groupes"],
     arguments: argumentsFiltres,
     contre_arguments,
   };
