@@ -3,48 +3,21 @@
 // contre-arguments rédigés (llm vérifié ou gabarit) pour chaque argument du camp
 // opposé au client. « pour » et « contre » qualifient la mesure, pas l'objectif.
 
-import { z } from "zod";
-import { join } from "node:path";
 import {
-  ArgumentSchema, DecideurSchema, FondementSchema, MetaSchema, PreuveSchema, Proba, dataPath,
-  type Action, type Argument, type ContreArgument, type FichesIndex, type Source,
+  ArgumentsSchema, GroupesActionSchema, dataPath,
+  type Action, type Argument, type Arguments, type ContreArgument, type FichesIndex, type GroupesAction, type Source,
 } from "../../../contracts/index";
 import type { Contexte } from "./contexte";
-import { ecrireJson, fusionnerSources, lireJsonBrut, lireValide, maintenant, noter, posterieur } from "./io";
-import { gabaritContreArgument, type ArgumentEntendu } from "./gabarits";
+import { ecrireJson, fusionnerSources, lireJsonBrut, lireKind, maintenant, noter, posterieur } from "./io";
+import { LIEU_LIBELLE, gabaritContreArgument, type ArgumentEntendu } from "./gabarits";
+import { dateFr } from "./io";
 import { lirePrompt, rediger } from "./redaction";
 
 const PROMPT_CONTRE = "pipeline/action/prompts/contre-argument.md";
 
-// Lecture locale de l'intermédiaire de P3 (5.18) : les champs de DeputeAction sans `fiche`.
-const DeputeIntermediaireSchema = z.object({
-  depute_id: z.string().min(1),
-  groupe_id: z.string().min(1),
-  score: Proba,
-  raison: z.string().min(1),
-  fondement: z.array(FondementSchema),
-  position_connue: z.boolean(),
-  preuve: PreuveSchema,
-});
-const GroupesActionSchema = z.object({
-  meta: MetaSchema,
-  actionnables: z.array(DeputeIntermediaireSchema),
-  allies: z.array(DeputeIntermediaireSchema),
-  perdus: z.array(DeputeIntermediaireSchema),
-  decideurs: z.array(DecideurSchema),
-});
-const ArgumentsSchema = z.object({
-  meta: MetaSchema,
-  pour: z.array(ArgumentSchema),
-  contre: z.array(ArgumentSchema),
-});
-type GroupesAction = z.infer<typeof GroupesActionSchema>;
-type Arguments = z.infer<typeof ArgumentsSchema>;
-
-/** groupes-action.json, sinon (fixtures) les mêmes champs repris de l'action.json existant. */
+/** groupes-action.json (P3, contrat 5.18), sinon les mêmes champs repris de l'action.json existant. */
 export function lireGroupesAction(ctx: Contexte, limites: string[]): GroupesAction | null {
-  const chemin = join(ctx.root, ctx.dossier.id, "groupes-action.json");
-  const g = lireValide(chemin, GroupesActionSchema);
+  const g = lireKind(ctx.root, ctx.dossier.id, "groupes-action");
   if (g) return g;
   const ancien = lireJsonBrut(dataPath(ctx.dossier.id, "action", undefined, ctx.root)) as any;
   if (ancien?.groupes && ancien?.decideurs) {
@@ -60,8 +33,7 @@ export function lireGroupesAction(ctx: Contexte, limites: string[]): GroupesActi
 }
 
 export function lireArguments(ctx: Contexte, limites: string[]): Arguments | null {
-  const chemin = join(ctx.root, ctx.dossier.id, "arguments.json");
-  const a = lireValide(chemin, ArgumentsSchema);
+  const a = lireKind(ctx.root, ctx.dossier.id, "arguments");
   if (a) return a;
   const ancien = lireJsonBrut(dataPath(ctx.dossier.id, "action", undefined, ctx.root)) as any;
   if (ancien?.arguments) {
@@ -77,36 +49,42 @@ export function lireArguments(ctx: Contexte, limites: string[]): Arguments | nul
 }
 
 function versEntendu(a: Argument): ArgumentEntendu {
-  return { argument: a.argument, citation: a.citation, date: a.date, lieu: a.lieu };
+  return { argument: a.argument, citation: a.citation, date: a.date, lieu: a.lieu, url: a.url };
 }
 
-async function contreArgument(ctx: Contexte, cible: Argument, appuis: Argument[], chiffresDossier: string[], sourcesDossier: Source[], dejaUtilises: Set<string>): Promise<ContreArgument> {
+async function contreArgument(ctx: Contexte, cible: Argument, index: number, appuis: Argument[], chiffresDossier: string[], sourcesDossier: Source[]): Promise<ContreArgument> {
+  // Entrée du modèle : sans orateur ni groupe (pas d'attaque personnelle possible), sans prédiction Orcet.
   const entree = {
-    argument: versEntendu(cible),
-    appuis: appuis.map(versEntendu),
+    argument: { argument: cible.argument, citation: cible.citation, date: cible.date, lieu: cible.lieu },
+    appuis: appuis.map((a) => ({ argument: a.argument, citation: a.citation, date: a.date, lieu: a.lieu })),
     mesure: ctx.dossier.mesure.label,
     client: ctx.dossier.client,
     position_cible: ctx.dossier.objectifs[0].position_cible,
     chiffres_du_dossier: chiffresDossier,
   };
-  const gabarit = gabaritContreArgument(entree, dejaUtilises);
-  const r = await rediger({ prompt: lirePrompt(PROMPT_CONTRE), champ: "texte", entree, gabarit, etiquette: `${ctx.dossier.id}/action contre-argument « ${cible.argument.slice(0, 40)} »` });
-  const appui = appuis.length > 0 ? appuis : [];
-  const sources = fusionnerSources([{ label: `Argument entendu le ${cible.date}`, url: cible.url }], appui.slice(0, 2).map((a) => ({ label: `Argument contraire entendu le ${a.date}`, url: a.url })), sourcesDossier.slice(0, 1));
-  return {
-    texte: r.texte,
-    repond_a: cible.argument,
-    chiffres_utilises: r.chiffres_utilises,
-    mode: r.mode,
-    verifie: r.verifie,
-    preuve: {
-      sources,
-      raisonnement: r.mode === "llm"
-        ? "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres."
-        : "Gabarit : reprend un argument du camp du client déjà entendu dans les débats ; aucun chiffre ajouté hors des citations.",
+  const g = gabaritContreArgument({ ...entree, argument: versEntendu(cible), appuis: appuis.map(versEntendu) }, index);
+  const r = await rediger({ prompt: lirePrompt(PROMPT_CONTRE), champ: "texte", entree, gabarit: g.texte, chiffresGabarit: g.chiffres, etiquette: `${ctx.dossier.id}/action contre-argument « ${cible.argument.slice(0, 40)} »` });
+  let preuve: ContreArgument["preuve"];
+  if (r.mode === "llm") {
+    preuve = {
+      sources: fusionnerSources([{ label: `${LIEU_LIBELLE[cible.lieu]} du ${dateFr(cible.date)} (argument adverse)`, url: cible.url }], appuis.slice(0, 2).map((a) => ({ label: `${LIEU_LIBELLE[a.lieu]} du ${dateFr(a.date)} (argument du camp du client)`, url: a.url })), sourcesDossier.slice(0, 1)),
+      raisonnement: "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
       nature: "deduction",
-    },
-  };
+    };
+  } else if (g.appui) {
+    preuve = {
+      sources: [{ label: `${g.appui.lieu === "seance" ? "Séance" : "Commission"} du ${dateFr(g.appui.date)}`, url: g.appui.url ?? cible.url }],
+      raisonnement: "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+      nature: "deduction",
+    };
+  } else {
+    preuve = {
+      sources: [{ label: `${LIEU_LIBELLE[cible.lieu]} du ${dateFr(cible.date)}`, url: cible.url }],
+      raisonnement: "Gabarit de secours : aucun argument du camp du client relevé dans les débats.",
+      nature: "inconnue",
+    };
+  }
+  return { texte: r.texte, repond_a: cible.argument, chiffres_utilises: r.chiffres_utilises, mode: r.mode, verifie: r.verifie, preuve };
 }
 
 export async function construireAction(ctx: Contexte, index: FichesIndex): Promise<Action> {
@@ -136,8 +114,7 @@ export async function construireAction(ctx: Contexte, index: FichesIndex): Promi
   const chiffresDossier = [dossier.mesure.label, ...(ctx.texte?.amendements ?? []).map((a) => `n° ${a.numero} : ${a.resume}`)];
   const sourcesDossier: Source[] = ctx.texte ? [{ label: `Texte ${ctx.texte.texte.id}`, url: ctx.texte.texte.url }] : [];
   const contre_arguments: ContreArgument[] = [];
-  const dejaUtilises = new Set<string>();
-  for (const a of adverses) contre_arguments.push(await contreArgument(ctx, a, appuis, chiffresDossier, sourcesDossier, dejaUtilises));
+  for (let i = 0; i < adverses.length; i++) contre_arguments.push(await contreArgument(ctx, adverses[i], i, appuis, chiffresDossier, sourcesDossier));
   if (adverses.length === 0) limites.push("Aucun argument du camp adverse entendu : pas de contre-argument.");
   const enGabarit = contre_arguments.filter((c) => c.mode === "gabarit").length;
   if (enGabarit > 0) limites.push(`${enGabarit} contre-argument(s) en gabarit.`);
