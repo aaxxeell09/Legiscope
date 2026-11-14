@@ -238,7 +238,7 @@
   flex-direction: column;
   gap: var(--space-2);
 }
-@media (max-width: 950px) { .p7-classement { grid-template-columns: 1fr; } .p7-depute-head .p7-droite { width: 100%; margin-left: 0; } }
+@media (max-width: 1100px) { .p7-classement { grid-template-columns: 1fr; } .p7-depute-head .p7-droite { width: 100%; margin-left: 0; } }
 
 .p7-synthese dt {
   color: var(--text-2);
