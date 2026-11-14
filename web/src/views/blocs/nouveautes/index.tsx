@@ -29,6 +29,10 @@ function trier(e: Evenement[]): Evenement[] {
   return [...e].sort((a, b) => b.importance - a.importance || b.date.localeCompare(a.date));
 }
 
+function chronologique(e: Evenement[]): Evenement[] {
+  return [...e].sort((a, b) => b.date.localeCompare(a.date) || b.importance - a.importance);
+}
+
 function pluriel(n: number, mot: string): string {
   return `${n} ${mot}${n > 1 ? "s" : ""}`;
 }
@@ -39,8 +43,10 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
   const { dateReference } = useDossier(dossier);
   const [filtre, setFiltre] = useState<Evenement["type"] | null>(null);
   const [toutVoir, setToutVoir] = useState(false);
+  const [classement, setClassement] = useState<"importance" | "date">("importance");
+  const [ouvert, setOuvert] = useState<string | null>(null);
 
-  const evenements = useMemo(() => trier(r.data?.evenements ?? []), [r.data]);
+  const evenements = useMemo(() => classement === "importance" ? trier(r.data?.evenements ?? []) : chronologique(r.data?.evenements ?? []), [r.data, classement]);
   const types = useMemo(() => Array.from(new Set(evenements.map((e) => e.type))), [evenements]);
   const filtres = filtre ? evenements.filter((e) => e.type === filtre) : evenements;
   const visibles = toutVoir ? filtres : filtres.slice(0, 8);
@@ -61,6 +67,7 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
           ) : (
             <>
               {types.length > 1 && (
+                <div className="nv-outils">
                 <div className="nv-filtres" role="group" aria-label="Filtrer par type">
                   <button type="button" className="nv-puce" aria-pressed={filtre === null} onClick={() => setFiltre(null)}>
                     tout
@@ -70,6 +77,12 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
                       {TYPE_LABEL[t]}
                     </button>
                   ))}
+                </div>
+                <label className="nv-tri">Classer par
+                  <select value={classement} onChange={(e) => { setClassement(e.target.value as "importance" | "date"); setToutVoir(false); }}>
+                    <option value="importance">importance</option><option value="date">date</option>
+                  </select>
+                </label>
                 </div>
               )}
               <ul className="nv-liste">
@@ -81,17 +94,18 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
                       <span>{formatDate(e.date)}</span>
                       <span>{TYPE_LABEL[e.type]}</span>
                     </div>
-                    <div className="nv-titre">
-                      <a href={e.url} target="_blank" rel="noreferrer">
-                        {e.titre}
-                      </a>
-                    </div>
+                    <button type="button" className="nv-titre" aria-expanded={ouvert === e.id} onClick={() => setOuvert((id) => id === e.id ? null : e.id)}>{e.titre}</button>
                     <div className="nv-detail-ligne">
                       <span className="nv-detail" title={e.detail}>
                         {e.detail}
                       </span>
                       <Pourquoi preuve={e.preuve} />
                     </div>
+                    {ouvert === e.id && <div className="nv-detail-ouvert">
+                      <div><strong>Effet proposé sur l’objectif :</strong> {EFFET_LABEL[e.effet]}</div>
+                      <p>{e.detail}</p>
+                      <div className="nv-detail-actions"><Pourquoi preuve={e.preuve} label="Voir le raisonnement" /><a href={e.url} target="_blank" rel="noreferrer">Ouvrir la source officielle ↗</a></div>
+                    </div>}
                   </li>
                 ))}
               </ul>
