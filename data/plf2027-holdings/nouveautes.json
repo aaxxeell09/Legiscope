@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:20:33.949Z",
+    "generated_at": "2026-11-14T13:23:54.661Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -23,11 +23,61 @@
         "url": "https://hemicycle.ai"
       }
     ],
-    "limits": "data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/plf2027-holdings/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. 1 amendement(s) de texte.json écarté(s) : ni mot-clé du sujet, ni article de la mesure dans le résumé, ni présence dans les fichiers amendements/<PA>.json. Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip). 37 amendement(s) sans date de dépôt publiée : prédiction Orcet ou dernière étape du texte, dit dans chaque preuve.",
+    "limits": "data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/plf2027-holdings/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip).",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
   "evenements": [
+    {
+      "id": "ev-1706",
+      "date": "2026-11-04",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1706 (LIOT) adopté : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
+      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001706",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1706",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001706"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-797",
+      "date": "2026-11-04",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 797 (HOR) adopté : De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune…",
+      "detail": "De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune immobilière restent vacants ou sont proposés à des loyers élevés, alors que les ménages modestes et les classes moyennes peinent à se loger.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000797",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 797",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000797"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « reduit » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
     {
       "id": "ev-9759",
       "date": "2026-11-04",
@@ -57,7 +107,7 @@
       "detail": "Avec cet amendement, les députés du groupe LFI proposent d’exclure les sociétés holdings du bénéfice du régime fiscal des sociétés mères, afin de soumettre pleinement à l’impôt sur les sociétés les bénéfices qu’elles dégagent.",
       "importance": 3,
       "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136",
-      "effet": "affaiblit",
+      "effet": "renforce",
       "objectif_rang": 2,
       "preuve": {
         "sources": [
@@ -74,7 +124,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002620"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 27 octobre 2026. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 27 octobre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -86,8 +136,8 @@
       "detail": "Par cet amendement de repli, le groupe LFI propose de rétablir l’impôt de solidarité sur la fortune (ISF), en attendant de convaincre que le barème ainsi établi reste trop modeste au regard de l’explosion des hauts patrimoines, et surtou...",
       "importance": 3,
       "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8856",
-      "effet": "neutre",
-      "objectif_rang": 1,
+      "effet": "renforce",
+      "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
@@ -103,7 +153,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001078"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 16 octobre 2026. Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 16 octobre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -116,7 +166,7 @@
       "importance": 3,
       "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8555",
       "effet": "renforce",
-      "objectif_rang": 1,
+      "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
@@ -132,7 +182,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001316"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 6 octobre 2026. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 6 octobre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -158,89 +208,56 @@
       }
     },
     {
-      "id": "ev-1275",
+      "id": "ev-174",
       "date": "2026-11-04",
       "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 1275, n° 2566) (LFI-NFP) rejetés : Cet amendement du groupe LFI propose d’instaurer une contribution différentielle…",
-      "detail": "Cet amendement du groupe LFI propose d’instaurer une contribution différentielle garantissant aux contribuables détenant plus de 100 millions d’euros de patrimoine net une imposition minimale équivalente à 2 % de celui-ci, dite « taxe Zu...",
+      "titre": "Amendement n° 174 (ECOS) rejeté : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique applicable…",
+      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique applicable aux foyers dont le patrimoine net est supérieur à 1,3 million d’euros.",
       "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001275",
-      "effet": "renforce",
-      "objectif_rang": 3,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1275",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001275"
-          },
-          {
-            "label": "Amendement n° 2566",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002566"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1431",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 1431, n° 1440) (UDR) rejetés : Cet amendement du groupe UDR porte de 30 % à 50 % l’abattement applicable à la valeur de…",
-      "detail": "Cet amendement du groupe UDR porte de 30 % à 50 % l’abattement applicable à la valeur de la résidence principale pour le calcul de l’impôt sur la fortune immobilière.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174",
       "effet": "renforce",
       "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
-            "label": "Amendement n° 1431",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
-          },
-          {
-            "label": "Amendement n° 1440",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"
+            "label": "Amendement n° 174",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174"
           },
           {
             "label": "Texte PRJLANR5L17B3210",
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
     {
-      "id": "ev-18",
+      "id": "ev-1847",
       "date": "2026-11-04",
       "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 18, n° 38) (ECOS) rejetés : Cet amendement vise à instaurer un impôt plancher sur la fortune (IPF), ciblant les 0,01…",
-      "detail": "Cet amendement vise à instaurer un impôt plancher sur la fortune (IPF), ciblant les 0,01 % des contribuables les plus riches, c’est-à-dire les personnes détenant plus de 100 millions d’euros de patrimoine net.",
+      "titre": "2 amendements identiques (n° 1847, n° 3931) (GDR) rejetés : Adopté par l’Assemblée nationale en février 2025 lors de la niche parlementaire du groupe…",
+      "detail": "Adopté par l’Assemblée nationale en février 2025 lors de la niche parlementaire du groupe Écologiste, cet amendement vise à inscrire dans notre système fiscal un impôt plancher sur la fortune, plus connu sous le nom de « taxe Zucman ».",
       "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847",
       "effet": "renforce",
       "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
-            "label": "Amendement n° 18",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018"
+            "label": "Amendement n° 1847",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847"
           },
           {
-            "label": "Amendement n° 38",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000038"
+            "label": "Amendement n° 3931",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003931"
           },
           {
             "label": "Texte PRJLANR5L17B3210",
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -265,7 +282,32 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-3221",
+      "date": "2026-11-04",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 3221 (LIOT) rejeté : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
+      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3221",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -294,7 +336,32 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-43",
+      "date": "2026-11-04",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 43 (ECOS) rejeté : Cet amendement vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt…",
+      "detail": "Cet amendement vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt sur la fortune personnelle.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 43",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -319,7 +386,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -348,32 +415,32 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
     {
-      "id": "ev-797",
+      "id": "ev-887",
       "date": "2026-11-04",
       "type": "amendement_sort",
-      "titre": "Amendement n° 797 (HOR) adopté : De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune…",
-      "detail": "De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune immobilière restent vacants ou sont proposés à des loyers élevés, alors que les ménages modestes et les classes moyennes peinent à se loger.",
+      "titre": "Amendement n° 887 rejeté : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui…",
+      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui concerne les foyers dont le patrimoine net est supérieur à 1 million d’euros.",
       "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000797",
-      "effet": "neutre",
-      "objectif_rang": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000887",
+      "effet": "renforce",
+      "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
-            "label": "Amendement n° 797",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000797"
+            "label": "Amendement n° 887",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000887"
           },
           {
             "label": "Texte PRJLANR5L17B3210",
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (HOR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -385,8 +452,8 @@
       "detail": "La création d’une contribution différentielle sur les hauts patrimoines répond à un impératif de justice fiscale et de solidarité nationale dans un contexte marqué par une concentration croissante des richesses.",
       "importance": 2,
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000889",
-      "effet": "affaiblit",
-      "objectif_rang": 3,
+      "effet": "renforce",
+      "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
@@ -398,7 +465,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -442,6 +509,430 @@
         ],
         "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
         "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-47",
+      "date": "2026-10-16",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 47 (ECOS) rejeté : Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune…",
+      "detail": "Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt sur la fortune personnelle.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 47",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-3221",
+      "date": "2026-10-10",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 3221 (LIOT) déposé : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
+      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3221",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1069",
+      "date": "2026-10-08",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 1069, n° 1316) (LFI-NFP) déposés : À travers cet amendement, le groupe parlementaire LFI propose le rétablissement d'un…",
+      "detail": "À travers cet amendement, le groupe parlementaire LFI propose le rétablissement d'un impôt de solidarité sur la fortune (ISF) renforcé, intégrant un volet climatique afin de faire contribuer les plus riches à la hauteur de leurs immenses... Déposé par 2 auteurs du même groupe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001069",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1069",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001069"
+          },
+          {
+            "label": "Amendement n° 1316",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001316"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1077",
+      "date": "2026-10-08",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 1077, n° 1078) (LFI-NFP) déposés : Par cet amendement de repli, le groupe LFI propose de rétablir l’impôt de solidarité sur…",
+      "detail": "Par cet amendement de repli, le groupe LFI propose de rétablir l’impôt de solidarité sur la fortune (ISF), en attendant de convaincre que le barème ainsi établi reste trop modeste au regard de l’explosion des hauts patrimoines, et surtou... Déposé par 2 auteurs du même groupe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001077",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1077",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001077"
+          },
+          {
+            "label": "Amendement n° 1078",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001078"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-797",
+      "date": "2026-10-08",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 797 (HOR) déposé : De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune…",
+      "detail": "De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune immobilière restent vacants ou sont proposés à des loyers élevés, alors que les ménages modestes et les classes moyennes peinent à se loger.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000797",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 797",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000797"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « reduit » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-47",
+      "date": "2026-10-05",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 47 (ECOS) déposé : Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune…",
+      "detail": "Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt sur la fortune personnelle.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 47",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-56",
+      "date": "2026-10-05",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 56 (ECOS) déposé : Cet amendement du groupe Écologiste et Social vise à renforcer la taxe sur les holdings…",
+      "detail": "Cet amendement du groupe Écologiste et Social vise à renforcer la taxe sur les holdings patrimoniales, dont la portée a été fortement réduite au cours de l’examen du projet de loi de finances pour 2026.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000056",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 56",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000056"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1706",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1706 (LIOT) déposé : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
+      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001706",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1706",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001706"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1847",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 1847, n° 3931) (GDR) déposés : Adopté par l’Assemblée nationale en février 2025 lors de la niche parlementaire du groupe…",
+      "detail": "Adopté par l’Assemblée nationale en février 2025 lors de la niche parlementaire du groupe Écologiste, cet amendement vise à inscrire dans notre système fiscal un impôt plancher sur la fortune, plus connu sous le nom de « taxe Zucman ». Déposé par 2 auteurs du même groupe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1847",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847"
+          },
+          {
+            "label": "Amendement n° 3931",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003931"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-874",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 874, n° 2620) (LFI-NFP) déposés : Avec cet amendement, les députés du groupe LFI proposent d’exclure les sociétés holdings…",
+      "detail": "Avec cet amendement, les députés du groupe LFI proposent d’exclure les sociétés holdings du bénéfice du régime fiscal des sociétés mères, afin de soumettre pleinement à l’impôt sur les sociétés les bénéfices qu’elles dégagent. Déposé par 2 auteurs du même groupe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000874",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 874",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000874"
+          },
+          {
+            "label": "Amendement n° 2620",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002620"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-678",
+      "date": "2026-10-03",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 678 (HOR) déposé : De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune…",
+      "detail": "De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune immobilière restent vacants ou sont proposés à des loyers élevés, alors que les ménages modestes et les classes moyennes peinent à se loger. (non soutenu)",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000678",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 678",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000678"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « reduit » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-756",
+      "date": "2026-10-03",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 756, n° 1046) (LFI-NFP) déposés : Par cet amendement d'appel, le groupe de la France insoumise propose d’instaurer une…",
+      "detail": "Par cet amendement d'appel, le groupe de la France insoumise propose d’instaurer une contribution féministe sur les très grandes fortunes, pour financer à hauteur de 3 milliards d’euros par an la lutte contre les violences sexistes et se... Déposé par 2 auteurs du même groupe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000756",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 756",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000756"
+          },
+          {
+            "label": "Amendement n° 1046",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001046"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-174",
+      "date": "2026-10-02",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 174 (ECOS) déposé : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique applicable…",
+      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique applicable aux foyers dont le patrimoine net est supérieur à 1,3 million d’euros.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 174",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-208",
+      "date": "2026-10-02",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 208 (ECOS) déposé : Cet amendement vise à renforcer la taxe sur les holdings patrimoniales, dont la portée a…",
+      "detail": "Cet amendement vise à renforcer la taxe sur les holdings patrimoniales, dont la portée a été fortement réduite au cours de l’examen du projet de loi de finances pour 2026.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000208",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 208",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000208"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-364",
+      "date": "2026-10-02",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 364, n° 471) (SOC) déposés : Cet amendement des députés Socialistes et apparentés décline les travaux menés par…",
+      "detail": "Cet amendement des députés Socialistes et apparentés décline les travaux menés par l’économiste Gabriel Zucman – Prix Bernacer en 2018 et Médaille John-Bates-Clark en 2023 – vise à instaurer un prélèvement annuel plancher de 2 % pour les... Déposé par 2 auteurs du même groupe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000364",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 364",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000364"
+          },
+          {
+            "label": "Amendement n° 471",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000471"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-43",
+      "date": "2026-10-02",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 43 (ECOS) déposé : Cet amendement vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt…",
+      "detail": "Cet amendement vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt sur la fortune personnelle.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 43",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
       }
     },
     {
@@ -646,6 +1137,35 @@
       }
     },
     {
+      "id": "ev-1275",
+      "date": "2026-11-04",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 1275, n° 2566) (LFI-NFP) rejetés : Cet amendement du groupe LFI propose d’instaurer une contribution différentielle…",
+      "detail": "Cet amendement du groupe LFI propose d’instaurer une contribution différentielle garantissant aux contribuables détenant plus de 100 millions d’euros de patrimoine net une imposition minimale équivalente à 2 % de celui-ci, dite « taxe Zu...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001275",
+      "effet": "neutre",
+      "objectif_rang": 3,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1275",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001275"
+          },
+          {
+            "label": "Amendement n° 2566",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002566"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
       "id": "ev-1275-2",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -666,7 +1186,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (UDR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -691,7 +1211,36 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1431",
+      "date": "2026-11-04",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 1431, n° 1440) (UDR) rejetés : Cet amendement du groupe UDR porte de 30 % à 50 % l’abattement applicable à la valeur de…",
+      "detail": "Cet amendement du groupe UDR porte de 30 % à 50 % l’abattement applicable à la valeur de la résidence principale pour le calcul de l’impôt sur la fortune immobilière.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1431",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
+          },
+          {
+            "label": "Amendement n° 1440",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -716,7 +1265,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (UDR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -741,7 +1290,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre et pas de position de groupe connue. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -754,7 +1303,7 @@
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001528",
       "effet": "neutre",
-      "objectif_rang": 3,
+      "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
@@ -766,111 +1315,36 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
     {
-      "id": "ev-174",
+      "id": "ev-18",
       "date": "2026-11-04",
       "type": "amendement_sort",
-      "titre": "Amendement n° 174 (ECOS) rejeté : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique applicable…",
-      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique applicable aux foyers dont le patrimoine net est supérieur à 1,3 million d’euros.",
+      "titre": "2 amendements identiques (n° 18, n° 38) (ECOS) rejetés : Cet amendement vise à instaurer un impôt plancher sur la fortune (IPF), ciblant les 0,01…",
+      "detail": "Cet amendement vise à instaurer un impôt plancher sur la fortune (IPF), ciblant les 0,01 % des contribuables les plus riches, c’est-à-dire les personnes détenant plus de 100 millions d’euros de patrimoine net.",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018",
       "effet": "neutre",
       "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
-            "label": "Amendement n° 174",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174"
+            "label": "Amendement n° 18",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018"
+          },
+          {
+            "label": "Amendement n° 38",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000038"
           },
           {
             "label": "Texte PRJLANR5L17B3210",
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1847",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 1847, n° 3931) (GDR) rejetés : Adopté par l’Assemblée nationale en février 2025 lors de la niche parlementaire du groupe…",
-      "detail": "Adopté par l’Assemblée nationale en février 2025 lors de la niche parlementaire du groupe Écologiste, cet amendement vise à inscrire dans notre système fiscal un impôt plancher sur la fortune, plus connu sous le nom de « taxe Zucman ».",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1847",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847"
-          },
-          {
-            "label": "Amendement n° 3931",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003931"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (GDR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3221",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3221 (LIOT) rejeté : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
-      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3221",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LIOT) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-43",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 43 (ECOS) rejeté : Cet amendement vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt…",
-      "detail": "Cet amendement vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt sur la fortune personnelle.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 43",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -899,7 +1373,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -912,7 +1386,7 @@
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000678",
       "effet": "neutre",
-      "objectif_rang": 1,
+      "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
@@ -924,32 +1398,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (HOR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-887",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 887 rejeté : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui…",
-      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui concerne les foyers dont le patrimoine net est supérieur à 1 million d’euros.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000887",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 887",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000887"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre et pas de position de groupe connue. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « reduit » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -1050,16 +1499,16 @@
       "date": "2026-11-03",
       "type": "rapport",
       "titre": "4 rapports du texte publiés avec la liste des personnes entendues (80 organisations)",
-      "detail": "Organisations entendues : Association de défense des consommateurs et usagers (CLCV), Confédération nationale du logement (CNL), Association Droit au logement (DAL), Association Force ouvrière des consommateurs (AFOC), Collectif Les Morts de la rue, Association Dalo, Utopia 56, Confédération de l'artisanat et des petites entreprises du bâtiment (CAPEB), Fédération française du bâtiment (FFB), Collectif Rénovons, Union sociale pour l’habitat, Fédération Nationale de l'Immobilier (FNAIM)….",
+      "detail": "Organisations entendues : Organisation de coopération et de développement économiques (OCDE), Direction générale de l’administration et de la fonction publique (DGAFP), Association française des acteurs de l’éducation, Média « Le café pédagogique », Direction générale des relations humaines (DGRH) du ministère de l’éducation nationale, Direction des affaires financières (DAF) du ministère de l’éducation nationale, Institut national de la statistique et des études économiques (Insee), Haut-commissariat à la stratégie et au plan, Direction de l’évaluation, de la prospective et de la performance (DEPP) du ministère de l’éducation nationale, Secrétariat général de l’enseignement catholique, Syndicat national unitaire des instituteurs et professeurs des écoles (SNUipp-FSU), Syndicat national des enseignements de second degré-Fédération syndicale unitaire (SNES-FSU)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 3 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1217,16 +1666,16 @@
       "date": "2026-10-28",
       "type": "rapport",
       "titre": "2 rapports du texte publiés avec la liste des personnes entendues (53 organisations)",
-      "detail": "Organisations entendues : Groupement des professionnels des certificats d’économies d’énergie (GPCEE), Union française de l’électricité (UFE), France Gaz, Association des agriculteurs méthaniseurs de France (AAMF), France Hydrogène, Que choisir ensemble, Conseil national des associations familiales laïques (Cnafal), Consommation, logement et cadre de vie (CLCV), Fédération des services Énergie Environnement (Fedene), Association de collectivités, gestion des déchets, réseaux de chaleurs, gestion locale de l’énergie (Amorce), Fédération nationale des activités de la dépollution et de l’environnement (Fnade), Intercommunalités de France….",
+      "detail": "Organisations entendues : Fédération nationale de l’immobilier (FNAIM), Association des responsables de copropriétés (ARC), Union nationale des propriétaires immobiliers (UNPI), Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb), France urbaine, Agence parisienne du climat, NegaWatt, Rénovons-CLER-Réseau pour la transition énergétique, Observatoire national de rénovation énergétique (ONRE), Observatoire national de la précarité énergétique (ONPE), Secrétariat général à la planification écologique (SGPE), Association Force ouvrière consommateurs (Afoc)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 28 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1472,16 +1921,16 @@
       "date": "2026-10-22",
       "type": "rapport",
       "titre": "2 rapports du texte publiés avec la liste des personnes entendues (23 organisations)",
-      "detail": "Organisations entendues : KNDS France, Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre), Surfrider Foundation Europe, EDF Power Solutions, Ailes Marines (Iberdrola), Direction générale de l’énergie et du climat (DGEC), France Renouvelables, Syndicat des énergies renouvelables (SER), Cluster maritime français, Agence de la transition écologique (Ademe), Office français de la biodiversité (OFB), Armateurs de France….",
+      "detail": "Organisations entendues : Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre), Surfrider Foundation Europe, EDF Power Solutions, Ailes Marines (Iberdrola), Direction générale de l’énergie et du climat (DGEC), France Renouvelables, Syndicat des énergies renouvelables (SER), Cluster maritime français, Agence de la transition écologique (Ademe), Office français de la biodiversité (OFB), Armateurs de France, Union des Ports de France….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVII.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 22 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVII.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1676,32 +2125,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : résumé neutre, groupe de l'auteur (DEM) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-47",
-      "date": "2026-10-16",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 47 (ECOS) rejeté : Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune…",
-      "detail": "Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt sur la fortune personnelle.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 47",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -1987,6 +2411,135 @@
       }
     },
     {
+      "id": "ev-depot-3821",
+      "date": "2026-10-10",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 3821 (DEM) déposé : La rénovation énergétique du parc immobilier constitue une nécessité environnementale,…",
+      "detail": "La rénovation énergétique du parc immobilier constitue une nécessité environnementale, économique et sociale.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3821",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1275-2",
+      "date": "2026-10-09",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1275 (UDR) déposé : Le présent amendement vise à prendre en compte, dans l’assiette de l’impôt sur la fortune…",
+      "detail": "Le présent amendement vise à prendre en compte, dans l’assiette de l’impôt sur la fortune immobilière, les dépenses d’entretien et de réparation engagées par les propriétaires de bâtiments classés ou inscrits au titre des monuments histo... (non soutenu)",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001275",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1275",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001275"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1526",
+      "date": "2026-10-09",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1526 déposé : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui…",
+      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui concerne les foyers dont le patrimoine net est supérieur à 1 million d’euros. (non soutenu)",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001526",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1526",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001526"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1528",
+      "date": "2026-10-09",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1528 déposé : La création d’une contribution différentielle sur les hauts patrimoines répond à un…",
+      "detail": "La création d’une contribution différentielle sur les hauts patrimoines répond à un impératif de justice fiscale et de solidarité nationale dans un contexte marqué par une concentration croissante des richesses. (non soutenu)",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001528",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1528",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001528"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-666",
+      "date": "2026-10-08",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 666, n° 963) (RN) déposés : Cet amendement vise à remplacer l’Impôt sur la Fortune Immobilière (IFI) par un Impôt sur…",
+      "detail": "Cet amendement vise à remplacer l’Impôt sur la Fortune Immobilière (IFI) par un Impôt sur la Fortune Financière (IFF) défendu par le Rassemblement National au nom de la justice fiscale. Déposé par 2 auteurs du même groupe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000666",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 666",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000666"
+          },
+          {
+            "label": "Amendement n° 963",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000963"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
       "id": "ev-commission-2026-10-07",
       "date": "2026-10-07",
       "type": "commission",
@@ -2005,6 +2558,193 @@
         ],
         "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depot-1275",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 1275, n° 2566) (LFI-NFP) déposés : Cet amendement du groupe LFI propose d’instaurer une contribution différentielle…",
+      "detail": "Cet amendement du groupe LFI propose d’instaurer une contribution différentielle garantissant aux contribuables détenant plus de 100 millions d’euros de patrimoine net une imposition minimale équivalente à 2 % de celui-ci, dite « taxe Zu... Déposé par 2 auteurs du même groupe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001275",
+      "effet": "neutre",
+      "objectif_rang": 3,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1275",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001275"
+          },
+          {
+            "label": "Amendement n° 2566",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002566"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1323",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1323 (LFI-NFP) déposé : Par cet amendement de repli, le groupe LFI propose de rétablir, dès le 1 er janvier 2027,…",
+      "detail": "Par cet amendement de repli, le groupe LFI propose de rétablir, dès le 1 er janvier 2027, un impôt sur la fortune pour les foyers dont le patrimoine net excède 1 million d’euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001323",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1323",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001323"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1431",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 1431, n° 1440) (UDR) déposés : Cet amendement du groupe UDR porte de 30 % à 50 % l’abattement applicable à la valeur de…",
+      "detail": "Cet amendement du groupe UDR porte de 30 % à 50 % l’abattement applicable à la valeur de la résidence principale pour le calcul de l’impôt sur la fortune immobilière. Déposé par 2 auteurs du même groupe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1431",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
+          },
+          {
+            "label": "Amendement n° 1440",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1432",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1432 (UDR) déposé : Cet amendement présenté par le Groupe UDR vise à retrancher de l’assiette de l’impôt sur…",
+      "detail": "Cet amendement présenté par le Groupe UDR vise à retrancher de l’assiette de l’impôt sur la fortune immobilière (IFI) les dépenses d’entretien des bâtiments classés ou inscrits au titre des monuments historiques.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001432",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1432",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001432"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-887",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 887 déposé : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui…",
+      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui concerne les foyers dont le patrimoine net est supérieur à 1 million d’euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000887",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 887",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000887"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-889",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 889 déposé : La création d’une contribution différentielle sur les hauts patrimoines répond à un…",
+      "detail": "La création d’une contribution différentielle sur les hauts patrimoines répond à un impératif de justice fiscale et de solidarité nationale dans un contexte marqué par une concentration croissante des richesses.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000889",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 889",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000889"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-18",
+      "date": "2026-10-02",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 18, n° 38) (ECOS) déposés : Cet amendement vise à instaurer un impôt plancher sur la fortune (IPF), ciblant les 0,01…",
+      "detail": "Cet amendement vise à instaurer un impôt plancher sur la fortune (IPF), ciblant les 0,01 % des contribuables les plus riches, c’est-à-dire les personnes détenant plus de 100 millions d’euros de patrimoine net. Déposé par 2 auteurs du même groupe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 18",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018"
+          },
+          {
+            "label": "Amendement n° 38",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000038"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
       }
     },
     {

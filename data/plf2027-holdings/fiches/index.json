@@ -1,16 +1,15 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:20:33.819Z",
+    "generated_at": "2026-11-14T13:23:54.629Z",
     "sources": [],
     "limits": "58 fiche(s) produite(s) sur 58 député(s) de groupes-action.json et pivots.json.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
   "disponibles": [
-    "PA722142",
+    "PA719578",
     "PA719024",
     "PA719286",
-    "PA719578",
     "PA720190",
     "PA720976",
     "PA793122",
@@ -46,6 +45,7 @@
     "PA720838",
     "PA721270",
     "PA721896",
+    "PA722142",
     "PA722150",
     "PA774958",
     "PA774962",
