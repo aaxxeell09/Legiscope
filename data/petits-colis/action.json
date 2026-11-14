@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:03.010Z",
+    "generated_at": "2026-11-14T14:15:21.799Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -990,27 +990,6 @@
       {
         "depute_id": "PA841955",
         "groupe_id": "PO845401",
-        "score": 1,
-        "raison": "a dit : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
-        "fondement": [
-          "dit"
-        ],
-        "position_connue": true,
-        "preuve": {
-          "sources": [
-            {
-              "label": "Intervention du 2025-10-22",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
-            }
-          ],
-          "raisonnement": "Classé sur ses propres actes (a dit), majoritairement contre la mesure, comme le client.",
-          "nature": "deduction"
-        },
-        "fiche": true
-      },
-      {
-        "depute_id": "PA942",
-        "groupe_id": "PO845485",
         "score": 1,
         "raison": "a dit : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
         "fondement": [
@@ -6389,6 +6368,22 @@
             {
               "label": "Fiche député",
               "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841543"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2025-11-19. Son groupe est « pour » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA942",
+        "groupe_id": "PO845485",
+        "position_groupe": "pour",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA942"
             }
           ],
           "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2025-11-19. Son groupe est « pour » sur la mesure : contexte, pas un classement.",
