@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:53:36+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du mardi 07 juillet 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-extraordinaire-de-2025-2026/premiere-seance-du-mardi-07-juillet-2026"
+      },
+      {
+        "label": "Séance unique du mardi 21 octobre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025"
+      },
+      {
+        "label": "Séance unique du lundi 27 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-lundi-27-avril-2026"
+      },
+      {
+        "label": "Troisième séance du mardi 28 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+      },
+      {
+        "label": "Première séance du mardi 19 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+      },
+      {
+        "label": "Première séance du mardi 16 juin 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026"
+      },
+      {
+        "label": "Première séance du mercredi 17 juin 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+      },
+      {
+        "label": "Première séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Première séance du lundi 19 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-19-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 21 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 28 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 29 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-29-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Première séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Première séance du mardi 03 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 12 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 12 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 2 du 01/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 6 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627006_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 10 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627010_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 21 du 21/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 31 du 26/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627031_compte-rendu"
+      },
+      {
+        "label": "Commission du développement durable, réunion n° 6 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu"
+      },
+      {
+        "label": "Commission du développement durable, réunion n° 7 du 14/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627007_compte-rendu"
+      },
+      {
+        "label": "Commission du développement durable, réunion n° 9 du 14/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627009_compte-rendu"
+      },
+      {
+        "label": "Commission du développement durable, réunion n° 10 du 14/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627010_compte-rendu"
+      }
+    ],
+    "limits": "94 prises de parole sur le sujet lues dans 33 comptes rendus (90 comptes rendus parcourus) ; 8 classées, 8 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 0 rejetées pour citation inexacte, 0 écartées car le second avis du modèle contredit le camp ; 3 pour et 5 contre après dédoublonnage. Version rapide : camp déduit par règles de mots (supprimer, rétablir les crédits, baisse = contre la baisse ; maîtrise, économies = pour), sans modèle, chaque argument à relire. Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-renovation"
+  },
+  "pour": [
+    {
+      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements",
+      "citation": "Je vous propose de réaliser une économie de 800 millions d’euros en supprimant le chèque énergie, mais je suppose que cette mesure sera, cette année encore, refusée parce que vous ne voulez pas faire d’économies.",
+      "orateur_id": "PA719372",
+      "groupe_id": "PO845407",
+      "date": "2026-10-21",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 21 du 21/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Guillaume Kasbarian) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements",
+      "citation": "Ainsi, les 1 233 projets de rénovation énergétique financés en 2025 permettent de réaliser des gains d’économies d’énergie de l’ordre de 59 %.",
+      "orateur_id": "PA793520",
+      "groupe_id": "PO845454",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission du développement durable, réunion n° 6 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Mickaël Cosson, rapporteur pour avis (Politiques de développement durable)) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements",
+      "citation": "C’est le sens de nos propositions : un capital de départ pour la jeunesse, une contribution additionnelle à l’impôt sur la fortune immobilière (IFI) pour financer la rénovation énergétique ou encore un prêt adossé aux économies d’énergie de demain.",
+      "orateur_id": "PA722162",
+      "groupe_id": "PO845454",
+      "date": "2026-10-13",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mardi 13 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Nicolas Turquois) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "contre": [
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur rénovation énergétique des logements",
+      "citation": "Dans cet hémicycle, certains cherchent tout simplement à supprimer MaPrimeRénov’.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 04 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Vincent Jeanbrun, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimeraient » dans une phrase sur rénovation énergétique des logements",
+      "citation": "Ce faisant, ils supprimeraient des milliards d’euros de soutien à la rénovation énergétique, et donc à nos artisans !",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 04 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Vincent Jeanbrun, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimeraient » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimeraient »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur rénovation énergétique des logements",
+      "citation": "La suppression de la taxe d’habitation ayant mis fin à l’automaticité du chèque énergie, le nombre de ses bénéficiaires a reculé, alors même que la précarité énergétique augmente.",
+      "orateur_id": "PA794146",
+      "groupe_id": "PO845439",
+      "date": "2026-10-21",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 21 du 21/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Julie Laernoes) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur rénovation énergétique des logements",
+      "citation": "Les AE de l’action 01, Performance environnementale, qui porte quasi-exclusivement sur la rénovation énergétique, passent de 221 millions à 350 millions d’euros, tandis que les CP sont en baisse, de 547 millions à 424 millions d’euros.",
+      "orateur_id": "PA793520",
+      "groupe_id": "PO845454",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission du développement durable, réunion n° 6 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mickaël Cosson, rapporteur pour avis (Politiques de développement durable)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur rénovation énergétique des logements",
+      "citation": "En effet, alors que le nombre de ménages en situation de précarité énergétique est estimé à 3,1 millions par l’observatoire national chargé du suivi de cette question, 1,8 million d’entre eux ne bénéficient plus du chèque énergie depuis la suppression de la taxe d’habitation.",
+      "orateur_id": "PA795516",
+      "groupe_id": "PO845413",
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission du développement durable, réunion n° 6 du 13/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627006_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Maxime Laisney) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur rénovation énergétique des logements ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}

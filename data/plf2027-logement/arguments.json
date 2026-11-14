@@ -1,0 +1,872 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:53:29+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Séance unique du mardi 21 octobre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025"
+      },
+      {
+        "label": "Première séance du mardi 28 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-28-avril-2026"
+      },
+      {
+        "label": "Troisième séance du mardi 28 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+      },
+      {
+        "label": "Première séance du mardi 12 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-12-mai-2026"
+      },
+      {
+        "label": "Première séance du mercredi 27 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+      },
+      {
+        "label": "Première séance du mercredi 17 juin 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 02 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-02-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 20 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 21 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 27 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 28 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 29 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-29-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 29 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-29-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Première séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Troisième séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Première séance du mardi 03 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 12 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 12 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 2 du 01/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 3 du 01/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 5 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627005_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 6 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627006_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 9 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 10 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627010_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 11 du 09/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627011_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 12 du 09/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 18 du 20/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 20 du 21/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627020_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 21 du 21/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 24 du 22/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627024_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 26 du 23/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627026_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 13 du 19/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 16 du 27/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627016_compte-rendu"
+      }
+    ],
+    "limits": "354 prises de parole sur le sujet lues dans 51 comptes rendus (91 comptes rendus parcourus) ; 38 classées, 38 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 0 rejetées pour citation inexacte, 0 écartées car le second avis du modèle contredit le camp ; 2 pour et 32 contre après dédoublonnage. Version rapide : camp déduit par règles de mots (supprimer, rétablir les crédits, baisse = contre la baisse ; maîtrise, économies = pour), sans modèle, chaque argument à relire. Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-logement"
+  },
+  "pour": [
+    {
+      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Kasbarian veut retirer de l’argent aux bailleurs sociaux, faire des économies sur les services publics ; de l’autre, il veut ici permettre à une infime partie de la population, celle qui en a la capacité, de donner jusqu’à 100 000 euros d’argent liquide – on ne parle pas ici d’héritage ni de patrimoine – à ses descendants.",
+      "orateur_id": "PA794854",
+      "groupe_id": "PO845419",
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du vendredi 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Iñaki Echaniz) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Pour des raisons d’économies budgétaires, le Rassemblement national souhaite responsabiliser les bailleurs sociaux, notamment en supprimant l’exonération de taxe foncière, qui coûterait trop cher à l’État.",
+      "orateur_id": "PA795422",
+      "groupe_id": "PO845413",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Damien Maudet) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "contre": [
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Cet extrême centre est prêt à toutes les compromissions avec l’extrême droite pour supprimer la contribution sur les bénéfices des grandes entreprises, pour allonger la liste des niches fiscales favorables aux plus riches, pour rejeter la taxe Zucman, le plafonnement du prix de l’essence ou la réforme du pacte Dutreil, ou encore pour attaquer les bailleurs sociaux, donc les plus modestes.",
+      "orateur_id": "PA605745",
+      "groupe_id": "PO845514",
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du mercredi 04 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Nicolas Sansu) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Elle est intéressante, même s’il faut veiller à ne pas ouvrir le PTZ sans conditions, ce qui reviendrait à supprimer les taux d’intérêt pour tout le monde.",
+      "orateur_id": "PA719372",
+      "groupe_id": "PO845407",
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du vendredi 30 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Guillaume Kasbarian) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Je suis favorable à un prêt à taux zéro pour les classes moyennes : la natalité française ne baisse pas parce que les gens ne veulent plus d’enfants – je me méfie de ces discours moralisateurs – mais parce que des classes moyennes et populaires qui souhaitent en avoir n’ont pas les moyens matériels de les accueillir.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du vendredi 30 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « coupe » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Cette coupe dans les APL ne fait qu’ajouter de l’huile sur le feu.",
+      "orateur_id": "PA793756",
+      "groupe_id": "PO845413",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « coupe » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« coupe »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "La commission adopte les amendements, exprimant ainsi un avis favorable à la suppression de l’article 78.",
+      "orateur_id": "PA793756",
+      "groupe_id": "PO845413",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Le premier quinquennat d’Emmanuel Macron a commencé par une baisse des APL et se terminera par un gel de celles-ci.",
+      "orateur_id": "PA794854",
+      "groupe_id": "PO845419",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Iñaki Echaniz) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Alors que l’urgence climatique devrait en faire une priorité nationale et le chantier du siècle, le programme 135 subit une nouvelle baisse (– 8 %).",
+      "orateur_id": "PA793980",
+      "groupe_id": "PO845439",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Charles Fournier) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Le programme 109, qui finance les aides personnelles au logement, voit ses crédits baisser à nouveau, à hauteur de 0,31 %, du fait notamment du gel du barème.",
+      "orateur_id": "PA793980",
+      "groupe_id": "PO845439",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Charles Fournier) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Nous avions proposé de mettre fin à la réduction d’impôt sur le revenu sur les frais de scolarité et de désindexer ou de supprimer le bénéfice des APL pour les revenus les plus élevés.",
+      "orateur_id": "PA794802",
+      "groupe_id": "PO845407",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 18 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Charles Sitzenstuhl, rapporteur spécial) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Votre politique familiale, c’est l’asphyxie : gel des APL, blocage des prestations familiales à leur niveau de 2026, suppression de 600 millions d’euros sur l’allocation de rentrée scolaire.",
+      "orateur_id": "PA841947",
+      "groupe_id": "PO845413",
+      "date": "2026-10-20",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mardi 20 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Zahia Hamdane) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Le Gouvernement propose de geler les APL, le Rassemblement national voulant, quant à lui, carrément les supprimer pour les non-Français, alors que 5,7 millions de ménages supportent un taux d’effort excessif et que 1,2 million de locataires seraient en situation d’impayés.",
+      "orateur_id": "PA841729",
+      "groupe_id": "PO845413",
+      "date": "2026-10-20",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Abdelkader Lahmar) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Vous voulez supprimer à l’aveugle un outil qui aide le logement social.",
+      "orateur_id": "PA841531",
+      "groupe_id": "PO845413",
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du vendredi 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Shéhérazade Bentorki) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Le livret A est conçu pour financer le logement social, et c’est très bien ainsi car c’est selon nous un chantier prioritaire si l’on veut faire baisser les prix du logement dans le pays.",
+      "orateur_id": "PA721202",
+      "groupe_id": "PO845413",
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du vendredi 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Éric Coquerel, président de la commission des finances) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Vous avez oublié que quand les gens n’ont pas d’argent parce que vous gelez les APL et les retraites et parce que vous taillez dans les salaires des enseignants, ils dépensent moins, ce qui engendre une baisse de l’activité économique.",
+      "orateur_id": "PA841515",
+      "groupe_id": "PO845413",
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du vendredi 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Aurélien Le Coq) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Nos familles vivent massivement en dessous du seuil de pauvreté et nos logements sociaux, insuffisants, figurent parmi les plus chers de France, mais ils n’échapperont pas à la baisse des APL ni au coup de rabot sur la ligne budgétaire unique (LBU).",
+      "orateur_id": "PA795998",
+      "groupe_id": "PO845514",
+      "date": "2026-10-14",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 14 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Émeline K/Bidi (GDR)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baissez » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Vous baissez la contribution exceptionnelle sur les bénéfices des grandes entreprises de 2,3 milliards d’euros ; vous épargnez les hauts patrimoines et les grands héritages ; vous n’avez pas le courage de vous attaquer aux surprofits des groupes pétroliers ; au contraire, vous mettez à contribution les retraités, les allocataires d’APL, les malades en affection de longue durée (ALD), les fonctionnaires.",
+      "orateur_id": "PA610002",
+      "groupe_id": "PO845439",
+      "date": "2026-10-13",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du mardi 13 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Eva Sas (EcoS)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baissez » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baissez »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Nous voulons supprimer les nouveaux avantages créés par l’article pour les bailleurs sociaux.",
+      "orateur_id": "PA793246",
+      "groupe_id": "PO845401",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Frédéric Falcon) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Or vous voulez supprimer le plafond de ressources du PTZ « parentalité » sans même avoir mené d’étude d’impact.",
+      "orateur_id": "PA794854",
+      "groupe_id": "PO845419",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Iñaki Echaniz) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Falcon, qui avait pour objectif la suppression sèche de l’exonération de taxe foncière accordée aux bailleurs sociaux.",
+      "orateur_id": "PA719372",
+      "groupe_id": "PO845407",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Guillaume Kasbarian) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Il me semble paradoxal de priver les bailleurs sociaux d’une ressource puis de demander au contribuable de compenser cette baisse.",
+      "orateur_id": "PA719372",
+      "groupe_id": "PO845407",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Guillaume Kasbarian) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Il s’agit de supprimer le PTZ « parentalité », destiné aux familles déjà propriétaires qui comptent au moins un enfant de moins de 3 ans.",
+      "orateur_id": "PA841885",
+      "groupe_id": "PO845439",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Arnaud Bonnet) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Ils demandent la rénovation des bâtiments, l’embauche de personnel, la création de 150 000 places supplémentaires dans l’enseignement supérieur, la revalorisation des bourses et des APL (aides personnelles au logement), que vous voulez geler, ou encore la suppression de la CVEC (contribution de vie étudiante et de campus) et des frais d’inscriptions racistes s’appliquant aux étudiantes et étudiants étrangers.",
+      "orateur_id": "PA841515",
+      "groupe_id": "PO845413",
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 9 du 08/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Aurélien Le Coq) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Quel affront pour celles et ceux qui verront leurs APL ne pas progresser, leur salaire rester bloqué, notamment par le gel du point d’indice des fonctionnaires, ou leur pension baisser, du fait de leur désindexation, et qui subiront aussi, indirectement, la tension sur les budgets des collectivités locales !",
+      "orateur_id": "PA605745",
+      "groupe_id": "PO845514",
+      "date": "2026-10-01",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 3 du 01/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Nicolas Sansu) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Je ne vois pas comment l’augmentation de la consommation pourrait doubler, passant de + 0,4 % à + 0,8 %, au moment même où le revenu disponible des ménages va baisser du fait de l’amputation des revenus du travail de 2,5 milliards d’euros, du gel des APL, du point d’indice des fonctionnaires et des pensions de retraite, de la fiscalisation des indemnités journalières et de la hausse des frais de scolarité.",
+      "orateur_id": "PA841515",
+      "groupe_id": "PO845413",
+      "date": "2026-10-01",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 2 du 01/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Aurélien Le Coq) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Face au manque de logements pour les agents publics et à la crise du logement en général, l’urgence est d’investir massivement pour produire plus de logements sociaux, de supprimer la réduction de loyer de solidarité pour redonner de l’air aux bailleurs sociaux (M.",
+      "orateur_id": "PA796018",
+      "groupe_id": "PO845439",
+      "date": "2026-06-17",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 17 juin 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Danielle Simonnet) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Les chiffres au 1er janvier 2024 sont édifiants : 2,6 millions de ménages attendent un logement social ; en un an, les attributions ont chuté de 6 %, la plus forte baisse hors période de pandémie de covid, et le délai d’attente moyen pour un logement frôle désormais les 540 jours.",
+      "orateur_id": "PA793520",
+      "groupe_id": "PO845454",
+      "date": "2026-06-17",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 17 juin 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Mickaël Cosson) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Vous ne pouvez pas, d’un côté, balayer d’un revers de main les solutions que nous proposons – qu’il s’agisse de la diminution, voire de la suppression de la réduction de loyer de solidarité (RLS), qui redonnerait enfin de l’air aux bailleurs sociaux, ou tout simplement de la revalorisation des salaires des agents publics – et, de l’autre, vous émouvoir des difficultés que rencontrent nos concitoyens pour se loger, alors que cela fait dix ans que vous êtes aux responsabilités.",
+      "orateur_id": "PA794854",
+      "groupe_id": "PO845419",
+      "date": "2026-06-17",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 17 juin 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Iñaki Echaniz) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "La baisse des crédits ne relève donc pas simplement d’un ajustement budgétaire mais bien d’une rupture profonde dans la capacité même à produire du logement social.",
+      "orateur_id": "PA795762",
+      "groupe_id": "PO845419",
+      "date": "2026-04-28",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du mardi 28 avril 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Elie Califer (SOC)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Un effort important a été consenti en 2026, avec une baisse du montant de la réduction de loyer de solidarité et un financement de l’aide à la pierre, afin d’accompagner le monde du logement social.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-04-28",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du mardi 28 avril 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Vincent Jeanbrun, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Nous le savons tous, la France fait face à une grave crise du logement : l’offre locative a chuté de 15 % en cinq ans, touchant particulièrement les étudiants, les apprentis et les jeunes actifs ; les mises en chantier de logements ont considérablement baissé ; il y a pratiquement 3 millions de dossiers de demande d’un logement social en attente.",
+      "orateur_id": "PA794430",
+      "groupe_id": "PO845470",
+      "date": "2026-04-28",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du mardi 28 avril 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Michel Criaud (HOR)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Il faut rappeler que les organismes HLM ont été fragilisés par certaines décisions, notamment la réduction de loyer de solidarité (RLS), qui leur a fait supporter une partie de la baisse des aides personnalisées au logement (APL) : ces mesures ont réduit leur capacité d’investissement et la production de logements sociaux est ainsi passée d’environ 120 000 par an à près de 80 000, soit une baisse d’un tiers.",
+      "orateur_id": "PA942",
+      "groupe_id": "PO845485",
+      "date": "2026-04-28",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du mardi 28 avril 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Charles de Courson (LIOT)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+      "citation": "Benjamin Lucas-Lundy applaudit également.) Tout le monde passe à la caisse : les apprentis, avec la baisse des salaires ; les locataires, avec le gel des APL ; les retraités, avec le gel des pensions ; les travailleurs, avec la hausse de l’impôt sur le revenu ; les plus vulnérables, avec le gel des prestations sociales ; les patients, avec le doublement des franchises, et les malades en affection de longue durée (ALD), avec des taxes sur leurs indemnités.",
+      "orateur_id": "PA794686",
+      "groupe_id": "PO845413",
+      "date": "2025-10-21",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance unique du mardi 21 octobre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Marianne Maximi) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}
