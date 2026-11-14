@@ -178,7 +178,7 @@ for (const d of config.dossiers) {
     echeances.push({ date: null, titre, lieu, url, preuve: { nature: "inconnue" as const, sources: [{ label: lieu === "senat" || lieu === "cmp" ? `Sénat, PLF ${annee}` : `Dossier législatif ${dl}`, url }], raisonnement } });
   };
   ajout("senat", `Examen du PLF ${annee} au Sénat, première lecture`, rejoue
-    ? `Au ${fmt(ref)}, le calendrier du Sénat n'est pas fixé : il dépend de la fin de la première lecture à l'Assemblée.`
+    ? `Au matin du ${fmt(ref)}, le calendrier du Sénat n'est pas fixé : il dépend de la fin de la première lecture à l'Assemblée.`
     : `Le texte, rejeté par l'Assemblée le 4 novembre 2026, est transmis au Sénat. La page du Sénat (mise à jour le 10 novembre 2026) ne donne encore aucune date d'examen.`, urlSenat);
   ajout("cmp", "Commission mixte paritaire", "Date non fixée : elle suit la fin de l'examen au Sénat.", urlSenat);
   if (!rejoue) ajout("seance", "Nouvelle lecture à l'Assemblée nationale", "Date non fixée : après l'échec éventuel de la commission mixte paritaire.", urlD);
@@ -237,7 +237,7 @@ for (const d of config.dossiers) {
         nature: "deduction" as const,
         sources: [{ label: `Positions des groupes, texte ${d.texte_id}`, url: texte.texte?.url ?? urlD }],
         raisonnement: rejoue
-          ? `Orcet n'existe pas rétroactivement au ${fmt(ref)} : pas de probabilité chiffrée. On additionne les sièges des groupes selon leur position connue sur la mesure ; les groupes divisés ou abstentionnistes ne sont pas comptés.`
+          ? `Orcet n'existe pas rétroactivement au matin du ${fmt(ref)} : pas de probabilité chiffrée. On additionne les sièges des groupes selon leur position connue sur la mesure ; les groupes divisés ou abstentionnistes ne sont pas comptés.`
           : "On additionne les sièges des groupes selon leur position connue sur la mesure ; les groupes divisés ou abstentionnistes ne sont pas comptés. Pas de probabilité chiffrée.",
       },
     });
@@ -251,17 +251,32 @@ for (const d of config.dossiers) {
           preuve: {
             nature: "deduction" as const,
             sources: [{ label: `Amendement n° ${a.numero}`, url: a.url }],
-            raisonnement: `Orcet n'existe pas rétroactivement au ${fmt(ref)} (proba null). Lecture depuis les positions des groupes sur la mesure.`,
+            raisonnement: `Orcet n'existe pas rétroactivement au matin du ${fmt(ref)} (proba null). Lecture depuis les positions des groupes sur la mesure.`,
           },
         });
       }
+    }
+  }
+  // Amendements du gouvernement en attente sur la mesure (dossier rejoué) : portés par l'exécutif et les groupes favorables.
+  if (rejoue && texte && (pour || contre)) {
+    for (const a of (texte.amendements ?? []).filter((x: any) => x.sort === "en_attente" && x.auteur_type === "gouvernement").slice(0, 2)) {
+      probables.push({
+        titre: `Amendement du gouvernement n° ${a.numero} : ${pour > contre ? "adoption probable" : "adoption incertaine"} à l'Assemblée si le vote avait lieu le ${fmt(ref)} (pas de prédiction Orcet à cette date)`,
+        proba: null,
+        detail: `${a.resume} Déposé le ${fmt(a.date_depot)}. Les groupes favorables à la mesure (${pour} sièges) le soutiennent en principe ; les opposés (${contre} sièges) votent contre la mesure elle-même.`,
+        preuve: {
+          nature: "deduction" as const,
+          sources: [{ label: `Amendement n° ${a.numero}`, url: a.url }],
+          raisonnement: `Un amendement du gouvernement sur sa propre mesure est soutenu par les groupes qui la soutiennent. Lecture des positions des groupes au matin du ${fmt(ref)}, pas une probabilité.`,
+        },
+      });
     }
   }
   const orcet = probablesOrcet(texte, d, !rejoue && annee === 2027);
   probables.push(...orcet);
   if (orcet.length) sources.push({ label: "Prédictions Orcet (Hémicycle)", url: ORCET_URL });
   else if (texte && !rejoue) limits.push("Aucune prédiction Orcet sur un amendement en attente qui porte la mesure : les 7 prédictions obtenues visaient des amendements hors sujet (pensions, crédits de seconde partie, qui ne citent le sujet que dans leur exposé), écartés de texte.json.");
-  if (rejoue) limits.push(`Dossier rejoué au ${fmt(ref)} : Orcet n'existe pas rétroactivement, probabilités à null.`);
+  if (rejoue) limits.push(`Dossier rejoué au matin du ${fmt(ref)} (règle de 14 h 57 : dépôts du jour connus ; sorts, scrutins et séances du jour inconnus) : Orcet n'existe pas rétroactivement, probabilités à null.`);
   const coh = ligneCohesion(ref);
   if (coh) probables.push(coh);
 
@@ -269,7 +284,7 @@ for (const d of config.dossiers) {
     meta: {
       generated_at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
       sources,
-      limits: [`Échéances connues au ${fmt(ref)} (réunions inscrites à l'agenda au plus tard ce jour-là).`, ...limits].join(" "),
+      limits: [`Échéances connues au ${rejoue ? "matin du " : ""}${fmt(ref)} (réunions inscrites à l'agenda au plus tard ce jour-là ; une séance de ce jour figure comme échéance, son contenu et ses votes ne sont pas utilisés).`, ...limits].join(" "),
       producer: "pipeline/suite",
       dossier_id: d.id,
     },

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:03:18Z",
+    "generated_at": "2026-11-14T14:01:56Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, agenda des réunions",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
       }
     ],
-    "limits": "Échéances connues au 14 novembre 2026 (réunions inscrites à l'agenda au plus tard ce jour-là). Aucune réunion de l'agenda de l'Assemblée liée au texte après le 14 novembre 2026. Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null. Aucune prédiction Orcet sur un amendement en attente qui porte la mesure : les 7 prédictions obtenues visaient des amendements hors sujet (pensions, crédits de seconde partie, qui ne citent le sujet que dans leur exposé), écartés de texte.json.",
+    "limits": "Échéances connues au 14 novembre 2026 (réunions inscrites à l'agenda au plus tard ce jour-là ; une séance de ce jour figure comme échéance, son contenu et ses votes ne sont pas utilisés). Aucune réunion de l'agenda de l'Assemblée liée au texte après le 14 novembre 2026. Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null. Aucune prédiction Orcet sur un amendement en attente qui porte la mesure : les 7 prédictions obtenues visaient des amendements hors sujet (pensions, crédits de seconde partie, qui ne citent le sujet que dans leur exposé), écartés de texte.json.",
     "producer": "pipeline/suite",
     "dossier_id": "plf2027-holdings"
   },

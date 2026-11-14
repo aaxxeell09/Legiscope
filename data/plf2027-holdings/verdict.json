@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:21:20+01:00",
+    "generated_at": "2026-11-14T15:01:10+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
       }
     ],
-    "limits": "Verdict proposé, le cabinet décide. Données au plus tard le 2026-11-14. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de nature « reduit » (réduire) ou « reporte » (repousser), ou opposés à la mesure, contre groupes auteurs d'amendements « aggrave ». Le score se lit « part des sièges favorables à l'objectif », jamais comme une probabilité. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.66, à J-7 0.66, Orcet aucun ; objectif 2 : positions 0.66, à J-7 0.66, Orcet aucun ; objectif 3 : positions 0.66, à J-7 0.66, Orcet aucun.",
+    "limits": "Verdict proposé, le cabinet décide. Dépôts au plus tard le 2026-11-14 ; sorts, scrutins et séances strictement avant (matin du 2026-11-14). Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de nature « reduit » (réduire) ou « reporte » (repousser), ou opposés à la mesure, contre groupes auteurs d'amendements « aggrave ». Le score se lit « part des sièges favorables à l'objectif », jamais comme une probabilité. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.66, à J-7 0.66, Orcet aucun ; objectif 2 : positions 0.66, à J-7 0.66, Orcet aucun ; objectif 3 : positions 0.66, à J-7 0.66, Orcet aucun.",
     "producer": "pipeline/pivots",
     "dossier_id": "plf2027-holdings"
   },
@@ -42,11 +42,10 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la mesure est favorable à l'Afep car elle est absente du texte du gouvernement et rejetée par 7 groupes, dont 370 sièges, face à 4 groupes.",
+        "texte": "Au Sénat, la mesure est absente du texte rejeté par l'Assemblée, où 7 groupes contre la mesure pèsent plus lourd que les 4 groupes favorables.",
         "chiffres_utilises": [
           "4",
-          "7",
-          "370"
+          "7"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -168,10 +167,9 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la mesure est absente du texte et 7 groupes soutiennent l'objectif de limiter son assiette, ce qui rend la situation favorable malgré l'opposition de 4 groupes.",
+        "texte": "Au Sénat, en première lecture, la mesure est absente du texte, ce qui favorise l'objectif de limiter son assiette, malgré 193 sièges hostiles.",
         "chiffres_utilises": [
-          "4",
-          "7"
+          "193"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -256,10 +254,9 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la mesure est absente du texte après le rejet de la première partie par l'Assemblée, une situation favorable à l'objectif de repli de l'Afep qui bénéficie du soutien de 7 groupes et de 370 sièges.",
+        "texte": "Au Sénat, la mesure est absente du texte, ce qui favorise l'objectif de report, malgré 193 sièges hostiles.",
         "chiffres_utilises": [
-          "7",
-          "370"
+          "193"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",

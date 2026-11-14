@@ -262,6 +262,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   };
 
   let ecartes = 0;
+  let sortsSansDate = 0;
   for (const liste of groupesAm.values()) {
     const a = liste[0];
     if (!liste.some(toucheLaMesure)) {
@@ -307,7 +308,13 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
 
     // Sort.
     if (a.sort !== "en_attente") {
-      const dateSort = scrutin?.date ?? a.date_sort ?? liste.map((x) => brutes?.sort.get(x.id)).find(Boolean) ?? dateModification(a.numero) ?? dateRepli ?? limite;
+      // Pas de date de repli pour un sort : sans date publiée (scrutin, texte.json, open data, etat.json), pas d'événement daté.
+      const dateSortPubliee = scrutin?.date ?? a.date_sort ?? liste.map((x) => brutes?.sort.get(x.id)).find(Boolean) ?? dateModification(a.numero) ?? null;
+      if (!dateSortPubliee) {
+        sortsSansDate += liste.length;
+        continue;
+      }
+      const dateSort = dateSortPubliee;
       if (pasEncoreConnu(dateSort, ref)) continue;
       const sens = sensDuSort(a.sort);
       const importanceSort = scrutin || (a.sort === "adopte" && (camp !== "inconnu" || duClient || suppression)) || (a.sort === "rejete" && (duClient || (suppression && allie))) ? 3 : (a.sort === "rejete" && camp !== "inconnu") || a.sort === "adopte" ? 2 : 1;
@@ -323,13 +330,14 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
         objectif_rang: rang,
         preuve: preuve(
           scrutin ? [{ label: `Scrutin n° ${scrutin.numero ?? scrutin.id}`, url: scrutin.url }, ...srcAm] : [...srcAm, texteSource],
-          `Sort « ${SORT_LIBELLE[a.sort]} » lu dans le texte ${dossier.texte_id}${scrutin ? `, scrutin nominatif du ${dateFr(scrutin.date)}` : a.date_sort ? " ; date du sort publiée (texte.json)" : liste.some((x) => brutes?.sort.get(x.id)) ? " ; date du sort de l'open data (brut P1)" : dateModification(a.numero) ? " ; date de la modification de la mesure dans etat.json" : " ; date du sort non publiée, date de la dernière étape connue"}. Camp : ${raison}. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.`,
+          `Sort « ${SORT_LIBELLE[a.sort]} » lu dans le texte ${dossier.texte_id}${scrutin ? `, scrutin nominatif du ${dateFr(scrutin.date)}` : a.date_sort ? " ; date du sort publiée (texte.json)" : liste.some((x) => brutes?.sort.get(x.id)) ? " ; date du sort de l'open data (brut P1)" : " ; date de la modification de la mesure dans etat.json"}. Camp : ${raison}. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.`,
           "deduction",
         ),
       });
     }
   }
 
+  if (sortsSansDate > 0) limites.push(`${sortsSansDate} sort(s) d'amendement sans date publiée : non listé(s) comme événement daté (aucune date de repli).`);
   if (ecartes > 0) limites.push(`${ecartes} amendement(s) de texte.json écarté(s) : ni mot-clé du sujet, ni article de la mesure dans le résumé, ni présence dans les fichiers amendements/<PA>.json.`);
 
   // 2. Scrutins liés non rattachés à un amendement du texte.

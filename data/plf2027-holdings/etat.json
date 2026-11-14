@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:21:09+01:00",
+    "generated_at": "2026-11-14T15:00:57+01:00",
     "sources": [
       {
         "label": "Dossier législatif, open data Assemblée nationale",
@@ -15,7 +15,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
       }
     ],
-    "limits": "État au 2026-11-14 (actes et sorts datés au plus tard ce jour). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.",
+    "limits": "État au matin du 2026-11-14 (dépôts du jour connus ; sorts, scrutins, séances et décisions du jour inconnus). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.",
     "producer": "pipeline/pivots",
     "dossier_id": "plf2027-holdings"
   },

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:21:09+01:00",
+    "generated_at": "2026-11-14T15:00:57+01:00",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
       }
     ],
-    "limits": "Données au plus tard le 2026-11-14. Amendements du sujet : amendements de l'article de la mesure, plus ceux qui citent un mot-clé de la configuration dans leur dispositif. 116 amendements qui ne le citent que dans l'exposé sont écartés (ex. retraites, crédits de seconde partie). Exclus : 0 irrecevables ou retirés avant publication, 0 déposés par un ancien député, 0 déposés après la date de référence. Amendements du gouvernement et de la commission inclus (auteur_type). Nature vis-à-vis de la mesure : règle d'abord (suppression, montant, création, réduction), sinon modèle de langage contrôlé (citation exacte du dispositif ou de l'exposé exigée), sinon « autre » (nature_mode « defaut »). Un sort postérieur à la date de référence est « en_attente ». « non_examine » regroupe ici les amendements non soutenus (écrit dans le résumé). Positions des groupes : 21 scrutins nominatifs liés de sens lisible (position majoritaire du groupe traduite en position sur la mesure) ; « divise » sous 60 % de votes dans un même sens. Sens d'un amendement sur la mesure lu par règles (suppression, création, exposé) : lecture de l'outil, pas un fait publié. Avis du rapporteur et du gouvernement absents de l'open data et de l'API. proba_pour d'Orcet = moyenne des probabilités individuelles de voter pour, pas une probabilité d'adoption.",
+    "limits": "Dépôts au plus tard le 2026-11-14 ; sorts, scrutins et séances strictement avant (matin du 2026-11-14). Amendements du sujet : amendements de l'article de la mesure, plus ceux qui citent un mot-clé de la configuration dans leur dispositif. 116 amendements qui ne le citent que dans l'exposé sont écartés (ex. retraites, crédits de seconde partie). Exclus : 0 irrecevables ou retirés avant publication, 0 déposés par un ancien député, 0 déposés après la date de référence. Amendements du gouvernement et de la commission inclus (auteur_type). Nature vis-à-vis de la mesure : règle d'abord (suppression, montant, création, réduction), sinon modèle de langage contrôlé (citation exacte du dispositif ou de l'exposé exigée), sinon « autre » (nature_mode « defaut »). Un sort postérieur à la date de référence est « en_attente ». « non_examine » regroupe ici les amendements non soutenus (écrit dans le résumé). Positions des groupes : 21 scrutins nominatifs liés de sens lisible (position majoritaire du groupe traduite en position sur la mesure) ; « divise » sous 60 % de votes dans un même sens. Sens d'un amendement sur la mesure lu par règles (suppression, création, exposé) : lecture de l'outil, pas un fait publié. Avis du rapporteur et du gouvernement absents de l'open data et de l'API. proba_pour d'Orcet = moyenne des probabilités individuelles de voter pour, pas une probabilité d'adoption.",
     "producer": "pipeline/pivots",
     "dossier_id": "plf2027-holdings"
   },
