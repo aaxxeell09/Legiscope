@@ -1,13 +1,12 @@
 # Script de démo : trois minutes, quatre temps
 
-Version 2, 14 novembre 2026, 14 h 45. Réécrite sur les données réelles de `data/` (front en `dataset: live`), après les corrections d'Axel de 14 h 05. Valeurs relevées dans les fichiers du dépôt à 14 h 40 : `verdict.json`, `etat.json`, `suite.json`, `nouveautes.json`, `action.json`, `note.json`, `fiches/`. X1 n'a pas pu ouvrir l'app : tout ce qui est marqué **[ÉCRAN]** se relit sur l'app réelle aux répétitions de 17 h 15 et 17 h 40.
+Version 2, 14 novembre 2026, 14 h 30. Réécrite sur les données réelles de `data/` (front en `dataset: live`), après les corrections d'Axel de 14 h 05. Valeurs relevées dans les fichiers du dépôt à 14 h 25 : `verdict.json`, `etat.json`, `suite.json`, `nouveautes.json`, `action.json`, `note.json`, `fiches/`. X1 n'a pas pu ouvrir l'app : tout ce qui est marqué **[ÉCRAN]** se relit sur l'app réelle aux répétitions de 17 h 15 et 17 h 40.
 
 ## Comment lire ce script
 
 - Une ligne qui commence par `>` : ce qu'on dit, mot pour mot.
 - **Clic** : ce que fait la main.
 - **[ÉCRAN]** : on lit ce que l'écran affiche à cet endroit. Si l'écran dit autre chose que le script, l'écran a raison.
-- **[À VÉRIFIER PAR P0 ...]** : phrase non sourcée dans le dépôt. On ne la dit pas tant que P0 ne l'a pas confirmée.
 - Deux personnes : une voix, une main. La voix ne touche pas le trackpad.
 - Nom du produit : « Bascule » (valeur de `config.json`). S'il change à 17 h, il change à un seul endroit, la deuxième phrase de l'ouverture.
 
@@ -20,7 +19,7 @@ Version 2, 14 novembre 2026, 14 h 45. Réécrite sur les données réelles de `d
 5. On n'ouvre jamais un lien de source pendant la démo (il part sur le site de l'Assemblée, donc sur le réseau). On ouvre le panneau « pourquoi », on montre que le lien est là, on ferme.
 6. Captures d'écran de secours des cinq blocs et de la fiche, dans l'ordre du script (gel de 16 h 45).
 7. Un chronomètre visible par la voix.
-8. Trois contrôles à 16 h 45, sur l'app (détail dans les variantes) : la synthèse de la fiche Vermorel (variante C), le texte du Compte rendu (variante E), la phrase du 21 novembre (variante D).
+8. Deux contrôles à 16 h 45, sur l'app (détail dans les variantes) : la synthèse de la fiche Vermorel (variante C), le texte du Compte rendu (variante E).
 
 ## Le script
 
@@ -70,7 +69,7 @@ La main descend aux arguments. **[ÉCRAN]** : premier argument de la colonne « 
 
 > Les arguments entendus, avec la citation exacte. Contre la taxe : « une double peine, injuste socialement et inutile économiquement ».
 
-**Clic** : la ligne Antoine Vermorel, colonne « Sur qui agir encore » (dixième ligne au relevé de 14 h 40). Sa fiche s'ouvre. La main descend tout de suite aux colonnes Débats et Amendements : on ne s'arrête pas sur la synthèse (variante C).
+**Clic** : la ligne Antoine Vermorel, colonne « Sur qui agir encore » (dixième ligne au relevé de 14 h 25). Sa fiche s'ouvre. La main descend aux colonnes Débats et Amendements. La voix ne lit pas la synthèse (variante C).
 
 > J'ouvre Antoine Vermorel, le plus actif de son groupe sur la mesure. Ce qu'il a dit en commission, mot pour mot. Ses amendements : l'un porte la taxe à 5 euros. Et les organisations entendues par les rapporteurs de sa commission.
 
@@ -94,13 +93,13 @@ La main ne bouge pas. La voix regarde la salle. Rien de ce qui suit n'est à l'�
 
 > La suite. Le lendemain, en séance, l'article 22 est adopté : 208 voix contre 87. Le RN, seul groupe contre.
 
-**[À VÉRIFIER PAR P0 : rejet de la première partie le 21 novembre 2025]** La phrase ci-dessous ne se dit que si P0 l'a confirmée dans l'open data (numéro du scrutin dans `status/P0.md` ou `status/P3.md`). Sinon, variante D.
+État du texte, à distinguer de l'état de la mesure. Source : `status/P3.md`, vérifié par P3 dans l'open data des scrutins (scrutin n° 4241, 21 novembre 2025).
 
 > Deux jours plus tard, l'Assemblée rejette la première partie du budget. Article adopté, projet rejeté en première lecture : deux états distincts.
 
 > Puis le Sénat porte la taxe de 2 à 5 euros. Voilà pourquoi nous suivons la mesure, pas le texte.
 
-**Clic** : onglet 2 (dossier vivant), bloc Verdict.
+**Clic** : onglet 2 (dossier vivant), bloc Verdict. **[ÉCRAN]** : en tête du Verdict, deux lignes séparées, « Mesure : absente du texte » et « Texte : [...] première partie rejetée ». La main les montre pendant la phrase.
 
 > Même outil sur un dossier en cours : la taxe sur les holdings, budget 2027. L'Assemblée a rejeté le projet le 4 novembre. La suite se joue au Sénat.
 
@@ -125,11 +124,11 @@ Méthode : comptage des mots des lignes `>` à 150 mots par minute (un nombre co
 | 4. Chute et dossier vivant | 126 | 50 s | 4 s | 54 s | 2:52 |
 | Total | 385 | 155 s | 17 s | 172 s | 2:52 |
 
-Lecture : 2:52, soit 8 secondes de marge. Avec la chute de la variante D (sans la phrase du 21 novembre) : 2:46. Aucune option ne s'ajoute. Si une répétition dépasse 3:00, on applique les coupes plus bas.
+Lecture : 2:52, soit 8 secondes de marge. Avec la chute courte de la variante D : 2:46. Aucune option ne s'ajoute. Si une répétition dépasse 3:00, on applique les coupes plus bas.
 
 ## Ce qui est sourcé, ce qui se lit à l'écran
 
-Chaque phrase du script vient d'un fichier du dépôt. Relevé de 14 h 40 : les sessions P3, A4 et P8 régénèrent encore leurs fichiers jusqu'au gel de 16 h 45, donc tout se relit à l'écran.
+Chaque phrase du script vient d'un fichier du dépôt. Relevé de 14 h 25 : les sessions P3, A4 et P8 régénèrent encore leurs fichiers jusqu'au gel de 16 h 45, donc tout se relit à l'écran.
 
 | Ce qu'on dit | D'où ça vient | À vérifier sur l'app réelle |
 |---|---|---|
@@ -145,16 +144,16 @@ Chaque phrase du script vient d'un fichier du dépôt. Relevé de 14 h 40 : les 
 | « Ce qu'il a dit en commission » | `fiches/PA794118.json` : 4 citations, commission des finances du 22 octobre 2025 | Colonne Débats |
 | « L'un porte la taxe à 5 euros » | `fiches/PA794118.json`, amendement n° 938, auteur, en attente au 18 novembre | Colonne Amendements |
 | « Entendues par les rapporteurs de sa commission » | `fiches/PA794118.json` : 9 rapports, tous en rôle « membre », aucun comme rapporteur | Ligne repliée de la colonne Auditions |
-| 208 voix contre 87, RN seul groupe contre | `rendu-final.md` section 6 (source LCP : https://lcp.fr/actualites/budget-2026-les-deputes-approuvent-la-taxe-de-deux-euros-sur-les-petits-colis-417170) ; `status/P2.md` : scrutin VTANR5L17V3999 daté du 19 novembre 2025 dans l'open data | Dit à l'oral, pas à l'écran |
-| Rejet de la première partie du budget 2026 le 21 novembre 2025 | **Aucune source dans le dépôt.** `etat.json` n'a pas de bloc `texte_etat`, aucun scrutin de rejet n'est cité dans `data/` ni dans `status/`. Seul indice : `suite.json` liste une séance le 21 novembre 2025 sur la première partie | **[À VÉRIFIER PAR P0]**, sinon variante D |
+| 208 voix contre 87, RN seul groupe contre | `rendu-final.md` section 6 (source LCP : https://lcp.fr/actualites/budget-2026-les-deputes-approuvent-la-taxe-de-deux-euros-sur-les-petits-colis-417170) ; `status/P2.md` et `status/P3.md` : scrutin n° 3999 (VTANR5L17V3999), 19 novembre 2025, 208 pour, 87 contre, vérifié dans l'open data | Dit à l'oral, pas à l'écran |
+| Première partie du budget 2026 rejetée le 21 novembre 2025 ; « article adopté, projet rejeté en première lecture » | `status/P3.md` (14 h 22), vérifié par P3 dans l'open data des scrutins : scrutin n° 4241 (VTANR5L17V4241), 1 pour, 404 contre, 84 abstentions ; article 22 adopté le 19 novembre 2025, scrutin n° 3999, 208 pour, 87 contre. Le rejet de la première partie vaut rejet du texte en première lecture, pas la fin de la procédure (`plf2027-holdings/etat.json`, même règle) | Dit à l'oral, pas à l'écran : `petits-colis/etat.json` s'arrête au 18 novembre (« en discussion ») |
 | Sénat : de 2 à 5 euros | `rendu-final.md` section 6 (source KPMG : https://kpmg.com/av/fr/avocats/eclairages/2025/12/plf-2026-mesures-adoptees-au-senat-en-1e-lecture.html) | Dit à l'oral, pas à l'écran |
-| Budget 2027 rejeté par l'Assemblée le 4 novembre | `plf2027-holdings/etat.json` : étape « rejeté (scrutin n° 9759) », 4 novembre 2026 ; `status/P1.md` | Étape visible dans le dossier vivant |
+| Budget 2027 rejeté par l'Assemblée le 4 novembre | `plf2027-holdings/etat.json`, `texte_etat` : première partie rejetée le 4 novembre 2026, scrutin n° 9759 ; mesure « absente du texte » | Lignes « Mesure » et « Texte » en tête du Verdict du dossier vivant |
 | « La suite se joue au Sénat » | `plf2027-holdings/etat.json` : Sénat, première lecture, en cours, date non publiée | Bloc Suite ; ne citer aucune date |
 | Holdings : « favorable », dernière occasion « l'examen au Sénat » | `plf2027-holdings/verdict.json`, objectif 1 ; `suite.json`, dernière occasion d'agir | Bandeau du Verdict et bloc Suite, sinon variante J |
 
 Ce qui a été retiré de la version 1, et pourquoi :
 
-- Le compromis du gouvernement sur le mode de paiement. Il a été déposé et adopté le 19 novembre 2025 (`status/P1.md`, amendement n° 4086), donc après la date de rejeu. Il n'est pas dans les données au 18 novembre.
+- Le compromis du gouvernement sur le mode de paiement. Il a été déposé et adopté le 19 novembre 2025 (`status/P1.md` et `status/P3.md`, amendement n° 4086), donc après la date de rejeu. Il n'est pas dans les données au 18 novembre.
 - « En dégradation » et « confiance élevée ». Les données disent « stable » et « moyenne » (`status/P3.md`).
 - « Environ 500 millions d'euros de recettes » et « ménages modestes ». Ces deux arguments ne sont pas dans `action.json`.
 - « Avec qui ils ont été travaillés ». Le champ est vide sur toutes les fiches.
@@ -178,10 +177,10 @@ Le script ne cite pas Orcet. Si le jury demande : « Il n'y a pas de prédiction
 
 ### C. La fiche du député
 
-Contrôle de 16 h 45. Au relevé de 14 h 40, la synthèse de la fiche d'Antoine Vermorel dit « probablement contre la mesure ». Le bloc Action le classe « pour », sur 8 actes. Les deux se contredisent (signalé à P0, A4 et X3 dans `status/X1.md`).
+Contrôle de 16 h 45. Au relevé de 14 h 25, la synthèse de la fiche d'Antoine Vermorel dit « probablement favorable à la taxe », en accord avec le bloc Action (8 actes pour la mesure). Une version précédente disait l'inverse : on relit la synthèse sur l'app avant de monter sur scène.
 
-- Si la synthèse est corrigée : rien ne change.
-- Si elle ne l'est pas : la main descend aux colonnes dès l'ouverture, la voix ne lit pas la synthèse. Si le jury la relève : « La synthèse est rédigée par le modèle. Ici elle se trompe, et les actes juste en dessous le montrent : c'est pour cela que chaque fiche garde les preuves sous la synthèse. »
+- Si la synthèse et le bloc Action disent la même chose : rien ne change. La voix ne lit pas la synthèse, elle montre les preuves en dessous.
+- Si elles se contredisent : on le signale à P0. Si le jury le relève : « La synthèse est rédigée par le modèle. Ici elle se trompe, et les actes juste en dessous le montrent : c'est pour cela que chaque fiche garde les preuves sous la synthèse. »
 - Fiche de secours si celle de Vermorel n'ouvre pas : David Taupiac (`PA793796`), même colonne. Elle a une audition comme rapporteur pour avis, donc la section « a entendu ». On dit alors :
 
 > J'ouvre David Taupiac. Les organisations qu'il a entendues comme rapporteur. À part, celles entendues par les rapporteurs de sa commission. Et son amendement.
@@ -190,15 +189,15 @@ Contrôle de 16 h 45. Au relevé de 14 h 40, la synthèse de la fiche d'Antoine 
 - Le bloc HATVP de la fiche liste les organisations déclarées sur le texte. On ne dit jamais que le député les a rencontrées.
 - Un député grisé (« fiche en cours ») ne se clique jamais.
 
-### D. La phrase du 21 novembre n'est pas confirmée par P0
+### D. Chute courte (si le chronomètre dépasse 2:05 au début de la chute)
 
-On ne la dit pas. La chute devient :
+On saute la phrase du 21 novembre. La chute ne s'arrête jamais à « 208 contre 87 » :
 
 > La suite. Le lendemain, en séance, l'article 22 est adopté : 208 voix contre 87. Le RN, seul groupe contre.
 
 > Et l'Assemblée n'était pas la fin : le Sénat porte la taxe de 2 à 5 euros. Voilà pourquoi nous suivons la mesure, pas le texte.
 
-Si P0 confirme avec un autre résultat ou une autre date : on reprend sa formulation, mot pour mot.
+Si le jury demande ce qu'est devenu le texte : « L'Assemblée a rejeté la première partie du budget deux jours plus tard, le 21 novembre, par 404 voix contre et une pour. L'article était adopté, le projet rejeté en première lecture. »
 
 ### D2. « Ceux qui décident » affiche autre chose
 
@@ -240,6 +239,8 @@ On ne nomme pas le client du dossier vivant à l'oral. Si le jury demande : on l
 
 On n'ouvre aucune fiche de député sur le dossier vivant pendant la démo (voir `status/X1.md`, pivot de démo).
 
+On ne lit pas le libellé de mesure de l'en-tête du dossier vivant (« article 3 », « n° 3140 ») : l'état de la mesure dit « absente du texte du gouvernement » (`status/P3.md`, signalé à P0). On ne lit pas non plus la phrase de lecture sous le bandeau : elle dit « Au Sénat » en comptant des groupes de l'Assemblée.
+
 ## Coupes si le chronomètre dépasse
 
 Dans cet ordre :
@@ -251,13 +252,13 @@ Dans cet ordre :
 
 On ne coupe jamais : le « pourquoi » du temps 1, la fiche du député, la chute complète, la dernière phrase.
 
-Repère : la chute commence à 1:58. Si le chronomètre dépasse 2:10 à ce moment, on ne dit pas « Verdict proposé pour le client » : la main montre le Verdict et la Suite pendant la phrase sur le Sénat, et on conclut.
+Repère : la chute commence à 1:58. Si le chronomètre dépasse 2:05 à ce moment : chute courte (variante D). S'il dépasse 2:10 : en plus, on ne dit pas « Verdict proposé pour le client », la main montre le Verdict et la Suite pendant la phrase sur le Sénat, et on conclut.
 
 ## Ce qu'on ne dit jamais à l'oral
 
 - Un pourcentage pour le verdict. Ni « 26 % », ni « chances », ni « probabilité ». On dit la situation, la tendance et la raison. Si on doit citer le chiffre : « part des sièges favorables à l'objectif ».
 - « Probabilité que la loi passe », pour quoi que ce soit.
-- « Adopté » pour un vote en commission.
+- « Adopté » pour un vote en commission. Sur la fiche Vermorel, le n° 719 est « adopté en commission ».
 - « C'est fini » après un vote de l'Assemblée : il reste le Sénat et la nouvelle lecture.
 - « Rejeté » pour un amendement retiré, tombé, non soutenu ou irrecevable. On lit le sort affiché.
 - « A auditionné ». Rapporteur : « a entendu ». Membre de commission : « entendues par les rapporteurs de sa commission ».
