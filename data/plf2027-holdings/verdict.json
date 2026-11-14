@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:39:32+01:00",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      }
+    ],
+    "limits": "Verdict proposé, le cabinet décide. Données au plus tard le 2026-11-14. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de réduction ou de report, ou opposés à la mesure, contre groupes qui la renforcent. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.66, à J-7 0.66, Orcet aucun ; objectif 2 : positions 0.78, à J-7 0.78, Orcet aucun ; objectif 3 : positions 0.78, à J-7 0.78, Orcet aucun.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-holdings"
+  },
+  "verdicts": [
+    {
+      "objectif_rang": 1,
+      "situation": "favorable",
+      "score": 0.66,
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "elevee",
+        "etabli": [
+          "Positions de 11 groupes sur 21 scrutins nominatifs liés à la mesure"
+        ],
+        "inconnu": [
+          "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
+        ]
+      },
+      "lecture": {
+        "texte": "Au Sénat, en première lecture, la situation est favorable car la mesure, absente du texte du gouvernement et rejetée par l'Assemblée, est contestée par 7 groupes contre 4, ce qui limite les chances de son adoption.",
+        "chiffres_utilises": [
+          "4",
+          "7"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "La taxe ne figure pas dans le texte du gouvernement",
+          "detail": "La taxe ne figure pas dans le texte du gouvernement (l'article 3 déclaré porte sur autre chose : 0 % de ses amendements citent le sujet). 12 amendements de séance la créaient (LFI-NFP, GDR, ECOS, SOC, DEM, UDR) : 0 adopté(s), 12 rejeté(s) ou non soutenu(s), puis l'Assemblée a rejeté le texte le 2026-11-04. Elle peut revenir par amendement au Sénat ou en nouvelle lecture.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Scrutin n° 9759",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+              },
+              {
+                "label": "Amendement n° 1069",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001069"
+              },
+              {
+                "label": "Amendement n° 2566",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002566"
+              }
+            ],
+            "raisonnement": "Le texte transmis au Sénat est celui du gouvernement, sans la taxe ; les amendements qui la créaient ont été rejetés ou sont tombés avec le texte.",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "RN, EPR, DR, DEM, HOR, LIOT, UDR contre la mesure",
+          "detail": "7 groupe(s), 370 sièges, dans le sens du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Scrutin n° 8863",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8863"
+              },
+              {
+                "label": "Scrutin n° 9136",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136"
+              },
+              {
+                "label": "Scrutin n° 9175",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9175"
+              }
+            ],
+            "raisonnement": "Position majoritaire de chaque groupe sur les scrutins liés, traduite en position sur la mesure.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi contre la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 4 pour la mesure, 15 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+              },
+              {
+                "label": "Scrutin n° 3282 (2025-10-31)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+              },
+              {
+                "label": "Scrutin n° 3297 (2025-10-31)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+              },
+              {
+                "label": "Scrutin n° 3298 (2025-10-31)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 4 pour la mesure, 15 contre.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "4 groupe(s) pour la mesure : LFI-NFP, SOC, ECOS, GDR",
+          "detail": "193 sièges en face du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Scrutin n° 8863",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8863"
+              },
+              {
+                "label": "Scrutin n° 9136",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136"
+              },
+              {
+                "label": "Scrutin n° 9175",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9175"
+              }
+            ],
+            "raisonnement": "Position majoritaire de chaque groupe sur les scrutins liés.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    },
+    {
+      "objectif_rang": 2,
+      "situation": "favorable",
+      "score": 0.78,
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "moyenne",
+        "etabli": [
+          "15 amendements de repli déposés au plus tard le 2026-11-14"
+        ],
+        "inconnu": [
+          "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
+        ]
+      },
+      "lecture": {
+        "texte": "Au Sénat, en première lecture, la situation est favorable car 8 groupes, soit 440 sièges, soutiennent la limitation de l'assiette, tandis que le rapporteur général a déposé 15 amendements contre la mesure.",
+        "chiffres_utilises": [
+          "15",
+          "8",
+          "440"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "LFI-NFP, LIOT, HOR, UDR, DEM, EPR, RN, DR dans le sens de cet objectif",
+          "detail": "8 groupe(s), 440 sièges, dans le sens du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements de repli, ou opposés à la mesure.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi contre la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 4 pour la mesure, 15 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+              },
+              {
+                "label": "Scrutin n° 3282 (2025-10-31)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+              },
+              {
+                "label": "Scrutin n° 3297 (2025-10-31)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+              },
+              {
+                "label": "Scrutin n° 3298 (2025-10-31)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 4 pour la mesure, 15 contre.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "3 groupe(s) contre cet objectif : ECOS, GDR, SOC",
+          "detail": "123 sièges en face du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements qui renforcent la mesure.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    },
+    {
+      "objectif_rang": 3,
+      "situation": "favorable",
+      "score": 0.78,
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "moyenne",
+        "etabli": [
+          "1 amendements de repli déposés au plus tard le 2026-11-14"
+        ],
+        "inconnu": [
+          "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
+        ]
+      },
+      "lecture": {
+        "texte": "Au Sénat, en première lecture, la situation est favorable au client car 8 groupes, soit 440 sièges, soutiennent l'objectif de repousser l'entrée en vigueur de la mesure, tandis que le rapporteur général a agi contre elle.",
+        "chiffres_utilises": [
+          "8",
+          "440"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "LFI-NFP, RN, EPR, DR, DEM, HOR, LIOT, UDR dans le sens de cet objectif",
+          "detail": "8 groupe(s), 440 sièges, dans le sens du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements de repli, ou opposés à la mesure.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi contre la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 4 pour la mesure, 15 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+              },
+              {
+                "label": "Scrutin n° 3282 (2025-10-31)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+              },
+              {
+                "label": "Scrutin n° 3297 (2025-10-31)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+              },
+              {
+                "label": "Scrutin n° 3298 (2025-10-31)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 4 pour la mesure, 15 contre.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "3 groupe(s) contre cet objectif : ECOS, GDR, SOC",
+          "detail": "123 sièges en face du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements qui renforcent la mesure.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    }
+  ]
+}

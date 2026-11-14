@@ -8,6 +8,7 @@ import { type CtxDossierPlus, type Dossier, amendementsDuSujet, coupure, positio
 import { construirePivots } from "./pivots";
 import { construireDecideurs, construireEtat, construireGroupesAction, construireTexte, etapeEtActes } from "./definitif";
 import { execSync } from "node:child_process";
+import { construireVerdict } from "./verdict";
 
 const provisoire = process.argv.includes("--provisoire");
 const FIX = join(DATA, "..", "contracts", "fixtures");
@@ -58,8 +59,10 @@ export function contexte(d: Dossier): CtxDossierPlus {
   const { avant } = coupure(d);
   const amdts = amendementsDuSujet(d);
   const lies = scrutinsLies(d, scrutins, amdts, avant);
-  const posS = positionsDepuisScrutins(lies);
-  const posA = positionsDepuisAmendements(amdts, avant);
+  // Seuls les groupes de groupes.json comptent (un ancien groupe dissous n'a plus de sièges).
+  const garder = (m: Map<string, any>) => new Map([...m].filter(([g]) => groupes.has(g)));
+  const posS = garder(positionsDepuisScrutins(lies));
+  const posA = garder(positionsDepuisAmendements(amdts, avant));
   const sourcePositions = posS.size >= 3 ? "scrutins" : posA.size > 0 ? "amendements" : "aucune";
   const positions = sourcePositions === "scrutins" ? posS : posA;
   const texteRaw = lireJson(join(DATA, "raw", d.id, "texte.json"));
@@ -81,9 +84,13 @@ for (const d of config.dossiers as Dossier[]) {
   const pivots = construirePivots(ctx, provisoire ? "general" : "auto");
   ecrireJson(join(DATA, d.id, "pivots.json"), pivots);
   if (!provisoire) {
-    ecrireJson(join(DATA, d.id, "texte.json"), construireTexte(ctx));
-    ecrireJson(join(DATA, d.id, "etat.json"), construireEtat(ctx));
-    ecrireJson(join(DATA, d.id, "groupes-action.json"), construireGroupesAction(ctx, construireDecideurs(ctx)));
+    const texte = construireTexte(ctx);
+    const etat = construireEtat(ctx);
+    const ga = construireGroupesAction(ctx, construireDecideurs(ctx));
+    ecrireJson(join(DATA, d.id, "texte.json"), texte);
+    ecrireJson(join(DATA, d.id, "etat.json"), etat);
+    ecrireJson(join(DATA, d.id, "groupes-action.json"), ga);
+    ecrireJson(join(DATA, d.id, "verdict.json"), await construireVerdict(ctx, etat, texte, ga));
   }
   const parSens = { pour: 0, contre: 0, inconnu: 0 };
   for (const s of ctx.lies) parSens[s.sens > 0 ? "pour" : s.sens < 0 ? "contre" : "inconnu"]++;

@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:39:45+01:00",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      }
+    ],
+    "limits": "Verdict proposé, le cabinet décide. Données au plus tard le 2025-11-18. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de réduction ou de report, ou opposés à la mesure, contre groupes qui la renforcent. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.26, à J-7 0.26, Orcet aucun ; objectif 2 : positions 0.71, à J-7 0.71, Orcet aucun ; objectif 3 : positions 0.46, à J-7 0.26, Orcet aucun.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "petits-colis"
+  },
+  "verdicts": [
+    {
+      "objectif_rang": 1,
+      "situation": "defavorable",
+      "score": 0.26,
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "moyenne",
+        "etabli": [
+          "Positions de 8 groupes lues sur leurs amendements à la mesure (aucun scrutin nominatif lié au plus tard le 2025-11-18)",
+          "Le gouvernement est pour la mesure"
+        ],
+        "inconnu": [
+          "Position sur la mesure de : LFI-NFP, UDR, GDR (aucun acte de groupe lisible)",
+          "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
+        ]
+      },
+      "lecture": {
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est défavorable car la mesure est portée par le gouvernement et soutenue par 7 groupes, face à un seul groupe contre.",
+        "chiffres_utilises": [
+          "7"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "Amendement de suppression de l'article 22 déposé par le groupe RN",
+          "detail": "Amendement n° 806 de Anthony Boulogne, en attente au 2025-11-18.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendement n° 806",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+              }
+            ],
+            "raisonnement": "Déposé le 2025-10-21, pas encore examiné à la date de référence ; il porte la position du client sur la mesure (supprime l'article de la mesure).",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "Amendement n° 460 déposé par le groupe EPR",
+          "detail": "Amendement n° 460 de Violette Spillebout, en attente au 2025-11-18 : réduit, exonère ou reporte (exposé).",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendement n° 460",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460"
+              }
+            ],
+            "raisonnement": "Déposé le 2025-10-20, pas encore examiné à la date de référence ; il porte la position du client sur la mesure (réduit, exonère ou reporte (exposé)).",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "RN contre la mesure",
+          "detail": "1 groupe(s), 121 sièges, dans le sens du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Position majoritaire de chaque groupe dans ses amendements à la mesure, traduite en position sur la mesure.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi contre la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+              },
+              {
+                "label": "Amendement n° 3126",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+              },
+              {
+                "label": "Amendement n° 1859",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "Mesure portée par le gouvernement",
+          "detail": "La mesure est l'article 22 du projet de loi déposé par le gouvernement : le gouvernement en est l'auteur.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Texte du projet de loi",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+              }
+            ],
+            "raisonnement": "La mesure est l'article 22 du projet de loi déposé par le gouvernement : le gouvernement en est l'auteur.",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "7 groupe(s) pour la mesure : SOC, DR, DEM, EPR, HOR, LIOT, ECOS",
+          "detail": "338 sièges en face du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Position majoritaire de chaque groupe dans ses amendements à la mesure.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    },
+    {
+      "objectif_rang": 2,
+      "situation": "favorable",
+      "score": 0.71,
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "moyenne",
+        "etabli": [
+          "11 amendements de repli déposés au plus tard le 2025-11-18",
+          "Le gouvernement est pour la mesure"
+        ],
+        "inconnu": [
+          "Position sur la mesure de : LFI-NFP, UDR, GDR (aucun acte de groupe lisible)",
+          "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
+        ]
+      },
+      "lecture": {
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est favorable car 4 groupes, dont le rapporteur général, soutiennent la réduction de la taxe, malgré l'opposition du gouvernement et de 4 autres groupes.",
+        "chiffres_utilises": [
+          "4"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "Amendement n° 460 déposé par le groupe EPR",
+          "detail": "Amendement n° 460 de Violette Spillebout, en attente au 2025-11-18 : réduit, exonère ou reporte (exposé).",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendement n° 460",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460"
+              }
+            ],
+            "raisonnement": "Déposé le 2025-10-20, pas encore examiné à la date de référence ; il porte la position du client sur la mesure (réduit, exonère ou reporte (exposé)).",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "Amendement n° 2820 déposé par le groupe EPR",
+          "detail": "Amendement n° 2820 de Graziella Melchior, en attente au 2025-11-18 : réduit, exonère ou reporte (exposé).",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendement n° 2820",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002820"
+              }
+            ],
+            "raisonnement": "Déposé le 2025-10-22, pas encore examiné à la date de référence ; il porte la position du client sur la mesure (réduit, exonère ou reporte (exposé)).",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "SOC, EPR, DR, RN dans le sens de cet objectif",
+          "detail": "4 groupe(s), 325 sièges, dans le sens du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements de repli, ou opposés à la mesure.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi contre la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+              },
+              {
+                "label": "Amendement n° 3126",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+              },
+              {
+                "label": "Amendement n° 1859",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "Mesure portée par le gouvernement",
+          "detail": "La mesure est l'article 22 du projet de loi déposé par le gouvernement : le gouvernement en est l'auteur.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Texte du projet de loi",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+              }
+            ],
+            "raisonnement": "La mesure est l'article 22 du projet de loi déposé par le gouvernement : le gouvernement en est l'auteur.",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "4 groupe(s) contre cet objectif : DEM, HOR, LIOT, ECOS",
+          "detail": "134 sièges en face du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements qui renforcent la mesure.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    },
+    {
+      "objectif_rang": 3,
+      "situation": "incertaine",
+      "score": 0.46,
+      "tendance": "amelioration",
+      "confiance": {
+        "niveau": "moyenne",
+        "etabli": [
+          "1 amendements de repli déposés au plus tard le 2025-11-18",
+          "Le gouvernement est pour la mesure"
+        ],
+        "inconnu": [
+          "Position sur la mesure de : LFI-NFP, UDR, GDR (aucun acte de groupe lisible)",
+          "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
+        ]
+      },
+      "lecture": {
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est incertaine car si 2 groupes soutiennent l'objectif de repli, la mesure est portée par le gouvernement et 6 groupes s'opposent à cet objectif.",
+        "chiffres_utilises": [
+          "2",
+          "6"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "EPR, RN dans le sens de cet objectif",
+          "detail": "2 groupe(s), 211 sièges, dans le sens du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements de repli, ou opposés à la mesure.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi contre la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+              },
+              {
+                "label": "Amendement n° 3126",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+              },
+              {
+                "label": "Amendement n° 1859",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "Mesure portée par le gouvernement",
+          "detail": "La mesure est l'article 22 du projet de loi déposé par le gouvernement : le gouvernement en est l'auteur.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Texte du projet de loi",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+              }
+            ],
+            "raisonnement": "La mesure est l'article 22 du projet de loi déposé par le gouvernement : le gouvernement en est l'auteur.",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "6 groupe(s) contre cet objectif : DR, DEM, HOR, SOC, LIOT, ECOS",
+          "detail": "248 sièges en face du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements qui renforcent la mesure.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    }
+  ]
+}
