@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:49:44.003Z",
+    "generated_at": "2026-11-14T13:55:18.583Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -8,7 +8,7 @@
       },
       {
         "label": "Rapports sur le projet de loi de finances pour 2026",
-        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tIX.html"
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tVIII.html"
       },
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -39,6 +39,24 @@
   "auditions": [
     {
       "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tVIII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Observatoire de l’éthique publique (OEP)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Assemblée nationale",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
       "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tIX.html",
       "date": "2025-11-13",
       "role": "membre",
@@ -50,12 +68,12 @@
         },
         {
           "nom": "Conseil d’État",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat de la juridiction administrative (SJA)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -83,7 +101,7 @@
         },
         {
           "nom": "Délégation nationale à la sécurité routière",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -102,8 +120,18 @@
           "hatvp_id": null
         },
         {
-          "nom": "Lieutenenant-Colonel Duquesne, délégué militaire départemental adjoint des Pyrénées-Atlantiques",
-          "type": "autre",
+          "nom": "Groupement de gendarmerie départementale 64",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service interdépartemental de la police aux frontières d’Hendaye",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Défense (Département)",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -538,12 +566,12 @@
   ],
   "couverture": {
     "rapports_total": 9,
-    "rapports_avec_liste": 2,
+    "rapports_avec_liste": 3,
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe soutient la mesure.",
-    "argument": "Présenter à ce député que la Direction générale des douanes et droits indirects a été entendue par les rapporteurs de sa commission le 18 novembre 2025, ce qui constitue un indice plus faible qu'un acte personnel pour appuyer la position de son client contre la mesure.",
+    "position_probable": "Sa position personnelle n'est pas connue, car il n'a ni déposé d'amendement ni fait de déclaration, et la position de son groupe est pour la mesure.",
+    "argument": "Présenter à ce député que les organisations entendues par les rapporteurs de sa commission le 18 novembre 2025, notamment la Direction générale des douanes et droits indirects, soulignent les difficultés opérationnelles liées à la mesure, ce qui constitue un indice plus faible qu'un acte personnel.",
     "chiffres_utilises": [
       "2",
       "150",
@@ -551,8 +579,10 @@
       "0",
       "2025",
       "11",
+      "7",
       "13",
-      "18"
+      "18",
+      "64"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

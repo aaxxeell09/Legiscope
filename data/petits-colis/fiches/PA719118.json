@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:49:44.001Z",
+    "generated_at": "2026-11-14T13:55:18.489Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -49,8 +49,48 @@
           "hatvp_id": null
         },
         {
+          "nom": "ministère des Armées et des Anciens combattants",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre Interarmées de Coordination du Soutien",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Marine",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Armée de l’Air et de l’Espace",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "service du commissariat des armées (SCA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "service de santé des armées",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
           "nom": "Haut Comité d’évaluation de la condition militaire (HCECM)",
-          "type": "association",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "centre de planification",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "commissariat au numérique de défense (CND)",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -59,7 +99,27 @@
           "hatvp_id": null
         },
         {
+          "nom": "centre du soutien des opérations et des acheminements",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Force et des Opérations Terrestres",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
           "nom": "Direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service d’infrastructure de la Défense",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "armée de Terre",
           "type": "administration",
           "hatvp_id": null
         }
@@ -71,11 +131,6 @@
       "date": "2025-11-13",
       "role": "membre",
       "organisations": [
-        {
-          "nom": "1. Auditions",
-          "type": "autre",
-          "hatvp_id": null
-        },
         {
           "nom": "Airbus",
           "type": "entreprise",
@@ -108,7 +163,7 @@
         },
         {
           "nom": "Commandement de la défense aérienne et des opérations aériennes",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -119,11 +174,6 @@
         {
           "nom": "État-major de l’armée de l’Air et de l’Espace",
           "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "2. Déplacement",
-          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -153,13 +203,83 @@
       "role": "membre",
       "organisations": [
         {
-          "nom": "Représentants des associations du G12 « monde combattant »",
-          "type": "autre",
+          "nom": "Association Nationale des combattants des Opérations Extérieures (ANOPEX)",
+          "type": "association",
           "hatvp_id": null
         },
         {
-          "nom": "Associations des associations de rapatriés d’Indochine",
-          "type": "autre",
+          "nom": "Fédération Nationale André Maginot (FNAM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union Nationale des Combattants (UNC)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société Nationale d'Entraide de la Médaille Militaire (SNEMM)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Républicaine des Combattants et Victimes de Guerre, des Combattants pour l'amitié, la solidarité, la mémoire, l'anti-fascisme et la paix (ARAC)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Nationale des Anciens des Missions et Opérations Extérieures (FNAME-OPEX)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Souvenir Français",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Nationale des Associations de Parachutistes (FNAP)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Nationale des Combattants Prisonniers de Guerre et Combattants d’Algérie, Tunisie, Maroc (FNCPG-CATM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération National des Anciens Combattants en Algérie, Maroc et Tunisie (FNACA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association de Soutien à l'Armée Française (ASAF)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union fédérale des associations françaises d'anciens combattants, victimes de guerre et jeunesse de l'UF",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fondation des Plus Grands Invalides de Guerre (FPGIG)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union française des associations de combattants et victimes de guerre (UFAC)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif des Eurasiens pour la Préservation du Centre d’Accueil des Français d’Indochine (CEP-CAFI)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "association des rapatriés de Noyant-d’Allier (ARINA)",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -193,7 +313,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Association du Lot-et-Garonne",
+          "nom": "Association du Lot-et-Garonne : Coordination départementale pour l’entraide et la défense des harkis",
           "type": "association",
           "hatvp_id": null
         },
@@ -224,7 +344,7 @@
         },
         {
           "nom": "Cœur du Var",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -239,7 +359,7 @@
         },
         {
           "nom": "Coordination jeunesse Harkis Ariégeoise pour les Harkis (CJHA)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -254,42 +374,42 @@
         },
         {
           "nom": "Hameau de Forestage du Lodévois (HFL)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Harkis et citoyens français",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Harkis et leurs amis",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Harkis Occitanie Mémoires (HOM)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Harkis reconnaissance et devoir de mémoire",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Mémoire d’hier et d’aujourd’hui pour demain (MHAD)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Mémoire et avenir des Harkis, des rapatriés d’Algérie et leurs sympathisants (MAHRAS)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Mémoire Harkis du Camp de Bias (MHCB)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -299,12 +419,12 @@
         },
         {
           "nom": "UDACFME du Rhône",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Union des Familles de Harkis (UFH)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -313,8 +433,28 @@
           "hatvp_id": null
         },
         {
-          "nom": "Cérémonie d’hommage national aux harkis au mémorial de Rivesaltes",
-          "type": "autre",
+          "nom": "CNIH",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office national des combattants et des victimes de guerre (ONaCVG)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institution nationale des Invalides (INI)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mémoire, de la culture et des archives (DMCA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission pour la restitution des biens et l’indemnisation des victimes de spoliations antisémites (CIVS)",
+          "type": "administration",
           "hatvp_id": null
         }
       ]
@@ -337,21 +477,26 @@
         },
         {
           "nom": "Pasqal",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Alice & Bob",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Quandela",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
-          "nom": "Représentants de la DGSE",
+          "nom": "DGSE",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "État-major des armées",
           "type": "administration",
           "hatvp_id": null
         },
@@ -372,7 +517,7 @@
         },
         {
           "nom": "Agence de l’innovation de défense",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         }
       ]
@@ -390,17 +535,17 @@
         },
         {
           "nom": "GICAN",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Piriou",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Seaowl Group",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -410,7 +555,7 @@
         },
         {
           "nom": "Exail",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         }
       ]
@@ -844,8 +989,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, et la position de son groupe est pour la mesure.",
-    "argument": "Présenter à ce député que la Cour des comptes a été entendue par les rapporteurs de sa commission le 13 novembre 2025, ce qui constitue un indice plus faible qu'un acte personnel, pour appuyer la position d'Alibaba France contre la taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe.",
+    "position_probable": "Sa position personnelle n'est pas connue, car il n'a ni déposé d'amendement ni fait de déclaration, et la position de son groupe est pour la mesure.",
+    "argument": "Présenter à ce député que les organisations entendues par les rapporteurs de sa commission le 13 novembre 2025 constituent un indice plus faible qu'un acte personnel, car il n'a déposé aucun amendement ni fait de déclaration sur la mesure.",
     "chiffres_utilises": [
       "2",
       "150",
@@ -854,7 +999,6 @@
       "2025",
       "11",
       "13",
-      "1",
       "14"
     ],
     "mode": "llm",

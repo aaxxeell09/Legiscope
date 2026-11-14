@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:49:43.907Z",
+    "generated_at": "2026-11-14T13:53:03.298Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -44,13 +44,13 @@
       "role": "rapporteur_avis",
       "organisations": [
         {
-          "nom": "Secrétariat général pour l’investissement (SGPI)",
+          "nom": "Secrétariat général pour l'investissement (SGPI)",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Caisse des dépôts et des consignations (CDC)",
-          "type": "administration",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -59,28 +59,28 @@
           "hatvp_id": null
         },
         {
-          "nom": "Institut de recherches pour l’agriculture, l’alimentation et l’environnement (INRAE)",
+          "nom": "Institut de recherches pour l'agriculture, l'alimentation et l'environnement (INRAE)",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat des vins Côtes de Gascogne",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Vignerons indépendants de France",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Institut français du vin et de la vigne",
-          "type": "administration",
+          "type": "autre",
           "hatvp_id": null
         },
         {
           "nom": "Rives et Eaux du Sud-Ouest",
-          "type": "syndicat",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -113,21 +113,21 @@
       "organisations": [
         {
           "nom": "Coordination rurale",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Confédération paysanne",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Interbev",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
-          "nom": "Commission européenne",
+          "nom": "Commission européenne - DG AGRI",
           "type": "administration",
           "hatvp_id": null
         },
@@ -138,12 +138,12 @@
         },
         {
           "nom": "FranceAgriMer",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Jeunes Agriculteurs (JA)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -158,11 +158,11 @@
         },
         {
           "nom": "FNSEA",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
-          "nom": "Secrétariat général",
+          "nom": "Ministère de l’Agriculture et de la souveraineté alimentaire - Secrétariat général",
           "type": "administration",
           "hatvp_id": null
         },
@@ -177,43 +177,53 @@
           "hatvp_id": null
         },
         {
-          "nom": "Rencontres organisées à l’occasion du Salon international de l’élevage (SPACE) au Parc Expo de Rennes",
-          "type": "entreprise",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Inrae Bretagne",
+          "nom": "Inrae Bretagne – Normandie",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Sanders",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "COOPERL",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "INAPORC",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Institut du porc",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Evel’up",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
-          "nom": "Françoise, Josic et Pierre, associés de la ferme de l’Hirondelle",
-          "type": "cabinet",
+          "nom": "Ferme de l’Hirondelle",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat de défense de la race PBO",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ligéral",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "INRAE Bretagne-Normandie",
+          "type": "administration",
           "hatvp_id": null
         }
       ]
@@ -236,11 +246,11 @@
         },
         {
           "nom": "Institut pour les savoir-faire français",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
-          "nom": "Ville de Calais",
+          "nom": "Ville de Calais – Cité de la dentelle et de la mode",
           "type": "administration",
           "hatvp_id": null
         },
@@ -270,7 +280,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Ministère de l’économie et des finances",
+          "nom": "Ministère de l’économie et des finances – Direction générale des entreprises (DGE) – Sous-direction du tourisme",
           "type": "administration",
           "hatvp_id": null
         },
@@ -290,13 +300,13 @@
           "hatvp_id": null
         },
         {
-          "nom": "Ministère de la culture",
+          "nom": "Ministère de la culture – Département des territoires – Pôle de l’attractivité du territoire",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Ateliers d’art de France",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -314,17 +324,17 @@
         },
         {
           "nom": "Finance Fair",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
-          "nom": "Udes",
-          "type": "autre",
+          "nom": "Udes - Union des employeurs de l’économie sociale et solidaire",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "ESS France",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -352,7 +362,7 @@
         },
         {
           "nom": "Intercéréales",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -377,7 +387,7 @@
         },
         {
           "nom": "FranceAgriMer",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         }
       ]
@@ -415,7 +425,7 @@
         },
         {
           "nom": "Association du corps préfectoral & des hauts fonctionnaires du ministère de l’intérieur (ACPHFMI)",
-          "type": "administration",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -453,37 +463,22 @@
         },
         {
           "nom": "Provicis",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Coop’HLM",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Vincent Lourier, directeur",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "USH",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Marianne Louis, directrice générale",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Antoine Galewski, directeur des relations institutionnelles et parlementaires",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "CDC Habitat",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -533,7 +528,7 @@
       "role": "membre",
       "organisations": [
         {
-          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique",
+          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique – Direction générale des entreprises (DGE)",
           "type": "administration",
           "hatvp_id": null
         },
@@ -553,18 +548,8 @@
           "hatvp_id": null
         },
         {
-          "nom": "Patrick Chaize, président",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Ariel Turpin, délégué général",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
           "nom": "Association des maires de France (AMF)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -573,7 +558,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Agence nationale de la cohésion des territoires (ANCT)",
+          "nom": "Agence nationale de la cohésion des territoires (ANCT) – Direction générale déléguée au numérique",
           "type": "administration",
           "hatvp_id": null
         }
@@ -587,27 +572,32 @@
       "organisations": [
         {
           "nom": "France Gaz",
-          "type": "entreprise",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Centrales villageoises",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Luciole",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Association française indépendante de l’électricité et du gaz (Afieg)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Association nationale des opérateurs détaillants en énergie (Anode)",
-          "type": "association",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Volterres",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -622,7 +612,7 @@
         },
         {
           "nom": "Enerplan",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -634,6 +624,11 @@
           "nom": "Syndicat des énergies renouvelables (SER)",
           "type": "federation",
           "hatvp_id": "532334588"
+        },
+        {
+          "nom": "Ai2P",
+          "type": "cabinet",
+          "hatvp_id": null
         },
         {
           "nom": "Engie",
@@ -651,13 +646,23 @@
           "hatvp_id": null
         },
         {
+          "nom": "Fedene",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des collectivités, des associations et des entreprises pour la gestion des déchets, de l’énergie et des réseaux de chaleur (Amorce)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
           "nom": "Réseau de transport d’électricité (RTE)",
-          "type": "administration",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Enedis",
-          "type": "administration",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -667,17 +672,17 @@
         },
         {
           "nom": "Conseil national des associations familiales laïques (CNAFAL)",
-          "type": "administration",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "UFC-Que Choisir",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Comité de régulation de l’énergie (CRE)",
-          "type": "association",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -697,7 +702,7 @@
         },
         {
           "nom": "Comité de liaison des entreprises ayant exercé leur éligibilité (Cleee)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -717,22 +722,22 @@
         },
         {
           "nom": "Médiateur national de l’énergie",
-          "type": "entreprise",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Mobilians",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Organisation des transporteurs routiers européens (OTRE)",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Primagaz",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -760,12 +765,12 @@
         },
         {
           "nom": "Fédération départementale des syndicats d’exploitants agricoles (FDSEA) de La Réunion",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Confédération générale des planteurs et éleveurs de La Réunion (CGPER)",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -774,68 +779,93 @@
           "hatvp_id": null
         },
         {
-          "nom": "Union Réunionnaise des Coopératives Agricoles (URCOOPA)",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Association Réunionnaise Interprofessionnelle du Bétail, de la Viande et du Lait (ARIBEV)",
-          "type": "association",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Association Réunionnaise Interprofessionnelle de Volaille (ARIV)",
-          "type": "association",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Coordination rurale de La Réunion (CR974)",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Chambres d’agriculture France, de La Réunion et de Guadeloupe",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Comité paritaire interprofessionnel de la canne et du sucre (CPCS) et groupe TEREOS",
-          "type": "association",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Sociétés d ’ aménagement foncier et d ’ établissement rural (SAFER)",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "SAFER Guadeloupe",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "SAFER Guyane",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "SAFER La Réunion",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "SAFER La Martinique",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Syndicats agricoles Fédération Départementale des Syndicats d'Exploitants Agricoles (FDSEA) et Jeunes agriculteurs (JA)",
+          "nom": "Chambre d’agriculture de La Réunion",
           "type": "federation",
           "hatvp_id": null
         },
         {
+          "nom": "Union Réunionnaise des Coopératives Agricoles (URCOOPA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Réunionnaise Interprofessionnelle du Bétail, de la Viande et du Lait (ARIBEV)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Réunionnaise Interprofessionnelle de Volaille (ARIV)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "AVI POLE",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Coordination rurale de La Réunion (CR974)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambres d’agriculture France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambre d’agriculture de Guadeloupe",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité paritaire interprofessionnel de la canne et du sucre (CPCS)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "TEREOS Océan Indien",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat du sucre de La Réunion",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "TEREOS",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAFER Guadeloupe",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAFER Guyane",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAFER La Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAFER La Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Départementale des Syndicats d'Exploitants Agricoles (FDSEA) Martinique",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
           "nom": "Office de développement de l’économie agricole d’outre-mer (ODEADOM)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -1284,11 +1314,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "David Taupiac est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 1745, retiré, qui proposait d'augmenter le montant de la taxe.",
-    "argument": "Présenter à ce député l'amendement 1745, retiré, qui proposait de porter la taxe à 5 euros, pour lui montrer que sa position actuelle est plus favorable à la réduction de la mesure que le texte initial.",
+    "position_probable": "David Taupiac est probablement favorable à la mesure, car il a cosigné l'amendement 1745, qui a été retiré, visant à porter la taxe à 5 euros.",
+    "argument": "Présenter à ce député que son amendement 1745, qui proposait de porter la taxe à 5 euros, a été retiré, afin de lui montrer que la mesure actuelle de 2 euros est déjà une concession par rapport à sa proposition initiale.",
     "chiffres_utilises": [
       "1745",
-      "5"
+      "5",
+      "2"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

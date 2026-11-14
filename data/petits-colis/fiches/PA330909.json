@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:49:43.936Z",
+    "generated_at": "2026-11-14T13:53:48.691Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -44,13 +44,13 @@
       "role": "membre",
       "organisations": [
         {
-          "nom": "Secrétariat général pour l’investissement (SGPI)",
+          "nom": "Secrétariat général pour l'investissement (SGPI)",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Caisse des dépôts et des consignations (CDC)",
-          "type": "administration",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -59,28 +59,28 @@
           "hatvp_id": null
         },
         {
-          "nom": "Institut de recherches pour l’agriculture, l’alimentation et l’environnement (INRAE)",
+          "nom": "Institut de recherches pour l'agriculture, l'alimentation et l'environnement (INRAE)",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat des vins Côtes de Gascogne",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Vignerons indépendants de France",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Institut français du vin et de la vigne",
-          "type": "administration",
+          "type": "autre",
           "hatvp_id": null
         },
         {
           "nom": "Rives et Eaux du Sud-Ouest",
-          "type": "syndicat",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -123,12 +123,7 @@
         },
         {
           "nom": "Agéa",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Dr. Julien Arnoult, responsable des études et des relations institutionnelles",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -143,7 +138,7 @@
         },
         {
           "nom": "Syndicat national des entrepreneurs de la filière déchets (Snefid)",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -182,23 +177,43 @@
           "hatvp_id": null
         },
         {
+          "nom": "CGT",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "UNSP FO",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CFDT",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CFE-CGC",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
           "nom": "Association des maires de France (AMF)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Caisse centrale de réassurance (CCR)",
-          "type": "administration",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "DREAL Grand Est",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "DREAL Bourgogne-Franche-Comté",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -218,7 +233,7 @@
         },
         {
           "nom": "Zero Waste",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -245,12 +260,12 @@
           "hatvp_id": null
         },
         {
-          "nom": "École nationale des travaux publics de l’État (ENTPE)",
+          "nom": "École nationale des travaux publics de l'État (ENTPE)",
           "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "Commission de régulation de l’énergie (CRE)",
+          "nom": "Commission de régulation de l'énergie (CRE)",
           "type": "administration",
           "hatvp_id": null
         },
@@ -265,18 +280,13 @@
           "hatvp_id": null
         },
         {
-          "nom": "Fédération Force ouvrière de l’équipement, de l’environnement, des transports et des services (FEETS-FO)",
+          "nom": "Fédération Force ouvrière de l'équipement, de l'environnement, des transports et des services (FEETS-FO)",
           "type": "syndicat",
           "hatvp_id": null
         },
         {
-          "nom": "Syndicat national de l’environnement",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
           "nom": "Syndicat national des contrôleurs du trafic aérien (SNCTA)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -308,18 +318,38 @@
           "hatvp_id": null
         },
         {
-          "nom": "Agence de l’eau Seine-Normandie",
+          "nom": "Parc national des Calanques",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Parc national du Mercantour",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif des parcs nationaux",
           "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Parc amazonien de Guyane",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’eau Seine-Normandie",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Agence de l’eau Loire-Bretagne",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Agence de l’eau Rhône-Méditerranée-Corse",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -357,7 +387,7 @@
         },
         {
           "nom": "Santé Publique France",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -377,7 +407,7 @@
         },
         {
           "nom": "Flexfuel Décalaminage",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -392,12 +422,12 @@
         },
         {
           "nom": "Caisse autonome nationale de la sécurité sociale dans les mines (CANSSM)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "La Plateforme Automobile (PFA)",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -406,13 +436,13 @@
           "hatvp_id": null
         },
         {
-          "nom": "Agence de services et de paiement",
-          "type": "autre",
+          "nom": "Agence de services et de paiement – ASP",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Mobilians",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -426,12 +456,12 @@
           "hatvp_id": null
         },
         {
-          "nom": "Agence nationale pour la garantie des droits des mineurs",
+          "nom": "Agence nationale pour la garantie des droits des mineurs - ANGDM",
           "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "Caisse des dépôts",
+          "nom": "Caisse des dépôts – Direction des politiques sociales",
           "type": "administration",
           "hatvp_id": null
         },
@@ -457,7 +487,7 @@
         },
         {
           "nom": "Organisation des transporteurs routiers européens (Otre)",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -490,7 +520,7 @@
         },
         {
           "nom": "Agence de financement des infrastructures de transports de France (AFITF)",
-          "type": "federation",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -510,7 +540,7 @@
         },
         {
           "nom": "Fédération nationale des associations d’usagers des transports (FNAUT)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -525,7 +555,7 @@
         },
         {
           "nom": "European Sleeper",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -548,7 +578,7 @@
       "organisations": [
         {
           "nom": "Syndicat des compagnies aériennes régionales et autonomes (SCARA)",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -558,7 +588,7 @@
         },
         {
           "nom": "Conseil territorial de Saint-Barthélemy",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -573,7 +603,7 @@
         },
         {
           "nom": "Union des navigants de l’aviation civile (UNAC)",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -583,17 +613,17 @@
         },
         {
           "nom": "Wallis et Futuna",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Nouvelle-Calédonie",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Ultramarins Doubout",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -603,12 +633,12 @@
         },
         {
           "nom": "L’Agence de l’outre-mer pour la mobilité (LADOM)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Comité du tourisme de la Guyane",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -618,32 +648,32 @@
         },
         {
           "nom": "Air Austral",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Air Tahiti Nui",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Air Tahiti",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "French Bee et Air Caraïbes",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Aircalin",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Corsair",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -662,7 +692,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Aéroport de Tahiti",
+          "nom": "Aéroport de Tahiti - Faa'a",
           "type": "entreprise",
           "hatvp_id": null
         },
@@ -673,11 +703,16 @@
         },
         {
           "nom": "Air Moana",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Collectif « Défense guyanaise pour l’accès aux transports » (DGAT)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Guyane",
           "type": "administration",
           "hatvp_id": null
         }
@@ -696,7 +731,7 @@
         },
         {
           "nom": "Filiale Genavir",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -711,7 +746,7 @@
         },
         {
           "nom": "Institut polaire français Paul-Émile Victor (IPEV)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -720,7 +755,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture (Dgampa)",
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l'aquaculture (Dgampa)",
           "type": "administration",
           "hatvp_id": null
         }
@@ -739,12 +774,12 @@
         },
         {
           "nom": "Association des maires de France (AMF)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "France villes et territoires durables",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -769,7 +804,7 @@
         },
         {
           "nom": "Conseil d’architecture, d’urbanisme et de l’environnement (CAUE) de l’Aude",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -783,7 +818,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Secrétariat général pour les affaires régionales (SGAR)",
+          "nom": "Secrétariat général pour les affaires régionales (SGAR) – Préfecture de la région Occitanie",
           "type": "administration",
           "hatvp_id": null
         },
@@ -794,11 +829,11 @@
         },
         {
           "nom": "Carcassonne Agglo",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "Association nationale des pôles territoriaux et des pays (ANPP)",
+          "nom": "Association nationale des pôles territoriaux et des pays (ANPP) - Territoires de projet",
           "type": "association",
           "hatvp_id": null
         }
@@ -1252,12 +1287,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Vincent Descoeur est probablement favorable à la mesure, car il a cosigné l'amendement 1774, tombé, qui propose de porter la taxe à 25 euros.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros et est tombé, montre qu'il soutient une version renforcée de la mesure, ce qui rend difficile l'argumentation d'Alibaba France contre la taxe de 2 euros.",
+    "position_probable": "Vincent Descoeur est probablement favorable à la mesure, car il a cosigné l'amendement 1774, qui est tombé, et l'amendement 1775, qui a été rejeté.",
+    "argument": "Présenter à ce député que l'amendement 1774, qu'il a cosigné et qui est tombé, visait à porter la taxe à 25 euros, ce qui montre son attachement à une mesure forte que le client Alibaba France souhaite réduire.",
     "chiffres_utilises": [
       "1774",
-      "25",
-      "2"
+      "1775",
+      "25"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",
