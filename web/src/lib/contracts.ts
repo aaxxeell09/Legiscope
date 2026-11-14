@@ -3,9 +3,8 @@
  *
  * L'import passe par le module virtuel `virtual:contracts` déclaré dans
  * `vite.config.ts` : quand `contracts/index.ts` existe, il est réexporté tel
- * quel ; sinon le module est vide et `validate()` laisse passer les données sans
- * les vérifier (avec un avertissement console une seule fois). Le build ne casse
- * donc jamais, et la validation s'active dès que contracts/ est livré.
+ * quel ; sinon le module est vide et `validate()` refuse les données, afin
+ * qu'aucun JSON ne soit jamais traité silencieusement comme valide.
  *
  * contracts/index.ts exporte un schéma par fichier de données nommé
  * `<Kind>Schema` (`TexteSchema`, `FichesIndexSchema`...) et une map `SCHEMAS`
@@ -71,19 +70,16 @@ export function schemaFor(kind: DataKind): ZodTypeAny | undefined {
   return undefined;
 }
 
-const warned = new Set<string>();
-
 export type Validation<T> = { ok: true; data: T } | { ok: false; error: string };
 
-/** Valide `raw` avec le schéma de `kind`. Sans schéma disponible, renvoie `raw` tel quel. */
+/** Valide `raw` avec le schéma de `kind`. Un schéma absent est une erreur de contrat. */
 export function validate<T>(kind: DataKind, raw: unknown): Validation<T> {
   const schema = schemaFor(kind);
   if (!schema) {
-    if (!warned.has(kind)) {
-      warned.add(kind);
-      console.warn(`[contracts] aucun schéma pour « ${kind} » (contracts/index.ts ${contractsPresent ? "sans export correspondant" : "absent"}) : données non validées.`);
-    }
-    return { ok: true, data: raw as T };
+    return {
+      ok: false,
+      error: `[contracts] aucun schéma pour « ${kind} » (contracts/index.ts ${contractsPresent ? "sans export correspondant" : "absent"})`,
+    };
   }
   try {
     const r = schema.safeParse(raw);

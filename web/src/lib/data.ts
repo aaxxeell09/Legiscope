@@ -91,8 +91,8 @@ async function fetchAndValidate<T>(kind: DataKind, url: string, dossier?: string
   if (dossier && DOSSIER_SCOPED.has(kind)) {
     const meta = (raw as { meta?: { dossier_id?: unknown } } | null)?.meta;
     const got = meta?.dossier_id;
-    if (typeof got === "string" && got !== dossier) {
-      throw new Error(`${url} : meta.dossier_id « ${got} » au lieu de « ${dossier} »`);
+    if (got !== dossier) {
+      throw new Error(`${url} : meta.dossier_id « ${String(got)} » au lieu de « ${dossier} »`);
     }
   }
   return checked.data;
