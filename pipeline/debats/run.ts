@@ -128,7 +128,7 @@ async function traiterDossier(ctx: Contexte, dossier: DossierConfig): Promise<vo
       meta: {
         generated_at: horodatage(),
         sources: [...sourcesCommunes, ...sourcesPropres],
-        limits: `Interventions sur le sujet (mots-clés ${dossier.sujet.mots_cles.join(", ")} ou article ${dossier.mesure.article} du texte) ; ${comptesRendusLus} comptes rendus lus (séance et commission des finances), rien après ${dossier.date_reference ?? "ce jour"}. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : ${source}.`,
+        limits: `Interventions sur le sujet (mots-clés ${dossier.sujet.mots_cles.join(", ")} ou article ${dossier.mesure.article} du texte) ; ${comptesRendusLus} comptes rendus lus (séance et commission des finances), rien daté du ${dossier.date_reference ?? "jour courant"} (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : ${source}.`,
         producer: "pipeline/debats",
         dossier_id: dossier.id,
       },
@@ -170,7 +170,7 @@ async function traiterDossier(ctx: Contexte, dossier: DossierConfig): Promise<vo
   const limites = [
     `${interventions.length} prises de parole sur le sujet lues dans ${lues.length} comptes rendus (${comptesRendusLus} comptes rendus parcourus) ; ${resultats.size} classées, ${cands.length} retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), ${rejets} rejetées pour citation inexacte, ${desaccords} écartées car le second avis du modèle contredit le camp ; ${pour.length} pour et ${contre.length} contre après dédoublonnage.`,
     cleDisponible() ? `Classement par le modèle Featherless (${appels} appels à cette exécution, cache sur disque).` : "FEATHERLESS_API_KEY absente : seuls les classements relus à la main (pipeline/debats/classement-manuel) sont utilisés.",
-    `Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien après ${dossier.date_reference ?? "ce jour"}.`,
+    `Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du ${dossier.date_reference ?? "jour courant"} (matin) ni après.`,
   ].join(" ");
   const argumentsJson = ArgumentsSchema.parse({
     meta: {

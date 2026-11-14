@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:01:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du mardi 18 novembre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-18-novembre-2025"
+      },
+      {
+        "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés petits colis, colis, franchise douanière ou article 22 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du 2025-11-19 (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/petits-colis/groupes-action.json et data/petits-colis/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA795778",
+  "debats": [
+    {
+      "date": "2025-11-18",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Depuis bientôt trois ans, le rendement de la TVA baisse. Vous pouvez accuser les petits colis chinois, mais nous ne croyons pas à vos explications. À force de taper sur la consommation populaire et sur les artisans, les gens ne consomment plus ou peu.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-18-novembre-2025"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Nous n’avons pas de leçon de stratégie à recevoir de la part des macronistes. Rassurez-vous, notre électorat comprendra très bien qu’il s’agit une fois de plus de les taxer et que cette mesure ne sauvera aucun petit commerce.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Les entreprises concernées auront un « ami » européen – ils sont nombreux – qui trichera et sera ravi d’être le larbin de la Chine pour importer et réexporter sur le marché intérieur. Ou alors, il suffira que les Chinois installent un faux entrepôt ou une fausse entreprise, où ils conduiront une minable opération, afin de contourner la taxe et d’acheminer les mêmes petits colis en France.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Tout cela n’a donc aucun sens et revient à affronter la mondialisation avec des excuses bidon. Si vous croyez que vous allez faire peur à la Chine avec cette taxe sur les petits colis, c’est vraiment ridicule et de mauvaise foi ! Une fois de plus, vous allez taxer les familles modestes sans rien résoudre par ailleurs.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

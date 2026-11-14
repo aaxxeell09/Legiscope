@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:47:39+01:00",
+    "generated_at": "2026-11-14T15:01:31+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -11,7 +11,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       }
     ],
-    "limits": "Interventions sur le sujet (mots-clés petits colis, colis, franchise douanière ou article 22 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien après 2025-11-18. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/petits-colis/groupes-action.json et data/petits-colis/pivots.json.",
+    "limits": "Interventions sur le sujet (mots-clés petits colis, colis, franchise douanière ou article 22 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du 2025-11-19 (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/petits-colis/groupes-action.json et data/petits-colis/pivots.json.",
     "producer": "pipeline/debats",
     "dossier_id": "petits-colis"
   },
