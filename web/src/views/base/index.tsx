@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import type { AmendementTexte, Deputes, Etat as EtatData, Groupes, Preuve, Sort, Texte } from "@contracts/index";
-import { Etat, GroupeTag, Meta, Panel, Pourquoi, Proba, Table, type Column } from "../../components";
+import type { AmendementTexte, Deputes, Etat as EtatData, Groupes, Sort, Texte } from "@contracts/index";
+import { Etat, GroupeTag, Meta, Panel, Table, type Column } from "../../components";
 import { useDossier } from "../../lib/config";
 import { useData } from "../../lib/data";
 import { formatDate, formatNom } from "../../lib/format";
@@ -30,13 +30,6 @@ type Amdt = AmendementTexte & {
 };
 type Tri = "statut" | "numero" | "recent";
 const PAR_PAGE = 25;
-type TexteEtat = {
-  statut: "en_discussion" | "adopte" | "rejete" | "retire";
-  libelle: string;
-  date?: string | null;
-  url?: string;
-  preuve?: Preuve;
-};
 
 const NATURE_LABEL: Record<Nature, string> = {
   supprime: "supprime",
@@ -45,19 +38,12 @@ const NATURE_LABEL: Record<Nature, string> = {
   aggrave: "aggrave",
   autre: "autre",
 };
-const TEXTE_STATUT_LABEL: Record<TexteEtat["statut"], string> = {
-  en_discussion: "en discussion",
-  adopte: "adopté",
-  rejete: "rejeté",
-  retire: "retiré",
-};
 
 /** Amendement du gouvernement ou d'une commission (pas de groupe). */
 function estInstitutionnel(a: Amdt): boolean {
   return a.auteur_type === "gouvernement" || a.auteur_type === "commission" || a.auteur_id === "GOUVERNEMENT";
 }
 
-const ETAPE_LABEL = { fait: "fait", en_cours: "en cours", a_venir: "à venir" } as const;
 const ARTICLE_LABEL = { vote: "voté", reste: "reste à voter", supprime: "supprimé" } as const;
 
 /** Numéro d'amendement comparable : « 2470 » avant « 806 rect. » si plus grand, etc. */
@@ -75,7 +61,6 @@ export default function BaseView() {
   const groupes = useData<Groupes>("groupes");
   const deputes = useData<Deputes>("deputes");
   const [q, setQ] = useState("");
-  const [instit, setInstit] = useState(false);
   const [sortFiltre, setSortFiltre] = useState<Sort | "">("");
   const [groupeFiltre, setGroupeFiltre] = useState("");
   const [natureFiltre, setNatureFiltre] = useState<Nature | "">("");
@@ -87,7 +72,6 @@ export default function BaseView() {
 
   const amendements = useMemo(() => {
     const all = [...((texte.data?.amendements ?? []) as Amdt[])]
-      .filter((a) => !instit || estInstitutionnel(a))
       .filter((a) => !sortFiltre || a.sort === sortFiltre)
       .filter((a) => !groupeFiltre || a.groupe_id === groupeFiltre)
       .filter((a) => !natureFiltre || a.nature === natureFiltre)
@@ -103,12 +87,11 @@ export default function BaseView() {
       const g = a.groupe_id ? groupeParId.get(a.groupe_id) : undefined;
       return [a.numero, a.resume, SORT_LABEL[a.sort], a.auteur_libelle, a.nature && NATURE_LABEL[a.nature], p?.nom, p?.prenom, g?.sigle].some((x) => x && x.toLowerCase().includes(s));
     });
-  }, [texte.data, q, instit, sortFiltre, groupeFiltre, natureFiltre, tri, deputeParId, groupeParId]);
-  const nInstit = useMemo(() => ((texte.data?.amendements ?? []) as Amdt[]).filter(estInstitutionnel).length, [texte.data]);
+  }, [texte.data, q, sortFiltre, groupeFiltre, natureFiltre, tri, deputeParId, groupeParId]);
   const pages = Math.max(1, Math.ceil(amendements.length / PAR_PAGE));
   const pageCourante = Math.min(page, pages);
   const amendementsPage = amendements.slice((pageCourante - 1) * PAR_PAGE, pageCourante * PAR_PAGE);
-  useEffect(() => setPage(1), [q, instit, sortFiltre, groupeFiltre, natureFiltre, tri]);
+  useEffect(() => setPage(1), [q, sortFiltre, groupeFiltre, natureFiltre, tri]);
 
   const colonnes: Column<Amdt>[] = [
     {
@@ -155,13 +138,6 @@ export default function BaseView() {
     },
     { key: "sort", label: "Sort", width: "8em", render: (a) => SORT_LABEL[a.sort] },
     { key: "date", label: "Dépôt", width: "8em", render: (a) => a.date_depot ? formatDate(a.date_depot) : <span className="text-2">inconnue</span> },
-    {
-      key: "proba",
-      label: "Indicateur de vote",
-      align: "right",
-      width: "13em",
-      render: (a) => <Proba value={a.prediction?.proba_pour ?? null} size="sm" label={a.prediction ? "votes pour prédits" : undefined} />,
-    },
   ];
 
   if (d.status === "inconnu") {
@@ -184,78 +160,21 @@ export default function BaseView() {
         <Link className="btn-secondary" to={`/dossier/${id}`}>Retour au tableau de bord</Link>
       </header>
 
-      <Etat titre="État de la mesure" state={etat} aside={etat.data ? `article ${etat.data.mesure.article}` : undefined}>
-        {(e) => (
-          <>
-            <div>
-              <strong>{e.mesure.label}</strong>{" "}
-              <span className={`base-mesure-statut ${e.mesure.dans_le_texte ? "dans" : "hors"}`}>
-                {e.mesure.dans_le_texte ? "toujours dans le texte" : "retirée du texte"}
-              </span>
-            </div>
-            <p className="base-redaction">{e.mesure.redaction_actuelle}</p>
-            <h4 className="base-sous-titre">Modifications</h4>
-            {e.mesure.modifications.length === 0 ? (
-              <div className="status">aucune modification</div>
-            ) : (
-              <ul className="base-liste">
-                {[...e.mesure.modifications]
-                  .sort((a, b) => b.date.localeCompare(a.date))
-                  .map((m, i) => (
-                    <li key={`${m.date}-${i}`}>
-                      <span className="base-date">{formatDate(m.date)}</span>
-                      <a href={m.url} target="_blank" rel="noreferrer">
-                        {m.par}
-                      </a>
-                      <span>{m.quoi}</span>
-                      <Pourquoi preuve={m.preuve} />
-                    </li>
-                  ))}
-              </ul>
-            )}
-          </>
+      <Etat titre="Textes législatifs" state={texte} aside={texte.data?.texte.etape}>
+        {(t) => (
+          <div className="base-document-row">
+            <div><span className="base-document-kind">Texte suivi</span><strong>{t.texte.titre}</strong></div>
+            <span className="text-2">{t.texte.etape}</span>
+            <a href={t.texte.url} target="_blank" rel="noreferrer">Voir le texte officiel</a>
+          </div>
         )}
       </Etat>
 
-      <Etat titre="État du texte" state={etat} aside={texte.data?.texte.titre}>
+      <Etat titre="Articles" state={etat} aside={etat.data ? `${etat.data.articles.length} documenté${etat.data.articles.length > 1 ? "s" : ""}` : undefined}>
         {(e) => (
           <>
-            {(() => {
-              const te = (e as EtatData & { texte_etat?: TexteEtat }).texte_etat;
-              if (!te) return null;
-              return (
-                <div className="base-texte-etat" data-testid="texte-etat">
-                  <span className={`base-statut base-texte-${te.statut}`}>{TEXTE_STATUT_LABEL[te.statut]}</span>
-                  {te.url ? (
-                    <a href={te.url} target="_blank" rel="noreferrer">
-                      {te.libelle}
-                    </a>
-                  ) : (
-                    <span>{te.libelle}</span>
-                  )}
-                  {te.date && <span className="base-date">{formatDate(te.date)}</span>}
-                  {te.preuve && <Pourquoi preuve={te.preuve} />}
-                </div>
-              );
-            })()}
-            <div>
-              Étape actuelle : <strong>{e.etape}</strong>
-            </div>
-            <h4 className="base-sous-titre">Étapes</h4>
-            <ul className="base-liste">
-              {e.etapes.map((s, i) => (
-                <li key={`${s.nom}-${i}`}>
-                  <span className={`base-statut base-statut-${s.statut}`}>{ETAPE_LABEL[s.statut]}</span>
-                  <span className="base-date">{s.date ? formatDate(s.date) : "date inconnue"}</span>
-                  <a href={s.url} target="_blank" rel="noreferrer">
-                    {s.nom}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <h4 className="base-sous-titre">Articles du sujet</h4>
             {e.articles.length === 0 ? (
-              <div className="status">aucun article</div>
+              <div className="status">Aucun article structuré disponible.</div>
             ) : (
               <ul className="base-liste">
                 {e.articles.map((a) => (
@@ -265,7 +184,6 @@ export default function BaseView() {
                     </a>
                     <span>{a.titre}</span>
                     <span className={`base-statut base-statut-${a.statut}`}>{ARTICLE_LABEL[a.statut]}</span>
-                    <span className="text-2">{a.sort_detail}</span>
                   </li>
                 ))}
               </ul>
@@ -297,15 +215,7 @@ export default function BaseView() {
               <label>Trier par<select value={tri} onChange={(e) => setTri(e.target.value as Tri)}><option value="statut">Statut</option><option value="recent">Dépôt récent</option><option value="numero">Numéro</option></select></label>
             </div>
             </div>
-            <div className="base-filtres" role="group" aria-label="Filtrer par auteur">
-              <button type="button" className="base-puce" aria-pressed={!instit} onClick={() => setInstit(false)}>
-                tous
-              </button>
-              <button type="button" className="base-puce" aria-pressed={instit} onClick={() => setInstit(true)}>
-                Gouvernement et commission ({nInstit})
-              </button>
-            </div>
-            <Table columns={colonnes} rows={amendementsPage} rowKey={(a) => a.id} empty={q || instit || sortFiltre || groupeFiltre || natureFiltre ? "Aucun amendement ne correspond à ces filtres" : "Aucun amendement"} />
+            <Table columns={colonnes} rows={amendementsPage} rowKey={(a) => a.id} empty={q || sortFiltre || groupeFiltre || natureFiltre ? "Aucun amendement ne correspond à ces filtres" : "Aucun amendement"} />
             {amendements.length > PAR_PAGE && <nav className="base-pagination" aria-label="Pagination des amendements">
               <button type="button" disabled={pageCourante === 1} onClick={() => setPage((p) => Math.max(1, p - 1))}>Précédent</button>
               <span>Page {pageCourante} sur {pages} · {amendements.length} amendements</span>
