@@ -8,7 +8,7 @@ import { dirname, join } from "node:path";
 import type { ZodTypeAny } from "zod";
 import {
   ConfigSchema, NoteSchema, SCHEMAS, dataPath,
-  type Action, type Config, type Deputes, type Etat, type Nouveautes, type Groupes, type Kind, type Note, type Source, type Suite, type Texte, type Verdict,
+  type Config, type Etat, type Nouveautes, type Kind, type Note, type Source, type Suite, type Texte, type Verdict,
 } from "../../contracts/index";
 import { chiffresUtilises, coutCumule, redigerVerifie } from "../lib/llm";
 import { verifierChiffres } from "../lib/verif";
@@ -25,7 +25,7 @@ const OUT = opt("out", "data")!;
 const SEUL = opt("dossier", null);
 const ICI = dirname(new URL(import.meta.url).pathname);
 
-function lire<T>(fichier: string, kind: Kind, limites: string[]): T | null {
+function lire<T>(fichier: string, kind: Kind, _limites: string[]): T | null {
   if (!existsSync(fichier)) {
     return null; // l'absence est dite en clair par construireFaits
   }
@@ -42,10 +42,6 @@ function nombresDe(s: string): string[] {
   return [...s.replace(/(\d)[   ](?=\d{3}(?!\d))/g, "$1").matchAll(/(?<![\p{L}\d])\d+(?:[.,]\d+)?(?![\p{L}\d])/gu)].map((m) => m[0].replace(",", "."));
 }
 
-const resumeCourt = (r: string) => {
-  const m = r.replace(/^(cet amendement|l.amendement) (vise à|propose de|a pour objet de)\s*/i, "").replace(/\.$/, "").split(/\s+/);
-  return min1(m.slice(0, 12).join(" ") + (m.length > 12 ? "…" : ""));
-};
 /**
  * Décision de 14 h 57 : date_reference = matin de ce jour. Un dépôt, une publication ou une annonce du jour est connu ;
  * un sort, un scrutin, une séance ou une décision du jour ne l'est pas.
@@ -59,7 +55,6 @@ function connuA(ev: { date: string; type: string }, ref: string | null): boolean
 function datePasPubliee(ev: { preuve: { raisonnement: string } }): boolean {
   return /date[^.;]{0,30}non publiée|date de repli|daté par repli/i.test(ev.preuve.raisonnement);
 }
-const pct = (p: number) => `${Math.round(p * 100)} %`;
 const dateFr = (iso: string) => {
   const [a, m, j] = iso.split("-").map(Number);
   const mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"][m - 1];
@@ -69,17 +64,18 @@ const SITUATION: Record<string, string> = {
   favorable: "en bonne voie", incertaine: "incertain", defavorable: "mal engagé", insuffisant: "impossible à évaluer faute d'information suffisante",
 };
 const TENDANCE: Record<string, string> = { amelioration: "en amélioration", stable: "stable", degradation: "en dégradation" };
-const ROLE: Record<string, string> = {
-  rapporteur: "le rapporteur", rapporteur_general: "le rapporteur général", rapporteur_avis: "le rapporteur pour avis",
-  gouvernement: "le gouvernement", chef_de_file: "le chef de file", president_commission: "le président de commission",
-};
-const SORT: Record<string, string> = { adopte: "adopté", rejete: "rejeté", retire: "retiré", tombe: "tombé", non_examine: "non examiné" };
-
 type Faits = { phrases: string[]; prios: number[]; chiffres: string[]; sources: Source[]; limites: string[] };
 const min1 = (t: string) => t.charAt(0).toLowerCase() + t.slice(1);
 
+/** Les groupes et sièges fournis au pipeline sont ceux de l'Assemblée, jamais une base de positions sénatoriales. */
+function lectureCoherente(texte: string): boolean {
+  const senatParGroupes = /au Sénat[^.]{0,220}\b(groupes?|sièges?|députés?|Assemblée nationale)\b|\b(groupes?|sièges?|députés?)\b[^.]{0,160}au Sénat/i;
+  const texteConfonduAvecMesure = /\b(mesure|taxe|dispositif)\b[^.]{0,80}\b(a été|est|se trouve)?\s*(rejeté|adopté)e?\b/i;
+  return !senatParGroupes.test(texte) && !texteConfonduAvecMesure.test(texte);
+}
+
 /** Construit les faits du compte rendu, par ordre de priorité, avec leurs chiffres et leurs sources. */
-function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Action | null, t: Texte | null, groupes: Groupes | null, deputes: Deputes | null, limites: string[]): Faits {
+function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, limites: string[]): Faits {
   const phrases: string[] = [];
   const prios: number[] = [];
   const chiffres: string[] = [];
@@ -91,22 +87,15 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
     chiffres.push(...nombres, ...nombresDe(phrase));
     if (src) sources.push(src);
   };
-  const sigle = (id: string | null) => (id && groupes?.groupes.find((g) => g.id === id)?.sigle) || null;
-  const nom = (pa: string) => {
-    const x = deputes?.deputes.find((p) => p.id === pa);
-    return x ? `${x.prenom} ${x.nom}` : null;
-  };
   const ref = d.date_reference;
 
   // 1. Verdict de l'objectif principal et pourquoi.
   const vp = v?.verdicts.find((x) => x.objectif_rang === 1);
   if (vp) {
     let ph = `Objectif principal, « ${d.objectifs[0].texte} » : ${SITUATION[vp.situation]}`;
-    // Complément 4 : le score est un rapport de forces, jamais un pourcentage seul.
-    if (vp.score !== null) ph += `, ${pct(vp.score)} des sièges favorables à l'objectif`;
     ph += `, tendance ${TENDANCE[vp.tendance]}.`;
-    ajouter(1, ph, vp.score !== null ? [String(vp.score)] : []);
-    if (vp.lecture.verifie && !interditsAbsolus(vp.lecture.texte).length) ajouter(2, vp.lecture.texte, vp.lecture.chiffres_utilises);
+    ajouter(1, ph);
+    if (vp.lecture.verifie && lectureCoherente(vp.lecture.texte) && !interditsAbsolus(vp.lecture.texte).length) ajouter(2, vp.lecture.texte, vp.lecture.chiffres_utilises);
     const fav = vp.favorable[0];
     const blq = vp.bloquant[0];
     if (fav) ajouter(6, `Ce qui joue pour le client : ${min1(fav.titre).replace(/\.$/, "")}.`, [], fav.preuve.sources[0]);
@@ -114,41 +103,13 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
     const blqAmdt = vp.bloquant.find((b, i) => i > 0 && /n° \d/.test(b.titre));
     if (blqAmdt) ajouter(2, `Ce qui coince aussi : ${min1(blqAmdt.titre.replace(/\.$/, ""))}.`, [], blqAmdt.preuve.sources[0]);
     if (blq) ajouter(5, `Ce qui coince : ${min1(blq.titre).replace(/\.$/, "")}.`, [], blq.preuve.sources[0]);
-    if (vp.cause_du_changement) ajouter(3, `Ce qui a fait bouger le verdict : ${min1(vp.cause_du_changement.titre).replace(/\.$/, "")}.`, [], vp.cause_du_changement.preuve.sources[0]);
+    if (vp.cause_du_changement) {
+      const lien = vp.cause_du_changement.preuve.nature === "fait" ? "Évolution documentée" : "Élément associé à l'évolution";
+      ajouter(3, `${lien} : ${min1(vp.cause_du_changement.titre).replace(/\.$/, "")}.`, [], vp.cause_du_changement.preuve.sources[0]);
+    }
   } else limites.push("verdict pas encore disponible");
 
-  // 2. Amendements avec prédiction (ceux sans prédiction sont exclus des comptes).
-  if (t) {
-    const avecPred = t.amendements.filter((x) => x.prediction && (!ref || x.prediction.date <= ref));
-    const exclus = t.amendements.length - avecPred.length;
-    if (avecPred.length) {
-      const parSort: Record<string, number> = {};
-      for (const x of avecPred) {
-        // Rien de postérieur à la date de référence : le sort est lu tel que P3 l'a filtré.
-        parSort[x.sort] = (parSort[x.sort] ?? 0) + 1;
-      }
-      const attente = parSort.en_attente ?? 0;
-      const tranches = Object.entries(parSort).filter(([k]) => k !== "en_attente").map(([k, n]) => `${n} ${SORT[k]}${n > 1 ? "s" : ""}`);
-      ajouter(
-        5,
-        `Sur ${avecPred.length} amendements du sujet dotés d'une prédiction, ${attente === 0 ? "aucun n'est" : `${attente} ${attente > 1 ? "sont" : "est"}`} en attente${tranches.length ? ` ; ${tranches.join(", ")}` : ""}.`,
-        [String(avecPred.length), ...(attente ? [String(attente)] : []), ...Object.values(parSort).filter((n) => n !== 0).map(String)],
-      );
-      const enAttente = avecPred.filter((x) => x.sort === "en_attente").sort((x, y) => y.prediction!.confiance - x.prediction!.confiance).slice(0, 2);
-      for (const x of enAttente) {
-        const g = sigle(x.groupe_id);
-        ajouter(
-          7,
-          `Amendement n° ${x.numero}${g ? ` (${g})` : ""}, ${resumeCourt(x.resume)} : Orcet prédit en moyenne ${pct(x.prediction!.proba_pour)} de votes pour.`,
-          [x.numero, String(x.prediction!.proba_pour)],
-          { label: `Amendement n° ${x.numero}`, url: x.url },
-        );
-      }
-    }
-    if (exclus > 0) limites.push(`amendements sans prédiction Orcet exclus des comptes`);
-  } else limites.push("amendements pas encore disponibles");
-
-  // 3. Prochaines dates.
+  // 2. Prochaines dates.
   if (s) {
     const occ = s.derniere_occasion;
     const proch = s.echeances.find((e) => e.date && (!ref || e.date >= ref) && e.date !== occ?.date);
@@ -158,25 +119,7 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
     if (occ && !occ.date) ajouter(3, `Dernière occasion d'agir (date non fixée) : ${min1(occ.titre.replace(/\.$/, ""))}.`, [], { label: occ.titre, url: occ.url });
     const sansDate = s.echeances.filter((e) => !e.date && e.titre !== occ?.titre).slice(0, 2);
     if (!proch?.date && sansDate.length) ajouter(4, `Étapes suivantes, dates non fixées : ${sansDate.map((e) => min1(e.titre.replace(/\.$/, ""))).join(" ; ")}.`, [], { label: sansDate[0].titre, url: sansDate[0].url });
-    // Une prédiction Orcet sur un amendement n'est jamais une issue : ces probables sont écartés (garde-fou).
-    const prob = s.probables.find((p) => p.proba !== null && !/amendement|n° \d/i.test(p.titre));
-    if (prob) ajouter(8, `Issue la plus probable selon l'outil : ${min1(prob.titre.replace(/\.$/, ""))}.`);
   } else limites.push("prochaines dates pas encore disponibles");
-
-  // 4. Sur qui agir.
-  if (a) {
-    const dec = a.decideurs.filter((x) => x.position !== "inconnue").slice(0, 2)
-      .map((x) => `${x.depute_id ? x.nom : ROLE[x.role]} (${x.position === "pour" ? "pour" : "contre"} la mesure)`);
-    if (dec.length) ajouter(6, `Ceux qui décident : ${dec.join(", ")}.`);
-    const act = a.groupes.actionnables.slice(0, 3).map((x) => {
-      const n = nom(x.depute_id);
-      const g = sigle(x.groupe_id);
-      return n ? `${n}${g ? ` (${g})` : ""}` : null;
-    }).filter(Boolean);
-    if (act.length) ajouter(4, `Députés sur qui agir en priorité : ${act.join(", ")}.`);
-    const camp = d.objectifs[0].position_cible === "contre" ? a.arguments.contre : a.arguments.pour;
-    if (camp[0]) ajouter(9, `Argument déjà entendu en faveur du client : ${camp[0].argument.replace(/\.$/, "")}.`, [], { label: `Intervention du ${camp[0].date}`, url: camp[0].url });
-  } else limites.push("députés à approcher pas encore disponibles");
 
   // Ne garde que les chiffres réellement utiles et sans doublon.
   return { phrases, prios, chiffres: [...new Set(chiffres)], sources, limites };
@@ -222,6 +165,11 @@ function interdits(texte: string, f: Faits): string[] {
     .filter((n) => n.length > 3);
   const faits = f.phrases.join(" ").toLowerCase();
   const fautes: string[] = [...interditsAbsolus(texte)];
+  if (!lectureCoherente(texte)) fautes.push("confusion entre chambre, texte et mesure");
+  for (const re of [/\bOrcet\b/i, /\d+(?:[.,]\d+)?\s?%\s+des sièges/i, /^Limites\s*:/im, /Députés? sur qui agir/i]) {
+    const m = texte.match(re);
+    if (m) fautes.push(m[0]);
+  }
   for (const re of absolus) {
     const m = texte.match(re);
     if (m && !faits.includes(m[0].toLowerCase())) fautes.push(m[0]);
@@ -257,6 +205,10 @@ function dedoublonnerSources(src: Source[]): Source[] {
   return src.filter((x) => (vus.has(x.url + x.label) ? false : (vus.add(x.url + x.label), true)));
 }
 
+function sourceClient(source: Source): boolean {
+  return !/orcet|prédictions?|hemicycle\.ai\/v1\/orcet/i.test(`${source.label} ${source.url}`);
+}
+
 function mots(t: string) {
   return t.split(/\s+/).filter(Boolean).length;
 }
@@ -273,7 +225,13 @@ function gabaritIntegre(d: Dossier, f: Faits): string {
     garde.add(i);
     n += m;
   }
-  return [entete, ...f.phrases.filter((_, i) => garde.has(i))].join(" ");
+  const retenues = f.phrases.filter((_, i) => garde.has(i));
+  const estEtape = (phrase: string) => /^(Prochaine date|Ensuite|Dernière occasion|Étapes suivantes)/.test(phrase);
+  const estEvolution = (phrase: string) => /^(Nouveau le|Évolution documentée|Élément associé)/.test(phrase);
+  const situation = retenues.filter((p) => !estEvolution(p) && !estEtape(p));
+  const evolution = retenues.filter(estEvolution);
+  const etapes = retenues.filter(estEtape);
+  return [[entete, ...situation].join(" "), evolution.join(" "), etapes.join(" ")].filter(Boolean).join("\n\n");
 }
 
 function remplir(modele: string, vars: Record<string, string>): string {
@@ -282,6 +240,11 @@ function remplir(modele: string, vars: Record<string, string>): string {
 
 function promptNote(d: Dossier, f: Faits): { system: string; user: string } {
   const p = promptNoteBrut(d, f);
+  p.system +=
+    " Le livrable est un brief exécutif en trois paragraphes courts séparés par une ligne vide : situation, faits déterminants, prochaines étapes. " +
+    "N'inclus ni score, ni valeur ou mention Orcet, ni liste de députés, ni paragraphe de limites techniques. " +
+    "Les positions de groupes de l'Assemblée nationale ne décrivent jamais le Sénat. Le rejet du texte n'est jamais le rejet de la mesure.";
+  p.user += "\n\nRends uniquement les trois paragraphes du brief. N'ajoute ni score, ni cible individuelle, ni limites techniques.";
   if (d.date_reference) p.user += `\n\nLa date de situation est le matin du ${dateFr(d.date_reference)} : ce qui est prévu ce jour-là est à venir, écris-le au présent ou au futur, jamais au passé.`;
   return p;
 }
@@ -295,7 +258,8 @@ function promptNoteBrut(d: Dossier, f: Faits): { system: string; user: string } 
     date_reference: d.date_reference ? dateFr(d.date_reference) : "aujourd'hui",
     faits: f.phrases.map((p) => `- ${p}`).join("\n"),
     chiffres: f.chiffres.join(", "),
-    limites: f.limites.join(" ; "),
+    // Les limites restent dans note.limites/meta.limits, jamais dans le brief client.
+    limites: "",
   };
   const fichier = join(ICI, "prompts", "note.md");
   if (existsSync(fichier)) {
@@ -310,25 +274,23 @@ function promptNoteBrut(d: Dossier, f: Faits): { system: string; user: string } 
       "Français, phrases courtes, ton factuel, pas de jargon, pas de titre, pas de liste. 150 mots au plus, jamais davantage. " +
       "Tu décris, tu ne conseilles pas : aucune phrase ne dit au cabinet quoi faire, qui cibler ou sur qui agir, sauf la liste de députés fournie. " +
       "Tu n'utilises que les faits fournis, tu n'inventes rien. Tu n'écris aucun nombre absent de la liste autorisée. " +
-      "Écris les probabilités en pourcentage (0.24 s'écrit 24 %). Une prédiction Orcet est une moyenne des probabilités individuelles de voter pour, jamais une probabilité d'adoption. " +
-      "N'en déduis jamais qu'un amendement ou la mesure sera adopté ou rejeté, Tu n'écris jamais « probabilité » ni « chances ». Le score du verdict s'écrit toujours « X % des sièges favorables à l'objectif », jamais un pourcentage seul à côté de favorable ou défavorable. " +
-      "Tu ne donnes aucun conseil ni aucune cible qui ne figure pas mot pour mot dans les faits ; si aucun député n'est cité, tu n'en désignes pas. " +
+      "N'en déduis jamais qu'un amendement ou la mesure sera adopté ou rejeté. Tu n'écris jamais « probabilité » ni « chances ». " +
+      "Tu ne donnes aucun conseil et tu ne désignes aucune cible individuelle. " +
       "Pas d'heure, seulement des dates. Un vote en commission n'est pas une adoption ; l'Assemblée n'est pas l'issue finale. Ne mélange jamais rejeté, retiré, tombé et non examiné.",
     user:
       `Client : ${vars.client}. Mesure suivie : ${vars.mesure}. Objectif principal : ${vars.objectif}. Replis : ${vars.replis || "aucun"}. ` +
       `Situation au ${vars.date_reference}.\n\nFaits :\n${vars.faits}\n\n` +
-      `Rédige le compte rendu dans cet ordre : verdict et pourquoi, ce qui a bougé, prochaines dates${f.phrases.some((p) => p.startsWith("Députés sur qui agir")) ? ", sur qui agir (uniquement les députés cités)" : ". Ne dis pas sur qui agir : la liste n'est pas encore prête"}. Termine par une phrase de limites si elles existent : ` +
-      (vars.limites || "aucune") + ".",
+      "Rédige le compte rendu dans cet ordre : situation et pourquoi, faits déterminants, prochaines étapes. Sépare ces trois parties par une ligne vide.",
   };
 }
 
-type Entrees = { v: Verdict | null; s: Suite | null; a: Action | null; n: Nouveautes | null; e: Etat | null };
+type Entrees = { v: Verdict | null; s: Suite | null; n: Nouveautes | null; e: Etat | null };
 
 /**
  * Gabarit de X3 (prompts/gabarit-note.md) : blocs ```gabarit id=...```, variables {{x}}, ordre et conditions
  * de la section « Blocs ». Renvoie null si le fichier manque, si un bloc manque ou si une variable reste vide.
  */
-function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
+function gabaritX3(d: Dossier, x: Entrees, _limites: string): string | null {
   const fichier = join(ICI, "prompts", "gabarit-note.md");
   if (!existsSync(fichier) || !x.v) return null;
   const blocs: Record<string, string> = {};
@@ -340,6 +302,7 @@ function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
   const NIV: Record<string, string> = { elevee: "élevée", moyenne: "moyenne", faible: "faible" };
   const EFF: Record<string, string> = { renforce: "favorable au client", affaiblit: "défavorable au client", neutre: "sans effet sur le verdict" };
   const v1 = x.v.verdicts.find((y) => y.objectif_rang === 1)!;
+  if (!lectureCoherente(v1.lecture.texte)) return null;
   const ref = d.date_reference;
   const evs = (x.n?.evenements ?? []).filter((ev) => connuA(ev, ref) && !datePasPubliee(ev));
   const vars: Record<string, string> = {
@@ -351,8 +314,6 @@ function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
     tendance_mot: TENDANCE[v1.tendance],
     niveau_mot: NIV[v1.confiance.niveau],
     lecture_1: avecPoint(v1.lecture.texte),
-    score_1: v1.score !== null ? pct(v1.score) : "",
-    limites: avecPoint(limites),
   };
   evs.slice(0, 2).forEach((ev, i) => {
     vars[`ev_${i + 1}`] = sansPoint(ev.titre);
@@ -367,11 +328,6 @@ function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
     vars.derniere_occasion = sansPoint(x.s.derniere_occasion.titre);
     vars.derniere_occasion_date = df(x.s.derniere_occasion.date);
   }
-  if (x.a) {
-    vars.n_actionnables = String(x.a.groupes.actionnables.length);
-    vars.n_allies = String(x.a.groupes.allies.length);
-    vars.n_perdus = String(x.a.groupes.perdus.length);
-  }
   const morceaux: string[] = [];
   const bloc = (id: string, extra: Record<string, string> = {}) => {
     const b = blocs[id];
@@ -385,7 +341,7 @@ function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
   };
   try {
     bloc("note.entete");
-    bloc(v1.score !== null || !blocs["note.verdict.sans_score"] ? "note.verdict" : "note.verdict.sans_score");
+    bloc("note.verdict.sans_score");
     for (const vr of [...x.v.verdicts].filter((y) => y.objectif_rang > 1).sort((a, b) => a.objectif_rang - b.objectif_rang)) {
       const o = d.objectifs.find((y) => y.rang === vr.objectif_rang);
       if (o) bloc("note.repli", { objectif_n: sansPoint(o.texte), situation_mot: SIT[vr.situation] });
@@ -395,13 +351,11 @@ function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
     const occ = x.s?.derniere_occasion;
     if (e0 && !(occ && occ.date && occ.date === e0.date)) bloc("note.dates.echeance");
     if (occ) bloc("note.dates.derniere");
-    bloc("note.action");
-    bloc(limites ? "note.limites" : "note.limites.defaut");
   } catch (err) {
     console.warn(`${d.id} : gabarit de X3 inutilisable (${String(err)}), gabarit intégré`);
     return null;
   }
-  return morceaux.join(" ");
+  return morceaux.join("\n\n");
 }
 
 async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: string; fautifs: string[]; verifie: boolean; mots: number }> {
@@ -409,13 +363,10 @@ async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: str
   const p = (k: Kind) => dataPath(d.id, k, undefined, SOURCE);
   const v = lire<Verdict>(p("verdict"), "verdict", limites);
   const s = lire<Suite>(p("suite"), "suite", limites);
-  const a = lire<Action>(p("action"), "action", limites);
   const t = lire<Texte>(p("texte"), "texte", limites);
-  const groupes = lire<Groupes>(dataPath(null, "groupes", undefined, SOURCE), "groupes", []);
-  const deputes = lire<Deputes>(dataPath(null, "deputes", undefined, SOURCE), "deputes", []);
   const n = lire<Nouveautes>(p("nouveautes"), "nouveautes", limites);
   const e = lire<Etat>(p("etat"), "etat", limites);
-  const f = construireFaits(d, v, s, a, t, groupes, deputes, limites);
+  const f = construireFaits(d, v, s, limites);
   // Ce qui a bougé (nouveautes.json, déjà trié par importance) : les deux premiers événements datés au plus tard à la référence.
   const EFFET: Record<string, string> = { renforce: "favorable au client", affaiblit: "défavorable au client", neutre: "sans effet sur le verdict" };
   for (const ev of (n?.evenements ?? []).filter((x) => connuA(x, d.date_reference) && !datePasPubliee(x)).slice(0, 2)) {
@@ -430,30 +381,20 @@ async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: str
 
   const limitesTexte = f.limites.length ? f.limites.join(" ; ") + "." : "";
   // Gabarit : celui de X3 s'il s'applique, sinon le gabarit intégré. Ses nombres viennent des fichiers sources.
-  const gx3 = gabaritX3(d, { v, s, a, n, e }, limitesTexte);
-  // Contrôle croisé de qa/croise.ts : la note reprend la situation et le score de l'objectif principal de verdict.json.
+  const gx3 = gabaritX3(d, { v, s, n, e }, limitesTexte);
+  // Le brief reprend la situation du verdict, sans imposer son score ni ses détails de calcul.
   const v0 = v?.verdicts.find((y) => y.objectif_rang === 1) ?? null;
-  const pctScore = v0 && v0.score !== null ? pct(v0.score) : null;
   const MOTS: Record<string, string[]> = { favorable: ["favorable", "bonne voie"], incertaine: ["incertain"], defavorable: ["défavorable", "mal engagé"], insuffisant: ["pas assez d'information", "insuffisant", "indécidable"] };
   const manquants = (texte: string): string[] => {
     const t = texte.toLowerCase();
     const out: string[] = [];
     if (v0 && !(MOTS[v0.situation] ?? []).some((m) => t.includes(m))) out.push(`situation (${MOTS[v0.situation]?.[0]})`);
-    if (pctScore && !t.includes(pctScore) && !t.includes(pctScore.replace(" %", "%"))) out.push(`score « ${pctScore} des sièges favorables à l'objectif »`);
     // La tendance écrite est celle de verdict.json (« s'est dégradée » interdit si la tendance est stable).
     if (v0 && v0.tendance !== "degradation" && /(s'est|se sont|a) (dégradée?s?|détérioré)|se dégrade|en dégradation/i.test(texte)) out.push(`tendance ${TENDANCE[v0.tendance]}, pas de dégradation`);
     if (v0 && v0.tendance !== "amelioration" && /(s'est|se sont|a) (améliorée?s?)|s'améliore|en amélioration/i.test(texte)) out.push(`tendance ${TENDANCE[v0.tendance]}, pas d'amélioration`);
-    const num = v0?.bloquant.slice(1).find((b) => /n° \d/.test(b.titre))?.titre.match(/n° (\d+)/)?.[1];
-    if (num && !t.includes(num)) out.push(`ce qui coince : l'amendement n° ${num}`);
     return out;
   };
   let texteGabarit = gx3 ?? gabaritIntegre(d, f);
-  if (pctScore && manquants(texteGabarit).some((m) => m.startsWith("score"))) {
-    const phrase = ` ${pctScore} des sièges sont favorables à l'objectif principal.`;
-    const i = texteGabarit.search(/confiance \S+\./);
-    texteGabarit = i >= 0 ? texteGabarit.replace(/(confiance \S+\.)/, `$1${phrase}`) : texteGabarit.replace(/^([^.]*\.)/, `$1${phrase}`);
-  }
-  if (v0?.score != null) autorises.push(String(v0.score), String(Math.round(v0.score * 100)));
   if (gx3) autorises.push(...nombresDe(gx3).filter((c) => !autorises.includes(c)), ...[s?.derniere_occasion?.date, s?.echeances[0]?.date, ...(n?.evenements ?? []).slice(0, 2).map((ev) => ev.date)].filter((c): c is string => !!c));
   // Garde-fous du rendu final, contrôlés après le vérificateur de chiffres : 2 relances au plus, sinon gabarit.
   const prompt = promptNote(d, f);
@@ -467,8 +408,8 @@ async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: str
       r = { texte: texteGabarit, mode: "gabarit", chiffres_utilises: chiffresUtilises(texteGabarit, autorises), fautifs: [], modele: null, verifie: verifierChiffres(texteGabarit, autorises).ok, tentatives: r.tentatives };
     }
   }
-  const metaSources = dedoublonnerSources([...(v?.meta.sources ?? []), ...(t?.meta.sources ?? [])]);
-  const sources = dedoublonnerSources(f.sources).slice(0, 8);
+  const metaSources = dedoublonnerSources([...(v?.meta.sources ?? []), ...(t?.meta.sources ?? [])]).filter(sourceClient);
+  const sources = dedoublonnerSources(f.sources).filter(sourceClient).slice(0, 8);
   const limitesNote = limitesTexte || "Aucune limite signalée par les fichiers sources.";
   const note: Note = {
     meta: {
