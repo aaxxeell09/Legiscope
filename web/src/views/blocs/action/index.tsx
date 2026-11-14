@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import type { Action, Argument, DeputeAction, FichesIndex } from "@contracts/index";
 import { Etat, Meta, Pourquoi } from "../../../components";
 import { useData } from "../../../lib/data";
-import { formatProba } from "../../../lib/format";
 import {
   FONDEMENT,
   GROUPE_ACTION,
@@ -64,6 +63,10 @@ function repartir(a: Action) {
 
 function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossier: string; annuaire: Annuaire; disponibles: string[] | null }) {
   const { groupes, inconnus } = repartir(a);
+  const [tousDecideurs, setTousDecideurs] = useState(false);
+  const [toutesReponses, setToutesReponses] = useState(false);
+  const decideursVisibles = tousDecideurs ? a.decideurs : a.decideurs.slice(0, 4);
+  const reponsesVisibles = toutesReponses ? a.contre_arguments : a.contre_arguments.slice(0, 4);
   return (
     <>
       <section className="action-section action-decideurs">
@@ -72,7 +75,7 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
           <div className="p7-vide">aucun · {a.meta.limits}</div>
         ) : (
           <ul className="action-decideurs-list">
-            {a.decideurs.map((d, i) => (
+            {decideursVisibles.map((d, i) => (
               <li key={`${d.role}-${d.depute_id ?? i}`} className="action-decideur">
                 <div className="action-role">{ROLE_DECIDEUR[d.role]}</div>
                 <div className="p7-ligne action-personne">
@@ -87,6 +90,7 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
             ))}
           </ul>
         )}
+        {a.decideurs.length > 4 && <button type="button" className="action-disclosure" onClick={() => setTousDecideurs((v) => !v)}>{tousDecideurs ? "Réduire" : `Voir tous les acteurs (${a.decideurs.length})`}</button>}
       </section>
 
       <CategoriesDeputes groupes={groupes} inconnus={inconnus} raisonVide={a.meta.limits} dossier={dossier} annuaire={annuaire} disponibles={disponibles} />
@@ -102,7 +106,7 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
           <div className="p7-vide">aucun · {a.meta.limits}</div>
         ) : (
           <ul className="action-reponses-list">
-            {a.contre_arguments.map((c, i) => (
+            {reponsesVisibles.map((c, i) => (
               <li key={i} className="action-reponse">
                 <div className="action-reponse-cible"><span>Répond à</span>{c.repond_a}</div>
                 <div className="action-reponse-texte">{c.texte}</div>
@@ -114,6 +118,7 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
             ))}
           </ul>
         )}
+        {a.contre_arguments.length > 4 && <button type="button" className="action-disclosure" onClick={() => setToutesReponses((v) => !v)}>{toutesReponses ? "Réduire" : `Voir toutes les réponses (${a.contre_arguments.length})`}</button>}
       </section>
 
       <Meta meta={a.meta} />
@@ -199,7 +204,6 @@ function ColonneGroupe({
                 <div className="p7-ligne">
                   <span className="p7-nom">{annuaire.nom(d.depute_id)}</span>
                   <Tag annuaire={annuaire} groupeId={d.groupe_id} />
-                  <span className="p7-score p7-droite">{formatProba(d.score)}</span>
                 </div>
                 <div>{d.raison}</div>
                 <div className="p7-ligne">
@@ -271,7 +275,7 @@ function ColonneArguments({ titre, args, annuaire, raisonVide }: { titre: string
           {visibles.map((g, i) => (
             <li key={`${g.url}-${i}`} className="p7-item">
               <div className="p7-nom">{g.argument}</div>
-              <p className="p7-citation">« {g.citation} »</p>
+              <details className="action-citation"><summary>Lire la citation originale</summary><p className="p7-citation">« {g.citation} »</p></details>
               <div className="p7-ligne">
                 {g.orateur_id ? (
                   <>
