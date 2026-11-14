@@ -191,7 +191,7 @@ async function traiterDossier(dossier: DossierConfig, config: Config) {
       numero: a.numero,
       sort_libelle: s.libelle,
       date_depot: a.date_depot,
-      date_sort: ref && a.date_sort && a.date_sort > ref ? null : a.date_sort,
+      date_sort: ref && a.date_sort && a.date_sort >= ref ? null : a.date_sort,
       article: a.article_designation,
     };
     for (const [id, role] of concernes) {
@@ -207,7 +207,7 @@ async function traiterDossier(dossier: DossierConfig, config: Config) {
     `Sujet = mots-clés de config.json (${dossier.sujet.mots_cles.join(", ")}) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article ${dossier.mesure.article}.`,
     "Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté.",
     "Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle.",
-    ref ? `Rejeu au ${ref} : amendements déposés après exclus, sort postérieur rendu en_attente (${rejoues} cas).` : "Pas de date de référence : sorts au jour de l'archive.",
+    ref ? `Rejeu au matin du ${ref} : amendements déposés après ce jour exclus, sort daté de ce jour ou après rendu en_attente (${rejoues} cas).` : "Pas de date de référence : sorts au jour de l'archive.",
     "« travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
   ].join(" ");
 

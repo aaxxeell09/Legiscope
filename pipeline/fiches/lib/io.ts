@@ -57,9 +57,15 @@ export function aujourdhui(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
-/** true si `date` dépasse la date de référence (quand elle est posée). */
+/** true si `date` dépasse la date de référence (quand elle est posée) : un dépôt, une publication ou une déclaration du jour même est connu. */
 export function posterieur(date: string, reference: string | null): boolean {
   return reference !== null && date > reference;
+}
+
+/** La date de référence se lit comme le MATIN de ce jour (décision du 14 novembre, 14 h 57) : un sort, un scrutin,
+ *  une séance, une réunion ou une intervention datés de ce jour-là ne sont pas encore connus. */
+export function pasEncoreConnu(date: string, reference: string | null): boolean {
+  return reference !== null && date >= reference;
 }
 
 const MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];

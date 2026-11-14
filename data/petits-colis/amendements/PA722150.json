@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:59:44+01:00",
+    "generated_at": "2026-11-14T14:59:43+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, amendements (17e législature)",
@@ -11,7 +11,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B1906"
       }
     ],
-    "limits": "Source : open data Assemblée nationale (cache pipeline/amendements/cache/petits-colis.json), 13676 amendements du texte, 95 sur le sujet. Sujet = mots-clés de config.json (petits colis, colis, franchise douanière) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article 22. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Rejeu au 2025-11-18 : amendements déposés après exclus, sort postérieur rendu en_attente (23 cas). « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "limits": "Source : open data Assemblée nationale (cache pipeline/amendements/cache/petits-colis.json), 13676 amendements du texte, 95 sur le sujet. Sujet = mots-clés de config.json (petits colis, colis, franchise douanière) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article 22. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Rejeu au matin du 2025-11-19 : amendements déposés après ce jour exclus, sort daté de ce jour ou après rendu en_attente (28 cas). « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
     "producer": "pipeline/amendements",
     "dossier_id": "petits-colis"
   },

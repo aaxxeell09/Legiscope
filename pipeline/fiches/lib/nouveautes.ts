@@ -11,7 +11,7 @@ import { join } from "node:path";
 import { dataPath, type AmendementTexte, type Effet, type Evenement, type Nouveautes, type Preuve, type Sort, type Source } from "../../../contracts/index";
 import { candidats } from "./fiches";
 import { amendementDuTexte, dateEtape, sigleGroupe, type Contexte } from "./contexte";
-import { aujourdhui, dateFr, ecrireJson, fusionnerSources, lireJsonBrut, lireKind, listerJson, maintenant, noter, posterieur, slug } from "./io";
+import { aujourdhui, dateFr, ecrireJson, fusionnerSources, lireJsonBrut, lireKind, listerJson, maintenant, noter, pasEncoreConnu, posterieur, slug } from "./io";
 import { SORT_LIBELLE } from "./gabarits";
 import { datesDepotDepuisEvenements, lireEvenementsTexte, type EvenementsTexte } from "./evenements-api";
 
@@ -202,7 +202,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   // Scrutins bruts liés au sujet (P1).
   // Un scrutin n'est rattaché au texte que s'il est postérieur à son dépôt (les écarts des pivots couvrent d'autres textes).
   const dateDepotTexte = (ctx.etat?.etapes ?? []).filter((e) => e.date && e.statut !== "a_venir").map((e) => e.date as string).sort()[0] ?? null;
-  const scrutins = lireScrutins(ctx).filter((s) => scrutinLie(ctx, s) && !posterieur(s.date, ref) && (!dateDepotTexte || s.date >= dateDepotTexte));
+  const scrutins = lireScrutins(ctx).filter((s) => scrutinLie(ctx, s) && !pasEncoreConnu(s.date, ref) && (!dateDepotTexte || s.date >= dateDepotTexte));
   if (!existsSync(join(root, "raw", "scrutins"))) limites.push("data/raw/scrutins absent : aucun scrutin nominatif lu.");
   const scrutinParNumero = new Map<string, Scrutin>();
   for (const s of scrutins) for (const n of numerosDuTitre(s.titre)) if (!scrutinParNumero.has(n)) scrutinParNumero.set(n, s);
@@ -239,7 +239,8 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   // Un amendement du texte n'est un événement du dossier que si son résumé cite la mesure (mots-clés du sujet,
   // article de la mesure) ou s'il a été travaillé avec le client : les autres amendements du même article ou du
   // même texte sont écartés et comptés (P0, 14 h 05 : un amendement sur les pensions remontait en cause du verdict).
-  const toucheLaMesure = (a: AmendementTexte) => (natureDe(a) !== null && natureDe(a) !== "autre") || citeSujet(a) || citeArticle(a) || avecClient.has(a.id) || retenusA3.has(a.id);
+  const duGouvernement = (a: AmendementTexte) => (a as any).auteur_type === "gouvernement";
+  const toucheLaMesure = (a: AmendementTexte) => (natureDe(a) !== null && natureDe(a) !== "autre") || duGouvernement(a) || citeSujet(a) || citeArticle(a) || avecClient.has(a.id) || retenusA3.has(a.id);
   const supprimeLaMesure = (a: AmendementTexte) => natureDe(a) === "supprime" || (natureDe(a) === null && /supprim/i.test(a.resume) && (citeArticle(a) || citeSujet(a)));
   const cleGroupe = (a: AmendementTexte) => `${a.resume.toLowerCase().replace(/\s+/g, " ").slice(0, 80)}|${a.groupe_id ?? "NI"}|${a.sort}`;
   const groupesAm = new Map<string, AmendementTexte[]>();
@@ -267,11 +268,14 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
       ecartes += liste.length;
       continue;
     }
-    const { camp: campBrut, raison, fonde } = campAmendement(ctx, a);
+    let { camp: campBrut, raison, fonde } = campAmendement(ctx, a);
+    // Un amendement du Gouvernement qui ne supprime, réduit ni reporte la mesure la défend (le Gouvernement en est l'auteur) :
+    // c'est l'avis du Gouvernement, importance 3 (le compromis I-4086 sur les petits colis).
+    if (duGouvernement(a) && campBrut !== "contre_mesure") { campBrut = "pour_mesure"; raison = "amendement du Gouvernement, auteur de la mesure : la défend ou l'aménage"; fonde = "nature"; }
     // Effet et importance ne s'appuient que sur un camp lu dans le résumé ; le groupe seul ne suffit pas.
     const camp: Camp = fonde === "resume" || fonde === "nature" ? campBrut : "inconnu";
     const rang = objectifVise(ctx, a);
-    const groupe = sigleGroupe(ctx, a.groupe_id);
+    const groupe = sigleGroupe(ctx, a.groupe_id) ?? ((a as any).auteur_type && (a as any).auteur_type !== "depute" ? String((a as any).auteur_libelle ?? "Gouvernement") : null);
     const srcAm: Source[] = liste.slice(0, 3).map((x) => ({ label: `Amendement n° ${x.numero}`, url: x.url }));
     const scrutin = liste.map((x) => scrutinParNumero.get(x.numero) ?? null).find(Boolean) ?? null;
     const allie = camp !== "inconnu" && camp === campClient(ctx);
@@ -284,7 +288,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
     const publiee = dateDepotPubliee(a);
     const dateDepot = publiee?.date ?? a.prediction?.date ?? dateRepli ?? limite;
     const provenanceDate = publiee?.provenance ?? (a.prediction?.date ? "date de la prédiction Orcet (date de dépôt non publiée dans texte.json)" : "date de la dernière étape connue du texte (date de dépôt non publiée)");
-    const importanceDepot = duClient || (suppression && allie) ? 3 : camp !== "inconnu" && a.groupe_id ? 2 : 1;
+    const importanceDepot = duClient || (suppression && allie) || duGouvernement(a) ? 3 : camp !== "inconnu" && a.groupe_id ? 2 : 1;
     const listerDepot = a.sort === "en_attente" || publiee !== null || importanceDepot === 3;
     if (listerDepot && !posterieur(dateDepot, ref)) {
       evenements.push({
@@ -304,7 +308,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
     // Sort.
     if (a.sort !== "en_attente") {
       const dateSort = scrutin?.date ?? a.date_sort ?? liste.map((x) => brutes?.sort.get(x.id)).find(Boolean) ?? dateModification(a.numero) ?? dateRepli ?? limite;
-      if (posterieur(dateSort, ref)) continue;
+      if (pasEncoreConnu(dateSort, ref)) continue;
       const sens = sensDuSort(a.sort);
       const importanceSort = scrutin || (a.sort === "adopte" && (camp !== "inconnu" || duClient || suppression)) || (a.sort === "rejete" && (duClient || (suppression && allie))) ? 3 : (a.sort === "rejete" && camp !== "inconnu") || a.sort === "adopte" ? 2 : 1;
       evenements.push({
@@ -352,7 +356,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   const scrutinsVus = new Set(scrutins.map((s) => s.numero).filter(Boolean) as string[]);
   for (const et of ctx.etat?.etapes ?? []) {
     const num = (et.url.match(/\/scrutins\/(\d+)/) ?? [null, null])[1];
-    if (!num || !et.date || et.statut === "a_venir" || posterieur(et.date, ref) || scrutinsVus.has(num)) continue;
+    if (!num || !et.date || et.statut === "a_venir" || pasEncoreConnu(et.date, ref) || scrutinsVus.has(num)) continue;
     const sens: 1 | -1 | 0 = /rejet/i.test(et.nom) ? -1 : /adopt/i.test(et.nom) ? 1 : 0;
     evenements.push({
       id: idUnique(`ev-${num}`),
@@ -370,7 +374,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
 
   // 4. Modifications de la mesure (etat.json) non couvertes par un amendement du texte.
   for (const m of ctx.etat?.mesure.modifications ?? []) {
-    if (posterieur(m.date, ref)) continue;
+    if (pasEncoreConnu(m.date, ref)) continue;
     const nums = numerosDuTitre(`${m.par} ${m.quoi}`);
     if (nums.some((n) => numerosCouverts.has(n))) continue;
     evenements.push({
@@ -442,7 +446,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   // 6. Séances et commissions où le sujet a été abordé (A2 : debats/<PA> et arguments.json).
   const seances = new Map<string, { date: string; lieu: "seance" | "commission"; url: string; citations: string[] }>();
   const ajouterSeance = (date: string, lieu: "seance" | "commission", url: string, citation: string) => {
-    if (posterieur(date, ref)) return;
+    if (pasEncoreConnu(date, ref)) return;
     const s = seances.get(url) ?? { date, lieu, url, citations: [] };
     if (!s.citations.includes(citation)) s.citations.push(citation);
     seances.set(url, s);
@@ -530,7 +534,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   for (const e of evenements) if (!uniques.has(e.id)) uniques.set(e.id, e);
   const tries = [...uniques.values()].sort((a, b) => b.importance - a.importance || (b.date > a.date ? 1 : b.date < a.date ? -1 : 0) || a.id.localeCompare(b.id));
 
-  if (ref) limites.unshift(`Événements jusqu'au ${dateFr(ref)} inclus (date de référence).`);
+  if (ref) limites.unshift(`Date de référence ${dateFr(ref)} lue comme le matin de ce jour : dépôts, publications et déclarations de ce jour connus ; sorts, scrutins, séances et réunions de ce jour pas encore connus.`);
   const sansDate = (ctx.texte?.amendements ?? []).filter((a) => !a.date_depot).length;
   if (sansDate > 0) limites.push(`${sansDate} amendement(s) sans date de dépôt publiée : prédiction Orcet ou dernière étape du texte, dit dans chaque preuve.`);
   const nouveautes: Nouveautes = {
@@ -560,7 +564,7 @@ function lireAgenda(ctx: Contexte, limite: string, idUnique: (base: string) => s
         try { obj = JSON.parse(texte); } catch { continue; }
         const r = obj?.reunion ?? obj;
         const date = String(r?.timeStamp?.dateDebut ?? r?.dateDebut ?? "").slice(0, 10);
-        if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date > limite) continue;
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date > limite || pasEncoreConnu(date, ctx.dossier.date_reference)) continue;
         if (/annul/i.test(String(r?.cycleDeVie?.etat ?? ""))) continue;
         const points = r?.ODJ?.pointsODJ?.pointODJ;
         const objets: string[] = (Array.isArray(points) ? points : points ? [points] : []).map((p: any) => String(p?.objet ?? "")).filter(Boolean);
