@@ -1,0 +1,1122 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:11:56.404Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA720190",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html",
+      "date": "2026-11-03",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Organisation de coopération et de développement économiques (OCDE)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’administration et de la fonction publique (DGAFP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association française des acteurs de l’éducation",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Média « Le café pédagogique »",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des relations humaines (DGRH) du ministère de l’éducation nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction des affaires financières (DAF) du ministère de l’éducation nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de la statistique et des études économiques (Insee)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haut-commissariat à la stratégie et au plan",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’évaluation, de la prospective et de la performance (DEPP) du ministère de l’éducation nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général de l’enseignement catholique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national unitaire des instituteurs et professeurs des écoles (SNUipp-FSU)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des enseignements de second degré-Fédération syndicale unitaire (SNES-FSU)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des enseignants-Union nationale des syndicats autonomes (SE-UNSA)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat général de l’éducation nationale-Confédération française démocratique du travail (Sgen-CFDT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des lycées, collèges, écoles et du supérieur (Snalc)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’enseignement scolaire (Dgesco) du ministère de l’éducation nationale",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tV.html",
+      "date": "2026-11-03",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Syndicat national des radios libres (SNRL)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération nationale des radios associatives (CNRA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national de la musique (CNM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national du livre (CNL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France messagerie",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Messageries lyonnaises de presse (MLP)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Distributeurs indépendants réunis européens (Dire)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des auteurs, réalisateurs et producteurs (ARP)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des éditeurs de films (Fnef)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des industries du cinéma, de l’audiovisuel et du multimédia (Ficam)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des producteurs de cinéma (UPC)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des producteurs indépendants (API)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des cinémas français (FNCF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des producteurs indépendants (SPI)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société des réalisateurs de films (SRF)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Bureau de liaison des organisations du cinéma (Bloc)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Inspection générale des finances",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale de la presse d’information spécialisée (FNPS)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des éditeurs de la presse magazine (SEPM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat de la presse indépendante d’information en ligne (Spiil)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Alliance de la presse d’information générale (Apig)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national du cinéma et de l’image animée (CNC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des producteurs phonographiques français indépendants (Upfi)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des producteurs de phonographiques M. Marc Guez",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national de l’édition phonographique (Snep)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des musiques actuelles (SMA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des labels indépendants (Felin)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des producteurs de phonogrammes en France (SPPF)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence France-Presse",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Satellifacts",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Le film français",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Canal +",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Télévisions",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Arte",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Studio TF1 et TF1 Films production",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "M6 Films",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de la culture, direction générale des médias et des industries culturelles (DGMIC)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tII.html",
+      "date": "2026-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Centre national de la musique (CNM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des centres chorégraphiques nationaux (ACCN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association de centres de développement chorégraphique nationaux (A‑CDCN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des centres dramatiques nationaux (ACDN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des scènes nationales (ASN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des entreprises artistiques et culturelles (Syndéac)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Scènes Ensemble",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Forces Musicales",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Sociétés des auteurs et compositeurs dramatiques (SACD)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Sociétés des auteurs, compositeurs et éditeurs de musique (Sacem)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Administration des droits des artistes et musiciens interprètes (Adami)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des auteurs multimédias (Scam)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société de perception et de distribution des droits des artistes-interprètes (Spedidam)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association pour le soutien du théâtre privé (ASTP)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des écoles supérieures d’art (ANdÉA)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale d’établissements d’enseignement supérieur de la création artistique arts de la scène (Anescas)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de la culture",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ekhoscènes",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des musiques actuelles (SMA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France festivals",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Pass Culture",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des cirques et compagnies de création (SCC)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des arts vivants (Synavi)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "La scène indépendante",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Crazy Horse Paris",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "L’ange bleu",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "La belle entrée",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "L’élégance",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "L’étoile bleue",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Le grand cabaret",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Moulin rouge",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Paradis Latin",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’économie, des finances et de la souveraineté industrielle, énergétique et numérique",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIX.html",
+      "date": "2026-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Santé publique France",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Système national d'observation de la sécurité des activités nautiques (Snosan)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française des maîtres-nageurs sauveteurs",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française de natation",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires de France et des présidents d’intercommunalité",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des élus en charge du sport",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale du Sport",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère des sports, de la jeunesse et de la vie associative, direction des sports",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité paralympique et sportif français (CPSF)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national olympique et sportif français (CNOSF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française de tennis",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française de gymnastique",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Délégation interministérielle aux Jeux olympiques et paralympiques",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité d'organisation des jeux olympiques et paralympiques des Alpes françaises 2030",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société de livraison des ouvrages olympiques (Solideo)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence française de lutte contre le dopage",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national du sport, de l'expertise et de la performance",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse nationale d’allocations familiales",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Défense mobilité",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Établissement public territorial Paris Est Marne & bois",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des professionnels de la piscine et du spa",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France travail",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Métropole du Grand Paris",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’éducation nationale, direction générale de l’enseignement scolaire",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’intérieur, direction générale de la gendarmerie nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mutualité sociale agricole",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national professionnel des maîtres-nageurs sauveteurs",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ville de Plouescat",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Voies navigables de France",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tVII.html",
+      "date": "2026-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Institut de recherche pour le développement (IRD)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de la santé et de la recherche médicale (INSERM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national de la recherche scientifique (CNRS)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national d’études spatiales (Cnes)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre scientifique et technique du bâtiment (CSTB)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre de coopération internationale en recherche agronomique pour le développement (Cirad)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commissariat à l’énergie atomique et aux énergies alternatives (CEA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat National des Travailleurs de la Recherche Scientifique (SNTRS-CGT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat National Indépendant de la Recherche Scientifique et de l'Enseignement Supérieur (SNIRS CFE CGC)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat National de la Recherche Scientifique (SNCS-FSU)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération générale du travail des établissements d’enseignement supérieur (CGT-FERC sup)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Sud recherche",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Unsa Education",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CFDT Education Formation et Recherche publique",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Académie des sciences",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Académie de l’agriculture",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société de pathologie infectieuse de langue française (Spilf)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Scientifiques en rébellion",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "L’atécopol",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Sciences citoyennes",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité français pour l’IPBES",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haut Conseil pour le climat",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’environnement et de la maîtrise de l’énergie (ADEME)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (Inrae)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de recherche en informatique et en automatique (Inria)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haut conseil de l’évaluation de la recherche et de l’enseignement supérieur (Hcéres)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Météo France",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société française d’écologie et d’évolution SFE²",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Universités",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale de la recherche",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CGT-Inrae",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la recherche et de l’innovation (DGRI)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’énergie et du climat",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commissariat général au développement durable",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [],
+  "amendements": [],
+  "hatvp": [
+    {
+      "hatvp_id": "784668618",
+      "nom": "MOUVEMENT DES ENTREPRISES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668618",
+      "objet": "PLF 2026 : alerter sur les incohérences de la rédaction du projet de taxe sur les holdings patrimoniales par rapport aux objectifs annoncés",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "326943016",
+      "nom": "ASSO FRANCAI ENTREPRIS PRIVEES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=326943016",
+      "objet": "PLF 2026 - TAXE HOLDING SUR LES BIENS SOMPTUAIRES : EXONERER LES OEUVRES D'ART EXPOSEES OU ACQUISES EN VUE D'EXPOSITION AU PUBLIC",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784855876",
+      "nom": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876",
+      "objet": "PLF 2026 : soutenir la sécurisation de la taxe sur les holdings patrimoniales en en limitant l'assiette aux biens dits somptuaires non affectés à une activité professionnelle",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "349889154",
+      "nom": "OXFAM FRANCE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=349889154",
+      "objet": "Inciter à l'instauration d'un impôt plancher sur le patrimoine des ultra-riches (taxe zucman)\n",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "582041943",
+      "nom": "PERNOD RICARD",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=582041943",
+      "objet": "EXPLIQUER EN QUOI L’AUGMENTATION DES TAXES SUR LE PATRIMOINE SERAIENT PREJUDICIABLE EN MATIERE DE SOUVERAINETE ECONOMIQUE POUR DES ENTREPRISES FAMILIALES COMME PERNOD RICARD",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "420077562",
+      "nom": "ASSOCIATION A T T A C",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=420077562",
+      "objet": "Faire adopter au Sénat l'impôt plancher sur la fortune (IPF) / taxe Zucman",
+      "actions": [
+        "transmission d'expertise",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "PLF 2025 : Modifier l'assiette de l'impôt sur la fortune improductive pour en dissocier les fonds monétaires",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "341737062",
+      "nom": "CNP ASSURANCES",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=341737062",
+      "objet": "Projet de loi de finances 2026 (PLF 2026) : expliquer en quoi l'inclusion de l'assurance vie dans l'assiette de l'impôt sur la fortune immobilière serait préjudiciable.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784358970",
+      "nom": "COMITE PROFESSION GALERIE ART",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784358970",
+      "objet": "PLF 2026 : Maintenir un cadre fiscal équitable pour le marché de l'art en France",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "303215016",
+      "nom": "CONFEDERATION DES PETITES ET MOYENNES ENTREPRISES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=303215016",
+      "objet": "PLF 2026 - Supprimer la taxe sur le patrimoine financier des holdings patrimoniales",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "434255329",
+      "nom": "CPME CORREZE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434255329",
+      "objet": "Oeuvrer pour ne pas taxer davantage les holdings ce qui reviendrait à pénaliser l’investissement, la transmission et la solidité du tissu entrepreneurial ",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "552081317",
+      "nom": "ELECTRICITE DE FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=552081317",
+      "objet": "Eviter le risque d’exclusion d'acteurs labélisés RGE détenus par une holding ne pouvant pas avoir cette qualification pour la réalisation de travaux de rénovation énergétique (PPL Cazenave)",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "431853530",
+      "nom": "ESL & NETWORK FRANCE SAS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=431853530",
+      "objet": "PLF 2026 : alerter sur l'impact pour l'épargne d'un amendement visant à transformer l’Impôt sur la Fortune Immobilière (IFI) en Impôt sur le Patrimoine Improductif (IPI)",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784409013",
+      "nom": "FEDERATION FRANCAISE DE L ASSURANCE (FFA)",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784409013",
+      "objet": "PLF 2026 : expliquer en quoi l'inclusion de l'assurance vie dans l'assiette de l'impôt sur la fortune immobilière serait préjudiciable",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "302998554",
+      "nom": "FEDERATION NATIONALE DE LA PROPRIETE PRIVEE RURALE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302998554",
+      "objet": "Projet de loi de finances 2026 et \"impôt sur la fortune improductive\": Exclure de l'IFI les terres agricoles qui sont des biens productifs",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "304426240",
+      "nom": "FEDERATION NATIONALE MUTUALITE FRANCAISE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=304426240",
+      "objet": "PLF 2025* : Empêcher la diminution du taux de réduction des dons déductibles de l’impôt sur la fortune immobilière ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "349165779",
+      "nom": "FRANCE INVEST",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=349165779",
+      "objet": "LF 2026 : Eviter les dispositifs fiscaux entrainant des freins au financement des entreprises via les acteurs du Capital Investissement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "532572112",
+      "nom": "IMAGE 7",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112",
+      "objet": "Défense du régime fiscal de l'apport-cession permettant le report dans le temps des plus-values imposables lorsque les titres sont cédés par la société holding (art 150 OB ter du CGI). ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "945408011",
+      "nom": "INSTITUT NATIONAL BITCOIN",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=945408011",
+      "objet": "Obtenir l'ouverture de la procédure de contrôle des investissements étrangers dans le cadre de la cession d'Exaion à Mara Holdings et la suppression de la clause de non-concurrence imposée à EDF",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "880044755",
+      "nom": "MOBILIS FAMILY OFFICE HOLDIN",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=880044755",
+      "objet": "Expliquer les impacts économiques, juridiques et patrimoniaux de la taxe sur les holdings et contribuer aux échanges sur son évolution afin d’en préserver la cohérence.",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "388522286",
+      "nom": "UI DES COTES D'ARMOR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=388522286",
+      "objet": "S’opposer à une taxation des holdings qui soutiennent l’investissement patrimonial de nos entreprises, afin d’éviter une dépendance accrue vis‑à‑vis de capitaux issus de fonds de pension étrangers.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "W751003603",
+      "nom": "UNION NATIONALE DES PROPRIETAIRES IMMOBILIERS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751003603",
+      "objet": "Transformation de l'IFI en un impôt sur la fortune improductive excluant les biens mis en location",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "777461146",
+      "nom": "UNION PATRONALE DES INDUSTRIES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777461146",
+      "objet": "S’opposer à une taxation des holdings qui soutiennent l’investissement patrimonial de nos entreprises, afin d’éviter une dépendance accrue vis‑à‑vis de capitaux issus de fonds de pension étrangers.",
+      "actions": [
+        "rencontre"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 5,
+    "rapports_avec_liste": 5,
+    "comptes_rendus_lus": 83
+  },
+  "synthese": {
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe EPR est contre la mesure.",
+    "argument": "Présenter à ce député les auditions qu'il a menées le 3 novembre 2026 avec l'OCDE et l'Insee, afin d'ancrer l'argument contre la taxe sur la fortune improductive dans les données économiques qu'il a déjà examinées.",
+    "chiffres_utilises": [
+      "3",
+      "0.5",
+      "3140",
+      "0.71",
+      "2026",
+      "11",
+      "6",
+      "2030"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
+    "verifie": true,
+    "date": "2026-11-14"
+  }
+}
