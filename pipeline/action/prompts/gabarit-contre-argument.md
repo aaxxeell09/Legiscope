@@ -48,7 +48,9 @@ Un contre-argument par argument adverse. L'argument adverse d'indice `i` reçoit
 
 ## Liste autorisée et champs de sortie
 
-- `chiffres_utilises` : pour chaque variable injectée. Date : la date ISO telle quelle. Texte (`repond_a`, `argument_allie`, `citation_allie`) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `qa/verif.ts`, écrit `String(valeur)` (« 500 millions » donne `"500"` et `"1000000"`). Liste dédoublonnée.
+- Cas normal, avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer les deux phrases remplies en troisième argument (`gabarit`), avec la liste autorisée du prompt (`contre-argument.md`, section Branchement : les nombres du message utilisateur rempli). Cette liste contient déjà tous les nombres du gabarit. `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`.
+- Sans `redigerVerifie` (gabarit seul) : construire la liste variable par variable, comme suit.
+- `chiffres_utilises` : pour chaque variable injectée. Date : la date ISO telle quelle. Texte (`repond_a`, `argument_allie`, `citation_allie`) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `pipeline/lib/verif.ts`, écrit `String(valeur)` (« 500 millions » donne `"500"` et `"1000000"`). Liste dédoublonnée.
 - `verifie` : `verifierChiffres(texte, chiffres_utilises).ok`. Le texte fixe des gabarits ne contient aucun nombre.
 - `mode` : `"gabarit"`.
 - `preuve` pour `contre_argument.allie` : `sources` = `[{label: "<Séance ou Commission> du <date_allie>", url: <url de l'argument allié>}]`, `raisonnement` = `Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.`, `nature` = `"deduction"`.

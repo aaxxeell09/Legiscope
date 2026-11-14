@@ -98,7 +98,9 @@ Limites : compte rendu produit par gabarit, sans rédaction par le modèle, à r
 
 ## Liste autorisée et champs de sortie
 
-- `chiffres_utilises` : pour chaque variable injectée. Entier (`n_actionnables`, `n_allies`, `n_perdus`) : `String(valeur)`. Date : la date ISO telle quelle. Texte (toutes les autres, `lecture_1` et `limites` compris) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `qa/verif.ts`, écrit `String(valeur)`. Liste dédoublonnée.
+- Cas normal, avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer le texte rempli en troisième argument (`gabarit`), avec la liste autorisée du prompt (`note.md`, section Branchement : les nombres du message utilisateur rempli). Cette liste contient déjà tous les nombres du gabarit. `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`.
+- Sans `redigerVerifie` (gabarit seul) : construire la liste variable par variable, comme suit.
+- `chiffres_utilises` : pour chaque variable injectée. Entier (`n_actionnables`, `n_allies`, `n_perdus`) : `String(valeur)`. Date : la date ISO telle quelle. Texte (toutes les autres, `lecture_1` et `limites` compris) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `pipeline/lib/verif.ts`, écrit `String(valeur)`. Liste dédoublonnée.
 - `verifie` : `verifierChiffres(texte, chiffres_utilises).ok`. Le texte fixe des gabarits ne contient aucun nombre.
 - `mode` : `"gabarit"`. `modele` : `null`. `client` et `objectifs` : recopiés depuis `config.json`. `sources` : les `meta.sources` des fichiers lus.
 - Longueur : 171 mots sur la fixture `petits-colis`, 197 sur `plf2027-holdings` (cible : 150). Le gabarit ne coupe aucun titre : la longueur suit celle des titres injectés.

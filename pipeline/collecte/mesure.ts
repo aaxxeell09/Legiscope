@@ -21,8 +21,8 @@ do {
 } while (cursor && pages < 10);
 res.votes = { scrutin: sid, pages, nvotes, cout, exempleVote, restant: compteur.restant }; console.log("votes", JSON.stringify(res.votes));
 
-r = await api("POST", "/agregats/accord-groupes", { debut: "2026-10-01", fin: "2026-10-31" }); note("accord_groupes", r, { extrait: JSON.stringify(r.json).slice(0, 800) });
-r = await api("POST", "/agregats/loyaute-deputes", { groupe: "PO845401", min_votes: 10, limite: 5 }); note("loyaute", r, { extrait: JSON.stringify(r.json).slice(0, 800) });
+res.accord_groupes = "voir data/raw/accord-groupes (5 crédits/mois)";
+res.loyaute = "voir data/raw/loyaute (5 crédits/groupe)";
 
 r = await api("GET", "/scrutins/VTANR5L17V9759"); note("scrutin_V9759", r, { data: r.json });
 r = await api("GET", "/textes/PRJLANR5L17B3210"); note("texte_3210", r, { data: JSON.stringify(r.json).slice(0, 1500) });
@@ -30,5 +30,11 @@ r = await api("GET", "/textes/PRJLANR5L17B3210"); note("texte_3210", r, { data: 
 // amendements du texte vivant (première page, puis comptage sujet sur toutes les pages, plafonné)
 const garde = filtreMotsCles(vivant.sujet.mots_cles);
 r = await api("GET", `/amendements?texte=${vivant.texte_id}&limit=1`); note("amendements_limit1", r, { champs: Object.keys(r.json.data?.[0] ?? {}), exemple: r.json.data?.[0] });
+writeFileSync(ROOT + "data/raw/mesure.json", JSON.stringify({ res, compteur }, null, 2));
+console.log("COMPTEUR", JSON.stringify(compteur));
+// amendement en attente du dossier vivant : champs d'avis ?
+const am = JSON.parse((await Bun.file(ROOT + `data/raw/${vivant.id}/amendements.json`).text())).amendements.find((a: any) => !a.sort);
+const ra = await api("GET", `/amendements/${am.id}`); note("amendement_detail", ra, { data: ra.json });
+const rb = await api("GET", `/amendements?texte=${vivant.texte_id}&limit=100`); note("amendements_page100", rb, { n: rb.json.data?.length, has_more: rb.json.has_more, cles_avis: [...new Set((rb.json.data ?? []).flatMap((a: any) => Object.keys(a)).filter((k: string) => /avis|rapporteur|gouv/i.test(k)))] });
 writeFileSync(ROOT + "data/raw/mesure.json", JSON.stringify({ res, compteur }, null, 2));
 console.log("COMPTEUR", JSON.stringify(compteur));
