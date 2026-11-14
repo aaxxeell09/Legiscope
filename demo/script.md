@@ -1,25 +1,26 @@
 # Script de démo : trois minutes, quatre temps
 
-Version 1, 14 novembre 2026, 13 h 20. Écrite à partir de `rendu-final.md`, de `PLAN.md` (sections 1, 2, 8, 9, annexe B) et des fixtures. Écrite **avant** la décision de 13 h 35 et **avant** les données réelles : toutes les variantes prévues sont en bas. À relire à 15 h 15 (données réelles, `pivot_demo`), puis aux répétitions de 17 h 15 et 17 h 40.
+Version 2, 14 novembre 2026, 14 h 45. Réécrite sur les données réelles de `data/` (front en `dataset: live`), après les corrections d'Axel de 14 h 05. Valeurs relevées dans les fichiers du dépôt à 14 h 40 : `verdict.json`, `etat.json`, `suite.json`, `nouveautes.json`, `action.json`, `note.json`, `fiches/`. X1 n'a pas pu ouvrir l'app : tout ce qui est marqué **[ÉCRAN]** se relit sur l'app réelle aux répétitions de 17 h 15 et 17 h 40.
 
 ## Comment lire ce script
 
 - Une ligne qui commence par `>` : ce qu'on dit, mot pour mot.
 - **Clic** : ce que fait la main.
-- **[ÉCRAN]** : on lit ce que l'écran affiche à cet endroit. On ne récite pas de mémoire.
-- **[À REMPLIR ...]** : emplacement vide tant que la donnée réelle n'existe pas. On ne monte pas sur scène avec un emplacement vide : on le remplit ou on prend la variante.
+- **[ÉCRAN]** : on lit ce que l'écran affiche à cet endroit. Si l'écran dit autre chose que le script, l'écran a raison.
+- **[À VÉRIFIER PAR P0 ...]** : phrase non sourcée dans le dépôt. On ne la dit pas tant que P0 ne l'a pas confirmée.
 - Deux personnes : une voix, une main. La voix ne touche pas le trackpad.
-- Nom du produit : « Bascule » (valeur de `config.json`). Il se tranche à 17 h : si le nom change, il change à un seul endroit, la deuxième phrase de l'ouverture.
+- Nom du produit : « Bascule » (valeur de `config.json`). S'il change à 17 h, il change à un seul endroit, la deuxième phrase de l'ouverture.
 
 ## Avant de monter sur scène
 
 1. `bun run dev` tourne. Onglet 1 : `http://localhost:5173/dossier/petits-colis`, en haut de page.
 2. Onglet 2 : `http://localhost:5173/dossier/plf2027-holdings`, en haut de page, déjà chargé.
-3. Onglet 3 (secours) : la fiche du député de démo, `http://localhost:5173/dossier/petits-colis/depute/[À REMPLIR 15 h 15 : identifiant pivot_demo]`. Sur les fixtures : `PA721578`.
+3. Onglet 3 (secours) : la fiche du député de démo, `http://localhost:5173/dossier/petits-colis/depute/PA794118` (Antoine Vermorel).
 4. Zoom du navigateur réglé pour le projecteur. Aucune autre fenêtre ouverte.
 5. On n'ouvre jamais un lien de source pendant la démo (il part sur le site de l'Assemblée, donc sur le réseau). On ouvre le panneau « pourquoi », on montre que le lien est là, on ferme.
 6. Captures d'écran de secours des cinq blocs et de la fiche, dans l'ordre du script (gel de 16 h 45).
 7. Un chronomètre visible par la voix.
+8. Trois contrôles à 16 h 45, sur l'app (détail dans les variantes) : la synthèse de la fiche Vermorel (variante C), le texte du Compte rendu (variante E), la phrase du 21 novembre (variante D).
 
 ## Le script
 
@@ -29,19 +30,21 @@ Version 1, 14 novembre 2026, 13 h 20. Écrite à partir de `rendu-final.md`, de 
 
 > Un cabinet d'affaires publiques vend un jugement : où en est le dossier de mon client, et sur qui agir. Bascule prépare ce jugement, et montre ses preuves.
 
-### Temps 1. Dossier rejoué, Verdict (0:11 à 1:01)
+### Temps 1. Dossier rejoué, Verdict (0:11 à 0:58)
 
-Écran : en-tête (Client, Dossier, Mesure, Objectif, À défaut, « vu au 19 nov. 2025 »), puis bloc Verdict, onglet de l'objectif principal.
+Écran : en-tête (client Alibaba France, mesure, objectif, replis, « vu au 18 nov. 2025 »), puis bloc Verdict, onglet de l'objectif principal.
 
-> Le client : Alibaba. La mesure : la taxe de 2 euros sur les petits colis. L'objectif : empêcher qu'elle soit votée. À défaut, réduire son montant. À défaut, repousser son application.
+> Le client : Alibaba France. La mesure : la taxe de 2 euros sur les petits colis. L'objectif : empêcher qu'elle soit votée. À défaut, réduire son montant ou repousser son application.
 
-> Nous sommes le 19 novembre 2025, la veille du vote.
+> Nous sommes le 18 novembre 2025, la veille de l'examen en séance.
 
-**[ÉCRAN]** : la date dite est celle affichée après « vu au ». Si P0 la passe au 18 novembre, on dit « le 18 novembre 2025 » (variante L).
+La main montre le bandeau du Verdict. **[ÉCRAN]** : situation, tendance, confiance. On ne lit pas le chiffre affiché à côté de « Défavorable ».
 
-La main montre le bandeau du Verdict. **[ÉCRAN]** : situation, tendance, confiance.
+> Verdict proposé : défavorable, tendance stable. La raison : le gouvernement porte la mesure, sept groupes la soutiennent, un seul est contre.
 
-> Verdict proposé : défavorable, en dégradation. Confiance élevée sur les groupes. Et une inconnue, affichée : le vote de LFI.
+> Confiance moyenne. Et ce que l'outil ignore est écrit : la position de trois groupes, dont LFI.
+
+La main montre la colonne « Ce qui marche », première ligne (amendement n° 806).
 
 > Ce qui marche : le RN a déposé un amendement de suppression.
 
@@ -49,61 +52,61 @@ La main montre le bandeau du Verdict. **[ÉCRAN]** : situation, tendance, confia
 
 > Pourquoi ? La source, sur le site de l'Assemblée, et le raisonnement. Ce bouton est sur chaque ligne.
 
-**Clic** : Échap.
+**Clic** : Échap. La main passe sur la colonne « Ce qui coince » sans s'arrêter (gouvernement auteur de la mesure, sept groupes, rapporteur général). La voix n'ajoute rien.
 
-> Ce qui coince : le gouvernement prépare un compromis sur le mode de paiement, qui lève la réserve de LFI. C'est cet événement qui a fait bouger le verdict.
+On ne montre pas la ligne « Ce qui a fait bouger le verdict » : la tendance affichée est « stable ».
 
-La main montre « Ce qui a fait bouger le verdict ».
-
-### Temps 2. Action, puis un député (1:01 à 1:53)
+### Temps 2. Action, puis un député (0:58 à 1:46)
 
 **Clic** : défilement jusqu'au bloc Action (on passe Nouveautés et Suite sans s'arrêter).
 
-> Action. Ceux qui décident : le gouvernement, le rapporteur général, chacun avec sa position.
+**[ÉCRAN]** : « Ceux qui décident ». Relevé : gouvernement, pour ; rapporteur général Philippe Juvin, pour ; président de la commission, position inconnue.
 
-> Puis trois groupes de députés : sur qui agir encore, les alliés à protéger, les perdus. Un député n'est classé que sur ce qu'il a dit, déposé ou voté. Jamais sur son groupe seul.
+> Action. Ceux qui décident : le gouvernement et le rapporteur général, tous deux pour la mesure.
 
-La main descend aux arguments. **[ÉCRAN]** : premier argument de chaque colonne. Si l'écran affiche autre chose que la phrase ci-dessous, on lit l'écran.
+> Puis les députés : sur qui agir encore, les alliés, les perdus. Chacun est classé sur ce qu'il a lui-même dit, déposé ou voté.
 
-> Les arguments entendus. Contre la taxe : elle pèse sur les ménages modestes. Pour : environ 500 millions d'euros de recettes. Et les contre-arguments à amener.
+La main descend aux arguments. **[ÉCRAN]** : premier argument de la colonne « Arguments entendus contre la mesure » (Anthony Boulogne, RN, commission des finances du 22 octobre 2025). La citation se lit à l'écran, pas de mémoire.
 
-**Clic** : la ligne du député de démo, **[À REMPLIR 15 h 15 : nom du pivot_demo et colonne où il se trouve]**. Sa fiche s'ouvre.
+> Les arguments entendus, avec la citation exacte. Contre la taxe : « une double peine, injuste socialement et inutile économiquement ».
 
-> J'ouvre un député. Les organisations qu'il a entendues en audition. Ce qu'il a dit en séance. Ses amendements, et avec qui ils ont été travaillés.
+**Clic** : la ligne Antoine Vermorel, colonne « Sur qui agir encore » (dixième ligne au relevé de 14 h 40). Sa fiche s'ouvre. La main descend tout de suite aux colonnes Débats et Amendements : on ne s'arrête pas sur la synthèse (variante C).
 
-> Ce que l'API ne structure pas, nous l'extrayons de l'open data de l'Assemblée, et nous le rendons ici.
+> J'ouvre Antoine Vermorel, le plus actif de son groupe sur la mesure. Ce qu'il a dit en commission, mot pour mot. Ses amendements : l'un porte la taxe à 5 euros. Et les organisations entendues par les rapporteurs de sa commission.
 
-### Temps 3. Compte rendu (1:53 à 2:06)
+La main montre, dans l'ordre : la première citation de la colonne Débats, l'amendement n° 938 dans la colonne Amendements, la ligne repliée « Entendues par les rapporteurs de sa commission » dans la colonne Auditions. On ne déplie pas.
 
-**Clic** : retour au dossier, défilement jusqu'au bloc Compte rendu.
+> Tout cela vient de l'open data de l'Assemblée.
 
-> Compte rendu : quelques lignes à reprendre pour le client. Chaque chiffre est vérifié.
+### Temps 3. Compte rendu (1:46 à 1:58)
+
+**Clic** : retour au dossier, défilement jusqu'au bloc Compte rendu. La voix ne lit pas le texte du compte rendu (variante E).
+
+> Compte rendu : quelques lignes à reprendre pour le client.
 
 **Clic** : bouton « Copier ».
 
 > Copié. Le cabinet l'adapte : le message final reste le sien.
 
-### Temps 4. La chute, puis le dossier vivant (2:06 à 2:48)
+### Temps 4. La chute, puis le dossier vivant (1:58 à 2:52)
 
-La main ne bouge pas. La voix regarde la salle. Ce chiffre n'est pas à l'écran : le dossier est rejoué au 19 novembre, rien de postérieur n'y figure. C'est voulu.
+La main ne bouge pas. La voix regarde la salle. Rien de ce qui suit n'est à l'écran : le dossier est rejoué au 18 novembre 2025, rien de postérieur n'y figure. C'est voulu.
 
-> Ce qui s'est passé le lendemain : l'article est adopté, 208 voix contre 87. Le RN, seul groupe contre. La veille, l'outil disait défavorable.
+> La suite. Le lendemain, en séance, l'article 22 est adopté : 208 voix contre 87. Le RN, seul groupe contre.
 
-Option, à dire seulement si le chronomètre affiche moins de 2:00 au début de la chute :
+**[À VÉRIFIER PAR P0 : rejet de la première partie le 21 novembre 2025]** La phrase ci-dessous ne se dit que si P0 l'a confirmée dans l'open data (numéro du scrutin dans `status/P0.md` ou `status/P3.md`). Sinon, variante D.
 
-> Et l'Assemblée n'était pas la fin : le Sénat a porté la taxe de 2 à 5 euros. D'où les objectifs de repli.
+> Deux jours plus tard, l'Assemblée rejette la première partie du budget. Article adopté, projet rejeté en première lecture : deux états distincts.
+
+> Puis le Sénat porte la taxe de 2 à 5 euros. Voilà pourquoi nous suivons la mesure, pas le texte.
 
 **Clic** : onglet 2 (dossier vivant), bloc Verdict.
 
-> Même outil sur un dossier en cours : la taxe sur les holdings, budget 2027. L'Assemblée a rejeté la première partie le 4 novembre. Le dossier n'est pas clos : la suite se joue au Sénat, puis en nouvelle lecture.
+> Même outil sur un dossier en cours : la taxe sur les holdings, budget 2027. L'Assemblée a rejeté le projet le 4 novembre. La suite se joue au Sénat.
 
-**[ÉCRAN]** : la main montre la situation du Verdict, puis « Dernière occasion d'agir » dans le bloc Suite. La voix ne lit pas de chiffre.
+**[ÉCRAN]** : la main montre la situation du Verdict (relevé : favorable, tendance stable, confiance élevée), puis « Dernière occasion d'agir » dans le bloc Suite (relevé : examen au Sénat, date non publiée). La voix ne lit aucun chiffre.
 
-> Voici le verdict aujourd'hui, et la dernière occasion d'agir.
-
-Seulement si une prédiction Orcet est visible à l'écran sur ce dossier (voir variante A) :
-
-> Les prédictions Orcet nourrissent ce verdict et cette suite.
+> Verdict proposé pour le client : favorable. Dernière occasion d'agir : l'examen au Sénat.
 
 > On part du client et de son objectif. Chaque information a son pourquoi. L'outil propose, le cabinet tranche.
 
@@ -111,195 +114,160 @@ Fin. On ne dit rien de plus. On attend la première question.
 
 ## Chronométrage
 
-Méthode : comptage des mots des lignes `>` à 150 mots par minute (un nombre compte pour deux ou trois mots), plus le temps des clics. Ce n'est pas un chronométrage à voix haute : celui-ci se fait à 17 h 15 et 17 h 40 sur l'app réelle.
+Méthode : comptage des mots des lignes `>` à 150 mots par minute (un nombre compte pour le nombre de mots qu'on prononce : « 2025 » vaut quatre mots, « 208 » trois), plus le temps des clics. Ce n'est pas un chronométrage à voix haute : celui-ci se fait à 17 h 15 et 17 h 40 sur l'app réelle.
 
 | Temps | Mots dits | Voix | Clics | Total | Cumul |
 |---|---|---|---|---|---|
 | 0. Ouverture | 27 | 11 s | 0 s | 11 s | 0:11 |
-| 1. Verdict | 117 | 47 s | 3 s | 50 s | 1:01 |
-| 2. Action et député | 116 | 46 s | 6 s | 52 s | 1:53 |
-| 3. Compte rendu | 23 | 9 s | 4 s | 13 s | 2:06 |
-| 4. Chute et dossier vivant, sans les deux options | 94 | 38 s | 4 s | 42 s | 2:48 |
-| Total sans option | 377 | 151 s | 17 s | 168 s | 2:48 |
-| Option Sénat | 24 | 10 s | 0 s | 10 s | |
-| Option Orcet | 9 | 4 s | 0 s | 4 s | |
-| Total avec les deux options | 410 | 164 s | 17 s | 181 s | 3:01 |
+| 1. Verdict | 109 | 44 s | 3 s | 47 s | 0:58 |
+| 2. Action et député | 104 | 42 s | 6 s | 48 s | 1:46 |
+| 3. Compte rendu | 19 | 8 s | 4 s | 12 s | 1:58 |
+| 4. Chute et dossier vivant | 126 | 50 s | 4 s | 54 s | 2:52 |
+| Total | 385 | 155 s | 17 s | 172 s | 2:52 |
 
-Lecture : sans option, 12 secondes de marge. Avec l'option Orcet seule, 2:52. Avec l'option Sénat seule, 2:58. Avec les deux, on dépasse. Règle : une seule option au maximum, et l'option Sénat seulement si on est en avance.
+Lecture : 2:52, soit 8 secondes de marge. Avec la chute de la variante D (sans la phrase du 21 novembre) : 2:46. Aucune option ne s'ajoute. Si une répétition dépasse 3:00, on applique les coupes plus bas.
 
 ## Ce qui est sourcé, ce qui se lit à l'écran
 
-Les phrases du script ne contiennent que des éléments de `rendu-final.md` (section 6) et de `PLAN.md` (annexe B). Tout le reste se lit à l'écran.
+Chaque phrase du script vient d'un fichier du dépôt. Relevé de 14 h 40 : les sessions P3, A4 et P8 régénèrent encore leurs fichiers jusqu'au gel de 16 h 45, donc tout se relit à l'écran.
 
 | Ce qu'on dit | D'où ça vient | À vérifier sur l'app réelle |
 |---|---|---|
-| Taxe de 2 euros, petits colis, objectifs d'Alibaba | `rendu-final.md` sections 2.1 et 6, `config.json` | En-tête du dossier |
-| « Défavorable, en dégradation, confiance élevée sur les groupes, inconnue sur LFI » | `rendu-final.md` section 6 ; test de référence du plan (section 9) | Le bandeau du Verdict doit dire la même chose, sinon variante I |
-| Amendement de suppression du RN | `rendu-final.md` section 6, amendement n° 806, URL réelle | Ligne présente dans « Ce qui marche », « pourquoi » ouvre |
-| Compromis du gouvernement sur le mode de paiement | `rendu-final.md` section 6 | Ligne présente dans « Ce qui coince » et dans « Ce qui a fait bouger le verdict » |
-| Ménages modestes ; environ 500 millions d'euros | `rendu-final.md` section 6 | Arguments réellement extraits par A2, sinon variante B |
-| 208 voix contre 87, RN seul groupe contre | `rendu-final.md` section 6, source LCP : https://lcp.fr/actualites/budget-2026-les-deputes-approuvent-la-taxe-de-deux-euros-sur-les-petits-colis-417170 ; le décompte 208 contre 87 est retrouvé par P2 dans l'open data (scrutin VTANR5L17V3999) | Dit à l'oral, pas à l'écran (variante L) |
-| Sénat : de 2 à 5 euros | `rendu-final.md` section 6, source KPMG : https://kpmg.com/av/fr/avocats/eclairages/2025/12/plf-2026-mesures-adoptees-au-senat-en-1e-lecture.html | Dit à l'oral, pas à l'écran |
-| Première partie du budget 2027 rejetée le 4 novembre | `PLAN.md` annexe B (scrutin VTANR5L17V9759) ; confirmé par P1 et P2 dans l'open data | Événement présent dans Nouveautés ou Verdict du dossier vivant |
-| « La suite se joue au Sénat, puis en nouvelle lecture » | `PLAN.md` sections 1 et 2 ; dates non vérifiées (section 11) | Bloc Suite de P2 ; ne citer aucune date qui n'est pas à l'écran |
+| Alibaba France, taxe de 2 euros, objectifs | `data/config.json` | En-tête du dossier |
+| « Le 18 novembre 2025, la veille de l'examen en séance » | `config.json` (`date_reference: 2025-11-18`) ; `suite.json`, dernière occasion d'agir : séance du 19 novembre 2025, examen de l'article 22 | « vu au 18 nov. 2025 » dans l'en-tête |
+| « Défavorable, tendance stable » | `petits-colis/verdict.json`, objectif 1 | Bandeau du Verdict, sinon variante I |
+| « Le gouvernement porte la mesure, sept groupes la soutiennent, un seul est contre » | `verdict.json`, lecture vérifiée et « Ce qui coince » : SOC, DR, DEM, EPR, HOR, LIOT, ECOS pour ; RN contre | Texte de lecture sous le bandeau |
+| « Confiance moyenne », « la position de trois groupes, dont LFI » | `verdict.json`, confiance : positions lues sur les amendements, aucun scrutin public lié avant le 18 ; inconnu : LFI-NFP, UDR, GDR | Lignes « établi » et « inconnu » |
+| Amendement de suppression du RN | `verdict.json`, « Ce qui marche » : amendement n° 806 d'Anthony Boulogne, déposé le 21 octobre 2025, en attente au 18 novembre | « pourquoi » ouvre, lien vers l'amendement |
+| Gouvernement et rapporteur général pour la mesure | `petits-colis/action.json`, décideurs : gouvernement « pour », Philippe Juvin « pour » | « Ceux qui décident », sinon variante D2 |
+| « Une double peine, injuste socialement et inutile économiquement » | `action.json`, premier argument contre : Anthony Boulogne (RN), commission des finances, 22 octobre 2025, citation recopiée du compte rendu | Même citation à l'écran, sinon variante B |
+| Antoine Vermorel, « le plus actif de son groupe sur la mesure » | `action.json`, décideurs : auteur de 9 amendements du sujet, le plus actif du groupe DR (déduction, pas une désignation publiée) | Sa ligne est cliquable dans « Sur qui agir encore » |
+| « Ce qu'il a dit en commission » | `fiches/PA794118.json` : 4 citations, commission des finances du 22 octobre 2025 | Colonne Débats |
+| « L'un porte la taxe à 5 euros » | `fiches/PA794118.json`, amendement n° 938, auteur, en attente au 18 novembre | Colonne Amendements |
+| « Entendues par les rapporteurs de sa commission » | `fiches/PA794118.json` : 9 rapports, tous en rôle « membre », aucun comme rapporteur | Ligne repliée de la colonne Auditions |
+| 208 voix contre 87, RN seul groupe contre | `rendu-final.md` section 6 (source LCP : https://lcp.fr/actualites/budget-2026-les-deputes-approuvent-la-taxe-de-deux-euros-sur-les-petits-colis-417170) ; `status/P2.md` : scrutin VTANR5L17V3999 daté du 19 novembre 2025 dans l'open data | Dit à l'oral, pas à l'écran |
+| Rejet de la première partie du budget 2026 le 21 novembre 2025 | **Aucune source dans le dépôt.** `etat.json` n'a pas de bloc `texte_etat`, aucun scrutin de rejet n'est cité dans `data/` ni dans `status/`. Seul indice : `suite.json` liste une séance le 21 novembre 2025 sur la première partie | **[À VÉRIFIER PAR P0]**, sinon variante D |
+| Sénat : de 2 à 5 euros | `rendu-final.md` section 6 (source KPMG : https://kpmg.com/av/fr/avocats/eclairages/2025/12/plf-2026-mesures-adoptees-au-senat-en-1e-lecture.html) | Dit à l'oral, pas à l'écran |
+| Budget 2027 rejeté par l'Assemblée le 4 novembre | `plf2027-holdings/etat.json` : étape « rejeté (scrutin n° 9759) », 4 novembre 2026 ; `status/P1.md` | Étape visible dans le dossier vivant |
+| « La suite se joue au Sénat » | `plf2027-holdings/etat.json` : Sénat, première lecture, en cours, date non publiée | Bloc Suite ; ne citer aucune date |
+| Holdings : « favorable », dernière occasion « l'examen au Sénat » | `plf2027-holdings/verdict.json`, objectif 1 ; `suite.json`, dernière occasion d'agir | Bandeau du Verdict et bloc Suite, sinon variante J |
 
-Valeurs affichées par les fixtures (jeu de repli, **députés et numéros fictifs**, sauf le n° 806) et emplacements pour les données réelles :
+Ce qui a été retiré de la version 1, et pourquoi :
 
-| Élément | Fixtures | Données réelles |
-|---|---|---|
-| Petits colis, objectif 1 : situation | Défavorable | [À REMPLIR 15 h 15] |
-| Petits colis, objectif 1 : score | 12 % (le plan donnait 18 % en exemple) | [À REMPLIR 15 h 15] |
-| Petits colis, objectif 1 : tendance | en dégradation | [À REMPLIR 15 h 15] |
-| Petits colis, objectif 1 : confiance | élevée ; inconnu : vote de LFI | [À REMPLIR 15 h 15] |
-| Petits colis : décideurs | gouvernement (pour), rapporteur général (pour), chef de file RN (contre), président de commission (position inconnue) | [À REMPLIR 15 h 15] |
-| Petits colis : député de démo | `PA721578`, « Député Test B », colonne « Alliés à protéger », 2 auditions, 3 citations, 2 amendements, 2 organisations HATVP | [À REMPLIR 15 h 15 : livrable 3] |
-| Petits colis : compte rendu | badge « vérifié » | [À REMPLIR 15 h 45] |
-| Holdings, objectif 1 : situation | Favorable, en amélioration, confiance moyenne | [À REMPLIR 15 h 15] |
-| Holdings : dernière occasion d'agir | nouvelle lecture à l'Assemblée, date non fixée | [À REMPLIR 15 h 15] |
-| Holdings : Orcet visible | non dans Suite (aucune prédiction) ; cité dans un « pourquoi » du Verdict | [À REMPLIR 15 h 15] |
-
-Le score ne se dit pas à l'oral. Raison : il n'est pas connu avant 15 h 15, et un pourcentage dit vite s'entend comme « la probabilité que la loi passe », ce qu'il n'est pas. Si le jury le demande : réponse dans `demo/jury.md`.
+- Le compromis du gouvernement sur le mode de paiement. Il a été déposé et adopté le 19 novembre 2025 (`status/P1.md`, amendement n° 4086), donc après la date de rejeu. Il n'est pas dans les données au 18 novembre.
+- « En dégradation » et « confiance élevée ». Les données disent « stable » et « moyenne » (`status/P3.md`).
+- « Environ 500 millions d'euros de recettes » et « ménages modestes ». Ces deux arguments ne sont pas dans `action.json`.
+- « Avec qui ils ont été travaillés ». Le champ est vide sur toutes les fiches.
+- Les phrases sur Orcet. Il n'y a de prédiction Orcet sur aucun des deux dossiers (`status/P2.md`, `status/P3.md`).
+- Tout pourcentage. Le chiffre à côté du verdict est une part de sièges, pas une probabilité : on ne le dit pas. Si le jury le demande, réponse dans `demo/jury.md`.
 
 ## Variantes
 
-`status/P0.md` ne contient pas encore la décision de 13 h 35. Chaque cas prévu a sa variante. Quand la décision tombe, on barre celles qui ne s'appliquent pas.
+### A. Orcet
 
-État lu dans `status/` au moment d'écrire (P1, P2, P8) : les clés Hémicycle et Featherless ne sont pas encore posées, Orcet n'est pas testé, les avis du rapporteur et du gouvernement sont absents de l'open data. Tant que cela dure, les variantes A, D et G s'appliquent.
+Le script ne cite pas Orcet. Si le jury demande : « Il n'y a pas de prédiction Orcet sur ces deux mesures aujourd'hui. Le verdict s'appuie sur les positions des groupes, lues sur leurs votes et leurs amendements, et il le dit dans sa confiance. »
 
-### A. Orcet absent (pas de prédiction sur les amendements sans scrutin, ou service indisponible)
+### B. Les arguments à l'écran ne sont pas ceux du script
 
-Repli du plan : Verdict et Suite sans Orcet, sur les positions des groupes et les amendements.
+- Si le premier argument contre a changé : on lit la citation affichée, avec « Contre la taxe : », sans la commenter.
+- S'il n'y a plus d'argument contre : on remplace la phrase par :
 
-- Temps 4 : on ne dit pas la phrase Orcet. On dit à la place :
+> Un argument entendu, avec sa citation, son orateur et sa source.
 
-> Ce verdict s'appuie sur les votes des groupes et sur les amendements déposés.
+- S'il ne reste aucun argument : on supprime la phrase.
 
-- On ne dit jamais « Orcet ne sait pas faire ». Si le jury demande : « Nous n'avons pas obtenu de prédiction sur ces amendements aujourd'hui. Le verdict tient sans, et il le dit dans sa confiance. »
-- Le centre de la démo reste le dossier rejoué. Le dossier vivant se réduit à ses deux premières phrases et au geste sur le Verdict.
-- Si une ligne de Suite affiche « sans prédiction », on ne la cache pas : c'est la règle « on écrit ce qu'on ignore ».
+### C. La fiche du député
 
-### B. Arguments pauvres (peu d'arguments extraits, ou mal classés pour et contre)
+Contrôle de 16 h 45. Au relevé de 14 h 40, la synthèse de la fiche d'Antoine Vermorel dit « probablement contre la mesure ». Le bloc Action le classe « pour », sur 8 actes. Les deux se contredisent (signalé à P0, A4 et X3 dans `status/X1.md`).
 
-Repli du plan : ne garder que les arguments avec citation et orateur identifié.
+- Si la synthèse est corrigée : rien ne change.
+- Si elle ne l'est pas : la main descend aux colonnes dès l'ouverture, la voix ne lit pas la synthèse. Si le jury la relève : « La synthèse est rédigée par le modèle. Ici elle se trompe, et les actes juste en dessous le montrent : c'est pour cela que chaque fiche garde les preuves sous la synthèse. »
+- Fiche de secours si celle de Vermorel n'ouvre pas : David Taupiac (`PA793796`), même colonne. Elle a une audition comme rapporteur pour avis, donc la section « a entendu ». On dit alors :
 
-- S'il reste au moins un argument de chaque côté : le script ne change pas, on lit l'écran.
-- S'il reste un seul côté, ou un seul argument : on remplace la phrase des arguments par :
+> J'ouvre David Taupiac. Les organisations qu'il a entendues comme rapporteur. À part, celles entendues par les rapporteurs de sa commission. Et son amendement.
 
-> Un argument entendu en séance, avec sa citation, son orateur et sa source.
-
-  **Clic** : « pourquoi » sur cet argument, puis Échap. On ne parle pas des contre-arguments.
-- S'il ne reste aucun argument : on supprime la phrase. On gagne dix secondes pour la fiche du député.
-
-### C. Fiche vide (le député de démo n'a ni audition ni citation, ou peu d'auditions partout)
-
-- On change de député : la fiche avec le plus de blocs remplis et au moins une audition ou une citation (livrable 3, 15 h 15). À égalité, on prend un député de la colonne « Sur qui agir encore ».
-- Si aucune fiche n'a d'audition : on ne parle pas d'auditions. On dit :
-
-> J'ouvre un député. Ce qu'il a dit en séance. Ses amendements, et avec qui ils ont été travaillés. Et ce que la fiche n'a pas trouvé, elle l'écrit.
-
-  La main montre la ligne de couverture du bloc vide.
-- Si aucune fiche n'est présentable : on ne clique pas. On reste dans le bloc Action, **clic** « pourquoi » sur un député de « Sur qui agir encore », et on dit :
-
-> Pourquoi ce député est ici : ce qu'il a lui-même voté ou déposé, avec la source.
-
-  On supprime la phrase sur l'API.
+- Dans tous les cas : « a entendu » seulement pour un rapporteur. Pour un membre de commission : « entendues par les rapporteurs de sa commission ».
+- Le bloc HATVP de la fiche liste les organisations déclarées sur le texte. On ne dit jamais que le député les a rencontrées.
 - Un député grisé (« fiche en cours ») ne se clique jamais.
 
-### D. Pas d'avis du rapporteur ni du gouvernement dans l'API
+### D. La phrase du 21 novembre n'est pas confirmée par P0
 
-- Temps 2 : on garde « chacun avec sa position » seulement si une position est affichée pour les deux. Sinon :
+On ne la dit pas. La chute devient :
 
-> Action. Ceux qui décident : le gouvernement, le rapporteur général. Quand leur position n'est pas connue, c'est écrit.
+> La suite. Le lendemain, en séance, l'article 22 est adopté : 208 voix contre 87. Le RN, seul groupe contre.
 
-### E. Décideurs incomplets (chef de file par groupe introuvable)
+> Et l'Assemblée n'était pas la fin : le Sénat porte la taxe de 2 à 5 euros. Voilà pourquoi nous suivons la mesure, pas le texte.
 
-- La phrase du script ne cite que le gouvernement et le rapporteur général : elle ne change pas. On ne dit pas « chef de file » si la ligne n'est pas à l'écran.
+Si P0 confirme avec un autre résultat ou une autre date : on reprend sa formulation, mot pour mot.
+
+### D2. « Ceux qui décident » affiche autre chose
+
+On lit l'écran. Si une position est « inconnue » :
+
+> Action. Ceux qui décident : le gouvernement, le rapporteur général. Quand une position n'est pas connue, c'est écrit.
+
+### E. Le texte du Compte rendu
+
+Contrôle de 16 h 45. La voix ne lit jamais ce texte. Si l'écran affiche « chances », « probabilité » ou un pourcentage sans « des sièges favorables à l'objectif » : on ne défile pas jusqu'au texte, on montre le haut du bloc et le bouton « Copier », et on le signale à P0.
+
+- Badge « gabarit » à l'écran : on dit seulement la première phrase et la dernière. On ne dit pas « rédigé par le modèle ».
 
 ### F. Le front n'est pas prêt (un bloc vide ou en erreur à 16 h 45)
 
-Repli du plan : démo sur Verdict et Action, le reste en captures.
+- Bloc Compte rendu absent : on supprime le temps 3.
+- Fiche du député absente : on reste dans le bloc Action, **clic** « pourquoi » sur un député de « Sur qui agir encore », et on dit :
 
-- Bloc Compte rendu absent : on supprime le temps 3. On passe du député à la chute.
-- Fiche du député absente : variante C, troisième cas.
-- Dossier vivant absent : après la chute, on reste sur le dossier rejoué et on conclut. On dit :
+> Pourquoi ce député est ici : ce qu'il a lui-même déposé ou dit, avec la source.
 
-> Le même tableau de bord tourne sur un dossier en cours, la taxe sur les holdings du budget 2027 : il est dans le dépôt.
-
-  Seulement si c'est vrai à 16 h 45.
+- Dossier vivant absent : après la chute, on conclut sur le dossier rejoué.
 - Une capture se présente comme une capture : « capture de 16 h 45 ».
 
-### G. Featherless indisponible (textes en gabarit)
+### I. Le Verdict du dossier rejoué a changé
 
-- Les badges affichent « gabarit » au lieu de « vérifié ». Temps 3 : on dit « chaque chiffre est vérifié » seulement si le badge « vérifié » est à l'écran. Sinon :
+P3 régénère encore `verdict.json`. On lit l'écran, pas le script.
 
-> Compte rendu : quelques lignes à reprendre pour le client, ici produites par un gabarit.
+- Tendance autre que « stable » : on dit la tendance affichée.
+- Situation « incertaine » : la raison se lit dans le texte sous le bandeau.
+- Situation « favorable » : on le signale à P0 avant 16 h 45 et on ne fait pas la chute sur le vote.
 
-- On ne dit jamais « rédigé par le modèle » devant un badge « gabarit ».
+### J. Dossier vivant : le Verdict a changé
 
-### H. Démo sur les fixtures (la bascule sur données réelles n'a pas eu lieu)
-
-- Les députés s'appellent « Député Test » et leurs citations sont inventées. On le dit dès l'ouverture, après la deuxième phrase :
-
-> Les données à l'écran sont un jeu de démonstration : les députés et les citations sont fictifs. Le vote, lui, est réel.
-
-- On ne lit aucune citation à voix haute. On ne cite aucun numéro d'amendement, sauf le n° 806 qui est réel.
-- La chute reste vraie et se dit telle quelle.
-
-### I. Le Verdict du dossier rejoué ne dit pas « défavorable »
-
-Risque du plan : verdict mécanique contre-intuitif, ajustement par P3 avant 15 h 15.
-
-- On lit l'écran, pas le script. La dernière phrase de la chute devient : « La veille, l'outil disait [ÉCRAN]. »
-- Si l'écran dit « incertaine » ou « pas assez d'information », on ne dit pas que l'outil avait vu juste. On dit :
-
-> La veille, l'outil ne tranchait pas, et il écrivait pourquoi.
-
-- Si l'écran dit « favorable » : on ne fait pas la chute. On le signale à P0 avant 16 h 45.
-
-### J. Dossier vivant : aucun scrutin nominatif sur le sujet, ou verdict « pas assez d'information »
-
-- On ne s'excuse pas. On dit :
+On lit la situation affichée. Si l'écran dit « pas assez d'information » :
 
 > Ici l'outil répond : pas assez d'information pour conclure. Il a le droit de le dire, et il dit ce qui manque.
 
-### K. Client du dossier vivant non confirmé
+On ne nomme pas le client du dossier vivant à l'oral. Si le jury demande : on lit l'en-tête (Afep), client d'exemple choisi parmi les organisations déclarées à la HATVP sur le sujet.
 
-- Le script ne nomme pas le client du dossier vivant. Si le jury demande : on lit l'en-tête. On précise que c'est un client d'exemple, choisi parmi les organisations déclarées à la HATVP sur le sujet.
-
-### L. Date de référence du dossier rejoué (à trancher par P0)
-
-Relevé par P2 (`status/P2.md`) : dans l'open data, le vote de l'article 22 (208 contre 87, scrutin VTANR5L17V3999) et le sort de l'amendement n° 806 sont datés du 19 novembre 2025 (séance du 19, vote dans la nuit). Avec la date de référence actuelle (19 novembre), le vote lui-même peut entrer dans les données du dossier rejoué.
-
-- Si P0 passe la date au 18 novembre 2025 : on dit « Nous sommes le 18 novembre 2025, la veille du vote. » Rien d'autre ne change.
-- Si la date reste au 19 novembre : contrôle obligatoire à 15 h 15. Ni le scrutin de l'article 22 ni le sort du n° 806 ne doivent être à l'écran (Verdict, Nouveautés, Base, fiche du député). S'ils y sont, la chute est déjà affichée et « ce qui marche » est faux : on le signale à P0 et on ne monte pas sur scène ainsi.
-- Avis de X1 : le 18 novembre est le choix le plus sûr pour la démo. La décision est à P0.
+On n'ouvre aucune fiche de député sur le dossier vivant pendant la démo (voir `status/X1.md`, pivot de démo).
 
 ## Coupes si le chronomètre dépasse
 
-Dans cet ordre, chacune gagne environ dix secondes :
+Dans cet ordre :
 
-1. L'option Sénat (jamais dite si on est en retard).
-2. La phrase sur les arguments entendus.
-3. Le clic « Copier » et sa phrase : on montre le bloc, on dit la première phrase seulement.
-4. La phrase « Ceux qui décident ».
+1. La phrase « Tout cela vient de l'open data de l'Assemblée. »
+2. Le clic « Copier » et sa phrase : on montre le bloc, on dit la première phrase seulement.
+3. La phrase « Ceux qui décident ».
+4. La phrase sur les arguments entendus.
 
-On ne coupe jamais : le « pourquoi » du temps 1, la fiche du député, la chute, la dernière phrase.
+On ne coupe jamais : le « pourquoi » du temps 1, la fiche du député, la chute complète, la dernière phrase.
 
-Repère : la chute commence à 2:06 et il reste 42 secondes après elle. Si le chronomètre dépasse 2:15 au début de la chute, on ne dit pas « Voici le verdict aujourd'hui » : la main montre le Verdict et la Suite pendant la phrase sur le Sénat, et on conclut.
+Repère : la chute commence à 1:58. Si le chronomètre dépasse 2:10 à ce moment, on ne dit pas « Verdict proposé pour le client » : la main montre le Verdict et la Suite pendant la phrase sur le Sénat, et on conclut.
 
 ## Ce qu'on ne dit jamais à l'oral
 
-- « Probabilité que la loi passe » pour un score ou pour une prédiction d'amendement. Orcet donne la moyenne des probabilités individuelles de voter pour, pas une probabilité d'adoption.
+- Un pourcentage pour le verdict. Ni « 26 % », ni « chances », ni « probabilité ». On dit la situation, la tendance et la raison. Si on doit citer le chiffre : « part des sièges favorables à l'objectif ».
+- « Probabilité que la loi passe », pour quoi que ce soit.
 - « Adopté » pour un vote en commission.
 - « C'est fini » après un vote de l'Assemblée : il reste le Sénat et la nouvelle lecture.
 - « Rejeté » pour un amendement retiré, tombé, non soutenu ou irrecevable. On lit le sort affiché.
+- « A auditionné ». Rapporteur : « a entendu ». Membre de commission : « entendues par les rapporteurs de sa commission ».
+- « Il a rencontré » à propos d'une organisation du bloc HATVP.
+- « Chef de file » comme un fait : c'est une déduction de l'outil. On dit « le plus actif de son groupe sur la mesure ».
 - « Influençable », « retournable ». On dit « sur qui agir encore », et pourquoi.
-- « La courbe annonce une censure. » On n'ouvre pas le panneau « Tendance » du Verdict pendant la démo. Mesure de P2 : la courbe ne décroche pas de façon fiable avant les censures. Elle sert de contexte, jamais d'alerte.
-- Une phrase sur ce qu'Atlas ne fait pas. On parle de ce que nous faisons. Si `demo/terrain.md` contient une réponse de l'équipe Hémicycle, on peut la citer comme telle : « vous nous avez dit ce matin que ».
-- Si `demo/terrain.md` ou P1 contredit la phrase « ce que l'API ne structure pas », on la remplace par :
-
-> Tout cela vient de l'open data de l'Assemblée : rapports, comptes rendus, amendements.
+- Une information postérieure au 18 novembre 2025 avant la chute. Le compromis du gouvernement, le vote, le Sénat : après « La suite », jamais avant.
+- « La courbe annonce une censure. » On n'ouvre pas le panneau « Tendance » du Verdict pendant la démo.
+- Rien sur Atlas. On parle de ce que nous faisons.
 
 ## Ordre de démo
 
-Ordre de la section 8 du plan, inchangé : Verdict, Action, député, Compte rendu sur le dossier rejoué ; chute ; Verdict du dossier vivant. À confirmer ou ajuster à 15 h 15 sur les données réelles (livrable 3).
+Confirmé sur les données réelles : Verdict, Action, député, Compte rendu sur le dossier rejoué ; chute ; Verdict et Suite du dossier vivant. Le dossier rejoué reste le centre : c'est le seul dont la fiche de démo a des citations, et le seul où la chute compare le verdict proposé à ce qui s'est passé.
