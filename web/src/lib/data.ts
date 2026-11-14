@@ -109,7 +109,10 @@ async function fetchAndValidate<T>(kind: DataKind, url: string, dossier?: string
  */
 export function useData<T>(kind: DataKind, dossier?: string, pa?: string): DataState<T> {
   const cfg = useConfigState();
-  const [state, setState] = useState<DataState<T>>({ status: "loading" });
+  const [request, setRequest] = useState<{ url: string | null; state: DataState<T> }>({
+    url: null,
+    state: { status: "loading" },
+  });
 
   let url: string | null = null;
   let pathError: string | null = null;
@@ -123,35 +126,35 @@ export function useData<T>(kind: DataKind, dossier?: string, pa?: string): DataS
 
   useEffect(() => {
     if (cfg.status === "loading") {
-      setState({ status: "loading" });
       return;
     }
     if (cfg.status === "error") {
-      setState({ status: "error", error: `config.json : ${cfg.error}` });
       return;
     }
     if (pathError) {
-      setState({ status: "error", error: pathError });
       return;
     }
     if (!url) return;
     let alive = true;
-    setState({ status: "loading" });
+    setRequest({ url, state: { status: "loading" } });
     let p = cache.get(url) as Promise<T> | undefined;
     if (!p) {
       p = fetchAndValidate<T>(kind, url, dossier);
       cache.set(url, p);
       p.catch(() => cache.delete(url as string));
     }
-    p.then((data) => alive && setState({ status: "ok", data })).catch(
-      (e: unknown) => alive && setState({ status: "error", error: e instanceof Error ? e.message : String(e) }),
+    p.then((data) => alive && setRequest({ url, state: { status: "ok", data } })).catch(
+      (e: unknown) => alive && setRequest({ url, state: { status: "error", error: e instanceof Error ? e.message : String(e) } }),
     );
     return () => {
       alive = false;
     };
   }, [cfg.status, url, pathError, kind, dossier]);
 
-  return state;
+  if (cfg.status === "error") return { status: "error", error: `config.json : ${cfg.error}` };
+  if (pathError) return { status: "error", error: pathError };
+  if (!url || request.url !== url) return { status: "loading" };
+  return request.state;
 }
 
 /** Vide le cache (utile après une bascule live / fixtures). */

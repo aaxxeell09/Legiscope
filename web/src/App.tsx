@@ -35,7 +35,7 @@ function Contenu() {
   if (cfg.status === "loading") return <Chargement quoi="config.json" />;
   if (cfg.status === "error") return <Erreur message={`config.json : ${cfg.error}`} />;
   return (
-    <ErrorBoundary zone="Page" resetKey={pathname}>
+    <ErrorBoundary key={pathname} zone="Page" resetKey={pathname}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dossier/:id" element={<DossierView />} />
