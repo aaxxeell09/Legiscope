@@ -1,7 +1,7 @@
 import type { Echeance, Probable, Suite } from "@contracts/index";
-import { Badge, Etat, Meta, Pourquoi, Proba } from "../../../components";
+import { Badge, Etat, Meta, Pourquoi } from "../../../components";
 import { useData } from "../../../lib/data";
-import { formatDate } from "../../../lib/format";
+import { formatDate, formatProba } from "../../../lib/format";
 import "../verdict/verdict.css";
 import "./suite.css";
 
@@ -29,7 +29,7 @@ function SuiteContenu({ s }: { s: Suite }) {
     <div className="suite">
       {s.derniere_occasion && (
         <div className="suite-occasion">
-          <span className="text-2">Dernière occasion d'agir</span>
+          <span className="text-2">{s.derniere_occasion.preuve.nature === "fait" ? "Dernière occasion procédurale identifiée" : "Occasion procédurale signalée"}</span>
           <span className="suite-occasion-date">{s.derniere_occasion.date ? formatDate(s.derniere_occasion.date) : "date inconnue"}</span>
           <span className="suite-occasion-titre">
             {s.derniere_occasion.titre} <Nature n={s.derniere_occasion.preuve.nature} />{" "}
@@ -48,7 +48,7 @@ function SuiteContenu({ s }: { s: Suite }) {
           <ul className="suite-liste">
             {echeances.map((e, i) => (
               <li key={`${e.date}-${i}`} className={`suite-echeance nature-${e.preuve.nature}`}>
-                <span className="suite-date">{e.date ? formatDate(e.date) : "date inconnue"}</span>
+                <span className="suite-date"><span className="suite-marker" aria-hidden="true" />{e.date ? formatDate(e.date) : "Date à confirmer"}</span>
                 <span>
                   <a href={e.url} target="_blank" rel="noreferrer">
                     {e.titre}
@@ -63,15 +63,15 @@ function SuiteContenu({ s }: { s: Suite }) {
       </section>
 
       <section>
-        <h4 className="suite-titre">Ce qui a le plus de chances d'arriver</h4>
+        <h4 className="suite-titre">Scénarios documentés</h4>
         {s.probables.length === 0 ? (
-          <p className="text-2">aucune prédiction disponible</p>
+          <p className="text-2">Pas de prédiction disponible.</p>
         ) : (
-          <ul className="suite-liste">
+          <><p className="suite-avertissement">Ces éléments décrivent les données fournies ; ils ne constituent pas une probabilité d’adoption de la mesure.</p><ul className="suite-liste">
             {s.probables.map((p, i) => (
               <ProbableLigne key={`${p.titre}-${i}`} p={p} />
             ))}
-          </ul>
+          </ul></>
         )}
       </section>
 
@@ -83,7 +83,7 @@ function SuiteContenu({ s }: { s: Suite }) {
 function ProbableLigne({ p }: { p: Probable }) {
   return (
     <li className={`suite-probable nature-${p.preuve.nature}`}>
-      <span className="suite-proba">{p.proba === null ? <span className="text-2">sans prédiction</span> : <Proba value={p.proba} size="sm" />}</span>
+      <span className="suite-proba">{p.proba === null ? <span className="text-2">Sans indicateur</span> : <><strong>{formatProba(p.proba)}</strong><small>indicateur fourni</small></>}</span>
       <span>
         <span className="suite-probable-titre">{p.titre}</span> <Nature n={p.preuve.nature} />{" "}
         <Pourquoi preuve={p.preuve} />
