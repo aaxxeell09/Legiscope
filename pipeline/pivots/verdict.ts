@@ -93,13 +93,14 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
       base = new Map([...positions].map(([g, p]) => [g, p.position]));
       base7 = new Map([...pos7].map(([g, p]) => [g, p.position]));
       // Amendements en attente qui portent la position du client (contre = suppriment ou réduisent la mesure).
-      porteurs = amdts.filter((a) => a.pertinent && a.sens === (cible === "contre" ? -1 : 1));
+      porteurs = amdts.filter((a) => ctx.natures.get(a.id) === (cible === "contre" ? "supprime" : "aggrave"));
       niveau = sourcePositions === "scrutins" ? "elevee" : sourcePositions === "amendements" ? "moyenne" : "faible";
     } else {
       // Repli : amendements qui réduisent (rang 2) ou reportent (rang 3) la mesure.
-      const re = obj.rang === 2 || /reduir|limiter|montant|assiette/.test(sansAccents(obj.texte)) ? RE_REDUIRE : RE_REPORTER;
-      porteurs = amdts.filter((a) => a.pertinent && a.sens === -1 && !/^supprimer cet article/i.test(a.dispositif) && re.test(sansAccents(a.dispositif + " " + a.expose)));
-      const opposes = amdts.filter((a) => a.pertinent && a.sens === 1);
+      // Nature lue dans texte.json : réduire = « reduit », repousser = « reporte » ; « aggrave » compte contre le client.
+      const voulue = /repouss|report|differ|entree en vigueur|application/.test(sansAccents(obj.texte)) ? "reporte" : "reduit";
+      porteurs = amdts.filter((a) => ctx.natures.get(a.id) === voulue);
+      const opposes = amdts.filter((a) => ctx.natures.get(a.id) === (cible === "contre" ? "aggrave" : "supprime"));
       const fabrique = (f: (x: string | null | undefined) => boolean) => {
         const m = new Map<string, Pos>();
         // Soutien du repli : groupes auteurs d'amendements de repli, ou contre la mesure. Opposition : groupes qui la renforcent.
@@ -134,6 +135,10 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
       else etabli.push(`Positions de ${connus.length} groupes lues sur leurs amendements à la mesure (aucun scrutin nominatif lié au plus tard le ${ref})`);
     } else etabli.push(`${porteurs.filter((a) => avant(a.dateDepot)).length} amendements de repli déposés au plus tard le ${ref}`);
     if (gouv && gouv.position !== "inconnue") etabli.push(`Le gouvernement est ${gouv.position} la mesure`);
+    if (etat?.texte_etat && etat?.mesure && (etat.texte_etat.statut !== "en_discussion" || etat.mesure.dans_le_texte === false)) {
+      etabli.push(`État du texte : ${etat.texte_etat.libelle}`);
+      etabli.push(`État de la mesure : ${etat.mesure.dans_le_texte ? "dans le texte" : "absente du texte"}`);
+    }
     const inconnus = [...groupes.keys()].filter((g) => !base.get(g)).map(sigle);
     if (inconnus.length) inconnu.push(`Position sur la mesure de : ${inconnus.join(", ")} (aucun acte de groupe lisible)`);
     const divises = [...base].filter(([, p]) => p === "divise").map(([g]) => sigle(g));
@@ -168,14 +173,14 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
     if (groupesCible.length) favorable.push({
       titre: `${groupesCible.map(sigle).join(", ")} ${obj.rang === 1 ? (cible === "contre" ? "contre la mesure" : "pour la mesure") : "dans le sens de cet objectif"}`,
       detail: `${groupesCible.length} groupe(s), ${groupesCible.reduce((x, g) => x + (effectifs.get(g) ?? 0), 0)} sièges, dans le sens du client.`,
-      preuve: { sources: srcPos, raisonnement: obj.rang === 1 ? `Position majoritaire de chaque groupe ${sourcePositions === "scrutins" ? "sur les scrutins liés" : "dans ses amendements à la mesure"}, traduite en position sur la mesure.` : "Groupes auteurs d'amendements de repli, ou opposés à la mesure.", nature: "deduction" },
+      preuve: { sources: srcPos, raisonnement: obj.rang === 1 ? `Position majoritaire de chaque groupe ${sourcePositions === "scrutins" ? "sur les scrutins liés" : "dans ses amendements à la mesure"}, traduite en position sur la mesure.` : "Groupes auteurs d'amendements de nature « réduit » ou « reporte » selon l'objectif, ou opposés à la mesure.", nature: "deduction" },
     });
     if (gouv && gouv.position !== "inconnue" && gouv.position !== cible) bloquant.push({ titre: "Mesure portée par le gouvernement", detail: gouv.preuve.raisonnement, preuve: gouv.preuve });
     if (gouv && gouv.position === cible) favorable.push({ titre: `Le gouvernement est ${gouv.position} la mesure`, detail: gouv.preuve.raisonnement, preuve: gouv.preuve });
     if (groupesOpp.length) bloquant.push({
       titre: `${groupesOpp.length} groupe(s) ${obj.rang === 1 ? (cible === "contre" ? "pour la mesure" : "contre la mesure") : "contre cet objectif"} : ${groupesOpp.map(sigle).join(", ")}`,
       detail: `${groupesOpp.reduce((x, g) => x + (effectifs.get(g) ?? 0), 0)} sièges en face du client.`,
-      preuve: { sources: srcPos, raisonnement: obj.rang === 1 ? `Position majoritaire de chaque groupe ${sourcePositions === "scrutins" ? "sur les scrutins liés" : "dans ses amendements à la mesure"}.` : "Groupes auteurs d'amendements qui renforcent la mesure.", nature: "deduction" },
+      preuve: { sources: srcPos, raisonnement: obj.rang === 1 ? `Position majoritaire de chaque groupe ${sourcePositions === "scrutins" ? "sur les scrutins liés" : "dans ses amendements à la mesure"}.` : "Groupes auteurs d'amendements de nature « aggrave ».", nature: "deduction" },
     });
     if (rg && rg.position !== "inconnue") (rg.position === cible ? favorable : bloquant).push({ titre: `Le rapporteur général ${rg.nom} a agi ${rg.position} la mesure`, detail: rg.preuve.raisonnement, preuve: rg.preuve });
     if (obj.rang > 1 && !porteurs.some((a) => avant(a.dateDepot))) inconnu.unshift(`Aucun amendement ${obj.rang === 2 ? "de réduction" : "de report"} déposé au plus tard le ${ref}`);
@@ -242,6 +247,7 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
       objectif_rang: obj.rang,
       situation,
       score: situation === "insuffisant" ? null : r2(score!),
+      score_libelle: "part des sièges favorables à l'objectif",
       tendance,
       confiance: { niveau, etabli, inconnu },
       lecture: { texte: r.texte, chiffres_utilises: r.chiffres_utilises, mode: r.mode, modele: r.modele, verifie: r.verifie },
@@ -266,7 +272,7 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
       limits:
         `Verdict proposé, le cabinet décide. Données au plus tard le ${ref}. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), ` +
         `corrigé à ${POIDS_ORCET * 100} % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de ${SEUIL_FAVORABLE}, défavorable sous ${SEUIL_DEFAVORABLE}, « insuffisant » sous 3 groupes de position connue. ` +
-        `Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de réduction ou de report, ou opposés à la mesure, contre groupes qui la renforcent. ` +
+        `Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de nature « reduit » (réduire) ou « reporte » (repousser), ou opposés à la mesure, contre groupes auteurs d'amendements « aggrave ». Le score se lit « part des sièges favorables à l'objectif », jamais comme une probabilité. ` +
         `Avis du rapporteur et du gouvernement non publiés. Traces : ${traces}.` +
         (rejetsTxt.length ? ` Événements de nouveautes.json écartés comme cause du changement : ${rejetsTxt.join(" ; ")}.` : ""),
       producer: PRODUCER,

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:02:08+01:00",
+    "generated_at": "2026-11-14T14:21:09+01:00",
     "sources": [
       {
         "label": "Dossier législatif, open data Assemblée nationale",
@@ -226,6 +226,22 @@
         }
       }
     ]
+  },
+  "texte_etat": {
+    "statut": "rejete",
+    "libelle": "Projet de loi de finances pour 2027 : première partie rejetée par l'Assemblée en première lecture (scrutin n° 9759, 0 pour, 458 contre) ; la navette continue au Sénat",
+    "date": "2026-11-04",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+    "preuve": {
+      "sources": [
+        {
+          "label": "Scrutin n° 9759",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+        }
+      ],
+      "raisonnement": "Le rejet de la première partie d'un projet de loi de finances vaut rejet du texte entier en première lecture à l'Assemblée ; ce n'est pas la fin de la procédure.",
+      "nature": "fait"
+    }
   },
   "etape": "Première lecture : rejeté par l'Assemblée le 2026-11-04 ; Sénat, première lecture",
   "etapes": [

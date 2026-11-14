@@ -73,6 +73,7 @@ export function contexte(d: Dossier): CtxDossierPlus {
     etape: "",
     rapporteurs: rapporteurs(texteRaw?.dossier),
     presidentCF: PRES_CF,
+    natures: new Map(),
   };
   ctx.etape = etapeEtActes(ctx).etape;
   return ctx;
@@ -84,7 +85,7 @@ for (const d of config.dossiers as Dossier[]) {
   const pivots = construirePivots(ctx, provisoire ? "general" : "auto");
   ecrireJson(join(DATA, d.id, "pivots.json"), pivots);
   if (!provisoire) {
-    const texte = construireTexte(ctx);
+    const texte = await construireTexte(ctx);
     const etat = construireEtat(ctx);
     const ga = construireGroupesAction(ctx, construireDecideurs(ctx));
     ecrireJson(join(DATA, d.id, "texte.json"), texte);

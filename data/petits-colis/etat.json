@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:02:27+01:00",
+    "generated_at": "2026-11-14T14:22:00+01:00",
     "sources": [
       {
         "label": "Dossier législatif, open data Assemblée nationale",
@@ -42,6 +42,22 @@
         }
       }
     ]
+  },
+  "texte_etat": {
+    "statut": "en_discussion",
+    "libelle": "Projet de loi de finances pour 2026 : première lecture, assemblée nationale, séance publique, première partie",
+    "date": "2025-11-18",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026",
+    "preuve": {
+      "sources": [
+        {
+          "label": "Dossier législatif",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+        }
+      ],
+      "raisonnement": "Aucune décision de l'Assemblée sur le texte au 2025-11-18 dans le dossier législatif.",
+      "nature": "fait"
+    }
   },
   "etape": "Première lecture, Assemblée nationale, séance publique, première partie",
   "etapes": [

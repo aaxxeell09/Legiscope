@@ -8,6 +8,7 @@ export const articleMesure = (d: { id: string; mesure: { article: string | null 
 import { loyautes } from "./lib/loyaute";
 import { DATA, PRODUCER, URL_AMDTS_OD, URL_DOSSIERS_OD, URL_SCRUTINS_OD, lireJson, maintenant, r2, urlDepute, urlScrutin } from "./lib/commun";
 import { CACHE } from "./lib/opendata";
+import { naturesEnLot } from "./lib/nature";
 
 const RAW = join(DATA, "raw");
 
@@ -54,10 +55,12 @@ function predictionOrcet(dossierId: string, uid: string, avant: (x: string | nul
 }
 
 // ---------- texte.json ----------
-export function construireTexte(ctx: CtxDossierPlus) {
+export async function construireTexte(ctx: CtxDossierPlus) {
   const { d, positions, sourcePositions, lies, amdts, groupes, deputes } = ctx;
   const { ref, avant } = coupure(d);
   const exclus = { irrecevables: 0, hors_deputes: 0, apres_ref: 0, hors_sujet: 0 };
+  const natures = ctx.natures;
+  const lot = await naturesEnLot(amdts.filter((a) => a.texte === d.mesure.texte_id && a.pertinent && avant(a.dateDepot)), d.mesure.label);
   const amendements: any[] = [];
   for (const a of amdts) {
     if (a.texte !== d.mesure.texte_id) continue;
@@ -65,12 +68,31 @@ export function construireTexte(ctx: CtxDossierPlus) {
     if (!avant(a.dateDepot)) { exclus.apres_ref++; continue; }
     const s = sortUnifie(a, avant);
     if (s.sort === null) { exclus.irrecevables++; continue; }
-    if (!a.auteur || !deputes.has(a.auteur)) { exclus.hors_deputes++; continue; }
+    // Auteur : député en exercice, gouvernement, ou commission (rapporteur au nom de la commission).
+    let auteur_type: "depute" | "gouvernement" | "commission";
+    let auteur_id: string;
+    let auteur_libelle: string;
+    if (a.typeAuteur === "Gouvernement") { auteur_type = "gouvernement"; auteur_id = "GOUVERNEMENT"; auteur_libelle = "Gouvernement"; }
+    else if (a.typeAuteur === "Rapporteur") {
+      auteur_type = "commission";
+      auteur_id = a.id.match(/^AMANR5L17(PO\d+)/)?.[1] ?? "COMMISSION";
+      auteur_libelle = auteur_id === "PO59048" ? "Commission des finances" : "Commission";
+    } else {
+      if (!a.auteur || !deputes.has(a.auteur)) { exclus.hors_deputes++; continue; }
+      auteur_type = "depute"; auteur_id = a.auteur; auteur_libelle = `${deputes.get(a.auteur)!.prenom} ${deputes.get(a.auteur)!.nom}`;
+    }
+    const nat = lot.get(a.id) ?? { nature: "autre" as const, mode: "defaut" as const };
+    natures.set(a.id, nat.nature);
     amendements.push({
       id: a.id,
       numero: a.numero,
       url: a.url,
-      auteur_id: a.auteur,
+      auteur_id,
+      auteur_type,
+      auteur_libelle,
+      date_depot: a.dateDepot,
+      nature: nat.nature,
+      nature_mode: nat.mode,
       cosignataires_ids: a.cosignataires.filter((c) => deputes.has(c)),
       groupe_id: a.groupe && groupes.has(a.groupe) ? a.groupe : null,
       resume: resumeAmdt(a, s.detail),
@@ -105,7 +127,8 @@ export function construireTexte(ctx: CtxDossierPlus) {
       ],
       limits:
         `Données au plus tard le ${ref}. Amendements du sujet : amendements de l'article de la mesure, plus ceux qui citent un mot-clé de la configuration dans leur dispositif. ${exclus.hors_sujet} amendements qui ne le citent que dans l'exposé sont écartés (ex. retraites, crédits de seconde partie). ` +
-        `Exclus : ${exclus.irrecevables} irrecevables ou retirés avant publication, ${exclus.hors_deputes} déposés par le gouvernement, la commission ou un ancien député, ${exclus.apres_ref} déposés après la date de référence. ` +
+        `Exclus : ${exclus.irrecevables} irrecevables ou retirés avant publication, ${exclus.hors_deputes} déposés par un ancien député, ${exclus.apres_ref} déposés après la date de référence. Amendements du gouvernement et de la commission inclus (auteur_type). ` +
+        `Nature vis-à-vis de la mesure : règle d'abord (suppression, montant, création, réduction), sinon modèle de langage contrôlé (citation exacte du dispositif ou de l'exposé exigée), sinon « autre » (nature_mode « defaut »). ` +
         `Un sort postérieur à la date de référence est « en_attente ». « non_examine » regroupe ici les amendements non soutenus (écrit dans le résumé). ` +
         `Positions des groupes : ${sourcePositions === "scrutins" ? `${nLies} scrutins nominatifs liés de sens lisible (position majoritaire du groupe traduite en position sur la mesure)` : "amendements déposés par le groupe (aucun scrutin nominatif lié avant la date de référence)"} ; « divise » sous 60 % de votes dans un même sens. ` +
         `Sens d'un amendement sur la mesure lu par règles (suppression, création, exposé) : lecture de l'outil, pas un fait publié. ` +
@@ -266,9 +289,36 @@ export function construireEtat(ctx: CtxDossierPlus) {
       dossier_id: d.id,
     },
     mesure: { label: d.mesure.label, article: art || "aucun article du texte du gouvernement", dans_le_texte: dansLeTexte, redaction_actuelle: redaction, modifications },
+    texte_etat: texteEtat(ctx, decAN1, etape),
     etape,
     etapes,
     articles,
+  };
+}
+
+/** État du texte entier, distinct de l'état de la mesure. */
+function texteEtat(ctx: CtxDossierPlus, decAN1: Acte | undefined, etape: string) {
+  const urlD = ctx.texteRaw?.url_dossier ?? URL_DOSSIERS_OD;
+  const titre = ctx.titreTexte;
+  if (decAN1) {
+    const n = decAN1.vote ? Number(decAN1.vote.replace(/^VTANR5L17V/, "")) : null;
+    const sc = n ? ctx.scrutins.find((x) => x.numero === n) : undefined;
+    const rejete = /rejet/i.test(decAN1.statut ?? "");
+    const url = n ? urlScrutin(n) : urlD;
+    return {
+      statut: rejete ? "rejete" : /adopt/i.test(decAN1.statut ?? "") ? "adopte" : "en_discussion",
+      libelle: `${titre} : ${rejete ? "première partie rejetée" : (decAN1.statut ?? "décision")} par l'Assemblée en première lecture${sc ? ` (scrutin n° ${n}, ${sc.decompte.pour} pour, ${sc.decompte.contre} contre)` : ""} ; la navette continue au Sénat`,
+      date: decAN1.date,
+      url,
+      preuve: { sources: [{ label: n ? `Scrutin n° ${n}` : "Dossier législatif", url }], raisonnement: rejete ? "Le rejet de la première partie d'un projet de loi de finances vaut rejet du texte entier en première lecture à l'Assemblée ; ce n'est pas la fin de la procédure." : "Décision de l'Assemblée publiée dans le dossier législatif.", nature: "fait" as const },
+    };
+  }
+  return {
+    statut: "en_discussion",
+    libelle: `${titre} : ${etape.toLowerCase()}`,
+    date: coupure(ctx.d).ref,
+    url: urlD,
+    preuve: { sources: [{ label: "Dossier législatif", url: urlD }], raisonnement: `Aucune décision de l'Assemblée sur le texte au ${coupure(ctx.d).ref} dans le dossier législatif.`, nature: "fait" as const },
   };
 }
 
@@ -307,7 +357,7 @@ export function construireGroupesAction(ctx: CtxDossierPlus, decideurs: any[]) {
   const oppose = cible === "pour" ? "contre" : "pour";
   const loy = loyautes(scrutins.filter((s) => avant(s.date)), moinsJours(ref, 365), ref, new Set(groupes.keys()));
   const actes = actesPropres(ctx);
-  const allies: any[] = [], perdus: any[] = [], actionnables: any[] = [];
+  const allies: any[] = [], perdus: any[] = [], actionnables: any[] = [], position_inconnue: any[] = [];
   const nom = (pa: string) => `${deputes.get(pa)!.prenom} ${deputes.get(pa)!.nom}`;
   for (const [pa, dep] of deputes) {
     if (!dep.groupe_id || !groupes.has(dep.groupe_id)) continue;
@@ -334,9 +384,12 @@ export function construireGroupesAction(ctx: CtxDossierPlus, decideurs: any[]) {
         perdus.push({ depute_id: pa, groupe_id: dep.groupe_id, score: r2(part), raison: `${raisonBase} ; loyauté ${r2(l)} à un groupe ${oppose} la mesure`, fondement: fond, position_connue: true, preuve: { sources, raisonnement: `Classé sur ses propres actes (${mots}), ${oppose} la mesure, et loyal à son groupe (${Math.round(l * 100)} % des votes sur 12 mois), lui-même ${oppose} la mesure.`, nature: "deduction" } });
       } else if (sensPropre === oppose) {
         actionnables.push({ depute_id: pa, groupe_id: dep.groupe_id, score: r2(l === null ? 0.5 : 1 - l), raison: `${raisonBase} ; loyauté à son groupe ${l === null ? "inconnue" : r2(l)}, sous le seuil de 0,85`, fondement: fond, position_connue: true, preuve: { sources, raisonnement: `A agi ${oppose} la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.`, nature: "deduction" } });
+      } else if (sensPropre === null) {
+        actionnables.push({ depute_id: pa, groupe_id: dep.groupe_id, score: r2(l === null ? 0.5 : 1 - l), raison: `${raisonBase} : actes dans les deux sens`, fondement: fond, position_connue: true, preuve: { sources, raisonnement: "Ses propres actes sur la mesure vont dans les deux sens : position encore ouverte.", nature: "deduction" } });
       }
-    } else if (posG === "divise") {
-      actionnables.push({ depute_id: pa, groupe_id: dep.groupe_id, score: r2(l === null ? 0.5 : 1 - l), raison: "Aucun vote, amendement ou intervention sur la mesure ; groupe divisé sur le sujet", fondement: [], position_connue: false, preuve: { sources: [{ label: "Fiche député", url: urlDepute(pa) }], raisonnement: "Position inconnue : aucun acte propre sur la mesure. Retenu parce que son groupe est divisé sur le sujet.", nature: "inconnue" } });
+    } else {
+      // Aucun acte personnel lié à la mesure : position inconnue, la position du groupe sert de contexte seulement.
+      position_inconnue.push({ depute_id: pa, groupe_id: dep.groupe_id, position_groupe: posG, preuve: { sources: [{ label: "Fiche député", url: urlDepute(pa) }], raisonnement: `Aucun vote, amendement ou intervention de ce député sur la mesure au ${ref}. Son groupe est ${posG ? `« ${posG} »` : "sans position connue"} sur la mesure : contexte, pas un classement.`, nature: "inconnue" } });
     }
   }
   const tri = (x: any[]) => x.sort((a, b) => b.score - a.score || (b.fondement.length - a.fondement.length));
@@ -351,7 +404,7 @@ export function construireGroupesAction(ctx: CtxDossierPlus, decideurs: any[]) {
       ],
       limits:
         `Données au plus tard le ${ref}. Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés${lireJson(join(DATA, d.id, "arguments.json")) ? ", interventions classées par A2" : " ; interventions non encore disponibles"}), jamais sur le groupe seul. ` +
-        `Totaux avant coupe : ${totaux.allies} alliés, ${totaux.perdus} perdus, ${totaux.actionnables} actionnables ; ${CAP} gardés par catégorie (score décroissant). Députés en exercice seulement. ` +
+        `Totaux avant coupe : ${totaux.allies} alliés, ${totaux.perdus} perdus, ${totaux.actionnables} actionnables ; ${CAP} gardés par catégorie (score décroissant). Les ${position_inconnue.length} députés sans acte personnel sur la mesure sont tous dans position_inconnue, avec la position de leur groupe en contexte. Députés en exercice seulement. ` +
         `Perdus = actes contre la cible et loyauté sur 12 mois d'au moins 0,85 envers un groupe lui-même opposé. Sens des amendements lu par règles : déduction de l'outil.`,
       producer: PRODUCER,
       dossier_id: d.id,
@@ -359,6 +412,7 @@ export function construireGroupesAction(ctx: CtxDossierPlus, decideurs: any[]) {
     actionnables: tri(actionnables).slice(0, CAP),
     allies: tri(allies).slice(0, CAP),
     perdus: tri(perdus).slice(0, CAP),
+    position_inconnue: position_inconnue.sort((a, b) => (a.groupe_id < b.groupe_id ? -1 : a.groupe_id > b.groupe_id ? 1 : 0)),
     decideurs,
   };
 }

@@ -203,7 +203,7 @@ export function positionsDepuisScrutins(lies: ScrutinLie[]): Map<string, PosGrou
 export function positionsDepuisAmendements(amdts: AmdtSujet[], avant: (x: string) => boolean): Map<string, PosGroupe> {
   const acc = new Map<string, { pour: number; contre: number; abstention: number }>();
   for (const a of amdts) {
-    if (!a.sens || !a.groupe || !avant(a.dateDepot)) continue;
+    if (!a.sens || !a.groupe || !a.dateDepot || !avant(a.dateDepot)) continue;
     const c = acc.get(a.groupe) ?? { pour: 0, contre: 0, abstention: 0 };
     if (a.sens > 0) c.pour++;
     else c.contre++;
@@ -231,4 +231,6 @@ export type CtxDossierPlus = {
   etape: string;
   rapporteurs: { pa: string; type: string }[];
   presidentCF: string | null;
+  /** Nature de chaque amendement de texte.json (remplie par construireTexte). */
+  natures: Map<string, "supprime" | "reduit" | "reporte" | "aggrave" | "autre">;
 };
