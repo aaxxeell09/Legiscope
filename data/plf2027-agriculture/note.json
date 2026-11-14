@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:58:12Z",
+    "generated_at": "2026-11-14T16:03:05Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -41,10 +41,18 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "L’objectif de rétablir les crédits des filières agricoles au niveau de 2026 reste incertain, la tendance étant stable. La mesure est portée par le gouvernement, ce qui freine la progression du dossier.\n\nUn amendement de suppression de l’article 77 a été déposé par le groupe RN. Cette initiative constitue le seul levier identifié pour contester la baisse des crédits.\n\nLa prochaine étape est l’examen au Sénat, sans date fixée. Ce passage offre une occasion d’obtenir la suppression ou la réduction de la mesure avant le retour du texte à l’Assemblée, suivie d’une commission mixte paritaire.",
+  "texte": "L’objectif de rétablir les crédits agricoles au niveau de 2026 reste incertain, la tendance étant stable. Le gouvernement porte la mesure, ce qui freine l’action.\n\nLe 3 novembre 2026, deux amendements identiques (n° 62, n° 1683) supprimant l’article 77 ont été adoptés en commission. Le 4 novembre 2026, la séance publique a rejeté l’article 77 lors de la première lecture (scrutin n° 9759), un résultat favorable au client.\n\nLa prochaine étape est l’examen au Sénat, sans date fixée. Suivront la commission mixte paritaire puis une nouvelle lecture à l’Assemblée.",
   "chiffres_utilises": [
     "2026",
-    "77"
+    "77",
+    "2026-11-04",
+    "4",
+    "9759",
+    "2026-11-03",
+    "3",
+    "2",
+    "62",
+    "1683"
   ],
   "sources": [
     {
@@ -62,6 +70,14 @@
     {
       "label": "Commission mixte paritaire",
       "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "label": "Séance publique, première lecture : rejeté (scrutin n° 9759)",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+    },
+    {
+      "label": "2 amendements identiques (n° 62, n° 1683) (LFI-NFP) adoptés (scrutin n° 9632) : Supprime l'article 77",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9632"
     }
   ],
   "limites": "Aucune limite signalée par les fichiers sources.",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:58:21Z",
+    "generated_at": "2026-11-14T16:02:58Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -41,10 +41,13 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "L’objectif de maintenir les aides personnelles au logement et les aides à la pierre à leur niveau de 2026 est en bonne voie, avec une tendance stable. La mesure est portée par le gouvernement, ce qui constitue le principal obstacle à sa suppression.\n\nUn amendement de suppression de l’article 78 a été déposé par le groupe RN. Cette initiative offre une opportunité de faire reculer la réforme, bien que la position du gouvernement reste déterminante pour l’issue du débat.\n\nLa prochaine étape est l’examen au Sénat, sans date fixée. Ce passage constitue la dernière occasion d’obtenir la suppression ou la réduction de la mesure avant le retour du texte à l’Assemblée. S’en suivront la commission mixte paritaire et une nouvelle lecture à l’Assemblée, également sans dates précisées.",
+  "texte": "L’objectif de maintenir les aides au niveau de 2026 reste incertain, avec une tendance stable. La mesure est portée par le gouvernement, ce qui complique sa suppression.\n\nLe 4 novembre 2026, deux amendements identiques du groupe RN ont été adoptés en commission pour supprimer l’article 78. En séance publique, la première lecture a toutefois rejeté la mesure.\n\nLa prochaine étape est l’examen au Sénat, sans date fixée. Suivront la commission mixte paritaire et une nouvelle lecture à l’Assemblée.",
   "chiffres_utilises": [
     "2026",
-    "78"
+    "78",
+    "2026-11-04",
+    "4",
+    "2"
   ],
   "sources": [
     {
@@ -62,6 +65,14 @@
     {
       "label": "Commission mixte paritaire",
       "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "label": "2 amendements identiques (n° 704, n° 1619) (RN) adoptés (scrutin n° 9652) : Supprime l'article 78",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9652"
+    },
+    {
+      "label": "Séance publique, première lecture : rejeté (scrutin n° 9759)",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
     }
   ],
   "limites": "Aucune limite signalée par les fichiers sources.",

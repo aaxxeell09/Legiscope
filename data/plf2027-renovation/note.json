@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:58:30Z",
+    "generated_at": "2026-11-14T16:03:12Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -41,10 +41,14 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "L’objectif de maintenir les crédits de MaPrimeRénov’ à leur niveau de 2026 est mal engagé, avec une tendance stable. La mesure de baisse des crédits n’apparaît pas dans le texte initial du gouvernement.\n\nSept groupes de l’Assemblée nationale soutiennent la réduction des crédits. Cette position majoritaire pèse sur la dynamique du dossier. Le texte est actuellement examiné au Sénat, où la suppression ou la réduction de la mesure reste possible avant le retour à l’Assemblée.\n\nLa prochaine étape documentée est l’examen au Sénat, sans date fixée. Suivront la commission mixte paritaire puis une nouvelle lecture à l’Assemblée, également sans date précise.",
+  "texte": "L’objectif de maintenir les crédits de MaPrimeRénov' à leur niveau de 2026 est mal engagé, avec une tendance stable. Le texte du gouvernement ne contient pas la taxe, mais sept groupes de l’Assemblée nationale soutiennent la mesure de baisse.\n\nLe 4 novembre 2026, la séance publique a rejeté le texte lors de la première lecture, un résultat favorable au client. Le 12 novembre 2026, une audition a eu lieu pour un rapport, sans effet sur le verdict.\n\nLa prochaine étape est l’examen au Sénat, date non fixée, dernière occasion d’obtenir la suppression ou la réduction de la mesure avant le retour du texte à l’Assemblée. S’en suivront la commission mixte paritaire et une nouvelle lecture à l’Assemblée, dates non fixées.",
   "chiffres_utilises": [
     "2026",
-    "7"
+    "7",
+    "2026-11-04",
+    "4",
+    "2026-11-12",
+    "12"
   ],
   "sources": [
     {
@@ -62,6 +66,14 @@
     {
       "label": "Commission mixte paritaire",
       "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "label": "Séance publique, première lecture : rejeté (scrutin n° 9759)",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+    },
+    {
+      "label": "Arte entendue pour un rapport (membre de la commission)",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a29.html"
     }
   ],
   "limites": "Aucune limite signalée par les fichiers sources.",
