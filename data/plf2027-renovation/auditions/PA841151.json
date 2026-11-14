@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:59:25+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3279-tI.html"
+      }
+    ],
+    "limits": "8 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 1 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "plf2027-renovation"
+  },
+  "depute_id": "PA841151",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3279-tI.html",
+      "date": "2026-10-27",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’Europe et des affaires étrangères",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère des armées, direction générale des relations internationales et de la stratégie (DGRIS)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’intérieur, direction de la coopération internationale et de sécurité (DCIS)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 8,
+    "rapports_avec_liste": 1
+  }
+}

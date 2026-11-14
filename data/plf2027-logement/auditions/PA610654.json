@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:59:25+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html"
+      }
+    ],
+    "limits": "3 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 3 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA610654",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html",
+      "date": "2026-11-04",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Conseil supérieur de la marine marchande",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Brittany Ferries",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Corsica Linea",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de la sécurité sociale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Établissement national des invalides de la Marine (Enim)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil supérieur des gens de mer (CSGM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération française de l’encadrement – Confédération générale des cadres (CFE-CGC) Marine",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des syndicats maritimes (CGT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union fédérale maritime (CFDT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des officiers de la marine marchande (Fomm‑Ugict‑CGT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des marins pêcheurs (CFTC)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national de la conchyliculture",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tII.html",
+      "date": "2026-11-09",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Fondation des Femmes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif féministe contre le viol (CFCV)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des centres d’information sur les droits des femmes et des familles (FNCIDFF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale Solidarité Femmes (FNSF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse nationale des allocations familiales (Cnaf)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mission interministérielle pour la protection des femmes contre les violences et la lutte contre la traite des êtres humains (Miprof)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse centrale de la mutualité sociale agricole (CCMSA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Réseau Restart",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la cohésion sociale (DGCS)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIII.html",
+      "date": "2026-11-09",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction générale du travail",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office central de lutte contre le travail illégal (OCLTI)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Observatoire de l’immigration et de la démographie (OID)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Urssaf Caisse nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse centrale de la mutualité sociale agricole (CCMSA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française du bâtiment (FFB)",
+          "type": "federation",
+          "hatvp_id": "784668642"
+        },
+        {
+          "nom": "Fédération nationale des syndicats d’exploitants agricoles (FNSEA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des métiers et des industries de l’hôtellerie (Umih)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupement des hôtelleries & restaurations de France (GHR)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 3,
+    "rapports_avec_liste": 3
+  }
+}
