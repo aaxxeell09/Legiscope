@@ -6,9 +6,15 @@ LegiSpot transforme les données ouvertes du Parlement en un tableau de bord par
 
 Projet construit le 14 novembre 2026 pendant le Hackathon Open Data (swanbase et Hémicycle, Paris). Nom du produit : LegiSpot. Nom du dépôt : `Legiscope`.
 
-![Tableau de bord LegiSpot, dossier « Taxe sur les petits colis »](docs/assets/dashboard.png)
+[![Tableau de bord LegiSpot, dossier « Taxe sur les petits colis »](docs/assets/dashboard.png)](docs/assets/legispot-demo.mp4)
 
-<!-- VIDEO : insérer ici le lien de la vidéo de démonstration quand elle est prête. -->
+| Voir | Où |
+|---|---|
+| **Vidéo de démonstration** (3 min 23) | [docs/assets/legispot-demo.mp4](docs/assets/legispot-demo.mp4) |
+| **Version en ligne** | https://bascule-two.vercel.app |
+| **En local, sans clé** | `npm install` puis `npm run dev` |
+
+> **In English.** LegiSpot is a parliamentary dashboard for public affairs firms. One dashboard per case: a client, the legislative measure that affects it, and ranked objectives. A TypeScript pipeline turns French National Assembly open data, Hémicycle's Orcet vote predictions and the HATVP lobbying register into validated JSON files; a React front end displays them in five blocks (Verdict, Updates, Next steps, Action, Report). Scores are computed by explicit rules, a language model (via Featherless) only extracts, classifies and writes, and every number it writes is checked.
 
 ## Lire ce dépôt
 
@@ -23,7 +29,7 @@ Projet construit le 14 novembre 2026 pendant le Hackathon Open Data (swanbase et
 | 7 | [contracts/README.md](contracts/README.md) | Les contrats de données (schémas Zod). Écrit pendant la construction : la description des pages y est antérieure à l'interface finale |
 | 8 | [AGENTS.md](AGENTS.md) | Repères pour un agent de code : structure, commandes, points d'entrée |
 
-Les documents de la journée de construction (plan, consignes des sessions, journaux) sont conservés et listés dans [docs/HISTORIQUE.md](docs/HISTORIQUE.md). Ils peuvent contredire l'état final : la référence est cette page et le dossier `docs/`.
+Les documents de la journée de construction (cadrage, plan, consignes des sessions, journaux, script de démonstration) sont archivés dans `docs/historique/` et listés dans [docs/HISTORIQUE.md](docs/HISTORIQUE.md). Ils peuvent contredire l'état final : la référence est cette page et le dossier `docs/`.
 
 ## Le problème
 
@@ -69,7 +75,7 @@ Chaque ligne renvoie au code qui la réalise. Le détail, avec les fichiers de d
 
 ## Démonstration
 
-Les dossiers sont déclarés dans [data/config.json](data/config.json). Après `npm run dev`, chacun s'ouvre à l'adresse `http://localhost:5173/dossier/<identifiant>`. Une version en ligne a été déployée par l'équipe le 14 novembre 2026 : https://bascule-two.vercel.app (configuration dans [vercel.json](vercel.json)).
+Les dossiers sont déclarés dans [data/config.json](data/config.json). Après `npm run dev`, chacun s'ouvre à l'adresse `http://localhost:5173/dossier/<identifiant>`. La version en ligne est déployée sur Vercel (configuration dans [vercel.json](vercel.json)).
 
 | Identifiant | Client d'exemple | Mesure suivie | Ce que le dossier montre |
 |---|---|---|---|
@@ -148,7 +154,7 @@ Détail dans [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) et [docs/DATA_AND_AI.m
 | [data/](data/) | Les fichiers JSON produits, par dossier |
 | [web/](web/) | L'interface (React, Vite, React Router, Recharts) |
 | [qa/](qa/) | Validation des schémas, contrôle croisé, vérificateur de nombres, tests |
-| [docs/](docs/) | Documentation de la version finale et captures |
+| [docs/](docs/) | Documentation de la version finale, captures, vidéo. `docs/historique/` : archive de la journée de construction |
 
 ## Lancer le projet
 
@@ -206,7 +212,7 @@ Les résultats obtenus sur l'état livré, avec le commit et l'heure, sont dans 
 
 ## Équipe et crédits
 
-**Axel** : cadrage du produit à partir du besoin du cabinet ([rendu-final.md](rendu-final.md)), documentation, préparation de la démonstration, consignes de rédaction du modèle.
+**Axel** : cadrage du produit à partir du besoin du cabinet ([docs/historique/rendu-final.md](docs/historique/rendu-final.md)), documentation, préparation de la démonstration, consignes de rédaction du modèle.
 **Ilan** : plan de construction, contrats de données, pilotage des sessions de développement du pipeline et de l'interface.
 
 Le code a été écrit en une journée avec des sessions Claude Code menées en parallèle sur trois ordinateurs. Leurs consignes et leurs journaux sont conservés (voir [docs/HISTORIQUE.md](docs/HISTORIQUE.md)).
