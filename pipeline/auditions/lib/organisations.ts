@@ -52,7 +52,7 @@ function personnesDe(reste: string): OrganisationExtraite["personnes"] {
 /** Lecture heuristique : une organisation par ligne en gras ou avant le séparateur ; les personnes suivent. */
 export function extraireHeuristique(sections: SectionAuditions[]): OrganisationExtraite[] {
   const orgs = new Map<string, OrganisationExtraite>();
-  let courante: OrganisationExtraite | null = null;
+  const etat: { courante: OrganisationExtraite | null } = { courante: null };
   const ajouter = (nom: string, personnes: OrganisationExtraite["personnes"]) => {
     const cle = sansAccents(nom);
     let o = orgs.get(cle);
@@ -61,7 +61,7 @@ export function extraireHeuristique(sections: SectionAuditions[]): OrganisationE
       orgs.set(cle, o);
     }
     o.personnes.push(...personnes);
-    courante = o;
+    etat.courante = o;
   };
   for (const s of sections) {
     for (const l of s.lignes) {
@@ -78,7 +78,7 @@ export function extraireHeuristique(sections: SectionAuditions[]): OrganisationE
       }
       if (GENERIQUE.test(bas)) continue;
       if (PERSONNE.test(bas)) {
-        if (courante) courante.personnes.push(...personnesDe(brut));
+        if (etat.courante) etat.courante.personnes.push(...personnesDe(brut));
         continue;
       }
       const { tete, reste } = couper(brut);

@@ -18,7 +18,7 @@ import {
 import { ARCHIVE_URL, rapportsDuTexte, telechargerArchive, type RapportFeuille } from "./lib/opendata";
 import { lireHtml, sectionsAuditions } from "./lib/rapports";
 import { extraireHeuristique, extraireParModele, type OrganisationExtraite } from "./lib/organisations";
-import { MODELE, modeleDisponible } from "./lib/llm";
+import { coutCumule, MODELE, modeleDisponible } from "./lib/llm";
 
 const args = process.argv.slice(2);
 const opt = (nom: string): string | undefined => {
@@ -53,7 +53,7 @@ function deputesDuDossier(dossierId: string): { ids: string[]; source: string } 
     const p = PivotsSchema.parse(lire(pv));
     return { ids: p.deputes.map((d) => d.id), source: pv };
   }
-  throw new Error(`${dossierId} : ni groupes-action.json ni pivots.json dans ${ROOT}`);
+  return { ids: [], source: `aucune liste (ni groupes-action.json ni pivots.json dans ${ROOT}/${dossierId})` };
 }
 
 function roleDe(qualite: string): RoleAudition {
@@ -135,6 +135,11 @@ async function main() {
     };
 
     const { ids, source } = deputesDuDossier(dossier.id);
+    if (ids.length === 0) {
+      console.warn(`  ${dossier.id} : ${source}, aucun fichier écrit`);
+      bilan.push(`${dossier.id} : ${source}`);
+      continue;
+    }
     const outDir = join(OUT, dossier.id, "auditions");
     mkdirSync(outDir, { recursive: true });
     let avecRapport = 0;
@@ -199,6 +204,10 @@ async function main() {
     bilan.push(ligne);
   }
   console.log(`\n${bilan.join("\n")}`);
+  if (modeleDisponible()) {
+    const c = coutCumule();
+    console.log(`modèle ${MODELE} : ${c.appels} appels, ${c.entree} jetons en entrée, ${c.sortie} en sortie, ${c.dollars.toFixed(3)} $`);
+  }
 }
 
 main().catch((e) => {
