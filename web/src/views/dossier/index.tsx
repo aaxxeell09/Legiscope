@@ -48,46 +48,67 @@ export default function DossierView() {
 
   const titre = d.label?.replace(/^PLF\s+\d{4}\s*[,—–-]\s*/i, "") ?? d.label;
   const millesime = d.label?.match(/PLF\s+\d{4}/i)?.[0]?.toUpperCase();
+  const etape = etat.data?.etape ?? "";
+  const institution = /sénat/i.test(etape) ? "Sénat" : /assemblée nationale/i.test(etape) ? "Assemblée nationale" : null;
+  const lecture = etape.split(/[,;:]/)[0]?.trim() || null;
+  const article = /^\d+[A-Za-z]?$/i.test(d.mesure?.article ?? "") ? d.mesure?.article : null;
+  const mesureCourte = d.mesure?.label && d.mesure.label.length > 120 ? `${d.mesure.label.slice(0, 117).trimEnd()}…` : d.mesure?.label;
 
   return (
     <div className="view dossier" data-view="dossier">
       <header className="dossier-head">
-        <div className="dossier-heading">
-          <div className="dossier-kicker">{d.client}</div>
-          <h1>{titre}</h1>
-          <div className="dossier-context" aria-label="Contexte parlementaire">
-            {millesime && <span>{millesime}</span>}
-            {d.mesure?.article && <span>Article {d.mesure.article}</span>}
-            {etat.data?.etape && <span>{etat.data.etape}</span>}
+        <nav className="dossier-breadcrumb" aria-label="Fil d’Ariane">
+          <span>Dossiers</span><span aria-hidden="true">/</span><span>Vue d’ensemble</span>
+        </nav>
+
+        <div className="dossier-hero">
+          <div className="dossier-heading">
+            <div className="dossier-kicker">{d.client}</div>
+            <h1>{titre}</h1>
+            {d.mesure && <p className="dossier-mesure" title={d.mesure.label}>{mesureCourte}</p>}
           </div>
-          {d.mesure && <p className="dossier-mesure" title={d.mesure.label}>{d.mesure.label}</p>}
+          <div className="dossier-head-actions">
+            {d.dateReference ? (
+              <span className="dossier-temporal history-label"><span aria-hidden="true">◷</span><span>Relecture historique<strong>{formatDate(d.dateReference)}</strong></span></span>
+            ) : (
+              <span className="dossier-temporal live-label"><span className="dataset-dot live" /><span>Dossier vivant</span></span>
+            )}
+            <Link className="dossier-base-link" to={`/dossier/${d.id}/base`}><span>Base documentaire</span><span aria-hidden="true">→</span></Link>
+          </div>
         </div>
-        <div className="dossier-head-meta">
-          {d.dateReference ? <span className="history-label"><span aria-hidden="true">◷</span> Relecture historique · {formatDate(d.dateReference)}</span> : <span className="live-label"><span className="dataset-dot live" /> Dossier vivant</span>}
+
+        <div className="dossier-context" aria-label="Contexte parlementaire">
+          {millesime && <span>{millesime}</span>}
+          {article && <span>Article {article}</span>}
+          {institution && <span>{institution}</span>}
+          {lecture && <span>{lecture}</span>}
         </div>
-        <div className="dossier-objectifs" role="tablist" aria-label="Objectif analysé">
-          {d.objectifs.map((o, i) => (
-            <button
-              type="button"
-              role="tab"
-              key={o.rang}
-              aria-selected={objectifRang === o.rang}
-              aria-controls="verdict-panneau"
-              className={`objectif${objectifRang === o.rang ? " actif" : ""}`}
-              onClick={() => setObjectifRang(o.rang)}
-              onKeyDown={(e) => {
-                if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
-                e.preventDefault();
-                const delta = e.key === "ArrowRight" ? 1 : -1;
-                const next = (i + delta + d.objectifs.length) % d.objectifs.length;
-                setObjectifRang(d.objectifs[next].rang);
-                (e.currentTarget.parentElement?.children[next] as HTMLButtonElement | undefined)?.focus();
-              }}
-            >
-              <span>{o.rang === 1 ? "Principal" : `Repli ${o.rang - 1}`}</span>
-              <strong>{o.texte}</strong>
-            </button>
-          ))}
+
+        <div className="dossier-objectifs-wrap">
+          <span className="dossier-objectifs-label">Objectif suivi</span>
+          <div className="dossier-objectifs" role="tablist" aria-label="Objectif analysé">
+            {d.objectifs.map((o, i) => (
+              <button
+                type="button"
+                role="tab"
+                key={o.rang}
+                aria-selected={objectifRang === o.rang}
+                tabIndex={objectifRang === o.rang ? 0 : -1}
+                className={`objectif${objectifRang === o.rang ? " actif" : ""}`}
+                onClick={() => setObjectifRang(o.rang)}
+                onKeyDown={(e) => {
+                  if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+                  e.preventDefault();
+                  const next = e.key === "Home" ? 0 : e.key === "End" ? d.objectifs.length - 1 : (i + (e.key === "ArrowRight" ? 1 : -1) + d.objectifs.length) % d.objectifs.length;
+                  setObjectifRang(d.objectifs[next].rang);
+                  (e.currentTarget.parentElement?.children[next] as HTMLButtonElement | undefined)?.focus();
+                }}
+              >
+                <span>{o.rang === 1 ? "Principal" : `Repli ${o.rang - 1}`}</span>
+                <strong>{o.texte}</strong>
+              </button>
+            ))}
+          </div>
         </div>
       </header>
 
