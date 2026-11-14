@@ -1,0 +1,3588 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:59:54.963Z",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Séance unique du mardi 21 octobre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025"
+      },
+      {
+        "label": "Première séance du mardi 28 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-28-avril-2026"
+      },
+      {
+        "label": "Troisième séance du mardi 28 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+      },
+      {
+        "label": "Première séance du mardi 12 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-12-mai-2026"
+      },
+      {
+        "label": "Première séance du mercredi 27 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+      },
+      {
+        "label": "Première séance du mercredi 17 juin 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 02 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-02-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 20 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 21 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 27 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 28 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 29 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-29-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 29 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-29-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Première séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Troisième séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Première séance du mardi 03 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 12 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 12 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 2 du 01/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 3 du 01/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 5 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627005_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 6 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627006_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 9 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 10 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627010_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 11 du 09/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627011_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 12 du 09/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 18 du 20/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 20 du 21/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627020_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 21 du 21/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 24 du 22/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627024_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 26 du 23/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627026_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 13 du 19/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 16 du 27/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627016_compte-rendu"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      }
+    ],
+    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3). 2 contre-argument(s) en gabarit.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-logement"
+  },
+  "decideurs": [
+    {
+      "role": "gouvernement",
+      "depute_id": null,
+      "nom": "Ministre chargé des comptes publics",
+      "groupe_id": null,
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Texte du projet de loi",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "La mesure est l'article 78 du projet de loi déposé par le gouvernement : le gouvernement en est l'auteur.",
+        "nature": "fait"
+      }
+    },
+    {
+      "role": "rapporteur_general",
+      "depute_id": "PA346782",
+      "nom": "Philippe Juvin",
+      "groupe_id": "PO845425",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Dossier législatif",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+          },
+          {
+            "label": "Scrutin n° 9099 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+          },
+          {
+            "label": "Scrutin n° 9370 (2026-10-30)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+          },
+          {
+            "label": "Scrutin n° 9497 (2026-11-02)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9497"
+          }
+        ],
+        "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 1 pour la mesure, 3 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "president_commission",
+      "depute_id": "PA721202",
+      "nom": "Éric Coquerel",
+      "groupe_id": "PO845413",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Députés et organes, open data",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/deputes_actifs_mandats_actifs_organes/AMO10_deputes_actifs_mandats_actifs_organes.json.zip"
+          },
+          {
+            "label": "Scrutin n° 9099 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+          },
+          {
+            "label": "Scrutin n° 9370 (2026-10-30)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+          },
+          {
+            "label": "Scrutin n° 9497 (2026-11-02)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9497"
+          }
+        ],
+        "raisonnement": "Président de la commission des finances (répertoire des mandats, open data). Mandat lu à la date de génération : à vérifier pour une date passée. Position lue sur ses propres actes : 5 pour la mesure, 9 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA793616",
+      "nom": "Kévin Mauvieux",
+      "groupe_id": "PO845401",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 9099 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+          },
+          {
+            "label": "Scrutin n° 9370 (2026-10-30)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+          },
+          {
+            "label": "Scrutin n° 9497 (2026-11-02)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9497"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe RN : auteur de 2 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 2 pour la mesure, 5 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA719372",
+      "nom": "Guillaume Kasbarian",
+      "groupe_id": "PO845407",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 9099 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+          },
+          {
+            "label": "Scrutin n° 9370 (2026-10-30)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+          },
+          {
+            "label": "Amendement n° 2024",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002024"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe EPR : auteur de 5 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 0 pour la mesure, 9 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA841515",
+      "nom": "Aurélien Le Coq",
+      "groupe_id": "PO845413",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 9099 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+          },
+          {
+            "label": "Scrutin n° 9700 (2026-11-04)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+          },
+          {
+            "label": "Amendement n° 839",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000839"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe LFI-NFP : auteur de 3 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 4 pour la mesure, 11 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA608172",
+      "nom": "Christine Pirès Beaune",
+      "groupe_id": "PO845419",
+      "position": "inconnue",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 9099 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+          },
+          {
+            "label": "Amendement n° 745",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000745"
+          },
+          {
+            "label": "Amendement n° 948",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000948"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe SOC : auteur de 3 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position inconnue : aucun vote ni amendement de sens lisible sur la mesure.",
+        "nature": "inconnue"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA720728",
+      "nom": "Jean-Paul Mattei",
+      "groupe_id": "PO845454",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 9099 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+          },
+          {
+            "label": "Amendement n° 3805",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe DEM : auteur de 2 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA719778",
+      "nom": "François Jolivet",
+      "groupe_id": "PO845470",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 9700 (2026-11-04)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+          },
+          {
+            "label": "Amendement n° 1096",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001096"
+          },
+          {
+            "label": "Amendement n° 1082",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001082"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe HOR : auteur de 6 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 0 pour la mesure, 7 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA719138",
+      "nom": "Michel Castellani",
+      "groupe_id": "PO845485",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 1092",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001092"
+          },
+          {
+            "label": "Amendement n° 1088",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001088"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe LIOT : auteur de 2 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA720838",
+      "nom": "Soumya Bourouaha",
+      "groupe_id": "PO845514",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 9700 (2026-11-04)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+          },
+          {
+            "label": "Amendement n° 2062",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002062"
+          },
+          {
+            "label": "Amendement n° 229",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000229"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe GDR : auteur de 2 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 2 pour la mesure, 8 contre.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "groupes": {
+    "actionnables": [
+      {
+        "depute_id": "PA608826",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 2 acte(s) pour la mesure, 1 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Amendement n° 60",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000060"
+            },
+            {
+              "label": "Amendement n° 1470",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001470"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Virginie Duby-Muller s'en est écarté 1 fois sur les scrutins liés.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA642847",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 3 acte(s) pour la mesure, 0 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Amendement n° 78",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N000078"
+            },
+            {
+              "label": "Amendement n° 1470",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001470"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Thibault Bazin s'en est écarté 1 fois sur les scrutins liés.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA718850",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 3 acte(s) pour la mesure, 1 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Amendement n° 78",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N000078"
+            },
+            {
+              "label": "Amendement n° 554",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000554"
+            },
+            {
+              "label": "Amendement n° 1470",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001470"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Pierre Cordier s'en est écarté 1 fois sur les scrutins liés.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA794182",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a voté : 1 acte(s) pour la mesure, 0 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+        "fondement": [
+          "vote"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Jean-Yves Bonnefoy s'en est écarté 1 fois sur les scrutins liés.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA842121",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a voté : 1 acte(s) pour la mesure, 0 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+        "fondement": [
+          "vote"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Nicolas Tryzna s'en est écarté 1 fois sur les scrutins liés.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA841801",
+        "groupe_id": "PO845407",
+        "score": 0.3,
+        "raison": "a voté, a déposé ou cosigné : 1 acte(s) pour la mesure, 1 contre : actes dans les deux sens",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Amendement n° 1204",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001204"
+            }
+          ],
+          "raisonnement": "Ses propres actes sur la mesure vont dans les deux sens : position encore ouverte.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA719272",
+        "groupe_id": "PO845425",
+        "score": 0.3,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.7, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1470",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001470"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA718838",
+        "groupe_id": "PO845425",
+        "score": 0.24,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 1 contre ; loyauté à son groupe 0.76, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 78",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N000078"
+            },
+            {
+              "label": "Amendement n° 190",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000190"
+            },
+            {
+              "label": "Amendement n° 1470",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001470"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA607553",
+        "groupe_id": "PO845419",
+        "score": 0.23,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.77, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 34",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000034"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA330008",
+        "groupe_id": "PO845425",
+        "score": 0.22,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 1 contre : actes dans les deux sens",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 190",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000190"
+            },
+            {
+              "label": "Amendement n° 1470",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001470"
+            }
+          ],
+          "raisonnement": "Ses propres actes sur la mesure vont dans les deux sens : position encore ouverte.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA759832",
+        "groupe_id": "PO845407",
+        "score": 0.22,
+        "raison": "a voté : 1 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.78, sous le seuil de 0,85",
+        "fondement": [
+          "vote"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9497 (2026-11-02)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9497"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA794470",
+        "groupe_id": "PO845470",
+        "score": 0.19,
+        "raison": "a voté : 1 acte(s) pour la mesure, 1 contre : actes dans les deux sens",
+        "fondement": [
+          "vote"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9370 (2026-10-30)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+            },
+            {
+              "label": "Scrutin n° 9497 (2026-11-02)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9497"
+            }
+          ],
+          "raisonnement": "Ses propres actes sur la mesure vont dans les deux sens : position encore ouverte.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA368",
+        "groupe_id": "PO845425",
+        "score": 0.16,
+        "raison": "a voté, a déposé ou cosigné : 1 acte(s) pour la mesure, 1 contre : actes dans les deux sens",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9700 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+            },
+            {
+              "label": "Amendement n° 1470",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001470"
+            }
+          ],
+          "raisonnement": "Ses propres actes sur la mesure vont dans les deux sens : position encore ouverte.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA794330",
+        "groupe_id": "PO845407",
+        "score": 0.16,
+        "raison": "a voté, a déposé ou cosigné : 1 acte(s) pour la mesure, 1 contre : actes dans les deux sens",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Amendement n° 1723",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001723"
+            }
+          ],
+          "raisonnement": "Ses propres actes sur la mesure vont dans les deux sens : position encore ouverte.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA642725",
+        "groupe_id": "PO845425",
+        "score": 0.16,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.84, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1470",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001470"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      }
+    ],
+    "allies": [
+      {
+        "depute_id": "PA719372",
+        "groupe_id": "PO845407",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné, a dit : 0 acte(s) pour la mesure, 9 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose",
+          "dit"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Scrutin n° 9370 (2026-10-30)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+            },
+            {
+              "label": "Amendement n° 2024",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002024"
+            },
+            {
+              "label": "Amendement n° 2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002025"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné, a dit), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA2940",
+        "groupe_id": "PO845439",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 3 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9497 (2026-11-02)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9497"
+            },
+            {
+              "label": "Amendement n° 740",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000740"
+            },
+            {
+              "label": "Amendement n° 1096",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001096"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA332523",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 3 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Scrutin n° 9370 (2026-10-30)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+            },
+            {
+              "label": "Amendement n° 190",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000190"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA719640",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 4 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Scrutin n° 9370 (2026-10-30)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+            },
+            {
+              "label": "Scrutin n° 9700 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+            },
+            {
+              "label": "Amendement n° 3805",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA719778",
+        "groupe_id": "PO845470",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 7 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9700 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+            },
+            {
+              "label": "Amendement n° 1096",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001096"
+            },
+            {
+              "label": "Amendement n° 1082",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001082"
+            },
+            {
+              "label": "Amendement n° 2518",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002518"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA719798",
+        "groupe_id": "PO845407",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 3 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Scrutin n° 9370 (2026-10-30)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+            },
+            {
+              "label": "Amendement n° 474",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000474"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA719914",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Amendement n° 3805",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA720560",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9700 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+            },
+            {
+              "label": "Amendement n° 3805",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA720728",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Amendement n° 3805",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA721182",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 3 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Scrutin n° 9700 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+            },
+            {
+              "label": "Amendement n° 3805",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA721234",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 3 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9099 (2026-10-27)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9099"
+            },
+            {
+              "label": "Scrutin n° 9700 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+            },
+            {
+              "label": "Amendement n° 3805",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA721852",
+        "groupe_id": "PO845407",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 3 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9370 (2026-10-30)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9370"
+            },
+            {
+              "label": "Amendement n° 2024",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002024"
+            },
+            {
+              "label": "Amendement n° 1493",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001493"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA722374",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9700 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+            },
+            {
+              "label": "Amendement n° 3805",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA793122",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 7 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9700 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9700"
+            },
+            {
+              "label": "Amendement n° 3805",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+            },
+            {
+              "label": "Amendement n° 2024",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002024"
+            },
+            {
+              "label": "Amendement n° 2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002025"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA793520",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a déposé ou cosigné, a dit : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "depose",
+          "dit"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3805",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805"
+            },
+            {
+              "label": "Intervention du 2026-06-17",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné, a dit), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      }
+    ],
+    "perdus": [],
+    "position_inconnue": [
+      {
+        "depute_id": "PA796046",
+        "groupe_id": "PO845401",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA796046"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA267200",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA267200"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA607395",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA607395"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA642695",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA642695"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA642935",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA642935"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA717161",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA717161"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA718674",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA718674"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719080",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719080"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719118",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719118"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719338",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719338"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719388",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719388"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719512",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719512"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719550",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719550"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719632",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719632"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719922",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719922"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA720022",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720022"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA720354",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720354"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA721004",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721004"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA721024",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721024"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA721296",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721296"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA721426",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721426"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA721750",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721750"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA721908",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721908"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA722102",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722102"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA722134",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722134"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA722190",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722190"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA722252",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722252"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA722358",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722358"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA757225",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA757225"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA793270",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793270"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA793528",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793528"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA793944",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793944"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA794486",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794486"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795046",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795046"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795326",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795326"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795334",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795334"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795390",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795390"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795402",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795402"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795528",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795528"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795722",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795722"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795864",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795864"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795884",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795884"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795908",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795908"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795920",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795920"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795954",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795954"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA840235",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA840235"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA842311",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA842311"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA857021",
+        "groupe_id": "PO845407",
+        "position_groupe": "divise",
+        "fiche": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA857021"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA794910",
+        "groupe_id": "PO845419",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794910"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA794038",
+        "groupe_id": "PO845425",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794038"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA335999",
+        "groupe_id": "PO845439",
+        "position_groupe": "divise",
+        "fiche": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA335999"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA267780",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA267780"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA332228",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA332228"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA605782",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA605782"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA687214",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA687214"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719528",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719528"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA720138",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720138"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA720230",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720230"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA720480",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720480"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA720552",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720552"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA721458",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721458"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA721844",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721844"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA722070",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722070"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA722336",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722336"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA793398",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793398"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA794278",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794278"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA794518",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794518"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA794578",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794578"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA794658",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794658"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA794838",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794838"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795026",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795026"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795270",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795270"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA795350",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795350"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA841431",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841431"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA841993",
+        "groupe_id": "PO845470",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841993"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA1592",
+        "groupe_id": "PO845485",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA1592"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA267042",
+        "groupe_id": "PO845485",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA267042"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA2952",
+        "groupe_id": "PO845485",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA2952"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA642734",
+        "groupe_id": "PO845485",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA642734"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA719286",
+        "groupe_id": "PO845485",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA719286"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA721486",
+        "groupe_id": "PO845485",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721486"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA793214",
+        "groupe_id": "PO845485",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793214"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA840817",
+        "groupe_id": "PO845485",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA840817"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA841543",
+        "groupe_id": "PO845485",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841543"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA330240",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA330240"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA840657",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA840657"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA840685",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA840685"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA840701",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA840701"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA840983",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA840983"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA841183",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841183"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA841207",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841207"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA841395",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841395"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA841769",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841769"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA841973",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841973"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA878242",
+        "groupe_id": "PO872880",
+        "position_groupe": "divise",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA878242"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « divise » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      }
+    ]
+  },
+  "arguments": {
+    "pour": [
+      {
+        "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Kasbarian veut retirer de l’argent aux bailleurs sociaux, faire des économies sur les services publics ; de l’autre, il veut ici permettre à une infime partie de la population, celle qui en a la capacité, de donner jusqu’à 100 000 euros d’argent liquide – on ne parle pas ici d’héritage ni de patrimoine – à ses descendants.",
+        "orateur_id": "PA794854",
+        "groupe_id": "PO845419",
+        "date": "2026-10-16",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Deuxième séance du vendredi 16 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (M. Iñaki Echaniz) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Pour des raisons d’économies budgétaires, le Rassemblement national souhaite responsabiliser les bailleurs sociaux, notamment en supprimant l’exonération de taxe foncière, qui coûterait trop cher à l’État.",
+        "orateur_id": "PA795422",
+        "groupe_id": "PO845413",
+        "date": "2026-10-08",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Damien Maudet) la défend : « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      }
+    ],
+    "contre": [
+      {
+        "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Cet extrême centre est prêt à toutes les compromissions avec l’extrême droite pour supprimer la contribution sur les bénéfices des grandes entreprises, pour allonger la liste des niches fiscales favorables aux plus riches, pour rejeter la taxe Zucman, le plafonnement du prix de l’essence ou la réforme du pacte Dutreil, ou encore pour attaquer les bailleurs sociaux, donc les plus modestes.",
+        "orateur_id": "PA605745",
+        "groupe_id": "PO845514",
+        "date": "2026-11-04",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Deuxième séance du mercredi 04 novembre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Nicolas Sansu) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Elle est intéressante, même s’il faut veiller à ne pas ouvrir le PTZ sans conditions, ce qui reviendrait à supprimer les taux d’intérêt pour tout le monde.",
+        "orateur_id": "PA719372",
+        "groupe_id": "PO845407",
+        "date": "2026-10-30",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du vendredi 30 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Guillaume Kasbarian) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Je suis favorable à un prêt à taux zéro pour les classes moyennes : la natalité française ne baisse pas parce que les gens ne veulent plus d’enfants – je me méfie de ces discours moralisateurs – mais parce que des classes moyennes et populaires qui souhaitent en avoir n’ont pas les moyens matériels de les accueillir.",
+        "orateur_id": null,
+        "groupe_id": null,
+        "date": "2026-10-30",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du vendredi 30 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « coupe » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Cette coupe dans les APL ne fait qu’ajouter de l’huile sur le feu.",
+        "orateur_id": "PA793756",
+        "groupe_id": "PO845413",
+        "date": "2026-10-20",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « coupe » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« coupe »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "La commission adopte les amendements, exprimant ainsi un avis favorable à la suppression de l’article 78.",
+        "orateur_id": "PA793756",
+        "groupe_id": "PO845413",
+        "date": "2026-10-20",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (François Piquemal, rapporteur pour avis) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Le premier quinquennat d’Emmanuel Macron a commencé par une baisse des APL et se terminera par un gel de celles-ci.",
+        "orateur_id": "PA794854",
+        "groupe_id": "PO845419",
+        "date": "2026-10-20",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Iñaki Echaniz) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Alors que l’urgence climatique devrait en faire une priorité nationale et le chantier du siècle, le programme 135 subit une nouvelle baisse (– 8 %).",
+        "orateur_id": "PA793980",
+        "groupe_id": "PO845439",
+        "date": "2026-10-20",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Charles Fournier) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Le programme 109, qui finance les aides personnelles au logement, voit ses crédits baisser à nouveau, à hauteur de 0,31 %, du fait notamment du gel du barème.",
+        "orateur_id": "PA793980",
+        "groupe_id": "PO845439",
+        "date": "2026-10-20",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Charles Fournier) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Nous avions proposé de mettre fin à la réduction d’impôt sur le revenu sur les frais de scolarité et de désindexer ou de supprimer le bénéfice des APL pour les revenus les plus élevés.",
+        "orateur_id": "PA794802",
+        "groupe_id": "PO845407",
+        "date": "2026-10-20",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 18 du 20/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Charles Sitzenstuhl, rapporteur spécial) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Votre politique familiale, c’est l’asphyxie : gel des APL, blocage des prestations familiales à leur niveau de 2026, suppression de 600 millions d’euros sur l’allocation de rentrée scolaire.",
+        "orateur_id": "PA841947",
+        "groupe_id": "PO845413",
+        "date": "2026-10-20",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du mardi 20 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Zahia Hamdane) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Le Gouvernement propose de geler les APL, le Rassemblement national voulant, quant à lui, carrément les supprimer pour les non-Français, alors que 5,7 millions de ménages supportent un taux d’effort excessif et que 1,2 million de locataires seraient en situation d’impayés.",
+        "orateur_id": "PA841729",
+        "groupe_id": "PO845413",
+        "date": "2026-10-20",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des affaires économiques, réunion n° 14 du 20/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627014_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Abdelkader Lahmar) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Vous voulez supprimer à l’aveugle un outil qui aide le logement social.",
+        "orateur_id": "PA841531",
+        "groupe_id": "PO845413",
+        "date": "2026-10-16",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Deuxième séance du vendredi 16 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Shéhérazade Bentorki) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Le livret A est conçu pour financer le logement social, et c’est très bien ainsi car c’est selon nous un chantier prioritaire si l’on veut faire baisser les prix du logement dans le pays.",
+        "orateur_id": "PA721202",
+        "groupe_id": "PO845413",
+        "date": "2026-10-16",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Troisième séance du vendredi 16 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Éric Coquerel, président de la commission des finances) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Vous avez oublié que quand les gens n’ont pas d’argent parce que vous gelez les APL et les retraites et parce que vous taillez dans les salaires des enseignants, ils dépensent moins, ce qui engendre une baisse de l’activité économique.",
+        "orateur_id": "PA841515",
+        "groupe_id": "PO845413",
+        "date": "2026-10-16",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du vendredi 16 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Aurélien Le Coq) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Nos familles vivent massivement en dessous du seuil de pauvreté et nos logements sociaux, insuffisants, figurent parmi les plus chers de France, mais ils n’échapperont pas à la baisse des APL ni au coup de rabot sur la ligne budgétaire unique (LBU).",
+        "orateur_id": "PA795998",
+        "groupe_id": "PO845514",
+        "date": "2026-10-14",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du mercredi 14 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Émeline K/Bidi (GDR)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baissez » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Vous baissez la contribution exceptionnelle sur les bénéfices des grandes entreprises de 2,3 milliards d’euros ; vous épargnez les hauts patrimoines et les grands héritages ; vous n’avez pas le courage de vous attaquer aux surprofits des groupes pétroliers ; au contraire, vous mettez à contribution les retraités, les allocataires d’APL, les malades en affection de longue durée (ALD), les fonctionnaires.",
+        "orateur_id": "PA610002",
+        "groupe_id": "PO845439",
+        "date": "2026-10-13",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Deuxième séance du mardi 13 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Eva Sas (EcoS)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baissez » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baissez »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Nous voulons supprimer les nouveaux avantages créés par l’article pour les bailleurs sociaux.",
+        "orateur_id": "PA793246",
+        "groupe_id": "PO845401",
+        "date": "2026-10-08",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Frédéric Falcon) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Or vous voulez supprimer le plafond de ressources du PTZ « parentalité » sans même avoir mené d’étude d’impact.",
+        "orateur_id": "PA794854",
+        "groupe_id": "PO845419",
+        "date": "2026-10-08",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Iñaki Echaniz) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Falcon, qui avait pour objectif la suppression sèche de l’exonération de taxe foncière accordée aux bailleurs sociaux.",
+        "orateur_id": "PA719372",
+        "groupe_id": "PO845407",
+        "date": "2026-10-08",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Guillaume Kasbarian) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Il me semble paradoxal de priver les bailleurs sociaux d’une ressource puis de demander au contribuable de compenser cette baisse.",
+        "orateur_id": "PA719372",
+        "groupe_id": "PO845407",
+        "date": "2026-10-08",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Guillaume Kasbarian) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Il s’agit de supprimer le PTZ « parentalité », destiné aux familles déjà propriétaires qui comptent au moins un enfant de moins de 3 ans.",
+        "orateur_id": "PA841885",
+        "groupe_id": "PO845439",
+        "date": "2026-10-08",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Arnaud Bonnet) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Ils demandent la rénovation des bâtiments, l’embauche de personnel, la création de 150 000 places supplémentaires dans l’enseignement supérieur, la revalorisation des bourses et des APL (aides personnelles au logement), que vous voulez geler, ou encore la suppression de la CVEC (contribution de vie étudiante et de campus) et des frais d’inscriptions racistes s’appliquant aux étudiantes et étudiants étrangers.",
+        "orateur_id": "PA841515",
+        "groupe_id": "PO845413",
+        "date": "2026-10-08",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 9 du 08/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Aurélien Le Coq) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Quel affront pour celles et ceux qui verront leurs APL ne pas progresser, leur salaire rester bloqué, notamment par le gel du point d’indice des fonctionnaires, ou leur pension baisser, du fait de leur désindexation, et qui subiront aussi, indirectement, la tension sur les budgets des collectivités locales !",
+        "orateur_id": "PA605745",
+        "groupe_id": "PO845514",
+        "date": "2026-10-01",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 3 du 01/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Nicolas Sansu) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Je ne vois pas comment l’augmentation de la consommation pourrait doubler, passant de + 0,4 % à + 0,8 %, au moment même où le revenu disponible des ménages va baisser du fait de l’amputation des revenus du travail de 2,5 milliards d’euros, du gel des APL, du point d’indice des fonctionnaires et des pensions de retraite, de la fiscalisation des indemnités journalières et de la hausse des frais de scolarité.",
+        "orateur_id": "PA841515",
+        "groupe_id": "PO845413",
+        "date": "2026-10-01",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 2 du 01/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Aurélien Le Coq) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisser » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisser »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Face au manque de logements pour les agents publics et à la crise du logement en général, l’urgence est d’investir massivement pour produire plus de logements sociaux, de supprimer la réduction de loyer de solidarité pour redonner de l’air aux bailleurs sociaux (M.",
+        "orateur_id": "PA796018",
+        "groupe_id": "PO845439",
+        "date": "2026-06-17",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du mercredi 17 juin 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Danielle Simonnet) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Les chiffres au 1er janvier 2024 sont édifiants : 2,6 millions de ménages attendent un logement social ; en un an, les attributions ont chuté de 6 %, la plus forte baisse hors période de pandémie de covid, et le délai d’attente moyen pour un logement frôle désormais les 540 jours.",
+        "orateur_id": "PA793520",
+        "groupe_id": "PO845454",
+        "date": "2026-06-17",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du mercredi 17 juin 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Mickaël Cosson) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Vous ne pouvez pas, d’un côté, balayer d’un revers de main les solutions que nous proposons – qu’il s’agisse de la diminution, voire de la suppression de la réduction de loyer de solidarité (RLS), qui redonnerait enfin de l’air aux bailleurs sociaux, ou tout simplement de la revalorisation des salaires des agents publics – et, de l’autre, vous émouvoir des difficultés que rencontrent nos concitoyens pour se loger, alors que cela fait dix ans que vous êtes aux responsabilités.",
+        "orateur_id": "PA794854",
+        "groupe_id": "PO845419",
+        "date": "2026-06-17",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du mercredi 17 juin 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Iñaki Echaniz) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « suppression » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "La baisse des crédits ne relève donc pas simplement d’un ajustement budgétaire mais bien d’une rupture profonde dans la capacité même à produire du logement social.",
+        "orateur_id": "PA795762",
+        "groupe_id": "PO845419",
+        "date": "2026-04-28",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Troisième séance du mardi 28 avril 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Elie Califer (SOC)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Un effort important a été consenti en 2026, avec une baisse du montant de la réduction de loyer de solidarité et un financement de l’aide à la pierre, afin d’accompagner le monde du logement social.",
+        "orateur_id": null,
+        "groupe_id": null,
+        "date": "2026-04-28",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Troisième séance du mardi 28 avril 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Vincent Jeanbrun, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Nous le savons tous, la France fait face à une grave crise du logement : l’offre locative a chuté de 15 % en cinq ans, touchant particulièrement les étudiants, les apprentis et les jeunes actifs ; les mises en chantier de logements ont considérablement baissé ; il y a pratiquement 3 millions de dossiers de demande d’un logement social en attente.",
+        "orateur_id": "PA794430",
+        "groupe_id": "PO845470",
+        "date": "2026-04-28",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Troisième séance du mardi 28 avril 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Michel Criaud (HOR)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Il faut rappeler que les organismes HLM ont été fragilisés par certaines décisions, notamment la réduction de loyer de solidarité (RLS), qui leur a fait supporter une partie de la baisse des aides personnalisées au logement (APL) : ces mesures ont réduit leur capacité d’investissement et la production de logements sociaux est ainsi passée d’environ 120 000 par an à près de 80 000, soit une baisse d’un tiers.",
+        "orateur_id": "PA942",
+        "groupe_id": "PO845485",
+        "date": "2026-04-28",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Troisième séance du mardi 28 avril 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Charles de Courson (LIOT)) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre",
+        "citation": "Benjamin Lucas-Lundy applaudit également.) Tout le monde passe à la caisse : les apprentis, avec la baisse des salaires ; les locataires, avec le gel des APL ; les retraités, avec le gel des pensions ; les travailleurs, avec la hausse de l’impôt sur le revenu ; les plus vulnérables, avec le gel des prestations sociales ; les patients, avec le doublement des franchises, et les malades en affection de longue durée (ALD), avec des taxes sur leurs indemnités.",
+        "orateur_id": "PA794686",
+        "groupe_id": "PO845413",
+        "date": "2025-10-21",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Séance unique du mardi 21 octobre 2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Marianne Maximi) s'y oppose ou veut la réduire : « Position contre la mesure déduite du mot « baisse » dans une phrase sur logement, apl et aides à la pierre ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "nature": "deduction"
+        }
+      }
+    ]
+  },
+  "contre_arguments": [
+    {
+      "texte": "À l'argument « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre », opposer celui déjà entendu en séance le 4 novembre 2026 : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation à reprendre : « Cet extrême centre est prêt à toutes les compromissions avec l’extrême droite pour supprimer la contribution sur les bénéfices des grandes entreprises, pour allonger la liste des niches fiscales favorables aux plus riches, pour rejeter la taxe Zucman, le plafonnement du prix de l’essence ou la réforme du pacte Dutreil, ou encore pour attaquer les bailleurs sociaux, donc les plus modestes. »",
+      "repond_a": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
+      "chiffres_utilises": [
+        "2026-11-04",
+        "4",
+        "2026"
+      ],
+      "mode": "gabarit",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 4 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "À l'argument « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre », opposer celui déjà entendu en séance le 30 octobre 2026 : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation à reprendre : « Elle est intéressante, même s’il faut veiller à ne pas ouvrir le PTZ sans conditions, ce qui reviendrait à supprimer les taux d’intérêt pour tout le monde. »",
+      "repond_a": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
+      "chiffres_utilises": [
+        "2026-10-30",
+        "30",
+        "2026"
+      ],
+      "mode": "gabarit",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 30 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+          }
+        ],
+        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}

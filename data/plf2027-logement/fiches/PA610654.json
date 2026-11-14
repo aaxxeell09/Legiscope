@@ -1,0 +1,1869 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:59:53.182Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Troisième séance du mardi 28 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA610654",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html",
+      "date": "2026-11-04",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Conseil supérieur de la marine marchande",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Brittany Ferries",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Corsica Linea",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de la sécurité sociale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Établissement national des invalides de la Marine (Enim)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil supérieur des gens de mer (CSGM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération française de l’encadrement – Confédération générale des cadres (CFE-CGC) Marine",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des syndicats maritimes (CGT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union fédérale maritime (CFDT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des officiers de la marine marchande (Fomm‑Ugict‑CGT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des marins pêcheurs (CFTC)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national de la conchyliculture",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tII.html",
+      "date": "2026-11-09",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Fondation des Femmes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif féministe contre le viol (CFCV)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des centres d’information sur les droits des femmes et des familles (FNCIDFF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale Solidarité Femmes (FNSF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse nationale des allocations familiales (Cnaf)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mission interministérielle pour la protection des femmes contre les violences et la lutte contre la traite des êtres humains (Miprof)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse centrale de la mutualité sociale agricole (CCMSA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Réseau Restart",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la cohésion sociale (DGCS)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIII.html",
+      "date": "2026-11-09",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction générale du travail",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office central de lutte contre le travail illégal (OCLTI)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Observatoire de l’immigration et de la démographie (OID)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Urssaf Caisse nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse centrale de la mutualité sociale agricole (CCMSA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française du bâtiment (FFB)",
+          "type": "federation",
+          "hatvp_id": "784668642"
+        },
+        {
+          "nom": "Fédération nationale des syndicats d’exploitants agricoles (FNSEA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des métiers et des industries de l’hôtellerie (Umih)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupement des hôtelleries & restaurations de France (GHR)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [
+    {
+      "date": "2026-04-28",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Comment expliquer que, face à l’ampleur de la crise du logement social devenue structurelle en outre-mer, l’État persiste dans une logique de désengagement ? J’ai bien compris que vous ne l’aviez appris que cet après-midi lors des questions au gouvernement, mais les crédits de la ligne budgétaire unique accusent depuis quelque temps une baisse mortifère – moins 20 % en deux ans – qui, manifestement, s’accélérera en 2027.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+    }
+  ],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000629",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – Au premier alinéa du B de l’article 278‑0 bis du code général des impôts, après le mot : « livraisons », sont insérés les mots :« d’électricité d’une…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000629"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000720",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – L’article 278 sexies A du code général des impôts est ainsi modifié : 1° Le I est ainsi modifié : a) Le 2° est supprimé ; b) Au 3° : – Au premier alinéa…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000720"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000744",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 42 : I. – L’article L. 841‑5 du code de l’éducation est abrogé. II. – La perte de recettes résultant pour l’État du I est compensée, à due concurrence, par la…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000744"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000839",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 7 : I. – Le I de l’article 17‑1 de la loi n° 89‑462 du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant modification de la loi n° 86‑1290 du 23…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000839"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001457",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I – Le B du I de la section V du chapitre premier du titre II de la première partie du livre premier du code général des impôts est ainsi modifié : 1° Le 2° du…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001457"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001568",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 26 : Le III de l’article 1406 bis du code général des impôts est complété par un C ainsi rédigé : « C. – Lorsque le propriétaire dispose de plusieurs logements…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001568"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000286",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – Le code de l’énergie est ainsi modifié : 1° Le premier alinéa de l’article L. 337‑6 est ainsi rédigé : « Les tarifs réglementés de vente d’électricité…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000286"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001026",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – L’article 278 sexies A du code général des impôts est ainsi modifié : 1° Le I est ainsi modifié : a) Le 2° est abrogé ; b) Au premier alinéa du 3°, les…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001026"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001042",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 42 : I. – L’article L. 841‑5 du code de l’éducation est abrogé. II. – La perte de recettes résultant pour l’État du I est compensée, à due concurrence, par la…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001042"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002033",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 26 : Le III de l’article 1406 bis du code général des impôts est complété par un C ainsi rédigé : « C. – Lorsque le propriétaire dispose de plusieurs logements…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002033"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002404",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 7 : I. – Le I de l’article 17‑1 de la loi n° 89‑462 du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant modification de la loi n° 86‑1290 du 23…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002404"
+    },
+    {
+      "id": "AMANR5L17PO419865B3210P2D1N000168",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de financer la production de 200 000 logements publics par an, dont 140 000 logements très sociaux (PLAI). La crise…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419865B3210P2D1N000168"
+    },
+    {
+      "id": "AMANR5L17PO419865B3210P2D1N000170",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de refaire l'isolation d'au moins 700 000 logements par an, afin d'éradiquer les passoires et les bouilloires…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419865B3210P2D1N000170"
+    },
+    {
+      "id": "AMANR5L17PO419865B3210P2D1N000171",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose d'augmenter les moyens alloués aux bailleurs sociaux pour relancer la rénovation thermique du parc HLM. Cette mesure…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419865B3210P2D1N000171"
+    },
+    {
+      "id": "AMANR5L17PO419865B3210P2D1N000172",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de financer un plan “confort d'été”. En parallèle d’une rénovation complète des logements, une première vague…",
+      "sort": "retire",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419865B3210P2D1N000172"
+    },
+    {
+      "id": "AMANR5L17PO419865B3210P2D1N000173",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement d'appel, le groupe LFI propose de financer la construction de logements sociaux accessibles et adaptés aux personnes en situation de…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419865B3210P2D1N000173"
+    },
+    {
+      "id": "AMANR5L17PO419865B3210P2D1N000174",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de relever la prise en charge des travaux d'adaptation des logements via MaPrimeAdapt', afin que les ménages les plus…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419865B3210P2D1N000174"
+    },
+    {
+      "id": "AMANR5L17PO419865B3210P2D1N000175",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite renforcer les moyens consacrés par l’État à l’accueil et à l’habitat des gens du voyage. La loi du 5 juillet 2000…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419865B3210P2D1N000175"
+    },
+    {
+      "id": "AMANR5L17PO419865B3210P2D1N000176",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose d'augmenter les crédits de la politique de la ville, afin de garantir les moyens d'action de l'État dans les…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419865B3210P2D1N000176"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003136",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I – Le B du I de la section V du chapitre premier du titre II de la première partie du livre premier du code général des impôts est ainsi modifié : 1° Le 2° du…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003136"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003625",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le code monétaire et financier est ainsi modifié : 1° A la fin de la première phrase du deuxième alinéa de l’article L. 221‑4, les mots : « par le décret…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003625"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003626",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – 1° A la fin de la première phrase du deuxième alinéa de l’article L. 221‑4 du code monétaire et financier, les mots : « par le décret prévu au premier…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003626"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003685",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – Le code des impositions sur les biens et services est ainsi modifié : 1° Au premier alinéa de l’article L. 213‑247, après le mot : « neuf », sont insérés…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003685"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003691",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 26 : Le III de l’article 1406 bis du code général des impôts est ainsi modifié : 1° Le A est ainsi modifié : a) Le premier alinéa ainsi modifié : – le taux : « 17 %…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003691"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000186",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 81 : L’article 81 du projet de loi de finances pour 2027 est ainsi rédigé : I. – Le premier alinéa du A du I de l’article L. 124‑1‑1 du code de l’énergie est ainsi…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000186"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000188",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe La France insoumise souhaite tripler les moyens consacrés au chèque énergie afin de mieux répondre à la précarité énergétique…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000188"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000189",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement de repli, les député.es du groupe parlementaire La France Insoumise demandent la revalorisation du chèque énergie et le rétablissement de…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "le Secours Catholique"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000189"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000205",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement nous proposons de renforcer véritablement la ligne budgétaire unique (LBU) consacrée au logement dans les Outre-mer. La problématique du…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000205"
+    },
+    {
+      "id": "AMANR5L17PO59051B3210P2D1N000061",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement nous proposons de renforcer véritablement la ligne budgétaire unique (LBU) consacrée au logement dans les Outre-mer. La problématique du…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59051B3210P2D1N000061"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000252",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 78.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000252"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000253",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de financer la production de 200 000 logements publics par an, dont 140 000 logements très sociaux (PLAI). La crise…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000253"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000254",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de refaire l'isolation d'au moins 700 000 logements par an, afin d'éradiquer les passoires et les bouilloires…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000254"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000255",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose d’augmenter les moyens alloués aux bailleurs sociaux pour relancer la rénovation thermique du parc HLM. Cette mesure…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000255"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000257",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de financer un plan “confort d'été”. En parallèle d’une rénovation complète des logements, une première vague…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000257"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000258",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement d'appel, le groupe LFI propose de financer la construction de logements sociaux accessibles et adaptés aux personnes en situation de…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000258"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000259",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de relever la prise en charge des travaux d'adaptation des logements via MaPrimeAdapt', afin que les ménages les plus…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000259"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000260",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite renforcer les moyens consacrés par l’État à l’accueil et à l’habitat des gens du voyage. La loi du 5 juillet 2000…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000260"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000261",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement d'appel, le groupe LFI propose de produire 30 000 logements sociaux par an pour les jeunes ainsi qu’un plan d’urgence de rénovation des…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000261"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000262",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose d'augmenter les crédits de la politique de la ville, afin de garantir les moyens d'action de l'État dans les…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000262"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000264",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite augmenter de 10 % les aides personnelles au logement (APL). Les APL sont un outil central de lutte contre la…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000264"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000265",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite créer 10 000 nouvelles places d’hébergement d’urgence, afin de porter le parc à 213 000 places en moyenne annuelle…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "la Fédération des acteurs de la solidarité"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000265"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000780",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de la commission du développement durable et de l’aménagement du territoire propose de refaire l’isolation d’au moins 700 000 logements par an…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000780"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000782",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose de relever la prise en charge des travaux d’adaptation des logements via MaPrimeAdapt’, afin que les ménages les plus précaires n’aient…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000782"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000783",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement d’appel propose de financer la construction de logements sociaux accessibles et adaptés aux personnes en situation de handicap. Suite à la loi…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000783"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000784",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose de financer la production de 200 000 logements publics par an, dont 140 000 logements très sociaux (PLAI). La crise du logement que nous…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000784"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000785",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Les auteurs de cet amendement proposent renforcer les moyens consacrés par l’État à l’accueil et à l’habitat des gens du voyage. La loi du 5 juillet 2000…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000785"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000791",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Les auteurs de cet amendement proposent d’augmenter les crédits de la politique de la ville, afin de garantir les moyens d’action de l’État dans les quartiers…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000791"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001210",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe LFI vise à la suppression du nouveau programme 387 Soutien financier au nouveau nucléaire français, qui vise à financer les nouveaux…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001210"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001261",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe La France insoumise souhaite tripler les moyens consacrés au chèque énergie afin de mieux répondre à la précarité énergétique…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001261"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001823",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 69.",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001823"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001833",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 74.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001833"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001841",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 74 : I. – Au début de l’alinéa 1, supprimer les mots : « La révision prévue à l’article L. 823‑4 du code de la construction et de l’habitation et » II. – En…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001841"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001856",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 78.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001856"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001869",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de financer la production de 200 000 logements publics par an, dont 140 000 logements très sociaux (PLAI). La crise…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001869"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001871",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de refaire l’isolation d’au moins 700 000 logements par an, afin d’éradiquer les passoires et les bouilloires…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001871"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001873",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite augmenter de 10 % les aides personnelles au logement (APL). Les APL sont un outil central de lutte contre la…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001873"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001898",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite créer 10 000 nouvelles places d’hébergement d’urgence, afin de porter le parc à 213 000 places en moyenne annuelle…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "la Fédération des acteurs de la solidarité"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001898"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001915",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose d’augmenter les moyens alloués aux bailleurs sociaux pour relancer la rénovation thermique du parc HLM. Cette mesure…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001915"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001924",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose d’augmenter les crédits de la politique de la ville, afin de garantir les moyens d’action de l’État dans les…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001924"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001926",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de relever la prise en charge des travaux d’adaptation des logements via MaPrimeAdapt’, afin que les ménages les plus…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001926"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001941",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite renforcer les moyens consacrés par l’État à l’accueil et à l’habitat des gens du voyage. La loi du 5 juillet 2000…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001941"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002503",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement nous proposons de renforcer véritablement la ligne budgétaire unique (LBU) consacrée au logement dans les Outre-mer. La problématique du…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002503"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002620",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 78.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002620"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002621",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement d’appel, le groupe LFI propose de produire 30 000 logements sociaux par an pour les jeunes ainsi qu’un plan d’urgence de rénovation des…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002621"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002631",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose d’augmenter les crédits de la politique de la ville, afin de garantir les moyens d’action de l’État dans les…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002631"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001096",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 78.",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001096"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001913",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite créer 10 000 nouvelles places d’hébergement d’urgence, afin de porter le parc à 213 000 places en moyenne annuelle…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Fédération des acteurs de la solidarité"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001913"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001914",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite augmenter de 10 % les aides personnelles au logement (APL). Les APL sont un outil central de lutte contre la…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001914"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001915",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de refaire l’isolation d’au moins 700 000 logements par an, afin d’éradiquer les passoires et les bouilloires…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001915"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001916",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose d’augmenter les moyens alloués aux bailleurs sociaux pour relancer la rénovation thermique du parc HLM. Cette mesure…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001916"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001917",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de financer la production de 200 000 logements publics par an, dont 140 000 logements très sociaux (PLAI). La crise…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001917"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001918",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de relever la prise en charge des travaux d’adaptation des logements via MaPrimeAdapt’, afin que les ménages les plus…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001918"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001919",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI souhaite renforcer les moyens consacrés par l’État à l’accueil et à l’habitat des gens du voyage. La loi du 5 juillet 2000…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001919"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001920",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose d’augmenter les crédits de la politique de la ville, afin de garantir les moyens d’action de l’État dans les…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001920"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002276",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, la commission du développement durable et de l’aménagement du territoire propose d’augmenter les crédits de la politique de la ville, afin…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002276"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002277",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose de refaire l’isolation d’au moins 700 000 logements par an, afin d’éradiquer les passoires et les bouilloires thermiques. L’ampleur de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002277"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002279",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose de relever la prise en charge des travaux d’adaptation des logements via MaPrimeAdapt’, afin que les ménages les plus précaires n’aient…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002279"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002281",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement d’appel propose de financer la construction de logements sociaux accessibles et adaptés aux personnes en situation de handicap. Suite à la loi…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002281"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002282",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose de financer la production de 200 000 logements publics par an, dont 140 000 logements très sociaux (PLAI). La crise du logement que nous…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002282"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002283",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose de renforcer les moyens consacrés par l’État à l’accueil et à l’habitat des gens du voyage. La loi du 5 juillet 2000 relative à…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002283"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002447",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement nous proposons de renforcer véritablement la ligne budgétaire unique (LBU) consacrée au logement dans les Outre-mer. La problématique du…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002447"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002499",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement d'appel, le groupe LFI propose de produire 30 000 logements sociaux par an pour les jeunes ainsi qu’un plan d’urgence de rénovation des…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002499"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002500",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement d'appel, le groupe LFI propose de financer la construction de logements sociaux accessibles et adaptés aux personnes en situation de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002500"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002501",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe LFI propose de financer un plan “confort d'été”. En parallèle d’une rénovation complète des logements, une première vague…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002501"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002502",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 78.",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002502"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002866",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe LFI vise à la suppression du nouveau programme 387 Soutien financier au nouveau nucléaire français, qui vise à financer les nouveaux…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002866"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N003263",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Par cet amendement, le groupe La France insoumise souhaite tripler les moyens consacrés au chèque énergie afin de mieux répondre à la précarité énergétique…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N003263"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "775697907",
+      "nom": "UNION NATIONALE FEDERATION H L M",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775697907",
+      "objet": "PLF2026 : Proroger le régime d’exonération des plus-values des particuliers en cas de vente destinée au logement social\n",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "327664942",
+      "nom": "ASS REGIONALE HLM REGION NORD PDC",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=327664942",
+      "objet": "Échanges en 2025 avec députés relatifs aux enjeux législatifs et aux conditions de mise en œuvre des politiques du logement social.",
+      "actions": [
+        "rencontre",
+        "correspondance",
+        "transmission d'expertise",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "824581623",
+      "nom": "ACTION LOGEMENT GROUPE",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=824581623",
+      "objet": "Proposition d'un amendement sur le projet de loi \"lutte contre la vie chère dans les outre-mer\"",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "433209582",
+      "nom": "FEDER DORDOGNE ENTREPRENEUR ARTISANS BAT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=433209582",
+      "objet": "Prêt à taux zéro : demander le rétablissement du PTZ pour la construction d'un logement dans tous les territoires y compris pour les maisons individuelles",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "777748807",
+      "nom": "FEDERATION BATIMENT TP ILLE ET VILAINE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777748807",
+      "objet": "Proposer 6 amendements au PLF2025: PTZ universel, sortie limitée du Pinel, limitation hausse TVA pour les chaudières à gaz, fin attestations de TVA, réduction franchise TVA et exonération donations",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "rencontre",
+        "transmission d'expertise",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "777305830",
+      "nom": "FEDERATION DEPARTEMENTALE BATIMENT ET TP",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777305830",
+      "objet": "PLF 2025 : demander le dépôt d'un amendement en faveur du rétablissement du PTZ universel.",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "308401090",
+      "nom": "FEDERATION DES ACTEURS DE LA SOLIDARITE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=308401090",
+      "objet": "PLF2026 : garantir le principe d’indexation automatique des aides personnelles au logement (APL) sur l’inflation, afin de garantir le maintien de leur pouvoir d’achat pour les ménages bénéficiaires",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "393411855",
+      "nom": "FEDERATION DES ENTREPRISES DES OUTRE-MER",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=393411855",
+      "objet": "Confirmer la défiscalisation en faveur du photovoltaïque pour le secteur du logement social ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "328084405",
+      "nom": "UNION SOCIALE POUR L'HABITAT MIDI PYRENEES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=328084405",
+      "objet": "L'activité vise les attendus suivants : Valorisation de l'impact économique du logement social sur les territoires, représentation du mouvement Hlm en région, présentation des enjeux du secteur ",
+      "actions": [
+        "transmission d'expertise",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "722057460",
+      "nom": "AXA FRANCE IARD",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=722057460",
+      "objet": "Proposer une évolution législative afin que les bailleurs sociaux puissent présenter à leurs locataires des offres d’assurance habitation",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "Prolonger le dispositif de prêt à taux zéro au-delà de 2027",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "779079243",
+      "nom": "CH SYND ENTREPR DU BATIM T P",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779079243",
+      "objet": "Inscrire dans le PLF 2025, le rétablissement du PTZ pour tous les territoires et logements",
+      "actions": [
+        "correspondance",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "775681265",
+      "nom": "CONFEDER NATIONALE DU LOGEMENT",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775681265",
+      "objet": "Défendre les droits des locataires en dénonçant l'attaque contre les mécanismes fiscaux permettant de protéger le logement social par M. le député Guillaume Kasbarian.",
+      "actions": [
+        "transmission d'expertise",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "W751024223",
+      "nom": "CONFEDERATION DE LA CONSOMMATION DU LOGEMENT ET DU CADRE DE VIE CLCV",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751024223",
+      "objet": "Faire évoluer la part du forfait charges des aides personnelles au logement",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "500280755",
+      "nom": "FEDE BATIMENT ET TRAVAUX PUBLICS HAUT RHIN",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=500280755",
+      "objet": "Inscrire dans la loi l'arrêt de la sur enchère règlementaire et le rétablissement du prêt à taux zéro",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "779040633",
+      "nom": "FEDER BATIMENT TRAVAUX PUBLICS ALLIER",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779040633",
+      "objet": "Evolution et maintient du dispositif d'aides PTZ, MaPrimeRénov, pour la stratégie du logement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "778599860",
+      "nom": "FEDERAT DEP BAT TRAV PUBL SAONE ET LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778599860",
+      "objet": "Maintenir le prêt à taux zero (PTZ) universel pour tous les logements et tous secteurs dans le Projet de Loi de Finances 2025",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "779221100",
+      "nom": "FEDERATION BATIMENT TRAVAUX PUBLICS PDD",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779221100",
+      "objet": "Rétablissement du prêt à taux zéro pour la construction d’un logement, dans tous les territoires, y compris pour la maison individuelle",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "305821779",
+      "nom": "FEDERATION DEP B.T.P. CORSE DU SUD",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=305821779",
+      "objet": "Obtenir des mesures en faveur de la relance de la construction neuve (rétablissement du PTZ pour tous les logements / Prolongation du Pinel / défiscalisation des donations en faveur d'un logement)",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "781121595",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT ROUEN METROPOLE ET TERRITOIRES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781121595",
+      "objet": "demande de rétablissement du prêt à taux zéro pour la construction d'un logement dans tous les territoires y compris pour la maison individuelle",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "775680259",
+      "nom": "LES PETITS FRERES DES PAUVRES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775680259",
+      "objet": "Améliorer la transition RSA/ASS/AAH vers la retraite pour éviter les ruptures de ressources, et soutenir\nla création d’un prêt à taux zéro en cas de délai de versement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "447525452",
+      "nom": "LYSIOS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=447525452",
+      "objet": "PPL Huwart : simplifier et recentrer les conventions d’utilité sociale (CUS) des bailleurs sociaux en réduisant les obligations et indicateurs et en les recentrant sur des objectifs stratégiques.",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784668618",
+      "nom": "MOUVEMENT DES ENTREPRISES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668618",
+      "objet": "PTZ, chômage partiel et fond de solidarité : construire les mécanismes de soutien de Nouvelle–Calédonie face aux émeutes ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "444346795",
+      "nom": "NEXITY",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=444346795",
+      "objet": "Echanger sur les projets gouvernementaux liés au Projet de Loi de Finances Logement 2025 ainsi qu'au dispositif de PTZ (Prêt à Taux Zéro)",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784718033",
+      "nom": "SYND FEDERATION  FRANCAISE DU BATIMENT GRAND PARIS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784718033",
+      "objet": "Rétablir un Prêt à Taux Zéro universel pour faciliter l’accès à la propriété",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "502582596",
+      "nom": "UNION D'ECONOMIE SOCIALE POUR L'ACCESSION A LA PROPRIETE",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502582596",
+      "objet": "Promouvoir le maintien du PTZ dans la loi de finances pour 2026",
+      "actions": [
+        "rencontre",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "783414220",
+      "nom": "UNION ENTR ARTISANS DU BTP DE MEUSE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=783414220",
+      "objet": "Proposer 6 amendements au PLF2025: PTZ universel, sortie limitée du Pinel, limitation hausse TVA pour les chaudières à gaz, fin attestations de TVA, réduction franchise TVA et exonération donations",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "327374690",
+      "nom": "UNION NATIONALE DES AMENAGEURS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=327374690",
+      "objet": "Sensibilisation des élus à la crise du financement immobilier et défense du maintien du PTZ pour toutes formes urbaines, y compris en zone B2 et C",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "413728676",
+      "nom": "AI2P",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=413728676",
+      "objet": "PLF 2025 / Favoriser le développement des EnR / Photovoltaïque / Ouvrir le dispositif éco-PTZ aux travaux permettant l'installation d'équipements d'autoconsommation individuelle jusqu'à 9kWc",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "392655999",
+      "nom": "ASS ORGANISMES HLM REGION ALSACE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=392655999",
+      "objet": "présentation des enjeux du mouvement HLM en Alsace",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "389073958",
+      "nom": "ASS REGIONALE ORGANISMES HLM",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=389073958",
+      "objet": "Prendre en compte les enjeux du logement social et de la construction en bretagne",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "W751206285",
+      "nom": "ASSOCIATION PROFESSIONNELLE DES INTERMEDIAIRES EN CREDITS - APIC",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751206285",
+      "objet": "Prolonger le dispositif de prêt à taux zéro au-delà de 2027",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "493455042",
+      "nom": "BPCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=493455042",
+      "objet": "Préserver le modèle d'application de l\"éco PTZ par les banques",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "130017270",
+      "nom": "CHAMBRE DE COMMERCE ET D INDUSTRIE DE REGION PARIS ILE DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130017270",
+      "objet": "Valoriser les rapports et prises de position de la CCI PIDF afin de défendre les intérêts des entreprises franciliennes auprès des pouvoirs publics et favoriser le développement économique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "509302469",
+      "nom": "EFFY",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=509302469",
+      "objet": "PLF 2025 – Ouvrir l’éco-PTZ aux installations solaires résidentielles",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "344808902",
+      "nom": "ENERPLAN",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=344808902",
+      "objet": "amendement proposé PJL finances 2025: Ouvrir le dispositif d’éco-PTZ aux travaux permettant l’installation d’équipement d’autoconsommation ",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "318475670",
+      "nom": "FED DU BATIMENT ET TRAVAUX PUBLIC DU LOT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=318475670",
+      "objet": "Interpellation sur la réciprocité du GNR, sur la rétablissement du PTZ, le gel des barèmes de la REP PMCB et simplification MPR.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "434857009",
+      "nom": "FED NAT SOCIETES ANONYMES FONDATION HLM",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434857009",
+      "objet": "Développer ou soutenir le financement du logement social selon l'évolution des enjeux du secteur des esh.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "778213108",
+      "nom": "FEDER BATIMENT REGION BOURGOGN",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778213108",
+      "objet": "Courrier aux députés et sénateurs alliance pour le logement sur l'alliance sur le logement",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "782152581",
+      "nom": "FEDER BATIMENT TRAVAUX PUB LOT & GARONNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=782152581",
+      "objet": "faire inscrire dans la loi de finances le retour du PTZ aux primo-accédants à tout le territoire. Maintenir le taux réduit de TVA aux chaudières gaz. Prolongation du dispositif PINEL",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "786257113",
+      "nom": "FEDER BATIMENT TRAVAUX PUBLICS MAYENNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786257113",
+      "objet": "Obtenir des mesures en faveur de la relance de la construction neuve (rétablissement du PTZ pour tous les logements / Prolongation du Pinel / défiscalisation des donations en faveur d'un logement)",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "780807822",
+      "nom": "FEDER PATRONALE BAT ET TP EURE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780807822",
+      "objet": "Communication auprès des nouveaux députés des 10 propositions de la FFB pour sortir la profession de la crise du logement. Les sujets abordés sont la REP, la politique ZAN, le PTZ, la TVA...",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "786338384",
+      "nom": "FEDERATION B T P SARTHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786338384",
+      "objet": "inscrire dans la Loi de Finances pour 2025 des mesures de soutien au logement neuf, notamment un nouveau Prêt à Taux Zéro",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "434987582",
+      "nom": "FEDERATION BANCAIRE FRANCAISE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434987582",
+      "objet": "Proposer un calibrage pour les caractéristiques du nouveau prêt à taux zéro ",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "309159200",
+      "nom": "FEDERATION BATIM TRAVA PUBLIC D SEVRES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=309159200",
+      "objet": "Maintenir le PTZ et les dispositifs d'aides aux investisseurs type PINEL dans la Loi de Finances",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "778714758",
+      "nom": "FEDERATION BATIMENT ET TP DU TERRITOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778714758",
+      "objet": "Projet de Loi de Finances - Rétablir un PTZ ouvert à tout le territoire et à tout les types de logement\n",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "779471713",
+      "nom": "FEDERATION BATIMENT TRAVAUX PUBLICS DROME ARDECHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779471713",
+      "objet": "Relancer la construction neuve de logements (élargissement PTZ et prolongation Pinel)",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "779557750",
+      "nom": "FEDERATION BATIMENT TRAVAUX PUBLICS ISER",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779557750",
+      "objet": "PLF 2025 - Rétablir le PTZ partout et pour tous les types de logement",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "302848122",
+      "nom": "FEDERATION BTP DE LA LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302848122",
+      "objet": "renforcer le dispositif PTZ en supprimant les conditions de localisation pour l'acquisition d'un logement neuf",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "778542548",
+      "nom": "FEDERATION DEP BATIMENT TP HAUTE SAONE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778542548",
+      "objet": "rétablissement du PTZ, sortie douce du Pinel, exonération des donations, TVA chaudières gaz à 10%, suppression attestations de TVA, division/2 de la franchise de TVA accordée aux microetp européennes",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "775615479",
+      "nom": "FEDERATION DEP BATIMENT TRAVAUX PUBLICS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775615479",
+      "objet": "Rétablissement du PTZ dans tous les territoires et pour tous les types de logement",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "780937470",
+      "nom": "FEDERATION DEPARTEM BATIMENT T.P. ORNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780937470",
+      "objet": "Lettre de position \"Non aux deux poids / deux mesures au détriment du BTP\" : MaPrimeRénov', la REP, LE PTZ, le GNR, logement...",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "780875480",
+      "nom": "FEDERATION DES BATIMENTS ET DES TP DE LA MANCHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780875480",
+      "objet": "rétablir le PTZ et des mesures de soutien de l'investissement locatif",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784855405",
+      "nom": "FÉDÉRATION DES ENTREPRISES IMMOBILIÈRES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855405",
+      "objet": "PLF 2025 : Aligner la durée de l’exonération de TFPB à celle de la convention APL pour le logement solidaire",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784312332",
+      "nom": "FEDERATION DES PROMOTEURS IMMOBILIERS DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784312332",
+      "objet": "PLF2025: réévaluer les plafonds d’opération pour une personne seule, utilisés pour le calcul du PTZ, ceux-ci n’ayant pas été modifiés depuis 2014",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "786018580",
+      "nom": "FEDERATION DU BATIMENT LOIRE-ATLANTIQUE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786018580",
+      "objet": "Modification de la loi concernant le PTZ, Ma Prime Renov et le DPE",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "390997419",
+      "nom": "FEDERATION DU BTP DU FINISTERE - 29",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=390997419",
+      "objet": "Inscrire dans la loi de Finances 2025 le rétablissement du PTZ pour tous les territoires et tous les types de logements",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "779786987",
+      "nom": "FEDERATION FRANCAISE BATIMENT AUVERGNE RHONE ALPES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779786987",
+      "objet": "propositions pour soutenir l'outil de production et relancer l'activité : activité partielle ; fiscalité du GNR ; barèmes de la REP ; simplification MaPrim'Renov ; PTZ ; statut du bailleur privé.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "409343399",
+      "nom": "FEDERATION FRANCAISE DES CONSTRUCTEURS DE MAISONS INDIVIDUELLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=409343399",
+      "objet": "Inscrire dans la loi des dispositifs de pérennisation des aides à l'accession à la propriété comme le PTZ. Faire modifier les plafond des prêts du PTZ. ",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784668642",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668642",
+      "objet": "Obtenir des mesures en faveur de la relance de la construction neuve (rétablissement du PTZ pour tous les logements / Prolongation du Pinel / défiscalisation des donations en faveur d'un logement) ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "786019174",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT DES PAYS DE LA LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786019174",
+      "objet": "Politique de logement - PTZ - PINEL - mesures de solvabilité des ménages",
+      "actions": [
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "780428587",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT GRAND EST",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780428587",
+      "objet": "- faire rétablir le prêt à taux zéro pour l'ensemble du territoire\n- faire défiscaliser les donations et successions en faveur de l'achat d'une résidence principale\n- maintenir maprimrénov",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "781121785",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT NORMANDIE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781121785",
+      "objet": "Maintien du Prêt à Taux Zéro pour tout le territoire ",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784930695",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT REGION ILE DE FRANCE EST",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784930695",
+      "objet": "Obtenir le rétablissement d'un Prêt à Taux Zéro Universel dans tous les territoires et pour tous les types de logement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "345282016",
+      "nom": "FONDAT ABBE PIERRE LOGEMENT DEFAVORISES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=345282016",
+      "objet": "Défense de la cause des mal-logés dans le cadre du Projet de loi de finances pour 2027 : revaloriser les APL, taxer les résidences secondaires, créer des places d'hébergement...",
+      "actions": [
+        "rencontre",
+        "campagne publique",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "582074944",
+      "nom": "ICADE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=582074944",
+      "objet": "PLF : Prorogation du prêt à taux zéro d’un an, jusqu’au 31 décembre 2028",
+      "actions": [
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "883589707",
+      "nom": "RETROFLEET",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=883589707",
+      "objet": "Mettre en oeuvre un PTZ pour le rétrofit de véhicules lourds",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "419710280",
+      "nom": "SYNDICAT DES ENERGIES RENOUVELABLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=419710280",
+      "objet": "Projet de loi de finances pour 2025 : Ouvrir le dispositif éco-PTZ à l'installation d'équipements d'autoconsommation collective individuelle jusqu'à 9 kWc",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "534389309",
+      "nom": "TADDEO",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=534389309",
+      "objet": "PLF 2026 – reporter d'un an la fin des dispositifs Denormandie et PTZ, jusqu’au 31 décembre 2028",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "775672223",
+      "nom": "UNION NAT INTER OEUVRE PRIVE SANIT SOCIA",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775672223",
+      "objet": "PPL sur le logement : s’opposer à la suppression de l’art 55 de la loi relative à la solidarité et au renouvellement urbains (SRU) qui garantit la construction de logements sociaux par les communes",
+      "actions": [
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "838723716",
+      "nom": "UNION SOCIALE POUR L'HABITAT DE BOURGOGNE-FRANCHE-COMTE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=838723716",
+      "objet": "Présenter la situation du logement social en Bourgogne-Franche-Comté aux parlementaires de BFC.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "781598248",
+      "nom": "VAL TOURAINE HABITAT",
+      "type": "administration",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781598248",
+      "objet": "Échanger sur le logement social et les problématiques rencontrées par les Offices Publics de l'Habitat et le rôle qu'ils jouent sur les territoires.",
+      "actions": [
+        "Autres : à préciser"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 3,
+    "rapports_avec_liste": 3,
+    "comptes_rendus_lus": 91
+  },
+  "synthese": {
+    "position_probable": "A cosigné l'amendement n° 629, tombé (« Après l'article 16 : I. – Au premier alinéa du B de l’article 278‑0 bis du code général des impôts, après le mot : « livraisons », sont insérés les mots :« d’électricité d’une… »).",
+    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 629 et de sa déclaration du 28 avril 2026 en séance : « Comment expliquer que, face à l’ampleur de la crise du logement social devenue structurelle en outre-mer, l’État persiste dans une logique de désengagement ? J’ai bien compris que vous ne l’aviez appris que cet après-midi lors des questions au gouvernement, mais les crédits de la ligne budgétaire unique accusent depuis quelque temps une baisse mortifère – moins 20 % en deux ans – qui, manifestement, s’accélérera en 2027. »",
+    "chiffres_utilises": [
+      "629",
+      "16",
+      "278",
+      "0",
+      "2026-04-28",
+      "20",
+      "2027",
+      "2",
+      "28",
+      "2026"
+    ],
+    "mode": "gabarit",
+    "modele": null,
+    "verifie": true,
+    "date": "2026-11-14"
+  }
+}
