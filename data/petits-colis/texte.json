@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:14:04+01:00",
+    "generated_at": "2026-11-14T16:17:20+01:00",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B1906, open data Assemblée nationale",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
       }
     ],
-    "limits": "Dépôts au plus tard le 2025-11-19 ; sorts, scrutins et séances strictement avant (matin du 2025-11-19). Amendements du sujet : amendements de l'article de la mesure, plus ceux qui citent un mot-clé de la configuration dans leur dispositif. 20 amendements qui ne le citent que dans l'exposé sont écartés (ex. retraites, crédits de seconde partie). Exclus : 13 irrecevables ou retirés avant publication, 2 déposés par un ancien député, 0 déposés après la date de référence. Amendements du gouvernement et de la commission inclus (auteur_type). Nature vis-à-vis de la mesure : règle d'abord (suppression, montant, création, réduction), sinon modèle de langage contrôlé (citation exacte du dispositif ou de l'exposé exigée), sinon « autre » (nature_mode « defaut »). Un sort postérieur à la date de référence est « en_attente ». « non_examine » regroupe ici les amendements non soutenus (écrit dans le résumé). Positions des groupes : amendements déposés par le groupe (aucun scrutin nominatif lié avant la date de référence) ; « divise » sous 60 % de votes dans un même sens. Sens d'un amendement sur la mesure lu par règles (suppression, création, exposé) : lecture de l'outil, pas un fait publié. Avis du rapporteur et du gouvernement absents de l'open data et de l'API. proba_pour d'Orcet = moyenne des probabilités individuelles de voter pour, pas une probabilité d'adoption.",
+    "limits": "Dépôts au plus tard le 2025-11-19 ; sorts, scrutins et séances strictement avant (matin du 2025-11-19). Amendements du sujet : amendements de l'article de la mesure, plus ceux qui citent un mot-clé de la configuration dans leur dispositif. 20 amendements qui ne le citent que dans l'exposé sont écartés (ex. retraites, crédits de seconde partie). Exclus : 13 irrecevables ou retirés avant publication, 2 déposés par un ancien député, 0 déposés après la date de référence. Amendements du gouvernement et de la commission inclus (auteur_type). Nature vis-à-vis de la mesure : règle d'abord (suppression, montant, création, réduction), sinon modèle de langage contrôlé (citation exacte du dispositif ou de l'exposé exigée), sinon « autre » (nature_mode « defaut »). Un sort postérieur à la date de référence est « en_attente ». « non_examine » regroupe ici les amendements non soutenus (écrit dans le résumé). Positions des groupes : amendements déposés par le groupe (aucun scrutin nominatif lié avant la date de référence) ; « divise » sous 60 % de votes dans un même sens. Sens d'un amendement sur la mesure lu par règles (suppression, création, exposé) : lecture de l'outil, pas un fait publié. Avis du rapporteur et du gouvernement absents de l'open data et de l'API. proba_pour d'Orcet = moyenne des probabilités individuelles de voter pour, pas une probabilité d'adoption. Sous-amendements n° 4065 et 4066 (déposés et retirés le 19 novembre 2025) rendus en attente par P0 à 16 h 21, règle du matin (sort daté du jour de référence).",
     "producer": "pipeline/pivots",
     "dossier_id": "petits-colis"
   },
@@ -229,8 +229,8 @@
       "auteur_type": "depute",
       "auteur_libelle": "Violette Spillebout",
       "date_depot": "2025-10-17",
-      "nature": "reduit",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [
         "PA841709",
         "PA840235"
@@ -409,8 +409,8 @@
       "auteur_type": "depute",
       "auteur_libelle": "Violette Spillebout",
       "date_depot": "2025-10-20",
-      "nature": "reduit",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [
         "PA841709",
         "PA840235",
@@ -519,8 +519,8 @@
       "auteur_type": "depute",
       "auteur_libelle": "Antoine Vermorel",
       "date_depot": "2025-10-17",
-      "nature": "aggrave",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [
         "PA840979",
         "PA722390"
@@ -855,8 +855,8 @@
       "auteur_type": "depute",
       "auteur_libelle": "Emmanuel Mandon",
       "date_depot": "2025-10-17",
-      "nature": "aggrave",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [
         "PA720560",
         "PA720728",
@@ -972,8 +972,8 @@
       "auteur_type": "depute",
       "auteur_libelle": "Laurent Wauquiez",
       "date_depot": "2025-10-18",
-      "nature": "aggrave",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [
         "PA332523",
         "PA840979",
@@ -1026,8 +1026,8 @@
       "auteur_type": "depute",
       "auteur_libelle": "Graziella Melchior",
       "date_depot": "2025-10-18",
-      "nature": "reduit",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [
         "PA721474",
         "PA719138",
@@ -1069,8 +1069,8 @@
       "auteur_type": "commission",
       "auteur_libelle": "Commission des finances",
       "date_depot": "2025-10-20",
-      "nature": "aggrave",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [],
       "groupe_id": "PO845425",
       "resume": "Les petits commerçants français font face à une concurrence accrue du commerce en ligne, particulièrement en provenance d’Asie.",
@@ -1085,8 +1085,8 @@
       "auteur_type": "depute",
       "auteur_libelle": "Marie Lebec",
       "date_depot": "2025-10-22",
-      "nature": "reduit",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [],
       "groupe_id": "PO845407",
       "resume": "La France s’est engagée résolument en faveur de l’économie circulaire, à travers une série d’initiatives récentes promouvant la réutilisation, la réparation et la durabilité des produits.",
@@ -1280,8 +1280,8 @@
       "auteur_type": "depute",
       "auteur_libelle": "Graziella Melchior",
       "date_depot": "2025-10-22",
-      "nature": "reduit",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [
         "PA721474",
         "PA719138",
@@ -1535,8 +1535,8 @@
       "auteur_type": "depute",
       "auteur_libelle": "Olivia Grégoire",
       "date_depot": "2025-11-17",
-      "nature": "reduit",
-      "nature_mode": "llm",
+      "nature": "autre",
+      "nature_mode": "defaut",
       "cosignataires_ids": [],
       "groupe_id": "PO845407",
       "resume": "Le présent sous-amendement vise à modifier l’assiette de la taxe proposée, en substituant au critère du nombre d’articles celui du nombre de colis effectivement importés sur le territoire national.",
@@ -1657,7 +1657,7 @@
       ],
       "groupe_id": "PO845413",
       "resume": "Par ce sous-amendement, le groupe LFI s’inscrit dans la volonté du rapporteur de : - Mettre en place une taxe véritablement désincitative et non venant renforcer le coût de la consommation populaire pour compenser les baisses d’impôts su...",
-      "sort": "retire",
+      "sort": "en_attente",
       "prediction": null
     },
     {
@@ -1742,7 +1742,7 @@
       ],
       "groupe_id": "PO845413",
       "resume": "Par ce sous-amendement de repli, le groupe LFI s’inscrit dans la volonté du rapporteur de : - Mettre en place une taxe véritablement désincitative et non venant renforcer le coût de la consommation populaire pour compenser les baisses d’...",
-      "sort": "retire",
+      "sort": "en_attente",
       "prediction": null
     },
     {
