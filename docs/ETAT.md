@@ -1,6 +1,6 @@
 # État mesuré du dépôt
 
-Fichier généré par `node docs/mesurer.mjs --commandes > docs/ETAT.md`, le 14 novembre 2026 à 17:31 (heure de Paris), à partir du commit `5a858a2`. Aucun chiffre n'est écrit à la main. Si `data/` change, relancer la commande.
+Fichier généré par `node docs/mesurer.mjs --commandes > docs/ETAT.md`, le 14 novembre 2026 à 17:39 (heure de Paris), à partir du commit `ae6b787`. Aucun chiffre n'est écrit à la main. Si `data/` change, relancer la commande.
 
 Produit : LegiSpot. Dossiers déclarés dans `data/config.json` : 6.
 
@@ -110,5 +110,5 @@ Lancées par ce script. Versions : Node v22.23.4, Bun 1.4.4.
 | `bun qa/check.ts --root data` | 0 | OK : 436 fichiers valides, intégrité croisée vérifiée (data) |
 | `bun qa/check.ts --root contracts/fixtures` | 0 | OK : 72 fichiers valides, intégrité croisée vérifiée (contracts/fixtures) |
 | `node pipeline/publication.mjs --check` | 0 | OK plf2027-renovation 2026-11-14T16:29:12.637Z |
-| `bun test` | 0 | Ran 19 tests across 2 files. [65.00ms] |
-| `npm run build` | 0 | ✓ built in 630ms |
+| `bun test` | 0 | Ran 19 tests across 2 files. [79.00ms] |
+| `npm run build` | 0 | ✓ built in 705ms |
