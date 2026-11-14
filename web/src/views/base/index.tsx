@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import type { AmendementTexte, Deputes, Etat as EtatData, Groupes, Sort, Texte } from "@contracts/index";
+import type { AmendementTexte, Deputes, Etat as EtatData, Groupes, Preuve, Sort, Texte } from "@contracts/index";
 import { Etat, GroupeTag, Meta, Panel, Pourquoi, Proba, Table, type Column } from "../../components";
 import { useDossier } from "../../lib/config";
 import { useData } from "../../lib/data";
@@ -14,8 +14,46 @@ const SORT_LABEL: Record<Sort, string> = {
   retire: "retiré",
   tombe: "tombé",
   non_examine: "non examiné",
+  non_soutenu: "non soutenu",
+  irrecevable: "irrecevable",
 };
-const SORT_ORDRE: Sort[] = ["en_attente", "adopte", "rejete", "retire", "tombe", "non_examine"];
+const SORT_ORDRE: Sort[] = ["en_attente", "adopte", "rejete", "retire", "tombe", "non_soutenu", "irrecevable", "non_examine"];
+
+/** Champs ajoutés par les compléments de 14 h 05, optionnels tant que les schémas ne les portent pas. */
+type AuteurType = "depute" | "gouvernement" | "commission";
+type Nature = "supprime" | "reduit" | "reporte" | "aggrave" | "autre";
+type Amdt = AmendementTexte & {
+  auteur_type?: AuteurType;
+  auteur_libelle?: string;
+  nature?: Nature;
+  nature_mode?: "regle" | "llm" | "defaut";
+};
+type TexteEtat = {
+  statut: "en_discussion" | "adopte" | "rejete" | "retire";
+  libelle: string;
+  date?: string | null;
+  url?: string;
+  preuve?: Preuve;
+};
+
+const NATURE_LABEL: Record<Nature, string> = {
+  supprime: "supprime",
+  reduit: "réduit",
+  reporte: "reporte",
+  aggrave: "aggrave",
+  autre: "autre",
+};
+const TEXTE_STATUT_LABEL: Record<TexteEtat["statut"], string> = {
+  en_discussion: "en discussion",
+  adopte: "adopté",
+  rejete: "rejeté",
+  retire: "retiré",
+};
+
+/** Amendement du gouvernement ou d'une commission (pas de groupe). */
+function estInstitutionnel(a: Amdt): boolean {
+  return a.auteur_type === "gouvernement" || a.auteur_type === "commission" || a.auteur_id === "GOUVERNEMENT";
+}
 
 const ETAPE_LABEL = { fait: "fait", en_cours: "en cours", a_venir: "à venir" } as const;
 const ARTICLE_LABEL = { vote: "voté", reste: "reste à voter", supprime: "supprimé" } as const;
@@ -35,12 +73,13 @@ export default function BaseView() {
   const groupes = useData<Groupes>("groupes");
   const deputes = useData<Deputes>("deputes");
   const [q, setQ] = useState("");
+  const [instit, setInstit] = useState(false);
 
   const groupeParId = useMemo(() => new Map((groupes.data?.groupes ?? []).map((g) => [g.id, g])), [groupes.data]);
   const deputeParId = useMemo(() => new Map((deputes.data?.deputes ?? []).map((p) => [p.id, p])), [deputes.data]);
 
   const amendements = useMemo(() => {
-    const all = [...(texte.data?.amendements ?? [])].sort(
+    const all = [...((texte.data?.amendements ?? []) as Amdt[])].filter((a) => !instit || estInstitutionnel(a)).sort(
       (a, b) => SORT_ORDRE.indexOf(a.sort) - SORT_ORDRE.indexOf(b.sort) || numeroCle(a.numero) - numeroCle(b.numero),
     );
     const s = q.trim().toLowerCase();
@@ -48,11 +87,12 @@ export default function BaseView() {
     return all.filter((a) => {
       const p = deputeParId.get(a.auteur_id);
       const g = a.groupe_id ? groupeParId.get(a.groupe_id) : undefined;
-      return [a.numero, a.resume, SORT_LABEL[a.sort], p?.nom, p?.prenom, g?.sigle].some((x) => x && x.toLowerCase().includes(s));
+      return [a.numero, a.resume, SORT_LABEL[a.sort], a.auteur_libelle, a.nature && NATURE_LABEL[a.nature], p?.nom, p?.prenom, g?.sigle].some((x) => x && x.toLowerCase().includes(s));
     });
-  }, [texte.data, q, deputeParId, groupeParId]);
+  }, [texte.data, q, instit, deputeParId, groupeParId]);
+  const nInstit = useMemo(() => ((texte.data?.amendements ?? []) as Amdt[]).filter(estInstitutionnel).length, [texte.data]);
 
-  const colonnes: Column<AmendementTexte>[] = [
+  const colonnes: Column<Amdt>[] = [
     {
       key: "numero",
       label: "N°",
@@ -67,9 +107,12 @@ export default function BaseView() {
       key: "auteur",
       label: "Auteur",
       render: (a) => {
+        if (estInstitutionnel(a)) {
+          return <span className="base-auteur">{a.auteur_libelle ?? (a.auteur_type === "commission" ? "Commission" : "Gouvernement")}</span>;
+        }
         const p = deputeParId.get(a.auteur_id);
         const g = a.groupe_id ? groupeParId.get(a.groupe_id) : undefined;
-        const nom = p ? formatNom(p.prenom, p.nom) : "auteur inconnu";
+        const nom = p ? formatNom(p.prenom, p.nom) : (a.auteur_libelle ?? "auteur inconnu");
         return (
           <span className="base-auteur">
             {a.groupe_id ? <GroupeTag sigle={g?.sigle ?? "?"} couleur={g?.couleur} title={g?.nom} /> : <GroupeTag sigle="NI" />}
@@ -79,6 +122,19 @@ export default function BaseView() {
       },
     },
     { key: "resume", label: "Résumé", render: (a) => a.resume },
+    {
+      key: "nature",
+      label: "Nature",
+      width: "7em",
+      render: (a) =>
+        a.nature ? (
+          <span className={a.nature_mode === "defaut" ? "text-2" : undefined} title={a.nature_mode === "llm" ? "classé par le modèle" : a.nature_mode === "regle" ? "classé par règle" : undefined}>
+            {NATURE_LABEL[a.nature]}
+          </span>
+        ) : (
+          <span className="text-2">non classé</span>
+        ),
+    },
     { key: "sort", label: "Sort", width: "8em", render: (a) => SORT_LABEL[a.sort] },
     {
       key: "proba",
@@ -145,6 +201,24 @@ export default function BaseView() {
       <Etat titre="État du texte" state={etat} aside={texte.data?.texte.titre}>
         {(e) => (
           <>
+            {(() => {
+              const te = (e as EtatData & { texte_etat?: TexteEtat }).texte_etat;
+              if (!te) return null;
+              return (
+                <div className="base-texte-etat" data-testid="texte-etat">
+                  <span className={`base-statut base-texte-${te.statut}`}>{TEXTE_STATUT_LABEL[te.statut]}</span>
+                  {te.url ? (
+                    <a href={te.url} target="_blank" rel="noreferrer">
+                      {te.libelle}
+                    </a>
+                  ) : (
+                    <span>{te.libelle}</span>
+                  )}
+                  {te.date && <span className="base-date">{formatDate(te.date)}</span>}
+                  {te.preuve && <Pourquoi preuve={te.preuve} />}
+                </div>
+              );
+            })()}
             <div>
               Étape actuelle : <strong>{e.etape}</strong>
             </div>
@@ -188,6 +262,14 @@ export default function BaseView() {
       >
         {() => (
           <>
+            <div className="base-filtres" role="group" aria-label="Filtrer par auteur">
+              <button type="button" className="base-puce" aria-pressed={!instit} onClick={() => setInstit(false)}>
+                tous
+              </button>
+              <button type="button" className="base-puce" aria-pressed={instit} onClick={() => setInstit(true)}>
+                Gouvernement et commission ({nInstit})
+              </button>
+            </div>
             <input
               type="search"
               className="base-recherche"
@@ -196,7 +278,7 @@ export default function BaseView() {
               value={q}
               onChange={(ev) => setQ(ev.target.value)}
             />
-            <Table columns={colonnes} rows={amendements} rowKey={(a) => a.id} empty={q ? "aucun amendement ne correspond" : "aucun amendement"} />
+            <Table columns={colonnes} rows={amendements} rowKey={(a) => a.id} empty={q || instit ? "aucun amendement ne correspond" : "aucun amendement"} />
           </>
         )}
       </Etat>
