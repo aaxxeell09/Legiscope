@@ -19,7 +19,7 @@ Version 2, 14 novembre 2026, 14 h 30. Réécrite sur les données réelles de `d
 5. On n'ouvre jamais un lien de source pendant la démo (il part sur le site de l'Assemblée, donc sur le réseau). On ouvre le panneau « pourquoi », on montre que le lien est là, on ferme.
 6. Captures d'écran de secours des cinq blocs et de la fiche, dans l'ordre du script (gel de 16 h 45).
 7. Un chronomètre visible par la voix.
-8. Deux contrôles à 16 h 45, sur l'app (détail dans les variantes) : la synthèse de la fiche Vermorel (variante C), le texte du Compte rendu (variante E).
+8. Trois contrôles à 16 h 45, sur l'app : où se trouve la ligne Antoine Vermorel dans le bloc Action (temps 2), la synthèse de sa fiche (variante C), le texte du Compte rendu (variante E).
 
 ## Le script
 
@@ -69,7 +69,7 @@ La main descend aux arguments. **[ÉCRAN]** : premier argument de la colonne « 
 
 > Les arguments entendus, avec la citation exacte. Contre la taxe : « une double peine, injuste socialement et inutile économiquement ».
 
-**Clic** : la ligne Antoine Vermorel, colonne « Sur qui agir encore » (dixième ligne au relevé de 14 h 25). Sa fiche s'ouvre. La main descend aux colonnes Débats et Amendements. La voix ne lit pas la synthèse (variante C).
+**Clic** : la ligne Antoine Vermorel dans le bloc Action (au relevé de 14 h 25 : colonne « Sur qui agir encore », dixième ligne). P3 revoit cette colonne avant le gel (`status/P0.md`, 14 h 35) : à 16 h 45, on repère où est sa ligne. Si elle n'est plus cliquable dans le bloc, la main passe sur l'onglet 3, déjà chargé. Sa fiche s'ouvre. La main descend aux colonnes Débats et Amendements. La voix ne lit pas la synthèse (variante C).
 
 > J'ouvre Antoine Vermorel, le plus actif de son groupe sur la mesure. Ce qu'il a dit en commission, mot pour mot. Ses amendements : l'un porte la taxe à 5 euros. Et les organisations entendues par les rapporteurs de sa commission.
 
@@ -93,7 +93,7 @@ La main ne bouge pas. La voix regarde la salle. Rien de ce qui suit n'est à l'�
 
 > La suite. Le lendemain, en séance, l'article 22 est adopté : 208 voix contre 87. Le RN, seul groupe contre.
 
-État du texte, à distinguer de l'état de la mesure. Source : `status/P3.md`, vérifié par P3 dans l'open data des scrutins (scrutin n° 4241, 21 novembre 2025).
+État du texte, à distinguer de l'état de la mesure. Source : scrutin n° 4241 du 21 novembre 2025, vérifié par P3 dans l'open data et par P0 dans la base Hémicycle (`status/P3.md`, `status/P0.md`), https://www.assemblee-nationale.fr/dyn/17/scrutins/4241
 
 > Deux jours plus tard, l'Assemblée rejette la première partie du budget. Article adopté, projet rejeté en première lecture : deux états distincts.
 
@@ -145,7 +145,7 @@ Chaque phrase du script vient d'un fichier du dépôt. Relevé de 14 h 25 : les 
 | « L'un porte la taxe à 5 euros » | `fiches/PA794118.json`, amendement n° 938, auteur, en attente au 18 novembre | Colonne Amendements |
 | « Entendues par les rapporteurs de sa commission » | `fiches/PA794118.json` : 9 rapports, tous en rôle « membre », aucun comme rapporteur | Ligne repliée de la colonne Auditions |
 | 208 voix contre 87, RN seul groupe contre | `rendu-final.md` section 6 (source LCP : https://lcp.fr/actualites/budget-2026-les-deputes-approuvent-la-taxe-de-deux-euros-sur-les-petits-colis-417170) ; `status/P2.md` et `status/P3.md` : scrutin n° 3999 (VTANR5L17V3999), 19 novembre 2025, 208 pour, 87 contre, vérifié dans l'open data | Dit à l'oral, pas à l'écran |
-| Première partie du budget 2026 rejetée le 21 novembre 2025 ; « article adopté, projet rejeté en première lecture » | `status/P3.md` (14 h 22), vérifié par P3 dans l'open data des scrutins : scrutin n° 4241 (VTANR5L17V4241), 1 pour, 404 contre, 84 abstentions ; article 22 adopté le 19 novembre 2025, scrutin n° 3999, 208 pour, 87 contre. Le rejet de la première partie vaut rejet du texte en première lecture, pas la fin de la procédure (`plf2027-holdings/etat.json`, même règle) | Dit à l'oral, pas à l'écran : `petits-colis/etat.json` s'arrête au 18 novembre (« en discussion ») |
+| Première partie du budget 2026 rejetée le 21 novembre 2025 ; « article adopté, projet rejeté en première lecture » | `status/P3.md` (14 h 22) et `status/P0.md` (14 h 35), vérifié dans l'open data des scrutins et dans la base Hémicycle : scrutin n° 4241 (VTANR5L17V4241), https://www.assemblee-nationale.fr/dyn/17/scrutins/4241, première partie non adoptée, 1 pour, 404 contre, 84 abstentions ; article 22 adopté le 19 novembre 2025, scrutin n° 3999, 208 pour, 87 contre. Le rejet de la première partie vaut rejet du texte en première lecture, pas la fin de la procédure (`plf2027-holdings/etat.json`, même règle) | Dit à l'oral, pas à l'écran : `petits-colis/etat.json` s'arrête au 18 novembre (« en discussion ») |
 | Sénat : de 2 à 5 euros | `rendu-final.md` section 6 (source KPMG : https://kpmg.com/av/fr/avocats/eclairages/2025/12/plf-2026-mesures-adoptees-au-senat-en-1e-lecture.html) | Dit à l'oral, pas à l'écran |
 | Budget 2027 rejeté par l'Assemblée le 4 novembre | `plf2027-holdings/etat.json`, `texte_etat` : première partie rejetée le 4 novembre 2026, scrutin n° 9759 ; mesure « absente du texte » | Lignes « Mesure » et « Texte » en tête du Verdict du dossier vivant |
 | « La suite se joue au Sénat » | `plf2027-holdings/etat.json` : Sénat, première lecture, en cours, date non publiée | Bloc Suite ; ne citer aucune date |
