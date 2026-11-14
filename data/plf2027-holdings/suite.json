@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:34:20Z",
+    "generated_at": "2026-11-14T12:56:36Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, agenda des réunions",
@@ -99,7 +99,7 @@
   },
   "probables": [
     {
-      "titre": "Rejet probable de la mesure (article 3) si elle revient à l'Assemblée",
+      "titre": "Mesure : rejet probable à l'Assemblée si elle revenait au vote aujourd'hui (sièges des groupes selon leur position, pas une probabilité)",
       "proba": null,
       "detail": "Groupes favorables à la mesure : LFI-NFP, SOC, ECOS, GDR (193 sièges). Opposés : RN, EPR, DR, DEM, HOR, LIOT, UDR (370 sièges). Vote à l'Assemblée, pas l'issue finale du dossier.",
       "preuve": {
@@ -114,7 +114,7 @@
       }
     },
     {
-      "titre": "Rejet probable de l'amendement n° 1965 (ECOS)",
+      "titre": "Amendement n° 1965 (ECOS) : 35 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.35,
       "detail": "Orcet : 0,35 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement vise à permettre l’expérimentation, pour une durée de 5 ans, de dispositifs de sécurité sociale de l’alimentation (SSA) dans la continuité des dispositifs déployés par plusieurs communes françaises. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {
@@ -133,7 +133,7 @@
       }
     },
     {
-      "titre": "Rejet probable de l'amendement n° 2765 (LFI-NFP)",
+      "titre": "Amendement n° 2765 (LFI-NFP) : 35 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.35,
       "detail": "Orcet : 0,35 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Par cet amendement, le groupe La France insoumise propose d'allouer des fonds à la mise en place d’instances d'attribution démocratique des subventions aux associations. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {
@@ -152,7 +152,7 @@
       }
     },
     {
-      "titre": "Adoption probable de l'amendement n° 115 (SOC)",
+      "titre": "Amendement n° 115 (SOC) : 56 % de votes pour prédits par Orcet, adoption probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.56,
       "detail": "Orcet : 0,56 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des fonctionnaires civiles et militaires pour 2027. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {
@@ -171,7 +171,7 @@
       }
     },
     {
-      "titre": "Adoption probable de l'amendement n° 848 (SOC)",
+      "titre": "Amendement n° 848 (SOC) : 56 % de votes pour prédits par Orcet, adoption probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.56,
       "detail": "Orcet : 0,56 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des fonctionnaires civiles et militaires pour 2027. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {
@@ -190,7 +190,7 @@
       }
     },
     {
-      "titre": "Rejet probable de l'amendement n° 933 (RN)",
+      "titre": "Amendement n° 933 (RN) : 44 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.44,
       "detail": "Orcet : 0,44 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Le présent amendement prévoit de minorer les crédits, en autorisations d’engagement et en crédits de paiement, d’un montant de 1 666 500 euros pour l’action n° 7 « Compagnie internationale de radio et télévision » du programme n° 180 « P... Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {
@@ -209,7 +209,7 @@
       }
     },
     {
-      "titre": "Rejet probable de l'amendement n° 1624 (EPR)",
+      "titre": "Amendement n° 1624 (EPR) : 44 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.44,
       "detail": "Orcet : 0,44 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Le présent amendement vise à mieux cibler les aides personnelles au logement (APL) versées aux étudiants en tenant compte, lorsqu’ils demeurent rattachés au foyer fiscal de leurs parents, des ressources de ce foyer. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {
@@ -228,7 +228,7 @@
       }
     },
     {
-      "titre": "Adoption probable de l'amendement n° 1478 (LFI-NFP)",
+      "titre": "Amendement n° 1478 (LFI-NFP) : 55 % de votes pour prédits par Orcet, adoption probable à l'Assemblée si le vote avait lieu aujourd'hui",
       "proba": 0.55,
       "detail": "Orcet : 0,55 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Par cet amendement, les député.es de la France insoumise souhaitent organiser un plan de sauvegarde de l'audiovisuel public. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
       "preuve": {

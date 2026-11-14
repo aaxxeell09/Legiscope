@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:34:22Z",
+    "generated_at": "2026-11-14T12:56:38Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, agenda des réunions",
@@ -199,7 +199,7 @@
   },
   "probables": [
     {
-      "titre": "Adoption probable de la mesure (article 22) en séance",
+      "titre": "Mesure : adoption probable à l'Assemblée si le vote avait lieu le 18 novembre 2025 (sièges des groupes selon leur position, pas une probabilité)",
       "proba": null,
       "detail": "Groupes favorables à la mesure : EPR, SOC, DR, ECOS, DEM, HOR, LIOT (338 sièges). Opposés : RN (121 sièges). Vote à l'Assemblée, pas l'issue finale du dossier.",
       "preuve": {
@@ -214,7 +214,7 @@
       }
     },
     {
-      "titre": "Rejet probable de l'amendement de suppression n° 806 (RN)",
+      "titre": "Amendement de suppression n° 806 (RN) : rejet probable à l'Assemblée si le vote avait lieu le 18 novembre 2025 (pas de prédiction Orcet à cette date)",
       "proba": null,
       "detail": "La suppression rassemble les groupes opposés à la mesure (121 sièges) face aux groupes favorables (338 sièges).",
       "preuve": {

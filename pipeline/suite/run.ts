@@ -101,10 +101,10 @@ function probablesOrcet(texte: any, dossier: any, rejete: boolean) {
     .slice(0, 8)
     .map((a: any) => {
       const pp = a.prediction.proba_pour;
-      const sens = pp >= 0.5 ? "Adoption probable" : "Rejet probable";
+      const sens = pp >= 0.5 ? "adoption probable" : "rejet probable";
       const g = a.groupe_id ? groupes[a.groupe_id]?.sigle ?? a.groupe_id : "non-inscrit";
       return {
-        titre: `${sens} de l'amendement n° ${a.numero} (${g})`,
+        titre: `Amendement n° ${a.numero} (${g}) : ${pct(pp)} de votes pour prédits par Orcet, ${sens} à l'Assemblée si le vote avait lieu aujourd'hui`,
         proba: pp,
         detail:
           `Orcet : ${pp.toFixed(2).replace(".", ",")} de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). ${a.resume}` +
@@ -230,7 +230,7 @@ for (const d of config.dossiers) {
   if (texte && (pour || contre)) {
     const adoption = pour > contre;
     probables.push({
-      titre: `${adoption ? "Adoption probable" : "Rejet probable"} de la mesure (article ${article ?? "visé"}) ${rejoue ? "en séance" : "si elle revient à l'Assemblée"}`,
+      titre: `Mesure : ${adoption ? "adoption probable" : "rejet probable"} à l'Assemblée ${rejoue ? `si le vote avait lieu le ${fmt(ref)}` : "si elle revenait au vote aujourd'hui"} (sièges des groupes selon leur position, pas une probabilité)`,
       proba: null,
       detail: `Groupes favorables à la mesure : ${(pos.pour?.sigles ?? []).join(", ") || "aucun"} (${pour} sièges). Opposés : ${(pos.contre?.sigles ?? []).join(", ") || "aucun"} (${contre} sièges). Vote à l'Assemblée, pas l'issue finale du dossier.`,
       preuve: {
@@ -245,7 +245,7 @@ for (const d of config.dossiers) {
       for (const a of (texte.amendements ?? []).filter((x: any) => x.sort === "en_attente" && /suppr/i.test(x.resume)).slice(0, 3)) {
         const g = a.groupe_id ? groupes[a.groupe_id]?.sigle ?? a.groupe_id : "non-inscrit";
         probables.push({
-          titre: `${contre < pour ? "Rejet probable" : "Adoption possible"} de l'amendement de suppression n° ${a.numero} (${g})`,
+          titre: `Amendement de suppression n° ${a.numero} (${g}) : ${contre < pour ? "rejet probable" : "adoption possible"} à l'Assemblée si le vote avait lieu le ${fmt(ref)} (pas de prédiction Orcet à cette date)`,
           proba: null,
           detail: `La suppression rassemble les groupes opposés à la mesure (${contre} sièges) face aux groupes favorables (${pour} sièges).`,
           preuve: {
