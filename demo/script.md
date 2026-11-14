@@ -1,3 +1,5 @@
+> Document de préparation de la démonstration (14 novembre 2026). Des dates et des chiffres ont pu évoluer depuis : la référence est le [README](../README.md).
+
 # Script de démo : trois minutes, quatre temps
 
 Version 2, 14 novembre 2026, 14 h 30. Réécrite sur les données réelles de `data/` (front en `dataset: live`), après les corrections d'Axel de 14 h 05. Valeurs relevées dans les fichiers du dépôt à 14 h 25 : `verdict.json`, `etat.json`, `suite.json`, `nouveautes.json`, `action.json`, `note.json`, `fiches/`. X1 n'a pas pu ouvrir l'app : tout ce qui est marqué **[ÉCRAN]** se relit sur l'app réelle aux répétitions de 17 h 15 et 17 h 40.
