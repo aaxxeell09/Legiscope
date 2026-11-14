@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T14:06:21+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Troisième séance du vendredi 25 octobre 2024",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/troisieme-seance-du-vendredi-25-octobre-2024"
+      },
+      {
+        "label": "Séance unique du mardi 21 octobre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025"
+      },
+      {
+        "label": "Troisième séance du mardi 28 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 01 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-01-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 20 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 27 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mardi 27 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-27-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 28 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 29 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-29-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 12 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+      }
+    ],
+    "limits": "238 prises de parole sur le sujet lues dans 25 comptes rendus (83 comptes rendus parcourus) ; 209 classées, 60 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 29 rejetées pour citation inexacte, 12 écartées car le second avis du modèle contredit le camp ; 11 pour et 17 contre après dédoublonnage. Classement par le modèle Featherless (0 appels à cette exécution, cache sur disque). Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien après ce jour.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-holdings"
+  },
+  "pour": [
+    {
+      "argument": "Les holdings patrimoniales permettent d'échapper à l'impôt et aux droits de succession.",
+      "citation": "on sait aussi que de nombreux foyers ne déclarent plus de revenus dans leur déclaration d’impôt, parce qu’ils ont placé leurs biens dans des holdings patrimoniales et qu’ils pilotent leurs revenus comme ils le veulent pour ne pas payer d’impôt.",
+      "orateur_id": "PA841463",
+      "groupe_id": "PO845419",
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Mme Estelle Mercier, suppléant M. Éric Coquerel, président de la commission des finances) la défend : « Les holdings patrimoniales permettent de ne pas déclarer de revenus et d'échapper à l'impôt. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.75. Même argument entendu aussi chez M. Aurélien Le Coq (séance du 2026-10-15), M. Nicolas Sansu (séance du 2026-10-15), M. Nicolas Turquois (Dem) (séance du 2026-10-28), M. Roland Lescure (séance du 2026-10-28), Mme Eva Sas (séance du 2026-10-28), Eva Sas (commission du 2026-10-07), Nicolas Sansu (commission du 2026-10-07), Eva Sas (commission du 2026-10-07).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe est un outil efficace pour contrer l'optimisation et garantir un impôt minimum.",
+      "citation": "La taxe Zucman est un outil efficace pour lutter contre le contournement de l’impôt. Les plus riches adoptant des stratégies d’optimisation fiscale toujours plus sophistiquées, la seule façon de les contrer est d’instaurer un impôt minimum afin de s’assurer qu’ils payent au moins 2 % de leur patrimoine en impôt, tous impôts confondus.",
+      "orateur_id": "PA610002",
+      "groupe_id": "PO845439",
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Eva Sas) la défend : « La taxe est un outil efficace pour contrer l'optimisation fiscale des plus riches et garantir un impôt minimum. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez M. Damien Maudet (séance du 2026-10-15), M. Éric Coquerel (séance du 2026-10-15), M. Mickaël Bouloux (séance du 2026-10-16), Mme Eva Sas (séance du 2026-10-16), Philippe Brun (commission du 2026-10-07).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure corrige l'injustice fiscale entre rentiers et travailleurs et réduit la précarité.",
+      "citation": "Monsieur Kasbarian, voilà le principe sur lequel toute votre politique économique a été fondée – prendre à celles et ceux qui ont travaillé toute leur vie et exempter d’impôts celles et ceux qui vivent de la rente !",
+      "orateur_id": "PA795422",
+      "groupe_id": "PO845413",
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Damien Maudet) la défend : « La politique actuelle est injuste car elle taxe les retraités tout en exonérant les rentiers qui vivent de leur patrimoine. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez M. François Ruffin (séance du 2025-10-21), M. Carlos Martens Bilongo (séance du 2026-10-16), Eva Sas (commission du 2026-10-07), Marianne Maximi (commission du 2026-10-07).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La suppression de l'ISF a enrichi les plus riches sans effet économique, justifiant la taxation.",
+      "citation": "Il est temps de remettre à contribution ces personnes, car, depuis que vous avez supprimé l’ISF et tout le reste, le patrimoine des 500 familles les plus riches a doublé. Or rien d’autre n’a été multiplié par deux : ni l’investissement, ni les salaires, ni la croissance.",
+      "orateur_id": "PA841515",
+      "groupe_id": "PO845413",
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Aurélien Le Coq) la défend : « Il est temps de remettre à contribution les plus riches dont le patrimoine a doublé sans que l'investissement ou la croissance n'augmentent. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Mme Estelle Mercier (séance du 2026-10-13), Eva Sas (commission du 2026-10-07).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure permet de réduire le déficit public et de financer la justice sociale.",
+      "citation": "La taxe Zucman aurait pu rapporter plus de 20 milliards d’euros, l’ISF renforcé, plus de 15 milliards, la suppression de la flat tax, plus de 9 milliards, mais l’alliance macro-lepéniste s’est opposée à ces mesures de justice sociale, de justice fiscale.",
+      "orateur_id": "PA795616",
+      "groupe_id": "PO845413",
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du mercredi 04 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Carlos Martens Bilongo) la défend : « La taxe Zucman aurait permis de rapporter plus de 20 milliards d'euros pour la justice sociale. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez M. Jean-René Cazeneuve (séance du 2026-10-15).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La CEHR est insuffisante et inefficace pour taxer les holdings et les hauts patrimoines.",
+      "citation": "J’espère vivement que, contrairement à ce qui s’est passé en commission, nous réussirons ce soir à voter l’augmentation de la CEHR. Monsieur le ministre, vous avez raison sur un point : la CEHR n’est pas satisfaisante. En effet, elle ne touche pas de manière utile et suffisamment rentable, non pas tous ceux qui contournent l’impôt, mais tous ceux qui ont utilisé les outils que vous leur avez donnés pour abriter leurs revenus et leur patrimoine derrière de prétendus revenus professionnels, lesquels sont en réalité des actifs financiers passant par des holdings, etc.",
+      "orateur_id": "PA721202",
+      "groupe_id": "PO845413",
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Éric Coquerel, président de la commission des finances, de l’économie générale et du contrôle budgétaire) la défend : « La CEHR est insuffisante car elle ne taxe pas efficacement les holdings utilisées pour abriter le patrimoine. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez M. Éric Coquerel (séance du 2026-10-15).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe est populaire et soutenue par une large majorité de Français.",
+      "citation": "Votre budget ne contient aucune trace de la taxe Zucman, que nous proposons et à laquelle 86 % des Français sont favorables.",
+      "orateur_id": "PA841463",
+      "groupe_id": "PO845419",
+      "date": "2026-10-13",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du mardi 13 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Mme Estelle Mercier) la défend : « La taxe est proposée par le groupe et soutenue par 86 % des Français, contrairement au budget actuel jugé injuste. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez M. Éric Coquerel (séance du 2026-11-04).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'argument des départs fiscaux massifs suite à l'ISF est infondé.",
+      "citation": "Tous les travaux sur l’ISF ont montré que, sur les 350 000 redevables recensés avant 2017, on comptait 500 départs par an. Il faut donc arrêter avec l’argument de l’hémorragie provoquée par l’ISF : ce n’est pas vrai !",
+      "orateur_id": "PA605745",
+      "groupe_id": "PO845514",
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Nicolas Sansu) la défend : « L'argument des départs massifs de contribuables suite à l'ISF est faux et doit être abandonné. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.75. Même argument entendu aussi chez M. Éric Coquerel (séance du 2026-10-16).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La fiscalité des holdings est une avancée pour la justice sans nuire à l'économie.",
+      "citation": "Nous avons néanmoins avancé sur le pacte Dutreil, l' exit tax, la lutte contre les montages dits CumCum et la fiscalité des holdings patrimoniaux, au service de la justice fiscale, sans obérer le dynamisme économique.",
+      "orateur_id": "PA720728",
+      "groupe_id": "PO845454",
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du mercredi 04 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Jean-Paul Mattei (Dem)) la défend : « La fiscalité des holdings patrimoniaux est une avancée au service de la justice fiscale qui ne nuit pas au dynamisme économique. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'effort demandé est proportionné et évite une fracture intergénérationnelle.",
+      "citation": "En réalité, l’effort demandé est deux fois inférieur à leur part dans la population. C’est si nous les exonérions de tout effort par principe que nous créerions une fracture entre les générations.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) la défend : « L'effort demandé est proportionné et inférieur à la part démographique, évitant ainsi une fracture entre les générations. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'orateur défend la mesure co-construite et critique l'opposition sur le fond.",
+      "citation": "Notre impôt est peut-être techniquement imparfait – je ne prétends pas, comme vous monsieur Midy, être monsieur Parfait ni avoir toujours raison. Cela fait cinq ans que j’essaye de travailler avec M. Mattei et avec des collègues de gauche sur l’impôt sur la fortune : cela ne les a pas intéressés – c’était leur droit.",
+      "orateur_id": "PA795778",
+      "groupe_id": "PO845401",
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Jean-Philippe Tanguy) la défend : « L'orateur défend la mesure qu'il a co-construite et critique l'opposition pour son manque d'intérêt pour le fond. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "contre": [
+    {
+      "argument": "La taxe est inefficace car elle ne rapporterait pas les sommes annoncées ou n'aurait aucun rendement.",
+      "citation": "Votre impôt bidon ne rapporterait même pas 500 millions d’euros par an !",
+      "orateur_id": "PA842187",
+      "groupe_id": "PO845413",
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du vendredi 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Gabrielle Cathala) s'y oppose ou veut la réduire : « La mesure est inefficace car elle ne rapporterait pas 500 millions d'euros par an. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Mme Eva Sas (séance du 2026-10-28), Gérault Verny (commission du 2026-10-07).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure est une surenchère fiscale injuste et punitive qui pèse sur les entreprises et les hauts patrimoines.",
+      "citation": "Nous avons malheureusement assisté à une véritable surenchère fiscale. Des hausses de taxes ont été adoptées par amendement sur les services numériques, les rachats d’actions, les holdings ou encore les groupes pétroliers",
+      "orateur_id": "PA793094",
+      "groupe_id": "PO845425",
+      "date": "2026-10-13",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du mardi 13 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Nicolas Ray) s'y oppose ou veut la réduire : « La taxe sur les holdings fait partie d'une surenchère fiscale injuste et inefficace qui pèse sur les entreprises. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez M. Kévin Pfeffer (séance du 2026-10-15), Marie-Christine Dalloz (commission du 2026-10-07).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure bouleverse l'économie de l'apport-cession et impose un impôt sur des gains non encaissés.",
+      "citation": "En effet, l’article bouleverse complètement l’économie de l’apport-cession : quoi que vous fassiez de votre holding ou de vos titres, vous devrez payer. Dans certains cas, le dirigeant ou l’héritier devra s’acquitter de l’impôt sur un gain qu’il n’a jamais encaissé.",
+      "orateur_id": "PA346782",
+      "groupe_id": "PO845425",
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du vendredi 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Philippe Juvin, rapporteur général) s'y oppose ou veut la réduire : « La mesure bouleverse l'économie de l'apport-cession et impose un impôt sur des gains non encaissés. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez M. Gérault Verny (séance du 2026-10-16).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe est inconstitutionnelle car elle taxe des revenus, capitaux ou plus-values non réalisés ou non distribués.",
+      "citation": "Votre mesure reviendrait à taxer des revenus qui n’ont pas été distribués. À ce titre, elle serait probablement déclarée inconstitutionnelle – comme d’autres dispositions semblables l’ont été – au titre de l’article 13 de la Déclaration des droits de l’homme et du citoyen.",
+      "orateur_id": "PA346782",
+      "groupe_id": "PO845425",
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Philippe Juvin, rapporteur général) s'y oppose ou veut la réduire : « La taxe est inconstitutionnelle car elle taxe des revenus non distribués. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez M. Philippe Juvin (séance du 2026-10-16).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure repose sur une confusion conceptuelle entre la fonction de la holding et la fortune improductive.",
+      "citation": "J’ai bien lu l’exposé sommaire et il révèle que vous confondez deux choses :…",
+      "orateur_id": "PA719798",
+      "groupe_id": "PO845407",
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Daniel Labaronne) s'y oppose ou veut la réduire : « La mesure repose sur une confusion conceptuelle entre les fonctions de la holding et la fortune improductive. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.75. Même argument entendu aussi chez M. Gérault Verny (séance du 2026-10-28).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe est inefficace car ses recettes sont insuffisantes pour couvrir l'effort budgétaire nécessaire à la dette.",
+      "citation": "La taxe Zucman, même si elle rapportait les 15 milliards d’euros que ses promoteurs annoncent, ne couvrirait que 12 % de l’effort ; il en resterait presque 90 % – où sont-ils donc ?",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-10-13",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mardi 13 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « La taxe est insuffisante pour couvrir l'effort budgétaire nécessaire à la réduction de la dette. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez M. David Amiel (séance du 2026-10-20).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe est inapplicable car elle force à puiser dans la trésorerie de l'entreprise, constituant un abus de bien social.",
+      "citation": "Or payer un impôt personnel grâce aux moyens de l'entreprise, en pompant dans sa trésorerie, constitue un acte anormal de gestion, voire un abus de bien social. Cela ne peut pas fonctionner.",
+      "orateur_id": "PA720728",
+      "groupe_id": "PO845454",
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Jean-Paul Mattei) s'y oppose ou veut la réduire : « La taxe est inapplicable car elle obligerait à puiser dans la trésorerie de l'entreprise, constituant un abus de bien social. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez M. Jean-Paul Mattei (séance du 2026-10-16).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le redressement des comptes publics doit passer par la maîtrise des dépenses et non par de nouveaux impôts.",
+      "citation": "dans le pays qui détient le record des prélèvements obligatoires – ils dépasseront prochainement 44 % du PIB –, le redressement des comptes publics doit passer par la maîtrise des dépenses et non par de nouveaux impôts. Pourtant, au cours des débats, nous avons assisté à une surenchère de mesures fiscales dont il est difficile, ce soir, comme cela a été dit, de chiffrer les conséquences pour notre économie et pour nos compatriotes.",
+      "orateur_id": "PA793094",
+      "groupe_id": "PO845425",
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du mercredi 04 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Nicolas Ray (DR)) s'y oppose ou veut la réduire : « Le redressement des comptes publics doit passer par la maîtrise des dépenses et non par de nouveaux impôts. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Le dispositif est inopérant car l'abus de bien social existe déjà et la mesure est contournable.",
+      "citation": "Le problème est très simple : le dispositif que nous avons voté l’année dernière n’est absolument pas opérationnel. Il n’y avait d’ailleurs aucun besoin de le voter. En effet, si vous utilisez à des fins personnelles une maison détenue par une holding, cela s’appelle déjà un abus de bien social.",
+      "orateur_id": "PA942",
+      "groupe_id": "PO845485",
+      "date": "2026-10-28",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 28 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Charles de Courson) s'y oppose ou veut la réduire : « Le dispositif est inopérant, inutile car l'abus de bien social existe déjà, et contournable par la location. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'assujettissement des biens professionnels à l'impôt sur la fortune engendrerait une catastrophe économique.",
+      "citation": "Ç’aurait été une telle catastrophe que l’application de cette mesure a été suspendue par décret en 1982. La liberté de mouvement des capitaux n’était pas la même qu’aujourd’hui, et pourtant, même le gouvernement le plus à gauche de l’histoire de la Ve République s’est rendu compte, en cours de route, que vos propositions engendreraient une telle catastrophe qu’il valait mieux les suspendre.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du vendredi 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « L'assujettissement des biens professionnels à l'impôt sur la fortune engendrerait une catastrophe économique. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe renchérit les prix d'acquisition et fige le marché immobilier.",
+      "citation": "cette taxe renchérira probablement les prix d’acquisition, pour la simple raison que le propriétaire du bien qui verra sa plus-value disparaître ajoutera ces 10 % au prix de vente afin de ne pas être perdant. Nous rencontrons cette difficulté à chaque fois qu’une taxe sur les transactions est envisagée : à la différence de l’impôt sur le stock, comme l’impôt sur la fortune immobilière, tout impôt supplémentaire sur les transactions ne fait que figer le marché et renchérir les prix.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du vendredi 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « La taxe renchérit les prix d'acquisition et fige le marché immobilier. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe est incohérente car elle taxe des revenus non distribués à un taux insuffisant et injuste.",
+      "citation": "Ainsi, ils ne sont pas imposés : lorsque les dividendes remontent vers la holding et n’arrivent pas sur le compte en banque, ils ne sont imposés qu’à un taux de 1,25 % !",
+      "orateur_id": "PA841515",
+      "groupe_id": "PO845413",
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Deuxième séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Aurélien Le Coq) s'y oppose ou veut la réduire : « Le taux d'imposition de 1,25 % sur les dividendes remontant vers la holding est jugé insuffisant et injuste. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La mesure ne touche pas les riches mais les retraités modestes.",
+      "citation": "Cette mesure ne touche donc pas les riches, mais les retraités modestes.",
+      "orateur_id": "PA841463",
+      "groupe_id": "PO845419",
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Mme Estelle Mercier) s'y oppose ou veut la réduire : « La mesure ne touche pas les riches mais les retraités modestes. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'article 3 doit être supprimé.",
+      "citation": "Nous allons supprimer l’article 3.",
+      "orateur_id": "PA796010",
+      "groupe_id": "PO845514",
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Frédéric Maillot) s'y oppose ou veut la réduire : « L'article 3 doit être supprimé. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'augmentation de la CEHR est symbolique et ne cible pas le cœur de l'optimisation fiscale.",
+      "citation": "J’entends bien qu’il y a une demande, de nature symbolique, à augmenter la CEHR mais nous ne nous attaquerions pas là au cœur de l’optimisation fiscale des plus fortunés, qui, pour contourner l’impôt, utilisent plutôt d’autres dispositifs.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Troisième séance du jeudi 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « L'augmentation de la CEHR est symbolique et ne cible pas le cœur de l'optimisation fiscale des plus fortunés. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe contrevient au principe constitutionnel d'égalité devant les charges publiques et risque d'être confiscatoire.",
+      "citation": "De la même façon, une taxation du patrimoine professionnel comme le veut la taxe Zucman contreviendrait au principe constitutionnel d’égalité devant les charges publiques et pourrait revêtir un caractère confiscatoire. Ce risque d’inconstitutionnalité est clairement documenté dans le rapport de la commission d’enquête conduite par MM. de Courson et Mattei.",
+      "orateur_id": "PA346782",
+      "groupe_id": "PO845425",
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Philippe Juvin, rapporteur général) s'y oppose ou veut la réduire : « La taxe contrevient au principe constitutionnel d'égalité devant les charges publiques et présente un risque d'inconstitutionnalité. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "L'amendement reviendrait à taxer une partie des activités professionnelles en incluant les parts de sociétés non cotées.",
+      "citation": "Mon argument est le même que contre la taxe Zucman : l’amendement de M. Brun reviendrait à taxer une partie des activités professionnelles. En effet, les « actifs nécessaires à l’exercice d’une activité professionnelle principale du contribuable ou de son foyer fiscal » sont exclus, tout comme les « parts ou actions de sociétés non cotées […] lorsque le contribuable y exerce une fonction dirigeante ».",
+      "orateur_id": "PA346782",
+      "groupe_id": "PO845425",
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 7 du 07/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Philippe Juvin, rapporteur général) s'y oppose ou veut la réduire : « L'amendement reviendrait à taxer une partie des activités professionnelles en incluant les parts de sociétés non cotées sans fonction dirigeante. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}
