@@ -73,6 +73,22 @@
   font-size: var(--fs-xl);
 }
 
+.verdict-etat {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-6);
+}
+
+.verdict-score {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.verdict-score-libelle {
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+}
+
 .verdict-tendance,
 .verdict-confiance {
   display: flex;

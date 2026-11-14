@@ -1,9 +1,9 @@
 import { useState } from "react";
-import type { RaisonVerdict, Verdict, VerdictObjectif } from "@contracts/index";
+import type { Etat as EtatDossier, RaisonVerdict, Verdict, VerdictObjectif } from "@contracts/index";
 import { Badge, Etat, Meta, Pourquoi, Proba } from "../../../components";
 import { useConfig } from "../../../lib/config";
 import { useData } from "../../../lib/data";
-import { formatDateTime } from "../../../lib/format";
+import { formatDate, formatDateTime } from "../../../lib/format";
 import { Tendance } from "./Tendance";
 import "./verdict.css";
 
@@ -18,6 +18,23 @@ const TENDANCE: Record<VerdictObjectif["tendance"], string> = {
   amelioration: "en amélioration depuis la dernière analyse",
   stable: "stable depuis la dernière analyse",
   degradation: "en dégradation depuis la dernière analyse",
+};
+
+const SCORE_LIBELLE = "des sièges favorables à l'objectif";
+
+const STATUT_TEXTE: Record<string, string> = {
+  en_discussion: "en discussion",
+  adopte: "adopté",
+  rejete: "rejeté",
+  retire: "retiré",
+};
+
+type TexteEtat = {
+  statut: string;
+  libelle: string;
+  date: string | null;
+  url: string;
+  preuve: { sources: { label: string; url: string }[]; raisonnement: string; nature: "fait" | "deduction" | "inconnue" };
 };
 
 const CONFIANCE: Record<VerdictObjectif["confiance"]["niveau"], string> = {
@@ -52,6 +69,7 @@ function VerdictContenu({ verdict, dossier }: { verdict: Verdict; dossier: strin
 
   return (
     <div className="verdict">
+      <EtatLigne dossier={dossier} />
       {verdicts.length > 1 && (
         <div className="verdict-onglets" role="tablist" aria-label="Objectifs">
           {verdicts.map((v) => (
@@ -98,7 +116,12 @@ function VerdictObjectifVue({ v, genere }: { v: VerdictObjectif; genere: string 
           <span className={`verdict-situation verdict-situation-${v.situation}`} data-situation={v.situation}>
             {SITUATION[v.situation]}
           </span>
-          {v.score !== null && <Proba value={v.score} size="md" label="score" />}
+          {v.score !== null && (
+            <span className="verdict-score">
+              <Proba value={v.score} size="md" />
+              <span className="verdict-score-libelle">{libelleScore(v)}</span>
+            </span>
+          )}
           {raisonGlobale.sources.length > 0 && <Pourquoi {...raisonGlobale} />}
         </div>
         <div className="verdict-tendance" data-tendance={v.tendance}>
@@ -142,6 +165,39 @@ function VerdictObjectifVue({ v, genere }: { v: VerdictObjectif; genere: string 
         <Colonne titre="Ce qui coince" vide="rien de bloquant identifié" raisons={v.bloquant} />
       </div>
     </>
+  );
+}
+
+/** « 26 % des sièges favorables à l'objectif » : jamais un pourcentage seul. */
+function libelleScore(v: VerdictObjectif): string {
+  const l = (v as VerdictObjectif & { score_libelle?: string }).score_libelle?.trim();
+  if (!l) return SCORE_LIBELLE;
+  // score_libelle vaut « part des sièges favorables à l'objectif » : on garde « des sièges ... ».
+  return l.replace(/^part\s+/i, "");
+}
+
+/** État de la mesure et, à part, état du texte (etat.json). */
+function EtatLigne({ dossier }: { dossier: string }) {
+  const r = useData<EtatDossier>("etat", dossier);
+  if (r.status !== "ok" || !r.data) return null;
+  const e = r.data;
+  const texte = (e as EtatDossier & { texte_etat?: TexteEtat | null }).texte_etat ?? null;
+  return (
+    <div className="verdict-etat">
+      <span>
+        <span className="text-2">Mesure : </span>
+        {e.mesure.dans_le_texte ? "dans le texte" : "absente du texte"}{" "}
+        <Pourquoi sources={e.meta.sources} raisonnement={e.mesure.redaction_actuelle} nature="fait" />
+      </span>
+      {texte && (
+        <span>
+          <span className="text-2">Texte : </span>
+          {texte.libelle || STATUT_TEXTE[texte.statut] || texte.statut}
+          {texte.date && <span className="text-2"> le {formatDate(texte.date)}</span>}{" "}
+          <Pourquoi preuve={texte.preuve} />
+        </span>
+      )}
+    </div>
   );
 }
 
