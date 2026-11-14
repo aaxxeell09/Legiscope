@@ -57,7 +57,10 @@ function repartir(a: Action) {
 function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossier: string; annuaire: Annuaire; disponibles: string[] | null }) {
   const { groupes, inconnus } = repartir(a);
   const [toutesReponses, setToutesReponses] = useState(false);
-  const reponsesVisibles = toutesReponses ? a.contre_arguments : a.contre_arguments.slice(0, 4);
+  const reponsesVisibles = toutesReponses ? a.contre_arguments : a.contre_arguments.slice(0, 6);
+  const classeReponses = toutesReponses
+    ? "action-reponses-list action-reponses-list-expanded"
+    : `action-reponses-list action-reponses-count-${Math.min(a.contre_arguments.length, 6)}`;
   return (
     <>
       <section className="action-section action-decideurs">
@@ -95,7 +98,7 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
         {a.contre_arguments.length === 0 ? (
           <div className="p7-vide">Aucune réponse documentée.</div>
         ) : (
-          <ul className="action-reponses-list">
+          <ul className={classeReponses}>
             {reponsesVisibles.map((c, i) => (
               <li key={i} className="action-reponse">
                 <div className="action-reponse-cible"><span>Argument initial</span>{c.repond_a}</div>
@@ -109,7 +112,7 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
             ))}
           </ul>
         )}
-        {a.contre_arguments.length > 4 && <button type="button" className="action-disclosure" onClick={() => setToutesReponses((v) => !v)}>{toutesReponses ? "Réduire" : `Voir toutes les réponses (${a.contre_arguments.length})`}</button>}
+        {a.contre_arguments.length > 6 && <button type="button" className="action-disclosure" onClick={() => setToutesReponses((v) => !v)}>{toutesReponses ? "Réduire à 6 réponses" : `Voir toutes les réponses (${a.contre_arguments.length})`}</button>}
       </section>
 
       <Meta meta={a.meta} />
