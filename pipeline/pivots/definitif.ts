@@ -21,6 +21,8 @@ export function sortUnifie(a: AmdtSujet, avant: (x: string | null) => boolean): 
   if (/^Irrecevable/.test(etat)) return { sort: null, detail: `irrecevable (${sous || etat})` };
   if (/avant publication/.test(sous)) return { sort: null, detail: "retiré avant publication" };
   if (a.dateSort && !avant(a.dateSort)) return { sort: "en_attente", detail: "en attente à la date de référence" };
+  // Règle du matin (décision 15 h 05) : sort sans date publiée alors que le dépôt est le jour de référence ou après ⇒ pas encore connu.
+  if (!a.dateSort && a.dateDepot && !avant(a.dateDepot)) return { sort: "en_attente", detail: "sort sans date publiée, dépôt le jour de référence" };
   const s = a.sort ?? (/Retiré/.test(etat) ? "Retiré" : null);
   switch (s) {
     case "Adopté": return { sort: "adopte", detail: "adopté" };

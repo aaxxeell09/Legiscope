@@ -122,6 +122,8 @@ export default defineConfig({
     },
   },
   build: {
+    // data/ est copié par le plugin sans data/raw (closeBundle) ; Vite ne doit pas copier publicDir en entier.
+    copyPublicDir: false,
     outDir,
     emptyOutDir: true,
   },
