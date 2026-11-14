@@ -9,11 +9,12 @@ export const sansAccents = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g,
 // Regex mots-clés : mots courts en majuscules (ISF, IFF) sensibles à la casse et en mot entier.
 export function filtreMotsCles(mots: string[]): (txt: string) => boolean {
   const courts = mots.filter((m) => m.length <= 4 && m === m.toUpperCase()).map((m) => new RegExp(`\\b${m}\\b`));
-  const longs = mots.filter((m) => !(m.length <= 4 && m === m.toUpperCase())).map((m) => sansAccents(m));
+  const esc = (m: string) => m.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const longs = mots.filter((m) => !(m.length <= 4 && m === m.toUpperCase())).map((m) => new RegExp(`(?<![a-z0-9])${esc(sansAccents(m))}(?![a-z0-9])`));
   return (txt: string) => {
     if (!txt) return false;
     const t = sansAccents(txt);
-    return longs.some((m) => t.includes(m)) || courts.some((r) => r.test(txt));
+    return longs.some((r) => r.test(t)) || courts.some((r) => r.test(txt));
   };
 }
 export const nowIso = () => new Date().toISOString().replace(/\.\d+Z$/, "Z");
