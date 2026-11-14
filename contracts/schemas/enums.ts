@@ -2,7 +2,7 @@ import { z } from "zod";
 
 // Vocabulaire unique (PLAN.md, section 5). Ne jamais dupliquer ces listes ailleurs.
 
-export const SortSchema = z.enum(["en_attente", "adopte", "rejete", "retire", "tombe", "non_examine"]);
+export const SortSchema = z.enum(["en_attente", "adopte", "rejete", "retire", "tombe", "non_examine", "non_soutenu", "irrecevable"]);
 export type Sort = z.infer<typeof SortSchema>;
 
 export const VoteSchema = z.enum(["pour", "contre", "abstention", "non_votant"]);

@@ -90,11 +90,30 @@ Les cas 3 et 4 ne valent que pour l'objectif principal : les positions des group
 
 ## Liste autorisée et champs de sortie
 
-- Cas normal, avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer la phrase remplie en troisième argument (`gabarit`), avec la liste autorisée du prompt (`lecture.md`, section Branchement : les nombres du message utilisateur rempli). Cette liste contient déjà tous les nombres du gabarit. `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`.
-- Sans `redigerVerifie` (gabarit seul) : construire la liste variable par variable, comme suit.
+- Avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer la phrase remplie en troisième argument (`gabarit`). `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`. La liste autorisée de l'appel doit contenir les nombres des variables injectées, construits comme suit.
 - `chiffres_utilises` : pour chaque variable injectée. Entier (`n_pour`, `n_contre`, `n_autres`, `n_total`) : `String(valeur)`. Texte (`etape`, `favorable_1`, `bloquant_1`, `inconnu_1`) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `pipeline/lib/verif.ts`, écrit `String(valeur)`. Liste dédoublonnée.
 - `verifie` : `verifierChiffres(texte, chiffres_utilises).ok`. Le texte fixe des gabarits ne contient aucun nombre.
 - `mode` : `"gabarit"`. `modele` : `null`.
+
+## Prompt associé (`lecture.md`)
+
+- Format : texte brut, sans variable. Le fichier entier est le prompt système. Le message utilisateur est l'entrée de l'objectif lu. Un appel par objectif.
+- Entrée conseillée (JSON, noms des schémas) : `date_jour`, `client`, `mesure` (`config.json` → `mesure.label`), `etape` (`etat.json` → `etape`), `objectif` (`texte`, `type` : `principal` ou `repli`, `position_cible`), `situation`, `tendance`, `confiance` (`niveau`, `etabli`, `inconnu`), `favorable` et `bloquant` (`titre`, `detail`), `cause_du_changement` (`titre` ou `null`), `rapport_de_forces` (`gouvernement` : `pour`, `contre` ou `inconnue` ; `groupes_pour`, `groupes_contre`, `groupes_divises_ou_sans_position`, `groupes_total`).
+- Ne pas donner `score` ni les probabilités Orcet : la lecture ne cite aucune probabilité.
+- Liste autorisée : les nombres de l'entrée. Elle contient alors tous les nombres du gabarit (`etape`, titres, `inconnu`, comptes de groupes).
+
+```ts
+import { readFileSync } from "node:fs";
+import { redigerVerifie } from "../lib/llm";
+import { extraireJetons, extraireMotsNombres, normaliser } from "../lib/verif";
+
+const system = readFileSync("pipeline/verdict/prompts/lecture.md", "utf8");
+const user = `Entrée (JSON) :\n${JSON.stringify(entree, null, 1)}`;
+const n = normaliser(JSON.stringify(entree));
+const autorises = [...new Set([...extraireJetons(n), ...extraireMotsNombres(n)].map((j) => String(j.valeur)))];
+const r = await redigerVerifie({ system, user }, autorises, gabarit); // gabarit : la phrase remplie ci-dessus
+// lecture = { texte: r.texte, chiffres_utilises: r.chiffres_utilises, mode: r.mode, modele: r.modele, verifie: r.verifie }
+```
 
 ## Exemples remplis sur les fixtures
 

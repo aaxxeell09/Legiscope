@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "« pour » et « contre » qualifient la mesure (taxe sur les holdings), pas l'objectif du client. Un député n'est classé que sur ses propres actes.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-holdings"
+  },
+  "pour": [
+    {
+      "argument": "Taxer l'accumulation plutôt que l'entreprise",
+      "citation": "La taxe Zucman n'est pas un impôt sur l'entreprise, c'est un impôt sur l'accumulation.",
+      "orateur_id": "PA726184",
+      "groupe_id": "PO845419",
+      "date": "2026-10-31",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-10-31",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 31 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-10-31"
+          }
+        ],
+        "raisonnement": "Intervention en séance, orateur identifié.",
+        "nature": "fait"
+      }
+    },
+    {
+      "argument": "Les holdings patrimoniales servent à différer l'impôt",
+      "citation": "Une holding patrimoniale qui ne réinvestit pas n'est qu'un report d'impôt sans fin.",
+      "orateur_id": "PA731263",
+      "groupe_id": "PO845454",
+      "date": "2026-11-02",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 2 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02"
+          }
+        ],
+        "raisonnement": "Intervention en séance, orateur identifié.",
+        "nature": "fait"
+      }
+    }
+  ],
+  "contre": [
+    {
+      "argument": "Taxer les holdings, c'est taxer l'outil de travail",
+      "citation": "Taxer les holdings, c'est taxer l'outil de travail de ceux qui investissent en France.",
+      "orateur_id": "PA724696",
+      "groupe_id": "PO845407",
+      "date": "2026-11-02",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 2 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02"
+          }
+        ],
+        "raisonnement": "Intervention en séance, orateur identifié.",
+        "nature": "fait"
+      }
+    },
+    {
+      "argument": "Une taxe inefficace si les holdings animatrices sont exclues",
+      "citation": "Une taxe sur la fortune improductive ne rapportera rien si les holdings animatrices en sont exclues.",
+      "orateur_id": "PA732528",
+      "groupe_id": "PO845470",
+      "date": "2026-10-14",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20261014",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, 14 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20261014"
+          }
+        ],
+        "raisonnement": "Intervention en commission des finances, lue en HTML.",
+        "nature": "fait"
+      }
+    }
+  ]
+}

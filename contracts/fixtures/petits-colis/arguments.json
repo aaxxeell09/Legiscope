@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B1906",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes.",
+    "producer": "pipeline/debats",
+    "dossier_id": "petits-colis"
+  },
+  "pour": [
+    {
+      "argument": "Protéger le commerce de proximité face aux plateformes",
+      "citation": "Les plateformes qui expédient des millions de colis par an doivent participer au financement de nos douanes.",
+      "orateur_id": "PA723081",
+      "groupe_id": "PO845407",
+      "date": "2025-11-18",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-18",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 18 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-18"
+          }
+        ],
+        "raisonnement": "Intervention en séance, orateur identifié par son identifiant d'acteur.",
+        "nature": "fait"
+      }
+    },
+    {
+      "argument": "Financer les contrôles douaniers, environ 500 millions d'euros de recettes",
+      "citation": "Le rendement attendu, de l'ordre de 500 millions d'euros, financera le renforcement des contrôles.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2025-11-18",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-18",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 18 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-18"
+          }
+        ],
+        "raisonnement": "Prise de parole du gouvernement (pas d'identifiant d'acteur).",
+        "nature": "fait"
+      }
+    }
+  ],
+  "contre": [
+    {
+      "argument": "La taxe pèse sur les ménages modestes",
+      "citation": "Cette taxe pèse d'abord sur les ménages modestes qui achètent en ligne faute de mieux.",
+      "orateur_id": "PA721578",
+      "groupe_id": "PO845401",
+      "date": "2025-11-19",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 19 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19"
+          }
+        ],
+        "raisonnement": "Intervention en séance, orateur identifié.",
+        "nature": "fait"
+      }
+    },
+    {
+      "argument": "La taxe se contourne avec de plus gros colis",
+      "citation": "Une taxe par colis pousse simplement à regrouper les envois : elle ne rapportera pas ce qu'on annonce.",
+      "orateur_id": "PA734149",
+      "groupe_id": "PO845485",
+      "date": "2025-11-19",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 19 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19"
+          }
+        ],
+        "raisonnement": "Intervention en séance, orateur identifié.",
+        "nature": "fait"
+      }
+    }
+  ]
+}

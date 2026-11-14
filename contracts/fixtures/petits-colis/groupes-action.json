@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B1906",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "petits-colis"
+  },
+  "actionnables": [
+    {
+      "depute_id": "PA726184",
+      "groupe_id": "PO845419",
+      "score": 0.46,
+      "raison": "Groupe divisé ; sensible à l'argument de la consommation populaire.",
+      "fondement": [
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2601",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2601"
+          },
+          {
+            "label": "Hémicycle API scrutins",
+            "url": "https://api.hemicycle.ai/v1/scrutins"
+          }
+        ],
+        "raisonnement": "Position du groupe : divisé (confiance 0.52). A cosigné l'affectation du produit au commerce de proximité (n° 2601).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA734149",
+      "groupe_id": "PO845485",
+      "score": 0.41,
+      "raison": "Groupe divisé ; a dénoncé le contournement par de plus gros colis.",
+      "fondement": [
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Séance du 19 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19"
+          }
+        ],
+        "raisonnement": "Intervention en séance du 19 novembre 2025 ; groupe sans position majoritaire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA725443",
+      "groupe_id": "PO845413",
+      "score": 0.33,
+      "raison": "A voté contre son groupe sur 2 des 3 scrutins liés ; reste réceptif à l'argument des ménages modestes malgré le compromis n° 2231.",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle API scrutins",
+            "url": "https://api.hemicycle.ai/v1/scrutins"
+          }
+        ],
+        "raisonnement": "Écarts avec son groupe sur 2 des 3 scrutins liés ; loyauté 0.72 sur 12 mois.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "allies": [
+    {
+      "depute_id": "PA721578",
+      "groupe_id": "PO845401",
+      "score": 0.92,
+      "raison": "Auteur de l'amendement de suppression n° 806.",
+      "fondement": [
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 806",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+          }
+        ],
+        "raisonnement": "Dépôt du n° 806 le 17 novembre 2025 ; vote contre annoncé en séance.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA720892",
+      "groupe_id": "PO845401",
+      "score": 0.85,
+      "raison": "Cosignataire du n° 806 ; membre de la commission des finances.",
+      "fondement": [
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 806",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+          }
+        ],
+        "raisonnement": "Cosignature du n° 806 et position du groupe contre (confiance 0.86).",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "perdus": [
+    {
+      "depute_id": "PA723081",
+      "groupe_id": "PO845407",
+      "score": 0.06,
+      "raison": "Auteur du compromis n° 2231 ; porte la mesure.",
+      "fondement": [
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2231",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2231"
+          }
+        ],
+        "raisonnement": "Dépôt du n° 2231 ; position du groupe pour (confiance 0.91).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA728307",
+      "groupe_id": "PO845425",
+      "score": 0.1,
+      "raison": "A fait avancer l'entrée en vigueur (n° 2470 adopté).",
+      "fondement": [
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2470",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2470"
+          }
+        ],
+        "raisonnement": "Auteur du n° 2470 adopté le 19 novembre 2025.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA732086",
+      "groupe_id": "PO845454",
+      "score": 0.09,
+      "raison": "Cosignataire du compromis n° 2231.",
+      "fondement": [
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2231",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2231"
+          }
+        ],
+        "raisonnement": "Cosignature du n° 2231 ; position du groupe pour (confiance 0.88).",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "decideurs": [
+    {
+      "role": "gouvernement",
+      "depute_id": null,
+      "nom": "Gouvernement (ministre chargé du budget)",
+      "groupe_id": null,
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          },
+          {
+            "label": "Amendement n° 2231",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2231"
+          }
+        ],
+        "raisonnement": "Auteur de l'article 22 ; avis favorable au compromis n° 2231 et défavorable au n° 806 annoncé en séance.",
+        "nature": "fait"
+      }
+    },
+    {
+      "role": "rapporteur_general",
+      "depute_id": "PA723810",
+      "nom": "Député Test E",
+      "groupe_id": "PO845407",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport n° 1990",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1990-tii.html"
+          }
+        ],
+        "raisonnement": "Avis favorable à l'article 22 dans le rapport n° 1990 ; avis défavorable au n° 806.",
+        "nature": "fait"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA721578",
+      "nom": "Député Test B",
+      "groupe_id": "PO845401",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 806",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+          }
+        ],
+        "raisonnement": "Auteur du n° 806 et orateur du groupe en séance le 19 novembre 2025.",
+        "nature": "fait"
+      }
+    },
+    {
+      "role": "president_commission",
+      "depute_id": "PA724791",
+      "nom": "Député Test G",
+      "groupe_id": "PO845413",
+      "position": "inconnue",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Aucune prise de position publique sur l'article 22 au 19 novembre 2025.",
+        "nature": "inconnue"
+      }
+    }
+  ]
+}

@@ -147,7 +147,10 @@ function verifierRoot(root: string) {
     const suite = charger<Suite>(p(id, "suite"), "suite");
     const action = charger<Action>(p(id, "action"), "action");
     const etat = charger<Etat>(p(id, "etat"), "etat");
-    for (const [kind, obj] of [["texte", texte], ["pivots", pivots], ["hatvp", hatvp], ["note", note], ["fiches-index", index], ["verdict", verdict], ["nouveautes", nouveautes], ["suite", suite], ["action", action], ["etat", etat]] as const) {
+    // Intermédiaires (P3 et A2) : validés au schéma et au meta, comme les autres.
+    const groupesAction = charger<unknown>(p(id, "groupes-action"), "groupes-action");
+    const argumentsEntendus = charger<unknown>(p(id, "arguments"), "arguments");
+    for (const [kind, obj] of [["texte", texte], ["pivots", pivots], ["hatvp", hatvp], ["note", note], ["fiches-index", index], ["verdict", verdict], ["nouveautes", nouveautes], ["suite", suite], ["action", action], ["etat", etat], ["groupes-action", groupesAction], ["arguments", argumentsEntendus]] as const) {
       verifierMeta(p(id, kind), obj as any, id);
     }
 

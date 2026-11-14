@@ -39,7 +39,7 @@ import { NoteSchema } from "./schemas/note";
 import { VerdictSchema } from "./schemas/verdict";
 import { NouveautesSchema } from "./schemas/nouveautes";
 import { SuiteSchema } from "./schemas/suite";
-import { ActionSchema } from "./schemas/action";
+import { ActionSchema, ArgumentsSchema, GroupesActionSchema } from "./schemas/action";
 import { EtatSchema } from "./schemas/etat";
 
 /** Nom logique de chaque fichier de `data/`. */
@@ -61,6 +61,8 @@ export const SCHEMAS = {
   nouveautes: NouveautesSchema,
   suite: SuiteSchema,
   action: ActionSchema,
+  "groupes-action": GroupesActionSchema,
+  arguments: ArgumentsSchema,
   etat: EtatSchema,
 } as const;
 
@@ -69,7 +71,7 @@ export type Kind = keyof typeof SCHEMAS;
 /** Fichiers de la racine de `data/` (le paramètre dossierId est ignoré). */
 export const ROOT_KINDS = ["config", "groupes", "deputes", "cohesion"] as const satisfies readonly Kind[];
 /** Fichiers propres à un dossier, un seul par dossier. */
-export const DOSSIER_KINDS = ["texte", "pivots", "hatvp", "note", "fiches-index", "verdict", "nouveautes", "suite", "action", "etat"] as const satisfies readonly Kind[];
+export const DOSSIER_KINDS = ["texte", "pivots", "hatvp", "note", "fiches-index", "verdict", "nouveautes", "suite", "action", "etat", "groupes-action", "arguments"] as const satisfies readonly Kind[];
 /** Fichiers propres à un dossier et à un député (`<PA>.json`). */
 export const PA_KINDS = ["auditions", "debats", "amendements", "fiche"] as const satisfies readonly Kind[];
 
