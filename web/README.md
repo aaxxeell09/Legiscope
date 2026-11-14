@@ -9,7 +9,7 @@ Ce dossier contient l'interface : une application React (Vite, TypeScript, React
 ```sh
 npm install          # ou bun install (le dépôt suit bun.lock)
 npm run dev          # http://localhost:5173
-npm run build        # site statique dans dist/, à la racine du dépôt
+npm run build        # contrôle le sceau des données (pipeline/publication.mjs --check), puis site statique dans dist/
 npm run preview      # sert dist/
 npm run typecheck    # tsc --noEmit sur web/, contracts/, qa/, pipeline/
 ```
@@ -91,6 +91,8 @@ Le repli sur les fixtures porte sur le jeu entier, pas fichier par fichier : en 
 - Le plugin `bascule-fixtures` sert `contracts/fixtures/` sous `/fixtures/` en développement. En développement comme en prévisualisation, il répond 404 en JSON pour un fichier `.json` absent, au lieu de la page de l'application.
 - Au build, `data/` est copié dans `dist/` sans `data/raw/`, et les fixtures dans `dist/fixtures/`.
 - Le plugin `bascule-contracts` expose `contracts/index.ts` par le module `virtual:contracts`. Alias : `@contracts` et `@web`.
+
+Pour un hébergement statique, `vercel.json` (racine du dépôt) construit avec `bun run build`, publie `dist/` et renvoie toute adresse vers `index.html`, sauf `assets/`, `fixtures/` et les fichiers `.json`.
 
 Deux variables d'environnement sont lues, toutes deux facultatives :
 
