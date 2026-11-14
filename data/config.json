@@ -3,7 +3,7 @@
     "nom": "Bascule",
     "accroche": "Bascule vous dit quel vote peut basculer, et grâce à qui."
   },
-  "dataset": "fixtures",
+  "dataset": "live",
   "dossiers": [
     {
       "id": "plf2027-holdings",
