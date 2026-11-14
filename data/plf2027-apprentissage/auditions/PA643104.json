@@ -1,0 +1,915 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:18:25+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tI.html"
+      }
+    ],
+    "limits": "10 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 10 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA643104",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tI.html",
+      "date": "2026-10-26",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Interprofession de la filière des fruits et légumes frais (Interfel)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambre d’agriculture",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Générale des Producteurs de Blé et autres céréales (AGPB)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Générale des Producteurs de Maïs (AGPM)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la performance économique et environnementale des entreprises (DGPE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale bovine (FNB)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération nationale de l’élevage (CNE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale interprofessionnelle de la volaille de chair (ANVOL)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Assureurs",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupama",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Pacifica",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité National des Interprofessions des Vins à appellation d'origine et à indication géographique (CNIV)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général du ministère de l’Agriculture et de la Souveraineté alimentaire",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’alimentation (DGAL)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tIII.html",
+      "date": "2026-10-26",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "CY Cergy Paris Université",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "OFCE",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Observatoire des emplois menacés et émergents",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de régulation des communications électroniques, des postes et de la distribution de la presse (ARCEP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Overlord Média",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "MEDEF",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "U2P",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Les Entrepreneurs (ex-CPME)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des artistes plasticiens (SNAP-CGT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat National des Auteurs et des Compositeurs (SNAC)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ligue des auteurs professionnels",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Numeum",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tIV.html",
+      "date": "2026-10-26",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chaire TerrESS",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "ESS France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des employeurs de l'économie sociale et solidaire (UDES)",
+          "type": "federation",
+          "hatvp_id": "784179426"
+        },
+        {
+          "nom": "Coop FR",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mouvement impact France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mouvement des entreprises de l'économie écologique, sociale et solidaire (Mouvess)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre français des fonds et fondations",
+          "type": "association",
+          "hatvp_id": "444560080"
+        },
+        {
+          "nom": "Hello Asso",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France générosités",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des SCOP de l’industrie",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CG SCOP",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Le mouvement associatif",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Réseau des collectivités Territoriales pour une Économie Solidaire et Solidaire (RTES)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambre régionale de l’économie sociale et solidaire (CRESS) Auvergne-Rhône Alpes",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des entreprises d’insertion",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union nationale des entreprises adaptées (UNEA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Coorace",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des Tiers-Lieux",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tIX.html",
+      "date": "2026-10-26",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Coprexma",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France filière Pêche",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité régional des pêches maritimes et des espaces marins de Bretagne",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale supérieure Mines-Télécom Atlantique Bretagne Pays de la Loire (IMT Atlantique)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société Vectura System",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe Piriou",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national des pêches maritimes et élevages marins (CNPMEM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Bloom",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture (Dgampa)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVI.html",
+      "date": "2026-10-26",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Autorité de régulation des communications électroniques, des postes et de la distribution de la presse (ARCEP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de la concurrence",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut de l'économie pour le climat (I4CE)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "DGE / Audition sur la partie thématique du rapport",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de la transition écologique (Ademe)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des industries utilisatrices d’énergie (UNIDEN)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France industrie",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chaire Économie du Climat",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général des ministères économiques et financiers",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des entreprises (DGE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du Budget (Bureau de la transition énergétique)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tX.html",
+      "date": "2026-10-26",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "La direction générale de l'aménagement, du logement et de la nature (DGALN)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Le Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement (Cerema)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commune de Les Gets (Haute-Savoie)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "L'Association nationale des maires de stations de montagne (ANMSM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commune de Huez (Isère)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société Infinity Nine Mountain",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commune de Villard-de-Lans (Isère)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "La Banque des territoires",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Bpifrance",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des entreprises (DGE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des métiers et des industries de l’hôtellerie (Umih)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Atout France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Domaines Skiables de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société Booking",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Canton du Valais, Suisse",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Airbnb France",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fondation pour la recherche sur les administrations et les politiques publiques (IFRAP)",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html",
+      "date": "2026-10-28",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Groupement des professionnels des certificats d’économies d’énergie (GPCEE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union française de l’électricité (UFE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Gaz",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des agriculteurs méthaniseurs de France (AAMF)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Hydrogène",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Que choisir ensemble",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil national des associations familiales laïques (Cnafal)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Consommation, logement et cadre de vie (CLCV)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des services Énergie Environnement (Fedene)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cilab",
+          "type": "cabinet",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association de collectivités, gestion des déchets, réseaux de chaleurs, gestion locale de l’énergie (Amorce)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des activités de la dépollution et de l’environnement (Fnade)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Intercommunalités de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des collectivités concédantes et régies (FNCCR)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission de régulation de l’énergie (CRE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des Energies Renouvelables (SER)",
+          "type": "syndicat",
+          "hatvp_id": "784409211"
+        },
+        {
+          "nom": "Ai2P",
+          "type": "cabinet",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Renouvelables",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Enerplan",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "ADEME",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Française Indépendante de l’Energie et du Gaz (Afieg)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Nationale des Opérateurs Détaillants en Energie (ANODE)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe ENGIE",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’Energie et du Climat (DGEC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Enedis",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Réseau de Transport d’Electricité (RTE)",
+          "type": "entreprise",
+          "hatvp_id": "776743825"
+        },
+        {
+          "nom": "EDF",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat professionnel représentant des Entreprises Locales d’Energies (ELE)",
+          "type": "syndicat",
+          "hatvp_id": "784357550"
+        },
+        {
+          "nom": "Médiateur de l’énergie",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Régions de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des agences locales de l’énergie et du climat (Flame)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tII.html",
+      "date": "2026-10-29",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Société Sill",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Les entrepreneurs (ex CPME)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "La Fabrique de l'Exportation",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Compagnie française d'assurance pour le commerce extérieur (COFACE)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambres de commerce et d’Industrie France (CCI France)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambres de commerce et d’Industrie France International (CCIFI) International",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général pour l'investissement (SGPI)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale du Trésor",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Bpifrance / Bpifrance Assurance Export",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "OSCI – Les entrepreneurs de l'international",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "MEAE – Direction de la diplomatie et de la souveraineté économiques",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "French Healthcare Association",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "La Maison Fabre",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Business France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cosmetic Valley",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe LVMH",
+          "type": "entreprise",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVIII.html",
+      "date": "2026-10-29",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction régionale des douanes et des droits indirects (DRDDI) de La Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambre de commerce et d’industrie (CCI) de l’île de La Réunion",
+          "type": "federation",
+          "hatvp_id": "182800011"
+        },
+        {
+          "nom": "Observatoire des prix, des marges et des revenus (OPMR) de La Réunion",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre hospitalier universitaire (CHU) de La Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commune de La Plaine-des-Palmistes",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires du département de La Réunion (AMDR)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat de l’Importation et du Commerce de La Réunion",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des Outre-mer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectivité territoriale de la Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil régional de la Guadeloupe",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil régional de La Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html",
+      "date": "2026-11-03",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Association de défense des consommateurs et usagers (CLCV)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération nationale du logement (CNL)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Droit au logement (DAL)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Force ouvrière des consommateurs (AFOC)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif Les Morts de la rue",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Dalo",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Utopia 56",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération de l'artisanat et des petites entreprises du bâtiment (CAPEB)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française du bâtiment (FFB)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif Rénovons",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union sociale pour l’habitat",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Nationale de l'Immobilier (FNAIM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des Promoteurs Immobiliers (FPI)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "UNPI",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Oxfam France",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fondation pour le logement",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "INSEE",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Délégation interministérielle à l'hébergement et à l'accès au logement (DIHAL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale pour la rénovation urbaine (ANRU)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "ADEME",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale pour l’habitat (ANAH)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 10,
+    "rapports_avec_liste": 10
+  }
+}

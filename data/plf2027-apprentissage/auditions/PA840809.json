@@ -1,0 +1,530 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:18:25+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a46.html"
+      }
+    ],
+    "limits": "13 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 10 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA840809",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a46.html",
+      "date": "2026-10-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’Europe et des affaires étrangères",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a17.html",
+      "date": "2026-11-03",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Armateurs de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union française des Pêcheurs Artisans (UFPA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société nationale de sauvetage en mer (SNSM)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale supérieure maritime (ENSM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture (DGAMPA)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a36.html",
+      "date": "2026-11-04",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Institut national de la statistique et des études économiques (INSEE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de la recherche, des études, de l’évaluation et des statistiques (DREES)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe La Poste",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut des politiques publiques (IPP)",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a31.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère des Outre-mer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des Outre-mer (DGOM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence des Outre-mer pour la mobilité (LADOM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service militaire adapté (SMA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union nationale des fédérations d’organismes HLM (USH)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "EURODOM",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Personnalités qualifiées",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des entreprises des outre-mer (FEDOM)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a8.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Conseil d’État",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des juridictions financières (SJF)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat de la juridiction administrative (SJA)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union syndicale des magistrats administratifs (USMA)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cour des comptes",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cour nationale du droit d’asile (CNDA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Tribunal du stationnement payant (TSP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil économique, social et environnemental (Cese)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a26.html",
+      "date": "2026-11-09",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE)",
+          "type": "administration",
+          "hatvp_id": "444628275"
+        },
+        {
+          "nom": "Pôles régionaux de l’immobilier de l’État (Prie)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a30.html",
+      "date": "2026-11-10",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Commission pour la restitution des biens et indemnisation des victimes de persécutions antisémites (CIVS)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut de gestion sociale des armées (IGESA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "État-major des armées",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du budget, bureau 5BDM",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut des Invalides",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de la mémoire, de la culture et des archives (DMCA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission nationale indépendante pour les harkis (CNIH)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office national des anciens combattants et des victimes de guerre (ONaCVG)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service des retraites de l’État",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fondation pour la mémoire de la guerre d’Algérie, des combats du Maroc et de la Tunisie",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Nationale des combattants des Opérations Extérieures",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Le Souvenir Français",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’enseignement scolaire du ministère de l’Éducation nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mémorial de la Shoah",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commune de Noyant-d’Allier",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Archives nationales",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général pour l’administration du ministère des Armées",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Nationale des Victimes d’Attentats et d’Accidents Collectifs",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a29.html",
+      "date": "2026-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Syndicat des musiques actuelles (SMA)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national de l’édition phonographique (SNEP)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des producteurs phonographiques français indépendants (UPFI)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des Ensembles Vocaux et Instrumentaux Spécialisés (FEVIS)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre National du Livre (CNL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre National du Cinéma et l’image animée (CNC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ekhoscènes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre National de la musique (CNM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de l’audiovisuel (INA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des médias et des industries culturelles (DGMIC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Radio France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Télévisions",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Festivals",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Médias Monde",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Arte",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Spotify",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "TV5 Monde",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Deezer",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société des Auteurs, Compositeurs et Éditeurs de Musique (SACEM)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Administration des Droits des Artistes et Musiciens Interprètes (ADAMI)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société de Perception et de Distribution des Droits des Artistes-Interprètes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "COPIE France",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des Producteurs de Phonogrammes en France (SPPF)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Apple Music",
+          "type": "entreprise",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a13.html",
+      "date": "2026-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Secrétariat général du Gouvernement (SGG)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général de la défense et de la sécurité nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’information légale et administrative (DILA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Défenseur des droits",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission nationale de l'informatique et des libertés (CNIL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haute Autorité pour la transparence de la vie publique (HATVP)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a44.html",
+      "date": "2026-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE)",
+          "type": "administration",
+          "hatvp_id": "444628275"
+        },
+        {
+          "nom": "Direction générale de l’administration et de la fonction publique (DGAFP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe des Instituts du Service Public (GISP)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction interministérielle de la transformation publique (DITP)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 13,
+    "rapports_avec_liste": 10
+  }
+}
