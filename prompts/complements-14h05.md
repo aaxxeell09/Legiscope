@@ -66,6 +66,8 @@ Tout le monde code tout de suite contre ces noms ; P0 les ajoute dans `contracts
 - 3 : `nouveautes.json` : l'`effet` d'un dépôt ou d'un sort d'amendement se déduit de sa `nature` (dans `texte.json`) et de l'objectif du client : `supprime` = renforce si le client veut empêcher la mesure ; `reduit` renforce l'objectif « réduire » ; `reporte` renforce « repousser » ; `aggrave` affaiblit ; `autre` = neutre.
 - 5 : `action.json` : recopier `position_inconnue` de `groupes-action.json` ; ne jamais remonter un député sans fondement dans alliés, actionnables ou perdus.
 
+**A4, relance demandée à 14 h 55** : `bun run check` échoue sur le contrôle croisé : les `fiches/<PA>.json` de petits-colis (PA721110, PA721336, PA718838, PA720976…) ont des auditions et une couverture qui diffèrent de `auditions/<PA>.json` (A1 a relancé). Régénère les fiches des deux dossiers sur les auditions actuelles, `bun run check` vert, commit, push.
+
 **A2, A3** : rien de nouveau. A2 : `data/plf2027-holdings/arguments.json` manque toujours (seule erreur de `bun run check` à 14 h 03).
 
 ### MacBook Pro Axel
