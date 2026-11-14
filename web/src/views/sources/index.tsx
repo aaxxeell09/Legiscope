@@ -3,6 +3,7 @@ import { Meta, Panel, Table, type Column } from "../../components";
 import { useConfig } from "../../lib/config";
 import { pathFor, useData, type DataKind, type DataState, type Meta as MetaType } from "../../lib/data";
 import { formatDate, formatDateTime } from "../../lib/format";
+import "./sources.css";
 
 /**
  * Page « Sources et limites » (route /sources).
@@ -378,10 +379,11 @@ export default function SourcesView() {
 
   return (
     <div className="view" data-view="sources">
-      <div className="view-title">
-        <h1>Sources et limites</h1>
+      <header className="sources-head">
+        <div><div className="sources-kicker">Transparence des données</div><h1>Sources et limites</h1><p>Origine, fraîcheur et périmètre des informations présentées dans le dossier.</p></div>
+        <div className="sources-context">
         {dossiers.length > 0 && (
-          <span className="topbar-dossier">
+          <span className="sources-dossier">
             <label htmlFor="sources-dossier">Dossier</label>{" "}
             <select
               id="sources-dossier"
@@ -396,11 +398,13 @@ export default function SourcesView() {
             </select>
           </span>
         )}
-        {config && <span className="text-2">jeu de données : {config.dataset === "fixtures" ? "exemple (fixtures)" : "réel (live)"}</span>}
-        {dossier?.date_reference && <span className="text-2">vu au {formatDate(dossier.date_reference)}</span>}
-      </div>
+        {config && <span className="sources-chip">{config.dataset === "fixtures" ? "Jeu de démonstration" : "Données produites"}</span>}
+        {dossier?.date_reference && <span className="sources-chip history">Relecture au {formatDate(dossier.date_reference)}</span>}
+        </div></header>
 
-      <Panel title="Sources" aside={`${lignes.length} sources`}>
+      <div className="sources-stats"><div><strong>{lignes.length}</strong><span>familles de sources</span></div><div><strong>{chargesOk}/{charges.length}</strong><span>fichiers chargés</span></div><div><strong>{enErreur}</strong><span>indisponibles</span></div></div>
+
+      <Panel title="Provenance des données" aside={`${lignes.length} sources`}>
         <Table columns={COLONNES_SOURCES} rows={lignes} rowKey={(l) => l.id} empty="Aucune source" />
       </Panel>
 

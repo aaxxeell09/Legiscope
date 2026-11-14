@@ -42,22 +42,21 @@ export default function DeputeView() {
   return (
     <div className="view" data-view="depute">
       <header className="p7-depute-head">
-        <h1>{nom || pa}</h1>
-        {dep?.groupe_id ? <Tag annuaire={annuaire} groupeId={dep.groupe_id} /> : dep && <span className="text-2">non-inscrit</span>}
+        <div className="p7-depute-title"><span>Analyse dans le contexte du dossier · {dossier.label}</span><h1>{nom || pa}</h1></div>
+        <div className="p7-depute-meta">{dep?.groupe_id ? <Tag annuaire={annuaire} groupeId={dep.groupe_id} /> : dep && <span className="text-2">non-inscrit</span>}
         {dep && (
           <span className="text-2">
             département {dep.departement}, {dep.circonscription}
             {dep.circonscription === 1 ? "re" : "e"} circonscription
           </span>
-        )}
-        {retour}
+        )}</div>{retour}
       </header>
       {classement && (
-        <div className="p7-ligne">
-          <span className="p7-score">{formatProba(classement.d.score)}</span>
-          <span>{GROUPE_ACTION[classement.cle]}</span>
+        <div className="p7-classement">
+          <div><span className="p7-classement-label">Position documentée</span><strong>{GROUPE_ACTION[classement.cle]}</strong></div>
           <span className="text-2">{classement.d.raison}</span>
           <span className="text-2">{classement.d.position_connue ? classement.d.fondement.map((f) => FONDEMENT[f]).join(", ") : "position inconnue"}</span>
+          <span className="text-2">Indicateur descriptif : {formatProba(classement.d.score)}</span>
           <Pourquoi preuve={classement.d.preuve} />
         </div>
       )}
@@ -105,7 +104,8 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
 
   return (
     <>
-      <section className="p7-synthese" aria-label="Synthèse">
+      <nav className="p7-subnav" aria-label="Sections de la fiche"><a href="#synthese">Synthèse</a><a href="#amendements">Amendements</a><a href="#interventions">Interventions</a><a href="#auditions">Auditions</a><a href="#organisations">Organisations</a></nav>
+      <section id="synthese" className="p7-synthese" aria-label="Synthèse">
         {s ? (
           <>
             <dl style={{ margin: 0 }}>
@@ -122,7 +122,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
       </section>
 
       <div className="p7-cols">
-        <div className="p7-col">
+        <div className="p7-col" id="auditions">
           <h4>
             Auditions<span className="text-2">{f.auditions.length}</span>
           </h4>
@@ -145,7 +145,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
           )}
         </div>
 
-        <div className="p7-col">
+        <div className="p7-col" id="interventions">
           <h4>
             Débats<span className="text-2">{f.debats.length}</span>
           </h4>
@@ -169,7 +169,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
           )}
         </div>
 
-        <div className="p7-col">
+        <div className="p7-col" id="amendements">
           <h4>
             Amendements<span className="text-2">{f.amendements.length}</span>
           </h4>
@@ -206,7 +206,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
         </div>
       </div>
 
-      <section className="p7-section">
+      <section className="p7-section" id="organisations">
         <h4>
           HATVP<span className="text-2" style={{ marginLeft: 8 }}>{f.hatvp.length}</span>
         </h4>
