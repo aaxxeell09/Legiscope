@@ -5,6 +5,7 @@ import { useData } from "../../../lib/data";
 import { Redaction } from "../../depute/commun";
 import { chiffresAutorises, decouperChiffres } from "./chiffres";
 import "../../depute/p7.css";
+import "./note.css";
 
 /** Bloc 5, Compte rendu : quelques lignes à reprendre pour le client. */
 export default function CompteRenduBloc({ dossier }: { dossier: string }) {
@@ -17,6 +18,8 @@ export default function CompteRenduBloc({ dossier }: { dossier: string }) {
 }
 
 function CompteRenduContenu({ n }: { n: Note }) {
+  const [edition, setEdition] = useState(false);
+  const [texte, setTexte] = useState(n.texte);
   const principal = n.objectifs.find((o) => o.rang === 1) ?? n.objectifs[0];
   const autorises = chiffresAutorises(n.chiffres_utilises);
   const morceaux: ReactNode[] = decouperChiffres(n.texte).map((m, i) =>
@@ -30,13 +33,14 @@ function CompteRenduContenu({ n }: { n: Note }) {
   );
 
   return (
-    <>
-      <p className="p7-rappel">
-        {n.client} · {principal.texte}
-      </p>
-      <p className="p7-texte">{morceaux}</p>
+    <div className="note-layout">
+      <article className="note-document">
+        <header className="note-document-head"><div><span>Note de situation</span><strong>{n.client}</strong></div><button type="button" className="note-edit" onClick={() => setEdition((v) => !v)}>{edition ? "Terminer" : "Ajuster localement"}</button></header>
+        <p className="note-objectif">Objectif suivi · {principal.texte}</p>
+        {edition ? <><textarea className="note-editor" value={texte} onChange={(e) => setTexte(e.target.value)} aria-label="Modifier localement le compte rendu" /><p className="note-local-hint">Modification locale uniquement — les données sources ne sont pas enregistrées.</p></> : <p className="p7-texte note-text">{texte === n.texte ? morceaux : texte}</p>}
+      </article>
       {n.sources.length > 0 && (
-        <ol className="p7-sources">
+        <details className="note-sources"><summary>Sources consultables <span>{n.sources.length}</span></summary><ol className="p7-sources">
           {n.sources.map((s, i) => (
             <li key={`${s.url}-${i}`}>
               <a href={s.url} target="_blank" rel="noreferrer">
@@ -44,21 +48,21 @@ function CompteRenduContenu({ n }: { n: Note }) {
               </a>
             </li>
           ))}
-        </ol>
+        </ol></details>
       )}
       {n.limites && <p className="p7-limites">{n.limites}</p>}
-      <div className="p7-actions">
-        <BoutonCopier note={n} />
+      <div className="p7-actions note-actions">
+        <BoutonCopier note={n} texte={texte} />
         <Redaction mode={n.mode} verifie={n.verifie} modele={n.modele} date={n.meta.generated_at.slice(0, 10)} />
       </div>
       <Meta meta={n.meta} />
-    </>
+    </div>
   );
 }
 
-function BoutonCopier({ note }: { note: Note }) {
+function BoutonCopier({ note, texte: corps }: { note: Note; texte: string }) {
   const [etat, setEtat] = useState<"" | "copié" | "copie impossible">("");
-  const texte = [note.texte, "", "Sources :", ...note.sources.map((s, i) => `${i + 1}. ${s.label} : ${s.url}`)].join("\n");
+  const texte = [corps, "", "Sources :", ...note.sources.map((s, i) => `${i + 1}. ${s.label} : ${s.url}`)].join("\n");
   async function copier() {
     try {
       await navigator.clipboard.writeText(texte);
@@ -71,7 +75,7 @@ function BoutonCopier({ note }: { note: Note }) {
   return (
     <>
       <button type="button" className="p7-btn" onClick={copier}>
-        Copier
+        {etat === "copié" ? "Copié" : "Copier le compte rendu"}
       </button>
       {etat && (
         <span className="text-2" role="status">
