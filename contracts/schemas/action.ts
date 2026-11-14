@@ -4,24 +4,28 @@ import { FondementSchema, LieuSchema, ModeSchema, PositionDecideurSchema, RoleDe
 import { PreuveSchema } from "./preuve";
 
 // Un député n'est classé que sur ce qu'il a lui-même dit, déposé ou voté, jamais sur son groupe seul.
-export const DeputeActionSchema = z
-  .object({
-    depute_id: z.string().min(1),
-    groupe_id: z.string().min(1),
-    score: Proba,
-    raison: z.string().min(1),
-    // true = une fiche existe dans fiches/index.json.
-    fiche: z.boolean(),
-    fondement: z.array(FondementSchema),
-    // false = position non connue, et on l'écrit.
-    position_connue: z.boolean(),
-    preuve: PreuveSchema,
-  })
-  .refine((d) => d.position_connue === d.fondement.length > 0, {
-    message: "position_connue vaut true si et seulement si fondement est non vide",
-    path: ["position_connue"],
-  });
+const DeputeActionBase = z.object({
+  depute_id: z.string().min(1),
+  groupe_id: z.string().min(1),
+  score: Proba,
+  raison: z.string().min(1),
+  fondement: z.array(FondementSchema),
+  // false = position non connue, et on l'écrit.
+  position_connue: z.boolean(),
+  preuve: PreuveSchema,
+});
+const coherencePosition = (d: { position_connue: boolean; fondement: unknown[] }) => d.position_connue === d.fondement.length > 0;
+const messagePosition: { message: string; path: (string | number)[] } = { message: "position_connue vaut true si et seulement si fondement est non vide", path: ["position_connue"] };
+
+export const DeputeActionSchema = DeputeActionBase.extend({
+  // true = une fiche existe dans fiches/index.json.
+  fiche: z.boolean(),
+}).refine(coherencePosition, messagePosition);
 export type DeputeAction = z.infer<typeof DeputeActionSchema>;
+
+// Intermédiaire produit par P3 (avant assemblage par A4) : sans le champ fiche.
+export const DeputeActionSansFicheSchema = DeputeActionBase.refine(coherencePosition, messagePosition);
+export type DeputeActionSansFiche = z.infer<typeof DeputeActionSansFicheSchema>;
 
 // Ceux qui décident sur la mesure : rapporteur, gouvernement, chef de file, président de commission.
 export const DecideurSchema = z.object({
@@ -75,3 +79,21 @@ export const ActionSchema = z.object({
   contre_arguments: z.array(ContreArgumentSchema),
 });
 export type Action = z.infer<typeof ActionSchema>;
+
+// Intermédiaire P3 : data/<dossier>/groupes-action.json (section 5.18 du plan).
+export const GroupesActionSchema = z.object({
+  meta: MetaSchema,
+  actionnables: z.array(DeputeActionSansFicheSchema),
+  allies: z.array(DeputeActionSansFicheSchema),
+  perdus: z.array(DeputeActionSansFicheSchema),
+  decideurs: z.array(DecideurSchema),
+});
+export type GroupesAction = z.infer<typeof GroupesActionSchema>;
+
+// Intermédiaire A2 : data/<dossier>/arguments.json (section 5.18 du plan).
+export const ArgumentsSchema = z.object({
+  meta: MetaSchema,
+  pour: z.array(ArgumentSchema),
+  contre: z.array(ArgumentSchema),
+});
+export type Arguments = z.infer<typeof ArgumentsSchema>;
