@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:01:10+01:00",
+    "generated_at": "2026-11-14T15:14:03+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -42,9 +42,9 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la mesure est absente du texte rejeté par l'Assemblée, où 7 groupes contre la mesure pèsent plus lourd que les 4 groupes favorables.",
+        "texte": "Au Sénat, la mesure est absente du texte, favorable à l'objectif, car 7 groupes y sont hostiles et 12 amendements ont été rejetés.",
         "chiffres_utilises": [
-          "4",
+          "12",
           "7"
         ],
         "mode": "llm",
@@ -167,7 +167,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la mesure est absente du texte, ce qui favorise l'objectif de limiter son assiette, malgré 193 sièges hostiles.",
+        "texte": "Au Sénat, la mesure est absente du texte, ce qui favorise l'objectif de limiter son assiette, malgré 193 sièges hostiles.",
         "chiffres_utilises": [
           "193"
         ],

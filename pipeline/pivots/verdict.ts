@@ -213,6 +213,13 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
       const uid = String(e.url ?? "").match(/AMANR5L17[A-Z0-9]+/)?.[0];
       const a = uid ? amdts.find((x) => x.id === uid) : undefined;
       if (!a || !a.pertinent) { rejets.push(`${e.id} : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu)`); return false; }
+      // Amendement du gouvernement sur la mesure qui ne la supprime, ne la réduit ni ne la reporte : il prépare son adoption.
+      const nat = ctx.natures.get(a.id);
+      if (rang === 1 && cib === "contre" && a.typeAuteur === "Gouvernement" && a.sur_mesure && !["supprime", "reduit", "reporte"].includes(nat ?? "")) {
+        if (e.effet === "affaiblit") return true;
+        rejets.push(`${e.id} : amendement du gouvernement qui retravaille la mesure, effet attendu « affaiblit »`);
+        return false;
+      }
       if (!a.sens) { rejets.push(`${e.id} : sens de l'amendement sur la mesure non lu`); return false; }
       const dir = cib === "contre" ? -1 : 1; // sens qui sert le client
       let attendu: string;
