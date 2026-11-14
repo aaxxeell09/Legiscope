@@ -1,19 +1,19 @@
-# Session P4 : socle du front (MacBook Pro Ilan)
+# Session P4 : socle du front et page dossier (MacBook Pro Ilan)
 
-Lis d'abord `prompts/_commun.md`, puis `PLAN.md` sections 3, 6 (ligne P4), le rapport design en fin de fichier, `web/README.md` et `contracts/README.md`.
+Lis d'abord `prompts/_commun.md`, puis `rendu-final.md` en entier, `PLAN.md` sections 1, 3, 6 (ligne P4), le rapport design en fin de fichier, `web/README.md`, `contracts/README.md`.
 
 ## Tu possèdes
-Tout `web/` **sauf** `web/src/views/` (chaque vue appartient à P5, P6, P7, X2). Tu possèdes aussi `web/src/components/`, `web/src/lib/`, `web/src/tokens.css`, `web/src/App.tsx`.
+Tout `web/` **sauf** `web/src/views/blocs/*` (P5, P6, P7), `views/depute/` (P7), `views/base/` (P6), `views/sources/` (X2). Donc : `components/`, `lib/`, `tokens.css`, `App.tsx`, `views/dossier/`.
 
 ## État de départ
-P0 a livré un squelette : routes, composants vides par vue, `useData`, `Meta`, `GroupeTag`, `Proba`, `Panel`, `Table`, `TopBar`, `tokens.css`, formats. Vérifie que `bun run dev` sert les six routes sur les fixtures (`config.dataset = "fixtures"`).
+P0 a livré : routes (`/dossier/:id`, `/dossier/:id/depute/:pa`, `/dossier/:id/base`, `/sources`), page dossier avec cinq emplacements et blocs vides, `useData`, `Meta`, `Pourquoi`, `GroupeTag`, `Proba`, `Panel`, `Table`, `TopBar`, `tokens.css`, formats. Vérifie `bun run dev` sur `config.dataset = "fixtures"`.
 
 ## Livrables
-1. **13 h 30 au plus tard** : les primitives finies et utilisables sans retouche par les vues : `Meta` (une ligne en pied, sources cliquables, « généré le », limites, `data-testid="meta"`), `GroupeTag` (sigle sur couleur du groupe), `Proba` (« 71 % » en gros, seuils de couleur, état « pas de prédiction » en gris, état « gabarit »), `Panel`, `Table` (ligne cliquable, ligne grisée), `TopBar` (nom depuis config, onglets Texte, Fiche, Cohésion, Note, Sources, sélecteur de dossier), `Curseur` temporel réutilisable (slider + boutons préréglés depuis `config.cohesion.curseur_presets`, émet une date), `useData` avec statut et validation zod, `useConfig`. Formats : « 3 nov. 2026 », « Marie Dupont », « 71 % ».
-2. Thème : contraste 7:1, police mono, 16 px, rien sous 14 px, traits 3 px. Pas de flèche dans les boutons, pas de liseré coloré, pas de pastille, pas de texte explicatif. Interface en français (une seule langue).
-3. États globaux : `loading` (texte « chargement »), `error` (le message et le chemin du fichier), route inconnue, fiche absente (message, pas d'écran blanc).
-4. À partir de 15 h : bascule `config.dataset` sur `live` quand P0 le demande, correction des bugs transverses remontés par les vues dans leurs `status/`.
-5. `bun run build` passe à chaque commit.
+1. **13 h 50** : primitives finies, utilisables sans retouche : `Pourquoi` (bouton texte, panneau avec sources en liens et raisonnement, clavier et Échap), `Meta`, `GroupeTag`, `Proba` (« 71 % », seuils, « pas de prédiction », « gabarit »), `Panel`, `Table` (ligne cliquable, grisée), `TopBar` (nom, sélecteur de dossier, Sources), `Curseur` (préréglages + slider), `Badge` (vérifié, gabarit, importance), `useData` avec statut et validation zod, `useConfig`, `useDossier()` (le dossier courant depuis la route, son client, objectif, date de référence). Formats : « 3 nov. 2026 », « Marie Dupont », « 71 % ».
+2. Page dossier (`views/dossier/index.tsx`) : en-tête trois lignes Client, Dossier, Objectif, plus « vu au 19 nov. 2025 » si date de référence, lien « Base complète » ; puis Verdict (pleine largeur), Nouveautés et Suite (50/50), Action (pleine largeur), Compte rendu (pleine largeur). Chaque bloc reçoit `dossierId` et gère son propre chargement. Pas de texte explicatif, pas de tip, pas de flèche dans les boutons, pas de liseré, pas de pastille.
+3. Thème : contraste 7:1, mono, 16 px, rien sous 14 px, traits 3 px ; projecteur. Interface en français, une seule langue.
+4. États globaux : chargement, erreur (fichier et message), dossier inconnu, route inconnue. Jamais d'écran blanc.
+5. À partir de 15 h 15 : bascule `dataset: live` sur demande de P0, corrections transverses remontées par les blocs dans leurs `status/`. `bun run build` passe à chaque commit.
 
 ## Fini quand
-Les six routes s'ouvrent sur fixtures puis sur live, zéro erreur console, chaque vue a un `Meta`. Heure cible des primitives : 13 h 30.
+Les quatre routes s'ouvrent sur fixtures puis live, zéro erreur console, chaque bloc affiche son `Meta`. Heure cible des primitives : 13 h 50.

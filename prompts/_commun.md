@@ -1,6 +1,6 @@
 # Règles communes à toutes les sessions (lire en premier)
 
-Tu es une session Claude Code du projet Bascule, hackathon Hémicycle, 14 novembre 2026, démo à 18 h. Le plan complet est dans `PLAN.md` : lis les sections 3, 4, 5 et la ligne de ta session en section 6 avant d'écrire une ligne. Les formats JSON sont dans `contracts/` (schémas zod) et `contracts/fixtures/` (exemples complets). `contracts/README.md` décrit l'arborescence et les routes.
+Tu es une session Claude Code du projet Bascule, hackathon Hémicycle, 14 novembre 2026, démo à 18 h. Le rendu attendu est décrit dans `rendu-final.md` (un tableau de bord par dossier : Verdict, Nouveautés, Suite, Action, Compte rendu ; chaque information a un bouton « pourquoi » avec source et raisonnement). Le plan complet est dans `PLAN.md` : lis les sections 1, 3, 4, 5 et la ligne de ta session en section 6 avant d'écrire une ligne. Un dossier = un client, un sujet, un objectif ; quand `config.dossiers[].date_reference` est posée, tout est rejoué comme si on était ce jour-là. Les formats JSON sont dans `contracts/` (schémas zod) et `contracts/fixtures/` (exemples complets). `contracts/README.md` décrit l'arborescence et les routes.
 
 ## Ce que tu possèdes
 Ton prompt liste les chemins que tu possèdes. Tu n'écris jamais ailleurs. Pas de `bun add` : si tu as besoin d'une dépendance, écris-la dans ton fichier `status/` et continue sans elle (P0 l'ajoute en moins de 5 minutes). `contracts/` ne se modifie pas : un format qui te bloque, tu l'écris dans `status/` et tu produis sur le format actuel.
@@ -23,7 +23,8 @@ P0 ne lit que ce dossier. Une session muette 30 minutes est considérée morte.
 
 ## Qualité
 - Tout fichier de `data/` que tu écris passe `bun run check` avant le commit.
-- Chaque fichier porte son bloc `meta` (sources avec URL, date de génération, limites, producer, dossier_id).
+- Chaque fichier porte son bloc `meta` (sources avec URL, date de génération, limites, producer, dossier_id). Chaque élément affiché porte un bloc `preuve` (sources, raisonnement).
+- Rien de postérieur à `date_reference` quand elle est posée : un sort d'amendement postérieur devient `en_attente`.
 - Les identifiants, dossiers et sujets viennent de `data/config.json`, jamais en dur.
 - Scripts rejouables : `bun run <session>` doit tout régénérer depuis zéro.
 - Pas de chiffre inventé, pas de citation inventée. Ce que tu n'as pas pu obtenir, tu l'écris dans `meta.limits` et dans `status/`.
@@ -31,4 +32,4 @@ P0 ne lit que ce dossier. Une session muette 30 minutes est considérée morte.
 - Réponds en français, phrases courtes, pas de jargon inventé.
 
 ## Heures clés
-13 h 15 go/no-go (P0 décide). 14 h 30 données définitives. 15 h bascule du front sur données réelles. 16 h 30 gel du code. 17 h répétition.
+13 h 35 go/no-go (P0 décide). 13 h 50 pivots provisoires et primitives du front. 14 h 45 données définitives. 15 h 15 bascule du front sur données réelles. 16 h 45 gel du code. 17 h 15 répétition.

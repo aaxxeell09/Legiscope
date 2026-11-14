@@ -1,353 +1,241 @@
 <!-- /autoplan restore point: /Users/ilansainte-agathe/.gstack/projects/aaxxeell09-Legiscope/main-autoplan-restore-20261114-122731.md -->
 # Plan Bascule : construire en une après-midi, à trois machines
 
-Version 2, 14 novembre 2026, 12 h 35. Version 1 écrite à 12 h 25 puis passée en revue (stratégie, design, ingénierie, voir le rapport en fin de fichier). Démo à 18 h.
+Version 3, 14 novembre 2026, 12 h 55. La v2 (12 h 35, revue stratégie, design, ingénierie, rapport en fin de fichier) décrivait quatre vues. À 12 h 45 Axel a publié `rendu-final.md`, qui prime sur son cadrage initial et définit le rendu à partir du besoin du cabinet : **un tableau de bord par dossier, lu en cinq blocs**. Ilan a validé à 12 h 50 : on reprend le rendu final et on adapte le plan. Le pipeline de données et les contrats de la v2 sont conservés et étendus ; ce qui change est la composition du front, trois fichiers JSON de plus, et la démo. Démo à 18 h.
 
 ## 0. Ce qui est demandé, ce qui ne l'est pas
 
-Demandé : un plan exécutable qui répartit le travail sur trois machines (MacBook Pro Ilan, jusqu'à 10 sessions ; MacBook Air Ilan, 5 ; MacBook Pro Axel, 5), fixe les formats JSON avant tout lancement pour que les sessions ne se bloquent jamais, et aboutit à une démo des quatre vues à 18 h.
+Demandé : un plan exécutable qui répartit le travail sur trois machines (MacBook Pro Ilan 9 sessions, MacBook Air Ilan 4, MacBook Pro Axel 3, décidé à 12 h 40), fixe les formats JSON avant tout lancement, et aboutit à 18 h à la démo d'un tableau de bord par dossier en cinq blocs, tel que `rendu-final.md` le décrit.
 
-Pas demandé : coder avant validation de ce plan, trancher le nom, parler prix, décider du produit réel après le hackathon.
+Pas demandé : la vue multi-dossiers, la presse, le prix, le mode de livraison, le produit réel après le hackathon (écartés par le rendu final, section 7).
 
 ## 1. Ce qu'on livre à 18 h
 
-Un site statique servi en local, quatre vues lues depuis des fichiers JSON, sur **deux dossiers** :
+Un site statique servi en local. Un **dossier** = un client, un sujet, un objectif (exemple du rendu : Alibaba, petits colis, empêcher que la taxe soit votée). Deux dossiers :
 
-- **Dossier « aujourd'hui »** : un sujet du budget 2027 (PLF, projet de loi n° 3210), amendements en attente, prédictions Orcet.
-- **Dossier « passé »** : la taxe petits colis du budget 2026, vote nominatif connu (208 contre 87), fiche HATVP d'Alibaba, débats et amendements complets. Il sert à montrer la chaîne entière sans dépendre d'une prédiction, et à reculer dans le temps.
+- **Dossier rejoué** : taxe petits colis, budget 2026, vu la veille du vote (19 novembre 2025), comme dans l'illustration d'Axel. Toutes les données sont filtrées à cette date ; « ce qui s'est réellement passé » (208 contre 87) sert de chute à la démo.
+- **Dossier vivant** : la taxe sur les holdings et la fortune improductive (« taxe Zucman ») dans le PLF 2027, le sujet unique le plus riche en données (annexe B). Le PLF 2027 a été rejeté par l'Assemblée le 4 novembre ; le dossier continue au Sénat puis en nouvelle lecture, et c'est exactement ce que le bloc Suite doit dire. Client = une organisation HATVP déclarée sur le sujet, objectif « empêcher la taxe ».
 
-Les quatre vues :
+La page d'un dossier, dans l'ordre de lecture du cabinet :
 
-1. **Texte** : position dominante de chaque groupe, amendements avec le sort prédit par Orcet au centre, les pivots (députés les moins prévisibles des groupes divisés) à droite, cliquables.
-2. **Fiche d'approche** : synthèse en tête (position probable, argument à présenter, badge vérifié), puis trois colonnes : auditions menées (organisations entendues), interventions en séance et commission (citation et lien), amendements déposés ou cosignés avec la mention « travaillé avec » ; un quatrième bloc « organisations inscrites à la HATVP ayant déclaré une action sur ce texte ». Couverture chiffrée en pied.
-3. **Cohésion** : courbe d'accord entre 1 à 3 paires de groupes, mois par mois depuis juillet 2024, censures en traits verticaux, curseur temporel avec trois positions préréglées.
-4. **Note** : 150 mots d'analyste, chaque nombre vérifié souligné, sources numérotées, bouton Copier.
+1. **Verdict** (pleine largeur, en tête) : en bonne voie, incertain ou mal engagé par rapport à l'objectif ; tendance ; une phrase de lecture ; ce qui marche et ce qui coince, chaque point avec son bouton « pourquoi ».
+2. **Nouveautés** (gauche) : les événements du dossier triés par importance, pas par date.
+3. **Suite** (droite) : les prochaines échéances du texte et ce qui a le plus de chances de se produire (prédictions Orcet, lecture de la cohésion).
+4. **Action** (pleine largeur) : trois groupes de députés (sur qui on peut encore agir, alliés à protéger, perdus), chaque nom ouvrant sa fiche (auditions, interventions, amendements, HATVP, synthèse) ; les arguments entendus dans les débats, pour et contre la mesure, avec citation et source ; les contre-arguments à amener.
+5. **Compte rendu** (pleine largeur) : quelques lignes à reprendre pour le client, chiffres vérifiés soulignés, bouton Copier.
 
-Chaque écran porte sa source, sa date de génération et ses limites. Aucun chiffre non sourcé ne passe.
+En fond, accessibles d'un lien : l'**état du texte** (étape, voté, reste à voter) et la **base** (articles et amendements du dossier, consultables).
+
+Règle de fiabilité : chaque information affichée porte un bouton « pourquoi » qui montre la source et le raisonnement. Le modèle de langage ne voit jamais un vote et aucun chiffre non sourcé ne passe.
 
 ## 2. Décisions
 
-### Prises dans ce plan (révisables à la porte de validation)
-
-| # | Décision | Choix | Pourquoi |
+| # | Décision | Choix | Qui, quand |
 |---|---|---|---|
-| D1 | Version minimale ou complète | **Complète, quatre vues** | Seize sessions disponibles. La fiche d'approche est le croisement de sources que le jury dit chercher ; les trois autres vues existent déjà chez Atlas, on les garde comme contexte, pas comme argument. |
-| D2 | Sujet « aujourd'hui » | **Le sujet du PLF 2027 qui a le plus de données** (décision d'Ilan à 12 h 40) : amendements, amendements en attente, scrutins publics, rapports et comptes rendus, organisations HATVP. Mesure en cours sur l'open data (facturation électronique, cryptoactifs, petits colis et jusqu'à trois sujets révélés par les données), résultat écrit en annexe B et dans `config.json`. P1 confirme à 12 h 55 qu'Orcet répond sur un amendement en attente du sujet retenu. | On choisit sur des chiffres, pas sur une intuition. Le dossier petits colis reste le dossier « passé » quoi qu'il arrive. |
-| D3 | Dossier « passé » | **Taxe petits colis, construit intégralement** (texte, pivots, fiches) | Seul dossier où chaque couche existe à coup sûr. Coût : la même chaîne tourne deux fois, sur une liste de dossiers, ce qui est le prix d'un paramètre. |
-| D4 | Nombre de sessions | **16 sessions et une tâche humaine** (détail section 6) | Voir la porte de validation : 20 était la capacité, pas le besoin. Chaque session en moins rend du temps d'attention à Ilan. |
+| D1 | Périmètre | Complet : cinq blocs, état du texte, base, fiches de députés | Ilan 12 h 40, confirmé 12 h 50 sur le rendu final |
+| D2 | Sujet du dossier vivant | **Taxe sur les holdings et la fortune improductive (« taxe Zucman »), PLF 2027** : le plus riche des sujets uniques mesurés (annexe B : 141 amendements, 104 scrutins publics dont 27 sur le PLF 2027, 35 organisations HATVP). Fait mesuré qui change la lecture : le PLF 2027 a été rejeté par l'Assemblée le 4 novembre 2026 (scrutin V9759), le texte est au Sénat et reviendra en nouvelle lecture ; le dossier reste vivant, les positions prises à l'Assemblée sont connues, la suite est le Sénat et la nouvelle lecture. Client : une organisation HATVP déclarée sur le sujet (Afep ou Medef, P1 vérifie la fiche), objectif « empêcher la taxe sur les holdings », position cible contre. | Ilan 12 h 40 (règle : le plus de données), P0 13 h 00 (choix) |
+| D3 | Dossier rejoué | Petits colis, date de référence 19 novembre 2025 | Rendu final section 9, Ilan 12 h 40 |
+| D4 | Sessions | 16 : 9 + 4 + 3, Axel en personne auprès d'Hémicycle | Ilan 12 h 40 |
+| D5 | Forme du rendu | Tableau de bord par dossier en cinq blocs, `rendu-final.md` prime | Axel 12 h 45, Ilan 12 h 50 |
+| D6 | Démo | Verdict, Action, Compte rendu sur le dossier rejoué, chute sur le vote réel ; puis le Verdict du dossier vivant. Ordre détaillé section 8, finalisé par X1 à 15 h 15 | P0, à confirmer par X1 |
+| D7 | Forme du verdict | Mécanique et sourcée (section 5.15) : l'outil propose, le cabinet tranche | P0, point ouvert 2 du rendu |
 
-### Tranché par Ilan à la porte de validation (12 h 40)
-
-- Périmètre : quatre vues, deux dossiers. Validé.
-- Ordre de la démo : Texte, Fiche, Cohésion, Note. Validé.
-- 16 sessions. Validé.
-- Sujet : celui qui a le plus de données (D2 ci-dessus).
-- Le nom se tranche à 17 h : une chaîne dans `config.json`.
+Le nom se tranche à 17 h : une chaîne dans `config.json`.
 
 ## 3. Architecture
 
 Pas de serveur. Trois couches qui ne se parlent que par des fichiers JSON dont le format est fixé en section 5.
 
 ```
-Hémicycle API (MCP ou REST) ──┐
-                              ├─► pipeline/ (TypeScript, Bun) ──► data/<dossier>/*.json ──► web/ (Vite + React + TS)
-Open data AN (rapports, CR) ──┤                                   data/cohesion.json
-                              │                                        ▲
-Featherless (extraction,      │                                        │
-  rédaction) ─────────────────┘         contracts/ (schémas zod + fixtures), seule dépendance entre sessions
+Hémicycle API (REST) ──────┐
+Open data AN (dossiers,    ├─► pipeline/ (TypeScript, Bun) ──► data/<dossier>/*.json ──► web/ (Vite + React + TS)
+  comptes rendus, agenda) ─┤                                     data/cohesion.json           une page par dossier
+HATVP (via API) ───────────┤                                          ▲
+Featherless (extraction,   │                                          │
+  rédaction vérifiée) ─────┘            contracts/ (schémas zod + fixtures), seule dépendance entre sessions
 ```
 
-- `contracts/` : un schéma zod par fichier, une fixture complète et réaliste par fichier, les types TypeScript du front inférés de ces schémas (zéro type manuel). Possédé par P0 seul, figé à 12 h 50. Les fixtures sont le jeu de repli de la démo : `config.json` porte `"dataset": "live" | "fixtures"`, le front charge l'un ou l'autre, personne ne copie jamais de fichiers dans `data/`.
-- `data/` : `cohesion.json`, `groupes.json`, `deputes.json`, `config.json`, et un dossier par dossier législatif (`data/plf2027-facturation/`, `data/petits-colis/`) contenant `texte.json`, `pivots.json`, `auditions/<PA>.json`, `debats/<PA>.json`, `amendements/<PA>.json`, `hatvp.json`, `fiches/<PA>.json`, `fiches/index.json`, `note.json`. `data/raw/` contient les réponses brutes de l'API, un fichier par scrutin, régénérées par P1 seul.
-- `pipeline/` : un sous-dossier par session, un `run.ts`, qui lit `config.json` pour connaître les dossiers et sujets, et itère sur la liste de pivots reçue. Scripts rejouables, jamais de travail à la main.
-- `web/` : Vite, React, TypeScript, react-router, Recharts. `vite.config.ts` sert `../data` via `publicDir`, pas de lien symbolique. P4 livre avant 13 h 30 : `tokens.css`, `Meta`, `GroupeTag`, `Proba`, `Panel`, `Table`, `useData<T>()` avec statut `loading | ok | error`, et `App.tsx` avec les cinq routes pointant sur des composants vides déjà créés dans chaque dossier de vue.
-- `status/<session>.md` : fait, en cours, bloqué, dépendance demandée. P0 ne lit que ce dossier.
-- `prompts/<session>.md` : le prompt de lancement, versionné.
+- `contracts/` : un schéma zod par fichier, une fixture complète par fichier et par dossier, types du front inférés. Possédé par P0 seul, figé à 13 h 10. `config.dataset` ∈ `live | fixtures` : le front charge l'un ou l'autre, personne ne copie de fichiers.
+- `data/` : `config.json`, `groupes.json`, `deputes.json`, `cohesion.json`, `raw/` (réponses brutes, un fichier par scrutin, non commité pour l'open data), et un dossier par dossier (`petits-colis/`, `plf2027-holdings/`) contenant : `etat.json`, `texte.json`, `pivots.json`, `groupes-action.json`, `verdict.json`, `suite.json`, `nouveautes.json`, `arguments.json`, `action.json`, `hatvp.json`, `auditions/<PA>.json`, `debats/<PA>.json`, `amendements/<PA>.json`, `fiches/<PA>.json`, `fiches/index.json`, `note.json`.
+- **Date de référence** : quand `config.dossiers[].date_reference` est posée, chaque producteur ne retient que ce qui est daté au plus tard ce jour-là, et un amendement dont le sort est postérieur est `en_attente`. `qa/check.ts` le vérifie.
+- `pipeline/` : un sous-dossier par session, un `run.ts`, qui lit `config.json` et itère sur les dossiers. Scripts rejouables.
+- `web/` : Vite, React, TypeScript, react-router, Recharts. Routes : `/dossier/:id`, `/dossier/:id/depute/:pa`, `/dossier/:id/base`, `/sources`. Primitives livrées par P4 avant 13 h 50 : `tokens.css`, `Meta`, `Pourquoi`, `GroupeTag`, `Proba`, `Panel`, `Table`, `TopBar`, `Curseur`, `useData`, `useConfig`. La page dossier (`views/dossier/`) est un gabarit à cinq emplacements ; chaque bloc vit dans `views/blocs/<nom>/` et appartient à une session.
+- `status/<session>.md` et `prompts/<session>.md` : inchangés (section 4).
 
-Règles tenues par construction :
-- le modèle de langage ne voit jamais un vote : il reçoit des chiffres et des citations, et `pipeline/lib/verif.ts` rejette tout nombre absent de la liste autorisée (règle en section 5.12), trois tentatives à température 0,2 puis gabarit, avec `mode: "gabarit"` écrit dans le fichier ;
-- une seule session (P1) appelle l'API Hémicycle, mesure le coût réel d'un appel de chaque type à 12 h 55 avant toute collecte en volume, tient un compteur dans `status/P1.md` ;
-- uniquement des élus dans l'exercice de leur mandat ; non-inscrits exclus des agrégats ;
-- chaque prédiction est une probabilité datée.
+Règles tenues par construction : le modèle de langage reçoit des chiffres et des citations, jamais un vote, et `pipeline/lib/verif.ts` rejette tout nombre absent de la liste autorisée (règle 5.13), trois tentatives puis gabarit avec `mode: "gabarit"` ; une seule session (P1) appelle l'API Hémicycle avec un compteur de crédits ; non-inscrits exclus des agrégats ; chaque prédiction est une probabilité datée ; chaque élément affiché porte un `preuve`.
 
 ## 4. Git : seize sessions sur une branche sans conflit
 
-- Tout le monde sur `main`. Chaque session ne touche que les chemins qu'elle possède. Deux sessions ne possèdent jamais le même chemin.
-- P0 possède la racine : `package.json`, `bun.lock`, `tsconfig.json`, `.gitignore`, `vite.config.ts`, `web/src/App.tsx`. Toutes les dépendances sont installées à 12 h 50 (zod, openai, recharts, react-router-dom, cheerio, fast-xml-parser). **Interdiction de `bun add`** : besoin d'une dépendance, l'écrire dans `status/`, P0 l'ajoute en moins de 5 minutes.
-- Cycle de chaque session : `git pull --rebase && git add <ses chemins> && git commit -m "<session>: ..." && git push`, à chaque livrable et au moins toutes les 20 minutes. Conflit : la session ne résout jamais elle-même, elle écrit dans `status/` et P0 arbitre.
-- Pas de `git add -A`. Pas de force push. Pas de branche avant le gel de 16 h 30 ; après, seul P0 fusionne.
-- Chaque machine clone dans `~/Legiscope`, `bun install`, puis ouvre chaque session Claude Code dans ce dossier avec `prompts/<session>.md` comme premier message.
+Inchangé depuis la v2 : tout le monde sur `main`, chaque session ne touche que ses chemins, P0 possède la racine (`package.json`, `bun.lock`, `tsconfig.json`, `vite.config.ts`, `web/src/App.tsx`), `bun add` interdit (demande dans `status/`), cycle `git pull --rebase && git add <chemins> && git commit && git push` à chaque livrable et toutes les 20 minutes, jamais `git add -A`, jamais de force push, conflit = `status/` et P0 arbitre, gel à 16 h 45.
 
-## 5. Formats JSON (figés à 12 h 55)
+## 5. Formats JSON (figés à 13 h 10)
 
-Chaque fichier porte un bloc `meta` :
+Les formats 5.2 à 5.13 de la v2 sont conservés tels quels (meta, enums, groupes, deputes, cohesion, texte, pivots, auditions, debats, amendements, hatvp, fiches, note, règle du vérificateur). Ils sont dans `contracts/schemas/`. Ce qui change ou s'ajoute :
 
-```json
-"meta": {
-  "generated_at": "2026-11-14T14:02:11+01:00",
-  "sources": [{"label": "Hémicycle API scrutins", "url": "https://api.hemicycle.ai/v1/..."}],
-  "limits": "Scrutins publics uniquement.",
-  "producer": "pipeline/cohesion",
-  "dossier_id": "plf2027-facturation"
-}
-```
-
-Conventions : identifiants des assemblées en chaînes libres (`PA...`, `PO...`, `VTANR5L17V...`, `PRJLANR5L17B3210`), le schéma impose `string`, pas un motif, car Hémicycle peut renvoyer les siens. Dates ISO 8601. Probabilités entre 0 et 1. `dossier_id` et `sujet` ne sont écrits qu'une fois, dans `config.json` : chaque pipeline les lit, le front refuse un fichier dont `meta.dossier_id` diffère du dossier demandé.
-
-Un seul vocabulaire pour les sorts et les votes, partout :
-- `sort` ∈ `en_attente | adopte | rejete | retire | tombe | non_examine`
-- `vote` ∈ `pour | contre | abstention | non_votant`
-- `position` ∈ `pour | contre | abstention | divise | null` (null = pas de position majoritaire)
-- `role_audition` ∈ `rapporteur | rapporteur_general | rapporteur_avis | president | membre`
-- `lieu` ∈ `seance | commission`
-- `type_organisation` ∈ `entreprise | federation | cabinet | association | administration | syndicat | autre`
-- `mode` (texte rédigé) ∈ `llm | gabarit`
-
-### 5.1 `data/config.json`
+### 5.1 `config.json` (modifié)
 ```json
 {"produit": {"nom": "Bascule", "accroche": "Bascule vous dit quel vote peut basculer, et grâce à qui."},
  "dataset": "live",
  "dossiers": [
-   {"id": "plf2027-facturation", "label": "PLF 2027, facturation électronique", "texte_id": "PRJLANR5L17B3210",
-    "etat": "en_cours", "sujet": {"label": "Facturation électronique", "mots_cles": ["facturation électronique", "facture électronique", "e-invoicing"]},
+   {"id": "petits-colis", "label": "Taxe petits colis, PLF 2026", "texte_id": "PRJLANR5L17B1906",
+    "client": "Alibaba France", "objectif": {"texte": "Empêcher que la taxe soit votée", "position_cible": "contre"},
+    "date_reference": "2025-11-19",
+    "sujet": {"label": "Taxe sur les petits colis", "mots_cles": ["petits colis", "colis", "franchise douanière", "article 22"]},
     "pivot_demo": null},
-   {"id": "petits-colis", "label": "PLF 2026, taxe petits colis", "texte_id": "PRJLANR5L17B...",
-    "etat": "clos", "sujet": {"label": "Taxe sur les petits colis", "mots_cles": ["petits colis", "colis", "franchise douanière"]},
-    "pivot_demo": "PA..."}
+   {"id": "plf2027-holdings", "label": "PLF 2027, taxe sur les holdings (Zucman)", "texte_id": "PRJLANR5L17B3210",
+    "client": "Afep", "objectif": {"texte": "Empêcher la taxe sur les holdings et la fortune improductive", "position_cible": "contre"},
+    "date_reference": null, "sujet": {"label": "Taxe sur les holdings et la fortune improductive", "mots_cles": ["zucman", "holding", "holdings", "impôt sur la fortune", "fortune improductive", "patrimoine improductif", "ISF", "IFF"]}, "pivot_demo": null}
  ],
- "dossier_demo": "plf2027-facturation",
- "cohesion": {"paires_demo": [["PO845401", "PO800490"]], "curseur_presets": [
-   {"label": "Avant la censure Barnier", "date": "2024-11-15"},
-   {"label": "Avant la censure Bayrou", "date": "2025-08-25"},
-   {"label": "Aujourd'hui", "date": "2026-11-14"}]}}
+ "dossier_demo": "petits-colis",
+ "cohesion": {"paires_demo": [["PO...", "PO..."]], "curseur_presets": [...]}}
 ```
-`pivot_demo` est rempli par X1 à 15 h avec la fiche la plus riche. Les dates des préréglages sont vérifiées par P2.
+`position_cible` est la position du client **sur la mesure** (empêcher la taxe = `contre`). Tout « pour » et « contre » des fichiers ci-dessous est relatif à la mesure, jamais à l'objectif.
 
-### 5.2 `data/groupes.json`
+### 5.14 Bloc `preuve` (sur chaque élément affiché)
 ```json
-{"meta": {...}, "groupes": [
-  {"id": "PO845401", "sigle": "RN", "nom": "Rassemblement National", "couleur": "#0D378A", "effectif": 123}
-]}
+"preuve": {"sources": [{"label": "Scrutin n° 1234", "url": "https://..."}], "raisonnement": "Une à trois phrases : d'où vient l'information et pourquoi on la lit ainsi."}
 ```
 
-### 5.3 `data/deputes.json`
-```json
-{"meta": {...}, "deputes": [
-  {"id": "PA720892", "nom": "Dupont", "prenom": "Marie", "groupe_id": "PO845401", "departement": "75", "circonscription": 3, "commissions": ["PO59048"]}
-]}
-```
-`groupe_id` nullable (non-inscrits). Instantané du jour.
-
-### 5.4 `data/cohesion.json`
+### 5.15 `data/<dossier>/verdict.json` (P3, lecture rédigée via P8)
 ```json
 {"meta": {...},
- "periode": {"from": "2024-07", "to": "2026-11"},
- "pairs": [
-   {"a": "PO845401", "b": "PO800490", "series": [
-     {"month": "2024-07", "accord": 0.63, "n_scrutins": 41},
-     {"month": "2024-08", "accord": null, "n_scrutins": 0}
-   ]}
- ],
- "events": [
-   {"date": "2024-12-04", "type": "censure", "label": "Censure du gouvernement Barnier", "url": "https://..."},
-   {"date": "2025-11-20", "type": "vote", "label": "Taxe petits colis adoptée 208 contre 87", "url": "https://...", "dossier_id": "petits-colis"}
- ],
- "signals": [
-   {"date": "2024-11-30", "pair": ["PO845401", "PO800490"], "drop": -0.21, "label": "Décrochage RN et bloc central, avant la censure Barnier", "suivi_de_censure": true}
- ]}
+ "verdict": "mal_engage", "score": 0.18, "tendance": "moins_bien",
+ "lecture": {"texte": "La mesure est portée par le gouvernement et soutenue par presque tous les groupes.", "mode": "llm", "verifie": true, "chiffres_utilises": []},
+ "favorable": [{"titre": "Amendement de suppression déposé par le RN", "detail": "...", "preuve": {...}}],
+ "bloquant": [{"titre": "Amendement de compromis du gouvernement", "detail": "...", "preuve": {...}}]}
 ```
-`accord` = part des scrutins du mois où les deux groupes ont une position majoritaire non nulle et identique ; `n_scrutins` est ce dénominateur ; `accord` est `null` si `n_scrutins` vaut 0. `events.type` ∈ `censure | 49-3 | dissolution | nomination | vote`. Les dates sont au jour, le front place les marqueurs au jour. P2 livre à 13 h 15 le nombre de décrochages de plus de 0,15 suivis et non suivis d'une censure.
+Mécanique du verdict : `score` = part pondérée des sièges dont la position dominante (scrutins liés, sinon amendements, sinon loyauté) va dans le sens de `position_cible`, corrigée par la moyenne Orcet des amendements qui portent la position du client. `verdict` : `bonne_voie` ≥ 0,55, `incertain` entre 0,4 et 0,55, `mal_engage` < 0,4. `tendance` : comparaison du score à la date de référence et sept jours plus tôt (événements, sorts, cohésion). `favorable` et `bloquant` : amendements et positions alignés ou opposés, avis du rapporteur et du gouvernement quand disponibles, chaque point avec sa preuve.
 
-### 5.5 `data/<dossier>/texte.json`
+### 5.16 `data/<dossier>/nouveautes.json` (A4)
+```json
+{"meta": {...}, "evenements": [
+  {"id": "...", "date": "2025-11-18", "type": "amendement_depose", "titre": "Le RN dépose un amendement de suppression de l'article 22", "detail": "...", "importance": 3, "url": "https://...", "preuve": {...}}
+]}
+```
+`type` ∈ `amendement_depose | amendement_sort | scrutin | rapport | audition | seance | commission | hatvp | agenda`. `importance` 1 à 3. Tri : importance décroissante puis date décroissante. Rien après `date_reference`.
+
+### 5.17 `data/<dossier>/suite.json` (P2)
 ```json
 {"meta": {...},
- "texte": {"id": "PRJLANR5L17B3210", "titre": "Projet de loi de finances pour 2027", "etape": "Première lecture, Assemblée nationale, séance publique", "url": "https://..."},
- "positions": [
-   {"groupe_id": "PO845401", "position": "contre", "confiance": 0.8, "base": "3 scrutins liés, 12 amendements", "n_scrutins_sujet": 3}
- ],
- "amendements": [
-   {"id": "AMANR5L17PO59048B3210P1D1N003426", "numero": "3426", "url": "https://...",
-    "auteur_id": "PA720892", "cosignataires_ids": ["PA..."], "groupe_id": "PO845401",
-    "resume": "Dispense les microentreprises et PME de l'obligation.",
-    "sort": "en_attente",
-    "prediction": {"proba_pour": 0.23, "confiance": 0.71, "modele": "orcet-v2", "date": "2026-11-14"}}
- ]}
+ "echeances": [{"date": "2025-11-20", "titre": "Examen de l'article 22 en séance", "lieu": "seance", "url": "https://...", "preuve": {...}}],
+ "probables": [{"titre": "Adoption de l'article 22", "proba": 0.81, "detail": "Moyenne Orcet des votes pour sur l'amendement de suppression : 0,19", "preuve": {...}}]}
 ```
-`prediction` nullable (Orcet répond 404 sans facturer quand il n'a pas de prédiction ; affiché « Orcet : pas de prédiction », trié en bas, exclu des comptes de la note). `proba_pour` est la **moyenne des probabilités individuelles de voter pour**, pas une probabilité d'adoption : l'écran dit « 23 % de votes pour prédits », jamais « 23 % de chances d'adoption ». Le front dérive le sort probable : `proba_pour` > 0,5 = « adoption probable », sinon « rejet probable ». `n_scrutins_sujet` à 0 pour tous les groupes signifie que les positions viennent des amendements seuls, et l'écran le dit.
+`lieu` ∈ `seance | commission | senat | cmp | autre`. `proba` nullable. Échéances depuis l'agenda open data et l'état du texte ; probables depuis Orcet et la cohésion.
 
-### 5.6 `data/<dossier>/pivots.json`
+### 5.18 `data/<dossier>/groupes-action.json` (P3) et `arguments.json` (A2), intermédiaires
 ```json
-{"meta": {...}, "deputes": [
-   {"id": "PA720892", "groupe_id": "PO845401", "rang": 1, "score_imprevisibilite": 0.34, "loyaute_12m": 0.66,
-    "base": "sujet",
-    "ecarts": [
-      {"scrutin_id": "VTANR5L17V1234", "date": "2026-10-21", "titre": "Amendement n° 12 au PLF 2027", "vote": "pour", "position_groupe": "contre", "groupe_id_au_vote": "PO845401", "url": "https://..."}
-    ]}
- ]}
+{"meta": {...}, "actionnables": [{"depute_id": "PA...", "groupe_id": "PO...", "score": 0.34, "raison": "Groupe divisé, 3 écarts récents", "preuve": {...}}], "allies": [...], "perdus": [...]}
 ```
-Entre 5 et 15 députés, triés par `rang`. `base` ∈ `sujet | general` : `sujet` quand il existe des scrutins nominatifs liés au sujet, `general` sinon (loyauté sur 12 mois), et l'écran l'affiche. `position_groupe` nullable. P3 publie une liste provisoire (`base: general`) à 13 h 30 pour que A1 à A3 tournent sur de vrais identifiants.
-
-### 5.7 `data/<dossier>/auditions/<PA>.json` (produit par A1)
 ```json
-{"meta": {...}, "depute_id": "PA720892",
- "auditions": [
-   {"texte_id": "PRJLANR5L17B3210", "rapport_url": "https://...", "date": "2026-10-15", "role": "rapporteur_general",
-    "organisations": [{"nom": "Fédération du e-commerce et de la vente à distance", "type": "federation", "hatvp_id": "812604106"}]}
- ],
- "couverture": {"rapports_total": 4, "rapports_avec_liste": 2}}
+{"meta": {...}, "pour": [{"argument": "Protéger le commerce et financer les contrôles", "citation": "...", "orateur_id": "PA...", "groupe_id": "PO...", "date": "...", "lieu": "seance", "url": "https://...", "preuve": {...}}], "contre": [...]}
 ```
-`hatvp_id` et `rapport_url` nullables. Les rapports de la commission des finances sur le PLF sont rattachés à chaque pivot membre de la commission, pas seulement aux rapporteurs.
+Classement des députés : `allies` = groupes dont la position dominante va dans le sens de `position_cible` ; `perdus` = groupes opposés avec loyauté ≥ 0,85 ; `actionnables` = les pivots (section 5.6) des groupes divisés ou des groupes opposés avec loyauté faible. Arguments : toutes les interventions sur le sujet (pas seulement les pivots), classées pour ou contre la mesure, orateur identifié ou `null` (ministre, président).
 
-### 5.8 `data/<dossier>/debats/<PA>.json` (produit par A2)
+### 5.19 `data/<dossier>/action.json` (A4)
+Fusion de 5.18 : `groupes` (avec `fiche: true|false` selon `fiches/index.json`), `arguments`, plus `contre_arguments` : `[{"texte", "repond_a": "<argument pour>", "chiffres_utilises", "mode", "verifie", "preuve"}]`, rédigés par le modèle à partir des arguments entendus et des chiffres du dossier, passés au vérificateur.
+
+### 5.20 `data/<dossier>/etat.json` (P3)
 ```json
-{"meta": {...}, "depute_id": "PA720892",
- "debats": [
-   {"date": "2026-11-03", "lieu": "seance", "texte_id": "PRJLANR5L17B3210",
-    "citation": "Nous ne pouvons pas imposer cette charge aux plus petites entreprises.", "url": "https://..."}
- ],
- "couverture": {"comptes_rendus_lus": 9}}
-```
-Uniquement les interventions portant un identifiant d'orateur `PA...`.
-
-### 5.9 `data/<dossier>/amendements/<PA>.json` (produit par A3)
-```json
-{"meta": {...}, "depute_id": "PA720892",
- "amendements": [
-   {"id": "AMANR5L17...", "texte_id": "PRJLANR5L17B3210", "role": "cosignataire", "resume": "...", "sort": "adopte",
-    "travaille_avec": ["CPME"], "url": "https://..."}
- ]}
-```
-`role` ∈ `auteur | cosignataire`.
-
-### 5.10 `data/<dossier>/hatvp.json` (produit par P1)
-```json
-{"meta": {...}, "organisations": [
-   {"hatvp_id": "812604106", "nom": "Alibaba France", "type": "entreprise", "fiche_url": "https://...", "objet": "Taxe sur les petits colis, PLF 2026", "actions": ["rencontre", "transmission d'expertise"]}
- ]}
+{"meta": {...}, "etape": "Première lecture, Assemblée nationale, séance publique",
+ "etapes": [{"nom": "Commission des finances", "date": "2025-10-22", "statut": "fait", "url": "..."}, {"nom": "Séance publique, première partie", "date": "2025-11-20", "statut": "en_cours", "url": "..."}, {"nom": "Sénat", "date": null, "statut": "a_venir", "url": null}],
+ "articles": [{"numero": "22", "titre": "Taxe sur les petits colis", "statut": "reste", "sort_detail": "en discussion", "url": "..."}]}
 ```
 
-### 5.11 `data/<dossier>/fiches/<PA>.json` et `fiches/index.json` (produits par A4)
-La fiche est la fusion pure des trois fichiers précédents (mêmes blocs, mêmes champs) plus :
-```json
-"hatvp": [ ...organisations de hatvp.json... ],
-"synthese": {
-   "position_probable": "Favorable à la dispense pour les PME, hostile à tout report général.",
-   "argument": "Présenter le coût de mise en conformité pour les entreprises de moins de 10 salariés de sa circonscription.",
-   "chiffres_utilises": ["10"], "mode": "llm", "modele": "Qwen3-...", "verifie": true, "date": "2026-11-14"
-},
-"couverture": {"rapports_total": 4, "rapports_avec_liste": 2, "comptes_rendus_lus": 9}
-```
-`synthese` nullable tant qu'elle n'est pas produite. `fiches/index.json` liste les `PA` disponibles ; le front grise un pivot sans fiche et ne plante jamais sur une fiche absente.
-
-### 5.12 `data/<dossier>/note.json` (produit par P8)
-```json
-{"meta": {...}, "texte": "150 mots...", "chiffres_utilises": ["0.71", "15", "3"],
- "sources": [{"label": "...", "url": "..."}], "limites": "Prédictions Orcet du 14 novembre.",
- "mode": "llm", "modele": "Qwen3-...", "verifie": true}
-```
-
-### 5.13 Règle du vérificateur de chiffres (`pipeline/lib/verif.ts`, P8)
-1. Normaliser : espaces fines et insécables supprimés dans les nombres (« 1 200 » devient 1200), virgule décimale en point.
-2. Extraire `\d+(\.\d+)?` et les ordinaux `\d+(er|e|ème)`, comparés sur la partie numérique.
-3. Liste autorisée construite automatiquement depuis l'entrée JSON : tout nombre présent (numéros, effectifs, années des identifiants), chaque probabilité `p` sous trois formes (`0.71`, `71`, `71 %`), chaque date ISO éclatée en jour, mois, année ; les années 2024 à 2027 toujours permises.
-4. Nombres en lettres : le prompt impose les chiffres ; tout mot de `deux … vingt, trente … cent, mille, million, milliard` est rejeté sauf s'il correspond à une valeur autorisée (`un`, `une` tolérés).
-5. Tout jeton hors liste = rejet, le jeton fautif est écrit dans `status/`.
-Tests obligatoires : nombre absent, « 71 % » d'une proba, date, année, ordinal, « trois », « n° 3426 », espace fine.
+### 5.21 `note.json` devient le bloc Compte rendu
+Inchangé (5.12) plus `client` et `objectif` recopiés depuis la config.
 
 ## 6. Répartition par machine et par session
 
-Seize sessions et une tâche humaine. Chaque ligne : ce qu'elle possède, ce qu'elle lit, ce qu'elle livre, le critère de fini.
+Seize sessions et une tâche humaine. Les chemins possédés sont exclusifs.
 
-### MacBook Pro Ilan, 9 sessions : données et front
+### MacBook Pro Ilan, 9 sessions
 
-| Session | Possède | Lit | Livre | Fini quand |
-|---|---|---|---|---|
-| **P0 Chef d'orchestre** (cette session) | racine du dépôt, `contracts/`, `prompts/`, `data/config.json`, `qa/` | `status/*` | Schémas, fixtures, dépendances, `App.tsx` et routes, 5 tests (`bun run check`), prompts ; go/no-go de 13 h 15 ; captures de secours à 16 h 30 ; fusion | La démo tourne à 17 h sur données réelles, tests verts |
-| **P1 Collecte Hémicycle** (seule session qui appelle l'API) | `pipeline/collecte/`, `data/raw/`, `data/groupes.json`, `data/deputes.json`, `data/*/hatvp.json` | `contracts/`, `config.json`, annexe A | REST avec une clé `hmc_live_` (une clé `hmc_test_` ne coûte rien mais 100 requêtes par jour : pour découvrir les schémas seulement). Pages de 100 maximum, chaque page facturée, en-têtes `X-Credits-Cost` et `X-Credits-Remaining` lus à chaque appel. 12 h 55 : un appel de chaque type (dont `POST /orcet/predictions` sur un amendement en attente de la facturation électronique, et le coût réel d'un `GET /scrutins/{id}/votes` complet) publié dans `status/P1.md`. Puis : groupes, députés, scrutins et votes nominatifs depuis juillet 2024 (un fichier par scrutin), accord entre groupes, loyauté, texte 3210 et amendements du sujet, prédictions Orcet, texte et scrutins des petits colis, fiches HATVP des deux dossiers | Fichiers bruts validés, compteur de crédits à jour |
-| **P2 Cohésion** | `pipeline/cohesion/`, `data/cohesion.json` | `data/raw/` | `cohesion.json`, et à 13 h 15 : « la courbe décroche-t-elle avant les censures ? » avec le nombre de décrochages > 0,15 suivis et non suivis d'une censure ; dates des préréglages vérifiées | Fichier valide, signaux listés, réponse écrite |
-| **P3 Texte et pivots** | `pipeline/pivots/`, `data/*/texte.json`, `data/*/pivots.json` | `data/raw/`, `config.json` | 13 h 30 : pivots provisoires (`base: general`) pour les deux dossiers ; 14 h 30 : `texte.json` et `pivots.json` définitifs, nombre de scrutins nominatifs liés au sujet publié | Deux dossiers, 5 à 15 pivots chacun |
-| **P4 Front socle** | `web/` sauf `web/src/views/` | `contracts/` | 13 h 30 : `tokens.css` (fond sombre, contraste 7:1, police mono, 16 px minimum, traits 3 px), `Meta`, `GroupeTag`, `Proba` (« 71 % », seuils de couleur), `Panel`, `Table`, `useData`, barre haute (nom, quatre onglets, sélecteur de dossier), formats (dates « 3 nov. 2026 », « Marie Dupont ») | Les cinq routes s'ouvrent sur les fixtures, zéro erreur console |
-| **P5 Vue Cohésion** | `web/src/views/cohesion/` | fixtures | Gauche 75 % : courbe Recharts, x mois, y 0 à 100 %, 1 à 3 paires par puces, trait vertical rouge et libellé par censure, pointillé au curseur ; dessous : trois boutons préréglés et curseur ; droite 25 % : panneau « À cette date » avec les signaux antérieurs au curseur, décrochage en gros chiffre, lien vers Texte quand le curseur est sur aujourd'hui ; « Aucun signal à cette date » sinon | Conforme à cette description sur fixtures puis données réelles |
-| **P6 Vue Texte** | `web/src/views/texte/` | fixtures | En-tête : titre, étape, sujet, état du dossier ; gauche 30 % positions (sigle coloré, position, barre de confiance, base ; `divise` en orange) ; centre 40 % amendements triés par probabilité décroissante (numéro, résumé, auteur et groupe, sort, probabilité en gros ou « pas de prédiction » en bas) ; droite 30 % pivots (rang, nom, groupe, score, base, dernier écart), ligne cliquable vers `/fiche/:dossier/:id`, grisée sans fiche | Clic sur un pivot ouvre sa fiche |
-| **P7 Vues Fiche et Note** | `web/src/views/fiche/`, `web/src/views/note/` | fixtures | Fiche : en-tête (nom, groupe, circonscription, score, retour), bandeau synthèse (position, argument, badge vérifié ou « gabarit », modèle, date), trois colonnes auditions, débats, amendements, bloc HATVP, pied couverture ; chaque bloc vide affiche sa couverture (« 0 audition, 4 rapports lus »). Note : colonne 60 % texte avec nombres vérifiés soulignés, droite sources numérotées puis limites, bouton Copier (texte et sources), badge vérifié | Chaque citation a un lien qui s'ouvre, fiche absente = message, pas d'écran blanc |
-| **P8 Rédaction et vérificateur** | `pipeline/lib/llm.ts`, `pipeline/lib/verif.ts`, `pipeline/note/`, `data/*/note.json` | `texte.json`, `pivots.json`, `cohesion.json`, prompts de X3 | 13 h 15 : client Featherless (`https://api.featherless.ai/v1`, modèle `Qwen/Qwen3.8-27B`, sortie structurée par `tools` avec schéma strict puisque seul le tool calling est documenté natif, thinking désactivé, 2 unités de concurrence par appel) et vérificateur avec ses 8 tests ; 15 h 30 : une note par dossier | Les notes passent le vérificateur, un test montre un rejet |
+| Session | Possède | Livre | Fini quand |
+|---|---|---|---|
+| **P0 Chef d'orchestre** (cette session) | racine, `contracts/`, `prompts/`, `config.json`, `qa/`, `LANCEMENT.md` | Schémas, fixtures, dépendances, `App.tsx`, tests, prompts ; go/no-go 13 h 35 ; captures 16 h 45 ; fusion | Démo sur données réelles à 17 h 15, tests verts |
+| **P1 Collecte Hémicycle** (seule session qui appelle l'API) | `pipeline/collecte/`, `data/raw/`, `groupes.json`, `deputes.json`, `<dossier>/hatvp.json` | 13 h 20 : mesure d'un appel de chaque type, Orcet sur un amendement en attente du dossier vivant, nombre d'amendements en attente, coût réel. Puis scrutins et votes depuis juillet 2024 (un fichier par scrutin), accord entre groupes, loyauté, textes et amendements des deux dossiers (avec `expose`, `sort`, avis rapporteur et gouvernement si l'API les renvoie), Orcet sur les amendements en attente, HATVP des deux dossiers, agenda open data (`Agenda.json.zip`) dans `raw/opendata/` | Fichiers bruts validés, compteur de crédits à jour |
+| **P2 Cohésion et Suite** | `pipeline/cohesion/`, `pipeline/suite/`, `cohesion.json`, `<dossier>/suite.json` | 13 h 35 : « la courbe décroche-t-elle avant les censures ? » avec vrais et faux décrochages ; 14 h 45 : `cohesion.json` ; 15 h 15 : `suite.json` par dossier (échéances depuis l'agenda et `etat.json`, probables depuis Orcet et cohésion, filtrées par `date_reference`) | Fichiers valides, réponse écrite |
+| **P3 État, base, pivots, verdict** | `pipeline/pivots/`, `<dossier>/etat.json`, `texte.json`, `pivots.json`, `groupes-action.json`, `verdict.json` | 13 h 50 : pivots provisoires (`base: general`) ; 14 h 45 : `etat.json`, `texte.json`, `pivots.json`, `groupes-action.json` ; 15 h 15 : `verdict.json` (mécanique 5.15, lecture via `redigerVerifie` de P8 avec le prompt de X3). Tout filtré par `date_reference` | Fichiers valides, nombre de scrutins liés publié |
+| **P4 Front socle et page dossier** | `web/` sauf `web/src/views/blocs/*`, `views/depute/`, `views/base/`, `views/sources/` | 13 h 50 : primitives finies (`Pourquoi` inclus), page dossier avec en-tête trois lignes et cinq emplacements, états globaux (chargement, erreur, dossier inconnu) ; 15 h 15 : bascule `dataset: live` ; corrections transverses | Les quatre routes s'ouvrent sur fixtures puis live, zéro erreur console |
+| **P5 Blocs Verdict et Suite** | `views/blocs/verdict/`, `views/blocs/suite/` | Verdict : bandeau avec le mot (bonne voie, incertain, mal engagé) en gros, score en %, tendance, lecture en une phrase avec badge vérifié ou gabarit, deux colonnes « ce qui marche » et « ce qui coince » avec `Pourquoi` sur chaque ligne ; repli de la courbe de cohésion dans un panneau « tendance » (Recharts, préréglages). Suite : échéances en liste datée, probables avec `Proba` et `Pourquoi` | Conforme sur fixtures puis live |
+| **P6 Bloc Nouveautés, page Base** | `views/blocs/nouveautes/`, `views/base/` | Nouveautés : liste triée par importance (3 en gras), date, titre, détail, lien, `Pourquoi`, filtre par type, « rien de nouveau » si vide. Base : état du texte (étapes avec statut), articles (voté, reste, supprimé), table des amendements du dossier (numéro, auteur, groupe, sort, `Proba` Orcet, lien) | Conforme sur fixtures puis live |
+| **P7 Bloc Action, page Député, bloc Compte rendu** | `views/blocs/action/`, `views/blocs/compte-rendu/`, `views/depute/` | Action : trois colonnes (agir, alliés, perdus) avec nom, `GroupeTag`, score, raison, `Pourquoi`, ligne cliquable vers la fiche si `fiche: true`, grisée sinon ; dessous deux colonnes d'arguments pour et contre avec citation, orateur, lien, `Pourquoi` ; puis contre-arguments avec badge vérifié. Député : en-tête, synthèse, auditions, débats, amendements, HATVP, couverture, retour. Compte rendu : texte avec chiffres vérifiés soulignés, sources numérotées, bouton Copier | Chaque lien s'ouvre, états vides rendus, fiche absente = message |
+| **P8 Rédaction et vérificateur** | `pipeline/lib/llm.ts`, `pipeline/lib/verif.ts`, `pipeline/note/`, `<dossier>/note.json` | 13 h 35 : client Featherless (`Qwen/Qwen3.8-27B`, sortie par `tools`, thinking désactivé), `redigerVerifie`, `appelStructure`, 8 tests ; 15 h 45 : `note.json` par dossier (compte rendu, 150 mots, client et objectif) | Tests verts, notes vérifiées ou en gabarit |
 
-### MacBook Air Ilan, 4 sessions : open data brut
+### MacBook Air Ilan, 4 sessions
 
-| Session | Possède | Lit | Livre | Fini quand |
-|---|---|---|---|---|
-| **A1 Auditions** | `pipeline/auditions/`, `data/*/auditions/` | `contracts/`, `pivots.json` (provisoire à 13 h 30) | Script rejouable sur la liste des pivots. Source : l'API Hémicycle n'expose pas les rapports ; le dump `Dossiers_Legislatifs.json.zip` (11 Mo, métadonnées : rapporteurs, numéros, URL) donne la liste des rapports de la commission des finances sur le texte, le HTML de chaque rapport sur assemblee-nationale.fr donne l'annexe « personnes entendues », extraite via Featherless (`Qwen/Qwen3.8-27B`, tool calling, thinking désactivé). Un fichier par pivot avec couverture ; 13 h 30 : nombre de pivots ayant au moins un rapport | Un fichier par pivot et par dossier |
-| **A2 Débats** | `pipeline/debats/`, `data/*/debats/` | idem | Séance : le fichier unique `syseron.xml.zip` (62 Mo, tous les comptes rendus de la législature), filtré par mots-clés du sujet avant lecture, interventions des pivots avec `acteurRef`. Commission : pas d'export en masse, les comptes rendus de la commission des finances sur le PLF sont lus en HTML sur assemblee-nationale.fr. Citation exacte et lien | Un fichier par pivot, chaque citation a une URL |
-| **A3 Amendements par député** | `pipeline/amendements/`, `data/*/amendements/` | idem, `data/raw/` | Amendements du sujet déposés ou cosignés, sort, mention « travaillé avec » extraite de l'exposé des motifs | Un fichier par pivot |
-| **A4 Assemblage fiches** | `pipeline/fiches/`, `data/*/fiches/` | les trois précédents, `hatvp.json`, `pipeline/lib/llm.ts`, prompts de X3 | Dès 13 h sur fixtures : fusion, synthèse via les prompts de X3, vérificateur, `index.json`. À 15 h : la fiche `pivot_demo` de chaque dossier en premier, puis les autres | Fiches valides, synthèses passées au vérificateur ou en `mode: gabarit` |
+| Session | Possède | Livre | Fini quand |
+|---|---|---|---|
+| **A1 Auditions** | `pipeline/auditions/`, `<dossier>/auditions/` | Comme en v2 (dump des dossiers législatifs, HTML des rapports, extraction des « personnes entendues » via Featherless, rattachement rapporteur ou membre de commission), sur la liste des députés de `groupes-action.json` (provisoire : `pivots.json` à 13 h 50), filtré par `date_reference` | Un fichier par député, couverture chiffrée |
+| **A2 Débats et arguments** | `pipeline/debats/`, `<dossier>/debats/`, `<dossier>/arguments.json` | Par député : interventions sur le sujet, citation et lien (v2). En plus : `arguments.json` : toutes les interventions sur le sujet (séance via `syseron.xml`, commission via HTML), classées pour ou contre la mesure par `appelStructure`, citation exacte, orateur `PA` ou `null`, preuve | Chaque citation a une URL ; arguments pour et contre non vides sur petits colis |
+| **A3 Amendements par député** | `pipeline/amendements/`, `<dossier>/amendements/` | Comme en v2 (auteur ou cosignataire, sort, « travaillé avec » depuis l'exposé des motifs), sur la liste de `groupes-action.json` | Un fichier par député |
+| **A4 Fiches, Nouveautés, Action** | `pipeline/fiches/run.ts`, `pipeline/fiches/lib/`, `<dossier>/fiches/`, `nouveautes.json`, `action.json` | Dès 13 h 20 sur fixtures : fiches (fusion pure + synthèse via X3), `index.json` ; `nouveautes.json` assemblé depuis `texte.json` (dépôts, sorts), scrutins, rapports (A1), séances (A2), HATVP, agenda, avec importance (3 : scrutin, sort d'un amendement du client ou d'un allié, avis du gouvernement ; 2 : rapport, audition, dépôt d'amendement de groupe ; 1 : le reste) ; `action.json` = `groupes-action.json` + `arguments.json` + contre-arguments rédigés via `redigerVerifie` et le prompt de X3. Tout filtré par `date_reference`. 15 h 15 : fiche `pivot_demo` d'abord | Fichiers valides, synthèses et contre-arguments vérifiés ou en gabarit |
 
 ### MacBook Pro Axel, 3 sessions et Axel en personne
 
-| Session | Possède | Lit | Livre | Fini quand |
-|---|---|---|---|---|
-| **X1 Script, pitch, jury** | `demo/` | `PLAN.md`, l'app | Séquence en quatre temps, trois minutes chronométrées, phrases exactes, ce qu'on clique ; choisit `pivot_demo` à 15 h sur données réelles ; joue le jury (clarté, source visible, crédibilité, objections et réponses) ; deux répétitions chronométrées. Positionnement : « ce que l'API ne structure pas encore, on l'extrait de l'open data et on vous le rend », jamais une affirmation sur ce qu'Atlas ne fait pas | Deux répétitions notées à 17 h et 17 h 30 |
-| **X2 README et page Sources** | `README.md`, `web/src/views/sources/` | tout | README publiable ; page « Sources et limites » dans l'app | Un inconnu lance la démo en suivant le README |
-| **X3 Prompts et gabarits** | `pipeline/fiches/prompts/`, `pipeline/note/prompts/` | `contracts/`, `pipeline/lib/llm.ts` | Avant 13 h 15 : gabarits de secours (synthèse, argument, note) ; puis prompts de synthèse et d'argument testés sur 3 fiches, prompt de la note | A4 et P8 les utilisent sans retouche |
-| **Axel, en personne, avant 12 h 50** | `demo/terrain.md` | rien | Question à l'équipe Hémicycle : Atlas extrait-il les auditions des rapports ? Orcet prédit-il des amendements sans scrutin ? Crédits supplémentaires obtenus. Grille du jury telle qu'annoncée. Disponibilité des noms | Réponses écrites avant 13 h |
+| Session | Possède | Livre | Fini quand |
+|---|---|---|---|
+| **X1 Script, pitch, jury** | `demo/` | 13 h 50 : script en quatre temps (section 8), trois minutes, variantes selon les mesures de 13 h 35 ; pitch 150 mots ; 15 h 15 : `pivot_demo` et ordre final ; jury joué ; répétitions 17 h 15 et 17 h 40 | Deux répétitions sous trois minutes |
+| **X2 README et page Sources** | `README.md`, `views/sources/` | README publiable ; page Sources construite depuis les `meta` | Un inconnu lance la démo en suivant le README |
+| **X3 Prompts et gabarits** | `pipeline/fiches/prompts/`, `pipeline/note/prompts/`, `pipeline/verdict/prompts/`, `pipeline/action/prompts/` | 13 h 35 : gabarits de secours (synthèse, lecture du verdict, contre-argument, compte rendu) ; puis les quatre prompts, testés sur fixtures jusqu'à 0 rejet sur 3 essais | A4, P3, P8 les utilisent sans retouche |
+| **Axel, en personne, avant 13 h 15** | `demo/terrain.md` | Atlas extrait-il les auditions ? Orcet prédit-il des amendements sans scrutin ? L'API renvoie-t-elle les avis du rapporteur et du gouvernement sur les amendements ? Crédits. Grille du jury | Réponses écrites avant 13 h 35 |
 
 ## 7. Horaires
 
 | Heure | Jalon | Qui |
 |---|---|---|
-| 12 h 50 | `contracts/`, fixtures, dépendances, `App.tsx`, 15 prompts commités. Les trois machines clonent et installent. Axel a posé ses questions. | P0, Axel |
-| 12 h 55 | Lancement des 15 sessions. P1 mesure un appel de chaque type, dont Orcet sur un amendement en attente. | Ilan, Axel |
-| 13 h 15 | **Go/no-go** : cohésion (P2, décrochages vrais et faux), sujet (P1, Orcet et amendements en attente), coût réel de la collecte (P1), 5 tests en place (P0), gabarits (X3), client et vérificateur (P8) | P0 décide, écrit dans `status/P0.md` |
-| 13 h 30 | Pivots provisoires (P3). Primitives du front (P4). Couverture auditions annoncée (A1). | |
-| 14 h 00 | Données brutes complètes (P1). | |
-| 14 h 30 | `cohesion.json`, `texte.json`, `pivots.json` définitifs, deux dossiers | P2, P3 |
-| 15 h 00 | Les quatre vues tournent sur fixtures ; bascule sur `dataset: live` ; `pivot_demo` choisi | P4 à P7, X1 |
-| 15 h 30 | Auditions, débats, amendements par pivot ; notes | A1 à A3, P8 |
-| 16 h 00 | Fiches `pivot_demo` puis les autres, synthèses vérifiées | A4 |
-| 16 h 30 | Gel du code. Tests verts sur `live` et sur `fixtures`. Captures de secours. | P0 |
-| 17 h 00 | Répétition 1 | X1 |
-| 17 h 30 | Répétition 2, nom tranché | tous |
+| 13 h 10 | `contracts/` v3, fixtures, squelette, prompts v3 commités ; les trois machines clonent et installent ; Axel a posé ses questions | P0, Axel |
+| 13 h 15 | Lancement des 15 sessions ; P1 mesure | Ilan, Axel |
+| 13 h 35 | **Go/no-go** dans `status/P0.md` : Orcet et amendements en attente (P1), décrochages vrais et faux (P2), coût réel (P1), tests en place (P0), gabarits (X3), client et vérificateur (P8) | P0 |
+| 13 h 50 | Pivots provisoires (P3), primitives et page dossier (P4), couverture auditions (A1) | |
+| 14 h 15 | Données brutes complètes (P1) | |
+| 14 h 45 | `cohesion.json`, `etat.json`, `texte.json`, `pivots.json`, `groupes-action.json` définitifs | P2, P3 |
+| 15 h 15 | `verdict.json`, `suite.json` ; blocs sur fixtures ; bascule `dataset: live` ; `pivot_demo` et ordre de démo | P3, P2, P4 à P7, X1 |
+| 15 h 45 | Auditions, débats, arguments, amendements ; notes | A1 à A3, P8 |
+| 16 h 15 | Fiches, nouveautés, action assemblés et vérifiés | A4 |
+| 16 h 45 | Gel. Tests verts sur `live` et `fixtures`. Captures | P0 |
+| 17 h 15 | Répétition 1 | X1 |
+| 17 h 40 | Répétition 2, nom tranché | tous |
 | 18 h 00 | Démo | Ilan ou Axel |
 
 ## 8. La démo
 
-Ordre validé par Ilan :
+1. **Dossier rejoué, Verdict** : « Alibaba, petits colis, empêcher la taxe. Nous sommes le 19 novembre 2025, la veille du vote. Verdict : mal engagé, 18 %. Ce qui marche : le RN a déposé un amendement de suppression (pourquoi : la source). Ce qui coince : le gouvernement prépare un compromis sur le mode de paiement qui lève la réserve de LFI. »
+2. **Action** : « Sur qui agir encore : ces députés, pour ces raisons. Alliés : le RN. Perdus : le socle gouvernemental. Arguments entendus contre : la taxe pèse sur les ménages modestes. Pour : 500 M€ de recettes. Contre-argument à amener : ... » Clic sur un député : sa fiche, ses auditions, ce qu'il a dit, ses amendements.
+3. **Compte rendu** : « Ceci part au client ce soir. » Bouton Copier.
+4. **Chute, puis dossier vivant** : « Ce qui s'est passé le lendemain : 208 contre 87, le RN seul contre. L'outil avait dit mal engagé. » Puis le Verdict du dossier vivant du PLF 2027 : « Et voici ce qu'il dit aujourd'hui, avec les prédictions Orcet sur les amendements en attente. »
 
-1. **Texte** sur le dossier d'aujourd'hui : « bloc central divisé sur la facturation électronique, 3 groupes sans position dominante, voici les amendements et leur sort prédit, voici les quinze députés qui peuvent faire basculer le vote ».
-2. **Fiche d'approche** du `pivot_demo` : « il a entendu la Fevad et la CPME, il a cosigné le 3426 travaillé avec la CPME, il a dit ceci le 3 novembre, voici l'argument à lui présenter ». Une seule fiche, vérifiée à la main, chaîne complète.
-3. **Cohésion** : curseur sur « avant la censure Barnier », l'accord décroche, le gouvernement tombe trois semaines après ; curseur sur aujourd'hui, le panneau pointe vers le texte en cours.
-4. **Note** : « cette note part au client », bouton Copier.
-
-L'ordre du cadrage d'Axel (Cohésion d'abord) est écarté : il dépend du décrochage avant censure, qu'on ne connaît qu'à 13 h 15.
-
-Arguments pour le jury : on lui montre ce que son API permet en une journée ; Orcet au centre de l'écran Texte ; une trajectoire dans le temps ; l'IA est vérifiable ; et ce que l'API ne structure pas encore (annexes d'auditions, exposés des motifs, orateurs des comptes rendus), on l'extrait de l'open data.
+Arguments pour le jury : on part du client, pas de la donnée ; chaque information a son pourquoi ; Orcet nourrit le verdict et la suite ; ce que l'API ne structure pas (auditions, arguments des débats, « travaillé avec »), on l'extrait de l'open data et on le rend. Jamais une affirmation sur ce qu'Atlas ne fait pas sans l'avoir demandé.
 
 ## 9. Risques et replis
 
 | Risque | Comment on le sait | Repli |
 |---|---|---|
-| Orcet ne prédit pas des amendements sans scrutin | P1 à 12 h 55, Axel avant 12 h 50 | La vue Texte affiche les positions et les amendements sans probabilité ; la démo s'appuie sur le dossier petits colis et la fiche |
-| La courbe ne décroche pas avant les censures, ou autant de faux décrochages | P2 à 13 h 15 | Cohésion passe en troisième position ou devient un encart ; la démo s'ouvre sur Texte et Fiche |
-| Zéro scrutin nominatif sur le sujet | P3 à 13 h 30 | Pivots en `base: general`, affiché ; ou changement de sujet vers un article du PLF avec vote nominatif |
-| Peu de rapports avec liste d'auditions, pivots jamais rapporteurs | A1 à 13 h 30 | Rapports de la commission des finances rattachés aux membres ; couverture affichée ; la fiche vit sur débats, amendements et HATVP |
-| Pagination fine, collecte trop chère | P1 à 12 h 55 | 12 mois de scrutins, 100 scrutins nominatifs ; crédits via Axel |
-| Le front n'est pas prêt à 16 h 30 | tests de P0 | Démo sur ce qui passe les tests, le reste en captures |
-| Une session meurt | `status/` muet 30 min | Relance avec `prompts/<session>.md` |
-| Featherless indisponible | P8 | Gabarits de X3, `mode: gabarit` affiché |
-| PLF 2027 n'est plus en première lecture à l'AN | P1 à 12 h 55 | Dossier petits colis seul, vue Texte en mode « clos » |
-| Le jury dit « vous avez refait Atlas » | X1 | Positionnement couche au-dessus de l'API, fiche et extraction open data en tête |
+| Orcet ne prédit pas des amendements sans scrutin | P1 13 h 20, Axel | Suite et Verdict sans Orcet (positions et amendements) ; la démo reste sur le dossier rejoué |
+| L'API ne renvoie pas les avis rapporteur et gouvernement | P1 13 h 20 | `favorable` et `bloquant` depuis amendements et positions seulement |
+| Pas d'agenda exploitable | P2 15 h | `suite.echeances` depuis `etat.json` seul |
+| Verdict mécanique contre-intuitif sur petits colis (doit dire mal engagé) | P3 15 h 15, test dans `qa/` | Ajuster les pondérations 5.15, le jeu de fixtures sert de cas de référence |
+| Zéro scrutin nominatif sur le sujet vivant | P3 13 h 50 | `base: general` affiché, ou changement de sujet |
+| Peu d'auditions | A1 13 h 50 | Couverture affichée, la fiche vit sur débats, amendements, HATVP |
+| Arguments mal classés pour/contre | A4, X3 | Ne garder que les arguments avec citation et orateur identifié |
+| Le front n'est pas prêt | tests P0 | Démo sur Verdict et Action, le reste en captures |
+| Une session meurt | `status/` muet 30 min | Relance avec son prompt |
+| Featherless indisponible | P8 | Gabarits, `mode: gabarit` |
+| Le jury dit « vous avez refait Atlas » | X1 | Partir du client et de l'objectif, montrer le pourquoi et l'open data |
 
 ## 10. Ce qui n'est pas dans le périmètre
 
-Déploiement en ligne (démo locale, dépôt public à la fin). Comptes, abonnement, prix. Sénat. Alertes temps réel. Presse. Autres sujets que les deux dossiers. Le produit réel après le hackathon : un outil dont trois vues viennent de l'API du concurrent n'est pas une entreprise, la seule valeur défendable est l'extraction de documents non structurés ; cette question se traite lundi, pas aujourd'hui.
+Vue multi-dossiers, presse, rattrapages après l'Assemblée, message de trente secondes au client final, mode de livraison, prix (rendu final, section 7). Déploiement en ligne. Sénat. Alertes temps réel. Produit réel après le hackathon.
 
 ## 11. Ce qui n'a pas été vérifié au moment d'écrire
 
-- Le format de réponse réel de `/scrutins/{id}/votes`, `/agregats/accord-groupes`, `/agregats/loyaute-deputes`, `/agregats/positions-groupes` : aucun schéma de réponse dans l'OpenAPI, rien testé avec une clé. P1 à 12 h 55.
-- Si le dump `Dossiers_Legislatifs` contient le texte des rapports ou seulement leurs métadonnées (A1 ouvre l'archive à 13 h).
-- Si Featherless accepte `chat_template_kwargs` pour désactiver le thinking de `Qwen/Qwen3.8-27B` (P8 à 13 h).
-- Orcet sur des amendements sans scrutin (la doc dit « le sort probable d'un amendement », P1 le mesure).
-- Le nombre d'amendements en attente par sujet et le nombre de scrutins nominatifs liés.
-- L'état d'avancement du PLF 2027 ce samedi.
+- Formats de réponse réels des agrégats et de `/scrutins/{id}/votes` (P1 à 13 h 20).
+- Si l'API renvoie les avis du rapporteur et du gouvernement sur les amendements (P1, Axel).
+- Si le dump des dossiers législatifs contient le texte des rapports (A1 à 13 h 30).
+- Si Featherless accepte la désactivation du thinking (P8 à 13 h 35).
+- Orcet sur des amendements sans scrutin (P1).
+- La fiche HATVP exacte du client du dossier vivant (Afep ou Medef) et le texte de l'objectif (P1 à 13 h 20).
+- Si le texte du PLF 2027 est déjà au Sénat ce samedi et à quelle date la nouvelle lecture à l'Assemblée est prévue (P2 pour `suite.json`).
 
 ## Annexe A. Ce que l'API Hémicycle et Featherless font vraiment (vérifié le 14 novembre à 12 h 40)
 
@@ -376,6 +264,27 @@ Vérification par lecture des pages `hemicycle.ai/docs/*`, `hemicycle.ai/docs/op
 - Comptes rendus de commission : pas d'export en masse trouvé. Lecture en HTML page par page.
 
 ---
+
+## Annexe B. Mesure des sujets du PLF 2027 (open data, 14 novembre 2026, 12 h 40 à 13 h 00)
+
+Méthode : archive complète `Amendements.json.zip` (363 Mo, 148 034 fichiers, 42 069 lus pour les PLF 2025, 2026, 2027), `Scrutins.json.zip` (9 895 scrutins, 1 854 scrutins PLF liés à leur amendement par le numéro cité dans le titre), répertoire HATVP `agora_repertoire_opendata.json` (139 Mo, 4 117 organisations, 113 613 fiches d'activité). Mots-clés en regex sur texte sans accents, dans dispositif et exposé sommaire. Scripts et résultats bruts dans le dossier de travail de la session de mesure. Aucune donnée Hémicycle (pas de clé). Rapports et comptes rendus : estimations par recherche sur le site, pas de corpus lu.
+
+**Fait mesuré** : la première partie du PLF 2027 a été rejetée par l'Assemblée le 4 novembre 2026 (scrutin VTANR5L17V9759, texte adopté n° 362 « rejeté »). Les 3 187 amendements « en traitement » du texte 3210 (quasi tous en seconde partie) sont déposés mais ne seront pas examinés à l'Assemblée en première lecture.
+
+| Sujet | Amendements 3210 | dont en attente | Scrutins publics depuis juillet 2024 (dont PLF 2027) | Rapports et CR (estimation) | Organisations HATVP |
+|---|---|---|---|---|---|
+| TVA (thème transversal) | 599 | 19 | 188 (65) | ~10 | 365 |
+| **Holdings, fortune improductive, Zucman** | **141** | 7 | **104 (27)** | ~6 | 35 |
+| Crédit d'impôt recherche | 76 | 3 | 65 (23) | ~8 | 96 |
+| Cryptoactifs | 42 | 1 | 23 (11) | ~3 | 26 |
+| Facturation électronique | 34 | 1 | 5 (4) | ~2 | 38 |
+| Petits colis | 29 | 6 | 10 (1) | ~4 | 45 |
+
+Autres sujets mesurés (amendements / scrutins / organisations) : TTF 105 / 47 / 11 ; CDHR 73 / 60 / 10 ; Dutreil 95 / 57 / 33 ; dividendes 139 / 108 / 11 ; niches fiscales 127 / 120 / 17 ; aérien 155 / 49 / 46 ; malus et ZFE 92 / 45 / 170 ; logement 143 / 21 / 116 ; apprentissage 78 / 16 / 138.
+
+Choix : holdings et fortune improductive, sujet unique le plus voté (27 scrutins nominatifs sur le PLF 2027, donc des pivots `base: sujet`), amendements nombreux, lobbying déclaré. La TVA est écartée comme thème, pas sujet. Mots-clés retenus : `zucman | holdings? | impôt sur la fortune | fortune improductive | patrimoine improductif | ISF | IFF`.
+
+Non mesuré : les 1 270 amendements irrecevables sans texte ; 131 scrutins PLF sur articles et motions non rattachés à un sujet ; précision du filtre HATVP (faux positifs possibles sur « holding ») ; comptes rendus de commission non téléchargés.
 
 ## GSTACK REVIEW REPORT
 

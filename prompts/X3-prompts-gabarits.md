@@ -1,15 +1,18 @@
-# Session X3 : prompts de synthèse et de note, gabarits (MacBook Pro Axel)
+# Session X3 : prompts de rédaction et gabarits de secours (MacBook Pro Axel)
 
-Lis d'abord `prompts/_commun.md`, puis `PLAN.md` sections 3, 5.11, 5.12, 5.13, 6 (ligne X3), annexe A (Featherless), et `contracts/fixtures/` (une fiche et une note d'exemple).
+Lis d'abord `prompts/_commun.md`, puis `rendu-final.md` (règle de fiabilité, section 6), `PLAN.md` sections 3, 5.11, 5.13, 5.15, 5.19, 5.21, 6 (ligne X3), annexe A (Featherless), et `contracts/fixtures/` (une fiche, un verdict, une action, une note).
 
 ## Tu possèdes
-`pipeline/fiches/prompts/` et `pipeline/note/prompts/`.
+`pipeline/fiches/prompts/`, `pipeline/verdict/prompts/`, `pipeline/action/prompts/`, `pipeline/note/prompts/`.
 
 ## Livrables
-1. **13 h 15, gabarits de secours** (sans modèle) : `pipeline/fiches/prompts/gabarit-synthese.md` et `pipeline/note/prompts/gabarit-note.md` : des textes à trous remplis mécaniquement depuis les champs JSON (position du groupe, nombre d'écarts, organisations entendues, dernier amendement), lisibles, sans chiffre hors de la liste. Documente les variables attendues.
-2. `pipeline/fiches/prompts/synthese.md` : prompt système et gabarit utilisateur pour `redigerVerifie` : entrée = chiffres et citations du député (jamais un vote brut), sortie = `position_probable` (une phrase) et `argument` (une phrase, concret, adressé au lobbyiste : « présenter à ce député ... »), en français, chiffres en chiffres (jamais en lettres), uniquement des chiffres présents dans l'entrée, pas de formule creuse, pas de jugement sur la personne. Sortie structurée via l'outil (schéma zod fourni par P8).
-3. `pipeline/note/prompts/note.md` : note d'analyste de 150 mots : ce qui va passer, ce qui craque, qui peut basculer, avec les chiffres fournis uniquement, ton d'analyste, limites en une phrase.
-4. **Dès que `pipeline/lib/llm.ts` existe (13 h 15)** : teste chaque prompt sur 3 fiches des fixtures et 1 note, 3 fois chacun ; compte les rejets du vérificateur, ajuste le prompt jusqu'à 0 rejet sur 3 essais ; écris les résultats dans `status/X3.md`.
+1. **13 h 35, gabarits de secours** (sans modèle), textes à trous remplis mécaniquement depuis les champs JSON, sans chiffre hors de la liste, variables documentées : `fiches/prompts/gabarit-synthese.md`, `verdict/prompts/gabarit-lecture.md`, `action/prompts/gabarit-contre-argument.md`, `note/prompts/gabarit-note.md`.
+2. Les quatre prompts (système + gabarit utilisateur pour `redigerVerifie` ou `appelStructure` de P8, voir `pipeline/lib/README.md`), en français, chiffres en chiffres, uniquement des chiffres présents dans l'entrée, pas de formule creuse :
+   - `fiches/prompts/synthese.md` : `position_probable` (une phrase) et `argument` (une phrase concrète adressée au lobbyiste : « présenter à ce député ... »), à partir des chiffres et citations du député, jamais un vote brut.
+   - `verdict/prompts/lecture.md` : une phrase qui dit pourquoi le dossier est en bonne voie, incertain ou mal engagé par rapport à l'objectif, à partir du score, de la tendance, des points favorables et bloquants.
+   - `action/prompts/contre-argument.md` : un contre-argument de deux phrases à un argument entendu, fondé sur les arguments du camp du client déjà entendus et les chiffres du dossier ; jamais d'attaque personnelle, jamais de chiffre absent de l'entrée.
+   - `note/prompts/note.md` : compte rendu de 150 mots que le cabinet adapte pour son client : verdict et pourquoi, ce qui a bougé, prochaines dates, sur qui agir, avec les chiffres fournis uniquement, limites en une phrase.
+3. **Dès 13 h 35** : teste chaque prompt 3 fois sur les fixtures des deux dossiers ; compte les rejets du vérificateur ; ajuste jusqu'à 0 rejet sur 3 essais ; résultats dans `status/X3.md`. Le cas petits colis doit donner une lecture du type « la mesure est portée par le gouvernement et soutenue par presque tous les groupes ».
 
 ## Fini quand
-A4 et P8 utilisent tes prompts sans retouche, gabarits en place, 0 rejet sur les fixtures. Heure cible : 14 h 30.
+P3, A4 et P8 utilisent tes prompts sans retouche, gabarits en place, 0 rejet sur les fixtures. Heure cible : 14 h 45.
