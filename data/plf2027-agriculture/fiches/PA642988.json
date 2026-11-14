@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.487Z",
+    "generated_at": "2026-11-14T16:05:46.788Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2033,16 +2033,36 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1015, rejeté (« Après l'article 10 : I. – La section I du chapitre III du titre II de la deuxième partie du livre premier du code général des impôts est ainsi modifiée : 1° Après l’article 1594 F… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 1015 (« Après l'article 10 : I. – La section I du chapitre III du titre II de la deuxième partie du livre premier du code général des impôts est ainsi modifiée : 1° Après l’article 1594 F… »).",
+    "position_probable": "Hervé de Lépinau est probablement contre la mesure, comme l'indique son groupe, car il n'a déposé ni cosigné aucun amendement ni fait de déclaration sur ce sujet précis.",
+    "argument": "Présenter à ce député les amendements qu'il a cosignés pour majorer les crédits de la mission Agriculture, notamment celui de 150 000 000 d'euros encore en attente, afin de soutenir la position de la FNSEA contre la baisse des crédits.",
     "chiffres_utilises": [
+      "149",
+      "77",
+      "1",
       "1015",
       "10",
-      "1",
-      "1594"
+      "1594",
+      "238",
+      "700000",
+      "1200000",
+      "1000000",
+      "2027",
+      "150000000",
+      "20000000",
+      "23",
+      "699",
+      "2026",
+      "0",
+      "2",
+      "26",
+      "28",
+      "29",
+      "11",
+      "3",
+      "56"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

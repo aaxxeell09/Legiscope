@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.512Z",
+    "generated_at": "2026-11-14T16:07:02.107Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -2107,9 +2107,7 @@
       "1",
       "4500",
       "6000",
-      "2026-10-30",
-      "30",
-      "2026"
+      "2026-10-30"
     ],
     "mode": "gabarit",
     "modele": null,

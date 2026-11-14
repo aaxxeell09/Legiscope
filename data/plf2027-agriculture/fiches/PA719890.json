@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.491Z",
+    "generated_at": "2026-11-14T16:05:56.118Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -39,7 +39,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2011,22 +2011,38 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 129, non examiné (« Après l'article 15 : I. – Aux 1° et au 2° du 2 du I de l’article 73 du code général des impôts, le montant : « 150 000 € » est remplacé par le montant : « 250 000 € ». II. – La… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 129 et de sa déclaration du 19 octobre 2026 en commission : « La première concerne le photovoltaïque. Nos agriculteurs ont besoin de hangars pour stocker le fourrage, abriter le matériel et protéger les récoltes. Avec la sécheresse que nous avons connue, ce besoin est vital, mais ils n’ont pas les moyens de les financer seuls. »",
+    "position_probable": "Danielle Brulebois est probablement contre la mesure, comme l'indique son cosignature d'un amendement en attente qui défend les crédits agricoles des DROM.",
+    "argument": "Présenter à ce député son amendement cosigné sur l'état B qui défend l'agriculture comme pilier de l'équilibre économique et social des DROM, car cet acte en attente montre qu'il s'oppose à la baisse des crédits agricoles.",
     "chiffres_utilises": [
-      "129",
+      "149",
+      "77",
+      "0.5",
       "15",
       "1",
       "2",
       "73",
       "150000",
       "250000",
-      "2026-10-19",
+      "10",
+      "151",
+      "24",
+      "119",
+      "9",
+      "9.5",
+      "2026",
       "19",
-      "2026"
+      "5",
+      "27",
+      "0",
+      "26",
+      "28",
+      "29",
+      "11",
+      "3",
+      "56"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

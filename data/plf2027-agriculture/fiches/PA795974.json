@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.480Z",
+    "generated_at": "2026-11-14T16:05:19.788Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1624,19 +1624,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1015, rejeté (« Après l'article 10 : I. – La section I du chapitre III du titre II de la deuxième partie du livre premier du code général des impôts est ainsi modifiée : 1° Après l’article 1594 F… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 1015 et de sa déclaration du 20 octobre 2026 en commission : « Par cet amendement, nous demandons une baisse des crédits dédiés au programme de renforcement des capacités commerciale (PRCC) : pourquoi financer des stratégies commerciales en faveur de produits venant concurrencer ceux de nos agriculteurs sur le marché européen ? Évitons de nous tirer une balle dans le pied ! »",
+    "position_probable": "Philippe Lottiaux est probablement contre la mesure, comme l'indique son cosignature de l'amendement 2358 qui supprime l'article 77 et qui est en attente.",
+    "argument": "Présenter à ce député l'amendement 2358, en attente, qui supprime l'article 77, car il a déjà cosigné ce texte et défendu en commission le 20 octobre 2026 la protection des agriculteurs face à la concurrence.",
     "chiffres_utilises": [
-      "1015",
-      "10",
-      "1",
-      "1594",
-      "2026-10-20",
-      "20",
-      "2026"
+      "77",
+      "2358",
+      "2026",
+      "20"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

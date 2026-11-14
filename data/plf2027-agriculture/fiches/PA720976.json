@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.466Z",
+    "generated_at": "2026-11-14T16:04:10.094Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2192,21 +2192,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 65, rejeté (« ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Cet amendement a pour objet d’abonder de 23,7 millions d’euros en AE et en CP les crédits consacrés aux moyens de fonctionnement des opérateurs chargés de la… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 65 et de sa déclaration du 21 octobre 2026 en séance : « Il vise à inclure les activités industrielles et commerciales des chambres d’agriculture ultramarines dans le champ des exonérations dites Lodeom. L’une des spécificités des chambres d’agriculture d’outre-mer est que leur financement ne provient de l’impôt qu’à hauteur de 10 à 30 %. »",
+    "position_probable": "Max Mathiasin est probablement contre la mesure, car il a cosigné l'amendement n° 21 qui supprime l'article 77 et qui a été adopté.",
+    "argument": "Présenter à ce député l'adoption de l'amendement 21 qui supprime l'article 77, car il a cosigné ce texte et partage donc l'objectif de la FNSEA de bloquer la baisse des crédits.",
     "chiffres_utilises": [
-      "65",
-      "2027",
-      "23.7",
-      "1000000",
-      "2026-10-21",
-      "10",
-      "30",
-      "21",
-      "2026"
+      "77",
+      "21"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

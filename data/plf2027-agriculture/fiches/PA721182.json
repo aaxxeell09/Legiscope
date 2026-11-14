@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.495Z",
+    "generated_at": "2026-11-14T16:06:12.973Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1243,22 +1243,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 3809, tombé (« Après l'article 10 : I. – Le I de l’article 151 septies A du code général des impôts est ainsi modifié : 1° Au 3°, le mots : « deux » est remplacé par le mot : « trois » ; 2° Sont… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 3809 et de sa déclaration du 27 mai 2026 en séance : « Bien évidemment, les agriculteurs français ne sont guère nombreux dans ma circonscription, même s’il y a bien un éleveur de canards à 100 kilomètres au nord de Kiev ou encore un fabricant de fromages en Moldavie. Quoi qu’il en soit, je voudrais alerter les collègues sur l’intérêt de cet article. »",
+    "position_probable": "Frédéric Petit est probablement contre la mesure, comme le montre son cosignature de l'amendement 2088 qui supprime l'article 77 et qui a été adopté.",
+    "argument": "Présenter à ce député l'amendement 2088, cosigné par lui et adopté, qui supprime l'article 77, car il s'aligne sur l'objectif de la FNSEA de bloquer la baisse des crédits.",
     "chiffres_utilises": [
-      "3809",
-      "10",
-      "151",
-      "1",
-      "3",
-      "2",
-      "2026-05-27",
-      "100",
-      "27",
-      "2026"
+      "77",
+      "2088"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

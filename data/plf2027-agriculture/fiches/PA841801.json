@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.516Z",
+    "generated_at": "2026-11-14T16:07:12.365Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2019,15 +2019,46 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 201, retiré (« Article 13 : I. – Après l’alinéa 74, insérer l’alinéa suivant : « L’abattement sur les bénéfices imposables mentionné au présent article est également éligible aux… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 201 (« Article 13 : I. – Après l’alinéa 74, insérer l’alinéa suivant : « L’abattement sur les bénéfices imposables mentionné au présent article est également éligible aux… »).",
+    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car il n'a déposé ni cosigné d'amendement la concernant et n'a pas pris la parole, tandis que son groupe est divisé.",
+    "argument": "Présenter à ce député que la FNSEA a cosigné l'amendement n° 207, non examiné, pour soutenir la position du client contre la baisse des crédits agricoles.",
     "chiffres_utilises": [
-      "201",
+      "149",
+      "77",
+      "0.5",
       "13",
-      "74"
+      "74",
+      "10",
+      "238",
+      "1",
+      "700000",
+      "207",
+      "151",
+      "3",
+      "2",
+      "26",
+      "72",
+      "657",
+      "1972",
+      "24",
+      "119",
+      "9",
+      "9.5",
+      "2124",
+      "1.2",
+      "4.1",
+      "2009",
+      "1673",
+      "30",
+      "2010",
+      "0",
+      "2026",
+      "20",
+      "21",
+      "22",
+      "28"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

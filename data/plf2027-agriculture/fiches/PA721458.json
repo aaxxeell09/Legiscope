@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.528Z",
+    "generated_at": "2026-11-14T16:07:55.756Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1957,15 +1957,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A dit en séance le 19 mai 2026 : « Dans le futur, il appartiendra de faire évoluer les outils d’estimation et d’en comparer les résultats. S’agissant des tirs de défense, l’arrêté de février dernier a déjà permis des avancées concrètes : les agriculteurs peuvent désormais réaliser des tirs de défense en cas de menace, sans devoir attendre une autorisation préfectorale. Il suffit pour cela de remplir un formulaire de demande de tir, qui donne lieu à l’envoi d’un récépissé. »",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de sa déclaration du 19 mai 2026 en séance : « Dans le futur, il appartiendra de faire évoluer les outils d’estimation et d’en comparer les résultats. S’agissant des tirs de défense, l’arrêté de février dernier a déjà permis des avancées concrètes : les agriculteurs peuvent désormais réaliser des tirs de défense en cas de menace, sans devoir attendre une autorisation préfectorale. Il suffit pour cela de remplir un formulaire de demande de tir, qui donne lieu à l’envoi d’un récépissé. »",
+    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car il n'a déposé aucun amendement et sa déclaration en séance du 19 mai 2026 porte sur les tirs de défense, tandis que son groupe est divisé.",
+    "argument": "Présenter à ce député que la FNSEA s'oppose à la baisse des crédits de la mission Agriculture, en s'appuyant sur sa déclaration du 19 mai 2026 en séance qui défend la simplification administrative pour les agriculteurs.",
     "chiffres_utilises": [
-      "2026-05-19",
-      "19",
-      "2026"
+      "2026",
+      "19"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

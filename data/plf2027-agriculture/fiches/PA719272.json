@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.518Z",
+    "generated_at": "2026-11-14T16:07:17.045Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1825,19 +1825,29 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 231, adopté (« Après l'article 15 : I. – Le 2 du I de l’article 73 du code général des impôts est ainsi modifié : a) Au 1°, le montant : « 150 000 € » est remplacé par le montant : « 250 000 € »… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 231 (« Après l'article 15 : I. – Le 2 du I de l’article 73 du code général des impôts est ainsi modifié : a) Au 1°, le montant : « 150 000 € » est remplacé par le montant : « 250 000 € »… »).",
+    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car elle n'a déposé ni cosigné aucun amendement sur ce texte et n'a pas pris la parole en séance ou en commission.",
+    "argument": "Présenter à ce député que la FNSEA s'oppose à la baisse des crédits de la mission Agriculture, en précisant que les organisations agricoles n'ont pas été entendues par les rapporteurs de sa commission, ce qui constitue un indice plus faible qu'un acte personnel.",
     "chiffres_utilises": [
-      "231",
+      "149",
+      "77",
+      "0.5",
       "15",
       "2",
       "73",
       "1",
       "150000",
-      "250000"
+      "250000",
+      "10",
+      "151",
+      "0",
+      "2026",
+      "11",
+      "3",
+      "6",
+      "2030"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

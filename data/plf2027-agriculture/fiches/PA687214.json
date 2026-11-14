@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.465Z",
+    "generated_at": "2026-11-14T16:03:45.982Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1220,11 +1220,24 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés ; seul indice, il a déjà voté autrement que son groupe, ce qui ne dit pas son vote sur la mesure.",
-    "argument": "Présenter à ce député la position du client (FNSEA) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Ministère de la justice, Syndicat national pénitentiaire – FO Direction, Syndicat national des directeurs pénitentiaires – CFDT) : indice plus faible qu'un acte personnel.",
-    "chiffres_utilises": [],
-    "mode": "gabarit",
-    "modele": null,
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a déposé aucun amendement et n'a pas pris la parole, mais le cabinet le classe comme favorable à la mesure.",
+    "argument": "Présenter à ce député que sa position favorable à la baisse des crédits agricoles, notée dans le classement du cabinet, contraste avec l'absence d'amendement ou de déclaration personnelle sur le sujet, ce qui laisse la porte ouverte à un argumentaire ciblé.",
+    "chiffres_utilises": [
+      "149",
+      "77",
+      "0.5",
+      "1",
+      "0",
+      "0.81",
+      "0.85",
+      "2026",
+      "11",
+      "5",
+      "6",
+      "12"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

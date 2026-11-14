@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.471Z",
+    "generated_at": "2026-11-14T16:04:36.408Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -47,7 +47,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2080,20 +2080,39 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 1487, rejeté (« Article 24 : Après l’alinéa 118, insérer l’alinéa suivant : « 1° bis Le niveau annuel minimal de réduction de l’intensité carbone peut être réhaussé jusqu’à 1 point de… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 1487 et de sa déclaration du 22 octobre 2026 en commission : « L’agriculture est un pilier économique et social important des outre-mer. Or, pour la première fois depuis 2008, le gouvernement n’a prévu, dans le PLF (projet de loi de finances), aucun crédit qui leur soit véritablement destiné. »",
+    "position_probable": "Jean-Luc Fugit est probablement favorable à la mesure, comme l'indique son vote enregistré par le cabinet, même si ses amendements sur l'État B ont été rejeté ou tombé.",
+    "argument": "Présenter à ce député la baisse des crédits agricoles en mission Agriculture, programme 149, article 77, en s'appuyant sur son amendement rejeté qui défend l'agriculture comme pilier de l'équilibre économique et social des outre-mer.",
     "chiffres_utilises": [
-      "1487",
+      "149",
+      "77",
+      "0.5",
       "24",
       "118",
       "1",
-      "2026-10-22",
-      "2008",
+      "2026",
+      "10",
       "22",
-      "2026"
+      "2008",
+      "21",
+      "19",
+      "2027",
+      "9",
+      "0",
+      "0.87",
+      "0.85",
+      "26",
+      "28",
+      "29",
+      "11",
+      "3",
+      "56",
+      "1000000",
+      "4",
+      "8",
+      "1000"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

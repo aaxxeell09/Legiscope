@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.482Z",
+    "generated_at": "2026-11-14T16:05:28.693Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -43,7 +43,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2102,18 +2102,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 43, adopté (« ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : La prédation du loup fragilise les troupeaux et l’équilibre économique des exploitations. Dans leur rapport d’information n° 699 de juin 2026, les sénateurs… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 43 et de sa déclaration du 13 octobre 2026 en commission : « L’Agence bio, notamment, n’a pu montrer son efficacité pour aider une filière pourtant très intéressante et appelée à se développer bien davantage. Elle ne gère qu’une petite partie du financement public consacré à l’agriculture bio et ses missions ne se justifient plus. Nous proposons donc de supprimer sa subvention, afin de réaffecter les crédits à l’autorité ministérielle qui reprendra ses missions. »",
+    "position_probable": "Patrice Martin est probablement contre la baisse des crédits agricoles, comme en témoignent ses amendements visant à majorer les crédits de la mission Agriculture et sa déclaration du 13 octobre 2026 en commission.",
+    "argument": "Présenter à ce député la baisse de 150 millions d'euros qu'il a dénoncée en commission le 13 octobre 2026, car il a cosigné des amendements visant à majorer les crédits agricoles et a défendu la situation des agriculteurs.",
     "chiffres_utilises": [
-      "43",
-      "2027",
-      "699",
       "2026",
-      "2026-10-13",
-      "13"
+      "13",
+      "1000000",
+      "150"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

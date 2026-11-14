@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.526Z",
+    "generated_at": "2026-11-14T16:07:43.124Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1135,15 +1135,25 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 205, en attente (« ETAT B : Cet amendement a pour objet d’abonder de 23,2 millions d’euros en AE et en CP les crédits consacrés aux moyens de fonctionnement des opérateurs chargés de la… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 205 (« ETAT B : Cet amendement a pour objet d’abonder de 23,2 millions d’euros en AE et en CP les crédits consacrés aux moyens de fonctionnement des opérateurs chargés de la… »).",
+    "position_probable": "David Habib a cosigné plusieurs amendements en attente qui abondent les crédits agricoles, ce qui indique qu'il est probablement contre la baisse des crédits de la mesure.",
+    "argument": "Présenter à ce député les amendements qu'il a cosignés pour abonder les crédits agricoles, car ils montrent son intérêt pour le soutien des filières alors que la FNSEA s'oppose à la baisse des crédits.",
     "chiffres_utilises": [
-      "205",
+      "149",
+      "77",
+      "0.5",
       "23.2",
+      "2026",
+      "27",
+      "101",
+      "5",
+      "3.3",
+      "0",
+      "10",
+      "22",
       "1000000"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.477Z",
+    "generated_at": "2026-11-14T16:05:09.580Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -51,7 +51,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2188,20 +2188,15 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 4, adopté (« Supprime l'article 77 »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 4 et de sa déclaration du 4 novembre 2026 en séance : « L’année 2026 est une période exceptionnelle. Cela s’est vérifié et le gouvernement a dû faire un effort substantiel : la ministre de l’agriculture a présenté un plan de 1 milliard d’euros, certes insuffisant, mais qui a le mérite d’exister. La RPD, c’est près de 250 millions d’euros, mais il y a d’autres dispositifs. »",
+    "position_probable": "Julien Dive est probablement contre la mesure, comme le montrent l'amendement n° 4 qu'il a déposé et qui a été adopté, ainsi que l'amendement n° 1573 qu'il a déposé et qui est en attente.",
+    "argument": "Présenter à ce député l'amendement n° 4, qu'il a déposé et qui a été adopté, car il vise à supprimer l'article 77, ce qui correspond à l'objectif du client de bloquer la baisse des crédits.",
     "chiffres_utilises": [
       "4",
-      "77",
-      "2026-11-04",
-      "2026",
-      "1",
-      "250",
-      "1000000000",
-      "1000000"
+      "1573",
+      "77"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

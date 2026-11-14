@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.485Z",
+    "generated_at": "2026-11-14T16:05:37.997Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2008,13 +2008,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 1044, en attente (« ETAT B : La présence du loup s’étend désormais à l’ensemble du territoire, hors Paris et petite couronne, Corse et outre-mer. Le recours à l’aide à la protection des… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 1044 (« ETAT B : La présence du loup s’étend désormais à l’ensemble du territoire, hors Paris et petite couronne, Corse et outre-mer. Le recours à l’aide à la protection des… »).",
+    "position_probable": "Vincent Rolland est probablement contre la mesure, car il a cosigné l'amendement 1573 qui supprime l'article 77 et qui est en attente.",
+    "argument": "Présenter à ce député l'amendement 1573, en attente, qui supprime l'article 77, car il a cosigné ce texte et a également cosigné des amendements visant à renforcer l'Aide au redressement des exploitations agricoles en difficulté.",
     "chiffres_utilises": [
-      "1044"
+      "77",
+      "1573"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

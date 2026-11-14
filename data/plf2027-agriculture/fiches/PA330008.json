@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.527Z",
+    "generated_at": "2026-11-14T16:07:55.350Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1806,11 +1806,21 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés ; seul indice, il a déjà voté autrement que son groupe, ce qui ne dit pas son vote sur la mesure.",
-    "argument": "Présenter à ce député la position du client (FNSEA) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (université Paris Cité, Organisation de coopération et de développement économiques (OCDE), Direction générale de l’administration et de la fonction publique (DGAFP)) : indice plus faible qu'un acte personnel.",
-    "chiffres_utilises": [],
-    "mode": "gabarit",
-    "modele": null,
+    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car il n'a déposé aucun amendement et n'a prononcé aucune déclaration, tandis que son groupe est divisé.",
+    "argument": "Présenter à ce député que la FNSEA conteste la baisse des crédits de la mission Agriculture (programme 149, article 77), car il n'a déposé aucun amendement ni fait de déclaration sur le sujet et les organisations entendues par les rapporteurs de sa commission le 3 novembre 2026 ne portent pas sur l'agriculture.",
+    "chiffres_utilises": [
+      "149",
+      "77",
+      "0.5",
+      "0",
+      "2026",
+      "11",
+      "3",
+      "6",
+      "2030"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

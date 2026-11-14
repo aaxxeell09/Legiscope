@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.515Z",
+    "generated_at": "2026-11-14T16:07:09.611Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1250,11 +1250,20 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés ; seul indice, il a déjà voté autrement que son groupe, ce qui ne dit pas son vote sur la mesure.",
-    "argument": "Présenter à ce député la position du client (FNSEA) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Conseil supérieur de la marine marchande, Brittany Ferries, Corsica Linea) : indice plus faible qu'un acte personnel.",
-    "chiffres_utilises": [],
-    "mode": "gabarit",
-    "modele": null,
+    "position_probable": "Sa position personnelle n'est pas connue, car il n'a déposé aucun amendement et n'a pas pris la parole sur la mesure, tandis que son groupe est divisé.",
+    "argument": "Présenter à ce député que la FNSEA a été entendue par les rapporteurs de sa commission le 9 novembre 2026, ce qui constitue un indice plus faible qu'un acte personnel pour aborder la mesure.",
+    "chiffres_utilises": [
+      "149",
+      "77",
+      "0.5",
+      "0",
+      "2026",
+      "11",
+      "4",
+      "9"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

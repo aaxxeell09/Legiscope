@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.788Z",
+    "generated_at": "2026-11-14T16:08:27.046Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -243,7 +243,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
       }
     ],
-    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3). 2 contre-argument(s) en gabarit.",
+    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3).",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -4308,44 +4308,61 @@
   },
   "contre_arguments": [
     {
-      "texte": "À l'argument « Position pour la mesure déduite du mot « economies » dans une phrase sur agriculture et filières », opposer celui déjà entendu en séance le 4 novembre 2026 : « Position contre la mesure déduite du mot « suppression » dans une phrase sur agriculture et filières ». Citation à reprendre : « Monsieur le ministre, vous ne pouvez pas dire que compenser la suppression de la taxe sur la vente des produits phytosanitaires par une majoration de la redevance sur pollutions diffuses serait une augmentation massive des impôts pour les agriculteurs. »",
+      "texte": "La transition énergétique ne justifie pas de réduire les crédits agricoles alors que la mission Agriculture et alimentation baisse déjà de 13 %. Le programme 149 subit une nouvelle baisse de 450 millions d'euros.",
       "repond_a": "Position pour la mesure déduite du mot « economies » dans une phrase sur agriculture et filières",
       "chiffres_utilises": [
-        "2026-11-04",
-        "4",
-        "2026"
+        "13",
+        "149",
+        "450",
+        "1000000"
       ],
-      "mode": "gabarit",
+      "mode": "llm",
       "verifie": true,
       "preuve": {
         "sources": [
           {
-            "label": "Séance du 4 novembre 2026",
+            "label": "séance publique du 14 octobre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026"
+          },
+          {
+            "label": "séance publique du 4 novembre 2026 (argument du camp du client)",
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
         "nature": "deduction"
       }
     },
     {
-      "texte": "À l'argument « Position pour la mesure déduite du mot « economies » dans une phrase sur agriculture et filières », opposer celui déjà entendu en séance le 4 novembre 2026 : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur agriculture et filières ». Citation à reprendre : « Il vise à supprimer l’indexation sur l’inflation des tarifs de la redevance pour pollutions diffuses, que paient nos agriculteurs sur chaque produit phytopharmaceutique et que les négoces collectent pour les agences de l’eau, en avançant l’argent avant même de l’avoir encaissé. »",
+      "texte": "La mesure aggrave une situation budgétaire déjà critique pour le secteur agricole, ce qui contredit l'idée d'une simple optimisation des dépenses. Le programme 149 subit une nouvelle baisse de 450 millions d'euros.",
       "repond_a": "Position pour la mesure déduite du mot « economies » dans une phrase sur agriculture et filières",
       "chiffres_utilises": [
-        "2026-11-04",
-        "4",
-        "2026"
+        "149",
+        "450",
+        "1000000"
       ],
-      "mode": "gabarit",
+      "mode": "llm",
       "verifie": true,
       "preuve": {
         "sources": [
           {
-            "label": "Séance du 4 novembre 2026",
+            "label": "commission du 13 octobre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+          },
+          {
+            "label": "séance publique du 4 novembre 2026 (argument du camp du client)",
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
         "nature": "deduction"
       }
     }

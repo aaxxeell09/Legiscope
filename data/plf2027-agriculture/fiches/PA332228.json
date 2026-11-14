@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.468Z",
+    "generated_at": "2026-11-14T16:04:19.856Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -43,7 +43,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2020,18 +2020,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A dit en commission le 13 octobre 2026 : « Quant aux agriculteurs, ils attendent une politique agricole commune volontariste – la programmation actuelle touche à sa fin, la suivante démarrera en 2028 – et une amélioration du dispositif assurantiel. La ministre a annoncé un plan de plus de 1 milliard pour répondre aux conséquences de l’été 2026. »",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de sa déclaration du 13 octobre 2026 en commission : « Quant aux agriculteurs, ils attendent une politique agricole commune volontariste – la programmation actuelle touche à sa fin, la suivante démarrera en 2028 – et une amélioration du dispositif assurantiel. La ministre a annoncé un plan de plus de 1 milliard pour répondre aux conséquences de l’été 2026. »",
+    "position_probable": "Ses actes vont dans les deux sens, comme le montre sa déclaration en commission le 13 octobre 2026 qui défend la PAC tout en appelant à des économies au ministère de l’agriculture.",
+    "argument": "Présenter à ce député que la FNSEA conteste la baisse des crédits du programme 149, en rappelant qu'il a déclaré en commission le 13 octobre 2026 que les agriculteurs sont conscients de la situation des finances publiques, ce qui montre qu'il est sensible à l'argument budgétaire.",
     "chiffres_utilises": [
-      "2026-10-13",
-      "2028",
-      "1",
       "2026",
-      "1000000000",
-      "13"
+      "13",
+      "2",
+      "149"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

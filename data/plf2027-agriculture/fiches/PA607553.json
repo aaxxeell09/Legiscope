@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.525Z",
+    "generated_at": "2026-11-14T16:07:42.966Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -51,7 +51,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2862,19 +2862,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 1474, adopté (« Après l'article 10 : I. – Le d) du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque le contribuable devient associé… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 1474 et de sa déclaration du 30 octobre 2026 en séance : « L’aide au maintien de l’agriculture biologique a été supprimée. On lui a substitué un crédit d’impôt, qui est plutôt plus favorable pour les petites exploitations, car l’aide au maintien était calculée en fonction de la surface cultivée. »",
+    "position_probable": "Dominique Potier est probablement contre la mesure, comme en témoignent les amendements 72, 335 et 2306 qu'il a cosignés pour supprimer l'article 77, respectivement adopté, adopté et en attente.",
+    "argument": "Présenter à ce député l'amendement n° 72, cosigné avec Régions de France et adopté, qui supprime l'article 77, car il a déjà agi contre la baisse des crédits agricoles.",
     "chiffres_utilises": [
-      "1474",
-      "10",
-      "1",
-      "151",
-      "2026-10-30",
-      "30",
-      "2026"
+      "77",
+      "72",
+      "335",
+      "2306"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

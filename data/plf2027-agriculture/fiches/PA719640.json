@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.488Z",
+    "generated_at": "2026-11-14T16:05:56.098Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -43,7 +43,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1879,21 +1879,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 2094, adopté (« ETAT B : Le présent amendement ouvre 3 millions d’euros pour aider les exploitations à s’équiper contre les aléas climatiques : filets paragrêle, tours et asperseurs… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 2094 et de sa déclaration du 3 novembre 2026 en séance : « Pour les agriculteurs et les viticulteurs, les marges ainsi dégagées peuvent contribuer au maintien de l’activité. Concrètement, à base et à taux d’imposition constants, une cotisation de 1 000 euros avant exonération serait ramenée à 600 euros, au lieu de 700 euros : cela représente 100 euros d’allégement supplémentaire. »",
+    "position_probable": "Sophie Mette est probablement contre la mesure, comme en témoigne l'amendement 2088 qu'elle a cosigné et qui a été adopté.",
+    "argument": "Présenter à ce député l'amendement 2088, qui supprime l'article 77 et a été adopté, pour confirmer son soutien à la suppression de la baisse des crédits agricoles.",
     "chiffres_utilises": [
-      "2094",
-      "3",
-      "1000000",
-      "2026-11-03",
-      "1000",
-      "600",
-      "700",
-      "100",
-      "2026"
+      "2088",
+      "77"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

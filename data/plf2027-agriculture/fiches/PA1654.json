@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.468Z",
+    "generated_at": "2026-11-14T16:04:19.714Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1308,16 +1308,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1474, adopté (« Après l'article 10 : I. – Le d) du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque le contribuable devient associé… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 1474 (« Après l'article 10 : I. – Le d) du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque le contribuable devient associé… »).",
+    "position_probable": "François Hollande est probablement contre la mesure, comme l'indique son cosignature de l'amendement 2306, qui vise à supprimer l'article 77 et est en attente.",
+    "argument": "Présenter à ce député l'amendement 2306, en attente, qui supprime l'article 77, car il a cosigné ce texte qui s'oppose directement à la baisse des crédits agricoles.",
     "chiffres_utilises": [
-      "1474",
-      "10",
-      "1",
-      "151"
+      "77",
+      "2306"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

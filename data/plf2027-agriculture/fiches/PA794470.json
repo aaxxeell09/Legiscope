@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.529Z",
+    "generated_at": "2026-11-14T16:08:03.576Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1578,15 +1578,26 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A dit en séance le 14 octobre 2026 : « Nous proposerons d’étendre aux équipements de cybersécurité le nouveau suramortissement en faveur de l’industrie. Nous proposerons aussi d’ouvrir aux artisans et aux commerçants de proximité une épargne de précaution, comme celle dont bénéficient déjà les agriculteurs pour leur permettre de traverser les années difficiles. La deuxième ligne que nous défendrons, c’est que l’effort devra être partagé et juste. »",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de sa déclaration du 14 octobre 2026 en séance : « Nous proposerons d’étendre aux équipements de cybersécurité le nouveau suramortissement en faveur de l’industrie. Nous proposerons aussi d’ouvrir aux artisans et aux commerçants de proximité une épargne de précaution, comme celle dont bénéficient déjà les agriculteurs pour leur permettre de traverser les années difficiles. La deuxième ligne que nous défendrons, c’est que l’effort devra être partagé et juste. »",
+    "position_probable": "Sa position personnelle sur la baisse des crédits agricoles n'est pas connue car elle n'a ni déposé d'amendement ni fait de déclaration sur ce sujet précis, bien que son groupe soit divisé.",
+    "argument": "Présenter à ce député la citation du 14 octobre 2026 en séance où elle défend l'épargne de précaution des agriculteurs, car cela montre son attachement à la protection du revenu agricole face à la baisse des crédits du programme 149.",
     "chiffres_utilises": [
-      "2026-10-14",
+      "149",
+      "77",
+      "0.5",
+      "2026",
+      "10",
       "14",
-      "2026"
+      "0",
+      "13",
+      "11",
+      "3",
+      "4",
+      "5",
+      "9",
+      "12"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

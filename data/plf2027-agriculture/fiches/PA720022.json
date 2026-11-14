@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.521Z",
+    "generated_at": "2026-11-14T16:07:24.234Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1262,15 +1262,15 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A dit en séance le 21 octobre 2026 : « Allons plus loin : pourquoi cette précarité ? Parce que les agriculteurs ne peuvent pas embaucher. En raison d’un coût du travail très élevé, de normes contraignantes, de difficultés administratives lourdes, il est arrivé un moment où l’agriculture française n’était plus du tout compétitive : nous avons alors créé le TODE, que j’ai contribué à défendre. »",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de sa déclaration du 21 octobre 2026 en séance : « Allons plus loin : pourquoi cette précarité ? Parce que les agriculteurs ne peuvent pas embaucher. En raison d’un coût du travail très élevé, de normes contraignantes, de difficultés administratives lourdes, il est arrivé un moment où l’agriculture française n’était plus du tout compétitive : nous avons alors créé le TODE, que j’ai contribué à défendre. »",
+    "position_probable": "En séance le 21 octobre 2026, Michel Lauzzana a défendu le TODE pour réduire le coût du travail, ce qui suggère qu'il est probablement contre la baisse des crédits agricoles.",
+    "argument": "Présenter à ce député la citation du 21 octobre 2026 en séance où il dénonce le coût du travail très élevé qui empêche les agriculteurs d'embaucher, car cela rejoint directement la baisse des crédits du programme 149 qu'il a contribué à défendre via le TODE.",
     "chiffres_utilises": [
-      "2026-10-21",
+      "2026",
       "21",
-      "2026"
+      "149"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

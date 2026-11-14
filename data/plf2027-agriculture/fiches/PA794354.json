@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.479Z",
+    "generated_at": "2026-11-14T16:05:15.942Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -51,7 +51,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -2639,19 +2639,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 1015, rejeté (« Après l'article 10 : I. – La section I du chapitre III du titre II de la deuxième partie du livre premier du code général des impôts est ainsi modifiée : 1° Après l’article 1594 F… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 1015 et de sa déclaration du 3 novembre 2026 en séance : « À cette réalité, vous apportez toujours la même réponse : faire payer les Français, les retraités, les familles, les automobilistes, les entrepreneurs, les agriculteurs et tous ceux qui travaillent et font vivre nos territoires. »",
+    "position_probable": "Hélène Laporte est probablement contre la mesure, comme en témoigne son amendement n° 146 visant à supprimer l'article 77, qui a été adopté.",
+    "argument": "Présenter à ce député l'adoption de l'amendement 146, qui supprime l'article 77, car il a lui-même déposé cet amendement et a défendu en commission la nécessité de supprimer cet article pour protéger les crédits agricoles.",
     "chiffres_utilises": [
-      "1015",
-      "10",
-      "1",
-      "1594",
-      "2026-11-03",
-      "3",
-      "2026"
+      "77",
+      "146"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

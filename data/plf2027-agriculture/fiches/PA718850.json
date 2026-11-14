@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.530Z",
+    "generated_at": "2026-11-14T16:08:04.299Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-agriculture"
   },
@@ -1199,19 +1199,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 231, adopté (« Après l'article 15 : I. – Le 2 du I de l’article 73 du code général des impôts est ainsi modifié : a) Au 1°, le montant : « 150 000 € » est remplacé par le montant : « 250 000 € »… »).",
-    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 231 (« Après l'article 15 : I. – Le 2 du I de l’article 73 du code général des impôts est ainsi modifié : a) Au 1°, le montant : « 150 000 € » est remplacé par le montant : « 250 000 € »… »).",
+    "position_probable": "Pierre Cordier est probablement contre la mesure, car il a cosigné l'amendement 1573 qui supprime l'article 77, actuellement en attente.",
+    "argument": "Présenter à ce député l'amendement 1573, en attente, qui supprime l'article 77, car il a cosigné ce texte qui s'oppose directement à la baisse des crédits de la mission Agriculture.",
     "chiffres_utilises": [
-      "231",
-      "15",
-      "2",
-      "73",
-      "1",
-      "150000",
-      "250000"
+      "77",
+      "1573"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }
