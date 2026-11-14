@@ -1,4 +1,3 @@
-<!-- /autoplan restore point: /Users/ilansainte-agathe/.gstack/projects/aaxxeell09-Legiscope/main-autoplan-restore-20261114-122731.md -->
 # Plan LegiSpot : construire en une après-midi, à trois machines
 
 Version 3, 14 novembre 2026, 13 h 05 (intègre la v2 du rendu final d'Axel, 13 h). La v2 (12 h 35, revue stratégie, design, ingénierie, rapport en fin de fichier) décrivait quatre vues. À 12 h 45 Axel a publié `rendu-final.md`, qui prime sur son cadrage initial et définit le rendu à partir du besoin du cabinet : **un tableau de bord par dossier, lu en cinq blocs**. Ilan a validé à 12 h 50 : on reprend le rendu final et on adapte le plan. Le pipeline de données et les contrats de la v2 sont conservés et étendus ; ce qui change est la composition du front, trois fichiers JSON de plus, et la démo. Démo à 18 h.

@@ -1,4 +1,4 @@
-> Document de préparation de la démonstration (14 novembre 2026). Des dates et des chiffres ont pu évoluer depuis : la référence est le [README](../README.md).
+> Document de préparation de la démonstration (14 novembre 2026). Des dates et des chiffres ont pu évoluer depuis : la référence est le [README](../../../README.md).
 
 # Jury joué : notes, objections, réponses
 
