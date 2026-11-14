@@ -8,14 +8,14 @@ import { formatDate, formatNom } from "../../lib/format";
 import "./base.css";
 
 const SORT_LABEL: Record<Sort, string> = {
-  en_attente: "en attente",
-  adopte: "adopté",
-  rejete: "rejeté",
-  retire: "retiré",
-  tombe: "tombé",
-  non_examine: "non examiné",
-  non_soutenu: "non soutenu",
-  irrecevable: "irrecevable",
+  en_attente: "En attente",
+  adopte: "Adopté",
+  rejete: "Rejeté",
+  retire: "Retiré",
+  tombe: "Tombé",
+  non_examine: "Non examiné",
+  non_soutenu: "Non soutenu",
+  irrecevable: "Irrecevable",
 };
 const SORT_ORDRE: Sort[] = ["en_attente", "adopte", "rejete", "retire", "tombe", "non_soutenu", "irrecevable", "non_examine"];
 
@@ -32,11 +32,11 @@ type Tri = "statut" | "numero" | "recent";
 const PAR_PAGE = 25;
 
 const NATURE_LABEL: Record<Nature, string> = {
-  supprime: "supprime",
-  reduit: "réduit",
-  reporte: "reporte",
-  aggrave: "aggrave",
-  autre: "autre",
+  supprime: "Supprime",
+  reduit: "Réduit",
+  reporte: "Reporte",
+  aggrave: "Aggrave",
+  autre: "Autre",
 };
 
 /** Amendement du gouvernement ou d'une commission (pas de groupe). */
@@ -129,14 +129,14 @@ export default function BaseView() {
       width: "7em",
       render: (a) =>
         a.nature ? (
-          <span className={a.nature_mode === "defaut" ? "text-2" : undefined} title={a.nature_mode === "llm" ? "classé par le modèle" : a.nature_mode === "regle" ? "classé par règle" : undefined}>
+          <span className={`base-nature base-nature-${a.nature}${a.nature_mode === "defaut" ? " is-muted" : ""}`} title={a.nature_mode === "llm" ? "Classé par le modèle" : a.nature_mode === "regle" ? "Classé par règle" : undefined}>
             {NATURE_LABEL[a.nature]}
           </span>
         ) : (
           <span className="text-2">non classé</span>
         ),
     },
-    { key: "sort", label: "Sort", width: "8em", render: (a) => SORT_LABEL[a.sort] },
+    { key: "sort", label: "Sort", width: "8em", render: (a) => <span className={`base-sort base-sort-${a.sort}`}>{SORT_LABEL[a.sort]}</span> },
     { key: "date", label: "Dépôt", width: "8em", render: (a) => a.date_depot ? formatDate(a.date_depot) : <span className="text-2">inconnue</span> },
   ];
   const metaBase = (() => {
@@ -159,7 +159,6 @@ export default function BaseView() {
     <div className="view" data-view="base">
       <header className="base-head">
         <div className="base-heading">
-          <p className="base-kicker">Index documentaire</p>
           <h1>Base documentaire</h1>
           <p className="base-context">
             <span>{d.client ?? "Dossier"}</span>
