@@ -95,9 +95,12 @@ export function verifierCroise(root: string, erreur: Erreur) {
       const txt = String(note.texte).toLowerCase();
       const mots = MOTS_SITUATION[v0.situation] ?? [];
       if (mots.length && !mots.some((m) => txt.includes(m))) ecart(erreur, P("note.json"), P("verdict.json"), "situation (objectif 1)", "(absente du texte)", v0.situation);
+      // Le brief exécutif (choix d'Axel, 16 h 40) ne cite pas forcément le score. S'il cite un pourcentage
+      // à côté de la situation, ce doit être celui du verdict, écrit « X % des sièges favorables à l'objectif ».
       if (typeof v0.score === "number") {
-        const pct = `${Math.round(v0.score * 100)} %`;
-        if (!txt.includes(pct) && !txt.includes(pct.replace(" %", "%"))) ecart(erreur, P("note.json"), P("verdict.json"), "score (objectif 1)", "(absent du texte)", pct);
+        const pct = Math.round(v0.score * 100);
+        const pourcentages = [...txt.matchAll(/(\d{1,3})\s?%\s?des si[èe]ges/g)].map((m) => Number(m[1]));
+        if (pourcentages.length && !pourcentages.includes(pct)) ecart(erreur, P("note.json"), P("verdict.json"), "score (objectif 1)", pourcentages, `${pct} %`);
       }
     }
 
