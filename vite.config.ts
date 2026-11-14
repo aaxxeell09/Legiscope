@@ -51,6 +51,11 @@ function fixturesPlugin(): Plugin {
       if (existsSync(fixturesDir)) {
         cpSync(fixturesDir, join(outDir, "fixtures"), { recursive: true });
       }
+      // Copie de data/ sans data/raw (2 à 3 Go de réponses brutes) : copyPublicDir est désactivé,
+      // sinon Vite copiait tout puis on supprimait, ce qui remplissait le disque.
+      if (existsSync(dataDir)) {
+        cpSync(dataDir, outDir, { recursive: true, filter: (src) => !src.startsWith(join(dataDir, "raw")) });
+      }
       rmSync(join(outDir, "raw"), { recursive: true, force: true });
     },
   };
