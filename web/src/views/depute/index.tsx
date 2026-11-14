@@ -99,7 +99,6 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
   if (r.status === "loading") return <Chargement quoi="fiche" />;
   if (r.status === "error") return <Erreur message={r.error ?? "fiche illisible"} />;
   const f = r.data!;
-  const c = f.couverture;
   const s = f.synthese;
   // Rapporteur : il a lui-même entendu ces organisations. Membre : ce sont les rapporteurs de sa commission, à part et moins fort.
   const estRapporteur = (r: string) => r === "rapporteur" || r === "rapporteur_general" || r === "rapporteur_avis";
@@ -131,9 +130,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
             Auditions<span className="text-2">{f.auditions.length}</span>
           </h4>
           {f.auditions.length === 0 ? (
-            <div className="p7-vide">
-              aucune audition trouvée · {c.rapports_avec_liste} sur {c.rapports_total} rapports publient la liste des personnes entendues
-            </div>
+            <div className="p7-vide">Aucune audition documentée.</div>
           ) : (
             <>
               {rapporteur.length > 0 && <ListeAuditions auditions={auditionsOuvertes ? rapporteur : rapporteur.slice(0, 4)} verbe="a entendu" />}
@@ -155,7 +152,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
             Débats<span className="text-2">{f.debats.length}</span>
           </h4>
           {f.debats.length === 0 ? (
-            <div className="p7-vide">aucune intervention trouvée · {c.comptes_rendus_lus} comptes rendus lus</div>
+            <div className="p7-vide">Aucune intervention documentée.</div>
           ) : (
             <ul className="p7-list">
               {(debatsOuverts ? f.debats : f.debats.slice(0, 5)).map((d, i) => (

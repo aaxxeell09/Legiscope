@@ -123,7 +123,7 @@ export function TopBar() {
       <header className="topbar">
         <div className="topbar-context">
           <span className="topbar-eyebrow">{pageSources ? "Transparence" : (courant?.client ?? "Espace de travail")}</span>
-          <span className="topbar-title">{pageSources ? "Sources et limites" : (courant?.label ?? "Dossier")}</span>
+          <span className="topbar-title">{pageSources ? "Sources" : (courant?.label ?? "Dossier")}</span>
         </div>
       </header>
     </>

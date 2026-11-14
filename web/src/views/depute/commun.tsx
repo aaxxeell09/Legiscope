@@ -15,7 +15,7 @@ import type {
   Sort,
   TypeOrganisation,
 } from "@contracts/index";
-import { Badge, GroupeTag } from "../../components";
+import { GroupeTag } from "../../components";
 import { useData } from "../../lib/data";
 import { formatDate, formatNom } from "../../lib/format";
 
@@ -113,13 +113,11 @@ export function Tag({ annuaire, groupeId }: { annuaire: Annuaire; groupeId: stri
   return <GroupeTag sigle={g?.sigle ?? groupeId} couleur={g?.couleur} title={g?.nom} />;
 }
 
-/** « vérifié », « non vérifié » ou « gabarit », puis modèle et date quand on les a. */
-export function Redaction({ mode, verifie, modele, date }: { mode: Mode; verifie: boolean; modele?: string | null; date?: string | null }) {
+/** Indication éditoriale discrète, sans exposer modèle, date ni métadonnée technique. */
+export function Redaction({ mode }: { mode: Mode; verifie: boolean; modele?: string | null; date?: string | null }) {
   return (
     <span className="p7-redaction">
-      {mode === "gabarit" ? <Badge kind="gabarit" /> : <Badge kind={verifie ? "verifie" : "non-verifie"} />}
-      {modele && <span className="text-2">{modele}</span>}
-      {date && <span className="text-2">{formatDate(date)}</span>}
+      <span className="text-2">{mode === "gabarit" ? "Synthèse structurée" : "Analyse proposée"}</span>
     </span>
   );
 }
