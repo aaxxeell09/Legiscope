@@ -150,24 +150,7 @@
           }
         }
       ],
-      "cause_du_changement": {
-        "evenement_id": "ev-974",
-        "titre": "Amendement n° 974 (RN) rejeté : Supprime l'article 22",
-        "preuve": {
-          "sources": [
-            {
-              "label": "Amendement n° 974",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
-            },
-            {
-              "label": "Texte PRJLANR5L17B1906",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
-            }
-          ],
-          "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : nature « supprime » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-          "nature": "deduction"
-        }
-      }
+      "cause_du_changement": null
     },
     {
       "objectif_rang": 2,

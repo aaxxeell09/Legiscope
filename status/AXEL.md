@@ -6,3 +6,7 @@ Fait : `pipeline/fiches/lib/nouveautes.ts` : plus de date de repli pour le sort 
 À savoir (P3, P6) : dans texte.json du dossier rejoué, 46 amendements sur 69 ont un sort sans `date_sort`. Pour ceux de séance, le sort peut être postérieur à la date de référence et s'affiche quand même dans la page Base.
 Bloqué : rien.
 Vu sans y toucher : `bun run check --root data` a 2 erreurs dans `data/petits-colis/suite.json` (échéances du 18 novembre « déjà passées » depuis que date_reference vaut 2025-11-19). Elles existaient avant ce commit.
+
+## 15 h 10
+Fait : `data/petits-colis/verdict.json`, objectif 1 : `cause_du_changement` pointait vers `ev-974` (le rejet daté par repli, retiré des nouveautés). Mise à `null` pour ne plus afficher ce faux événement en tête du verdict et rétablir l'intégrité croisée.
+À relancer : P3 `bun run verdict` après la relance de A4, pour qu'une cause réelle et datée soit choisie (la tendance de l'objectif 1 est « dégradation »).
