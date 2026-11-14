@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:53:06+01:00",
+    "generated_at": "2026-11-14T16:54:31+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -15,7 +15,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026"
       }
     ],
-    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/pivots.json.",
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/groupes-action.json et data/plf2027-agriculture/pivots.json.",
     "producer": "pipeline/debats",
     "dossier_id": "plf2027-agriculture"
   },

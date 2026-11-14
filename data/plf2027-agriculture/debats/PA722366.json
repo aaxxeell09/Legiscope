@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:54:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 21 du 21/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 13 du 19/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 11 du 09/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627011_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/groupes-action.json et data/plf2027-agriculture/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA722366",
+  "debats": [
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’agriculture est un pilier économique et social important des outre-mer. Or, pour la première fois depuis 2008, le gouvernement n’a prévu, dans le PLF (projet de loi de finances), aucun crédit qui leur soit véritablement destiné.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-21",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Par ailleurs, un amendement a été adopté pour aider les agriculteurs-méthaniseurs engagés dans la cogénération. L’idée est de les aider à basculer vers le nouveau modèle économique d’injection pour leur éviter la faillite.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+    },
+    {
+      "date": "2026-10-21",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Elles doivent passer à l’injection, ce procédé étant désormais le seul soutenu, mais le coût de la conversion des installations se révèle très élevé. Nous proposons donc d’affecter 10 millions d’euros au financement de cette transition : ce n’est pas le moment de ne pas soutenir nos agriculteurs.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+    },
+    {
+      "date": "2026-10-19",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je suis attaché au soutien au biogaz, qui a quatre avantages principaux : il « verdit » la molécule de gaz livrée au consommateur ; il valorise les déchets agricoles et les biodéchets ; il apporte une solution là où l’électrification n’est pas possible ; enfin, il permet aux agriculteurs de générer des revenus complémentaires et de produire des digestats permettant de moins dépendre d’engrais issus d’énergies fossiles.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+    },
+    {
+      "date": "2026-10-19",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Tout ne passera pas toutefois par les CPB et je souhaite ici relayer les inquiétudes des agriculteurs engagés dans la méthanisation. Nous devrons en effet rester vigilants sur la capacité des petites exploitations à accéder aux appels d’offres simplifiés, qui marquent un tournant par rapport au guichet ouvert.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+    },
+    {
+      "date": "2026-10-19",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je partage vos inquiétudes s’agissant du S21. Beaucoup d’agriculteurs seront affectés si ces huit mille contrats devaient être revus, car cela signifie des revenus en moins alors que des engagements avaient été pris. L’impact d’une telle mesure n’a pas été mesuré.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+    },
+    {
+      "date": "2026-10-19",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "En Ardèche, une dizaine d’agriculteurs engagés dans la filière biologique se sont engagés dans cette voie – mais peu importe, cela vaut pour toute l’agriculture, qu’elle soit biologique ou pas. Ce procédé très pertinent doit donc être vu comme une solution d’avenir.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+    },
+    {
+      "date": "2026-10-19",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Quant à l’agrivoltaïsme, il convient de surveiller cette question de près et de développer une politique harmonisée à l’échelle du pays. Si j’en crois mon expérience, probablement partagée par d’autres collègues, son déploiement local dépend trop souvent du bon vouloir de certaines chambres d’agriculture – ce que je regrette.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+    },
+    {
+      "date": "2026-10-19",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cela permettrait de financer, en 2027, un dispositif d’accompagnement de la conversion à l’injection des installations de cogénération, qui prendrait notamment la forme d’un soutien en ingénierie au bénéfice des agriculteurs concernés. Il s’agit de ne pas pénaliser ceux qui ont fait le pari de la cogénération et de leur permettre de réussir cette transition.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+    },
+    {
+      "date": "2026-10-19",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "En supprimant cet article, nous supprimerions des dispositions attendues, je le répète. En le maintenant, nous maintiendrions des mesures gênantes, notamment pour les agriculteurs. Toute la difficulté est là.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627013_compte-rendu"
+    },
+    {
+      "date": "2026-10-09",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Pourtant, le gaz vert est très vertueux : non seulement il permet de diminuer les émissions de CO2, mais de plus, parce qu’il est produit en valorisant les effluents d’élevage, il contribue à améliorer les revenus des agriculteurs, donc la résilience des exploitations agricoles, et à créer des emplois non délocalisables.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627011_compte-rendu"
+    },
+    {
+      "date": "2026-10-09",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’amendement I-CF1386 vise à créer un taux réduit d’accise sur l’électricité, aligné sur celui du gaz, lorsqu’elle sert à produire de la chaleur nécessaire à la croissance végétale sous serre. Il s’agit de soutenir l’agriculture et l’électrification des pratiques agricoles. La mesure proposée aurait une faible incidence sur les recettes de l’État puisqu’elle transpose à l’électricité le taux réduit appliqué au gaz.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627011_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

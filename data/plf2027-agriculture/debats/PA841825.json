@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:54:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 8 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+      },
+      {
+        "label": "Première séance du mardi 16 juin 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/groupes-action.json et data/plf2027-agriculture/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA841825",
+  "debats": [
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Notre agriculture est ébranlée par dix années d’une gestion aveugle, sans cap, sans volonté, sans dynamisme ni considération pour notre modèle agricole, si bien que, pour la première fois depuis cinquante ans, la balance commerciale de ce secteur est déficitaire. C’est une immense défaite pour la Macronie et, surtout, un drame historique pour ce qui fut très longtemps un pilier de l’agriculture française.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cette situation altère directement nos capacités de production et, surtout, le moral et l’engagement de nos agriculteurs, dont la dévotion et le courage ne trouvent aucun écho dans les politiques macronistes, menées avec mollesse et félonie.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Qu’on en juge : un projet de loi d’orientation agricole sans vision claire, un texte visant à lever les entraves à l’exercice du métier d’agriculteur édulcoré, un projet de loi dit « d’urgence agricole » qui n’en a que le nom, puisque la moindre mesure visant à alléger les contraintes imposées par Bruxelles a été emportée par la vindicte des adeptes de la décroissance et, enfin, un texte dont l’examen est à venir et qui a pour objectif affirmé…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Après le plan de 1 milliard d’euros proposé par la ministre de l’agriculture pour tenter de remédier aux conséquences d’aléas climatiques amenés à se multiplier, dont on peine à percevoir la mise en œuvre réelle, la copie que le Gouvernement nous présente en cette dernière année du macronisme prévoit une baisse de 150 millions d’euros, si l’on neutralise les suppressions, les transferts de programmes et d’actions afférents.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Nos agriculteurs souffrent d’une rémunération spoliée et insuffisante, subissant concurrence déloyale, surnormalisation, surtransposition et charges d’exploitation insoutenables. À ces nombreuses difficultés s’ajoutent les épizooties et les incidents climatiques, dont la sécheresse de cet été.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Mon amendement vise à prévoir une enveloppe spécifique en vue de la prise en charge des intérêts de prêt, un décalage de paiement du capital ou toute autre structuration utile, afin de permettre aux agriculteurs de retrouver un équilibre financier acceptable dans les années à venir.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’Agence bio, notamment, n’a pu montrer son efficacité pour aider une filière pourtant très intéressante et appelée à se développer bien davantage. Elle ne gère qu’une petite partie du financement public consacré à l’agriculture bio et ses missions ne se justifient plus. Nous proposons donc de supprimer sa subvention, afin de réaffecter les crédits à l’autorité ministérielle qui reprendra ses missions.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-06-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Notre souveraineté alimentaire est en danger. Après les difficultés majeures rencontrées par nos agriculteurs, auxquelles le projet de loi d’urgence ne répondra que très partiellement, ce sont désormais nos pêcheurs qui font face à une situation très préoccupante.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

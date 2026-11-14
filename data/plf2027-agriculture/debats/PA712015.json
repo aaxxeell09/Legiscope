@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:54:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 8 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+      },
+      {
+        "label": "Première séance du mercredi 27 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+      },
+      {
+        "label": "Première séance du mardi 19 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/groupes-action.json et data/plf2027-agriculture/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA712015",
+  "debats": [
+    {
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Monsieur le ministre, vous avez raison, on ne peut pas attaquer les agents publics, les fonctionnaires de la République. De la même manière, vous devez également demander aux agents de ne pas attaquer les agriculteurs et de ne pas les vilipender sur les ondes publiques en les comparant à des dealers, comme un fonctionnaire de l’OFB s’est permis de le faire en 2025. De telles pratiques doivent également être dénoncées.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+    },
+    {
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’année 2026 est une période exceptionnelle. Cela s’est vérifié et le gouvernement a dû faire un effort substantiel : la ministre de l’agriculture a présenté un plan de 1 milliard d’euros, certes insuffisant, mais qui a le mérite d’exister. La RPD, c’est près de 250 millions d’euros, mais il y a d’autres dispositifs.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cette situation rappelle la nécessité de s’assurer – du moins pour ceux qui le peuvent, car, vous l’avez dit, nombre de nos agriculteurs sont à l’os. Il suffit d’aller dans les champs de Picardie et du centre de la France pour le comprendre : les betteraves, qui pourrissent sur place en raison de l’attaque de ravageurs, ne seront pas valorisées, et les champs de colza semés en septembre ne lèvent pas.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Reste que, comme vous, je déplore la suppression des cent millions d’euros de crédits destinés aux régions pour accompagner l’installation des jeunes agriculteurs, alors que deux à trois fermes cessent leur activité tous les jours en France. Nous devons nous battre pour avoir un budget à la hauteur.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "S’agissant de l’indice de production des prairies, nous avons fait un bout de chemin. La loi d’août 2025 visant à lever les contraintes à l’exercice du métier d’agriculteur, dite loi « Duplomb », comprend plusieurs avancées qui ont été occultées par un autre sujet.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Mon amendement, que je ne suis pas seul à présenter et qui est porté par la chambre d’agriculture, est modeste (1,7 million d’euros) et il concerne le dispositif d’aide au redressement des exploitations agricoles en difficulté (Area). Je souligne que, si le destin des fonds que nous créons sans le Gouvernement est prévisible, il y a de fortes chances que ceux qui existent déjà demeurent lorsque nous nous mobilisons tous pour les abonder.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il ne faut pas opposer les modèles entre eux. Notre pays a besoin à la fois de l’agriculture conventionnelle, de la bio et de celle en conversion : elles répondent aux besoins de marchés différents, qui ont chacun leur équilibre économique. Tous ont besoin d’être soutenus.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’article 77 supprime la dotation annuelle de 100 millions d’euros versée aux régions pour accompagner la mise en œuvre des aides du Feader, alors qu’elle était programmée pour être reconduite jusqu’en 2027.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Nous sommes plusieurs groupes à demander la suppression de l’article, pour rétablir ces aides et obliger le Gouvernement à respecter ses engagements. Ces aides favorisent les investissements non surfaciques, en particulier dans les Cuma.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le choix de supprimer cette dotation est d’autant plus incroyable que, pour de telles aides, le montant versé par l’Europe dépend directement de celui versé par la région – si la région investit 1 euro, l’Europe investit également 1 euro. Il serait déraisonnable de se priver ainsi de fonds européens, à l’heure où nous cherchons des aides financières partout !",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-05-27",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Car il en faut de la détermination, aux paysans comme lui, pour simplement faire leur métier. Si vous soutenez l’élevage français, si vous soutenez l’agriculture, retirez vos amendements ! Sinon, mon avis sera défavorable.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+    },
+    {
+      "date": "2026-05-27",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’article L. 1 A du code rural et de la pêche maritime, qui affirme cet intérêt général majeur et auquel l’amendement fait référence, a été intégré à la Losarga, la loi d’orientation pour la souveraineté en matière agricole et le renouvellement des générations en agriculture. Il s’applique de plein droit à toutes les activités agricoles, y compris à l’élevage.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+    },
+    {
+      "date": "2026-05-19",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Tel est mon credo et je n’y dérogerai pas. C’est aussi pour cela que j’ai peu goûté la lettre adressée, le 7 mai, aux agriculteurs par M. le premier ministre. S’il est évidemment libre de s’exprimer sur ce texte, il ne lui appartient pas de dicter au Parlement les sujets dont il faudrait débattre et ceux qu’il conviendrait d’éviter.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+    },
+    {
+      "date": "2026-05-19",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Personnellement, je n’ai jamais attendu qu’un sujet devienne électoralement rentable pour défendre les agriculteurs français ! Notre responsabilité est de produire du droit utile à une agriculture fragilisée par les distorsions de concurrence, l’instabilité réglementaire et le décrochage de certaines filières.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+    },
+    {
+      "date": "2026-05-19",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il nous appartient désormais d’en être collectivement dignes. C’est pourquoi je demande à chacun d’entre nous de dépasser les postures, de regarder lucidement l’état de notre agriculture et d’apporter sa pierre à cette ambition collective. Cette responsabilité nous oblige.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

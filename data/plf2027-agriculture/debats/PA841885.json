@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:54:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 9 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/groupes-action.json et data/plf2027-agriculture/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA841885",
+  "debats": [
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Notre amendement II-CF958 vise également à soutenir l’installation de nouveaux agriculteurs. En dix ans, 108 000 exploitants agricoles et une ferme sur cinq ont disparu.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’agriculture représente 61 % de l’eau consommée en France mais celle-ci sert à irriguer seulement 7 % de la surface agricole utile. Son utilisation est orientée en grande partie vers l’exportation et l’alimentation animale.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Nous devons accompagner le changement de notre agriculture.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’idée est, encore une fois, d’ouvrir ces terres au pastoralisme – si ce n’est pas de l’agriculture, je ne sais pas ce que c’est.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il tend à exonérer d’impôt les indemnités versées aux agriculteurs pour compenser les pertes de récoltes liées aux vagues de chaleur, à la sécheresse et aux incendies survenus en 2026. Ces indemnités ne constituent pas un revenu supplémentaire mais compensent simplement une perte subie.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Notre objectif est donc de garantir que chaque euro versé au titre de l’indemnisation bénéficie réellement aux agricultrices et agriculteurs touchés, notamment à celles et ceux qui disposent des marges de manœuvre financières les plus limitées.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627009_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

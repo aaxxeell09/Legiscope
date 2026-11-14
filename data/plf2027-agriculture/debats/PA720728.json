@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:54:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/groupes-action.json et data/plf2027-agriculture/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA720728",
+  "debats": [
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Potier – dans la fiscalité, notamment par l’adaptation du pacte Dutreil aux transmissions agricoles. Face à la multiplication des micro-exploitations, mieux vaudrait veiller à ce que le foncier revienne aux vrais agriculteurs plutôt que de disperser les crédits sans efficacité.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Celui qui cède une entreprise agricole ne transmet pas que des terres, mais aussi du capital d’exploitation. Nous ne voyons donc pas pourquoi les agriculteurs ne bénéficieraient pas eux aussi du pacte Papin.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

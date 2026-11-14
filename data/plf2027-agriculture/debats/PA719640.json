@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:54:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du mardi 03 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 21 du 21/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/groupes-action.json et data/plf2027-agriculture/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA719640",
+  "debats": [
+    {
+      "date": "2026-11-03",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Pour les agriculteurs et les viticulteurs, les marges ainsi dégagées peuvent contribuer au maintien de l’activité. Concrètement, à base et à taux d’imposition constants, une cotisation de 1 000 euros avant exonération serait ramenée à 600 euros, au lieu de 700 euros : cela représente 100 euros d’allégement supplémentaire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Nous proposons d’abonder la mission de 30 millions pour élargir à d’autres territoires le modèle du plan Agriculture Méditerranée qui, lancé en juillet 2024, vise à accompagner l’adaptation des filières agricoles au changement climatique. Par ce plan, l’État labellise des territoires dans lesquels les acteurs construisent ensemble un projet de filière.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La méthode ayant fait ses preuves, il faut l’étendre. Nous devons donner aux agriculteurs les moyens de s’adapter sans les laisser assumer seuls les risques de cette transformation. Cela suppose d’associer les exploitants, les coopératives et les entreprises d’un même territoire pour diversifier les productions et construire des filières économiques viables.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il s’agit d’augmenter de 5 millions les crédits du plan Agriculture Méditerranée, dont je rappelle qu’il a conduit à la labellisation, en Occitanie, de 28 aires agricoles de résilience climatique et au lancement d’un appel à projets doté de 7,5 millions d’euros.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Selon un bilan provisoire du ministère de l’agriculture, des pertes de rendement d’au moins 50 % ont été constatées au cours de l’été dans plusieurs territoires. Or on ne peut pas demander aux agriculteurs de s’adapter sans leur donner les moyens de prendre des risques.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Puisque ceux de nos amendements qui portaient sur la forêt ont été déclarés irrecevables, je tiens à indiquer en préambule que le choix du gouvernement de transférer ses crédits de la mission Agriculture vers la mission Écologie nous semble être une erreur. En effet, la forêt française est une forêt de production ; détenue aux trois quarts par des propriétaires privés, elle est le socle d’une filière qui fait vivre nos territoires ruraux.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Face à la multiplication des événements climatiques extrêmes, nous devons renforcer la prévention et accompagner concrètement les agriculteurs dans l’adaptation de leurs exploitations. Mieux vaut investir en amont pour protéger les productions plutôt que de réparer les dégâts.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il serait incohérent de supprimer un levier majeur de modernisation des exploitations. Il est essentiel de renouveler les générations et d’assurer la transition écologique de l’agriculture.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-21",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Protéger les abeilles, ce n’est pas choisir entre biodiversité et agriculture, c’est défendre les deux. Préserver les pollinisateurs, c’est aussi protéger les récoltes, les revenus des agriculteurs et notre souveraineté alimentaire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:54:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du mardi 03 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 8 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+      },
+      {
+        "label": "Première séance du mercredi 27 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+      },
+      {
+        "label": "Première séance du mardi 19 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/groupes-action.json et data/plf2027-agriculture/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA794354",
+  "debats": [
+    {
+      "date": "2026-11-03",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "À cette réalité, vous apportez toujours la même réponse : faire payer les Français, les retraités, les familles, les automobilistes, les entrepreneurs, les agriculteurs et tous ceux qui travaillent et font vivre nos territoires.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-03-novembre-2026"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le Gouvernement propose de doter la mission Agriculture et alimentation de 3,5 milliards d’euros en autorisations d’engagement (AE) et de 3,6 milliards en crédits de paiement (CP), soit une baisse de 14 % pour les premières et de 13 % pour les seconds. Cette baisse intervient après une diminution, l’an dernier, de 11,6 % des autorisations d’engagement et de 5 % des crédits de paiement.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "À périmètre constant, les crédits de la mission Agriculture et alimentation diminuent de 3,8 % en autorisations d’engagement et de 3,3 % en crédits de paiement. La baisse des crédits dédiés à l’agriculture est donc bien réelle, alors que nos agriculteurs ont besoin de la puissance publique pour affronter une crise sans précédent.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Au total, près de 25 milliards d’euros seront consacrés à l’agriculture en 2027, si l’on prend en compte les crédits de l’enseignement agricole et du Casdar, 9,4 milliards de financements européens et environ 9 milliards d’allègements sociaux et fiscaux. Toutefois, le budget que nous examinons, lui, est de 4 milliards d’euros en incluant la forêt.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Sur le plan fiscal, le projet de loi de finances (PLF) pour 2027 s’inscrit largement dans la continuité des exercices précédents. Les principaux dispositifs fiscaux sont maintenus, qu’il s’agisse de la déduction pour épargne de précaution, des mesures destinées à faciliter la transmission des exploitations et l’installation ou du crédit d’impôt en faveur de l’agriculture biologique.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La ministre a présenté le budget de l’agriculture pour 2027 en l’illustrant par trois mots : protéger, produire, transmettre.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La dotation du fonds national de gestion des risques en agriculture (FNGRA), portée à 156 millions, ne représente qu’environ un quart du total. Le reste provient d’une taxe sur les contrats d’assurance, dont le plafond passe de 120 à 170 millions, à la charge des assurés, et du Fonds européen agricole pour le développement rural (Feader), à hauteur de 279 millions.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Or, les crédits de l’action 23 passent de 105 à 5 millions d’euros, soit une baisse de 95 % ! Le ministère l’explique par la suppression, à l’article 77, de la dotation annuelle de 100 millions d’euros versée aux régions pour le transfert des aides non surfaciques du Feader. Ce n’est pas acceptable, surtout quand il s’agit d’un engagement pris par l’État dans le cadre d’une programmation pluriannuelle.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La planification écologique est présentée comme bénéficiant d’une enveloppe de 106 millions d’euros. Les documents budgétaires font apparaître, pour l’action 29 du programme 149, 41 millions en autorisations d’engagement et 69 millions en crédits de paiement, contre 1 milliard d’euros dans la loi de finances pour 2024 !",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "En résumé, ce budget préserve certains dispositifs, mais il repose sur des annonces qui sont en décalage avec la réalité du projet de loi de finances : le budget de l’agriculture sera de nouveau en recul en 2027. Cette fragilité apparaît avec une particulière clarté s’agissant de l’indemnisation des pertes climatiques, qui fait l’objet du volet thématique de mon avis budgétaire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La réforme de la loi du 2 mars 2022 d’orientation relative à une meilleure diffusion de l’assurance-récolte en agriculture et portant réforme des outils de gestion des risques climatiques en agriculture est utile, mais incomplète.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le système prévoit, par ailleurs, une différence de traitement qui me paraît de plus en plus difficile à justifier. Pour une perte identique, un agriculteur assuré est compensé intégralement au-delà du seuil de déclenchement alors qu’un exploitant non assuré voit son taux d’indemnisation diminuer chaque année : pour les grandes cultures, les légumes et la vigne, il passe de 35 % en 2025 à 28 % cette année, puis 21 % en 2027 et 14 % en 2028.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Fin juillet, selon les assureurs, seulement 10 % à 30 % des éleveurs pouvaient déclencher une indemnisation. Le recours instauré par la loi du 11 août 2025 visant à lever les contraintes à l’exercice du métier d’agriculteur est peu effectif : dix comités départementaux d’expertise se sont réunis au titre de la campagne 2025 et des réclamations restent sans suite.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Premièrement, il faut faire de l’indemnité de solidarité nationale un véritable dispositif universel. Pour les aléas exceptionnels, tous les agriculteurs, assurés ou non, seraient indemnisés à hauteur de 90 % des pertes excédant 30 % de la récolte de référence. L’assurance privée garderait son rôle pour les risques plus fréquents.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La politique de gestion des risques ne peut plus se contenter de diffuser l’assurance ; elle doit garantir à chaque agriculteur une protection lisible, équitable et effective face aux catastrophes climatiques. C’est la condition de la résilience de notre agriculture et de notre souveraineté alimentaire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’année a été très difficile pour nos agriculteurs, notamment en raison d’une sécheresse sans précédent. S’il y a un budget qui ne devait pas diminuer, c’est bien celui de l’agriculture.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "En ce qui concerne l’ISN, nous avons deux visions très différentes. Nous avons interrogé plusieurs filières : si de nombreux agriculteurs ne s’assurent pas, ce n’est pas faute de le vouloir, mais parce qu’ils n’ont pas les moyens de payer les cotisations, trop élevées. Je propose d’ailleurs qu’ils n’aient plus à avancer la part subventionnée de leur prime d’assurance, qui ne leur est remboursée que plusieurs mois plus tard.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "En ce qui concerne l’assurance, nos auditions des différentes filières montrent que le nombre d’agriculteurs assurés stagne, voire diminue. Depuis des années, l’agriculture est dans une situation délicate et les agriculteurs n’ont plus de trésorerie pour s’assurer.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je comprends que vous saluiez les dispositifs maintenus mais, alors que les années de crise se succèdent et que 2026 a été particulièrement difficile, diminuer les crédits alloués à l’agriculture est un très mauvais signal. Il faut dire les choses : l’agriculture va très mal et son budget est en baisse.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Les agriculteurs sont conscients de l’état des finances publiques, certes, mais sont-ils d’accord avec les choix qui sont faits ? L’agriculture n’est-elle pas toujours en berne par rapport aux autres filières ?",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Par ailleurs, ce n’est pas que les agriculteurs ne veulent pas s’assurer, mais qu’ils ne le peuvent pas faute de trésorerie ; d’où l’intérêt de proposer le paiement de la cotisation nette de subvention : pourquoi leur imposer d’avancer l’intégralité de la prime, si une partie leur est ensuite remboursée et alors qu’ils ne disposent pas de la trésorerie nécessaire ?",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Là encore, nous partageons plusieurs constats, notamment la nécessité, qui me semble faire consensus dans la commission, de supprimer l’article 77. Nous reviendrons sur les autres sujets lors de l’examen des amendements.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je partage totalement votre avis, la baisse des crédits de la mission Agriculture et alimentation n’est pas acceptable. Vous soulignez, à juste titre, l’important recul des crédits consacrés à la planification écologique, à hauteur de 70 % cette année, mais il convient de rappeler qu’une partie de ces crédits a été transférée vers le programme Forêt nouvellement créé.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Son fonctionnement est devenu particulièrement restrictif : d’une part, son seuil de déclenchement varie selon les filières – il est de 30 % pour l’arboriculture ou les prairies, contre 50 % pour les grandes cultures, les légumes ou la viticulture ; de l’autre, le niveau d’indemnisation varie selon que l’agriculteur a souscrit ou non une assurance, ce qui crée des écarts très importants.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Afin de rendre cette réforme effective, je propose d’abonder de 500 millions d’euros l’action 22 du programme 149, Compétitivité et durabilité de l’agriculture et de l’agroalimentaire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il est proposé d’instaurer une aide exceptionnelle pour les exploitations agricoles qui ont subi en 2026 des pertes importantes, c'est-à-dire supérieures à 30 % de la production, sans atteindre les seuils requis pour bénéficier de l’ISN. Nous proposons d’abonder le programme 149, Compétitivité et durabilité de l’agriculture et de l’agroalimentaire, à hauteur de 50 millions d’euros.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Ces deux amendements visent à créer un fonds de garantie, idée à laquelle je souscris pleinement sur le fond, car la trésorerie des exploitations est dans un état dramatique. Toutefois, les garanties apportées par l’État relèvent du programme 114 de la mission Engagements financiers de l’État et ces amendements ne trouvent donc pas leur place dans la mission Agriculture et alimentation. J’en propose donc le retrait.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’amendement prévient des défauts de paiement et des cessations d’activité évitables. Il complète le dispositif de garantie existant, qui ne règle que le réaménagement des dettes par un soutien direct au coût de la dette, au moment où concurrence déloyale et charges élevées fragilisent les revenus des agriculteurs.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il est donc nécessaire de renforcer l’Area, dans le cadre de l’action 22, Gestion des crises et des aléas de la production agricole, du programme 149, Compétitivité et durabilité de l’agriculture et de l’agroalimentaire, afin qu’elle puisse pleinement remplir sa mission d’accompagnement des agriculteurs vers un redressement durable de leurs exploitations. Avis évidemment favorable aux amendements identiques.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La sécheresse de 2026 a une nouvelle fois rappelé la vulnérabilité de notre agriculture face au manque d’eau. Elle a surtout mis en évidence le retard de la France en matière de stockage, alors que nos capacités demeurent inférieures à celles de plusieurs de nos voisins européens, notamment l’Espagne.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il s’agit d’un investissement indispensable pour renforcer la résilience de l’exploitation face aux changements climatiques et préserver à terme notre souveraineté alimentaire. À cette fin, l’amendement prévoit un abondement de 69 millions d’euros en autorisations d’engagement et en crédits de paiement sur l’action 24, Gestion équilibrée et durable des territoires, du programme 149.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Vous proposez de porter l’écorégime bio de 110 à 145 euros par hectare et de consacrer 4,2 millions supplémentaires à l’accompagnement et à la formation des agriculteurs bio, en augmentant de 54,2 millions les crédits de l’action 24.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’écorégime relève du premier pilier de la politique agricole commune (PAC), financé par le Fonds européen agricole de garantie (Feaga), et non de l’action 24. De plus, la filière bio est soutenue par ailleurs, notamment avec le crédit d’impôt en faveur de l’agriculture biologique qui a été maintenu, pour un coût de 191 millions d’euros.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "J’émets un avis favorable sur l’amendement II-CE44, qui répond à un problème d’efficacité de l’action publique. Le rapport d’enquête du Sénat sur les missions des agences, opérateurs et organismes consultatifs de l’État, publié en juillet 2025, a recommandé de supprimer le groupement d’intérêt public (GIP) que constitue l’Agence bio et de ramener ses missions dans le sein du ministère chargé de l’agriculture.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Vous proposez de créer un programme doté de 100 millions pour accompagner l’installation d’au moins vingt mille agriculteurs en 2027.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Vous proposez de créer un fonds de 100 millions pour l’égalité dans le secteur agricole. Toutefois, certains des problèmes que vous évoquez ne relèvent pas de cette mission, comme le statut et la retraite des agricultrices, l’accès au foncier et les services de remplacement. De plus, les solutions dépendent de mesures de droit commun, non d’un fonds budgétaire nouveau.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je partage votre inquiétude face à la financiarisation du foncier agricole, aux montages sociétaires et à l’arrivée de fonds spéculatifs, qui menacent l’installation des jeunes agriculteurs. Le bureau de notre commission a autorisé le lancement d’une mission d’information, dont vous êtes rapporteur, sur l’avenir, la gestion et la gouvernance du foncier agricole.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je partage votre préoccupation. Les Cuma réduisent les charges des agriculteurs par l’investissement collectif et continuent de rembourser leurs emprunts quand leurs adhérents paient avec retard. Toutefois, l’extension de garantie d’État que vous demandez relève de l’article 71 et du programme 114, non d’une ligne de crédit de la mission Agriculture.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’amendement vise à renforcer le soutien apporté aux Cuma, lesquelles jouent un rôle essentiel dans la modernisation et la résilience des exploitations. En permettant aux agriculteurs de mutualiser leurs équipements, les Cuma contribuent à réduire les coûts d’investissement, à faciliter l’accès à du matériel plus performant et à préserver la capacité d’équipement des exploitations, notamment des plus petites.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le présent amendement vise à augmenter de 500 000 euros en autorisations d’engagement (AE) et en crédits de paiement (CP) les crédits dédiés au DiNA Cuma au sein du programme 149, soit une hausse de 50 % de l’enveloppe, afin d’accroître les capacités d’investissement collectif des Cuma et de permettre à davantage d’agriculteurs d’accéder à des équipements adaptés aux enjeux économiques, climatiques et environnementaux.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Votre amendement vise à créer un programme de 189 millions pour rétablir les crédits de la planification écologique en agriculture, notamment le plan Haies et le plan Protéines. Vous indiquez, dans l’exposé sommaire, qu’il reste moins de 69 millions en CP sur le programme 149.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’amendement II-CE87 prévoit 75 millions pour les Maec. Je comprends votre préoccupation : un agriculteur qui a signé un contrat Maec et respecte son cahier des charges doit être payé. Le projet de loi de finances pour 2027 prévoit 45 millions en AE et 79,6 millions en CP pour les Maec et les aides bio.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Ces amendements visent à augmenter les crédits de l’action 09 du programme 206, dans le cadre de la planification écologique. Mon discours sur l’utilisation des produits phytosanitaires sera toujours le même : nos agriculteurs doivent avoir accès aux produits phytosanitaires reconnus par les autorités compétentes s’ils sont nécessaires pour produire, mais l’utilisation de ces produits n’a jamais été et ne sera jamais une fin en soi.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La raison donnée par le ministère est que le financement du Parsada, qui est au cœur de la stratégie Écophyto 2030, sera notamment assuré, en 2027, par le compte d’affectation spéciale (CAS) Développement agricole et rural, qui sera doté de 159 millions, dont plus de 90 millions pour le programme 776 Recherche appliquée et innovation en agriculture.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Vos amendements visent à financer, à hauteur de 20 millions ou de 70 millions, un conseil agronomique global et universel pour l’ensemble des agriculteurs, sous la responsabilité des chambres d’agriculture. La loi d’urgence pour la protection et la souveraineté agricoles du 18 août 2026 vise à engager une réforme du système sanitaire agricole dont les modalités, notamment le financement de la prévention, seront précisées par ordonnance.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cependant, la recherche relève de l’Agence nationale de sécurité sanitaire de l’alimentation, de l’environnement et du travail (Anses), de l’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (Inrae) et du Centre de coopération internationale en recherche agronomique pour le développement (Cirad), dont les moyens sont inscrits dans d’autres programmes.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Divers dispositifs existent déjà pour atteindre l’objectif de structuration de filières locales et durables, que nous partageons avec vous : le fonds Avenir bio, l’aide à la conversion à l’agriculture biologique, les Maec, le plan Protéines végétales, le fonds pour la souveraineté agroalimentaire ou les projets d’avenir agricole.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’article 77 supprime la dotation annuelle versée aux régions pour financer les aides non surfaciques du Feader. Cette mesure budgétaire menace des dispositifs essentiels, tels que les aides à l’installation de jeunes agriculteurs, ainsi que les investissements nécessaires à la modernisation des exploitations et des coopératives.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "En outre, avec cette coupe budgétaire, l’État revient sur l’engagement qu’il avait pris de verser ces aides jusqu’à la fin de la programmation 2023-2027 de la politique agricole commune. Les régions ont construit leur budget en comptant sur ces crédits.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "En outre, en réduisant la contribution de l'État, le Gouvernement risque de diminuer les crédits européens que nous pouvons mobiliser au bénéfice des agriculteurs français. Le manque à gagner lié à cette mesure sera donc nettement supérieur à 100 millions d’euros.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La commission adopte les amendements, exprimant ainsi un avis favorable à la suppression de l’article 77.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "J’émets un avis favorable à l’adoption des crédits de la mission, tels que nous les avons modifiés.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-05-27",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Bien évidemment, nous voterons contre ces amendements de suppression défendus par la gauche. Comme d’habitude, votre volonté est de freiner toute démarche de simplification en faveur de nos agriculteurs.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+    },
+    {
+      "date": "2026-05-27",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "…alors que celui-ci vise précisément à éviter la surtransposition à nos agriculteurs. Un peu de cohérence !",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+    },
+    {
+      "date": "2026-05-27",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cet alinéa est le seul qui ait l’intérêt d’éviter les surtranspositions à nos agriculteurs. Sans lui, le texte ne rime à rien et nous ne le soutiendrons pas !",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+    },
+    {
+      "date": "2026-05-19",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cette garantie est indispensable pour empêcher de nouvelles surtranspositions. Le Parlement et les filières agricoles ont besoin de visibilité, et votre proposition de supprimer l’alinéa 10 n’est pas acceptable. Continuer à imposer à nos éleveurs des normes plus lourdes que partout ailleurs, c’est organiser le décrochage de notre élevage et accélérer notre dépendance aux importations.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

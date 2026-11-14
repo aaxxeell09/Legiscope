@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:54:31+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+      },
+      {
+        "label": "Première séance du mercredi 27 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+      },
+      {
+        "label": "Première séance du mardi 19 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/groupes-action.json et data/plf2027-agriculture/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA332228",
+  "debats": [
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il faut mettre les choses en perspective : les 9 milliards de la politique agricole commune (PAC) restent le principal soutien à l’agriculture en France et les agriculteurs, comme les autres, sont conscients de la situation des finances publiques dans notre pays.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "J’ai travaillé avec notre collègue David Taupiac sur le dispositif assurantiel : conscients de l’urgence et de la nécessité de s’assurer, les agriculteurs vont y venir ; mais le dispositif peut être amélioré : le recours à l’indice d’Airbus pour mesurer la pousse des prairies à partir de données satellitaires est contesté par un certain nombre d’agriculteurs, qui constatent des contradictions avec ce qu’ils observent sur le terrain.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "J’aimerais qu’un jour, on se penche sur les mesures d’économies possibles au ministère de l’agriculture. En matière de contrôle, on pourrait peut-être rapprocher les directions départementales des territoires (DDT), l’Agence de services et de paiement et certains services des directions départementales de la protection des populations (DDPP), notamment les services vétérinaires.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Quant aux agriculteurs, ils attendent une politique agricole commune volontariste – la programmation actuelle touche à sa fin, la suivante démarrera en 2028 – et une amélioration du dispositif assurantiel. La ministre a annoncé un plan de plus de 1 milliard pour répondre aux conséquences de l’été 2026.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-05-27",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Outre l’enjeu du renouvellement des générations en agriculture, la modernisation des bâtiments d’élevage – qu’il s’agisse de porcs, de poules pondeuses ou de volaille de chair – répond à de nombreuses questions : bien-être animal, environnement, mais aussi transition énergétique. Madame la ministre de l’agriculture, grâce au bon projet de loi que vous nous présentez, notamment aux projets d’avenir agricole, l’élevage va concourir à leur solution.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+    },
+    {
+      "date": "2026-05-27",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Aujourd’hui, il y a urgence pour l’agriculture, il y a urgence pour la souveraineté alimentaire. Je soutiens le gouvernement dans sa volonté de maintenir les normes environnementales, de simplifier les procédures administratives et de fluidifier les circuits de décision.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+    },
+    {
+      "date": "2026-05-19",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La position du groupe Horizons & indépendants, je vous le dis tout de suite, est la suivante : nous vous aiderons, madame Genevard. Non seulement parce que nous vous apprécions beaucoup, mais aussi parce que nous voulons soutenir les agricultrices et les agriculteurs de France. En fin de compte, nous souhaitons faire de ce projet de loi d’urgence pour la protection et la souveraineté agricoles un texte utile.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+    },
+    {
+      "date": "2026-05-19",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "D’abord, pour lutter contre les vols, les dégradations et les intrusions dont sont victimes les agriculteurs, le texte propose des bonnes mesures – c’est pourquoi je le juge utile. Ensuite, s’agissant des négociations commerciales, les organisations de producteurs sont consolidées et le message est passé aux industriels et au secteur de la distribution que les relations commerciales devaient être équilibrées.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-19-mai-2026"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}
