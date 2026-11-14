@@ -64,7 +64,9 @@ export function sortUnifie(a: AmendementBrut, dateReference: string | null): { s
   else [sort, libelle] = ["en_attente", etat || brut || "inconnu"];
   // Rejeu : date_reference est lue comme le matin de ce jour (décision du 14 novembre, 14 h 57).
   // Un sort daté de ce jour-là ou après n'est pas encore connu : en_attente, sans révéler le sort réel.
-  if (dateReference && a.date_sort && a.date_sort >= dateReference && sort !== "en_attente") {
+  // Même règle (P0, 15 h 50) quand aucune date de sort n'est publiée mais que le dépôt date de ce jour-là ou après.
+  const sortDuJourOuApres = a.date_sort ? a.date_sort >= dateReference! : !!(a.date_depot && a.date_depot >= dateReference!);
+  if (dateReference && sortDuJourOuApres && sort !== "en_attente") {
     return { sort: "en_attente", libelle: `En attente au matin du ${dateReference}`, en_attente_par_rejeu: true };
   }
   return { sort, libelle, en_attente_par_rejeu: false };
