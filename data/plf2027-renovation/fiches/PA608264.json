@@ -1,0 +1,1828 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:03:02.892Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-renovation"
+  },
+  "depute_id": "PA608264",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de la justice",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national pénitentiaire – FO Direction",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des directeurs pénitentiaires – CFDT",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "UFAP UNSa Justice",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CGT pénitentiaire",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "FO Justice",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SNEPAP FSU",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat Pénitentiaire des Surveillants non gradés (SPS)",
+          "type": "syndicat",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVII.html",
+      "date": "2026-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction interministérielle de la transformation publique (DITP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE) du ministère de l’Action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’administration et de la fonction publique (DGAFP) ministère de l’Action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des outre-mer (DGOM) du ministère des Outre-mer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Préfecture de Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Rectorat de Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe des instituts du service public (G-ISP)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut régional d’administration de Lille",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de la Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université des Antilles – Guadeloupe",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Guyane",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Mayotte",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des anciens élèves des IRA (AAEIRA)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université Paris 1 Panthéon-Sorbonne",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVIII.html",
+      "date": "2026-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Club des juristes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Toulouse Capitole",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université Sorbonne Nouvelle – Paris III",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Strasbourg",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École de droit de Sciences Po Paris",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000019",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 35.",
+      "sort": "adopte",
+      "travaille_avec": [
+        "l'Association des maires de France et des présidents d'intercommunalité"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000019"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000832",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – L’article 278‑0 bis A du code général des impôts est ainsi modifié : 1° Après le I, il est inséré un I bis ainsi rédigé : « I bis . – Relèvent du taux…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000832"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002037",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – Au premier alinéa de l’article L. 213‑247 du code des impositions sur les biens et services, dans sa rédaction résultant de l’ordonnance n°2026‑671 du 27…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002037"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002625",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – L’article L. 213‑247 du code des impositions sur les biens et services , dans sa rédaction résultant de l’ordonnance n° 2026‑671 du 27 juillet 2026, est…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002625"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002631",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 7 : I. – Le 1° du 2 du I de l’article 244 quater U du code général des impôts est complété par un h ainsi rédigé : « h ) Travaux d’installation d’équipements…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002631"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002812",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – Le code d’imposition des biens et services est ainsi modifié : 1° Après la quatrième ligne du tableau du second alinéa de l’article L. 213‑246, est inséré…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002812"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003460",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 35 : Compléter l’alinéa 3 par la phrase suivante : « Cet arrêté comprend les dépenses relatives aux réseaux d’eau potable, les dépenses de rénovation énergétique…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003460"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002081",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe socialistes et apparentés vise à abonder de 100 millions d’euros le fonds de rénovation énergétique du parc social (FREPS). Le PLF…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002081"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002086",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe socialistes et apparentés vise a augmenter de 10 millions d’euros les crédits dédiés à l’humanisation des centres d’hébergement. À la…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002086"
+    },
+    {
+      "id": "AMANR5L17PO59051B3210P2D1N000315",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : La transition écologique impose aux collectivités territoriales un effort de transformation rapide de leur parc bâti, en particulier des bâtiments scolaires…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59051B3210P2D1N000315"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002616",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement des députés socialistes et apparentés vise à rétablir la dotation de l’Agence nationale de l’habitat (Anah) au niveau de 2026, soit 1,45…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002616"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002617",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement des députés socialistes et apparentés vise à rétablir la dotation de l’Agence nationale de l’habitat (Anah) au niveau de 2025, soit 2 milliards…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002617"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002618",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement des députés socialistes et apparentés vise à rétablir les crédits accordés à l'ADEME. Ponctionnés de 330 100 000 euros par rapport au budget…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002618"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002619",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à rétablir les crédits du fonds économie circulaire de l’ADEME qui constitue un outil majeur pour…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002619"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002621",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe socialistes et apparentés vise à garantir le maintien les moyens humains de l'ADEME, amputés de 16 ETPT dans le présent budget. Cette…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002621"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002622",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à renforcer le fonds économie circulaire de l’ADEME qui constitue un outil majeur pour atteindre les…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002622"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N003018",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à entamer le financement d’un plan pluriannuel de rénovation thermique des bâtiments scolaires en abondant de 500 000 millions d’euros les…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N003018"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "784718033",
+      "nom": "SYND FEDERATION  FRANCAISE DU BATIMENT GRAND PARIS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784718033",
+      "objet": "Prévoir un dispositif équivalent au crédit d’impôt en faveur de la rénovation énergétique des locaux tertiaires des TPE/PME",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "450089107",
+      "nom": "ANTHENOR PUBLIC AFFAIRS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=450089107",
+      "objet": "PPL Clarifier les obligations de rénovation énergétique des logements : maintenir les objectifs de rénovation performante des bâtiments à horizon 2050",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "775682107",
+      "nom": "CONFEDERAT ARTISANAT PETITE ENT BATIMENT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775682107",
+      "objet": "Instaurer, dans le cadre du PLF 2025, une exonération de DMTG pour les donations intra-familialres visant les travaux de construction ou de rénovation énergétique du logement principal.",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance",
+        "rencontre",
+        "campagne publique",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "901812255",
+      "nom": "EMMA GATEAU & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=901812255",
+      "objet": "Reconnaitre l'identification systématique des logements par cadastre et PDL pour chaque opération de rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "353156268",
+      "nom": "SYND NAT FABRIC LAINES MINERALES MANUFAC",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=353156268",
+      "objet": "PPL Clarifier les obligations de rénovation énergétique des logements : maintenir les objectifs de rénovation performante des bâtiments à horizon 2050 ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "341033728",
+      "nom": "KNAUF INSULATION",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=341033728",
+      "objet": "Sensibiliser à la nécessité d'une politique de rénovation énergétique ambitieuse pour répondre aux défis sociaux, énergétiques et sanitaires",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "387759756",
+      "nom": "GROUPEMENT INDUSTRIELS DU MUR MANTEAU",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=387759756",
+      "objet": "Sensibiliser l'intervenant à la nécessité de sanctuariser les budgets de MaPrimeRénov'",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "818757601",
+      "nom": "KAIROS MSC",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=818757601",
+      "objet": "PLF 2026 : MAINTENIR LE BUDGET DE MAPRIMERÉNOV AU NIVEAU DE 2025",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "522058106",
+      "nom": "ATLAS PUBLIC AFFAIRS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=522058106",
+      "objet": "PPL programmation énergétique : Prendre en compte les caractéristiques des bâtiments ruraux dans les objectifs de la politique de rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "542097522",
+      "nom": "CA CONSUMER FINANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=542097522",
+      "objet": "Restreindre dans la loi la responsabilité du prêteur dans le cas d'un financement de travaux de rénovation énergétique",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "305394397",
+      "nom": "ROCKWOOL FRANCE SAS",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=305394397",
+      "objet": "PLF 2025 : Présenter les financements alloués à l'isolation dans les aides à la rénovation énergétique",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "H457716271",
+      "nom": "COMMSTRAT",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H457716271",
+      "objet": "Promouvoir l'intérêt de l'isolation en mousse polyuréthane et défendre le maintien des aides à la rénovation énergétique",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "432492007",
+      "nom": "ASS UNION FRANCAISE DE L'ELECTRICITE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=432492007",
+      "objet": "PPL contre les fraudes aux aides publiques : adapter le cadre pour lutter contre les fraudes liées aux certificats d’économies d’énergie, à la rénovation énergétique et aux compteurs Linky.\n",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "H318741874",
+      "nom": "CILAB",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H318741874",
+      "objet": "Sensibiliser les pouvoirs publics aux enjeux liés à la rénovation énergétique des bâtiments collectifs et tertiaires",
+      "actions": [
+        "rencontre",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784350134",
+      "nom": "CONSEIL SUPER NOTARIAT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784350134",
+      "objet": "Faciliter les prises de décision des travaux de rénovation énergétique dans la copropriété et soumettre les décisions relatives à leur financement aux mêmes règles de majorité (art 26 loi 65-557)",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "537864555",
+      "nom": "EUROS AGENCY",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=537864555",
+      "objet": "Faire valoir les propositions de LSF contre la fraude à la rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "780003448",
+      "nom": "FEDER BATIMENT TRAVAUX PUBLIC DE MOSELLE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780003448",
+      "objet": "PLF 2025 - Obtenir le maintien du budget consacré à la rénovation énergétique des logements",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "779221100",
+      "nom": "FEDERATION BATIMENT TRAVAUX PUBLICS PDD",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779221100",
+      "objet": "Améliorer et mettre en cohérence les dispositifs d’aides MaPrimeRénov’ et les certificats d’économies d’énergie (CEE) via un dossier unique « MaPrimeRénov’ et CEE ».",
+      "actions": [
+        "transmission d'expertise",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784668642",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668642",
+      "objet": "Limiter la sous-traitance à deux rangs dans le cadre des marchés de rénovation énergétique soumis au label RGE et interdire à une entreprise non-RGE de sous-traiter à une entreprise RGE. ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "529759268",
+      "nom": "INDUSTRIES DU GENIE NUMERIQUE ENERGETIQUE ET SECURITAIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=529759268",
+      "objet": "Pilotage de l'énergie - Mieux intégrer le pilotage centralisé des équipements dans les politiques de construction et de rénovation énergétique ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "347762114",
+      "nom": "MAITRES OUVRAGES PUBLICS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=347762114",
+      "objet": "Obtenir des mesures techniques et financières en faveur de la rénovation énergétique des bâtiments publics",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "892464256",
+      "nom": "RIETZLER SOLENE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=892464256",
+      "objet": "PPL lutte contre les fraudes aux aides publiques : intégrer des mesures visant à sécuriser juridiquement et techniquement les dispositifs de financement de la rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "transmission d'expertise",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "303970230",
+      "nom": "SOMFY ACTIVITES SA",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=303970230",
+      "objet": "Intégrer les travaux de confort d'été (notamment les protections solaires) dans le parcours \"geste par geste\" de MaPrimeRenov et le rendre obligatoire pour les rénovations d'ampleur.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "534389309",
+      "nom": "TADDEO",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=534389309",
+      "objet": "Demander la préservation du budget alloué à MaPrimeRénov’ et le maintien du soutien aux rénovations en geste simple ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "775697907",
+      "nom": "UNION NATIONALE FEDERATION H L M",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775697907",
+      "objet": "PPL visant à «clarifier les obligations de rénovation énergétique des lgts» : fait générateur de la présomption de décence en cas d’adoption en AG d’une résolution autorisant la conclusion d’1ct de wx",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "552081317",
+      "nom": "ELECTRICITE DE FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=552081317",
+      "objet": "Promouvoir des modalités de soutien public (CEE et maprimerénov) plus directement en ligne avec les objectifs de décarbonation des bâtiments et de la mobilité.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "775698087",
+      "nom": "F N A I M",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775698087",
+      "objet": "Dans le cadre d'un projet de colloque au Sénat sur le bilan de la loi Climat et Résilience, pousser des propositions sur la rénovation énergétique des logements anciens. ",
+      "actions": [
+        "campagne publique",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "777305830",
+      "nom": "FEDERATION DEPARTEMENTALE BATIMENT ET TP",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777305830",
+      "objet": "Demande de rendez-vous afin d'aborder la suppression brutale du dispositif MaPrimeRénov, la mise en œuvre complexe de la REP PMCB et la suspension de la réforme de la TVA pour les microentrepreneurs",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784930695",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT REGION ILE DE FRANCE EST",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784930695",
+      "objet": "Limiter la sous-traitance à 2 rangs dans les marchés de rénovation énergétique soumis au label RGE. Interdire à une entreprise non-RGE de sous-traiter à une entreprise RGE",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "781121595",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT ROUEN METROPOLE ET TERRITOIRES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781121595",
+      "objet": "Projet de loi de finances 2026 : crise du logement, demande de relance de la construction neuve et rénovation énergétique",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "749891214",
+      "nom": "HELLIO SOLUTIONS",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=749891214",
+      "objet": "Contribuer à l'évolution des politiques de rénovation énergétique des logements collectifs",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "447525452",
+      "nom": "LYSIOS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=447525452",
+      "objet": "Plaider pour la réintégration de l'isolation des murs dans MaPrimeRénov’ et la sécurisation budgétaire des aides à la rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784668618",
+      "nom": "MOUVEMENT DES ENTREPRISES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668618",
+      "objet": "Convaincre de l'importance de soutenir le marché de la rénovation énergétique auprès de toutes les catégories socio-professionnelles susceptibles d’investir ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "512693888",
+      "nom": "UNICLIMA",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=512693888",
+      "objet": "Inviter des parlementaires pour le salon Renodays afin de les sensibiliser aux enjeux de la rénovation énergétique ",
+      "actions": [
+        "rencontre",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "393267992",
+      "nom": "UNION DES FABRICANTS DE MENUISERIES EXTERIEURES - UFME",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=393267992",
+      "objet": "Demander la préservation du budget alloué à MaPrimeRénov’ et le maintien du soutien aux rénovations en geste simple ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "784410714",
+      "nom": "ALLIANCE FRANCE CUIR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784410714",
+      "objet": "Demander la prorogation du crédit d'impôt rénovation énergétique pour les PME ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "352400436",
+      "nom": "COMITE LIAISON ENERGIES RENOUVELABLES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=352400436",
+      "objet": "Projet de loi de finance 2026 : augmenter le budget de MaPrimeRénov'",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "775681265",
+      "nom": "CONFEDER NATIONALE DU LOGEMENT",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775681265",
+      "objet": "Audition par le député VUILLETET, rapporteur de la PPL sur les conditions de réalisation des travaux de rénovation énergétique : demander une meilleure prise en charge des travaux.",
+      "actions": [
+        "transmission d'expertise",
+        "réponse à consultation ou audition",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "303215016",
+      "nom": "CONFEDERATION DES PETITES ET MOYENNES ENTREPRISES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=303215016",
+      "objet": "PLF 2025 - S'opposer à la réduction des crédits alloués à MaPrimeRénov’ ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "W751012090",
+      "nom": "CONSEIL NATIONAL DES ASSOCIATIONS FAMILIALES LAIQUES CNAFAL",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751012090",
+      "objet": "Soutien au dispositif du chèque énergie pour les ménages au vu du projet de Loi de finances 2026",
+      "actions": [
+        "Autres : à préciser",
+        "envoi de propositions de rédaction",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "509302469",
+      "nom": "EFFY",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=509302469",
+      "objet": "MaPrimeRénov' | Proposer les conditions d'une reprise pérenne du dispositif suite à sa suspension (nouveaux plafonds d'aides, limitation logements éligibles)",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "820204766",
+      "nom": "EMERIA",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=820204766",
+      "objet": "PPL Conforter l’Habitat, l’Offre de logements et la Construction : Proposer une mesure permettre aux co-propriétaires d’emprunter pour financer le reste à charge sur travaux de rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784672792",
+      "nom": "FAMILLES RURALES FEDERATION NATIONALE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784672792",
+      "objet": "Réformer « MaPrimeRénov’ » en augmentant les plafonds des barèmes d’éligibilité de 10% et en simplifiant le dispositif",
+      "actions": [
+        "transmission d'expertise",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "775513021",
+      "nom": "FED BATIMENT ET TRAVAUX PUBLICS LOIRET",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775513021",
+      "objet": "Proposer des projets d'amendement pour la loi de finances 2025 sur le dispositif PINEL, la rénovation énergétique, l’abattement fixe pour les dirigeants partant en retraite et autres sujets",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "780715751",
+      "nom": "FED DEP BATIMENT TRAVAUX PUBLIC CALVADOS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780715751",
+      "objet": "Proposer des amendements pour relancer l’investissement locatif et rétablir le taux réduit de TVA sur la rénovation énergétique.",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "450989108",
+      "nom": "FED DEPT DU BATIMENT TRAVAUX PUBLICS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=450989108",
+      "objet": "sur la discussion du projet de budget afin de conforter un budget en hausse pour le dispositif MaPrimeRénov afin de développer l'activité des entreprises",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "775688443",
+      "nom": "FED IDUST ELECTR ELECTRONIQUES  COMMUNIC",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775688443",
+      "objet": "Maintenir les lignes budgétaires de MaPrimeRénov et défendre les CEE pour favoriser l'électrification, au niveau budgétaire et réglementaire",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "779040633",
+      "nom": "FEDER BATIMENT TRAVAUX PUBLICS ALLIER",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779040633",
+      "objet": "Evolution et maintient du dispositif d'aides PTZ, MaPrimeRénov, pour la stratégie du logement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "778599860",
+      "nom": "FEDERAT DEP BAT TRAV PUBL SAONE ET LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778599860",
+      "objet": "Adapter la réglementation pour favoriser la vente en l'état futur de rénovation des logements les plus énergivores dans le Projet de Loi de Finances 2025",
+      "actions": [
+        "transmission d'expertise",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "324096783",
+      "nom": "FEDERAT FRANCAISE MAGASINS DE BRICOLAGE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=324096783",
+      "objet": "Maintenir la possibilité pour les clients des grandes surfaces de bricolage de pouvoir bénéficier de Maprimerénov dans le cadre de contrats signés avec leur magasin de bricolage.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "775021355",
+      "nom": "FEDERATION BATIMENT DEPARTEMENT DU CHER",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775021355",
+      "objet": "gel du dispositif Ma Prime Renov et impacts sur la rénovation énergétique des logements",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "305821779",
+      "nom": "FEDERATION DEP B.T.P. CORSE DU SUD",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=305821779",
+      "objet": "Maintenir le budget consacré à MaPrimeRenov dans le PLF2026",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784311821",
+      "nom": "FEDERATION DES DISTRIBUTEURS DE MATERIAUX DE CONSTRUCTION",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784311821",
+      "objet": "Contribution à l'élaboration du signe de qualité exigé à compter du 1er janvier 2027 pour les professionnels qui facturent la sous-traitance de travaux de rénovation énergétique ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "393411855",
+      "nom": "FEDERATION DES ENTREPRISES DES OUTRE-MER",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=393411855",
+      "objet": "Augmenter le plafond de la base éligible dans le cadre des travaux de réhabilitation ou rénovation des logements achevés depuis plus de vingt ans ;",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "384882577",
+      "nom": "FEDERATION DES SERVICES ENERGIE ENVIRONNEMENT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=384882577",
+      "objet": "Sensibiliser les pouvoirs publics aux enjeux de la rénovation énergétique des bâtiments dans l'habitat collectif",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "330005620",
+      "nom": "GRAYLING FRANCE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=330005620",
+      "objet": "Permettre de traiter simultanément les objectifs d’insonorisation et de rénovation énergétique dans les Plans de Gêne sonore (PJL habitat dégradé) ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "300500766",
+      "nom": "KINGFISHER FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=300500766",
+      "objet": "Permettre aux GSB de continuer à faire bénéficier leurs clients des aides à la rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "384560942",
+      "nom": "LEROY MERLIN FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=384560942",
+      "objet": "Proposer un compromis permettant d'exclure efficacement les fraudeurs et de pérenniser l'accès au marché de la rénovation énergétique des GSB ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "378794796",
+      "nom": "M&M CONSEIL",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=378794796",
+      "objet": "Rénovation thermique des bâtiments : Inclure les protections solaires dans les aides à la rénovation (MaPrimeRénov’)",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "508908407",
+      "nom": "PROPELLET FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=508908407",
+      "objet": "MaPrimeRenov' : demander un maintien des aides à l'installation d'appareils de chauffage au granulé de bois",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "521433128",
+      "nom": "SAMMAN CABINET D'AVOCATS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=521433128",
+      "objet": "PLF 2025 : Réformer les dispositifs d'aides à la rénovation énergétique pour améliorer leur efficacité",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "954503439",
+      "nom": "SCHNEIDER ELECTRIC INDUSTRIES SAS",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=954503439",
+      "objet": "Agir pour la sécurité électrique dans les logements en incluant la mise à niveau électrique dans les programmes de rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "487640005",
+      "nom": "SEANCE PUBLIQUE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=487640005",
+      "objet": "Congrès de l'Unis : présenter les positions de l'Unis en matière de rénovation énergétique et de copropriétés ",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "428440994",
+      "nom": "SYND NAT DE LA FERMETUR S N F P S A",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=428440994",
+      "objet": "Rénovation thermique des bâtiments : Inclure les protections solaires dans les aides à la rénovation (MaPrimeRénov’)",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "933733636",
+      "nom": "[ND] [ND]",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=933733636",
+      "objet": "MaPrimeRenov' : demander un maintien des aides à l'installation d'appareils de chauffage au granulé de bois",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "413728676",
+      "nom": "AI2P",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=413728676",
+      "objet": "PLF pour 2026 / Favoriser le développement des EnR / Photovoltaïque / Conditionner TVA 5,5% pour la pose d'équipements autoconsommation (jusqu'à 9 kWc) par un installateur AQPV ou certifié RGE",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "750885410",
+      "nom": "AIRBNB FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=750885410",
+      "objet": "Proposer un délai réaliste dans l’application d’un éventuel élargissement de l’obligation de rénovation énergétique aux meublés touristiques (PPL Meublés de tourisme)\t",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "443058854",
+      "nom": "ARCTURUS FRANCE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=443058854",
+      "objet": "PPL litiges décence énergétique - Préciser les raisons techniques ou juridiques pouvant justifier l'impossibilité technique de réaliser des travaux de rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "478397904",
+      "nom": "ASS FRANC POUR  POMPES A CHALEUR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=478397904",
+      "objet": "Intervention auprès des pouvoirs publics pour la promotion de la pompe à chaleur dans la politique de rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "332049576",
+      "nom": "ASS REG ORGANISMES HLM CHAMP ARDENNE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=332049576",
+      "objet": "Alerter sur l'impact du \"gel des crédits à la rénovation non affectés\" annoncés pour la rénovation énergétique des logements sociaux, et prévus dans la loi de finance 2024",
+      "actions": [
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "752289678",
+      "nom": "ASSOCIATION FRANCAISE INDEPENDANTE DE L ELECTRICITE ET DU GAZ",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=752289678",
+      "objet": "CEE : remise à plat du dispositif afin de s’assurer de son efficacité pour accompagner de manière optimale les consommateurs tertiaires et les ménages dans leurs travaux de rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "Garantir la stabilité et l'efficacité du dispositif MaPrimeRénov' afin de sécuriser l'activité des professionnels de la rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "493455042",
+      "nom": "BPCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=493455042",
+      "objet": "PLF 2026 : Protéger le modèle de financement de la rénovation énergetique",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "878481662",
+      "nom": "CABINET 37",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=878481662",
+      "objet": "Sensibiliser aux enjeux relatifs à la rénovation énergétique",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "937537249",
+      "nom": "CAGIRE CONSEILS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=937537249",
+      "objet": "RENFORCER L’ENVELOPPE DES AIDES À L’ACQUISITION - PROGRAMME 174 : « ÉNERGIE, CLIMAT ET APRÈS-MINES » POUR LES ACTIONS DE MOBILITÉ SOLIDAIRE\n",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "779079243",
+      "nom": "CH SYND ENTREPR DU BATIM T P",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779079243",
+      "objet": "Obtenir dans le PLF 2025 le maintien du dispositif \"MaPrimeRénov\" pour les travaux de rénovation énergétique par monogeste ou réno globale",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784179582",
+      "nom": "CINOV FED SYND METIERS DE PRESTATION INTELLECT CONSEIL INGENIERIE ET NUMERIQUE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784179582",
+      "objet": "Garantir la stabilité et l’efficacité du dispositif MaPrimeRénov’ afin de sécuriser l’activité des professionnels de la rénovation énergétique.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "492203666",
+      "nom": "COLLECTIF EFFINERGIE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=492203666",
+      "objet": "Augmenter les financements publics pour la rénovation énergétique performante des logements",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "398995142",
+      "nom": "COM'PUBLICS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=398995142",
+      "objet": "Promouvoir le marché global de performance énergétique à paiement différé auprès des collectivités territoriales",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "509796249",
+      "nom": "COMFLUENCE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=509796249",
+      "objet": "MaPrimeRenov' : demander un maintien des aides à l'installation d'appareils de chauffage au granulé de bois",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "W751024223",
+      "nom": "CONFEDERATION DE LA CONSOMMATION DU LOGEMENT ET DU CADRE DE VIE CLCV",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751024223",
+      "objet": "Faciliter l'accès au chèque énergie en mettant à contribution les moyens de l'administration",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784646689",
+      "nom": "CONFEDERATION NATIONALE CREDIT MUTUEL",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784646689",
+      "objet": "Enjeux bancaires liés au logement : financement rénovation énergétique (Opposition au projet d’une banque de la rénovation énergétique, question du coût d’une nouvelle structure) ",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784608416",
+      "nom": "CREDIT AGRICOLE SA",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784608416",
+      "objet": "Proposition de loi visant à clarifier les obligations de rénovation énergétique des logements : partager nos arguments et observations sur les mesures relatives au financement des copropriétés.",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "404429938",
+      "nom": "ENERGIES ET AVENIR",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=404429938",
+      "objet": "Projet d’arrêté relatif à la nature et aux caractéristiques des prestations de rénovation énergétique bénéficiant du taux réduit de TVA de 5,5%. : participer à la consultation",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "344808902",
+      "nom": "ENERPLAN",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=344808902",
+      "objet": "amendement proposé PJL finances 2025 : Mettre à égalité les capteurs solaires thermiques et les capteurs hybrides à circulation de fluide dans le cadre de MaPrimeRénov ",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "451225692",
+      "nom": "ENI PLENITUDE FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=451225692",
+      "objet": "PLF 2025 : automatiser l’identification des potentiels bénéficiaires pour garantir l’utilisation du chèque énergie, même en cas de changement de fournisseur",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "532382660",
+      "nom": "EQUILIBRE DES ENERGIES  - POUR L'EQUILIBRE DES ENERGIES-",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=532382660",
+      "objet": "PLF 2025 : Pédagogie sur la politique de soutien à la rénovation énergétique des logements (MPR, CEE)",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "431853530",
+      "nom": "ESL & NETWORK FRANCE SAS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=431853530",
+      "objet": "Elargir la base des entreprises bénéficiaires des investissements SOFIAC pour leur rénovation énergétique. ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "780254611",
+      "nom": "FED DEP BATIMENT TRAVAUX PUBLICS ARDENNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780254611",
+      "objet": "Eviter une décision gouvernementale de gel des aides à la rénovation énergétique pendant plusieurs mois",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "776986465",
+      "nom": "FED DEP DU BATIMENT ET DES T P DU GERS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=776986465",
+      "objet": "Limiter la sous-traitance à deux rangs dans le cadre des marchés de rénovation énergétique soumis au label RGE et interdire à une entreprise non-RGE de sous-traiter à une entreprise RGE",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "786257113",
+      "nom": "FEDER BATIMENT TRAVAUX PUBLICS MAYENNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786257113",
+      "objet": "Limiter la sous-traitance à deux rangs dans le cadre des marchés de rénovation énergétique soumis au label RGE et interdire à une entreprise non-RGE de sous-traiter à une entreprise RGE.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "779145366",
+      "nom": "FEDER DEPAR BATIM TRAVA PUBLI HTE-LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779145366",
+      "objet": "Limiter la sous-traitance en cascade dans le cadre de la rénovation énergétique et alléger les démarches pour les entreprises RGE",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "781064738",
+      "nom": "FEDERAT BATIM TRAVAUX PUBLIC REGION HAVR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781064738",
+      "objet": "Contestation de la Suspension du dispositif \"MaPrimeRénov\" ",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "777748807",
+      "nom": "FEDERATION BATIMENT TP ILLE ET VILAINE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777748807",
+      "objet": "Limiter la sous-traitance à 2 rangs dans le cadre des marchés de rénovation énergétique soumis au label RGE. Interdire à une entreprise non-RGE de sous-traiter à une entreprise RGE",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "779471713",
+      "nom": "FEDERATION BATIMENT TRAVAUX PUBLICS DROME ARDECHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779471713",
+      "objet": "Promouvoir la construction de logements, la rénovation énergétique et un environnement économique et fiscal favorable pour ce faire ",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "782619944",
+      "nom": "FEDERATION DEPART DU BTP DES AM",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=782619944",
+      "objet": "Proposer des améliorations en faveur de la construction neuve et de la rénovation énergétique des logements dans le projet de loi de finances",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "780937470",
+      "nom": "FEDERATION DEPARTEM BATIMENT T.P. ORNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780937470",
+      "objet": "Lettre de position \"Non aux deux poids / deux mesures au détriment du BTP\" : MaPrimeRénov', la REP, LE PTZ, le GNR, logement...",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "478692411",
+      "nom": "FEDERATION DES AGENCES LOCALES DE MAITRISE DE L ENERGIE ET DU CLIMAT",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=478692411",
+      "objet": "Préserver les moyens de Ma Prime Rénov', les orienter prioritairement vers les projets de rénovation performante & conforter le service public France Rénov'",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784312332",
+      "nom": "FEDERATION DES PROMOTEURS IMMOBILIERS DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784312332",
+      "objet": "PJL Logt abordable: accorder des droits à construire supplémentaires en cas de réalisation de travaux de rénovation énergétique performante des bâtiments ",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "390997419",
+      "nom": "FEDERATION DU BTP DU FINISTERE - 29",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=390997419",
+      "objet": "Obtenir dans le projet de loi Finances 2025 le maintien du dispositif \"MaPrimeRénov'\" pour les travaux de rénovation énergétique par mono-geste ou rénovation globale",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "782072086",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT LANDES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=782072086",
+      "objet": "Demander la relance de MAPRIMERENOV' dans les meilleurs délais pour permettre aux ménages de procéder aux travaux de rénovation énergétique dans leurs logements",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "428437529",
+      "nom": "FEDERATION NATIONALE DES OFFICES PUBLICS DE L'HABITAT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=428437529",
+      "objet": "Demander la suppression de la RLS et obtenir des aides à la rénovation énergétique des HLM\n",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784854820",
+      "nom": "FRANCE GAZ",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784854820",
+      "objet": "PLF : Adapter l’indicateur de performance du programme 174 du taux d’usage du chèque énergie pour renforcer le suivi du non-recours pour les ménages primo-bénéficiaires ",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "432446649",
+      "nom": "FRANCE RENOUVELABLES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=432446649",
+      "objet": "Promouvoir le maintien et renforcement des politiques publiques de soutien à l’électrification via un soutien des investissements industriels, des mobilités décarbonées et de la rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "838170421",
+      "nom": "LSF ENERGIE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=838170421",
+      "objet": "Faire valoir les propositions de LSF contre la fraude à la rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "948508718",
+      "nom": "LUMEN INFLUENCE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=948508718",
+      "objet": "Obtenir une labellisation par l'Anah de la plateforme Loutre pour mieux lutter contre la fraude et améliorer le traitement des dossiers de rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "880859707",
+      "nom": "MOB'IN FRANCE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=880859707",
+      "objet": "Renforcer l’enveloppe des aides à l’acquisition - Programme 174 : « Énergie, climat et après-mines » pour les actions de mobilité solidaire",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "520067786",
+      "nom": "MOUVEMENT DES ENTREPRENEURS SOCIAUX",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=520067786",
+      "objet": "Soutenir le maintien et la stabilisation du dispositif MaPrimeRénov’ dans le cadre de l’élaboration du projet de loi de finances pour 2026.",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "H771956256",
+      "nom": "PLEAD",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H771956256",
+      "objet": "créer un véhicule spécifique pour la transformation des bureaux et la rénovation énergétique dans le cadre du PLF ",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "524866241",
+      "nom": "RUMEUR PUBLIQUE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=524866241",
+      "objet": "Présenter différents dispositifs pour lutter contre la fraude aux aides à la rénovation énergétique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "970200044",
+      "nom": "SOC VELUX FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=970200044",
+      "objet": "Faire évoluer les dispositifs de soutien à la rénovation énergétique, particulièrement en matière d'aménagement des combles, dans le cadre du PLF2025.",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "518685516",
+      "nom": "SONERGIA",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=518685516",
+      "objet": "Maintenir des objectifs ambitieux de rénovation énergétique ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "305442501",
+      "nom": "SYND NATIONAL PROFESSIONELS IMMOBILIERS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=305442501",
+      "objet": "Revoir le calendrier d'exclusion des passoires thermiques dans le cadre de la location de logements",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784179962",
+      "nom": "SYNDIC GENERAL CUIR PEAUX BRUT",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784179962",
+      "objet": "PLF 2025 : Demande de prorogation du Crédit d’impôt rénovation énergétique pour le PME",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "501498141",
+      "nom": "TEKSIAL",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=501498141",
+      "objet": "Faciliter les opérations de rénovation énergétique des logements et bâtiments",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "512238668",
+      "nom": "UNION DES SYNDICATS DE L'IMMOBILIER",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=512238668",
+      "objet": "PPL Rénovation énergétique : présenter les positions de l'Unis relatif au DPE et au cas des bailleurs d'appartements; cas de travaux collectifs",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784672495",
+      "nom": "UNION FEDERALE CONSOMMATEURS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784672495",
+      "objet": "Proposer l'interdiction du démarchage à domicile en matière de rénovation énergétique ",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "W751003603",
+      "nom": "UNION NATIONALE DES PROPRIETAIRES IMMOBILIERS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751003603",
+      "objet": "Rénovation énergétique : création d'une nouvelle exception pour coût disproportionné de travaux",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "W751216334",
+      "nom": "UNION NATIONALE POUR LA PROMOTION ET LE DEVELOPPPEMENT DE LA LOCATION DE VACANCES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751216334",
+      "objet": "Proposer un délai réaliste dans l’application d’un éventuel élargissement de l’obligation de rénovation énergétique aux meublés touristiques (PPL Meublés de tourisme) ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "421550823",
+      "nom": "VATTENFALL ENERGIES",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=421550823",
+      "objet": "Faire des proposition sur l’encadrement du marché de détail : protection du consommateur, obligations prudentielles, CPB, CEE, indemnités résiliation anticipées, extension TRVe aux TPE, chèque énergie",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 3,
+    "comptes_rendus_lus": 90
+  },
+  "synthese": {
+    "position_probable": "A cosigné l'amendement n° 19, adopté (« Supprime l'article 35 »).",
+    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 19 (« Supprime l'article 35 »).",
+    "chiffres_utilises": [
+      "19",
+      "35"
+    ],
+    "mode": "gabarit",
+    "modele": null,
+    "verifie": true,
+    "date": "2026-11-14"
+  }
+}

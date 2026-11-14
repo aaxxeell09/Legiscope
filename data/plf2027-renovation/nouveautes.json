@@ -1,0 +1,2237 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:03:04.631Z",
+    "sources": [
+      {
+        "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Hémicycle, jeu evenements_parlementaires",
+        "url": "https://hemicycle.ai"
+      }
+    ],
+    "limits": "3 sort(s) d'amendement sans date publiée : non listé(s) comme événement daté (aucune date de repli). 1 amendement(s) de texte.json écarté(s) : ni mot-clé du sujet, ni article de la mesure dans le résumé, ni présence dans les fichiers amendements/<PA>.json. Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 120 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data lu, aucune réunion passée ne cite le texte.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-renovation"
+  },
+  "evenements": [
+    {
+      "id": "ev-9759",
+      "date": "2026-11-04",
+      "type": "scrutin",
+      "titre": "Séance publique, première lecture : rejeté (scrutin n° 9759)",
+      "detail": "Étape du texte PRJLANR5L17B3210 conclue par le scrutin n° 9759.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9759",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+          }
+        ],
+        "raisonnement": "Étape « Séance publique, première lecture : rejeté (scrutin n° 9759) » lue dans etat.json avec son scrutin. Le texte porte la mesure : son rejet joue contre la mesure, d'où l'effet sur l'objectif du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-11-12",
+      "date": "2026-11-12",
+      "type": "rapport",
+      "titre": "Arte entendue pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : Syndicat des musiques actuelles (SMA), Syndicat national de l’édition phonographique (SNEP), Union des producteurs phonographiques français indépendants (UPFI), Fédération des Ensembles Vocaux et Instrumentaux Spécialisés (FEVIS), Centre National du Livre (CNL), Centre National du Cinéma et l’image animée (CNC), Ekhoscènes, Centre National de la musique (CNM), Institut national de l’audiovisuel (INA), Direction générale des médias et des industries culturelles (DGMIC), Radio France, France Télévisions, France Festivals, France Médias Monde, Arte, Spotify, TV5 Monde, Deezer, Société des Auteurs, Compositeurs et Éditeurs de Musique (SACEM), Administration des Droits des Artistes et Musiciens Interprètes (ADAMI), Société de Perception et de Distribution des Droits des Artistes-Interprètes, COPIE France, Société civile des Producteurs de Phonogrammes en France (SPPF), Apple Music.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a29.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 12 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a29.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-711",
+      "date": "2026-11-04",
+      "type": "scrutin",
+      "titre": "2 amendements identiques (n° 711, n° 1997) (LFI-NFP) rejetés (scrutin n° 9659) : Par cet amendement, le groupe LFI propose d’instaurer un malus progressif sur la taxe…",
+      "detail": "Par cet amendement, le groupe LFI propose d’instaurer un malus progressif sur la taxe foncière pour les propriétaires bailleurs à hauts revenus qui ne réalisent pas les travaux de rénovation nécessaires sur les passoires thermiques qu’il...",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9659",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9659",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9659"
+          },
+          {
+            "label": "Amendement n° 711",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000711"
+          },
+          {
+            "label": "Amendement n° 1997",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001997"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 4 novembre 2026. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-modification-2026-11-04",
+      "date": "2026-11-04",
+      "type": "amendement_sort",
+      "titre": "Mesure modifiée : Rejet de la première partie : tout le projet de loi est rejeté, le Sénat est saisi du texte du gouvernement",
+      "detail": "Par Assemblée nationale, séance publique.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9759",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+          }
+        ],
+        "raisonnement": "Le rejet de la première partie vaut rejet du texte entier ; les amendements adoptés tombent avec lui. Effet non déduit : la modification n'est pas rattachée à un amendement du texte.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-11-03",
+      "date": "2026-11-03",
+      "type": "rapport",
+      "titre": "Arte entendue pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : Syndicat national des radios libres (SNRL), Confédération nationale des radios associatives (CNRA), Centre national de la musique (CNM), Centre national du livre (CNL), France messagerie, Messageries lyonnaises de presse (MLP), Distributeurs indépendants réunis européens (Dire), Société civile des auteurs, réalisateurs et producteurs (ARP), Fédération nationale des éditeurs de films (Fnef), Fédération des industries du cinéma, de l’audiovisuel et du multimédia (Ficam), Union des producteurs de cinéma (UPC), Association des producteurs indépendants (API), Fédération nationale des cinémas français (FNCF), Syndicat des producteurs indépendants (SPI), Société des réalisateurs de films (SRF), Bureau de liaison des organisations du cinéma (Bloc), Inspection générale des finances, Fédération nationale de la presse d’information spécialisée (FNPS), Syndicat des éditeurs de la presse magazine (SEPM), Syndicat de la presse indépendante d’information en ligne (Spiil), Alliance de la presse d’information générale (Apig), Centre national du cinéma et de l’image animée (CNC), Union des producteurs phonographiques français indépendants (Upfi), Société civile des producteurs de phonographiques M. Marc Guez, Syndicat national de l’édition phonographique (Snep), Syndicat des musiques actuelles (SMA), Fédération nationale des labels indépendants (Felin), Société civile des producteurs de phonogrammes en France (SPPF), Agence France-Presse, Satellifacts, Le film français, Canal +, France Télévisions, Arte, Studio TF1 et TF1 Films production, M6 Films, Ministère de la culture, direction générale des médias et des industries culturelles (DGMIC).",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tV.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 3 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tV.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-11-03-2",
+      "date": "2026-11-03",
+      "type": "rapport",
+      "titre": "Confédération de l'artisanat et des petites entreprises du bâtiment (CAPEB) entendue pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : Association de défense des consommateurs et usagers (CLCV), Confédération nationale du logement (CNL), Association Droit au logement (DAL), Association Force ouvrière des consommateurs (AFOC), Collectif Les Morts de la rue, Association Dalo, Utopia 56, Confédération de l'artisanat et des petites entreprises du bâtiment (CAPEB), Fédération française du bâtiment (FFB), Collectif Rénovons, Union sociale pour l’habitat, Fédération Nationale de l'Immobilier (FNAIM), Fédération des Promoteurs Immobiliers (FPI), UNPI, Oxfam France, Fondation pour le logement, INSEE, Délégation interministérielle à l'hébergement et à l'accès au logement (DIHAL), Agence nationale pour la rénovation urbaine (ANRU), ADEME, Agence nationale pour l’habitat (ANAH).",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 3 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-2352",
+      "date": "2026-10-30",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 2352 (DR) adopté : Le présent amendement vise à permettre le financement, par l’éco-prêt à taux zéro, des…",
+      "detail": "Le présent amendement vise à permettre le financement, par l’éco-prêt à taux zéro, des travaux d’amélioration du confort d’été des logements, en particulier l’installation de brasseurs d’air plafonniers fixes et de protections solaires m...",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002352",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2352",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002352"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2376",
+      "date": "2026-10-30",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 2376 (LIOT) adopté : Le présent amendement vise à permettre le financement, par l’éco-prêt à taux zéro, des…",
+      "detail": "Le présent amendement vise à permettre le financement, par l’éco-prêt à taux zéro, des travaux d’amélioration du confort d’été des logements, en particulier l’installation de brasseurs d’air plafonniers fixes et de protections solaires m...",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002376",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2376",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002376"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-10-28",
+      "date": "2026-10-28",
+      "type": "rapport",
+      "titre": "Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb) entendue pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : Fédération nationale de l’immobilier (FNAIM), Association des responsables de copropriétés (ARC), Union nationale des propriétaires immobiliers (UNPI), Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb), France urbaine, Agence parisienne du climat, NegaWatt, Rénovons-CLER-Réseau pour la transition énergétique, Observatoire national de rénovation énergétique (ONRE), Observatoire national de la précarité énergétique (ONPE), Secrétariat général à la planification écologique (SGPE), Association Force ouvrière consommateurs (Afoc), Union nationale des locataires indépendants (Unli), Fondation pour le logement des défavorisés, Confédération nationale du Logement (CNL), Confédération Consommation, Logement, Cadre de Vie (CLCV), Fédération locale des agences de l’énergie et du climat (Flame), Fédération nationale des offices publics de l’habitat (OPH), Entreprises sociales pour l’habitat - Fédération nationale des sociétés anonymes d’Habitat à loyer modéré - HLM ‑ (FNSAHLM), Association des maires de France (AMF), Direction générale des collectivités locales (DGCL), Agence nationale de la cohésion des territoires (ANCT), Direction de l’habitat, de l’urbanisme et des paysages (DHUP), Agence nationale de l’habitat (Anah).",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 28 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-10-28-2",
+      "date": "2026-10-28",
+      "type": "rapport",
+      "titre": "France Gaz, Cilab, Ai2P entendues pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : Groupement des professionnels des certificats d’économies d’énergie (GPCEE), Union française de l’électricité (UFE), France Gaz, Association des agriculteurs méthaniseurs de France (AAMF), France Hydrogène, Que choisir ensemble, Conseil national des associations familiales laïques (Cnafal), Consommation, logement et cadre de vie (CLCV), Fédération des services Énergie Environnement (Fedene), Cilab, Association de collectivités, gestion des déchets, réseaux de chaleurs, gestion locale de l’énergie (Amorce), Fédération nationale des activités de la dépollution et de l’environnement (Fnade), Intercommunalités de France, Fédération nationale des collectivités concédantes et régies (FNCCR), Commission de régulation de l’énergie (CRE), Syndicat des Energies Renouvelables (SER), Ai2P, France Renouvelables, Enerplan, ADEME, Association Française Indépendante de l’Energie et du Gaz (Afieg), Association Nationale des Opérateurs Détaillants en Energie (ANODE), Groupe ENGIE, Direction générale de l’Energie et du Climat (DGEC), Enedis, Réseau de Transport d’Electricité (RTE), EDF, Syndicat professionnel représentant des Entreprises Locales d’Energies (ELE), Médiateur de l’énergie, Régions de France, Fédération des agences locales de l’énergie et du climat (Flame).",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 28 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-10-26",
+      "date": "2026-10-26",
+      "type": "rapport",
+      "titre": "Airbnb France entendue pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : La direction générale de l'aménagement, du logement et de la nature (DGALN), Le Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement (Cerema), Commune de Les Gets (Haute-Savoie), L'Association nationale des maires de stations de montagne (ANMSM), Commune de Huez (Isère), Société Infinity Nine Mountain, Commune de Villard-de-Lans (Isère), La Banque des territoires, Bpifrance, Direction générale des entreprises (DGE), Union des métiers et des industries de l’hôtellerie (Umih), Atout France, Domaines Skiables de France, Société Booking, Canton du Valais, Suisse, Airbnb France, Fondation pour la recherche sur les administrations et les politiques publiques (IFRAP).",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tX.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 26 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tX.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-10-22",
+      "date": "2026-10-22",
+      "type": "rapport",
+      "titre": "France Renouvelables, Ai2P entendues pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre), Surfrider Foundation Europe, EDF Power Solutions, EDF, Ailes Marines (Iberdrola), Direction générale de l’énergie et du climat (DGEC), France Renouvelables, Syndicat des énergies renouvelables (SER), Ai2P, Cluster maritime français, Agence de la transition écologique (Ademe), Office français de la biodiversité (OFB), Armateurs de France, Union des Ports de France, Lycée de la mer & pôle de formation maritime Paul Bousquet – Sète, Lycée Professionnel Maritime et Aquacole Daniel Rigolet – Cherbourg, Lycée professionnel maritime de Ciboure, Direction générale des affaires maritimes, de la pêche et de l’aquaculture (DGAMPA), Groupement des industries de construction et activités navales (Gican), Ifremer, École nationale supérieure maritime (ENSM), Transports & Environnement (T&E), Société nationale du sauvetage en mer (SNSM), Comité national des pêches maritimes et des élevages marins (CNPMEM).",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 22 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVII.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-2418",
+      "date": "2026-10-21",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 2418 (EPR) adopté : Le présent amendement vise à renforcer le contrôle du Parlement sur l’attribution du…",
+      "detail": "Le présent amendement vise à renforcer le contrôle du Parlement sur l’attribution du chèque énergie, en instituant un indicateur de performance permettant de mesurer la proportion de chèques attribués automatiquement à leurs bénéficiaires.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002418",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2418",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002418"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-350",
+      "date": "2026-10-21",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 350, n° 2421) (EPR) adoptés : L’article 173 de la loi de finances pour 2025 a modifié l’identification des…",
+      "detail": "L’article 173 de la loi de finances pour 2025 a modifié l’identification des bénéficiaires après la suppression de la taxe d’habitation.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000350",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 350",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000350"
+          },
+          {
+            "label": "Amendement n° 2421",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002421"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-10-20",
+      "date": "2026-10-20",
+      "type": "rapport",
+      "titre": "France Renouvelables entendue pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : France Renouvelables, Syndicat des énergies renouvelables (SER), Union française de l’électricité (UFE), Réseau de transport d’électricité (RTE), Enedis, Commission de régulation de l’énergie (CRE), Territoire d’énergie de l’Ardèche, Syndicat départemental d’énergies du Cantal, Amorce, Fédération nationale des collectivités concédantes et régies (FNCCR), Agence de la transition écologique (Ademe), Chambre Syndicale Internationale de l’Automobile et du Motocycle (CSIAM), Cabinet Blue Star Stratégies, Mobilians, Groupement des professionnels des certificats d’économie d’énergie (GPCEE), Médiateur de l’énergie, Agence nationale pour la cohésion des territoires (ANCT), Charge France, NSI Group, Direction générale de l’énergie et du climat (DGEC).",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tIV.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 20 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tIV.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-3656",
+      "date": "2026-10-16",
+      "type": "scrutin",
+      "titre": "Amendement n° 3656 (EPR) rejeté (scrutin n° 8851) : Le présent amendement s’inscrit dans l’esprit du dispositif « Balladur » visant à…",
+      "detail": "Le présent amendement s’inscrit dans l’esprit du dispositif « Balladur » visant à relancer les transferts patrimoniaux entre générations pour faciliter l’accession des jeunes à la propriété.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8851",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 8851",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8851"
+          },
+          {
+            "label": "Amendement n° 3656",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003656"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 16 octobre 2026. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1603",
+      "date": "2026-10-15",
+      "type": "scrutin",
+      "titre": "Amendement n° 1603 (EPR) adopté (scrutin n° 8778) : Le présent amendement s’inscrit dans l’esprit du dispositif « Balladur » visant à…",
+      "detail": "Le présent amendement s’inscrit dans l’esprit du dispositif « Balladur » visant à relancer les transferts patrimoniaux entre générations pour faciliter l’accession des jeunes à la propriété.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8778",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 8778",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8778"
+          },
+          {
+            "label": "Amendement n° 1603",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001603"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 15 octobre 2026. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-933",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 933, n° 3460) (SOC) déposés : L’article 35 maintient un taux bonifié de 16,404 % pour les dépenses liées à la…",
+      "detail": "L’article 35 maintient un taux bonifié de 16,404 % pour les dépenses liées à la transition écologique, mais renvoie à un arrêté conjoint des ministres chargés des collectivités territoriales et du budget le soin de déterminer les comptes... Déposé par 2 auteurs du même groupe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000933",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 933",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000933"
+          },
+          {
+            "label": "Amendement n° 3460",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003460"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-11-13",
+      "date": "2026-11-13",
+      "type": "rapport",
+      "titre": "2 rapports du texte publiés avec la liste des personnes entendues (10 organisations)",
+      "detail": "Organisations entendues : Secrétariat général du Gouvernement (SGG), Secrétariat général de la défense et de la sécurité nationale, Direction de l’information légale et administrative (DILA), Défenseur des droits, Commission nationale de l'informatique et des libertés (CNIL), Haute Autorité pour la transparence de la vie publique (HATVP), Direction de l’immobilier de l’État (DIE), Direction générale de l’administration et de la fonction publique (DGAFP), Groupe des Instituts du Service Public (GISP), Direction interministérielle de la transformation publique (DITP).",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a13.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 13 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a13.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-11-12",
+      "date": "2026-11-12",
+      "type": "rapport",
+      "titre": "2 rapports du texte publiés avec la liste des personnes entendues (29 organisations)",
+      "detail": "Organisations entendues : Club des juristes, Université de Toulouse Capitole, Université Sorbonne Nouvelle – Paris III, Université de Strasbourg, École de droit de Sciences Po Paris, Syndicat des musiques actuelles (SMA), Syndicat national de l’édition phonographique (SNEP), Union des producteurs phonographiques français indépendants (UPFI), Fédération des Ensembles Vocaux et Instrumentaux Spécialisés (FEVIS), Centre National du Livre (CNL), Centre National du Cinéma et l’image animée (CNC), Ekhoscènes….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVIII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 12 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVIII.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-11-10",
+      "date": "2026-11-10",
+      "type": "amendement_depose",
+      "titre": "1 amendement déposé sur le texte (EPR)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-11-10",
+      "date": "2026-11-10",
+      "type": "rapport",
+      "titre": "1 rapport du texte publié avec la liste des personnes entendues (19 organisations)",
+      "detail": "Organisations entendues : Commission pour la restitution des biens et indemnisation des victimes de persécutions antisémites (CIVS), Institut de gestion sociale des armées (IGESA), État-major des armées, Direction du budget, bureau 5BDM, Institut des Invalides, Direction de la mémoire, de la culture et des archives (DMCA), Commission nationale indépendante pour les harkis (CNIH), Office national des anciens combattants et des victimes de guerre (ONaCVG), Service des retraites de l’État, Fondation pour la mémoire de la guerre d’Algérie, des combats du Maroc et de la Tunisie, Association Nationale des combattants des Opérations Extérieures, Le Souvenir Français….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a30.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 10 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a30.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-11-09",
+      "date": "2026-11-09",
+      "type": "amendement_depose",
+      "titre": "1 amendement déposé sur le texte (Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-11-09",
+      "date": "2026-11-09",
+      "type": "rapport",
+      "titre": "3 rapports du texte publiés avec la liste des personnes entendues (21 organisations)",
+      "detail": "Organisations entendues : Ministère de l’action et des comptes publics, Direction de l’immobilier de l’État (DIE), Pôles régionaux de l’immobilier de l’État (Prie), Fondation des Femmes, Collectif féministe contre le viol (CFCV), Fédération nationale des centres d’information sur les droits des femmes et des familles (FNCIDFF), Fédération nationale Solidarité Femmes (FNSF), Caisse nationale des allocations familiales (Cnaf), Mission interministérielle pour la protection des femmes contre les violences et la lutte contre la traite des êtres humains (Miprof), Départements de France, Caisse centrale de la mutualité sociale agricole (CCMSA), Réseau Restart….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a26.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 9 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a26.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-11-06",
+      "date": "2026-11-06",
+      "type": "amendement_depose",
+      "titre": "7 amendements déposés sur le texte (EPR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-11-06",
+      "date": "2026-11-06",
+      "type": "rapport",
+      "titre": "4 rapports du texte publiés avec la liste des personnes entendues (98 organisations)",
+      "detail": "Organisations entendues : Centre national de la musique (CNM), Association des centres chorégraphiques nationaux (ACCN), Association de centres de développement chorégraphique nationaux (A-CDCN), Association des centres dramatiques nationaux (ACDN), Association des scènes nationales (ASN), Réunion des opéras de France (ROF), Syndicat national des entreprises artistiques et culturelles (Syndéac), Scènes Ensemble, Forces Musicales, Sociétés des auteurs et compositeurs dramatiques (SACD), Sociétés des auteurs, compositeurs et éditeurs de musique (Sacem), Administration des droits des artistes et musiciens interprètes (Adami)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 6 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tII.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-11-05",
+      "date": "2026-11-05",
+      "type": "rapport",
+      "titre": "3 rapports du texte publiés avec la liste des personnes entendues (26 organisations)",
+      "detail": "Organisations entendues : Ministère de la justice, Syndicat national pénitentiaire – FO Direction, Syndicat national des directeurs pénitentiaires – CFDT, UFAP UNSa Justice, CGT pénitentiaire, FO Justice, SNEPAP FSU, Syndicat Pénitentiaire des Surveillants non gradés (SPS), Ministère des Outre-mer, Ministère de l’action et des comptes publics, Direction générale des Outre-mer (DGOM), Agence des Outre-mer pour la mobilité (LADOM)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 5 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-11-04",
+      "date": "2026-11-04",
+      "type": "amendement_depose",
+      "titre": "392 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-11-04",
+      "date": "2026-11-04",
+      "type": "rapport",
+      "titre": "2 rapports du texte publiés avec la liste des personnes entendues (18 organisations)",
+      "detail": "Organisations entendues : Institut national de la statistique et des études économiques (INSEE), Direction de la recherche, des études, de l’évaluation et des statistiques (DREES), Groupe La Poste, Institut des politiques publiques (IPP), Conseil supérieur de la marine marchande, Brittany Ferries, Corsica Linea, Direction générale des affaires maritimes, de la pêche et de l’aquaculture, Direction de la sécurité sociale, Établissement national des invalides de la Marine (Enim), Conseil supérieur des gens de mer (CSGM), Comité national des pêches maritimes et des élevages marins (CNPMEM)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a36.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 4 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a36.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-11-04",
+      "date": "2026-11-04",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 4 novembre 2026",
+      "detail": "1 intervention relevée, dont : « Il accompagne aussi la rénovation énergétique et la transition écologique. Dans cet hémicycle, certains cherchent tout simplement à supprimer MaPrimeRénov’. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 4 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-1038",
+      "date": "2026-11-03",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1038 (EPR) rejeté : L’article L",
+      "detail": "L’article L.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001038",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1038",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001038"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1093",
+      "date": "2026-11-03",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1093 (UDR) rejeté : Cet amendement vise à faire de la taxe foncière sur les propriétés bâties un levier…",
+      "detail": "Cet amendement vise à faire de la taxe foncière sur les propriétés bâties un levier d’accélération de la rénovation énergétique et de l’électrification du parc immobilier existant.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001093",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1093",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001093"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depots-2026-11-03",
+      "date": "2026-11-03",
+      "type": "amendement_depose",
+      "titre": "215 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-11-03",
+      "date": "2026-11-03",
+      "type": "rapport",
+      "titre": "4 rapports du texte publiés avec la liste des personnes entendues (83 organisations)",
+      "detail": "Organisations entendues : université Paris Cité, Organisation de coopération et de développement économiques (OCDE), Direction générale de l’administration et de la fonction publique (DGAFP), Centre national de la recherche scientifique (CNRS), Institut des politiques publiques (IPP), université Bourgogne Europe, Association française des acteurs de l’éducation, Le café pédagogique, Direction générale des relations humaines (DGRH) du ministère de l’éducation nationale, Direction des affaires financières (DAF) du ministère de l’éducation nationale, Institut national de la statistique et des études économiques (Insee), Haut-commissariat à la stratégie et au plan….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 3 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-11-02",
+      "date": "2026-11-02",
+      "type": "amendement_depose",
+      "titre": "369 amendements déposés sur le texte (SOC, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-11-02",
+      "date": "2026-11-02",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 2 novembre 2026",
+      "detail": "1 intervention relevée, dont : « Les travaux dans les logements anciens bénéficient déjà d’une TVA à 10 % et les travaux de rénovation énergétique, à 5,5 %. Par ailleurs, la mesure que vous proposez n’est pas autorisée par la directive européenne. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-02-novembre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 2 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-lundi-02-novembre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-31",
+      "date": "2026-10-31",
+      "type": "amendement_depose",
+      "titre": "66 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, GDR, EPR)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-30",
+      "date": "2026-10-30",
+      "type": "amendement_depose",
+      "titre": "668 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-1666",
+      "date": "2026-10-29",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1666 (EPR) déposé : L’article 173 de la loi de finances pour 2025 a modifié l’identification des…",
+      "detail": "L’article 173 de la loi de finances pour 2025 a modifié l’identification des bénéficiaires après la suppression de la taxe d’habitation.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001666",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1666",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001666"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1670",
+      "date": "2026-10-29",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1670 (EPR) déposé : Le présent amendement propose de créer un nouvel indicateur rattaché au programme 174 «…",
+      "detail": "Le présent amendement propose de créer un nouvel indicateur rattaché au programme 174 « Énergie, climat et après-mines », portant sur l’automaticité du versement du chèque énergie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001670",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1670",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001670"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-29",
+      "date": "2026-10-29",
+      "type": "amendement_depose",
+      "titre": "405 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-10-29",
+      "date": "2026-10-29",
+      "type": "rapport",
+      "titre": "2 rapports du texte publiés avec la liste des personnes entendues (27 organisations)",
+      "detail": "Organisations entendues : Société Sill, Les entrepreneurs (ex CPME), La Fabrique de l'Exportation, Compagnie française d'assurance pour le commerce extérieur (COFACE), Chambres de commerce et d’Industrie France (CCI France), Chambres de commerce et d’Industrie France International (CCIFI) International, Secrétariat général pour l'investissement (SGPI), Direction générale du Trésor, Bpifrance / Bpifrance Assurance Export, OSCI – Les entrepreneurs de l'international, MEAE – Direction de la diplomatie et de la souveraineté économiques, French Healthcare Association….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 29 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tII.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-28",
+      "date": "2026-10-28",
+      "type": "amendement_depose",
+      "titre": "236 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-10-28",
+      "date": "2026-10-28",
+      "type": "rapport",
+      "titre": "2 rapports du texte publiés avec la liste des personnes entendues (55 organisations)",
+      "detail": "Organisations entendues : Fédération nationale de l’immobilier (FNAIM), Association des responsables de copropriétés (ARC), Union nationale des propriétaires immobiliers (UNPI), Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb), France urbaine, Agence parisienne du climat, NegaWatt, Rénovons-CLER-Réseau pour la transition énergétique, Observatoire national de rénovation énergétique (ONRE), Observatoire national de la précarité énergétique (ONPE), Secrétariat général à la planification écologique (SGPE), Association Force ouvrière consommateurs (Afoc)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 28 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-27",
+      "date": "2026-10-27",
+      "type": "amendement_depose",
+      "titre": "152 amendements déposés sur le texte (SOC, RN, NI, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-10-27",
+      "date": "2026-10-27",
+      "type": "rapport",
+      "titre": "1 rapport du texte publié avec la liste des personnes entendues (3 organisations)",
+      "detail": "Organisations entendues : Ministère de l’Europe et des affaires étrangères, Ministère des armées, direction générale des relations internationales et de la stratégie (DGRIS), Ministère de l’intérieur, direction de la coopération internationale et de sécurité (DCIS).",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3279-tI.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 27 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3279-tI.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-26",
+      "date": "2026-10-26",
+      "type": "amendement_depose",
+      "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-10-26",
+      "date": "2026-10-26",
+      "type": "rapport",
+      "titre": "6 rapports du texte publiés avec la liste des personnes entendues (81 organisations)",
+      "detail": "Organisations entendues : Interprofession de la filière des fruits et légumes frais (Interfel), Chambre d’agriculture, Association Générale des Producteurs de Blé et autres céréales (AGPB), Association Générale des Producteurs de Maïs (AGPM), Direction générale de la performance économique et environnementale des entreprises (DGPE), Fédération nationale bovine (FNB), Confédération nationale de l’élevage (CNE), Association nationale interprofessionnelle de la volaille de chair (ANVOL), France Assureurs, Groupama, Pacifica, Comité National des Interprofessions des Vins à appellation d'origine et à indication géographique (CNIV)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tI.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 26 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tI.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-25",
+      "date": "2026-10-25",
+      "type": "amendement_depose",
+      "titre": "7 amendements déposés sur le texte (SOC, EPR)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-24",
+      "date": "2026-10-24",
+      "type": "amendement_depose",
+      "titre": "4 amendements déposés sur le texte (RN)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-23",
+      "date": "2026-10-23",
+      "type": "amendement_depose",
+      "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-22",
+      "date": "2026-10-22",
+      "type": "amendement_depose",
+      "titre": "536 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-10-22",
+      "date": "2026-10-22",
+      "type": "rapport",
+      "titre": "2 rapports du texte publiés avec la liste des personnes entendues (25 organisations)",
+      "detail": "Organisations entendues : KNDS France, Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre), Surfrider Foundation Europe, EDF Power Solutions, EDF, Ailes Marines (Iberdrola), Direction générale de l’énergie et du climat (DGEC), France Renouvelables, Syndicat des énergies renouvelables (SER), Ai2P, Cluster maritime français, Agence de la transition écologique (Ademe)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 22 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-commission-2026-10-21",
+      "date": "2026-10-21",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 21 octobre 2026",
+      "detail": "7 interventions relevées, dont : « La suppression de la taxe d’habitation ayant mis fin à l’automaticité du chèque énergie, le nombre de ses bénéficiaires a reculé, alors même que la précarité énergétique augmente. Si nous voulons toucher un public plus large, nous souhaitons également – c’est l’objet de l’amendement II-CF736 – revaloriser le montant perçu par les bénéficiaires, ce qui n’a pas été fait depuis 2019. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 21 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-21",
+      "date": "2026-10-21",
+      "type": "amendement_depose",
+      "titre": "245 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-10-21",
+      "date": "2026-10-21",
+      "type": "rapport",
+      "titre": "3 rapports du texte publiés avec la liste des personnes entendues (62 organisations)",
+      "detail": "Organisations entendues : Fédération FEETS-Force ouvrière, Fédération UNSA-Développement durable, Syndicat national des contrôleurs du trafic aérien (SNCTA), Association des maires de France (AMF), France urbaine, Départements de France, Régions de France, Fédération nationale des collectivités concédantes et régies (FNCCR), I4CE, Centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement (Cerema), Banque des territoires, Caisse des Dépôts….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 21 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tII.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-20",
+      "date": "2026-10-20",
+      "type": "amendement_depose",
+      "titre": "159 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-10-20",
+      "date": "2026-10-20",
+      "type": "rapport",
+      "titre": "3 rapports du texte publiés avec la liste des personnes entendues (52 organisations)",
+      "detail": "Organisations entendues : Bureau de recherches géologiques et minières (BRGM), Comité national de la conchyliculture (CNC), Fédération nationale des syndicats d’agents généraux d’assurance (Agea), Association des professionnels de la réassurance en France (Apref), France assureurs, Caisse centrale de réassurance (CCR), Association nationale des élus des littoraux (Anel), Association nationale des élus de la montagne (Anem), Institut national de l’environnement industriel et des risques (Ineris), Direction générale de la prévention des risques (DGPR), Institut des risques majeurs (IRMa), Agence de la transition écologique (Ademe)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tI.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 20 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tI.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-2048",
+      "date": "2026-10-19",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 2048 (HOR) tombé : L’article 35 ramène le taux du FCTVA de 16,404 % à 11,404 % pour toutes les dépenses…",
+      "detail": "L’article 35 ramène le taux du FCTVA de 16,404 % à 11,404 % pour toutes les dépenses autres que celles liées à la transition écologique et à la voirie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002048",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2048",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002048"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-3797",
+      "date": "2026-10-19",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 3797 (DEM) tombé : L’article 35 abaisse le taux de droit commun du FCTVA de 16,404 % à 11,404 %",
+      "detail": "L’article 35 abaisse le taux de droit commun du FCTVA de 16,404 % à 11,404 %.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003797",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3797",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003797"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-2418",
+      "date": "2026-10-19",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2418 (EPR) déposé : Le présent amendement vise à renforcer le contrôle du Parlement sur l’attribution du…",
+      "detail": "Le présent amendement vise à renforcer le contrôle du Parlement sur l’attribution du chèque énergie, en instituant un indicateur de performance permettant de mesurer la proportion de chèques attribués automatiquement à leurs bénéficiaires.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002418",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2418",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002418"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-349",
+      "date": "2026-10-19",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 349 (EPR) déposé : Le présent amendement propose de créer un nouvel indicateur rattaché au programme 174 «…",
+      "detail": "Le présent amendement propose de créer un nouvel indicateur rattaché au programme 174 « Énergie, climat et après-mines », portant sur l’automaticité du versement du chèque énergie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000349",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 349",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000349"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-350",
+      "date": "2026-10-19",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 350, n° 2421) (EPR) déposés : L’article 173 de la loi de finances pour 2025 a modifié l’identification des…",
+      "detail": "L’article 173 de la loi de finances pour 2025 a modifié l’identification des bénéficiaires après la suppression de la taxe d’habitation. Déposé par 2 auteurs du même groupe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000350",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 350",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000350"
+          },
+          {
+            "label": "Amendement n° 2421",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002421"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-19",
+      "date": "2026-10-19",
+      "type": "amendement_depose",
+      "titre": "328 amendements déposés sur le texte (UDR, SOC, RN, NI, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-18",
+      "date": "2026-10-18",
+      "type": "amendement_depose",
+      "titre": "13 amendements déposés sur le texte (SOC)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-17",
+      "date": "2026-10-17",
+      "type": "amendement_depose",
+      "titre": "92 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, EPR, EcoS)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-16",
+      "date": "2026-10-16",
+      "type": "amendement_depose",
+      "titre": "2380 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-16",
+      "date": "2026-10-16",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 16 octobre 2026",
+      "detail": "1 intervention relevée, dont : « L’argent sera ainsi thésaurisé, donc inutile des années durant, alors qu’il pourrait servir à relancer la dynamique d’investissement dans le logement. D’autre part, permettre à quelqu’un qui a acquis sa résidence principale d’utiliser ces 100 000 euros pour réaliser des travaux et mettre son bien aux normes encourage aussi la rénovation énergétique. Enfin, je le répète : il ne s’agit pas d’opposer les gens, les univers, les milieux. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depot-164",
+      "date": "2026-10-15",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 164 (GDR) déposé : Le présent amendement vise à renforcer le contrôle du Parlement sur l’attribution du…",
+      "detail": "Le présent amendement vise à renforcer le contrôle du Parlement sur l’attribution du chèque énergie, en instituant un indicateur de performance permettant de mesurer la proportion de chèques attribués automatiquement à leurs bénéficiaires.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000164",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 164",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000164"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-186",
+      "date": "2026-10-15",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 186 (LFI-NFP) déposé : Le groupe La France insoumise souhaite par cet amendement rétablir l’automaticité du…",
+      "detail": "Le groupe La France insoumise souhaite par cet amendement rétablir l’automaticité du chèque énergie afin de mieux répondre à la précarité énergétique croissante et assurer une protection renforcée des ménages modestes face au refus du Go...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000186",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 186",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000186"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depots-2026-10-15",
+      "date": "2026-10-15",
+      "type": "amendement_depose",
+      "titre": "669 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, GDR, EPR, EcoS, DR, Dem)",
+      "detail": "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-commission-2026-10-14",
+      "date": "2026-10-14",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 14 octobre 2026",
+      "detail": "2 interventions relevées, dont : « Nous avons choisi la rigueur, car c’est elle qui nous sauvera et qui nous permettra de continuer à parler des services publics et de MaPrimeRénov’ dans deux ans. Si le gouvernement se montrait trop généreux, on lui reprocherait de laisser filer la dette. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627009_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 14 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627009_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-107",
+      "date": "2026-10-13",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 107 (RN) déposé : Cet amendement vise à créer un dispositif « 100 % Rénov » ayant vocation à se substituer…",
+      "detail": "Cet amendement vise à créer un dispositif « 100 % Rénov » ayant vocation à se substituer à MaPrimeRénov’, afin de financer massivement la rénovation énergétique et l’adaptation des logements aux épisodes de fortes chaleurs sans imposer a...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000107",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 107",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000107"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-rapports-2026-10-13",
+      "date": "2026-10-13",
+      "type": "rapport",
+      "titre": "1 rapport du texte publié avec la liste des personnes entendues (2 organisations)",
+      "detail": "Organisations entendues : Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction du budget, Ministère de l’Europe et des affaires étrangères.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a46.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 13 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a46.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-13",
+      "date": "2026-10-13",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 13 octobre 2026",
+      "detail": "1 intervention relevée, dont : « Mais faire de la politique, c’est aussi concilier nos contraintes avec nos ambitions écologiques, sociales et productives. C’est le sens de nos propositions : un capital de départ pour la jeunesse, une contribution additionnelle à l’impôt sur la fortune immobilière (IFI) pour financer la rénovation énergétique ou encore un prêt adossé aux économies d’énergie de demain. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 13 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depot-3656",
+      "date": "2026-10-10",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 3656 (EPR) déposé : Le présent amendement s’inscrit dans l’esprit du dispositif « Balladur » visant à…",
+      "detail": "Le présent amendement s’inscrit dans l’esprit du dispositif « Balladur » visant à relancer les transferts patrimoniaux entre générations pour faciliter l’accession des jeunes à la propriété.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003656",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3656",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003656"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-3797",
+      "date": "2026-10-10",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 3797 (DEM) déposé : L’article 35 abaisse le taux de droit commun du FCTVA de 16,404 % à 11,404 %",
+      "detail": "L’article 35 abaisse le taux de droit commun du FCTVA de 16,404 % à 11,404 %.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003797",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3797",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003797"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-139",
+      "date": "2026-10-09",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 139, n° 392) (EPR) tombés : L'article 35 réserve le taux de 16,404 % aux dépenses « liées à la transition écologique…",
+      "detail": "L'article 35 réserve le taux de 16,404 % aux dépenses « liées à la transition écologique », mais en renvoie entièrement la définition à un arrêté.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000139",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 139",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000139"
+          },
+          {
+            "label": "Amendement n° 392",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000392"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-933",
+      "date": "2026-10-09",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 933, n° 3460) (SOC) tombés : L’article 35 maintient un taux bonifié de 16,404 % pour les dépenses liées à la…",
+      "detail": "L’article 35 maintient un taux bonifié de 16,404 % pour les dépenses liées à la transition écologique, mais renvoie à un arrêté conjoint des ministres chargés des collectivités territoriales et du budget le soin de déterminer les comptes...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000933",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 933",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000933"
+          },
+          {
+            "label": "Amendement n° 3460",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003460"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-2048",
+      "date": "2026-10-09",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2048 (HOR) déposé : L’article 35 ramène le taux du FCTVA de 16,404 % à 11,404 % pour toutes les dépenses…",
+      "detail": "L’article 35 ramène le taux du FCTVA de 16,404 % à 11,404 % pour toutes les dépenses autres que celles liées à la transition écologique et à la voirie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002048",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2048",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002048"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-2352",
+      "date": "2026-10-09",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2352 (DR) déposé : Le présent amendement vise à permettre le financement, par l’éco-prêt à taux zéro, des…",
+      "detail": "Le présent amendement vise à permettre le financement, par l’éco-prêt à taux zéro, des travaux d’amélioration du confort d’été des logements, en particulier l’installation de brasseurs d’air plafonniers fixes et de protections solaires m...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002352",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2352",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002352"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-2376",
+      "date": "2026-10-09",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2376 (LIOT) déposé : Le présent amendement vise à permettre le financement, par l’éco-prêt à taux zéro, des…",
+      "detail": "Le présent amendement vise à permettre le financement, par l’éco-prêt à taux zéro, des travaux d’amélioration du confort d’été des logements, en particulier l’installation de brasseurs d’air plafonniers fixes et de protections solaires m...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002376",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2376",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002376"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-commission-2026-10-08",
+      "date": "2026-10-08",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 8 octobre 2026",
+      "detail": "1 intervention relevée, dont : « L’article 5 restreint le champ des activités éligibles au réemploi, excluant notamment les investissements immobiliers. Le présent amendement rétablit la définition antérieure de ces activités afin que des projets de construction, de rénovation énergétique ou de réhabilitation, notamment de bâtiments destinés à accueillir des établissements médicaux ou scolaires, puissent de nouveau être financés dans ce cadre. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 8 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depot-1038",
+      "date": "2026-10-08",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1038 (EPR) déposé : L’article L",
+      "detail": "L’article L.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001038",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1038",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001038"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1093",
+      "date": "2026-10-08",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1093 (UDR) déposé : Cet amendement vise à faire de la taxe foncière sur les propriétés bâties un levier…",
+      "detail": "Cet amendement vise à faire de la taxe foncière sur les propriétés bâties un levier d’accélération de la rénovation énergétique et de l’électrification du parc immobilier existant.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001093",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1093",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001093"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-commission-2026-10-07",
+      "date": "2026-10-07",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 7 octobre 2026",
+      "detail": "1 intervention relevée, dont : « L’amendement I-CF1341 vise à proroger jusqu’au 31 décembre 2030, soit pour trois années supplémentaires, l’exonération de droits de donation des dons familiaux consentis pour l’acquisition d’un logement neuf destiné à la résidence principale ou pour la réalisation de travaux de rénovation énergétique. Un tel dispositif met quelque temps à se mettre en place. Celui-ci, instauré dans la loi de finances de 2025, fonctionne bien mais arrive à son terme à la fin de l’année. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 7 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depot-1603",
+      "date": "2026-10-04",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1603 (EPR) déposé : Le présent amendement s’inscrit dans l’esprit du dispositif « Balladur » visant à…",
+      "detail": "Le présent amendement s’inscrit dans l’esprit du dispositif « Balladur » visant à relancer les transferts patrimoniaux entre générations pour faciliter l’accession des jeunes à la propriété.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001603",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1603",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001603"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-711",
+      "date": "2026-10-03",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 711, n° 1997) (LFI-NFP) déposés : Par cet amendement, le groupe LFI propose d’instaurer un malus progressif sur la taxe…",
+      "detail": "Par cet amendement, le groupe LFI propose d’instaurer un malus progressif sur la taxe foncière pour les propriétaires bailleurs à hauts revenus qui ne réalisent pas les travaux de rénovation nécessaires sur les passoires thermiques qu’il... Déposé par 2 auteurs du même groupe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000711",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 711",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000711"
+          },
+          {
+            "label": "Amendement n° 1997",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001997"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-139",
+      "date": "2026-10-02",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 139, n° 392) (EPR) déposés : L'article 35 réserve le taux de 16,404 % aux dépenses « liées à la transition écologique…",
+      "detail": "L'article 35 réserve le taux de 16,404 % aux dépenses « liées à la transition écologique », mais en renvoie entièrement la définition à un arrêté. Déposé par 2 auteurs du même groupe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000139",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 139",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000139"
+          },
+          {
+            "label": "Amendement n° 392",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000392"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-commission-2026-10-01",
+      "date": "2026-10-01",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 1er octobre 2026",
+      "detail": "1 intervention relevée, dont : « Deuxièmement, les revirements qui ont touché MaPrimeRénov ont eu un impact très négatif sur l’investissement des ménages. Confirmez-vous le rôle positif que peut jouer cet outil sur l’activité ? Si oui, ne faut-il pas porter son montant de 3,6 à 5 milliards d’euros, et surtout améliorer sa gestion et stabiliser ses critères ? »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 1er octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627002_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-06-17",
+      "date": "2026-06-17",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 17 juin 2026",
+      "detail": "2 interventions relevées, dont : « Où donc est passée l’écologie ? Après les coupes incessantes qu’a subies MaPrimeRénov, vous avez encore amputé le fonds Vert et comptez désormais vous attaquer à l’Ademe. Vous privez nos territoires des principaux outils à leur disposition pour nous protéger. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 17 juin 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-06-16",
+      "date": "2026-06-16",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 16 juin 2026",
+      "detail": "1 intervention relevée, dont : « Le gouvernement est-il prêt à reprendre notre proposition de loi contre les bouilloires thermiques, à adapter les critères des aides à l’isolation de MaPrimeRénov' et à lui consacrer les moyens nécessaires ? »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 16 juin 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-04-28",
+      "date": "2026-04-28",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 28 avril 2026",
+      "detail": "2 interventions relevées, dont : « Face à cette situation, j’ai toujours soutenu que nous devions avoir une vision globale. Il n’y a pas de solution magique et il faut agir sur tous les leviers : relancer l’accession à la propriété, redonner de la lisibilité à l’investissement locatif, soutenir le logement social, accélérer la rénovation énergétique tout en mobilisant mieux le parc existant. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 28 avril 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    }
+  ]
+}
