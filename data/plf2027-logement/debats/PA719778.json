@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T17:02:56+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des finances, réunion n° 20 du 21/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627020_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 12 du 09/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78 ou article 78 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-logement/groupes-action.json et data/plf2027-logement/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA719778",
+  "debats": [
+    {
+      "date": "2026-10-21",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je comprends le sens de l’amendement. Mais, au-delà du geste politique, ayant été rapporteur d’une mission d’évaluation de la politique du logement social dans les outre-mer, je souligne qu’il faudrait d’abord trouver des collectivités locales prêtes à porter les investissements nécessaires pour construire des foyers. Aujourd’hui, il n’y a pas ou très peu de candidats, et quand il y en a, les projets ne sont pas menés à leur terme.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627020_compte-rendu"
+    },
+    {
+      "date": "2026-10-09",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Article 52 : Maintien du niveau de contribution des bailleurs sociaux au financement des aides à la pierre",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Nous proposons d’étendre le dispositif du prêt à taux zéro (PTZ) aux territoires d’outre-mer pour le logement ancien. Actuellement, il ne s’applique que dans l’Hexagone.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "J’entends votre argument, mais c’est au nom du principe d’égalité que l’Assemblée a étendu le PTZ à tout l’Hexagone il y a deux ans. Vous considérez donc qu’une inégalité pourrait persister à l’égard des territoires d’outre-mer ?",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je suis très surpris par la position de notre collègue, car l’octroi du prêt à taux zéro est soumis à un plafond de ressources : il concerne des gens qui ont des revenus modestes. Vous voudriez leur retirer la possibilité de changer de logement – quelle que soit leur motivation – en bénéficiant de ce dispositif.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le dispositif prévu par l’article 7 renvoie à la notion de charge effective d’un enfant, qui n’est pas définie. Je propose que les parents qui se séparent et qui obtiennent la garde alternée des enfants par décision de justice – et non par arrangement – puissent chacun bénéficier du prêt à taux zéro.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le dispositif BRS est une forme particulière d’accession qui dissocie le foncier et le bâti. Des acheteurs aux revenus modestes peuvent satisfaire aux conditions de ressources pour bénéficier du PTZ, mais la possibilité d’y recourir ne leur est pas ouverte.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Nous avons adopté hier le dispositif du PTZ famille, qui prendra fin le 31 décembre 2027. J’invite d’ailleurs les auteurs de l’amendement concerné à modifier cette échéance avant le débat en séance publique, car réaliser un projet d’acquisition en une seule année n’est pas aisé, surtout avec ce type de dispositif.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le PTZ dans l’ancien prendra également fin au 31 décembre 2027. Je vous propose de le proroger jusqu’au 31 décembre 2030.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

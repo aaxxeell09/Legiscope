@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T17:02:56+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Deuxième séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 10 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627010_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78 ou article 78 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-logement/groupes-action.json et data/plf2027-logement/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA720728",
+  "debats": [
+    {
+      "date": "2026-10-13",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Sur ce point, le Parlement a aujourd’hui une responsabilité fondamentale. Ce dernier budget du quinquennat a le mérite de fixer un cap impératif, celui de la réduction du déficit à 5 % du PIB, et de comporter plusieurs mesures utiles : le pacte Papin qui facilite la reprise d’entreprises, le prêt à taux zéro (PTZ) parentalité, la circulation du patrimoine ou encore le soutien à l’investissement industriel.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Dans la lignée de la proposition de loi de Constance de Pélichy visant à faciliter l’accès au logement des familles par la création d’un prêt à taux zéro, nous souhaitons que le PTZ « parentalité » soit étendu aux familles qui comptent au moins un enfant de moins de 5 ans et que la condition de ressources soit supprimée.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il faut un apport personnel pour acheter un bien, et le PTZ permet de constituer cet apport. Des couples peuvent avoir de bons revenus mais pas d’apport personnel pour consolider leur dossier bancaire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’exonération de la taxe foncière pour les bailleurs sociaux n’incite pas les communes à accepter la construction de logements sociaux sur leur territoire. Or elles ont besoin de moyens pour assurer la présence de services publics répondant légitimement aux besoins de leur population.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Les sécheresses et les canicules de 2026 ont fragilisé la trésorerie des exploitations agricoles, au moment où elles doivent investir pour s’adapter. Il faut leur donner un coup de pouce ; nous proposons qu’il prenne la forme d’un éco-PTZ (éco-prêt à taux zéro) agricole, c’est-à-dire d’une aide liée aux intérêts d’emprunt, plutôt que d’un crédit d’impôt.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627010_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

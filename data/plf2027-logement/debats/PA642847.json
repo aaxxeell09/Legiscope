@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T17:02:56+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du mercredi 21 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78 ou article 78 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-logement/groupes-action.json et data/plf2027-logement/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA642847",
+  "debats": [
+    {
+      "date": "2026-10-21",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Dans un contexte de très forte hausse des taux d’intérêt, le dispositif que vous défendez avec notre collègue Le Fur risque toutefois d’être sans effet sur le marché immobilier à court terme. Pour faciliter l’accession à la propriété, le prêt à taux zéro (PTZ) me semble un outil beaucoup plus adapté, surtout dans le contexte actuel. Je vous renvoie sur ce point au projet de loi de finances, sur lequel notre collègue Le Fur est très investi.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

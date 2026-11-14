@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T17:02:56+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 6 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627006_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78 ou article 78 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-logement/groupes-action.json et data/plf2027-logement/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA719372",
+  "debats": [
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cet article porte sur le logement et comporte deux dispositions. La première prévoit un élargissement du prêt à taux zéro (PTZ), notamment aux familles avec enfant qui ont déjà bénéficié d’un tel prêt. Elle est intéressante, même s’il faut veiller à ne pas ouvrir le PTZ sans conditions, ce qui reviendrait à supprimer les taux d’intérêt pour tout le monde.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Or, lorsqu’il fait lui-même des emprunts, l’État paie actuellement 5 % de taux d’intérêt sur dix ans. Le PTZ est un dispositif utile et précieux ; mais l’étendre à ceux qui peuvent emprunter directement à la banque au taux standard du marché aurait un coût significatif pour le contribuable. Je ne souhaite pas que l’impôt des Français vienne financer un PTZ pour tous, quelle que soit la situation du ménage.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "M. le ministre m’a ôté les mots de la bouche : j’ai l’impression qu’on veut un prêt à taux zéro pour tous.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Au vu des amendements que nous avons adoptés, qui ne sera pas éligible au prêt à taux zéro ? Qui ne bénéficiera pas de cette prise en charge des taux d’intérêt par l’État, et donc par le contribuable ?",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "On retrouve ici l’instrument socialo-communiste préféré de la gauche : le blocage des prix, en l’occurrence le blocage des loyers. Et cette fois, il s’applique au logement social. Celui-ci est déjà largement subventionné et ses bénéficiaires paient des loyers très inférieurs à ceux du parc privé.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Les bailleurs sociaux n’ont plus d’argent ! On a le droit de ne pas être d’accord !",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Initialement, le PTZ était centré sur les ménages très modestes dans les zones où le marché immobilier était tendu. Il se transforme progressivement en un PTZ pour tous dans lequel l’État se substituerait aux emprunteurs pour payer les taux d’intérêt, dont je rappelle qu’ils augmentent significativement.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La solution est-elle que l’État paie les taux d’intérêt pour tous les ménages, quelle que soit leur situation et dans tous les territoires ? Je crains que ce soit une mesure très étatique, coûteuse pour les finances publiques et qui dévoie l’objectif initial du PTZ. Je suis donc réservé lorsqu’il s’agit d’élargir le dispositif.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Au terme de nos débats, qui ne bénéficiera pas du PTZ ? Avec tous ces amendements successifs proposant d’élargir le champ des bénéficiaires, j’ai l’impression que nous allons aboutir au PTZ pour tous.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "S’agissant du logement social, rappelons que les locataires bénéficient déjà de loyers très inférieurs aux prix du marché. Vous proposez de geler ces loyers dont le montant est déjà modéré, et le manque à gagner sera payé par les contribuables.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le logement social bénéficie déjà d’un important soutien public : les prêts réglementés de long terme, les subventions d’investissement, le taux réduit de TVA, les exonérations de taxes foncières et des aides personnelles au logement (APL).",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cet amendement vise à revenir sur l’exonération de l’IS pour les bailleurs sociaux. Rappelons que le montant de cet impôt dépend de la profitabilité des entreprises ; adopter cet amendement pourrait produire un rendement fiscal de 400 millions d’euros pour l’année 2027.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il me semble assez curieux que la gauche ne veuille pas entendre parler de la suppression de cette exonération de l’impôt sur les sociétés, au motif qu’elle concerne les bailleurs sociaux. Quand il s’agit des autres secteurs économiques, elle est la première à défendre non seulement le maintien de cet impôt, mais sa hausse.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je trouve curieux que vous considériez qu’il ne faille pas soumettre les bailleurs sociaux à l’IS, même s’ils font des bénéfices.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Malheureusement, l’exonération de l’IS pour les bailleurs sociaux, qui est une niche fiscale, a été maintenue.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Falcon, qui avait pour objectif la suppression sèche de l’exonération de taxe foncière accordée aux bailleurs sociaux. Cette année, j’ai déposé l’amendement I-CF1657, qui tend à appliquer une exonération dégressive : 75 % d’exonération de la première à la cinquième année, 50 % de la sixième à la dixième année et 25 % de la onzième à la quinzième année, avant un retour au droit commun à compter de la seizième année.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’exonération de la taxe foncière va à l’encontre des politiques d’encouragement au logement social. Il ne faut pas s’étonner que certains élus locaux rechignent à signer des permis de construire pour le logement social : ils n’y ont financièrement aucun intérêt.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Par dogmatisme, il faudrait n’apporter aucune modification fiscale dès qu’il est question des bailleurs sociaux : c’est vous qui êtes dans l’idéologie !",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Vous criez au scandale, mais que défendez-vous, la profitabilité des bailleurs sociaux ?",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Dans beaucoup de domaines, la gauche fait la chasse aux avantages fiscaux et rabote tout ce qu’elle peut en matière de crédits d’impôt et de facilités, mais quand il s’agit des bailleurs sociaux, il y a une levée de boucliers : leurs avantages fiscaux seraient sacrés, on ne pourrait pas y toucher ! C’est étonnant.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627006_compte-rendu"
+    },
+    {
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’exonération de taxe foncière pour les bailleurs sociaux crée une inégalité entre secteurs, mais dissuade aussi les maires de signer des permis de construire pour des logements sociaux.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627006_compte-rendu"
+    },
+    {
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Ce n’est pas parce qu’il s’agit de logement social que la gauche doit considérer que tout avantage fiscal est dû, simplement parce qu’elle a des intérêts dans l’affaire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627006_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

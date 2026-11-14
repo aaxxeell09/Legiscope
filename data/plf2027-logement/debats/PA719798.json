@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T17:02:56+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 8 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78 ou article 78 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-logement/groupes-action.json et data/plf2027-logement/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA719798",
+  "debats": [
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Si un PTZ est à taux zéro pour l’emprunteur, il ne l’est pas pour le contribuable.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Étendre le PTZ à de nouveaux bénéficiaires, cela peut coûter très cher ! Nous venons de rendre ce prêt accessible aux acquéreurs successifs d’un logement éligible au bail réel solidaire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "J’ai le sentiment que le PTZ pour tous et pour tout serait comme offrir une tournée générale sur un bateau en train de couler.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Plus on élargit le PTZ, plus on risque de grever les finances publiques. En 2025, le dispositif représentait 1,35 milliard d’euros.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-08",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je soutiens cet amendement, très similaire à l’un de ceux que j’avais défendus l’année dernière. Le mien était conditionné par un autre amendement qui visait à rétablir l’exonération si les bailleurs sociaux respectaient leur obligation de construction de logements.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}
