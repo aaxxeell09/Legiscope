@@ -11,7 +11,13 @@ try {
     const am = JSON.parse(readFileSync(ROOT + `data/raw/${dos.id}/amendements.json`, "utf8")).amendements;
     // Plafond par dossier (P0, 16 h 05) : ORCET_MAX amendements en attente au plus, 50 crédits chacun. Défaut 25.
     const orcetMax = Number(process.env.ORCET_MAX ?? 25);
-    const attente = am.filter((a: any) => !a.sort && /traitement/i.test(a.etat ?? "")).slice(0, orcetMax);
+    // Priorité aux amendements retenus par P3 dans data/<dossier>/texte.json (vraiment sur la mesure), puis les autres.
+    const texteF = ROOT + `data/${dos.id}/texte.json`;
+    const retenus = new Set<string>(existsSync(texteF) ? JSON.parse(readFileSync(texteF, "utf8")).amendements.map((a: any) => a.id) : []);
+    const attente = am
+      .filter((a: any) => !a.sort && /traitement/i.test(a.etat ?? ""))
+      .sort((a: any, b: any) => Number(retenus.has(b.id)) - Number(retenus.has(a.id)))
+      .slice(0, orcetMax);
     mkdirSync(ROOT + `data/raw/${dos.id}/orcet`, { recursive: true });
     for (const a of attente) {
       const f = ROOT + `data/raw/${dos.id}/orcet/${a.id}.json`; if (existsSync(f)) continue;
