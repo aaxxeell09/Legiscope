@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:16:42Z",
+    "generated_at": "2026-11-14T13:23:56Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -45,10 +45,11 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Afep, mesure suivie : Taxe sur la fortune improductive (article 3) et taxe de 0,5 % sur les holdings patrimoniales (n° 3140). Étape : Première lecture : rejeté par l'Assemblée le 2026-11-04 ; Sénat, première lecture. Verdict proposé sur l'objectif principal (« Empêcher la taxe sur les holdings et la fortune improductive ») : situation favorable, tendance stable, confiance élevée. Au Sénat, en première lecture, la mesure est favorable à l'Afep car elle est absente du texte du gouvernement et rejetée par 7 groupes, dont le rapporteur général, face à 4 groupes opposés. Repli « Limiter son assiette » : situation favorable. Repli « Repousser son entrée en vigueur » : situation favorable. Ce qui a bougé : Séance publique, première lecture : rejeté (scrutin n° 9759) (4 novembre 2026, favorable au client) ; 2 amendements identiques (n° 874, n° 2620) (LFI-NFP) rejetés (scrutin n° 9136) : Avec cet amendement, les députés du groupe LFI proposent d’exclure les sociétés holdings… (27 octobre 2026, défavorable au client). Prochaine date : Commission mixte paritaire (date non fixée). Dernière occasion d'agir : Examen au Sénat : prochaine occasion d'obtenir la suppression ou la réduction de la mesure, avant le retour du texte à l'Assemblée (date non fixée). Députés sur qui agir : 15 ; alliés à protéger : 15 ; perdus : 15. Limites : amendements sans prédiction Orcet exclus des comptes.",
+  "texte": "Verdict proposé : l'objectif principal d'empêcher la taxe sur les holdings et la fortune improductive est en bonne voie, car 66 % des sièges sont favorables à cet objectif. La tendance reste stable. Ce qui a bougé : le 27 octobre 2026, 2 amendements identiques (n° 874, n° 2620) déposés par le groupe LFI-NFP ont été rejetés (scrutin n° 9136). Le 4 novembre 2026, la mesure a été rejetée en séance publique lors de la première lecture (scrutin n° 9759), ce qui est favorable au client. La prochaine occasion d'agir est l'examen au Sénat, avant le retour du texte à l'Assemblée. Les étapes suivantes sont la commission mixte paritaire puis la nouvelle lecture à l'Assemblée. Les décideurs clés sont Philippe Juvin, contre la mesure, et Éric Coquerel, pour la mesure. Les députés sur qui agir en priorité sont Christophe Blanchet (DEM), Paul-André Colombani (LIOT) et Loïc Prud'homme (LFI-NFP). Limites : amendements sans prédiction Orcet exclus des comptes",
   "chiffres_utilises": [
+    "0.66",
+    "66",
     "4",
-    "7",
     "2026-11-04",
     "2026",
     "9759",
@@ -58,12 +59,7 @@
     "874",
     "2620",
     "9136",
-    "3",
-    "0.5",
-    "3140",
-    "11",
-    "04",
-    "15"
+    "04"
   ],
   "sources": [
     {
@@ -73,6 +69,14 @@
     {
       "label": "Scrutin n° 8863",
       "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8863"
+    },
+    {
+      "label": "Examen au Sénat : prochaine occasion d'obtenir la suppression ou la réduction de la mesure, avant le retour du texte à l'Assemblée",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+    },
+    {
+      "label": "Commission mixte paritaire",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
     },
     {
       "label": "Intervention du 2026-10-16",
@@ -88,7 +92,7 @@
     }
   ],
   "limites": "amendements sans prédiction Orcet exclus des comptes.",
-  "mode": "gabarit",
-  "modele": null,
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
   "verifie": true
 }
