@@ -46,17 +46,24 @@ export default function DossierView() {
     );
   }
 
+  const titre = d.label?.replace(/^PLF\s+\d{4}\s*[,—–-]\s*/i, "") ?? d.label;
+  const millesime = d.label?.match(/PLF\s+\d{4}/i)?.[0]?.toUpperCase();
+
   return (
     <div className="view dossier" data-view="dossier">
       <header className="dossier-head">
         <div className="dossier-heading">
           <div className="dossier-kicker">{d.client}</div>
-          <h1>{d.label}</h1>
-          {d.mesure && <p className="dossier-mesure">{d.mesure.label}{d.mesure.article && <> · Article {d.mesure.article}</>}{etat.data?.etape && <> · {etat.data.etape}</>}</p>}
+          <h1>{titre}</h1>
+          <div className="dossier-context" aria-label="Contexte parlementaire">
+            {millesime && <span>{millesime}</span>}
+            {d.mesure?.article && <span>Article {d.mesure.article}</span>}
+            {etat.data?.etape && <span>{etat.data.etape}</span>}
+          </div>
+          {d.mesure && <p className="dossier-mesure" title={d.mesure.label}>{d.mesure.label}</p>}
         </div>
         <div className="dossier-head-meta">
           {d.dateReference ? <span className="history-label"><span aria-hidden="true">◷</span> Relecture historique · {formatDate(d.dateReference)}</span> : <span className="live-label"><span className="dataset-dot live" /> Dossier vivant</span>}
-          <Link className="btn-secondary" to={`/dossier/${d.id}/base`}>Voir la base complète</Link>
         </div>
         <div className="dossier-objectifs" role="tablist" aria-label="Objectif analysé">
           {d.objectifs.map((o, i) => (
@@ -77,7 +84,7 @@ export default function DossierView() {
                 (e.currentTarget.parentElement?.children[next] as HTMLButtonElement | undefined)?.focus();
               }}
             >
-              <span>{o.rang === 1 ? "Objectif principal" : `Repli ${o.rang - 1}`}</span>
+              <span>{o.rang === 1 ? "Principal" : `Repli ${o.rang - 1}`}</span>
               <strong>{o.texte}</strong>
             </button>
           ))}
