@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:16:20Z",
+    "generated_at": "2026-11-14T13:23:33Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -45,11 +45,12 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Verdict proposé : l'objectif principal d'empêcher le vote de la taxe est mal engagé, avec 26 % des sièges favorables et une tendance stable. La situation s'est dégradée le 18 novembre 2025 avec le rejet de l'amendement n° 974 du RN visant à supprimer l'article 22, tandis qu'un nouvel amendement n° 806 a été déposé. La commission des finances examine le texte le 18 novembre 2025 à 09 h 30. La dernière occasion d'agir est la séance publique du 19 novembre 2025, où l'article 22 sera examiné. Il faut cibler le gouvernement et Philippe Juvin, qui soutiennent la mesure, ainsi que les députés Nicole Sanquer, Blandine Brocard et Fabrice Brun. Limites : Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes",
+  "texte": "Verdict proposé : l'objectif principal d'empêcher le vote de la taxe est mal engagé, avec 26 % des sièges favorables et une tendance stable. La situation s'est dégradée le 18 novembre 2025 avec le rejet de l'amendement n° 974 du groupe RN visant à supprimer l'article 22, tandis que l'amendement n° 806 reste en attente. La commission des finances examine le texte le 18 novembre 2025 à 09 h 30. La dernière occasion d'agir est la séance publique du 19 novembre 2025 pour l'examen de l'article 22, avant la fin de la première lecture à l'Assemblée. Le gouvernement et Philippe Juvin soutiennent la mesure. Il faut prioriser l'action sur Nicole Sanquer, Blandine Brocard et Fabrice Brun. Limites : Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes",
   "chiffres_utilises": [
     "0.26",
     "26",
     "22",
+    "806",
     "974",
     "2025-11-18",
     "18",
@@ -57,8 +58,7 @@
     "09",
     "30",
     "2025-11-19",
-    "19",
-    "806"
+    "19"
   ],
   "sources": [
     {

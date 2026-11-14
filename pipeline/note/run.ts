@@ -138,6 +138,10 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
     const proch = s.echeances.find((e) => e.date && (!ref || e.date >= ref) && e.date !== occ?.date);
     if (proch?.date) ajouter(occ?.date && proch.date < occ.date ? 3 : 7, `${occ?.date && proch.date < occ.date ? "Prochaine date" : "Ensuite"} : ${dateFr(proch.date)}, ${min1(proch.titre.replace(/\.$/, ""))}.`, [proch.date], { label: proch.titre, url: proch.url });
     if (occ?.date) ajouter(3, `Dernière occasion d'agir : ${dateFr(occ.date)}, ${min1(occ.titre.replace(/\.$/, ""))}.`, [occ.date], { label: occ.titre, url: occ.url });
+    // Échéances sans date (nouvelle lecture, CMP) : dites telles quelles, pour que le modèle n'invente pas l'étape suivante.
+    if (occ && !occ.date) ajouter(3, `Dernière occasion d'agir (date non fixée) : ${min1(occ.titre.replace(/\.$/, ""))}.`, [], { label: occ.titre, url: occ.url });
+    const sansDate = s.echeances.filter((e) => !e.date && e.titre !== occ?.titre).slice(0, 2);
+    if (!proch?.date && sansDate.length) ajouter(4, `Étapes suivantes, dates non fixées : ${sansDate.map((e) => min1(e.titre.replace(/\.$/, ""))).join(" ; ")}.`, [], { label: sansDate[0].titre, url: sansDate[0].url });
     // Une prédiction Orcet sur un amendement n'est jamais une issue : ces probables sont écartés (garde-fou).
     const prob = s.probables.find((p) => p.proba !== null && !/amendement|n° \d/i.test(p.titre));
     if (prob) ajouter(8, `Issue la plus probable selon l'outil : ${min1(prob.titre.replace(/\.$/, ""))}.`);
