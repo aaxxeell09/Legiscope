@@ -139,6 +139,12 @@ export default function BaseView() {
     { key: "sort", label: "Sort", width: "8em", render: (a) => SORT_LABEL[a.sort] },
     { key: "date", label: "Dépôt", width: "8em", render: (a) => a.date_depot ? formatDate(a.date_depot) : <span className="text-2">inconnue</span> },
   ];
+  const metaBase = (() => {
+    const metas = [etat.data?.meta, texte.data?.meta].filter((m): m is NonNullable<typeof m> => Boolean(m));
+    if (metas.length === 0) return null;
+    const sources = metas.flatMap((m) => m.sources).filter((source, index, all) => all.findIndex((item) => item.url === source.url) === index);
+    return { ...metas[0], sources };
+  })();
 
   if (d.status === "inconnu") {
     return (
@@ -227,8 +233,7 @@ export default function BaseView() {
       </Etat>
 
       <Panel>
-        <Meta meta={etat.data?.meta} />
-        <Meta meta={texte.data?.meta} />
+        <Meta meta={metaBase} />
       </Panel>
     </div>
   );
