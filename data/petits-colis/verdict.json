@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:02:44+01:00",
+    "generated_at": "2026-11-14T14:22:07+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
       }
     ],
-    "limits": "Verdict proposé, le cabinet décide. Données au plus tard le 2025-11-18. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de réduction ou de report, ou opposés à la mesure, contre groupes qui la renforcent. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.26, à J-7 0.26, Orcet aucun ; objectif 2 : positions 0.71, à J-7 0.71, Orcet aucun ; objectif 3 : positions 0.46, à J-7 0.26, Orcet aucun. Événements de nouveautes.json écartés comme cause du changement : objectif 1, ev-61 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-1224 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-1611 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-1786 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-2147 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-2176 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-2274 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 2, ev-938 : effet « renforce » annoncé, mais l'amendement renforce la mesure (relève le montant (2 à 5)), donc « affaiblit » pour cet objectif.",
+    "limits": "Verdict proposé, le cabinet décide. Données au plus tard le 2025-11-18. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de nature « reduit » (réduire) ou « reporte » (repousser), ou opposés à la mesure, contre groupes auteurs d'amendements « aggrave ». Le score se lit « part des sièges favorables à l'objectif », jamais comme une probabilité. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.26, à J-7 0.26, Orcet aucun ; objectif 2 : positions 0.46, à J-7 0.46, Orcet aucun ; objectif 3 : positions 0.26, à J-7 0.26, Orcet aucun. Événements de nouveautes.json écartés comme cause du changement : objectif 2, ev-938 : effet « renforce » annoncé, mais l'amendement renforce la mesure (relève le montant (2 à 5)), donc « affaiblit » pour cet objectif.",
     "producer": "pipeline/pivots",
     "dossier_id": "petits-colis"
   },
@@ -28,6 +28,7 @@
       "objectif_rang": 1,
       "situation": "defavorable",
       "score": 0.26,
+      "score_libelle": "part des sièges favorables à l'objectif",
       "tendance": "stable",
       "confiance": {
         "niveau": "moyenne",
@@ -41,9 +42,13 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée nationale, en première lecture, la situation est défavorable car la mesure est portée par le gouvernement et soutenue par 7 groupes, face à un seul groupe contre.",
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est défavorable car la mesure est portée par le gouvernement et soutenue par 7 groupes (338 sièges), face à un seul groupe RN (121 sièges) qui a déposé l'amendement n° 806 pour supprimer l'article 22.",
         "chiffres_utilises": [
-          "7"
+          "22",
+          "806",
+          "121",
+          "7",
+          "338"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -61,20 +66,6 @@
               }
             ],
             "raisonnement": "Déposé le 2025-10-21, pas encore examiné à la date de référence ; il porte la position du client sur la mesure (supprime l'article de la mesure).",
-            "nature": "fait"
-          }
-        },
-        {
-          "titre": "Amendement n° 460 déposé par le groupe EPR",
-          "detail": "Amendement n° 460 de Violette Spillebout, en attente au 2025-11-18 : réduit, exonère ou reporte (exposé).",
-          "preuve": {
-            "sources": [
-              {
-                "label": "Amendement n° 460",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460"
-              }
-            ],
-            "raisonnement": "Déposé le 2025-10-20, pas encore examiné à la date de référence ; il porte la position du client sur la mesure (réduit, exonère ou reporte (exposé)).",
             "nature": "fait"
           }
         },
@@ -170,13 +161,14 @@
     },
     {
       "objectif_rang": 2,
-      "situation": "favorable",
-      "score": 0.71,
+      "situation": "incertaine",
+      "score": 0.46,
+      "score_libelle": "part des sièges favorables à l'objectif",
       "tendance": "stable",
       "confiance": {
         "niveau": "moyenne",
         "etabli": [
-          "11 amendements de repli déposés au plus tard le 2025-11-18",
+          "8 amendements de repli déposés au plus tard le 2025-11-18",
           "Le gouvernement est pour la mesure"
         ],
         "inconnu": [
@@ -185,12 +177,12 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée nationale, en première lecture, la situation est favorable car 4 groupes, dont 325 sièges, soutiennent des amendements comme le n° 460 visant à réduire la taxe, malgré l'opposition du gouvernement et de 134 sièges.",
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est incertaine car, si 8 amendements de repli sont déposés et soutenus par 211 sièges, le gouvernement porte la mesure et 6 groupes, soit 248 sièges, s'y opposent.",
         "chiffres_utilises": [
-          "460",
-          "4",
-          "325",
-          "134"
+          "8",
+          "211",
+          "6",
+          "248"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -226,8 +218,8 @@
           }
         },
         {
-          "titre": "SOC, EPR, DR, RN dans le sens de cet objectif",
-          "detail": "4 groupe(s), 325 sièges, dans le sens du client.",
+          "titre": "EPR, RN dans le sens de cet objectif",
+          "detail": "2 groupe(s), 211 sièges, dans le sens du client.",
           "preuve": {
             "sources": [
               {
@@ -235,7 +227,7 @@
                 "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
               }
             ],
-            "raisonnement": "Groupes auteurs d'amendements de repli, ou opposés à la mesure.",
+            "raisonnement": "Groupes auteurs d'amendements de nature « réduit » ou « reporte » selon l'objectif, ou opposés à la mesure.",
             "nature": "deduction"
           }
         }
@@ -256,8 +248,8 @@
           }
         },
         {
-          "titre": "4 groupe(s) contre cet objectif : DEM, HOR, LIOT, ECOS",
-          "detail": "134 sièges en face du client.",
+          "titre": "6 groupe(s) contre cet objectif : DR, DEM, HOR, SOC, LIOT, ECOS",
+          "detail": "248 sièges en face du client.",
           "preuve": {
             "sources": [
               {
@@ -265,7 +257,7 @@
                 "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
               }
             ],
-            "raisonnement": "Groupes auteurs d'amendements qui renforcent la mesure.",
+            "raisonnement": "Groupes auteurs d'amendements de nature « aggrave ».",
             "nature": "deduction"
           }
         },
@@ -317,25 +309,28 @@
     },
     {
       "objectif_rang": 3,
-      "situation": "incertaine",
-      "score": 0.46,
-      "tendance": "amelioration",
+      "situation": "defavorable",
+      "score": 0.26,
+      "score_libelle": "part des sièges favorables à l'objectif",
+      "tendance": "stable",
       "confiance": {
-        "niveau": "moyenne",
+        "niveau": "faible",
         "etabli": [
-          "1 amendements de repli déposés au plus tard le 2025-11-18",
+          "0 amendements de repli déposés au plus tard le 2025-11-18",
           "Le gouvernement est pour la mesure"
         ],
         "inconnu": [
+          "Aucun amendement de report déposé au plus tard le 2025-11-18",
           "Position sur la mesure de : LFI-NFP, UDR, GDR (aucun acte de groupe lisible)",
           "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée nationale, en première lecture, la situation est incertaine car, si 2 groupes soutiennent le client, la mesure est portée par le gouvernement et 6 groupes s'opposent à son report.",
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est défavorable au client car la mesure est portée par le gouvernement et s'oppose à 7 groupes (338 sièges), tandis que seul le RN (121 sièges) soutient l'objectif de repli.",
         "chiffres_utilises": [
-          "2",
-          "6"
+          "121",
+          "7",
+          "338"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -343,8 +338,8 @@
       },
       "favorable": [
         {
-          "titre": "EPR, RN dans le sens de cet objectif",
-          "detail": "2 groupe(s), 211 sièges, dans le sens du client.",
+          "titre": "RN dans le sens de cet objectif",
+          "detail": "1 groupe(s), 121 sièges, dans le sens du client.",
           "preuve": {
             "sources": [
               {
@@ -352,7 +347,7 @@
                 "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
               }
             ],
-            "raisonnement": "Groupes auteurs d'amendements de repli, ou opposés à la mesure.",
+            "raisonnement": "Groupes auteurs d'amendements de nature « réduit » ou « reporte » selon l'objectif, ou opposés à la mesure.",
             "nature": "deduction"
           }
         }
@@ -373,8 +368,8 @@
           }
         },
         {
-          "titre": "6 groupe(s) contre cet objectif : DR, DEM, HOR, SOC, LIOT, ECOS",
-          "detail": "248 sièges en face du client.",
+          "titre": "7 groupe(s) contre cet objectif : DR, DEM, EPR, HOR, SOC, LIOT, ECOS",
+          "detail": "338 sièges en face du client.",
           "preuve": {
             "sources": [
               {
@@ -382,7 +377,7 @@
                 "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
               }
             ],
-            "raisonnement": "Groupes auteurs d'amendements qui renforcent la mesure.",
+            "raisonnement": "Groupes auteurs d'amendements de nature « aggrave ».",
             "nature": "deduction"
           }
         },

@@ -231,4 +231,6 @@ export type CtxDossierPlus = {
   etape: string;
   rapporteurs: { pa: string; type: string }[];
   presidentCF: string | null;
+  /** Nature de chaque amendement de texte.json (remplie par construireTexte). */
+  natures: Map<string, "supprime" | "reduit" | "reporte" | "aggrave" | "autre">;
 };
