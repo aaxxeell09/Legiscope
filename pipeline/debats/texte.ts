@@ -17,7 +17,12 @@ export function normaliserComparaison(s: string): string {
 
 /** Regex sur le texte sans accents : chaque mot-clé en entier (frontières de mot). */
 export function regexMotsCles(motsCles: string[]): RegExp {
-  const parts = motsCles.map((m) => sansAccents(m).replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+"));
+  // Un mot-clé d'au moins 6 lettres vaut comme préfixe (« agricult » attrape agriculture et agriculteurs,
+  // « apprenti » attrape apprentis) ; un sigle court (APL, PTZ) reste un mot entier.
+  const parts = motsCles.map((m) => {
+    const plat = sansAccents(m).replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+");
+    return m.length >= 6 && /[a-z]$/.test(sansAccents(m)) ? `${plat}[a-z]*` : plat;
+  });
   return new RegExp(`(^|[^a-z0-9])(${parts.join("|")})(?=$|[^a-z0-9])`, "i");
 }
 

@@ -343,9 +343,7 @@ export function classerParRegles(dossier: DossierConfig, it: Intervention): Clas
     return {
       sur_le_sujet: true,
       camp,
-      argument: camp === "contre"
-        ? `Position contre la baisse des crédits déduite du mot « ${mot} » dans une phrase sur ${dossier.sujet.label.toLowerCase()}`
-        : `Position pour la baisse des crédits déduite du mot « ${mot} » dans une phrase sur ${dossier.sujet.label.toLowerCase()}`,
+      argument: `Position ${camp} la mesure déduite du mot « ${mot} » dans une phrase sur ${dossier.sujet.label.toLowerCase()}`,
       citation,
       confiance: 0.7,
       origine: "regles",

@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:53:06+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Deuxième séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 23 du 22/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 7 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires économiques, réunion n° 8 du 13/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger ou article 77 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-agriculture/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA607553",
+  "debats": [
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Monsieur le rapporteur général, cette proposition rapporterait de l’argent à l’État et de l’argent dans les cours des fermes. Personne n’empêche un agriculteur de renouveler son matériel, mais est-ce à Bercy de financer une grande marque américaine que je ne citerai pas,…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il y a là une contradiction avec l’adoption des nos 438 et identiques, qui prévoyaient au contraire une rallonge monétaire destinée à une poignée d’agriculteurs : en termes de sérieux budgétaire, mieux aurait valu opter pour le stockage ou l’amortissement quinquennal que nous proposions que pour une dépense publique non maîtrisée et mal ciblée.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Ces 100 millions d’euros permettraient de doubler la dotation jeunes agriculteurs (DJA) pour un tiers des paysans qui s’installent chaque année. Chaque dépense nous prive de moyens budgétaires susceptibles de soutenir le renouvellement des générations, la résilience climatique.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’agriculture a vraiment besoin de soutien public, mais encore faut-il bien l’orienter. Or il s’agit ici d’une super-niche.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Pour la première fois, grâce à des recoupements complexes d’informations entre Bercy et le ministère de l’agriculture, la lumière a été faite : on a cherché à déterminer qui touchait quoi et quelle était l’efficacité des différents dispositifs. Avec tout le respect que je vous dois, monsieur Ray, proposer un tel amendement, c’est vouloir le beurre et l’argent du beurre.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Monsieur le rapporteur général, il n’y aura pas plus de complexité – ni en Corse-du-Sud, ni à Dunkerque, ni ailleurs. Nous avons conçu une procédure très simple : l’agriculteur présente ses factures et bénéficie d’un crédit d’impôt représentant un certain pourcentage des dépenses. Vous pouvez être rassuré.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’aide au maintien de l’agriculture biologique a été supprimée. On lui a substitué un crédit d’impôt, qui est plutôt plus favorable pour les petites exploitations, car l’aide au maintien était calculée en fonction de la surface cultivée.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je pratique l’agriculture biologique depuis quarante ans, et je suis moi-même issu de l’enseignement professionnel agricole. Sa très grande qualité pédagogique, dont pourrait s’inspirer l’éducation nationale, ne fait aucun doute.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Une telle somme permettrait de doubler la dotation jeunes agriculteurs pour les 8 000 exploitants qui s’installent chaque année. Il est indispensable de lutter contre l’évasion fiscale et sociale afin de réorienter les crédits vers une véritable politique d’installation des actifs.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le réseau des chambres d’agriculture nous a alertés sur la nécessité de renforcer les moyens de l’Area, l’Aide à la relance des exploitations agricoles, qui est sous-dotée. L’objectif de l’Area est d’accompagner les exploitants, de contribuer au redressement de la situation et d’organiser une transition satisfaisante sur le plan humain, social et économique.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La commission d’enquête sur les causes de l’incapacité de la France à atteindre les objectifs des plans successifs de maîtrise des impacts des produits phytosanitaires sur la santé humaine et environnementale, comme le rapport que m’a confié le gouvernement en 2015, intitulé « Pesticides et agroécologie : les champs du possible », a conclu à la nécessité de renforcer les moyens de l’Anses, que la loi du 13 octobre 2014 d’avenir pour…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627023_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il semble en effet évident que nous allons être confrontés à un enchaînement de catastrophes et à de nombreuses situations de très grande fragilité liées aux canicules et sécheresses – perte de revenus, mais également de moral, et doute existentiel fragiliseront un grand nombre d’agriculteurs. Renforcer ce fonds est un mécanisme de prévention, d’humanité et, peut-être, de sauvetage d’exploitations dont nous aurons besoin demain.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627007_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Pour les huit mille agriculteurs qui s’installent chaque année actuellement, ce montant permettrait d’augmenter la dotation Jeunes agriculteurs (DJA) de moitié. Même s’ils étaient vingt mille, comme nous le souhaitons, l’aide resterait significative.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Elles n’ont plus d’expertise ni de compétences, ce qui accélère le mouvement de dérégulation qui est à l’œuvre. Le phénomène d’accaparement des terres prend de l’ampleur, ce qui, conjugué à la course à l’agrandissement, freine, voire empêche, l’installation de nouveaux agriculteurs et se traduit par un appauvrissement collectif, tant sur le plan social qu’économique ou écologique.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’amendement II-CE13 vise un autre élément de résilience important pour une agriculture en crise : les coopératives d’utilisation de matériel agricole (Cuma). Elles subissent les problèmes de trésorerie de chacune des exploitations qui y adhèrent.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je n’ai pas besoin d’attendre les conclusions de la mission d’information pour savoir que l’État est désarmé et que nous avons besoin d’une puissance publique régulatrice qui observe le marché du foncier. Un ETP par département, c’est certainement, avec la sécurité alimentaire, l’investissement le plus précieux pour le ministère de l’agriculture.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’amendement II-CE19 reprend une proposition de la commission d’enquête sur les causes de l’incapacité de la France à atteindre les objectifs des plans successifs de maîtrise des impacts des produits phytosanitaires sur la santé humaine et environnementale : pour 70 millions d’euros, recréer un service, universel et public, de conseil agronomique global, soutenu par les chambres d’agriculture.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "On ne peut pas réduire l’usage des produits phytosanitaires si on ne change pas de système. C’est ce qui a été dit, cet après-midi pendant deux heures, lors d’un colloque du mouvement Les Voix agricoles, où des agriculteurs ont apporté leurs témoignages. Il s’agissait de réfléchir à la sortie de nos dépendances au pétrole, au soja et aux engrais azotés.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Franchement, 70 millions, c’est deux demi-journées de conseils à chaque agriculteur, au printemps et en automne, pour un usage raisonné des intrants, pour protéger l’eau et la santé des sols, donc les rendements du futur, pour l’adaptation au dérèglement climatique.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "C’est vraiment un très bon investissement. Il en va de l’indépendance de l’agriculteur par rapport aux firmes commerciales. C’est essentiel et d’un rendement extraordinaire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Les fermes Dephy, c’est le « labo » grandeur nature de l’agriculture. On avait prévu d’en faire plein.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-eco/l17cion-eco2627008_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

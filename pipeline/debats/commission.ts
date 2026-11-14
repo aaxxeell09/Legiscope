@@ -16,7 +16,14 @@ type Organe = { po: string; slug: string; label: string };
 const FINANCES: Organe = { po: "PO59048", slug: "cion_fin", label: "Commission des finances" };
 const AFFAIRES_SOCIALES: Organe = { po: "PO420120", slug: "cion-soc", label: "Commission des affaires sociales" };
 /** Commissions lues par dossier ; finances seule par défaut. L'apprentissage (mission Travail et emploi) passe aussi en affaires sociales. */
-const ORGANES_PAR_DOSSIER: Record<string, Organe[]> = { "plf2027-apprentissage": [FINANCES, AFFAIRES_SOCIALES] };
+const AFFAIRES_ECONOMIQUES: Organe = { po: "PO419610", slug: "cion-eco", label: "Commission des affaires économiques" };
+const DEVELOPPEMENT_DURABLE: Organe = { po: "PO419865", slug: "cion-dvp", label: "Commission du développement durable" };
+const ORGANES_PAR_DOSSIER: Record<string, Organe[]> = {
+  "plf2027-apprentissage": [FINANCES, AFFAIRES_SOCIALES],
+  "plf2027-agriculture": [FINANCES, AFFAIRES_ECONOMIQUES],
+  "plf2027-logement": [FINANCES, AFFAIRES_ECONOMIQUES],
+  "plf2027-renovation": [FINANCES, DEVELOPPEMENT_DURABLE],
+};
 let organeCourant: Organe = FINANCES;
 const CACHE = join(RAW, "commission");
 
