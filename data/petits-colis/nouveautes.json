@@ -1,0 +1,2337 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:53:41.062Z",
+    "sources": [
+      {
+        "label": "Amendements du texte PRJLANR5L17B1906, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      }
+    ],
+    "limits": "Événements jusqu'au 18 novembre 2025 inclus (date de référence). data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/petits-colis/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. Flux Hémicycle evenements_parlementaires non lu (pas de cache ; lancer avec --api). 34 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip). 87 amendement(s) sans date de dépôt publiée : prédiction Orcet ou dernière étape du texte, dit dans chaque preuve.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "petits-colis"
+  },
+  "evenements": [
+    {
+      "id": "ev-61",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 61, n° 255) (LFI-NFP) adoptés : Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de…",
+      "detail": "Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de stupéfiants dans les Outre-mer.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59051B1906P2D1N000061",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 61",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59051B1906P2D1N000061"
+          },
+          {
+            "label": "Amendement n° 255",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B1906P2D1N000255"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-806",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 806 (RN) déposé : Supprime l'article 22",
+      "detail": "Supprime l'article 22.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 806",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : amendement de suppression ; supprime l'article de la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-974",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 974 (RN) rejeté : Supprime l'article 22",
+      "detail": "Supprime l'article 22.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 974",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-191",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 191 (DR) déposé : Supprime l'article 22. (non soutenu)",
+      "detail": "Supprime l'article 22. (non soutenu)",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000191",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 191",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000191"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : amendement de suppression ; supprime l'article de la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-749",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 749 (DR) déposé : Supprime l'article 22",
+      "detail": "Supprime l'article 22.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000749",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 749",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000749"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : amendement de suppression ; supprime l'article de la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-974",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 974 (RN) déposé : Supprime l'article 22",
+      "detail": "Supprime l'article 22.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 974",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : amendement de suppression ; supprime l'article de la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-719",
+      "date": "2025-10-22",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 719 (DR) adopté : Le présent amendement vise à reformuler l’article 22 pour substituer au terme de « taxe…",
+      "detail": "Le présent amendement vise à reformuler l’article 22 pour substituer au terme de « taxe sur les petits colis » celui de « malus sur les colis importés de pays non européens », afin de mieux refléter la philosophie du dispositif.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 719",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B1906 ; date de la modification de la mesure dans etat.json. Camp : résumé neutre, groupe de l'auteur (DR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1224",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1224 (RN) rejeté : Le milieu carcéral est devenu depuis longtemps un lieu de trafic de stupéfiants, de…",
+      "detail": "Le milieu carcéral est devenu depuis longtemps un lieu de trafic de stupéfiants, de commandement et même de cartellisation des réseaux criminels dont les moyens financiers, et par conséquent matériels et humains, augmentent de manière bi...",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001224",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1224",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001224"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1259",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1259 (DEM) déposé : Cet amendement s’inscrit dans le double objectif primordial de rétablir nos finances…",
+      "detail": "Cet amendement s’inscrit dans le double objectif primordial de rétablir nos finances publiques tout en protégeant nos commerces et nos savoir-faire locaux.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001259",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1259",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001259"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé renforce ou étend la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1611",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 1611, n° 1817) (RN) déposés : Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de…",
+      "detail": "Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de stupéfiants dans les Outre-mer. Déposé par 2 auteurs du même groupe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N001611",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1611",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N001611"
+          },
+          {
+            "label": "Amendement n° 1817",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N001817"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé renforce ou étend la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1775",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1775 (DR) rejeté : Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les…",
+      "detail": "Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les plateformes de commerce en ligne exportant massivement des colis vers l’Europe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1775",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1786",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1786 (LFI-NFP) déposé : Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de…",
+      "detail": "Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de stupéfiants dans les Outre-mer.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N001786",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1786",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N001786"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé renforce ou étend la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2147",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 2147, n° 2162) (RN) rejetés : Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de…",
+      "detail": "Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de stupéfiants dans les Outre-mer.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N002147",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2147",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N002147"
+          },
+          {
+            "label": "Amendement n° 2162",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N002162"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2176",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2176 (RN) déposé : Le milieu carcéral est devenu depuis longtemps un lieu de trafic de stupéfiants, de…",
+      "detail": "Le milieu carcéral est devenu depuis longtemps un lieu de trafic de stupéfiants, de commandement et même de cartellisation des réseaux criminels dont les moyens financiers, et par conséquent matériels et humains, augmentent de manière bi...",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N002176",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2176",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N002176"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé renforce ou étend la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2274",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 2274 (LFI-NFP) rejeté : Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de…",
+      "detail": "Par cet amendement, nous proposons de renforcer les moyens de lutte contre le trafic de stupéfiants dans les Outre-mer.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N002274",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2274",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N002274"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2538",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2538 (LIOT) déposé : Le présent amendement vise à augmenter significativement le montant de la taxe prévu à…",
+      "detail": "Le présent amendement vise à augmenter significativement le montant de la taxe prévu à l'article 22 sur les petits colis en provenance de pays tiers.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002538",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2538",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002538"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé renforce ou étend la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2738",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2738 (ECOS) déposé : Dans le cadre de la réforme de l’Union douanière, la Commission européenne a pour…",
+      "detail": "Dans le cadre de la réforme de l’Union douanière, la Commission européenne a pour ambition d’instaurer un prélèvement sur l’importation d’articles à faible valeur destinés à des particuliers, principalement issus d’achats réalisés sur ce...",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2738",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé renforce ou étend la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2802",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2802 (DEM) déposé : Le présent amendement vise à porter de 2 à 5 euros la taxe sur les envois d'articles de…",
+      "detail": "Le présent amendement vise à porter de 2 à 5 euros la taxe sur les envois d'articles de faible valeur prévue à l'article 22, afin de renforcer son caractère incitatif sans créer de rupture brutale pour les consommateurs.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002802",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2802",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002802"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé renforce ou étend la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2810",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "3 amendements identiques (n° 2810, n° 2832, n° 2833) (SOC) déposés : Le présent amendement vise à renforcer l’efficacité de la taxe sur les envois d’articles…",
+      "detail": "Le présent amendement vise à renforcer l’efficacité de la taxe sur les envois d’articles de faible valeur prévue à l’article 22, en portant son montant de 2 € à 5 € par article. Déposé par 3 auteurs du même groupe.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002810",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2810",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002810"
+          },
+          {
+            "label": "Amendement n° 2832",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002832"
+          },
+          {
+            "label": "Amendement n° 2833",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002833"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé renforce ou étend la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2820",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2820 (EPR) déposé : Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise…",
+      "detail": "Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise proposée le marché de la seconde main et du reconditionné.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002820",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2820",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002820"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé réduit, exonère ou reporte la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-3395",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 3395 (DEM) déposé : Cet amendement propose d’améliorer le rendement de la taxe sur les petits colis expédiés…",
+      "detail": "Cet amendement propose d’améliorer le rendement de la taxe sur les petits colis expédiés en France aux particuliers, en passant son montant de 2 à 10 euros et en l’élargissant aux colis d’un poids inférieur à 2 kilos.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3395",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé renforce ou étend la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-460",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 460 (EPR) déposé : Le présent amendement vise à exclure les articles de seconde main, les produits…",
+      "detail": "Le présent amendement vise à exclure les articles de seconde main, les produits reconditionnés, les œuvres d’arts et les objets de collection du champ de la taxe sur les importations de petits colis prévue à l’article 22.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 460",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé réduit, exonère ou reporte la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-938",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 938 (DR) déposé : Le présent amendement vise à relever le montant de la taxe de 2 à 5 euros",
+      "detail": "Le présent amendement vise à relever le montant de la taxe de 2 à 5 euros.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000938",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 938",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000938"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé réduit, exonère ou reporte la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1111",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1111 (DEM) tombé : Le commerce en ligne international s’est considérablement développé au cours des…",
+      "detail": "Le commerce en ligne international s’est considérablement développé au cours des dernières années, notamment grâce aux grandes plateformes de vente situées hors de l’Union européenne.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001111",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1111",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001111"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DEM) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1173",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1173 (EPR) tombé : Le présent article propose l'instauration d'une taxe sur les frais de gestion des petits…",
+      "detail": "Le présent article propose l'instauration d'une taxe sur les frais de gestion des petits colis en provenance de pays tiers, à laquelle travaille la Commission européenne et que la France soutient.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001173",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1173",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001173"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1221",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1221 (RN) rejeté : Le milieu carcéral est devenu depuis longtemps un lieu de trafic de stupéfiants et autres",
+      "detail": "Le milieu carcéral est devenu depuis longtemps un lieu de trafic de stupéfiants et autres.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001221",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1221",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P2D1N001221"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1253",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "3 amendements identiques (n° 1253, n° 1260, n° 1261) (DEM) retirés : Cet amendement s’inscrit dans le double objectif primordial de rétablir nos finances…",
+      "detail": "Cet amendement s’inscrit dans le double objectif primordial de rétablir nos finances publiques tout en protégeant nos commerces et nos savoir-faire locaux.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001253",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1253",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001253"
+          },
+          {
+            "label": "Amendement n° 1260",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001260"
+          },
+          {
+            "label": "Amendement n° 1261",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001261"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1442",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1442 (LIOT) tombé : Il est proposé de renforcer cette taxe sur les « petits colis » en la portant de 2 à 5…",
+      "detail": "Il est proposé de renforcer cette taxe sur les « petits colis » en la portant de 2 à 5 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001442",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1442",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001442"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1451",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 1451, n° 2858) (HOR) déposés : Essentiellement situées en territoire rural et péri-urbain, les 4 000 stations-service…",
+      "detail": "Essentiellement situées en territoire rural et péri-urbain, les 4 000 stations-service indépendantes assurent un rôle déterminant pour garantir la mobilité de chaque Français, quels que soient leurs lieux de vie et/ou d’activité. Déposé par 2 auteurs du même groupe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N001451",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1451",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N001451"
+          },
+          {
+            "label": "Amendement n° 2858",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N002858"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (HOR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1511",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1511 (EPR) déposé : Le présent article propose l'instauration d'une taxe sur les frais de gestion des petits…",
+      "detail": "Le présent article propose l'instauration d'une taxe sur les frais de gestion des petits colis en provenance de pays tiers, à laquelle travaille la Commission européenne et que la France soutient.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001511",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1511",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001511"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1519",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1519 (DEM) tombé : Cet amendement propose d’améliorer le rendement de la taxe sur les petits colis expédiés…",
+      "detail": "Cet amendement propose d’améliorer le rendement de la taxe sur les petits colis expédiés en France aux particuliers, en triplant son montant et en l’élargissant aux colis d’un poids inférieur à 2 kilos.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1519",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1580",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1580 (HOR) tombé : L’une des grandes mutations du commerce international est la montée en puissance du…",
+      "detail": "L’une des grandes mutations du commerce international est la montée en puissance du commerce électronique, qui se traduit par l’essor de la livraison de colis, surnommés « petits colis » lorsqu’ils contiennent des produits de faible vale...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001580",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1580",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001580"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (HOR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1745",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1745 (LIOT) retiré : Il est proposé de renforcer cette taxe sur les « petits colis » en la portant de 2 à 5…",
+      "detail": "Il est proposé de renforcer cette taxe sur les « petits colis » en la portant de 2 à 5 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001745",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1745",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001745"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1774",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1774 (DR) tombé : Cet amendement vise à instaurer un tarif réellement dissuasif pour protéger nos petits…",
+      "detail": "Cet amendement vise à instaurer un tarif réellement dissuasif pour protéger nos petits commerces des importations massives.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1774",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1834",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1834 (EPR) tombé : Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise…",
+      "detail": "Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise proposée le marché de la seconde main et du reconditionné.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001834",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1834",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001834"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1835",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1835 (EPR) tombé : Cet amendement vise à porter de 2 à 10 euros la taxe sur les petits colis prévu dans le…",
+      "detail": "Cet amendement vise à porter de 2 à 10 euros la taxe sur les petits colis prévu dans le Projet de loi de Finances pour 2026.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001835",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1835",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001835"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1859",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1859 (DR) rejeté : Les petits commerçants français font face à une concurrence accrue du commerce en ligne,…",
+      "detail": "Les petits commerçants français font face à une concurrence accrue du commerce en ligne, particulièrement en provenance d’Asie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1859",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-191",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 191 (DR) non examiné : Supprime l'article 22. (non soutenu)",
+      "detail": "Supprime l'article 22. (non soutenu)",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000191",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 191",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000191"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2174",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2174 (RN) déposé : Le milieu carcéral est devenu depuis longtemps un lieu de trafic de stupéfiants et autres",
+      "detail": "Le milieu carcéral est devenu depuis longtemps un lieu de trafic de stupéfiants et autres.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N002174",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2174",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N002174"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-221",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "4 amendements identiques (n° 221, n° 222, n° 223, n° 224) (DEM) tombés : Cet amendement s’inscrit dans le double objectif primordial de rétablir nos finances…",
+      "detail": "Cet amendement s’inscrit dans le double objectif primordial de rétablir nos finances publiques tout en protégeant nos commerces et nos savoir-faire locaux.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000221",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 221",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000221"
+          },
+          {
+            "label": "Amendement n° 222",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000222"
+          },
+          {
+            "label": "Amendement n° 223",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000223"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2211",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2211 (EPR) déposé : La France s’est engagée résolument en faveur de l’économie circulaire, à travers une…",
+      "detail": "La France s’est engagée résolument en faveur de l’économie circulaire, à travers une série d’initiatives récentes promouvant la réutilisation, la réparation et la durabilité des produits.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002211",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2211",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002211"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2306",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 2306 (EPR) retiré : Cet amendement vise à renforcer l’efficacité de la taxe sur les envois d’articles de…",
+      "detail": "Cet amendement vise à renforcer l’efficacité de la taxe sur les envois d’articles de faible valeur prévue par le présent article, en portant son montant de 2 € à 5 € par colis.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002306",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2306",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002306"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2740",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 2740 (ECOS) retiré : Amendement de repli",
+      "detail": "Amendement de repli.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2740",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2746",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2746 (UDR) déposé : Cet amendement déposé par le Groupe UDR vise à revenir sur l'article 36 du PLF 2026",
+      "detail": "Cet amendement déposé par le Groupe UDR vise à revenir sur l'article 36 du PLF 2026.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002746",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2746",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002746"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre et pas de position de groupe connue. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2824",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2824 (EPR) déposé : Cet amendement vise à porter de 2 à 10 euros la taxe sur les petits colis prévu dans le…",
+      "detail": "Cet amendement vise à porter de 2 à 10 euros la taxe sur les petits colis prévu dans le Projet de loi de Finances pour 2026.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002824",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2824",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002824"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2871",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 2871 (ECOS) retiré : La croissance rapide du commerce en ligne, avec près de 1,7 milliard de colis livrés…",
+      "detail": "La croissance rapide du commerce en ligne, avec près de 1,7 milliard de colis livrés chaque année en France, accentue la pression sur les infrastructures locales et contribue à environ 20 % du trafic et des émissions de gaz à effet de se...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002871",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2871",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002871"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-301",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 301 (EPR) tombé : Le présent amendement, vise à porter de 2 euros à 25 euros la taxe sur les petits colis…",
+      "detail": "Le présent amendement, vise à porter de 2 euros à 25 euros la taxe sur les petits colis en provenance de pays tiers.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000301",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 301",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000301"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-3016",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 3016 (DR) déposé : Amendement rédactionnel",
+      "detail": "Amendement rédactionnel.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003016",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3016",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003016"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : demande de rapport ou amendement rédactionnel, sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-302",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 302 (EPR) tombé : Le présent amendement vise à exclure les articles de seconde main, les produits…",
+      "detail": "Le présent amendement vise à exclure les articles de seconde main, les produits reconditionnés, les œuvres d’arts et les objets de collection du champ de la taxe sur les importations de petits colis prévue à l’article 22.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000302",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 302",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000302"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-307",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 307, n° 308) (DR) retirés : Amendement de repli La France fait face, plus que jamais, à une inondation de produits de…",
+      "detail": "Amendement de repli La France fait face, plus que jamais, à une inondation de produits de basse qualité et ne respectant aucun des critères sociaux et environnementaux européens, notamment en provenance d’Asie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000307",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 307",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000307"
+          },
+          {
+            "label": "Amendement n° 308",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000308"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-309",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 309 (DR) retiré : La France fait face, plus que jamais, à une inondation de produits de basse qualité et ne…",
+      "detail": "La France fait face, plus que jamais, à une inondation de produits de basse qualité et ne respectant aucun des critères sociaux et environnementaux européens, notamment en provenance d’Asie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000309",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 309",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000309"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-3126",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 3126 (DR) retiré : Les petits commerçants français font face à une concurrence accrue du commerce en ligne,…",
+      "detail": "Les petits commerçants français font face à une concurrence accrue du commerce en ligne, particulièrement en provenance d’Asie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3126",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-3276",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 3276 (HOR) retiré : La France est confrontée à une transformation profonde des modes de consommation marquée…",
+      "detail": "La France est confrontée à une transformation profonde des modes de consommation marquée par l’explosion du commerce en ligne international, notamment en provenance d’Asie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003276",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3276",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003276"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (HOR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-348",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 348 (EPR) tombé : Cet amendement vise à modifier le montant de la taxe à 3 euros",
+      "detail": "Cet amendement vise à modifier le montant de la taxe à 3 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000348",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 348",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000348"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-349",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 349 (EPR) tombé : Cet amendement vise à modifier le montant de la taxe à 5 euros",
+      "detail": "Cet amendement vise à modifier le montant de la taxe à 5 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000349",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 349",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000349"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-3674",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 3674 (HOR) déposé : L’une des grandes mutations du commerce international est la montée en puissance du…",
+      "detail": "L’une des grandes mutations du commerce international est la montée en puissance du commerce électronique, qui se traduit par l’essor de la livraison de colis, surnommés « petits colis » lorsqu’ils contiennent des produits de faible vale...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003674",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3674",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003674"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (HOR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-369",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 369 (RN) déposé : Cette mesure permet de lutter contre la sous-évaluation des colis importés et la fraude à…",
+      "detail": "Cette mesure permet de lutter contre la sous-évaluation des colis importés et la fraude à la TVA sur les ventes en ligne transfrontalières.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000369",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 369",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000369"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-3731",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 3731 (DEM) retiré : Le commerce en ligne international s’est considérablement développé au cours des…",
+      "detail": "Le commerce en ligne international s’est considérablement développé au cours des dernières années, notamment grâce aux grandes plateformes de vente situées hors de l’Union européenne.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003731",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3731",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003731"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DEM) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-4037",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 4037, n° 4038) (EPR) retirés : Le présent sous-amendement s’inscrit dans la volonté de remplacer la logique de taxation…",
+      "detail": "Le présent sous-amendement s’inscrit dans la volonté de remplacer la logique de taxation par article par une logique de taxation par colis.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004037",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 4037",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004037"
+          },
+          {
+            "label": "Amendement n° 4038",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004038"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-4039",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 4039 (EPR) retiré : Le présent sous-amendement vise à modifier l’assiette de la taxe proposée, en substituant…",
+      "detail": "Le présent sous-amendement vise à modifier l’assiette de la taxe proposée, en substituant au critère du nombre d’articles celui du nombre de colis effectivement importés sur le territoire national.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004039",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 4039",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004039"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-4040",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 4040 (EPR) retiré : Le présent sous-amendement vise à supprimer l’alinéa prévoyant que la taxe ne s’applique…",
+      "detail": "Le présent sous-amendement vise à supprimer l’alinéa prévoyant que la taxe ne s’applique qu’aux expéditions en provenance d’États ou territoires dont le nombre annuel d’articles expédiés vers la France excède 100 millions.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004040",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 4040",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004040"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-4059",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 4059 (EPR) retiré : Le présent sous-amendement est un amendement d’appel",
+      "detail": "Le présent sous-amendement est un amendement d’appel.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004059",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 4059",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004059"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-452",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 452 (SOC) déposé : Le présent amendement vise à préserver les consommateurs et les acteurs économiques des…",
+      "detail": "Le présent amendement vise à préserver les consommateurs et les acteurs économiques des départements et collectivités d’outre-mer mentionnés aux articles 73 et 74 de la Constitution, d’une sur-taxation liée à l’instauration de la taxe de...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 452",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (SOC) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-459",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 459 (EPR) déposé : Le présent amendement, vise à porter de 2 euros à 25 euros la taxe sur les petits colis…",
+      "detail": "Le présent amendement, vise à porter de 2 euros à 25 euros la taxe sur les petits colis en provenance de pays tiers.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000459",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 459",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000459"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-553",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "2 amendements identiques (n° 553, n° 2201) (EPR) déposés : Essentiellement situées en territoire rural et péri-urbain, les 4 000 stations-service…",
+      "detail": "Essentiellement situées en territoire rural et péri-urbain, les 4 000 stations-service indépendantes assurent un rôle déterminant pour garantir la mobilité de chaque Français, quels que soient leurs lieux de vie et/ou d’activité. Déposé par 2 auteurs du même groupe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N000553",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 553",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N000553"
+          },
+          {
+            "label": "Amendement n° 2201",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N002201"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-566",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 566 (EPR) tombé : Cet amendement vise à renforcer l’efficacité de la taxe sur les envois d’articles de…",
+      "detail": "Cet amendement vise à renforcer l’efficacité de la taxe sur les envois d’articles de faible valeur prévue par le présent article, en portant son montant de 2 € à 5 € par colis.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000566",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 566",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000566"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-657",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 657 (RN) tombé : Cette mesure permet de lutter contre la sous-évaluation des colis importés et la fraude à…",
+      "detail": "Cette mesure permet de lutter contre la sous-évaluation des colis importés et la fraude à la TVA sur les ventes en ligne transfrontalières.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000657",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 657",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000657"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-720",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 720 (DR) tombé : Le présent amendement vise à relever le montant de la taxe de 2 à 5 euros",
+      "detail": "Le présent amendement vise à relever le montant de la taxe de 2 à 5 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000720",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 720",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000720"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-721",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 721 (DR) tombé : Le présent amendement vise à relever le montant de la taxe de 2 à 4 euros",
+      "detail": "Le présent amendement vise à relever le montant de la taxe de 2 à 4 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000721",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 721",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000721"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-722",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 722 (DR) tombé : Le présent amendement vise à relever le montant de la taxe de 2 à 3 euros",
+      "detail": "Le présent amendement vise à relever le montant de la taxe de 2 à 3 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000722",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 722",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000722"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-734",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 734 (EPR) déposé : Cet amendement vise à modifier le montant de la taxe à 3 euros",
+      "detail": "Cet amendement vise à modifier le montant de la taxe à 3 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000734",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 734",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000734"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-736",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 736 (EPR) déposé : Cet amendement vise à modifier le montant de la taxe à 5 euros",
+      "detail": "Cet amendement vise à modifier le montant de la taxe à 5 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000736",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 736",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000736"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (EPR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-749",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 749 (DR) retiré : Supprime l'article 22",
+      "detail": "Supprime l'article 22.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000749",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 749",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000749"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-936",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 936 (DR) retiré : Le présent amendement vise à relever le montant de la taxe de 2 à 3 euros",
+      "detail": "Le présent amendement vise à relever le montant de la taxe de 2 à 3 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000936",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 936",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000936"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-937",
+      "date": "2025-11-18",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 937 (DR) retiré : Le présent amendement vise à relever le montant de la taxe de 2 à 4 euros",
+      "detail": "Le présent amendement vise à relever le montant de la taxe de 2 à 4 euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000937",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 937",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000937"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B1906 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-943",
+      "date": "2025-11-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 943 (DR) déposé : Le présent amendement vise à reformuler l’article 22 pour substituer au terme de « taxe…",
+      "detail": "Le présent amendement vise à reformuler l’article 22 pour substituer au terme de « taxe sur les petits colis » celui de « malus sur les colis importés de pays non européens », afin de mieux refléter la philosophie du dispositif.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000943",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 943",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000943"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : résumé neutre, groupe de l'auteur (DR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-18",
+      "date": "2025-11-18",
+      "type": "rapport",
+      "titre": "3 rapports du texte publiés avec la liste des personnes entendues (46 organisations)",
+      "detail": "Organisations entendues : Association pour le soutien du théâtre privé (ASTP), Ekhoscènes, Fédération des structures indépendantes de création et de production artistiques (Fscipa), France festivals, Syndicat des musiques actuelles (SMA), Forces musicales, Scène Ensemble, Syndéac, Association des maires de France (AMF), Départements de France, Régions de France, Société des auteurs et compositeurs dramatiques (SACD)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 18 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tII.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-17",
+      "date": "2025-11-17",
+      "type": "rapport",
+      "titre": "1 rapport du texte publié avec la liste des personnes entendues (7 organisations)",
+      "detail": "Organisations entendues : Ministère de l’éducation nationale, Observatoire des zones prioritaires (OZP), Fédération des conseils de parents d’élèves des écoles publiques (FCPE), Fédération syndicale unitaire (FSU), Syndicat des enseignants de l’UNSA (SE-Unsa), Syndicat national des lycées, collèges, écoles et du supérieur (Snalc), Fédération Sud Éducation.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tIV.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 17 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tIV.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-14",
+      "date": "2025-11-14",
+      "type": "rapport",
+      "titre": "5 rapports du texte publiés avec la liste des personnes entendues (91 organisations)",
+      "detail": "Organisations entendues : France Télévisions, Arte-France, Groupe M6, Syndicat national des radios libres (SNRL), Distributeurs indépendants réunis européens (Dire), Société civile des auteurs réalisateurs producteurs (ARP), Fédération nationale des éditeurs de films (Fnef), Fédération des industries du cinéma, de l’audiovisuel et du multimédia (Ficam), Union des producteurs de cinéma (UPC), Association des producteurs indépendants (API), Fédération nationale des cinémas français (FNCF), Syndicat des producteurs indépendants (SPI)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tV.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 14 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tV.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-13",
+      "date": "2025-11-13",
+      "type": "rapport",
+      "titre": "5 rapports du texte publiés avec la liste des personnes entendues (38 organisations)",
+      "detail": "Organisations entendues : Agence nationale de la recherche (ANR), Haut Conseil de l’évaluation de la recherche et de l’enseignement supérieur (Hcéres), Institut national de la santé et de la recherche médicale (Inserm), France Universités, Conseil national de la recherche scientifique (CNRS), Institut de recherche pour le développement (IRD), Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (Inrae), Syndicat National des Travailleurs de la Recherche Scientifique (SNTRS-CGT), CGT Inrae, Syndicat National de la Recherche Scientifique (SNCS-FSU), CGT des établissements d’enseignement supérieur (CGT-FERC sup), Syndicat national de l’enseignement supérieur (SNESUP-FSU)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tVII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 13 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tVII.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-12",
+      "date": "2025-11-12",
+      "type": "rapport",
+      "titre": "3 rapports du texte publiés avec la liste des personnes entendues (35 organisations)",
+      "detail": "Organisations entendues : Direction de l’alimentation, de l’agriculture et de la forêt (DAAF) de La Réunion, Fédération départementale des syndicats d’exploitants agricoles (FDSEA) de La Réunion, Confédération générale des planteurs et éleveurs de La Réunion (CGPER), Conseil départemental de La Réunion, Union Réunionnaise des Coopératives Agricoles (URCOOPA), Association Réunionnaise Interprofessionnelle du Bétail, de la Viande et du Lait (ARIBEV), Association Réunionnaise Interprofessionnelle de Volaille (ARIV), Coordination rurale de La Réunion (CR974), Chambres d’agriculture France, de La Réunion et de Guadeloupe, Comité paritaire interprofessionnel de la canne et du sucre (CPCS) et groupe TEREOS, Sociétés d ’ aménagement foncier et d ’ établissement rural (SAFER), SAFER Guadeloupe….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tX.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 12 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tX.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-10",
+      "date": "2025-11-10",
+      "type": "rapport",
+      "titre": "2 rapports du texte publiés avec la liste des personnes entendues (46 organisations)",
+      "detail": "Organisations entendues : Collectif citoyen J.O.P 2030, Comité d’organisation des Jeux olympiques et paralympiques des Alpes Françaises 2030, Comité national olympique et sportif français, Comité paralympique et sportif français, Ministère des sports, de la jeunesse et de la vie associative, Institut national du sport, de l’expertise et de la performance, Ligue réunionnaise de football, Agence nationale du sport, Société de livraison des ouvrages olympiques Alpes 2030, Agence française de lutte contre le dopage, Fédération française de basket-ball, Fédération française de football….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tIX.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 10 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tIX.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-07",
+      "date": "2025-11-07",
+      "type": "rapport",
+      "titre": "11 rapports du texte publiés avec la liste des personnes entendues (144 organisations)",
+      "detail": "Organisations entendues : Institut national de l’environnement industriel et des risques (Ineris), Centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement (Cerema), Agéa, Dr. Julien Arnoult, responsable des études et des relations institutionnelles, Fédération des services énergie environnement (Fedene), Syndicat des énergies renouvelables (SER), Syndicat national des entrepreneurs de la filière déchets (Snefid), Fédération professionnelle des entreprises du recyclage, du réemploi et de l’économie circulaire (Federrec), Fédération nationale des activités de la dépollution et de l’environnement (Fnade), Autorité de sûreté nucléaire et de radioprotection (ASNR), Agence de la transition écologique (Ademe), Bureau de recherches géologiques et minières (BRGM)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tI.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 7 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tI.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-06",
+      "date": "2025-11-06",
+      "type": "rapport",
+      "titre": "4 rapports du texte publiés avec la liste des personnes entendues (37 organisations)",
+      "detail": "Organisations entendues : Atout France, Union des métiers et des industries de l’hôtelleries (UMIH), Institut pour les savoir-faire français, Ville de Calais, Région Hauts-de-France, Confédération des acteurs du tourisme (CAT), Fédération des organismes institutionnels du tourisme (ADN Tourisme), Association Entreprise et découverte, Association Villes et métiers d’art, Ministère de l’économie et des finances, Association nationale des élus des territoires touristiques (ANETT), Alliance France Tourisme….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tIX.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 6 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tIX.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-05",
+      "date": "2025-11-05",
+      "type": "rapport",
+      "titre": "1 rapport du texte publié avec la liste des personnes entendues (21 organisations)",
+      "detail": "Organisations entendues : Coordination rurale, Confédération paysanne, Interbev, Commission européenne, Institut national de recherche pour l'agriculture, l’alimentation et l’environnement (Inrae), FranceAgriMer, Jeunes Agriculteurs (JA), Direction générale de la prévention des risques (DGPR), Collectif Nourrir, FNSEA, Secrétariat général, Direction générale de la performance économique et environnementale des entreprises (DGPE)….",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tI.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 5 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tI.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-11-04",
+      "date": "2025-11-04",
+      "type": "rapport",
+      "titre": "1 rapport du texte publié avec la liste des personnes entendues (4 organisations)",
+      "detail": "Organisations entendues : Ministère de l’Europe et des affaires étrangères, Ministère des armées, Organisation des Nations unies, Père Srđan Stanković.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tI.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 4 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tI.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-10-30",
+      "date": "2025-10-30",
+      "type": "rapport",
+      "titre": "1 rapport du texte publié avec la liste des personnes entendues (12 organisations)",
+      "detail": "Organisations entendues : Secrétariat général pour l’investissement (SGPI), Caisse des dépôts et des consignations (CDC), Agence nationale de la recherche (ANR), Institut de recherches pour l’agriculture, l’alimentation et l’environnement (INRAE), Syndicat des vins Côtes de Gascogne, Vignerons indépendants de France, Institut français du vin et de la vigne, Rives et Eaux du Sud-Ouest, SAGE Neste et Rivière de Gascogne, Coopérative Unicoque, Agreenculture, Institut Arvalis.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tIX.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 30 octobre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tIX.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-10-29",
+      "date": "2025-10-29",
+      "type": "rapport",
+      "titre": "1 rapport du texte publié avec la liste des personnes entendues (6 organisations)",
+      "detail": "Organisations entendues : Direction générale des étrangers en France du ministère de l’intérieur, Direction nationale de la police aux frontières du ministère de l’intérieur, Office français de l’intégration et de l’immigration (OFII), Office français de protection des réfugiés et apatrides (OFPRA), Représentation permanente de la France auprès de l’Union européenne, Personnalité qualifiée.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tVII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 29 octobre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tVII.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2025-10-29",
+      "date": "2025-10-29",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 29 octobre 2025",
+      "detail": "1 intervention relevée, dont : « Vous verrez, je serai à vos côtés pour défendre bientôt, à l’occasion de l’examen de prochains articles, la taxe sur les petits colis. Je le ferai d’autant plus volontiers que je suis la ministre de tutelle des douanes. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-mercredi-29-octobre-2025",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 29 octobre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-mercredi-29-octobre-2025"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapports-2025-10-28",
+      "date": "2025-10-28",
+      "type": "rapport",
+      "titre": "1 rapport du texte publié avec la liste des personnes entendues (1 organisation)",
+      "detail": "Organisations entendues : Secrétariat général des affaires européennes.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tIX.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapports du 28 octobre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tIX.html"
+          }
+        ],
+        "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2025-10-24",
+      "date": "2025-10-24",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 24 octobre 2025",
+      "detail": "1 intervention relevée, dont : « Aussi protégerons-nous les commerces de nos territoires menacés par la concurrence déloyale grâce à une taxe sur les importations de petits colis. Sur ce dossier, je vous envoie un message : protégeons nos postiers. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-vendredi-24-octobre-2025",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 24 octobre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-vendredi-24-octobre-2025"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-commission-2025-10-22",
+      "date": "2025-10-22",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 22 octobre 2025",
+      "detail": "18 interventions relevées, dont : « Nous assistons en effet à un important changement de stratégie de la part des importateurs qui, avant, utilisaient des cargos et des conteneurs, et qui, désormais, fraudent massivement en envoyant de petits colis dont le taux de non-conformité est proche de 50 %. Le meilleur exemple est celui de l’iPhone 17, généralement déclaré au prix de 80 euros quand il arrive de Chine dans un petit colis, alors qu’il en vaut 1 700. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 22 octobre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2025-04-30",
+      "date": "2025-04-30",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 30 avril 2025",
+      "detail": "1 intervention relevée, dont : « Ce plan, que nous soutenons, prévoit des mesures concrètes visant à faire enfin respecter nos règles, dont les plus fortes devront être prises à l’échelon européen. Je pense en particulier à la volonté française de mettre fin à l’exemption des droits de douane pour les petits colis dans le cadre de la réforme de l’union douanière de l’Union européenne, qui interviendra en 2028, ainsi qu’à l’instauration, à partir de 2026, d’un mécanisme de contribution prenant la forme de frais de gestion forfaitaires appliqués à chaque colis entrant en Europe en vue de financer nos contrôles. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 30 avril 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    }
+  ]
+}

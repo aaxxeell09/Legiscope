@@ -1,0 +1,1232 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:53:41.030Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tI.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B1906",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B1906"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA720976",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tI.html",
+      "date": "2025-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Coordination rurale",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération paysanne",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Interbev",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission européenne",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de recherche pour l'agriculture, l’alimentation et l’environnement (Inrae)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "FranceAgriMer",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Jeunes Agriculteurs (JA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la prévention des risques (DGPR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif Nourrir",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "FNSEA",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la performance économique et environnementale des entreprises (DGPE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l'Alimentation (DGAL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Rencontres organisées à l’occasion du Salon international de l’élevage (SPACE) au Parc Expo de Rennes",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Inrae Bretagne",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Sanders",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "COOPERL",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "INAPORC",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut du porc",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Evel’up",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Françoise, Josic et Pierre, associés de la ferme de l’Hirondelle",
+          "type": "cabinet",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tIX.html",
+      "date": "2025-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Atout France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des métiers et des industries de l’hôtelleries (UMIH)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut pour les savoir-faire français",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ville de Calais",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Région Hauts-de-France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération des acteurs du tourisme (CAT)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des organismes institutionnels du tourisme (ADN Tourisme)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Entreprise et découverte",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Villes et métiers d’art",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’économie et des finances",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des élus des territoires touristiques (ANETT)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Alliance France Tourisme",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Régions de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de la culture",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ateliers d’art de France",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tV.html",
+      "date": "2025-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Mouvement Sol",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Finance Fair",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Udes",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "ESS France",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tVI.html",
+      "date": "2025-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Fédération des entreprises et entrepreneurs de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des industries alimentaires (ANIA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des exportateurs de vins et spiritueux de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Intercéréales",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Business France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des entreprises",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale du trésor",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la performance économique et environnementale des entreprises (DGPE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "FranceAgriMer",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tVIII.html",
+      "date": "2025-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction générale des entreprises (DGE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de Régulation des Communications Électroniques, des Postes et de la distribution de la Presse (ARCEP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction interministérielle de la transformation publique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de la concurrence",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association du corps préfectoral & des hauts fonctionnaires du ministère de l’intérieur (ACPHFMI)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Intercommunalités de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction régionale de l’économie, de l’emploi, du travail et des solidarités (DREETS) d’Occitanie",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction régionale de l’économie, de l’emploi, du travail et des solidarités (DREETS) PACA",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Fédération des promoteurs immobiliers de France (FPI)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française du bâtiment (FFB)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Provicis",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Coop’HLM",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Vincent Lourier, directeur",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "USH",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Marianne Louis, directrice générale",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Antoine Galewski, directeur des relations institutionnelles et parlementaires",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CDC Habitat",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de la statistique et des études économiques (Insee)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération bancaire française (FBF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut Montaigne",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse nationale des allocations familiales (CNAF)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tIII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Agence Nationale pour la Rénovation Urbaine (ANRU)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union sociale pour l’habitat (USH)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tVII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française des télécoms",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de régulation des communications électroniques, des postes et de la distribution de la presse (Arcep)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des villes et collectivités pour les communications électroniques et l’audiovisuel (Avicca)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Patrick Chaize, président",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ariel Turpin, délégué général",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires de France (AMF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "FREE",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale de la cohésion des territoires (ANCT)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tIV.html",
+      "date": "2025-11-10",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "France Gaz",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centrales villageoises",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Luciole",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association française indépendante de l’électricité et du gaz (Afieg)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des opérateurs détaillants en énergie (Anode)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union française de l’électricité (UFE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupement des professionnels des certificats d’économies d’énergie (GPCEE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Enerplan",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Renouvelables",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des énergies renouvelables (SER)",
+          "type": "federation",
+          "hatvp_id": "532334588"
+        },
+        {
+          "nom": "Engie",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’environnement et de la maîtrise de l’énergie (Ademe)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération professionnelle des entreprises de services pour l’énergie et l’environnement (Fedene)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Réseau de transport d’électricité (RTE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Enedis",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des collectivités concédantes et régies (FNCCR)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil national des associations familiales laïques (CNAFAL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "UFC-Que Choisir",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité de régulation de l’énergie (CRE)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Électricité de France (EDF)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’énergie et du climat (DGEC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale pour la gestion des déchets radioactifs (ANDRA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité de liaison des entreprises ayant exercé leur éligibilité (Cleee)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Compagnie nationale du Rhône (CNR)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Hydrogène",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "IFP Énergies nouvelles",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Médiateur national de l’énergie",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mobilians",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Organisation des transporteurs routiers européens (OTRE)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Primagaz",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "TotalEnergies",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des industries utilisatrices d’énergie (Uniden)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2060-tX.html",
+      "date": "2025-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction de l’alimentation, de l’agriculture et de la forêt (DAAF) de La Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération départementale des syndicats d’exploitants agricoles (FDSEA) de La Réunion",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération générale des planteurs et éleveurs de La Réunion (CGPER)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil départemental de La Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union Réunionnaise des Coopératives Agricoles (URCOOPA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Réunionnaise Interprofessionnelle du Bétail, de la Viande et du Lait (ARIBEV)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Réunionnaise Interprofessionnelle de Volaille (ARIV)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Coordination rurale de La Réunion (CR974)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambres d’agriculture France, de La Réunion et de Guadeloupe",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité paritaire interprofessionnel de la canne et du sucre (CPCS) et groupe TEREOS",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Sociétés d ’ aménagement foncier et d ’ établissement rural (SAFER)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAFER Guadeloupe",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAFER Guyane",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAFER La Réunion",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAFER La Martinique",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicats agricoles Fédération Départementale des Syndicats d'Exploitants Agricoles (FDSEA) et Jeunes agriculteurs (JA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office de développement de l’économie agricole d’outre-mer (ODEADOM)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des Outre-mer (DGOM)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N000452",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "cosignataire",
+      "resume": "Article 22 : Compléter cet article par les deux alinéas suivants :« XIII. – Les dispositions du présent article ne s’appliquent pas aux importations effectuées dans les…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "784450231",
+      "nom": "CONFED COMMERC DETAIL FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784450231",
+      "objet": "Demander l'interdiction de la revente des colis non distribués",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "432778108",
+      "nom": "EBAY FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=432778108",
+      "objet": "PLF 2026 Plaider pour une approche harmonisée au niveau européen de la taxe petit colis pour éviter les distorsions liées aux initiatives nationales en matière de fiscalité douanière et du e-commerce",
+      "actions": [
+        "rencontre",
+        "correspondance",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "532334588",
+      "nom": "RESPIRE ASSOCIATION NATIONALE POUR LA PRESERVATION ET L'AMELIORATION DE LA QUALITE DE L'AIR",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=532334588",
+      "objet": "PLF pour 2026 : Mettre en place une contribution des grands acteurs du e-\ncommerce sur la livraison de colis en France pour financer de manière pérenne les AOM et AOMR",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "W751224240",
+      "nom": "ALLIANCE DU COMMERCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751224240",
+      "objet": "Projet de loi de finances pour 2026 : taxe sur les petits colis; contre la suppression du crédit d'impot invendus textiles, la hausse de la TASCOM et le transfert de la taxe DEFI à l'IFTH",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "922347315",
+      "nom": "ALLIANCE FRANCAISE DES PLACES DE MARCHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=922347315",
+      "objet": "PLF 2026 – Proposition d’exonération de la taxe pour les biens d’occasion et les biens artisanaux et d'une taxe relative aux frais de gestion des petits colis en provenance de pays tiers.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "PLF 2026 : Mettre fin à l'exemption de droits de douane sur les colis de moins de 150 euros dès le prochain PLF",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "envoi de propositions de rédaction",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "775563455",
+      "nom": "BUREAU NATIONAL INTERPR COGNAC",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775563455",
+      "objet": "Alerte taxation petits colis venant de chine et impacts éventuels sur l’enquête antidumping chinoise ciblant le cognac",
+      "actions": [
+        "correspondance",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "554501171",
+      "nom": "CASINO GUICHARD-PERRACHON",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=554501171",
+      "objet": "PLF 2026 : Soutenir la mise en œuvre d'une taxe sur les petits colis au niveau européen.",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "H619315209",
+      "nom": "ETSY IRELAND",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H619315209",
+      "objet": "PLF 2026 – Sécuriser les modalités concrètes et opérationnelles d'une taxe relative aux frais de gestion des petits colis en provenance de pays tiers pour les places de marché ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "330005620",
+      "nom": "GRAYLING FRANCE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=330005620",
+      "objet": "PLF 2026 – Sécuriser les modalités concrètes et opérationnelles d'une taxe relative aux frais de gestion des petits colis en provenance de pays tiers pour les places de marché ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "356000000",
+      "nom": "LA POSTE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=356000000",
+      "objet": "Suivi des dispositions concernant la taxe \"petits colis\"",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "812604106",
+      "nom": "ALIBABA(FRANCE)",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=812604106",
+      "objet": "PLF 2026 : Alerter sur les difficultés et dangers de la mise en œuvre de la taxe petit colis uniquement sur le territoire français ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "481986446",
+      "nom": "AUCHAN RETAIL FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=481986446",
+      "objet": "Contribuer aux travaux ayant conduit à l'instauration d'une taxe sur les petits colis importés afin de lutter contre la concurrence déloyales des plateformes extra-européennes.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "907752919",
+      "nom": "BTA PLAIDOYER",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=907752919",
+      "objet": "PLF 2026 : Mettre en place une contribution des grands acteurs du e-commerce sur la livraison de colis en France pour financer de manière pérenne les AOM et AOMR",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "424059822",
+      "nom": "CDISCOUNT",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=424059822",
+      "objet": "Plaider pour une \"Taxe petit colis\" techniquement applicable par les plateformes françaises et au niveau de l'UE pour éviter les contournements, dans le cadre du PLF 2026",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "303215016",
+      "nom": "CONFEDERATION DES PETITES ET MOYENNES ENTREPRISES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=303215016",
+      "objet": "PLF 2026 - Rehausser les frais de gestion applicables aux petits colis en provenance de pays tiers afin de financer les contrôles et rétablir l’équité concurrentielle",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784856528",
+      "nom": "CONSEIL DU COMMERCE DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784856528",
+      "objet": "Soutien de la taxe sur les petits colis sur le PLF 2026 ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "434255329",
+      "nom": "CPME CORREZE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434255329",
+      "objet": "Demander qu'un forfait de 25€ par colis, avec un premier pas à 5€ à compter du 1er janvier soit voté dans la loi de finances pour 2026 dans le cadre de la taxe sur les petits colis",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "352280416",
+      "nom": "DGA GROUP FRANCE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=352280416",
+      "objet": "Plaider pour une approche harmonisée au niveau européen de la taxation des petits colis afin d’éviter les distorsions liées à des initiatives nationales en matière de douane et du e-commerce(PLF 2026)",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "894289990",
+      "nom": "ECOLOGIC COMING OUT",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=894289990",
+      "objet": "Convaincre de la nécessité d'imposer une option \"colis réutilisable\" aux plateformes de e-commerce dans le cadre de la révision de la charte d'engagement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "431853530",
+      "nom": "ESL & NETWORK FRANCE SAS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=431853530",
+      "objet": "PLF 2026 : Alerter sur les difficulté d'application et de mise en oeuvre de la taxe petit colis ",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784855876",
+      "nom": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876",
+      "objet": "PLF 2026 : soutenir la taxe nationale temporaire sur les petits colis de 2€, harmonisée dans un cadre européen",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784854994",
+      "nom": "FEDERATION ENTREPRISES VENTE A DISTANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784854994",
+      "objet": "Plaider pour l'accélération de la suppression de l’exemption des droits de douanes pour les colis de moins de 150 euros avant la date initiale prévue en 2028",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "775661390",
+      "nom": "FNAC DARTY PARTICIPATIONS ET SERVICES",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775661390",
+      "objet": "Demande d'instauration d'une taxation sur les petits colis de provenance extra-européenne",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "538571530",
+      "nom": "FORWARD PARTNERS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=538571530",
+      "objet": "PJL fraude : créer un traitement automatisé « Colis à risque » géré par les douanes, destiné à prévenir et constater les infractions douanières relatives au tabac",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "804049476",
+      "nom": "JUNG S.A.S",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=804049476",
+      "objet": "PLF 2026 – Proposition d’exonération de la taxe, notamment pour les biens d’occasion, d'une taxe relative aux frais de gestion des petits colis en provenance de pays tiers.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "818757601",
+      "nom": "KAIROS MSC",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=818757601",
+      "objet": "PLF pour 2026 : augmenter le montant de la taxe sur les petits colis prévue à l'article 22",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "828960252",
+      "nom": "PERGAMON CONSULTING SERVICES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=828960252",
+      "objet": "Demande d'instauration d'une taxation sur les petits colis de provenance extra-européenne ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "H771956256",
+      "nom": "PLEAD",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H771956256",
+      "objet": "demander la suppression de la taxation des petits colis dans le cadre du projet de loi de finances ",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "534389309",
+      "nom": "TADDEO",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=534389309",
+      "objet": "PLAIDER POUR L'ACCÉLÉRATION DE LA SUPPRESSION DE L’EXEMPTION DES DROITS DE DOUANES POUR LES COLIS DE MOINS DE 150 EUROS AVANT LA DATE INITIALE DE 2028",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784178493",
+      "nom": "UNION FRANCAIS INDUSTRIE HABILLEMENT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784178493",
+      "objet": "Obtenir la mise en place d'une taxe sur les petits colis",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "W952008441",
+      "nom": "UNION FRANÇAISE DE L'EXPRESS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W952008441",
+      "objet": "PLF 2026 : renforcer la faisabilité de la taxe colis et simplifier sa mise en œuvre",
+      "actions": [
+        "transmission d'expertise",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "784357352",
+      "nom": "UNION INDUSTRIES TEXTILES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784357352",
+      "objet": "PLF pour 2026 : augmenter le montant de la taxe sur les petits colis prévue à l'article 22",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "434317293",
+      "nom": "VENTE PRIVEE.COM",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434317293",
+      "objet": "Taxe sur les petits colis: alerte sur les effets néfastes de la concurrence déloyale résultant des activités de certaines plateformes. ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 10,
+    "rapports_avec_liste": 10,
+    "comptes_rendus_lus": 91
+  },
+  "synthese": {
+    "position_probable": "Max Mathiasin a cosigné l'amendement 452, actuellement en attente, qui propose une exception aux dispositions de l'article 22, ce qui suggère qu'il est probablement contre la mesure.",
+    "argument": "Présenter à ce député l'amendement 452 qu'il a cosigné, actuellement en attente, qui propose une exception aux importations, afin de soutenir la position d'Alibaba France contre la taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe.",
+    "chiffres_utilises": [
+      "452",
+      "22",
+      "2",
+      "150"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
+    "verifie": true,
+    "date": "2025-11-18"
+  }
+}

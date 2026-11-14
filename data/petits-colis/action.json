@@ -1,0 +1,1896 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:53:41.090Z",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Deuxième séance du mardi 29 avril 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/deuxieme-seance-du-mardi-29-avril-2025"
+      },
+      {
+        "label": "Première séance du mercredi 30 avril 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025"
+      },
+      {
+        "label": "Première séance du mercredi 11 juin 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-11-juin-2025"
+      },
+      {
+        "label": "Première séance du vendredi 24 octobre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-vendredi-24-octobre-2025"
+      },
+      {
+        "label": "Première séance du mardi 28 octobre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-28-octobre-2025"
+      },
+      {
+        "label": "Première séance du mercredi 29 octobre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-29-octobre-2025"
+      },
+      {
+        "label": "Deuxième séance du mercredi 29 octobre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-mercredi-29-octobre-2025"
+      },
+      {
+        "label": "Deuxième séance du jeudi 06 novembre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-jeudi-06-novembre-2025"
+      },
+      {
+        "label": "Deuxième séance du lundi 17 novembre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-lundi-17-novembre-2025"
+      },
+      {
+        "label": "Troisième séance du lundi 17 novembre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-lundi-17-novembre-2025"
+      },
+      {
+        "label": "Première séance du mardi 18 novembre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-18-novembre-2025"
+      },
+      {
+        "label": "Deuxième séance du mardi 18 novembre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-mardi-18-novembre-2025"
+      },
+      {
+        "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      }
+    ],
+    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3).",
+    "producer": "pipeline/fiches",
+    "dossier_id": "petits-colis"
+  },
+  "decideurs": [
+    {
+      "role": "gouvernement",
+      "depute_id": null,
+      "nom": "Ministre chargé des comptes publics",
+      "groupe_id": null,
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Texte du projet de loi",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "La mesure est l'article 22 du projet de loi déposé par le gouvernement : le gouvernement en est l'auteur.",
+        "nature": "fait"
+      }
+    },
+    {
+      "role": "rapporteur_general",
+      "depute_id": "PA346782",
+      "nom": "Philippe Juvin",
+      "groupe_id": "PO845425",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Dossier législatif",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+          },
+          {
+            "label": "Amendement n° 3126",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+          },
+          {
+            "label": "Amendement n° 1859",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+          }
+        ],
+        "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "president_commission",
+      "depute_id": "PA721202",
+      "nom": "Éric Coquerel",
+      "groupe_id": "PO845413",
+      "position": "inconnue",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Députés et organes, open data",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/deputes_actifs_mandats_actifs_organes/AMO10_deputes_actifs_mandats_actifs_organes.json.zip"
+          }
+        ],
+        "raisonnement": "Président de la commission des finances (répertoire des mandats, open data). Mandat lu à la date de génération : à vérifier pour une date passée. Position inconnue : aucun vote ni amendement de sens lisible sur la mesure.",
+        "nature": "inconnue"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA841487",
+      "nom": "Anthony Boulogne",
+      "groupe_id": "PO845401",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 806",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+          },
+          {
+            "label": "Amendement n° 974",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe RN : auteur de 2 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA721764",
+      "nom": "Olivia Grégoire",
+      "groupe_id": "PO845407",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 4037",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004037"
+          },
+          {
+            "label": "Amendement n° 4040",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004040"
+          },
+          {
+            "label": "Amendement n° 459",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000459"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe EPR : auteur de 5 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 2 pour la mesure, 4 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA841295",
+      "nom": "Pierrick Courbon",
+      "groupe_id": "PO845419",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 2832",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002832"
+          },
+          {
+            "label": "Amendement n° 2833",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002833"
+          },
+          {
+            "label": "Amendement n° 2810",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002810"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe SOC : auteur de 3 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 3 pour la mesure, 0 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA794118",
+      "nom": "Antoine Vermorel",
+      "groupe_id": "PO845425",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 721",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000721"
+          },
+          {
+            "label": "Amendement n° 937",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000937"
+          },
+          {
+            "label": "Amendement n° 936",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000936"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe DR : auteur de 9 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 8 pour la mesure, 0 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA841223",
+      "nom": "Tristan Lahais",
+      "groupe_id": "PO845439",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 2740",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
+          },
+          {
+            "label": "Amendement n° 2738",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe ECOS : auteur de 2 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 2 pour la mesure, 0 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA719024",
+      "nom": "Christophe Blanchet",
+      "groupe_id": "PO845454",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 222",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000222"
+          },
+          {
+            "label": "Amendement n° 3395",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395"
+          },
+          {
+            "label": "Amendement n° 1259",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001259"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe DEM : auteur de 8 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 11 pour la mesure, 0 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA795026",
+      "nom": "Anne-Cécile Violland",
+      "groupe_id": "PO845470",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 3674",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003674"
+          },
+          {
+            "label": "Amendement n° 1580",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001580"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe HOR : auteur de 3 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 2 pour la mesure, 0 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA267763",
+      "nom": "Jean-Pierre Bataille",
+      "groupe_id": "PO845485",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 1442",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001442"
+          },
+          {
+            "label": "Amendement n° 1745",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001745"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe LIOT : auteur de 2 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 2 pour la mesure, 0 contre.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "groupes": {
+    "actionnables": [
+      {
+        "depute_id": "PA721110",
+        "groupe_id": "PO845485",
+        "score": 0.29,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 1 contre ; loyauté à son groupe 0.71, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 452",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452"
+            },
+            {
+              "label": "Amendement n° 2538",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002538"
+            },
+            {
+              "label": "Amendement n° 1745",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001745"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA721336",
+        "groupe_id": "PO845454",
+        "score": 0.29,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.71, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3395",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA718838",
+        "groupe_id": "PO845425",
+        "score": 0.25,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.75, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA368",
+        "groupe_id": "PO845425",
+        "score": 0.24,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.76, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA793796",
+        "groupe_id": "PO845485",
+        "score": 0.24,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.76, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1745",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001745"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA2952",
+        "groupe_id": "PO845485",
+        "score": 0.23,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.77, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3276",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003276"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA607619",
+        "groupe_id": "PO845485",
+        "score": 0.23,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.77, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2538",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002538"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA794114",
+        "groupe_id": "PO845454",
+        "score": 0.23,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.77, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3395",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395"
+            },
+            {
+              "label": "Amendement n° 1519",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA793508",
+        "groupe_id": "PO845425",
+        "score": 0.21,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.79, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA794118",
+        "groupe_id": "PO845425",
+        "score": 0.21,
+        "raison": "a déposé ou cosigné : 8 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.79, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 721",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000721"
+            },
+            {
+              "label": "Amendement n° 937",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000937"
+            },
+            {
+              "label": "Amendement n° 936",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000936"
+            },
+            {
+              "label": "Amendement n° 720",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000720"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA266793",
+        "groupe_id": "PO845425",
+        "score": 0.19,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.81, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA718850",
+        "groupe_id": "PO845425",
+        "score": 0.19,
+        "raison": "a déposé ou cosigné : 5 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.81, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 307",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000307"
+            },
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 309",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000309"
+            },
+            {
+              "label": "Amendement n° 308",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000308"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA793342",
+        "groupe_id": "PO845425",
+        "score": 0.18,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.82, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA330909",
+        "groupe_id": "PO845425",
+        "score": 0.17,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.83, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA332523",
+        "groupe_id": "PO845425",
+        "score": 0.17,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.83, sous le seuil de 0,85",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      }
+    ],
+    "allies": [
+      {
+        "depute_id": "PA346782",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3126",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+            },
+            {
+              "label": "Amendement n° 1859",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA719138",
+        "groupe_id": "PO845485",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1834",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001834"
+            },
+            {
+              "label": "Amendement n° 2820",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002820"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA720960",
+        "groupe_id": "PO845485",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 452",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA720976",
+        "groupe_id": "PO845485",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 452",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": true
+      },
+      {
+        "depute_id": "PA795762",
+        "groupe_id": "PO845419",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 452",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA795820",
+        "groupe_id": "PO845514",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 452",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA841487",
+        "groupe_id": "PO845401",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 806",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+            },
+            {
+              "label": "Amendement n° 974",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA841709",
+        "groupe_id": "PO845407",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 302",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000302"
+            },
+            {
+              "label": "Amendement n° 460",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA721764",
+        "groupe_id": "PO845407",
+        "score": 0.67,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 4 contre, dans le sens du client",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 4037",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004037"
+            },
+            {
+              "label": "Amendement n° 4040",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004040"
+            },
+            {
+              "label": "Amendement n° 459",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000459"
+            },
+            {
+              "label": "Amendement n° 4038",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004038"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      }
+    ],
+    "perdus": [
+      {
+        "depute_id": "PA1630",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.89 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (89 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA266797",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.88 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (88 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA266808",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 5 acte(s) pour la mesure, 0 contre ; loyauté 0.88 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 307",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000307"
+            },
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 309",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000309"
+            },
+            {
+              "label": "Amendement n° 308",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000308"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (88 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA267318",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté 0.87 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3395",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (87 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA267763",
+        "groupe_id": "PO845485",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.88 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1442",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001442"
+            },
+            {
+              "label": "Amendement n° 1745",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001745"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (88 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA267794",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté 0.88 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (88 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA2940",
+        "groupe_id": "PO845439",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.91 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2740",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
+            },
+            {
+              "label": "Amendement n° 2738",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (91 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA330008",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.86 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (86 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA331582",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 1 acte(s) pour la mesure, 0 contre ; loyauté 0.91 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3395",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (91 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA342240",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.86 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (86 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA588884",
+        "groupe_id": "PO845439",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.97 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2740",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
+            },
+            {
+              "label": "Amendement n° 2738",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (97 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA606545",
+        "groupe_id": "PO845439",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.93 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2740",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
+            },
+            {
+              "label": "Amendement n° 2738",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (93 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA608416",
+        "groupe_id": "PO845425",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.87 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1775",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+            },
+            {
+              "label": "Amendement n° 1774",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (87 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA610002",
+        "groupe_id": "PO845439",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.95 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2740",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
+            },
+            {
+              "label": "Amendement n° 2738",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (95 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
+        "depute_id": "PA610968",
+        "groupe_id": "PO845439",
+        "score": 1,
+        "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.96 à un groupe pour la mesure",
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2740",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
+            },
+            {
+              "label": "Amendement n° 2738",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (96 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      }
+    ]
+  },
+  "arguments": {
+    "pour": [
+      {
+        "argument": "La taxe protège les commerces de proximité contre la concurrence déloyale des plateformes étrangères.",
+        "citation": "Aussi protégerons-nous les commerces de nos territoires menacés par la concurrence déloyale grâce à une taxe sur les importations de petits colis. Sur ce dossier, je vous envoie un message : protégeons nos postiers.",
+        "orateur_id": null,
+        "groupe_id": null,
+        "date": "2025-10-24",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-vendredi-24-octobre-2025",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du vendredi 24 octobre 2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-vendredi-24-octobre-2025"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (M. Roland Lescure, ministre, sans identifiant de député dans deputes.json) la défend : « La taxe protège les commerces de proximité contre la concurrence déloyale des importations. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez M. Pieyre-Alexandre Anglade (séance du 2025-04-29), Paul Midy (commission du 2025-10-22), Corentin Le Fur (commission du 2025-10-22), Antoine Vermorel-Marques (commission du 2025-10-22).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe est préférable à l'inaction ou à la suppression, même si son montant est jugé insuffisant.",
+        "citation": "Certes, le montant de 2 euros par article n’est pas à la hauteur de l’enjeu, mais cela reste préférable à la suppression de cet article.",
+        "orateur_id": "PA346782",
+        "groupe_id": "PO845425",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Philippe Juvin, rapporteur général) la défend : « La taxe est préférable à sa suppression, même si son montant est jugé insuffisant. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Claire Lejeune (commission du 2025-10-22), Philippe Juvin (commission du 2025-10-22), Philippe Juvin (commission du 2025-10-22).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe est indispensable pour éviter la fermeture des boutiques face à l'afflux massif de colis.",
+        "citation": "Ce que je demande, c’est l’adoption de ces amendements afin que nous ayons ce débat très complexe en séance avec le gouvernement. L’année prochaine, 6,5 milliards de colis arriveront de Chine en Europe. Si nous ne faisons rien, nous n’aurons plus qu’à fermer les boutiques !",
+        "orateur_id": "PA346782",
+        "groupe_id": "PO845425",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Philippe Juvin, rapporteur général) la défend : « L'inaction face à l'afflux massif de colis chinois entraînera la fermeture des commerces de proximité. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Philippe Juvin (commission du 2025-10-22), Antoine Vermorel-Marques (commission du 2025-10-22).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe est une mesure nécessaire pour faire progresser le débat et organiser la résistance.",
+        "citation": "Ces amendements sont une manière de faire progresser le débat. Je suis prêt à entendre toutes vos propositions d’amélioration technique, mais il faut absolument que nous avancions dans ce domaine.",
+        "orateur_id": "PA346782",
+        "groupe_id": "PO845425",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Philippe Juvin, rapporteur général) la défend : « Il faut absolument avancer dans ce domaine et faire progresser le débat sur la mesure. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez M. Serge Papin (séance du 2025-10-29), Philippe Juvin (commission du 2025-10-22).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe est nécessaire pour mettre fin au modèle économique toxique du fast fashion.",
+        "citation": "Vous verrez, je serai à vos côtés pour défendre bientôt, à l’occasion de l’examen de prochains articles, la taxe sur les petits colis. Je le ferai d’autant plus volontiers que je suis la ministre de tutelle des douanes.",
+        "orateur_id": null,
+        "groupe_id": null,
+        "date": "2025-10-29",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-mercredi-29-octobre-2025",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Deuxième séance du mercredi 29 octobre 2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-mercredi-29-octobre-2025"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Mme Amélie de Montchalin, ministre, sans identifiant de député dans deputes.json) la défend : « La taxe est nécessaire pour mettre fin à un modèle économique toxique et à la concurrence déloyale du fast fashion. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe protège les commerces et maintient le lien social dans les zones rurales.",
+        "citation": "ces amendements pleins de bon sens permettraient de protéger nos commerces qui, eux, fournissent un service de qualité et de proximité à nos concitoyens et maintiennent le lien social et la vie dans les zones rurales. Votons cette taxe de 25 euros par article : ce serait un bon début pour aider nos territoires.",
+        "orateur_id": "PA607090",
+        "groupe_id": "PO845425",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Jean-Pierre Vigier) la défend : « La taxe protège les commerces de proximité et maintient le lien social dans les zones rurales. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "L'instauration de la taxe en France enverrait un signal fort pour inciter l'Europe à agir.",
+        "citation": "en instaurer un dès à présent en France enverrait un bon signal à nos concitoyens et inciterait l’Europe à agir plus efficacement.",
+        "orateur_id": "PA840979",
+        "groupe_id": "PO845425",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Corentin Le Fur) la défend : « Instaurer la taxe en France enverrait un bon signal et inciterait l'Europe à agir plus efficacement. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe simplifie les opérations douanières face au volume massif de colis.",
+        "citation": "Imposer un prix unique de 2 euros par colis permet de grandement simplifier les opérations douanières – même si la réflexion est encore en cours.",
+        "orateur_id": "PA795864",
+        "groupe_id": "PO845407",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Pierre Cazeneuve) la défend : « La taxe simplifie les opérations douanières face au volume massif de colis. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe soutient le plan d'action visant à protéger les consommateurs de la contrefaçon.",
+        "citation": "Ce plan, que nous soutenons, prévoit des mesures concrètes visant à faire enfin respecter nos règles, dont les plus fortes devront être prises à l’échelon européen. Je pense en particulier à la volonté française de mettre fin à l’exemption des droits de douane pour les petits colis dans le cadre de la réforme de l’union douanière de l’Union européenne, qui interviendra en 2028, ainsi qu’à l’instauration, à partir de 2026, d’un mécanisme de contribution prenant la forme de frais de gestion forfaitaires appliqués à chaque colis entrant en Europe en vue de financer nos contrôles.",
+        "orateur_id": "PA719640",
+        "groupe_id": "PO845454",
+        "date": "2025-04-30",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du mercredi 30 avril 2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Mme Sophie Mette) la défend : « Le plan d'action soutenu vise à protéger les commerces de proximité et les consommateurs de la contrefaçon et des flux massifs de petits colis. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+          "nature": "deduction"
+        }
+      }
+    ],
+    "contre": [
+      {
+        "argument": "La taxe est socialement injuste car elle pèse sur les classes populaires et modestes.",
+        "citation": "Cette taxe de 2 euros par article – je dis bien par article – sera une double peine, injuste socialement et inutile économiquement. Elle ne changera rien aux déséquilibres du commerce mondial, mais frappera encore un peu plus ceux qui travaillent et subissent la vie chère.",
+        "orateur_id": "PA841487",
+        "groupe_id": "PO845401",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Anthony Boulogne) s'y oppose ou veut la réduire : « La taxe est socialement injuste et économiquement inutile, elle pèse sur les classes moyennes et populaires. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Anthony Boulogne (commission du 2025-10-22), Claire Lejeune (commission du 2025-10-22), Jean-Philippe Tanguy (commission du 2025-10-22), Marianne Maximi (commission du 2025-10-22).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe sera contournée par la fraude ou des intermédiaires européens, la rendant inefficace.",
+        "citation": "Vous l’avez dit vous-mêmes, le montant de cette taxe est insuffisant et, surtout, il sera très facile de s’y dérober. Les entreprises concernées auront un « ami » européen – ils sont nombreux – qui trichera et sera ravi d’être le larbin de la Chine pour importer et réexporter sur le marché intérieur.",
+        "orateur_id": "PA795778",
+        "groupe_id": "PO845401",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Jean-Philippe Tanguy) s'y oppose ou veut la réduire : « La taxe est inefficace car elle sera facilement contournée par des intermédiaires européens ou de faux entrepôts. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Mme Marine Le Pen (séance du 2025-11-18).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe est inefficace car elle ne modifie pas les comportements et ne sauve pas les commerces.",
+        "citation": "Rassurez-vous, notre électorat comprendra très bien qu’il s’agit une fois de plus de les taxer et que cette mesure ne sauvera aucun petit commerce.",
+        "orateur_id": "PA795778",
+        "groupe_id": "PO845401",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Jean-Philippe Tanguy) s'y oppose ou veut la réduire : « La taxe est inefficace pour sauver les petits commerces et ne fait que taxer les électeurs. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Erwan Balanant (commission du 2025-10-22).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe est dérisoire face à l'écart de prix et à la fraude sur la valeur déclarée.",
+        "citation": "Dans ces conditions, ne faudrait-il pas renoncer à cette taxe sur les petits colis, qui ne servira à rien ? Car si une majoration de 2 euros pour un colis de 7 euros est significative, elle devient epsilonesque si la valeur réelle de la marchandise est de 100 ou 150 euros.",
+        "orateur_id": "PA942",
+        "groupe_id": "PO845485",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Charles de Courson) s'y oppose ou veut la réduire : « La taxe est inefficace car la fraude massive sur la valeur déclarative rend la mesure dérisoire face au problème réel de la franchise de 150 euros. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe est hypocrite car elle ne traite pas les causes structurelles de la surconsommation.",
+        "citation": "Cette mesure est donc hypocrite ; vous ne proposez rien de structurel pour véritablement endiguer les causes de la fast fashion et de la surconsommation.",
+        "orateur_id": "PA842029",
+        "groupe_id": "PO845413",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Claire Lejeune) s'y oppose ou veut la réduire : « La mesure est hypocrite et ne propose rien de structurel pour endiguer la fast fashion et la surconsommation. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe prive la France de ressources futures issues d'une future taxe européenne.",
+        "citation": "En introduisant un dispositif franco-français au rendement nul, ne nous priverons-nous pas d’une ressource à venir issue d’une taxe qui, elle, ne pourra être évitée et dont nous percevrons un quart du produit ?",
+        "orateur_id": "PA719372",
+        "groupe_id": "PO845407",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Guillaume Kasbarian) s'y oppose ou veut la réduire : « La taxe nationale est inefficace et prive la France de ressources futures issues d'une taxe européenne inévitable. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe est inefficace car le coût sera répercuté sur le client ou le fabricant.",
+        "citation": "Mais que fera cette entreprise, le cas échéant ? Elle répercutera ce coût sur le client ou sur le fabricant du produit. Dans les deux cas, nous ne réglons donc pas la question.",
+        "orateur_id": "PA719558",
+        "groupe_id": "PO845454",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Erwan Balanant) s'y oppose ou veut la réduire : « La taxe est inefficace car le coût sera répercuté sur le client ou le fabricant, ne réglant pas la question. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La taxe pénalise le secteur de la logistique en France.",
+        "citation": "Je suis surpris par cette proposition des Républicains visant à instaurer une taxe de 25 euros par colis, dont le seul effet réel serait de pénaliser le secteur de la logistique en France. L’objectif recherché par l’amendement est louable, mais il faut trouver un autre moyen de l’atteindre.",
+        "orateur_id": "PA841955",
+        "groupe_id": "PO845401",
+        "date": "2025-10-22",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Matthias Renault) s'y oppose ou veut la réduire : « La taxe pénalise le secteur de la logistique en France et n'est pas la bonne solution. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+          "nature": "deduction"
+        }
+      }
+    ]
+  },
+  "contre_arguments": [
+    {
+      "texte": "La taxe ne sauvera aucun petit commerce, car elle ne modifie pas les comportements et ne traite pas les causes structurelles de la surconsommation. La mesure prévoit une taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe.",
+      "repond_a": "La taxe protège les commerces de proximité contre la concurrence déloyale des plateformes étrangères.",
+      "chiffres_utilises": [
+        "2",
+        "150"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "séance publique du 24 octobre 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-vendredi-24-octobre-2025"
+          },
+          {
+            "label": "commission du 22 octobre 2025 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "La taxe de 2 euros par article est socialement injuste car elle frappe les classes populaires et modestes sans résoudre les déséquilibres du commerce mondial. L'amendement n° 191 visant à supprimer l'article 22 est non soutenu.",
+      "repond_a": "La taxe est préférable à l'inaction ou à la suppression, même si son montant est jugé insuffisant.",
+      "chiffres_utilises": [
+        "2",
+        "22",
+        "191"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "commission du 22 octobre 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "La taxe ne sauvera aucun petit commerce, car elle ne modifie pas les déséquilibres du commerce mondial. Elle pèsera sur les classes populaires avec un montant de 2 euros par article.",
+      "repond_a": "La taxe est indispensable pour éviter la fermeture des boutiques face à l'afflux massif de colis.",
+      "chiffres_utilises": [
+        "2"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "commission du 22 octobre 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "Avancer le débat ne justifie pas une mesure socialement injuste qui pèse sur les classes populaires et modestes. La taxe de 2 euros par article sur les colis de moins de 150 euros est déjà jugée dérisoire face à la valeur réelle des marchandises.",
+      "repond_a": "La taxe est une mesure nécessaire pour faire progresser le débat et organiser la résistance.",
+      "chiffres_utilises": [
+        "2",
+        "150"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "commission du 22 octobre 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "La taxe de 2 euros par article ne traite pas les causes structurelles de la surconsommation et ne sauvera aucun petit commerce. Cette mesure est donc hypocrite car elle ne propose rien de structurel pour endiguer les causes du fast fashion.",
+      "repond_a": "La taxe est nécessaire pour mettre fin au modèle économique toxique du fast fashion.",
+      "chiffres_utilises": [
+        "2"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "séance publique du 29 octobre 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-mercredi-29-octobre-2025"
+          },
+          {
+            "label": "commission du 22 octobre 2025 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "La taxe ne sauvera aucun petit commerce, car elle ne modifie pas les comportements de consommation. Le montant de 2 euros par article est dérisoire face à la valeur réelle de la marchandise, qui peut atteindre 100 ou 150 euros.",
+      "repond_a": "La taxe protège les commerces et maintient le lien social dans les zones rurales.",
+      "chiffres_utilises": [
+        "2",
+        "100",
+        "150"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "commission du 22 octobre 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "Un dispositif national isolé ne constitue pas un levier efficace pour l'Europe, car il sera contourné par la fraude et des intermédiaires européens. La taxe de 2 euros par article sur les colis de moins de 150 euros est insuffisante et facile à éviter.",
+      "repond_a": "L'instauration de la taxe en France enverrait un signal fort pour inciter l'Europe à agir.",
+      "chiffres_utilises": [
+        "2",
+        "150"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "commission du 22 octobre 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "La simplification douanière ne compense pas l'inefficacité de la mesure, qui sera contournée par la fraude ou des intermédiaires européens. La taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe est jugée insuffisante pour dissuader ces pratiques.",
+      "repond_a": "La taxe simplifie les opérations douanières face au volume massif de colis.",
+      "chiffres_utilises": [
+        "2",
+        "150"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "commission du 22 octobre 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "La taxe nationale est inefficace car elle sera contournée par la fraude ou des intermédiaires européens, ce qui la rend inutile. Le mécanisme de contribution prévu à partir de 2026 financera les contrôles à l'échelle européenne.",
+      "repond_a": "La taxe soutient le plan d'action visant à protéger les consommateurs de la contrefaçon.",
+      "chiffres_utilises": [
+        "2026"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "séance publique du 30 avril 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025"
+          },
+          {
+            "label": "commission du 22 octobre 2025 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}

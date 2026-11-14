@@ -1,6 +1,7 @@
 // Session A4 : fiches par député, fiches/index.json, nouveautes.json, action.json.
-// Usage : bun run fiches [--root data] [--dossier <id>] [--gabarit] [--api]
+// Usage : bun run fiches [--root data] [--dossier <id>] [--gabarit] [--api] [--sans-cache]
 //   --api : rafraîchit le flux Hémicycle evenements_parlementaires (5 crédits par texte), sinon cache.
+//   --sans-cache : rappelle le modèle même si une rédaction identique est en cache (pipeline/fiches/.cache/redaction/).
 // Rejouable : tout est régénéré depuis les fichiers des autres producteurs.
 
 import { SCHEMAS, dataPath } from "../../contracts/index";
@@ -9,7 +10,7 @@ import { chargerContexte } from "./lib/contexte";
 import { construireFiches } from "./lib/fiches";
 import { lireJsonBrut, lireKind, noter, rapport } from "./lib/io";
 import { construireNouveautes } from "./lib/nouveautes";
-import { coutLlm, forcerGabarit, raisonDuGabarit } from "./lib/redaction";
+import { coutLlm, forcerGabarit, ignorerCache, raisonDuGabarit, statsCache } from "./lib/redaction";
 import { creditsConsommes } from "./lib/evenements-api";
 
 function args() {
@@ -18,6 +19,7 @@ function args() {
   let dossier: string | null = null;
   let gabarit = false;
   let api = false;
+  let sansCache = false;
   for (let i = 0; i < a.length; i++) {
     if (a[i] === "--root") root = a[++i] ?? root;
     else if (a[i].startsWith("--root=")) root = a[i].slice(7);
@@ -25,17 +27,19 @@ function args() {
     else if (a[i].startsWith("--dossier=")) dossier = a[i].slice(10);
     else if (a[i] === "--gabarit") gabarit = true;
     else if (a[i] === "--api") api = true;
+    else if (a[i] === "--sans-cache") sansCache = true;
     else {
-      console.error(`argument inconnu : ${a[i]}\nusage : bun run fiches [--root data] [--dossier <id>] [--gabarit] [--api]`);
+      console.error(`argument inconnu : ${a[i]}\nusage : bun run fiches [--root data] [--dossier <id>] [--gabarit] [--api] [--sans-cache]`);
       process.exit(2);
     }
   }
-  return { root: root.replace(/\/$/, ""), dossier, gabarit, api };
+  return { root: root.replace(/\/$/, ""), dossier, gabarit, api, sansCache };
 }
 
 async function main() {
-  const { root, dossier: seul, gabarit, api } = args();
+  const { root, dossier: seul, gabarit, api, sansCache } = args();
   forcerGabarit(gabarit);
+  ignorerCache(sansCache);
   const config = lireKind(root, null, "config");
   const groupes = lireKind(root, null, "groupes");
   const deputes = lireKind(root, null, "deputes");
@@ -75,7 +79,7 @@ async function main() {
   }
   if (raisonDuGabarit()) noter(`rédaction : gabarit (${raisonDuGabarit()})`);
   const cout = coutLlm();
-  if (cout) noter(`Featherless : ${cout.appels} appel(s), ${cout.dollars.toFixed(3)} $`);
+  if (cout) noter(`Featherless : ${cout.appels} appel(s), ${cout.dollars.toFixed(3)} $ ; rédactions reprises du cache : ${statsCache.lus}, mises en cache : ${statsCache.ecrits}`);
   if (creditsConsommes.appels > 0) noter(`crédits Hémicycle consommés par ce run : ${creditsConsommes.credits} (${creditsConsommes.appels} appel(s))`);
   noter(erreurs === 0 ? `OK : fichiers écrits sous ${root}/ (lancer bun run check)` : `${erreurs} fichier(s) invalide(s)`);
   process.exit(erreurs === 0 ? 0 : 1);

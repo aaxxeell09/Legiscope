@@ -2,8 +2,9 @@
 // le prompt de X3 quand les deux existent et que FEATHERLESS_API_KEY est posée ;
 // sinon gabarit local. Tout texte rendu a passé le vérificateur de chiffres.
 
-import { existsSync, readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { createHash } from "node:crypto";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join, resolve } from "node:path";
 import { chiffresDe, verifierChiffres } from "./chiffres";
 import { noter } from "./io";
 
@@ -23,6 +24,17 @@ const MODELE_PAR_DEFAUT = "Qwen/Qwen3.8-27B";
 let moduleLlm: any | null | undefined;
 let forceGabarit = false;
 let raisonGabarit = "";
+let sansCache = false;
+const CACHE = resolve(import.meta.dir, "../.cache/redaction");
+export const statsCache = { lus: 0, ecrits: 0 };
+
+export function ignorerCache(v: boolean) {
+  sansCache = v;
+}
+
+function cleCache(prompt: string, champ: string, entree: unknown): string {
+  return createHash("sha256").update(`${prompt}\n${champ}\n${JSON.stringify(entree)}`).digest("hex").slice(0, 24);
+}
 
 export function forcerGabarit(v: boolean) {
   forceGabarit = v;
@@ -100,6 +112,17 @@ export async function rediger(args: {
   }
   const autorises = args.chiffresAutorises ?? chiffresDe(JSON.stringify(args.entree));
   const prompt = `${args.prompt}\n\nChamp demandé : ${args.champ}\n\nEntrée (JSON) :\n${JSON.stringify(args.entree, null, 1)}`;
+  // Cache disque : même prompt, même champ, même entrée → même texte, sans rappeler le modèle.
+  const fichierCache = join(CACHE, `${cleCache(args.prompt, args.champ, args.entree)}.json`);
+  if (!sansCache && existsSync(fichierCache)) {
+    try {
+      const c = JSON.parse(readFileSync(fichierCache, "utf8")) as Redige;
+      if (c.mode === "llm" && verifierChiffres(c.texte, c.chiffres_utilises).ok) {
+        statsCache.lus += 1;
+        return c;
+      }
+    } catch { /* cache illisible : on rappelle le modèle */ }
+  }
   try {
     const r = await m.redigerVerifie(prompt, autorises, args.gabarit);
     const fautifs: string[] = Array.isArray(r?.fautifs) ? r.fautifs : [];
@@ -107,7 +130,13 @@ export async function rediger(args: {
       const chiffres: string[] = Array.isArray(r.chiffres_utilises) && r.chiffres_utilises.length > 0 ? r.chiffres_utilises : autorises;
       const verif = verifierChiffres(r.texte, chiffres);
       if (verif.ok) {
-        return { texte: r.texte.trim(), mode: "llm", modele: r.modele ?? m.MODELE ?? MODELE_PAR_DEFAUT, chiffres_utilises: chiffres, verifie: true, fautifs };
+        const ok: Redige = { texte: r.texte.trim(), mode: "llm", modele: r.modele ?? m.MODELE ?? MODELE_PAR_DEFAUT, chiffres_utilises: chiffres, verifie: true, fautifs };
+        try {
+          mkdirSync(CACHE, { recursive: true });
+          writeFileSync(fichierCache, JSON.stringify(ok, null, 1));
+          statsCache.ecrits += 1;
+        } catch { /* disque plein : pas de cache */ }
+        return ok;
       }
       noter(`${args.etiquette} : sortie llm refusée par le vérificateur (${verif.fautifs.join(", ")}), gabarit`);
       return resultatGabarit(args.gabarit, verif.fautifs, args.chiffresGabarit);

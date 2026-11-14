@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:53:41.056Z",
+    "sources": [],
+    "limits": "15 fiche(s) produite(s) sur 15 pivot(s). Index limité aux pivots de pivots.json (qa/check).",
+    "producer": "pipeline/fiches",
+    "dossier_id": "petits-colis"
+  },
+  "disponibles": [
+    "PA721110",
+    "PA721336",
+    "PA720446",
+    "PA718838",
+    "PA720976",
+    "PA793796",
+    "PA368",
+    "PA607619",
+    "PA794114",
+    "PA720154",
+    "PA842121",
+    "PA720022",
+    "PA794118",
+    "PA719118",
+    "PA722150"
+  ],
+  "absents": []
+}
