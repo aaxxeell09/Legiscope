@@ -162,7 +162,9 @@ function verifierRoot(root: string) {
       texte.positions.forEach((po, i) => groupeExiste(f, `positions.${i}.groupe_id`, po.groupe_id));
       texte.amendements.forEach((a, i) => {
         groupeExiste(f, `amendements.${i}.groupe_id`, a.groupe_id);
-        deputeExiste(f, `amendements.${i}.auteur_id`, a.auteur_id);
+        // Complément 2 (14 h 05) : un amendement du gouvernement ou d'une commission n'a pas de député pour auteur.
+        if ((a as any).auteur_type === undefined || (a as any).auteur_type === "depute") deputeExiste(f, `amendements.${i}.auteur_id`, a.auteur_id);
+        else if (!(a as any).auteur_libelle) erreur(f, `amendements.${i}.auteur_libelle`, undefined, "obligatoire quand auteur_type n'est pas depute");
         a.cosignataires_ids.forEach((c, j) => deputeExiste(f, `amendements.${i}.cosignataires_ids.${j}`, c));
       });
     }
