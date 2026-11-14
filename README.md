@@ -4,7 +4,7 @@
 
 LegiSpot transforme les données ouvertes du Parlement en un tableau de bord par dossier. Un dossier, c'est un client, la mesure législative qui le touche et ses objectifs classés par priorité. Le consultant y lit où en est la mesure, ce qui vient de changer, ce qui arrive, sur qui agir et ce qu'il peut écrire à son client. Chaque information renvoie à sa source officielle ou au raisonnement qui l'a produite.
 
-Projet construit le 14 novembre 2026 pendant le Hackathon Open Data (swanbase et Hémicycle, Paris). Nom du produit : LegiSpot. Nom interne dans le code : `bascule`. Nom du dépôt : `Legiscope`.
+Projet construit le 14 novembre 2026 pendant le Hackathon Open Data (swanbase et Hémicycle, Paris). Nom du produit : LegiSpot. Nom du dépôt : `Legiscope`.
 
 ![Tableau de bord LegiSpot, dossier « Taxe sur les petits colis »](docs/assets/dashboard.png)
 

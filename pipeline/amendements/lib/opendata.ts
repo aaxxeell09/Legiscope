@@ -1,6 +1,6 @@
 // Lecture de l'open data Amendements de l'Assemblée nationale (17e législature).
 // L'archive complète fait ~363 Mo ; on n'en extrait que les fichiers du texte demandé
-// (chemin json/<dossier>/<texte_id>/<uid>.json) et on garde, par dossier Bascule, un
+// (chemin json/<dossier>/<texte_id>/<uid>.json) et on garde, par dossier LegiSpot, un
 // cache réduit aux amendements du sujet (pipeline/amendements/cache/<dossier>.json).
 
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync } from "node:fs";
@@ -87,7 +87,7 @@ export function lireBrut(json: unknown): AmendementBrut | null {
 
 /** Télécharge l'archive si elle n'est pas déjà là. Renvoie son chemin. */
 export async function archiveLocale(cheminDemande?: string): Promise<string> {
-  const candidats = [cheminDemande, process.env.AN_AMENDEMENTS_ZIP, join(tmpdir(), "bascule-opendata", "Amendements.json.zip")].filter(
+  const candidats = [cheminDemande, process.env.AN_AMENDEMENTS_ZIP, join(tmpdir(), "legispot-opendata", "Amendements.json.zip")].filter(
     (c): c is string => !!c,
   );
   for (const c of candidats) if (existsSync(c) && statSync(c).size > 1_000_000) return c;
@@ -102,7 +102,7 @@ export async function archiveLocale(cheminDemande?: string): Promise<string> {
 
 /** Extrait de l'archive les fichiers d'un texte (par son identifiant PRJLANR5L17B3210) et les renvoie en AmendementBrut. */
 export async function lireTexteDepuisArchive(archive: string, texteId: string): Promise<AmendementBrut[]> {
-  const dest = join(tmpdir(), "bascule-opendata", "extrait", texteId);
+  const dest = join(tmpdir(), "legispot-opendata", "extrait", texteId);
   rmSync(dest, { recursive: true, force: true });
   mkdirSync(dest, { recursive: true });
   // `unzip` est présent sur macOS et Linux ; le motif ne garde que le sous-dossier du texte.

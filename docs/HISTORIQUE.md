@@ -39,7 +39,7 @@ Modifier un de ces fichiers change ce que le pipeline produit.
 - **Chiffres de la démonstration.** Les valeurs de `demo/` ont été relevées à 14 h 25. Les fichiers de `data/` ont été régénérés ensuite : des scores, des tendances et des comptes ont changé.
 - **Interface.** Le cadrage évoque un terminal financier et les consignes un bouton texte « pourquoi ». L'interface livrée a un thème clair, et la preuve s'ouvre par une icône d'information.
 - **Page Sources.** Le journal `status/X2.md` décrit deux tableaux construits depuis les blocs `meta`. La page livrée est une liste de sources institutionnelles.
-- **Nom.** Les documents de construction disent « Bascule », nom de travail resté dans le code. Le produit s'appelle LegiSpot.
+- **Nom.** Le produit et l'interface s'appellent LegiSpot ; le dépôt conserve le nom Legiscope.
 
 ## Pourquoi ils restent à leur place
 

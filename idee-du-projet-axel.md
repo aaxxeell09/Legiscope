@@ -4,7 +4,7 @@ Document de cadrage, rédigé le samedi 14 novembre 2026 à 12 h 20, pendant le 
 
 But de ce document : qu'Ilan et Axel soient au clair sur ce qu'on fait, comment, pourquoi et jusqu'où on va, avant d'écrire le plan et de coder. Il rassemble le plan « Terminal Parlement » déjà rédigé dans l'équipe et les compléments issus des recherches d'Axel de ce matin.
 
-Nom de travail du produit : **Bascule** (proposition d'Axel). Nom du dépôt : Legiscope. Nom du plan initial : Terminal Parlement. Le nom final reste à trancher (voir section 11).
+Nom du produit : **LegiSpot**. Nom du dépôt : Legiscope. Nom du plan initial : Terminal Parlement.
 
 ---
 
@@ -12,7 +12,7 @@ Nom de travail du produit : **Bascule** (proposition d'Axel). Nom du dépôt : L
 
 Un outil d'analyse pour les professionnels des affaires publiques qui dit, sur un texte en cours à l'Assemblée nationale, si ça va passer, si la majorité craque, quels députés peuvent faire basculer le vote, et pour chacun pourquoi lui et comment l'aborder.
 
-Phrase de pitch proposée : « Bascule vous dit quel vote peut basculer, et grâce à qui. »
+Phrase de pitch proposée : « LegiSpot vous dit quel vote peut basculer, et grâce à qui. »
 
 ---
 
@@ -256,7 +256,7 @@ Pour illustrer un dossier complet du début à la fin, la **taxe petits colis** 
 4. **Qui fait quoi** sur les trois ordinateurs, et quelle session unique appelle l'API payante.
 5. **Le modèle Featherless.** Le plan cite « Qwen 3.8 27B » : à vérifier dans le catalogue avant de s'appuyer dessus.
 6. **La courbe de cohésion.** Décision à 13 h selon ce que montrent les données.
-7. **Le nom.** Bascule, Terminal Parlement ou Legiscope.
+7. **Le nom.** Le produit s'appelle LegiSpot ; le dépôt conserve le nom Legiscope.
 8. **La question à poser à l'équipe Hémicycle.** Atlas extrait-il déjà les auditions des rapports ? Deux minutes avec eux suffisent.
 
 ---

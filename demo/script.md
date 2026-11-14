@@ -10,7 +10,7 @@ Version 2, 14 novembre 2026, 14 h 30. Réécrite sur les données réelles de `d
 - **Clic** : ce que fait la main.
 - **[ÉCRAN]** : on lit ce que l'écran affiche à cet endroit. Si l'écran dit autre chose que le script, l'écran a raison.
 - Deux personnes : une voix, une main. La voix ne touche pas le trackpad.
-- Nom du produit : « Bascule » (valeur de `config.json`). S'il change à 17 h, il change à un seul endroit, la deuxième phrase de l'ouverture.
+- Nom du produit : « LegiSpot » (valeur de `config.json`). S'il change à 17 h, il change à un seul endroit, la deuxième phrase de l'ouverture.
 
 ## Avant de monter sur scène
 
@@ -29,7 +29,7 @@ Version 2, 14 novembre 2026, 14 h 30. Réécrite sur les données réelles de `d
 
 Écran : onglet 1, en-tête du dossier petits colis.
 
-> Un cabinet d'affaires publiques vend un jugement : où en est le dossier de mon client, et sur qui agir. Bascule prépare ce jugement, et montre ses preuves.
+> Un cabinet d'affaires publiques vend un jugement : où en est le dossier de mon client, et sur qui agir. LegiSpot prépare ce jugement, et montre ses preuves.
 
 ### Temps 1. Dossier rejoué, Verdict (0:11 à 0:58)
 

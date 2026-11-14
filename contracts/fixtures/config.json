@@ -1,7 +1,7 @@
 {
   "produit": {
-    "nom": "Bascule",
-    "accroche": "Bascule vous dit quel vote peut basculer, et grâce à qui."
+    "nom": "LegiSpot",
+    "accroche": "LegiSpot vous dit quel vote peut basculer, et grâce à qui."
   },
   "dataset": "fixtures",
   "dossiers": [

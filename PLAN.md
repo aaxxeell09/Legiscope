@@ -1,5 +1,5 @@
 <!-- /autoplan restore point: /Users/ilansainte-agathe/.gstack/projects/aaxxeell09-Legiscope/main-autoplan-restore-20261114-122731.md -->
-# Plan Bascule : construire en une après-midi, à trois machines
+# Plan LegiSpot : construire en une après-midi, à trois machines
 
 Version 3, 14 novembre 2026, 13 h 05 (intègre la v2 du rendu final d'Axel, 13 h). La v2 (12 h 35, revue stratégie, design, ingénierie, rapport en fin de fichier) décrivait quatre vues. À 12 h 45 Axel a publié `rendu-final.md`, qui prime sur son cadrage initial et définit le rendu à partir du besoin du cabinet : **un tableau de bord par dossier, lu en cinq blocs**. Ilan a validé à 12 h 50 : on reprend le rendu final et on adapte le plan. Le pipeline de données et les contrats de la v2 sont conservés et étendus ; ce qui change est la composition du front, trois fichiers JSON de plus, et la démo. Démo à 18 h.
 
@@ -75,7 +75,7 @@ Les formats 5.2 à 5.13 de la v2 sont conservés tels quels (meta, enums, groupe
 
 ### 5.1 `config.json` (modifié)
 ```json
-{"produit": {"nom": "Bascule", "accroche": "Bascule vous dit quel vote peut basculer, et grâce à qui."},
+{"produit": {"nom": "LegiSpot", "accroche": "LegiSpot vous dit quel vote peut basculer, et grâce à qui."},
  "dataset": "live",
  "dossiers": [
    {"id": "petits-colis", "label": "Taxe petits colis, PLF 2026", "texte_id": "PRJLANR5L17B1906",
@@ -408,7 +408,7 @@ contracts/ (zod) ──► types du front ──► web/ (P4 socle ; P5, P6, P7,
 | Références croisées (groupe, député, pivot → fiche, dossier_id) | intégrité | idem | idem |
 | Vérificateur de chiffres | 8 cas | tests unitaires P8 | 13 h 15 |
 | Cinq routes, fixtures puis live | fumée navigateur, zéro erreur console, `data-testid="meta"` | P0 | 15 h, 16 h 30 |
-| Bascule `dataset: fixtures` | les trois précédents | P0 | 16 h 30 |
+| Passage à `dataset: fixtures` | les trois précédents | P0 | 16 h 30 |
 
 ### Phase 3.5, expérience développeur (en ligne, chef d'orchestre)
 

@@ -1,6 +1,6 @@
 # Reproduire LegiSpot depuis un clone frais
 
-LegiSpot (nom interne « Bascule », dépôt « Legiscope ») est le projet du Hackathon Open Data du 14 novembre 2026.
+LegiSpot (dépôt « Legiscope ») est le projet du Hackathon Open Data du 14 novembre 2026.
 Trois dossiers de code : `pipeline/` (TypeScript, Bun) produit `data/<dossier>/*.json`, `web/` (Vite, React) les affiche, `qa/` les valide.
 
 Ce document décrit ce qui a été réellement exécuté le 14 novembre 2026 vers 17 h 04 (heure de Paris), sur une copie fraîche des fichiers suivis par git (commit `5995a14` de `main`, 1 389 fichiers, 25 Mo), sous Linux, avec Node v22.23.4, npm 10.9.9 et Bun 1.4.4.
@@ -126,7 +126,7 @@ Deux fragilités sont consignées dans `status/P0.md` (15 h 52) : une archive tr
 - **`npm audit`** signale 1 vulnérabilité de niveau élevé sur zod (plage `^3` dans `package.json`).
 - **Le README et `LANCEMENT.md` demandent Bun et `cp .env.example .env`** pour lancer le site. Le test montre que ni l'un ni l'autre n'est requis pour le parcours A. Bun reste requis pour `check`, `test` et tous les pipelines.
 - **Police.** `web/src/tokens.css` charge Inter depuis `fonts.googleapis.com`. Dans l'environnement de test cette requête a été refusée et les pages se sont affichées avec la police de repli.
-- **Nom affiché.** Le titre de l'onglet et `data/config.json` (`produit.nom`) portent encore « Bascule ».
+- **Nom affiché.** Le titre de l'onglet et `data/config.json` (`produit.nom`) portent « LegiSpot ».
 - **Taille.** `data/` versionné : 21 Mo. `data/raw/` (réponses brutes) n'est pas versionné ; sans lui, les étapes 2 à 7 du parcours B ne peuvent pas tourner avant une collecte.
 - **Paquet JavaScript** de 768 ko après minification (avertissement de Vite, sans effet sur le lancement).
 - **`npm test`** ne lance que `qa/` (10 tests) ; `bun test` lance les 19.

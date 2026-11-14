@@ -1,6 +1,6 @@
 # Données, règles de calcul et rôle des modèles
 
-Ce document décrit ce que LegiSpot (nom interne dans le code : « Bascule », dépôt : « Legiscope ») collecte, calcule et fait rédiger, tel que cela se lit dans le code et dans `data/` le 14 novembre 2026 vers 17 h.
+Ce document décrit ce que LegiSpot (dépôt : « Legiscope ») collecte, calcule et fait rédiger, tel que cela se lit dans le code et dans `data/` le 14 novembre 2026 vers 17 h.
 Chaque point renvoie aux fichiers qui le prouvent. Les chiffres « mesurés » ont été comptés dans `data/` avec `jq`. Les pipelines n'ont pas été relancés pour l'écrire.
 Les organisations affichées comme clients (Alibaba France, Afep, U2P, FNSEA, Union sociale pour l'habitat, CAPEB) sont des exemples : aucune n'est cliente du projet.
 

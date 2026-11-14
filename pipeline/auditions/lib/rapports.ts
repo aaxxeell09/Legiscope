@@ -6,7 +6,7 @@ import * as cheerio from "cheerio";
 import { RAW_DIR } from "./opendata";
 
 const CACHE_DIR = join(RAW_DIR, "rapports");
-const UA = "Mozilla/5.0 (Bascule, hackathon Hémicycle)";
+const UA = "Mozilla/5.0 (LegiSpot, hackathon Hémicycle)";
 
 /** Contenu brut d'une feuille de rapport (même HTML que la page publique, sans l'habillage du site). */
 export async function lireHtml(uid: string): Promise<string | null> {

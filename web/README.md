@@ -1,6 +1,6 @@
 # web/ : l'interface de LegiSpot
 
-Ce dossier contient l'interface : une application React (Vite, TypeScript, React Router, Recharts) sans serveur applicatif. Elle lit les fichiers JSON produits par le pipeline dans `data/` et les affiche comme un tableau de bord par dossier. Le nom interne dans le code est `bascule` (`package.json`, plugins Vite, variables d'environnement).
+Ce dossier contient l'interface LegiSpot : une application React (Vite, TypeScript, React Router, Recharts) sans serveur applicatif. Elle lit les fichiers JSON produits par le pipeline dans `data/` et les affiche comme un tableau de bord par dossier.
 
 ## Commandes
 
@@ -88,9 +88,9 @@ Le repli sur les fixtures porte sur le jeu entier, pas fichier par fichier : en 
 ## Ce que fait `vite.config.ts`
 
 - `root` vaut `web`, `publicDir` vaut `data/` : `data/config.json` est servi à `/config.json`.
-- Le plugin `bascule-fixtures` sert `contracts/fixtures/` sous `/fixtures/` en développement. En développement comme en prévisualisation, il répond 404 en JSON pour un fichier `.json` absent, au lieu de la page de l'application.
+- Le plugin `legispot-fixtures` sert `contracts/fixtures/` sous `/fixtures/` en développement. En développement comme en prévisualisation, il répond 404 en JSON pour un fichier `.json` absent, au lieu de la page de l'application.
 - Au build, `data/` est copié dans `dist/` sans `data/raw/`, et les fixtures dans `dist/fixtures/`.
-- Le plugin `bascule-contracts` expose `contracts/index.ts` par le module `virtual:contracts`. Alias : `@contracts` et `@web`.
+- Le plugin `legispot-contracts` expose `contracts/index.ts` par le module `virtual:contracts`. Alias : `@contracts` et `@web`.
 
 Pour un hébergement statique, `vercel.json` (racine du dépôt) construit avec `bun run build`, publie `dist/` et renvoie toute adresse vers `index.html`, sauf `assets/`, `fixtures/` et les fichiers `.json`.
 

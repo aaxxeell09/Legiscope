@@ -2,7 +2,7 @@
 
 # Pitch (150 mots maximum)
 
-Nous construisons Bascule pour les cabinets d'affaires publiques.
+Nous construisons LegiSpot pour les cabinets d'affaires publiques.
 
 Un cabinet vend quatre choses à son client : ne rien rater, dire ce que ça signifie, faire bouger les choses, prouver qu'il a travaillé.
 

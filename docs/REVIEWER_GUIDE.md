@@ -7,7 +7,7 @@ Ce guide relie chaque capacité de LegiSpot au script qui la calcule, au fichier
 | Repère | Valeur |
 |---|---|
 | Produit | LegiSpot |
-| Nom interne dans le code | Bascule : champ `name` de [package.json](../package.json), champ `produit.nom` de [data/config.json](../data/config.json), qui s'affiche dans la barre latérale |
+| Nom du produit | LegiSpot : champ `name` de [package.json](../package.json), champ `produit.nom` de [data/config.json](../data/config.json), qui s'affiche dans la barre latérale |
 | Dépôt | Legiscope |
 | Contexte | Hackathon Open Data (swanbase et Hémicycle, Paris), construit le 14 novembre 2026 |
 | Chaîne | [pipeline/](../pipeline/) (TypeScript, Bun) écrit les JSON de [data/](../data/) ; [contracts/schemas/](../contracts/schemas/) (Zod) les décrit ; [web/src/](../web/src/) (React) les lit ; [qa/](../qa/) les contrôle |

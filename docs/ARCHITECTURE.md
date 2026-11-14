@@ -1,6 +1,6 @@
 # Architecture de LegiSpot
 
-LegiSpot est un tableau de bord pour cabinets d'affaires publiques : un tableau par dossier (client, sujet, mesure suivie, objectifs hiérarchisés), lu en cinq blocs (Verdict, Nouveautés, Suite, Action, Compte rendu). Le nom interne du code est « Bascule » (`package.json`, `data/config.json`) et le dépôt s'appelle « Legiscope ». Projet construit le 14 novembre 2026 au Hackathon Open Data (swanbase et Hémicycle, Paris).
+LegiSpot est un tableau de bord pour cabinets d'affaires publiques : un tableau par dossier (client, sujet, mesure suivie, objectifs hiérarchisés), lu en cinq blocs (Verdict, Nouveautés, Suite, Action, Compte rendu). Le dépôt s'appelle « Legiscope ». Projet construit le 14 novembre 2026 au Hackathon Open Data (swanbase et Hémicycle, Paris).
 
 Ce document décrit le code et les données tels qu'ils ont été lus le 14 novembre 2026 vers 17 h. Chaque chemin cité existe dans le dépôt. Les organisations clientes affichées (Alibaba France, Afep, U2P, FNSEA, Union sociale pour l'habitat, CAPEB) sont illustratives : aucune n'est cliente du projet.
 

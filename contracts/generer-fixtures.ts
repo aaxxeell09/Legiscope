@@ -294,7 +294,7 @@ function positionsDe(d: DossierDef): Texte["positions"] {
 }
 
 const config: Config = {
-  produit: { nom: "Bascule", accroche: "Bascule vous dit quel vote peut basculer, et grâce à qui." },
+  produit: { nom: "LegiSpot", accroche: "LegiSpot vous dit quel vote peut basculer, et grâce à qui." },
   dataset: "fixtures",
   dossiers: DOSSIERS.map((d) => ({ id: d.id, label: d.label, client: d.client, objectifs: d.objectifs, mesure: d.mesure, date_reference: d.date_reference, texte_id: d.texte_id, etat: d.etat, sujet: d.sujet, pivot_demo: d.id === "petits-colis" ? pivotsDe(d)[0].id : null })),
   dossier_demo: "petits-colis",

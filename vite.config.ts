@@ -41,7 +41,7 @@ function fixturesPlugin(): Plugin {
     return res.end(JSON.stringify({ error: `fichier JSON absent : /${rel}` }));
   };
   return {
-    name: "bascule-fixtures",
+    name: "legispot-fixtures",
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
         const url = (req.url ?? "").split("?")[0] ?? "";
@@ -90,7 +90,7 @@ function contractsPlugin(): Plugin {
   const resolved = "\0" + id;
   const entry = resolve(contractsDir, "index.ts");
   return {
-    name: "bascule-contracts",
+    name: "legispot-contracts",
     resolveId(source) {
       return source === id ? resolved : null;
     },
