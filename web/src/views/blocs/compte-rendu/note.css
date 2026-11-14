@@ -1,7 +1,78 @@
-.note-layout { display:flex; flex-direction:column; }
-.note-document { width:min(100%,920px); padding:24px 28px; border:1px solid var(--border-soft); border-radius:var(--radius-card); background:var(--surface); box-shadow:0 8px 30px rgba(0,0,0,.035); }
-.note-document-head { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-bottom:14px; border-bottom:1px solid var(--border-soft); }.note-document-head > div { display:flex; flex-direction:column; }.note-document-head span { color:var(--text-3); font-size:10px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; }.note-document-head strong { margin-top:2px; font-size:16px; }.note-edit { min-height:32px; padding:4px 9px; background:transparent; color:var(--text-2); font-size:12px; }
-.note-objectif { margin:16px 0 10px; color:var(--text-2); font-size:12px; }.note-text { max-width:78ch; font-size:15px; line-height:1.75; }.note-editor { width:100%; min-height:190px; padding:14px; line-height:1.7; resize:vertical; }.note-local-hint { margin:7px 0 0; color:var(--warning); font-size:11px; }
-.note-sources { width:min(100%,920px); margin-top:12px; padding:10px 12px; border-radius:var(--radius); background:var(--surface-2); font-size:12px; }.note-sources summary { cursor:pointer; font-weight:600; }.note-sources summary span { margin-left:5px; color:var(--text-3); }.note-sources .p7-sources { margin-bottom:4px; }
-.note-actions { margin-top:16px; }.note-actions .p7-btn { min-height:38px; padding-inline:14px; }
-@media(max-width:600px){.note-document{padding:18px}.note-document-head{align-items:flex-start;flex-direction:column}}
+.note-layout { display: flex; flex-direction: column; gap: 0; }
+
+.note-document {
+  width: 100%; padding: clamp(22px, 3vw, 36px) clamp(20px, 4vw, 48px);
+  border: 0; border-radius: 0; background: var(--surface); box-shadow: none;
+}
+
+.note-document-head {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 24px;
+  max-width: 78ch; margin: 0 auto; padding-bottom: 20px; border-bottom: 1px solid var(--border-soft);
+}
+.note-document-head > div { display: flex; min-width: 0; flex-direction: column; gap: 4px; }
+.note-document-head span, .note-eyebrow {
+  color: var(--text-3); font-size: 10px; font-weight: 700; letter-spacing: .1em;
+  line-height: 1.4; text-transform: uppercase;
+}
+.note-document-head strong, .note-title {
+  color: var(--text); font-size: clamp(18px, 2vw, 23px); font-weight: 650;
+  letter-spacing: -.025em; line-height: 1.25;
+}
+.note-date { margin: 2px 0 0; color: var(--text-3); font-size: 12px; line-height: 1.5; }
+.note-objectif { max-width: 78ch; margin: 18px auto 0; color: var(--text-2); font-size: 12px; line-height: 1.55; }
+
+.note-essential {
+  max-width: 78ch; margin: 24px auto 0; padding: 0 0 20px 18px;
+  border-bottom: 1px solid var(--border-soft); border-left: 2px solid var(--text);
+}
+.note-essential-label {
+  display: block; margin-bottom: 8px; color: var(--text-3); font-size: 10px;
+  font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+}
+.note-essential p, .note-essential-text {
+  margin: 0; color: var(--text); font-size: clamp(17px, 1.65vw, 20px);
+  font-weight: 560; letter-spacing: -.012em; line-height: 1.5;
+}
+
+.note-body, .note-text, .note-body-paragraphs, .note-editor, .note-local-hint {
+  max-width: 78ch; margin-right: auto; margin-left: auto;
+}
+.note-body, .note-text, .note-body-paragraphs {
+  margin-top: 22px; margin-bottom: 0; color: var(--text); font-size: 15px; line-height: 1.72;
+}
+.note-body p, .note-body-paragraphs p { margin: 0; }
+.note-body p + p, .note-body-paragraphs p + p { margin-top: 13px; }
+
+.note-editor {
+  display: block; width: 100%; min-height: 240px; margin-top: 22px; padding: 16px 18px;
+  border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);
+  color: var(--text); font: inherit; font-size: 15px; line-height: 1.7; resize: vertical;
+}
+.note-editor:focus {
+  border-color: var(--text-2); outline: 3px solid color-mix(in srgb, var(--text) 8%, transparent); outline-offset: 1px;
+}
+.note-local-hint { margin-top: 8px; margin-bottom: 0; color: var(--text-3); font-size: 11px; line-height: 1.5; }
+
+.note-toolbar, .note-actions {
+  display: flex; align-items: center; gap: 8px; width: 100%; margin: 0;
+  padding: 12px clamp(20px, 4vw, 48px); border-top: 1px solid var(--border-soft); background: var(--surface-2);
+}
+.note-toolbar .meta, .note-actions + .meta, .note-layout > .meta { margin: 0; }
+.note-layout > .meta { padding: 0 clamp(20px, 4vw, 48px) 14px; background: var(--surface-2); }
+
+.note-edit, .note-actions .p7-btn, .note-toolbar button {
+  min-height: 34px; padding: 6px 11px; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--surface); color: var(--text-2); font-size: 12px; font-weight: 600;
+}
+.note-edit:hover, .note-actions .p7-btn:hover, .note-toolbar button:hover {
+  border-color: var(--text-3); color: var(--text);
+}
+.note-actions [role="status"], .note-toolbar [role="status"] { font-size: 12px; }
+
+@media (max-width: 640px) {
+  .note-document { padding: 20px 16px 24px; }
+  .note-document-head { flex-direction: column; gap: 14px; }
+  .note-essential { margin-top: 20px; padding-left: 14px; }
+  .note-toolbar, .note-actions { flex-wrap: wrap; padding: 11px 16px; }
+  .note-layout > .meta { padding-right: 16px; padding-left: 16px; }
+}
