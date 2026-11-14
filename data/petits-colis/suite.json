@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:26:37Z",
+    "generated_at": "2026-11-14T12:34:22Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, agenda des réunions",
@@ -9,9 +9,17 @@
       {
         "label": "Dossier législatif DLR5L17N52428",
         "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428"
+      },
+      {
+        "label": "État de la mesure (pipeline/pivots)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428"
+      },
+      {
+        "label": "Texte PRJLANR5L17B1906, positions et amendements",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
       }
     ],
-    "limits": "Échéances connues au 18 novembre 2025 (réunions inscrites à l'agenda au plus tard ce jour-là). etat.json absent au moment du calcul : étapes de procédure ajoutées d'après le calendrier budgétaire. Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null. texte.json absent au moment du calcul : pas de probable fondé sur les positions des groupes ni sur Orcet. Dossier rejoué au 18 novembre 2025 : Orcet n'existe pas rétroactivement, probabilités à null.",
+    "limits": "Échéances connues au 18 novembre 2025 (réunions inscrites à l'agenda au plus tard ce jour-là). Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null. Dossier rejoué au 18 novembre 2025 : Orcet n'existe pas rétroactivement, probabilités à null.",
     "producer": "pipeline/suite",
     "dossier_id": "petits-colis"
   },
@@ -118,34 +126,50 @@
     },
     {
       "date": null,
-      "titre": "Examen du PLF 2026 au Sénat, première lecture",
+      "titre": "Sénat, première lecture",
       "lieu": "senat",
-      "url": "https://www.senat.fr/dossier-legislatif/pjlf2026.html",
+      "url": "https://www.senat.fr/",
       "preuve": {
         "nature": "inconnue",
         "sources": [
           {
-            "label": "Sénat, PLF 2026",
-            "url": "https://www.senat.fr/dossier-legislatif/pjlf2026.html"
+            "label": "Sénat, première lecture",
+            "url": "https://www.senat.fr/"
           }
         ],
-        "raisonnement": "Au 18 novembre 2025, le calendrier du Sénat n'est pas fixé : il dépend de la fin de la première lecture à l'Assemblée."
+        "raisonnement": "Étape à venir de la procédure, date non publiée à ce jour."
       }
     },
     {
       "date": null,
       "titre": "Commission mixte paritaire",
       "lieu": "cmp",
-      "url": "https://www.senat.fr/dossier-legislatif/pjlf2026.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026",
       "preuve": {
         "nature": "inconnue",
         "sources": [
           {
-            "label": "Sénat, PLF 2026",
-            "url": "https://www.senat.fr/dossier-legislatif/pjlf2026.html"
+            "label": "Commission mixte paritaire",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
           }
         ],
-        "raisonnement": "Date non fixée : elle suit la fin de l'examen au Sénat."
+        "raisonnement": "Étape à venir de la procédure, date non publiée à ce jour."
+      }
+    },
+    {
+      "date": null,
+      "titre": "Nouvelle lecture à l'Assemblée",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Nouvelle lecture à l'Assemblée",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+          }
+        ],
+        "raisonnement": "Étape à venir de la procédure, date non publiée à ce jour."
       }
     }
   ],
@@ -174,6 +198,36 @@
     }
   },
   "probables": [
+    {
+      "titre": "Adoption probable de la mesure (article 22) en séance",
+      "proba": null,
+      "detail": "Groupes favorables à la mesure : EPR, SOC, DR, ECOS, DEM, HOR, LIOT (338 sièges). Opposés : RN (121 sièges). Vote à l'Assemblée, pas l'issue finale du dossier.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Positions des groupes, texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Orcet n'existe pas rétroactivement au 18 novembre 2025 : pas de probabilité chiffrée. On additionne les sièges des groupes selon leur position connue sur la mesure ; les groupes divisés ou abstentionnistes ne sont pas comptés."
+      }
+    },
+    {
+      "titre": "Rejet probable de l'amendement de suppression n° 806 (RN)",
+      "proba": null,
+      "detail": "La suppression rassemble les groupes opposés à la mesure (121 sièges) face aux groupes favorables (338 sièges).",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 806",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+          }
+        ],
+        "raisonnement": "Orcet n'existe pas rétroactivement au 18 novembre 2025 (proba null). Lecture depuis les positions des groupes sur la mesure."
+      }
+    },
     {
       "titre": "RN et EPR (bloc central) votent ensemble dans 63 % des scrutins d'octobre 2025",
       "proba": null,
