@@ -2,7 +2,7 @@
 
 Sert quand le modèle est indisponible ou après 3 rejets du vérificateur. Aucun appel au modèle. Sortie : `contre_arguments[]` avec `mode: "gabarit"`.
 
-Chaque bloc ` ```gabarit id=... ` est lisible par programme : on remplace chaque `{{variable}}` par sa valeur, rien d'autre.
+Chaque bloc ` ```gabarit id=... ` est lisible par programme : on remplace chaque `{{variable}}` par sa valeur, rien d'autre. C'est ce que fait `gabaritContreArgument` de `pipeline/fiches/lib/gabarits.ts` (A4) : mêmes identifiants de blocs, mêmes variables.
 
 Le gabarit ne rédige pas : il renvoie le cabinet vers un argument de son camp déjà entendu dans les débats, avec sa citation exacte. Il ne nomme aucun orateur : pas d'attaque personnelle possible.
 
@@ -46,6 +46,12 @@ Un contre-argument par argument adverse. L'argument adverse d'indice `i` reçoit
 À l'argument « {{repond_a}} », aucun argument du camp du client n'a encore été entendu dans les débats. Réponse à construire avec les chiffres du dossier.
 ```
 
+## Vocabulaire
+
+- Le gabarit ne cite ni score ni valeur Orcet, et n'annonce aucune issue. S'il fallait citer le score du verdict, il se nomme « part des sièges favorables à l'objectif » : ce n'est pas une probabilité, et il ne s'écrit jamais seul à côté de la situation.
+- S'il fallait citer une valeur Orcet : « moyenne des probabilités individuelles de voter pour » sur un amendement, jamais la probabilité d'adoption de l'amendement, de l'article ou de la loi.
+- Le gabarit ne dit rien de l'état du texte : il renvoie à un argument entendu sur la mesure. Un vote à l'Assemblée n'est pas l'issue finale du dossier.
+
 ## Liste autorisée et champs de sortie
 
 - Avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer les deux phrases remplies en troisième argument (`gabarit`). `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`. La liste autorisée de l'appel doit contenir les nombres des variables injectées, construits comme suit.
@@ -58,8 +64,8 @@ Un contre-argument par argument adverse. L'argument adverse d'indice `i` reçoit
 ## Prompt associé (`contre-argument.md`)
 
 - Format : texte brut, sans variable. Le fichier entier ouvre le message ; l'appelant ajoute `Champ demandé : texte`, puis `Entrée (JSON) :` et l'entrée. C'est ce que fait `rediger` de `pipeline/fiches/lib/redaction.ts`. Un appel par argument adverse.
-- Clés lues par le prompt : `client`, `mesure`, `position_cible`, `argument` (`argument`, `citation`, `date`, `lieu`), `appuis` (même forme : les arguments du camp du client), `chiffres_du_dossier` (lignes de texte : la mesure et les amendements du dossier).
-- Aucun nom d'orateur dans l'entrée. Pas de prédiction Orcet dans `chiffres_du_dossier` : un contre-argument ne s'appuie pas sur une probabilité de vote.
+- Entrée passée par A4 aujourd'hui : `argument` (`argument`, `citation`, `date`, `lieu`), `appuis` (même forme : les arguments du camp du client), `mesure`, `client`, `position_cible`, `chiffres_du_dossier` (lignes de texte : le libellé de la mesure, puis une ligne `n° <numero> : <resume>` par amendement de `texte.json`).
+- Aucun nom d'orateur dans l'entrée. Ni score du verdict ni valeur Orcet dans `chiffres_du_dossier` : un contre-argument ne s'appuie ni sur l'un ni sur l'autre.
 - Liste autorisée : les nombres de l'entrée JSON.
 
 ## Exemple rempli (fixture `petits-colis/action.json`, deuxième argument pour)

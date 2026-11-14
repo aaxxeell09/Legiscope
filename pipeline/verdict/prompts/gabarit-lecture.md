@@ -2,11 +2,19 @@
 
 Sert quand le modèle est indisponible ou après 3 rejets du vérificateur. Aucun appel au modèle. Sortie : `verdicts[].lecture` avec `mode: "gabarit"`, `modele: null`.
 
-Chaque bloc ` ```gabarit id=... ` est lisible par programme : on remplace chaque `{{variable}}` par sa valeur, rien d'autre.
+Chaque bloc ` ```gabarit id=... ` est lisible par programme : on remplace chaque `{{variable}}` par sa valeur, rien d'autre. C'est ce que fait `construireVerdict` de `pipeline/pivots/verdict.ts` (P3) : mêmes identifiants de blocs, mêmes variables.
 
-La phrase parle toujours de « la mesure » et nomme l'étape. Elle ne dit jamais que la loi va passer, ne donne aucune probabilité, et ne présente pas l'Assemblée comme l'issue finale.
+La phrase parle toujours de « la mesure » et nomme l'étape (« À ce stade »). Elle ne dit jamais que la loi va passer, ne cite aucun score, n'annonce aucune issue, et ne présente pas un vote à l'Assemblée comme l'issue finale du dossier.
+
+## Vocabulaire
+
+- Le gabarit ne cite pas le score. S'il fallait le citer, il se nomme « part des sièges favorables à l'objectif » et s'écrit « X % des sièges favorables à l'objectif ». Ce n'est pas une probabilité, et il ne s'écrit jamais seul à côté de « favorable », « incertaine » ou « défavorable ».
+- Une valeur Orcet citée dans un `detail` est la « moyenne des probabilités individuelles de voter pour » sur un amendement, jamais la probabilité d'adoption de l'amendement, de l'article ou de la loi. Le gabarit n'injecte que les `titre`, pas les `detail`.
+- État de la mesure et état du texte : le gabarit décrit la mesure à l'étape de `etat.json`. Il n'injecte pas `texte_etat`.
 
 ## Variables
+
+Ce sont les variables que P3 passe aujourd'hui.
 
 | Variable | Source exacte | Mise en forme |
 |---|---|---|
@@ -49,43 +57,43 @@ On prend le premier cas vrai.
 Les cas 3 et 4 ne valent que pour l'objectif principal : les positions des groupes portent sur la mesure, pas sur son montant ni sur sa date d'application. Ils ne valent que si le gouvernement et plus de la moitié des groupes vont dans le même sens : sinon ce sont les raisons du verdict (`favorable`, `bloquant`) qui expliquent la situation.
 
 ```gabarit id=lecture.insuffisant
-À l'étape « {{etape}} », pas assez d'information pour conclure sur cet objectif : {{inconnu_1}}.
+À ce stade (« {{etape}} »), pas assez d'information pour conclure sur cet objectif : {{inconnu_1}}.
 ```
 
 ```gabarit id=lecture.insuffisant.nu
-À l'étape « {{etape}} », pas assez d'information pour conclure sur cet objectif.
+À ce stade (« {{etape}} »), pas assez d'information pour conclure sur cet objectif.
 ```
 
 ```gabarit id=lecture.portage.pour
-À l'étape « {{etape}} », la mesure est portée par le gouvernement et soutenue par {{n_pour}} groupes sur {{n_total}} (contre : {{n_contre}}, divisés ou sans position : {{n_autres}}) : situation {{situation_mot}} pour cet objectif.
+À ce stade (« {{etape}} »), la mesure est portée par le gouvernement et soutenue par {{n_pour}} groupes sur {{n_total}} (contre : {{n_contre}}, divisés ou sans position : {{n_autres}}) : situation {{situation_mot}} pour cet objectif.
 ```
 
 ```gabarit id=lecture.portage.contre
-À l'étape « {{etape}} », la mesure se heurte à l'opposition du gouvernement et de {{n_contre}} groupes sur {{n_total}} (pour : {{n_pour}}, divisés ou sans position : {{n_autres}}) : situation {{situation_mot}} pour cet objectif.
+À ce stade (« {{etape}} »), la mesure se heurte à l'opposition du gouvernement et de {{n_contre}} groupes sur {{n_total}} (pour : {{n_pour}}, divisés ou sans position : {{n_autres}}) : situation {{situation_mot}} pour cet objectif.
 ```
 
 ```gabarit id=lecture.favorable.reserve
-À l'étape « {{etape}} », la situation de la mesure est favorable pour cet objectif : {{favorable_1}} ; point de blocage : {{bloquant_1}}.
+À ce stade (« {{etape}} »), la situation de la mesure est favorable pour cet objectif : {{favorable_1}} ; point de blocage : {{bloquant_1}}.
 ```
 
 ```gabarit id=lecture.favorable
-À l'étape « {{etape}} », la situation de la mesure est favorable pour cet objectif : {{favorable_1}}.
+À ce stade (« {{etape}} »), la situation de la mesure est favorable pour cet objectif : {{favorable_1}}.
 ```
 
 ```gabarit id=lecture.defavorable.appui
-À l'étape « {{etape}} », la situation de la mesure est défavorable pour cet objectif : {{bloquant_1}} ; point d'appui : {{favorable_1}}.
+À ce stade (« {{etape}} »), la situation de la mesure est défavorable pour cet objectif : {{bloquant_1}} ; point d'appui : {{favorable_1}}.
 ```
 
 ```gabarit id=lecture.defavorable
-À l'étape « {{etape}} », la situation de la mesure est défavorable pour cet objectif : {{bloquant_1}}.
+À ce stade (« {{etape}} »), la situation de la mesure est défavorable pour cet objectif : {{bloquant_1}}.
 ```
 
 ```gabarit id=lecture.incertaine
-À l'étape « {{etape}} », la situation de la mesure reste incertaine pour cet objectif : {{favorable_1}} ; en face : {{bloquant_1}}.
+À ce stade (« {{etape}} »), la situation de la mesure reste incertaine pour cet objectif : {{favorable_1}} ; en face : {{bloquant_1}}.
 ```
 
 ```gabarit id=lecture.sans_raison
-À l'étape « {{etape}} », la situation de la mesure est {{situation_mot}} pour cet objectif ; aucune raison détaillée n'est disponible à ce jour.
+À ce stade (« {{etape}} »), la situation de la mesure est {{situation_mot}} pour cet objectif ; aucune raison détaillée n'est disponible à ce jour.
 ```
 
 ## Liste autorisée et champs de sortie
@@ -97,25 +105,17 @@ Les cas 3 et 4 ne valent que pour l'objectif principal : les positions des group
 
 ## Prompt associé (`lecture.md`)
 
-- Format : texte brut, sans variable. Le fichier entier est le prompt système. Le message utilisateur est l'entrée de l'objectif lu. Un appel par objectif.
-- Entrée conseillée (JSON, noms des schémas) : `date_jour`, `client`, `mesure` (`config.json` → `mesure.label`), `etape` (`etat.json` → `etape`), `objectif` (`texte`, `type` : `principal` ou `repli`, `position_cible`), `situation`, `tendance`, `confiance` (`niveau`, `etabli`, `inconnu`), `favorable` et `bloquant` (`titre`, `detail`), `cause_du_changement` (`titre` ou `null`), `rapport_de_forces` (`gouvernement` : `pour`, `contre` ou `inconnue` ; `groupes_pour`, `groupes_contre`, `groupes_divises_ou_sans_position`, `groupes_total`).
-- Ne pas donner `score` ni les probabilités Orcet : la lecture ne cite aucune probabilité.
-- Liste autorisée : les nombres de l'entrée. Elle contient alors tous les nombres du gabarit (`etape`, titres, `inconnu`, comptes de groupes).
+- Format : texte brut, sans variable. Le fichier entier est le prompt système. Le message utilisateur est `Entrée (JSON) :` suivi de l'entrée de l'objectif lu. Un appel par objectif. C'est ce que fait P3.
+- Entrée passée par P3 aujourd'hui : `date_jour`, `client`, `mesure` (`config.json` → `mesure.label`), `etape` (`etat.json` → `etape`), `objectif` (`texte`, `type` : `principal` ou `repli`, `position_cible`), `situation`, `tendance`, `confiance` (`niveau`, `etabli`, `inconnu`), `favorable` et `bloquant` (`titre`, `detail`), `cause_du_changement` (le titre de l'événement ou `null`), `rapport_de_forces` (`gouvernement` : `pour`, `contre` ou `inconnue` ; `groupes_pour`, `groupes_contre`, `groupes_divises_ou_sans_position`, `groupes_total` ; `null` pour un repli).
+- Champs que le prompt sait lire si P3 les ajoute : `score` avec `score_libelle` (écrit « X % des sièges favorables à l'objectif », jamais seul), `texte_etat` (`statut`, `libelle`, `date` : état du texte, dit à part de l'état de la mesure).
+- Une valeur Orcet peut figurer dans un `detail` : le prompt impose « moyenne des probabilités individuelles de voter pour ».
+- Liste autorisée : les nombres de l'entrée et ceux de la phrase de gabarit (P3 fait l'union).
 
-```ts
-import { readFileSync } from "node:fs";
-import { redigerVerifie } from "../lib/llm";
-import { extraireJetons, extraireMotsNombres, normaliser } from "../lib/verif";
+## Exemples remplis
 
-const system = readFileSync("pipeline/verdict/prompts/lecture.md", "utf8");
-const user = `Entrée (JSON) :\n${JSON.stringify(entree, null, 1)}`;
-const n = normaliser(JSON.stringify(entree));
-const autorises = [...new Set([...extraireJetons(n), ...extraireMotsNombres(n)].map((j) => String(j.valeur)))];
-const r = await redigerVerifie({ system, user }, autorises, gabarit); // gabarit : la phrase remplie ci-dessus
-// lecture = { texte: r.texte, chiffres_utilises: r.chiffres_utilises, mode: r.mode, modele: r.modele, verifie: r.verifie }
-```
+Remplis mécaniquement le 14 novembre 2026, sans modèle.
 
-## Exemples remplis sur les fixtures
-
-- `petits-colis`, objectif 1 (`lecture.portage.pour`) : À l'étape « Première lecture, Assemblée nationale, séance publique, première partie », la mesure est portée par le gouvernement et soutenue par 8 groupes sur 11 (contre : 1, divisés ou sans position : 2) : situation défavorable pour cet objectif. `chiffres_utilises` : `["8", "11", "1", "2"]`
-- `petits-colis`, objectif 2 (`lecture.insuffisant`) : À l'étape « Première lecture, Assemblée nationale, séance publique, première partie », pas assez d'information pour conclure sur cet objectif : Aucun amendement de réduction du montant déposé. `chiffres_utilises` : `[]`
+- `data/petits-colis`, objectif 1 (`lecture.portage.pour`) : À ce stade (« Première lecture, Assemblée nationale, séance publique, première partie »), la mesure est portée par le gouvernement et soutenue par 7 groupes sur 11 (contre : 1, divisés ou sans position : 3) : situation défavorable pour cet objectif. `chiffres_utilises` : `["7", "11", "1", "3"]`
+- `data/petits-colis`, objectif 3 (`lecture.incertaine`) : À ce stade (« Première lecture, Assemblée nationale, séance publique, première partie »), la situation de la mesure reste incertaine pour cet objectif : EPR, RN dans le sens de cet objectif ; en face : Mesure portée par le gouvernement. `chiffres_utilises` : `[]`
+- `data/plf2027-holdings`, objectif 1 (`lecture.favorable.reserve`) : À ce stade (« Première lecture : rejeté par l'Assemblée le 2026-11-04 ; Sénat, première lecture »), la situation de la mesure est favorable pour cet objectif : La taxe ne figure pas dans le texte du gouvernement ; point de blocage : 4 groupe(s) pour la mesure : LFI-NFP, SOC, ECOS, GDR. `chiffres_utilises` : `["2026", "11", "4"]`
+- fixture `petits-colis`, objectif 2 (`lecture.insuffisant`) : À ce stade (« Première lecture, Assemblée nationale, séance publique, première partie »), pas assez d'information pour conclure sur cet objectif : Aucun amendement de réduction du montant déposé. `chiffres_utilises` : `[]`
