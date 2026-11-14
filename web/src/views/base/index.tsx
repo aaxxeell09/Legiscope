@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import type { AmendementTexte, Deputes, Etat as EtatData, Groupes, Sort, Texte } from "@contracts/index";
-import { Etat, GroupeTag, Meta, Panel, Table, type Column } from "../../components";
+import { Etat, GroupeTag, Meta, Table, type Column } from "../../components";
 import { useDossier } from "../../lib/config";
 import { useData } from "../../lib/data";
 import { formatDate, formatNom } from "../../lib/format";
@@ -158,21 +158,29 @@ export default function BaseView() {
   return (
     <div className="view" data-view="base">
       <header className="base-head">
-        <div><div className="base-kicker">Données parlementaires du dossier</div><h1>Base documentaire</h1>
-        <p className="text-2">
-          {d.client ?? "…"} · {d.label ?? id}
-          {d.dateReference && ` · vu au ${formatDate(d.dateReference)}`}
-        </p></div>
+        <div className="base-heading">
+          <p className="base-kicker">Index documentaire</p>
+          <h1>Base documentaire</h1>
+          <p className="base-context">
+            <span>{d.client ?? "Dossier"}</span>
+            <span aria-hidden="true">·</span>
+            <span>{d.label ?? id}</span>
+            {d.dateReference && <><span aria-hidden="true">·</span><span>Actualisé au {formatDate(d.dateReference)}</span></>}
+          </p>
+        </div>
         <Link className="btn-secondary" to={`/dossier/${id}`}>Retour au tableau de bord</Link>
       </header>
 
-      <Etat titre="Documents législatifs" state={texte}>
+      <Etat titre="Textes et articles" state={texte} className="base-section base-section-documents">
         {(t) => (
           <div className="base-document-index">
             <div className="base-document-main">
-              <div><span className="base-document-kind">Texte suivi</span><strong>{t.texte.titre}</strong></div>
+              <div className="base-document-identity">
+                <span className="base-document-kind">Texte législatif</span>
+                <strong>{t.texte.titre}</strong>
+              </div>
               <span className="base-document-step">{t.texte.etape}</span>
-              <a href={t.texte.url} target="_blank" rel="noreferrer">Voir le texte officiel</a>
+              <a className="base-document-link" href={t.texte.url} target="_blank" rel="noreferrer">Voir le texte officiel</a>
             </div>
             {etat.status === "loading" && <div className="status">Chargement des articles</div>}
             {etat.status === "error" && <div className="status status-error">Articles indisponibles</div>}
@@ -181,8 +189,11 @@ export default function BaseView() {
                 <ul className="base-document-articles">
                   {etat.data.articles.map((article) => (
                     <li key={article.numero}>
-                      <a href={article.url} target="_blank" rel="noreferrer">Article {article.numero}</a>
-                      <span>{article.titre}</span>
+                      <span className="base-document-kind">Article</span>
+                      <div className="base-article-identity">
+                        <a href={article.url} target="_blank" rel="noreferrer">Article {article.numero}</a>
+                        <span>{article.titre}</span>
+                      </div>
                       <span className={`base-statut base-statut-${article.statut}`}>{ARTICLE_LABEL[article.statut]}</span>
                     </li>
                   ))}
@@ -197,24 +208,27 @@ export default function BaseView() {
         titre="Amendements du dossier"
         state={texte}
         aside={texte.data ? `${amendements.length} sur ${texte.data.amendements.length}` : undefined}
+        className="base-section base-section-amendements"
       >
         {() => (
           <>
-            <div className="base-toolbar" id="base-results">
-            <input
-              type="search"
-              className="base-recherche"
-              placeholder="Rechercher un numéro, un auteur ou un mot-clé"
-              aria-label="Rechercher un amendement"
-              value={q}
-              onChange={(ev) => setQ(ev.target.value)}
-            />
-            <div className="base-selects">
-              <label>Statut<select value={sortFiltre} onChange={(e) => setSortFiltre(e.target.value as Sort | "")}><option value="">Tous</option>{SORT_ORDRE.map((s) => <option key={s} value={s}>{SORT_LABEL[s]}</option>)}</select></label>
-              <label>Groupe<select value={groupeFiltre} onChange={(e) => setGroupeFiltre(e.target.value)}><option value="">Tous</option>{[...groupeParId.values()].sort((a,b) => a.sigle.localeCompare(b.sigle)).map((g) => <option key={g.id} value={g.id}>{g.sigle}</option>)}</select></label>
-              <label>Nature<select value={natureFiltre} onChange={(e) => setNatureFiltre(e.target.value as Nature | "")}><option value="">Toutes</option>{(Object.keys(NATURE_LABEL) as Nature[]).map((n) => <option key={n} value={n}>{NATURE_LABEL[n]}</option>)}</select></label>
-              <label>Trier par<select value={tri} onChange={(e) => setTri(e.target.value as Tri)}><option value="statut">Statut</option><option value="recent">Dépôt récent</option><option value="numero">Numéro</option></select></label>
-            </div>
+            <div className="base-toolbar" id="base-results" role="search" aria-label="Filtrer les amendements">
+              <label className="base-search-field">
+                <span>Recherche</span>
+                <input
+                  type="search"
+                  className="base-recherche"
+                  placeholder="Numéro, auteur ou mot-clé"
+                  value={q}
+                  onChange={(ev) => setQ(ev.target.value)}
+                />
+              </label>
+              <div className="base-selects">
+                <label><span>Statut</span><select value={sortFiltre} onChange={(e) => setSortFiltre(e.target.value as Sort | "")}><option value="">Tous</option>{SORT_ORDRE.map((s) => <option key={s} value={s}>{SORT_LABEL[s]}</option>)}</select></label>
+                <label><span>Groupe</span><select value={groupeFiltre} onChange={(e) => setGroupeFiltre(e.target.value)}><option value="">Tous</option>{[...groupeParId.values()].sort((a,b) => a.sigle.localeCompare(b.sigle)).map((g) => <option key={g.id} value={g.id}>{g.sigle}</option>)}</select></label>
+                <label><span>Nature</span><select value={natureFiltre} onChange={(e) => setNatureFiltre(e.target.value as Nature | "")}><option value="">Toutes</option>{(Object.keys(NATURE_LABEL) as Nature[]).map((n) => <option key={n} value={n}>{NATURE_LABEL[n]}</option>)}</select></label>
+                <label><span>Tri</span><select value={tri} onChange={(e) => setTri(e.target.value as Tri)}><option value="statut">Statut</option><option value="recent">Dépôt récent</option><option value="numero">Numéro</option></select></label>
+              </div>
             </div>
             <Table columns={colonnes} rows={amendementsPage} rowKey={(a) => a.id} empty={q || sortFiltre || groupeFiltre || natureFiltre ? "Aucun amendement ne correspond à ces filtres" : "Aucun amendement"} />
             {amendements.length > PAR_PAGE && <nav className="base-pagination" aria-label="Pagination des amendements">
@@ -227,9 +241,9 @@ export default function BaseView() {
         )}
       </Etat>
 
-      <Panel>
+      <div className="base-sources">
         <Meta meta={metaBase} />
-      </Panel>
+      </div>
     </div>
   );
 }
