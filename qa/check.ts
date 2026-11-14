@@ -288,15 +288,56 @@ function verifierRoot(root: string) {
       });
     }
 
-    // date_reference : rien de postérieur dans nouveautés, aucune échéance déjà passée dans suite.
+    // date_reference, lue comme le MATIN de ce jour (décision de 15 h 05) :
+    //  - connu : ce qui est déposé, publié ou annoncé au plus tard ce jour-là (date <= ref) ;
+    //  - pas connu : tout sort, scrutin, séance, réunion ou décision daté de ce jour-là ou après (date >= ref interdit).
     if (dossier.date_reference) {
       const ref = dossier.date_reference;
+      const TYPES_ISSUE = new Set(["amendement_sort", "scrutin", "seance", "commission"]);
       nouveautes?.evenements.forEach((e, i) => {
-        if (e.date > ref) erreur(p(id, "nouveautes"), `evenements.${i}.date`, e.date, `postérieure à date_reference ${ref}`);
+        if (TYPES_ISSUE.has(e.type)) {
+          if (e.date >= ref) erreur(p(id, "nouveautes"), `evenements.${i}.date`, e.date, `${e.type} daté du jour de référence ou après (${ref}) : pas encore connu ce matin-là`);
+        } else if (e.date > ref) erreur(p(id, "nouveautes"), `evenements.${i}.date`, e.date, `postérieure à date_reference ${ref}`);
       });
       suite?.echeances.forEach((e, i) => {
         if (e.date !== null && e.date < ref) erreur(p(id, "suite"), `echeances.${i}.date`, e.date, `échéance déjà passée à date_reference ${ref}`);
       });
+      texte?.amendements.forEach((a, i) => {
+        const dd = (a as any).date_depot as string | null | undefined;
+        const ds = (a as any).date_sort as string | null | undefined;
+        if (dd && dd > ref) erreur(p(id, "texte"), `amendements.${i}.date_depot`, dd, `déposé après date_reference ${ref}`);
+        if (ds && ds >= ref && a.sort !== "en_attente") erreur(p(id, "texte"), `amendements.${i}.sort`, a.sort, `sort daté ${ds}, du jour de référence ou après : attendu en_attente`);
+      });
+      pivots?.deputes.forEach((d, i) => {
+        d.ecarts.forEach((ec, j) => {
+          if (ec.date >= ref) erreur(p(id, "pivots"), `deputes.${i}.ecarts.${j}.date`, ec.date, `scrutin du jour de référence ou après (${ref})`);
+        });
+      });
+      const dirDebats = join(root, id, "debats");
+      if (existsSync(dirDebats)) {
+        for (const f of readdirSync(dirDebats)) {
+          if (!f.endsWith(".json")) continue;
+          try {
+            const obj = JSON.parse(readFileSync(join(dirDebats, f), "utf8"));
+            (obj?.debats ?? []).forEach((d: any, i: number) => {
+              if (d.date >= ref) erreur(join(dirDebats, f), `debats.${i}.date`, d.date, `intervention du jour de référence ou après (${ref})`);
+            });
+          } catch {
+            /* déjà signalé par la validation du schéma */
+          }
+        }
+      }
+      const argumentsFichier = p(id, "arguments");
+      if (existsSync(argumentsFichier)) {
+        try {
+          const obj = JSON.parse(readFileSync(argumentsFichier, "utf8"));
+          for (const camp of ["pour", "contre"]) (obj?.[camp] ?? []).forEach((a: any, i: number) => {
+            if (a.date >= ref) erreur(argumentsFichier, `${camp}.${i}.date`, a.date, `argument entendu le jour de référence ou après (${ref})`);
+          });
+        } catch {
+          /* idem */
+        }
+      }
     }
   }
 }
