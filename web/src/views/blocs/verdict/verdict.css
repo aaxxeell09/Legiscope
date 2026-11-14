@@ -8,7 +8,7 @@
 .verdict-onglets {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2);
+  gap: 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -16,8 +16,8 @@
   background: none;
   border: 1px solid transparent;
   border-bottom: none;
-  border-radius: var(--radius) var(--radius) 0 0;
-  padding: var(--space-2) var(--space-3);
+  border-radius: 0;
+  padding: 10px var(--space-4);
   color: var(--text-2);
   font-size: var(--fs-sm);
   margin-bottom: -1px;
@@ -30,7 +30,8 @@
 
 .verdict-onglet.actif {
   color: var(--text);
-  border-color: var(--border);
+  border-color: transparent;
+  border-bottom-color: var(--text);
   background: var(--surface);
 }
 
@@ -39,7 +40,7 @@
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.6fr);
   gap: var(--space-4);
   align-items: start;
-  padding-bottom: var(--space-4);
+  padding: var(--space-2) 0 var(--space-5);
   border-bottom: 1px solid var(--border);
 }
 
@@ -51,7 +52,7 @@
 }
 
 .verdict-situation {
-  font-size: var(--fs-xxl);
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.1;
 }
@@ -82,6 +83,8 @@
 .verdict-score {
   display: inline-flex;
   flex-direction: column;
+  padding-left: var(--space-3);
+  border-left: 1px solid var(--border-soft);
 }
 
 .verdict-score-libelle {
@@ -94,6 +97,9 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  background: var(--surface-2);
 }
 
 .verdict-confiance-ligne {
@@ -105,6 +111,9 @@
   flex-wrap: wrap;
   align-items: baseline;
   gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
 }
 
 .verdict-cause > .text-2:first-child::after {
@@ -112,7 +121,9 @@
 }
 
 .verdict-lecture {
-  font-size: var(--fs-lg);
+  max-width: 95ch;
+  font-size: 16px;
+  line-height: 1.65;
   margin: 0;
 }
 
@@ -133,8 +144,8 @@
 .verdict-colonne h4 {
   margin: 0 0 var(--space-2);
   font-size: var(--fs-sm);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  text-transform: none;
+  letter-spacing: -.01em;
   color: var(--text-2);
 }
 
@@ -144,12 +155,15 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: 0;
+  border-top: 1px solid var(--border-soft);
 }
 
 .verdict-raison-titre {
   font-weight: 600;
 }
+
+.verdict-raisons li { padding: 12px 0; border-bottom: 1px solid var(--border-soft); }
 
 .verdict-raison-detail {
   color: var(--text-2);
@@ -206,11 +220,11 @@
 .verdict .badge,
 .suite .badge {
   display: inline-block;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0 var(--space-1);
-  font-size: var(--fs-sm);
-  font-weight: 400;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 2px var(--space-2);
+  font-size: var(--fs-xs);
+  font-weight: 500;
   color: var(--text-2);
   vertical-align: baseline;
 }
@@ -218,13 +232,13 @@
 .verdict .badge-verifie,
 .suite .badge-verifie {
   color: var(--success);
-  border-color: var(--success);
+  background: var(--success-soft);
 }
 
 .verdict .badge-deduction,
 .suite .badge-deduction {
-  color: var(--warning);
-  border-color: var(--warning);
+  color: var(--accent);
+  background: var(--accent-soft);
 }
 
 @media (max-width: 900px) {

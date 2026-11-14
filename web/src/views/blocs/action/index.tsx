@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import type { Action, Argument, DeputeAction, FichesIndex } from "@contracts/index";
 import { Etat, Meta, Pourquoi } from "../../../components";
@@ -153,6 +154,8 @@ function ColonneGroupe({
   disponibles: string[] | null;
 }) {
   const navigate = useNavigate();
+  const [developpe, setDeveloppe] = useState(false);
+  const visibles = developpe ? lignes : lignes.slice(0, 5);
   return (
     <div className="p7-col">
       <h4>
@@ -163,7 +166,7 @@ function ColonneGroupe({
         <div className="p7-vide">aucun · {raisonVide}</div>
       ) : (
         <ul className="p7-list">
-          {lignes.map((d) => {
+          {visibles.map((d) => {
             // fiche: true dans action.json ; l'index des fiches, s'il est chargé, a le dernier mot.
             const fiche = d.fiche && (disponibles === null || disponibles.includes(d.depute_id));
             const ouvrir = () => navigate(`/dossier/${dossier}/depute/${d.depute_id}`);
@@ -204,11 +207,14 @@ function ColonneGroupe({
           })}
         </ul>
       )}
+      {lignes.length > 5 && <button type="button" className="p7-voir-plus" onClick={() => setDeveloppe((v) => !v)}>{developpe ? "Réduire" : `Voir les ${lignes.length} positions`}</button>}
     </div>
   );
 }
 
 function ColonneInconnus({ lignes, raisonVide, annuaire }: { lignes: PositionInconnue[]; raisonVide: string; annuaire: Annuaire }) {
+  const [developpe, setDeveloppe] = useState(false);
+  const visibles = developpe ? lignes : lignes.slice(0, 5);
   return (
     <div className="p7-col">
       <h4>
@@ -219,7 +225,7 @@ function ColonneInconnus({ lignes, raisonVide, annuaire }: { lignes: PositionInc
         <div className="p7-vide">aucun · {raisonVide}</div>
       ) : (
         <ul className="p7-list">
-          {lignes.map((d) => (
+          {visibles.map((d) => (
             <li key={d.depute_id} className="p7-item p7-item-muted" data-depute={d.depute_id}>
               <div className="p7-ligne">
                 <span className="p7-nom">{annuaire.nom(d.depute_id)}</span>
@@ -237,6 +243,7 @@ function ColonneInconnus({ lignes, raisonVide, annuaire }: { lignes: PositionInc
           ))}
         </ul>
       )}
+      {lignes.length > 5 && <button type="button" className="p7-voir-plus" onClick={() => setDeveloppe((v) => !v)}>{developpe ? "Réduire" : `Voir les ${lignes.length} positions`}</button>}
     </div>
   );
 }

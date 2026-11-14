@@ -22,5 +22,5 @@
 .base-texte-adopte { color: var(--success); }
 .base-texte-en_discussion { color: var(--warning); }
 .base-filtres { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3); }
-.base-puce { font-size: var(--fs-sm); padding: 2px var(--space-2); background: transparent; color: var(--text-2); border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; }
-.base-puce[aria-pressed="true"] { color: var(--bg); background: var(--text); border-color: var(--text); }
+.base-puce { font-size: var(--fs-sm); padding: 3px 10px; background: transparent; color: var(--text-2); border: 1px solid var(--border); border-radius: var(--radius-pill); cursor: pointer; }
+.base-puce[aria-pressed="true"] { color: #fff; background: var(--text); border-color: var(--text); }

@@ -38,10 +38,12 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
   const r = useData<Nouveautes>("nouveautes", dossier);
   const { dateReference } = useDossier(dossier);
   const [filtre, setFiltre] = useState<Evenement["type"] | null>(null);
+  const [toutVoir, setToutVoir] = useState(false);
 
   const evenements = useMemo(() => trier(r.data?.evenements ?? []), [r.data]);
   const types = useMemo(() => Array.from(new Set(evenements.map((e) => e.type))), [evenements]);
-  const visibles = filtre ? evenements.filter((e) => e.type === filtre) : evenements;
+  const filtres = filtre ? evenements.filter((e) => e.type === filtre) : evenements;
+  const visibles = toutVoir ? filtres : filtres.slice(0, 8);
   const qui = evenements.filter((e) => e.importance === 3).length;
 
   return (
@@ -93,6 +95,11 @@ export default function NouveautesBloc({ dossier }: { dossier: string }) {
                   </li>
                 ))}
               </ul>
+              {filtres.length > 8 && (
+                <button type="button" className="nv-voir-tout" onClick={() => setToutVoir((v) => !v)}>
+                  {toutVoir ? "Réduire la liste" : `Voir tous les événements (${filtres.length})`}
+                </button>
+              )}
             </>
           )}
           <Meta meta={n.meta} />

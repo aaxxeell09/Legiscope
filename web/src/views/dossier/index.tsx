@@ -40,38 +40,18 @@ export default function DossierView() {
   return (
     <div className="view dossier" data-view="dossier">
       <header className="dossier-head">
-        <dl className="dossier-lignes">
-          <div>
-            <dt>Client</dt>
-            <dd>{d.client}</dd>
-          </div>
-          <div>
-            <dt>Dossier</dt>
-            <dd>{d.label}</dd>
-          </div>
-          {d.mesure && (
-            <div>
-              <dt>Mesure</dt>
-              <dd className="dossier-mesure">
-                {d.mesure.label}
-                {d.mesure.article && <span className="text-2"> article {d.mesure.article}</span>}
-              </dd>
-            </div>
-          )}
-          <div>
-            <dt>Objectif</dt>
-            <dd>{d.principal?.texte}</dd>
-          </div>
-          {d.replis.map((o) => (
-            <div key={o.rang}>
-              <dt>À défaut</dt>
-              <dd className="dossier-repli">{o.texte}</dd>
-            </div>
-          ))}
-        </dl>
+        <div className="dossier-heading">
+          <div className="dossier-kicker">{d.client}</div>
+          <h1>{d.label}</h1>
+          {d.mesure && <p className="dossier-mesure"><span>Mesure suivie</span>{d.mesure.label}{d.mesure.article && <> · article {d.mesure.article}</>}</p>}
+        </div>
         <div className="dossier-head-meta">
-          {d.dateReference && <span className="dossier-dateref">vu au {formatDate(d.dateReference)}</span>}
-          <Link to={`/dossier/${d.id}/base`}>Base complète</Link>
+          {d.dateReference ? <span className="history-label"><span aria-hidden="true">◷</span> Relecture historique · Situation au {formatDate(d.dateReference)}</span> : <span className="live-label"><span className="dataset-dot live" /> Dossier vivant</span>}
+          <Link className="btn-secondary" to={`/dossier/${d.id}/base`}>Voir la base complète</Link>
+        </div>
+        <div className="dossier-objectifs" aria-label="Objectifs du dossier">
+          {d.principal && <div className="objectif objectif-principal"><span>Objectif principal</span><strong>{d.principal.texte}</strong></div>}
+          {d.replis.map((o, i) => <div className="objectif" key={o.rang}><span>Repli {i + 1}</span><strong>{o.texte}</strong></div>)}
         </div>
       </header>
 
