@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:49:43.914Z",
+    "generated_at": "2026-11-14T13:53:11.077Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -8,7 +8,7 @@
       },
       {
         "label": "Rapports sur le projet de loi de finances pour 2026",
-        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tIX.html"
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tVIII.html"
       },
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -39,6 +39,24 @@
   "auditions": [
     {
       "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tVIII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Observatoire de l’éthique publique (OEP)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Assemblée nationale",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
       "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tIX.html",
       "date": "2025-11-13",
       "role": "rapporteur_avis",
@@ -50,12 +68,12 @@
         },
         {
           "nom": "Conseil d’État",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat de la juridiction administrative (SJA)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -83,7 +101,7 @@
         },
         {
           "nom": "Délégation nationale à la sécurité routière",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -102,8 +120,18 @@
           "hatvp_id": null
         },
         {
-          "nom": "Lieutenenant-Colonel Duquesne, délégué militaire départemental adjoint des Pyrénées-Atlantiques",
-          "type": "autre",
+          "nom": "Groupement de gendarmerie départementale 64",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service interdépartemental de la police aux frontières d’Hendaye",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Défense (Département)",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -548,12 +576,12 @@
   ],
   "couverture": {
     "rapports_total": 9,
-    "rapports_avec_liste": 2,
+    "rapports_avec_liste": 3,
     "comptes_rendus_lus": 91
   },
   "synthese": {
     "position_probable": "Jean-Luc Warsmann est probablement favorable à la mesure, car il a cosigné l'amendement 3276, qui a été retiré.",
-    "argument": "Présenter à ce député le fait que son amendement 3276, qui proposait de porter la taxe à 6 euros, a été retiré, pour lui montrer que la mesure actuelle de 2 euros est déjà une version allégée de sa proposition initiale.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 3276, retiré, vise à porter la taxe de 2 euros à 6 euros, ce qui montre qu'il soutient le principe de la mesure et qu'il est donc possible de discuter avec lui de ses limites.",
     "chiffres_utilises": [
       "3276",
       "2",

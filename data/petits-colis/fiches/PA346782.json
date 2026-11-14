@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:49:43.924Z",
+    "generated_at": "2026-11-14T13:53:30.830Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -53,37 +53,22 @@
           "hatvp_id": null
         },
         {
-          "nom": "direction du budget",
+          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction générale du Trésor",
           "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "direction générale du Trésor",
+          "nom": "Ministère de l’Agriculture, de l’agroalimentaire et de la souveraineté alimentaire, direction générale de la performe économique et environnementale des entreprises",
           "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "Ministère de l’Agriculture, de l’agroalimentaire et de la souveraineté alimentaire",
+          "nom": "Ministère de l’Europe et des affaires étrangères, direction de l’Union européenne",
           "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "direction générale de la performe économique et environnementale des entreprises",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Ministère de l’Europe et des affaires étrangères",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "direction de l’Union européenne",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "direction générale des affaires maritimes, de la pêche et de l’aquaculture",
+          "nom": "Ministère chargé de la mer et de la pêche, direction générale des affaires maritimes, de la pêche et de l’aquaculture",
           "type": "administration",
           "hatvp_id": null
         }
@@ -97,7 +82,7 @@
       "organisations": [
         {
           "nom": "Agence de l’immobilier de l’État (AGILE)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -111,7 +96,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "secrétariat général du Conseil de l’immobilier de l’État",
+          "nom": "Conseil de l’immobilier de l’État",
           "type": "administration",
           "hatvp_id": null
         }
@@ -674,7 +659,7 @@
   },
   "synthese": {
     "position_probable": "Philippe Juvin est probablement favorable à la mesure, comme en témoignent ses amendements 1859, 3016 et 3126 ainsi que ses déclarations en commission le 22 octobre 2025.",
-    "argument": "Présenter à ce député que le montant de 2 euros par article est jugé insuffisant pour compenser la différence de prix avec les plateformes, car il a déclaré en commission le 22 octobre 2025 que cette somme ne suffit pas à sauver le petit commerce.",
+    "argument": "Présenter à ce député que la taxe de 2 euros par article est jugée insuffisante par lui-même en commission le 22 octobre 2025, car il a défendu un amendement n° 1859 visant à la rendre plus lourde, ce qui montre qu'il cherche à renforcer la mesure plutôt qu'à la supprimer.",
     "chiffres_utilises": [
       "1859",
       "22",

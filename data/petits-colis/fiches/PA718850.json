@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:49:43.931Z",
+    "generated_at": "2026-11-14T13:53:40.571Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -52,6 +52,34 @@
     },
     {
       "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tIV.html",
+      "date": "2025-10-29",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Institut de recherche stratégique de l'École militaire (IRSEM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "ministère de l’Europe et des affaires étrangères",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "African Security Sector Network (ASSN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "ministère des armées",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
       "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tVII.html",
       "date": "2025-10-29",
       "role": "membre",
@@ -78,12 +106,22 @@
         },
         {
           "nom": "Représentation permanente de la France auprès de l’Union européenne",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "Personnalité qualifiée",
-          "type": "autre",
+          "nom": "France Terre d’Asile",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "La Cimade",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université libre de Bruxelles",
+          "type": "administration",
           "hatvp_id": null
         }
       ]
@@ -110,8 +148,48 @@
           "hatvp_id": null
         },
         {
-          "nom": "Père Srđan Stanković",
+          "nom": "Ambassade de France au Kosovo",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mission d’administration intérimaire des Nations unies pour le Kosovo (MINUK)",
           "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Force pour le Kosovo de l’OTAN",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Monastère de Gračanica",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ambassade de France à Chypre",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Force des Nations unies chargée du maintien de la paix à Chypre (FNUCHYP)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haut-commissariat des Nations unies pour les réfugiés",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Programme des Nations unies pour le développement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambre de commerce et d’industrie de Nicosie",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -123,32 +201,22 @@
       "role": "membre",
       "organisations": [
         {
-          "nom": "Ministère de l’Europe et des affaires étrangères",
-          "type": "administration",
-          "hatvp_id": null
-        },
-        {
           "nom": "Direction générale de la mondialisation",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Centre de crise et de soutien",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Représentation permanente de la France auprès des Nations unies",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "Autres diplomates",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Ministère de l’économie, des finances et de la souveraineté industrielle et énergétique",
+          "nom": "Ministère de l’Europe et des affaires étrangères",
           "type": "administration",
           "hatvp_id": null
         },
@@ -158,7 +226,42 @@
           "hatvp_id": null
         },
         {
-          "nom": "Représentants français dans les organisations internationales de développement",
+          "nom": "Comité d’aide au développement de l’Organisation de coopération et de développement économiques",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fonds monétaire international",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Banque mondiale",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Banque asiatique de développement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Banque interaméricaine de développement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Banque européenne de reconstruction et de développement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Banque africaine de développement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Banque européenne d’investissement",
           "type": "autre",
           "hatvp_id": null
         },
@@ -186,33 +289,33 @@
           "hatvp_id": null
         },
         {
-          "nom": "o M. Frédéric Lambert, chef du service Europe et international",
-          "type": "entreprise",
-          "hatvp_id": null
-        },
-        {
-          "nom": "o M. Guilhem Isaac, chef du bureau des négociations commerciales",
+          "nom": "Conseil supérieur de l’œnotourisme",
           "type": "autre",
           "hatvp_id": null
         },
         {
-          "nom": "o Mme Charlotte Denoix, adjointe au chef du bureau Vin et autres boissons",
-          "type": "autre",
+          "nom": "Gouvernement de la Rioja",
+          "type": "administration",
           "hatvp_id": null
         },
         {
-          "nom": "En Espagne",
+          "nom": "Organisation de gestion de la DOCa Rioja",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Route des vins de la Rioja Alta",
           "type": "autre",
           "hatvp_id": null
         },
         {
           "nom": "Bodega Marques de Risqual",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Bodega Baigorri",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -707,15 +810,17 @@
   ],
   "couverture": {
     "rapports_total": 9,
-    "rapports_avec_liste": 5,
+    "rapports_avec_liste": 6,
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Pierre Cordier est probablement favorable à la mesure, car il a cosigné l'amendement 1774, tombé, qui propose de porter le montant à 25 euros.",
-    "argument": "Présenter à ce député le fait qu'il a cosigné l'amendement 1774, tombé, qui proposait de porter la taxe à 25 euros, pour lui montrer que sa position actuelle est plus favorable à la mesure que celle de son groupe.",
+    "position_probable": "Pierre Cordier est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 1774, tombé, qui proposait de porter la taxe à 25 euros.",
+    "argument": "Présenter à ce député l'impact de la taxe de 2 euros sur les colis de moins de 150 euros, car il a cosigné l'amendement 1774 qui proposait de la porter à 25 euros et qui est tombé.",
     "chiffres_utilises": [
       "1774",
-      "25"
+      "25",
+      "2",
+      "150"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

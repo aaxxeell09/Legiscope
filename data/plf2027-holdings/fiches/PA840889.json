@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:46:37.964Z",
+    "generated_at": "2026-11-14T13:52:29.972Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -386,10 +386,14 @@
   },
   "synthese": {
     "position_probable": "A cosigné l'amendement n° 1415, adopté (« Supprime l'article 3 »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1415 (« Supprime l'article 3 »).",
+    "argument": "Présenter à ce député que la mesure inclut une taxe de 0,5 % sur les holdings patrimoniales, ce qui rejoint son amendement n° 1431 rejeté visant à relever le taux de 30 % à 50 % pour les holdings.",
     "chiffres_utilises": [
       "1415",
-      "3"
+      "3",
+      "0.5",
+      "1431",
+      "30",
+      "50"
     ],
     "mode": "gabarit",
     "modele": null,
