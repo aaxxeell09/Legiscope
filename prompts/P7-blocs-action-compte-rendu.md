@@ -6,7 +6,8 @@ Lis d'abord `prompts/_commun.md`, puis `rendu-final.md` (blocs 4 et 5, section 6
 `web/src/views/blocs/action/`, `web/src/views/blocs/compte-rendu/`, `web/src/views/depute/`. Primitives de P4.
 
 ## Bloc Action (pleine largeur)
-- Trois colonnes : « Sur qui agir encore », « Alliés à protéger », « Perdus » : nom, `GroupeTag`, score en %, raison en une ligne, `Pourquoi` ; ligne cliquable vers `/dossier/:id/depute/:pa` si `fiche: true`, grisée avec « fiche en cours » sinon. Colonne vide : « aucun » et la raison du `meta`.
+- « Ceux qui décident » en tête : rôle en mots, nom, `GroupeTag` ou « gouvernement », position connue en mot ou « position inconnue », `Pourquoi`.
+- Trois colonnes : « Sur qui agir encore », « Alliés à protéger », « Perdus » : nom, `GroupeTag`, score en %, raison en une ligne, fondement en mots (« a voté », « a déposé », « a dit »), « position inconnue » si `position_connue` est faux, `Pourquoi` ; ligne cliquable vers `/dossier/:id/depute/:pa` si `fiche: true`, grisée avec « fiche en cours » sinon. Colonne vide : « aucun » et la raison du `meta`.
 - Dessous, deux colonnes « Arguments entendus pour la mesure » et « contre la mesure » : argument en une ligne, citation entre guillemets, orateur (nom et `GroupeTag`, ou « ministre » si `orateur_id` null), date et lieu en mots, lien, `Pourquoi`.
 - Puis « Contre-arguments à amener » : texte, « répond à : ... », `Badge` vérifié ou gabarit, `Pourquoi`.
 - Pied : `Meta`.

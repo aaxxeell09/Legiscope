@@ -1,7 +1,7 @@
 <!-- /autoplan restore point: /Users/ilansainte-agathe/.gstack/projects/aaxxeell09-Legiscope/main-autoplan-restore-20261114-122731.md -->
 # Plan Bascule : construire en une après-midi, à trois machines
 
-Version 3, 14 novembre 2026, 12 h 55. La v2 (12 h 35, revue stratégie, design, ingénierie, rapport en fin de fichier) décrivait quatre vues. À 12 h 45 Axel a publié `rendu-final.md`, qui prime sur son cadrage initial et définit le rendu à partir du besoin du cabinet : **un tableau de bord par dossier, lu en cinq blocs**. Ilan a validé à 12 h 50 : on reprend le rendu final et on adapte le plan. Le pipeline de données et les contrats de la v2 sont conservés et étendus ; ce qui change est la composition du front, trois fichiers JSON de plus, et la démo. Démo à 18 h.
+Version 3, 14 novembre 2026, 13 h 05 (intègre la v2 du rendu final d'Axel, 13 h). La v2 (12 h 35, revue stratégie, design, ingénierie, rapport en fin de fichier) décrivait quatre vues. À 12 h 45 Axel a publié `rendu-final.md`, qui prime sur son cadrage initial et définit le rendu à partir du besoin du cabinet : **un tableau de bord par dossier, lu en cinq blocs**. Ilan a validé à 12 h 50 : on reprend le rendu final et on adapte le plan. Le pipeline de données et les contrats de la v2 sont conservés et étendus ; ce qui change est la composition du front, trois fichiers JSON de plus, et la démo. Démo à 18 h.
 
 ## 0. Ce qui est demandé, ce qui ne l'est pas
 
@@ -11,22 +11,22 @@ Pas demandé : la vue multi-dossiers, la presse, le prix, le mode de livraison, 
 
 ## 1. Ce qu'on livre à 18 h
 
-Un site statique servi en local. Un **dossier** = un client, un sujet, un objectif (exemple du rendu : Alibaba, petits colis, empêcher que la taxe soit votée). Deux dossiers :
+Un site statique servi en local. Un **dossier** = un client, une **mesure** qui peut le toucher (pas un texte entier : la mesure se suit partout où elle va), et des **objectifs hiérarchisés** (principal, puis replis : exemple du rendu, Alibaba, taxe sur les petits colis, empêcher la taxe, à défaut réduire son montant, à défaut repousser son application). Deux dossiers :
 
 - **Dossier rejoué** : taxe petits colis, budget 2026, vu la veille du vote (19 novembre 2025), comme dans l'illustration d'Axel. Toutes les données sont filtrées à cette date ; « ce qui s'est réellement passé » (208 contre 87) sert de chute à la démo.
 - **Dossier vivant** : la taxe sur les holdings et la fortune improductive (« taxe Zucman ») dans le PLF 2027, le sujet unique le plus riche en données (annexe B). Le PLF 2027 a été rejeté par l'Assemblée le 4 novembre ; le dossier continue au Sénat puis en nouvelle lecture, et c'est exactement ce que le bloc Suite doit dire. Client = une organisation HATVP déclarée sur le sujet, objectif « empêcher la taxe ».
 
 La page d'un dossier, dans l'ordre de lecture du cabinet :
 
-1. **Verdict** (pleine largeur, en tête) : en bonne voie, incertain ou mal engagé par rapport à l'objectif ; tendance ; une phrase de lecture ; ce qui marche et ce qui coince, chaque point avec son bouton « pourquoi ».
-2. **Nouveautés** (gauche) : les événements du dossier triés par importance, pas par date.
-3. **Suite** (droite) : les prochaines échéances du texte et ce qui a le plus de chances de se produire (prédictions Orcet, lecture de la cohésion).
-4. **Action** (pleine largeur) : trois groupes de députés (sur qui on peut encore agir, alliés à protéger, perdus), chaque nom ouvrant sa fiche (auditions, interventions, amendements, HATVP, synthèse) ; les arguments entendus dans les débats, pour et contre la mesure, avec citation et source ; les contre-arguments à amener.
+1. **Verdict** (pleine largeur, en tête) : pour chaque objectif, trois parties : la situation (favorable, incertaine, défavorable, ou « pas assez d'information »), la tendance depuis la dernière analyse, la confiance (ce qui est établi, ce qui reste inconnu) ; une phrase de lecture ; ce qui marche et ce qui coince ; et quand le verdict a changé, l'événement précis qui l'a fait bouger. Chaque point avec son bouton « pourquoi ».
+2. **Nouveautés** (gauche) : les événements qui touchent la mesure, triés par importance, chacun avec son effet sur le verdict (renforce, affaiblit, neutre).
+3. **Suite** (droite) : les prochaines échéances de la mesure, la dernière occasion d'agir, et ce qui a le plus de chances de se produire (Orcet, cohésion).
+4. **Action** (pleine largeur) : ceux qui décident (rapporteur, gouvernement, chef de file de chaque groupe, président de commission, avec rôle et position connue) ; trois groupes de députés (sur qui on peut encore agir, alliés à protéger, perdus), chacun classé sur ce qu'il a lui-même dit, déposé ou voté, jamais sur son groupe seul, « position inconnue » écrit quand c'est le cas ; chaque nom ouvre sa fiche ; les arguments entendus pour et contre la mesure avec citation et source ; les contre-arguments à amener.
 5. **Compte rendu** (pleine largeur) : quelques lignes à reprendre pour le client, chiffres vérifiés soulignés, bouton Copier.
 
-En fond, accessibles d'un lien : l'**état du texte** (étape, voté, reste à voter) et la **base** (articles et amendements du dossier, consultables).
+En fond, accessibles d'un lien : l'**état de la mesure** (est-elle toujours dans le texte, dans quelle rédaction, qui l'a modifiée et quand, étape, voté, reste à voter) et la **base** (articles et amendements du dossier).
 
-Règle de fiabilité : chaque information affichée porte un bouton « pourquoi » qui montre la source et le raisonnement. Le modèle de langage ne voit jamais un vote et aucun chiffre non sourcé ne passe.
+Règles qui valent partout (rendu final, section 5) : tout se justifie (bouton « pourquoi » avec source et raisonnement) ; tout changement s'explique (l'événement qui a fait bouger le verdict) ; on sépare ce qu'on sait, ce qu'on déduit et ce qu'on ignore (`preuve.nature` : fait, déduction, inconnue) ; les avis du rapporteur et du gouvernement sont des preuves derrière le « pourquoi », pas un bloc. Garde-fous de crédibilité : jamais « probabilité que la loi passe » pour une prédiction d'amendement ; jamais confondre vote en commission et adoption ; jamais présenter l'Assemblée comme l'issue finale ; jamais mélanger rejeté, retiré, tombé, non soutenu, irrecevable ; jamais « influençable » sur quelques votes. Le modèle de langage ne voit jamais un vote et aucun chiffre non sourcé ne passe.
 
 ## 2. Décisions
 
@@ -36,9 +36,10 @@ Règle de fiabilité : chaque information affichée porte un bouton « pourquoi 
 | D2 | Sujet du dossier vivant | **Taxe sur les holdings et la fortune improductive (« taxe Zucman »), PLF 2027** : le plus riche des sujets uniques mesurés (annexe B : 141 amendements, 104 scrutins publics dont 27 sur le PLF 2027, 35 organisations HATVP). Fait mesuré qui change la lecture : le PLF 2027 a été rejeté par l'Assemblée le 4 novembre 2026 (scrutin V9759), le texte est au Sénat et reviendra en nouvelle lecture ; le dossier reste vivant, les positions prises à l'Assemblée sont connues, la suite est le Sénat et la nouvelle lecture. Client : une organisation HATVP déclarée sur le sujet (Afep ou Medef, P1 vérifie la fiche), objectif « empêcher la taxe sur les holdings », position cible contre. | Ilan 12 h 40 (règle : le plus de données), P0 13 h 00 (choix) |
 | D3 | Dossier rejoué | Petits colis, date de référence 19 novembre 2025 | Rendu final section 9, Ilan 12 h 40 |
 | D4 | Sessions | 16 : 9 + 4 + 3, Axel en personne auprès d'Hémicycle | Ilan 12 h 40 |
-| D5 | Forme du rendu | Tableau de bord par dossier en cinq blocs, `rendu-final.md` prime | Axel 12 h 45, Ilan 12 h 50 |
+| D5 | Forme du rendu | Tableau de bord par dossier en cinq blocs, `rendu-final.md` prime (v2 à 13 h : mesure suivie et non le texte, objectifs hiérarchisés, verdict en trois parties, décideurs) | Axel 12 h 45 et 13 h, Ilan 12 h 50 |
 | D6 | Démo | Verdict, Action, Compte rendu sur le dossier rejoué, chute sur le vote réel ; puis le Verdict du dossier vivant. Ordre détaillé section 8, finalisé par X1 à 15 h 15 | P0, à confirmer par X1 |
-| D7 | Forme du verdict | Mécanique et sourcée (section 5.15) : l'outil propose, le cabinet tranche | P0, point ouvert 2 du rendu |
+| D7 | Forme du verdict | Mécanique et sourcée (section 5.15), un verdict par objectif, confiance explicite, droit de dire « pas assez d'information » : l'outil propose, le cabinet tranche | P0, point ouvert 3 du rendu |
+| D8 | Identifier la mesure | Aujourd'hui : la mesure est déclarée à la main dans `config.json` (label, article, texte) et suivie par ses mots-clés ; l'identification automatique est le point ouvert 2 du rendu, pour lundi | P0 |
 
 Le nom se tranche à 17 h : une chaîne dans `config.json`.
 
@@ -78,53 +79,66 @@ Les formats 5.2 à 5.13 de la v2 sont conservés tels quels (meta, enums, groupe
  "dataset": "live",
  "dossiers": [
    {"id": "petits-colis", "label": "Taxe petits colis, PLF 2026", "texte_id": "PRJLANR5L17B1906",
-    "client": "Alibaba France", "objectif": {"texte": "Empêcher que la taxe soit votée", "position_cible": "contre"},
+    "client": "Alibaba France",
+    "mesure": {"label": "Taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe", "article": "22", "texte_id": "PRJLANR5L17B1906"},
+    "objectifs": [{"rang": 1, "texte": "Empêcher que la taxe soit votée", "position_cible": "contre"}, {"rang": 2, "texte": "Réduire son montant", "position_cible": "contre"}, {"rang": 3, "texte": "Repousser son application", "position_cible": "contre"}],
     "date_reference": "2025-11-19",
     "sujet": {"label": "Taxe sur les petits colis", "mots_cles": ["petits colis", "colis", "franchise douanière", "article 22"]},
     "pivot_demo": null},
    {"id": "plf2027-holdings", "label": "PLF 2027, taxe sur les holdings (Zucman)", "texte_id": "PRJLANR5L17B3210",
-    "client": "Afep", "objectif": {"texte": "Empêcher la taxe sur les holdings et la fortune improductive", "position_cible": "contre"},
+    "client": "Afep",
+    "mesure": {"label": "Taxe sur les holdings et la fortune improductive", "article": null, "texte_id": "PRJLANR5L17B3210"},
+    "objectifs": [{"rang": 1, "texte": "Empêcher la taxe sur les holdings et la fortune improductive", "position_cible": "contre"}, {"rang": 2, "texte": "Limiter son assiette", "position_cible": "contre"}, {"rang": 3, "texte": "Repousser son entrée en vigueur", "position_cible": "contre"}],
     "date_reference": null, "sujet": {"label": "Taxe sur les holdings et la fortune improductive", "mots_cles": ["zucman", "holding", "holdings", "impôt sur la fortune", "fortune improductive", "patrimoine improductif", "ISF", "IFF"]}, "pivot_demo": null}
  ],
  "dossier_demo": "petits-colis",
  "cohesion": {"paires_demo": [["PO...", "PO..."]], "curseur_presets": [...]}}
 ```
-`position_cible` est la position du client **sur la mesure** (empêcher la taxe = `contre`). Tout « pour » et « contre » des fichiers ci-dessous est relatif à la mesure, jamais à l'objectif.
+`position_cible` est la position du client **sur la mesure** (empêcher la taxe = `contre`). Tout « pour » et « contre » des fichiers ci-dessous est relatif à la mesure, jamais à l'objectif. `objectifs[0]` (rang 1) est l'objectif principal ; les suivants sont les replis.
 
 ### 5.14 Bloc `preuve` (sur chaque élément affiché)
+`nature` ∈ `fait` (publié par l'Assemblée ou la HATVP), `deduction` (calcul ou lecture de l'outil), `inconnue`. Le front les présente différemment.
 ```json
-"preuve": {"sources": [{"label": "Scrutin n° 1234", "url": "https://..."}], "raisonnement": "Une à trois phrases : d'où vient l'information et pourquoi on la lit ainsi."}
+"preuve": {"nature": "fait", "sources": [{"label": "Scrutin n° 1234", "url": "https://..."}], "raisonnement": "Une à trois phrases : d'où vient l'information et pourquoi on la lit ainsi."}
 ```
 
 ### 5.15 `data/<dossier>/verdict.json` (P3, lecture rédigée via P8)
+Un verdict par objectif, en trois parties, et l'événement qui l'a fait changer.
 ```json
-{"meta": {...},
- "verdict": "mal_engage", "score": 0.18, "tendance": "moins_bien",
- "lecture": {"texte": "La mesure est portée par le gouvernement et soutenue par presque tous les groupes.", "mode": "llm", "verifie": true, "chiffres_utilises": []},
- "favorable": [{"titre": "Amendement de suppression déposé par le RN", "detail": "...", "preuve": {...}}],
- "bloquant": [{"titre": "Amendement de compromis du gouvernement", "detail": "...", "preuve": {...}}]}
+{"meta": {...}, "verdicts": [
+  {"objectif_rang": 1,
+   "situation": "defavorable", "score": 0.18,
+   "tendance": "degradation",
+   "confiance": {"niveau": "elevee", "etabli": ["Positions des groupes sur 9 scrutins liés"], "inconnu": ["Vote de LFI après le compromis du gouvernement"]},
+   "lecture": {"texte": "La mesure est portée par le gouvernement et soutenue par presque tous les groupes.", "mode": "llm", "verifie": true, "chiffres_utilises": []},
+   "favorable": [{"titre": "Amendement de suppression déposé par le RN", "detail": "...", "preuve": {...}}],
+   "bloquant": [{"titre": "Amendement de compromis du gouvernement", "detail": "...", "preuve": {...}}],
+   "cause_du_changement": {"evenement_id": "...", "titre": "Dépôt de l'amendement de compromis du gouvernement", "preuve": {...}}}
+]}
 ```
-Mécanique du verdict : `score` = part pondérée des sièges dont la position dominante (scrutins liés, sinon amendements, sinon loyauté) va dans le sens de `position_cible`, corrigée par la moyenne Orcet des amendements qui portent la position du client. `verdict` : `bonne_voie` ≥ 0,55, `incertain` entre 0,4 et 0,55, `mal_engage` < 0,4. `tendance` : comparaison du score à la date de référence et sept jours plus tôt (événements, sorts, cohésion). `favorable` et `bloquant` : amendements et positions alignés ou opposés, avis du rapporteur et du gouvernement quand disponibles, chaque point avec sa preuve.
+`situation` ∈ `favorable | incertaine | defavorable | insuffisant` (pas assez d'information pour conclure, `score: null`). Mécanique : `score` = part pondérée des sièges dont la position dominante sur la mesure (scrutins liés, sinon amendements, sinon loyauté) va dans le sens de `position_cible` de l'objectif, corrigée par la moyenne Orcet des amendements qui portent cette position ; `favorable` ≥ 0,55, `incertaine` entre 0,4 et 0,55, `defavorable` < 0,4 ; `insuffisant` quand moins de 3 groupes ont une position connue. `tendance` = score à la date de référence contre sept jours plus tôt (événements, sorts, cohésion). `confiance.niveau` : `elevee` si les positions viennent de scrutins nominatifs liés, `moyenne` si elles viennent des amendements, `faible` si de la loyauté générale. `cause_du_changement` = l'événement de `nouveautes.json` d'effet non neutre le plus important depuis sept jours, ou `null`. Objectifs de repli : mêmes règles sur les amendements qui réduisent ou reportent la mesure.
 
 ### 5.16 `data/<dossier>/nouveautes.json` (A4)
 ```json
 {"meta": {...}, "evenements": [
-  {"id": "...", "date": "2025-11-18", "type": "amendement_depose", "titre": "Le RN dépose un amendement de suppression de l'article 22", "detail": "...", "importance": 3, "url": "https://...", "preuve": {...}}
+  {"id": "...", "date": "2025-11-18", "type": "amendement_depose", "titre": "Le RN dépose un amendement de suppression de l'article 22", "detail": "...", "importance": 3, "effet": "renforce", "objectif_rang": 1, "url": "https://...", "preuve": {...}}
 ]}
 ```
-`type` ∈ `amendement_depose | amendement_sort | scrutin | rapport | audition | seance | commission | hatvp | agenda`. `importance` 1 à 3. Tri : importance décroissante puis date décroissante. Rien après `date_reference`.
+`type` ∈ `amendement_depose | amendement_sort | scrutin | rapport | audition | seance | commission | hatvp | agenda`. `importance` 1 à 3. `effet` ∈ `renforce | affaiblit | neutre` sur le verdict de l'objectif `objectif_rang` (renforce = va dans le sens du client). Tri : importance décroissante puis date décroissante. Rien après `date_reference`.
 
 ### 5.17 `data/<dossier>/suite.json` (P2)
 ```json
 {"meta": {...},
  "echeances": [{"date": "2025-11-20", "titre": "Examen de l'article 22 en séance", "lieu": "seance", "url": "https://...", "preuve": {...}}],
+ "derniere_occasion": {"date": "2025-11-20", "titre": "Séance publique, article 22 : dernier moment pour faire adopter la suppression à l'Assemblée", "lieu": "seance", "url": "https://...", "preuve": {...}},
  "probables": [{"titre": "Adoption de l'article 22", "proba": 0.81, "detail": "Moyenne Orcet des votes pour sur l'amendement de suppression : 0,19", "preuve": {...}}]}
 ```
-`lieu` ∈ `seance | commission | senat | cmp | autre`. `proba` nullable. Échéances depuis l'agenda open data et l'état du texte ; probables depuis Orcet et la cohésion.
+`lieu` ∈ `seance | commission | senat | cmp | autre`. `proba` nullable. `derniere_occasion` nullable : la dernière échéance où le client peut encore agir sur la mesure à cette étape. Échéances depuis l'agenda open data et l'état de la mesure ; probables depuis Orcet et la cohésion.
 
 ### 5.18 `data/<dossier>/groupes-action.json` (P3) et `arguments.json` (A2), intermédiaires
 ```json
-{"meta": {...}, "actionnables": [{"depute_id": "PA...", "groupe_id": "PO...", "score": 0.34, "raison": "Groupe divisé, 3 écarts récents", "preuve": {...}}], "allies": [...], "perdus": [...]}
+{"meta": {...}, "actionnables": [{"depute_id": "PA...", "groupe_id": "PO...", "score": 0.34, "raison": "A voté contre son groupe sur 3 scrutins liés", "fondement": ["vote"], "position_connue": true, "preuve": {...}}], "allies": [...], "perdus": [...],
+ "decideurs": [{"role": "rapporteur_general", "depute_id": "PA...", "nom": "...", "groupe_id": "PO...", "position": "pour", "preuve": {...}}, {"role": "gouvernement", "depute_id": null, "nom": "Ministre chargé du budget", "groupe_id": null, "position": "pour", "preuve": {...}}]}
 ```
 ```json
 {"meta": {...}, "pour": [{"argument": "Protéger le commerce et financer les contrôles", "citation": "...", "orateur_id": "PA...", "groupe_id": "PO...", "date": "...", "lieu": "seance", "url": "https://...", "preuve": {...}}], "contre": [...]}
@@ -132,11 +146,12 @@ Mécanique du verdict : `score` = part pondérée des sièges dont la position d
 Classement des députés : `allies` = groupes dont la position dominante va dans le sens de `position_cible` ; `perdus` = groupes opposés avec loyauté ≥ 0,85 ; `actionnables` = les pivots (section 5.6) des groupes divisés ou des groupes opposés avec loyauté faible. Arguments : toutes les interventions sur le sujet (pas seulement les pivots), classées pour ou contre la mesure, orateur identifié ou `null` (ministre, président).
 
 ### 5.19 `data/<dossier>/action.json` (A4)
-Fusion de 5.18 : `groupes` (avec `fiche: true|false` selon `fiches/index.json`), `arguments`, plus `contre_arguments` : `[{"texte", "repond_a": "<argument pour>", "chiffres_utilises", "mode", "verifie", "preuve"}]`, rédigés par le modèle à partir des arguments entendus et des chiffres du dossier, passés au vérificateur.
+Fusion de 5.18 : `decideurs`, `groupes` (avec `fiche: true|false` selon `fiches/index.json`), `arguments`, plus `contre_arguments` : `[{"texte", "repond_a": "<argument pour>", "chiffres_utilises", "mode", "verifie", "preuve"}]`, rédigés par le modèle à partir des arguments entendus et des chiffres du dossier, passés au vérificateur.
 
-### 5.20 `data/<dossier>/etat.json` (P3)
+### 5.20 `data/<dossier>/etat.json` (P3) : l'état de la mesure, puis du texte
 ```json
 {"meta": {...}, "etape": "Première lecture, Assemblée nationale, séance publique",
+ "mesure": {"label": "Taxe de 2 euros par article sur les colis de moins de 150 euros", "article": "22", "dans_le_texte": true, "redaction_actuelle": "Texte du gouvernement, non modifié en commission", "modifications": [{"date": "2025-10-22", "par": "Commission des finances", "quoi": "Rejet des amendements de suppression", "url": "...", "preuve": {...}}]},
  "etapes": [{"nom": "Commission des finances", "date": "2025-10-22", "statut": "fait", "url": "..."}, {"nom": "Séance publique, première partie", "date": "2025-11-20", "statut": "en_cours", "url": "..."}, {"nom": "Sénat", "date": null, "statut": "a_venir", "url": null}],
  "articles": [{"numero": "22", "titre": "Taxe sur les petits colis", "statut": "reste", "sort_detail": "en discussion", "url": "..."}]}
 ```
@@ -155,11 +170,11 @@ Seize sessions et une tâche humaine. Les chemins possédés sont exclusifs.
 | **P0 Chef d'orchestre** (cette session) | racine, `contracts/`, `prompts/`, `config.json`, `qa/`, `LANCEMENT.md` | Schémas, fixtures, dépendances, `App.tsx`, tests, prompts ; go/no-go 13 h 35 ; captures 16 h 45 ; fusion | Démo sur données réelles à 17 h 15, tests verts |
 | **P1 Collecte Hémicycle** (seule session qui appelle l'API) | `pipeline/collecte/`, `data/raw/`, `groupes.json`, `deputes.json`, `<dossier>/hatvp.json` | 13 h 20 : mesure d'un appel de chaque type, Orcet sur un amendement en attente du dossier vivant, nombre d'amendements en attente, coût réel. Puis scrutins et votes depuis juillet 2024 (un fichier par scrutin), accord entre groupes, loyauté, textes et amendements des deux dossiers (avec `expose`, `sort`, avis rapporteur et gouvernement si l'API les renvoie), Orcet sur les amendements en attente, HATVP des deux dossiers, agenda open data (`Agenda.json.zip`) dans `raw/opendata/` | Fichiers bruts validés, compteur de crédits à jour |
 | **P2 Cohésion et Suite** | `pipeline/cohesion/`, `pipeline/suite/`, `cohesion.json`, `<dossier>/suite.json` | 13 h 35 : « la courbe décroche-t-elle avant les censures ? » avec vrais et faux décrochages ; 14 h 45 : `cohesion.json` ; 15 h 15 : `suite.json` par dossier (échéances depuis l'agenda et `etat.json`, probables depuis Orcet et cohésion, filtrées par `date_reference`) | Fichiers valides, réponse écrite |
-| **P3 État, base, pivots, verdict** | `pipeline/pivots/`, `<dossier>/etat.json`, `texte.json`, `pivots.json`, `groupes-action.json`, `verdict.json` | 13 h 50 : pivots provisoires (`base: general`) ; 14 h 45 : `etat.json`, `texte.json`, `pivots.json`, `groupes-action.json` ; 15 h 15 : `verdict.json` (mécanique 5.15, lecture via `redigerVerifie` de P8 avec le prompt de X3). Tout filtré par `date_reference` | Fichiers valides, nombre de scrutins liés publié |
+| **P3 État, base, pivots, verdict** | `pipeline/pivots/`, `<dossier>/etat.json`, `texte.json`, `pivots.json`, `groupes-action.json`, `verdict.json` | 13 h 50 : pivots provisoires (`base: general`) ; 14 h 45 : `etat.json` (état de la mesure et du texte), `texte.json`, `pivots.json`, `groupes-action.json` (classement sur actes propres, décideurs) ; 15 h 15 : `verdict.json` (un verdict par objectif, trois parties, cause du changement, lecture via `redigerVerifie` de P8 avec le prompt de X3). Tout filtré par `date_reference` | Fichiers valides, nombre de scrutins liés publié |
 | **P4 Front socle et page dossier** | `web/` sauf `web/src/views/blocs/*`, `views/depute/`, `views/base/`, `views/sources/` | 13 h 50 : primitives finies (`Pourquoi` inclus), page dossier avec en-tête trois lignes et cinq emplacements, états globaux (chargement, erreur, dossier inconnu) ; 15 h 15 : bascule `dataset: live` ; corrections transverses | Les quatre routes s'ouvrent sur fixtures puis live, zéro erreur console |
-| **P5 Blocs Verdict et Suite** | `views/blocs/verdict/`, `views/blocs/suite/` | Verdict : bandeau avec le mot (bonne voie, incertain, mal engagé) en gros, score en %, tendance, lecture en une phrase avec badge vérifié ou gabarit, deux colonnes « ce qui marche » et « ce qui coince » avec `Pourquoi` sur chaque ligne ; repli de la courbe de cohésion dans un panneau « tendance » (Recharts, préréglages). Suite : échéances en liste datée, probables avec `Proba` et `Pourquoi` | Conforme sur fixtures puis live |
-| **P6 Bloc Nouveautés, page Base** | `views/blocs/nouveautes/`, `views/base/` | Nouveautés : liste triée par importance (3 en gras), date, titre, détail, lien, `Pourquoi`, filtre par type, « rien de nouveau » si vide. Base : état du texte (étapes avec statut), articles (voté, reste, supprimé), table des amendements du dossier (numéro, auteur, groupe, sort, `Proba` Orcet, lien) | Conforme sur fixtures puis live |
-| **P7 Bloc Action, page Député, bloc Compte rendu** | `views/blocs/action/`, `views/blocs/compte-rendu/`, `views/depute/` | Action : trois colonnes (agir, alliés, perdus) avec nom, `GroupeTag`, score, raison, `Pourquoi`, ligne cliquable vers la fiche si `fiche: true`, grisée sinon ; dessous deux colonnes d'arguments pour et contre avec citation, orateur, lien, `Pourquoi` ; puis contre-arguments avec badge vérifié. Député : en-tête, synthèse, auditions, débats, amendements, HATVP, couverture, retour. Compte rendu : texte avec chiffres vérifiés soulignés, sources numérotées, bouton Copier | Chaque lien s'ouvre, états vides rendus, fiche absente = message |
+| **P5 Blocs Verdict et Suite** | `views/blocs/verdict/`, `views/blocs/suite/` | Verdict : un onglet par objectif (principal ouvert), bandeau en trois parties (situation en gros, tendance, confiance avec établi et inconnu), lecture en une phrase avec badge, « ce qui a fait bouger le verdict » si présent, deux colonnes « ce qui marche » et « ce qui coince » avec `Pourquoi` ; courbe de cohésion repliée dans un panneau « tendance ». Suite : échéances datées, dernière occasion d'agir mise en avant, probables avec `Proba` et `Pourquoi` | Conforme sur fixtures puis live |
+| **P6 Bloc Nouveautés, page Base** | `views/blocs/nouveautes/`, `views/base/` | Nouveautés : liste triée par importance (3 en gras), effet sur le verdict en mot (renforce, affaiblit, neutre), date, titre, détail, lien, `Pourquoi`, filtre par type, « rien de nouveau » si vide. Base : état de la mesure (dans le texte ou non, rédaction, modifications datées), étapes avec statut, articles (voté, reste, supprimé), table des amendements du dossier (numéro, auteur, groupe, sort, `Proba` Orcet, lien) | Conforme sur fixtures puis live |
+| **P7 Bloc Action, page Député, bloc Compte rendu** | `views/blocs/action/`, `views/blocs/compte-rendu/`, `views/depute/` | Action : « ceux qui décident » en tête (rôle, nom, groupe, position connue ou inconnue, `Pourquoi`) ; trois colonnes (agir, alliés, perdus) avec nom, `GroupeTag`, score, raison, fondement en mots (a dit, a déposé, a voté), « position inconnue » le cas échéant, `Pourquoi`, ligne cliquable vers la fiche si `fiche: true`, grisée sinon ; dessous deux colonnes d'arguments pour et contre avec citation, orateur, lien, `Pourquoi` ; puis contre-arguments avec badge vérifié. Député : en-tête, synthèse, auditions, débats, amendements, HATVP, couverture, retour. Compte rendu : texte avec chiffres vérifiés soulignés, sources numérotées, bouton Copier | Chaque lien s'ouvre, états vides rendus, fiche absente = message |
 | **P8 Rédaction et vérificateur** | `pipeline/lib/llm.ts`, `pipeline/lib/verif.ts`, `pipeline/note/`, `<dossier>/note.json` | 13 h 35 : client Featherless (`Qwen/Qwen3.8-27B`, sortie par `tools`, thinking désactivé), `redigerVerifie`, `appelStructure`, 8 tests ; 15 h 45 : `note.json` par dossier (compte rendu, 150 mots, client et objectif) | Tests verts, notes vérifiées ou en gabarit |
 
 ### MacBook Air Ilan, 4 sessions
@@ -169,7 +184,7 @@ Seize sessions et une tâche humaine. Les chemins possédés sont exclusifs.
 | **A1 Auditions** | `pipeline/auditions/`, `<dossier>/auditions/` | Comme en v2 (dump des dossiers législatifs, HTML des rapports, extraction des « personnes entendues » via Featherless, rattachement rapporteur ou membre de commission), sur la liste des députés de `groupes-action.json` (provisoire : `pivots.json` à 13 h 50), filtré par `date_reference` | Un fichier par député, couverture chiffrée |
 | **A2 Débats et arguments** | `pipeline/debats/`, `<dossier>/debats/`, `<dossier>/arguments.json` | Par député : interventions sur le sujet, citation et lien (v2). En plus : `arguments.json` : toutes les interventions sur le sujet (séance via `syseron.xml`, commission via HTML), classées pour ou contre la mesure par `appelStructure`, citation exacte, orateur `PA` ou `null`, preuve | Chaque citation a une URL ; arguments pour et contre non vides sur petits colis |
 | **A3 Amendements par député** | `pipeline/amendements/`, `<dossier>/amendements/` | Comme en v2 (auteur ou cosignataire, sort, « travaillé avec » depuis l'exposé des motifs), sur la liste de `groupes-action.json` | Un fichier par député |
-| **A4 Fiches, Nouveautés, Action** | `pipeline/fiches/run.ts`, `pipeline/fiches/lib/`, `<dossier>/fiches/`, `nouveautes.json`, `action.json` | Dès 13 h 20 sur fixtures : fiches (fusion pure + synthèse via X3), `index.json` ; `nouveautes.json` assemblé depuis `texte.json` (dépôts, sorts), scrutins, rapports (A1), séances (A2), HATVP, agenda, avec importance (3 : scrutin, sort d'un amendement du client ou d'un allié, avis du gouvernement ; 2 : rapport, audition, dépôt d'amendement de groupe ; 1 : le reste) ; `action.json` = `groupes-action.json` + `arguments.json` + contre-arguments rédigés via `redigerVerifie` et le prompt de X3. Tout filtré par `date_reference`. 15 h 15 : fiche `pivot_demo` d'abord | Fichiers valides, synthèses et contre-arguments vérifiés ou en gabarit |
+| **A4 Fiches, Nouveautés, Action** | `pipeline/fiches/run.ts`, `pipeline/fiches/lib/`, `<dossier>/fiches/`, `nouveautes.json`, `action.json` | Dès 13 h 20 sur fixtures : fiches (fusion pure + synthèse via X3), `index.json` ; `nouveautes.json` assemblé depuis `texte.json` (dépôts, sorts), scrutins, rapports (A1), séances (A2), HATVP, agenda, avec importance (3 : scrutin, sort d'un amendement du client ou d'un allié, avis du gouvernement ; 2 : rapport, audition, dépôt d'amendement de groupe ; 1 : le reste) et effet sur le verdict (renforce, affaiblit, neutre) ; `action.json` = `groupes-action.json` + `arguments.json` + contre-arguments rédigés via `redigerVerifie` et le prompt de X3. Tout filtré par `date_reference`. 15 h 15 : fiche `pivot_demo` d'abord | Fichiers valides, synthèses et contre-arguments vérifiés ou en gabarit |
 
 ### MacBook Pro Axel, 3 sessions et Axel en personne
 
@@ -177,7 +192,7 @@ Seize sessions et une tâche humaine. Les chemins possédés sont exclusifs.
 |---|---|---|---|
 | **X1 Script, pitch, jury** | `demo/` | 13 h 50 : script en quatre temps (section 8), trois minutes, variantes selon les mesures de 13 h 35 ; pitch 150 mots ; 15 h 15 : `pivot_demo` et ordre final ; jury joué ; répétitions 17 h 15 et 17 h 40 | Deux répétitions sous trois minutes |
 | **X2 README et page Sources** | `README.md`, `views/sources/` | README publiable ; page Sources construite depuis les `meta` | Un inconnu lance la démo en suivant le README |
-| **X3 Prompts et gabarits** | `pipeline/fiches/prompts/`, `pipeline/note/prompts/`, `pipeline/verdict/prompts/`, `pipeline/action/prompts/` | 13 h 35 : gabarits de secours (synthèse, lecture du verdict, contre-argument, compte rendu) ; puis les quatre prompts, testés sur fixtures jusqu'à 0 rejet sur 3 essais | A4, P3, P8 les utilisent sans retouche |
+| **X3 Prompts et gabarits** | `pipeline/fiches/prompts/`, `pipeline/note/prompts/`, `pipeline/verdict/prompts/`, `pipeline/action/prompts/` | 13 h 35 : gabarits de secours (synthèse, lecture du verdict par objectif, contre-argument, compte rendu) ; puis les quatre prompts, testés sur fixtures jusqu'à 0 rejet sur 3 essais | A4, P3, P8 les utilisent sans retouche |
 | **Axel, en personne, avant 13 h 15** | `demo/terrain.md` | Atlas extrait-il les auditions ? Orcet prédit-il des amendements sans scrutin ? L'API renvoie-t-elle les avis du rapporteur et du gouvernement sur les amendements ? Crédits. Grille du jury | Réponses écrites avant 13 h 35 |
 
 ## 7. Horaires
@@ -214,7 +229,8 @@ Arguments pour le jury : on part du client, pas de la donnée ; chaque informati
 | Orcet ne prédit pas des amendements sans scrutin | P1 13 h 20, Axel | Suite et Verdict sans Orcet (positions et amendements) ; la démo reste sur le dossier rejoué |
 | L'API ne renvoie pas les avis rapporteur et gouvernement | P1 13 h 20 | `favorable` et `bloquant` depuis amendements et positions seulement |
 | Pas d'agenda exploitable | P2 15 h | `suite.echeances` depuis `etat.json` seul |
-| Verdict mécanique contre-intuitif sur petits colis (doit dire mal engagé) | P3 15 h 15, test dans `qa/` | Ajuster les pondérations 5.15, le jeu de fixtures sert de cas de référence |
+| Verdict mécanique contre-intuitif sur petits colis (doit dire défavorable, tendance en dégradation, confiance élevée sur les groupes et faible sur LFI) | P3 15 h 15, test dans `qa/` | Ajuster les pondérations 5.15, le jeu de fixtures sert de cas de référence |
+| Décideurs introuvables (chef de file par groupe non publié) | P3 14 h 45 | Rapporteur général, rapporteurs, gouvernement, président de commission seulement, et le dire |
 | Zéro scrutin nominatif sur le sujet vivant | P3 13 h 50 | `base: general` affiché, ou changement de sujet |
 | Peu d'auditions | A1 13 h 50 | Couverture affichée, la fiche vit sur débats, amendements, HATVP |
 | Arguments mal classés pour/contre | A4, X3 | Ne garder que les arguments avec citation et orateur identifié |
