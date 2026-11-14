@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-agriculture/amendements.json (P1, open data Assemblée nationale), 513 amendements lus, 483 sur le sujet. Sujet = mots-clés de config.json (agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 77. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA718850",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000231",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : I. – Le 2 du I de l’article 73 du code général des impôts est ainsi modifié : a) Au 1°, le montant : « 150 000 € » est remplacé par le montant : « 250 000 € »…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000231",
+      "numero": "I-CF231",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-08",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000244",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le dernier alinéa du d du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsqu’un contribuable…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000244",
+      "numero": "I-CF244",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-08",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000005",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le d du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsqu’un contribuable est associé…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000005",
+      "numero": "I-5 (Rect)",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000890",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 24 : I. – Compléter l’alinéa 119 par la phrase suivante : « Cette part minimale ne peut être inférieure à 9 % pour les gazoles et à 9,5 % pour les essences. » II. –…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000890",
+      "numero": "I-890",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-11-02",
+      "article": "ART. 24"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000898",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « En cas de cession par une société ou un…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000898",
+      "numero": "I-898",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000905",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : I. – Aux 1° et au 2° du 2 du I de l’article 73 du code général des impôts, le montant : « 150 000 € » est remplacé par le montant : « 250 000 € ». II. – La…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000905",
+      "numero": "I-905",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001232",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le I de l’article 151 septies A du code général des impôts est ainsi modifié : 1° Au 3°, le mot : « deux » est remplacé par le mot : « trois ». 2° Sont…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001232",
+      "numero": "I-1232",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001233",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le VII bis de l’article 238 quindecies du code général des impôts est ainsi modifié : 1° Le premier alinéa est ainsi modifié : a) Le montant : « 700 000 »…",
+      "sort": "non_examine",
+      "travaille_avec": [
+        "les Jeunes Agriculteurs"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001233",
+      "numero": "I-1233",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001235",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 7 : I. – L’article 32 du code général des impôts est complété par un 5 ainsi rédigé : « 5. Par dérogation au 1 et au 4, cet abattement est porté à 50 % et l’option…",
+      "sort": "adopte",
+      "travaille_avec": [
+        "les Jeunes Agriculteurs"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001235",
+      "numero": "I-1235",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001240",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : I. – L’article 73 B du code général des impôts est complété par un alinéa ainsi rédigé : « L’abattement sur les bénéfices imposables mentionné au présent…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "les Jeunes Agriculteurs"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001240",
+      "numero": "I-1240",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001572",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le présent amendement vise à renforcer les moyens consacrés à l’Aide au redressement des exploitations agricoles en difficulté (AREA), en portant son enveloppe…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001572",
+      "numero": "II-1572",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-29",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001573",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 77.",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001573",
+      "numero": "II-1573",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-29",
+      "date_sort": null,
+      "article": "ART. 77"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-logement/amendements.json (P1, open data Assemblée nationale), 743 amendements lus, 675 sur le sujet. Sujet = mots-clés de config.json (APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 78. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA719372",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001669",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Article 8 : I. – Après l’alinéa 1, insérer l’alinéa suivant : « 1° A Le 4° du 1 de l’article 207 est abrogé ; ». II. – À l’alinéa 4, supprimer les mots : « les organismes…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001669",
+      "numero": "I-CF1669",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-08",
+      "article": "ART. 8"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002811",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Article 8 : I. – Après l’alinéa 1, insérer l’alinéa suivant : « 1° A Le 4° du 1 de l’article 207 est abrogé ; ». II. – En conséquence, à l’alinéa 4, supprimer les mots : «…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002811",
+      "numero": "I-2811",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-10-30",
+      "article": "ART. 8"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001724",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement finance la rénovation des casernes de gendarmerie vétustes de Nouvelle-Calédonie et la construction en propre, par l’État, des casernes des…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001724",
+      "numero": "II-CF1724",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-26",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002011",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Article 74 : Après l'alinéa 1, insérer l’alinéa suivant : « Pour l’année 2027, le paramètre dit « R0 » correspondant à l’abattement forfaitaire appliqué aux ressources du…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002011",
+      "numero": "II-CF2011",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-11-04",
+      "article": "ART. 74"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002024",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 78 : I. – Le code de la construction et de l’habitation est ainsi modifié : 1° À l’article L. 811‑1, les mots : « et les primes de déménagement » sont supprimés…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002024",
+      "numero": "II-CF2024",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-23",
+      "article": "APRÈS ART. 78"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002025",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 78 : I. – L’article L. 823‑1 du code de la construction et de l’habitation est complété par un alinéa ainsi rédigé : « Pour les logements à usage locatif…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002025",
+      "numero": "II-CF2025",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-23",
+      "article": "APRÈS ART. 78"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001493",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 78 : I. – Le code de la construction et de l’habitation est ainsi modifié : 1° À l’article L. 811‑1, les mots : « et les primes de déménagement » sont supprimés…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001493",
+      "numero": "II-1493",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-29",
+      "date_sort": null,
+      "article": "APRÈS ART. 78"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001494",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 78 : I. – L’article L. 823‑1 du code de la construction et de l’habitation est complété par un alinéa ainsi rédigé : « Pour les logements à usage locatif…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001494",
+      "numero": "II-1494",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-29",
+      "date_sort": null,
+      "article": "APRÈS ART. 78"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001624",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 78 : L’article L. 822‑8 du code de la construction et de l’habitation est complété par deux alinéas ainsi rédigés : « Lorsque le demandeur ou l’allocataire poursuit…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001624",
+      "numero": "II-1624",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-29",
+      "date_sort": null,
+      "article": "APRÈS ART. 78"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001773",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement finance la rénovation des casernes de gendarmerie vétustes de Nouvelle-Calédonie et la construction en propre, par l’État, des casernes des…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001773",
+      "numero": "II-1773",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002063",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le présent amendement vise à augmenter les moyens de l’Agence de la transition écologique (ADEME), portés par le programme 181 « Prévention des risques », afin…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002063",
+      "numero": "II-2063",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    }
+  ]
+}

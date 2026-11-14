@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-logement/amendements.json (P1, open data Assemblée nationale), 743 amendements lus, 675 sur le sujet. Sujet = mots-clés de config.json (APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 78. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA335999",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000525",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 74.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000525",
+      "numero": "II-CF525",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-15",
+      "date_sort": "2026-11-04",
+      "article": "ART. 74"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001735",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Créé en 2023 afin d’aider les petits commerces à financer leurs travaux d'accessibilité, le Fonds territorial d’accessibilité a été soudainement fermé en…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001735",
+      "numero": "II-CF1735",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-28",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001961",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à créer un fonds d’expertise citoyenne doté de 10 millions d’euros afin de permettre aux habitantes et habitants des quartiers concernés…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001961",
+      "numero": "II-1961",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001962",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose de réintégrer les étudiants extracommunautaires et non boursiers dans le système des aides personnelles au logement. De nombreuses…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "le Collectif des Associations"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001962",
+      "numero": "II-1962",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001964",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : En complément d’un revenu minimum garanti, les aides personnelles au logement jouent un rôle fondamental pour sortir de la pauvreté et accéder à un logement…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Fondation"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001964",
+      "numero": "II-1964",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002783",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Créé en 2023 afin d’aider les petits commerces à financer leurs travaux d'accessibilité, le Fonds territorial d’accessibilité a été soudainement fermé en…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002783",
+      "numero": "II-2783",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-11-03",
+      "date_sort": null,
+      "article": "ETAT B"
+    }
+  ]
+}

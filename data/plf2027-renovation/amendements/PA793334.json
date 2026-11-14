@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:14+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-renovation/amendements.json (P1, open data Assemblée nationale), 398 amendements lus, 380 sur le sujet. Sujet = mots-clés de config.json (MaPrimeRénov, rénovation énergétique, rénovation des logements, passoires thermiques, programme 174, chèque énergie) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles État B, programme 174. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-renovation"
+  },
+  "depute_id": "PA793334",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000487",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – À la première phrase de l’alinéa 11, substituer au taux : « 2,5 % », le taux : « 3,5 % ». II. – À la première phrase du même alinéa, supprimer les mots…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000487",
+      "numero": "I-CF487",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-03",
+      "date_sort": "2026-10-08",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000489",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – À la première phrase de l’alinéa 11, substituer au taux : « 2,5 % », le taux : « 3 % ». II. – À la première phrase du même alinéa, supprimer les mots : «…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000489",
+      "numero": "I-CF489",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-03",
+      "date_sort": "2026-10-08",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000100",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – A la première phrase de l’alinéa 11, substituer au taux : « 2,5 % » le taux : « 3,5 % » ; II. – En conséquence, à la même première phrase du même alinéa…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000100",
+      "numero": "I-100",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-06",
+      "date_sort": "2026-10-30",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000101",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – A la première phrase de l’alinéa 11, substituer au taux : « 2,5 % » le taux : « 3 % » ; II. – En conséquence, à la même première phrase du même alinéa 11…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000101",
+      "numero": "I-101",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-06",
+      "date_sort": "2026-10-30",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000046",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Dans un contexte de forte contrainte budgétaire et de nécessaire rationalisation de la dépense publique, il apparaît indispensable de revoir l’organisation de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000046",
+      "numero": "II-46",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-09",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000107",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 78 : I. – Après l’article 78, insérer l’article suivant ainsi rédigé : « Le Code de la construction et de l'habitation est ainsi modifié : « Après le chapitre II du…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000107",
+      "numero": "II-107",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-13",
+      "date_sort": null,
+      "article": "APRÈS ART. 78"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002240",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le présent amendement vise à abonder les crédits de l’action 04 « Gestion économique et sociale de l’après-mines » du programme 174 « Énergie, climat et…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002240",
+      "numero": "II-CF2240",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-21",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000710",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le présent amendement vise à abonder les crédits de l’action 04 « Gestion économique et sociale de l’après-mines » du programme 174 « Énergie, climat et…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000710",
+      "numero": "II-710",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-22",
+      "date_sort": null,
+      "article": "ETAT B"
+    }
+  ]
+}

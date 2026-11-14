@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-agriculture/amendements.json (P1, open data Assemblée nationale), 513 amendements lus, 483 sur le sujet. Sujet = mots-clés de config.json (agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 77. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA795974",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001015",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – La section I du chapitre III du titre II de la deuxième partie du livre premier du code général des impôts est ainsi modifiée : 1° Après l’article 1594 F…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001015",
+      "numero": "I-1015",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001017",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Au VII bis de l’article 238 quindecies du code général des impôts, les mots : « 700 000 € et de 1 200 000 € » sont remplacés par les mots : « 1 000 000 €…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001017",
+      "numero": "I-1017",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000043",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : La prédation du loup fragilise les troupeaux et l’équilibre économique des exploitations. Dans leur rapport d’information n° 699 de juin 2026, les sénateurs…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000043",
+      "numero": "II-CE43",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-13",
+      "article": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000083",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : La prédation du loup fragilise les troupeaux et l’équilibre économique des exploitations. Dans leur rapport d’information n° 699 de juin 2026, les sénateurs…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000083",
+      "numero": "II-CF83",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-14",
+      "date_sort": "2026-10-22",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002358",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 77.",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002358",
+      "numero": "II-2358",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-31",
+      "date_sort": null,
+      "article": "ART. 77"
+    }
+  ]
+}

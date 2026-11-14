@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-agriculture/amendements.json (P1, open data Assemblée nationale), 513 amendements lus, 483 sur le sujet. Sujet = mots-clés de config.json (agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 77. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA841801",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000201",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 13 : I. – Après l’alinéa 74, insérer l’alinéa suivant : « L’abattement sur les bénéfices imposables mentionné au présent article est également éligible aux…",
+      "sort": "retire",
+      "travaille_avec": [
+        "Jeunes Agriculteurs",
+        "les Jeunes Agriculteurs"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000201",
+      "numero": "I-201",
+      "sort_libelle": "Retiré",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-10-30",
+      "article": "ART. 13"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000205",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le VII bis de l’article 238 quindecies du code général des impôts est ainsi modifié : 1° Le premier alinéa est ainsi modifié : a) Le montant : « 700 000 »…",
+      "sort": "retire",
+      "travaille_avec": [
+        "Jeunes Agriculteurs",
+        "les Jeunes Agriculteurs"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000205",
+      "numero": "I-205",
+      "sort_libelle": "Retiré après publication",
+      "date_depot": "2026-10-07",
+      "date_sort": null,
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000207",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le I de l’article 151 septies A du code général des impôts est ainsi modifié : 1° Au 3°, le mot : « deux » est remplacé par le mot : « trois ». 2° Sont…",
+      "sort": "non_examine",
+      "travaille_avec": [
+        "les Jeunes Agriculteurs"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000207",
+      "numero": "I-207",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001206",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 26 : I. – La loi n° 72‑657 du 13 juillet 1972 instituant des mesures en faveur de certaines catégories de commerçants et artisans âgés est ainsi modifiée : 1° Le…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001206",
+      "numero": "I-1206",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-11-03",
+      "article": "APRÈS ART. 26"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001211",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 24 : I. – Compléter l’alinéa 119 par la phrase suivante : « Cette part minimale ne peut être inférieure à 9 % pour les gazoles et à 9,5 % pour les essences. » II. –…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001211",
+      "numero": "I-1211",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-11-02",
+      "article": "ART. 24"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001222",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « En cas de cession par une société ou un…",
+      "sort": "non_examine",
+      "travaille_avec": [
+        "la FNSEA"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001222",
+      "numero": "I-1222",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002124",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 26 : I. – Le cinquième alinéa du 1.2.4.1 de l’article 77 de la loi n° 2009‑1673 du 30 décembre 2009 de finances pour 2010 est complété par trois phrases ainsi…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002124",
+      "numero": "I-2124",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-11-03",
+      "article": "APRÈS ART. 26"
+    }
+  ]
+}

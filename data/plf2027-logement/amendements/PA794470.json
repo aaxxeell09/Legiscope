@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-logement/amendements.json (P1, open data Assemblée nationale), 743 amendements lus, 675 sur le sujet. Sujet = mots-clés de config.json (APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 78. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA794470",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000116",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Article 7 : I. – Supprimer les alinéas 7 à 24. II. – Compléter cet article par l’alinéa suivant : « III. – La perte de recettes pour l’État est compensée à due concurrence…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000116",
+      "numero": "I-116",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-10-30",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001766",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "ETAT B : Cet amendement du groupe Horizons & Indépendants vise à réduire les crédits de la mission « Cohésion des territoires » de 201 533 529 € en autorisations…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001766",
+      "numero": "II-CF1766",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-23",
+      "article": "ETAT B"
+    }
+  ]
+}

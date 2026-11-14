@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:15:33+01:00",
+    "generated_at": "2026-11-14T16:58:13+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
@@ -15,10 +15,10 @@
     "producer": "pipeline/amendements",
     "dossier_id": "plf2027-apprentissage"
   },
-  "depute_id": "PA942",
+  "depute_id": "PA794234",
   "amendements": [
     {
-      "id": "AMANR5L17PO838901B3210P1D1N003256",
+      "id": "AMANR5L17PO838901B3210P1D1N002451",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
       "resume": "Supprime l'article 39.",
@@ -26,26 +26,12 @@
       "travaille_avec": [
         "Régions de France"
       ],
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003256",
-      "numero": "I-3256",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002451",
+      "numero": "I-2451",
       "sort_libelle": "Adopté",
-      "date_depot": "2026-10-10",
+      "date_depot": "2026-10-09",
       "date_sort": "2026-10-19",
       "article": "ART. 39"
-    },
-    {
-      "id": "AMANR5L17PO59048B3210P2D1N002200",
-      "texte_id": "PRJLANR5L17B3210",
-      "role": "cosignataire",
-      "resume": "Article 88 : dispositif non publié.",
-      "sort": "non_examine",
-      "travaille_avec": [],
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002200",
-      "numero": "II-CF2200",
-      "sort_libelle": "Irrecevable 40 (Charge)",
-      "date_depot": "2026-10-16",
-      "date_sort": null,
-      "article": "ART. 88"
     }
   ]
 }

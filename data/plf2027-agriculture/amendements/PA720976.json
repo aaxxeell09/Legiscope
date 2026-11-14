@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-agriculture/amendements.json (P1, open data Assemblée nationale), 513 amendements lus, 483 sur le sujet. Sujet = mots-clés de config.json (agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 77. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA720976",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000021",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 77.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000021",
+      "numero": "II-CE21",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-13",
+      "article": "ART. 77"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000024",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Conformément au courrier adressé par le groupe LIOT à la ministre de l'agriculture, de l'agro-alimentaire et de la souveraineté alimentaire en réaction à la…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000024",
+      "numero": "II-CE24",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-13",
+      "article": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000025",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Conformément au courrier adressé par le groupe LIOT à la ministre de l'agriculture, de l'agro-alimentaire et de la souveraineté alimentaire en réaction à la…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000025",
+      "numero": "II-CE25",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-13",
+      "article": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000026",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Cet amendement vise à rétablir les moyens consacrés à la structuration des filières biologiques et à la promotion de la consommation de produits biologiques.…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000026",
+      "numero": "II-CE26",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-13",
+      "article": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000028",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Cet amendement majore de 50 millions d'euros en autorisations d'engagement et en crédits de paiement le programme 149 « Compétitivité et durabilité de…",
+      "sort": "adopte",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000028",
+      "numero": "II-CE28",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-13",
+      "article": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000030",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Comme demandé dans le courrier adressé par le groupe LIOT à la ministre de l'Agriculture, de l'Agroalimentaire et de la Souveraineté alimentaire en réaction à…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000030",
+      "numero": "II-CE30",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-13",
+      "article": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000065",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Cet amendement a pour objet d’abonder de 23,7 millions d’euros en AE et en CP les crédits consacrés aux moyens de fonctionnement des opérateurs chargés de la…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000065",
+      "numero": "II-CE65",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-13",
+      "article": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL"
+    },
+    {
+      "id": "AMANR5L17PO419610B3210P2D1N000088",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Le présent amendement vise à renforcer les moyens consacrés à l’Aide au redressement des exploitations agricoles en difficulté (AREA), en portant son enveloppe…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000088",
+      "numero": "II-CE88",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-13",
+      "article": "ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003240",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 26 : I. – Après le cinquième alinéa de l’article 3 de la loi n° 72‑657 du 13 juillet 1972 instituant des mesures en faveur de certaines catégories de commerçants et…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003240",
+      "numero": "I-3240",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-11-03",
+      "article": "APRÈS ART. 26"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000016",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "ETAT B : Cet amendement a pour objet d’abonder de 23,2 millions d’euros en AE et en CP les crédits consacrés aux moyens de fonctionnement des opérateurs chargés de la…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000016",
+      "numero": "II-CF16",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-12",
+      "date_sort": "2026-10-22",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000069",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement majore de 50 millions d'euros en autorisations d'engagement et en crédits de paiement le programme 149 « Compétitivité et durabilité de…",
+      "sort": "non_examine",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000069",
+      "numero": "II-CF69",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-14",
+      "date_sort": "2026-10-22",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000071",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Comme demandé dans le courrier adressé par le groupe LIOT à la ministre de l'Agriculture, de l'Agroalimentaire et de la Souveraineté alimentaire en réaction à…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000071",
+      "numero": "II-CF71",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-14",
+      "date_sort": "2026-10-22",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000074",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Conformément au courrier adressé par le groupe LIOT à la ministre de l'agriculture, de l'agro-alimentaire et de la souveraineté alimentaire en réaction à la…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000074",
+      "numero": "II-CF74",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-14",
+      "date_sort": "2026-10-22",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000075",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Conformément au courrier adressé par le groupe LIOT à la ministre de l'agriculture, de l'agro-alimentaire et de la souveraineté alimentaire en réaction à la…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000075",
+      "numero": "II-CF75",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-14",
+      "date_sort": "2026-10-22",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000091",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 77.",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000091",
+      "numero": "II-CF91",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-14",
+      "date_sort": "2026-10-22",
+      "article": "ART. 77"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000093",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le présent amendement vise à renforcer les moyens consacrés à l’Aide au redressement des exploitations agricoles en difficulté (AREA), en portant son enveloppe…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000093",
+      "numero": "II-CF93",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-14",
+      "date_sort": "2026-10-22",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000205",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "ETAT B : Cet amendement a pour objet d’abonder de 23,2 millions d’euros en AE et en CP les crédits consacrés aux moyens de fonctionnement des opérateurs chargés de la…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000205",
+      "numero": "II-205",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-14",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000243",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à rétablir les moyens consacrés à la structuration des filières biologiques et à la promotion de la consommation de produits biologiques.…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000243",
+      "numero": "II-243",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-15",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000917",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : L’été 2026 a été le plus chaud jamais mesuré en France. Au 27 août, 101 départements étaient concernés par des mesures de restriction liées à la sécheresse…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "le Secours catholique Caritas France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000917",
+      "numero": "II-917",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-23",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000971",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : L’élevage bovin français traverse une crise structurelle profonde, marquée par une diminution continue du cheptel et des difficultés économiques croissantes…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "Interveg et Greenlobby"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000971",
+      "numero": "II-971",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-26",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001886",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Le présent amendement vise à renforcer les moyens consacrés à l’Aide au redressement des exploitations agricoles en difficulté (AREA), en portant son enveloppe…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001886",
+      "numero": "II-1886",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001936",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose de mobiliser 5 millions d’euros pour soutenir l’ensemble des exploitations agricoles corses affectées par la sécheresse de 2026. Les…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001936",
+      "numero": "II-1936",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002142",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "ETAT B : Cet amendement a pour objet d’abonder de près de 3,3 millions d’euros les crédits consacrés à l’aide à la transformation de la canne en rhum. Cette aide du…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "EURODOM"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002142",
+      "numero": "II-2142",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002334",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à renforcer les moyens consacrés à l’Aide au redressement des exploitations agricoles en difficulté (AREA), en portant son enveloppe de 1,3…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Chambre d’agriculture France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002334",
+      "numero": "II-2334",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-31",
+      "date_sort": null,
+      "article": "ETAT B"
+    }
+  ]
+}

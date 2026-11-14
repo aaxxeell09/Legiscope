@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-logement/amendements.json (P1, open data Assemblée nationale), 743 amendements lus, 675 sur le sujet. Sujet = mots-clés de config.json (APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 78. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA721234",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001741",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – Rédiger ainsi les alinéas 2 à 4 : « A. – L’article L. 31‑10‑3 est ainsi modifié : « 1° Le I est complété par un d et un alinéa ainsi rédigés : « « d)…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001741",
+      "numero": "I-CF1741",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-08",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001751",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : I. – Après l’article 244 quater U du code général des impôts, il est inséré un article 244 quater U bis ainsi rédigé : « Art. 244 quater U bis. – I. – Les…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001751",
+      "numero": "I-CF1751",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-08",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003791",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : I. – Le XLVI de la section II du chapitre IV du titre premier de la première partie du livre premier du code général des impôts est complété par un article 244…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003791",
+      "numero": "I-3791",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-11-02",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003796",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – À l’alinéa 3, substituer au mot : « trois », le mot : « cinq ». II. – En conséquence, après l’alinéa 4, insérer les cinq alinéas suivants : « A bis . – Le…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003796",
+      "numero": "I-3796",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-10-30",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003803",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 37 : I. – À l’alinéa 7, après le mot : « exercice, » insérer les mots : « également diminué du montant des compensations prévues au 1.1. de l’article 78 de la loi…",
+      "sort": "tombe",
+      "travaille_avec": [
+        "France urbaine et Intercommunalités de France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003803",
+      "numero": "I-3803",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-10-19",
+      "article": "ART. 37"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003805",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 34 : I. – Rédiger ainsi l’alinéa 13 : « Par dérogation au 1 de l’article 78 de la loi n° 2009‑1673 du 30 décembre 2009 de finances pour 2010, le montant de la…",
+      "sort": "tombe",
+      "travaille_avec": [
+        "l’Association des petites villes de France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003805",
+      "numero": "I-3805",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-10-19",
+      "article": "ART. 34"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003817",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 7 : I. – Le I de l’article 244 quater U du code général des impôts est complété par un 9 bis ainsi rédigé : « 9 bis . Par dérogation aux modalités de remboursement…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003817",
+      "numero": "I-3817",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 7"
+    }
+  ]
+}

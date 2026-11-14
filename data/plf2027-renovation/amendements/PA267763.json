@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:14+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-renovation/amendements.json (P1, open data Assemblée nationale), 398 amendements lus, 380 sur le sujet. Sujet = mots-clés de config.json (MaPrimeRénov, rénovation énergétique, rénovation des logements, passoires thermiques, programme 174, chèque énergie) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles État B, programme 174. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-renovation"
+  },
+  "depute_id": "PA267763",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000351",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – Le code d’imposition des biens et services est ainsi modifié : 1° Le tableau du second alinéa de l’article L. 213‑246 est complété par une ligne ainsi…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000351",
+      "numero": "I-CF351",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-09",
+      "article": "APRÈS ART. 16"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001633",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 35 : I. – À l’alinéa 3, après le mot : « écologique », insérer les mots : « , les dépenses d’investissement réalisées par les régions pour les lycées dont elles ont…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001633",
+      "numero": "I-CF1633",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-09",
+      "article": "ART. 35"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001146",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Au 2° du I, après la référence : « loi n° 2019‑1479 du 28 décembre 2019 de finances…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001146",
+      "numero": "I-1146",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001156",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 7 : I. – A la fin du VII de l’article 99 de la loi n° 2008‑1425 du 27 décembre 2008 de finances pour 2009, la date : « 31 décembre 2027 » est remplacée par la date…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001156",
+      "numero": "I-1156",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002376",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 7 : I. – Le 1° du 2 du I de l’article 244 quater U du code général des impôts est complété par un h ainsi rédigé : « h) Travaux d’adaptation des logements au…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002376",
+      "numero": "I-2376",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003227",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – Le code d’imposition des biens et services est ainsi modifié : 1° Le tableau du second alinéa de l’article L. 213‑246 est complété par une ligne ainsi…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003227",
+      "numero": "I-3227",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-11-02",
+      "article": "APRÈS ART. 16"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000819",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement rétablit la dotation de l’Agence nationale de l’habitat (Anah) à son niveau de 2026, afin que les travaux de rénovation énergétique réalisés «…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000819",
+      "numero": "II-819",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-22",
+      "date_sort": null,
+      "article": "ETAT B"
+    }
+  ]
+}

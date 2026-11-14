@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-logement/amendements.json (P1, open data Assemblée nationale), 743 amendements lus, 675 sur le sujet. Sujet = mots-clés de config.json (APL, aide personnalisée au logement, aides personnelles au logement, logement social, bailleurs sociaux, prêt à taux zéro, PTZ, programme 109, programme 135, article 78) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 78. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA719272",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000210",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « À la deuxième phrase du II de l’article L. 31‑10‑3 du code de la construction et de l’habitation, le…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000210",
+      "numero": "I-CF210",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-08",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000576",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « « Pour les personnes remplissant les conditions prévues au d , la condition de ressources mentionnée au…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000576",
+      "numero": "I-CF576",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-03",
+      "date_sort": "2026-10-08",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000578",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « « Ce prêt peut venir en complément d’un autre prêt ne portant pas intérêt prévu au présent chapitre pour la…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000578",
+      "numero": "I-CF578",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-03",
+      "date_sort": "2026-10-08",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000579",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – À la fin de l’alinéa 3, substituer au mot : « trois » le mot : « cinq ». « II. – Le I n’est applicable qu’aux sommes venant en déduction de l’impôt dû. »…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000579",
+      "numero": "I-CF579",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-03",
+      "date_sort": "2026-10-08",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000580",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « Par dérogation au deuxième alinéa de l’article L. 31‑10‑2 du même code, les personnes remplissant la…",
+      "sort": "retire",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000580",
+      "numero": "I-CF580",
+      "sort_libelle": "Retiré",
+      "date_depot": "2026-10-03",
+      "date_sort": "2026-10-08",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000170",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « Pour les personnes remplissant les conditions prévues au d , la condition de ressources mentionnée au…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000170",
+      "numero": "I-170",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-10-30",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000172",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « Ce prêt peut venir en complément d’un autre prêt ne portant pas intérêt prévu au présent chapitre pour la…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000172",
+      "numero": "I-172",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-10-30",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000173",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 7 : I. – À la fin de l’alinéa 3, substituer au mot : « trois » le mot : « cinq ». II. – Compléter cet article par l’alinéa suivant : « III. – Le A du I n’est…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000173",
+      "numero": "I-173",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-10-30",
+      "article": "ART. 7"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002180",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Droite républicaine appelle à la suppression de l’Agence nationale de l’habitat (ANAH). Dans ce débat budgétaire, notre groupe défend…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002180",
+      "numero": "II-CF2180",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-23",
+      "article": "ETAT B"
+    }
+  ]
+}

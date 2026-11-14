@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-agriculture/amendements.json (P1, open data Assemblée nationale), 513 amendements lus, 483 sur le sujet. Sujet = mots-clés de config.json (agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 77. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA719890",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000129",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 15 : I. – Aux 1° et au 2° du 2 du I de l’article 73 du code général des impôts, le montant : « 150 000 € » est remplacé par le montant : « 250 000 € ». II. – La…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000129",
+      "numero": "I-129",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000131",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 10 : I. – Le 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « En cas de cession par une société ou un…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000131",
+      "numero": "I-131",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000139",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Article 24 : I. – Compléter l’alinéa 119 par la phrase suivante : « Cette part minimale ne peut être inférieure à 9 % pour les gazoles et à 9,5 % pour les essences. » II. –…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000139",
+      "numero": "I-139",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-11-02",
+      "article": "ART. 24"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001026",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : L’agriculture est un pilier de l’équilibre économique et social des départements et régions d’outre-mer (DROM). Toute diminution ou instabilité des crédits…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001026",
+      "numero": "II-1026",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-27",
+      "date_sort": null,
+      "article": "ETAT B"
+    }
+  ]
+}

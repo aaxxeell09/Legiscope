@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:13+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-agriculture/amendements.json (P1, open data Assemblée nationale), 513 amendements lus, 483 sur le sujet. Sujet = mots-clés de config.json (agricult, agriculteur, filière agricole, filières agricoles, programme 149, article 77, mieux manger) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles 77. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA335054",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001474",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le d) du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque le contribuable devient associé…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001474",
+      "numero": "I-CF1474",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-08",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001476",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 13 : I. – À l’alinéa 58, substituer au taux : « 60 % » le taux : « 70 % ». II. – La perte de recettes pour l’État est compensée à due concurrence par la création…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001476",
+      "numero": "I-CF1476",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-08",
+      "article": "ART. 13"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000035",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 41 : I. – Au titre de l’année 2027, il est institué, par prélèvement sur recettes de l’État, une dotation au profit des collectivités territoriales et des…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000035",
+      "numero": "I-35 (Rect)",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-27",
+      "article": "APRÈS ART. 41"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000789",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 13 : I. – À l’alinéa 58, substituer au taux : « 60 % » le taux : « 70 % ». II. – Compléter cet article par les alinéas suivants : « VI. – Le I n’est applicable…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000789",
+      "numero": "I-789",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-10-30",
+      "article": "ART. 13"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001376",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : I. – Le II de l’article 244 quater L du code général des impôts est ainsi modifié : 1° Au 1, le montant : « 4 500 € » est remplacé par le montant : « 6 000 »…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001376",
+      "numero": "I-1376",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001429",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le d du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque le contribuable devient associé…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001429",
+      "numero": "I-1429",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 10"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000189",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement des députés socialistes et apparentés vise à améliorer l'accessibilité des ménages à une alimentation durable et de qualité par la montée en…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "l’Union nationale des Groupements des Epiceries Sociales et Solidaires"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000189",
+      "numero": "II-189",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-14",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000200",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à financer la mise en place d’un conseil agronomique global et universel à destination de l’ensemble…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000200",
+      "numero": "II-200",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-14",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001076",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à rétablir les postes d’enseignants agricoles supprimés depuis 2019. Alors que 43% des chefs…",
+      "sort": "tombe",
+      "travaille_avec": [
+        "le SNETAP-FSU"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001076",
+      "numero": "II-CF1076",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-16",
+      "date_sort": "2026-10-29",
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000631",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à rétablir les crédits traditionnellement dédiés au Plan Haies afin de garantir une continuité dans la…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000631",
+      "numero": "II-631",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-21",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001155",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli du groupe Socialistes et apparentés vise à financer la mise en place d’un conseil agronomique global et universel à destination de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001155",
+      "numero": "II-1155",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-27",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001157",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli du groupe Socialistes et apparentés vise à allouer 135 millions d’euros à l’action 09 « Planification écologique – Stratégie de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001157",
+      "numero": "II-1157",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-27",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001158",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli du groupe Socialistes et apparentés vise à financer la mise en place d’un conseil agronomique global et universel à destination de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001158",
+      "numero": "II-1158",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-27",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001164",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli du groupe Socialistes et apparentés vise à allouer 135 millions d’euros à l’action 09 « Planification écologique – Stratégie de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001164",
+      "numero": "II-1164",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-27",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002293",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à rétablir le Fonds Avenir Bio à son niveau de 2024, soit 18 millions d’euros. Créé en 2008 et géré par…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002293",
+      "numero": "II-2293",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002294",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à inscrire explicitement en loi de finances pour 2027 une dotation de 5 millions d’euros dédiée à la…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002294",
+      "numero": "II-2294",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002295",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à renforcer les moyens de l’INAO. Près de la moitié des françaises et des français jugent essentiel…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002295",
+      "numero": "II-2295",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002297",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à créer un fonds de garantie pour les exploitations sinistrées. Les exploitations touchées par la…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002297",
+      "numero": "II-2297",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002298",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à créer un fonds d’autonomie et d’adaptation au changement climatique des exploitations agricoles. Le…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002298",
+      "numero": "II-2298",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002300",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à augmenter de 20 millions d’euros les crédits alloués à la modernisation des exploitations agricoles…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002300",
+      "numero": "II-2300",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002302",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés propose de créer un fonds pour financer une aide exceptionnelle aux exploitations maraîchères ayant été…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002302",
+      "numero": "II-2302",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002304",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à allouer 6,5 millions d’euros supplémentaires aux dépenses de personnel de l’action n° 03 du programme…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002304",
+      "numero": "II-2304",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002306",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 77.",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "Régions de France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002306",
+      "numero": "II-2306",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ART. 77"
+    }
+  ]
+}

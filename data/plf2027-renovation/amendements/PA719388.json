@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:14+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-renovation/amendements.json (P1, open data Assemblée nationale), 398 amendements lus, 380 sur le sujet. Sujet = mots-clés de config.json (MaPrimeRénov, rénovation énergétique, rénovation des logements, passoires thermiques, programme 174, chèque énergie) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles État B, programme 174. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-renovation"
+  },
+  "depute_id": "PA719388",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003656",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Le I est ainsi modifié : a) Le premier alinéa est ainsi modifié : – le mot : «…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003656",
+      "numero": "I-3656",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002055",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Face à la flambée des prix à la pompe, protéger les Français qui travaillent, c’est leur donner les moyens de réduire durablement leur facture de carburant…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002055",
+      "numero": "II-2055",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002057",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : La priorité, c’est de protéger les Français qui travaillent. La flambée des prix des carburants de cette année l’a montré : ceux qui n’ont pas d’autre choix…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002057",
+      "numero": "II-2057",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002059",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose d’abonder, au sein de la mission Écologie, développement et mobilité durables, le programme 174 « énergie, climat et après-mines » (à…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002059",
+      "numero": "II-2059",
+      "sort_libelle": "En traitement",
+      "date_depot": "2026-10-30",
+      "date_sort": null,
+      "article": "ETAT B"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:14+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-renovation/amendements.json (P1, open data Assemblée nationale), 398 amendements lus, 380 sur le sujet. Sujet = mots-clés de config.json (MaPrimeRénov, rénovation énergétique, rénovation des logements, passoires thermiques, programme 174, chèque énergie) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles État B, programme 174. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-renovation"
+  },
+  "depute_id": "PA718838",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001608",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – Au premier alinéa du 1 de l’article 279‑0 bis du code général des impôts, le taux : « 10 % » est remplacé par le taux : « 5,5 % ». II. – Le I s’applique…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001608",
+      "numero": "I-1608",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-11-02",
+      "article": "APRÈS ART. 16"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001610",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Au 2° du I, après la référence : « loi n° 2019‑1479 du 28 décembre 2019 de finances…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001610",
+      "numero": "I-1610",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001620",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 16 : I. – Au premier alinéa de l’article L. 213‑247 du code des impositions sur les biens et services, dans sa rédaction résultant de l’ordonnance n° 2026‑671 du 27…",
+      "sort": "rejete",
+      "travaille_avec": [
+        "la fédération départementale de la FFB s’inscrit"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001620",
+      "numero": "I-1620 (Rect)",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-11-02",
+      "article": "APRÈS ART. 16"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001622",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 7 : I. – A la fin du VII de l’article 99 de la loi n° 2008‑1425 du 27 décembre 2008 de finances pour 2009, la date : « 31 décembre 2027 » est remplacée par la date…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001622",
+      "numero": "I-1622",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 7"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:58:14+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : data/raw/plf2027-renovation/amendements.json (P1, open data Assemblée nationale), 398 amendements lus, 380 sur le sujet. Sujet = mots-clés de config.json (MaPrimeRénov, rénovation énergétique, rénovation des logements, passoires thermiques, programme 174, chèque énergie) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles État B, programme 174. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-renovation"
+  },
+  "depute_id": "PA607090",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000355",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 3 : I. – Au c du 1° du IV de l’article 1417 du code général des impôts, la référence : « 81 quater, » sont supprimés. II. – La perte de recettes pour l’État est…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000355",
+      "numero": "I-355",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-08",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 3"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001469",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 16 : I. – Au premier alinéa du 1 de l’article 279‑0 bis du code général des impôts, le taux : « 10 % » est remplacé par le taux : « 5,5 % ». II. – Le I s’applique…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001469",
+      "numero": "I-1469",
+      "sort_libelle": "Non soutenu",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-11-02",
+      "article": "APRÈS ART. 16"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001472",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Au 2° du I, après la référence : « loi n° 2019‑1479 du 28 décembre 2019 de finances…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001472",
+      "numero": "I-1472",
+      "sort_libelle": "Tombé",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002352",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 7 : I. – Le 1° du 2 du I de l’article 244 quater U du code général des impôts est complété par un h ainsi rédigé : « h) Travaux d’adaptation des logements au…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002352",
+      "numero": "I-2352",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-30",
+      "article": "APRÈS ART. 7"
+    }
+  ]
+}
