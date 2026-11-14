@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.638Z",
+    "generated_at": "2026-11-14T16:15:28.474Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -2436,12 +2436,14 @@
   },
   "synthese": {
     "position_probable": "A cosigné l'amendement n° 1603, adopté (« Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Le I est ainsi modifié : a) Le premier alinéa est ainsi modifié : – le mot : «… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 1603 (« Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Le I est ainsi modifié : a) Le premier alinéa est ainsi modifié : – le mot : «… »).",
+    "argument": "Présenter à ce député que la CAPEB a été entendue par les rapporteurs de sa commission le 3 novembre 2026, ce qui constitue un indice plus faible qu'un acte personnel, pour appuyer la position du client contre la baisse des crédits de MaPrimeRénov'.",
     "chiffres_utilises": [
       "1603",
       "4",
       "790",
-      "1"
+      "1",
+      "2026",
+      "3"
     ],
     "mode": "gabarit",
     "modele": null,

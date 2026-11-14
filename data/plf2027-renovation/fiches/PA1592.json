@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.654Z",
+    "generated_at": "2026-11-14T16:16:37.460Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1522,14 +1522,13 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 819, en attente (« ETAT B : Cet amendement rétablit la dotation de l’Agence nationale de l’habitat (Anah) à son niveau de 2026, afin que les travaux de rénovation énergétique réalisés «… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 819 (« ETAT B : Cet amendement rétablit la dotation de l’Agence nationale de l’habitat (Anah) à son niveau de 2026, afin que les travaux de rénovation énergétique réalisés «… »).",
+    "position_probable": "David Habib a cosigné un amendement en attente qui rétablit la dotation de l'Anah à son niveau de 2026, ce qui indique qu'il est probablement contre la baisse des crédits de la mesure.",
+    "argument": "Présenter à ce député l'amendement qu'il a cosigné pour rétablir la dotation de l'Anah à son niveau de 2026, actuellement en attente, afin de soutenir la position de la CAPEB contre la baisse des crédits de la mesure.",
     "chiffres_utilises": [
-      "819",
       "2026"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

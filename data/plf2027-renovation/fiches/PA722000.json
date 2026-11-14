@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.596Z",
+    "generated_at": "2026-11-14T16:13:01.487Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2435,14 +2435,29 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 580, en attente (« ETAT B : Cet amendement vise à renforcer les moyens consacrés à la décarbonation du transport maritime, en abondant de 110 000 000 euros en autorisations d’engagement… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 580 (« ETAT B : Cet amendement vise à renforcer les moyens consacrés à la décarbonation du transport maritime, en abondant de 110 000 000 euros en autorisations d’engagement… »).",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration sur la mesure, bien que son groupe soit favorable.",
+    "argument": "Présenter à ce député que la CAPEB a été entendue par les rapporteurs de sa commission le 3 novembre 2026, ce qui constitue un indice plus faible qu'un acte personnel, pour appuyer la nécessité de maintenir les crédits de la mesure.",
     "chiffres_utilises": [
-      "580",
-      "110000000"
+      "174",
+      "1",
+      "3656",
+      "4",
+      "790",
+      "110000000",
+      "0",
+      "0.83",
+      "0.85",
+      "2026",
+      "10",
+      "26",
+      "28",
+      "29",
+      "11",
+      "3",
+      "56"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

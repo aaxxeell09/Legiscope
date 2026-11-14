@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.614Z",
+    "generated_at": "2026-11-14T16:14:10.301Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1704,20 +1704,14 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1146, tombé (« Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Au 2° du I, après la référence : « loi n° 2019‑1479 du 28 décembre 2019 de finances… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 1146 (« Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Au 2° du I, après la référence : « loi n° 2019‑1479 du 28 décembre 2019 de finances… »).",
+    "position_probable": "Paul Molac a cosigné l'amendement 2376, qui a été adopté, ainsi qu'un amendement visant à rétablir la dotation de l'Anah, actuellement en attente, ce qui indique probablement qu'il est contre la mesure.",
+    "argument": "Présenter à ce député l'amendement 2376, cosigné par lui et adopté, qui complète l'article 244 quater U du code général des impôts pour les travaux d'adaptation des logements, afin de montrer que son action soutient déjà la rénovation énergétique et s'aligne sur l'objectif du client de maintenir les crédits de MaPrimeRénov'.",
     "chiffres_utilises": [
-      "1146",
-      "4",
-      "790",
-      "1",
-      "2",
-      "2019",
-      "1479",
-      "28"
+      "2376",
+      "244"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

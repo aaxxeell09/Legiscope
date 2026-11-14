@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.615Z",
+    "generated_at": "2026-11-14T16:14:17.747Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1814,14 +1814,14 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 19, adopté (« Supprime l'article 35 »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 19 (« Supprime l'article 35 »).",
+    "position_probable": "Colette Capdevielle est probablement contre la mesure, comme en témoigne son cosignature de l'amendement 3460 visant à compléter l'article 35, qui est tombé.",
+    "argument": "Présenter à ce député l'amendement 3460, tombé, qui visait à inclure les dépenses de rénovation énergétique dans l'arrêté de l'article 35, afin de souligner que sa cosignature montre déjà une attention portée au financement de la rénovation énergétique.",
     "chiffres_utilises": [
-      "19",
-      "35"
+      "35",
+      "3460"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

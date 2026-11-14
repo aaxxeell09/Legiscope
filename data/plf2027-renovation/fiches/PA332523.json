@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.624Z",
+    "generated_at": "2026-11-14T16:14:41.458Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2041,10 +2041,11 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 1821, tombé (« Après l'article 7 : I. – A la fin VII de l’article 99 de la loi n° 2008‑1425 du 27 décembre 2008 de finances pour 2009, modifié par l’article 71 de la loi n° 2023‑1322 du 29… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 1821 (« Après l'article 7 : I. – A la fin VII de l’article 99 de la loi n° 2008‑1425 du 27 décembre 2008 de finances pour 2009, modifié par l’article 71 de la loi n° 2023‑1322 du 29… »).",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration sur la mesure, mais son groupe est pour.",
+    "argument": "Présenter à ce député que son amendement sur l'article 71 de la loi n° 2023‑1322 du 29 décembre 2023 a été rejeté, afin de montrer que la réduction des crédits de MaPrimeRénov' ne fait pas l'unanimité au sein de son groupe.",
     "chiffres_utilises": [
-      "1821",
+      "174",
+      "1",
       "7",
       "99",
       "2008",
@@ -2054,10 +2055,26 @@
       "71",
       "2023",
       "1322",
-      "29"
+      "29",
+      "16",
+      "213",
+      "247",
+      "2026",
+      "671",
+      "602",
+      "3",
+      "0",
+      "0.9",
+      "10",
+      "13",
+      "11",
+      "4",
+      "5",
+      "9",
+      "12"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

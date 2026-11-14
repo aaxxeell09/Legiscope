@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.625Z",
+    "generated_at": "2026-11-14T16:14:47.067Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2310,17 +2310,44 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 356, adopté (« Après l'article 3 : I. – Au c du 1° du IV de l’article 1417 du code général des impôts, la référence : « 81 quater , » est supprimée. II. – Le I est applicable à compter de… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 356 (« Après l'article 3 : I. – Au c du 1° du IV de l’article 1417 du code général des impôts, la référence : « 81 quater , » est supprimée. II. – Le I est applicable à compter de… »).",
+    "position_probable": "Virginie Duby-Muller est probablement favorable à la mesure, comme l'indique le classement du cabinet, car elle n'a déposé aucun amendement ni fait de déclaration personnelle sur ce sujet.",
+    "argument": "Présenter à ce député que la fédération départementale de la FFB s’inscrit dans l’exposé des motifs de l’amendement qu’il a cosigné et qui a été rejeté, afin de souligner l’attachement du secteur à la rénovation énergétique.",
     "chiffres_utilises": [
-      "356",
-      "3",
+      "174",
       "1",
+      "3",
       "1417",
-      "81"
+      "81",
+      "16",
+      "279",
+      "0",
+      "10",
+      "5.5",
+      "4",
+      "790",
+      "2",
+      "2019",
+      "1479",
+      "28",
+      "213",
+      "247",
+      "2026",
+      "671",
+      "27",
+      "7",
+      "99",
+      "2008",
+      "1425",
+      "2009",
+      "31",
+      "2027",
+      "11",
+      "0.88",
+      "6",
+      "2030"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.617Z",
+    "generated_at": "2026-11-14T16:14:20.511Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2140,14 +2140,53 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 174, rejeté (« Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « Chapitre I er bis « Impôt de… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 174 (« Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « Chapitre I er bis « Impôt de… »).",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a déposé ni cosigné d'amendement sur la mesure et n'a pas pris la parole, mais son groupe est contre.",
+    "argument": "Présenter à ce député que son groupe a cosigné un amendement adopté visant à maintenir la hausse des aides d'urgence en attendant une politique structurante de rénovation, ce qui montre qu'il défend le maintien des crédits que la mesure réduit.",
     "chiffres_utilises": [
       "174",
-      "4"
+      "1",
+      "4",
+      "52",
+      "100",
+      "300",
+      "2",
+      "275",
+      "75",
+      "16",
+      "278",
+      "2027",
+      "2019",
+      "2023",
+      "1.2",
+      "3",
+      "42",
+      "17",
+      "600000000",
+      "939581954",
+      "20",
+      "69",
+      "1.5",
+      "250",
+      "50",
+      "18",
+      "200",
+      "380",
+      "387",
+      "2024",
+      "82",
+      "124",
+      "6",
+      "0",
+      "2026",
+      "11",
+      "5",
+      "12",
+      "1000000000",
+      "1000000",
+      "9"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

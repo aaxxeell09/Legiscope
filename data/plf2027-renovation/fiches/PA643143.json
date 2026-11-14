@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.617Z",
+    "generated_at": "2026-11-14T16:14:29.337Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2349,15 +2349,14 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 933, tombé (« Article 35 : Compléter l’alinéa 3 par la phrase : « Cet arrêté comprend les dépenses relatives aux réseaux d’eau potable, les dépenses de rénovation énergétique des… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 933 (« Article 35 : Compléter l’alinéa 3 par la phrase : « Cet arrêté comprend les dépenses relatives aux réseaux d’eau potable, les dépenses de rénovation énergétique des… »).",
+    "position_probable": "Christian Baptiste est probablement contre la mesure, comme en témoigne son amendement n° 933, tombé, qui visait à compléter l'article 35 pour inclure les dépenses de rénovation énergétique.",
+    "argument": "Présenter à ce député l'amendement 933, tombé, qui visait à intégrer les dépenses de rénovation énergétique dans l'arrêté de l'article 35, afin de l'encourager à soutenir la CAPEB contre la baisse des crédits de MaPrimeRénov'.",
     "chiffres_utilises": [
-      "933",
       "35",
-      "3"
+      "933"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

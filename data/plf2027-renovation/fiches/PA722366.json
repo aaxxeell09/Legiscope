@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.641Z",
+    "generated_at": "2026-11-14T16:15:31.933Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2664,19 +2664,15 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 342, adopté (« ETAT B : Les montants du chèque énergie n’ont pas été revalorisés depuis 2019. Or de 2019 à 2025, l’indice des prix à la consommation a progressé de 16 %, et… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 342 et de sa déclaration du 21 octobre 2026 en commission : « Le premier amendement concerne le chèque énergie et le second les C2E. À la suite des transferts de financement qui ont eu lieu et des politiques nouvelles qui ont vu le jour, nous demandons que le gouvernement remette des rapports visant à éclairer l’examen des prochains PLF. »",
+    "position_probable": "Jean-Luc Fugit est probablement favorable à la baisse des crédits de MaPrimeRénov', comme l'indique son amendement n° 3656, cosigné et rejeté.",
+    "argument": "Présenter à ce député que la CAPEB a été entendue par les rapporteurs de sa commission le 3 novembre 2026, ce qui constitue un indice plus faible qu'un acte personnel, pour appuyer la défense de la mesure.",
     "chiffres_utilises": [
-      "342",
-      "2019",
-      "2025",
-      "16",
-      "2026-10-21",
-      "21",
-      "2026"
+      "3656",
+      "2026",
+      "3"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

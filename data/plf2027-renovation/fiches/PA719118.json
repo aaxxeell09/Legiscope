@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.589Z",
+    "generated_at": "2026-11-14T16:12:34.448Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1558,10 +1558,11 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 512, non examiné (« Après l'article 7 : I. – A la fin du VII de l’article 99 de la loi n° 2008‑1425 du 27 décembre 2008 de finances pour 2009, la date : « 31 décembre 2027 » est remplacée par la date… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 512 (« Après l'article 7 : I. – A la fin du VII de l’article 99 de la loi n° 2008‑1425 du 27 décembre 2008 de finances pour 2009, la date : « 31 décembre 2027 » est remplacée par la date… »).",
+    "position_probable": "Ses actes ne permettent pas de trancher sa position personnelle sur la mesure, car il n'a ni déposé d'amendement ni fait de déclaration, mais son groupe est favorable à la baisse des crédits.",
+    "argument": "Présenter à ce député l'amendement cosigné qui abonde le programme 174, en attente, pour montrer que sa commission a déjà travaillé sur le financement de la rénovation énergétique.",
     "chiffres_utilises": [
-      "512",
+      "174",
+      "1",
       "7",
       "99",
       "2008",
@@ -1569,10 +1570,19 @@
       "27",
       "2009",
       "31",
-      "2027"
+      "2027",
+      "3656",
+      "4",
+      "790",
+      "0",
+      "0.79",
+      "0.85",
+      "2026",
+      "10",
+      "22"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

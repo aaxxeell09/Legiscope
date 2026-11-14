@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.601Z",
+    "generated_at": "2026-11-14T16:13:20.310Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1740,19 +1740,14 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1469, non examiné (« Après l'article 16 : I. – Au premier alinéa du 1 de l’article 279‑0 bis du code général des impôts, le taux : « 10 % » est remplacé par le taux : « 5,5 % ». II. – Le I s’applique… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 1469 (« Après l'article 16 : I. – Au premier alinéa du 1 de l’article 279‑0 bis du code général des impôts, le taux : « 10 % » est remplacé par le taux : « 5,5 % ». II. – Le I s’applique… »).",
+    "position_probable": "Ses actes vont dans les deux sens, sans trancher sa position sur la mesure.",
+    "argument": "Présenter à ce député l'amendement n° 2352, adopté, qui étend le dispositif aux travaux d'adaptation des logements, afin de montrer que la mesure peut intégrer les besoins concrets des artisans.",
     "chiffres_utilises": [
-      "1469",
-      "16",
-      "1",
-      "279",
-      "0",
-      "10",
-      "5.5"
+      "2",
+      "2352"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

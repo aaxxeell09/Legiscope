@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:33.637Z",
+    "generated_at": "2026-11-14T16:17:17.201Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -159,7 +159,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
       }
     ],
-    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3). 3 contre-argument(s) en gabarit.",
+    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3).",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -4730,66 +4730,185 @@
   },
   "contre_arguments": [
     {
-      "texte": "À l'argument « La rigueur budgétaire est indispensable pour redresser les finances publiques et garantir la pérennité de MaPrimeRénov'. », opposer celui déjà entendu en séance le 17 juin 2026 : « La baisse des crédits prive les territoires et les collectivités des outils financiers nécessaires pour protéger les citoyens ». Citation à reprendre : « Après les coupes incessantes qu’a subies MaPrimeRénov, vous avez encore amputé le fonds Vert et comptez désormais vous attaquer à l’Ademe. Vous privez nos territoires des principaux outils à leur disposition pour nous protéger. »",
+      "texte": "La rigueur budgétaire ne peut justifier de priver les territoires des outils financiers nécessaires pour protéger les citoyens. Les revirements qui ont touché MaPrimeRénov ont eu un impact très négatif sur l'investissement des ménages.",
       "repond_a": "La rigueur budgétaire est indispensable pour redresser les finances publiques et garantir la pérennité de MaPrimeRénov'.",
       "chiffres_utilises": [
-        "2026-06-17",
+        "2026",
+        "10",
+        "14",
+        "6",
         "17",
-        "2026"
+        "16",
+        "2027",
+        "3.6",
+        "5",
+        "1",
+        "4",
+        "28",
+        "174",
+        "107",
+        "100",
+        "139",
+        "35",
+        "16.404",
+        "164",
+        "186",
+        "349",
+        "350",
+        "173",
+        "2025",
+        "392",
+        "711",
+        "933",
+        "1038",
+        "1093",
+        "1603",
+        "1666",
+        "1670",
+        "1745",
+        "1997",
+        "2048",
+        "11.404",
+        "2352",
+        "2376",
+        "2418",
+        "2421",
+        "3460",
+        "3656",
+        "3797",
+        "2",
+        "1000000000"
       ],
-      "mode": "gabarit",
+      "mode": "llm",
       "verifie": true,
       "preuve": {
         "sources": [
           {
-            "label": "Séance du 17 juin 2026",
+            "label": "commission du 14 octobre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627009_compte-rendu"
+          },
+          {
+            "label": "séance publique du 17 juin 2026 (argument du camp du client)",
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+          },
+          {
+            "label": "séance publique du 16 juin 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
         "nature": "deduction"
       }
     },
     {
-      "texte": "À l'argument « La suppression de MaPrimeRénov' est une erreur car elle accompagne la rénovation énergétique et la transition écologique. », opposer celui déjà entendu en séance le 16 juin 2026 : « Les crédits actuels sont insuffisants face aux objectifs climatiques et doivent être augmentés pour intensifier la rénovation ». Citation à reprendre : « Le gouvernement est-il prêt à reprendre notre proposition de loi contre les bouilloires thermiques, à adapter les critères des aides à l’isolation de MaPrimeRénov' et à lui consacrer les moyens nécessaires ? »",
+      "texte": "La suppression de MaPrimeRénov' priverait les territoires des outils financiers nécessaires pour protéger les citoyens, ce qui est inacceptable face à la crise climatique. Les revirements subis par ce dispositif ont déjà eu un impact très négatif sur l'investissement des ménages.",
       "repond_a": "La suppression de MaPrimeRénov' est une erreur car elle accompagne la rénovation énergétique et la transition écologique.",
       "chiffres_utilises": [
-        "2026-06-16",
+        "2026",
+        "11",
+        "4",
+        "6",
+        "17",
         "16",
-        "2026"
+        "2027",
+        "10",
+        "14",
+        "3.6",
+        "5",
+        "1",
+        "28",
+        "174",
+        "107",
+        "100",
+        "139",
+        "35",
+        "16.404",
+        "164",
+        "186",
+        "349",
+        "350",
+        "173",
+        "2025",
+        "392",
+        "711",
+        "933",
+        "1038",
+        "1093",
+        "1603",
+        "1666",
+        "1670",
+        "1745",
+        "1997",
+        "2048",
+        "11.404",
+        "2352",
+        "2376",
+        "2418",
+        "2421",
+        "3460",
+        "3656",
+        "3797",
+        "1000000000"
       ],
-      "mode": "gabarit",
+      "mode": "llm",
       "verifie": true,
       "preuve": {
         "sources": [
           {
-            "label": "Séance du 16 juin 2026",
+            "label": "séance publique du 4 novembre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+          },
+          {
+            "label": "séance publique du 17 juin 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+          },
+          {
+            "label": "séance publique du 16 juin 2026 (argument du camp du client)",
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
         "nature": "deduction"
       }
     },
     {
-      "texte": "À l'argument « La prorogation de l'exonération est nécessaire car le dispositif fonctionne bien et met du temps à se mettre en place. », opposer celui déjà entendu en commission le 14 octobre 2026 : « La réduction des crédits est un renoncement inacceptable à la transition écologique en pleine crise climatique ». Citation à reprendre : « Avec ce PLF pour 2027, et après un été caniculaire que certains de nos concitoyens ont vécu durement dans leur chair, la rénovation énergétique est sous-financée, à rebours du réchauffement climatique en cours. »",
+      "texte": "La baisse des crédits prive les territoires des outils financiers nécessaires pour protéger les citoyens, ce qui contredit l'idée que le dispositif fonctionne bien. Le montant de MaPrimeRénov' doit passer de 3,6 à 5 milliards d'euros pour stabiliser les critères et soutenir l'activité.",
       "repond_a": "La prorogation de l'exonération est nécessaire car le dispositif fonctionne bien et met du temps à se mettre en place.",
       "chiffres_utilises": [
-        "2027",
-        "2026-10-14",
-        "14",
-        "2026"
+        "3.6",
+        "5",
+        "1000000000"
       ],
-      "mode": "gabarit",
+      "mode": "llm",
       "verifie": true,
       "preuve": {
         "sources": [
           {
-            "label": "Commission du 14 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627009_compte-rendu"
+            "label": "commission du 7 octobre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          },
+          {
+            "label": "séance publique du 17 juin 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+          },
+          {
+            "label": "séance publique du 16 juin 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
         "nature": "deduction"
       }
     }

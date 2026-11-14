@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.595Z",
+    "generated_at": "2026-11-14T16:12:54.438Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1549,16 +1549,14 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 3656, rejeté (« Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Le I est ainsi modifié : a) Le premier alinéa est ainsi modifié : – le mot : «… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 3656 (« Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Le I est ainsi modifié : a) Le premier alinéa est ainsi modifié : – le mot : «… »).",
+    "position_probable": "Corinne Vignon a cosigné l'amendement 3656, rejeté, et d'autres amendements en attente sur le programme 174, ce qui indique probablement une position favorable à la mesure.",
+    "argument": "Présenter à ce député l'amendement 3656 qu'il a cosigné et qui a été rejeté, pour montrer que sa position sur la mesure est déjà connue et qu'il reste un interlocuteur à convaincre.",
     "chiffres_utilises": [
-      "3656",
-      "4",
-      "790",
-      "1"
+      "174",
+      "3656"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.583Z",
+    "generated_at": "2026-11-14T16:12:23.495Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -39,7 +39,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2485,20 +2485,16 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 351, rejeté (« Après l'article 16 : I. – Le code d’imposition des biens et services est ainsi modifié : 1° Le tableau du second alinéa de l’article L. 213‑246 est complété par une ligne ainsi… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 351 et de sa déclaration du 16 octobre 2026 en séance : « L’argent sera ainsi thésaurisé, donc inutile des années durant, alors qu’il pourrait servir à relancer la dynamique d’investissement dans le logement. D’autre part, permettre à quelqu’un qui a acquis sa résidence principale d’utiliser ces 100 000 euros pour réaliser des travaux et mettre son bien aux normes encourage aussi la rénovation énergétique. Enfin, je le répète : il ne s’agit pas d’opposer les gens, les univers, les milieux. »",
+    "position_probable": "Ses actes vont dans les deux sens, comme le montre l'amendement 2376 adopté et l'amendement cosigné rejeté visant à rétablir la dotation de l'Anah, ce qui rend sa position personnelle sur la mesure incertaine.",
+    "argument": "Présenter à ce député l'audition de la CAPEB par les rapporteurs de sa commission le 3 novembre 2026, car elle a déposé l'amendement 2376, adopté, qui soutient la rénovation énergétique.",
     "chiffres_utilises": [
-      "351",
-      "16",
-      "1",
-      "213",
-      "246",
-      "2026-10-16",
-      "100000",
-      "2026"
+      "2",
+      "2376",
+      "2026",
+      "3"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

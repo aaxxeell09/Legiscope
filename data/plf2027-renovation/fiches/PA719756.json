@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.632Z",
+    "generated_at": "2026-11-14T16:15:04.041Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1698,18 +1698,14 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 2276, adopté (« Après l'article 4 : I. – À la fin du III de l’article 790 A bis du code général des impôts, la date : « 31 décembre 2026 » est remplacée par la date : « 31 décembre 2030 ». II. –… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 2276 (« Après l'article 4 : I. – À la fin du III de l’article 790 A bis du code général des impôts, la date : « 31 décembre 2026 » est remplacée par la date : « 31 décembre 2030 ». II. –… »).",
+    "position_probable": "Christine Le Nabour a cosigné un amendement adopté qui prolonge la date limite du dispositif fiscal jusqu'au 31 décembre 2030, ce qui indique qu'elle est probablement favorable à la mesure.",
+    "argument": "Présenter à ce député l'amendement qu'il a cosigné et qui a été adopté, car il montre qu'il défend la prolongation des dispositifs fiscaux jusqu'au 31 décembre 2030, ce qui s'oppose à la baisse des crédits de MaPrimeRénov'.",
     "chiffres_utilises": [
-      "2276",
-      "4",
-      "790",
       "31",
-      "2026",
       "2030"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

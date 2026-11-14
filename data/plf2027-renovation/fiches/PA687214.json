@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.658Z",
+    "generated_at": "2026-11-14T16:16:49.578Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1695,15 +1695,34 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 631, tombé (« Article 35 : I. – À l’alinéa 3, après le mot : « écologique », insérer les mots : « , les dépenses d’investissement réalisées par les régions pour les lycées dont elles ont… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 631 (« Article 35 : I. – À l’alinéa 3, après le mot : « écologique », insérer les mots : « , les dépenses d’investissement réalisées par les régions pour les lycées dont elles ont… »).",
+    "position_probable": "Ses actes ne permettent pas de trancher sa position personnelle sur la mesure, car il a déposé un amendement supprimant les crédits de l'ADEME en attente et cosigné un amendement adopté portant sur une date limite, sans déclaration publique connue.",
+    "argument": "Présenter à ce député l'amendement qu'il a déposé pour supprimer 1 milliard d'euros de crédits de l'ADEME, actuellement en attente, afin de soutenir la réduction des crédits de MaPrimeRénov' qu'il défend.",
     "chiffres_utilises": [
-      "631",
+      "174",
+      "1",
       "35",
-      "3"
+      "3",
+      "7",
+      "99",
+      "2008",
+      "1425",
+      "27",
+      "2009",
+      "31",
+      "2027",
+      "4",
+      "790",
+      "2026",
+      "2030",
+      "0",
+      "11",
+      "5",
+      "6",
+      "12",
+      "1000000000"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

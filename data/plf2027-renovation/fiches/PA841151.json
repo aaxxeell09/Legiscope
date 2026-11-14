@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.651Z",
+    "generated_at": "2026-11-14T16:16:30.194Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1568,17 +1568,37 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 355, tombé (« Après l'article 3 : I. – Au c du 1° du IV de l’article 1417 du code général des impôts, la référence : « 81 quater, » sont supprimés. II. – La perte de recettes pour l’État est… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 355 (« Après l'article 3 : I. – Au c du 1° du IV de l’article 1417 du code général des impôts, la référence : « 81 quater, » sont supprimés. II. – La perte de recettes pour l’État est… »).",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration sur la mesure, et son groupe est favorable à la baisse des crédits.",
+    "argument": "Présenter à ce député que les organisations entendues par les rapporteurs de sa commission n'ont pas été reçues par lui-même, ce qui constitue un indice plus faible qu'un acte personnel pour appuyer la position de CAPEB contre la baisse des crédits de MaPrimeRénov'.",
     "chiffres_utilises": [
-      "355",
-      "3",
+      "174",
       "1",
+      "3",
       "1417",
-      "81"
+      "81",
+      "7",
+      "99",
+      "2008",
+      "1425",
+      "27",
+      "2009",
+      "31",
+      "2027",
+      "35",
+      "71",
+      "2023",
+      "1322",
+      "29",
+      "16",
+      "213",
+      "247",
+      "2026",
+      "671",
+      "0",
+      "10"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.589Z",
+    "generated_at": "2026-11-14T16:12:34.076Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1668,14 +1668,22 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 819, en attente (« ETAT B : Cet amendement rétablit la dotation de l’Agence nationale de l’habitat (Anah) à son niveau de 2026, afin que les travaux de rénovation énergétique réalisés «… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 819 (« ETAT B : Cet amendement rétablit la dotation de l’Agence nationale de l’habitat (Anah) à son niveau de 2026, afin que les travaux de rénovation énergétique réalisés «… »).",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a déposé ni cosigné d'amendement et n'a pas pris la parole, mais son groupe est pour la mesure.",
+    "argument": "Présenter à ce député l'amendement qu'il a cosigné pour rétablir la dotation de l'Anah à son niveau de 2026, actuellement en attente, afin de montrer que sa position sur la mesure est favorable à la réduction des crédits de MaPrimeRénov' et que le client CAPEB peut s'appuyer sur cet acte pour le convaincre de soutenir la baisse.",
     "chiffres_utilises": [
-      "819",
-      "2026"
+      "174",
+      "1",
+      "2026",
+      "0",
+      "0.71",
+      "0.85",
+      "11",
+      "5",
+      "6",
+      "12"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

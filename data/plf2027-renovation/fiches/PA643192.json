@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.621Z",
+    "generated_at": "2026-11-14T16:14:29.629Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2957,15 +2957,46 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 55, adopté (« ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Cet amendement du groupe Socialistes et apparentés vise à renforcer les moyens alloués à l’action 10 « Prévention des risques naturels et hydrauliques » du… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 55 (« ETAT B - RÉPARTITION DES CRÉDITS POUR 2027, PAR MISSION ET PROGRAMME, AU TITRE DU BUDGET GÉNÉRAL : Cet amendement du groupe Socialistes et apparentés vise à renforcer les moyens alloués à l’action 10 « Prévention des risques naturels et hydrauliques » du… »).",
+    "position_probable": "Chantal Jourdan est probablement contre la mesure, comme en témoigne son cosignature d'un amendement visant à rétablir les crédits de MaPrimeRénov' qui a été rejeté.",
+    "argument": "Présenter à ce député l'amendement qu'elle a cosigné et qui a été adopté pour rétablir l'enveloppe budgétaire consacrée à la prime au rétrofit, afin de souligner son attachement au maintien des crédits de la rénovation énergétique.",
     "chiffres_utilises": [
-      "55",
+      "174",
+      "1",
+      "35",
+      "2026",
+      "3.6",
+      "120000",
+      "150000",
       "2027",
-      "10"
+      "200",
+      "10",
+      "17",
+      "15",
+      "181",
+      "330100000",
+      "16",
+      "213",
+      "247",
+      "671",
+      "27",
+      "246",
+      "3460",
+      "3",
+      "100",
+      "1.45",
+      "2025",
+      "2",
+      "500000",
+      "0",
+      "20",
+      "21",
+      "22",
+      "28",
+      "1000000",
+      "1000000000"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

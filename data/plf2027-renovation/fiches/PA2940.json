@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.608Z",
+    "generated_at": "2026-11-14T16:13:50.465Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2735,14 +2735,52 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 174, rejeté (« Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « Chapitre I er bis « Impôt de… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 174 (« Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « Chapitre I er bis « Impôt de… »).",
+    "position_probable": "Dominique Voynet est probablement contre la mesure, comme l'indique son cosignature d'un amendement visant à rétablir les crédits de rénovation énergétique, qui a été rejeté.",
+    "argument": "Présenter à ce député le fait qu'il a cosigné un amendement visant à rétablir les crédits alloués à la rénovation des logements du parc social, qui a été adopté, car cela montre son attachement au financement de la rénovation énergétique.",
     "chiffres_utilises": [
       "174",
-      "4"
+      "1",
+      "4",
+      "52",
+      "100",
+      "300",
+      "2",
+      "275",
+      "75",
+      "16",
+      "278",
+      "2027",
+      "2019",
+      "2023",
+      "1.2",
+      "3",
+      "42",
+      "17",
+      "600000000",
+      "939581954",
+      "20",
+      "69",
+      "1.5",
+      "250",
+      "50",
+      "18",
+      "200",
+      "380",
+      "387",
+      "2024",
+      "82",
+      "124",
+      "6",
+      "0",
+      "2026",
+      "11",
+      "2030",
+      "1000000000",
+      "1000000",
+      "9"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

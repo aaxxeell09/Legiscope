@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.622Z",
+    "generated_at": "2026-11-14T16:14:38.722Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2389,11 +2389,24 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés.",
-    "argument": "Présenter à ce député la position du client (CAPEB) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Interprofession de la filière des fruits et légumes frais (Interfel), Chambre d’agriculture, Association Générale des Producteurs de Blé et autres céréales (AGPB)) : indice plus faible qu'un acte personnel.",
-    "chiffres_utilises": [],
-    "mode": "gabarit",
-    "modele": null,
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, mais son groupe est pour la mesure.",
+    "argument": "Présenter à ce député le fait que la CAPEB a été entendue par les rapporteurs de sa commission le 3 novembre 2026, car ce rôle de membre constitue un indice plus faible qu'un acte personnel pour justifier un premier contact.",
+    "chiffres_utilises": [
+      "174",
+      "1",
+      "0",
+      "0.87",
+      "2026",
+      "10",
+      "26",
+      "28",
+      "29",
+      "11",
+      "3",
+      "56"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

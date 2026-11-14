@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.602Z",
+    "generated_at": "2026-11-14T16:13:23.911Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2446,19 +2446,37 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 967, non examiné (« Après l'article 16 : I. – Au premier alinéa de l’article L. 213‑247 du code des impositions sur les biens et services, dans sa rédaction résultant de l’ordonnance n° 2026‑671 du 27… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 967 (« Après l'article 16 : I. – Au premier alinéa de l’article L. 213‑247 du code des impositions sur les biens et services, dans sa rédaction résultant de l’ordonnance n° 2026‑671 du 27… »).",
+    "position_probable": "Sa position personnelle n'est pas connue, car ses amendements portent sur des articles fiscaux et budgétaires sans lien direct avec la baisse des crédits de MaPrimeRénov', et son groupe Démocratie Écologie et Modération est favorable à la mesure.",
+    "argument": "Présenter à ce député l'audition de la CAPEB par les rapporteurs de sa commission le 3 novembre 2026, car il a cosigné l'amendement n° 3797 sur la rénovation énergétique des bâtiments publics, tombé, ce qui montre son intérêt pour le sujet.",
     "chiffres_utilises": [
-      "967",
+      "174",
+      "1",
+      "15",
+      "244",
       "16",
       "213",
       "247",
       "2026",
       "671",
-      "27"
+      "27",
+      "3797",
+      "35",
+      "3",
+      "7",
+      "9",
+      "4",
+      "977",
+      "0",
+      "10",
+      "26",
+      "28",
+      "29",
+      "11",
+      "56",
+      "2"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.660Z",
+    "generated_at": "2026-11-14T16:16:53.804Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2023,17 +2023,15 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1341, tombé (« Après l'article 4 : I. – À la fin du III de l’article 790 A bis du code général des impôts, l’année : « 2026 » est remplacée par l’année : « 2030 ». II. – La perte de recettes… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 1341 (« Après l'article 4 : I. – À la fin du III de l’article 790 A bis du code général des impôts, l’année : « 2026 » est remplacée par l’année : « 2030 ». II. – La perte de recettes… »).",
+    "position_probable": "Félicie Gérard a cosigné un amendement qui remplace la date du 31 décembre 2026 par celle du 31 décembre 2030, amendement qui a été adopté, ce qui indique qu'elle est probablement contre la baisse des crédits de MaPrimeRénov'.",
+    "argument": "Présenter à ce député que le groupe HOR, dont elle est membre, soutient la baisse des crédits de MaPrimeRénov', ce qui contraste avec les amendements qu'elle a cosignés pour prolonger le dispositif jusqu'en 2030, dont l'un a été adopté et l'autre est tombé.",
     "chiffres_utilises": [
-      "1341",
-      "4",
-      "790",
       "2026",
-      "2030"
+      "2030",
+      "31"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

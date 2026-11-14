@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.591Z",
+    "generated_at": "2026-11-14T16:12:42.689Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2420,15 +2420,16 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 2048, tombé (« Article 35 : À l’alinéa 3, après le mot : « voirie », insérer les mots : « ainsi que les dépenses relatives aux ouvrages de protection contre les risques naturels, aux… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 2048 (« Article 35 : À l’alinéa 3, après le mot : « voirie », insérer les mots : « ainsi que les dépenses relatives aux ouvrages de protection contre les risques naturels, aux… »).",
+    "position_probable": "Ses actes ne permettent pas de trancher sa position personnelle sur la mesure, car il a cosigné l'amendement 392 tombé et l'amendement 2048 tombé, tandis que son groupe soutient la mesure.",
+    "argument": "Présenter à ce député que la Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb) a été entendue par les rapporteurs de sa commission le 28 octobre 2026, ce qui constitue un indice plus faible qu’un acte personnel, afin de l’alerter sur l’impact de la baisse des crédits de MaPrimeRénov' sur son secteur.",
     "chiffres_utilises": [
+      "392",
       "2048",
-      "35",
-      "3"
+      "2026",
+      "28"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

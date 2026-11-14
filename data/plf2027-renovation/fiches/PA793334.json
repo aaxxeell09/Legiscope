@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.643Z",
+    "generated_at": "2026-11-14T16:16:04.333Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1731,17 +1731,28 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 487, non examiné (« Article 7 : I. – À la première phrase de l’alinéa 11, substituer au taux : « 2,5 % », le taux : « 3,5 % ». II. – À la première phrase du même alinéa, supprimer les mots… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 487 (« Article 7 : I. – À la première phrase de l’alinéa 11, substituer au taux : « 2,5 % », le taux : « 3,5 % ». II. – À la première phrase du même alinéa, supprimer les mots… »).",
+    "position_probable": "Ses actes ne permettent pas de trancher sa position personnelle sur la mesure, car il n'a ni déposé d'amendement ni fait de déclaration, mais son groupe est pour.",
+    "argument": "Présenter à ce député l'amendement 107, en attente, qui modifie le Code de la construction et de l'habitation, pour lui montrer que son groupe soutient la baisse des crédits de MaPrimeRénov' et que son action sur ce texte va à l'encontre des intérêts de la CAPEB.",
     "chiffres_utilises": [
-      "487",
+      "174",
+      "1",
       "7",
       "11",
       "2.5",
-      "3.5"
+      "3.5",
+      "3",
+      "107",
+      "78",
+      "4",
+      "0",
+      "0.98",
+      "2026",
+      "5",
+      "6",
+      "12"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

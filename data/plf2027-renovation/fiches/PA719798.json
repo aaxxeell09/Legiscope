@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.634Z",
+    "generated_at": "2026-11-14T16:15:08.208Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2084,19 +2084,16 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 794, rejeté (« Article 5 : I. – Après l’alinéa 4, insérer les quatre alinéas suivants : « c) Le 2° du I est ainsi modifié : « – à la fin de la première phrase du a , les mots : « à son… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 794 et de sa déclaration du 8 octobre 2026 en commission : « L’article 5 restreint le champ des activités éligibles au réemploi, excluant notamment les investissements immobiliers. Le présent amendement rétablit la définition antérieure de ces activités afin que des projets de construction, de rénovation énergétique ou de réhabilitation, notamment de bâtiments destinés à accueillir des établissements médicaux ou scolaires, puissent de nouveau être financés dans ce cadre. »",
+    "position_probable": "Daniel Labaronne est probablement favorable à la mesure, comme en témoigne son amendement n° 1603, cosigné et adopté, ainsi que sa déclaration en commission le 8 octobre 2026.",
+    "argument": "Présenter à ce député l'amendement 1603, cosigné par lui et adopté, qui modifie l'article 790 A bis du code général des impôts, afin de l'alerter sur l'impact de cette mesure sur les crédits de rénovation énergétique.",
     "chiffres_utilises": [
-      "794",
-      "5",
-      "4",
-      "2",
-      "2026-10-08",
+      "1603",
+      "2026",
       "8",
-      "2026"
+      "790"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

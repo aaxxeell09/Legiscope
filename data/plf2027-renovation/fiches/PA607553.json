@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.612Z",
+    "generated_at": "2026-11-14T16:14:07.580Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2783,14 +2783,49 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 19, adopté (« Supprime l'article 35 »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 19 (« Supprime l'article 35 »).",
+    "position_probable": "Dominique Potier est probablement contre la mesure, comme en témoigne son cosignature de l'amendement 3460, tombé, qui visait à intégrer les dépenses de rénovation énergétique dans l'arrêté de l'article 35.",
+    "argument": "Présenter à ce député l'amendement cosigné qui vise à majorer les crédits du chèque énergie, actuellement en attente, pour souligner que sa position contre la baisse des crédits de MaPrimeRénov' s'inscrit dans une défense cohérente des aides à la rénovation énergétique.",
     "chiffres_utilises": [
-      "19",
-      "35"
+      "35",
+      "3460",
+      "174",
+      "1",
+      "16",
+      "278",
+      "0",
+      "2026",
+      "3.6",
+      "120000",
+      "150000",
+      "2027",
+      "213",
+      "247",
+      "671",
+      "27",
+      "7",
+      "2",
+      "244",
+      "246",
+      "3",
+      "200",
+      "10",
+      "100",
+      "73",
+      "1.45",
+      "2025",
+      "330100000",
+      "500000",
+      "26",
+      "28",
+      "29",
+      "11",
+      "56",
+      "1000000",
+      "5",
+      "1000000000"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

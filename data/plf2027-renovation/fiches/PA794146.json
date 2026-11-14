@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.604Z",
+    "generated_at": "2026-11-14T16:13:28.749Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -39,7 +39,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -2894,18 +2894,14 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 2487, rejeté (« Supprime l'article 20 »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 2487 et de sa déclaration du 21 octobre 2026 en commission : « La suppression de la taxe d’habitation ayant mis fin à l’automaticité du chèque énergie, le nombre de ses bénéficiaires a reculé, alors même que la précarité énergétique augmente. Si nous voulons toucher un public plus large, nous souhaitons également – c’est l’objet de l’amendement II-CF736 – revaloriser le montant perçu par les bénéficiaires, ce qui n’a pas été fait depuis 2019. »",
+    "position_probable": "Julie Laernoes est probablement contre la baisse des crédits de MaPrimeRénov', comme l'indique sa déclaration en séance le 17 juin 2026 où elle dénonce les coupes incessantes subies par ce dispositif.",
+    "argument": "Présenter à ce député la citation du 17 juin 2026 en séance où elle dénonce les coupes subies par MaPrimeRénov, car elle a cosigné un amendement adopté visant à maintenir les aides d'urgence en attendant une politique structurante de rénovation performante.",
     "chiffres_utilises": [
-      "2487",
-      "20",
-      "2026-10-21",
-      "2019",
-      "21",
+      "17",
       "2026"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:10:31.627Z",
+    "generated_at": "2026-11-14T16:14:51.406Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
@@ -1734,23 +1734,13 @@
     "comptes_rendus_lus": 90
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 1603, adopté (« Après l'article 4 : I. – L’article 790 A bis du code général des impôts est ainsi modifié : 1° Le I est ainsi modifié : a) Le premier alinéa est ainsi modifié : – le mot : «… »).",
-    "argument": "Présenter à ce député la position du client (CAPEB) en partant de son amendement n° 1603 et de sa déclaration du 21 octobre 2026 en commission : « Nous venons de cramer 12 milliards d’euros en crédits supplémentaires, ce qui représenterait encore davantage de charges d’intérêt. Je vous propose de réaliser une économie de 800 millions d’euros en supprimant le chèque énergie, mais je suppose que cette mesure sera, cette année encore, refusée parce que vous ne voulez pas faire d’économies. »",
+    "position_probable": "Guillaume Kasbarian est probablement favorable à la mesure, comme l'indique son amendement n° 1603 qui a été adopté.",
+    "argument": "Présenter à ce député que son amendement n° 1603 a été adopté, ce qui montre qu'il défend des ajustements budgétaires précis, pour lui proposer de soutenir la baisse des crédits de MaPrimeRénov' afin de réduire la dépense publique.",
     "chiffres_utilises": [
-      "1603",
-      "4",
-      "790",
-      "1",
-      "2026-10-21",
-      "12",
-      "800",
-      "1000000000",
-      "1000000",
-      "21",
-      "2026"
+      "1603"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }
