@@ -37,6 +37,8 @@ Version 1, 14 novembre 2026, 13 h 20. Écrite à partir de `rendu-final.md`, de 
 
 > Nous sommes le 19 novembre 2025, la veille du vote.
 
+**[ÉCRAN]** : la date dite est celle affichée après « vu au ». Si P0 la passe au 18 novembre, on dit « le 18 novembre 2025 » (variante L).
+
 La main montre le bandeau du Verdict. **[ÉCRAN]** : situation, tendance, confiance.
 
 > Verdict proposé : défavorable, en dégradation. Confiance élevée sur les groupes. Et une inconnue, affichée : le vote de LFI.
@@ -136,9 +138,9 @@ Les phrases du script ne contiennent que des éléments de `rendu-final.md` (sec
 | Amendement de suppression du RN | `rendu-final.md` section 6, amendement n° 806, URL réelle | Ligne présente dans « Ce qui marche », « pourquoi » ouvre |
 | Compromis du gouvernement sur le mode de paiement | `rendu-final.md` section 6 | Ligne présente dans « Ce qui coince » et dans « Ce qui a fait bouger le verdict » |
 | Ménages modestes ; environ 500 millions d'euros | `rendu-final.md` section 6 | Arguments réellement extraits par A2, sinon variante B |
-| 208 voix contre 87, RN seul groupe contre | `rendu-final.md` section 6, source LCP : https://lcp.fr/actualites/budget-2026-les-deputes-approuvent-la-taxe-de-deux-euros-sur-les-petits-colis-417170 | Dit à l'oral, pas à l'écran |
+| 208 voix contre 87, RN seul groupe contre | `rendu-final.md` section 6, source LCP : https://lcp.fr/actualites/budget-2026-les-deputes-approuvent-la-taxe-de-deux-euros-sur-les-petits-colis-417170 ; le décompte 208 contre 87 est retrouvé par P2 dans l'open data (scrutin VTANR5L17V3999) | Dit à l'oral, pas à l'écran (variante L) |
 | Sénat : de 2 à 5 euros | `rendu-final.md` section 6, source KPMG : https://kpmg.com/av/fr/avocats/eclairages/2025/12/plf-2026-mesures-adoptees-au-senat-en-1e-lecture.html | Dit à l'oral, pas à l'écran |
-| Première partie du budget 2027 rejetée le 4 novembre | `PLAN.md` annexe B (scrutin VTANR5L17V9759) | Événement présent dans Nouveautés ou Verdict du dossier vivant |
+| Première partie du budget 2027 rejetée le 4 novembre | `PLAN.md` annexe B (scrutin VTANR5L17V9759) ; confirmé par P1 et P2 dans l'open data | Événement présent dans Nouveautés ou Verdict du dossier vivant |
 | « La suite se joue au Sénat, puis en nouvelle lecture » | `PLAN.md` sections 1 et 2 ; dates non vérifiées (section 11) | Bloc Suite de P2 ; ne citer aucune date qui n'est pas à l'écran |
 
 Valeurs affichées par les fixtures (jeu de repli, **députés et numéros fictifs**, sauf le n° 806) et emplacements pour les données réelles :
@@ -160,7 +162,9 @@ Le score ne se dit pas à l'oral. Raison : il n'est pas connu avant 15 h 15, et 
 
 ## Variantes
 
-`status/P0.md` ne contient pas encore la décision de 13 h 35. Chaque cas prévu a sa variante. À 13 h 35, on barre celles qui ne s'appliquent pas.
+`status/P0.md` ne contient pas encore la décision de 13 h 35. Chaque cas prévu a sa variante. Quand la décision tombe, on barre celles qui ne s'appliquent pas.
+
+État lu dans `status/` au moment d'écrire (P1, P2, P8) : les clés Hémicycle et Featherless ne sont pas encore posées, Orcet n'est pas testé, les avis du rapporteur et du gouvernement sont absents de l'open data. Tant que cela dure, les variantes A, D et G s'appliquent.
 
 ### A. Orcet absent (pas de prédiction sur les amendements sans scrutin, ou service indisponible)
 
@@ -262,6 +266,14 @@ Risque du plan : verdict mécanique contre-intuitif, ajustement par P3 avant 15 
 
 - Le script ne nomme pas le client du dossier vivant. Si le jury demande : on lit l'en-tête. On précise que c'est un client d'exemple, choisi parmi les organisations déclarées à la HATVP sur le sujet.
 
+### L. Date de référence du dossier rejoué (à trancher par P0)
+
+Relevé par P2 (`status/P2.md`) : dans l'open data, le vote de l'article 22 (208 contre 87, scrutin VTANR5L17V3999) et le sort de l'amendement n° 806 sont datés du 19 novembre 2025 (séance du 19, vote dans la nuit). Avec la date de référence actuelle (19 novembre), le vote lui-même peut entrer dans les données du dossier rejoué.
+
+- Si P0 passe la date au 18 novembre 2025 : on dit « Nous sommes le 18 novembre 2025, la veille du vote. » Rien d'autre ne change.
+- Si la date reste au 19 novembre : contrôle obligatoire à 15 h 15. Ni le scrutin de l'article 22 ni le sort du n° 806 ne doivent être à l'écran (Verdict, Nouveautés, Base, fiche du député). S'ils y sont, la chute est déjà affichée et « ce qui marche » est faux : on le signale à P0 et on ne monte pas sur scène ainsi.
+- Avis de X1 : le 18 novembre est le choix le plus sûr pour la démo. La décision est à P0.
+
 ## Coupes si le chronomètre dépasse
 
 Dans cet ordre, chacune gagne environ dix secondes :
@@ -282,6 +294,7 @@ Repère : la chute commence à 2:06 et il reste 42 secondes après elle. Si le c
 - « C'est fini » après un vote de l'Assemblée : il reste le Sénat et la nouvelle lecture.
 - « Rejeté » pour un amendement retiré, tombé, non soutenu ou irrecevable. On lit le sort affiché.
 - « Influençable », « retournable ». On dit « sur qui agir encore », et pourquoi.
+- « La courbe annonce une censure. » On n'ouvre pas le panneau « Tendance » du Verdict pendant la démo. Mesure de P2 : la courbe ne décroche pas de façon fiable avant les censures. Elle sert de contexte, jamais d'alerte.
 - Une phrase sur ce qu'Atlas ne fait pas. On parle de ce que nous faisons. Si `demo/terrain.md` contient une réponse de l'équipe Hémicycle, on peut la citer comme telle : « vous nous avez dit ce matin que ».
 - Si `demo/terrain.md` ou P1 contredit la phrase « ce que l'API ne structure pas », on la remplace par :
 
