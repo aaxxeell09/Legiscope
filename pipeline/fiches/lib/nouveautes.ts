@@ -171,9 +171,14 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
 
   // Amendements « travaillés avec » le client (fichiers A3) : importance 3 à leur dépôt et à leur sort.
   const avecClient = new Set<string>();
+  // Amendements retenus par A3 (filtre sur le dispositif et l'exposé complets, que texte.json ne donne pas).
+  const retenusA3 = new Set<string>();
   for (const pa of candidats(ctx)) {
     const am = lireKind(root, dossier.id, "amendements", pa);
-    for (const a of am?.amendements ?? []) if (a.travaille_avec.some((o) => o.toLowerCase().includes(dossier.client.toLowerCase().split(" ")[0]))) avecClient.add(a.id);
+    for (const a of am?.amendements ?? []) {
+      retenusA3.add(a.id);
+      if (a.travaille_avec.some((o) => o.toLowerCase().includes(dossier.client.toLowerCase().split(" ")[0]))) avecClient.add(a.id);
+    }
   }
 
   // Scrutins bruts liés au sujet (P1).
@@ -208,8 +213,16 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   const dateModification = (numero: string): string | null =>
     ctx.etat?.mesure.modifications.find((m) => numerosDuTitre(`${m.par} ${m.quoi}`).includes(numero))?.date ?? null;
   const article = dossier.mesure.article;
-  const supprimeLaMesure = (a: AmendementTexte) =>
-    /supprim/i.test(a.resume) && (new RegExp(`article\\s+${article}(?!\\d)`, "i").test(a.resume) || dossier.sujet.mots_cles.some((m) => a.resume.toLowerCase().includes(m.toLowerCase())));
+  const articleNumerique = /^\d+/.test(article) ? article.match(/^\d+(?:\s*(?:bis|ter|quater))?/)![0] : null;
+  // L'article de la mesure ne vaut que si etat.json dit que la mesure est bien dans le texte (holdings : l'article 3 porte autre chose).
+  const mesureDansLeTexte = ctx.etat?.mesure.dans_le_texte ?? true;
+  const citeArticle = (a: AmendementTexte) => mesureDansLeTexte && articleNumerique !== null && new RegExp(`article\\s+${articleNumerique.replace(/\s+/g, "\\s+")}(?!\\d)`, "i").test(a.resume);
+  const citeSujet = (a: AmendementTexte) => dossier.sujet.mots_cles.some((m) => a.resume.toLowerCase().includes(m.toLowerCase()));
+  // Un amendement du texte n'est un événement du dossier que si son résumé cite la mesure (mots-clés du sujet,
+  // article de la mesure) ou s'il a été travaillé avec le client : les autres amendements du même article ou du
+  // même texte sont écartés et comptés (P0, 14 h 05 : un amendement sur les pensions remontait en cause du verdict).
+  const toucheLaMesure = (a: AmendementTexte) => citeSujet(a) || citeArticle(a) || avecClient.has(a.id) || retenusA3.has(a.id);
+  const supprimeLaMesure = (a: AmendementTexte) => /supprim/i.test(a.resume) && (citeArticle(a) || citeSujet(a));
   const cleGroupe = (a: AmendementTexte) => `${a.resume.toLowerCase().replace(/\s+/g, " ").slice(0, 80)}|${a.groupe_id ?? "NI"}|${a.sort}`;
   const groupesAm = new Map<string, AmendementTexte[]>();
   for (const a of ctx.texte?.amendements ?? []) {
@@ -229,8 +242,13 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
     return `${nums.length} amendements identiques (${tete}${nums.length > 4 ? ` et ${nums.length - 4} autres` : ""})`;
   };
 
+  let ecartes = 0;
   for (const liste of groupesAm.values()) {
     const a = liste[0];
+    if (!liste.some(toucheLaMesure)) {
+      ecartes += liste.length;
+      continue;
+    }
     const { camp: campBrut, raison, fonde } = campAmendement(ctx, a);
     // Effet et importance ne s'appuient que sur un camp lu dans le résumé ; le groupe seul ne suffit pas.
     const camp: Camp = fonde === "resume" ? campBrut : "inconnu";
@@ -289,6 +307,8 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
       });
     }
   }
+
+  if (ecartes > 0) limites.push(`${ecartes} amendement(s) de texte.json écarté(s) : ni mot-clé du sujet, ni article de la mesure dans le résumé, ni présence dans les fichiers amendements/<PA>.json.`);
 
   // 2. Scrutins liés non rattachés à un amendement du texte.
   const numerosCouverts = new Set((ctx.texte?.amendements ?? []).map((a) => a.numero));

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:54:53.216Z",
+    "generated_at": "2026-11-14T13:06:30.007Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -23,65 +23,11 @@
         "url": "https://hemicycle.ai"
       }
     ],
-    "limits": "data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/plf2027-holdings/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip). 153 amendement(s) sans date de dépôt publiée : prédiction Orcet ou dernière étape du texte, dit dans chaque preuve.",
+    "limits": "data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/plf2027-holdings/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. 3 amendement(s) de texte.json écarté(s) : ni mot-clé du sujet, ni article de la mesure dans le résumé, ni présence dans les fichiers amendements/<PA>.json. Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip). 37 amendement(s) sans date de dépôt publiée : prédiction Orcet ou dernière étape du texte, dit dans chaque preuve.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
   "evenements": [
-    {
-      "id": "ev-40",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 40 (SOC) adopté : Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des…",
-      "detail": "Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des fonctionnaires civiles et militaires pour 2027.",
-      "importance": 3,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO420120B3210P2D1N000040",
-      "effet": "renforce",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 40",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO420120B3210P2D1N000040"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-872",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 872, n° 2618) (LFI-NFP) rejetés : Par cet amendement, le groupe LFI prévoit de supprimer la niche Copé, niche permettant…",
-      "detail": "Par cet amendement, le groupe LFI prévoit de supprimer la niche Copé, niche permettant aux holdings d’échapper à la majorité de l’imposition.",
-      "importance": 3,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000872",
-      "effet": "affaiblit",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 872",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000872"
-          },
-          {
-            "label": "Amendement n° 2618",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002618"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
     {
       "id": "ev-9759",
       "date": "2026-11-04",
@@ -100,60 +46,6 @@
           }
         ],
         "raisonnement": "Étape « Séance publique, première lecture : rejeté (scrutin n° 9759) » lue dans etat.json avec son scrutin. Le texte porte la mesure : son rejet joue contre la mesure, d'où l'effet sur l'objectif du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-depot-1437",
-      "date": "2026-11-04",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 1437 (UDR) déposé : Le présent amendement proposé par le groupe UDR vise à supprimer l’impôt sur la fortune…",
-      "detail": "Le présent amendement proposé par le groupe UDR vise à supprimer l’impôt sur la fortune immobilière.",
-      "importance": 3,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001437",
-      "effet": "renforce",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1437",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001437"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : amendement de suppression ; supprime l'article de la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-depot-872",
-      "date": "2026-11-04",
-      "type": "amendement_depose",
-      "titre": "2 amendements identiques (n° 872, n° 2618) (LFI-NFP) déposés : Par cet amendement, le groupe LFI prévoit de supprimer la niche Copé, niche permettant…",
-      "detail": "Par cet amendement, le groupe LFI prévoit de supprimer la niche Copé, niche permettant aux holdings d’échapper à la majorité de l’imposition. Déposé par 2 auteurs du même groupe.",
-      "importance": 3,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000872",
-      "effet": "renforce",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 872",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000872"
-          },
-          {
-            "label": "Amendement n° 2618",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002618"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : amendement de suppression ; supprime l'article de la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
         "nature": "deduction"
       }
     },
@@ -190,7 +82,7 @@
       "id": "ev-1077",
       "date": "2026-10-16",
       "type": "scrutin",
-      "titre": "4 amendements identiques (n° 1077, n° 1078, n° 1079, n° 1318) (LFI-NFP) rejetés (scrutin n° 8856) : Par cet amendement de repli, le groupe LFI propose de rétablir l’impôt de solidarité sur…",
+      "titre": "2 amendements identiques (n° 1077, n° 1078) (LFI-NFP) rejetés (scrutin n° 8856) : Par cet amendement de repli, le groupe LFI propose de rétablir l’impôt de solidarité sur…",
       "detail": "Par cet amendement de repli, le groupe LFI propose de rétablir l’impôt de solidarité sur la fortune (ISF), en attendant de convaincre que le barème ainsi établi reste trop modeste au regard de l’explosion des hauts patrimoines, et surtou...",
       "importance": 3,
       "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8856",
@@ -209,10 +101,6 @@
           {
             "label": "Amendement n° 1078",
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001078"
-          },
-          {
-            "label": "Amendement n° 1079",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001079"
           }
         ],
         "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 16 octobre 2026. Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
@@ -249,35 +137,6 @@
       }
     },
     {
-      "id": "ev-115",
-      "date": "2026-11-14",
-      "type": "amendement_depose",
-      "titre": "2 amendements identiques (n° 115, n° 848) (SOC) déposés : Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des…",
-      "detail": "Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des fonctionnaires civiles et militaires pour 2027. Déposé par 2 auteurs du même groupe.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000115",
-      "effet": "renforce",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 115",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000115"
-          },
-          {
-            "label": "Amendement n° 848",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000848"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la prédiction Orcet (date de dépôt non publiée dans texte.json). Camp : amendement de suppression. Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-rapport-2026-11-09",
       "date": "2026-11-09",
       "type": "rapport",
@@ -296,31 +155,6 @@
         ],
         "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
         "nature": "fait"
-      }
-    },
-    {
-      "id": "ev-1221",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1221 (EPR) adopté : L’objectif de cet amendement est d’encourager le portage du foncier agricole par de…",
-      "detail": "L’objectif de cet amendement est d’encourager le portage du foncier agricole par de nouveaux investisseurs, désireux de soutenir le monde agricole.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001221",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1221",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001221"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
       }
     },
     {
@@ -382,89 +216,6 @@
       }
     },
     {
-      "id": "ev-1512",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 1512, n° 3652) (EPR) adoptés : Le présent amendement traduit la proposition n° 23 de la mission « Croissance et…",
-      "detail": "Le présent amendement traduit la proposition n° 23 de la mission « Croissance et transmission des TPE et des PME », confiée par le Premier ministre à l’auteure du présent amendement.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001512",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1512",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001512"
-          },
-          {
-            "label": "Amendement n° 3652",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003652"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1706",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1706 (LIOT) adopté : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
-      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001706",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1706",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001706"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LIOT) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1735",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 1735, n° 3882) (EPR) rejetés : Supprime l'article 5",
-      "detail": "Supprime l'article 5.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001735",
-      "effet": "affaiblit",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1735",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001735"
-          },
-          {
-            "label": "Amendement n° 3882",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003882"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-18",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -494,60 +245,6 @@
       }
     },
     {
-      "id": "ev-1877",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 1877, n° 3089) (DR) adoptés : Cet amendement opère une correction de la réforme de l’apport-cession proposée par…",
-      "detail": "Cet amendement opère une correction de la réforme de l’apport-cession proposée par l’article 5 afin de préserver le rôle de l’apport-cession comme soutien à l’investissement.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001877",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1877",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001877"
-          },
-          {
-            "label": "Amendement n° 3089",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003089"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1899",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1899 rejeté : Le présent amendement vise à exonérer la résidence principale de l’impôt sur la fortune…",
-      "detail": "Le présent amendement vise à exonérer la résidence principale de l’impôt sur la fortune immobilière.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001899",
-      "effet": "affaiblit",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1899",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001899"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-208",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -569,118 +266,6 @@
           }
         ],
         "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-2530",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 2530 (ECOS) adopté : Les entreprises solidaires d’utilité sociale (ESUS) répondent souvent à des besoins non…",
-      "detail": "Les entreprises solidaires d’utilité sociale (ESUS) répondent souvent à des besoins non pourvus par l’initiative privée, du fait de la lucrativité limitée du service proposé.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002530",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2530",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002530"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-260",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "4 amendements identiques (n° 260, n° 262, n° 584, n° 1734) (ECOS) rejetés : Cet amendement du groupe Écologiste et Social vise à supprimer le prélèvement forfaitaire…",
-      "detail": "Cet amendement du groupe Écologiste et Social vise à supprimer le prélèvement forfaitaire unique (PFU), pour permettre une progressivité de l’impôt sur le capital.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000260",
-      "effet": "affaiblit",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 260",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000260"
-          },
-          {
-            "label": "Amendement n° 262",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000262"
-          },
-          {
-            "label": "Amendement n° 584",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000584"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-261",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 261, n° 585) (ECOS) rejetés : Cet amendement du groupe Écologiste et Social vise à augmenter le taux le prélèvement…",
-      "detail": "Cet amendement du groupe Écologiste et Social vise à augmenter le taux le prélèvement forfaitaire unique (PFU) pour le faire passer à 40 % contre 30 % actuellement.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000261",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 261",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000261"
-          },
-          {
-            "label": "Amendement n° 585",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000585"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-34",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 34 (ECOS) rejeté : Cet amendement vise à supprimer l’avantage fiscal attaché aux opérations de type family…",
-      "detail": "Cet amendement vise à supprimer l’avantage fiscal attaché aux opérations de type family buy-out ainsi que le pacte réputé acquis.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000034",
-      "effet": "affaiblit",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 34",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000034"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -710,185 +295,6 @@
           }
         ],
         "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-372",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 372, n° 1362) (SOC) rejetés : Cet amendement du Groupe socialistes et apparentés instaure une taxation spécifique des…",
-      "detail": "Cet amendement du Groupe socialistes et apparentés instaure une taxation spécifique des profits qui échappent à l’impôt sur le revenu grâce au recours à des sociétés « holdings » permettant de les y soustraire.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000372",
-      "effet": "renforce",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 372",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000372"
-          },
-          {
-            "label": "Amendement n° 1362",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001362"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3807",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3807 (DEM) adopté : La taxe sur les holdings patrimoniales créée par la loi de finances pour 2026 vise les…",
-      "detail": "La taxe sur les holdings patrimoniales créée par la loi de finances pour 2026 vise les biens de jouissance, mais laisse de côté la trésorerie et les placements financiers, où s’accumulent les dividendes remontés des filiales.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003807",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3807",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003807"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DEM) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3866",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3866 (EPR) adopté : Le présent amendement, adopté en commission, traduit la proposition n° 23 de la mission «…",
-      "detail": "Le présent amendement, adopté en commission, traduit la proposition n° 23 de la mission « Croissance et transmission des TPE et des PME », confiée par le Premier ministre à l’auteure du présent amendement.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003866",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3866",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003866"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-42",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 42 (ECOS) rejeté : Cet amendement du groupe Écologiste et Social vise à supprimer l’avantage fiscal attaché…",
-      "detail": "Cet amendement du groupe Écologiste et Social vise à supprimer l’avantage fiscal attaché aux opérations de type family buy-out ainsi que le pacte réputé acquis.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000042",
-      "effet": "affaiblit",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 42",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000042"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-447",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 447 (DR) rejeté : Cet amendement vise à exonérer d’impôt les revenus locatifs de l’habitation principale…",
-      "detail": "Cet amendement vise à exonérer d’impôt les revenus locatifs de l’habitation principale lorsqu’ils permettent de financer un placement en établissement d’hébergement pour personnes âgées dépendantes.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000447",
-      "effet": "affaiblit",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 447",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000447"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-462",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 462 (ECOS) adopté : Cet amendement du groupe Ecologiste et Social, présenté en commun par les groupes…",
-      "detail": "Cet amendement du groupe Ecologiste et Social, présenté en commun par les groupes appartenant au Nouveau Front Populaire, vise à rétablir l’exit tax.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000462",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 462",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000462"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-470",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 470 (SOC) adopté : Cet amendement présenté par le Groupe socialistes et apparentés vise à rétablir l’exit…",
-      "detail": "Cet amendement présenté par le Groupe socialistes et apparentés vise à rétablir l’exit tax.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000470",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 470",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000470"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (SOC) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -947,35 +353,6 @@
       }
     },
     {
-      "id": "ev-773",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 773, n° 2385) (LFI-NFP) rejetés : Cet amendement du groupe LFI propose d’instaurer une taxe sur les ventes immobilières…",
-      "detail": "Cet amendement du groupe LFI propose d’instaurer une taxe sur les ventes immobilières supérieures à 1 million d’euros, afin de dégager des recettes supplémentaires pour lutter contre l’habitat indigne et répondre à la crise du logement.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000773",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 773",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000773"
-          },
-          {
-            "label": "Amendement n° 2385",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002385"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-797",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -997,89 +374,6 @@
           }
         ],
         "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (HOR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-844",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 844, n° 1080) (LFI-NFP) rejetés : Le groupe parlementaire la France Insoumise propose en amendement de repli de plafonner à…",
-      "detail": "Le groupe parlementaire la France Insoumise propose en amendement de repli de plafonner à 400 000 € l’abattement sur la résidence principale dont profitent les contribuables assujettis à l’impôt sur la fortune immobilière (IFI).",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000844",
-      "effet": "affaiblit",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 844",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000844"
-          },
-          {
-            "label": "Amendement n° 1080",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001080"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-873",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 873, n° 2619) (LFI-NFP) rejetés : Par cet amendement de repli, le groupe parlementaire de La France insoumise prévoit…",
-      "detail": "Par cet amendement de repli, le groupe parlementaire de La France insoumise prévoit d’augmenter les quotes-parts des frais et charges (QPFC) qui s’appliquent aux distributions de dividendes ou aux gains en capital résultant de la vente d...",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000873",
-      "effet": "renforce",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 873",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000873"
-          },
-          {
-            "label": "Amendement n° 2619",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002619"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé renforce ou étend la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-888-2",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 888 rejeté : Cet amendement vise à rétablir l’ISF selon les modalités en vigueur jusqu’en 2017, soit…",
-      "detail": "Cet amendement vise à rétablir l’ISF selon les modalités en vigueur jusqu’en 2017, soit en excluant les biens professionnels.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000888",
-      "effet": "affaiblit",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 888",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000888"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -1148,131 +442,6 @@
         ],
         "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
         "nature": "fait"
-      }
-    },
-    {
-      "id": "ev-1478",
-      "date": "2026-11-14",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 1478 (LFI-NFP) déposé : Par cet amendement, les député.es de la France insoumise souhaitent organiser un plan de…",
-      "detail": "Par cet amendement, les député.es de la France insoumise souhaitent organiser un plan de sauvegarde de l'audiovisuel public.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001478",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1478",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001478"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la prédiction Orcet (date de dépôt non publiée dans texte.json). Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1624",
-      "date": "2026-11-14",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 1624 (EPR) déposé : Le présent amendement vise à mieux cibler les aides personnelles au logement (APL)…",
-      "detail": "Le présent amendement vise à mieux cibler les aides personnelles au logement (APL) versées aux étudiants en tenant compte, lorsqu’ils demeurent rattachés au foyer fiscal de leurs parents, des ressources de ce foyer.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001624",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1624",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001624"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la prédiction Orcet (date de dépôt non publiée dans texte.json). Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1965",
-      "date": "2026-11-14",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 1965 (ECOS) déposé : Cet amendement vise à permettre l’expérimentation, pour une durée de 5 ans, de…",
-      "detail": "Cet amendement vise à permettre l’expérimentation, pour une durée de 5 ans, de dispositifs de sécurité sociale de l’alimentation (SSA) dans la continuité des dispositifs déployés par plusieurs communes françaises.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001965",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1965",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001965"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la prédiction Orcet (date de dépôt non publiée dans texte.json). Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-2765",
-      "date": "2026-11-14",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 2765 (LFI-NFP) déposé : Par cet amendement, le groupe La France insoumise propose d'allouer des fonds à la mise…",
-      "detail": "Par cet amendement, le groupe La France insoumise propose d'allouer des fonds à la mise en place d’instances d'attribution démocratique des subventions aux associations.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002765",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2765",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002765"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la prédiction Orcet (date de dépôt non publiée dans texte.json). Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-933",
-      "date": "2026-11-14",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 933 (RN) déposé : Le présent amendement prévoit de minorer les crédits, en autorisations d’engagement et en…",
-      "detail": "Le présent amendement prévoit de minorer les crédits, en autorisations d’engagement et en crédits de paiement, d’un montant de 1 666 500 euros pour l’action n° 7 « Compagnie internationale de radio et télévision » du programme n° 180 « P...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000933",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 933",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000933"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la prédiction Orcet (date de dépôt non publiée dans texte.json). Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
       }
     },
     {
@@ -1477,214 +646,6 @@
       }
     },
     {
-      "id": "ev-1052",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1052 (ECOS) rejeté : Cet amendement vise à octroyer un crédit d’impôt à destination des familles ultramarines…",
-      "detail": "Cet amendement vise à octroyer un crédit d’impôt à destination des familles ultramarines qui sont contraintes de se rendre en France hexagonale pour permettre à leur enfant de bénéficier de soins médicaux ne pouvant être réalisés sur leu...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001052",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1052",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001052"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1055",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1055 (ECOS) rejeté : Cet amendement vise à appliquer un taux de taxe sur la valeur ajoutée (TVA) à 0 % pour…",
-      "detail": "Cet amendement vise à appliquer un taux de taxe sur la valeur ajoutée (TVA) à 0 % pour les produits du Bouclier Qualité Prix (BQP) en Martinique, Guadeloupe et à la Réunion.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001055",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1055",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001055"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1067",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 1067, n° 1415) non examinés : Le régime de l’apport-cession permet de transférer des titres d’une société à une autre…",
-      "detail": "Le régime de l’apport-cession permet de transférer des titres d’une société à une autre afin de bénéficier d’un report d’imposition sur les plus-values. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001067",
-      "effet": "neutre",
-      "objectif_rang": 3,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1067",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001067"
-          },
-          {
-            "label": "Amendement n° 1415",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001415"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1091",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1091 (LFI-NFP) rejeté : Par cet amendement de repli, le groupe LFI propose de s'assurer que le pacte Dutreil…",
-      "detail": "Par cet amendement de repli, le groupe LFI propose de s'assurer que le pacte Dutreil bénéficie aux seules entreprises qui ont une activité réelle, et non aux holdings, y compris lorsque ces dernières font l'objet d'un montage savant ou l...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001091",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1091",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001091"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1100",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1100 (ECOS) rejeté : Cet amendement du groupe Ecologiste et Social, présenté en commun par les groupes…",
-      "detail": "Cet amendement du groupe Ecologiste et Social, présenté en commun par les groupes appartenant au Nouveau Front Populaire, vise à rétablir l’exit tax.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001100",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1100",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001100"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1153",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1153 (EPR) non examiné : Le présent amendement propose une nouvelle rédaction de l’article 5, afin de le recentrer…",
-      "detail": "Le présent amendement propose une nouvelle rédaction de l’article 5, afin de le recentrer sur l’objectif que lui assigne le Gouvernement : mettre fin à l’effacement de l’imposition des plus-values dans le cadre de l’apport-cession. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001153",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1153",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001153"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-12",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 12, n° 95) (ECOS) non examinés : Cet amendement vise à permettre l’expérimentation, pour une durée de 5 ans, de…",
-      "detail": "Cet amendement vise à permettre l’expérimentation, pour une durée de 5 ans, de dispositifs de sécurité sociale de l’alimentation (SSA) dans la continuité des dispositifs déployés par plusieurs communes françaises. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000012",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 12",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000012"
-          },
-          {
-            "label": "Amendement n° 95",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000095"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1217",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1217 (EPR) non examiné : Amendement de repli. (non soutenu)",
-      "detail": "Amendement de repli. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001217",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1217",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001217"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-1275-2",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -1710,31 +671,6 @@
       }
     },
     {
-      "id": "ev-1286",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1286 (DEM) non examiné : L’offre de logements à louer reste inférieure de 55 % à son niveau de 2019. (non soutenu)",
-      "detail": "L’offre de logements à louer reste inférieure de 55 % à son niveau de 2019. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001286",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1286",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001286"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DEM) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-1323",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -1749,106 +685,6 @@
           {
             "label": "Amendement n° 1323",
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001323"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-133",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 133 (SOC) tombé : Cet amendement des députés socialistes et apparentés vise à supprimer la désindexation…",
-      "detail": "Cet amendement des députés socialistes et apparentés vise à supprimer la désindexation partielle des pensions de retraite des fonctionnaires civiles et militaires pour 2027.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO420120B3210P2D1N000133",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 133",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO420120B3210P2D1N000133"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1331",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1331 (EPR) tombé : Cet amendement vise à ajuster la rédaction de l’article 5 pour que son champ…",
-      "detail": "Cet amendement vise à ajuster la rédaction de l’article 5 pour que son champ d’application corresponde à sa portée initiale : recentrer l'apport-cession sur son objectif de soutien à l'investissement.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001331",
-      "effet": "neutre",
-      "objectif_rang": 3,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1331",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001331"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1356",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1356 (SOC) tombé : Cet amendement du Groupe socialistes et apparentés vise à revenir à la version initiale…",
-      "detail": "Cet amendement du Groupe socialistes et apparentés vise à revenir à la version initiale de la contribution supplémentaire des grandes entreprises, initialement mise en œuvre par le Gouvernement Bayrou.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001356",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1356",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001356"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (SOC) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1368",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1368 (LFI-NFP) rejeté : Par cet amendement de repli, le groupe LFI propose de s’assurer que le pacte Dutreil…",
-      "detail": "Par cet amendement de repli, le groupe LFI propose de s’assurer que le pacte Dutreil bénéficie aux seules entreprises qui ont une activité réelle, et non aux holdings, y compris lorsque ces dernières font l’objet d’un montage savant ou l...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001368",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1368",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001368"
           },
           {
             "label": "Texte PRJLANR5L17B3210",
@@ -1881,106 +717,6 @@
           }
         ],
         "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (UDR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1437",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1437 (UDR) retiré : Le présent amendement proposé par le groupe UDR vise à supprimer l’impôt sur la fortune…",
-      "detail": "Le présent amendement proposé par le groupe UDR vise à supprimer l’impôt sur la fortune immobilière.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001437",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1437",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001437"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1441",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1441 (UDR) non examiné : Par cet amendement de repli, le groupe UDR souhaite porter de 5 à 10 millions d’euros la…",
-      "detail": "Par cet amendement de repli, le groupe UDR souhaite porter de 5 à 10 millions d’euros la valeur totale des actifs à partir de laquelle une holding peut être soumise à la taxe sur ses actifs non professionnels imposables. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001441",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1441",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001441"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (UDR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1442",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1442 (UDR) non examiné : Par cet amendement de repli, le groupe UDR souhaite porter de 50 % à 80 % la proportion…",
-      "detail": "Par cet amendement de repli, le groupe UDR souhaite porter de 50 % à 80 % la proportion de revenus passifs au-delà de laquelle une holding peut être soumise à la taxe sur ses actifs non professionnels imposables. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001442",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1442",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001442"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (UDR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1469",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1469 (EPR) retiré : L’article 5 du projet de loi de finances vise à éviter qu’un contribuable qui reporte…",
-      "detail": "L’article 5 du projet de loi de finances vise à éviter qu’un contribuable qui reporte l’imposition d’une plus-value qu’il réalise en procédant au préalable à l’apport des titres à une holding, dans les conditions prévues par l’article 15...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001469",
-      "effet": "neutre",
-      "objectif_rang": 3,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1469",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001469"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -2035,85 +771,6 @@
       }
     },
     {
-      "id": "ev-1567",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1567 (EPR) retiré : L’accès au foncier constitue un frein majeur à l’installation de nouveaux agriculteurs,…",
-      "detail": "L’accès au foncier constitue un frein majeur à l’installation de nouveaux agriculteurs, particulièrement pour ceux qui ne disposent pas de terres familiales.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001567",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1567",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001567"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1654",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1654 (UDR) rejeté : Cet amendement du groupe UDR abroge la taxe de 20 % sur les actifs non professionnels…",
-      "detail": "Cet amendement du groupe UDR abroge la taxe de 20 % sur les actifs non professionnels imposables des holdings patrimoniales.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001654",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1654",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001654"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (UDR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1687",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 1687, n° 3193) (LIOT) retirés : Cet amendement vise à procéder à l’expiration du report d’imposition de la plus-value…",
-      "detail": "Cet amendement vise à procéder à l’expiration du report d’imposition de la plus-value obtenu dans le cadre du régime de l’apport-cession en cas de transmission à titre gratuit des titres reçus en rémunération de l’apport initial.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001687",
-      "effet": "neutre",
-      "objectif_rang": 3,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1687",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001687"
-          },
-          {
-            "label": "Amendement n° 3193",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003193"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-174",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -2135,81 +792,6 @@
           }
         ],
         "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1746",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1746 (DEM) retiré : Le groupe Les Démocrates aborde ce budget comme un pacte entre les générations : ce que…",
-      "detail": "Le groupe Les Démocrates aborde ce budget comme un pacte entre les générations : ce que nous votons aujourd’hui, nos enfants en hériteront.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001746",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1746",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001746"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DEM) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-178",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 178 (DR) rejeté : Depuis 2018 l’impôt sur la fortune immobilière (IFI) remplace l’impôt sur la fortune…",
-      "detail": "Depuis 2018 l’impôt sur la fortune immobilière (IFI) remplace l’impôt sur la fortune (ISF) et ne pèse que sur les actifs immobiliers.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000178",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 178",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000178"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1787",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1787 (EPR) retiré : Cet amendement vise à ajuster la rédaction de l’article 5 pour recentrer son champ…",
-      "detail": "Cet amendement vise à ajuster la rédaction de l’article 5 pour recentrer son champ d’application sur son objectif initial : la transmission de titres de holdings ayant réalisé un apport-cession, et non celle de holdings constituées par s...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001787",
-      "effet": "neutre",
-      "objectif_rang": 3,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1787",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001787"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -2243,547 +825,6 @@
       }
     },
     {
-      "id": "ev-1854",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 1854, n° 3933) (GDR) rejetés : L’instauration du prélèvement forfaitaire unique (PFU), conjuguée à la suppression de…",
-      "detail": "L’instauration du prélèvement forfaitaire unique (PFU), conjuguée à la suppression de l’ISF sur le patrimoine financier, à la baisse du taux de l’impôt sur les sociétés et à l’affaiblissement de l’exit tax, constitue l’un des marqueurs d...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001854",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1854",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001854"
-          },
-          {
-            "label": "Amendement n° 3933",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003933"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (GDR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-2156",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 2156 (ECOS) tombé : Cet amendement vise à permettre l’expérimentation, pour une durée de 5 ans, de…",
-      "detail": "Cet amendement vise à permettre l’expérimentation, pour une durée de 5 ans, de dispositifs de sécurité sociale de l’alimentation (SSA) dans la continuité des dispositifs déployés par plusieurs communes françaises.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002156",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2156",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002156"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-249",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 249, n° 1550) (ECOS) rejetés : Dans une note publiée en juin 2023, l’Institut des Politiques Publiques (IPP) montre que…",
-      "detail": "Dans une note publiée en juin 2023, l’Institut des Politiques Publiques (IPP) montre que « l’ensemble des impôts personnels reste progressif jusqu’à un niveau élevé de revenu (autour de 600 000 euros de revenu économique annuel, soit le...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000249",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 249",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000249"
-          },
-          {
-            "label": "Amendement n° 1550",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001550"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-2519",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 2519 (ECOS) tombé : Cet amendement vise à appliquer un taux de taxe sur la valeur ajoutée (TVA) à 0 % pour…",
-      "detail": "Cet amendement vise à appliquer un taux de taxe sur la valeur ajoutée (TVA) à 0 % pour les produits du Bouclier Qualité Prix (BQP) en Martinique, Guadeloupe et à la Réunion.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002519",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2519",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002519"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-2561",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 2561, n° 3173) (HOR) non examinés : Supprime l'article 5. (non soutenu)",
-      "detail": "Supprime l'article 5. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002561",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2561",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002561"
-          },
-          {
-            "label": "Amendement n° 3173",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003173"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-2627",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 2627 (LFI-NFP) rejeté : Avec cet amendement, les députés du groupe la France Insoumise proposent de soumettre au…",
-      "detail": "Avec cet amendement, les députés du groupe la France Insoumise proposent de soumettre au barème de l’impôt sur le revenu les revenus logés dans les sociétés holdings, afin de mettre fin à l’un des principaux mécanismes d’évitement fiscal...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002627",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2627",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002627"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-2873",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 2873 non examiné : Le présent amendement vise à encourager le portage du foncier agricole par de nouveaux…",
-      "detail": "Le présent amendement vise à encourager le portage du foncier agricole par de nouveaux investisseurs souhaitant soutenir le secteur agricole et contribuer au renouvellement des générations d’exploitants. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002873",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2873",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002873"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre et pas de position de groupe connue. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3221",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3221 (LIOT) rejeté : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
-      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3221",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LIOT) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-332",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 332 (LFI-NFP) tombé : Par cet amendement, le groupe La France insoumise propose d’allouer des fonds à la mise…",
-      "detail": "Par cet amendement, le groupe La France insoumise propose d’allouer des fonds à la mise en place d’instances d’attribution démocratique des subventions aux associations.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419604B3210P2D1N000332",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 332",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419604B3210P2D1N000332"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3474",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3474 (EPR) non examiné : L’article 5 du projet de loi de finances vise à éviter qu’un contribuable qui reporte…",
-      "detail": "L’article 5 du projet de loi de finances vise à éviter qu’un contribuable qui reporte l’imposition d’une plus-value qu’il réalise en procédant au préalable à l’apport des titres à une holding, dans les conditions prévues par l’article 15... (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003474",
-      "effet": "neutre",
-      "objectif_rang": 3,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3474",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003474"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3564",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3564 (RN) retiré : Supprime l'article 5",
-      "detail": "Supprime l'article 5.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003564",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3564",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003564"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3565",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3565 (RN) tombé : Cet amendement ferme l’optimisation visée par le Gouvernement sans frapper la…",
-      "detail": "Cet amendement ferme l’optimisation visée par le Gouvernement sans frapper la transmission des entreprises familiales.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003565",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3565",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003565"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3566",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3566 (RN) tombé : Cet amendement de repli exclut les transmissions par décès du champ de l’article 5",
-      "detail": "Cet amendement de repli exclut les transmissions par décès du champ de l’article 5.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003566",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3566",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003566"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : le résumé réduit, exonère ou reporte la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3568",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3568 (RN) retiré : Cet amendement protège les contribuables qui ont organisé leur patrimoine de bonne foi…",
-      "detail": "Cet amendement protège les contribuables qui ont organisé leur patrimoine de bonne foi sous l’empire de la loi ancienne.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003568",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3568",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003568"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3611",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3611 (UDR) rejeté : Par cet amendement de repli, le groupe UDR souhaite porter de 50 % à 80 % la proportion…",
-      "detail": "Par cet amendement de repli, le groupe UDR souhaite porter de 50 % à 80 % la proportion de revenus passifs au-delà de laquelle une holding peut être soumise à la taxe sur ses actifs non professionnels imposables.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003611",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3611",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003611"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (UDR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3620",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3620 (DEM) non examiné : Supprime l'article 5. (non soutenu)",
-      "detail": "Supprime l'article 5. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003620",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3620",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003620"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-367",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 367 (SOC) rejeté : Cet amendement présenté par le Groupe socialistes et apparentés vise à rétablir l’exit…",
-      "detail": "Cet amendement présenté par le Groupe socialistes et apparentés vise à rétablir l’exit tax.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000367",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 367",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000367"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (SOC) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-386",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 386 (SOC) rejeté : Cet amendement du Groupe socialistes et apparentés vise à revenir à la version initiale…",
-      "detail": "Cet amendement du Groupe socialistes et apparentés vise à revenir à la version initiale de la contribution supplémentaire des grandes entreprises, initialement mise en œuvre par le Gouvernement Bayrou.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000386",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 386",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000386"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (SOC) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3880",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3880 (EPR) retiré : Le présent amendement vise à recentrer l’article 5 sur son objet : mettre fin aux…",
-      "detail": "Le présent amendement vise à recentrer l’article 5 sur son objet : mettre fin aux stratégies d’optimisation liées à l’apport-cession, sans pénaliser la transmission des entreprises.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003880",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3880",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003880"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « retiré » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-413",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 413 (RN) rejeté : Le présent amendement prévoit de minorer les crédits, en autorisations d’engagement et en…",
-      "detail": "Le présent amendement prévoit de minorer les crédits, en autorisations d’engagement et en crédits de paiement, d’un montant de 1 666 500 euros pour l’action n° 7 « Compagnie internationale de radio et télévision » du programme n° 180 « P...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419604B3210P2D1N000413",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 413",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419604B3210P2D1N000413"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-421",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 421, n° 2732) (EPR) rejetés : Cet amendement vise à simplifier et à rendre plus efficace le mécénat des particuliers en…",
-      "detail": "Cet amendement vise à simplifier et à rendre plus efficace le mécénat des particuliers en faveur des formations musicales de Radio France en ouvrant la possibilité pour ces derniers de faire directement à Radio France des dons déductible...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000421",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 421",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000421"
-          },
-          {
-            "label": "Amendement n° 2732",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002732"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-43",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -2805,176 +846,6 @@
           }
         ],
         "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-48",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 48, n° 51) (ECOS) rejetés : Cet amendement vise, d’une part, à réserver le bénéfice du régime mère-fille aux…",
-      "detail": "Cet amendement vise, d’une part, à réserver le bénéfice du régime mère-fille aux dividendes perçus par une société mère établie en France et distribués par des filiales établies dans l’Union ou dans certains États de l’Espace économique...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000048",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 48",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000048"
-          },
-          {
-            "label": "Amendement n° 51",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000051"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-50",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 50 (ECOS) rejeté : Cet amendement du groupe Écologiste et Social vise à porter la quote-part de frais et…",
-      "detail": "Cet amendement du groupe Écologiste et Social vise à porter la quote-part de frais et charges (QPFC) de 12 % à 16 % au titre de la « niche Copé ».",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000050",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 50",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000050"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-54",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 54 (ECOS) rejeté : Cet amendement du groupe Écologiste et Social vise à mettre en place un impôt sur la…",
-      "detail": "Cet amendement du groupe Écologiste et Social vise à mettre en place un impôt sur la fortune (ISF) climatique applicable aux foyers dont le patrimoine net est supérieur à 1,3 million d’euros.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000054",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 54",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000054"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-593",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 593, n° 3865) (EPR) rejetés : Le présent amendement traduit la proposition n° 25 de la mission « Croissance et…",
-      "detail": "Le présent amendement traduit la proposition n° 25 de la mission « Croissance et transmission des TPE et des PME », confiée par le Premier ministre à l’auteure du présent amendement.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000593",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 593",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000593"
-          },
-          {
-            "label": "Amendement n° 3865",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003865"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (EPR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-636",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 636, n° 957) (RN) rejetés : Le présent amendement a pour objet de poser une règle simple : une association qui vit de…",
-      "detail": "Le présent amendement a pour objet de poser une règle simple : une association qui vit de l’argent public ne fait pas campagne.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000636",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 636",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000636"
-          },
-          {
-            "label": "Amendement n° 957",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000957"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (RN) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-638",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "3 amendements identiques (n° 638, n° 1002, n° 1216) (EPR) non examinés : Supprime l'article 5. (non soutenu)",
-      "detail": "Supprime l'article 5. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000638",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 638",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000638"
-          },
-          {
-            "label": "Amendement n° 1002",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001002"
-          },
-          {
-            "label": "Amendement n° 1216",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001216"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : amendement de suppression. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -3033,122 +904,6 @@
       }
     },
     {
-      "id": "ev-772",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 772, n° 2086) (LFI-NFP) rejetés : Par cet amendement d’appel, le groupe la France insoumise souhaite ouvrir le chantier…",
-      "detail": "Par cet amendement d’appel, le groupe la France insoumise souhaite ouvrir le chantier d’une refonte de la taxe foncière afin de la rendre plus juste.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000772",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 772",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000772"
-          },
-          {
-            "label": "Amendement n° 2086",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002086"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-782",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "3 amendements identiques (n° 782, n° 799, n° 810) (HOR) non examinés : Les entreprises solidaires d'utilité sociale (ESUS) répondent souvent à des besoins que…",
-      "detail": "Les entreprises solidaires d'utilité sociale (ESUS) répondent souvent à des besoins que l'initiative privée ne couvre pas, du fait de la lucrativité limitée du service proposé. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000782",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 782",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000782"
-          },
-          {
-            "label": "Amendement n° 799",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000799"
-          },
-          {
-            "label": "Amendement n° 810",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000810"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (HOR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-796",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 796 (DEM) rejeté : L’offre de logements à louer reste inférieure de 55 % à son niveau de 2019",
-      "detail": "L’offre de logements à louer reste inférieure de 55 % à son niveau de 2019.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000796",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 796",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000796"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DEM) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-871",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 871, n° 2617) (LFI-NFP) rejetés : Cet amendement des députés LFI vient taxer les bénéfices des multinationales…",
-      "detail": "Cet amendement des députés LFI vient taxer les bénéfices des multinationales proportionnellement à leur activité réellement réalisée en France.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000871",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 871",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000871"
-          },
-          {
-            "label": "Amendement n° 2617",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002617"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LFI-NFP) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-887",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -3170,35 +925,6 @@
           }
         ],
         "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre et pas de position de groupe connue. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-888",
-      "date": "2026-11-04",
-      "type": "amendement_sort",
-      "titre": "2 amendements identiques (n° 888, n° 1710) (DR) non examinés : L’objectif de cet amendement est d’encourager le portage du foncier agricole par de…",
-      "detail": "L’objectif de cet amendement est d’encourager le portage du foncier agricole par de nouveaux investisseurs, désireux de soutenir le monde agricole. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000888",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 888",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000888"
-          },
-          {
-            "label": "Amendement n° 1710",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001710"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (DR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -3245,6 +971,27 @@
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-11-04",
+      "date": "2026-11-04",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 4 novembre 2026",
+      "detail": "5 interventions relevées, dont : « Le RN n’en veut pas, les purs macronistes non plus. Soumettre les revenus logés dans les holdings à l’impôt sur le revenu ? Le RN n’en veut pas, les macronistes non plus. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 4 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
       }
     },
@@ -3462,6 +1209,27 @@
       }
     },
     {
+      "id": "ev-seance-2026-10-28",
+      "date": "2026-10-28",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 28 octobre 2026",
+      "detail": "1 intervention relevée, dont : « Le problème est très simple : le dispositif que nous avons voté l’année dernière n’est absolument pas opérationnel. Il n’y avait d’ailleurs aucun besoin de le voter. En effet, si vous utilisez à des fins personnelles une maison détenue par une holding, cela s’appelle déjà un abus de bien social. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 28 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-depots-2026-10-27",
       "date": "2026-10-27",
       "type": "amendement_depose",
@@ -3504,6 +1272,27 @@
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-27",
+      "date": "2026-10-27",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 27 octobre 2026",
+      "detail": "1 intervention relevée, dont : « Enfin, c’est gentil, monsieur le ministre – je suppose qu’il s’agit d’une tactique de votre part – d’attribuer au Rassemblement national l’idée d’un impôt universel sur les entreprises, une taxe Zucman, que nous avons défendue en premier… »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 27 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
       }
     },
@@ -3842,82 +1631,7 @@
       }
     },
     {
-      "id": "ev-1440",
-      "date": "2026-10-16",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1440 (UDR) non examiné : Cet amendement du groupe UDR abroge la taxe de 20 % sur les actifs non professionnels…",
-      "detail": "Cet amendement du groupe UDR abroge la taxe de 20 % sur les actifs non professionnels imposables des holdings patrimoniales. (non soutenu)",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001440",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1440",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001440"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : résumé neutre, groupe de l'auteur (UDR) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-3821",
-      "date": "2026-10-16",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 3821 (DEM) rejeté : La rénovation énergétique du parc immobilier constitue une nécessité environnementale,…",
-      "detail": "La rénovation énergétique du parc immobilier constitue une nécessité environnementale, économique et sociale.",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 3821",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : résumé neutre, groupe de l'auteur (DEM) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-47",
-      "date": "2026-10-16",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 47 (ECOS) tombé : Cet amendement vise à porter la quote-part de frais et charges (QPFC) de 12 % à 16 % au…",
-      "detail": "Cet amendement vise à porter la quote-part de frais et charges (QPFC) de 12 % à 16 % au titre de la « niche Copé ».",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000047",
-      "effet": "neutre",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 47",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000047"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : résumé neutre, groupe de l'auteur (ECOS) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-47-2",
       "date": "2026-10-16",
       "type": "amendement_sort",
       "titre": "Amendement n° 47 (ECOS) rejeté : Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune…",
@@ -3967,6 +1681,69 @@
       }
     },
     {
+      "id": "ev-seance-2026-10-16",
+      "date": "2026-10-16",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 16 octobre 2026",
+      "detail": "6 interventions relevées, dont : « Vous décrivez une politique qui a lamentablement échoué, mais vous dites que c’est ce qu’il faudrait faire maintenant ; c’est merveilleux. Concernant la taxe Zucman, je prends le pari que dans un an, peut-être deux, quelle que soit la prochaine majorité… »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-16-2",
+      "date": "2026-10-16",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 16 octobre 2026",
+      "detail": "2 interventions relevées, dont : « Dès la première année du macronisme, le PFU a été instauré, l’impôt de solidarité sur la fortune (ISF) a été supprimé, certaines niches fiscales ont été créées et d’autres renforcées. Tout cela a contribué à favoriser, de manière assumée, les revenus du capital – nous en parlons depuis plusieurs années et encore plus cette année, parce que ce choix explique beaucoup les déficits. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-16-3",
+      "date": "2026-10-16",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 16 octobre 2026",
+      "detail": "2 interventions relevées, dont : « En effet, l’article bouleverse complètement l’économie de l’apport-cession : quoi que vous fassiez de votre holding ou de vos titres, vous devrez payer. Dans certains cas, le dirigeant ou l’héritier devra s’acquitter de l’impôt sur un gain qu’il n’a jamais encaissé. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 16 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-depots-2026-10-15",
       "date": "2026-10-15",
       "type": "amendement_depose",
@@ -3992,6 +1769,111 @@
       }
     },
     {
+      "id": "ev-seance-2026-10-15",
+      "date": "2026-10-15",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 15 octobre 2026",
+      "detail": "17 interventions relevées, dont : « En tant que député ultramarin, je ne peux m’empêcher d’intervenir à la suite de nos collègues M. Naillet et Mme K/Bidi. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-15-2",
+      "date": "2026-10-15",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 15 octobre 2026",
+      "detail": "4 interventions relevées, dont : « Monsieur le ministre, vous avez raison sur un point : la CEHR n’est pas satisfaisante. En effet, elle ne touche pas de manière utile et suffisamment rentable, non pas tous ceux qui contournent l’impôt, mais tous ceux qui ont utilisé les outils que vous leur avez donnés pour abriter leurs revenus et leur patrimoine derrière de prétendus revenus professionnels, lesquels sont en réalité des actifs financiers passant par des holdings, etc. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-15-3",
+      "date": "2026-10-15",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 15 octobre 2026",
+      "detail": "3 interventions relevées, dont : « Votre mesure reviendrait à taxer des revenus qui n’ont pas été distribués. À ce titre, elle serait probablement déclarée inconstitutionnelle – comme d’autres dispositions semblables l’ont été – au titre de l’article 13 de la Déclaration des droits de l’homme et du citoyen. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 15 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-14",
+      "date": "2026-10-14",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 14 octobre 2026",
+      "detail": "1 intervention relevée, dont : « Ces baisses de recettes ont bénéficié principalement aux 1 % les plus riches, comme l’a documenté de façon très précise le dernier rapport du Conseil des prélèvements obligatoires (CPO) (Applaudissements sur les bancs du groupe LFI-NFP. – Protestations sur les bancs du groupe EPR) : il suffit de songer à l’instauration de la flat tax ou à la suppression de l’ISF – je ne vais pas citer toute la panoplie. Les chiffres vous donnent tort. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 14 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-14-2",
+      "date": "2026-10-14",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 14 octobre 2026",
+      "detail": "1 intervention relevée, dont : « Par votre faute, à cause de l’instauration de la flat tax et de la suppression de l’ISF, quelques milliers de nos concitoyens payent moitié moins d’impôt que la plupart des Français. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 14 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-rapports-2026-10-13",
       "date": "2026-10-13",
       "type": "rapport",
@@ -4009,6 +1891,69 @@
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-13",
+      "date": "2026-10-13",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 13 octobre 2026",
+      "detail": "3 interventions relevées, dont : « Ce gouvernement s’y refuse, car il a enrichi comme jamais une caste qui profite du pacte Dutreil, de la suppression de l’impôt de solidarité sur la fortune (ISF), d’un barème unique sur l’héritage. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 13 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-13-2",
+      "date": "2026-10-13",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 13 octobre 2026",
+      "detail": "1 intervention relevée, dont : « La taxe Zucman, même si elle rapportait les 15 milliards d’euros que ses promoteurs annoncent, ne couvrirait que 12 % de l’effort ; il en resterait presque 90 % – où sont-ils donc ? »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 13 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-commission-2026-10-07",
+      "date": "2026-10-07",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 7 octobre 2026",
+      "detail": "7 interventions relevées, dont : « La taxe Zucman est un outil efficace pour lutter contre le contournement de l’impôt. Les plus riches adoptant des stratégies d’optimisation fiscale toujours plus sophistiquées, la seule façon de les contrer est d’instaurer un impôt minimum afin de s’assurer qu’ils payent au moins 2 % de leur patrimoine en impôt, tous impôts confondus. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 7 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
       }
     },

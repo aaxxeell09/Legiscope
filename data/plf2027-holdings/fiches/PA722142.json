@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:54:53.187Z",
+    "generated_at": "2026-11-14T13:06:29.874Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1288,13 +1288,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "François Ruffin est probablement favorable à la mesure, comme en témoignent ses amendements cosignés et sa déclaration en séance le 21 octobre 2025.",
-    "argument": "Présenter à ce député que son amendement n° 249, qui proposait de porter le taux à 100 %, a été rejeté, afin de souligner que la mesure actuelle reste plus modérée que sa proposition initiale.",
+    "position_probable": "François Ruffin est probablement favorable à la mesure, comme l'indique sa déclaration du 21 octobre 2025 en séance où il s'oppose au retour d'un impôt sur la fortune.",
+    "argument": "Présenter à ce député que son amendement n° 18, rejeté, visait à rétablir un chapitre du code général des impôts, afin de souligner que la mesure n° 3140 s'inscrit dans la même logique de fiscalité patrimoniale qu'il a défendue.",
     "chiffres_utilises": [
       "2025",
       "21",
-      "249",
-      "100"
+      "3140",
+      "18"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

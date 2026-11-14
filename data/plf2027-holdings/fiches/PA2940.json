@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:54:53.126Z",
+    "generated_at": "2026-11-14T13:06:29.957Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1211,21 +1211,17 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Dominique Voynet est probablement contre la mesure, comme en témoignent les amendements n° 18, 43, 48, 174, 208, 249, 38, 47, 51, 54, 56 et 1550 qu'il a cosignés et qui ont été rejetés.",
-    "argument": "Présenter à ce député que son amendement n° 18, rejeté, visait à rétablir le chapitre Ier bis du code général des impôts, ce qui montre son intérêt pour la structure fiscale existante et permet d'argumenter contre la taxe sur la fortune improductive.",
+    "position_probable": "Dominique Voynet a cosigné les amendements n° 18, 43, 38, 47, 174, 208, 56 et 12, tous rejetés, ce qui indique probablement une position favorable à la mesure, alignée sur celle de son groupe.",
+    "argument": "Présenter à ce député que son amendement n° 18, qui visait à rétablir le chapitre Ier bis du code général des impôts, a été rejeté, afin de souligner que la suppression de la taxe sur la fortune improductive évite de complexifier davantage le régime fiscal des sociétés.",
     "chiffres_utilises": [
       "18",
       "43",
-      "48",
       "174",
       "208",
-      "249",
+      "12",
       "38",
       "47",
-      "51",
-      "54",
-      "56",
-      "1550"
+      "56"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

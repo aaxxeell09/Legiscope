@@ -1,0 +1,1267 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:06:29.979Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a46.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Deuxième séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Première séance du mardi 27 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA721202",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a46.html",
+      "date": "2026-10-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du Budget, 7e sous-direction",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale du Trésor, services des Politiques macroéconomiques et des affaires européennes",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’Europe et des affaires étrangères",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’Union européenne",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a17.html",
+      "date": "2026-11-03",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Armateurs de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union française des Pêcheurs Artisans (UFPA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société nationale de sauvetage en mer (SNSM)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Vice-amiral d’escadre Emmanuel de Oliveira, président",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale supérieure maritime (ENSM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture (DGAMPA)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a36.html",
+      "date": "2026-11-04",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Institut national de la statistique et des études économiques (INSEE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de la recherche, des études, de l’évaluation et des statistiques (DREES)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe La Poste",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut des politiques publiques (IPP)",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a31.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère des Outre-mer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des Outre-mer (DGOM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence des Outre-mer pour la mobilité (LADOM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service militaire adapté (SMA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union nationale des fédérations d’organismes HLM (USH)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "EURODOM",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Personnalités qualifiées",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des entreprises des outre-mer (FEDOM)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a8.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Conseil d’État",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des juridictions financières (SJF)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat de la juridiction administrative (SJA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union syndicale des magistrats administratifs (USMA)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cour des comptes",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cour nationale du droit d’asile (CNDA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Tribunal du stationnement payant (TSP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil économique, social et environnemental (Cese)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a26.html",
+      "date": "2026-11-09",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Pôles régionaux de l’immobilier de l’État (Prie)",
+          "type": "autre",
+          "hatvp_id": "302998554"
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a30.html",
+      "date": "2026-11-10",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Commission pour la restitution des biens et indemnisation des victimes de persécutions antisémites (CIVS)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut de gestion sociale des armées (IGESA)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "État-major des armées",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du budget, bureau 5BDM",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de la mémoire, de la culture et des archives (DMCA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission nationale indépendante pour les harkis (CNIH)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office national des anciens combattants et des victimes de guerre (ONaCVG)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service des retraites de l’État",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fondation pour la mémoire de la guerre d’Algérie, des combats du Maroc et de la Tunisie",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Nationale des combattants des Opérations Extérieures",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Le Souvenir Français",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "La Direction générale de l’enseignement scolaire du ministère de l’Éducation nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mémorial de la Shoah",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commune de Noyant-d’Allier",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Archives nationales",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général pour l’administration du ministère des Armées",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Nationale des Victimes d’Attentats et d’Accidents Collectifs",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a29.html",
+      "date": "2026-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Syndicat des musiques actuelles (SMA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national de l’édition phonographique (SNEP)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des producteurs phonographiques français indépendants (UPFI)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des Ensembles Vocaux et Instrumentaux Spécialisés (FEVIS)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre National du Livre (CNL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre National du Cinéma et l’image animée (CNC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ekhoscènes",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre National de la musique (CNM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de l’audiovisuel (INA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des médias et des industries culturelles (DGMIC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Radio France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Télévisions",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Festivals",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Médias Monde",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Arte",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Spotify",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "TV5 Monde",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Deezer",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société des Auteurs, Compositeurs et Éditeurs de Musique (SACEM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Administration des Droits des Artistes et Musiciens Interprètes (ADAMI)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société de Perception et de Distribution des Droits des Artistes-Interprètes",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "COPIE France",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des Producteurs de Phonogrammes en France (SPPF)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Apple Music",
+          "type": "entreprise",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a13.html",
+      "date": "2026-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Secrétariat général du Gouvernement (SGG)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général de la défense et de la sécurité nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’information légale et administrative (DILA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Défenseur des droits",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission nationale de l'informatique et des libertés (CNIL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haute Autorité pour la transparence de la vie publique (HATVP)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a44.html",
+      "date": "2026-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’administration et de la fonction publique (DGAFP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "François Reydellet, directeur adjoint",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe des Instituts du Service Public (GISP)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction interministérielle de la transformation publique (DITP)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [
+    {
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Le RN n’en veut pas, les purs macronistes non plus. Soumettre les revenus logés dans les holdings à l’impôt sur le revenu ? Le RN n’en veut pas, les macronistes non plus.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+    },
+    {
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Ce texte est pétri de refus : refus de voter des recettes nouvelles, comme un impôt sur la fortune (ISF) renforcé ; refus de conserver des impôts importants, comme les 5 milliards d’euros de la contribution exceptionnelle sur les bénéfices des grandes entreprises – ce sont 5 milliards de perdus, qui creusent le déficit et disqualifient les prétendus défenseurs de la bonne tenue des comptes publics. Ce budget va être rejeté.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+    },
+    {
+      "date": "2026-10-27",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Enfin, c’est gentil, monsieur le ministre – je suppose qu’il s’agit d’une tactique de votre part – d’attribuer au Rassemblement national l’idée d’un impôt universel sur les entreprises, une taxe Zucman, que nous avons défendue en premier…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Dès la première année du macronisme, le PFU a été instauré, l’impôt de solidarité sur la fortune (ISF) a été supprimé, certaines niches fiscales ont été créées et d’autres renforcées. Tout cela a contribué à favoriser, de manière assumée, les revenus du capital – nous en parlons depuis plusieurs années et encore plus cette année, parce que ce choix explique beaucoup les déficits.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "C’est le cas s’agissant, d’une part, de la détention dans le cadre d’une holding car, même si la société prend de la valeur, aucun impôt personnel sur le revenu n’est déclenché tant que les titres ne sont pas vendus ou que les dividendes n’ont pas été versés par la holding sur le patrimoine personnel ; d’autre part, de la transmission, car la succession ou la donation des actifs efface la plus-value latente, qui échappe ainsi à toute imposition.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Monsieur le rapporteur général, vous avez, comme souvent, indiqué que les contribuables concernés risqueraient de partir s’ils étaient à nouveau soumis à l’ISF. Les chiffres montrent pourtant qu’entre 2001 et 2006, seuls 0,1 % à 0,2 % des contribuables redevables de l’ISF quittaient la France chaque année, soit 500 personnes environ.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Chacun a compris que la taxe Zucman part d’un constat que nous partageons tous, y compris vous, monsieur le ministre : quelques milliers de personnes, les ultrariches, paient peu ou quasiment pas d’impôt sur le revenu et leur effort fiscal est moitié moindre que l’effort moyen des Français, parce qu’ils convertissent une partie de leur richesse en revenus professionnels, qui ne sont pas les outils de travail – usines, bureaux, machines –, comme…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "…notait que la jurisprudence du Conseil constitutionnel n’avait jamais traité d’une imposition différentielle et qu’il était donc difficile de savoir si les raisonnements tenus sur l’ISF étaient complètement transposables à une telle imposition. Les choses ne sont pas figées ; elles peuvent être discutées.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je me demande ce que vous ont fait les retraités. Que vous ont-ils fait pour devenir la cible principale des économies budgétaires que vous proposez cette année ?",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Si, on propose de le réduire pour les retraités sans y toucher pour les actifs – si vous n’êtes pas d’accord, monsieur Mattei, vous aurez l’occasion de prendre la parole. Je rappelle les raisons qui ont conduit à étendre aux retraités cet abattement de 10 %.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Vous révélerez ainsi le fond de votre projet : taxer les salariés de ce pays, tous ceux qui vivent de leur force de travail, pour financer les cadeaux fiscaux et les avantages que vous avez procurés depuis 2017 à ceux dont la principale fonction économique est de faire du bénéfice sur le dos des travailleurs qui produisent des richesses.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je suis assez étonné : hier, nous avons présenté un contre-budget.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Nous en reparlerons, je n’y vois pas de difficultés. Quand nous ciblons les ultrariches, en proposant qu’ils cotisent proportionnellement un peu plus qu’avant sur les richesses qu’ils ont grâce à vous, vous nous traitez de taxeurs, de confiscateurs.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Mais cela ne vous dérange pas, vous les admirateurs de Milei, de supprimer l’abattement de 10 % et de geler les pensions : les retraités sont la vache à lait de votre politique de coupes budgétaires qui avantage les plus riches !",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "D’autre part, votre proposition est un non-sens économique. Le pouvoir d’achat des retraités a certes un peu mieux résisté que celui des salariés, en baisse depuis plusieurs années.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Enfin, monsieur le ministre, vous trouvez scandaleux de consacrer 14 % du PIB aux retraités, dont le nombre augmente d’après vous – en réalité, il est assez stable, les retraités représentant environ 25 % de la population. Que 14 % des richesses produites soient reversées à 25 % de la population me semble assez naturel, la question n’est pas là.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Monsieur le ministre, vous avez raison sur un point : la CEHR n’est pas satisfaisante. En effet, elle ne touche pas de manière utile et suffisamment rentable, non pas tous ceux qui contournent l’impôt, mais tous ceux qui ont utilisé les outils que vous leur avez donnés pour abriter leurs revenus et leur patrimoine derrière de prétendus revenus professionnels, lesquels sont en réalité des actifs financiers passant par des holdings, etc.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Ça ne tient pas ! Si vous voulez que les efforts soient répartis sur tout le monde, puisque c’est l’argument que vous utilisez pour des retraités qui touchent 1 250 euros par mois, il faut que la CEHR soit revalorisée – même si je vous accorde que ce n’est pas le meilleur outil, et c’est d’ailleurs pourquoi nous en proposons d’autres, comme la taxe Zucman.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-14",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Ces baisses de recettes ont bénéficié principalement aux 1 % les plus riches, comme l’a documenté de façon très précise le dernier rapport du Conseil des prélèvements obligatoires (CPO) (Applaudissements sur les bancs du groupe LFI-NFP. – Protestations sur les bancs du groupe EPR) : il suffit de songer à l’instauration de la flat tax ou à la suppression de l’ISF – je ne vais pas citer toute la panoplie. Les chiffres vous donnent tort.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+    },
+    {
+      "date": "2026-10-14",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Par votre faute, à cause de l’instauration de la flat tax et de la suppression de l’ISF, quelques milliers de nos concitoyens payent moitié moins d’impôt que la plupart des Français.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-14-octobre-2026"
+    },
+    {
+      "date": "2026-10-13",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Ce gouvernement s’y refuse, car il a enrichi comme jamais une caste qui profite du pacte Dutreil, de la suppression de l’impôt de solidarité sur la fortune (ISF), d’un barème unique sur l’héritage.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+    }
+  ],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000756",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Avant le chapitre II du titre IV de la première partie du livre Ier, il est inséré un chapitre I ter…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000756"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000844",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 4 : Le deuxième alinéa du I de l’article 973 du code général des impôts, est complété par une phrase ainsi rédigée : « La limite de l’abattement précité est fixée…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000844"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000872",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Modifier ainsi le 2° du I de l’article 219 du code général des impôts :1° Au deuxième alinéa du a bis, les mots : « et afférentes à des éléments autres que les…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000872"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000873",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié :1° Au deuxième alinéa du I. de l’article 216, le taux : « 5 % » et le taux : « 1 % » sont remplacés par le taux…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000873"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000874",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Après le j du 6 de l’article 145 du code général des impôts, il est rétabli un k ainsi rédigé :« k. À l’ensemble des sommes distribuées perçues par les…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000874"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001275",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 4 : I. – Avant le chapitre II du titre IV de la première partie du livre premier du code général des impôts, il est inséré un chapitre I ter ainsi rédigé :«…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001275"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001316",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre I bis du titre IV de la première partie du livre premier du code général des impôts est ainsi…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001316"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001318",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Les articles du code général des impôts modifiés par l’article 31 de la loi n° 2017‑1837 du 30 décembre 2017 de finances pour 2018 sont rétablis…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001318"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001323",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le chapitre I bis du titre IV de la première partie du livre premier du code général des impôts est rétabli et ainsi rédigé :« Art. 885 A. – Sont soumises…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001323"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001368",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 10 : L’article 787 B du code général des impôts est ainsi modifié :1° La seconde phrase du deuxième alinéa est remplacée par une phrase ainsi rédigée : « N’est pas…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001368"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001456",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Supprime l'article 3.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001456"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001458",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 3 : Rédiger ainsi cet article : « Le deuxième alinéa du a du 5 de l’article 158 du code général des impôts est remplacé par trois alinéas ainsi rédigés :« «…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001458"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000317",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 3.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000317"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000318",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 3 : Rédiger ainsi cet article :« I. – Le deuxième alinéa du a du 5 de l’article 158 du code général des impôts est remplacé par trois alinéas ainsi rédigés :«…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000318"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001046",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Après le chapitre I du titre IV de la première partie du livre Ier du code général des impôts, il est…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001046"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001077",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre I bis du titre IV de la première partie du livre premier est rétabli et ainsi rédigé :« Art.…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001077"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001078",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 4 : I. – Au premier alinéa du V de l’article L. 4122‑8 du code de la défense, la référence : « 982 » est remplacée par la référence : « 885 W ».II. – Le code…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001078"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001079",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Les articles du code général des impôts modifiés par l’article 31 de la loi n° 2017‑1837 du 30 décembre 2017 de finances pour 2018 sont rétablis…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001079"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001080",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 4 : Le deuxième alinéa du I de l’article 973 du code général des impôts est complété par une phrase ainsi rédigée : « La limite de l’abattement précité est fixée à…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001080"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001091",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 10 : L’article 787 B du code général des impôts est ainsi modifié :1° La seconde phrase du deuxième alinéa est ainsi rédigée :« N’est pas davantage considérée comme…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001091"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002566",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre I bis du titre IV de la première partie du livre premier est ainsi rétabli :« Chapitre I bis«…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002566"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002618",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Le I de l’article 219 du code général des impôts est ainsi modifié :1° Au a bis, les mots : « et afférentes à des éléments autres que les titres de…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002618"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002619",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié :1° Le deuxième alinéa du I de l’article 216 est ainsi modifié :a) À la première phrase, le taux : « 5 % » est…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002619"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002620",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Le k de l’article 145 du code général des impôts est ainsi rétabli :« k. A l’ensemble des sommes distribuées perçues par les compagnies financières holding…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002620"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N002627",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 3 : L’article 111 du code général des impôts est complété par un f ainsi rédigé :« f. Les revenus perçus par les entités et sociétés définies aux articles L. 517‑1…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002627"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "784668618",
+      "nom": "MOUVEMENT DES ENTREPRISES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668618",
+      "objet": "PLF 2026 : alerter sur les incohérences de la rédaction du projet de taxe sur les holdings patrimoniales par rapport aux objectifs annoncés",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "326943016",
+      "nom": "ASSO FRANCAI ENTREPRIS PRIVEES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=326943016",
+      "objet": "PLF 2026 - TAXE HOLDING SUR LES BIENS SOMPTUAIRES : EXONERER LES OEUVRES D'ART EXPOSEES OU ACQUISES EN VUE D'EXPOSITION AU PUBLIC",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784855876",
+      "nom": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876",
+      "objet": "PLF 2026 : soutenir la sécurisation de la taxe sur les holdings patrimoniales en en limitant l'assiette aux biens dits somptuaires non affectés à une activité professionnelle",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "349889154",
+      "nom": "OXFAM FRANCE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=349889154",
+      "objet": "Inciter à l'instauration d'un impôt plancher sur le patrimoine des ultra-riches (taxe zucman)\n",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "582041943",
+      "nom": "PERNOD RICARD",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=582041943",
+      "objet": "EXPLIQUER EN QUOI L’AUGMENTATION DES TAXES SUR LE PATRIMOINE SERAIENT PREJUDICIABLE EN MATIERE DE SOUVERAINETE ECONOMIQUE POUR DES ENTREPRISES FAMILIALES COMME PERNOD RICARD",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "420077562",
+      "nom": "ASSOCIATION A T T A C",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=420077562",
+      "objet": "Faire adopter au Sénat l'impôt plancher sur la fortune (IPF) / taxe Zucman",
+      "actions": [
+        "transmission d'expertise",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "PLF 2025 : Modifier l'assiette de l'impôt sur la fortune improductive pour en dissocier les fonds monétaires",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "341737062",
+      "nom": "CNP ASSURANCES",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=341737062",
+      "objet": "Projet de loi de finances 2026 (PLF 2026) : expliquer en quoi l'inclusion de l'assurance vie dans l'assiette de l'impôt sur la fortune immobilière serait préjudiciable.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784358970",
+      "nom": "COMITE PROFESSION GALERIE ART",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784358970",
+      "objet": "PLF 2026 : Maintenir un cadre fiscal équitable pour le marché de l'art en France",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "303215016",
+      "nom": "CONFEDERATION DES PETITES ET MOYENNES ENTREPRISES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=303215016",
+      "objet": "PLF 2026 - Supprimer la taxe sur le patrimoine financier des holdings patrimoniales",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "434255329",
+      "nom": "CPME CORREZE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434255329",
+      "objet": "Oeuvrer pour ne pas taxer davantage les holdings ce qui reviendrait à pénaliser l’investissement, la transmission et la solidité du tissu entrepreneurial ",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "552081317",
+      "nom": "ELECTRICITE DE FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=552081317",
+      "objet": "Eviter le risque d’exclusion d'acteurs labélisés RGE détenus par une holding ne pouvant pas avoir cette qualification pour la réalisation de travaux de rénovation énergétique (PPL Cazenave)",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "431853530",
+      "nom": "ESL & NETWORK FRANCE SAS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=431853530",
+      "objet": "PLF 2026 : alerter sur l'impact pour l'épargne d'un amendement visant à transformer l’Impôt sur la Fortune Immobilière (IFI) en Impôt sur le Patrimoine Improductif (IPI)",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784409013",
+      "nom": "FEDERATION FRANCAISE DE L ASSURANCE (FFA)",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784409013",
+      "objet": "PLF 2026 : expliquer en quoi l'inclusion de l'assurance vie dans l'assiette de l'impôt sur la fortune immobilière serait préjudiciable",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "302998554",
+      "nom": "FEDERATION NATIONALE DE LA PROPRIETE PRIVEE RURALE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302998554",
+      "objet": "Projet de loi de finances 2026 et \"impôt sur la fortune improductive\": Exclure de l'IFI les terres agricoles qui sont des biens productifs",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "304426240",
+      "nom": "FEDERATION NATIONALE MUTUALITE FRANCAISE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=304426240",
+      "objet": "PLF 2025* : Empêcher la diminution du taux de réduction des dons déductibles de l’impôt sur la fortune immobilière ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "349165779",
+      "nom": "FRANCE INVEST",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=349165779",
+      "objet": "LF 2026 : Eviter les dispositifs fiscaux entrainant des freins au financement des entreprises via les acteurs du Capital Investissement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "532572112",
+      "nom": "IMAGE 7",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112",
+      "objet": "Défense du régime fiscal de l'apport-cession permettant le report dans le temps des plus-values imposables lorsque les titres sont cédés par la société holding (art 150 OB ter du CGI). ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "945408011",
+      "nom": "INSTITUT NATIONAL BITCOIN",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=945408011",
+      "objet": "Obtenir l'ouverture de la procédure de contrôle des investissements étrangers dans le cadre de la cession d'Exaion à Mara Holdings et la suppression de la clause de non-concurrence imposée à EDF",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "880044755",
+      "nom": "MOBILIS FAMILY OFFICE HOLDIN",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=880044755",
+      "objet": "Expliquer les impacts économiques, juridiques et patrimoniaux de la taxe sur les holdings et contribuer aux échanges sur son évolution afin d’en préserver la cohérence.",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "388522286",
+      "nom": "UI DES COTES D'ARMOR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=388522286",
+      "objet": "S’opposer à une taxation des holdings qui soutiennent l’investissement patrimonial de nos entreprises, afin d’éviter une dépendance accrue vis‑à‑vis de capitaux issus de fonds de pension étrangers.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "W751003603",
+      "nom": "UNION NATIONALE DES PROPRIETAIRES IMMOBILIERS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751003603",
+      "objet": "Transformation de l'IFI en un impôt sur la fortune improductive excluant les biens mis en location",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "777461146",
+      "nom": "UNION PATRONALE DES INDUSTRIES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777461146",
+      "objet": "S’opposer à une taxation des holdings qui soutiennent l’investissement patrimonial de nos entreprises, afin d’éviter une dépendance accrue vis‑à‑vis de capitaux issus de fonds de pension étrangers.",
+      "actions": [
+        "rencontre"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 13,
+    "rapports_avec_liste": 10,
+    "comptes_rendus_lus": 83
+  },
+  "synthese": {
+    "position_probable": "Éric Coquerel est probablement favorable à la mesure, comme en témoigne son amendement n° 756, cosigné et rejeté, ainsi que sa déclaration en séance le 4 novembre 2026.",
+    "argument": "Présenter à ce député que son amendement n° 756, qui visait à modifier le code général des impôts, a été rejeté, afin de lui montrer que la suppression de la taxe sur la fortune improductive et de la taxe sur les holdings patrimoniales n'est pas acquise.",
+    "chiffres_utilises": [
+      "756",
+      "4",
+      "2026"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
+    "verifie": true,
+    "date": "2026-11-14"
+  }
+}
