@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.829Z",
+    "generated_at": "2026-11-14T16:09:48.097Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -2052,20 +2052,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 323, retiré (« Article 52 : I. – À l’alinéa 1, substituer au chiffre : « 100 » le chiffre « 300 ». II. – En conséquence, à l’alinéa 2, substituer au chiffre : « 275 » le chiffre : « 75 » »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 323 (« Article 52 : I. – À l’alinéa 1, substituer au chiffre : « 100 » le chiffre « 300 ». II. – En conséquence, à l’alinéa 2, substituer au chiffre : « 275 » le chiffre : « 75 » »).",
+    "position_probable": "Dominique Voynet est probablement contre la mesure, comme en témoigne l'amendement n° 740 qui supprime l'article 78 et a été adopté.",
+    "argument": "Présenter à ce député l'amendement n° 740, qui supprime l'article 78 et a été adopté, car il s'aligne directement sur l'objectif du client de bloquer la baisse des crédits du logement.",
     "chiffres_utilises": [
-      "323",
-      "52",
-      "1",
-      "100",
-      "300",
-      "2",
-      "275",
-      "75"
+      "78",
+      "740"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

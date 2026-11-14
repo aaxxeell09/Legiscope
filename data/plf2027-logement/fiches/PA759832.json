@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.823Z",
+    "generated_at": "2026-11-14T16:09:20.692Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1062,14 +1062,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 2281, adopté (« ETAT B : Le présent amendement vise à augmenter les moyens de l’Agence de la transition écologique (ADEME), portés par le programme 181 « Prévention des risques », afin… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 2281 (« ETAT B : Le présent amendement vise à augmenter les moyens de l’Agence de la transition écologique (ADEME), portés par le programme 181 « Prévention des risques », afin… »).",
+    "position_probable": "Ses actes personnels ne permettent pas de trancher sa position sur la mesure, car ses amendements portent sur le programme 181 et non sur l'article 78, et son groupe est divisé.",
+    "argument": "Présenter à ce député que la mesure vise la baisse des crédits du logement (mission Cohésion des territoires, programmes 109 et 135 ; article 78), car son groupe est divisé et il n'a pas encore déposé d'amendement sur ce sujet précis.",
     "chiffres_utilises": [
-      "2281",
-      "181"
+      "78",
+      "181",
+      "0.78",
+      "109",
+      "135"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

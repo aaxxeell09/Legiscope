@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.856Z",
+    "generated_at": "2026-11-14T16:11:29.179Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -926,14 +926,23 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 525, adopté (« Supprime l'article 74 »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 525 (« Supprime l'article 74 »).",
+    "position_probable": "Sa position personnelle n'est pas connue car elle n'a déposé aucun amendement ni fait de déclaration sur la mesure, et la position de son groupe est divisée.",
+    "argument": "Présenter à ce député l'amendement cosigné qui réintègre les étudiants extracommunautaires et non boursiers dans le système des aides personnelles au logement, car il défend la même logique de protection sociale que le client sur la mesure.",
     "chiffres_utilises": [
-      "525",
-      "74"
+      "109",
+      "135",
+      "78",
+      "0.5",
+      "74",
+      "2023",
+      "10",
+      "0",
+      "2026",
+      "22",
+      "1000000"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.835Z",
+    "generated_at": "2026-11-14T16:10:09.824Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -43,7 +43,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1462,20 +1462,18 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 3486, non examiné (« Après l'article 15 : I. – Le 4° et le 4° quater du 1 de l’article 207 du code général des impôts sont abrogés. II. – Le présent article s’applique aux exercices ouverts à compter… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 3486 et de sa déclaration du 30 octobre 2026 en séance : « J’ai le sentiment que le PTZ pour tous et pour tout serait comme offrir une tournée générale sur un bateau en train de couler. »",
+    "position_probable": "Daniel Labaronne est probablement contre la mesure, comme en témoignent ses déclarations en séance le 30 octobre 2026 sur le coût du PTZ et son amendement n° 474 tombé.",
+    "argument": "Présenter à ce député le chiffre de 1,35 milliard d’euros qu’il a lui-même cité en commission le 8 octobre 2026 pour illustrer le coût du PTZ, afin de l’encourager à soutenir la réduction des crédits du logement qui protège les finances publiques.",
     "chiffres_utilises": [
-      "3486",
-      "15",
-      "4",
-      "1",
-      "207",
-      "2026-10-30",
+      "474",
+      "2026",
       "30",
-      "2026"
+      "8",
+      "1.35",
+      "1000000000"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

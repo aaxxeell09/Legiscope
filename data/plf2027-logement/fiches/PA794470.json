@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.823Z",
+    "generated_at": "2026-11-14T16:09:23.812Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1378,15 +1378,15 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 116, adopté (« Article 7 : I. – Supprimer les alinéas 7 à 24. II. – Compléter cet article par l’alinéa suivant : « III. – La perte de recettes pour l’État est compensée à due concurrence… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 116 (« Article 7 : I. – Supprimer les alinéas 7 à 24. II. – Compléter cet article par l’alinéa suivant : « III. – La perte de recettes pour l’État est compensée à due concurrence… »).",
+    "position_probable": "Ses actes vont dans les deux sens, sans trancher sa position sur la mesure.",
+    "argument": "Présenter à ce député que l'Union nationale des fédérations d'organismes HLM (USH) a été entendue par les rapporteurs de sa commission le 5 novembre 2026, ce qui constitue un indice plus faible qu'un acte personnel, pour appuyer la position de l'Union sociale pour l'habitat contre la baisse des crédits du logement.",
     "chiffres_utilises": [
-      "116",
-      "7",
-      "24"
+      "2",
+      "2026",
+      "5"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

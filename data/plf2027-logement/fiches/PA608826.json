@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.812Z",
+    "generated_at": "2026-11-14T16:08:30.252Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1656,16 +1656,13 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 351, retiré (« Article 7 : I. – À la fin de l’alinéa 3, substituer aux mots : « trois ans » les mots : « cinq ans ou, d’un enfant mineur confié en vue de son adoption ou adopté depuis… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 351 (« Article 7 : I. – À la fin de l’alinéa 3, substituer aux mots : « trois ans » les mots : « cinq ans ou, d’un enfant mineur confié en vue de son adoption ou adopté depuis… »).",
+    "position_probable": "Virginie Duby-Muller est probablement favorable à la mesure, comme l'indique son cosignature d'un amendement adopté sur l'article 7.",
+    "argument": "Présenter à ce député l'adoption de son amendement cosigné qui modifie l'article 7 du code de la construction et de l'habitation, car il a travaillé avec la Savoisienne Habitat et la Fédération des coopératives d'HLM.",
     "chiffres_utilises": [
-      "351",
-      "7",
-      "3",
-      "5"
+      "7"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

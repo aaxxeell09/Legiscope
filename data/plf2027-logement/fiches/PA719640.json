@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.832Z",
+    "generated_at": "2026-11-14T16:10:00.210Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1438,15 +1438,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 3280, tombé (« Article 50 : Supprimer l’alinéa 3 »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 3280 (« Article 50 : Supprimer l’alinéa 3 »).",
+    "position_probable": "Sophie Mette a cosigné l'amendement 3803, tombé, qui modifie l'article 37 en lien avec l'article 78, ce qui indique probablement une position contre la mesure.",
+    "argument": "Présenter à ce député que l'Union nationale des fédérations d'organismes HLM (USH) a été entendue par les rapporteurs de sa commission le 5 novembre 2026, ce qui constitue un indice plus faible qu'un acte personnel mais ancre le sujet du logement dans les travaux de sa commission.",
     "chiffres_utilises": [
-      "3280",
-      "50",
-      "3"
+      "78",
+      "3803",
+      "37",
+      "2026",
+      "5"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

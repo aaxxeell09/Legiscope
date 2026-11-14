@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.835Z",
+    "generated_at": "2026-11-14T16:10:14.775Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -935,20 +935,39 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1741, adopté (« Article 7 : I. – Rédiger ainsi les alinéas 2 à 4 : « A. – L’article L. 31‑10‑3 est ainsi modifié : « 1° Le I est complété par un d et un alinéa ainsi rédigés : « « d)… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 1741 (« Article 7 : I. – Rédiger ainsi les alinéas 2 à 4 : « A. – L’article L. 31‑10‑3 est ainsi modifié : « 1° Le I est complété par un d et un alinéa ainsi rédigés : « « d)… »).",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, mais son groupe est contre la mesure.",
+    "argument": "Présenter à ce député l'amendement 3803, cosigné avec France urbaine et Intercommunalités de France et tombé, qui visait à réduire l'impact de l'article 78 sur les compensations, afin de relancer la discussion sur la baisse des crédits du logement.",
     "chiffres_utilises": [
-      "1741",
+      "109",
+      "135",
+      "78",
+      "1",
       "7",
       "2",
       "4",
       "31",
       "10",
       "3",
-      "1"
+      "15",
+      "244",
+      "3803",
+      "37",
+      "1.1",
+      "3805",
+      "34",
+      "13",
+      "2009",
+      "1673",
+      "30",
+      "2010",
+      "9",
+      "0",
+      "2026",
+      "22",
+      "5"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

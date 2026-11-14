@@ -1,12 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.861Z",
+    "generated_at": "2026-11-14T16:12:00.946Z",
     "sources": [],
     "limits": "42 fiche(s) produite(s) sur 42 député(s) de groupes-action.json et pivots.json.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
   "disponibles": [
+    "PA607553",
     "PA608826",
     "PA642847",
     "PA718850",
@@ -15,7 +16,6 @@
     "PA841801",
     "PA719272",
     "PA718838",
-    "PA607553",
     "PA330008",
     "PA759832",
     "PA794470",

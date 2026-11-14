@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.847Z",
+    "generated_at": "2026-11-14T16:10:50.388Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -39,7 +39,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1856,30 +1856,18 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 3726, non examiné (« Après l'article 7 : I. – A la fin du VII de l’article 99 de la loi n° 2008‑1425 du 27 décembre 2008 de finances pour 2009, la date : « 31 décembre 2027 » est remplacée par la date… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 3726 et de sa déclaration du 17 juin 2026 en séance : « Les chiffres au 1er janvier 2024 sont édifiants : 2,6 millions de ménages attendent un logement social ; en un an, les attributions ont chuté de 6 %, la plus forte baisse hors période de pandémie de covid, et le délai d’attente moyen pour un logement frôle désormais les 540 jours. »",
+    "position_probable": "Mickaël Cosson est probablement contre la mesure, comme l'indiquent ses déclarations en séance le 17 juin 2026 et le 21 octobre 2025.",
+    "argument": "Présenter à ce député les chiffres cités en séance le 17 juin 2026 sur la chute des attributions de logements sociaux, car il a cosigné l'amendement 3803 tombé qui visait à compenser les effets de l'article 78, ce qui montre son intérêt pour la protection des crédits du logement.",
     "chiffres_utilises": [
-      "3726",
-      "7",
-      "99",
-      "2008",
-      "1425",
-      "27",
-      "2009",
-      "31",
-      "2027",
-      "2026-06-17",
-      "1",
-      "2024",
-      "2.6",
-      "6",
-      "540",
-      "1000000",
+      "2026",
       "17",
-      "2026"
+      "2025",
+      "21",
+      "78",
+      "3803"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

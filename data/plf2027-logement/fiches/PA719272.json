@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.818Z",
+    "generated_at": "2026-11-14T16:09:04.355Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1681,18 +1681,31 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 210, rejeté (« Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « À la deuxième phrase du II de l’article L. 31‑10‑3 du code de la construction et de l’habitation, le… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 210 (« Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « À la deuxième phrase du II de l’article L. 31‑10‑3 du code de la construction et de l’habitation, le… »).",
+    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car elle n'a ni déposé d'amendement ni fait de déclaration, mais son groupe est contre.",
+    "argument": "Présenter à ce député les amendements qu'elle a cosignés sur l'article 7, dont certains ont été rejetés ou sont tombés, pour montrer que son engagement sur le logement est déjà visible et qu'il peut être renforcé contre la baisse des crédits.",
     "chiffres_utilises": [
-      "210",
+      "109",
+      "135",
+      "78",
+      "0.75",
       "7",
       "4",
       "31",
       "10",
-      "3"
+      "3",
+      "2",
+      "1",
+      "0",
+      "0.7",
+      "0.85",
+      "2026",
+      "11",
+      "6",
+      "2030",
+      "5"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

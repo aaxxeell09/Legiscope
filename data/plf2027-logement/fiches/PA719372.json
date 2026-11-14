@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.826Z",
+    "generated_at": "2026-11-14T16:09:43.460Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -47,7 +47,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1284,20 +1284,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 1669, rejeté (« Article 8 : I. – Après l’alinéa 1, insérer l’alinéa suivant : « 1° A Le 4° du 1 de l’article 207 est abrogé ; ». II. – À l’alinéa 4, supprimer les mots : « les organismes… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 1669 et de sa déclaration du 30 octobre 2026 en séance : « Les bailleurs sociaux n’ont plus d’argent ! On a le droit de ne pas être d’accord ! »",
+    "position_probable": "Guillaume Kasbarian est probablement contre la mesure, comme en témoignent ses amendements 2024 et 2025, rejetés, ainsi que ses déclarations en séance le 30 octobre 2026.",
+    "argument": "Présenter à ce député que son amendement n° 2024, qui supprime les primes de déménagement après l'article 78, a été rejeté, afin de lui montrer que la mesure actuelle reste une contrainte pour les bailleurs sociaux qu'il défend.",
     "chiffres_utilises": [
-      "1669",
-      "8",
-      "1",
-      "4",
-      "207",
-      "2026-10-30",
+      "2024",
+      "2025",
+      "2026",
       "30",
-      "2026"
+      "78"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

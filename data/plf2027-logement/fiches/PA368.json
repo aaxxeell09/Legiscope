@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.824Z",
+    "generated_at": "2026-11-14T16:09:28.595Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -896,17 +896,25 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 3201, adopté (« Après l'article 7 : I. – L’article L. 31‑10‑3 du code de la construction et de l’habitation est complété par un VI ainsi rédigé : « VI. – Remplissent également la condition de… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 3201 (« Après l'article 7 : I. – L’article L. 31‑10‑3 du code de la construction et de l’habitation est complété par un VI ainsi rédigé : « VI. – Remplissent également la condition de… »).",
+    "position_probable": "Ses actes vont dans les deux sens, car il a cosigné un amendement adopté et un amendement rejeté, ce qui rend sa position personnelle sur la mesure incertaine.",
+    "argument": "Présenter à ce député que l'Union sociale pour l'habitat s'oppose à la suppression de l'Agence nationale de l'habitat, car il a cosigné l'amendement du groupe Droite républicaine qui appelait à cette suppression et qui a été rejeté.",
     "chiffres_utilises": [
-      "3201",
+      "2",
+      "109",
+      "135",
+      "78",
+      "0.75",
       "7",
       "31",
       "10",
-      "3"
+      "3",
+      "1",
+      "0",
+      "2026",
+      "27"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

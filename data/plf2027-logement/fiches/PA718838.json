@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.819Z",
+    "generated_at": "2026-11-14T16:09:11.680Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1748,21 +1748,20 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1622, non examiné (« Après l'article 7 : I. – A la fin du VII de l’article 99 de la loi n° 2008‑1425 du 27 décembre 2008 de finances pour 2009, la date : « 31 décembre 2027 » est remplacée par la date… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 1622 (« Après l'article 7 : I. – A la fin du VII de l’article 99 de la loi n° 2008‑1425 du 27 décembre 2008 de finances pour 2009, la date : « 31 décembre 2027 » est remplacée par la date… »).",
+    "position_probable": "Fabrice Brun a cosigné un amendement non examiné qui modifie la date du 31 décembre 2027 dans l'article 99 de la loi n° 2008‑1425 du 27 décembre 2008, ce qui suggère qu'il est probablement favorable à la mesure.",
+    "argument": "Présenter à ce député que la Fédération nationale des offices publics de l'habitat a été entendue par les rapporteurs de sa commission le 28 octobre 2026, ce qui constitue un indice plus faible qu'un acte personnel pour appuyer la position de l'Union sociale pour l'habitat contre la mesure.",
     "chiffres_utilises": [
-      "1622",
-      "7",
       "99",
       "2008",
       "1425",
       "27",
-      "2009",
       "31",
-      "2027"
+      "2027",
+      "2026",
+      "28"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

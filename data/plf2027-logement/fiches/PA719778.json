@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.833Z",
+    "generated_at": "2026-11-14T16:10:03.881Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -43,7 +43,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1708,18 +1708,15 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 669, adopté (« Article 7 : I. – Compléter l’alinéa 3 par les mots : « , y compris lorsque la résidence de cet enfant est fixée en alternance au domicile de chacun de ses parents en… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 669 et de sa déclaration du 21 octobre 2026 en commission : « Je comprends le sens de l’amendement. Mais, au-delà du geste politique, ayant été rapporteur d’une mission d’évaluation de la politique du logement social dans les outre-mer, je souligne qu’il faudrait d’abord trouver des collectivités locales prêtes à porter les investissements nécessaires pour construire des foyers. Aujourd’hui, il n’y a pas ou très peu de candidats, et quand il y en a, les projets ne sont pas menés à leur terme. »",
+    "position_probable": "François Jolivet est probablement contre la mesure, comme le montrent ses amendements 2759 et 1096 qui suppriment l'article 78, respectivement adopté et en attente.",
+    "argument": "Présenter à ce député l'amendement n° 2759, qui supprime l'article 78 et a été adopté, car il s'inscrit dans sa volonté de réduire la mesure, ce qui correspond à l'objectif de l'Union sociale pour l'habitat.",
     "chiffres_utilises": [
-      "669",
-      "7",
-      "3",
-      "2026-10-21",
-      "21",
-      "2026"
+      "78",
+      "2759",
+      "1096"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

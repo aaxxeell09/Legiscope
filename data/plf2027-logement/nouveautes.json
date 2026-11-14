@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:42.096Z",
+    "generated_at": "2026-11-14T16:12:02.770Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -79,7 +79,7 @@
       }
     },
     {
-      "id": "ev-depot-2502",
+      "id": "ev-2502",
       "date": "2026-11-02",
       "type": "amendement_depose",
       "titre": "Amendement n° 2502 (LFI-NFP) déposé : Supprime l'article 78",
@@ -137,7 +137,7 @@
       }
     },
     {
-      "id": "ev-depot-1096",
+      "id": "ev-1096",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "3 amendements identiques (n° 1096, n° 1386, n° 2519) (HOR) déposés : Supprime l'article 78",
@@ -195,7 +195,7 @@
       }
     },
     {
-      "id": "ev-depot-528",
+      "id": "ev-528",
       "date": "2026-10-19",
       "type": "amendement_depose",
       "titre": "2 amendements identiques (n° 528, n° 677) (RN) déposés : Supprime l'article 78",
@@ -691,7 +691,7 @@
       }
     },
     {
-      "id": "ev-depot-11",
+      "id": "ev-depots-2026-11-10",
       "date": "2026-11-10",
       "type": "amendement_depose",
       "titre": "1 amendement déposé sur le texte (EPR)",
@@ -737,7 +737,7 @@
       }
     },
     {
-      "id": "ev-depot-11-2",
+      "id": "ev-depots-2026-11-09",
       "date": "2026-11-09",
       "type": "amendement_depose",
       "titre": "1 amendement déposé sur le texte (Dem)",
@@ -783,7 +783,7 @@
       }
     },
     {
-      "id": "ev-depot-11-3",
+      "id": "ev-depots-2026-11-06",
       "date": "2026-11-06",
       "type": "amendement_depose",
       "titre": "7 amendements déposés sur le texte (EPR, Dem)",
@@ -875,7 +875,7 @@
       }
     },
     {
-      "id": "ev-depot-11-4",
+      "id": "ev-depots-2026-11-04",
       "date": "2026-11-04",
       "type": "amendement_depose",
       "titre": "392 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -942,7 +942,7 @@
       }
     },
     {
-      "id": "ev-depot-11-5",
+      "id": "ev-depots-2026-11-03",
       "date": "2026-11-03",
       "type": "amendement_depose",
       "titre": "215 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -971,16 +971,16 @@
       "date": "2026-11-03",
       "type": "rapport",
       "titre": "4 rapports du texte publiés avec la liste des personnes entendues (83 organisations)",
-      "detail": "Organisations entendues : université Paris Cité, Organisation de coopération et de développement économiques (OCDE), Direction générale de l’administration et de la fonction publique (DGAFP), Centre national de la recherche scientifique (CNRS), Institut des politiques publiques (IPP), université Bourgogne Europe, Association française des acteurs de l’éducation, Le café pédagogique, Direction générale des relations humaines (DGRH) du ministère de l’éducation nationale, Direction des affaires financières (DAF) du ministère de l’éducation nationale, Institut national de la statistique et des études économiques (Insee), Haut-commissariat à la stratégie et au plan….",
+      "detail": "Organisations entendues : Association de défense des consommateurs et usagers (CLCV), Confédération nationale du logement (CNL), Association Droit au logement (DAL), Association Force ouvrière des consommateurs (AFOC), Collectif Les Morts de la rue, Association Dalo, Utopia 56, Confédération de l'artisanat et des petites entreprises du bâtiment (CAPEB), Fédération française du bâtiment (FFB), Collectif Rénovons, Union sociale pour l’habitat, Fédération Nationale de l'Immobilier (FNAIM)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 3 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -988,7 +988,7 @@
       }
     },
     {
-      "id": "ev-depot-11-6",
+      "id": "ev-depots-2026-11-02",
       "date": "2026-11-02",
       "type": "amendement_depose",
       "titre": "369 amendements déposés sur le texte (SOC, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1013,7 +1013,7 @@
       }
     },
     {
-      "id": "ev-depot-10",
+      "id": "ev-depots-2026-10-31",
       "date": "2026-10-31",
       "type": "amendement_depose",
       "titre": "66 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, GDR, EPR)",
@@ -1063,7 +1063,7 @@
       }
     },
     {
-      "id": "ev-depot-10-2",
+      "id": "ev-depots-2026-10-30",
       "date": "2026-10-30",
       "type": "amendement_depose",
       "titre": "668 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1130,7 +1130,7 @@
       }
     },
     {
-      "id": "ev-depot-1493",
+      "id": "ev-1493",
       "date": "2026-10-29",
       "type": "amendement_depose",
       "titre": "Amendement n° 1493 (EPR) déposé : La suppression de cette prestation réduit les dépenses du Fonds national d’aide au…",
@@ -1155,7 +1155,7 @@
       }
     },
     {
-      "id": "ev-depot-1494",
+      "id": "ev-1494",
       "date": "2026-10-29",
       "type": "amendement_depose",
       "titre": "Amendement n° 1494 (EPR) déposé : Le présent amendement réduit de moitié, à compter du 1 er janvier 2027, le montant de…",
@@ -1180,7 +1180,7 @@
       }
     },
     {
-      "id": "ev-depot-10-3",
+      "id": "ev-depots-2026-10-29",
       "date": "2026-10-29",
       "type": "amendement_depose",
       "titre": "405 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1226,7 +1226,7 @@
       }
     },
     {
-      "id": "ev-depot-10-4",
+      "id": "ev-depots-2026-10-28",
       "date": "2026-10-28",
       "type": "amendement_depose",
       "titre": "236 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1255,16 +1255,16 @@
       "date": "2026-10-28",
       "type": "rapport",
       "titre": "2 rapports du texte publiés avec la liste des personnes entendues (55 organisations)",
-      "detail": "Organisations entendues : Fédération nationale de l’immobilier (FNAIM), Association des responsables de copropriétés (ARC), Union nationale des propriétaires immobiliers (UNPI), Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb), France urbaine, Agence parisienne du climat, NegaWatt, Rénovons-CLER-Réseau pour la transition énergétique, Observatoire national de rénovation énergétique (ONRE), Observatoire national de la précarité énergétique (ONPE), Secrétariat général à la planification écologique (SGPE), Association Force ouvrière consommateurs (Afoc)….",
+      "detail": "Organisations entendues : Groupement des professionnels des certificats d’économies d’énergie (GPCEE), Union française de l’électricité (UFE), France Gaz, Association des agriculteurs méthaniseurs de France (AAMF), France Hydrogène, Que choisir ensemble, Conseil national des associations familiales laïques (Cnafal), Consommation, logement et cadre de vie (CLCV), Fédération des services Énergie Environnement (Fedene), Cilab, Association de collectivités, gestion des déchets, réseaux de chaleurs, gestion locale de l’énergie (Amorce), Fédération nationale des activités de la dépollution et de l’environnement (Fnade)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 28 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1272,7 +1272,7 @@
       }
     },
     {
-      "id": "ev-depot-1082",
+      "id": "ev-1082",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "2 amendements identiques (n° 1082, n° 2518) (HOR) déposés : L’article 126 de la loi de finances pour 2018 a créé un dispositif de réduction de loyer…",
@@ -1301,7 +1301,7 @@
       }
     },
     {
-      "id": "ev-depot-10-5",
+      "id": "ev-depots-2026-10-27",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "152 amendements déposés sur le texte (SOC, RN, NI, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1347,7 +1347,7 @@
       }
     },
     {
-      "id": "ev-depot-10-6",
+      "id": "ev-depots-2026-10-26",
       "date": "2026-10-26",
       "type": "amendement_depose",
       "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1393,7 +1393,7 @@
       }
     },
     {
-      "id": "ev-depot-10-7",
+      "id": "ev-depots-2026-10-25",
       "date": "2026-10-25",
       "type": "amendement_depose",
       "titre": "7 amendements déposés sur le texte (SOC, EPR)",
@@ -1418,7 +1418,7 @@
       }
     },
     {
-      "id": "ev-depot-10-8",
+      "id": "ev-depots-2026-10-24",
       "date": "2026-10-24",
       "type": "amendement_depose",
       "titre": "4 amendements déposés sur le texte (RN)",
@@ -1568,7 +1568,7 @@
       }
     },
     {
-      "id": "ev-depot-10-9",
+      "id": "ev-depots-2026-10-23",
       "date": "2026-10-23",
       "type": "amendement_depose",
       "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR)",
@@ -1643,7 +1643,7 @@
       }
     },
     {
-      "id": "ev-depot-10-10",
+      "id": "ev-depots-2026-10-22",
       "date": "2026-10-22",
       "type": "amendement_depose",
       "titre": "536 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1710,7 +1710,7 @@
       }
     },
     {
-      "id": "ev-depot-10-11",
+      "id": "ev-depots-2026-10-21",
       "date": "2026-10-21",
       "type": "amendement_depose",
       "titre": "245 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1819,7 +1819,7 @@
       }
     },
     {
-      "id": "ev-depot-10-12",
+      "id": "ev-depots-2026-10-20",
       "date": "2026-10-20",
       "type": "amendement_depose",
       "titre": "159 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, EPR, EcoS, DR, Dem)",
@@ -1936,7 +1936,7 @@
       }
     },
     {
-      "id": "ev-depot-10-13",
+      "id": "ev-depots-2026-10-19",
       "date": "2026-10-19",
       "type": "amendement_depose",
       "titre": "328 amendements déposés sur le texte (UDR, SOC, RN, NI, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1961,7 +1961,7 @@
       }
     },
     {
-      "id": "ev-depot-10-14",
+      "id": "ev-depots-2026-10-18",
       "date": "2026-10-18",
       "type": "amendement_depose",
       "titre": "13 amendements déposés sur le texte (SOC)",
@@ -1986,7 +1986,7 @@
       }
     },
     {
-      "id": "ev-depot-10-15",
+      "id": "ev-depots-2026-10-17",
       "date": "2026-10-17",
       "type": "amendement_depose",
       "titre": "92 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, EPR, EcoS)",
@@ -2011,7 +2011,7 @@
       }
     },
     {
-      "id": "ev-depot-337",
+      "id": "ev-337",
       "date": "2026-10-16",
       "type": "amendement_depose",
       "titre": "Amendement n° 337 (RN) déposé : Le présent amendement vise à mesurer spécifiquement les délais d’accès au logement social…",
@@ -2111,7 +2111,7 @@
       }
     },
     {
-      "id": "ev-depot-10-16",
+      "id": "ev-depots-2026-10-16",
       "date": "2026-10-16",
       "type": "amendement_depose",
       "titre": "2380 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2199,7 +2199,7 @@
       }
     },
     {
-      "id": "ev-depot-10-17",
+      "id": "ev-depots-2026-10-15",
       "date": "2026-10-15",
       "type": "amendement_depose",
       "titre": "669 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, GDR, EPR, EcoS, DR, Dem)",
@@ -2245,7 +2245,7 @@
       }
     },
     {
-      "id": "ev-depot-107",
+      "id": "ev-107",
       "date": "2026-10-13",
       "type": "amendement_depose",
       "titre": "Amendement n° 107 (RN) déposé : Cet amendement vise à créer un dispositif « 100 % Rénov » ayant vocation à se substituer…",

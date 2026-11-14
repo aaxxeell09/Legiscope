@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.825Z",
+    "generated_at": "2026-11-14T16:09:32.825Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -910,18 +910,39 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1172, non examiné (« Après l'article 15 : I. – Le code général des impôts est ainsi modifié : 1° Au premier alinéa du 1 de l’article 199 undecies A, la date : « 31 décembre 2029 » est remplacée par la… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 1172 (« Après l'article 15 : I. – Le code général des impôts est ainsi modifié : 1° Au premier alinéa du 1 de l’article 199 undecies A, la date : « 31 décembre 2029 » est remplacée par la… »).",
+    "position_probable": "Sa position personnelle sur la mesure n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, et son groupe est divisé.",
+    "argument": "Présenter à ce député que l'Union sociale pour l'habitat s'oppose à la baisse des crédits du logement, en précisant que la Fédération du bâtiment et des travaux publics, citée dans les amendements qu'il a cosignés, est un acteur clé du secteur.",
     "chiffres_utilises": [
-      "1172",
+      "109",
+      "135",
+      "78",
+      "0.5",
       "15",
       "1",
       "199",
       "31",
-      "2029"
+      "2029",
+      "7",
+      "99",
+      "2008",
+      "1425",
+      "27",
+      "2009",
+      "2027",
+      "90",
+      "2010",
+      "1657",
+      "29",
+      "2011",
+      "181",
+      "0",
+      "2026",
+      "10",
+      "22",
+      "2"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

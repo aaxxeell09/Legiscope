@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.860Z",
+    "generated_at": "2026-11-14T16:11:47.893Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1847,22 +1847,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 629, tombé (« Après l'article 16 : I. – Au premier alinéa du B de l’article 278‑0 bis du code général des impôts, après le mot : « livraisons », sont insérés les mots :« d’électricité d’une… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 629 et de sa déclaration du 28 avril 2026 en séance : « Comment expliquer que, face à l’ampleur de la crise du logement social devenue structurelle en outre-mer, l’État persiste dans une logique de désengagement ? J’ai bien compris que vous ne l’aviez appris que cet après-midi lors des questions au gouvernement, mais les crédits de la ligne budgétaire unique accusent depuis quelque temps une baisse mortifère – moins 20 % en deux ans – qui, manifestement, s’accélérera en 2027. »",
+    "position_probable": "Jean-Philippe Nilor est probablement contre la mesure, comme en témoignent ses cosignatures sur les amendements 252, 1856 et 2620 qui suppriment l'article 78 et ont été adoptés.",
+    "argument": "Présenter à ce député l'amendement n° 252, qui supprime l'article 78 et a été adopté, car il s'inscrit directement dans la volonté de son groupe de bloquer la baisse des crédits du logement.",
     "chiffres_utilises": [
-      "629",
-      "16",
-      "278",
-      "0",
-      "2026-04-28",
-      "20",
-      "2027",
-      "2",
-      "28",
-      "2026"
+      "78",
+      "252",
+      "1856",
+      "2620"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

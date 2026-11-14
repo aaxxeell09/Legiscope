@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.851Z",
+    "generated_at": "2026-11-14T16:11:05.922Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1053,14 +1053,22 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 2063, en attente (« ETAT B : Le présent amendement vise à augmenter les moyens de l’Agence de la transition écologique (ADEME), portés par le programme 181 « Prévention des risques », afin… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 2063 (« ETAT B : Le présent amendement vise à augmenter les moyens de l’Agence de la transition écologique (ADEME), portés par le programme 181 « Prévention des risques », afin… »).",
+    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car il n'a déposé ni cosigné d'amendement la concernant et n'a pas pris la parole en séance ou en commission sur ce sujet.",
+    "argument": "Présenter à ce député que l'Union sociale pour l'habitat s'oppose à la baisse des crédits du logement, en précisant qu'il a entendu la Direction de la sécurité sociale le 9 novembre 2026 en tant que rapporteur pour avis.",
     "chiffres_utilises": [
-      "2063",
-      "181"
+      "109",
+      "135",
+      "78",
+      "0.5",
+      "181",
+      "0",
+      "2026",
+      "11",
+      "4",
+      "9"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.839Z",
+    "generated_at": "2026-11-14T16:10:23.475Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -43,7 +43,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1475,24 +1475,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 1741, adopté (« Article 7 : I. – Rédiger ainsi les alinéas 2 à 4 : « A. – L’article L. 31‑10‑3 est ainsi modifié : « 1° Le I est complété par un d et un alinéa ainsi rédigés : « « d)… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 1741 et de sa déclaration du 13 octobre 2026 en séance : « Sur ce point, le Parlement a aujourd’hui une responsabilité fondamentale. Ce dernier budget du quinquennat a le mérite de fixer un cap impératif, celui de la réduction du déficit à 5 % du PIB, et de comporter plusieurs mesures utiles : le pacte Papin qui facilite la reprise d’entreprises, le prêt à taux zéro (PTZ) parentalité, la circulation du patrimoine ou encore le soutien à l’investissement industriel. »",
+    "position_probable": "Jean-Paul Mattei est probablement contre la mesure, comme l'indique son amendement n° 3803, tombé, qui vise à réduire les crédits du logement.",
+    "argument": "Présenter à ce député l'amendement 3803 qu'il a déposé et qui est tombé, car il vise à diminuer les crédits de l'article 78, ce qui correspond à l'objectif de l'Union sociale pour l'habitat de réduire la baisse des aides au logement.",
     "chiffres_utilises": [
-      "1741",
-      "7",
-      "2",
-      "4",
-      "31",
-      "10",
-      "3",
-      "1",
-      "2026-10-13",
-      "5",
-      "13",
-      "2026"
+      "3803",
+      "78"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

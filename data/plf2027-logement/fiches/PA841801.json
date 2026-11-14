@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.817Z",
+    "generated_at": "2026-11-14T16:09:02.327Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1775,18 +1775,39 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 507, rejeté (« Après l'article 7 : I. – La seconde phrase du troisième alinéa de l’article L. 31-10-10 du code de la construction et de l’habitation est ainsi modifiée : 1° Le montant : « 156… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 507 (« Après l'article 7 : I. – La seconde phrase du troisième alinéa de l’article L. 31-10-10 du code de la construction et de l’habitation est ainsi modifiée : 1° Le montant : « 156… »).",
+    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car il n'a ni déposé d'amendement ni fait de déclaration, et son groupe est divisé.",
+    "argument": "Présenter à ce député que l'Union sociale pour l'habitat a été entendue par les rapporteurs de sa commission le 28 octobre 2026, ce qui constitue un indice plus faible qu'un acte personnel, afin de l'inviter à soutenir la position de son client contre la mesure.",
     "chiffres_utilises": [
-      "507",
+      "109",
+      "135",
+      "78",
+      "0.5",
       "7",
       "31",
       "10",
       "1",
-      "156"
+      "156",
+      "99",
+      "2008",
+      "1425",
+      "27",
+      "2009",
+      "2027",
+      "1204",
+      "37",
+      "42",
+      "181",
+      "0",
+      "2026",
+      "20",
+      "21",
+      "22",
+      "28",
+      "6",
+      "2"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

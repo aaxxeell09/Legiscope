@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:41.815Z",
+    "generated_at": "2026-11-14T16:08:47.387Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -1672,15 +1672,29 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 576, rejeté (« Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « « Pour les personnes remplissant les conditions prévues au d , la condition de ressources mentionnée au… »).",
-    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 576 (« Article 7 : I. – Après l’alinéa 4, insérer l’alinéa suivant : « « Pour les personnes remplissant les conditions prévues au d , la condition de ressources mentionnée au… »).",
+    "position_probable": "Jean-Yves Bonnefoy a cosigné un amendement sur l'article 7 qui a été rejeté, ce qui indique qu'il est probablement favorable à la mesure, en cohérence avec le classement du cabinet.",
+    "argument": "Présenter à ce député que son groupe a cosigné un amendement appelant à la suppression de l'Agence nationale de l'habitat, rejeté, afin de souligner que la baisse des crédits du logement fragilise les acteurs du secteur.",
     "chiffres_utilises": [
-      "576",
       "7",
-      "4"
+      "109",
+      "135",
+      "78",
+      "0.75",
+      "4",
+      "3",
+      "31",
+      "10",
+      "2",
+      "1",
+      "0",
+      "2026",
+      "11",
+      "6",
+      "2030",
+      "5"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

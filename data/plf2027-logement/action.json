@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:42.099Z",
+    "generated_at": "2026-11-14T16:12:20.391Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -231,7 +231,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
       }
     ],
-    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3). 2 contre-argument(s) en gabarit.",
+    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3).",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
@@ -3543,44 +3543,66 @@
   },
   "contre_arguments": [
     {
-      "texte": "À l'argument « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre », opposer celui déjà entendu en séance le 4 novembre 2026 : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation à reprendre : « Cet extrême centre est prêt à toutes les compromissions avec l’extrême droite pour supprimer la contribution sur les bénéfices des grandes entreprises, pour allonger la liste des niches fiscales favorables aux plus riches, pour rejeter la taxe Zucman, le plafonnement du prix de l’essence ou la réforme du pacte Dutreil, ou encore pour attaquer les bailleurs sociaux, donc les plus modestes. »",
+      "texte": "La mesure ne vise pas à retirer de l'argent aux bailleurs sociaux, mais à réformer les aides personnelles au logement pour soutenir les ménages modestes. Le programme 109 voit ses crédits baisser de 0,31 % du fait notamment du gel du barème.",
       "repond_a": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
       "chiffres_utilises": [
-        "2026-11-04",
-        "4",
-        "2026"
+        "109",
+        "0.31"
       ],
-      "mode": "gabarit",
+      "mode": "llm",
       "verifie": true,
       "preuve": {
         "sources": [
           {
-            "label": "Séance du 4 novembre 2026",
+            "label": "séance publique du 16 octobre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+          },
+          {
+            "label": "séance publique du 4 novembre 2026 (argument du camp du client)",
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+          },
+          {
+            "label": "séance publique du 30 octobre 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
         "nature": "deduction"
       }
     },
     {
-      "texte": "À l'argument « Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre », opposer celui déjà entendu en séance le 30 octobre 2026 : « Position contre la mesure déduite du mot « supprimer » dans une phrase sur logement, apl et aides à la pierre ». Citation à reprendre : « Elle est intéressante, même s’il faut veiller à ne pas ouvrir le PTZ sans conditions, ce qui reviendrait à supprimer les taux d’intérêt pour tout le monde. »",
+      "texte": "La suppression de l'exonération de taxe foncière prive les bailleurs sociaux d'une ressource essentielle, ce qui fragilise leur capacité à produire du logement social. Le programme 135 subit une nouvelle baisse de 8 % alors que la production de logements sociaux est déjà en chute.",
       "repond_a": "Position pour la mesure déduite du mot « economies » dans une phrase sur logement, apl et aides à la pierre",
       "chiffres_utilises": [
-        "2026-10-30",
-        "30",
-        "2026"
+        "8",
+        "135"
       ],
-      "mode": "gabarit",
+      "mode": "llm",
       "verifie": true,
       "preuve": {
         "sources": [
           {
-            "label": "Séance du 30 octobre 2026",
+            "label": "commission du 8 octobre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu"
+          },
+          {
+            "label": "séance publique du 4 novembre 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mercredi-04-novembre-2026"
+          },
+          {
+            "label": "séance publique du 30 octobre 2026 (argument du camp du client)",
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
         "nature": "deduction"
       }
     }
