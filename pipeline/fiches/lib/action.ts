@@ -8,7 +8,7 @@ import {
   type Action, type Argument, type Arguments, type ContreArgument, type FichesIndex, type GroupesAction, type Source,
 } from "../../../contracts/index";
 import type { Contexte } from "./contexte";
-import { ecrireJson, fusionnerSources, lireJsonBrut, lireKind, maintenant, noter, posterieur } from "./io";
+import { ecrireJson, fusionnerSources, lireJsonBrut, lireKind, maintenant, noter, pasEncoreConnu } from "./io";
 import { LIEU_LIBELLE, gabaritContreArgument, type ArgumentEntendu } from "./gabarits";
 import { dateFr } from "./io";
 import { lirePrompt, rediger } from "./redaction";
@@ -120,7 +120,8 @@ export async function construireAction(ctx: Contexte, index: FichesIndex): Promi
   }
   if (sansFondement.length > 0) limites.push(`${sansFondement.length} député(s) sans acte personnel retiré(s) des trois listes et placé(s) en position_inconnue.`);
 
-  const filtre = (liste: Argument[]) => liste.filter((a) => !posterieur(a.date, ref));
+  // Un argument entendu le jour de référence (séance du 19) n'est pas encore connu ce matin-là.
+  const filtre = (liste: Argument[]) => liste.filter((a) => !pasEncoreConnu(a.date, ref));
   const argumentsFiltres = { pour: filtre(ar?.pour ?? []), contre: filtre(ar?.contre ?? []) };
   const retires = (ar?.pour.length ?? 0) + (ar?.contre.length ?? 0) - argumentsFiltres.pour.length - argumentsFiltres.contre.length;
   if (retires > 0) limites.push(`${retires} argument(s) postérieur(s) à la date de référence écarté(s).`);

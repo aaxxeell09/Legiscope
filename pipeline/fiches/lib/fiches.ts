@@ -3,7 +3,7 @@
 
 import { dataPath, type Fiche, type FichesIndex, type Synthese } from "../../../contracts/index";
 import { amendementDuTexte, nomDepute, positionGroupe, sigleGroupe, type Contexte } from "./contexte";
-import { aujourdhui, ecrireJson, fusionnerSources, lireKind, maintenant, noter, posterieur } from "./io";
+import { aujourdhui, ecrireJson, fusionnerSources, lireKind, maintenant, noter, pasEncoreConnu, posterieur } from "./io";
 import { gabaritSynthese, type EntreeSynthese } from "./gabarits";
 import { lirePrompt, rediger } from "./redaction";
 
@@ -80,7 +80,7 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
       sort: a.sort,
       travaille_avec: a.travaille_avec,
     })),
-    debats: fiche.debats.filter((d) => !posterieur(d.date, ref)).map((d) => ({ date: d.date, lieu: d.lieu, citation: d.citation })),
+    debats: fiche.debats.filter((d) => !pasEncoreConnu(d.date, ref)).map((d) => ({ date: d.date, lieu: d.lieu, citation: d.citation })),
     // Complément 1 : le rôle dit si le député a lui-même entendu (rapporteur) ou si les organisations ont été
     // entendues par les rapporteurs de sa commission (membre) ; le prompt de X3 lit `entendu_par`.
     classement_du_cabinet: classementDe(ctx, pa),
@@ -168,7 +168,7 @@ export async function construireFiches(ctx: Contexte): Promise<FichesIndex> {
     const limites: string[] = ["Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres."];
     if (s.mode === "gabarit") limites.push(`Synthèse en gabarit${origine === "x3" ? " (gabarit de X3)" : " (gabarit local, fichier de X3 absent)"}, pas de rédaction par modèle.`);
     const ref = dossier.date_reference;
-    const apres = [...base.auditions.map((a) => a.date), ...base.debats.map((d) => d.date)].filter((d) => posterieur(d, ref));
+    const apres = [...base.auditions.map((a) => a.date).filter((d) => posterieur(d, ref)), ...base.debats.map((d) => d.date).filter((d) => pasEncoreConnu(d, ref))];
     if (apres.length > 0) limites.push(`${apres.length} élément(s) postérieur(s) à la date de référence recopié(s) tels quels (producteurs A1/A2) et ignorés par la synthèse.`);
     const fiche: Fiche = { ...base, meta: { ...base.meta, limits: limites.join(" ") }, synthese: s };
     ecrireJson(dataPath(dossier.id, "fiche", pa, root), fiche);
