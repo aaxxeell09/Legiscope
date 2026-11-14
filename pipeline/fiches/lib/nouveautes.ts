@@ -177,7 +177,9 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   }
 
   // Scrutins bruts liés au sujet (P1).
-  const scrutins = lireScrutins(ctx).filter((s) => scrutinLie(ctx, s) && !posterieur(s.date, ref));
+  // Un scrutin n'est rattaché au texte que s'il est postérieur à son dépôt (les écarts des pivots couvrent d'autres textes).
+  const dateDepotTexte = (ctx.etat?.etapes ?? []).filter((e) => e.date && e.statut !== "a_venir").map((e) => e.date as string).sort()[0] ?? null;
+  const scrutins = lireScrutins(ctx).filter((s) => scrutinLie(ctx, s) && !posterieur(s.date, ref) && (!dateDepotTexte || s.date >= dateDepotTexte));
   if (!existsSync(join(root, "raw", "scrutins"))) limites.push("data/raw/scrutins absent : aucun scrutin nominatif lu.");
   const scrutinParNumero = new Map<string, Scrutin>();
   for (const s of scrutins) for (const n of numerosDuTitre(s.titre)) if (!scrutinParNumero.has(n)) scrutinParNumero.set(n, s);
@@ -268,7 +270,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
       const dateSort = scrutin?.date ?? a.date_sort ?? liste.map((x) => brutes?.sort.get(x.id)).find(Boolean) ?? dateModification(a.numero) ?? dateRepli ?? limite;
       if (posterieur(dateSort, ref)) continue;
       const sens = sensDuSort(a.sort);
-      const importanceSort = scrutin || a.sort === "adopte" || (a.sort === "rejete" && (duClient || (suppression && allie))) ? 3 : a.sort === "rejete" && camp !== "inconnu" ? 2 : 1;
+      const importanceSort = scrutin || (a.sort === "adopte" && (camp !== "inconnu" || duClient || suppression)) || (a.sort === "rejete" && (duClient || (suppression && allie))) ? 3 : (a.sort === "rejete" && camp !== "inconnu") || a.sort === "adopte" ? 2 : 1;
       evenements.push({
         id: idUnique(`ev-${a.numero}`),
         date: dateSort,
@@ -318,7 +320,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
       id: idUnique(`ev-${num}`),
       date: et.date,
       type: "scrutin",
-      titre: `${et.nom} (scrutin n° ${num})`,
+      titre: et.nom.includes(num) ? et.nom : `${et.nom} (scrutin n° ${num})`,
       detail: `Étape du texte ${dossier.texte_id} conclue par le scrutin n° ${num}.`,
       importance: 3,
       url: et.url,

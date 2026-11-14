@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:53:41.062Z",
+    "generated_at": "2026-11-14T12:54:53.267Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B1906, open data Assemblée nationale",
@@ -175,31 +175,6 @@
           }
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : amendement de suppression ; supprime l'article de la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-719",
-      "date": "2025-10-22",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 719 (DR) adopté : Le présent amendement vise à reformuler l’article 22 pour substituer au terme de « taxe…",
-      "detail": "Le présent amendement vise à reformuler l’article 22 pour substituer au terme de « taxe sur les petits colis » celui de « malus sur les colis importés de pays non européens », afin de mieux refléter la philosophie du dispositif.",
-      "importance": 3,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 719",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719"
-          },
-          {
-            "label": "Texte PRJLANR5L17B1906",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B1906 ; date de la modification de la mesure dans etat.json. Camp : résumé neutre, groupe de l'auteur (DR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -616,6 +591,31 @@
           }
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé réduit, exonère ou reporte la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-719",
+      "date": "2025-10-22",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 719 (DR) adopté : Le présent amendement vise à reformuler l’article 22 pour substituer au terme de « taxe…",
+      "detail": "Le présent amendement vise à reformuler l’article 22 pour substituer au terme de « taxe sur les petits colis » celui de « malus sur les colis importés de pays non européens », afin de mieux refléter la philosophie du dispositif.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 719",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B1906 ; date de la modification de la mesure dans etat.json. Camp : résumé neutre, groupe de l'auteur (DR) classé pour la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },

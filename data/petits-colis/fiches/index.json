@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:53:41.056Z",
+    "generated_at": "2026-11-14T12:54:53.261Z",
     "sources": [],
     "limits": "15 fiche(s) produite(s) sur 15 pivot(s). Index limité aux pivots de pivots.json (qa/check).",
     "producer": "pipeline/fiches",
