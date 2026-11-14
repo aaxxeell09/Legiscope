@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:33.974Z",
+    "generated_at": "2026-11-14T16:03:41.438Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -195,7 +195,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
       }
     ],
-    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3).",
+    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3). 1 contre-argument(s) en gabarit.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -725,40 +725,6 @@
         "fiche": true
       },
       {
-        "depute_id": "PA942",
-        "groupe_id": "PO845485",
-        "score": 0.67,
-        "raison": "a voté, a dit : 2 acte(s) pour la mesure, 2 contre ; 2 vote(s) contre la position de son groupe sur le sujet",
-        "fondement": [
-          "vote",
-          "dit"
-        ],
-        "position_connue": true,
-        "preuve": {
-          "sources": [
-            {
-              "label": "Scrutin n° 9729 (2026-11-04)",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9729"
-            },
-            {
-              "label": "Scrutin n° 9731 (2026-11-04)",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9731"
-            },
-            {
-              "label": "Scrutin n° 9741 (2026-11-04)",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
-            },
-            {
-              "label": "Intervention du 2026-10-14",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
-            }
-          ],
-          "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Charles de Courson s'en est écarté 2 fois sur les scrutins liés.",
-          "nature": "deduction"
-        },
-        "fiche": true
-      },
-      {
         "depute_id": "PA342240",
         "groupe_id": "PO845425",
         "score": 0.67,
@@ -844,6 +810,35 @@
           "nature": "deduction"
         },
         "fiche": true
+      },
+      {
+        "depute_id": "PA841377",
+        "groupe_id": "PO845425",
+        "score": 0.67,
+        "raison": "a voté : 2 acte(s) pour la mesure, 1 contre ; 2 vote(s) contre la position de son groupe sur le sujet",
+        "fondement": [
+          "vote"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9729 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9729"
+            },
+            {
+              "label": "Scrutin n° 9731 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9731"
+            },
+            {
+              "label": "Scrutin n° 9741 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Emeline Rey-Rinchet s'en est écarté 2 fois sur les scrutins liés.",
+          "nature": "deduction"
+        },
+        "fiche": false
       }
     ],
     "allies": [
@@ -1263,40 +1258,6 @@
         "fiche": true
       },
       {
-        "depute_id": "PA736201",
-        "groupe_id": "PO845439",
-        "score": 1,
-        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 4 contre, dans le sens du client",
-        "fondement": [
-          "vote",
-          "depose"
-        ],
-        "position_connue": true,
-        "preuve": {
-          "sources": [
-            {
-              "label": "Scrutin n° 9729 (2026-11-04)",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9729"
-            },
-            {
-              "label": "Scrutin n° 9731 (2026-11-04)",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9731"
-            },
-            {
-              "label": "Scrutin n° 9741 (2026-11-04)",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
-            },
-            {
-              "label": "Amendement n° 2528",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002528"
-            }
-          ],
-          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
-          "nature": "deduction"
-        },
-        "fiche": true
-      },
-      {
         "depute_id": "PA793174",
         "groupe_id": "PO845514",
         "score": 1,
@@ -1321,6 +1282,32 @@
           "nature": "deduction"
         },
         "fiche": true
+      },
+      {
+        "depute_id": "PA793520",
+        "groupe_id": "PO845454",
+        "score": 1,
+        "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+        "fondement": [
+          "vote",
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9741 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
+            },
+            {
+              "label": "Amendement n° 30",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000030"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+          "nature": "deduction"
+        },
+        "fiche": false
       }
     ],
     "perdus": [
@@ -1443,6 +1430,27 @@
         "fiche": true
       },
       {
+        "depute_id": "PA794234",
+        "groupe_id": "PO845470",
+        "score": 1,
+        "raison": "a voté : 1 acte(s) pour la mesure, 0 contre ; loyauté 0.93 à un groupe pour la mesure",
+        "fondement": [
+          "vote"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9741 (2026-11-04)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
+            }
+          ],
+          "raisonnement": "Classé sur ses propres actes (a voté), pour la mesure, et loyal à son groupe (93 % des votes sur 12 mois), lui-même pour la mesure.",
+          "nature": "deduction"
+        },
+        "fiche": false
+      },
+      {
         "depute_id": "PA794658",
         "groupe_id": "PO845470",
         "score": 1,
@@ -1505,27 +1513,6 @@
             }
           ],
           "raisonnement": "Classé sur ses propres actes (a voté), pour la mesure, et loyal à son groupe (99 % des votes sur 12 mois), lui-même pour la mesure.",
-          "nature": "deduction"
-        },
-        "fiche": true
-      },
-      {
-        "depute_id": "PA840809",
-        "groupe_id": "PO872880",
-        "score": 1,
-        "raison": "a voté : 1 acte(s) pour la mesure, 0 contre ; loyauté 0.95 à un groupe pour la mesure",
-        "fondement": [
-          "vote"
-        ],
-        "position_connue": true,
-        "preuve": {
-          "sources": [
-            {
-              "label": "Scrutin n° 9729 (2026-11-04)",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9729"
-            }
-          ],
-          "raisonnement": "Classé sur ses propres actes (a voté), pour la mesure, et loyal à son groupe (95 % des votes sur 12 mois), lui-même pour la mesure.",
           "nature": "deduction"
         },
         "fiche": true
@@ -1975,6 +1962,22 @@
         }
       },
       {
+        "depute_id": "PA794058",
+        "groupe_id": "PO845425",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794058"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
         "depute_id": "PA794118",
         "groupe_id": "PO845425",
         "position_groupe": "contre",
@@ -2272,6 +2275,22 @@
             {
               "label": "Fiche député",
               "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793556"
+            }
+          ],
+          "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+          "nature": "inconnue"
+        }
+      },
+      {
+        "depute_id": "PA793716",
+        "groupe_id": "PO845454",
+        "position_groupe": "contre",
+        "fiche": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Fiche député",
+              "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793716"
             }
           ],
           "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
@@ -3227,29 +3246,26 @@
   },
   "contre_arguments": [
     {
-      "texte": "La réduction des crédits fragilise financièrement les CFA et remet en cause la politique d'apprentissage. L'article 88 prévoit la création d'un fonds national de soutien aux centres de formation d'apprentis (CFA), en complément des mécanismes de financement de droit commun.",
+      "texte": "À l'argument « L'extension de l'apprentissage aux niveaux 7 et 8 a déformé le soutien public à l'alternance. », opposer celui déjà entendu en commission le 4 novembre 2026 : « La réduction des crédits fragilise financièrement les CFA et remet en cause la politique d'apprentissage ». Citation à reprendre : « Cette diminution des aides peut faire craindre la remise en cause de la politique d’apprentissage ambitieuse en place depuis 2018. »",
       "repond_a": "L'extension de l'apprentissage aux niveaux 7 et 8 a déformé le soutien public à l'alternance.",
       "chiffres_utilises": [
-        "88"
+        "7",
+        "8",
+        "2018",
+        "2026-11-04",
+        "4",
+        "2026"
       ],
-      "mode": "llm",
+      "mode": "gabarit",
       "verifie": true,
       "preuve": {
         "sources": [
           {
-            "label": "commission du 29 octobre 2026 (argument adverse)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
-          },
-          {
-            "label": "commission du 4 novembre 2026 (argument du camp du client)",
+            "label": "Commission du 4 novembre 2026",
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
         "nature": "deduction"
       }
     }

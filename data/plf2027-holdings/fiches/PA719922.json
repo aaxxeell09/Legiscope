@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.762Z",
+    "generated_at": "2026-11-14T16:03:39.013Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1220,16 +1220,18 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Lionel Causse a cosigné un amendement non examiné visant à modifier l'article 150-0 B ter du code général des impôts, ce qui indique probablement une position contre la mesure, alignée sur celle de son groupe.",
-    "argument": "Présenter à ce député que son groupe EPR est contre la mesure, ce qui correspond à la position de son client, et rappeler que les organisations entendues par les rapporteurs de sa commission le 20 octobre 2026 constituent un indice plus faible qu'un acte personnel.",
+    "position_probable": "A cosigné l'amendement n° 1067, non examiné (« Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié : 1° Le premier alinéa est ainsi modifié : a) À la première phrase, les… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1067 (« Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié : 1° Le premier alinéa est ainsi modifié : a) À la première phrase, les… »).",
     "chiffres_utilises": [
+      "1067",
+      "5",
+      "2",
       "150",
       "0",
-      "2026",
-      "20"
+      "1"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

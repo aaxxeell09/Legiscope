@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:14.540Z",
+    "generated_at": "2026-11-14T16:03:41.144Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1900,15 +1900,19 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car son amendement 427, tombé, porte sur l'amortissement des locaux meublés et sa déclaration du 28 octobre 2026 en séance évoque l'apprentissage du décodage, sans trancher sur la baisse des crédits de l'apprentissage.",
-    "argument": "Présenter à ce député que son amendement 427, cosigné et tombé, porte sur l'amortissement des locaux d'habitation meublés, ce qui montre son intérêt pour les dispositifs fiscaux liés à l'immobilier, afin de lui démontrer que la baisse des crédits de l'apprentissage fragilise les entreprises qui recrutent des jeunes.",
+    "position_probable": "A cosigné l'amendement n° 427, tombé (« Article 7 : I. – À l’alinéa 12, après le mot : « amortissement », insérer les mots : « des locaux d’habitation meublés donnés en location soit dans le cadre d’un bail régi… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 427 et de sa déclaration du 28 octobre 2026 en séance : « Que s’est-il passé outre-Manche ? Des méthodes qui marchent, généralisées à partir de 2014 : l’apprentissage systématique du décodage, un entraînement quotidien, une aide ciblée pour les élèves en difficulté, des exigences clarifiées, des établissements responsabilisés. »",
     "chiffres_utilises": [
       "427",
-      "2026",
-      "28"
+      "7",
+      "12",
+      "2026-10-28",
+      "2014",
+      "28",
+      "2026"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.832Z",
+    "generated_at": "2026-11-14T16:03:40.846Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -782,14 +782,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Emmanuelle Hoffman est probablement contre la mesure, car elle a cosigné les amendements 302 et 460 qui visent à exclure certains articles de la taxe.",
-    "argument": "Présenter à ce député l'amendement 460, en attente, qu'elle a cosigné avec l'Alliance Française des Places de Marchés pour exclure certains articles de la taxe, car cet acte montre qu'elle partage l'objectif du client de réduire la mesure.",
+    "position_probable": "A cosigné l'amendement n° 302, tombé (« Article 22 : Après l’alinéa 7, insérer les quatre alinéas suivants : « III bis . – Ne sont pas soumis à la taxe mentionnée au III les articles de marchandise relevant des… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 302 (« Article 22 : Après l’alinéa 7, insérer les quatre alinéas suivants : « III bis . – Ne sont pas soumis à la taxe mentionnée au III les articles de marchandise relevant des… »).",
     "chiffres_utilises": [
       "302",
-      "460"
+      "22",
+      "7",
+      "4"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

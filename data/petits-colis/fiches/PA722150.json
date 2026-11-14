@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.890Z",
+    "generated_at": "2026-11-14T16:03:40.866Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -570,22 +570,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue, car il n'a ni déposé d'amendement ni fait de déclaration, et la position de son groupe est pour la mesure.",
-    "argument": "Présenter à ce député que les organisations entendues par les rapporteurs de sa commission le 18 novembre 2025, notamment la Direction générale des douanes et droits indirects, soulignent les difficultés opérationnelles liées à la mesure, ce qui constitue un indice plus faible qu'un acte personnel.",
-    "chiffres_utilises": [
-      "2",
-      "150",
-      "0.75",
-      "0",
-      "2025",
-      "11",
-      "7",
-      "13",
-      "18",
-      "64"
-    ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés ; seul indice, il a déjà voté autrement que son groupe, ce qui ne dit pas son vote sur la mesure.",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Observatoire de l’éthique publique (OEP), Assemblée nationale, Tribunal du stationnement payant (TSP)) : indice plus faible qu'un acte personnel.",
+    "chiffres_utilises": [],
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

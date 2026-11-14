@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.870Z",
+    "generated_at": "2026-11-14T16:03:39.040Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -871,18 +871,18 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Emmanuel Maurel est probablement favorable à la mesure, comme l'indiquent ses cosignatures sur les amendements n° 1847 et n° 3931, tous deux rejetés, ainsi que sa déclaration en séance le 16 octobre 2026.",
-    "argument": "Présenter à ce député l'amendement n° 1847, cosigné par lui et rejeté, qui proposait d'insérer un chapitre dans le code général des impôts, afin de lui montrer que sa tentative d'aggraver la mesure a déjà échoué et que la suppression de l'article 3, qu'il a aussi cosignée et qui a été adoptée, reste l'issue favorable pour le client.",
+    "position_probable": "A cosigné l'amendement n° 1816, adopté (« Supprime l'article 3 »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1816 et de sa déclaration du 16 octobre 2026 en séance : « Vous décrivez une politique qui a lamentablement échoué, mais vous dites que c’est ce qu’il faudrait faire maintenant ; c’est merveilleux. Concernant la taxe Zucman, je prends le pari que dans un an, peut-être deux, quelle que soit la prochaine majorité… »",
     "chiffres_utilises": [
-      "1847",
-      "3931",
-      "2026",
-      "16",
+      "1816",
+      "3",
+      "2026-10-16",
       "2",
-      "3"
+      "16",
+      "2026"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

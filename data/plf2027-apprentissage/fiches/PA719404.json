@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.063Z",
+    "generated_at": "2026-11-14T16:03:41.169Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1387,16 +1387,21 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Didier Le Gac est probablement contre la mesure, comme l'indique son intervention en commission le 4 novembre 2026 où il dénonce le ralentissement de la politique d'apprentissage.",
-    "argument": "Présenter à ce député l'écart entre la hausse de 6 % des autorisations d'engagement et la baisse de 19 % des crédits de paiement, car il a cosigné un amendement visant à revenir sur la baisse des aides aux employeurs d'apprentis et a souligné ce ralentissement en commission le 4 novembre 2026.",
+    "position_probable": "A déposé l'amendement n° 896, en attente (« ETAT B : Le changement de crédits de cet amendement est symbolique. Cet amendement vise à mettre en cohérence l’intitulé de l’Action 01 « Développement des compétences… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 896 et de sa déclaration du 4 novembre 2026 en commission : « Par ailleurs, pour France compétences, l’absence de subventions et l’écrêtement de 1,1 milliard d’euros fait craindre un risque de durcissement des conditions d’accès au compte personnel de formation (CPF), alors que la participation forfaitaire pour le salarié pourrait passer de 150 à 350 euros. »",
     "chiffres_utilises": [
-      "2026",
+      "896",
+      "1",
+      "2026-11-04",
+      "1.1",
+      "150",
+      "350",
+      "1000000000",
       "4",
-      "6",
-      "19"
+      "2026"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

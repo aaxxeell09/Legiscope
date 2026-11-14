@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.886Z",
+    "generated_at": "2026-11-14T16:03:40.864Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -527,20 +527,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car il n'a déposé aucun amendement ni fait de déclaration, et les organisations entendues par les rapporteurs de sa commission ne révèlent pas son avis, tandis que son groupe est favorable à la mesure.",
-    "argument": "Présenter à ce député que les organisations entendues par les rapporteurs de sa commission le 12 novembre 2025 constituent un indice plus faible qu'un acte personnel, car il n'a déposé aucun amendement ni fait de déclaration sur la mesure.",
-    "chiffres_utilises": [
-      "2",
-      "150",
-      "0.76",
-      "0",
-      "2025",
-      "11",
-      "12",
-      "18"
-    ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés ; seul indice, il a déjà voté autrement que son groupe, ce qui ne dit pas son vote sur la mesure.",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction du budget, Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction générale du Trésor, Ministère de l’Agriculture, de l’agroalimentaire et de la souveraineté alimentaire, direction générale de la performe économique et environnementale des entreprises) : indice plus faible qu'un acte personnel.",
+    "chiffres_utilises": [],
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

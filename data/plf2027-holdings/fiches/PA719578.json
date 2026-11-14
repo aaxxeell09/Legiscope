@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.683Z",
+    "generated_at": "2026-11-14T16:03:38.992Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1427,13 +1427,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Loïc Prud'homme est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 756, rejeté.",
-    "argument": "Présenter à ce député que son amendement n° 756, qui visait à modifier le code général des impôts, a été rejeté, afin de lui montrer que la mesure reste en vigueur et que son opposition n'a pas abouti.",
+    "position_probable": "A cosigné l'amendement n° 756, rejeté (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Avant le chapitre II du titre IV de la première partie du livre I er , il est inséré un chapitre I ter… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 756 (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Avant le chapitre II du titre IV de la première partie du livre I er , il est inséré un chapitre I ter… »).",
     "chiffres_utilises": [
-      "756"
+      "756",
+      "4",
+      "1"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

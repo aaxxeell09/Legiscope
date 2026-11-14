@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.857Z",
+    "generated_at": "2026-11-14T16:03:40.854Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -769,13 +769,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Michèle Tabarot est probablement pour la mesure, car elle a cosigné l'amendement 1775, qui a été rejeté.",
-    "argument": "Présenter à ce député que son amendement 1775, rejeté, visait à soumettre les services de commerce électronique à une taxe, ce qui montre son attachement à la mesure que le client souhaite éviter.",
+    "position_probable": "A cosigné l'amendement n° 1775, rejeté (« Article 22 : I. – Sont soumises à une taxe sur les services de commerce électronique permettant la vente à distance de biens matériels expédiés depuis un État ou territoire… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 1775 (« Article 22 : I. – Sont soumises à une taxe sur les services de commerce électronique permettant la vente à distance de biens matériels expédiés depuis un État ou territoire… »).",
     "chiffres_utilises": [
-      "1775"
+      "1775",
+      "22"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.216Z",
+    "generated_at": "2026-11-14T16:03:41.202Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1146,19 +1146,11 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "La position personnelle de Bernard Chaix sur la mesure n'est pas connue, car il n'a ni déposé d'amendement ni pris la parole, et son groupe UDR est favorable à la baisse des crédits.",
-    "argument": "Présenter à ce député que KNDS France a été entendue par les rapporteurs de sa commission le 22 octobre 2026, ce qui constitue un indice plus faible qu'un acte personnel pour orienter la discussion sur la mesure.",
-    "chiffres_utilises": [
-      "88",
-      "89",
-      "0.67",
-      "0",
-      "2026",
-      "10",
-      "22"
-    ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés ; seul indice, il a déjà voté autrement que son groupe, ce qui ne dit pas son vote sur la mesure.",
+    "argument": "Présenter à ce député la position du client (U2P) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (KNDS France) : indice plus faible qu'un acte personnel.",
+    "chiffres_utilises": [],
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

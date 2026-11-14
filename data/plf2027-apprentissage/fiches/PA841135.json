@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.093Z",
+    "generated_at": "2026-11-14T16:03:41.176Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1174,26 +1174,15 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration sur la mesure, mais son groupe est pour.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 674, actuellement en attente, s'inscrit dans une dynamique de soutien à la mesure, ce qui rend un retournement improbable.",
+    "position_probable": "A cosigné l'amendement n° 851, retiré (« ETAT B : Le rapporteur spécial propose de rétablir les 414 postes d'enseignants du premier degré public supprimés dans le PLF pour 2027. Le maintien des postes… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 851 (« ETAT B : Le rapporteur spécial propose de rétablir les 414 postes d'enseignants du premier degré public supprimés dans le PLF pour 2027. Le maintien des postes… »).",
     "chiffres_utilises": [
-      "88",
-      "89",
-      "0.67",
+      "851",
       "414",
-      "2027",
-      "674",
-      "213",
-      "3",
-      "1",
-      "0",
-      "0.97",
-      "2026",
-      "10",
-      "22"
+      "2027"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

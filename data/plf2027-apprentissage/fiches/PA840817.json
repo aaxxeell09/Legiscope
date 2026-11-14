@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:20.424Z",
+    "generated_at": "2026-11-14T16:03:41.153Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1906,30 +1906,18 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car il n'a ni déposé d'amendement ni fait de déclaration sur ce sujet, et son groupe LIOT est contre.",
-    "argument": "Présenter à ce député que son amendement cosigné n° 3198, tombé, et ses deux autres amendements cosignés rejetés montrent qu'il a déjà tenté de modifier le texte, ce qui offre une porte d'entrée pour discuter de la baisse des crédits de l'apprentissage.",
+    "position_probable": "A cosigné l'amendement n° 3111, rejeté (« Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée ; 2° Après le 9° du III de l’article… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 3111 (« Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée ; 2° Après le 9° du III de l’article… »).",
     "chiffres_utilises": [
-      "88",
-      "89",
-      "0.67",
+      "3111",
       "42",
       "6241",
       "1",
       "2",
-      "9",
-      "3198",
-      "7",
-      "12",
-      "10",
-      "0",
-      "2026",
-      "11",
-      "3",
-      "6",
-      "2030"
+      "9"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.721Z",
+    "generated_at": "2026-11-14T16:03:39.002Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -439,17 +439,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Damien Girard est probablement favorable à la mesure, comme l'indiquent les amendements qu'il a cosignés, notamment le numéro 18, rejeté.",
-    "argument": "Présenter à ce député que son groupe soutient la mesure, ce qui contraste avec ses cosignatures sur les amendements 18, 43, 174, 208 et 38, tous rejetés, pour lui montrer que sa position personnelle est déjà favorable à la taxe.",
+    "position_probable": "A cosigné l'amendement n° 18, rejeté (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I er bis du titre IV de la première partie du livre I er est ainsi rétabli : « Chapitre I er… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 18 (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I er bis du titre IV de la première partie du livre I er est ainsi rétabli : « Chapitre I er… »).",
     "chiffres_utilises": [
       "18",
-      "43",
-      "174",
-      "208",
-      "38"
+      "4",
+      "1"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

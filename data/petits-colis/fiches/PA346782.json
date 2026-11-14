@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.795Z",
+    "generated_at": "2026-11-14T16:03:40.832Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,8 +19,16 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
+        "label": "Commission des finances, réunion n° 35 du 12/11/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526035_compte-rendu"
+      },
+      {
         "label": "Commission des finances, réunion n° 13 du 22/10/2025",
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 4 du 14/10/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526004_compte-rendu"
       },
       {
         "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
@@ -35,7 +43,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -104,6 +112,13 @@
     }
   ],
   "debats": [
+    {
+      "date": "2025-11-12",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Ma deuxième question concerne la diminution de la consommation. Vous avez expliqué que le modèle des petits colis prenait en défaut cette invention française qu’est la TVA. Vous avez également mentionné une « sous-déclaration massive » dans les petits colis.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526035_compte-rendu"
+    },
     {
       "date": "2025-10-22",
       "lieu": "commission",
@@ -201,6 +216,13 @@
       "texte_id": "PRJLANR5L17B1906",
       "citation": "Ce que je demande, c’est l’adoption de ces amendements afin que nous ayons ce débat très complexe en séance avec le gouvernement. L’année prochaine, 6,5 milliards de colis arriveront de Chine en Europe. Si nous ne faisons rien, nous n’aurons plus qu’à fermer les boutiques !",
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-14",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Cinquièmement, la taxe sur les petits colis. On peut trouver une robe chez Shein pour 5 ou 10 euros, et la même en magasin à 30 ou 40 euros : les 2 euros de taxe ne changeront rien pour la survie du petit commerce, même s’il est indubitable que ses recettes permettront d’améliorer le contrôle douanier.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526004_compte-rendu"
     }
   ],
   "amendements": [
@@ -658,15 +680,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Philippe Juvin est probablement favorable à la mesure, comme l'indiquent ses déclarations en commission le 22 octobre 2025 et l'amendement n° 1859 qu'il a déposé et qui a été rejeté.",
-    "argument": "Présenter à ce député que son amendement n° 1859 a été rejeté, ce qui montre qu'il est ouvert à d'autres formulations techniques pour éviter l'impact négatif sur les plateformes logistiques qu'il a lui-même souligné en commission le 22 octobre 2025.",
+    "position_probable": "A déposé l'amendement n° 1859, rejeté (« Article 22 : I. – Sont soumises à une taxe sur les services de commerce électronique permettant la vente à distance de biens matériels expédiés depuis un État ou territoire… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 1859 et de sa déclaration du 12 novembre 2025 en commission : « Ma deuxième question concerne la diminution de la consommation. Vous avez expliqué que le modèle des petits colis prenait en défaut cette invention française qu’est la TVA. Vous avez également mentionné une « sous-déclaration massive » dans les petits colis. »",
     "chiffres_utilises": [
       "1859",
       "22",
+      "2025-11-12",
+      "12",
       "2025"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

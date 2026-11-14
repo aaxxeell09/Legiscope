@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.786Z",
+    "generated_at": "2026-11-14T16:03:40.829Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -580,15 +580,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Paul Molac est probablement favorable à la mesure, car il a cosigné l'amendement 2538, actuellement en attente, qui porte la taxe de 2 euros à 10 euros.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 2538, actuellement en attente, vise à porter la taxe de 2 euros à 10 euros, ce qui renforce la position de son groupe LIOT en faveur de la mesure.",
+    "position_probable": "A cosigné l'amendement n° 2538, en attente (« Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 10 euros » »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 2538 (« Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 10 euros » »).",
     "chiffres_utilises": [
-      "2",
       "2538",
-      "10"
+      "22",
+      "10",
+      "2"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

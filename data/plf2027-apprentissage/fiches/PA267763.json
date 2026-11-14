@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:25.752Z",
+    "generated_at": "2026-11-14T16:03:41.158Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1748,14 +1748,14 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Jean-Pierre Bataille est probablement contre la mesure, comme l'indique son amendement 2105 visant à supprimer l'article 88, actuellement en attente.",
-    "argument": "Présenter à ce député l'amendement 2105, en attente, qui supprime l'article 88 et cite Régions de France, car il a déjà déposé un texte similaire sur l'apprentissage.",
+    "position_probable": "A déposé l'amendement n° 1722, rejeté (« Supprime l'article 39 »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 1722 (« Supprime l'article 39 »).",
     "chiffres_utilises": [
-      "88",
-      "2105"
+      "1722",
+      "39"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

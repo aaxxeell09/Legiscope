@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:04.497Z",
+    "generated_at": "2026-11-14T16:03:41.122Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B1906, open data Assemblée nationale",
@@ -23,7 +23,7 @@
         "url": "https://hemicycle.ai"
       }
     ],
-    "limits": "Date de référence 19 novembre 2025 lue comme le matin de ce jour : dépôts, publications et déclarations de ce jour connus ; sorts, scrutins, séances et réunions de ce jour pas encore connus. 22 sort(s) d'amendement sans date publiée : non listé(s) comme événement daté (aucune date de repli). Flux Hémicycle (cache) : 0 lignes sur 30 jours, dépôts comptés par jour. 34 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement.",
+    "limits": "Date de référence 19 novembre 2025 lue comme le matin de ce jour : dépôts, publications et déclarations de ce jour connus ; sorts, scrutins, séances et réunions de ce jour pas encore connus. 20 sort(s) d'amendement sans date publiée : non listé(s) comme événement daté (aucune date de repli). 1 amendement(s) de texte.json écarté(s) : ni mot-clé du sujet, ni article de la mesure dans le résumé, ni présence dans les fichiers amendements/<PA>.json. Flux Hémicycle (cache) : 0 lignes sur 30 jours, dépôts comptés par jour. 34 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data lu, aucune réunion passée ne cite le texte.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -179,7 +179,7 @@
       }
     },
     {
-      "id": "ev-depot-4065",
+      "id": "ev-4065",
       "date": "2025-11-19",
       "type": "amendement_depose",
       "titre": "Amendement n° 4065 (LFI-NFP) déposé : Par ce sous-amendement, le groupe LFI s’inscrit dans la volonté du rapporteur de : -…",
@@ -258,31 +258,6 @@
       }
     },
     {
-      "id": "ev-depot-4039",
-      "date": "2025-11-17",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 4039 (EPR) déposé : Le présent sous-amendement vise à modifier l’assiette de la taxe proposée, en substituant…",
-      "detail": "Le présent sous-amendement vise à modifier l’assiette de la taxe proposée, en substituant au critère du nombre d’articles celui du nombre de colis effectivement importés sur le territoire national.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004039",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 4039",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004039"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « reduit » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-3674",
       "date": "2025-10-23",
       "type": "amendement_depose",
@@ -329,81 +304,6 @@
           }
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1775",
-      "date": "2025-10-22",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1775 (DR) rejeté : Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les…",
-      "detail": "Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les plateformes de commerce en ligne exportant massivement des colis vers l’Europe.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1775",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
-          },
-          {
-            "label": "Texte PRJLANR5L17B1906",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-1859",
-      "date": "2025-10-22",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 1859 (DR) rejeté : Les petits commerçants français font face à une concurrence accrue du commerce en ligne,…",
-      "detail": "Les petits commerçants français font face à une concurrence accrue du commerce en ligne, particulièrement en provenance d’Asie.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1859",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
-          },
-          {
-            "label": "Texte PRJLANR5L17B1906",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
-          }
-        ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-2211",
-      "date": "2025-10-22",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 2211 (EPR) déposé : La France s’est engagée résolument en faveur de l’économie circulaire, à travers une…",
-      "detail": "La France s’est engagée résolument en faveur de l’économie circulaire, à travers une série d’initiatives récentes promouvant la réutilisation, la réparation et la durabilité des produits.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002211",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2211",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002211"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « reduit » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
         "nature": "deduction"
       }
     },
@@ -512,31 +412,6 @@
           }
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-2820",
-      "date": "2025-10-22",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 2820 (EPR) déposé : Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise…",
-      "detail": "Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise proposée le marché de la seconde main et du reconditionné.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002820",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2820",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002820"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « reduit » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
         "nature": "deduction"
       }
     },
@@ -949,56 +824,6 @@
       }
     },
     {
-      "id": "ev-460",
-      "date": "2025-10-20",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 460 (EPR) déposé : Le présent amendement vise à exclure les articles de seconde main, les produits…",
-      "detail": "Le présent amendement vise à exclure les articles de seconde main, les produits reconditionnés, les œuvres d’arts et les objets de collection du champ de la taxe sur les importations de petits colis prévue à l’article 22.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 460",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « reduit » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-depot-1859",
-      "date": "2025-10-20",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 1859 (DR) déposé : Les petits commerçants français font face à une concurrence accrue du commerce en ligne,…",
-      "detail": "Les petits commerçants français font face à une concurrence accrue du commerce en ligne, particulièrement en provenance d’Asie.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859",
-      "effet": "affaiblit",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1859",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-depot-307",
       "date": "2025-10-20",
       "type": "amendement_depose",
@@ -1074,56 +899,6 @@
           }
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-depot-1775",
-      "date": "2025-10-18",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 1775 (DR) déposé : Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les…",
-      "detail": "Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les plateformes de commerce en ligne exportant massivement des colis vers l’Europe.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775",
-      "effet": "affaiblit",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1775",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-depot-1834",
-      "date": "2025-10-18",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 1834 (EPR) déposé : Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise…",
-      "detail": "Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise proposée le marché de la seconde main et du reconditionné.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001834",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1834",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001834"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « reduit » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
         "nature": "deduction"
       }
     },
@@ -1228,31 +1003,6 @@
       }
     },
     {
-      "id": "ev-depot-1519",
-      "date": "2025-10-17",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 1519 (DEM) déposé : Cet amendement propose d’améliorer le rendement de la taxe sur les petits colis expédiés…",
-      "detail": "Cet amendement propose d’améliorer le rendement de la taxe sur les petits colis expédiés en France aux particuliers, en triplant son montant et en l’élargissant aux colis d’un poids inférieur à 2 kilos.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519",
-      "effet": "affaiblit",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1519",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-depot-1580",
       "date": "2025-10-17",
       "type": "amendement_depose",
@@ -1299,31 +1049,6 @@
           }
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-depot-302",
-      "date": "2025-10-17",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 302 (EPR) déposé : Le présent amendement vise à exclure les articles de seconde main, les produits…",
-      "detail": "Le présent amendement vise à exclure les articles de seconde main, les produits reconditionnés, les œuvres d’arts et les objets de collection du champ de la taxe sur les importations de petits colis prévue à l’article 22.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000302",
-      "effet": "renforce",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 302",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000302"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « reduit » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
         "nature": "deduction"
       }
     },
@@ -1453,31 +1178,6 @@
       }
     },
     {
-      "id": "ev-depot-722",
-      "date": "2025-10-17",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 722 (DR) déposé : Le présent amendement vise à relever le montant de la taxe de 2 à 3 euros",
-      "detail": "Le présent amendement vise à relever le montant de la taxe de 2 à 3 euros.",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000722",
-      "effet": "affaiblit",
-      "objectif_rang": 2,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 722",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000722"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
       "id": "ev-depot-221",
       "date": "2025-10-16",
       "type": "amendement_depose",
@@ -1511,6 +1211,31 @@
       }
     },
     {
+      "id": "ev-4066",
+      "date": "2025-11-19",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 4066 (LFI-NFP) déposé : Par ce sous-amendement de repli, le groupe LFI s’inscrit dans la volonté du rapporteur de…",
+      "detail": "Par ce sous-amendement de repli, le groupe LFI s’inscrit dans la volonté du rapporteur de : - Mettre en place une taxe véritablement désincitative et non venant renforcer le coût de la consommation populaire pour compenser les baisses d’...",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004066",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 4066",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004066"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
       "id": "ev-4081",
       "date": "2025-11-19",
       "type": "amendement_depose",
@@ -1533,31 +1258,6 @@
           {
             "label": "Amendement n° 4083",
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004083"
-          },
-          {
-            "label": "Hémicycle, jeu evenements_parlementaires",
-            "url": "https://hemicycle.ai"
-          }
-        ],
-        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-depot-4066",
-      "date": "2025-11-19",
-      "type": "amendement_depose",
-      "titre": "Amendement n° 4066 (LFI-NFP) déposé : Par ce sous-amendement de repli, le groupe LFI s’inscrit dans la volonté du rapporteur de…",
-      "detail": "Par ce sous-amendement de repli, le groupe LFI s’inscrit dans la volonté du rapporteur de : - Mettre en place une taxe véritablement désincitative et non venant renforcer le coût de la consommation populaire pour compenser les baisses d’...",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004066",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 4066",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004066"
           },
           {
             "label": "Hémicycle, jeu evenements_parlementaires",
@@ -1608,6 +1308,31 @@
         ],
         "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-depot-4039",
+      "date": "2025-11-17",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 4039 (EPR) déposé : Le présent sous-amendement vise à modifier l’assiette de la taxe proposée, en substituant…",
+      "detail": "Le présent sous-amendement vise à modifier l’assiette de la taxe proposée, en substituant au critère du nombre d’articles celui du nombre de colis effectivement importés sur le territoire national.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004039",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 4039",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004039"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
       }
     },
     {
@@ -1699,6 +1424,27 @@
       }
     },
     {
+      "id": "ev-commission-2025-11-12",
+      "date": "2025-11-12",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 12 novembre 2025",
+      "detail": "2 interventions relevées, dont : « Ma deuxième question concerne la diminution de la consommation. Vous avez expliqué que le modèle des petits colis prenait en défaut cette invention française qu’est la TVA. Vous avez également mentionné une « sous-déclaration massive » dans les petits colis. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526035_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 12 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526035_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-rapports-2025-11-12",
       "date": "2025-11-12",
       "type": "rapport",
@@ -1737,6 +1483,48 @@
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-commission-2025-11-09",
+      "date": "2025-11-09",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 9 novembre 2025",
+      "detail": "1 intervention relevée, dont : « De toute manière, la prétention même à contrôler les flux du mondialisme est une aberration. Entre 1997 et 2024, quand il était député Nicolas Dupont-Aignan, a alerté, dans l’indifférence générale – sauf celle des communistes – sur le fait qu’entre 90 % et 95 % des colis importés contenaient des marchandises frauduleuses – qu’ils arrivent dans les aéroports, ou dans des conteneurs, au Havre. Tous les douaniers le savaient. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526034_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 9 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526034_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-commission-2025-11-07",
+      "date": "2025-11-07",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 7 novembre 2025",
+      "detail": "1 intervention relevée, dont : « Par ailleurs, je rappelle que, dans le cadre de l’Union postale universelle, La Poste subventionne indirectement les livraisons de colis depuis la Chine. En effet, ce pays bénéficie encore d’un tarif préférentiel – même s’il n’est pas aussi avantageux qu’il l’était jusqu’en 2019. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526027_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 7 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526027_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
       }
     },
@@ -2004,7 +1792,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
           }
         ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -2059,6 +1847,31 @@
       }
     },
     {
+      "id": "ev-1775",
+      "date": "2025-10-22",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1775 (DR) rejeté : Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les…",
+      "detail": "Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les plateformes de commerce en ligne exportant massivement des colis vers l’Europe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1775",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
       "id": "ev-1834",
       "date": "2025-10-22",
       "type": "amendement_sort",
@@ -2079,7 +1892,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
           }
         ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « reduit » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -2105,6 +1918,31 @@
           }
         ],
         "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1859",
+      "date": "2025-10-22",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1859 (DR) rejeté : Les petits commerçants français font face à une concurrence accrue du commerce en ligne,…",
+      "detail": "Les petits commerçants français font face à une concurrence accrue du commerce en ligne, particulièrement en provenance d’Asie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1859",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -2163,6 +2001,31 @@
           }
         ],
         "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-2820",
+      "date": "2025-10-22",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 2820 (EPR) déposé : Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise…",
+      "detail": "Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise proposée le marché de la seconde main et du reconditionné.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002820",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2820",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002820"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
         "nature": "deduction"
       }
     },
@@ -2237,7 +2100,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
           }
         ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « reduit » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -2412,7 +2275,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
           }
         ],
-        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « tombé » lu dans le texte PRJLANR5L17B1906 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -2421,7 +2284,7 @@
       "date": "2025-10-22",
       "type": "commission",
       "titre": "Sujet abordé en commission le 22 octobre 2025",
-      "detail": "39 interventions relevées, dont : « Nous assistons en effet à un important changement de stratégie de la part des importateurs qui, avant, utilisaient des cargos et des conteneurs, et qui, désormais, fraudent massivement en envoyant de petits colis dont le taux de non-conformité est proche de 50 %. Le meilleur exemple est celui de l’iPhone 17, généralement déclaré au prix de 80 euros quand il arrive de Chine dans un petit colis, alors qu’il en vaut 1 700. »",
+      "detail": "41 interventions relevées, dont : « Nous assistons en effet à un important changement de stratégie de la part des importateurs qui, avant, utilisaient des cargos et des conteneurs, et qui, désormais, fraudent massivement en envoyant de petits colis dont le taux de non-conformité est proche de 50 %. Le meilleur exemple est celui de l’iPhone 17, généralement déclaré au prix de 80 euros quand il arrive de Chine dans un petit colis, alors qu’il en vaut 1 700. »",
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
       "effet": "neutre",
@@ -2538,6 +2401,156 @@
       }
     },
     {
+      "id": "ev-460",
+      "date": "2025-10-20",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 460 (EPR) déposé : Le présent amendement vise à exclure les articles de seconde main, les produits…",
+      "detail": "Le présent amendement vise à exclure les articles de seconde main, les produits reconditionnés, les œuvres d’arts et les objets de collection du champ de la taxe sur les importations de petits colis prévue à l’article 22.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 460",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1859",
+      "date": "2025-10-20",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1859 (DR) déposé : Les petits commerçants français font face à une concurrence accrue du commerce en ligne,…",
+      "detail": "Les petits commerçants français font face à une concurrence accrue du commerce en ligne, particulièrement en provenance d’Asie.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1859",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1775",
+      "date": "2025-10-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1775 (DR) déposé : Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les…",
+      "detail": "Cet amendement du groupe Droite Républicaine vise à instaurer une taxe dissuasive sur les plateformes de commerce en ligne exportant massivement des colis vers l’Europe.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1775",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1834",
+      "date": "2025-10-18",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1834 (EPR) déposé : Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise…",
+      "detail": "Cet amendement vise à exclure du champ de la taxe sur les importations de marchandise proposée le marché de la seconde main et du reconditionné.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001834",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1834",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001834"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-1519",
+      "date": "2025-10-17",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 1519 (DEM) déposé : Cet amendement propose d’améliorer le rendement de la taxe sur les petits colis expédiés…",
+      "detail": "Cet amendement propose d’améliorer le rendement de la taxe sur les petits colis expédiés en France aux particuliers, en triplant son montant et en l’élargissant aux colis d’un poids inférieur à 2 kilos.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1519",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-depot-302",
+      "date": "2025-10-17",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 302 (EPR) déposé : Le présent amendement vise à exclure les articles de seconde main, les produits…",
+      "detail": "Le présent amendement vise à exclure les articles de seconde main, les produits reconditionnés, les œuvres d’arts et les objets de collection du champ de la taxe sur les importations de petits colis prévue à l’article 22.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000302",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 302",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000302"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
       "id": "ev-depot-657",
       "date": "2025-10-17",
       "type": "amendement_depose",
@@ -2588,23 +2601,48 @@
       }
     },
     {
-      "id": "ev-agenda-ruanr5l17s2025idc456939",
-      "date": "2025-06-24",
-      "type": "agenda",
-      "titre": "Réunion du 24 juin 2025 sur le texte (Salle 7040 – 103 rue de l'Université, 2ème sous-sol)",
-      "detail": "Communication de la mission flash sur l’augmentation des prix des colis postaux (Mmes Emeline K/Bidi et Karine Lebon, MM. Stéphane Lenormand, Max Mathiasin, Jean-Philippe Nilor, Jean-Hugues Ratenon et Jiovanny William rapporteurs) ;",
+      "id": "ev-depot-722",
+      "date": "2025-10-17",
+      "type": "amendement_depose",
+      "titre": "Amendement n° 722 (DR) déposé : Le présent amendement vise à relever le montant de la taxe de 2 à 3 euros",
+      "detail": "Le présent amendement vise à relever le montant de la taxe de 2 à 3 euros.",
       "importance": 1,
-      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000722",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 722",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000722"
+          },
+          {
+            "label": "Hémicycle, jeu evenements_parlementaires",
+            "url": "https://hemicycle.ai"
+          }
+        ],
+        "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-commission-2025-10-14",
+      "date": "2025-10-14",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 14 octobre 2025",
+      "detail": "1 intervention relevée, dont : « Cinquièmement, la taxe sur les petits colis. On peut trouver une robe chez Shein pour 5 ou 10 euros, et la même en magasin à 30 ou 40 euros : les 2 euros de taxe ne changeront rien pour la survie du petit commerce, même s’il est indubitable que ses recettes permettront d’améliorer le contrôle douanier. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526004_compte-rendu",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
-            "label": "Agenda open data de l'Assemblée",
-            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+            "label": "Compte rendu du 14 octobre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526004_compte-rendu"
           }
         ],
-        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
       }
     },

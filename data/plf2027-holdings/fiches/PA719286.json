@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.682Z",
+    "generated_at": "2026-11-14T16:03:38.991Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -534,13 +534,17 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Paul-André Colombani est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement n° 3221, rejeté.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement n° 3221, rejeté, montre qu'il soutient le renforcement de la mesure, ce qui contredit l'objectif de l'Afep.",
+    "position_probable": "A cosigné l'amendement n° 3182, tombé (« Article 3 : Rédiger ainsi l’alinéa 2 : « 1° La première phrase est complétée par les mots : « , dont 2 200 € au maximum pour les contribuables célibataires, veufs, séparés… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 3182 (« Article 3 : Rédiger ainsi l’alinéa 2 : « 1° La première phrase est complétée par les mots : « , dont 2 200 € au maximum pour les contribuables célibataires, veufs, séparés… »).",
     "chiffres_utilises": [
-      "3221"
+      "3182",
+      "3",
+      "2",
+      "1",
+      "2200"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

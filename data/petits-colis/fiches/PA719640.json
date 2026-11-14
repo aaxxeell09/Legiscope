@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.842Z",
+    "generated_at": "2026-11-14T16:03:40.849Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -558,16 +558,22 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sophie Mette est probablement favorable à la mesure, comme le montrent les amendements 1519 et 3395 qu'elle a cosignés et sa déclaration en séance le 30 avril 2025.",
-    "argument": "Présenter à ce député l'argument de la concurrence déloyale des plateformes numériques, qu'elle a elle-même soulevé en séance le 30 avril 2025, pour l'inciter à retirer sa cosignature de l'amendement 3395, actuellement en attente.",
+    "position_probable": "A cosigné l'amendement n° 1519, tombé (« Article 22 : I – À l’alinéa 5, après le mot : « valeur » insérer les mots : « ou d’un poids inférieur à 2 kilos » II. – À l’alinéa 7, compléter la phrase par les mots : «… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 1519 et de sa déclaration du 30 avril 2025 en séance : « Les petits colis venus principalement de Chine, introduits à des prix défiant toute concurrence par l’intermédiaire de plateformes numériques, pourraient affluer encore plus massivement sur notre territoire, qui en reçoit déjà 800 millions chaque année. C’est la raison pour laquelle vous avez présenté hier un plan d’action pour la régulation et la sécurité du commerce en ligne. »",
     "chiffres_utilises": [
       "1519",
-      "3395",
-      "2025",
-      "30"
+      "22",
+      "5",
+      "2",
+      "7",
+      "2025-04-30",
+      "800",
+      "1000000",
+      "30",
+      "2025"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

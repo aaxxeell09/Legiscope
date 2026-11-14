@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.104Z",
+    "generated_at": "2026-11-14T16:03:41.180Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1156,21 +1156,11 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est pour la mesure.",
-    "argument": "Présenter à ce député que les organisations entendues le 27 octobre 2026 par les rapporteurs de sa commission constituent un indice plus faible qu'un acte personnel, car il n'a déposé aucun amendement ni fait de déclaration sur la mesure.",
-    "chiffres_utilises": [
-      "88",
-      "89",
-      "0.67",
-      "2",
-      "0",
-      "0.99",
-      "2026",
-      "10",
-      "27"
-    ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés.",
+    "argument": "Présenter à ce député la position du client (U2P) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Ministère de l’Europe et des affaires étrangères, Ministère des armées, direction générale des relations internationales et de la stratégie (DGRIS), Ministère de l’intérieur, direction de la coopération internationale et de sécurité (DCIS)) : indice plus faible qu'un acte personnel.",
+    "chiffres_utilises": [],
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.620Z",
+    "generated_at": "2026-11-14T16:03:38.985Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -67,7 +67,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1232,17 +1232,19 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Éric Coquerel est probablement favorable à la mesure, comme en témoignent ses amendements n° 756 et n° 1275, tous deux rejetés, ainsi que sa déclaration en séance le 4 novembre 2026.",
-    "argument": "Présenter à ce député que son amendement n° 756, qui visait à modifier le code général des impôts, a été rejeté, afin de lui montrer que la mesure reste en vigueur malgré ses tentatives de la contourner.",
+    "position_probable": "A déposé l'amendement n° 844, rejeté (« Après l'article 4 : Le deuxième alinéa du I de l’article 973 du code général des impôts, est complété par une phrase ainsi rédigée : « La limite de l’abattement précité est fixée… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 844 et de sa déclaration du 4 novembre 2026 en séance : « Ce texte est pétri de refus : refus de voter des recettes nouvelles, comme un impôt sur la fortune (ISF) renforcé ; refus de conserver des impôts importants, comme les 5 milliards d’euros de la contribution exceptionnelle sur les bénéfices des grandes entreprises – ce sont 5 milliards de perdus, qui creusent le déficit et disqualifient les prétendus défenseurs de la bonne tenue des comptes publics. Ce budget va être rejeté. »",
     "chiffres_utilises": [
-      "756",
+      "844",
       "4",
-      "2",
-      "1275",
+      "973",
+      "2026-11-04",
+      "5",
+      "1000000000",
       "2026"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

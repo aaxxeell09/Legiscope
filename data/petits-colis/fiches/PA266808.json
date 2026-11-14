@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.852Z",
+    "generated_at": "2026-11-14T16:03:40.852Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -1282,18 +1282,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Vincent Rolland est probablement pour la mesure, car il a cosigné l'amendement 1774, tombé, et déposé les amendements 307, 308 et 309, retirés, qui proposent d'augmenter le montant de la taxe.",
-    "argument": "Présenter à ce député que son amendement n° 1774, qui proposait de porter la taxe à 25 euros, est tombé, afin de lui montrer que la mesure reste à 2 euros et que son initiative d'aggravation n'a pas abouti.",
+    "position_probable": "A déposé l'amendement n° 307, retiré (« Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros » »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 307 (« Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros » »).",
     "chiffres_utilises": [
-      "1774",
       "307",
-      "308",
-      "309",
+      "22",
+      "10",
       "2",
-      "25"
+      "5"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

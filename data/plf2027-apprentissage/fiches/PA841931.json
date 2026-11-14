@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:20.442Z",
+    "generated_at": "2026-11-14T16:03:41.154Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1178,15 +1178,21 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car son amendement 3198, tombé, porte sur l'amortissement des locaux meublés et sa déclaration du 27 mai 2026 en séance concerne l'accompagnement des élèves handicapés, sans lien direct avec la baisse des crédits de l'apprentissage.",
-    "argument": "Présenter à ce député que son amendement 3198, tombé, ne traite pas de la baisse des crédits de l'apprentissage, afin de clarifier son positionnement sur la mesure.",
+    "position_probable": "A cosigné l'amendement n° 3198, tombé (« Article 7 : I. – À l’alinéa 12, après le mot : « amortissement », insérer les mots : « des locaux d’habitation meublés donnés en location soit dans le cadre d’un bail régi… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 3198 et de sa déclaration du 27 mai 2026 en séance : « En 2025, 48 000 élèves étaient dans l’attente d’un accompagnement, soit une augmentation de 33 % par rapport à l’année précédente. Pour les enfants porteurs de handicap, cette absence de soutien est une double peine : elle entrave leur socialisation, brise leur élan vers l’autonomie et compromet gravement leur apprentissage. Mais ce ne sont pas les seules conséquences de cette situation. »",
     "chiffres_utilises": [
       "3198",
-      "2026",
-      "27"
+      "7",
+      "12",
+      "2026-05-27",
+      "2025",
+      "48000",
+      "33",
+      "27",
+      "2026"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

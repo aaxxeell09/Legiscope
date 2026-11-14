@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.857Z",
+    "generated_at": "2026-11-14T16:03:40.854Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -546,16 +546,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Jean-Pierre Bataille est probablement pour la mesure, car il a déposé l'amendement 1442, tombé, et l'amendement 1745, retiré, qui proposent tous deux de porter le montant à 5 euros.",
-    "argument": "Présenter à ce député que son amendement 1442, qui porte la taxe à 5 euros, est tombé, pour lui rappeler qu'il a déjà agi pour renforcer la mesure.",
+    "position_probable": "A déposé l'amendement n° 1442, tombé (« Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros » »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 1442 (« Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros » »).",
     "chiffres_utilises": [
-      "2",
       "1442",
-      "5",
-      "1745"
+      "22",
+      "10",
+      "2",
+      "5"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

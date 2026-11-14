@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.627Z",
+    "generated_at": "2026-11-14T16:03:38.989Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -403,32 +403,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Les actes de Christophe Blanchet vont dans les deux sens, avec des amendements tombés ou rejetés sur l'article 3 et d'autres adoptés ou non examinés, ce qui rend sa position personnelle sur la mesure incertaine.",
-    "argument": "Présenter à ce député que l'organisation KNDS France a été entendue par les rapporteurs de sa commission, ce qui constitue un indice plus faible qu'un acte personnel, pour appuyer la position de l'Afep contre la mesure.",
+    "position_probable": "A déposé l'amendement n° 1282, tombé (« Article 3 : Compléter cet article par l’alinéa suivant : « 4° Après la première phrase, est insérée une phrase ainsi rédigée : « Au titre des pensions de retraite… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1282 (« Article 3 : Compléter cet article par l’alinéa suivant : « 4° Après la première phrase, est insérée une phrase ainsi rédigée : « Au titre des pensions de retraite… »).",
     "chiffres_utilises": [
+      "1282",
       "3",
-      "2",
-      "0.5",
-      "3140",
-      "0.76",
-      "4",
-      "975",
-      "1",
-      "5",
-      "158",
-      "15",
-      "235",
-      "7",
-      "8",
-      "3821",
-      "977",
-      "0",
-      "2026",
-      "10",
-      "22"
+      "4"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

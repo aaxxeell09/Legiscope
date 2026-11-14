@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.796Z",
+    "generated_at": "2026-11-14T16:03:39.022Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -531,14 +531,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Hervé Saulignac est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement n° 471, rejeté, qui rétablit le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts.",
-    "argument": "Présenter à ce député que son amendement n° 364, qui rétablit l'impôt plancher, a été rejeté, afin de montrer que la suppression de la taxe sur la fortune improductive reste possible.",
+    "position_probable": "A cosigné l'amendement n° 364, rejeté (« Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « CHAPITRE IER BIS « Impôt plancher… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 364 (« Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « CHAPITRE IER BIS « Impôt plancher… »).",
     "chiffres_utilises": [
-      "471",
-      "364"
+      "364",
+      "4"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

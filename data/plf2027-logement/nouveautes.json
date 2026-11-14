@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:59:54.956Z",
+    "generated_at": "2026-11-14T16:03:42.096Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -1092,7 +1092,7 @@
       "date": "2026-10-30",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 30 octobre 2026",
-      "detail": "2 interventions relevées, dont : « Elle est intéressante, même s’il faut veiller à ne pas ouvrir le PTZ sans conditions, ce qui reviendrait à supprimer les taux d’intérêt pour tout le monde. »",
+      "detail": "6 interventions relevées, dont : « Cet article porte sur le logement et comporte deux dispositions. La première prévoit un élargissement du prêt à taux zéro (PTZ), notamment aux familles avec enfant qui ont déjà bénéficié d’un tel prêt. Elle est intéressante, même s’il faut veiller à ne pas ouvrir le PTZ sans conditions, ce qui reviendrait à supprimer les taux d’intérêt pour tout le monde. »",
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
       "effet": "neutre",
@@ -1102,6 +1102,27 @@
           {
             "label": "Compte rendu du 30 octobre 2026",
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-30-2",
+      "date": "2026-10-30",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 30 octobre 2026",
+      "detail": "5 interventions relevées, dont : « M. le ministre m’a ôté les mots de la bouche : j’ai l’impression qu’on veut un prêt à taux zéro pour tous. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 30 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
           }
         ],
         "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
@@ -1668,6 +1689,27 @@
       }
     },
     {
+      "id": "ev-commission-2026-10-21",
+      "date": "2026-10-21",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 21 octobre 2026",
+      "detail": "1 intervention relevée, dont : « Je comprends le sens de l’amendement. Mais, au-delà du geste politique, ayant été rapporteur d’une mission d’évaluation de la politique du logement social dans les outre-mer, je souligne qu’il faudrait d’abord trouver des collectivités locales prêtes à porter les investissements nécessaires pour construire des foyers. Aujourd’hui, il n’y a pas ou très peu de candidats, et quand il y en a, les projets ne sont pas menés à leur terme. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627020_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 21 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627020_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-depots-2026-10-21",
       "date": "2026-10-21",
       "type": "amendement_depose",
@@ -1710,6 +1752,27 @@
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-seance-2026-10-21",
+      "date": "2026-10-21",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 21 octobre 2026",
+      "detail": "1 intervention relevée, dont : « Dans un contexte de très forte hausse des taux d’intérêt, le dispositif que vous défendez avec notre collègue Le Fur risque toutefois d’être sans effet sur le marché immobilier à court terme. Pour faciliter l’accession à la propriété, le prêt à taux zéro (PTZ) me semble un outil beaucoup plus adapté, surtout dans le contexte actuel. Je vous renvoie sur ce point au projet de loi de finances, sur lequel notre collègue Le Fur est très investi. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 21 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
       }
     },
@@ -2253,7 +2316,7 @@
       "date": "2026-10-13",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 13 octobre 2026",
-      "detail": "1 intervention relevée, dont : « Vous baissez la contribution exceptionnelle sur les bénéfices des grandes entreprises de 2,3 milliards d’euros ; vous épargnez les hauts patrimoines et les grands héritages ; vous n’avez pas le courage de vous attaquer aux surprofits des groupes pétroliers ; au contraire, vous mettez à contribution les retraités, les allocataires d’APL, les malades en affection de longue durée (ALD), les fonctionnaires. »",
+      "detail": "2 interventions relevées, dont : « Sur ce point, le Parlement a aujourd’hui une responsabilité fondamentale. Ce dernier budget du quinquennat a le mérite de fixer un cap impératif, celui de la réduction du déficit à 5 % du PIB, et de comporter plusieurs mesures utiles : le pacte Papin qui facilite la reprise d’entreprises, le prêt à taux zéro (PTZ) parentalité, la circulation du patrimoine ou encore le soutien à l’investissement industriel. »",
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026",
       "effet": "neutre",
@@ -2424,6 +2487,27 @@
       }
     },
     {
+      "id": "ev-commission-2026-10-09",
+      "date": "2026-10-09",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 9 octobre 2026",
+      "detail": "1 intervention relevée, dont : « Article 52 : Maintien du niveau de contribution des bailleurs sociaux au financement des aides à la pierre »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 9 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-agenda-ruanr5l17s2027ids30930",
       "date": "2026-10-08",
       "type": "agenda",
@@ -2491,7 +2575,7 @@
       "date": "2026-10-08",
       "type": "commission",
       "titre": "Sujet abordé en commission le 8 octobre 2026",
-      "detail": "6 interventions relevées, dont : « Pour des raisons d’économies budgétaires, le Rassemblement national souhaite responsabiliser les bailleurs sociaux, notamment en supprimant l’exonération de taxe foncière, qui coûterait trop cher à l’État. »",
+      "detail": "32 interventions relevées, dont : « Initialement, le PTZ était centré sur les ménages très modestes dans les zones où le marché immobilier était tendu. Il se transforme progressivement en un PTZ pour tous dans lequel l’État se substituerait aux emprunteurs pour payer les taux d’intérêt, dont je rappelle qu’ils augmentent significativement. »",
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627008_compte-rendu",
       "effet": "neutre",
@@ -2509,6 +2593,27 @@
     },
     {
       "id": "ev-commission-2026-10-08-2",
+      "date": "2026-10-08",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 8 octobre 2026",
+      "detail": "2 interventions relevées, dont : « Aujourd’hui, la ministre de l’agriculture a justement annoncé la création d’un prêt à taux zéro pour soutenir les trésoreries agricoles. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627010_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 8 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627010_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-commission-2026-10-08-3",
       "date": "2026-10-08",
       "type": "commission",
       "titre": "Sujet abordé en commission le 8 octobre 2026",
@@ -2546,6 +2651,27 @@
           }
         ],
         "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-commission-2026-10-07",
+      "date": "2026-10-07",
+      "type": "commission",
+      "titre": "Sujet abordé en commission le 7 octobre 2026",
+      "detail": "3 interventions relevées, dont : « Dans beaucoup de domaines, la gauche fait la chasse aux avantages fiscaux et rabote tout ce qu’elle peut en matière de crédits d’impôt et de facilités, mais quand il s’agit des bailleurs sociaux, il y a une levée de boucliers : leurs avantages fiscaux seraient sacrés, on ne pourrait pas y toucher ! C’est étonnant. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627006_compte-rendu",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 7 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627006_compte-rendu"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
       }
     },
@@ -2708,7 +2834,7 @@
       "date": "2026-06-17",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 17 juin 2026",
-      "detail": "3 interventions relevées, dont : « Face au manque de logements pour les agents publics et à la crise du logement en général, l’urgence est d’investir massivement pour produire plus de logements sociaux, de supprimer la réduction de loyer de solidarité pour redonner de l’air aux bailleurs sociaux (M. »",
+      "detail": "3 interventions relevées, dont : « Les chiffres au 1er janvier 2024 sont édifiants : 2,6 millions de ménages attendent un logement social ; en un an, les attributions ont chuté de 6 %, la plus forte baisse hors période de pandémie de covid, et le délai d’attente moyen pour un logement frôle désormais les 540 jours. »",
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026",
       "effet": "neutre",
@@ -2750,7 +2876,7 @@
       "date": "2025-10-21",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 21 octobre 2025",
-      "detail": "1 intervention relevée, dont : « Benjamin Lucas-Lundy applaudit également.) Tout le monde passe à la caisse : les apprentis, avec la baisse des salaires ; les locataires, avec le gel des APL ; les retraités, avec le gel des pensions ; les travailleurs, avec la hausse de l’impôt sur le revenu ; les plus vulnérables, avec le gel des prestations sociales ; les patients, avec le doublement des franchises, et les malades en affection de longue durée (ALD), avec des taxes sur leurs indemnités. »",
+      "detail": "2 interventions relevées, dont : « Le coût du logement explose à cause de la réglementation, des normes et de l’inflation. La production de logements neufs s’effondre, les délais pour accéder à un logement social s’allongent et le parc privé, déjà sous tension, se contracte faute d’attractivité pour les bailleurs. Pourtant, le projet de loi de finances pour 2026 ne contient aucune mesure à la hauteur de l’urgence. »",
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mardi-21-octobre-2025",
       "effet": "neutre",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.817Z",
+    "generated_at": "2026-11-14T16:03:40.839Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -589,14 +589,15 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Guillaume Kasbarian est probablement contre la mesure, comme l'indique son intervention en commission le 22 octobre 2025 où il s'interroge sur l'efficacité d'une taxe nationale face à la future taxe harmonisée de l'Union européenne.",
-    "argument": "Présenter à ce député le risque de contournement par l'installation d'entrepôts en Belgique ou en Allemagne, qu'il a soulevé en commission le 22 octobre 2025, pour appuyer la position de son client contre la taxe.",
+    "position_probable": "A dit en commission le 22 octobre 2025 : « Ensuite, l’Union européenne elle-même élabore une taxe harmonisée, dont un quart du produit pourrait nous être reversé. En introduisant un dispositif franco-français au rendement nul, ne nous priverons-nous pas d’une ressource à venir issue d’une taxe qui, elle, ne pourra être évitée et dont nous percevrons un quart du produit ? »",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de sa déclaration du 22 octobre 2025 en commission : « Ensuite, l’Union européenne elle-même élabore une taxe harmonisée, dont un quart du produit pourrait nous être reversé. En introduisant un dispositif franco-français au rendement nul, ne nous priverons-nous pas d’une ressource à venir issue d’une taxe qui, elle, ne pourra être évitée et dont nous percevrons un quart du produit ? »",
     "chiffres_utilises": [
-      "2025",
-      "22"
+      "2025-10-22",
+      "22",
+      "2025"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

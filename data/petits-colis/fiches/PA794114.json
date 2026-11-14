@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.789Z",
+    "generated_at": "2026-11-14T16:03:40.830Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -546,15 +546,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Emmanuel Mandon est probablement favorable à la mesure, comme en témoignent l'amendement 1519 qu'il a déposé et qui est tombé, ainsi que l'amendement 3395 qu'il a cosigné et qui est en attente.",
-    "argument": "Présenter à ce député que son amendement 1519, qui vise à étendre la taxe aux colis de moins de 2 kilos, est tombé, afin de l'encourager à retirer sa cosignature sur l'amendement 3395 qui reste en attente.",
+    "position_probable": "A déposé l'amendement n° 1519, tombé (« Article 22 : I – À l’alinéa 5, après le mot : « valeur » insérer les mots : « ou d’un poids inférieur à 2 kilos » II. – À l’alinéa 7, compléter la phrase par les mots : «… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 1519 (« Article 22 : I – À l’alinéa 5, après le mot : « valeur » insérer les mots : « ou d’un poids inférieur à 2 kilos » II. – À l’alinéa 7, compléter la phrase par les mots : «… »).",
     "chiffres_utilises": [
       "1519",
-      "3395",
-      "2"
+      "22",
+      "5",
+      "2",
+      "7"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

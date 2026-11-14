@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.132Z",
+    "generated_at": "2026-11-14T16:03:41.204Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1650,16 +1650,15 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Gérault Verny est probablement favorable à la mesure, car il a soutenu en séance le 4 novembre 2026 le financement de la formation professionnelle par la taxe d'apprentissage.",
-    "argument": "Présenter à ce député que la taxe d’apprentissage, qu’il a défendue en séance le 4 novembre 2026, doit financer la formation professionnelle, afin de contester la baisse des crédits de l’apprentissage prévue aux articles 88 et 89.",
+    "position_probable": "A dit en séance le 4 novembre 2026 : « Je soutiens ces amendements, car la taxe d’apprentissage, acquittée par les entreprises, doit servir au financement de la formation professionnelle, notamment des formations technologiques et de l’innovation. »",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de sa déclaration du 4 novembre 2026 en séance : « Je soutiens ces amendements, car la taxe d’apprentissage, acquittée par les entreprises, doit servir au financement de la formation professionnelle, notamment des formations technologiques et de l’innovation. »",
     "chiffres_utilises": [
-      "2026",
+      "2026-11-04",
       "4",
-      "88",
-      "89"
+      "2026"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

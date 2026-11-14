@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:14.649Z",
+    "generated_at": "2026-11-14T16:03:41.149Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1341,24 +1341,17 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Ses actes ne permettent pas de trancher sa position personnelle sur la mesure, car ses amendements portent sur un autre sujet et il n'a pas pris la parole, mais son groupe est contre.",
-    "argument": "Présenter à ce député que la mesure vise les articles 88 et 89 du budget, alors que son amendement sur l'article 42 a été rejeté, ce qui montre qu'il défend des intérêts sectoriels précis plutôt que la baisse générale des crédits.",
+    "position_probable": "A déposé l'amendement n° 1232, non examiné (« Après l'article 42 : I. – Le III de l’article L. 6241‑1 du code du travail est complété par un 10° ainsi rédigé : « 10° Les établissements de santé privés d’intérêt collectif… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 1232 (« Après l'article 42 : I. – Le III de l’article L. 6241‑1 du code du travail est complété par un 10° ainsi rédigé : « 10° Les établissements de santé privés d’intérêt collectif… »).",
     "chiffres_utilises": [
-      "88",
-      "89",
-      "0.67",
+      "1232",
       "42",
       "6241",
       "1",
-      "10",
-      "0",
-      "2026",
-      "11",
-      "4",
-      "9"
+      "10"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

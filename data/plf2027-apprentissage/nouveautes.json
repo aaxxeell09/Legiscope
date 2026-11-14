@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:33.961Z",
+    "generated_at": "2026-11-14T16:03:41.436Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -819,16 +819,16 @@
       "date": "2026-11-03",
       "type": "rapport",
       "titre": "4 rapports du texte publiés avec la liste des personnes entendues (83 organisations)",
-      "detail": "Organisations entendues : université Paris Cité, Organisation de coopération et de développement économiques (OCDE), Direction générale de l’administration et de la fonction publique (DGAFP), Centre national de la recherche scientifique (CNRS), Institut des politiques publiques (IPP), université Bourgogne Europe, Association française des acteurs de l’éducation, Le café pédagogique, Direction générale des relations humaines (DGRH) du ministère de l’éducation nationale, Direction des affaires financières (DAF) du ministère de l’éducation nationale, Institut national de la statistique et des études économiques (Insee), Haut-commissariat à la stratégie et au plan….",
+      "detail": "Organisations entendues : Armateurs de France, Union française des Pêcheurs Artisans (UFPA), Société nationale de sauvetage en mer (SNSM), École nationale supérieure maritime (ENSM), Direction générale des affaires maritimes, de la pêche et de l’aquaculture (DGAMPA), université Paris Cité, Organisation de coopération et de développement économiques (OCDE), Direction générale de l’administration et de la fonction publique (DGAFP), Centre national de la recherche scientifique (CNRS), Institut des politiques publiques (IPP), université Bourgogne Europe, Association française des acteurs de l’éducation….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a17.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 3 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a17.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -2494,16 +2494,16 @@
       "date": "2026-10-15",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 15 octobre 2026",
-      "detail": "4 interventions relevées, dont : « Ils prévoient un crédit d’impôt pour les travaux d’abattage d’arbres, d’élagage, d’évacuation et de débroussaillement, qui sont les plus efficaces pour lutter contre les incendies. La semaine dernière, la commission a adopté l’amendement no 3339, ainsi que le vôtre, madame Mette, au titre de l’article 88. Pour ces raisons, avis favorable. »",
+      "detail": "3 interventions relevées, dont : « La commission a repoussé cet amendement, assurément intéressant, au titre de l’article 88. J’ai deux questions. »",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Compte rendu du 15 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
           }
         ],
         "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
@@ -2515,16 +2515,16 @@
       "date": "2026-10-15",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 15 octobre 2026",
-      "detail": "3 interventions relevées, dont : « La commission a repoussé cet amendement, assurément intéressant, au titre de l’article 88. J’ai deux questions. »",
+      "detail": "4 interventions relevées, dont : « La commission a repoussé l’amendement au titre de l’article 88 mais pour ma part, je m’en remettrai à la sagesse de l’Assemblée. J’ignore si cette disposition applicable aux médecins a amélioré la qualité de la couverture de la permanence des soins. »",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Compte rendu du 15 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
           }
         ],
         "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
@@ -2575,27 +2575,6 @@
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
         "nature": "deduction"
-      }
-    },
-    {
-      "id": "ev-seance-2026-10-14",
-      "date": "2026-10-14",
-      "type": "seance",
-      "titre": "Sujet abordé en séance publique le 14 octobre 2026",
-      "detail": "1 intervention relevée, dont : « Cette ponction s’ajoute à la baisse de 5 points du taux du FCTVA, à la restriction de la dynamique de TVA transférée et à la réduction des ressources régionales issues de la réforme de l’apprentissage. Le FCTVA accompagne des investissements : diminuer son taux renchérit la rénovation d’une école, d’un équipement public ou d’un chantier de voirie communale. »",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Compte rendu du 14 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
-          }
-        ],
-        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
-        "nature": "fait"
       }
     },
     {

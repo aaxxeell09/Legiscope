@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:58:18.164Z",
+    "generated_at": "2026-11-14T16:03:41.785Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -1473,16 +1473,16 @@
       "date": "2026-11-06",
       "type": "rapport",
       "titre": "4 rapports du texte publiés avec la liste des personnes entendues (98 organisations)",
-      "detail": "Organisations entendues : Direction interministérielle de la transformation publique (DITP), Direction de l’immobilier de l’État (DIE) du ministère de l’Action et des comptes publics, Direction générale de l’administration et de la fonction publique (DGAFP) ministère de l’Action et des comptes publics, Direction générale des outre-mer (DGOM) du ministère des Outre-mer, Préfecture de Martinique, Rectorat de Martinique, Groupe des instituts du service public (G-ISP), Institut régional d’administration de Lille, Université de la Réunion, Université des Antilles – Guadeloupe, Université de Guyane, Université de Mayotte….",
+      "detail": "Organisations entendues : Centre national de la musique (CNM), Association des centres chorégraphiques nationaux (ACCN), Association de centres de développement chorégraphique nationaux (A-CDCN), Association des centres dramatiques nationaux (ACDN), Association des scènes nationales (ASN), Réunion des opéras de France (ROF), Syndicat national des entreprises artistiques et culturelles (Syndéac), Scènes Ensemble, Forces Musicales, Sociétés des auteurs et compositeurs dramatiques (SACD), Sociétés des auteurs, compositeurs et éditeurs de musique (Sacem), Administration des droits des artistes et musiciens interprètes (Adami)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tII.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 6 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tII.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -2270,16 +2270,16 @@
       "date": "2026-10-28",
       "type": "rapport",
       "titre": "2 rapports du texte publiés avec la liste des personnes entendues (55 organisations)",
-      "detail": "Organisations entendues : Fédération nationale de l’immobilier (FNAIM), Association des responsables de copropriétés (ARC), Union nationale des propriétaires immobiliers (UNPI), Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb), France urbaine, Agence parisienne du climat, NegaWatt, Rénovons-CLER-Réseau pour la transition énergétique, Observatoire national de rénovation énergétique (ONRE), Observatoire national de la précarité énergétique (ONPE), Secrétariat général à la planification écologique (SGPE), Association Force ouvrière consommateurs (Afoc)….",
+      "detail": "Organisations entendues : Groupement des professionnels des certificats d’économies d’énergie (GPCEE), Union française de l’électricité (UFE), France Gaz, Association des agriculteurs méthaniseurs de France (AAMF), France Hydrogène, Que choisir ensemble, Conseil national des associations familiales laïques (Cnafal), Consommation, logement et cadre de vie (CLCV), Fédération des services Énergie Environnement (Fedene), Cilab, Association de collectivités, gestion des déchets, réseaux de chaleurs, gestion locale de l’énergie (Amorce), Fédération nationale des activités de la dépollution et de l’environnement (Fnade)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 28 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -2608,16 +2608,16 @@
       "date": "2026-10-22",
       "type": "rapport",
       "titre": "2 rapports du texte publiés avec la liste des personnes entendues (25 organisations)",
-      "detail": "Organisations entendues : Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre), Surfrider Foundation Europe, EDF Power Solutions, EDF, Ailes Marines (Iberdrola), Direction générale de l’énergie et du climat (DGEC), France Renouvelables, Syndicat des énergies renouvelables (SER), Ai2P, Cluster maritime français, Agence de la transition écologique (Ademe), Office français de la biodiversité (OFB)….",
+      "detail": "Organisations entendues : KNDS France, Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre), Surfrider Foundation Europe, EDF Power Solutions, EDF, Ailes Marines (Iberdrola), Direction générale de l’énergie et du climat (DGEC), France Renouvelables, Syndicat des énergies renouvelables (SER), Ai2P, Cluster maritime français, Agence de la transition écologique (Ademe)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 22 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",

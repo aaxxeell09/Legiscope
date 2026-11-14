@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.828Z",
+    "generated_at": "2026-11-14T16:03:40.843Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -23,6 +23,10 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-18-novembre-2025"
       },
       {
+        "label": "Commission des finances, réunion n° 34 du 09/11/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526034_compte-rendu"
+      },
+      {
         "label": "Commission des finances, réunion n° 13 du 22/10/2025",
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
       },
@@ -39,7 +43,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -114,6 +118,13 @@
       "texte_id": "PRJLANR5L17B1906",
       "citation": "Depuis bientôt trois ans, le rendement de la TVA baisse. Vous pouvez accuser les petits colis chinois, mais nous ne croyons pas à vos explications. À force de taper sur la consommation populaire et sur les artisans, les gens ne consomment plus ou peu.",
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-18-novembre-2025"
+    },
+    {
+      "date": "2025-11-09",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "De toute manière, la prétention même à contrôler les flux du mondialisme est une aberration. Entre 1997 et 2024, quand il était député Nicolas Dupont-Aignan, a alerté, dans l’indifférence générale – sauf celle des communistes – sur le fait qu’entre 90 % et 95 % des colis importés contenaient des marchandises frauduleuses – qu’ils arrivent dans les aéroports, ou dans des conteneurs, au Havre. Tous les douaniers le savaient.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526034_compte-rendu"
     },
     {
       "date": "2025-10-22",
@@ -682,15 +693,18 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Jean-Philippe Tanguy est probablement contre la mesure, comme l'indiquent ses déclarations en commission le 22 octobre 2025 et en séance le 18 novembre 2025.",
-    "argument": "Présenter à ce député que la mesure taxe les familles modestes, car il a déclaré en commission le 22 octobre 2025 que cette taxe ne sauvera aucun petit commerce.",
+    "position_probable": "A déposé l'amendement n° 4075, en attente (« Article 22 : dispositif non publié »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 4075 et de sa déclaration du 18 novembre 2025 en séance : « Depuis bientôt trois ans, le rendement de la TVA baisse. Vous pouvez accuser les petits colis chinois, mais nous ne croyons pas à vos explications. À force de taper sur la consommation populaire et sur les artisans, les gens ne consomment plus ou peu. »",
     "chiffres_utilises": [
+      "4075",
       "22",
-      "2025",
-      "18"
+      "2025-11-18",
+      "3",
+      "18",
+      "2025"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

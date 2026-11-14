@@ -1,12 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.588Z",
+    "generated_at": "2026-11-14T16:03:41.208Z",
     "sources": [],
-    "limits": "58 fiche(s) produite(s) sur 58 député(s) de groupes-action.json et pivots.json.",
+    "limits": "56 fiche(s) produite(s) sur 59 député(s) de groupes-action.json et pivots.json. Absents : PA841377 : auditions, debats manquant ou invalide ; PA793520 : auditions, debats manquant ou invalide ; PA794234 : auditions, debats manquant ou invalide.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
   "disponibles": [
+    "PA346782",
     "PA608826",
     "PA793094",
     "PA870009",
@@ -18,9 +19,7 @@
     "PA643104",
     "PA840817",
     "PA841931",
-    "PA942",
     "PA342240",
-    "PA346782",
     "PA720560",
     "PA841463",
     "PA267763",
@@ -35,7 +34,6 @@
     "PA719640",
     "PA720334",
     "PA720838",
-    "PA736201",
     "PA793174",
     "PA841135",
     "PA605782",
@@ -45,7 +43,6 @@
     "PA794658",
     "PA840195",
     "PA840773",
-    "PA840809",
     "PA840983",
     "PA841079",
     "PA793672",
@@ -63,8 +60,13 @@
     "PA842073",
     "PA840701",
     "PA840135",
+    "PA840809",
     "PA793374",
     "PA841769"
   ],
-  "absents": []
+  "absents": [
+    "PA841377",
+    "PA793520",
+    "PA794234"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.824Z",
+    "generated_at": "2026-11-14T16:03:39.030Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -543,14 +543,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Karine Lebon est probablement favorable à la mesure, comme le montre son cosignature d'un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député le rejet de son amendement n° 1847, car il a déjà cosigné la suppression de l'article 3 et soutient la mesure.",
+    "position_probable": "A cosigné l'amendement n° 1816, adopté (« Supprime l'article 3 »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1816 (« Supprime l'article 3 »).",
     "chiffres_utilises": [
-      "3",
-      "1847"
+      "1816",
+      "3"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

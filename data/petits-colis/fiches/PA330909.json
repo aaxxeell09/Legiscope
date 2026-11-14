@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.809Z",
+    "generated_at": "2026-11-14T16:03:40.837Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -1287,16 +1287,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Vincent Descoeur est probablement favorable à la mesure, comme en témoignent les amendements 1774 et 1775 qu'il a cosignés et qui ont respectivement été tombé et rejeté.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros, est tombé, pour lui montrer que la mesure initiale de 2 euros reste le seul texte en vigueur et qu'il peut désormais s'opposer à son application.",
+    "position_probable": "A cosigné l'amendement n° 1774, tombé (« Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 25 euros » »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 1774 (« Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 25 euros » »).",
     "chiffres_utilises": [
       "1774",
-      "1775",
+      "22",
+      "10",
       "2",
       "25"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

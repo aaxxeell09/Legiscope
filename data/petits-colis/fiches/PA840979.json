@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.843Z",
+    "generated_at": "2026-11-14T16:03:40.849Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -655,15 +655,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Corentin Le Fur est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 719, qui a été adopté.",
-    "argument": "Présenter à ce député que son amendement n° 719, qui a été adopté, renforce la taxe de 2 euros par article sur les colis de moins de 150 euros, ce qui va à l'encontre de l'objectif d'Alibaba France.",
+    "position_probable": "A cosigné l'amendement n° 719, adopté (« Article 22 : Rédiger ainsi l’article 22 : « I. – Les règles relatives au malus sur les importations d’articles de marchandise contenus dans des envois de faible valeur sont… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 719 et de sa déclaration du 22 octobre 2025 en commission : « Avez-vous estimé le rendement de cette taxe ? Je suis d’accord avec M. »",
     "chiffres_utilises": [
       "719",
-      "2",
-      "150"
+      "22",
+      "2025-10-22",
+      "2025"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

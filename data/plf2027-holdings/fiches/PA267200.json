@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.738Z",
+    "generated_at": "2026-11-14T16:03:39.006Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -476,24 +476,11 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, mais son groupe est contre la mesure.",
-    "argument": "Présenter à ce député que son groupe EPR est contre la mesure, car il n'a aucun acte personnel dans l'entrée et les organisations entendues par les rapporteurs de sa commission ne concernent pas directement le sujet.",
-    "chiffres_utilises": [
-      "3",
-      "0.5",
-      "3140",
-      "0.71",
-      "0",
-      "2",
-      "2026",
-      "11",
-      "5",
-      "6",
-      "1",
-      "12"
-    ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés.",
+    "argument": "Présenter à ce député la position du client (Afep) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Ministère de la justice, Syndicat national pénitentiaire – FO Direction, Syndicat national des directeurs pénitentiaires – CFDT) : indice plus faible qu'un acte personnel.",
+    "chiffres_utilises": [],
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

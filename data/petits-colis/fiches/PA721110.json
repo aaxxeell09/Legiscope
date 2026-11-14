@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.763Z",
+    "generated_at": "2026-11-14T16:03:40.823Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -1109,16 +1109,15 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Nicole Sanquer est probablement favorable à la mesure, comme en témoignent les amendements 1745 et 2538 qu'elle a cosignés pour augmenter le montant de la taxe.",
-    "argument": "Présenter à ce député l'amendement 452, en attente, qui prévoit une exception aux dispositions de l'article 22, car il a cosigné ce texte et son groupe soutient la mesure.",
+    "position_probable": "A cosigné l'amendement n° 452, en attente (« Article 22 : Compléter cet article par les deux alinéas suivants : « XIII. – Les dispositions du présent article ne s’appliquent pas aux importations effectuées dans les… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 452 (« Article 22 : Compléter cet article par les deux alinéas suivants : « XIII. – Les dispositions du présent article ne s’appliquent pas aux importations effectuées dans les… »).",
     "chiffres_utilises": [
-      "1745",
-      "2538",
       "452",
-      "22"
+      "22",
+      "2"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

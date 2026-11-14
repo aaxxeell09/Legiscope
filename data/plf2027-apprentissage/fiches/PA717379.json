@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.058Z",
+    "generated_at": "2026-11-14T16:03:41.168Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1459,16 +1459,16 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Sylvain Maillard est probablement contre la mesure, comme en témoignent ses amendements 1136 et 1138 sur les articles 88 et 89, qui sont en attente.",
-    "argument": "Présenter à ce député son amendement n° 1136, en attente, qui cite l’Union des entreprises de proximité, pour appuyer la position de son groupe contre la baisse des crédits de l’apprentissage.",
+    "position_probable": "A déposé l'amendement n° 1578, adopté (« Article 42 : Supprimer les alinéas 12 à 15 »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 1578 (« Article 42 : Supprimer les alinéas 12 à 15 »).",
     "chiffres_utilises": [
-      "88",
-      "89",
-      "1136",
-      "1138"
+      "1578",
+      "42",
+      "12",
+      "15"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.852Z",
+    "generated_at": "2026-11-14T16:03:40.853Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -27,7 +27,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -471,15 +471,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Il est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 3395, actuellement en attente.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 3395, actuellement en attente, renforce la taxe de 2 euros par article sur les colis de moins de 150 euros, ce qui contredit directement l'objectif d'Alibaba France de réduire cette mesure.",
+    "position_probable": "A cosigné l'amendement n° 3395, en attente (« Article 22 : I. – À l’alinéa 5, après le mot : « valeur », insérer les mots : « ou d’un poids inférieur à 2 kilos » ; II. – En conséquence, compléter l’alinéa 7 par les… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 3395 (« Article 22 : I. – À l’alinéa 5, après le mot : « valeur », insérer les mots : « ou d’un poids inférieur à 2 kilos » ; II. – En conséquence, compléter l’alinéa 7 par les… »).",
     "chiffres_utilises": [
       "3395",
+      "22",
+      "5",
       "2",
-      "150"
+      "7"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

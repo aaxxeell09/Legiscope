@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:59:54.963Z",
+    "generated_at": "2026-11-14T16:03:42.099Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -566,7 +566,7 @@
           "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Virginie Duby-Muller s'en est écarté 1 fois sur les scrutins liés.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA642847",
@@ -596,7 +596,7 @@
           "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Thibault Bazin s'en est écarté 1 fois sur les scrutins liés.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA718850",
@@ -630,7 +630,7 @@
           "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Pierre Cordier s'en est écarté 1 fois sur les scrutins liés.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA794182",
@@ -651,7 +651,7 @@
           "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Jean-Yves Bonnefoy s'en est écarté 1 fois sur les scrutins liés.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA842121",
@@ -672,7 +672,7 @@
           "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Nicolas Tryzna s'en est écarté 1 fois sur les scrutins liés.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA841801",
@@ -719,7 +719,7 @@
           "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA718838",
@@ -748,7 +748,7 @@
           "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA607553",
@@ -794,7 +794,7 @@
           "raisonnement": "Ses propres actes sur la mesure vont dans les deux sens : position encore ouverte.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA759832",
@@ -815,7 +815,7 @@
           "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA794470",
@@ -866,7 +866,7 @@
           "raisonnement": "Ses propres actes sur la mesure vont dans les deux sens : position encore ouverte.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA794330",
@@ -892,7 +892,7 @@
           "raisonnement": "Ses propres actes sur la mesure vont dans les deux sens : position encore ouverte.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA642725",
@@ -913,7 +913,7 @@
           "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       }
     ],
     "allies": [
@@ -950,7 +950,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné, a dit), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA2940",
@@ -980,7 +980,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA332523",
@@ -1010,7 +1010,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA719640",
@@ -1044,7 +1044,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA719778",
@@ -1078,7 +1078,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA719798",
@@ -1108,7 +1108,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA719914",
@@ -1134,7 +1134,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA720560",
@@ -1160,7 +1160,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA720728",
@@ -1186,7 +1186,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA721182",
@@ -1216,7 +1216,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA721234",
@@ -1246,7 +1246,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA721852",
@@ -1276,7 +1276,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA722374",
@@ -1302,7 +1302,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA793122",
@@ -1336,7 +1336,7 @@
           "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       },
       {
         "depute_id": "PA793520",
@@ -1362,7 +1362,7 @@
           "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné, a dit), majoritairement contre la mesure, comme le client.",
           "nature": "deduction"
         },
-        "fiche": false
+        "fiche": true
       }
     ],
     "perdus": [],

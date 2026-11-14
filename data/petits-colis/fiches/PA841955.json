@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.837Z",
+    "generated_at": "2026-11-14T16:03:40.847Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,6 +19,10 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
+        "label": "Commission des finances, réunion n° 27 du 07/11/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526027_compte-rendu"
+      },
+      {
         "label": "Commission des finances, réunion n° 13 du 22/10/2025",
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
       },
@@ -35,7 +39,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -104,6 +108,13 @@
     }
   ],
   "debats": [
+    {
+      "date": "2025-11-07",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Par ailleurs, je rappelle que, dans le cadre de l’Union postale universelle, La Poste subventionne indirectement les livraisons de colis depuis la Chine. En effet, ce pays bénéficie encore d’un tarif préférentiel – même s’il n’est pas aussi avantageux qu’il l’était jusqu’en 2019.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526027_compte-rendu"
+    },
     {
       "date": "2025-10-22",
       "lieu": "commission",
@@ -553,17 +564,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Matthias Renault est probablement contre la mesure, comme l'indique sa déclaration du 22 octobre 2025 en commission où il critique la proposition de taxe.",
-    "argument": "Présenter à ce député l'argument des accords postaux et du subventionnement de l'importation de produits chinois jusqu'en 2019, qu'il a soulevé en commission le 22 octobre 2025, pour montrer que la taxe de 2 euros par article sur les colis de moins de 150 euros remettrait en cause ce mécanisme.",
+    "position_probable": "A dit en commission le 7 novembre 2025 : « Par ailleurs, je rappelle que, dans le cadre de l’Union postale universelle, La Poste subventionne indirectement les livraisons de colis depuis la Chine. En effet, ce pays bénéficie encore d’un tarif préférentiel – même s’il n’est pas aussi avantageux qu’il l’était jusqu’en 2019. »",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de sa déclaration du 7 novembre 2025 en commission : « Par ailleurs, je rappelle que, dans le cadre de l’Union postale universelle, La Poste subventionne indirectement les livraisons de colis depuis la Chine. En effet, ce pays bénéficie encore d’un tarif préférentiel – même s’il n’est pas aussi avantageux qu’il l’était jusqu’en 2019. »",
     "chiffres_utilises": [
-      "2025",
-      "22",
-      "2",
-      "150",
-      "2019"
+      "2025-11-07",
+      "2019",
+      "7",
+      "2025"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.747Z",
+    "generated_at": "2026-11-14T16:03:39.009Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1220,13 +1220,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Jean-Yves Bony est probablement contre la mesure, car il a cosigné un amendement visant à supprimer l'article 3, qui a été adopté.",
-    "argument": "Présenter à ce député le fait qu'il a cosigné un amendement supprimant l'article 3, qui a été adopté, car cela confirme son opposition à la mesure et son alignement avec la position du client.",
+    "position_probable": "A cosigné l'amendement n° 1, adopté (« Supprime l'article 3 »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1 (« Supprime l'article 3 »).",
     "chiffres_utilises": [
+      "1",
       "3"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

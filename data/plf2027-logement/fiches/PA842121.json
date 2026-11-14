@@ -1,0 +1,1382 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:03:41.817Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a46.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-logement"
+  },
+  "depute_id": "PA842121",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a46.html",
+      "date": "2026-10-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’Europe et des affaires étrangères",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a17.html",
+      "date": "2026-11-03",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Armateurs de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union française des Pêcheurs Artisans (UFPA)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société nationale de sauvetage en mer (SNSM)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale supérieure maritime (ENSM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture (DGAMPA)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a36.html",
+      "date": "2026-11-04",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Institut national de la statistique et des études économiques (INSEE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de la recherche, des études, de l’évaluation et des statistiques (DREES)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe La Poste",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut des politiques publiques (IPP)",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a31.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère des Outre-mer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des Outre-mer (DGOM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence des Outre-mer pour la mobilité (LADOM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service militaire adapté (SMA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union nationale des fédérations d’organismes HLM (USH)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "EURODOM",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Personnalités qualifiées",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des entreprises des outre-mer (FEDOM)",
+          "type": "federation",
+          "hatvp_id": "393411855"
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a8.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Conseil d’État",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des juridictions financières (SJF)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat de la juridiction administrative (SJA)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union syndicale des magistrats administratifs (USMA)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cour des comptes",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cour nationale du droit d’asile (CNDA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Tribunal du stationnement payant (TSP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil économique, social et environnemental (Cese)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a26.html",
+      "date": "2026-11-09",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE)",
+          "type": "administration",
+          "hatvp_id": "781121785"
+        },
+        {
+          "nom": "Pôles régionaux de l’immobilier de l’État (Prie)",
+          "type": "administration",
+          "hatvp_id": "502582596"
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a30.html",
+      "date": "2026-11-10",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Commission pour la restitution des biens et indemnisation des victimes de persécutions antisémites (CIVS)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut de gestion sociale des armées (IGESA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "État-major des armées",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du budget, bureau 5BDM",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut des Invalides",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de la mémoire, de la culture et des archives (DMCA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission nationale indépendante pour les harkis (CNIH)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office national des anciens combattants et des victimes de guerre (ONaCVG)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service des retraites de l’État",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fondation pour la mémoire de la guerre d’Algérie, des combats du Maroc et de la Tunisie",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Nationale des combattants des Opérations Extérieures",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Le Souvenir Français",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’enseignement scolaire du ministère de l’Éducation nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mémorial de la Shoah",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commune de Noyant-d’Allier",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Archives nationales",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général pour l’administration du ministère des Armées",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Nationale des Victimes d’Attentats et d’Accidents Collectifs",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a29.html",
+      "date": "2026-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Syndicat des musiques actuelles (SMA)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national de l’édition phonographique (SNEP)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des producteurs phonographiques français indépendants (UPFI)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des Ensembles Vocaux et Instrumentaux Spécialisés (FEVIS)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre National du Livre (CNL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre National du Cinéma et l’image animée (CNC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ekhoscènes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre National de la musique (CNM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de l’audiovisuel (INA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des médias et des industries culturelles (DGMIC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Radio France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Télévisions",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Festivals",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Médias Monde",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Arte",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Spotify",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "TV5 Monde",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Deezer",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société des Auteurs, Compositeurs et Éditeurs de Musique (SACEM)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Administration des Droits des Artistes et Musiciens Interprètes (ADAMI)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société de Perception et de Distribution des Droits des Artistes-Interprètes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "COPIE France",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des Producteurs de Phonogrammes en France (SPPF)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Apple Music",
+          "type": "entreprise",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a13.html",
+      "date": "2026-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Secrétariat général du Gouvernement (SGG)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général de la défense et de la sécurité nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’information légale et administrative (DILA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Défenseur des droits",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission nationale de l'informatique et des libertés (CNIL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haute Autorité pour la transparence de la vie publique (HATVP)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a44.html",
+      "date": "2026-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE)",
+          "type": "administration",
+          "hatvp_id": "781121785"
+        },
+        {
+          "nom": "Direction générale de l’administration et de la fonction publique (DGAFP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe des Instituts du Service Public (GISP)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction interministérielle de la transformation publique (DITP)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N002180",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Droite républicaine appelle à la suppression de l’Agence nationale de l’habitat (ANAH). Dans ce débat budgétaire, notre groupe défend…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002180"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "775697907",
+      "nom": "UNION NATIONALE FEDERATION H L M",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775697907",
+      "objet": "PLF2026 : Proroger le régime d’exonération des plus-values des particuliers en cas de vente destinée au logement social\n",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "327664942",
+      "nom": "ASS REGIONALE HLM REGION NORD PDC",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=327664942",
+      "objet": "Échanges en 2025 avec députés relatifs aux enjeux législatifs et aux conditions de mise en œuvre des politiques du logement social.",
+      "actions": [
+        "rencontre",
+        "correspondance",
+        "transmission d'expertise",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "824581623",
+      "nom": "ACTION LOGEMENT GROUPE",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=824581623",
+      "objet": "Proposition d'un amendement sur le projet de loi \"lutte contre la vie chère dans les outre-mer\"",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "433209582",
+      "nom": "FEDER DORDOGNE ENTREPRENEUR ARTISANS BAT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=433209582",
+      "objet": "Prêt à taux zéro : demander le rétablissement du PTZ pour la construction d'un logement dans tous les territoires y compris pour les maisons individuelles",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "777748807",
+      "nom": "FEDERATION BATIMENT TP ILLE ET VILAINE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777748807",
+      "objet": "Proposer 6 amendements au PLF2025: PTZ universel, sortie limitée du Pinel, limitation hausse TVA pour les chaudières à gaz, fin attestations de TVA, réduction franchise TVA et exonération donations",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "rencontre",
+        "transmission d'expertise",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "777305830",
+      "nom": "FEDERATION DEPARTEMENTALE BATIMENT ET TP",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777305830",
+      "objet": "PLF 2025 : demander le dépôt d'un amendement en faveur du rétablissement du PTZ universel.",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "308401090",
+      "nom": "FEDERATION DES ACTEURS DE LA SOLIDARITE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=308401090",
+      "objet": "PLF2026 : garantir le principe d’indexation automatique des aides personnelles au logement (APL) sur l’inflation, afin de garantir le maintien de leur pouvoir d’achat pour les ménages bénéficiaires",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "393411855",
+      "nom": "FEDERATION DES ENTREPRISES DES OUTRE-MER",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=393411855",
+      "objet": "Confirmer la défiscalisation en faveur du photovoltaïque pour le secteur du logement social ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "328084405",
+      "nom": "UNION SOCIALE POUR L'HABITAT MIDI PYRENEES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=328084405",
+      "objet": "L'activité vise les attendus suivants : Valorisation de l'impact économique du logement social sur les territoires, représentation du mouvement Hlm en région, présentation des enjeux du secteur ",
+      "actions": [
+        "transmission d'expertise",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "722057460",
+      "nom": "AXA FRANCE IARD",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=722057460",
+      "objet": "Proposer une évolution législative afin que les bailleurs sociaux puissent présenter à leurs locataires des offres d’assurance habitation",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "Prolonger le dispositif de prêt à taux zéro au-delà de 2027",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "779079243",
+      "nom": "CH SYND ENTREPR DU BATIM T P",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779079243",
+      "objet": "Inscrire dans le PLF 2025, le rétablissement du PTZ pour tous les territoires et logements",
+      "actions": [
+        "correspondance",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "775681265",
+      "nom": "CONFEDER NATIONALE DU LOGEMENT",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775681265",
+      "objet": "Défendre les droits des locataires en dénonçant l'attaque contre les mécanismes fiscaux permettant de protéger le logement social par M. le député Guillaume Kasbarian.",
+      "actions": [
+        "transmission d'expertise",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "W751024223",
+      "nom": "CONFEDERATION DE LA CONSOMMATION DU LOGEMENT ET DU CADRE DE VIE CLCV",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751024223",
+      "objet": "Faire évoluer la part du forfait charges des aides personnelles au logement",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "500280755",
+      "nom": "FEDE BATIMENT ET TRAVAUX PUBLICS HAUT RHIN",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=500280755",
+      "objet": "Inscrire dans la loi l'arrêt de la sur enchère règlementaire et le rétablissement du prêt à taux zéro",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "779040633",
+      "nom": "FEDER BATIMENT TRAVAUX PUBLICS ALLIER",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779040633",
+      "objet": "Evolution et maintient du dispositif d'aides PTZ, MaPrimeRénov, pour la stratégie du logement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "778599860",
+      "nom": "FEDERAT DEP BAT TRAV PUBL SAONE ET LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778599860",
+      "objet": "Maintenir le prêt à taux zero (PTZ) universel pour tous les logements et tous secteurs dans le Projet de Loi de Finances 2025",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "779221100",
+      "nom": "FEDERATION BATIMENT TRAVAUX PUBLICS PDD",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779221100",
+      "objet": "Rétablissement du prêt à taux zéro pour la construction d’un logement, dans tous les territoires, y compris pour la maison individuelle",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "305821779",
+      "nom": "FEDERATION DEP B.T.P. CORSE DU SUD",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=305821779",
+      "objet": "Obtenir des mesures en faveur de la relance de la construction neuve (rétablissement du PTZ pour tous les logements / Prolongation du Pinel / défiscalisation des donations en faveur d'un logement)",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "781121595",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT ROUEN METROPOLE ET TERRITOIRES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781121595",
+      "objet": "demande de rétablissement du prêt à taux zéro pour la construction d'un logement dans tous les territoires y compris pour la maison individuelle",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "775680259",
+      "nom": "LES PETITS FRERES DES PAUVRES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775680259",
+      "objet": "Améliorer la transition RSA/ASS/AAH vers la retraite pour éviter les ruptures de ressources, et soutenir\nla création d’un prêt à taux zéro en cas de délai de versement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "447525452",
+      "nom": "LYSIOS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=447525452",
+      "objet": "PPL Huwart : simplifier et recentrer les conventions d’utilité sociale (CUS) des bailleurs sociaux en réduisant les obligations et indicateurs et en les recentrant sur des objectifs stratégiques.",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784668618",
+      "nom": "MOUVEMENT DES ENTREPRISES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668618",
+      "objet": "PTZ, chômage partiel et fond de solidarité : construire les mécanismes de soutien de Nouvelle–Calédonie face aux émeutes ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "444346795",
+      "nom": "NEXITY",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=444346795",
+      "objet": "Echanger sur les projets gouvernementaux liés au Projet de Loi de Finances Logement 2025 ainsi qu'au dispositif de PTZ (Prêt à Taux Zéro)",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784718033",
+      "nom": "SYND FEDERATION  FRANCAISE DU BATIMENT GRAND PARIS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784718033",
+      "objet": "Rétablir un Prêt à Taux Zéro universel pour faciliter l’accès à la propriété",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "502582596",
+      "nom": "UNION D'ECONOMIE SOCIALE POUR L'ACCESSION A LA PROPRIETE",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502582596",
+      "objet": "Promouvoir le maintien du PTZ dans la loi de finances pour 2026",
+      "actions": [
+        "rencontre",
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "783414220",
+      "nom": "UNION ENTR ARTISANS DU BTP DE MEUSE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=783414220",
+      "objet": "Proposer 6 amendements au PLF2025: PTZ universel, sortie limitée du Pinel, limitation hausse TVA pour les chaudières à gaz, fin attestations de TVA, réduction franchise TVA et exonération donations",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "327374690",
+      "nom": "UNION NATIONALE DES AMENAGEURS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=327374690",
+      "objet": "Sensibilisation des élus à la crise du financement immobilier et défense du maintien du PTZ pour toutes formes urbaines, y compris en zone B2 et C",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "413728676",
+      "nom": "AI2P",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=413728676",
+      "objet": "PLF 2025 / Favoriser le développement des EnR / Photovoltaïque / Ouvrir le dispositif éco-PTZ aux travaux permettant l'installation d'équipements d'autoconsommation individuelle jusqu'à 9kWc",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "392655999",
+      "nom": "ASS ORGANISMES HLM REGION ALSACE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=392655999",
+      "objet": "présentation des enjeux du mouvement HLM en Alsace",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "389073958",
+      "nom": "ASS REGIONALE ORGANISMES HLM",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=389073958",
+      "objet": "Prendre en compte les enjeux du logement social et de la construction en bretagne",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "W751206285",
+      "nom": "ASSOCIATION PROFESSIONNELLE DES INTERMEDIAIRES EN CREDITS - APIC",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751206285",
+      "objet": "Prolonger le dispositif de prêt à taux zéro au-delà de 2027",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "493455042",
+      "nom": "BPCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=493455042",
+      "objet": "Préserver le modèle d'application de l\"éco PTZ par les banques",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "130017270",
+      "nom": "CHAMBRE DE COMMERCE ET D INDUSTRIE DE REGION PARIS ILE DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130017270",
+      "objet": "Valoriser les rapports et prises de position de la CCI PIDF afin de défendre les intérêts des entreprises franciliennes auprès des pouvoirs publics et favoriser le développement économique",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "509302469",
+      "nom": "EFFY",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=509302469",
+      "objet": "PLF 2025 – Ouvrir l’éco-PTZ aux installations solaires résidentielles",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "344808902",
+      "nom": "ENERPLAN",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=344808902",
+      "objet": "amendement proposé PJL finances 2025: Ouvrir le dispositif d’éco-PTZ aux travaux permettant l’installation d’équipement d’autoconsommation ",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "318475670",
+      "nom": "FED DU BATIMENT ET TRAVAUX PUBLIC DU LOT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=318475670",
+      "objet": "Interpellation sur la réciprocité du GNR, sur la rétablissement du PTZ, le gel des barèmes de la REP PMCB et simplification MPR.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "434857009",
+      "nom": "FED NAT SOCIETES ANONYMES FONDATION HLM",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434857009",
+      "objet": "Développer ou soutenir le financement du logement social selon l'évolution des enjeux du secteur des esh.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "778213108",
+      "nom": "FEDER BATIMENT REGION BOURGOGN",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778213108",
+      "objet": "Courrier aux députés et sénateurs alliance pour le logement sur l'alliance sur le logement",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "782152581",
+      "nom": "FEDER BATIMENT TRAVAUX PUB LOT & GARONNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=782152581",
+      "objet": "faire inscrire dans la loi de finances le retour du PTZ aux primo-accédants à tout le territoire. Maintenir le taux réduit de TVA aux chaudières gaz. Prolongation du dispositif PINEL",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "786257113",
+      "nom": "FEDER BATIMENT TRAVAUX PUBLICS MAYENNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786257113",
+      "objet": "Obtenir des mesures en faveur de la relance de la construction neuve (rétablissement du PTZ pour tous les logements / Prolongation du Pinel / défiscalisation des donations en faveur d'un logement)",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "780807822",
+      "nom": "FEDER PATRONALE BAT ET TP EURE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780807822",
+      "objet": "Communication auprès des nouveaux députés des 10 propositions de la FFB pour sortir la profession de la crise du logement. Les sujets abordés sont la REP, la politique ZAN, le PTZ, la TVA...",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "786338384",
+      "nom": "FEDERATION B T P SARTHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786338384",
+      "objet": "inscrire dans la Loi de Finances pour 2025 des mesures de soutien au logement neuf, notamment un nouveau Prêt à Taux Zéro",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "434987582",
+      "nom": "FEDERATION BANCAIRE FRANCAISE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434987582",
+      "objet": "Proposer un calibrage pour les caractéristiques du nouveau prêt à taux zéro ",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "309159200",
+      "nom": "FEDERATION BATIM TRAVA PUBLIC D SEVRES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=309159200",
+      "objet": "Maintenir le PTZ et les dispositifs d'aides aux investisseurs type PINEL dans la Loi de Finances",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "778714758",
+      "nom": "FEDERATION BATIMENT ET TP DU TERRITOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778714758",
+      "objet": "Projet de Loi de Finances - Rétablir un PTZ ouvert à tout le territoire et à tout les types de logement\n",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "779471713",
+      "nom": "FEDERATION BATIMENT TRAVAUX PUBLICS DROME ARDECHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779471713",
+      "objet": "Relancer la construction neuve de logements (élargissement PTZ et prolongation Pinel)",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "779557750",
+      "nom": "FEDERATION BATIMENT TRAVAUX PUBLICS ISER",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779557750",
+      "objet": "PLF 2025 - Rétablir le PTZ partout et pour tous les types de logement",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "302848122",
+      "nom": "FEDERATION BTP DE LA LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302848122",
+      "objet": "renforcer le dispositif PTZ en supprimant les conditions de localisation pour l'acquisition d'un logement neuf",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "778542548",
+      "nom": "FEDERATION DEP BATIMENT TP HAUTE SAONE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778542548",
+      "objet": "rétablissement du PTZ, sortie douce du Pinel, exonération des donations, TVA chaudières gaz à 10%, suppression attestations de TVA, division/2 de la franchise de TVA accordée aux microetp européennes",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "775615479",
+      "nom": "FEDERATION DEP BATIMENT TRAVAUX PUBLICS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775615479",
+      "objet": "Rétablissement du PTZ dans tous les territoires et pour tous les types de logement",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "780937470",
+      "nom": "FEDERATION DEPARTEM BATIMENT T.P. ORNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780937470",
+      "objet": "Lettre de position \"Non aux deux poids / deux mesures au détriment du BTP\" : MaPrimeRénov', la REP, LE PTZ, le GNR, logement...",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "780875480",
+      "nom": "FEDERATION DES BATIMENTS ET DES TP DE LA MANCHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780875480",
+      "objet": "rétablir le PTZ et des mesures de soutien de l'investissement locatif",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784855405",
+      "nom": "FÉDÉRATION DES ENTREPRISES IMMOBILIÈRES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855405",
+      "objet": "PLF 2025 : Aligner la durée de l’exonération de TFPB à celle de la convention APL pour le logement solidaire",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784312332",
+      "nom": "FEDERATION DES PROMOTEURS IMMOBILIERS DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784312332",
+      "objet": "PLF2025: réévaluer les plafonds d’opération pour une personne seule, utilisés pour le calcul du PTZ, ceux-ci n’ayant pas été modifiés depuis 2014",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "786018580",
+      "nom": "FEDERATION DU BATIMENT LOIRE-ATLANTIQUE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786018580",
+      "objet": "Modification de la loi concernant le PTZ, Ma Prime Renov et le DPE",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "390997419",
+      "nom": "FEDERATION DU BTP DU FINISTERE - 29",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=390997419",
+      "objet": "Inscrire dans la loi de Finances 2025 le rétablissement du PTZ pour tous les territoires et tous les types de logements",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "779786987",
+      "nom": "FEDERATION FRANCAISE BATIMENT AUVERGNE RHONE ALPES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=779786987",
+      "objet": "propositions pour soutenir l'outil de production et relancer l'activité : activité partielle ; fiscalité du GNR ; barèmes de la REP ; simplification MaPrim'Renov ; PTZ ; statut du bailleur privé.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "409343399",
+      "nom": "FEDERATION FRANCAISE DES CONSTRUCTEURS DE MAISONS INDIVIDUELLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=409343399",
+      "objet": "Inscrire dans la loi des dispositifs de pérennisation des aides à l'accession à la propriété comme le PTZ. Faire modifier les plafond des prêts du PTZ. ",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784668642",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668642",
+      "objet": "Obtenir des mesures en faveur de la relance de la construction neuve (rétablissement du PTZ pour tous les logements / Prolongation du Pinel / défiscalisation des donations en faveur d'un logement) ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "786019174",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT DES PAYS DE LA LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786019174",
+      "objet": "Politique de logement - PTZ - PINEL - mesures de solvabilité des ménages",
+      "actions": [
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "780428587",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT GRAND EST",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780428587",
+      "objet": "- faire rétablir le prêt à taux zéro pour l'ensemble du territoire\n- faire défiscaliser les donations et successions en faveur de l'achat d'une résidence principale\n- maintenir maprimrénov",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "781121785",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT NORMANDIE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781121785",
+      "objet": "Maintien du Prêt à Taux Zéro pour tout le territoire ",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784930695",
+      "nom": "FEDERATION FRANCAISE DU BATIMENT REGION ILE DE FRANCE EST",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784930695",
+      "objet": "Obtenir le rétablissement d'un Prêt à Taux Zéro Universel dans tous les territoires et pour tous les types de logement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "345282016",
+      "nom": "FONDAT ABBE PIERRE LOGEMENT DEFAVORISES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=345282016",
+      "objet": "Défense de la cause des mal-logés dans le cadre du Projet de loi de finances pour 2027 : revaloriser les APL, taxer les résidences secondaires, créer des places d'hébergement...",
+      "actions": [
+        "rencontre",
+        "campagne publique",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "582074944",
+      "nom": "ICADE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=582074944",
+      "objet": "PLF : Prorogation du prêt à taux zéro d’un an, jusqu’au 31 décembre 2028",
+      "actions": [
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "883589707",
+      "nom": "RETROFLEET",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=883589707",
+      "objet": "Mettre en oeuvre un PTZ pour le rétrofit de véhicules lourds",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "419710280",
+      "nom": "SYNDICAT DES ENERGIES RENOUVELABLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=419710280",
+      "objet": "Projet de loi de finances pour 2025 : Ouvrir le dispositif éco-PTZ à l'installation d'équipements d'autoconsommation collective individuelle jusqu'à 9 kWc",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "534389309",
+      "nom": "TADDEO",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=534389309",
+      "objet": "PLF 2026 – reporter d'un an la fin des dispositifs Denormandie et PTZ, jusqu’au 31 décembre 2028",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "775672223",
+      "nom": "UNION NAT INTER OEUVRE PRIVE SANIT SOCIA",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775672223",
+      "objet": "PPL sur le logement : s’opposer à la suppression de l’art 55 de la loi relative à la solidarité et au renouvellement urbains (SRU) qui garantit la construction de logements sociaux par les communes",
+      "actions": [
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "838723716",
+      "nom": "UNION SOCIALE POUR L'HABITAT DE BOURGOGNE-FRANCHE-COMTE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=838723716",
+      "objet": "Présenter la situation du logement social en Bourgogne-Franche-Comté aux parlementaires de BFC.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "781598248",
+      "nom": "VAL TOURAINE HABITAT",
+      "type": "administration",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781598248",
+      "objet": "Échanger sur le logement social et les problématiques rencontrées par les Offices Publics de l'Habitat et le rôle qu'ils jouent sur les territoires.",
+      "actions": [
+        "Autres : à préciser"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 13,
+    "rapports_avec_liste": 10,
+    "comptes_rendus_lus": 91
+  },
+  "synthese": {
+    "position_probable": "A cosigné l'amendement n° 2180, rejeté (« ETAT B : Cet amendement du groupe Droite républicaine appelle à la suppression de l’Agence nationale de l’habitat (ANAH). Dans ce débat budgétaire, notre groupe défend… »).",
+    "argument": "Présenter à ce député la position du client (Union sociale pour l'habitat) en partant de son amendement n° 2180 (« ETAT B : Cet amendement du groupe Droite républicaine appelle à la suppression de l’Agence nationale de l’habitat (ANAH). Dans ce débat budgétaire, notre groupe défend… »).",
+    "chiffres_utilises": [
+      "2180"
+    ],
+    "mode": "gabarit",
+    "modele": null,
+    "verifie": true,
+    "date": "2026-11-14"
+  }
+}

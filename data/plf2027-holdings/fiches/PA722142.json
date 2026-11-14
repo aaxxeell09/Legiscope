@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.812Z",
+    "generated_at": "2026-11-14T16:03:39.026Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1328,21 +1328,20 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "François Ruffin est probablement pour la mesure, comme en témoignent ses amendements cosignés n° 18, n° 43, n° 174, n° 208, n° 38, n° 47 et n° 56, tous rejetés, ainsi que sa déclaration en séance le 21 octobre 2025.",
-    "argument": "Présenter à ce député que son amendement n° 18, qui visait à rétablir le chapitre I er bis du code général des impôts, a été rejeté, afin de lui montrer que la mesure ne s'appliquera pas comme il l'avait envisagé.",
+    "position_probable": "A déposé l'amendement n° 249, rejeté (« Après l'article 15 : Au deuxième alinéa du a quinquies du I de l’article 219 du code général des impôts, le taux : « 12 % » est remplacé par le taux : « 100 % » »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 249 et de sa déclaration du 21 octobre 2025 en séance : « Pourtant, votre gouvernement ne va pas demander aux milliardaires de payer davantage, au contraire ! L’examen du budget est à peine entamé et on a déjà compris : la taxe Zucman, c’est non ! Le retour d’un impôt sur la fortune, c’est non ! »",
     "chiffres_utilises": [
-      "18",
-      "43",
-      "174",
-      "208",
-      "38",
-      "47",
-      "56",
-      "2025",
-      "21"
+      "249",
+      "15",
+      "219",
+      "12",
+      "100",
+      "2025-10-21",
+      "21",
+      "2025"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

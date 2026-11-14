@@ -1,38 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:59:53.184Z",
+    "generated_at": "2026-11-14T16:03:41.861Z",
     "sources": [],
-    "limits": "15 fiche(s) produite(s) sur 42 député(s) de groupes-action.json et pivots.json. Absents : PA608826 : debats manquant ou invalide ; PA642847 : debats manquant ou invalide ; PA718850 : debats manquant ou invalide ; PA794182 : debats manquant ou invalide ; PA842121 : debats manquant ou invalide ; PA719272 : debats manquant ou invalide ; PA718838 : debats manquant ou invalide ; PA330008 : debats manquant ou invalide ; PA759832 : debats manquant ou invalide ; PA368 : debats manquant ou invalide ; PA794330 : debats manquant ou invalide ; PA642725 : debats manquant ou invalide ; PA719372 : debats manquant ou invalide ; PA2940 : debats manquant ou invalide ; PA332523 : debats manquant ou invalide ; PA719640 : debats manquant ou invalide ; PA719778 : debats manquant ou invalide ; PA719798 : debats manquant ou invalide ; PA719914 : debats manquant ou invalide ; PA720560 : debats manquant ou invalide ; PA720728 : debats manquant ou invalide ; PA721182 : debats manquant ou invalide ; PA721234 : debats manquant ou invalide ; PA721852 : debats manquant ou invalide ; PA722374 : debats manquant ou invalide ; PA793122 : debats manquant ou invalide ; PA793520 : debats manquant ou invalide.",
+    "limits": "42 fiche(s) produite(s) sur 42 député(s) de groupes-action.json et pivots.json.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-logement"
   },
   "disponibles": [
-    "PA841801",
-    "PA607553",
-    "PA794470",
-    "PA720446",
-    "PA720022",
-    "PA857021",
-    "PA721458",
-    "PA687214",
-    "PA721844",
-    "PA841381",
-    "PA335999",
-    "PA826635",
-    "PA1654",
-    "PA842073",
-    "PA610654"
-  ],
-  "absents": [
     "PA608826",
     "PA642847",
     "PA718850",
     "PA794182",
     "PA842121",
+    "PA841801",
     "PA719272",
     "PA718838",
+    "PA607553",
     "PA330008",
     "PA759832",
+    "PA794470",
     "PA368",
     "PA794330",
     "PA642725",
@@ -50,6 +36,19 @@
     "PA721852",
     "PA722374",
     "PA793122",
-    "PA793520"
-  ]
+    "PA793520",
+    "PA720446",
+    "PA720022",
+    "PA857021",
+    "PA721458",
+    "PA687214",
+    "PA721844",
+    "PA841381",
+    "PA335999",
+    "PA826635",
+    "PA1654",
+    "PA842073",
+    "PA610654"
+  ],
+  "absents": []
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.810Z",
+    "generated_at": "2026-11-14T16:03:40.845Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -565,16 +565,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Anthony Boulogne est probablement contre la mesure, comme en témoignent ses amendements 974 et 806 visant à supprimer l'article 22, ainsi que ses déclarations en commission le 22 octobre 2025.",
-    "argument": "Présenter à ce député l'amendement 974, rejeté, qui supprime l'article 22, car il a déjà déposé ce texte et a critiqué la taxe en commission le 22 octobre 2025.",
+    "position_probable": "A déposé l'amendement n° 974, rejeté (« Supprime l'article 22 »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 974 et de sa déclaration du 22 octobre 2025 en commission : « Cette taxe de 2 euros par article – je dis bien par article – sera une double peine, injuste socialement et inutile économiquement. Elle ne changera rien aux déséquilibres du commerce mondial, mais frappera encore un peu plus ceux qui travaillent et subissent la vie chère. »",
     "chiffres_utilises": [
       "974",
       "22",
-      "806",
+      "2025-10-22",
+      "2",
       "2025"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.837Z",
+    "generated_at": "2026-11-14T16:03:39.032Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1310,17 +1310,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Marie Pochon est probablement pour la mesure, comme l'indiquent les amendements 18, 43, 174, 208 et 38 qu'elle a cosignés et qui ont été rejetés.",
-    "argument": "Présenter à ce député le fait qu'il a cosigné l'amendement n° 18, rejeté, qui rétablit le chapitre I er bis du code général des impôts, car cet acte montre son soutien à la mesure que le client souhaite réduire.",
+    "position_probable": "A cosigné l'amendement n° 18, rejeté (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I er bis du titre IV de la première partie du livre I er est ainsi rétabli : « Chapitre I er… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 18 (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I er bis du titre IV de la première partie du livre I er est ainsi rétabli : « Chapitre I er… »).",
     "chiffres_utilises": [
       "18",
-      "43",
-      "174",
-      "208",
-      "38"
+      "4",
+      "1"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

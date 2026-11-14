@@ -1,0 +1,1553 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:03:41.472Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "depute_id": "PA840793",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de la justice",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national pénitentiaire – FO Direction",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des directeurs pénitentiaires – CFDT",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "UFAP UNSa Justice",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CGT pénitentiaire",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "FO Justice",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SNEPAP FSU",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat Pénitentiaire des Surveillants non gradés (SPS)",
+          "type": "syndicat",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVII.html",
+      "date": "2026-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction interministérielle de la transformation publique (DITP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE) du ministère de l’Action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’administration et de la fonction publique (DGAFP) ministère de l’Action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des outre-mer (DGOM) du ministère des Outre-mer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Préfecture de Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Rectorat de Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe des instituts du service public (G-ISP)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut régional d’administration de Lille",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de la Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université des Antilles – Guadeloupe",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Guyane",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Mayotte",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des anciens élèves des IRA (AAEIRA)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université Paris 1 Panthéon-Sorbonne",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVIII.html",
+      "date": "2026-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Club des juristes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Toulouse Capitole",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université Sorbonne Nouvelle – Paris III",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Strasbourg",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École de droit de Sciences Po Paris",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001474",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le d) du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque le contribuable devient associé…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001474"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001476",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 13 : I. – À l’alinéa 58, substituer au taux : « 60 % » le taux : « 70 % ». II. – La perte de recettes pour l’État est compensée à due concurrence par la création…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001476"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000035",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 41 : I. – Au titre de l’année 2027, il est institué, par prélèvement sur recettes de l’État, une dotation au profit des collectivités territoriales et des…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000035"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000789",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Article 13 : I. – À l’alinéa 58, substituer au taux : « 60 % » le taux : « 70 % ». II. – Compléter cet article par les alinéas suivants : « VI. – Le I n’est applicable…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000789"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001376",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : I. – Le II de l’article 244 quater L du code général des impôts est ainsi modifié : 1° Au 1, le montant : « 4 500 € » est remplacé par le montant : « 6 000 »…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001376"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001429",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 10 : I. – Le d du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque le contribuable devient associé…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001429"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000152",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à augmenter de 60 % les crédits consacrés au dispositif national d’accompagnement des investissements (DiNA) des coopératives d’utilisation…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000152"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000189",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement des députés socialistes et apparentés vise à améliorer l'accessibilité des ménages à une alimentation durable et de qualité par la montée en…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "l’Union nationale des Groupements des Epiceries Sociales et Solidaires"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000189"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000200",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à financer la mise en place d’un conseil agronomique global et universel à destination de l’ensemble…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000200"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000359",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à lutter contre la précarité alimentaire en garantissant les crédits nécessaires au maintien du financement des Projets Alimentaires…",
+      "sort": "tombe",
+      "travaille_avec": [
+        "le Réseau Civam"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000359"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000360",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli vise à lutter contre la précarité alimentaire en garantissant les crédits nécessaires au maintien du financement des Projets…",
+      "sort": "tombe",
+      "travaille_avec": [
+        "le Réseau Civam"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000360"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N000364",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à augmenter de 20 millions d’euros les crédits du fonds Mieux Manger pour Tous afin de porter sa dotation à 100 millions d’euros en 2027…",
+      "sort": "tombe",
+      "travaille_avec": [
+        "le Réseau Civam"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000364"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P2D1N001076",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à rétablir les postes d’enseignants agricoles supprimés depuis 2019. Alors que 43% des chefs…",
+      "sort": "tombe",
+      "travaille_avec": [
+        "le SNETAP-FSU"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001076"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N000631",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à rétablir les crédits traditionnellement dédiés au Plan Haies afin de garantir une continuité dans la…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000631"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001155",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli du groupe Socialistes et apparentés vise à financer la mise en place d’un conseil agronomique global et universel à destination de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001155"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001157",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli du groupe Socialistes et apparentés vise à allouer 135 millions d’euros à l’action 09 « Planification écologique – Stratégie de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001157"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001158",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli du groupe Socialistes et apparentés vise à financer la mise en place d’un conseil agronomique global et universel à destination de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001158"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001159",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à augmenter de 60 % les crédits consacrés au dispositif national d’accompagnement des investissements (DiNA) des coopératives d’utilisation…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001159"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001160",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à augmenter de 20 millions d’euros les crédits du fonds Mieux Manger pour Tous afin de porter sa dotation à 100 millions d’euros en 2027…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "le Réseau Civam"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001160"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001161",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement vise à lutter contre la précarité alimentaire en garantissant les crédits nécessaires au maintien du financement des Projets Alimentaires…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "le Réseau Civam"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001161"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001162",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli vise à lutter contre la précarité alimentaire en garantissant les crédits nécessaires au maintien du financement des Projets…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "le Réseau Civam"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001162"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001164",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement de repli du groupe Socialistes et apparentés vise à allouer 135 millions d’euros à l’action 09 « Planification écologique – Stratégie de…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001164"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N001245",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement propose un contrat de transition de cinq ans pour permettre aux éleveurs bovins de développer la culture de légumineuses à graines sur leur…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001245"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002293",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à rétablir le Fonds Avenir Bio à son niveau de 2024, soit 18 millions d’euros. Créé en 2008 et géré par…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002293"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002294",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à inscrire explicitement en loi de finances pour 2027 une dotation de 5 millions d’euros dédiée à la…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002294"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002295",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à renforcer les moyens de l’INAO. Près de la moitié des françaises et des français jugent essentiel…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002295"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002297",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à créer un fonds de garantie pour les exploitations sinistrées. Les exploitations touchées par la…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002297"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002298",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à créer un fonds d’autonomie et d’adaptation au changement climatique des exploitations agricoles. Le…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002298"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002300",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à augmenter de 20 millions d’euros les crédits alloués à la modernisation des exploitations agricoles…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002300"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002302",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés propose de créer un fonds pour financer une aide exceptionnelle aux exploitations maraîchères ayant été…",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "la Maison de la Bio"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002302"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002304",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "ETAT B : Cet amendement du groupe Socialistes et apparentés vise à allouer 6,5 millions d’euros supplémentaires aux dépenses de personnel de l’action n° 03 du programme…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002304"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P2D1N002306",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 77.",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "Régions de France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002306"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "786257071",
+      "nom": "FEDER SYNDICATS EXPLOIT AGRICOL MAYENNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786257071",
+      "objet": "Voter la loi \"DUPLOMB\" du bon sens et un remerciement aux élus Mayennais",
+      "actions": [
+        "campagne publique",
+        "correspondance",
+        "envoi de propositions de rédaction",
+        "transmission d'expertise",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "785308420",
+      "nom": "PHYTEIS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=785308420",
+      "objet": "Demander l’abrogation de la disposition relative à la séparation des activités de conseil et de vente des produits phytopharmaceutiques. ",
+      "actions": [
+        "transmission d'expertise",
+        "correspondance",
+        "rencontre",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "450089107",
+      "nom": "ANTHENOR PUBLIC AFFAIRS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=450089107",
+      "objet": "PPL contraintes à l'exercice du métier d'agriculteur : permettre aux producteurs de produits phytosanitaires de conseiller les agriculteurs en abrogeant la séparation vente conseil.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "envoi de propositions de rédaction",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "784854937",
+      "nom": "FEDE NAT SYNDIC EXPL AGRICOLE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784854937",
+      "objet": "Projet de loi de simplification de la vie économique : présenter la position du secteur agricole quant aux simplifications nécessaires au métier d'agriculteur",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "Autres : à préciser"
+      ]
+    },
+    {
+      "hatvp_id": "412884454",
+      "nom": "FONDATION POUR LA NATURE ET L'HOMME",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=412884454",
+      "objet": "Demander le retrait des dispositions sur l'assouplissement des normes ICPE dans la proposition de loi pour lever les contraintes au métier d'agriculteur",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "562038893",
+      "nom": "BAYER SAS",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=562038893",
+      "objet": "PPL contraintes à l'exercice du métier d'agriculteur : préciser la définition du conseil en évoquant la parcelle concernée ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "781459524",
+      "nom": "FEDERATION NATIONALE DES SYNDICATS D'EXPLOITANTS AGRICOLES DU DEPARTEMENT DES DEUX-SEVRES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=781459524",
+      "objet": "Promouvoir une loi \"Lever les contraintes à l'exercice du métier de l'agriculteur\". (protection des cultures, conditions d'utilisation produits phytosanitaires, ajustements ICPE, autres dispositifs…)",
+      "actions": [
+        "Autres : à préciser",
+        "rencontre",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "784179665",
+      "nom": "LA COOPERATION AGRICOLE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784179665",
+      "objet": "PPL lever les contraintes au métier d'agriculteur : accorder aux agriculteurs Français les mêmes moyens pour produire que leurs voisins européens ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "452317860",
+      "nom": "AGENCE DROIT DEVANT",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=452317860",
+      "objet": "Solliciter un soutien aux dispositions de la proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur ",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "378167001",
+      "nom": "CENTRE DEPART DES JEUNES AGRICULTEURS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=378167001",
+      "objet": "Lever les contraintes à l’exercice du métier d’agriculteur en ouvrant l’utilisation des néonicotinoïdes et assimilés, pour des usages et des durées à déterminer",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "130031503",
+      "nom": "CHAMBRE D'AGRICULTURE DE REGION NORMANDIE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130031503",
+      "objet": "Exprimer son incompréhension face a l'ajournement de l'examen du projet de loi pour lever les contraintes à l'exercice du métier d'agriculteur",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "401348552",
+      "nom": "COORDINATION RURALE - UNION NATIONALE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=401348552",
+      "objet": "Critique et contestations sur la ratification du traité de libre-échange du MERCOSUR et exposition des conséquences pour les filières agricoles françaises",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "950417493",
+      "nom": "CORTEVA AGRISCIENCE FRANCE SAS",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=950417493",
+      "objet": "Loi 2025-794: demande de clarification et de modification de l'activité de conseil notamment pour les solutions biocontrôle. ",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "537864555",
+      "nom": "EUROS AGENCY",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=537864555",
+      "objet": "PPL Contraintes et PLF : Éviter toute sur-réglementation allant au-delà du cadre européen, qui pourrait nuire à la compétitivité des filières agricoles françaises ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique",
+        "correspondance",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "786119164",
+      "nom": "FEDER DEPART SYNDICATS EXPLOIT AGRICOLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786119164",
+      "objet": "Courrier aux Parlementaires pour rappeler les demandes de la FDSEA concernant le projet de Loi visant à lever les contraintes à l’exercice du métier d’agriculteur et l'urgence d'adopter cette Loi",
+      "actions": [
+        "correspondance",
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "334559465",
+      "nom": "FEDERATION FRANCAISE BANQUES ALIMENTAIRE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=334559465",
+      "objet": "VALORISER LE PROGRAMME MIEUX MANGER POUR TOUS DANS L’OBJECTIF DE LE RECONDUIRE APRÈS 2027 (PLF)",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "réponse à consultation ou audition",
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "447829730",
+      "nom": "GENERATIONS FUTURES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=447829730",
+      "objet": "Obtenir le rejet de la PPL 'Duplomb' (Loi visant à lever les contraintes à l’exercice du métier d’agriculteur) notamment dans ses aspects relatifs aux pesticides.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "487640005",
+      "nom": "SEANCE PUBLIQUE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=487640005",
+      "objet": "Réduire les distorsions de concurrence intra-européenne en matière de protection phytosanitaire pour les filières concernées (PPL Lever les contraintes à l’exercice du métier d’agriculteur art.2)",
+      "actions": [
+        "transmission d'expertise",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "780195574",
+      "nom": "UNION DES SYNDICATS AGRICOLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780195574",
+      "objet": "Agir pour lever les contraintes à l’exercice du métier d’agriculteur dans le cadre du projet de loi \"DUMPLOMB-MENONVILLE\" ; acétamipride, seuils ICPE, accès à l'eau et stockage, encadrement de l'OFB..",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "782357040",
+      "nom": "ASS GENERALE DES PRODUCTEURS DE MAIS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=782357040",
+      "objet": "Sécuriser l'accès à l'eau et promouvoir des études d'impacts socio économiques avant tout prise de décision impactant l'agriculture dans la loi n°2025-794",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "180070047",
+      "nom": "CHAMBRES D'AGRICULTURE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=180070047",
+      "objet": "Agrivoltaisme : permettre le partage de la valeur vers des projets de structuration de filières agricoles ",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "398995142",
+      "nom": "COM'PUBLICS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=398995142",
+      "objet": "PPL Entraves : Rehausser les seuils ICPE pour les élevages avicoles\t",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "440302610",
+      "nom": "COMITE NATIONAL POUR PROMOTION DE L OEUF",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=440302610",
+      "objet": "PPL Entraves : Revenir à la procédure antérieure à la « loi industrie verte » concernant les consultations du public pour les élevages ICPE",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "383316916",
+      "nom": "CONFEDERATION PAYSANNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=383316916",
+      "objet": "La Confédération paysanne demande plafonnement et dégressivité obligatoires : aides dégressives dès 25 000 € et plafonnées à 45 000 € par agriculteur actif. ",
+      "actions": [
+        "envoi de propositions de rédaction",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784350134",
+      "nom": "CONSEIL SUPER NOTARIAT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784350134",
+      "objet": "permettre à tout jeune agriculteur faisant l’acquisition de foncier agricole, dans les quatre ans maximum, de bénéficier du régime de faveur prévu par l’art 1594 F quinquies E, I du CGI",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "382072247",
+      "nom": "CTRE DEPART JEUNES AGRICULTEURS ARDECHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=382072247",
+      "objet": "Inauguration d'installation Jeune Agriculteur - Canton Sud Ardèche ",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "302872619",
+      "nom": "FEDER DEPT SYND EXPLOITANTS AGRICOLES 51",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302872619",
+      "objet": "Demander l'adoption de la proposition de loi visant à lever les contraintes liées au métier d'agriculteur",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784853970",
+      "nom": "JEUNES AGRICULTEURS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784853970",
+      "objet": "Soutenir l'adoption de la proposition de loi visant à lever les contraintes pesant sur le métier d'agriculteur et soutien de ses mesures",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "430005801",
+      "nom": "JEUNES AGRICULTEURS DE L'AISNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=430005801",
+      "objet": "OBTENIR UNE MOTION DE REJET DU PROJET DE LOI VISANT À LEVER LES\nCONTRAINTES À L’EXERCICE DU MÉTIER D’AGRICULTEUR",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "434444931",
+      "nom": "JEUNES AGRICULTEURS DE LA LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434444931",
+      "objet": "Trouver des solutions réglementaires face aux augmentations des coûts de l'énergie et des charges pesant sur les exploitations agricoles et leurs impacts pour les filières agricoles de la Loire",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "309266773",
+      "nom": "LES AMIS DE LA TERRE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=309266773",
+      "objet": "Créer une contribution engrais permettant de financer l'apport d'engrais organique aux agriculteurs",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "443716832",
+      "nom": "SYNGENTA FRANCE SA",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=443716832",
+      "objet": "PPL Contraintes et PLF : Éviter toute sur-réglementation allant au-delà du cadre européen, qui pourrait nuire à la compétitivité des filières agricoles françaises",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "923923916",
+      "nom": "AGRIPARIS SEINE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=923923916",
+      "objet": "Projet de loi de finances pour 2026 : soutenir la structuration des filières agricoles durables sur notre territoire",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "413728676",
+      "nom": "AI2P",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=413728676",
+      "objet": "PPL visant à lever les contraintes à l'exercice du métier d'agriculteur : Demande d'audition auprès de la Commission des Affaires économiques de l'AN.",
+      "actions": [
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "893684647",
+      "nom": "ALIANICO CONSEIL",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=893684647",
+      "objet": "Actions de promotion et valorisation de la Proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur auprès des élus nationaux",
+      "actions": [
+        "rencontre",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "439775461",
+      "nom": "ASS CONFEDERATION FRANCAISE AVICULTURE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=439775461",
+      "objet": "Relever les seuil ICPE Autorisation sur les seuils européens EIE. Revenir à la procédure antérieure à la loi Industrie Verte. Créer un nouveau régime spécifique élevage en remplacement du régime ICPE ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "452400724",
+      "nom": "ASS INTERPRO BETTERAVE SUCRE - AIBS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=452400724",
+      "objet": "S'opposer à l'accord Union Européenne / Mercosur pour ne pas sacrifier nos filières agricoles en demandant l'introduction de clauses miroirs ou la non ratification de l'accord",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "503960643",
+      "nom": "ASSOCIATION L214",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=503960643",
+      "objet": "Préserver les droits de recours et les normes environnementales limitant les installations d’élevages intensifs",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "913175865",
+      "nom": "BIEN COMMUN ADVISORY",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=913175865",
+      "objet": "Obtenir le soutien d’un sénateur pour l’organisation d’un événement en faveur des filières agricoles",
+      "actions": [
+        "rencontre",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "H509578367",
+      "nom": "BONFILS CONSULTANT",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H509578367",
+      "objet": "Demande d’audition sur la PPL visant à lever les contraintes à l’exercice du métier d’agriculteur",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "343115135",
+      "nom": "CAISSE NATIONALE DE REASSURANCE MUTUELLE AGRICOLE GROUPAMA",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=343115135",
+      "objet": "Préserver le dispositif de l'indice prairie prévu par la loi sur l'assurance climatique des récoltes, dans la PPL visant à lever les contraintes à l'exercice du métier d'agriculteur",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "184500031",
+      "nom": "CHAMBRE D'AGRICULTURE DU LOIRET",
+      "type": "administration",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=184500031",
+      "objet": "Information sur la situation des filières agricoles du Loiret suite à la forte pluviométrie.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "185202512",
+      "nom": "CHAMBRE DEP AGRICULTURE LA HAUTE MARNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=185202512",
+      "objet": "Soutenir le projet de loi Duplomb Menonville visant à lever les contraintes pour le métier d'agriculteur",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "181002510",
+      "nom": "CHAMBRE DEP D'AGRICULTURE DE L'AUBE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=181002510",
+      "objet": "Soutenir le projet de loi DUPLOMB MENONVILLE visant à lever les contraintes pour le métier d'agriculteur",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "188002513",
+      "nom": "CHAMBRE DEP D'AGRICULTURE DE LA SOMME",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=188002513",
+      "objet": "Propositions d'amendements de la loi visant à lever les contraintes à l'exercice du métier d'agriculteur",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "184600021",
+      "nom": "CHAMBRE DEPARTEMENTALE D'AGRICULTURE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=184600021",
+      "objet": "Lever les contraintes à l'exercice du métier d'agriculteur dans le projet de loi",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "130021801",
+      "nom": "CHAMBRE REGIONALE D'AGRICULTURE AUVERGNE-RHONE-ALPES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=130021801",
+      "objet": "l’examen parlementaire de Proposition de loi visant à lever les contraintes à l’exercice du métier d’agriculteur",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "892212150",
+      "nom": "CNTVRS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=892212150",
+      "objet": "Sensibiliser les parlementaires aux enjeux de compétitivité agricole en lien avec la proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur",
+      "actions": [
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784358343",
+      "nom": "CONFEDE GEN PLANTEURS BETTERAVES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784358343",
+      "objet": "Réduire les distorsions de concurrence intra-européenne en matière de protection phytosanitaire pour les filières concernées (PPL Lever les contraintes à l’exercice du métier d’agriculteur art.2)",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "803430479",
+      "nom": "CONVICTIO LEGAL",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=803430479",
+      "objet": "Proposer des mesures favorables à la profession d'agriculteur en simplifiant les relations avec l'administration dans la loi visant à lever les contraintes pesant surl’exercice du métier d’agriculteur",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "780255220",
+      "nom": "CTR DEPARTEMENT JEUNES AGRICULTEURS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780255220",
+      "objet": "Solliciter le soutien des Sénateurs sur le projet de loi Duplomb",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "777306135",
+      "nom": "CTRE DEPARTEMENTAL JEUNES AGRICULTEURS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777306135",
+      "objet": "Rencontre avec la ministre déléguée auprèsdu ministre de l'agriculture et de la souveraineté alimentaire pour aborder le sujets des différentes filières agricoles.",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "408373751",
+      "nom": "CTRE REGIONAL JEUNES AGRICULTEURS BRETAG",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=408373751",
+      "objet": "Mobiliser pour que la loi visant à lever les contraintes à l'exercice du métier d'agriculteur soit adoptée à l'Assemblée nationale",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "894289990",
+      "nom": "ECOLOGIC COMING OUT",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=894289990",
+      "objet": "Proposer de renforcer le Fonds Mieux Manger pour Tous dans le cadre du PLF",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "784450835",
+      "nom": "ENTREPRENEURS DES TERRITOIRES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784450835",
+      "objet": "DEMANDE D’AUDITION SUR LA PPL VISANT À LEVER LES CONTRAINTES À\nL’E XERCICE DU MÉTIER D’AGRICULTEUR",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "777749045",
+      "nom": "FDSEA ILLE ET VILAINE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777749045",
+      "objet": "présenter nos demandes aux parlementaires sur loi visant à lever les contraintes à l'exercice du métier d'agriculteur, et le SAGE",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "780915716",
+      "nom": "FED DEPART SYND EXPLOIT AGRICOLE MANCHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=780915716",
+      "objet": "lever les contraintes à l'exercice du métier d'agriculteur",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "776743841",
+      "nom": "FED DEPART SYND EXPLOIT AGRICOLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=776743841",
+      "objet": "loi pour lever les contraintes à l'exercice du métier d'agriculteur : demander la simplification administrative",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "421354366",
+      "nom": "FED DEPART SYNDICAT EXPLOIT AGRICOLE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=421354366",
+      "objet": "Organisation d'une rencontre avec les députés du 04 pour discuter de la loi Duplomb et de ses implications, avantages et inconvénients, concernant les produits phytosanitaires.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "786447813",
+      "nom": "FEDE DEP SYNDICATS EXPLOITANTS AGRICOLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=786447813",
+      "objet": "Interpellation des parlementaires sur la proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur.",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "776258477",
+      "nom": "FEDER DEP SYND EXPL AGRICOLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=776258477",
+      "objet": "Loi Duplomb Menonville : Demande de soutien au projet de loi pour favoriser la simplification du métier de l'agriculteur ",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "398278499",
+      "nom": "FEDER DEPART SYNDIC EXPLOI AGRIC HERAULT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=398278499",
+      "objet": "Loi \"Contraintes\" Amendements 16 MAI 2025 proposition de loi visant à lever les contraintes à l’exercice du métier\nd’agriculteur",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "778867788",
+      "nom": "FEDER DES SYNDICAT AGRICOLES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778867788",
+      "objet": "Loi visant à lever les contraintes à l'exercice du métier d'agriculteur",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "778649319",
+      "nom": "FEDERAT DEP SYND EXPLOIT AGRICOLE YONNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=778649319",
+      "objet": "Demander de voter en faveur de proposition de loi visant à lever les contraintes à l’exercice du métier d’agriculteur",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "783906290",
+      "nom": "FEDERAT DEPARTEMENT SYNDICATS EXPLOI",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=783906290",
+      "objet": "Interpeller les parlementaires concernant l’adoption par l’Assemblée nationale de la proposition de loi DUPLOMB, visant à lever les contraintes pesant sur le métier d’agriculteur",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "H978906948",
+      "nom": "FEDERATION DEPARTEMENTALE OVINE DES ALPES-MARITIMES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H978906948",
+      "objet": "Obtenir des règles qui permettent une meilleure redistribution de la PAC à budget constant",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "384624359",
+      "nom": "FEDERATION FRANCAISE DES PRODUCTEURFED FR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=384624359",
+      "objet": "Appuyer la proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur et proposer des mesures sur les moyens de production",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "753847128",
+      "nom": "FEDERATION NATEXBIO",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=753847128",
+      "objet": "PLF : Améliorer l’accessibilité des ménages à une alimentation durable et de qualité en renforçant la montée en charge du Fonds Mieux Manger pour Tous",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "824171912",
+      "nom": "FEDERATION REGIONALE DES SYNDICATS D'EXPLOITANTS AGRICOLES AUVERGNE RHONE-ALPES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=824171912",
+      "objet": "Formuler des propositions réglementaires et des propositions de rédaction de propositions législative dans le cadre de la PPL visant à lever les contraintes du métier d'agriculteur",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "302518667",
+      "nom": "FONDS MONDIAL POUR LA NATURE FRANCE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302518667",
+      "objet": "Proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur : favoriser la prise en compte de la protection des zones humides et de la ressource en eau ",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "442375820",
+      "nom": "FRSEA BOURGOGNE FRANCHE COMTE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=442375820",
+      "objet": "Vote motion censure, alerte auprès des députés de la Région afin qu'ils se prononcent pour la loi ayant pour objectif de limiter les contraintes en agriculture\n",
+      "actions": [
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "350149530",
+      "nom": "GREENPEACE FRANCE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=350149530",
+      "objet": "Informer et alerter sur les conséquences environnementales de la proposition de loi visant à lever les contraintes à l’exercice du métier d’agriculteur ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "322791039",
+      "nom": "GROUPE LIMAGRAIN HOLDING",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=322791039",
+      "objet": "Proposition de loi \"Lever les contraintes à l'exercice du métier d'agriculteur\": Sensibiliser sur les besoins en stockage d'eau du secteur agricole dans le bassin Loire-Bretagne",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "398015651",
+      "nom": "HUMANITE ET BIODIVERSITE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=398015651",
+      "objet": "Supprimer les alinéas 10 et 11 de l'article 5 de la Proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (dite \"loi Duplomb\") menaçant la protection de zones humides.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "891121683",
+      "nom": "INSTITUT CANTILLON",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=891121683",
+      "objet": "Obtenir le soutien d’un sénateur pour l’organisation d’un événement en faveur des filières agricoles",
+      "actions": [
+        "rencontre",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "850410697",
+      "nom": "INTERPROFESSION VOLAILLE DE CHAIR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=850410697",
+      "objet": "Demande de simplification du cadre réglementaire ICPE - Article 3 de la proposition de loi visant à lever les contraintes à l’exercice du métier d’agriculteur ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "777749243",
+      "nom": "JEUNES AGRICULTEURS D'ILLE ET VILAINE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777749243",
+      "objet": "Sensibiliser au métier d'agriculteur et au renouvellement des générations en agriculture au travers du concours du Jugement du Bétail",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "388956278",
+      "nom": "JEUNES AGRICULTEURS DE LA GIRONDE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=388956278",
+      "objet": "Courrier sur la proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur",
+      "actions": [
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "487505547",
+      "nom": "JEUNES AGRICULTEURS DE LA MARNE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=487505547",
+      "objet": "Faire reconnaitre le métier d'agriculteur, revenus et compétitivité, problèmes quotidiens liés à l'exercice",
+      "actions": [
+        "campagne publique"
+      ]
+    },
+    {
+      "hatvp_id": "419984406",
+      "nom": "JEUNES AGRICULTEURS DE LOIRE ATLANTIQUES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=419984406",
+      "objet": "Communiquer sur le métier d'agriculteur lors de la Fête de l'Agriculture 2025. ",
+      "actions": [
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "389000811",
+      "nom": "JEUNES AGRICULTEURS DE SAONE ET LOIRE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=389000811",
+      "objet": "Faire le point sur la conjoncture agricole dans le cadre du vote de la loi visant à lever les entraves à l'exercice du métier d'agriculteur",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "381436666",
+      "nom": "L'ALLIANCE 7",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=381436666",
+      "objet": "Secteur Français des Aliments de l'Enfance - Echanger sur la mise en œuvre de l'article 77 de la loi AGEC sur l'interdiction des contenants en plastique utilisés pour la cuisson et le réchauffage",
+      "actions": [
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "339863417",
+      "nom": "LES RESTAURANTS DU COEUR",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=339863417",
+      "objet": "Suivi des arbitrages budgétaires relatifs au programme « Mieux Manger Pour Tous » et information des décideurs publics sur son impact pour les associations d'aide alimentaire.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "498735448",
+      "nom": "NILE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=498735448",
+      "objet": "Créer une filière agricole et industrielle française du cannabis médical",
+      "actions": [
+        "transmission d'expertise",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "414079251",
+      "nom": "OMNICOM PUBLIC RELATIONS GROUP",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=414079251",
+      "objet": "Participer au Grand Réveil Alimentaire et prendre part aux discussions avec les acteurs de la filière agricole et les décideurs politiques ",
+      "actions": [
+        "réponse à consultation ou audition"
+      ]
+    },
+    {
+      "hatvp_id": "H771956256",
+      "nom": "PLEAD",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H771956256",
+      "objet": "proposer des aménagements réglementaires pour soutenir la contribution territoriale de l'enseigne (emplois, aménagement du territoire, filières agricoles,...) ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "518905484",
+      "nom": "UNION FRANCAISE DES SEMENCIERS",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=518905484",
+      "objet": "PPL Entraves : soutenir les dispositions de l'article 2 prévoyant la réintroduction, à titre dérogatoire, des NNI interdits en France mais autorisés en Europe",
+      "actions": [
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 3,
+    "comptes_rendus_lus": 91
+  },
+  "synthese": {
+    "position_probable": "A cosigné l'amendement n° 1474, adopté (« Après l'article 10 : I. – Le d) du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque le contribuable devient associé… »).",
+    "argument": "Présenter à ce député la position du client (FNSEA) en partant de son amendement n° 1474 (« Après l'article 10 : I. – Le d) du 1° du II de l’article 151 septies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque le contribuable devient associé… »).",
+    "chiffres_utilises": [
+      "1474",
+      "10",
+      "1",
+      "151"
+    ],
+    "mode": "gabarit",
+    "modele": null,
+    "verifie": true,
+    "date": "2026-11-14"
+  }
+}

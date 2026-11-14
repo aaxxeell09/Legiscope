@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.817Z",
+    "generated_at": "2026-11-14T16:03:39.027Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -513,29 +513,16 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sacha Houlié a cosigné un amendement adopté sur l'article 5, ce qui indique qu'il est probablement favorable à la mesure.",
-    "argument": "Présenter à ce député que son groupe soutient la mesure, ce qui contraste avec son classement de député perdu pour le client, afin de clarifier sa position réelle lors du rendez-vous.",
+    "position_probable": "A cosigné l'amendement n° 367, rejeté (« Article 5 : Compléter cet article par les neufs alinéas suivants : « I. – L’article 167 bis du code général des impôts est ainsi modifié : « 1° Au IV, après la première… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 367 (« Article 5 : Compléter cet article par les neufs alinéas suivants : « I. – L’article 167 bis du code général des impôts est ainsi modifié : « 1° Au IV, après la première… »).",
     "chiffres_utilises": [
+      "367",
       "5",
-      "3",
-      "0.5",
-      "3140",
-      "0.76",
       "167",
-      "1",
-      "15",
-      "220",
-      "60",
-      "8",
-      "0",
-      "0.87",
-      "2026",
-      "11",
-      "6",
-      "12"
+      "1"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

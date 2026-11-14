@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.175Z",
+    "generated_at": "2026-11-14T16:03:41.196Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -2054,27 +2054,15 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue car elle n'est pas tranchée par ses actes, mais son groupe est favorable à la mesure.",
-    "argument": "Présenter à ce député l'amendement en attente visant à revenir sur la baisse des crédits consacrés aux aides aux employeurs d'apprentis, car il en est cosignataire et cette action soutient directement la position de son client contre la mesure.",
+    "position_probable": "A cosigné l'amendement n° 2304, tombé (« Article 7 : I. – À l’alinéa 12, après le mot : « amortissement », insérer les mots : « des locaux d’habitation meublés donnés en location soit dans le cadre d’un bail régi… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 2304 (« Article 7 : I. – À l’alinéa 12, après le mot : « amortissement », insérer les mots : « des locaux d’habitation meublés donnés en location soit dans le cadre d’un bail régi… »).",
     "chiffres_utilises": [
-      "88",
-      "89",
-      "0.67",
       "2304",
       "7",
-      "12",
-      "3657",
-      "2026",
-      "0",
-      "10",
-      "20",
-      "21",
-      "22",
-      "28",
-      "5"
+      "12"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

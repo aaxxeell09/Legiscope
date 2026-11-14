@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.838Z",
+    "generated_at": "2026-11-14T16:03:40.848Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -816,15 +816,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Olivia Grégoire est probablement contre la mesure, comme le montre son amendement n° 4037, retiré, qui proposait de réduire le montant de la taxe.",
-    "argument": "Présenter à ce député l'amendement 459, cosigné avec l'entreprise Kiabi et en attente, qui propose de porter la taxe à 25 euros, afin de souligner que cette hausse aggrave la mesure que le client souhaite réduire.",
+    "position_probable": "A déposé l'amendement n° 4037, retiré (« Article 22 : À la seconde phrase de l’alinéa 4, substituer au montant : « 25 » le montant : « 30 » »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 4037 (« Article 22 : À la seconde phrase de l’alinéa 4, substituer au montant : « 25 » le montant : « 30 » »).",
     "chiffres_utilises": [
       "4037",
-      "459",
-      "25"
+      "22",
+      "4",
+      "25",
+      "30"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

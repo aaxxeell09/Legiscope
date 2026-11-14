@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.730Z",
+    "generated_at": "2026-11-14T16:03:39.005Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1081,13 +1081,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Ses actes sont contradictoires, car il a cosigné un amendement supprimant l'article 3 qui a été adopté, tandis que le cabinet le classe comme favorable à la mesure.",
-    "argument": "Présenter à ce député que le cabinet l'a classé comme favorable à la mesure, ce qui contraste avec son cosignature d'un amendement supprimant l'article 3, adopté.",
+    "position_probable": "A cosigné l'amendement n° 1, adopté (« Supprime l'article 3 »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1 (« Supprime l'article 3 »).",
     "chiffres_utilises": [
+      "1",
       "3"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

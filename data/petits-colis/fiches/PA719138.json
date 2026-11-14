@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.816Z",
+    "generated_at": "2026-11-14T16:03:40.838Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -546,14 +546,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Michel Castellani est probablement contre la mesure, car il a cosigné les amendements 1834 et 2820 qui excluent les biens d'occasion de la taxe, le premier étant tombé et le second en attente.",
-    "argument": "Présenter à ce député l'amendement 2820, en attente, qui exclut les biens d'occasion de la taxe, car il a cosigné ce texte qui réduit la mesure.",
+    "position_probable": "A cosigné l'amendement n° 1834, tombé (« Article 22 : Après l’alinéa 7, insérer l’alinéa suivant : « III bis . – Ne sont pas soumis à la taxe mentionnée au III les biens d’occasion au sens du I de l’article 98 A… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 1834 (« Article 22 : Après l’alinéa 7, insérer l’alinéa suivant : « III bis . – Ne sont pas soumis à la taxe mentionnée au III les biens d’occasion au sens du I de l’article 98 A… »).",
     "chiffres_utilises": [
       "1834",
-      "2820"
+      "22",
+      "7",
+      "98"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

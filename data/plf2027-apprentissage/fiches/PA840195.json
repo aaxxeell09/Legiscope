@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.121Z",
+    "generated_at": "2026-11-14T16:03:41.182Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1371,15 +1371,19 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Sa position probable est favorable à la mesure, comme l'indique son cosignature de l'amendement 674, actuellement en attente, et sa déclaration en commission le 4 novembre 2026.",
-    "argument": "Présenter à ce député que sa cosignature de l'amendement 674, actuellement en attente, s'inscrit dans une logique de ciblage des aides qu'elle a défendue en commission le 4 novembre 2026, afin de montrer que la réduction des crédits proposée par le gouvernement va à l'encontre de sa demande de concentration des moyens sur les publics les moins qualifiés.",
+    "position_probable": "A cosigné l'amendement n° 851, retiré (« ETAT B : Le rapporteur spécial propose de rétablir les 414 postes d'enseignants du premier degré public supprimés dans le PLF pour 2027. Le maintien des postes… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 851 et de sa déclaration du 4 novembre 2026 en commission : « On constate que l’effort porte beaucoup sur les missions locales et sur l’insertion, bien plus que sur l’administration centrale. Sur l’apprentissage, que nous voulons promouvoir comme une filière d’excellence, la question n’est pas seulement le montant des aides, mais leur ciblage. Elles doivent aller d’abord aux jeunes les moins qualifiés, pas aux formations bac + 3 et au-delà. »",
     "chiffres_utilises": [
-      "674",
-      "2026",
-      "4"
+      "851",
+      "414",
+      "2027",
+      "2026-11-04",
+      "3",
+      "4",
+      "2026"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

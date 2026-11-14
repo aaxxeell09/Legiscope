@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.770Z",
+    "generated_at": "2026-11-14T16:03:39.014Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -506,22 +506,11 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, mais son groupe est contre la mesure.",
-    "argument": "Présenter à ce député que les organisations entendues par les rapporteurs de sa commission le 4 novembre 2026 et le 9 novembre 2026 constituent un indice plus faible qu'un acte personnel, afin de préparer un premier contact.",
-    "chiffres_utilises": [
-      "3",
-      "0.5",
-      "3140",
-      "0.71",
-      "0",
-      "7",
-      "2026",
-      "11",
-      "4",
-      "9"
-    ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés.",
+    "argument": "Présenter à ce député la position du client (Afep) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Conseil supérieur de la marine marchande, Brittany Ferries, Corsica Linea) : indice plus faible qu'un acte personnel.",
+    "chiffres_utilises": [],
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

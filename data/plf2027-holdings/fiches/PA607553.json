@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:58:56.842Z",
+    "generated_at": "2026-11-14T16:03:39.033Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1262,15 +1262,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Dominique Potier est probablement favorable à la mesure, comme l'indique sa cosignature de l'amendement n° 471, rejeté.",
-    "argument": "Présenter à ce député que la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) pèsera sur les entreprises, en s'appuyant sur le fait que l'organisation MEDEF a été entendue par les rapporteurs de sa commission, ce qui constitue un indice plus faible qu'un acte personnel.",
+    "position_probable": "A cosigné l'amendement n° 364, rejeté (« Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « CHAPITRE IER BIS « Impôt plancher… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 364 (« Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « CHAPITRE IER BIS « Impôt plancher… »).",
     "chiffres_utilises": [
-      "471",
-      "0.5",
-      "3140"
+      "364",
+      "4"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.761Z",
+    "generated_at": "2026-11-14T16:03:40.821Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -1401,24 +1401,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Antoine Vermorel est probablement favorable à la mesure, comme en témoignent ses amendements n° 719, 720, 721, 722, 936, 937, 938 et 943 ainsi que sa déclaration en commission le 22 octobre 2025.",
-    "argument": "Présenter à ce député le fait que son amendement n° 719, qui a été adopté, a permis de maintenir la taxe de 2 euros par article sur les colis de moins de 150 euros, afin de montrer que sa position actuelle est cohérente avec l'adoption de cette mesure.",
+    "position_probable": "A déposé l'amendement n° 719, adopté (« Article 22 : Rédiger ainsi l’article 22 : « I. – Les règles relatives au malus sur les importations d’articles de marchandise contenus dans des envois de faible valeur sont… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 719 et de sa déclaration du 22 octobre 2025 en commission : « Le présent amendement vise à préciser que la taxe prévue à l’article 22 concerne les petits colis importés, et non ceux échangés entre acteurs français. »",
     "chiffres_utilises": [
       "719",
       "22",
-      "720",
-      "721",
-      "722",
-      "936",
-      "937",
-      "938",
-      "943",
-      "2025",
-      "2",
-      "150"
+      "2025-10-22",
+      "2025"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

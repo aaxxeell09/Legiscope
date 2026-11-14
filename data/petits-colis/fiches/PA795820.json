@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:02.832Z",
+    "generated_at": "2026-11-14T16:03:40.844Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -1278,14 +1278,15 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Marcellin Nadeau est probablement contre la mesure, car il a cosigné l'amendement 452, actuellement en attente, qui exclut certaines importations de l'article 22.",
-    "argument": "Présenter à ce député l'amendement 452, en attente, qu'il a cosigné pour exclure certaines importations de l'article 22, afin de consolider son opposition à la taxe.",
+    "position_probable": "A cosigné l'amendement n° 452, en attente (« Article 22 : Compléter cet article par les deux alinéas suivants : « XIII. – Les dispositions du présent article ne s’appliquent pas aux importations effectuées dans les… »).",
+    "argument": "Présenter à ce député la position du client (Alibaba France) en partant de son amendement n° 452 (« Article 22 : Compléter cet article par les deux alinéas suivants : « XIII. – Les dispositions du présent article ne s’appliquent pas aux importations effectuées dans les… »).",
     "chiffres_utilises": [
       "452",
-      "22"
+      "22",
+      "2"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-19"
   }

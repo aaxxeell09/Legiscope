@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:25:31.224Z",
+    "generated_at": "2026-11-14T16:03:41.205Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1193,30 +1193,17 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration sur la mesure, et son groupe RN est pour.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 674, qui reste en attente, montre son intérêt pour les articles 88 et 89, ce qui permet d'aborder la baisse des crédits de l'apprentissage.",
+    "position_probable": "A cosigné l'amendement n° 545, tombé (« Article 7 : I. – Après l’alinéa 15, insérer l’alinéa suivant : « 4° un bâtiment d’habitation collectif acquis en l’état futur d’achèvement, neuf ou rénové à neuf au sens… »).",
+    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 545 (« Article 7 : I. – Après l’alinéa 15, insérer l’alinéa suivant : « 4° un bâtiment d’habitation collectif acquis en l’état futur d’achèvement, neuf ou rénové à neuf au sens… »).",
     "chiffres_utilises": [
-      "88",
-      "89",
-      "0.67",
       "545",
       "7",
       "15",
       "4",
-      "414",
-      "2027",
-      "674",
-      "213",
-      "3",
-      "1",
-      "0",
-      "2026",
-      "10",
-      "27",
       "9"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }
