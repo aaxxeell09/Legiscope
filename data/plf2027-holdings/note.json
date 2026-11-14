@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:56Z",
+    "generated_at": "2026-11-14T14:03:20Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -45,11 +45,12 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Verdict proposé : l'objectif principal d'empêcher la taxe sur les holdings et la fortune improductive est en bonne voie, car 66 % des sièges sont favorables à cet objectif. La tendance reste stable. Ce qui a bougé : le 27 octobre 2026, 2 amendements identiques (n° 874, n° 2620) déposés par le groupe LFI-NFP ont été rejetés (scrutin n° 9136). Le 4 novembre 2026, la mesure a été rejetée en séance publique lors de la première lecture (scrutin n° 9759), ce qui est favorable au client. La prochaine occasion d'agir est l'examen au Sénat, avant le retour du texte à l'Assemblée. Les étapes suivantes sont la commission mixte paritaire puis la nouvelle lecture à l'Assemblée. Les décideurs clés sont Philippe Juvin, contre la mesure, et Éric Coquerel, pour la mesure. Les députés sur qui agir en priorité sont Christophe Blanchet (DEM), Paul-André Colombani (LIOT) et Loïc Prud'homme (LFI-NFP). Limites : amendements sans prédiction Orcet exclus des comptes",
+  "texte": "Verdict proposé : l'objectif principal d'empêcher la taxe sur les holdings et la fortune improductive est en bonne voie, avec 66 % des sièges favorables à l'objectif et une tendance stable. La mesure est absente du texte rejeté par l'Assemblée, où 7 groupes contre la mesure pèsent plus lourd que les 4 groupes favorables. Le 27 octobre 2026, 2 amendements identiques (n° 874, n° 2620) déposés par LFI-NFP ont été rejetés (scrutin n° 9136). Le 4 novembre 2026, le texte a été rejeté en séance publique (scrutin n° 9759), ce qui est favorable au client. L'examen au Sénat, date non fixée, constitue la dernière occasion d'agir avant le retour du texte à l'Assemblée. Les étapes suivantes sont la commission mixte paritaire puis la nouvelle lecture à l'Assemblée. Ceux qui décident : Philippe Juvin (contre la mesure), Éric Coquerel (pour la mesure). Députés sur qui agir en priorité : Christophe Blanchet (DEM), Paul-André Colombani (LIOT), Loïc Prud'homme (LFI-NFP). Limites : amendements sans prédiction Orcet exclus des comptes.",
   "chiffres_utilises": [
     "0.66",
     "66",
     "4",
+    "7",
     "2026-11-04",
     "2026",
     "9759",
@@ -58,8 +59,7 @@
     "2",
     "874",
     "2620",
-    "9136",
-    "04"
+    "9136"
   ],
   "sources": [
     {

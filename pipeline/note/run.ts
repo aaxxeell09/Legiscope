@@ -106,6 +106,9 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
     const fav = vp.favorable[0];
     const blq = vp.bloquant[0];
     if (fav) ajouter(6, `Ce qui joue pour le client : ${min1(fav.titre).replace(/\.$/, "")}.`, [], fav.preuve.sources[0]);
+    // Un amendement qui coince (ex. compromis du gouvernement) est toujours cité en plus du premier point.
+    const blqAmdt = vp.bloquant.find((b, i) => i > 0 && /n° \d/.test(b.titre));
+    if (blqAmdt) ajouter(2, `Ce qui coince aussi : ${min1(blqAmdt.titre.replace(/\.$/, ""))}.`, [], blqAmdt.preuve.sources[0]);
     if (blq) ajouter(5, `Ce qui coince : ${min1(blq.titre).replace(/\.$/, "")}.`, [], blq.preuve.sources[0]);
     if (vp.cause_du_changement) ajouter(3, `Ce qui a fait bouger le verdict : ${min1(vp.cause_du_changement.titre).replace(/\.$/, "")}.`, [], vp.cause_du_changement.preuve.sources[0]);
   } else limites.push("verdict pas encore disponible");
@@ -191,6 +194,13 @@ function interditsAbsolus(texte: string): string[] {
   return fautes;
 }
 
+function consigneRelance(fautes: string[]): string {
+  const manque = fautes.filter((x) => x.startsWith("(manque : ")).map((x) => x.slice(10, -1));
+  const interdit = fautes.filter((x) => !x.startsWith("(manque : "));
+  return (interdit.length ? `\n\nN'écris surtout pas : ${interdit.map((x) => `« ${x} »`).join(", ")}.` : "") +
+    (manque.length ? `\n\nÉcris obligatoirement : ${manque.join(" ; ")}.` : "");
+}
+
 function interdits(texte: string, f: Faits): string[] {
   const absolus: RegExp[] = [/influençable/i, /(décision|issue) (finale|définitive)(?! n)/i, /(?<!n'est pas )l'issue finale/i,
     /\b\d{1,2} ?h ?\d{2}\b/, /(rejet|adoption) (probable|improbable|quasi certain)/i, /perspectives? d'adoption/i,
@@ -267,6 +277,12 @@ function remplir(modele: string, vars: Record<string, string>): string {
 }
 
 function promptNote(d: Dossier, f: Faits): { system: string; user: string } {
+  const p = promptNoteBrut(d, f);
+  if (d.date_reference) p.user += `\n\nLa date de situation est le matin du ${dateFr(d.date_reference)} : ce qui est prévu ce jour-là est à venir, écris-le au présent ou au futur, jamais au passé.`;
+  return p;
+}
+
+function promptNoteBrut(d: Dossier, f: Faits): { system: string; user: string } {
   const vars = {
     client: d.client,
     objectif: d.objectifs[0].texte,
@@ -331,6 +347,7 @@ function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
     tendance_mot: TENDANCE[v1.tendance],
     niveau_mot: NIV[v1.confiance.niveau],
     lecture_1: avecPoint(v1.lecture.texte),
+    score_1: v1.score !== null ? pct(v1.score) : "",
     limites: avecPoint(limites),
   };
   evs.slice(0, 2).forEach((ev, i) => {
@@ -364,7 +381,7 @@ function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
   };
   try {
     bloc("note.entete");
-    bloc("note.verdict");
+    bloc(v1.score !== null || !blocs["note.verdict.sans_score"] ? "note.verdict" : "note.verdict.sans_score");
     for (const vr of [...x.v.verdicts].filter((y) => y.objectif_rang > 1).sort((a, b) => a.objectif_rang - b.objectif_rang)) {
       const o = d.objectifs.find((y) => y.rang === vr.objectif_rang);
       if (o) bloc("note.repli", { objectif_n: sansPoint(o.texte), situation_mot: SIT[vr.situation] });
@@ -410,17 +427,36 @@ async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: str
   const limitesTexte = f.limites.length ? f.limites.join(" ; ") + "." : "";
   // Gabarit : celui de X3 s'il s'applique, sinon le gabarit intégré. Ses nombres viennent des fichiers sources.
   const gx3 = gabaritX3(d, { v, s, a, n, e }, limitesTexte);
-  const texteGabarit = gx3 ?? gabaritIntegre(d, f);
+  // Contrôle croisé de qa/croise.ts : la note reprend la situation et le score de l'objectif principal de verdict.json.
+  const v0 = v?.verdicts.find((y) => y.objectif_rang === 1) ?? null;
+  const pctScore = v0 && v0.score !== null ? pct(v0.score) : null;
+  const MOTS: Record<string, string[]> = { favorable: ["favorable", "bonne voie"], incertaine: ["incertain"], defavorable: ["défavorable", "mal engagé"], insuffisant: ["pas assez d'information", "insuffisant", "indécidable"] };
+  const manquants = (texte: string): string[] => {
+    const t = texte.toLowerCase();
+    const out: string[] = [];
+    if (v0 && !(MOTS[v0.situation] ?? []).some((m) => t.includes(m))) out.push(`situation (${MOTS[v0.situation]?.[0]})`);
+    if (pctScore && !t.includes(pctScore) && !t.includes(pctScore.replace(" %", "%"))) out.push(`score « ${pctScore} des sièges favorables à l'objectif »`);
+    const num = v0?.bloquant.slice(1).find((b) => /n° \d/.test(b.titre))?.titre.match(/n° (\d+)/)?.[1];
+    if (num && !t.includes(num)) out.push(`ce qui coince : l'amendement n° ${num}`);
+    return out;
+  };
+  let texteGabarit = gx3 ?? gabaritIntegre(d, f);
+  if (pctScore && manquants(texteGabarit).some((m) => m.startsWith("score"))) {
+    const phrase = ` ${pctScore} des sièges sont favorables à l'objectif principal.`;
+    const i = texteGabarit.search(/confiance \S+\./);
+    texteGabarit = i >= 0 ? texteGabarit.replace(/(confiance \S+\.)/, `$1${phrase}`) : texteGabarit.replace(/^([^.]*\.)/, `$1${phrase}`);
+  }
+  if (v0?.score != null) autorises.push(String(v0.score), String(Math.round(v0.score * 100)));
   if (gx3) autorises.push(...nombresDe(gx3).filter((c) => !autorises.includes(c)), ...[s?.derniere_occasion?.date, s?.echeances[0]?.date, ...(n?.evenements ?? []).slice(0, 2).map((ev) => ev.date)].filter((c): c is string => !!c));
   // Garde-fous du rendu final, contrôlés après le vérificateur de chiffres : 2 relances au plus, sinon gabarit.
   const prompt = promptNote(d, f);
   let r = await redigerVerifie(prompt, autorises, texteGabarit);
   for (let relance = 0; r.mode === "llm" && relance < 2; relance++) {
-    const fautes = interdits(r.texte, f);
+    const fautes = [...interdits(r.texte, f), ...manquants(r.texte).map((m) => `(manque : ${m})`)];
     if (!fautes.length) break;
     console.warn(`${d.id} : garde-fou (${fautes.join(" | ")}), relance`);
-    r = await redigerVerifie({ system: prompt.system, user: prompt.user + `\n\nN'écris surtout pas : ${fautes.map((x) => `« ${x} »`).join(", ")}.` }, autorises, texteGabarit);
-    if (relance === 1 && r.mode === "llm" && interdits(r.texte, f).length) {
+    r = await redigerVerifie({ system: prompt.system, user: prompt.user + consigneRelance(fautes) }, autorises, texteGabarit);
+    if (relance === 1 && r.mode === "llm" && (interdits(r.texte, f).length || manquants(r.texte).length)) {
       r = { texte: texteGabarit, mode: "gabarit", chiffres_utilises: chiffresUtilises(texteGabarit, autorises), fautifs: [], modele: null, verifie: verifierChiffres(texteGabarit, autorises).ok, tentatives: r.tentatives };
     }
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:33Z",
+    "generated_at": "2026-11-14T14:02:59Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -23,7 +23,7 @@
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       }
     ],
-    "limits": "Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes.",
+    "limits": "Rejoué à la date de référence du 19 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes.",
     "producer": "pipeline/note",
     "dossier_id": "petits-colis"
   },
@@ -45,18 +45,16 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Verdict proposé : l'objectif principal d'empêcher le vote de la taxe est mal engagé, avec 26 % des sièges favorables et une tendance stable. La situation s'est dégradée le 18 novembre 2025 avec le rejet de l'amendement n° 974 du groupe RN visant à supprimer l'article 22, tandis que l'amendement n° 806 reste en attente. La commission des finances examine le texte le 18 novembre 2025 à 09 h 30. La dernière occasion d'agir est la séance publique du 19 novembre 2025 pour l'examen de l'article 22, avant la fin de la première lecture à l'Assemblée. Le gouvernement et Philippe Juvin soutiennent la mesure. Il faut prioriser l'action sur Nicole Sanquer, Blandine Brocard et Fabrice Brun. Limites : Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes",
+  "texte": "Verdict proposé : l'objectif principal est mal engagé, avec 23 % des sièges favorables à l'objectif, la tendance étant en dégradation. L'amendement n° 974 visant à supprimer l'article 22 a été rejeté. Le gouvernement a déposé l'amendement n° 4086 sur l'article 22. La mesure est portée par le gouvernement. Le 19 novembre 2025, la séance publique examine l'article 22 et ses amendements, dernier moment pour faire adopter la suppression à l'Assemblée en première lecture. Le 20 novembre 2025, la séance publique se poursuit. Ceux qui décident : le gouvernement (pour la mesure), Philippe Juvin (pour la mesure). Députés sur qui agir en priorité : Nicole Sanquer (LIOT), Blandine Brocard (DEM), Fabrice Brun (DR). Limites : Rejoué à la date de référence du 19 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes",
   "chiffres_utilises": [
-    "0.26",
-    "26",
+    "0.23",
+    "23",
     "22",
-    "806",
+    "4086",
     "974",
-    "2025-11-18",
-    "18",
+    "2025-11-20",
+    "20",
     "2025",
-    "09",
-    "30",
     "2025-11-19",
     "19"
   ],
@@ -64,6 +62,10 @@
     {
       "label": "Amendement n° 806",
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+    },
+    {
+      "label": "Amendement n° 4086",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004086"
     },
     {
       "label": "Texte du projet de loi",
@@ -74,7 +76,7 @@
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
     },
     {
-      "label": "Commission des finances : Examen du texte (09 h 30)",
+      "label": "Séance publique de l'Assemblée : Suite de la discussion du projet de loi de finances pour 2026 (première partie) (3 réunions, dès 09 h 00)",
       "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428"
     },
     {
@@ -88,13 +90,9 @@
     {
       "label": "Amendement n° 806 (RN) déposé : Supprime l'article 22",
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
-    },
-    {
-      "label": "Amendement n° 974 (RN) rejeté : Supprime l'article 22",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
     }
   ],
-  "limites": "Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes.",
+  "limites": "Rejoué à la date de référence du 19 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes.",
   "mode": "llm",
   "modele": "Qwen/Qwen3.8-27B",
   "verifie": true
