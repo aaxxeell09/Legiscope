@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:01:49+01:00",
+    "generated_at": "2026-11-14T16:25:17+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -9,14 +9,40 @@
       {
         "label": "Comptes rendus de la commission des finances",
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des finances, réunion n° 5 du 07/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627005_compte-rendu"
       }
     ],
-    "limits": "Interventions sur le sujet (mots-clés zucman, holding, holdings, impôt sur la fortune, fortune improductive, patrimoine improductif, ISF, IFF ou article 3 du texte) ; 83 comptes rendus lus (séance et commission des finances), rien après ce jour. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-holdings/groupes-action.json et data/plf2027-holdings/pivots.json.",
+    "limits": "Interventions sur le sujet (mots-clés zucman, holding, holdings, impôt sur la fortune, fortune improductive, patrimoine improductif, ISF, IFF ou article 3 du texte) ; 83 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-holdings/groupes-action.json et data/plf2027-holdings/pivots.json.",
     "producer": "pipeline/debats",
     "dossier_id": "plf2027-holdings"
   },
   "depute_id": "PA720390",
-  "debats": [],
+  "debats": [
+    {
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Supprimé en 2012, le dispositif de défiscalisation des heures supplémentaires a été réintroduit par la loi du 24 décembre 2018, mais sans l’allègement total de charges patronales et sans l’exonération de la CSG (contribution sociale généralisée) et de la CRDS (contribution pour le remboursement de la dette sociale). Mon amendement vise donc à le compléter et à supprimer le plafond, porté à 7 500 euros par an en 2022.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627005_compte-rendu"
+    },
+    {
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La suppression de ce dispositif a entraîné une chute du pouvoir d’achat pour de nombreux salariés, en particulier ceux qui perçoivent des revenus modestes ou moyens, alors qu’il faut au contraire encourager et récompenser ceux qui travaillent et qui souhaitent fournir des efforts supplémentaires.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627005_compte-rendu"
+    },
+    {
+      "date": "2026-10-07",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Or, à ce jour, seuls les contribuables qui ne sont pas redevables de l’impôt sur la fortune immobilière et dont le revenu fiscal de référence n’excède pas la limite prévue au code général des impôts bénéficient d’une exonération de l’impôt sur le revenu sur la plus-value réalisée lors de la cession de leur ancienne résidence principale dans les deux ans suivant leur entrée en Ehpad.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627005_compte-rendu"
+    }
+  ],
   "couverture": {
     "comptes_rendus_lus": 83
   }

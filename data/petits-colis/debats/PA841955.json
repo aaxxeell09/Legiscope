@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:01:31+01:00",
+    "generated_at": "2026-11-14T16:23:04+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -9,6 +9,10 @@
       {
         "label": "Comptes rendus de la commission des finances",
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des finances, réunion n° 27 du 07/11/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526027_compte-rendu"
       },
       {
         "label": "Commission des finances, réunion n° 13 du 22/10/2025",
@@ -21,6 +25,13 @@
   },
   "depute_id": "PA841955",
   "debats": [
+    {
+      "date": "2025-11-07",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Par ailleurs, je rappelle que, dans le cadre de l’Union postale universelle, La Poste subventionne indirectement les livraisons de colis depuis la Chine. En effet, ce pays bénéficie encore d’un tarif préférentiel – même s’il n’est pas aussi avantageux qu’il l’était jusqu’en 2019.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526027_compte-rendu"
+    },
     {
       "date": "2025-10-22",
       "lieu": "commission",

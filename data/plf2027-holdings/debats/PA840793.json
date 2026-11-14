@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:01:49+01:00",
+    "generated_at": "2026-11-14T16:25:17+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -11,7 +11,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       }
     ],
-    "limits": "Interventions sur le sujet (mots-clés zucman, holding, holdings, impôt sur la fortune, fortune improductive, patrimoine improductif, ISF, IFF ou article 3 du texte) ; 83 comptes rendus lus (séance et commission des finances), rien après ce jour. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-holdings/groupes-action.json et data/plf2027-holdings/pivots.json.",
+    "limits": "Interventions sur le sujet (mots-clés zucman, holding, holdings, impôt sur la fortune, fortune improductive, patrimoine improductif, ISF, IFF ou article 3 du texte) ; 83 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-holdings/groupes-action.json et data/plf2027-holdings/pivots.json.",
     "producer": "pipeline/debats",
     "dossier_id": "plf2027-holdings"
   },

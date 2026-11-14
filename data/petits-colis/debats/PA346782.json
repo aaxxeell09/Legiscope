@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:01:31+01:00",
+    "generated_at": "2026-11-14T16:23:04+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -11,8 +11,16 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
+        "label": "Commission des finances, réunion n° 35 du 12/11/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526035_compte-rendu"
+      },
+      {
         "label": "Commission des finances, réunion n° 13 du 22/10/2025",
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 4 du 14/10/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526004_compte-rendu"
       }
     ],
     "limits": "Interventions sur le sujet (mots-clés petits colis, colis, franchise douanière ou article 22 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien daté du 2025-11-19 (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/petits-colis/groupes-action.json et data/petits-colis/pivots.json.",
@@ -21,6 +29,13 @@
   },
   "depute_id": "PA346782",
   "debats": [
+    {
+      "date": "2025-11-12",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Ma deuxième question concerne la diminution de la consommation. Vous avez expliqué que le modèle des petits colis prenait en défaut cette invention française qu’est la TVA. Vous avez également mentionné une « sous-déclaration massive » dans les petits colis.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526035_compte-rendu"
+    },
     {
       "date": "2025-10-22",
       "lieu": "commission",
@@ -118,6 +133,13 @@
       "texte_id": "PRJLANR5L17B1906",
       "citation": "Ce que je demande, c’est l’adoption de ces amendements afin que nous ayons ce débat très complexe en séance avec le gouvernement. L’année prochaine, 6,5 milliards de colis arriveront de Chine en Europe. Si nous ne faisons rien, nous n’aurons plus qu’à fermer les boutiques !",
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-14",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Cinquièmement, la taxe sur les petits colis. On peut trouver une robe chez Shein pour 5 ou 10 euros, et la même en magasin à 30 ou 40 euros : les 2 euros de taxe ne changeront rien pour la survie du petit commerce, même s’il est indubitable que ses recettes permettront d’améliorer le contrôle douanier.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526004_compte-rendu"
     }
   ],
   "couverture": {

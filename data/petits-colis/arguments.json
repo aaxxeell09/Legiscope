@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:01:31+01:00",
+    "generated_at": "2026-11-14T16:25:13+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -59,11 +59,31 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-mardi-18-novembre-2025"
       },
       {
+        "label": "Commission des finances, réunion n° 4 du 14/10/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526004_compte-rendu"
+      },
+      {
         "label": "Commission des finances, réunion n° 13 du 22/10/2025",
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 27 du 07/11/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526027_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 34 du 09/11/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526034_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 35 du 12/11/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526035_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 36 du 12/11/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526036_compte-rendu"
       }
     ],
-    "limits": "70 prises de parole sur le sujet lues dans 13 comptes rendus (91 comptes rendus parcourus) ; 67 classées, 34 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 3 rejetées pour citation inexacte, 3 écartées car le second avis du modèle contredit le camp ; 8 pour et 7 contre après dédoublonnage. Classement par le modèle Featherless (0 appels à cette exécution, cache sur disque). Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du 2025-11-19 (matin) ni après.",
+    "limits": "89 prises de parole sur le sujet lues dans 18 comptes rendus (91 comptes rendus parcourus) ; 83 classées, 38 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 6 rejetées pour citation inexacte, 3 écartées car le second avis du modèle contredit le camp ; 9 pour et 8 contre après dédoublonnage. Classement par le modèle Featherless (19 appels à cette exécution, cache sur disque). Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du 2025-11-19 (matin) ni après.",
     "producer": "pipeline/debats",
     "dossier_id": "petits-colis"
   },
@@ -83,13 +103,13 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-vendredi-24-octobre-2025"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Roland Lescure, ministre, sans identifiant de député dans deputes.json) la défend : « La taxe protège les commerces de proximité contre la concurrence déloyale des importations. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez M. Pieyre-Alexandre Anglade (séance du 2025-04-29), Paul Midy (commission du 2025-10-22), Corentin Le Fur (commission du 2025-10-22), Antoine Vermorel-Marques (commission du 2025-10-22).",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (M. Roland Lescure, ministre, sans identifiant de député dans deputes.json) la défend : « La taxe protège les commerces de proximité contre la concurrence déloyale des importations. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez M. Pieyre-Alexandre Anglade (séance du 2025-04-29), Amélie de Montchalin (commission du 2025-10-14), Paul Midy (commission du 2025-10-22), Corentin Le Fur (commission du 2025-10-22), Philippe Juvin (commission du 2025-10-22), Antoine Vermorel-Marques (commission du 2025-10-22).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "La taxe est indispensable pour éviter la fermeture des boutiques face à l'afflux massif de colis.",
-      "citation": "Ce que je demande, c’est l’adoption de ces amendements afin que nous ayons ce débat très complexe en séance avec le gouvernement. L’année prochaine, 6,5 milliards de colis arriveront de Chine en Europe. Si nous ne faisons rien, nous n’aurons plus qu’à fermer les boutiques !",
+      "argument": "La taxe est une réponse nécessaire à l'inaction face à l'afflux massif de colis et au dumping.",
+      "citation": "Entendons-nous bien : ces amendements visent à répondre à une situation politique gravissime. Le pire serait de ne rien faire.",
       "orateur_id": "PA346782",
       "groupe_id": "PO845425",
       "date": "2025-10-22",
@@ -102,13 +122,13 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (Philippe Juvin, rapporteur général) la défend : « L'inaction face à l'afflux massif de colis chinois entraînera la fermeture des commerces de proximité. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Philippe Juvin (commission du 2025-10-22), Antoine Vermorel-Marques (commission du 2025-10-22).",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Philippe Juvin, rapporteur général) la défend : « L'inaction face à la situation politique serait le pire des scénarios, justifiant la mise en place de la mesure. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez M. Serge Papin (séance du 2025-10-29), Mme Amélie de Montchalin (séance du 2025-10-29), Claire Lejeune (commission du 2025-10-22), Antoine Vermorel-Marques (commission du 2025-10-22), Amélie de Montchalin (commission du 2025-11-12).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "La taxe de 2 euros est jugée insuffisante pour compenser l'avantage de prix des importations.",
-      "citation": "la taxe doit être suffisamment élevée si nous voulons sauver le petit commerce ; il est évident que 2 euros ne compensent pas la différence de prix avec les plateformes.",
+      "argument": "La taxe est jugée insuffisante en montant mais préférable à l'absence de mesure.",
+      "citation": "Certes, le montant de 2 euros par article n’est pas à la hauteur de l’enjeu, mais cela reste préférable à la suppression de cet article.",
       "orateur_id": "PA346782",
       "groupe_id": "PO845425",
       "date": "2025-10-22",
@@ -121,12 +141,12 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (Philippe Juvin, rapporteur général) la défend : « La taxe de 2 euros est insuffisante pour compenser l'avantage de prix des plateformes et sauver le petit commerce. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Philippe Juvin (commission du 2025-10-22), Philippe Juvin (commission du 2025-10-22).",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Philippe Juvin, rapporteur général) la défend : « La taxe est préférable à sa suppression, même si son montant est jugé insuffisant. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Philippe Juvin (commission du 2025-10-22), Philippe Juvin (commission du 2025-10-22).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "La taxe est une mesure nécessaire pour faire progresser le débat et organiser la résistance.",
+      "argument": "La taxe est une mesure imparfaite mais nécessaire pour faire progresser le débat et agir.",
       "citation": "Ces amendements sont une manière de faire progresser le débat. Je suis prêt à entendre toutes vos propositions d’amélioration technique, mais il faut absolument que nous avancions dans ce domaine.",
       "orateur_id": "PA346782",
       "groupe_id": "PO845425",
@@ -140,31 +160,31 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (Philippe Juvin, rapporteur général) la défend : « Il faut absolument avancer dans ce domaine et faire progresser le débat sur la mesure. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez M. Serge Papin (séance du 2025-10-29), Philippe Juvin (commission du 2025-10-22).",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Philippe Juvin, rapporteur général) la défend : « Il faut absolument avancer dans ce domaine et faire progresser le débat sur la mesure. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Philippe Juvin (commission du 2025-10-22).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "La taxe vise à protéger les consommateurs et les commerces de la contrefaçon et du fast fashion.",
-      "citation": "Ce plan, que nous soutenons, prévoit des mesures concrètes visant à faire enfin respecter nos règles, dont les plus fortes devront être prises à l’échelon européen. Je pense en particulier à la volonté française de mettre fin à l’exemption des droits de douane pour les petits colis dans le cadre de la réforme de l’union douanière de l’Union européenne, qui interviendra en 2028, ainsi qu’à l’instauration, à partir de 2026, d’un mécanisme de contribution prenant la forme de frais de gestion forfaitaires appliqués à chaque colis entrant en Europe en vue de financer nos contrôles.",
-      "orateur_id": "PA719640",
-      "groupe_id": "PO845454",
-      "date": "2025-04-30",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025",
+      "argument": "La mesure contribue à améliorer le rendement de la TVA.",
+      "citation": "Ainsi, pour des raisons différentes, les mesures relatives aux petits colis et la facturation électronique devraient, de manière convergente, améliorer notre rendement de TVA.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2025-11-12",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526035_compte-rendu",
       "preuve": {
         "sources": [
           {
-            "label": "Première séance du mercredi 30 avril 2025",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025"
+            "label": "Commission des finances, réunion n° 35 du 12/11/2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526035_compte-rendu"
           }
         ],
-        "raisonnement": "Classé pour la mesure parce que l'orateur (Mme Sophie Mette) la défend : « Le plan d'action soutenu vise à protéger les commerces de proximité et les consommateurs de la contrefaçon et des flux massifs de petits colis. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Mme Amélie de Montchalin (séance du 2025-10-29), Claire Lejeune (commission du 2025-10-22).",
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Amélie de Montchalin, ministre, sans identifiant de député dans deputes.json) la défend : « La mesure sur les petits colis améliore le rendement de la TVA. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "La taxe maintient le lien social et la vie économique dans les zones rurales.",
+      "argument": "La taxe protège le lien social et la vie économique dans les zones rurales.",
       "citation": "ces amendements pleins de bon sens permettraient de protéger nos commerces qui, eux, fournissent un service de qualité et de proximité à nos concitoyens et maintiennent le lien social et la vie dans les zones rurales. Votons cette taxe de 25 euros par article : ce serait un bon début pour aider nos territoires.",
       "orateur_id": "PA607090",
       "groupe_id": "PO845425",
@@ -183,7 +203,7 @@
       }
     },
     {
-      "argument": "L'instauration de la taxe en France enverrait un signal fort pour inciter l'Europe à agir.",
+      "argument": "La taxe en France enverrait un signal fort pour inciter l'Europe à agir.",
       "citation": "en instaurer un dès à présent en France enverrait un bon signal à nos concitoyens et inciterait l’Europe à agir plus efficacement.",
       "orateur_id": "PA840979",
       "groupe_id": "PO845425",
@@ -219,14 +239,33 @@
         "raisonnement": "Classé pour la mesure parce que l'orateur (Pierre Cazeneuve) la défend : « La taxe simplifie les opérations douanières face au volume massif de colis. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
         "nature": "deduction"
       }
+    },
+    {
+      "argument": "La mesure s'inscrit dans un plan d'action global pour respecter les règles européennes.",
+      "citation": "Ce plan, que nous soutenons, prévoit des mesures concrètes visant à faire enfin respecter nos règles, dont les plus fortes devront être prises à l’échelon européen. Je pense en particulier à la volonté française de mettre fin à l’exemption des droits de douane pour les petits colis dans le cadre de la réforme de l’union douanière de l’Union européenne, qui interviendra en 2028, ainsi qu’à l’instauration, à partir de 2026, d’un mécanisme de contribution prenant la forme de frais de gestion forfaitaires appliqués à chaque colis entrant en Europe en vue de financer nos contrôles.",
+      "orateur_id": "PA719640",
+      "groupe_id": "PO845454",
+      "date": "2025-04-30",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 30 avril 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Mme Sophie Mette) la défend : « Le plan d'action soutenu vise à protéger les commerces de proximité et les consommateurs de la contrefaçon et des flux massifs de petits colis. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+        "nature": "deduction"
+      }
     }
   ],
   "contre": [
     {
-      "argument": "La taxe est socialement injuste car elle pèse sur les classes populaires et les consommateurs modestes.",
-      "citation": "Cette taxe de 2 euros par article – je dis bien par article – sera une double peine, injuste socialement et inutile économiquement. Elle ne changera rien aux déséquilibres du commerce mondial, mais frappera encore un peu plus ceux qui travaillent et subissent la vie chère.",
-      "orateur_id": "PA841487",
-      "groupe_id": "PO845401",
+      "argument": "Le montant de 2 euros est dérisoire face à l'écart de prix et n'influence pas les choix.",
+      "citation": "je ne vois pas comment une telle taxe pourrait avoir une incidence sur les choix des consommateurs. Le surcoût de 2 euros prévu par le texte initial me laissait penser qu’il revenait au client, ce qui pouvait l’inciter à faire un autre choix.",
+      "orateur_id": "PA719558",
+      "groupe_id": "PO845454",
       "date": "2025-10-22",
       "lieu": "commission",
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
@@ -237,12 +276,31 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Anthony Boulogne) s'y oppose ou veut la réduire : « La taxe est socialement injuste et économiquement inutile, elle pèse sur les classes moyennes et populaires. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95. Même argument entendu aussi chez Anthony Boulogne (commission du 2025-10-22), Claire Lejeune (commission du 2025-10-22), Jean-Philippe Tanguy (commission du 2025-10-22), Marianne Maximi (commission du 2025-10-22).",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Erwan Balanant) s'y oppose ou veut la réduire : « La taxe est inefficace car les plateformes ouvrent des magasins et le surcoût ne modifie pas les choix des consommateurs. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Philippe Juvin (commission du 2025-10-14), Claire Lejeune (commission du 2025-10-22), Charles de Courson (commission du 2025-10-22).",
         "nature": "deduction"
       }
     },
     {
-      "argument": "La taxe sera contournée par la fraude ou des intermédiaires européens, la rendant inefficace.",
+      "argument": "La taxe pèse injustement sur les consommateurs modestes et les classes populaires.",
+      "citation": "l’enjeu dépasse donc les colis et cette taxe ne résoudra rien pour les classes populaires, qui seront les premières touchées étant donné que ce ne sont pas les très riches qui achètent des produits bas de gamme fabriqués à l’autre bout du monde.",
+      "orateur_id": "PA794686",
+      "groupe_id": "PO845413",
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Marianne Maximi) s'y oppose ou veut la réduire : « La taxe est inefficace pour les classes populaires qui sont les principales acheteuses de ces produits. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Anthony Boulogne (commission du 2025-10-22), Anthony Boulogne (commission du 2025-10-22), Jean-Philippe Tanguy (commission du 2025-10-22).",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe sera contournée par la fraude ou des intermédiaires, la rendant inefficace.",
       "citation": "Vous l’avez dit vous-mêmes, le montant de cette taxe est insuffisant et, surtout, il sera très facile de s’y dérober. Les entreprises concernées auront un « ami » européen – ils sont nombreux – qui trichera et sera ravi d’être le larbin de la Chine pour importer et réexporter sur le marché intérieur.",
       "orateur_id": "PA795778",
       "groupe_id": "PO845401",
@@ -261,7 +319,7 @@
       }
     },
     {
-      "argument": "La taxe est inefficace car elle ne modifie pas les comportements et ne sauve pas les commerces.",
+      "argument": "La mesure ne sauvera pas les petits commerces et ne résoudra pas le dumping.",
       "citation": "Rassurez-vous, notre électorat comprendra très bien qu’il s’agit une fois de plus de les taxer et que cette mesure ne sauvera aucun petit commerce.",
       "orateur_id": "PA795778",
       "groupe_id": "PO845401",
@@ -275,31 +333,12 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
           }
         ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Jean-Philippe Tanguy) s'y oppose ou veut la réduire : « La taxe est inefficace pour sauver les petits commerces et ne fait que taxer les électeurs. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Erwan Balanant (commission du 2025-10-22).",
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Jean-Philippe Tanguy) s'y oppose ou veut la réduire : « La taxe est inefficace pour sauver les petits commerces et ne fait que taxer les électeurs. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
         "nature": "deduction"
       }
     },
     {
-      "argument": "La taxe est économiquement inefficace car le coût est répercuté ou dérisoire face aux prix réels.",
-      "citation": "Mais que fera cette entreprise, le cas échéant ? Elle répercutera ce coût sur le client ou sur le fabricant du produit. Dans les deux cas, nous ne réglons donc pas la question.",
-      "orateur_id": "PA719558",
-      "groupe_id": "PO845454",
-      "date": "2025-10-22",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
-      "preuve": {
-        "sources": [
-          {
-            "label": "Commission des finances, réunion n° 13 du 22/10/2025",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé contre la mesure parce que l'orateur (Erwan Balanant) s'y oppose ou veut la réduire : « La taxe est inefficace car le coût sera répercuté sur le client ou le fabricant, ne réglant pas la question. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Charles de Courson (commission du 2025-10-22).",
-        "nature": "deduction"
-      }
-    },
-    {
-      "argument": "La mesure est hypocrite car elle ne propose pas de solutions structurelles contre la surconsommation.",
+      "argument": "La mesure est hypocrite et ne traite pas les causes structurelles de la surconsommation.",
       "citation": "Cette mesure est donc hypocrite ; vous ne proposez rien de structurel pour véritablement endiguer les causes de la fast fashion et de la surconsommation.",
       "orateur_id": "PA842029",
       "groupe_id": "PO845413",
@@ -318,7 +357,7 @@
       }
     },
     {
-      "argument": "La taxe nationale est inefficace et prive la France de ressources futures issues d'une taxe européenne.",
+      "argument": "Une taxe nationale est inefficace et prive la France de ressources futures européennes.",
       "citation": "En introduisant un dispositif franco-français au rendement nul, ne nous priverons-nous pas d’une ressource à venir issue d’une taxe qui, elle, ne pourra être évitée et dont nous percevrons un quart du produit ?",
       "orateur_id": "PA719372",
       "groupe_id": "PO845407",
@@ -337,7 +376,26 @@
       }
     },
     {
-      "argument": "La taxe pénalise le secteur de la logistique en France sans résoudre le problème fondamental.",
+      "argument": "Le coût sera répercuté sur le client ou le fabricant, sans régler le problème.",
+      "citation": "Mais que fera cette entreprise, le cas échéant ? Elle répercutera ce coût sur le client ou sur le fabricant du produit. Dans les deux cas, nous ne réglons donc pas la question.",
+      "orateur_id": "PA719558",
+      "groupe_id": "PO845454",
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Erwan Balanant) s'y oppose ou veut la réduire : « La taxe est inefficace car le coût sera répercuté sur le client ou le fabricant, ne réglant pas la question. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "La taxe pénalise le secteur de la logistique française.",
       "citation": "Je suis surpris par cette proposition des Républicains visant à instaurer une taxe de 25 euros par colis, dont le seul effet réel serait de pénaliser le secteur de la logistique en France. L’objectif recherché par l’amendement est louable, mais il faut trouver un autre moyen de l’atteindre.",
       "orateur_id": "PA841955",
       "groupe_id": "PO845401",
