@@ -1,4 +1,3 @@
-import { useState } from "react";
 import type { RaisonVerdict, Verdict, VerdictObjectif } from "@contracts/index";
 import { Badge, Etat, Meta, Pourquoi } from "../../../components";
 import { useConfig } from "../../../lib/config";
@@ -15,9 +14,9 @@ const SITUATION: Record<VerdictObjectif["situation"], string> = {
 };
 
 const TENDANCE: Record<VerdictObjectif["tendance"], string> = {
-  amelioration: "en amélioration depuis la dernière analyse",
-  stable: "stable depuis la dernière analyse",
-  degradation: "en dégradation depuis la dernière analyse",
+  amelioration: "En amélioration",
+  stable: "Stable",
+  degradation: "En dégradation",
 };
 
 const TENDANCE_ICONE: Record<VerdictObjectif["tendance"], string> = {
@@ -63,6 +62,9 @@ function VerdictContenu({ verdict, dossier, objectifRang }: { verdict: Verdict; 
 }
 
 function VerdictObjectifVue({ v }: { v: VerdictObjectif }) {
+  const phrases = v.lecture.texte.trim().split(/(?<=[.!?])\s+/).filter(Boolean);
+  const lecturePrincipale = phrases.slice(0, 2).join(" ");
+  const lectureSuite = phrases.slice(2).join(" ");
   const raisonGlobale = {
     sources: [...v.favorable, ...v.bloquant, ...(v.cause_du_changement ? [v.cause_du_changement] : [])]
       .flatMap((x) => x.preuve.sources)
@@ -95,7 +97,7 @@ function VerdictObjectifVue({ v }: { v: VerdictObjectif }) {
           <span className="text-2">Confiance</span>
           <span className="verdict-confiance-valeur">{CONFIANCE[v.confiance.niveau]}</span>
           {(v.confiance.etabli.length > 0 || v.confiance.inconnu.length > 0) && <details className="verdict-confiance-detail">
-            <summary>Voir les fondements</summary>
+            <summary>Fondements</summary>
             {v.confiance.etabli.length > 0 && <div className="verdict-confiance-ligne"><strong>Ce qui est établi</strong>{v.confiance.etabli.join(" ; ")}</div>}
             {v.confiance.inconnu.length > 0 && <div className="verdict-confiance-ligne"><strong>Ce qui reste inconnu</strong>{v.confiance.inconnu.join(" ; ")}</div>}
           </details>}
@@ -104,16 +106,18 @@ function VerdictObjectifVue({ v }: { v: VerdictObjectif }) {
 
       {v.cause_du_changement && (
         <div className="verdict-cause">
-          <span className="text-2">{v.tendance === "stable" ? "Événement important" : "Élément associé à l’évolution"}</span>
+          <span className="verdict-cause-label">{v.cause_du_changement.preuve.nature === "fait" ? "Événement significatif" : v.cause_du_changement.preuve.nature === "deduction" ? "Élément associé à l’évolution" : "Signal à confirmer"}</span>
           <span className={natureClass(v.cause_du_changement.preuve.nature)}>{v.cause_du_changement.titre}</span>
           <NatureMarque nature={v.cause_du_changement.preuve.nature} />{" "}
           <Pourquoi preuve={v.cause_du_changement.preuve} />
         </div>
       )}
 
-      <p className="verdict-lecture">
-        {v.lecture.texte} {v.lecture.mode === "gabarit" ? <Badge kind="gabarit" /> : <Badge kind={v.lecture.verifie ? "verifie" : "non-verifie"} />}
-      </p>
+      <div className="verdict-analyse">
+        <span className="verdict-analyse-label">Lecture</span>
+        <p className="verdict-lecture">{lecturePrincipale}</p>
+        {lectureSuite && <details className="verdict-lecture-suite"><summary>Lire l’analyse complète</summary><p>{lectureSuite}</p></details>}
+      </div>
 
       <div className="verdict-colonnes">
         <Colonne titre="Ce qui marche" vide="rien de favorable identifié" raisons={v.favorable} />
@@ -132,8 +136,6 @@ function libelleScore(v: VerdictObjectif): string {
 }
 
 function Colonne({ titre, vide, raisons }: { titre: string; vide: string; raisons: RaisonVerdict[] }) {
-  const [developpe, setDeveloppe] = useState(false);
-  const visibles = developpe ? raisons : raisons.slice(0, 3);
   return (
     <div className="verdict-colonne">
       <h4>{titre}</h4>
@@ -141,7 +143,7 @@ function Colonne({ titre, vide, raisons }: { titre: string; vide: string; raison
         <p className="text-2">{vide}</p>
       ) : (
         <ul className="verdict-raisons">
-          {visibles.map((r, i) => (
+          {raisons.map((r, i) => (
             <li key={`${r.titre}-${i}`} className={natureClass(r.preuve.nature)} data-nature={r.preuve.nature}>
               <div className="verdict-raison-titre">
                 {r.titre} <NatureMarque nature={r.preuve.nature} />{" "}
@@ -152,7 +154,6 @@ function Colonne({ titre, vide, raisons }: { titre: string; vide: string; raison
           ))}
         </ul>
       )}
-      {raisons.length > 3 && <button type="button" className="verdict-voir-plus" onClick={() => setDeveloppe((v) => !v)}>{developpe ? "Réduire" : `Voir les ${raisons.length} éléments`}</button>}
     </div>
   );
 }
