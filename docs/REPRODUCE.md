@@ -42,7 +42,7 @@ Autres routes (lues dans `web/src/App.tsx`) :
 
 Version statique : `npm run build` contrôle d'abord le sceau de publication des données, puis écrit `dist/` (données comprises). `npm run preview` sert ce dossier.
 
-Version en ligne : `status/P0.md` (17 h 15) consigne une mise en production sur https://bascule-two.vercel.app, configurée par `vercel.json` et `.vercelignore`. Cette adresse n'a pas été testée lors de cette vérification.
+Version en ligne : `docs/historique/status/P0.md` (17 h 15) consigne une mise en production sur https://bascule-two.vercel.app, configurée par `vercel.json` et `.vercelignore`. Cette adresse n'a pas été testée lors de cette vérification.
 
 ## Vérifications
 
@@ -79,7 +79,7 @@ Constats du test initial qui ne dépendent pas des données :
 
 ## Parcours B : régénérer les données
 
-Ce parcours n'a pas été rejoué lors de cette vérification : il appelle des services à clé (API Hémicycle, Featherless) et les sites de l'Assemblée nationale, inaccessibles depuis l'environnement de test. Il dépend aussi de `data/raw/`, non versionné, que seule la collecte recrée. Il est décrit d'après `package.json`, les `pipeline/*/run.ts`, `pipeline/publication.mjs`, `.env.example`, `LANCEMENT.md`, `PLAN.md` et `status/P0.md`.
+Ce parcours n'a pas été rejoué lors de cette vérification : il appelle des services à clé (API Hémicycle, Featherless) et les sites de l'Assemblée nationale, inaccessibles depuis l'environnement de test. Il dépend aussi de `data/raw/`, non versionné, que seule la collecte recrée. Il est décrit d'après `package.json`, les `pipeline/*/run.ts`, `pipeline/publication.mjs`, `.env.example`, `docs/historique/LANCEMENT.md`, `docs/historique/PLAN.md` et `docs/historique/status/P0.md`.
 
 Prérequis : Bun (version présente lors du test : 1.4.4), `curl` et `unzip` (appelés par `pipeline/collecte/run.ts`).
 
@@ -95,7 +95,7 @@ Variables de `.env.example` (valeurs à fournir, jamais versionnées) :
 
 Variables facultatives lues par le code : `ORCET_MAX` (défaut 25), `FEATHERLESS_MODEL`, `FEATHERLESS_THINKING`, `FEATHERLESS_CONCURRENCE`, `AUDITIONS_SANS_MODELE`, `AN_AMENDEMENTS_ZIP`, `BASCULE_DATA_DIR`, `BASCULE_CONTRACTS_DIR`.
 
-Ordre des étapes. C'est la chaîne rejouée par P0 depuis un clone frais (`status/P0.md`, 15 h 52), à laquelle s'ajoutent `auditions`, placée avant `fiches` parce que les fiches fusionnent auditions, débats et amendements (`pipeline/fiches/lib/fiches.ts`), et la publication, ajoutée ensuite :
+Ordre des étapes. C'est la chaîne rejouée par P0 depuis un clone frais (`docs/historique/status/P0.md`, 15 h 52), à laquelle s'ajoutent `auditions`, placée avant `fiches` parce que les fiches fusionnent auditions, débats et amendements (`pipeline/fiches/lib/fiches.ts`), et la publication, ajoutée ensuite :
 
 | Ordre | Commande | Produit | Services appelés |
 |---|---|---|---|
@@ -113,14 +113,14 @@ La publication vient avant le contrôle final. `pipeline/publication.mjs` valide
 
 Coût en crédits Hémicycle, tel qu'il est écrit dans le dépôt :
 
-- `status/P0.md` (15 h 52) : collecte complète de deux dossiers depuis un clone frais, 57 appels, 550 crédits, 151 s ; `data/raw` pèse alors 2,4 Go. Puis cohésion 6 s, pivots 203 s, suite 6 s, amendements 1 s, fiches 8 s, note 21 s.
-- `status/P0.md` (16 h 05) : 25 crédits par prédiction Orcet. Le nombre de prédictions par dossier est dans [docs/ETAT.md](ETAT.md).
-- `pipeline/collecte/api.ts` : accord entre groupes, 5 crédits par mois ; le commentaire du fichier indique 50 crédits par prédiction Orcet, ce qui diffère des 25 relevés dans `status/P0.md`. `pipeline/fiches/run.ts` : `--api` coûte 5 crédits par texte.
+- `docs/historique/status/P0.md` (15 h 52) : collecte complète de deux dossiers depuis un clone frais, 57 appels, 550 crédits, 151 s ; `data/raw` pèse alors 2,4 Go. Puis cohésion 6 s, pivots 203 s, suite 6 s, amendements 1 s, fiches 8 s, note 21 s.
+- `docs/historique/status/P0.md` (16 h 05) : 25 crédits par prédiction Orcet. Le nombre de prédictions par dossier est dans [docs/ETAT.md](ETAT.md).
+- `pipeline/collecte/api.ts` : accord entre groupes, 5 crédits par mois ; le commentaire du fichier indique 50 crédits par prédiction Orcet, ce qui diffère des 25 relevés dans `docs/historique/status/P0.md`. `pipeline/fiches/run.ts` : `--api` coûte 5 crédits par texte.
 - `pipeline/collecte/lib/hemicycle.ts` : la collecte s'arrête si le solde passe sous 150 crédits.
-- `PLAN.md`, annexe A : 1 000 crédits offerts par compte, recharge à partir de 100 € HT.
+- `docs/historique/PLAN.md`, annexe A : 1 000 crédits offerts par compte, recharge à partir de 100 € HT.
 - Aucun total pour les six dossiers n'est écrit dans le dépôt.
 
-Deux fragilités sont consignées dans `status/P0.md` (15 h 52) : une archive tronquée dans `data/raw/opendata/` fait échouer la collecte sans retéléchargement, et `debats` a échoué sur une machine neuve au téléchargement de `syseron.xml.zip`. L'état de ces correctifs n'a pas été vérifié ici.
+Deux fragilités sont consignées dans `docs/historique/status/P0.md` (15 h 52) : une archive tronquée dans `data/raw/opendata/` fait échouer la collecte sans retéléchargement, et `debats` a échoué sur une machine neuve au téléchargement de `syseron.xml.zip`. L'état de ces correctifs n'a pas été vérifié ici.
 
 ## Limites connues du lancement
 

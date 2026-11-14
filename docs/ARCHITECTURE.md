@@ -15,10 +15,10 @@ Principe : pas de serveur applicatif. Des scripts produisent des fichiers JSON, 
 | `contracts/` | Schémas Zod (`contracts/schemas/*.ts`, 21 fichiers), point d'entrée `contracts/index.ts` (map `SCHEMAS`, fonction `dataPath`), jeu d'exemple `contracts/fixtures/` produit par `contracts/generer-fixtures.ts` |
 | `web/` | Front : Vite, React, react-router, Recharts. Configuration dans `vite.config.ts` à la racine |
 | `qa/` | Validation : `check.ts`, `croise.ts`, `verif.ts`, `verif.test.ts` |
-| `prompts/`, `status/`, `demo/` | Consignes des sessions de construction, journaux d'avancement, supports de démonstration |
+| `docs/historique/prompts/`, `docs/historique/status/`, `docs/historique/demo/` | Consignes des sessions de construction, journaux d'avancement, supports de démonstration |
 | `.interface-design/` | Notes de conception de l'interface (`system.md`) |
 | `dist/` | Sortie de `npm run build`, exclue par `.gitignore` |
-| `vercel.json`, `.vercelignore` | Déploiement statique sur Vercel : installation et build avec Bun, sortie `dist/`, réécriture des routes vers `index.html` ; `data/raw/` est exclu de l'envoi. `status/P0.md` (17 h 15) consigne une mise en production sur https://bascule-two.vercel.app |
+| `vercel.json`, `.vercelignore` | Déploiement statique sur Vercel : installation et build avec Bun, sortie `dist/`, réécriture des routes vers `index.html` ; `data/raw/` est exclu de l'envoi. `docs/historique/status/P0.md` (17 h 15) consigne une mise en production sur https://bascule-two.vercel.app |
 | `.env.example` | Deux clés : `HEMICYCLE_API_KEY`, `FEATHERLESS_API_KEY`. Elles ne servent qu'à régénérer les données |
 
 `data/config.json` déclare six dossiers : `petits-colis` (état `clos`, `date_reference` 2025-11-19, dossier de démonstration), `plf2027-holdings`, `plf2027-apprentissage`, `plf2027-agriculture`, `plf2027-logement`, `plf2027-renovation`. Chaque entrée porte `client`, `mesure`, `objectifs` (rangs 1 à 3), `sujet.mots_cles`, `texte_id`.

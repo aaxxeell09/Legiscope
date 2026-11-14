@@ -37,4 +37,4 @@ Document factuel : structure, commandes, points d'entrée. La présentation du p
 - Les fichiers JSON produits par le pipeline portent un bloc `meta` (sources, date de génération, limites). Les éléments des fichiers `verdict`, `nouveautes`, `suite`, `action` et `etat` portent une `preuve` de nature `fait`, `deduction` ou `inconnue`.
 - Le modèle de langage ne produit aucun nombre : `pipeline/lib/verif.ts` rejette un texte qui contient un nombre absent de la liste fournie.
 - Les clés d'API ne vont que dans `.env`, jamais dans un fichier suivi.
-- `PLAN.md`, `LANCEMENT.md`, `prompts/` et `status/` sont les documents de la journée de construction (voir [docs/HISTORIQUE.md](docs/HISTORIQUE.md)). Ils ne décrivent pas forcément l'état final.
+- `docs/historique/PLAN.md`, `docs/historique/LANCEMENT.md`, `docs/historique/prompts/` et `docs/historique/status/` sont les documents de la journée de construction (voir [docs/HISTORIQUE.md](docs/HISTORIQUE.md)). Ils ne décrivent pas forcément l'état final.

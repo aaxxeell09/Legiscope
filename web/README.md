@@ -47,7 +47,7 @@ Un identifiant de dossier absent de `config.json` affiche « Dossier inconnu ».
 
 ## Tableau de bord
 
-`views/dossier/index.tsx` pose l'en-tête : client, titre du dossier, mesure, mention « Relecture historique » avec la date quand `date_reference` est posée (sinon « Dossier vivant »), lien vers la Base documentaire, contexte parlementaire, puis les objectifs sous forme d'onglets (« Principal », « Repli 1 », etc.). L'onglet choisi est transmis au bloc Verdict.
+`views/dossier/index.tsx` pose l'en-tête : client, titre du dossier, mesure, puis les objectifs sous forme d'onglets (« Principal », « Repli 1 », etc.). L'onglet choisi est transmis au bloc Verdict.
 
 La grille (`.dossier-grille` dans `tokens.css`) place Verdict sur toute la largeur, Nouveautés et Suite côte à côte, puis Action et Compte rendu sur toute la largeur. Sous 1100 px, elle passe sur une colonne. Chaque bloc est un composant exporté par défaut de `views/blocs/<nom>/index.tsx`, charge ses propres données avec `useData` et est isolé par un `ErrorBoundary` : un bloc en erreur n'emporte pas la page.
 
