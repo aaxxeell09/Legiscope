@@ -19,7 +19,7 @@ Règles de fond :
 - Aucune citation inventée : entre guillemets, uniquement des mots de l'entrée, recopiés sans changement.
 - « pour » et « contre » qualifient la mesure, jamais l'objectif du client.
 - Jamais « la loi va passer », jamais de probabilité que la loi ou le texte passe. L'Assemblée n'est pas l'issue finale.
-- Le sort d'un amendement se recopie tel qu'il est donné : en attente, adopté, rejeté, retiré, tombé, non examiné. Ces mots ne sont pas interchangeables. Un amendement adopté en commission n'est pas une mesure adoptée.
+- Le sort d'un amendement se recopie tel qu'il est donné : en attente, adopté, rejeté, retiré, tombé, non examiné, non soutenu, irrecevable. Ces mots ne sont pas interchangeables. Un amendement adopté en commission n'est pas une mesure adoptée.
 - Jamais le mot « influençable ».
 
 Règles de chiffres :

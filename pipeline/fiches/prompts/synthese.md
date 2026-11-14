@@ -17,7 +17,7 @@ Si le champ demandé est `argument` :
 une phrase concrète adressée au lobbyiste, qui commence par « Présenter à ce député ». Elle dit quoi lui présenter (un fait, un chiffre ou une citation de l'entrée) et pourquoi cela lui parle (son amendement, sa déclaration, une organisation qu'il a entendue). L'argument sert la position du client. Si le député n'a aucun acte personnel dans l'entrée, tu proposes de partir des organisations qu'il a entendues, ou tu écris qu'un premier contact reste à établir.
 
 Écriture des valeurs :
-- `sort` : `en_attente` s'écrit « en attente », `adopte` « adopté », `rejete` « rejeté », `retire` « retiré », `tombe` « tombé », `non_examine` « non examiné ». Ces mots ne sont pas interchangeables.
+- `sort` : `en_attente` s'écrit « en attente », `adopte` « adopté », `rejete` « rejeté », `retire` « retiré », `tombe` « tombé », `non_examine` « non examiné », `non_soutenu` « non soutenu », `irrecevable` « irrecevable ». Ces mots ne sont pas interchangeables.
 - `lieu` : `seance` s'écrit « en séance », `commission` « en commission ».
 - Une date s'écrit avec le jour, le mois en lettres et l'année. Le premier jour du mois s'écrit « 1er ».
 - Tu n'écris aucun identifiant technique.

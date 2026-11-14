@@ -11,7 +11,7 @@ Chaque bloc ` ```gabarit id=... ` ci-dessous est lisible par programme : on remp
 | `client` | `config.json` → `dossiers[].client` | telle quelle |
 | `role_verbe` | `fiches/<PA>.json` → `amendements[k].role` | `auteur` → `déposé` ; `cosignataire` → `cosigné` |
 | `numero` | `texte.json` → `amendements[]` dont `id` = `amendements[k].id` → `numero` ; à défaut les chiffres après le dernier `N` de `id`, sans zéros de tête | tel quel |
-| `sort_mot` | `amendements[k].sort` | `en_attente` → `en attente` ; `adopte` → `adopté` ; `rejete` → `rejeté` ; `retire` → `retiré` ; `tombe` → `tombé` ; `non_examine` → `non examiné` |
+| `sort_mot` | `amendements[k].sort` | `en_attente` → `en attente` ; `adopte` → `adopté` ; `rejete` → `rejeté` ; `retire` → `retiré` ; `tombe` → `tombé` ; `non_examine` → `non examiné` ; `non_soutenu` → `non soutenu` ; `irrecevable` → `irrecevable` |
 | `resume` | `amendements[k].resume` | `sans_point` |
 | `date_debat` | `debats[j].date` | `date_fr` |
 | `lieu_mot` | `debats[j].lieu` | `seance` → `séance` ; `commission` → `commission` |
