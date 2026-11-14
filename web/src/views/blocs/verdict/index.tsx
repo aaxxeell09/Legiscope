@@ -1,9 +1,9 @@
 import { useState } from "react";
-import type { Etat as EtatDossier, RaisonVerdict, Verdict, VerdictObjectif } from "@contracts/index";
+import type { RaisonVerdict, Verdict, VerdictObjectif } from "@contracts/index";
 import { Badge, Etat, Meta, Pourquoi } from "../../../components";
 import { useConfig } from "../../../lib/config";
 import { useData } from "../../../lib/data";
-import { formatDate, formatDateTime, formatProba } from "../../../lib/format";
+import { formatDateTime, formatProba } from "../../../lib/format";
 import { Tendance } from "./Tendance";
 import "./verdict.css";
 
@@ -28,21 +28,6 @@ const TENDANCE_ICONE: Record<VerdictObjectif["tendance"], string> = {
 
 const SCORE_LIBELLE = "des sièges favorables à l'objectif";
 
-const STATUT_TEXTE: Record<string, string> = {
-  en_discussion: "en discussion",
-  adopte: "adopté",
-  rejete: "rejeté",
-  retire: "retiré",
-};
-
-type TexteEtat = {
-  statut: string;
-  libelle: string;
-  date: string | null;
-  url: string;
-  preuve: { sources: { label: string; url: string }[]; raisonnement: string; nature: "fait" | "deduction" | "inconnue" };
-};
-
 const CONFIANCE: Record<VerdictObjectif["confiance"]["niveau"], string> = {
   elevee: "élevée",
   moyenne: "moyenne",
@@ -50,68 +35,30 @@ const CONFIANCE: Record<VerdictObjectif["confiance"]["niveau"], string> = {
 };
 
 /** Bloc 1 : un verdict par objectif, le principal ouvert, les replis en onglets. */
-export default function VerdictBloc({ dossier }: { dossier: string }) {
+export default function VerdictBloc({ dossier, objectifRang }: { dossier: string; objectifRang: number }) {
   const r = useData<Verdict>("verdict", dossier);
   return (
     <Etat titre="Verdict" state={r} className="bloc bloc-verdict">
-      {(v) => <VerdictContenu verdict={v} dossier={dossier} />}
+      {(v) => <VerdictContenu verdict={v} dossier={dossier} objectifRang={objectifRang} />}
     </Etat>
   );
 }
 
-function VerdictContenu({ verdict, dossier }: { verdict: Verdict; dossier: string }) {
+function VerdictContenu({ verdict, dossier, objectifRang }: { verdict: Verdict; dossier: string; objectifRang: number }) {
   const config = useConfig();
   const dossierCfg = config?.dossiers.find((d) => d.id === dossier) ?? null;
-  const objectifs = dossierCfg?.objectifs ?? [];
   const verdicts = [...verdict.verdicts].sort((a, b) => a.objectif_rang - b.objectif_rang);
-  const [rang, setRang] = useState(verdicts[0]?.objectif_rang ?? 1);
-  const courant = verdicts.find((v) => v.objectif_rang === rang) ?? verdicts[0];
-
-  const libelle = (r: number) => {
-    const o = objectifs.find((x) => x.rang === r);
-    const texte = o?.texte ?? `Objectif ${r}`;
-    return r === 1 ? texte : `À défaut : ${texte}`;
-  };
-
-  const deplacer = (direction: -1 | 1) => {
-    const index = verdicts.findIndex((v) => v.objectif_rang === courant.objectif_rang);
-    const suivant = verdicts[(index + direction + verdicts.length) % verdicts.length];
-    if (suivant) setRang(suivant.objectif_rang);
-  };
+  const courant = verdicts.find((v) => v.objectif_rang === objectifRang) ?? verdicts[0];
 
   return (
     <div className="verdict">
-      {verdicts.length > 1 && (
-        <div className="verdict-onglets" role="tablist" aria-label="Objectifs">
-          {verdicts.map((v) => (
-            <button
-              key={v.objectif_rang}
-              type="button"
-              role="tab"
-              id={`verdict-tab-${v.objectif_rang}`}
-              aria-selected={v.objectif_rang === courant.objectif_rang}
-              aria-controls="verdict-panneau"
-              className={v.objectif_rang === courant.objectif_rang ? "verdict-onglet actif" : "verdict-onglet"}
-              onClick={() => setRang(v.objectif_rang)}
-              onKeyDown={(e) => {
-                if (e.key === "ArrowRight") { e.preventDefault(); deplacer(1); }
-                if (e.key === "ArrowLeft") { e.preventDefault(); deplacer(-1); }
-              }}
-            >
-              {libelle(v.objectif_rang)}
-            </button>
-          ))}
-        </div>
-      )}
-
-      <div id="verdict-panneau" role="tabpanel" aria-labelledby={`verdict-tab-${courant.objectif_rang}`}>
+      <div className="verdict-panneau">
         <VerdictObjectifVue v={courant} genere={verdict.meta.generated_at} />
       </div>
 
       <Tendance dossier={dossierCfg} />
       <details className="verdict-fondements">
         <summary>Fondements techniques et sources</summary>
-        <EtatLigne dossier={dossier} />
         <Meta meta={verdict.meta} />
       </details>
     </div>
@@ -186,31 +133,6 @@ function libelleScore(v: VerdictObjectif): string {
   if (!l) return SCORE_LIBELLE;
   // score_libelle vaut « part des sièges favorables à l'objectif » : on garde « des sièges ... ».
   return l.replace(/^part\s+/i, "");
-}
-
-/** État de la mesure et, à part, état du texte (etat.json). */
-function EtatLigne({ dossier }: { dossier: string }) {
-  const r = useData<EtatDossier>("etat", dossier);
-  if (r.status !== "ok" || !r.data) return null;
-  const e = r.data;
-  const texte = (e as EtatDossier & { texte_etat?: TexteEtat | null }).texte_etat ?? null;
-  return (
-    <div className="verdict-etat">
-      <span>
-        <span className="text-2">Mesure : </span>
-        {e.mesure.dans_le_texte ? "dans le texte" : "absente du texte"}{" "}
-        <Pourquoi sources={e.meta.sources} raisonnement={e.mesure.redaction_actuelle} nature="fait" />
-      </span>
-      {texte && (
-        <span>
-          <span className="text-2">Texte : </span>
-          {texte.libelle || STATUT_TEXTE[texte.statut] || texte.statut}
-          {texte.date && <span className="text-2"> le {formatDate(texte.date)}</span>}{" "}
-          <Pourquoi preuve={texte.preuve} />
-        </span>
-      )}
-    </div>
-  );
 }
 
 function Colonne({ titre, vide, raisons }: { titre: string; vide: string; raisons: RaisonVerdict[] }) {
