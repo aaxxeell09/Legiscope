@@ -222,7 +222,7 @@ function ColonneGroupe({
                 </div>
                 <div>{d.raison}</div>
                 <div className="p7-ligne">
-                  <span className="text-2">{d.position_connue ? d.fondement.map((f) => FONDEMENT[f]).join(", ") : "position inconnue"}</span>
+                  <span className="text-2">{d.position_connue ? d.fondement.map((f) => FONDEMENT[f]).join(", ") : "Inconnue"}</span>
                   {!fiche && <span className="text-2">fiche en cours</span>}
                   <span className="p7-droite" onClick={(e) => e.stopPropagation()} onKeyDown={(e) => e.stopPropagation()}>
                     <Pourquoi preuve={d.preuve} />

@@ -56,7 +56,7 @@ export default function DeputeView() {
         <div className="p7-classement">
           <div><span className="p7-classement-label">Position documentée</span><strong>{GROUPE_ACTION[classement.cle]}</strong></div>
           <span className="text-2">{classement.d.raison}</span>
-          <span className="text-2">{classement.d.position_connue ? classement.d.fondement.map((f) => FONDEMENT[f]).join(", ") : "position inconnue"}</span>
+          <span className="text-2">{classement.d.position_connue ? classement.d.fondement.map((f) => FONDEMENT[f]).join(", ") : "Inconnue"}</span>
           <Pourquoi preuve={classement.d.preuve} />
         </div>
       )}

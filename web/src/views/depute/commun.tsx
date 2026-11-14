@@ -29,9 +29,9 @@ export const ROLE_DECIDEUR: Record<RoleDecideur, string> = {
 };
 
 export const POSITION_DECIDEUR: Record<PositionDecideur, string> = {
-  pour: "pour la mesure",
-  contre: "contre la mesure",
-  inconnue: "position inconnue",
+  pour: "Favorable",
+  contre: "Défavorable",
+  inconnue: "Inconnue",
 };
 
 export const FONDEMENT: Record<Fondement, string> = {
