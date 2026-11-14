@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:38:33+01:00",
+    "generated_at": "2026-11-14T14:51:45+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -8,15 +8,33 @@
       },
       {
         "label": "Rapports sur le projet de loi de finances pour 2026",
-        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tIX.html"
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tVIII.html"
       }
     ],
-    "limits": "9 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 2 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "limits": "9 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 3 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
     "producer": "pipeline/auditions",
     "dossier_id": "petits-colis"
   },
   "depute_id": "PA721336",
   "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tVIII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Observatoire de l’éthique publique (OEP)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Assemblée nationale",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
     {
       "texte_id": "PRJLANR5L17B1906",
       "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tIX.html",
@@ -30,12 +48,12 @@
         },
         {
           "nom": "Conseil d’État",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat de la juridiction administrative (SJA)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -63,7 +81,7 @@
         },
         {
           "nom": "Délégation nationale à la sécurité routière",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -82,8 +100,18 @@
           "hatvp_id": null
         },
         {
-          "nom": "Lieutenenant-Colonel Duquesne, délégué militaire départemental adjoint des Pyrénées-Atlantiques",
-          "type": "autre",
+          "nom": "Groupement de gendarmerie départementale 64",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Service interdépartemental de la police aux frontières d’Hendaye",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Défense (Département)",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -96,6 +124,6 @@
   ],
   "couverture": {
     "rapports_total": 9,
-    "rapports_avec_liste": 2
+    "rapports_avec_liste": 3
   }
 }

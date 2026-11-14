@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:38:33+01:00",
+    "generated_at": "2026-11-14T14:42:39+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -11,7 +11,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3279-tI.html"
       }
     ],
-    "limits": "8 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 1 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "limits": "8 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 1 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
     "producer": "pipeline/auditions",
     "dossier_id": "plf2027-holdings"
   },
@@ -31,11 +31,6 @@
         {
           "nom": "Ministère des armées, direction générale des relations internationales et de la stratégie (DGRIS)",
           "type": "administration",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Capitaine Romain Euvrard",
-          "type": "autre",
           "hatvp_id": null
         },
         {

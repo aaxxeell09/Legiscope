@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:38:33+01:00",
+    "generated_at": "2026-11-14T14:51:45+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -11,7 +11,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tIX.html"
       }
     ],
-    "limits": "5 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 5 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "limits": "5 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 5 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
     "producer": "pipeline/auditions",
     "dossier_id": "petits-colis"
   },
@@ -30,7 +30,7 @@
         },
         {
           "nom": "Comité d’organisation des Jeux olympiques et paralympiques des Alpes Françaises 2030",
-          "type": "association",
+          "type": "autre",
           "hatvp_id": null
         },
         {
@@ -40,11 +40,11 @@
         },
         {
           "nom": "Comité paralympique et sportif français",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
-          "nom": "Ministère des sports, de la jeunesse et de la vie associative",
+          "nom": "Ministère des sports, de la jeunesse et de la vie associative – direction des sports",
           "type": "administration",
           "hatvp_id": null
         },
@@ -55,7 +55,7 @@
         },
         {
           "nom": "Ligue réunionnaise de football",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -74,23 +74,13 @@
           "hatvp_id": null
         },
         {
-          "nom": "Fédération française de basket-ball",
-          "type": "federation",
+          "nom": "Mme Marie-George Buffet",
+          "type": "autre",
           "hatvp_id": null
         },
         {
-          "nom": "Fédération française de football",
-          "type": "federation",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Fédération française de gymnastique",
-          "type": "federation",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Fédération française de judo et disciplines associées",
-          "type": "federation",
+          "nom": "Sportifs de haut niveau",
+          "type": "autre",
           "hatvp_id": null
         }
       ]
@@ -107,7 +97,17 @@
           "hatvp_id": null
         },
         {
-          "nom": "Haut Conseil de l’évaluation de la recherche et de l’enseignement supérieur (Hcéres)",
+          "nom": "CNRS",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université Paris-Diderot",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haut Conseil de l'évaluation de la recherche et de l'enseignement supérieur (Hcéres)",
           "type": "administration",
           "hatvp_id": null
         },
@@ -118,7 +118,7 @@
         },
         {
           "nom": "France Universités",
-          "type": "administration",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -132,7 +132,7 @@
           "hatvp_id": null
         },
         {
-          "nom": "Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (Inrae)",
+          "nom": "Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (Inrae)",
           "type": "administration",
           "hatvp_id": null
         },
@@ -152,12 +152,12 @@
           "hatvp_id": null
         },
         {
-          "nom": "CGT des établissements d’enseignement supérieur (CGT-FERC sup)",
+          "nom": "CGT des établissements d'enseignement supérieur (CGT-FERC sup)",
           "type": "syndicat",
           "hatvp_id": null
         },
         {
-          "nom": "Syndicat national de l’enseignement supérieur (SNESUP-FSU)",
+          "nom": "Syndicat national de l'enseignement supérieur (SNESUP-FSU)",
           "type": "syndicat",
           "hatvp_id": null
         },
@@ -172,8 +172,13 @@
           "hatvp_id": null
         },
         {
-          "nom": "Syndicat National Indépendant de la Recherche Scientifique et de l’Enseignement Supérieur (SNIRS-CFE-CGC)",
+          "nom": "Syndicat National Indépendant de la Recherche Scientifique et de l'Enseignement Supérieur (SNIRS-CFE-CGC)",
           "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil national des universités (CNU)",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -182,7 +187,17 @@
           "hatvp_id": null
         },
         {
-          "nom": "Ministère de l’enseignement supérieur, de la recherche et de l’espace",
+          "nom": "université de Toulouse",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "université Grenoble Alpes",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l'enseignement supérieur, de la recherche et de l'espace – Direction générale de la recherche et de l'innovation (DGRI)",
           "type": "administration",
           "hatvp_id": null
         }
@@ -368,18 +383,43 @@
       "role": "membre",
       "organisations": [
         {
-          "nom": "Ministère de l’éducation nationale",
+          "nom": "Ministère de l’éducation nationale – Direction générale des ressources humaines (DGRH)",
           "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Observatoire des zones prioritaires (OZP)",
-          "type": "administration",
+          "type": "autre",
           "hatvp_id": null
         },
         {
           "nom": "Fédération des conseils de parents d’élèves des écoles publiques (FCPE)",
-          "type": "federation",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Académie de Créteil",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Académie de Lille",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Académie de Normandie",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Académie de Guyane",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’éducation nationale",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -394,12 +434,22 @@
         },
         {
           "nom": "Syndicat national des lycées, collèges, écoles et du supérieur (Snalc)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Fédération Sud Éducation",
           "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’éducation nationale – Direction de l’évaluation, de la prospective et de la performance (Depp)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’éducation nationale – Direction générale de l’enseignement scolaire (Dgesco)",
+          "type": "administration",
           "hatvp_id": null
         }
       ]

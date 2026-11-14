@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T14:51:45+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B1996-tIII-a47.html"
+      }
+    ],
+    "limits": "5 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 2 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA841955",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B1996-tIII-a47.html",
+      "date": "2025-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction générale du Trésor",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’Agriculture, de l’agroalimentaire et de la souveraineté alimentaire, direction générale de la performe économique et environnementale des entreprises",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’Europe et des affaires étrangères, direction de l’Union européenne",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère chargé de la mer et de la pêche, direction générale des affaires maritimes, de la pêche et de l’aquaculture",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B1996-tIII-a26.html",
+      "date": "2025-11-18",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Agence de l’immobilier de l’État (AGILE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction des territoires, de l’immobilier et de l’environnement (DTIE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil de l’immobilier de l’État",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 5,
+    "rapports_avec_liste": 2
+  }
+}

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:38:33+01:00",
+    "generated_at": "2026-11-14T14:42:39+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -11,7 +11,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html"
       }
     ],
-    "limits": "4 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 4 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "limits": "4 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 4 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
     "producer": "pipeline/auditions",
     "dossier_id": "plf2027-holdings"
   },
@@ -30,12 +30,12 @@
         },
         {
           "nom": "Brittany Ferries",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Corsica Linea",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -50,7 +50,7 @@
         },
         {
           "nom": "Établissement national des invalides de la Marine (Enim)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -60,12 +60,12 @@
         },
         {
           "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
+          "nom": "Confédération française de l’encadrement – Confédération générale des cadres (CFE-CGC) Marine",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "nom": "Comité national de la conchyliculture",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         }
       ]
@@ -305,6 +305,11 @@
           "hatvp_id": null
         },
         {
+          "nom": "Mission interministérielle pour la protection des femmes contre les violences et la lutte contre la traite des êtres humains (Miprof)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
           "nom": "Départements de France",
           "type": "federation",
           "hatvp_id": null
@@ -339,12 +344,12 @@
         },
         {
           "nom": "Office central de lutte contre le travail illégal (OCLTI)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "Observatoire de l’immigration et de la démographie (OID)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -376,26 +381,6 @@
           "nom": "Groupement des hôtelleries & restaurations de France (GHR)",
           "type": "federation",
           "hatvp_id": null
-        },
-        {
-          "nom": "Force ouvrière (FO)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française de l’encadrement",
-          "type": "federation",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Confédération française des travailleurs chrétiens (CFTC)",
-          "type": "syndicat",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Mouvement des entreprises de France (Medef)",
-          "type": "federation",
-          "hatvp_id": "784668618"
         }
       ]
     }

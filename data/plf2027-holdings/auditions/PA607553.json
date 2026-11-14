@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:38:33+01:00",
+    "generated_at": "2026-11-14T14:42:39+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -11,7 +11,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tI.html"
       }
     ],
-    "limits": "10 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 10 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "limits": "10 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 10 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction par le modèle Qwen/Qwen3.8-27B, repli heuristique) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
     "producer": "pipeline/auditions",
     "dossier_id": "plf2027-holdings"
   },
@@ -30,7 +30,7 @@
         },
         {
           "nom": "Chambre d’agriculture",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -54,8 +54,13 @@
           "hatvp_id": null
         },
         {
+          "nom": "Confédération nationale de l’élevage (CNE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
           "nom": "Association nationale interprofessionnelle de la volaille de chair (ANVOL)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -64,8 +69,18 @@
           "hatvp_id": null
         },
         {
+          "nom": "Groupama",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Pacifica",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
           "nom": "Comité National des Interprofessions des Vins à appellation d'origine et à indication géographique (CNIV)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -87,6 +102,21 @@
       "role": "membre",
       "organisations": [
         {
+          "nom": "CY Cergy Paris Université",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "OFCE",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Observatoire des emplois menacés et émergents",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
           "nom": "Autorité de régulation des communications électroniques, des postes et de la distribution de la presse (ARCEP)",
           "type": "administration",
           "hatvp_id": null
@@ -102,23 +132,28 @@
           "hatvp_id": null
         },
         {
+          "nom": "U2P",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
           "nom": "Les Entrepreneurs (ex-CPME)",
           "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat national des artistes plasticiens (SNAP-CGT)",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Syndicat National des Auteurs et des Compositeurs (SNAC)",
-          "type": "federation",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Ligue des auteurs professionnels",
-          "type": "association",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -140,13 +175,13 @@
           "hatvp_id": null
         },
         {
-          "nom": "Chercheur",
+          "nom": "Chaire TerrESS",
           "type": "autre",
           "hatvp_id": null
         },
         {
           "nom": "ESS France",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -156,27 +191,27 @@
         },
         {
           "nom": "Coop FR",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Mouvement impact France",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Mouvement des entreprises de l'économie écologique, sociale et solidaire (Mouvess)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Centre français des fonds et fondations",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Hello Asso",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -191,12 +226,12 @@
         },
         {
           "nom": "CG SCOP",
-          "type": "entreprise",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
           "nom": "Le mouvement associatif",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -206,7 +241,7 @@
         },
         {
           "nom": "Chambre régionale de l’économie sociale et solidaire (CRESS) Auvergne-Rhône Alpes",
-          "type": "administration",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -221,7 +256,7 @@
         },
         {
           "nom": "Coorace",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -239,17 +274,17 @@
       "organisations": [
         {
           "nom": "Coprexma",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "France filière Pêche",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Comité régional des pêches maritimes et des espaces marins de Bretagne",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -269,7 +304,7 @@
         },
         {
           "nom": "Comité national des pêches maritimes et élevages marins (CNPMEM)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -302,7 +337,7 @@
         },
         {
           "nom": "Institut de l'économie pour le climat (I4CE)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -327,7 +362,7 @@
         },
         {
           "nom": "Chaire Économie du Climat",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -370,17 +405,17 @@
         },
         {
           "nom": "Commune de Les Gets (Haute-Savoie)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "L'Association nationale des maires de stations de montagne (ANMSM)",
-          "type": "association",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Commune de Huez (Isère)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -390,12 +425,12 @@
         },
         {
           "nom": "Commune de Villard-de-Lans (Isère)",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
           "nom": "La Banque des territoires",
-          "type": "entreprise",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -430,7 +465,7 @@
         },
         {
           "nom": "Canton du Valais, Suisse",
-          "type": "autre",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -441,11 +476,6 @@
         {
           "nom": "Fondation pour la recherche sur les administrations et les politiques publiques (IFRAP)",
           "type": "association",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Châtel Tourisme",
-          "type": "autre",
           "hatvp_id": null
         }
       ]
@@ -468,12 +498,12 @@
         },
         {
           "nom": "France Gaz",
-          "type": "entreprise",
+          "type": "federation",
           "hatvp_id": null
         },
         {
           "nom": "Association des agriculteurs méthaniseurs de France (AAMF)",
-          "type": "federation",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -483,22 +513,27 @@
         },
         {
           "nom": "Que choisir ensemble",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Conseil national des associations familiales laïques (Cnafal)",
-          "type": "administration",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Consommation, logement et cadre de vie (CLCV)",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
           "nom": "Fédération des services Énergie Environnement (Fedene)",
           "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cilab",
+          "type": "cabinet",
           "hatvp_id": null
         },
         {
@@ -528,7 +563,12 @@
         },
         {
           "nom": "Syndicat des Energies Renouvelables (SER)",
-          "type": "federation",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ai2P",
+          "type": "cabinet",
           "hatvp_id": null
         },
         {
@@ -538,7 +578,7 @@
         },
         {
           "nom": "Enerplan",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -568,12 +608,12 @@
         },
         {
           "nom": "Enedis",
-          "type": "administration",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
           "nom": "Réseau de Transport d’Electricité (RTE)",
-          "type": "administration",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -583,12 +623,12 @@
         },
         {
           "nom": "Syndicat professionnel représentant des Entreprises Locales d’Energies (ELE)",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": "552081317"
         },
         {
           "nom": "Médiateur de l’énergie",
-          "type": "entreprise",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -621,7 +661,7 @@
         },
         {
           "nom": "La Fabrique de l'Exportation",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -636,7 +676,7 @@
         },
         {
           "nom": "Chambres de commerce et d’Industrie France International (CCIFI) International",
-          "type": "entreprise",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -655,13 +695,13 @@
           "hatvp_id": null
         },
         {
-          "nom": "OSCI",
-          "type": "autre",
+          "nom": "OSCI – Les entrepreneurs de l'international",
+          "type": "association",
           "hatvp_id": null
         },
         {
-          "nom": "MEAE",
-          "type": "autre",
+          "nom": "MEAE – Direction de la diplomatie et de la souveraineté économiques",
+          "type": "administration",
           "hatvp_id": null
         },
         {
@@ -671,7 +711,7 @@
         },
         {
           "nom": "La Maison Fabre",
-          "type": "autre",
+          "type": "entreprise",
           "hatvp_id": null
         },
         {
@@ -681,11 +721,11 @@
         },
         {
           "nom": "Cosmetic Valley",
-          "type": "autre",
+          "type": "federation",
           "hatvp_id": null
         },
         {
-          "nom": "Marc-Antoine Jamet, secrétaire général du groupe LVMH",
+          "nom": "Groupe LVMH",
           "type": "entreprise",
           "hatvp_id": null
         }
@@ -709,7 +749,7 @@
         },
         {
           "nom": "Observatoire des prix, des marges et des revenus (OPMR) de La Réunion",
-          "type": "administration",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -719,17 +759,17 @@
         },
         {
           "nom": "Commune de La Plaine-des-Palmistes",
-          "type": "autre",
-          "hatvp_id": null
-        },
-        {
-          "nom": "Association des maires du département de La Réunion (AMDR)",
           "type": "administration",
           "hatvp_id": null
         },
         {
+          "nom": "Association des maires du département de La Réunion (AMDR)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
           "nom": "Syndicat de l’Importation et du Commerce de La Réunion",
-          "type": "autre",
+          "type": "syndicat",
           "hatvp_id": null
         },
         {
@@ -767,7 +807,7 @@
         },
         {
           "nom": "Confédération nationale du logement (CNL)",
-          "type": "administration",
+          "type": "federation",
           "hatvp_id": null
         },
         {
@@ -777,7 +817,7 @@
         },
         {
           "nom": "Association Force ouvrière des consommateurs (AFOC)",
-          "type": "syndicat",
+          "type": "association",
           "hatvp_id": null
         },
         {
@@ -792,7 +832,7 @@
         },
         {
           "nom": "Utopia 56",
-          "type": "autre",
+          "type": "association",
           "hatvp_id": null
         },
         {
