@@ -8,7 +8,7 @@ import { dirname, join } from "node:path";
 import type { ZodTypeAny } from "zod";
 import {
   ConfigSchema, NoteSchema, SCHEMAS, dataPath,
-  type Action, type Config, type Deputes, type Groupes, type Kind, type Note, type Source, type Suite, type Texte, type Verdict,
+  type Action, type Config, type Deputes, type Etat, type Nouveautes, type Groupes, type Kind, type Note, type Source, type Suite, type Texte, type Verdict,
 } from "../../contracts/index";
 import { coutCumule, redigerVerifie } from "../lib/llm";
 import { verifierChiffres } from "../lib/verif";
@@ -217,14 +217,85 @@ function promptNote(d: Dossier, f: Faits): { system: string; user: string } {
   };
 }
 
-function gabarit(d: Dossier, f: Faits): string {
+type Entrees = { v: Verdict | null; s: Suite | null; a: Action | null; n: Nouveautes | null; e: Etat | null };
+
+/**
+ * Gabarit de X3 (prompts/gabarit-note.md) : blocs ```gabarit id=...```, variables {{x}}, ordre et conditions
+ * de la section « Blocs ». Renvoie null si le fichier manque, si un bloc manque ou si une variable reste vide.
+ */
+function gabaritX3(d: Dossier, x: Entrees, limites: string): string | null {
   const fichier = join(ICI, "prompts", "gabarit-note.md");
-  if (existsSync(fichier)) {
-    const vars: Record<string, string> = { client: d.client, mesure: d.mesure.label, objectif: d.objectifs[0].texte, faits: f.phrases.join(" ") };
-    const t = remplir(readFileSync(fichier, "utf8"), vars).trim();
-    if (t && verifierChiffres(t, f.chiffres).ok && !/\{\{/.test(t)) return t;
+  if (!existsSync(fichier) || !x.v) return null;
+  const blocs: Record<string, string> = {};
+  for (const m of readFileSync(fichier, "utf8").matchAll(/```gabarit id=([\w.]+)\n([\s\S]*?)```/g)) blocs[m[1]] = m[2].trim();
+  const sansPoint = (t: string) => t.trim().replace(/\.$/, "");
+  const avecPoint = (t: string) => (/[.!?]$/.test(t.trim()) ? t.trim() : t.trim() + ".");
+  const df = (iso: string | null | undefined) => (iso ? dateFr(iso) : "date non fixée");
+  const SIT: Record<string, string> = { favorable: "favorable", incertaine: "incertaine", defavorable: "défavorable", insuffisant: "indécidable (pas assez d'information)" };
+  const NIV: Record<string, string> = { elevee: "élevée", moyenne: "moyenne", faible: "faible" };
+  const EFF: Record<string, string> = { renforce: "favorable au client", affaiblit: "défavorable au client", neutre: "sans effet sur le verdict" };
+  const v1 = x.v.verdicts.find((y) => y.objectif_rang === 1)!;
+  const ref = d.date_reference;
+  const evs = (x.n?.evenements ?? []).filter((ev) => !ref || ev.date <= ref);
+  const vars: Record<string, string> = {
+    client: d.client,
+    mesure_label: sansPoint(d.mesure.label),
+    etape: x.e ? sansPoint(x.e.etape) : "",
+    objectif_1: sansPoint(d.objectifs[0].texte),
+    situation_mot: SIT[v1.situation],
+    tendance_mot: TENDANCE[v1.tendance],
+    niveau_mot: NIV[v1.confiance.niveau],
+    lecture_1: avecPoint(v1.lecture.texte),
+    limites: avecPoint(limites),
+  };
+  evs.slice(0, 2).forEach((ev, i) => {
+    vars[`ev_${i + 1}`] = sansPoint(ev.titre);
+    vars[`ev_${i + 1}_date`] = df(ev.date);
+    vars[`ev_${i + 1}_effet`] = EFF[ev.effet];
+  });
+  if (x.s?.echeances[0]) {
+    vars.echeance_1 = sansPoint(x.s.echeances[0].titre);
+    vars.echeance_1_date = df(x.s.echeances[0].date);
   }
-  return gabaritIntegre(d, f);
+  if (x.s?.derniere_occasion) {
+    vars.derniere_occasion = sansPoint(x.s.derniere_occasion.titre);
+    vars.derniere_occasion_date = df(x.s.derniere_occasion.date);
+  }
+  if (x.a) {
+    vars.n_actionnables = String(x.a.groupes.actionnables.length);
+    vars.n_allies = String(x.a.groupes.allies.length);
+    vars.n_perdus = String(x.a.groupes.perdus.length);
+  }
+  const morceaux: string[] = [];
+  const bloc = (id: string, extra: Record<string, string> = {}) => {
+    const b = blocs[id];
+    if (!b) throw new Error(`bloc ${id} absent`);
+    const t = b.replace(/\{\{\s*(\w+)\s*\}\}/g, (_, k) => {
+      const val = extra[k] ?? vars[k];
+      if (val === undefined || val === "") throw new Error(`variable ${k} vide`);
+      return val;
+    });
+    morceaux.push(t);
+  };
+  try {
+    bloc("note.entete");
+    bloc("note.verdict");
+    for (const vr of [...x.v.verdicts].filter((y) => y.objectif_rang > 1).sort((a, b) => a.objectif_rang - b.objectif_rang)) {
+      const o = d.objectifs.find((y) => y.rang === vr.objectif_rang);
+      if (o) bloc("note.repli", { objectif_n: sansPoint(o.texte), situation_mot: SIT[vr.situation] });
+    }
+    bloc(evs.length >= 2 ? "note.bouge.deux" : evs.length === 1 ? "note.bouge.un" : "note.bouge.rien");
+    const e0 = x.s?.echeances[0];
+    const occ = x.s?.derniere_occasion;
+    if (e0 && !(occ && occ.date && occ.date === e0.date)) bloc("note.dates.echeance");
+    if (occ) bloc("note.dates.derniere");
+    bloc("note.action");
+    bloc(limites ? "note.limites" : "note.limites.defaut");
+  } catch (err) {
+    console.warn(`${d.id} : gabarit de X3 inutilisable (${String(err)}), gabarit intégré`);
+    return null;
+  }
+  return morceaux.join(" ");
 }
 
 async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: string; fautifs: string[]; verifie: boolean; mots: number }> {
@@ -236,19 +307,35 @@ async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: str
   const t = lire<Texte>(p("texte"), "texte", limites);
   const groupes = lire<Groupes>(dataPath(null, "groupes", undefined, SOURCE), "groupes", []);
   const deputes = lire<Deputes>(dataPath(null, "deputes", undefined, SOURCE), "deputes", []);
+  const n = lire<Nouveautes>(p("nouveautes"), "nouveautes", limites);
+  const e = lire<Etat>(p("etat"), "etat", limites);
   const f = construireFaits(d, v, s, a, t, groupes, deputes, limites);
+  // Ce qui a bougé (nouveautes.json, déjà trié par importance) : les deux premiers événements datés au plus tard à la référence.
+  const EFFET: Record<string, string> = { renforce: "favorable au client", affaiblit: "défavorable au client", neutre: "sans effet sur le verdict" };
+  for (const ev of (n?.evenements ?? []).filter((x) => !d.date_reference || x.date <= d.date_reference).slice(0, 2)) {
+    const ph = `Nouveau le ${dateFr(ev.date)} : ${min1(ev.titre.replace(/\.$/, ""))} (${EFFET[ev.effet]}).`;
+    f.phrases.push(ph);
+    f.prios.push(3);
+    f.chiffres.push(ev.date, ...nombresDe(ph).filter((c) => !f.chiffres.includes(c)));
+    f.sources.push({ label: ev.titre, url: ev.url });
+  }
   if (d.date_reference) f.limites.unshift(`Rejoué à la date de référence du ${dateFr(d.date_reference)}`);
-  const autorises = [...new Set([...f.chiffres, ...(d.date_reference ? [d.date_reference] : [])])];
+  const autorises: string[] = [...new Set([...f.chiffres, ...(d.date_reference ? [d.date_reference] : [])])];
 
-  const r = await redigerVerifie(promptNote(d, f), autorises, () => gabarit(d, f));
+  const limitesTexte = f.limites.length ? f.limites.join(" ; ") + "." : "";
+  // Gabarit : celui de X3 s'il s'applique, sinon le gabarit intégré. Ses nombres viennent des fichiers sources.
+  const gx3 = gabaritX3(d, { v, s, a, n, e }, limitesTexte);
+  const texteGabarit = gx3 ?? gabaritIntegre(d, f);
+  if (gx3) autorises.push(...nombresDe(gx3).filter((c) => !autorises.includes(c)), ...[s?.derniere_occasion?.date, s?.echeances[0]?.date, ...(n?.evenements ?? []).slice(0, 2).map((ev) => ev.date)].filter((c): c is string => !!c));
+  const r = await redigerVerifie(promptNote(d, f), autorises, texteGabarit);
   const metaSources = dedoublonnerSources([...(v?.meta.sources ?? []), ...(t?.meta.sources ?? [])]);
   const sources = dedoublonnerSources(f.sources).slice(0, 8);
-  const limitesTexte = f.limites.length ? f.limites.join(" ; ") + "." : "Aucune limite signalée par les fichiers sources.";
+  const limitesNote = limitesTexte || "Aucune limite signalée par les fichiers sources.";
   const note: Note = {
     meta: {
       generated_at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
       sources: metaSources.length ? metaSources : sources,
-      limits: limitesTexte,
+      limits: limitesNote,
       producer: "pipeline/note",
       dossier_id: d.id,
     },
@@ -257,7 +344,7 @@ async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: str
     texte: r.texte,
     chiffres_utilises: r.chiffres_utilises,
     sources,
-    limites: limitesTexte,
+    limites: limitesNote,
     mode: r.mode,
     modele: r.modele,
     verifie: r.verifie,
