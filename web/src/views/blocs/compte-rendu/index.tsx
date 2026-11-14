@@ -106,9 +106,9 @@ function nettoyerTexte(texte: string) {
 
 function structurerTexte(texte: string) {
   const phrases = texte.match(/[^.!?]+(?:[.!?]+(?=\s|$)|$)/g)?.map((p) => p.trim()).filter(Boolean) ?? [texte];
-  const essentiel = phrases[0] ?? texte;
+  const essentiel = phrases.slice(0, 2).join(" ") || texte;
   const paragraphes: string[] = [];
-  for (let i = 1; i < phrases.length; i += 2) paragraphes.push(phrases.slice(i, i + 2).join(" "));
+  for (let i = 2; i < phrases.length; i += 2) paragraphes.push(phrases.slice(i, i + 2).join(" "));
   return { essentiel, paragraphes };
 }
 

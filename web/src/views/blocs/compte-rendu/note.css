@@ -22,16 +22,16 @@
 .note-objectif { max-width: 78ch; margin: 18px auto 0; color: var(--text-2); font-size: 12px; line-height: 1.55; }
 
 .note-essential {
-  max-width: 78ch; margin: 24px auto 0; padding: 0 0 20px 18px;
-  border-bottom: 1px solid var(--border-soft); border-left: 2px solid var(--text);
+  max-width: 78ch; margin: 20px auto 0; padding: 0 0 18px;
+  border-bottom: 1px solid var(--border-soft);
 }
 .note-essential-label {
   display: block; margin-bottom: 8px; color: var(--text-3); font-size: 10px;
   font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
 }
 .note-essential p, .note-essential-text {
-  margin: 0; color: var(--text); font-size: clamp(17px, 1.65vw, 20px);
-  font-weight: 560; letter-spacing: -.012em; line-height: 1.5;
+  margin: 0; color: var(--text); font-size: clamp(16px, 1.35vw, 18px);
+  font-weight: 600; letter-spacing: -.008em; line-height: 1.55;
 }
 
 .note-body, .note-text, .note-body-paragraphs, .note-editor, .note-local-hint {
