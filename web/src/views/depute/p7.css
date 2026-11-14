@@ -1,0 +1,225 @@
+/* Styles locaux de la session P7 (bloc Action, bloc Compte rendu, page Député).
+   Variables de tokens.css seulement ; aucun liseré coloré, aucune pastille. */
+
+.p7-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.p7-cols-2 {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.p7-col h4,
+.p7-section h4 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--fs-base);
+  font-weight: 600;
+}
+
+.p7-col h4 .text-2 {
+  font-weight: 400;
+  margin-left: var(--space-2);
+}
+
+.p7-section {
+  margin-top: var(--space-6);
+}
+
+.p7-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.p7-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  padding: var(--space-2) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.p7-item-click {
+  cursor: pointer;
+}
+
+.p7-item-click:hover,
+.p7-item-click:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.p7-item-muted {
+  background: var(--muted-row);
+  color: var(--text-2);
+}
+
+.p7-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.p7-ligne .p7-droite {
+  margin-left: auto;
+}
+
+.p7-nom {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.p7-item-muted .p7-nom {
+  color: var(--text-2);
+}
+
+.p7-score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.p7-citation {
+  margin: 0;
+  font-style: italic;
+  color: var(--text);
+}
+
+.p7-vide {
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+}
+
+.p7-decideurs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-2);
+}
+
+.p7-redaction {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+}
+
+.p7-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.p7-org {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0 var(--space-2);
+  font-size: var(--fs-sm);
+  color: var(--text);
+}
+
+.p7-org .text-2 {
+  margin-left: var(--space-1);
+}
+
+/* Compte rendu */
+.p7-rappel {
+  margin: 0 0 var(--space-3);
+  color: var(--text-2);
+}
+
+.p7-texte {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  max-width: 80ch;
+}
+
+.p7-chiffre {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.p7-sources {
+  margin: var(--space-3) 0 0;
+  padding-left: var(--space-6);
+  font-size: var(--fs-sm);
+}
+
+.p7-limites {
+  margin: var(--space-2) 0 0;
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+}
+
+.p7-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.p7-btn {
+  font: inherit;
+  font-size: var(--fs-sm);
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-1) var(--space-3);
+  cursor: pointer;
+}
+
+.p7-btn:hover,
+.p7-btn:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+/* Page Député */
+.p7-depute-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.p7-depute-head h1 {
+  margin: 0;
+  font-size: var(--fs-xl);
+}
+
+.p7-depute-head .p7-droite {
+  margin-left: auto;
+}
+
+.p7-synthese {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-4) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.p7-synthese dt {
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+}
+
+.p7-synthese dd {
+  margin: 0 0 var(--space-2);
+}

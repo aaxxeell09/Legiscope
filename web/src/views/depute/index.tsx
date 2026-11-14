@@ -1,20 +1,253 @@
 import { Link, useParams } from "react-router-dom";
-import { Meta } from "../../components";
-import { metaExemple } from "../../lib/meta-exemple";
+import type { Action, DeputeAction, Fiche, FichesIndex } from "@contracts/index";
+import { Chargement, Erreur, Meta, Pourquoi } from "../../components";
+import { useData } from "../../lib/data";
+import { formatDate, formatProba } from "../../lib/format";
+import { useDossier } from "../../lib/config";
+import { FONDEMENT, GROUPE_ACTION, LIEU, ROLE_AUDITION, Redaction, SORT, TYPE_ORG, Tag, useAnnuaire, type CleGroupeAction } from "./commun";
+import "./p7.css";
 
-/** Fiche d'un député sur un dossier : composant vide, remplacé par la session propriétaire. */
+/** Fiche d'un député sur un dossier, ouverte depuis le bloc Action. */
 export default function DeputeView() {
   const { id = "", pa = "" } = useParams<{ id: string; pa: string }>();
+  const dossier = useDossier(id);
+  // Aucune requête tant que le dossier n'est pas reconnu dans config.json.
+  const connu = dossier.status === "ok" ? id : undefined;
+  const idx = useData<FichesIndex>("fiches_index", connu);
+  const action = useData<Action>("action", connu);
+  const annuaire = useAnnuaire();
+  const retour = (
+    <Link to={`/dossier/${id}`} className="p7-droite">
+      Retour au tableau de bord
+    </Link>
+  );
+
+  if (dossier.status === "inconnu") {
+    return (
+      <div className="view" data-view="depute">
+        <h1>Dossier inconnu</h1>
+        <p className="text-2">« {id} » n'est pas dans config.json.</p>
+        <Link to="/">Revenir au dossier de démonstration</Link>
+      </div>
+    );
+  }
+
+  // Fiche listée seulement si l'index la déclare disponible : jamais de requête vers un fichier absent.
+  const disponible = idx.status === "ok" ? (idx.data?.disponibles.includes(pa) ?? false) : null;
+
+  const dep = annuaire.depute(pa);
+  const nom = annuaire.nom(pa);
+  const classement = trouverClassement(action.data, pa);
+
   return (
     <div className="view" data-view="depute">
-      <div className="view-title">
-        <h1>Député</h1>
-        <span className="text-2">
-          dossier {id}, député {pa}
-        </span>
-        <Link to={`/dossier/${id}`}>Tableau de bord</Link>
-      </div>
-      <Meta meta={metaExemple} />
+      <header className="p7-depute-head">
+        <h1>{nom || pa}</h1>
+        {dep?.groupe_id ? <Tag annuaire={annuaire} groupeId={dep.groupe_id} /> : dep && <span className="text-2">non-inscrit</span>}
+        {dep && (
+          <span className="text-2">
+            département {dep.departement}, {dep.circonscription}
+            {dep.circonscription === 1 ? "re" : "e"} circonscription
+          </span>
+        )}
+        {retour}
+      </header>
+      {classement && (
+        <div className="p7-ligne">
+          <span className="p7-score">{formatProba(classement.d.score)}</span>
+          <span>{GROUPE_ACTION[classement.cle]}</span>
+          <span className="text-2">{classement.d.raison}</span>
+          <span className="text-2">{classement.d.position_connue ? classement.d.fondement.map((f) => FONDEMENT[f]).join(", ") : "position inconnue"}</span>
+          <Pourquoi preuve={classement.d.preuve} />
+        </div>
+      )}
+
+      {(idx.status === "loading" || !connu) && <Chargement quoi="index des fiches" />}
+      {idx.status === "error" && connu && <Erreur message={idx.error ?? "index des fiches illisible"} />}
+      {disponible === false && <FicheAbsente id={id} enCours={idx.data?.absents.includes(pa) ?? false} meta={idx.data?.meta} />}
+      {disponible === true && <FicheContenu dossier={id} pa={pa} />}
     </div>
   );
+}
+
+function trouverClassement(a: Action | undefined, pa: string): { cle: CleGroupeAction; d: DeputeAction } | null {
+  if (!a) return null;
+  for (const cle of ["actionnables", "allies", "perdus"] as const) {
+    const d = a.groupes[cle].find((x) => x.depute_id === pa);
+    if (d) return { cle, d };
+  }
+  return null;
+}
+
+function FicheAbsente({ id, enCours, meta }: { id: string; enCours: boolean; meta: FichesIndex["meta"] | undefined }) {
+  return (
+    <section className="p7-section">
+      <h2>{enCours ? "Fiche en cours" : "Pas de fiche pour ce député sur ce dossier"}</h2>
+      <p>
+        <Link to={`/dossier/${id}`}>Retour au tableau de bord</Link>
+      </p>
+      <Meta meta={meta} />
+    </section>
+  );
+}
+
+function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
+  const r = useData<Fiche>("fiche", dossier, pa);
+  if (r.status === "loading") return <Chargement quoi="fiche" />;
+  if (r.status === "error") return <Erreur message={r.error ?? "fiche illisible"} />;
+  const f = r.data!;
+  const c = f.couverture;
+  const s = f.synthese;
+
+  return (
+    <>
+      <section className="p7-synthese" aria-label="Synthèse">
+        {s ? (
+          <>
+            <dl style={{ margin: 0 }}>
+              <dt>Position probable</dt>
+              <dd>{s.position_probable}</dd>
+              <dt>Argument à présenter</dt>
+              <dd>{s.argument}</dd>
+            </dl>
+            <Redaction mode={s.mode} verifie={s.verifie} modele={s.modele} date={s.date} />
+          </>
+        ) : (
+          <span className="text-2">synthèse en cours</span>
+        )}
+      </section>
+
+      <div className="p7-cols">
+        <div className="p7-col">
+          <h4>
+            Auditions<span className="text-2">{f.auditions.length}</span>
+          </h4>
+          {f.auditions.length === 0 ? (
+            <div className="p7-vide">
+              aucune audition trouvée · {c.rapports_avec_liste} sur {c.rapports_total} rapports publient la liste des personnes entendues
+            </div>
+          ) : (
+            <ul className="p7-list">
+              {f.auditions.map((a, i) => (
+                <li key={`${a.date}-${i}`} className="p7-item">
+                  <div className="p7-ligne">
+                    <span>{formatDate(a.date)}</span>
+                    <span className="text-2">{ROLE_AUDITION[a.role]}</span>
+                    {a.rapport_url && (
+                      <a className="p7-droite" href={a.rapport_url} target="_blank" rel="noreferrer">
+                        rapport
+                      </a>
+                    )}
+                  </div>
+                  <div className="p7-tags">
+                    {a.organisations.map((o) => (
+                      <span key={o.nom} className="p7-org">
+                        {o.nom}
+                        <span className="text-2">{TYPE_ORG[o.type]}</span>
+                      </span>
+                    ))}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        <div className="p7-col">
+          <h4>
+            Débats<span className="text-2">{f.debats.length}</span>
+          </h4>
+          {f.debats.length === 0 ? (
+            <div className="p7-vide">aucune intervention trouvée · {c.comptes_rendus_lus} comptes rendus lus</div>
+          ) : (
+            <ul className="p7-list">
+              {f.debats.map((d, i) => (
+                <li key={`${d.url}-${i}`} className="p7-item">
+                  <div className="p7-ligne">
+                    <span>{formatDate(d.date)}</span>
+                    <span className="text-2">{LIEU[d.lieu]}</span>
+                    <a className="p7-droite" href={d.url} target="_blank" rel="noreferrer">
+                      compte rendu
+                    </a>
+                  </div>
+                  <p className="p7-citation">« {d.citation} »</p>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        <div className="p7-col">
+          <h4>
+            Amendements<span className="text-2">{f.amendements.length}</span>
+          </h4>
+          {f.amendements.length === 0 ? (
+            <div className="p7-vide">aucun amendement déposé ou cosigné sur ce texte</div>
+          ) : (
+            <ul className="p7-list">
+              {f.amendements.map((a) => (
+                <li key={a.id} className="p7-item">
+                  <div className="p7-ligne">
+                    <a href={a.url} target="_blank" rel="noreferrer">
+                      n° {numeroAmendement(a.id)}
+                    </a>
+                    <span className="text-2">{a.role}</span>
+                    <span className="p7-droite">{SORT[a.sort]}</span>
+                  </div>
+                  <div>{a.resume}</div>
+                  {a.travaille_avec.length > 0 && (
+                    <div className="p7-ligne">
+                      <span className="text-2">travaillé avec</span>
+                      <span className="p7-tags">
+                        {a.travaille_avec.map((o) => (
+                          <span key={o} className="p7-org">
+                            {o}
+                          </span>
+                        ))}
+                      </span>
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+
+      <section className="p7-section">
+        <h4>
+          HATVP<span className="text-2" style={{ marginLeft: 8 }}>{f.hatvp.length}</span>
+        </h4>
+        {f.hatvp.length === 0 ? (
+          <div className="p7-vide">aucune organisation déclarée sur ce texte</div>
+        ) : (
+          <ul className="p7-list">
+            {f.hatvp.map((o) => (
+              <li key={o.hatvp_id} className="p7-item">
+                <div className="p7-ligne">
+                  <a href={o.fiche_url} target="_blank" rel="noreferrer" className="p7-nom">
+                    {o.nom}
+                  </a>
+                  <span className="text-2">{TYPE_ORG[o.type]}</span>
+                  <span className="text-2 p7-droite">{o.actions.join(", ")}</span>
+                </div>
+                <div className="text-2">{o.objet}</div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
+      <p className="p7-limites">
+        Couverture : {c.rapports_avec_liste} sur {c.rapports_total} rapports avec la liste des personnes entendues, {c.comptes_rendus_lus} comptes rendus lus
+      </p>
+      <Meta meta={f.meta} />
+    </>
+  );
+}
+
+/** « AMANR5L17PO838901B1906P1D1N000806 » → « 806 » ; un identifiant court reste tel quel. */
+function numeroAmendement(id: string): string {
+  const m = id.match(/N0*(\d+)$/);
+  return m ? m[1] : id;
 }
