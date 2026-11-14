@@ -238,9 +238,6 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
         {f.hatvp.length > 6 && <button type="button" className="p7-voir-plus" onClick={() => setOrganisationsOuvertes((v) => !v)}>{organisationsOuvertes ? "Réduire" : `Voir toutes les organisations (${f.hatvp.length})`}</button>}
       </section>
 
-      <p className="p7-limites">
-        Couverture : {c.rapports_avec_liste} sur {c.rapports_total} rapports avec la liste des personnes entendues, {c.comptes_rendus_lus} comptes rendus lus
-      </p>
       <Meta meta={f.meta} />
     </>
   );

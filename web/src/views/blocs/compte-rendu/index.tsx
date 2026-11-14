@@ -39,18 +39,6 @@ function CompteRenduContenu({ n }: { n: Note }) {
         <p className="note-objectif">Objectif suivi · {principal.texte}</p>
         {edition ? <><textarea className="note-editor" value={texte} onChange={(e) => setTexte(e.target.value)} aria-label="Modifier localement le compte rendu" /><p className="note-local-hint">Modification locale uniquement — les données sources ne sont pas enregistrées.</p></> : <p className="p7-texte note-text">{texte === n.texte ? morceaux : texte}</p>}
       </article>
-      {n.sources.length > 0 && (
-        <details className="note-sources"><summary>Sources consultables <span>{n.sources.length}</span></summary><ol className="p7-sources">
-          {n.sources.map((s, i) => (
-            <li key={`${s.url}-${i}`}>
-              <a href={s.url} target="_blank" rel="noreferrer">
-                {s.label}
-              </a>
-            </li>
-          ))}
-        </ol></details>
-      )}
-      {n.limites && <p className="p7-limites">{n.limites}</p>}
       <div className="p7-actions note-actions">
         <BoutonCopier note={n} texte={texte} />
         <Redaction mode={n.mode} verifie={n.verifie} modele={n.modele} date={n.meta.generated_at.slice(0, 10)} />
