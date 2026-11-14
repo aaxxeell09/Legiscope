@@ -89,10 +89,11 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
   const vp = v?.verdicts.find((x) => x.objectif_rang === 1);
   if (vp) {
     let ph = `Objectif principal, « ${d.objectifs[0].texte} » : ${SITUATION[vp.situation]}`;
-    if (vp.score !== null) ph += `, chances estimées par l'outil ${pct(vp.score)}`;
+    // Complément 4 : le score est un rapport de forces, jamais un pourcentage seul.
+    if (vp.score !== null) ph += `, ${pct(vp.score)} des sièges favorables à l'objectif`;
     ph += `, tendance ${TENDANCE[vp.tendance]}.`;
     ajouter(1, ph, vp.score !== null ? [String(vp.score)] : []);
-    if (vp.lecture.verifie) ajouter(2, vp.lecture.texte, vp.lecture.chiffres_utilises);
+    if (vp.lecture.verifie && !interditsAbsolus(vp.lecture.texte).length) ajouter(2, vp.lecture.texte, vp.lecture.chiffres_utilises);
     const fav = vp.favorable[0];
     const blq = vp.bloquant[0];
     if (fav) ajouter(6, `Ce qui joue pour le client : ${min1(fav.titre).replace(/\.$/, "")}.`, [], fav.preuve.sources[0]);
@@ -139,7 +140,7 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
     if (occ?.date) ajouter(3, `Dernière occasion d'agir : ${dateFr(occ.date)}, ${min1(occ.titre.replace(/\.$/, ""))}.`, [occ.date], { label: occ.titre, url: occ.url });
     // Une prédiction Orcet sur un amendement n'est jamais une issue : ces probables sont écartés (garde-fou).
     const prob = s.probables.find((p) => p.proba !== null && !/amendement|n° \d/i.test(p.titre));
-    if (prob) ajouter(8, `Issue la plus probable selon l'outil : ${prob.titre.replace(/\.$/, "")} (${pct(prob.proba!)}).`, [String(prob.proba)]);
+    if (prob) ajouter(8, `Issue la plus probable selon l'outil : ${min1(prob.titre.replace(/\.$/, ""))}.`);
   } else limites.push("prochaines dates pas encore disponibles");
 
   // 4. Sur qui agir.
@@ -162,9 +163,23 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
 }
 
 /** Formulations interdites (rendu final) ou non fondées sur les faits fournis. Renvoie les extraits fautifs. */
+/**
+ * Complément 4 (14 h 05) : interdits même s'ils figurent dans un fichier source.
+ * « probabilité », « chances », et un pourcentage qui n'est ni « des sièges favorables à l'objectif »
+ * ni une moyenne Orcet « de votes pour » (donc jamais un pourcentage seul à côté de favorable ou défavorable).
+ */
+function interditsAbsolus(texte: string): string[] {
+  const fautes: string[] = [];
+  for (const re of [/probabilit\S*/i, /\bchances?\b/i]) {
+    const m = texte.match(re);
+    if (m) fautes.push(m[0]);
+  }
+  for (const m of texte.matchAll(/\d+(?:[.,]\d+)?\s?%(?!\s(des sièges (sont )?favorables|de votes pour))[^.;]{0,40}/g)) fautes.push(m[0].trim());
+  return fautes;
+}
+
 function interdits(texte: string, f: Faits): string[] {
-  const absolus: RegExp[] = [
-    /chances? d'adoption/i, /probabilit\S* (que la loi|d'adoption)/i, /influençable/i,
+  const absolus: RegExp[] = [/influençable/i, /(décision|issue) (finale|définitive)(?! n)/i, /(?<!n'est pas )l'issue finale/i,
     /\b\d{1,2} ?h ?\d{2}\b/, /(rejet|adoption) (probable|improbable|quasi certain)/i, /perspectives? d'adoption/i,
     /rend\S* (leur|son|sa|un|une) (rejet|adoption)/i, /(sera|seront|devrait être) (adopté|rejeté)e?s?/i, /le plus probable à être/i, /dans les faits|faits fournis|faits vérifiés/i,
   ];
@@ -179,10 +194,29 @@ function interdits(texte: string, f: Faits): string[] {
     .map((n) => n.replace(/\(.*?\)/g, "").trim())
     .filter((n) => n.length > 3);
   const faits = f.phrases.join(" ").toLowerCase();
-  const fautes: string[] = [];
+  const fautes: string[] = [...interditsAbsolus(texte)];
   for (const re of absolus) {
     const m = texte.match(re);
     if (m && !faits.includes(m[0].toLowerCase())) fautes.push(m[0]);
+  }
+  // Position des décideurs recopiée sans inversion (« X (contre la mesure) » ne devient jamais « X soutient la mesure »).
+  const dec = f.phrases.find((p) => p.startsWith("Ceux qui décident"));
+  const paires = dec ? [...dec.matchAll(/([^:,]+?) \((pour|contre) la mesure\)/g)].map((m) => ({ nom: m[1].trim(), pos: m[2] })) : [];
+  for (const { nom, pos } of paires) {
+    for (const phrase of texte.split(/(?<=\.)\s/)) {
+      const i = phrase.indexOf(nom);
+      if (i < 0) continue;
+      let suite = phrase.slice(i + nom.length);
+      for (const autre of paires) if (autre.nom !== nom && suite.includes(autre.nom)) suite = suite.slice(0, suite.indexOf(autre.nom));
+      const inverse = pos === "contre" ? /soutien\S*|pour la mesure|favorables? à la mesure/i : /contre la mesure|oppos\S*/i;
+      const m = suite.match(inverse);
+      if (m) fautes.push(`${nom} ${m[0]}`);
+    }
+  }
+  // Mesure et texte sont deux états distincts (complément 6) : « la mesure a été rejetée/adoptée » doit venir d'un fait.
+  {
+    const m = texte.match(/la mesure a été (rejetée|adoptée)/i);
+    if (m && !f.phrases.some((p) => /mesure/i.test(p) && p.toLowerCase().includes(m[1].toLowerCase()))) fautes.push(m[0]);
   }
   for (const re of conseils) {
     const m = texte.match(re);
@@ -244,7 +278,7 @@ function promptNote(d: Dossier, f: Faits): { system: string; user: string } {
       "Tu décris, tu ne conseilles pas : aucune phrase ne dit au cabinet quoi faire, qui cibler ou sur qui agir, sauf la liste de députés fournie. " +
       "Tu n'utilises que les faits fournis, tu n'inventes rien. Tu n'écris aucun nombre absent de la liste autorisée. " +
       "Écris les probabilités en pourcentage (0.24 s'écrit 24 %). Une prédiction Orcet est une moyenne des probabilités individuelles de voter pour, jamais une probabilité d'adoption. " +
-      "N'en déduis jamais qu'un amendement ou la mesure sera adopté ou rejeté, et n'écris jamais « chances d'adoption ». " +
+      "N'en déduis jamais qu'un amendement ou la mesure sera adopté ou rejeté, Tu n'écris jamais « probabilité » ni « chances ». Le score du verdict s'écrit toujours « X % des sièges favorables à l'objectif », jamais un pourcentage seul à côté de favorable ou défavorable. " +
       "Tu ne donnes aucun conseil ni aucune cible qui ne figure pas mot pour mot dans les faits ; si aucun député n'est cité, tu n'en désignes pas. " +
       "Pas d'heure, seulement des dates. Un vote en commission n'est pas une adoption ; l'Assemblée n'est pas l'issue finale. Ne mélange jamais rejeté, retiré, tombé et non examiné.",
     user:

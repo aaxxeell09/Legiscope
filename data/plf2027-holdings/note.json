@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:58:30Z",
+    "generated_at": "2026-11-14T13:16:42Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -45,19 +45,25 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Verdict proposé : l'objectif principal d'empêcher la taxe sur les holdings et la fortune improductive est en bonne voie, avec des chances estimées à 66 % selon l'outil. La situation est favorable car la mesure, absente du texte du gouvernement et rejetée par l'Assemblée, est contestée par 7 groupes contre 4 au Sénat en première lecture. Ce qui a bougé : le 4 novembre 2026, l'amendement n° 40 (SOC) a été adopté, ce qui est favorable au client, tandis que 2 amendements identiques (n° 872, n° 2618) de LFI-NFP ont été rejetés, ce qui est défavorable. Les prochaines dates et la dernière occasion d'agir restent à préciser, mais l'Assemblée n'est pas l'issue finale. Sur qui agir : ceux qui décident sont Philippe Juvin (contre la mesure) et Éric Coquerel (pour la mesure). Les députés sur qui agir en priorité sont Christophe Blanchet (DEM), Paul-André Colombani (LIOT) et Loïc Prud'homme (LFI-NFP). Limites : amendements sans prédiction Orcet exclus des comptes.",
+  "texte": "Afep, mesure suivie : Taxe sur la fortune improductive (article 3) et taxe de 0,5 % sur les holdings patrimoniales (n° 3140). Étape : Première lecture : rejeté par l'Assemblée le 2026-11-04 ; Sénat, première lecture. Verdict proposé sur l'objectif principal (« Empêcher la taxe sur les holdings et la fortune improductive ») : situation favorable, tendance stable, confiance élevée. Au Sénat, en première lecture, la mesure est favorable à l'Afep car elle est absente du texte du gouvernement et rejetée par 7 groupes, dont le rapporteur général, face à 4 groupes opposés. Repli « Limiter son assiette » : situation favorable. Repli « Repousser son entrée en vigueur » : situation favorable. Ce qui a bougé : Séance publique, première lecture : rejeté (scrutin n° 9759) (4 novembre 2026, favorable au client) ; 2 amendements identiques (n° 874, n° 2620) (LFI-NFP) rejetés (scrutin n° 9136) : Avec cet amendement, les députés du groupe LFI proposent d’exclure les sociétés holdings… (27 octobre 2026, défavorable au client). Prochaine date : Commission mixte paritaire (date non fixée). Dernière occasion d'agir : Examen au Sénat : prochaine occasion d'obtenir la suppression ou la réduction de la mesure, avant le retour du texte à l'Assemblée (date non fixée). Députés sur qui agir : 15 ; alliés à protéger : 15 ; perdus : 15. Limites : amendements sans prédiction Orcet exclus des comptes.",
   "chiffres_utilises": [
-    "0.66",
-    "66",
     "4",
     "7",
     "2026-11-04",
     "2026",
-    "40",
+    "9759",
+    "2026-10-27",
+    "27",
     "2",
-    "872",
-    "2618",
-    "04"
+    "874",
+    "2620",
+    "9136",
+    "3",
+    "0.5",
+    "3140",
+    "11",
+    "04",
+    "15"
   ],
   "sources": [
     {
@@ -69,24 +75,20 @@
       "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8863"
     },
     {
-      "label": "Amendement n° 1965",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001965"
+      "label": "Intervention du 2026-10-16",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
     },
     {
-      "label": "Amendement n° 2765",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002765"
+      "label": "Séance publique, première lecture : rejeté (scrutin n° 9759)",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
     },
     {
-      "label": "Amendement n° 40 (SOC) adopté : Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des…",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO420120B3210P2D1N000040"
-    },
-    {
-      "label": "2 amendements identiques (n° 872, n° 2618) (LFI-NFP) rejetés : Par cet amendement, le groupe LFI prévoit de supprimer la niche Copé, niche permettant…",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000872"
+      "label": "2 amendements identiques (n° 874, n° 2620) (LFI-NFP) rejetés (scrutin n° 9136) : Avec cet amendement, les députés du groupe LFI proposent d’exclure les sociétés holdings…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136"
     }
   ],
   "limites": "amendements sans prédiction Orcet exclus des comptes.",
-  "mode": "llm",
-  "modele": "Qwen/Qwen3.8-27B",
+  "mode": "gabarit",
+  "modele": null,
   "verifie": true
 }
