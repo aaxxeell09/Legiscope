@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 import { Link, NavLink, matchPath, useLocation } from "react-router-dom";
 import { useConfig } from "../lib/config";
 
@@ -14,6 +15,8 @@ export function TopBar() {
   const [dossiersOpen, setDossiersOpen] = useState(false);
   const selectorRef = useRef<HTMLDivElement>(null);
   const selectorButtonRef = useRef<HTMLButtonElement>(null);
+  const selectorMenuRef = useRef<HTMLDivElement>(null);
+  const [menuPosition, setMenuPosition] = useState<{ top: number; left: number; width: number; maxHeight: number } | null>(null);
 
   const dossiers = config?.dossiers ?? [];
   // TopBar est hors de <Routes>, donc useParams() est vide : on lit l'URL.
@@ -24,6 +27,29 @@ export function TopBar() {
   const pageSources = location.pathname === "/sources";
   const close = () => { setOpen(false); setDossiersOpen(false); };
 
+  const positionMenu = () => {
+    const rect = selectorButtonRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    const margin = 12;
+    const width = Math.min(380, window.innerWidth - margin * 2);
+    const left = Math.min(Math.max(margin, rect.left), window.innerWidth - width - margin);
+    const availableBelow = window.innerHeight - rect.bottom - margin - 8;
+    const availableAbove = rect.top - margin - 8;
+    const openAbove = availableBelow < 220 && availableAbove > availableBelow;
+    const maxHeight = Math.max(96, Math.min(420, openAbove ? availableAbove : availableBelow));
+    const top = openAbove ? Math.max(margin, rect.top - maxHeight - 7) : rect.bottom + 7;
+    setMenuPosition({ top, left, width, maxHeight });
+  };
+
+  const toggleDossiers = () => {
+    if (dossiersOpen) {
+      setDossiersOpen(false);
+      return;
+    }
+    positionMenu();
+    setDossiersOpen(true);
+  };
+
   useEffect(() => {
     setDossiersOpen(false);
   }, [location.pathname]);
@@ -31,18 +57,24 @@ export function TopBar() {
   useEffect(() => {
     if (!dossiersOpen) return;
     const onPointerDown = (event: PointerEvent) => {
-      if (!selectorRef.current?.contains(event.target as Node)) setDossiersOpen(false);
+      const target = event.target as Node;
+      if (!selectorRef.current?.contains(target) && !selectorMenuRef.current?.contains(target)) setDossiersOpen(false);
     };
     const onEscape = (event: globalThis.KeyboardEvent) => {
       if (event.key !== "Escape") return;
       setDossiersOpen(false);
       selectorButtonRef.current?.focus();
     };
+    const onViewportChange = () => positionMenu();
     document.addEventListener("pointerdown", onPointerDown);
     document.addEventListener("keydown", onEscape);
+    window.addEventListener("resize", onViewportChange);
+    window.addEventListener("scroll", onViewportChange, true);
     return () => {
       document.removeEventListener("pointerdown", onPointerDown);
       document.removeEventListener("keydown", onEscape);
+      window.removeEventListener("resize", onViewportChange);
+      window.removeEventListener("scroll", onViewportChange, true);
     };
   }, [dossiersOpen]);
 
@@ -50,6 +82,7 @@ export function TopBar() {
     if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
     event.preventDefault();
     if (!dossiersOpen) {
+      positionMenu();
       setDossiersOpen(true);
       const direction = event.key;
       window.requestAnimationFrame(() => {
@@ -58,7 +91,7 @@ export function TopBar() {
       });
       return;
     }
-    const items = [...event.currentTarget.querySelectorAll<HTMLAnchorElement>(".dossier-option")];
+    const items = [...selectorMenuRef.current?.querySelectorAll<HTMLAnchorElement>(".dossier-option") ?? []];
     if (items.length === 0) return;
     const index = items.indexOf(document.activeElement as HTMLAnchorElement);
     const next = event.key === "ArrowDown" ? (index + 1) % items.length : (index - 1 + items.length) % items.length;
@@ -86,7 +119,7 @@ export function TopBar() {
               aria-expanded={dossiersOpen}
               aria-haspopup="menu"
               aria-controls="dossier-selector-menu"
-              onClick={() => setDossiersOpen((value) => !value)}
+              onClick={toggleDossiers}
             >
               <span className="dossier-selector-copy">
                 <strong>{courant?.client ?? "Choisir un dossier"}</strong>
@@ -94,9 +127,16 @@ export function TopBar() {
               </span>
               <span className="dossier-selector-chevron" aria-hidden="true">⌄</span>
             </button>
-            {dossiersOpen && (
-              <div id="dossier-selector-menu" className="dossier-selector-menu" role="menu" aria-label="Choisir le dossier actif">
-                {dossiers.map((d) => (
+            {dossiersOpen && menuPosition && createPortal(
+              <div
+                ref={selectorMenuRef}
+                id="dossier-selector-menu"
+                className="dossier-selector-menu"
+                role="menu"
+                aria-label="Choisir le dossier actif"
+                style={menuPosition}
+              >
+                {dossiers.length === 0 ? <p className="dossier-selector-empty">Aucun dossier disponible</p> : dossiers.map((d) => (
                   <Link
                     key={d.id}
                     to={`/dossier/${d.id}`}
@@ -105,12 +145,12 @@ export function TopBar() {
                     aria-current={d.id === dossier ? "page" : undefined}
                     onClick={close}
                   >
-                    <strong>{d.client}</strong>
-                    <span>{d.label}</span>
-                    {d.id === dossier && <span className="dossier-option-check" aria-hidden="true">✓</span>}
+                    <span className="dossier-option-copy"><strong>{d.client}</strong><span>{d.label}</span></span>
+                    {d.id === dossier && <span className="dossier-option-status">Actif</span>}
                   </Link>
                 ))}
-              </div>
+              </div>,
+              document.body,
             )}
           </div>
           <div className="sidebar-label sidebar-label-navigation">Navigation du dossier</div>
