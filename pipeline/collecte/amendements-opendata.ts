@@ -21,15 +21,21 @@ for (const dos of cfg.dossiers) {
     const c = a.corps?.contenuAuteur ?? {};
     const dispositif = texte(c.dispositif), expose = texte(c.exposeSommaire);
     const div = a.pointeurFragmentTexte?.division ?? {};
-    if (!garde(dispositif + " " + expose + " " + (div.titre ?? ""))) continue;
+    // Gardé si mots-clés du sujet, ou si l'amendement porte sur l'article de la mesure (quel que soit l'auteur).
+    const surArticle = !!dos.mesure?.article && div.type === "ARTICLE" && div.avant_A_Apres === "A" && String(div.titre ?? "").toUpperCase() === `ARTICLE ${dos.mesure.article}`;
+    if (!surArticle && !garde(dispositif + " " + expose + " " + (div.titre ?? ""))) continue;
     const au = a.signataires?.auteur ?? {}; const cv = a.cycleDeVie ?? {};
+    const auteurType = au.typeAuteur === "Gouvernement" ? "gouvernement" : au.typeAuteur === "Rapporteur" ? "commission" : "depute";
+    const organeRap = nil(au.auteurRapporteurOrganeRef) ?? null;
     const cos = arr(nil(a.signataires?.cosignataires)?.acteurRef);
     const num = a.identification?.numeroLong;
     const etat = cv.etatDesTraitements?.etat?.libelle ?? null, sousEtat = nil(cv.etatDesTraitements?.sousEtat)?.libelle ?? null;
     out.push({
       id: a.uid, numero: num, numero_ordre: Number(a.identification?.numeroOrdreDepot), texte: a.texteLegislatifRef, examen: a.examenRef,
       organe_examen: a.identification?.prefixeOrganeExamen, article: div.titre ?? null, article_additionnel: div.articleAdditionnel === "true",
-      dispositif, expose, auteur: nil(au.acteurRef) ?? null, type_auteur: au.typeAuteur ?? null, groupe: nil(au.groupePolitiqueRef) ?? null,
+      dispositif, expose, auteur: nil(au.acteurRef) ?? null, type_auteur: au.typeAuteur ?? null, auteur_type: auteurType,
+      auteur_id: auteurType === "gouvernement" ? "GOUVERNEMENT" : auteurType === "commission" ? (organeRap ?? nil(au.acteurRef) ?? null) : (nil(au.acteurRef) ?? null),
+      gouvernement_ref: nil(au.gouvernementRef) ?? null, rapporteur_organe: organeRap, sur_article_mesure: surArticle, groupe: nil(au.groupePolitiqueRef) ?? null,
       auteur_libelle: ent(a.signataires?.libelle ?? ""), signataires: cos, sort: nil(cv.sort) ?? null, etat, sous_etat: sousEtat,
       date_depot: cv.dateDepot ?? null, date_sort: nil(cv.dateSort) ? String(cv.dateSort).slice(0, 10) : null,
       seance_ref: nil(a.seanceDiscussionRef) ?? null,
@@ -44,8 +50,10 @@ for (const dos of cfg.dossiers) {
   writeFileSync(ROOT + `data/raw/${dos.id}/amendements.json`, JSON.stringify({
     source: "opendata", generated_at: nowIso(), texte_id: dos.texte_id, dossier_legislatif: dir, mots_cles: dos.sujet.mots_cles,
     total_texte: tous.length, total_sujet: out.length, par_sort: parSort,
-    limites: "Open data AN (Amendements.json.zip). Pas d'avis du rapporteur ni du gouvernement dans ce format (champs à null). Filtre mots-clés sur dispositif, exposé et titre d'article, sans accents.",
+    limites: "Gardés : mots-clés du sujet, ou amendement sur l'article de la mesure (tous auteurs). auteur_type : depute, gouvernement (auteur_id GOUVERNEMENT), commission (amendement du rapporteur, auteur_id = organe de la commission). Open data AN (Amendements.json.zip). Pas d'avis du rapporteur ni du gouvernement dans ce format (champs à null). Filtre mots-clés sur dispositif, exposé et titre d'article, sans accents.",
     amendements: out }, null, 1));
-  resume[dos.id] = { texte: dos.texte_id, total_texte: tous.length, sujet: out.length, parSort };
+  const nonDep = out.filter((a) => a.auteur_type !== "depute");
+  resume[dos.id] = { texte: dos.texte_id, total_texte: tous.length, sujet: out.length, sur_article: out.filter((a) => a.sur_article_mesure).length, parSort,
+    gouvernement_commission: nonDep.map((a) => `${a.auteur_type} ${a.numero} ${a.article} ${a.date_depot} ${a.sort ?? a.etat}`) };
 }
 console.log(JSON.stringify(resume, null, 1));
