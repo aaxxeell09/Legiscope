@@ -17,7 +17,9 @@
     "auditions": "bun pipeline/auditions/run.ts",
     "debats": "bun pipeline/debats/run.ts",
     "amendements": "bun pipeline/amendements/run.ts",
-    "fiches": "bun pipeline/fiches/run.ts"
+    "fiches": "bun pipeline/fiches/run.ts",
+    "suite": "bun pipeline/suite/run.ts",
+    "verdict": "bun pipeline/pivots/run.ts"
   },
   "dependencies": {
     "cheerio": "^1.2.0",

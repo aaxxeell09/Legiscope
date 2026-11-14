@@ -6,3 +6,5 @@ dist/
 data/raw/
 .DS_Store
 *.log
+
+pipeline/*/.cache/
