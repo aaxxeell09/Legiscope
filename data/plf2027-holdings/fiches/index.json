@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:54:53.195Z",
+    "sources": [],
+    "limits": "2 fiche(s) produite(s) sur 15 pivot(s). Absents : PA607553 : debats manquant ou invalide ; PA840793 : debats manquant ou invalide ; PA841367 : debats manquant ou invalide ; PA841243 : debats manquant ou invalide ; PA335999 : debats manquant ou invalide ; PA796010 : debats manquant ou invalide ; PA795362 : debats manquant ou invalide ; PA795876 : debats manquant ou invalide ; PA842271 : debats manquant ou invalide ; PA793772 : debats manquant ou invalide ; PA842299 : debats manquant ou invalide ; PA721202 : debats manquant ou invalide ; PA841947 : debats manquant ou invalide. Index limité aux pivots de pivots.json (qa/check).",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-holdings"
+  },
+  "disponibles": [
+    "PA2940",
+    "PA722142"
+  ],
+  "absents": [
+    "PA607553",
+    "PA840793",
+    "PA841367",
+    "PA841243",
+    "PA335999",
+    "PA796010",
+    "PA795362",
+    "PA795876",
+    "PA842271",
+    "PA793772",
+    "PA842299",
+    "PA721202",
+    "PA841947"
+  ]
+}
