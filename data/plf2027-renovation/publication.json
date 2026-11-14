@@ -1,7 +1,7 @@
 {
   "version": 1,
   "dossier_id": "plf2027-renovation",
-  "published_at": "2026-11-14T16:09:03.226Z",
+  "published_at": "2026-11-14T16:13:12.565Z",
   "fichiers": {
     "verdict.json": {
       "sha256": "4b3e93c008ffe7e792fbf367f3aa149b341ec3b86bed594ac6f6478c415db11a",
@@ -9,8 +9,8 @@
       "producer": "pipeline/pivots"
     },
     "nouveautes.json": {
-      "sha256": "7c35422a946028a285acd80c503c0a2e849f97b7dec41e640450e6baf8a4dc02",
-      "generated_at": "2026-11-14T16:03:42.406Z",
+      "sha256": "978f0738416c9532d4b91528dba434a37a5562e83aecf9c2240c9c57a6a97cd0",
+      "generated_at": "2026-11-14T16:10:33.633Z",
       "producer": "pipeline/fiches"
     },
     "suite.json": {
@@ -19,8 +19,8 @@
       "producer": "pipeline/suite"
     },
     "action.json": {
-      "sha256": "91153d352274d8ede50435c58951d6e03265da4e84f283086c1c29937a84614e",
-      "generated_at": "2026-11-14T16:03:42.409Z",
+      "sha256": "a0e1fd3f8eb637878d0fbb49e9e63cd15e639b2f5b318d45c0b76454a042ba2c",
+      "generated_at": "2026-11-14T16:10:33.637Z",
       "producer": "pipeline/fiches"
     },
     "note.json": {
@@ -49,8 +49,8 @@
       "producer": "pipeline/collecte"
     },
     "fiches/index.json": {
-      "sha256": "d79656b29fb2d73e340f44b616163082d42cfa80a8d5eaae038f99d5a2eb1b5a",
-      "generated_at": "2026-11-14T16:03:42.179Z",
+      "sha256": "6193b9d05603c1caff4daec86aef951a7f2a3482790d527627f856bf44d11985",
+      "generated_at": "2026-11-14T16:10:31.662Z",
       "producer": "pipeline/fiches"
     }
   }

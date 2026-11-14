@@ -1,7 +1,7 @@
 {
   "version": 1,
   "dossier_id": "plf2027-logement",
-  "published_at": "2026-11-14T16:09:02.954Z",
+  "published_at": "2026-11-14T16:13:12.305Z",
   "fichiers": {
     "verdict.json": {
       "sha256": "1be29c77e70abc27c3ece6c3a0a1f4f2cb37bc8ec1925331dce1a41112d33067",
@@ -9,8 +9,8 @@
       "producer": "pipeline/pivots"
     },
     "nouveautes.json": {
-      "sha256": "ecb85bd697967eccb6e88faa271bb11122da04d3ff37adbbc0c6858aa4c394c5",
-      "generated_at": "2026-11-14T16:03:42.096Z",
+      "sha256": "5f08412af1ea687b956d6b8037dc8672c938dfb693360393e0c34b78572d42f8",
+      "generated_at": "2026-11-14T16:12:02.770Z",
       "producer": "pipeline/fiches"
     },
     "suite.json": {
@@ -19,8 +19,8 @@
       "producer": "pipeline/suite"
     },
     "action.json": {
-      "sha256": "8b34a5c69463a4a49825dfd6a48a4c9ee3047b0bf383a338b20e6ea4adb470fa",
-      "generated_at": "2026-11-14T16:03:42.099Z",
+      "sha256": "5d7d9e531daa3bd5b71349a0963e4f5359d93424709ee98ea56942939fb17d55",
+      "generated_at": "2026-11-14T16:12:20.391Z",
       "producer": "pipeline/fiches"
     },
     "note.json": {
@@ -49,8 +49,8 @@
       "producer": "pipeline/collecte"
     },
     "fiches/index.json": {
-      "sha256": "43d1c0aff1663dc5807ae4c0913a697d5d068ec00f861f6c1dce8ac5eed7cc88",
-      "generated_at": "2026-11-14T16:03:41.861Z",
+      "sha256": "355290c494bd95a3a0f3ae856e951de62209b35c8c0ae88d245daa39fda6ff7d",
+      "generated_at": "2026-11-14T16:12:00.946Z",
       "producer": "pipeline/fiches"
     }
   }
