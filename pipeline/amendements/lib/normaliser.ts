@@ -62,9 +62,10 @@ export function sortUnifie(a: AmendementBrut, dateReference: string | null): { s
   else if (etat.startsWith("Irrecevable")) [sort, libelle] = ["non_examine", `${etat}${sous ? " (" + sous + ")" : ""}`];
   else if (etat === "En traitement" || etat === "A discuter" || etat === "Discuté") [sort, libelle] = ["en_attente", etat];
   else [sort, libelle] = ["en_attente", etat || brut || "inconnu"];
-  if (dateReference && a.date_sort && a.date_sort > dateReference && sort !== "en_attente") {
-    // Rejeu : le sort réel est postérieur à la date de référence, on ne le révèle pas.
-    return { sort: "en_attente", libelle: `En attente au ${dateReference}`, en_attente_par_rejeu: true };
+  // Rejeu : date_reference est lue comme le matin de ce jour (décision du 14 novembre, 14 h 57).
+  // Un sort daté de ce jour-là ou après n'est pas encore connu : en_attente, sans révéler le sort réel.
+  if (dateReference && a.date_sort && a.date_sort >= dateReference && sort !== "en_attente") {
+    return { sort: "en_attente", libelle: `En attente au matin du ${dateReference}`, en_attente_par_rejeu: true };
   }
   return { sort, libelle, en_attente_par_rejeu: false };
 }
