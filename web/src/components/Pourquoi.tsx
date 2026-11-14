@@ -21,7 +21,7 @@ type PourquoiProps = Partial<Justification> & {
  * raisonnement. Clavier : Entrée ou Espace ouvre, Échap ferme, le focus revient
  * sur le bouton.
  */
-export function Pourquoi({ preuve, sources: s0, raisonnement: r0, nature: n0, label = "pourquoi" }: PourquoiProps) {
+export function Pourquoi({ preuve, sources: s0, raisonnement: r0, nature: n0, label = "Voir les sources et le raisonnement" }: PourquoiProps) {
   const sources = preuve?.sources ?? s0 ?? [];
   const raisonnement = preuve?.raisonnement ?? r0 ?? "";
   const nature = preuve?.nature ?? n0;
@@ -61,13 +61,15 @@ export function Pourquoi({ preuve, sources: s0, raisonnement: r0, nature: n0, la
         className="pourquoi-btn"
         aria-expanded={open}
         aria-controls={id}
+        aria-label={label}
+        title="Voir les sources et le raisonnement"
         onClick={() => {
           const r = btnRef.current?.getBoundingClientRect();
           if (r) setAlignRight(r.left > window.innerWidth / 2);
           setOpen((o) => !o);
         }}
       >
-        {label}
+        <span aria-hidden="true">ⓘ</span>
       </button>
       {open && (
         <div id={id} ref={panelRef} className={`pourquoi-panel${alignRight ? " pourquoi-panel-right" : ""}`} role="dialog" aria-label="Pourquoi" tabIndex={-1}>
