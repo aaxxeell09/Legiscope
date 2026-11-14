@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:14:33Z",
+    "generated_at": "2026-11-14T14:15:28Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -45,16 +45,22 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Pour Afep. Verdict proposé : situation favorable, tendance stable, confiance élevée ; 66 % des sièges favorables à l'objectif principal. Au Sénat, la mesure est absente du texte rejeté par l'Assemblée, où 7 groupes contre la mesure pèsent plus lourd que les 4 groupes favorables. Repli « Limiter son assiette » : favorable. Repli « Repousser son entrée en vigueur » : favorable. Nouveauté : Séance publique, première lecture : rejeté (scrutin n° 9759) (4 novembre 2026, favorable au client). Prochaine date : date non fixée. Dernière occasion d'agir : date non fixée. Députés sur qui agir : 15. Limites : amendements sans prédiction Orcet exclus des comptes.",
+  "texte": "Verdict proposé : l'objectif principal est en bonne voie, avec 66 % des sièges favorables à l'objectif, car la tendance reste stable. Au Sénat, la mesure est absente du texte, ce qui est favorable à l'objectif, car 7 groupes y sont hostiles et 12 amendements ont été rejetés. Le 27 octobre 2026, 2 amendements identiques (n° 874, n° 2620) déposés par LFI-NFP ont été rejetés (scrutin n° 9136). Le 4 novembre 2026, la séance publique de première lecture a abouti à un rejet (scrutin n° 9759), favorable au client. La prochaine occasion d'agir est l'examen au Sénat, avant le retour du texte à l'Assemblée. Les étapes suivantes sont la commission mixte paritaire puis la nouvelle lecture à l'Assemblée. Ceux qui décident : Philippe Juvin (contre la mesure), Éric Coquerel (pour la mesure). Députés sur qui agir en priorité : Christophe Blanchet (DEM), Paul-André Colombani (LIOT), Loïc Prud'homme (LFI-NFP). Limites : amendements sans prédiction Orcet exclus des comptes.",
   "chiffres_utilises": [
     "0.66",
     "66",
-    "4",
+    "12",
     "7",
+    "4",
     "2026-11-04",
     "2026",
     "9759",
-    "15"
+    "2026-10-27",
+    "27",
+    "2",
+    "874",
+    "2620",
+    "9136"
   ],
   "sources": [
     {
@@ -87,7 +93,7 @@
     }
   ],
   "limites": "amendements sans prédiction Orcet exclus des comptes.",
-  "mode": "gabarit",
-  "modele": null,
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
   "verifie": true
 }

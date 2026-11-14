@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:14:08Z",
+    "generated_at": "2026-11-14T14:15:17Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -45,11 +45,10 @@
       "position_cible": "contre"
     }
   ],
-  "texte": "Verdict proposé : l'objectif principal d'empêcher le vote de la taxe est mal engagé, avec 23 % des sièges favorables à l'objectif, la tendance se dégradant. À l'Assemblée, en première lecture, la situation est défavorable car le gouvernement et 8 groupes soutiennent la mesure, face à un seul groupe contre. L'amendement n° 806 du groupe RN vise à supprimer l'article 22, tandis que le gouvernement a déposé l'amendement n° 4086 sur le même article, défavorable au client. Le 19 novembre 2025, la séance publique examine l'article 22 et ses amendements, constituant la dernière occasion d'agir pour faire adopter la suppression en première lecture. Le 20 novembre 2025, la discussion du projet de loi de finances pour 2026 se poursuit. Le gouvernement et Philippe Juvin sont pour la mesure. Députés sur qui agir en priorité : Nicole Sanquer, Blandine Brocard, Fabrice Brun. Limites : Rejoué à la date de référence du 19 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes.",
+  "texte": "Verdict proposé : l'objectif principal d'empêcher le vote de la taxe est mal engagé, avec 23 % des sièges favorables à l'objectif, en première lecture. La situation se dégrade. Le gouvernement a déposé l'amendement n° 4086 sur l'article 22 pour modifier le redevable, ce qui défavorise le client. L'amendement n° 806 du groupe RN, qui supprime l'article 22, reste en attente. Le 19 novembre 2025, la séance publique examine l'article 22 et ses amendements. C'est la dernière occasion d'agir pour faire adopter la suppression à l'Assemblée. Le 20 novembre 2025, la discussion du projet de loi de finances pour 2026 se poursuit. Le gouvernement et Philippe Juvin sont pour la mesure. Députés sur qui agir en priorité : Nicole Sanquer, Blandine Brocard, Fabrice Brun. Limites : Rejoué à la date de référence du 19 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes.",
   "chiffres_utilises": [
     "0.23",
     "23",
-    "8",
     "22",
     "4086",
     "2025-11-20",
