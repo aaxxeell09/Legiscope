@@ -11,6 +11,7 @@ La phrase parle toujours de « la mesure » et nomme l'étape (« À ce stade »
 - Le gabarit ne cite pas le score. S'il fallait le citer, il se nomme « part des sièges favorables à l'objectif » et s'écrit « X % des sièges favorables à l'objectif ». Ce n'est pas une probabilité, et il ne s'écrit jamais seul à côté de « favorable », « incertaine » ou « défavorable ».
 - Une valeur Orcet citée dans un `detail` est la « moyenne des probabilités individuelles de voter pour » sur un amendement, jamais la probabilité d'adoption de l'amendement, de l'article ou de la loi. Le gabarit n'injecte que les `titre`, pas les `detail`.
 - État de la mesure et état du texte : le gabarit décrit la mesure à l'étape de `etat.json`. Il n'injecte pas `texte_etat`.
+- Les comptes de groupes sont ceux de l'Assemblée nationale : le gabarit écrit « groupes de l'Assemblée », même quand l'étape est au Sénat.
 
 ## Variables
 
@@ -65,11 +66,11 @@ Les cas 3 et 4 ne valent que pour l'objectif principal : les positions des group
 ```
 
 ```gabarit id=lecture.portage.pour
-À ce stade (« {{etape}} »), la mesure est portée par le gouvernement et soutenue par {{n_pour}} groupes sur {{n_total}} (contre : {{n_contre}}, divisés ou sans position : {{n_autres}}) : situation {{situation_mot}} pour cet objectif.
+À ce stade (« {{etape}} »), la mesure est portée par le gouvernement et soutenue par {{n_pour}} groupes de l'Assemblée sur {{n_total}} (contre : {{n_contre}}, divisés ou sans position : {{n_autres}}) : situation {{situation_mot}} pour cet objectif.
 ```
 
 ```gabarit id=lecture.portage.contre
-À ce stade (« {{etape}} »), la mesure se heurte à l'opposition du gouvernement et de {{n_contre}} groupes sur {{n_total}} (pour : {{n_pour}}, divisés ou sans position : {{n_autres}}) : situation {{situation_mot}} pour cet objectif.
+À ce stade (« {{etape}} »), la mesure se heurte à l'opposition du gouvernement et de {{n_contre}} groupes de l'Assemblée sur {{n_total}} (pour : {{n_pour}}, divisés ou sans position : {{n_autres}}) : situation {{situation_mot}} pour cet objectif.
 ```
 
 ```gabarit id=lecture.favorable.reserve
@@ -106,8 +107,9 @@ Les cas 3 et 4 ne valent que pour l'objectif principal : les positions des group
 ## Prompt associé (`lecture.md`)
 
 - Format : texte brut, sans variable. Le fichier entier est le prompt système. Le message utilisateur est `Entrée (JSON) :` suivi de l'entrée de l'objectif lu. Un appel par objectif. C'est ce que fait P3.
-- Entrée passée par P3 aujourd'hui : `date_jour`, `client`, `mesure` (`config.json` → `mesure.label`), `etape` (`etat.json` → `etape`), `objectif` (`texte`, `type` : `principal` ou `repli`, `position_cible`), `situation`, `tendance`, `confiance` (`niveau`, `etabli`, `inconnu`), `favorable` et `bloquant` (`titre`, `detail`), `cause_du_changement` (le titre de l'événement ou `null`), `rapport_de_forces` (`gouvernement` : `pour`, `contre` ou `inconnue` ; `groupes_pour`, `groupes_contre`, `groupes_divises_ou_sans_position`, `groupes_total` ; `null` pour un repli).
-- Champs que le prompt sait lire si P3 les ajoute : `score` avec `score_libelle` (écrit « X % des sièges favorables à l'objectif », jamais seul), `texte_etat` (`statut`, `libelle`, `date` : état du texte, dit à part de l'état de la mesure).
+- Entrée passée par P3 aujourd'hui : `date_jour`, `client`, `mesure` (`config.json` → `mesure.label`), `etape` (`etat.json` → `etape`), `objectif` (`texte`, `type` : `principal` ou `repli`, `position_cible`), `situation`, `tendance`, `confiance` (`niveau`, `etabli`, `inconnu` ; `etabli` porte une ligne « État du texte » et une ligne « État de la mesure » quand les deux diffèrent), `favorable` et `bloquant` (`titre`, `detail`), `cause_du_changement` (le titre de l'événement ou `null`), `rapport_de_forces` (`gouvernement` : `pour`, `contre` ou `inconnue` ; `groupes_pour`, `groupes_contre`, `groupes_divises_ou_sans_position`, `groupes_total` ; `null` pour un repli).
+- P3 ne passe pas le score à la lecture : la phrase ne contient aucun pourcentage. Champs que le prompt sait lire s'ils arrivent : `score` avec `score_libelle` (écrit « X % des sièges favorables à l'objectif », jamais seul), `texte_etat` (`statut`, `libelle`, `date`).
+- Le prompt demande 35 mots au plus : le compte rendu reprend cette phrase et doit tenir en 150 mots.
 - Une valeur Orcet peut figurer dans un `detail` : le prompt impose « moyenne des probabilités individuelles de voter pour ».
 - Liste autorisée : les nombres de l'entrée et ceux de la phrase de gabarit (P3 fait l'union).
 
@@ -115,7 +117,8 @@ Les cas 3 et 4 ne valent que pour l'objectif principal : les positions des group
 
 Remplis mécaniquement le 14 novembre 2026, sans modèle.
 
-- `data/petits-colis`, objectif 1 (`lecture.portage.pour`) : À ce stade (« Première lecture, Assemblée nationale, séance publique, première partie »), la mesure est portée par le gouvernement et soutenue par 7 groupes sur 11 (contre : 1, divisés ou sans position : 3) : situation défavorable pour cet objectif. `chiffres_utilises` : `["7", "11", "1", "3"]`
-- `data/petits-colis`, objectif 3 (`lecture.incertaine`) : À ce stade (« Première lecture, Assemblée nationale, séance publique, première partie »), la situation de la mesure reste incertaine pour cet objectif : EPR, RN dans le sens de cet objectif ; en face : Mesure portée par le gouvernement. `chiffres_utilises` : `[]`
+- `data/petits-colis`, objectif 1 (`lecture.portage.pour`) : À ce stade (« Première lecture, Assemblée nationale, séance publique, première partie »), la mesure est portée par le gouvernement et soutenue par 7 groupes de l'Assemblée sur 11 (contre : 1, divisés ou sans position : 3) : situation défavorable pour cet objectif. `chiffres_utilises` : `["7", "11", "1", "3"]`
+- `data/petits-colis`, objectif 2 (`lecture.incertaine`) : À ce stade (« Première lecture, Assemblée nationale, séance publique, première partie »), la situation de la mesure reste incertaine pour cet objectif : Amendement n° 460 déposé par le groupe EPR ; en face : Mesure portée par le gouvernement. `chiffres_utilises` : `["460"]`
 - `data/plf2027-holdings`, objectif 1 (`lecture.favorable.reserve`) : À ce stade (« Première lecture : rejeté par l'Assemblée le 2026-11-04 ; Sénat, première lecture »), la situation de la mesure est favorable pour cet objectif : La taxe ne figure pas dans le texte du gouvernement ; point de blocage : 4 groupe(s) pour la mesure : LFI-NFP, SOC, ECOS, GDR. `chiffres_utilises` : `["2026", "11", "4"]`
 - fixture `petits-colis`, objectif 2 (`lecture.insuffisant`) : À ce stade (« Première lecture, Assemblée nationale, séance publique, première partie »), pas assez d'information pour conclure sur cet objectif : Aucun amendement de réduction du montant déposé. `chiffres_utilises` : `[]`
+

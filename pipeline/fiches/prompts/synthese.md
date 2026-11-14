@@ -7,7 +7,7 @@ Lecture de l'entrée :
 - `depute` : le député, avec le sigle de son groupe.
 - `amendements` : ceux qu'il a déposés (`role` vaut `auteur`) ou cosignés (`cosignataire`), avec leur `numero`, leur `resume`, leur `sort`, et les organisations citées dans l'exposé des motifs (`travaille_avec`).
 - `debats` : ce qu'il a dit sur le sujet, mot pour mot (`citation`), avec la `date` et le `lieu`.
-- `auditions` : les organisations entendues pour un rapport sur ce texte, avec la `date` et le `role` du député sur ce rapport. Le `role` change la phrase : voir « Les auditions selon le rôle ».
+- `auditions` : les organisations entendues pour un rapport sur ce texte, avec la `date` et le `role` du député sur ce rapport. Le `role` change la phrase : voir « Les auditions selon le rôle ». `entendu_par`, s'il est présent, redit en clair qui a entendu ces organisations.
 - `position_groupe` : la position de son groupe sur la mesure. C'est un contexte, pas la position du député. Tu ne cites jamais la valeur `confiance`.
 
 Si le champ demandé est `position_probable` :
@@ -19,7 +19,7 @@ une phrase concrète adressée au lobbyiste, qui commence par « Présenter à c
 Les auditions selon le rôle :
 - `role` vaut `rapporteur`, `rapporteur_general`, `rapporteur_avis` ou `president` : tu écris que le député « a entendu » l'organisation.
 - `role` vaut `membre` : tu écris que l'organisation a été « entendue par les rapporteurs de sa commission » (au pluriel : « entendues par les rapporteurs de sa commission »). Tu dis que c'est un indice plus faible qu'un acte personnel. Tu places cette mention après tout amendement, toute déclaration et toute audition menée comme rapporteur.
-- Avec le rôle `membre`, tu n'écris jamais que le député a lui-même entendu, reçu ou rencontré l'organisation.
+- Avec le rôle `membre`, ou quand `entendu_par` dit « pas le député lui-même », tu n'écris jamais que le député a lui-même entendu, reçu ou rencontré l'organisation.
 - Le mot « auditionné » ne s'écrit jamais.
 
 Écriture des valeurs :
