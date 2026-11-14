@@ -19,6 +19,21 @@ export function sansAccents(s: string): string {
 
 const echapper = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
+/**
+ * Articles de la mesure : `mesure.article` de config.json, plus tout mot-clé de la forme « article 89 »
+ * (la mesure apprentissage tient sur les articles 88 et 89 ; un amendement sur l'article 89 ne cite pas
+ * forcément le mot « apprentissage »).
+ */
+export function articlesDeLaMesure(article: string | null, motsCles: string[]): string[] {
+  const out = new Set<string>();
+  if (article) out.add(article);
+  for (const m of motsCles) {
+    const x = /^article\s+(\d+)$/i.exec(m.trim());
+    if (x) out.add(x[1]);
+  }
+  return [...out];
+}
+
 /** Expression régulière des mots-clés du sujet (mots entiers, sans accents, pluriel toléré). Drapeau g : on compte les occurrences. */
 export function regexSujet(motsCles: string[]): RegExp {
   const alts = motsCles.map((m) => echapper(sansAccents(m).trim()).replace(/\s+/g, "\\s+") + "s?");
@@ -31,8 +46,8 @@ export function regexSujet(motsCles: string[]): RegExp {
  * mot-clé d'un seul mot (« colis », « holding ») apparaît au moins deux fois dans l'exposé : une
  * mention isolée d'un mot courant (« relais colis », « colis postaux ») ne fait pas un amendement du sujet.
  */
-export function estDuSujet(a: AmendementBrut, re: RegExp, article: string | null): { oui: boolean; par: "mots_cles" | "article" | null } {
-  if (article && a.article === article && !a.article_additionnel) return { oui: true, par: "article" };
+export function estDuSujet(a: AmendementBrut, re: RegExp, articles: string[]): { oui: boolean; par: "mots_cles" | "article" | null } {
+  if (a.article && articles.includes(a.article) && !a.article_additionnel) return { oui: true, par: "article" };
   const dispositif = sansAccents(texteBrut(a.dispositif));
   const expose = sansAccents(texteBrut(a.expose));
   re.lastIndex = 0;

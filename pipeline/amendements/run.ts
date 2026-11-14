@@ -13,7 +13,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { isAbsolute, join } from "node:path";
 import { AmendementsSchema, ConfigSchema, dataPath, type AmendementDepute, type Amendements, type Config, type DossierConfig } from "../../contracts/index";
 import { archiveLocale, lireBrut, lireTexteDepuisArchive, ARCHIVE_URL, type AmendementBrut } from "./lib/opendata";
-import { estDuSujet, regexSujet, resumer, sortUnifie, travailleAvec } from "./lib/normaliser";
+import { articlesDeLaMesure, estDuSujet, regexSujet, resumer, sortUnifie, travailleAvec } from "./lib/normaliser";
 
 const REPO = join(import.meta.dir, "..", "..");
 const CACHE = join(import.meta.dir, "cache");
@@ -122,7 +122,7 @@ async function lireCacheOpendata(dossier: DossierConfig): Promise<Cache> {
   console.log(`[${dossier.id}] extraction de ${dossier.texte_id} depuis ${archive}`);
   const tous = await lireTexteDepuisArchive(archive, dossier.texte_id);
   const re = regexSujet(dossier.sujet.mots_cles);
-  const article = dossier.mesure.article || null;
+  const article = articlesDeLaMesure(dossier.mesure.article || null, dossier.sujet.mots_cles);
   const retenus = tous
     .filter((a) => a.etat !== "effacé")
     .map((a) => ({ a, s: estDuSujet(a, re, article) }))
@@ -134,7 +134,7 @@ async function lireCacheOpendata(dossier: DossierConfig): Promise<Cache> {
       texte_id: dossier.texte_id,
       genere_le: maintenant(),
       total_texte: tous.length,
-      filtre: `mots-clés ${JSON.stringify(dossier.sujet.mots_cles)} (mots entiers, sans accents) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article ${article ?? "(aucun)"}`,
+      filtre: `mots-clés ${JSON.stringify(dossier.sujet.mots_cles)} (mots entiers, sans accents) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles ${article.join(", ") || "(aucun)"}`,
     },
     amendements: retenus,
   };
@@ -152,7 +152,7 @@ async function traiterDossier(dossier: DossierConfig, config: Config) {
   const p1 = arg("source") === "opendata" ? null : lireRawP1(dossier);
   if (p1 && p1.length > 0) {
     const re = regexSujet(dossier.sujet.mots_cles);
-    const article = dossier.mesure.article || null;
+    const article = articlesDeLaMesure(dossier.mesure.article || null, dossier.sujet.mots_cles);
     bruts = p1.filter((a) => estDuSujet(a, re, article).oui);
     // P1 a écrit ce fichier depuis l'open data (champ `source: "opendata"`) ou depuis l'API Hémicycle.
     const rawSource = String((lireJson<any>(join(REPO, "data", "raw", dossier.id, "amendements.json")) as any)?.source ?? "");
@@ -216,7 +216,7 @@ async function traiterDossier(dossier: DossierConfig, config: Config) {
 
   const limites = [
     `Source : ${origine}.`,
-    `Sujet = mots-clés de config.json (${dossier.sujet.mots_cles.join(", ")}) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article ${dossier.mesure.article}.`,
+    `Sujet = mots-clés de config.json (${dossier.sujet.mots_cles.join(", ")}) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur les articles ${articlesDeLaMesure(dossier.mesure.article || null, dossier.sujet.mots_cles).join(", ")}.`,
     "Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté.",
     "Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle.",
     ref ? `Rejeu au matin du ${ref} : amendements déposés après ce jour exclus, sort daté de ce jour ou après rendu en_attente (${rejoues} cas).` : "Pas de date de référence : sorts au jour de l'archive.",
