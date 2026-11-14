@@ -92,7 +92,7 @@ Les formats 5.2 à 5.13 de la v2 sont conservés tels quels (meta, enums, groupe
     "date_reference": null, "sujet": {"label": "Taxe sur les holdings et la fortune improductive", "mots_cles": ["zucman", "holding", "holdings", "impôt sur la fortune", "fortune improductive", "patrimoine improductif", "ISF", "IFF"]}, "pivot_demo": null}
  ],
  "dossier_demo": "petits-colis",
- "cohesion": {"paires_demo": [["PO...", "PO..."]], "curseur_presets": [...]}}
+ "cohesion": {"paires_demo": [["PO845401", "PO845407"]], "curseur_presets": [...]}}
 ```
 `position_cible` est la position du client **sur la mesure** (empêcher la taxe = `contre`). Tout « pour » et « contre » des fichiers ci-dessous est relatif à la mesure, jamais à l'objectif. `objectifs[0]` (rang 1) est l'objectif principal ; les suivants sont les replis.
 
