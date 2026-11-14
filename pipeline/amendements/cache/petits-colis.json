@@ -2,7 +2,7 @@
  "meta": {
   "source": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip",
   "texte_id": "PRJLANR5L17B1906",
-  "genere_le": "2026-11-14T13:23:19+01:00",
+  "genere_le": "2026-11-14T15:50:25+01:00",
   "total_texte": 13676,
   "filtre": "mots-clés [\"petits colis\",\"colis\",\"franchise douanière\"] (mots entiers, sans accents) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article 22"
  },

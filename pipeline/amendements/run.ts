@@ -5,6 +5,7 @@
 //   --out      racine écrite (défaut : la même que --root). Produit <out>/<dossier>/amendements/<PA>.json.
 //   --deputes  liste explicite de députés (pour tester sans pivots).
 //   --archive  chemin local de Amendements.json.zip (sinon $AN_AMENDEMENTS_ZIP, sinon téléchargement).
+//   --source opendata  ignore data/raw de P1 et lit le cache open data ; --rebuild reconstruit le cache.
 // Sources, par ordre de préférence : data/raw/<dossier>/amendements.json (P1, API Hémicycle),
 // puis le cache pipeline/amendements/cache/<dossier>.json construit depuis l'open data de l'Assemblée.
 
@@ -79,27 +80,33 @@ function lireRawP1(dossier: DossierConfig): AmendementBrut[] | null {
     if (!id) continue;
     const sig: any[] = Array.isArray(a.signataires) ? a.signataires : [];
     const idDe = (x: any) => (typeof x === "string" ? x : x?.id ?? x?.acteur_id ?? x?.acteurRef ?? null);
+    // Format P1 (14 novembre, 15 h 40) : `article` = "ARTICLE 22" | "Article 4" | "ETAT B",
+    // `article_additionnel` booléen, `auteur` = PA (ou PA du rapporteur), `signataires` = liste de PA,
+    // `etat` / `sous_etat` / `sort` = libellés open data, dates AAAA-MM-JJ.
+    const label = a.article ? String(a.article) : "";
+    const num = /art(?:icle|\.)\s*(\d+)/i.exec(label)?.[1] ?? null;
+    const additionnel = a.article_additionnel === true;
     out.push({
       uid: id,
       texte_id: String(a.texte ?? a.texte_id ?? dossier.texte_id),
       numero: String(a.numero ?? id),
-      examen_ref: "",
-      organe_examen: "",
+      examen_ref: String(a.examen ?? ""),
+      organe_examen: /EXANR5L17(PO\d+)/.exec(String(a.examen ?? ""))?.[1] ?? "",
       auteur_id: idDe(a.auteur),
-      auteur_type: typeof a.auteur === "object" && a.auteur?.type ? String(a.auteur.type) : "Député",
+      auteur_type: String(a.type_auteur ?? a.auteur_type ?? "Député"),
       auteur_groupe_id: typeof a.groupe === "string" ? a.groupe : a.groupe?.id ?? null,
       cosignataires_ids: sig.map(idDe).filter((x: unknown): x is string => typeof x === "string"),
       suffixe: null,
-      article: a.article ? String(a.article).replace(/^\D*/, "") || null : null,
-      article_designation: a.article ? `ART. ${a.article}` : null,
-      article_additionnel: false,
+      article: num,
+      article_designation: num ? `${additionnel ? "APRÈS ART. " : "ART. "}${num}` : label || null,
+      article_additionnel: additionnel,
       dispositif: String(a.dispositif ?? ""),
       expose: String(a.expose ?? ""),
       date_depot: a.date_depot ? String(a.date_depot).slice(0, 10) : null,
       date_sort: a.date_sort ? String(a.date_sort).slice(0, 10) : null,
-      sort_brut: a.sort_libelle ?? a.sort ?? null,
-      etat: a.sort_libelle ?? a.sort ?? null,
-      sous_etat: null,
+      sort_brut: a.sort ?? null,
+      etat: a.etat ?? a.sort_libelle ?? a.sort ?? null,
+      sous_etat: a.sous_etat ?? null,
     });
   }
   return out;
@@ -142,14 +149,19 @@ async function traiterDossier(dossier: DossierConfig, config: Config) {
   let bruts: AmendementBrut[];
   let sources: { label: string; url: string }[];
   let origine: string;
-  const p1 = lireRawP1(dossier);
+  const p1 = arg("source") === "opendata" ? null : lireRawP1(dossier);
   if (p1 && p1.length > 0) {
     const re = regexSujet(dossier.sujet.mots_cles);
     const article = dossier.mesure.article || null;
     bruts = p1.filter((a) => estDuSujet(a, re, article).oui);
-    origine = `data/raw/${dossier.id}/amendements.json (P1, API Hémicycle), ${p1.length} amendements lus, ${bruts.length} sur le sujet`;
+    // P1 a écrit ce fichier depuis l'open data (champ `source: "opendata"`) ou depuis l'API Hémicycle.
+    const rawSource = String((lireJson<any>(join(REPO, "data", "raw", dossier.id, "amendements.json")) as any)?.source ?? "");
+    const depuisOpendata = /opendata|open data/i.test(rawSource);
+    origine = `data/raw/${dossier.id}/amendements.json (P1, ${depuisOpendata ? "open data Assemblée nationale" : "API Hémicycle"}), ${p1.length} amendements lus, ${bruts.length} sur le sujet`;
     sources = [
-      { label: "Hémicycle API amendements", url: "https://api.hemicycle.ai/v1/amendements" },
+      depuisOpendata
+        ? { label: "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1", url: ARCHIVE_URL }
+        : { label: "Hémicycle API amendements", url: "https://api.hemicycle.ai/v1/amendements" },
       { label: `Amendements au texte ${dossier.texte_id}`, url: `${AN}/dyn/17/amendements?texteLegislatifRef=${dossier.texte_id}` },
     ];
   } else {

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:59:44+01:00",
+    "generated_at": "2026-11-14T15:49:17+01:00",
     "sources": [
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -11,7 +11,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
       }
     ],
-    "limits": "Source : open data Assemblée nationale (cache pipeline/amendements/cache/plf2027-holdings.json), 13894 amendements du texte, 153 sur le sujet. Sujet = mots-clés de config.json (zucman, holding, holdings, impôt sur la fortune, fortune improductive, patrimoine improductif, ISF, IFF) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article 3. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "limits": "Source : data/raw/plf2027-holdings/amendements.json (P1, open data Assemblée nationale), 202 amendements lus, 144 sur le sujet. Sujet = mots-clés de config.json (zucman, holding, holdings, impôt sur la fortune, fortune improductive, patrimoine improductif, ISF, IFF) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article 3. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
     "producer": "pipeline/amendements",
     "dossier_id": "plf2027-holdings"
   },
@@ -21,7 +21,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000367",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 5 : Compléter cet article par les neufs alinéas suivants :« I. – L’article 167 bis du code général des impôts est ainsi modifié :« 1° Au IV, après la première…",
+      "resume": "Article 5 : Compléter cet article par les neufs alinéas suivants : « I. – L’article 167 bis du code général des impôts est ainsi modifié : « 1° Au IV, après la première…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000367",
@@ -35,7 +35,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000372",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli :« Art. 220 quater – Les entreprises dont les produits sont composés à plus de 60 % de…",
+      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli : « Art. 220 quater – Les entreprises dont les produits sont composés à plus de 60 % de…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000372",
@@ -49,7 +49,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000470",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié :1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «…",
+      "resume": "Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié : 1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «…",
       "sort": "adopte",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000470",
@@ -63,7 +63,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001362",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli :« Art. 220 quater. – Les entreprises dont les produits sont composés à plus de 60 % de…",
+      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli : « Art. 220 quater. – Les entreprises dont les produits sont composés à plus de 60 % de…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001362",

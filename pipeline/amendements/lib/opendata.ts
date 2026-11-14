@@ -72,7 +72,9 @@ export function lireBrut(json: unknown): AmendementBrut | null {
     suffixe: nil(sig.suffixe) ? null : str(sig.suffixe),
     article: m ? m[1] : null,
     article_designation: designation,
-    article_additionnel: div.articleAdditionnel === true || div.articleAdditionnel === "true",
+    // « Après l'article 3 » : articleAdditionnel vaut parfois false, avant_A_Apres dit « Après ».
+    article_additionnel:
+      div.articleAdditionnel === true || div.articleAdditionnel === "true" || /^(avant|apr)/i.test(String(div.avant_A_Apres ?? "")),
     dispositif: str(d.corps?.contenuAuteur?.dispositif) ?? "",
     expose: str(d.corps?.contenuAuteur?.exposeSommaire) ?? "",
     date_depot: jour(cv.dateDepot),
