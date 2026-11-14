@@ -96,9 +96,12 @@ function BoutonCopier({ texte }: { texte: string }) {
   );
 }
 
-/** Retire du rendu la limite technique finale, sans modifier la donnée source. */
+/** Retire du brief les phrases techniques, sans modifier la donnée source. */
 function nettoyerTexte(texte: string) {
-  return texte.replace(/\s+Limites\s*:\s*.*$/is, "").trim();
+  const sansLimites = texte.replace(/\s+Limites\s*:\s*.*$/is, "").trim();
+  const phrases = sansLimites.match(/[^.!?]+(?:[.!?]+(?=\s|$)|$)/g) ?? [sansLimites];
+  const lisibles = phrases.map((phrase) => phrase.trim()).filter((phrase) => phrase && !/\b(?:Orcet|prédictions?)\b/i.test(phrase));
+  return (lisibles.length > 0 ? lisibles.join(" ") : sansLimites).trim();
 }
 
 function structurerTexte(texte: string) {

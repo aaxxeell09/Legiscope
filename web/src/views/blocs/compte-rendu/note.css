@@ -6,7 +6,7 @@
 }
 
 .note-document-head {
-  display: flex; align-items: flex-start; justify-content: space-between; gap: 24px;
+  display: flex; align-items: flex-start; flex-direction: column; gap: 4px;
   max-width: 78ch; margin: 0 auto; padding-bottom: 20px; border-bottom: 1px solid var(--border-soft);
 }
 .note-document-head > div { display: flex; min-width: 0; flex-direction: column; gap: 4px; }
@@ -58,6 +58,9 @@
   padding: 12px clamp(20px, 4vw, 48px); border-top: 1px solid var(--border-soft); background: var(--surface-2);
 }
 .note-toolbar .meta, .note-actions + .meta, .note-layout > .meta { margin: 0; }
+.note-toolbar .meta { min-width: 0; margin-left: auto; padding: 0; border-top: 0; }
+.meta-sources { min-width: 0; margin: 8px 0 0; padding-left: 18px; }
+.meta-sources li, .meta-sources a { overflow-wrap: anywhere; }
 .note-layout > .meta { padding: 0 clamp(20px, 4vw, 48px) 14px; background: var(--surface-2); }
 
 .note-edit, .note-actions .p7-btn, .note-toolbar button {
@@ -71,8 +74,9 @@
 
 @media (max-width: 640px) {
   .note-document { padding: 20px 16px 24px; }
-  .note-document-head { flex-direction: column; gap: 14px; }
+  .note-document-head { gap: 4px; }
   .note-essential { margin-top: 20px; padding-left: 14px; }
   .note-toolbar, .note-actions { flex-wrap: wrap; padding: 11px 16px; }
+  .note-toolbar .meta { width: 100%; margin-left: 0; }
   .note-layout > .meta { padding-right: 16px; padding-left: 16px; }
 }
