@@ -1,0 +1,1681 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:36:08+01:00",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      }
+    ],
+    "limits": "Données au plus tard le 2026-11-14. Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés ; interventions non encore disponibles), jamais sur le groupe seul. Totaux avant coupe : 266 alliés, 41 perdus, 228 actionnables ; 15 gardés par catégorie (score décroissant). Députés en exercice seulement. Perdus = actes contre la cible et loyauté sur 12 mois d'au moins 0,85 envers un groupe lui-même opposé. Sens des amendements lu par règles : déduction de l'outil.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-holdings"
+  },
+  "actionnables": [
+    {
+      "depute_id": "PA719024",
+      "groupe_id": "PO845454",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 2 acte(s) pour la mesure, 2 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 4236 (2025-11-21)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4236"
+          },
+          {
+            "label": "Amendement n° 3821",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821"
+          },
+          {
+            "label": "Amendement n° 3372",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003372"
+          },
+          {
+            "label": "Amendement n° 3378",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003378"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Christophe Blanchet s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA719286",
+      "groupe_id": "PO845485",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 4 acte(s) pour la mesure, 2 contre ; 3 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          },
+          {
+            "label": "Scrutin n° 3303 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3303"
+          },
+          {
+            "label": "Amendement n° 3221",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Paul-André Colombani s'en est écarté 3 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA719578",
+      "groupe_id": "PO845413",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 13 acte(s) pour la mesure, 4 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 4236 (2025-11-21)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4236"
+          },
+          {
+            "label": "Amendement n° 1316",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001316"
+          },
+          {
+            "label": "Amendement n° 874",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000874"
+          },
+          {
+            "label": "Amendement n° 1069",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001069"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « pour » sur la mesure ; Loïc Prud'homme s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA720190",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 1 acte(s) pour la mesure, 1 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9136 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136"
+          },
+          {
+            "label": "Amendement n° 3070",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003070"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Bertrand Sorre s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA720976",
+      "groupe_id": "PO845485",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 4236 (2025-11-21)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4236"
+          },
+          {
+            "label": "Amendement n° 2562",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002562"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Max Mathiasin s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA793122",
+      "groupe_id": "PO845454",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 2 acte(s) pour la mesure, 2 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 4236 (2025-11-21)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4236"
+          },
+          {
+            "label": "Amendement n° 3821",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821"
+          },
+          {
+            "label": "Amendement n° 3372",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003372"
+          },
+          {
+            "label": "Amendement n° 3378",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003378"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Romain Daubié s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA794910",
+      "groupe_id": "PO845419",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 1 acte(s) pour la mesure, 1 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9136 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136"
+          },
+          {
+            "label": "Amendement n° 471",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000471"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « pour » sur la mesure ; Melouka Hadj-Mimoune s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA795136",
+      "groupe_id": "PO845413",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 13 acte(s) pour la mesure, 5 contre ; 2 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 4236 (2025-11-21)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4236"
+          },
+          {
+            "label": "Scrutin n° 9136 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136"
+          },
+          {
+            "label": "Amendement n° 1316",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001316"
+          },
+          {
+            "label": "Amendement n° 874",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000874"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « pour » sur la mesure ; Jean-François Coulomme s'en est écarté 2 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA796078",
+      "groupe_id": "PO845485",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 5 acte(s) pour la mesure, 1 contre ; 4 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          },
+          {
+            "label": "Scrutin n° 3303 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3303"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Estelle Youssouffa s'en est écarté 4 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA840657",
+      "groupe_id": "PO872880",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 4 acte(s) pour la mesure, 1 contre ; 2 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9136 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136"
+          },
+          {
+            "label": "Scrutin n° 9175 (2026-10-28)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9175"
+          },
+          {
+            "label": "Amendement n° 1275",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001275"
+          },
+          {
+            "label": "Amendement n° 1431",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Sophie Ricourt Vaginay s'en est écarté 2 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA840889",
+      "groupe_id": "PO872880",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 3 acte(s) pour la mesure, 0 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 4236 (2025-11-21)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4236"
+          },
+          {
+            "label": "Amendement n° 1431",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
+          },
+          {
+            "label": "Amendement n° 1440",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Matthieu Bloch s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA841419",
+      "groupe_id": "PO845439",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 13 acte(s) pour la mesure, 1 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9175 (2026-10-28)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9175"
+          },
+          {
+            "label": "Amendement n° 208",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000208"
+          },
+          {
+            "label": "Amendement n° 18",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018"
+          },
+          {
+            "label": "Amendement n° 43",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « pour » sur la mesure ; Damien Girard s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA841853",
+      "groupe_id": "PO845419",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 7 acte(s) pour la mesure, 1 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 4236 (2025-11-21)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4236"
+          },
+          {
+            "label": "Amendement n° 364",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000364"
+          },
+          {
+            "label": "Amendement n° 471",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000471"
+          },
+          {
+            "label": "Amendement n° 3480",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003480"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « pour » sur la mesure ; Céline Hervieu s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA878242",
+      "groupe_id": "PO872880",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 3 acte(s) pour la mesure, 0 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9136 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136"
+          },
+          {
+            "label": "Amendement n° 1431",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
+          },
+          {
+            "label": "Amendement n° 1440",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Antoine Valentin s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA330008",
+      "groupe_id": "PO845425",
+      "score": 1,
+      "raison": "a voté : 1 acte(s) pour la mesure, 0 contre ; 1 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9136 (2026-10-27)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9136"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Xavier Breton s'en est écarté 1 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "allies": [
+    {
+      "depute_id": "PA267200",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3358 (2025-11-03)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3358"
+          },
+          {
+            "label": "Amendement n° 3070",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003070"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA722102",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 6 contre, dans le sens du client",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA266793",
+      "groupe_id": "PO845425",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9175 (2026-10-28)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9175"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA266797",
+      "groupe_id": "PO845425",
+      "score": 1,
+      "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3070",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003070"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA642935",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3070",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003070"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA719404",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 5 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA719756",
+      "groupe_id": "PO845470",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 5 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA719922",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3358 (2025-11-03)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3358"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA720390",
+      "groupe_id": "PO845425",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9175 (2026-10-28)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9175"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA720446",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 7 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA720822",
+      "groupe_id": "PO845401",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3358 (2025-11-03)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3358"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA722190",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 8 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA722358",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3358 (2025-11-03)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3358"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA793158",
+      "groupe_id": "PO845401",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3358 (2025-11-03)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3358"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA793432",
+      "groupe_id": "PO845401",
+      "score": 1,
+      "raison": "a voté : 0 acte(s) pour la mesure, 4 contre, dans le sens du client",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3304 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3304"
+          },
+          {
+            "label": "Scrutin n° 3305 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3305"
+          },
+          {
+            "label": "Scrutin n° 3315 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3315"
+          },
+          {
+            "label": "Scrutin n° 3318 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3318"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "perdus": [
+    {
+      "depute_id": "PA2940",
+      "groupe_id": "PO845439",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 23 acte(s) pour la mesure, 0 contre ; loyauté 0.94 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (94 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA333285",
+      "groupe_id": "PO845419",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 14 acte(s) pour la mesure, 0 contre ; loyauté 0.93 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          },
+          {
+            "label": "Scrutin n° 3303 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3303"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (93 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA335612",
+      "groupe_id": "PO845514",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 14 acte(s) pour la mesure, 0 contre ; loyauté 0.97 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (97 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA340343",
+      "groupe_id": "PO845419",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 15 acte(s) pour la mesure, 0 contre ; loyauté 0.91 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (91 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA609332",
+      "groupe_id": "PO845419",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 16 acte(s) pour la mesure, 0 contre ; loyauté 0.91 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (91 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA720838",
+      "groupe_id": "PO845514",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 10 acte(s) pour la mesure, 0 contre ; loyauté 0.97 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (97 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA721270",
+      "groupe_id": "PO845514",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 11 acte(s) pour la mesure, 0 contre ; loyauté 0.96 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (96 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA721896",
+      "groupe_id": "PO845514",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 8 acte(s) pour la mesure, 0 contre ; loyauté 0.97 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (97 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA722142",
+      "groupe_id": "PO845439",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 20 acte(s) pour la mesure, 0 contre ; loyauté 0.98 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3303 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3303"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (98 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA722150",
+      "groupe_id": "PO845419",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 8 acte(s) pour la mesure, 0 contre ; loyauté 0.87 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          },
+          {
+            "label": "Scrutin n° 3303 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3303"
+          },
+          {
+            "label": "Amendement n° 3480",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003480"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (87 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA774958",
+      "groupe_id": "PO845419",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 16 acte(s) pour la mesure, 0 contre ; loyauté 0.91 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (91 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA774962",
+      "groupe_id": "PO845514",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 12 acte(s) pour la mesure, 0 contre ; loyauté 0.96 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (96 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA793174",
+      "groupe_id": "PO845514",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 8 acte(s) pour la mesure, 0 contre ; loyauté 0.95 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (95 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA793452",
+      "groupe_id": "PO845439",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 19 acte(s) pour la mesure, 0 contre ; loyauté 0.95 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (95 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA793664",
+      "groupe_id": "PO845439",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 21 acte(s) pour la mesure, 0 contre ; loyauté 0.95 à un groupe pour la mesure",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), pour la mesure, et loyal à son groupe (95 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "decideurs": [
+    {
+      "role": "gouvernement",
+      "depute_id": null,
+      "nom": "Ministre chargé des comptes publics",
+      "groupe_id": null,
+      "position": "inconnue",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Texte du projet de loi",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "La mesure ne figure pas dans le texte du gouvernement ; ses avis sur les amendements qui la créent ne sont publiés ni dans l'open data ni par l'API.",
+        "nature": "inconnue"
+      }
+    },
+    {
+      "role": "rapporteur_general",
+      "depute_id": "PA346782",
+      "nom": "Philippe Juvin",
+      "groupe_id": "PO845425",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Dossier législatif",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+          },
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          }
+        ],
+        "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 4 pour la mesure, 15 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "president_commission",
+      "depute_id": "PA721202",
+      "nom": "Éric Coquerel",
+      "groupe_id": "PO845413",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Députés et organes, open data",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/deputes_actifs_mandats_actifs_organes/AMO10_deputes_actifs_mandats_actifs_organes.json.zip"
+          },
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          }
+        ],
+        "raisonnement": "Président de la commission des finances (répertoire des mandats, open data). Mandat lu à la date de génération : à vérifier pour une date passée. Position lue sur ses propres actes : 27 pour la mesure, 6 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA795778",
+      "nom": "Jean-Philippe Tanguy",
+      "groupe_id": "PO845401",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe RN : auteur de 4 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 4 pour la mesure, 16 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA721202",
+      "nom": "Éric Coquerel",
+      "groupe_id": "PO845413",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe LFI-NFP : auteur de 7 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 27 pour la mesure, 6 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA794094",
+      "nom": "Mickaël Bouloux",
+      "groupe_id": "PO845419",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3299 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3299"
+          },
+          {
+            "label": "Scrutin n° 3300 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe SOC : auteur de 4 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 21 pour la mesure, 3 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA610002",
+      "nom": "Eva Sas",
+      "groupe_id": "PO845439",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe ECOS : auteur de 12 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 29 pour la mesure, 4 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA720728",
+      "nom": "Jean-Paul Mattei",
+      "groupe_id": "PO845454",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe DEM : auteur de 4 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 4 pour la mesure, 20 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA719778",
+      "nom": "François Jolivet",
+      "groupe_id": "PO845470",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe HOR : auteur de 4 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 3 pour la mesure, 17 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA942",
+      "nom": "Charles de Courson",
+      "groupe_id": "PO845485",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe LIOT : auteur de 4 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 2 pour la mesure, 16 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA330240",
+      "nom": "Éric Ciotti",
+      "groupe_id": "PO872880",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Amendement n° 1431",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
+          },
+          {
+            "label": "Amendement n° 1440",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe UDR : auteur de 3 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 2 pour la mesure, 0 contre.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA605745",
+      "nom": "Nicolas Sansu",
+      "groupe_id": "PO845514",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendements du sujet",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+          },
+          {
+            "label": "Scrutin n° 3282 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3282"
+          },
+          {
+            "label": "Scrutin n° 3297 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3297"
+          },
+          {
+            "label": "Scrutin n° 3298 (2025-10-31)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3298"
+          }
+        ],
+        "raisonnement": "Chef de file présumé du groupe GDR : auteur de 4 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 16 pour la mesure, 2 contre.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}

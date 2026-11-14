@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:29:50+01:00",
+    "generated_at": "2026-11-14T13:36:08+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -11,7 +11,7 @@
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       }
     ],
-    "limits": "Base general. Loyauté sur 12 mois avant le 2025-11-18 (3499 scrutins, votes exprimés seulement, position majoritaire du groupe au moment du vote). 0 scrutins nominatifs liés au sujet avec un sens lisible sur la mesure. Groupes visés (position sur la mesure opposée ou différente de « contre ») : RN (pour), LFI-NFP (pour), SOC (pour), DR (pour), ECOS (pour), DEM (pour), HOR (pour), LIOT (pour), GDR (position inconnue). Au plus 4 députés par groupe ; députés en exercice seulement ; au moins 30 votes exprimés. Score = 1 moins la loyauté générale.",
+    "limits": "Base general. Loyauté sur 12 mois avant le 2025-11-18 (3499 scrutins, votes exprimés seulement, position majoritaire du groupe au moment du vote). 0 scrutins nominatifs liés au sujet avec un sens lisible sur la mesure. Groupes visés (position sur la mesure opposée ou différente de « contre ») : EPR (pour), LFI-NFP (position inconnue), SOC (pour), DR (pour), ECOS (pour), DEM (pour), HOR (pour), LIOT (pour), UDR (position inconnue), GDR (position inconnue). Au plus 4 députés par groupe ; députés en exercice seulement ; au moins 30 votes exprimés. Score = 1 moins la loyauté générale.",
     "producer": "pipeline/pivots",
     "dossier_id": "petits-colis"
   },
@@ -127,9 +127,64 @@
       ]
     },
     {
+      "id": "PA720446",
+      "groupe_id": "PO845407",
+      "rang": 3,
+      "score_imprevisibilite": 0.26,
+      "loyaute_12m": 0.74,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V3926",
+          "date": "2025-11-18",
+          "titre": "L'article 5 et Etat B du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3926"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3851",
+          "date": "2025-11-17",
+          "titre": "L'amendement n° 1781 de M. Vuibert et l'amendement identique suivant après l'article 16 du projet de loi de finances pour 2026 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3851"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3680",
+          "date": "2025-11-12",
+          "titre": "L'amendement de suppression n° 653 de Mme Colin-Oesterlé et les amendements identiques suivants à l'article 45 bis (examen prioritaire) du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3680"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3641",
+          "date": "2025-11-09",
+          "titre": "L'amendement n° 431 de Mme Thiébault-Martinez et les amendements identiques suivants après l'article 21 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3641"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3631",
+          "date": "2025-11-09",
+          "titre": "L'amendement n° 1856 de M. Isaac-Sibille à l'article 21 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3631"
+        }
+      ]
+    },
+    {
       "id": "PA718838",
       "groupe_id": "PO845425",
-      "rang": 3,
+      "rang": 4,
       "score_imprevisibilite": 0.25,
       "loyaute_12m": 0.75,
       "base": "general",
@@ -184,7 +239,7 @@
     {
       "id": "PA720976",
       "groupe_id": "PO845485",
-      "rang": 4,
+      "rang": 5,
       "score_imprevisibilite": 0.25,
       "loyaute_12m": 0.75,
       "base": "general",
@@ -239,7 +294,7 @@
     {
       "id": "PA793796",
       "groupe_id": "PO845485",
-      "rang": 5,
+      "rang": 6,
       "score_imprevisibilite": 0.24,
       "loyaute_12m": 0.76,
       "base": "general",
@@ -294,7 +349,7 @@
     {
       "id": "PA368",
       "groupe_id": "PO845425",
-      "rang": 6,
+      "rang": 7,
       "score_imprevisibilite": 0.24,
       "loyaute_12m": 0.76,
       "base": "general",
@@ -349,7 +404,7 @@
     {
       "id": "PA607619",
       "groupe_id": "PO845485",
-      "rang": 7,
+      "rang": 8,
       "score_imprevisibilite": 0.23,
       "loyaute_12m": 0.77,
       "base": "general",
@@ -404,7 +459,7 @@
     {
       "id": "PA794114",
       "groupe_id": "PO845454",
-      "rang": 8,
+      "rang": 9,
       "score_imprevisibilite": 0.23,
       "loyaute_12m": 0.77,
       "base": "general",
@@ -457,9 +512,64 @@
       ]
     },
     {
+      "id": "PA720154",
+      "groupe_id": "PO845407",
+      "rang": 10,
+      "score_imprevisibilite": 0.23,
+      "loyaute_12m": 0.77,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V3926",
+          "date": "2025-11-18",
+          "titre": "L'article 5 et Etat B du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3926"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3680",
+          "date": "2025-11-12",
+          "titre": "L'amendement de suppression n° 653 de Mme Colin-Oesterlé et les amendements identiques suivants à l'article 45 bis (examen prioritaire) du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3680"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3668",
+          "date": "2025-11-09",
+          "titre": "L'amendement n° 681 (rect.) de Mme Runel après l'article 28 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3668"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3650",
+          "date": "2025-11-09",
+          "titre": "L'amendement n° 651 de Mme Runel après l'article 24 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3650"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3641",
+          "date": "2025-11-09",
+          "titre": "L'amendement n° 431 de Mme Thiébault-Martinez et les amendements identiques suivants après l'article 21 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3641"
+        }
+      ]
+    },
+    {
       "id": "PA842121",
       "groupe_id": "PO845425",
-      "rang": 9,
+      "rang": 11,
       "score_imprevisibilite": 0.22,
       "loyaute_12m": 0.78,
       "base": "general",
@@ -512,9 +622,64 @@
       ]
     },
     {
+      "id": "PA720022",
+      "groupe_id": "PO845407",
+      "rang": 12,
+      "score_imprevisibilite": 0.22,
+      "loyaute_12m": 0.78,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V3926",
+          "date": "2025-11-18",
+          "titre": "L'article 5 et Etat B du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3926"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3765",
+          "date": "2025-11-14",
+          "titre": "L'amendement n° 3361 de M. Ott après l'article 10 du projet de loi de finances pour 2026 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3765"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3732",
+          "date": "2025-11-13",
+          "titre": "L'amendement n° 1357 de Mme Duby-Muller et l'amendement identique suivant après l'article 9 du projet de loi de finances pour 2026 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3732"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3704",
+          "date": "2025-11-13",
+          "titre": "Le sous-amendement n° 3956 de M. Fournier à l'amendement n° 2234 de M. Midy après l'article 8 du projet de loi de finances pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3704"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3682",
+          "date": "2025-11-12",
+          "titre": "Le sous-amendement n° 2708 de Mme Youssouffa à l'amendement n° 2686 du Gouvernement à l'article 45 bis (examen prioritaire) du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3682"
+        }
+      ]
+    },
+    {
       "id": "PA794118",
       "groupe_id": "PO845425",
-      "rang": 10,
+      "rang": 13,
       "score_imprevisibilite": 0.21,
       "loyaute_12m": 0.79,
       "base": "general",
@@ -567,9 +732,64 @@
       ]
     },
     {
+      "id": "PA719118",
+      "groupe_id": "PO845407",
+      "rang": 14,
+      "score_imprevisibilite": 0.21,
+      "loyaute_12m": 0.79,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V3808",
+          "date": "2025-11-14",
+          "titre": "L'amendement n° 1960 de M. Echaniz et l'amendement identique suivant après l'article 12 du projet de loi de finances pour 2026 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3808"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3710",
+          "date": "2025-11-13",
+          "titre": "L'amendement n° 241 de M. Arnaud Bonnet et l'amendement identique suivant après l'article 9 du projet de loi de finances pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3710"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3680",
+          "date": "2025-11-12",
+          "titre": "L'amendement de suppression n° 653 de Mme Colin-Oesterlé et les amendements identiques suivants à l'article 45 bis (examen prioritaire) du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3680"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3618",
+          "date": "2025-11-08",
+          "titre": "L'amendement n° 1368 de Mme Colin-Oesterlé après l'article 20 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3618"
+        },
+        {
+          "scrutin_id": "VTANR5L17V3617",
+          "date": "2025-11-08",
+          "titre": "L'amendement n° 1233 de Mme Colin-Oesterlé après l'article 20 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3617"
+        }
+      ]
+    },
+    {
       "id": "PA722150",
       "groupe_id": "PO845419",
-      "rang": 11,
+      "rang": 15,
       "score_imprevisibilite": 0.2,
       "loyaute_12m": 0.8,
       "base": "general",
@@ -618,226 +838,6 @@
           "position_groupe": "pour",
           "groupe_id_au_vote": "PO845419",
           "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3923"
-        }
-      ]
-    },
-    {
-      "id": "PA607553",
-      "groupe_id": "PO845419",
-      "rang": 12,
-      "score_imprevisibilite": 0.19,
-      "loyaute_12m": 0.81,
-      "base": "general",
-      "ecarts": [
-        {
-          "scrutin_id": "VTANR5L17V3935",
-          "date": "2025-11-18",
-          "titre": "L'amendement n° 1 du Gouvernement à l'article 4 et Etat A du projet de loi de finances de fin de gestion pour 2025 (seconde délibération) (première lecture).",
-          "vote": "pour",
-          "position_groupe": "abstention",
-          "groupe_id_au_vote": "PO845419",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3935"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3934",
-          "date": "2025-11-18",
-          "titre": "L'article 8 du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
-          "vote": "pour",
-          "position_groupe": "abstention",
-          "groupe_id_au_vote": "PO845419",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3934"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3933",
-          "date": "2025-11-18",
-          "titre": "L'amendement n° 25 de Mme Dalloz à l'article 8 du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
-          "vote": "abstention",
-          "position_groupe": "contre",
-          "groupe_id_au_vote": "PO845419",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3933"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3932",
-          "date": "2025-11-18",
-          "titre": "L'article 7 et Etat D du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
-          "vote": "pour",
-          "position_groupe": "abstention",
-          "groupe_id_au_vote": "PO845419",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3932"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3872",
-          "date": "2025-11-17",
-          "titre": "L'amendement n° 2613 de M. Raux après l'article 20 du projet de loi de finances pour 2026 (première lecture).",
-          "vote": "abstention",
-          "position_groupe": "pour",
-          "groupe_id_au_vote": "PO845419",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3872"
-        }
-      ]
-    },
-    {
-      "id": "PA720092",
-      "groupe_id": "PO845454",
-      "rang": 13,
-      "score_imprevisibilite": 0.17,
-      "loyaute_12m": 0.83,
-      "base": "general",
-      "ecarts": [
-        {
-          "scrutin_id": "VTANR5L17V3684",
-          "date": "2025-11-12",
-          "titre": "L'article 45 bis (examen prioritaire) du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
-          "vote": "pour",
-          "position_groupe": "abstention",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3684"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3681",
-          "date": "2025-11-12",
-          "titre": "Le sous-amendement n° 2715 de Mme Sandrine Rousseau à l'amendement n° 2686 du Gouvernement à l'article 45 bis (examen prioritaire) du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
-          "vote": "contre",
-          "position_groupe": "abstention",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3681"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3559",
-          "date": "2025-11-08",
-          "titre": "L'amendement n° 5 de Mme Buffet et les amendements identiques suivants après l'article 11 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
-          "vote": "pour",
-          "position_groupe": "contre",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3559"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3555",
-          "date": "2025-11-08",
-          "titre": "L'amendement n° 942 de M. Maudet après l'article 11 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
-          "vote": "abstention",
-          "position_groupe": "contre",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3555"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3550",
-          "date": "2025-11-07",
-          "titre": "L'amendement n° 457 de Mme Runel et les amendements identiques suivants après l'article 11 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture).",
-          "vote": "pour",
-          "position_groupe": "contre",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3550"
-        }
-      ]
-    },
-    {
-      "id": "PA721234",
-      "groupe_id": "PO845454",
-      "rang": 14,
-      "score_imprevisibilite": 0.17,
-      "loyaute_12m": 0.83,
-      "base": "general",
-      "ecarts": [
-        {
-          "scrutin_id": "VTANR5L17V3867",
-          "date": "2025-11-17",
-          "titre": "L'amendement n° 968 de M. Jean-Pierre Vigier et l'amendement identique suivant après l'article 20 du projet de loi de finances pour 2026 (première lecture).",
-          "vote": "contre",
-          "position_groupe": "pour",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3867"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3749",
-          "date": "2025-11-13",
-          "titre": "L'amendement n° 1276 de Mme Thomin et l'amendement identique suivant à l'article 10 du projet de loi de finances pour 2026 (première lecture).",
-          "vote": "pour",
-          "position_groupe": "abstention",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3749"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3747",
-          "date": "2025-11-13",
-          "titre": "L'amendement n° 278 (rect.) de M. Nury et les amendements identiques à l'article 10 du projet de loi de finances pour 2026 (première lecture).",
-          "vote": "contre",
-          "position_groupe": "abstention",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3747"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3742",
-          "date": "2025-11-13",
-          "titre": "L'amendement n° 1806 de M. Courbon après l'article 9 du projet de loi de finances pour 2026 (première lecture).",
-          "vote": "abstention",
-          "position_groupe": "contre",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3742"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3741",
-          "date": "2025-11-13",
-          "titre": "L'amendement n° 365 de M. Le Fur après l'article 9 du projet de loi de finances pour 2026 (première lecture).",
-          "vote": "contre",
-          "position_groupe": "pour",
-          "groupe_id_au_vote": "PO845454",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3741"
-        }
-      ]
-    },
-    {
-      "id": "PA841339",
-      "groupe_id": "PO845470",
-      "rang": 15,
-      "score_imprevisibilite": 0.17,
-      "loyaute_12m": 0.83,
-      "base": "general",
-      "ecarts": [
-        {
-          "scrutin_id": "VTANR5L17V3936",
-          "date": "2025-11-18",
-          "titre": "L'ensemble du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
-          "vote": "abstention",
-          "position_groupe": "pour",
-          "groupe_id_au_vote": "PO845470",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3936"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3933",
-          "date": "2025-11-18",
-          "titre": "L'amendement n° 25 de Mme Dalloz à l'article 8 du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
-          "vote": "contre",
-          "position_groupe": "pour",
-          "groupe_id_au_vote": "PO845470",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3933"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3927",
-          "date": "2025-11-18",
-          "titre": "L'article 6 et Etat C du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
-          "vote": "pour",
-          "position_groupe": "abstention",
-          "groupe_id_au_vote": "PO845470",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3927"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3926",
-          "date": "2025-11-18",
-          "titre": "L'article 5 et Etat B du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
-          "vote": "abstention",
-          "position_groupe": "pour",
-          "groupe_id_au_vote": "PO845470",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3926"
-        },
-        {
-          "scrutin_id": "VTANR5L17V3922",
-          "date": "2025-11-18",
-          "titre": "L'amendement n° 128 de la commission des finances à l'article 5 et Etat B du projet de loi de finances de fin de gestion pour 2025 (première lecture).",
-          "vote": "contre",
-          "position_groupe": "abstention",
-          "groupe_id_au_vote": "PO845470",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3922"
         }
       ]
     }

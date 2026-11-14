@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:36:08+01:00",
+    "sources": [
+      {
+        "label": "Dossier législatif, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Dossier sur le site de l'Assemblée",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+      }
+    ],
+    "limits": "État au 2025-11-18 (actes et sorts datés au plus tard ce jour). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "petits-colis"
+  },
+  "mesure": {
+    "label": "Taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe",
+    "article": "22",
+    "dans_le_texte": true,
+    "redaction_actuelle": "Article 22 du texte initial du gouvernement, non modifié en séance à cette date (1 amendement(s) adopté(s) en commission, sans effet sur le texte examiné en séance). 44 amendements sur l'article restent à examiner.",
+    "modifications": [
+      {
+        "date": "2025-10-22",
+        "par": "Amendement n° 719, Antoine Vermorel (DR), en commission des finances",
+        "quoi": "Le présent amendement vise à reformuler l’article 22 pour substituer au terme de « taxe sur les petits colis » celui de « malus sur les colis importés de pays non européens », afin de mieux refléter la philosophie du dispositif.",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 719",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2025-10-22 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      }
+    ]
+  },
+  "etape": "Première lecture, Assemblée nationale, séance publique, première partie",
+  "etapes": [
+    {
+      "nom": "Dépôt du projet de loi",
+      "date": "2025-10-14",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+    },
+    {
+      "nom": "Commission des finances (rapport général)",
+      "date": "2025-10-23",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+    },
+    {
+      "nom": "Séance publique, première lecture",
+      "date": "2025-11-18",
+      "statut": "en_cours",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+    },
+    {
+      "nom": "Sénat, première lecture",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.senat.fr/"
+    },
+    {
+      "nom": "Commission mixte paritaire",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+    },
+    {
+      "nom": "Nouvelle lecture à l'Assemblée",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+    }
+  ],
+  "articles": [
+    {
+      "numero": "22",
+      "titre": "Taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe",
+      "statut": "reste",
+      "sort_detail": "En discussion en séance, 24 amendements en attente au 2025-11-18",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+    }
+  ]
+}

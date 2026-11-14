@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:36:07+01:00",
+    "sources": [
+      {
+        "label": "Dossier législatif, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Dossier sur le site de l'Assemblée",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+      }
+    ],
+    "limits": "État au 2026-11-14 (actes et sorts datés au plus tard ce jour). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-holdings"
+  },
+  "mesure": {
+    "label": "Taxe sur la fortune improductive (article 3) et taxe de 0,5 % sur les holdings patrimoniales (n° 3140)",
+    "article": "aucun article du texte du gouvernement",
+    "dans_le_texte": false,
+    "redaction_actuelle": "La taxe ne figure pas dans le texte du gouvernement (l'article 3 déclaré porte sur autre chose : 0 % de ses amendements citent le sujet). 12 amendements de séance la créaient (LFI-NFP, GDR, ECOS, SOC, DEM, UDR) : 0 adopté(s), 12 rejeté(s) ou non soutenu(s), puis l'Assemblée a rejeté le texte le 2026-11-04. Elle peut revenir par amendement au Sénat ou en nouvelle lecture.",
+    "modifications": [
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 1069, Matthias Tavel (LFI-NFP), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001069",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1069",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001069"
+            },
+            {
+              "label": "Scrutin n° 8857",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8857"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16 par le scrutin n° 8857 (35 pour, 69 contre). Sens lu par l'outil : élargit ou renforce (exposé).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 2566, Éric Coquerel (LFI-NFP), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002566",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2566",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002566"
+            },
+            {
+              "label": "Scrutin n° 8859",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8859"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16 par le scrutin n° 8859 (35 pour, 70 contre). Sens lu par l'outil : crée une imposition du sujet (article additionnel).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 3931, Nicolas Sansu (GDR), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003931",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3931",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003931"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16. Sens lu par l'outil : crée une imposition du sujet (article additionnel).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 1078, Éric Coquerel (LFI-NFP), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001078",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1078",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001078"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16. Sens lu par l'outil : élargit ou renforce (exposé).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 38, Eva Sas (ECOS), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000038",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 38",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000038"
+            },
+            {
+              "label": "Scrutin n° 8861",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8861"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16 par le scrutin n° 8861 (35 pour, 70 contre). Sens lu par l'outil : crée une imposition du sujet (article additionnel).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 471, Mickaël Bouloux (SOC), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000471",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 471",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000471"
+            },
+            {
+              "label": "Scrutin n° 8860",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8860"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16 par le scrutin n° 8860 (35 pour, 68 contre). Sens lu par l'outil : crée une imposition du sujet (article additionnel).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 3821, Philippe Vigier (DEM), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3821",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16. Sens lu par l'outil : crée une imposition du sujet (article additionnel).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 1440, Éric Ciotti (UDR), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1440",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16. Sens lu par l'outil : élargit ou renforce (exposé).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 1046, Marianne Maximi (LFI-NFP), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001046",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1046",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001046"
+            },
+            {
+              "label": "Scrutin n° 8862",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8862"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16 par le scrutin n° 8862 (35 pour, 68 contre). Sens lu par l'outil : crée une imposition du sujet (article additionnel).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "par": "Amendement n° 47, Eva Sas (ECOS), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 4)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 47",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047"
+            },
+            {
+              "label": "Scrutin n° 8863",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8863"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-10-16 par le scrutin n° 8863 (30 pour, 58 contre). Sens lu par l'outil : crée une imposition du sujet (article additionnel).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-11-04",
+        "par": "Assemblée nationale, séance publique",
+        "quoi": "Rejet de la première partie : tout le projet de loi est rejeté, le Sénat est saisi du texte du gouvernement",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9759",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+            }
+          ],
+          "raisonnement": "Le rejet de la première partie vaut rejet du texte entier ; les amendements adoptés tombent avec lui.",
+          "nature": "fait"
+        }
+      }
+    ]
+  },
+  "etape": "Première lecture : rejeté par l'Assemblée le 2026-11-04 ; Sénat, première lecture",
+  "etapes": [
+    {
+      "nom": "Dépôt du projet de loi",
+      "date": "2026-10-01",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    },
+    {
+      "nom": "Commission des finances (rapport général)",
+      "date": "2026-10-10",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "nom": "Séance publique, première lecture : rejeté (scrutin n° 9759)",
+      "date": "2026-11-04",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+    },
+    {
+      "nom": "Sénat, première lecture",
+      "date": null,
+      "statut": "en_cours",
+      "url": "https://www.senat.fr/"
+    },
+    {
+      "nom": "Commission mixte paritaire",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "nom": "Nouvelle lecture à l'Assemblée",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    }
+  ],
+  "articles": []
+}

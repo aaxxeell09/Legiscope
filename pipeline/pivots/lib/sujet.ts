@@ -52,7 +52,8 @@ export const PLF_TITRE: Record<string, string> = {
   PRJLANR5L17B3210: "projet de loi de finances pour 2027",
 };
 
-export type AmdtSujet = AmdtC & { sens: -1 | 0 | 1; sens_raison: string; sur_mesure: boolean };
+// pertinent = porte sur l'article de la mesure, ou cite le sujet dans son dispositif (pas seulement dans l'exposé).
+export type AmdtSujet = AmdtC & { sens: -1 | 0 | 1; sens_raison: string; sur_mesure: boolean; pertinent: boolean };
 
 const RE_SUPPR = /^supprimer cet article/;
 const RE_REDUIT = /\b(exclu|exclure|exoner|exempt|limiter|limite|reduire|reduit|abaisser|abaisse|reporter|report|differer|supprim|plafonn|attenu|allege|alleger|neutralis)/;
@@ -66,6 +67,13 @@ function sensAmendement(a: AmdtC, surMesure: boolean): { sens: -1 | 0 | 1; raiso
   if (RE_SUPPR.test(disp)) {
     return surMesure ? { sens: -1, raison: "supprime l'article de la mesure" } : { sens: -1, raison: "supprime un article du sujet" };
   }
+  // Montant remplacé : « 2 euros » par « 5 euros » = renforce, l'inverse = réduit.
+  const mt = disp.match(/substituer (?:au|le) (?:montant|taux)[^«]*«\s*([\d,]+)\s*(?:euros?|%)?\s*»[^«]*«\s*([\d,]+)/);
+  if (mt) {
+    const x = Number(mt[1].replace(",", ".")), y = Number(mt[2].replace(",", "."));
+    if (y > x) return { sens: 1, raison: `relève le montant (${mt[1]} à ${mt[2]})` };
+    if (y < x) return { sens: -1, raison: `abaisse le montant (${mt[1]} à ${mt[2]})` };
+  }
   const additionnel = /^(apres|avant|apr\.)/i.test(sansAccents(a.article));
   if (additionnel && RE_CREE.test(disp + " " + exp)) return { sens: 1, raison: "crée une imposition du sujet (article additionnel)" };
   const r = (exp.match(new RegExp(RE_REDUIT.source, "g")) ?? []).length;
@@ -76,25 +84,36 @@ function sensAmendement(a: AmdtC, surMesure: boolean): { sens: -1 | 0 | 1; raiso
   return { sens: 0, raison: "sens non déterminé" };
 }
 
+/** Part des amendements de l'article déclaré qui citent le sujet ; sous 15 %, l'article ne porte pas la mesure. */
+export const COHERENCE_ARTICLE: Record<string, { ratio: number; n: number; coherent: boolean }> = {};
+
 export function amendementsDuSujet(d: Dossier): AmdtSujet[] {
   const test = regexMots(d.sujet.mots_cles);
-  const art = d.mesure.article;
+  let art = d.mesure.article;
+  if (art) {
+    const surArt = chargerAmendements(d.mesure.texte_id).filter((a) => new RegExp(`^ART\\. ${art}$`).test(a.article));
+    const n = surArt.length;
+    const ratio = n ? surArt.filter((a) => test(a.dispositif + " " + a.expose)).length / n : 0;
+    COHERENCE_ARTICLE[d.id] = { ratio, n, coherent: ratio >= 0.15 };
+    if (ratio < 0.15) art = null;
+  }
   const res: AmdtSujet[] = [];
   for (const tx of textesDuDossier(d)) {
     for (const a of chargerAmendements(tx)) {
       const surMesure = !!art && tx === d.mesure.texte_id && new RegExp(`^ART\\. ${art}$`).test(a.article);
       if (!surMesure && !test(a.dispositif + " " + a.expose)) continue;
-      const s = sensAmendement(a, surMesure);
-      res.push({ ...a, sens: s.sens, sens_raison: s.raison, sur_mesure: surMesure });
+      const pertinent = surMesure || test(a.dispositif);
+      const s = pertinent ? sensAmendement(a, surMesure) : { sens: 0 as const, raison: "cite le sujet dans l'exposé seulement" };
+      res.push({ ...a, sens: s.sens, sens_raison: s.raison, sur_mesure: surMesure, pertinent });
     }
   }
   return res;
 }
 
 function cleArticleTitre(titre: string): string {
-  const m = sansAccents(titre).match(/\b(a|apres|avant) l'article (liminaire|\d+\s?(?:bis|ter|quater|[a-z])?)\b/);
+  const m = sansAccents(titre).match(/\b(a|apres|avant|de) l'article (liminaire|\d+\s?(?:bis|ter|quater|[a-z])?)\b/);
   if (!m) return "?";
-  return `${m[1]}:${m[2].replace(/\s/g, "")}`;
+  return `${m[1] === "de" ? "a" : m[1]}:${m[2].replace(/\s/g, "")}`;
 }
 function cleArticleAmdt(article: string): string {
   const s = sansAccents(article).replace(/\s+/g, " ");
@@ -110,9 +129,8 @@ export function scrutinsLies(d: Dossier, scrutins: ScrutinC[], amdts: AmdtSujet[
   const parTexte = new Map<string, Map<string, AmdtSujet>>();
   // Mesure rattachée à un article : seuls les amendements sur cet article comptent pour les votes
   // (un mot-clé cité dans un autre article ne dit rien de la position sur la mesure).
-  const test = regexMots(d.sujet.mots_cles);
   for (const a of amdts) {
-    if (!a.sur_mesure && !test(a.dispositif)) continue;
+    if (!a.pertinent) continue;
     if (!parTexte.has(a.texte)) parTexte.set(a.texte, new Map());
     parTexte.get(a.texte)!.set(a.numero, a);
   }
@@ -198,3 +216,19 @@ export function positionsDepuisAmendements(amdts: AmdtSujet[], avant: (x: string
   }
   return res;
 }
+
+export type CtxDossierPlus = {
+  d: Dossier;
+  scrutins: ScrutinC[];
+  lies: ScrutinLie[];
+  amdts: AmdtSujet[];
+  positions: Map<string, PosGroupe>;
+  sourcePositions: "scrutins" | "amendements" | "aucune";
+  groupes: Map<string, { sigle: string; effectif: number }>;
+  deputes: Map<string, { nom: string; prenom: string; groupe_id: string | null }>;
+  texteRaw: any;
+  titreTexte: string;
+  etape: string;
+  rapporteurs: { pa: string; type: string }[];
+  presidentCF: string | null;
+};
