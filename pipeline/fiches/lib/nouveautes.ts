@@ -13,6 +13,7 @@ import { candidats } from "./fiches";
 import { amendementDuTexte, dateEtape, sigleGroupe, type Contexte } from "./contexte";
 import { aujourdhui, dateFr, ecrireJson, fusionnerSources, lireJsonBrut, lireKind, listerJson, maintenant, noter, posterieur, slug } from "./io";
 import { SORT_LIBELLE } from "./gabarits";
+import { datesDepotDepuisEvenements, lireEvenementsTexte, type EvenementsTexte } from "./evenements-api";
 
 type Camp = "contre_mesure" | "pour_mesure" | "inconnu";
 
@@ -72,14 +73,23 @@ function texteBrut(v: unknown): string {
   return typeof v === "string" ? v : "";
 }
 
-/** Lecture tolérante des scrutins bruts de P1 (format non figé) : id, titre, date, url. */
+/** Lecture tolérante des scrutins bruts de P1 : `_index.json` s'il existe (évite d'ouvrir 10 000 fichiers de votes), sinon un fichier par scrutin. */
 export function lireScrutins(ctx: Contexte): Scrutin[] {
   const dir = join(ctx.root, "raw", "scrutins");
   const out: Scrutin[] = [];
-  for (const chemin of listerJson(dir)) {
-    const b = lireJsonBrut(chemin) as any;
-    if (!b || typeof b !== "object") continue;
-    const s = b.scrutin ?? b;
+  const index = lireJsonBrut(join(dir, "_index.json")) as any;
+  const entrees: { s: any; chemin: string }[] = [];
+  if (index) {
+    const liste: any[] = Array.isArray(index) ? index : Array.isArray(index.scrutins) ? index.scrutins : Object.values(index);
+    for (const s of liste) if (s && typeof s === "object") entrees.push({ s, chemin: join(dir, `${s.id ?? s.uid}.json`) });
+  } else {
+    for (const chemin of listerJson(dir)) {
+      if (chemin.endsWith("_index.json")) continue;
+      const b = lireJsonBrut(chemin) as any;
+      if (b && typeof b === "object") entrees.push({ s: b.scrutin ?? b, chemin });
+    }
+  }
+  for (const { s, chemin } of entrees) {
     const id = texteBrut(s.id ?? s.uid ?? s.scrutin_id);
     const titre = texteBrut(s.titre ?? s.title ?? s.objet ?? s.libelle ?? s.intitule);
     const dateBrute = texteBrut(s.date ?? s.dateScrutin ?? s.date_scrutin);
@@ -122,7 +132,27 @@ function fabriqueIds() {
   };
 }
 
-export function construireNouveautes(ctx: Contexte, argumentsEntendus: { pour: any[]; contre: any[] } | null): Nouveautes {
+type DatesBrutes = { depot: Map<string, string>; sort: Map<string, string> };
+
+/** data/raw/<dossier>/amendements.json (P1, open data) : date_depot et date_sort par identifiant, lecture tolérante. */
+function lireDatesBrutes(ctx: Contexte): DatesBrutes | null {
+  const chemin = join(ctx.root, "raw", ctx.dossier.id, "amendements.json");
+  const b = lireJsonBrut(chemin) as any;
+  if (!b) return null;
+  const liste: any[] = Array.isArray(b) ? b : Array.isArray(b.amendements) ? b.amendements : Array.isArray(b.data) ? b.data : [];
+  const out: DatesBrutes = { depot: new Map(), sort: new Map() };
+  for (const a of liste) {
+    const id = texteBrut(a?.id ?? a?.uid);
+    if (!id) continue;
+    const dd = texteBrut(a?.date_depot ?? a?.dateDepot).slice(0, 10);
+    const ds = texteBrut(a?.date_sort ?? a?.dateSort).slice(0, 10);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(dd)) out.depot.set(id, dd);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(ds)) out.sort.set(id, ds);
+  }
+  return out;
+}
+
+export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { pour: any[]; contre: any[] } | null, rafraichirApi = false): Promise<Nouveautes> {
   const { dossier, root } = ctx;
   const ref = dossier.date_reference;
   const limite = ref ?? aujourdhui();
@@ -147,6 +177,19 @@ export function construireNouveautes(ctx: Contexte, argumentsEntendus: { pour: a
   const scrutinParNumero = new Map<string, Scrutin>();
   for (const s of scrutins) for (const n of numerosDuTitre(s.titre)) if (!scrutinParNumero.has(n)) scrutinParNumero.set(n, s);
 
+  // Dates publiées : brut P1 (date_depot, date_sort), puis exemples du jeu evenements_parlementaires.
+  const brutes = lireDatesBrutes(ctx);
+  const evTexte: EvenementsTexte | null = await lireEvenementsTexte(dossier.texte_id, rafraichirApi);
+  const depotsJeu = datesDepotDepuisEvenements(evTexte);
+  if (!brutes) limites.push(`data/raw/${dossier.id}/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées.`);
+  const dateDepotPubliee = (a: AmendementTexte): { date: string; provenance: string } | null => {
+    const d1 = brutes?.depot.get(a.id);
+    if (d1) return { date: d1, provenance: "date de dépôt de l'open data (brut P1)" };
+    const d2 = depotsJeu.get(a.id);
+    if (d2) return { date: d2, provenance: "date de dépôt lue dans le jeu evenements_parlementaires d'Hémicycle" };
+    return null;
+  };
+
   // 1. Amendements du texte : dépôt, puis sort. L'événement principal (le sort s'il existe, sinon le dépôt)
   // porte l'identifiant `ev-<numero>`, que verdict.json (P3) référence dans cause_du_changement.
   const dateRepli = dateEtape(ctx, limite);
@@ -161,9 +204,10 @@ export function construireNouveautes(ctx: Contexte, argumentsEntendus: { pour: a
     const allie = camp !== "inconnu" && camp === campClient(ctx);
     const duClient = avecClient.has(a.id);
 
-    // Date de dépôt : non publiée dans texte.json ; on prend la prédiction Orcet, sinon la dernière étape du texte.
-    const dateDepot = a.prediction?.date ?? dateRepli ?? limite;
-    const provenanceDate = a.prediction?.date ? "date de la prédiction Orcet (date de dépôt non publiée dans texte.json)" : "date de la dernière étape connue du texte (date de dépôt non publiée)";
+    // Date de dépôt : publiée (brut P1, jeu Hémicycle) ; sinon la prédiction Orcet, sinon la dernière étape du texte.
+    const publiee = dateDepotPubliee(a);
+    const dateDepot = publiee?.date ?? a.prediction?.date ?? dateRepli ?? limite;
+    const provenanceDate = publiee?.provenance ?? (a.prediction?.date ? "date de la prédiction Orcet (date de dépôt non publiée dans texte.json)" : "date de la dernière étape connue du texte (date de dépôt non publiée)");
     if (!posterieur(dateDepot, ref)) {
       const importance = duClient || (allie && rang === dossier.objectifs[0].rang) ? 3 : a.groupe_id ? 2 : 1;
       evenements.push({
@@ -176,12 +220,12 @@ export function construireNouveautes(ctx: Contexte, argumentsEntendus: { pour: a
         url: a.url,
         effet: effet(ctx, camp, 1),
         objectif_rang: rang,
-        preuve: preuve([srcAm, texteSource], `Dépôt lu dans le texte ${dossier.texte_id} ; ${provenanceDate}. Camp : ${raison}${duClient ? " ; amendement travaillé avec le client" : ""}. Effet déduit du camp de l'amendement par rapport à la position du client.`, "deduction"),
+        preuve: preuve(publiee ? [srcAm, { label: "Hémicycle, jeu evenements_parlementaires", url: "https://hemicycle.ai" }] : [srcAm, texteSource], `Dépôt lu dans le texte ${dossier.texte_id} ; ${provenanceDate}. Camp : ${raison}${duClient ? " ; amendement travaillé avec le client" : ""}. Effet déduit du camp de l'amendement par rapport à la position du client.`, "deduction"),
       });
     }
 
     if (a.sort !== "en_attente") {
-      const dateSort = scrutin?.date ?? dateModification(a.numero) ?? dateRepli ?? limite;
+      const dateSort = scrutin?.date ?? brutes?.sort.get(a.id) ?? dateModification(a.numero) ?? dateRepli ?? limite;
       if (posterieur(dateSort, ref)) continue;
       const sens = sensDuSort(a.sort);
       const importance = scrutin ? 3 : allie || duClient ? 3 : 2;
@@ -197,7 +241,7 @@ export function construireNouveautes(ctx: Contexte, argumentsEntendus: { pour: a
         objectif_rang: rang,
         preuve: preuve(
           scrutin ? [{ label: `Scrutin n° ${scrutin.numero ?? scrutin.id}`, url: scrutin.url }, srcAm] : [srcAm, texteSource],
-          `Sort « ${SORT_LIBELLE[a.sort]} » lu dans le texte ${dossier.texte_id}${scrutin ? `, scrutin nominatif du ${dateFr(scrutin.date)}` : dateModification(a.numero) ? " ; date de la modification de la mesure dans etat.json" : " ; date du sort non publiée, date de la dernière étape connue"}. Camp : ${raison}. Un amendement retiré, tombé ou non examiné n'a pas d'effet sur le verdict.`,
+          `Sort « ${SORT_LIBELLE[a.sort]} » lu dans le texte ${dossier.texte_id}${scrutin ? `, scrutin nominatif du ${dateFr(scrutin.date)}` : brutes?.sort.get(a.id) ? " ; date du sort de l'open data (brut P1)" : dateModification(a.numero) ? " ; date de la modification de la mesure dans etat.json" : " ; date du sort non publiée, date de la dernière étape connue"}. Camp : ${raison}. Un amendement retiré, tombé ou non examiné n'a pas d'effet sur le verdict.`,
           "deduction",
         ),
       });
@@ -319,10 +363,38 @@ export function construireNouveautes(ctx: Contexte, argumentsEntendus: { pour: a
     });
   }
 
-  // 7. HATVP : les déclarations n'ont pas de date dans hatvp.json ; on ne les date pas.
+  // 7. Flux Hémicycle : dépôts d'amendements sur l'ensemble du texte, un événement par jour (bruit utile, importance 1).
+  if (evTexte) {
+    const parJour = new Map<string, { nb: number; groupes: Set<string> }>();
+    for (const l of evTexte.lignes) {
+      if (l.event_type !== "amendements" || !/^\d{4}-\d{2}-\d{2}$/.test(l.event_date) || l.event_date > limite) continue;
+      const j = parJour.get(l.event_date) ?? { nb: 0, groupes: new Set<string>() };
+      j.nb += Number(l.nb) || 0;
+      if (l.sous_titre) j.groupes.add(l.sous_titre);
+      parJour.set(l.event_date, j);
+    }
+    for (const [date, j] of parJour) {
+      evenements.push({
+        id: idUnique(`ev-depots-${date}`),
+        date,
+        type: "amendement_depose",
+        titre: `${j.nb} amendement${j.nb > 1 ? "s" : ""} déposé${j.nb > 1 ? "s" : ""} sur le texte${j.groupes.size ? ` (${[...j.groupes].join(", ")})` : ""}`,
+        detail: "Dépôts sur l'ensemble du texte, toutes parties et tous sujets confondus, pas seulement sur la mesure suivie.",
+        importance: 1,
+        url: texteSource.url,
+        effet: "neutre",
+        objectif_rang: dossier.objectifs[0].rang,
+        preuve: preuve([{ label: "Hémicycle, jeu evenements_parlementaires", url: "https://hemicycle.ai" }, texteSource], `Compte des dépôts par jour et par groupe dans le flux Hémicycle${evTexte.consulte_le ? ` consulté le ${evTexte.consulte_le.slice(0, 10)}` : ""} ; sans effet sur le verdict faute de lien avec la mesure.`, "fait"),
+      });
+    }
+    sources.push({ label: "Hémicycle, jeu evenements_parlementaires", url: "https://hemicycle.ai" });
+    limites.push(`Flux Hémicycle (${evTexte.provenance}) : ${evTexte.lignes.length} lignes sur 30 jours, dépôts comptés par jour.`);
+  } else limites.push("Flux Hémicycle evenements_parlementaires non lu (pas de cache ; lancer avec --api).");
+
+  // 8. HATVP : les déclarations n'ont pas de date dans hatvp.json ; on ne les date pas.
   if ((ctx.hatvp?.organisations.length ?? 0) > 0) limites.push(`${ctx.hatvp!.organisations.length} déclaration(s) HATVP non datée(s) dans hatvp.json, non listée(s) comme événement.`);
 
-  // 8. Agenda open data : réunions passées liées au texte.
+  // 9. Agenda open data : réunions passées liées au texte.
   const agenda = lireAgenda(ctx, limite, idUnique);
   if (agenda === null) limites.push("Agenda open data absent (data/raw/opendata/Agenda.json.zip).");
   else {

@@ -1,5 +1,6 @@
 // Session A4 : fiches par député, fiches/index.json, nouveautes.json, action.json.
-// Usage : bun run fiches [--root data] [--dossier <id>] [--gabarit]
+// Usage : bun run fiches [--root data] [--dossier <id>] [--gabarit] [--api]
+//   --api : rafraîchit le flux Hémicycle evenements_parlementaires (5 crédits par texte), sinon cache.
 // Rejouable : tout est régénéré depuis les fichiers des autres producteurs.
 
 import { SCHEMAS, dataPath } from "../../contracts/index";
@@ -8,29 +9,32 @@ import { chargerContexte } from "./lib/contexte";
 import { construireFiches } from "./lib/fiches";
 import { lireJsonBrut, lireKind, noter, rapport } from "./lib/io";
 import { construireNouveautes } from "./lib/nouveautes";
-import { forcerGabarit, raisonDuGabarit } from "./lib/redaction";
+import { coutLlm, forcerGabarit, raisonDuGabarit } from "./lib/redaction";
+import { creditsConsommes } from "./lib/evenements-api";
 
 function args() {
   const a = process.argv.slice(2);
   let root = "data";
   let dossier: string | null = null;
   let gabarit = false;
+  let api = false;
   for (let i = 0; i < a.length; i++) {
     if (a[i] === "--root") root = a[++i] ?? root;
     else if (a[i].startsWith("--root=")) root = a[i].slice(7);
     else if (a[i] === "--dossier") dossier = a[++i] ?? null;
     else if (a[i].startsWith("--dossier=")) dossier = a[i].slice(10);
     else if (a[i] === "--gabarit") gabarit = true;
+    else if (a[i] === "--api") api = true;
     else {
-      console.error(`argument inconnu : ${a[i]}\nusage : bun run fiches [--root data] [--dossier <id>] [--gabarit]`);
+      console.error(`argument inconnu : ${a[i]}\nusage : bun run fiches [--root data] [--dossier <id>] [--gabarit] [--api]`);
       process.exit(2);
     }
   }
-  return { root: root.replace(/\/$/, ""), dossier, gabarit };
+  return { root: root.replace(/\/$/, ""), dossier, gabarit, api };
 }
 
 async function main() {
-  const { root, dossier: seul, gabarit } = args();
+  const { root, dossier: seul, gabarit, api } = args();
   forcerGabarit(gabarit);
   const config = lireKind(root, null, "config");
   const groupes = lireKind(root, null, "groupes");
@@ -51,7 +55,7 @@ async function main() {
     if (!ctx.pivots) noter(`! ${d.id} : pivots.json manquant, aucune fiche possible`);
     const index = await construireFiches(ctx);
     const argumentsEntendus = lireArguments(ctx, []);
-    construireNouveautes(ctx, argumentsEntendus);
+    await construireNouveautes(ctx, argumentsEntendus, api);
     await construireAction(ctx, index);
 
     // Relecture : chaque fichier écrit passe son schéma.
@@ -70,6 +74,9 @@ async function main() {
     }
   }
   if (raisonDuGabarit()) noter(`rédaction : gabarit (${raisonDuGabarit()})`);
+  const cout = coutLlm();
+  if (cout) noter(`Featherless : ${cout.appels} appel(s), ${cout.dollars.toFixed(3)} $`);
+  if (creditsConsommes.appels > 0) noter(`crédits Hémicycle consommés par ce run : ${creditsConsommes.credits} (${creditsConsommes.appels} appel(s))`);
   noter(erreurs === 0 ? `OK : fichiers écrits sous ${root}/ (lancer bun run check)` : `${erreurs} fichier(s) invalide(s)`);
   process.exit(erreurs === 0 ? 0 : 1);
 }

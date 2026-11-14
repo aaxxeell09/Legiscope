@@ -32,6 +32,13 @@ export function raisonDuGabarit(): string {
   return raisonGabarit;
 }
 
+/** Coût cumulé des appels Featherless du processus (P8), null si le modèle n'a pas été chargé. */
+export function coutLlm(): { appels: number; dollars: number } | null {
+  if (!moduleLlm || typeof moduleLlm.coutCumule !== "function") return null;
+  const c = moduleLlm.coutCumule();
+  return { appels: Number(c?.appels ?? 0), dollars: Number(c?.dollars ?? 0) };
+}
+
 async function chargerLlm(): Promise<any | null> {
   if (moduleLlm !== undefined) return moduleLlm;
   moduleLlm = null;
@@ -60,8 +67,8 @@ export function lirePrompt(relatif: string): string | null {
   return t.length > 0 ? t : null;
 }
 
-function resultatGabarit(gabarit: string, fautifs: string[] = []): Redige {
-  const chiffres = chiffresDe(gabarit);
+function resultatGabarit(gabarit: string, fautifs: string[] = [], chiffresInjectes?: string[]): Redige {
+  const chiffres = [...new Set([...(chiffresInjectes ?? []), ...chiffresDe(gabarit)])];
   return {
     texte: gabarit,
     mode: "gabarit",
@@ -81,13 +88,15 @@ export async function rediger(args: {
   champ: string;
   entree: unknown;
   gabarit: string;
+  /** Nombres des variables injectées dans le gabarit (liste de X3), recopiés dans chiffres_utilises en mode gabarit. */
+  chiffresGabarit?: string[];
   chiffresAutorises?: string[];
   etiquette: string;
 }): Promise<Redige> {
   const m = await chargerLlm();
   if (!m || !args.prompt) {
     if (m && !args.prompt) noter(`${args.etiquette} : prompt de X3 absent, gabarit`);
-    return resultatGabarit(args.gabarit);
+    return resultatGabarit(args.gabarit, [], args.chiffresGabarit);
   }
   const autorises = args.chiffresAutorises ?? chiffresDe(JSON.stringify(args.entree));
   const prompt = `${args.prompt}\n\nChamp demandé : ${args.champ}\n\nEntrée (JSON) :\n${JSON.stringify(args.entree, null, 1)}`;
@@ -98,15 +107,15 @@ export async function rediger(args: {
       const chiffres: string[] = Array.isArray(r.chiffres_utilises) && r.chiffres_utilises.length > 0 ? r.chiffres_utilises : autorises;
       const verif = verifierChiffres(r.texte, chiffres);
       if (verif.ok) {
-        return { texte: r.texte.trim(), mode: "llm", modele: m.MODELE ?? m.MODEL ?? MODELE_PAR_DEFAUT, chiffres_utilises: chiffres, verifie: true, fautifs };
+        return { texte: r.texte.trim(), mode: "llm", modele: r.modele ?? m.MODELE ?? MODELE_PAR_DEFAUT, chiffres_utilises: chiffres, verifie: true, fautifs };
       }
       noter(`${args.etiquette} : sortie llm refusée par le vérificateur (${verif.fautifs.join(", ")}), gabarit`);
-      return resultatGabarit(args.gabarit, verif.fautifs);
+      return resultatGabarit(args.gabarit, verif.fautifs, args.chiffresGabarit);
     }
-    noter(`${args.etiquette} : llm en échec après 3 essais${fautifs.length ? ` (jetons fautifs : ${fautifs.join(", ")})` : ""}, gabarit`);
-    return resultatGabarit(args.gabarit, fautifs);
+    noter(`${args.etiquette} : llm en échec après ${r?.tentatives ?? 3} essais${fautifs.length ? ` (jetons fautifs : ${fautifs.join(", ")})` : ""}, gabarit`);
+    return resultatGabarit(args.gabarit, fautifs, args.chiffresGabarit);
   } catch (e) {
     noter(`${args.etiquette} : erreur llm (${String(e).slice(0, 120)}), gabarit`);
-    return resultatGabarit(args.gabarit);
+    return resultatGabarit(args.gabarit, [], args.chiffresGabarit);
   }
 }

@@ -17,7 +17,7 @@ export function candidats(ctx: Contexte): string[] {
   return ids;
 }
 
-async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<Synthese> {
+async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<{ s: Synthese; origine: "x3" | "local" }> {
   const pa = fiche.depute_id;
   const depute = ctx.deputes.deputes.find((d) => d.id === pa);
   const groupeId = depute?.groupe_id ?? ctx.pivots?.deputes.find((p) => p.id === pa)?.groupe_id ?? null;
@@ -29,6 +29,7 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
     position_cible: ctx.dossier.objectifs[0].position_cible,
     position_groupe: positionGroupe(ctx, groupeId),
     amendements: fiche.amendements.map((a) => ({
+      id: a.id,
       numero: amendementDuTexte(ctx, a.id)?.numero ?? null,
       role: a.role,
       resume: a.resume,
@@ -38,12 +39,15 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
     debats: fiche.debats.filter((d) => !posterieur(d.date, ref)).map((d) => ({ date: d.date, lieu: d.lieu, citation: d.citation })),
     auditions: fiche.auditions.filter((a) => !posterieur(a.date, ref)).map((a) => ({ date: a.date, role: a.role, organisations: a.organisations.map((o) => o.nom) })),
   };
-  const gabarit = gabaritSynthese(entree);
+  const pivot = ctx.pivots?.deputes.find((p) => p.id === pa);
+  const gabarit = gabaritSynthese(entree, pivot ? { n_ecarts: pivot.ecarts.length, loyaute_12m: pivot.loyaute_12m } : null);
+  // L'entrée du modèle ne contient aucun vote brut (règle 5.13) ; identifiants techniques retirés.
+  const entreeModele = { ...entree, amendements: entree.amendements.map(({ id: _id, ...reste }) => reste) };
   const prompt = lirePrompt(PROMPT_SYNTHESE);
-  const position = await rediger({ prompt, champ: "position_probable", entree, gabarit: gabarit.position_probable, etiquette: `${ctx.dossier.id}/fiches/${pa} position_probable` });
-  const argument = await rediger({ prompt, champ: "argument", entree, gabarit: gabarit.argument, etiquette: `${ctx.dossier.id}/fiches/${pa} argument` });
+  const position = await rediger({ prompt, champ: "position_probable", entree: entreeModele, gabarit: gabarit.position_probable, chiffresGabarit: gabarit.chiffres, etiquette: `${ctx.dossier.id}/fiches/${pa} position_probable` });
+  const argument = await rediger({ prompt, champ: "argument", entree: entreeModele, gabarit: gabarit.argument, chiffresGabarit: gabarit.chiffres, etiquette: `${ctx.dossier.id}/fiches/${pa} argument` });
   const mode = position.mode === "llm" && argument.mode === "llm" ? "llm" : "gabarit";
-  return {
+  return { origine: gabarit.origine, s: {
     position_probable: position.texte,
     argument: argument.texte,
     chiffres_utilises: [...new Set([...position.chiffres_utilises, ...argument.chiffres_utilises])],
@@ -51,7 +55,7 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
     modele: mode === "llm" ? position.modele : null,
     verifie: position.verifie && argument.verifie,
     date: ref ?? aujourdhui(),
-  };
+  } };
 }
 
 export async function construireFiches(ctx: Contexte): Promise<FichesIndex> {
@@ -86,9 +90,9 @@ export async function construireFiches(ctx: Contexte): Promise<FichesIndex> {
       hatvp: ctx.hatvp.organisations,
       couverture: { ...auditions!.couverture, ...debats!.couverture },
     };
-    const s = await synthese(ctx, base);
+    const { s, origine } = await synthese(ctx, base);
     const limites: string[] = ["Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres."];
-    if (s.mode === "gabarit") limites.push("Synthèse en gabarit (pas de rédaction par modèle).");
+    if (s.mode === "gabarit") limites.push(`Synthèse en gabarit${origine === "x3" ? " (gabarit de X3)" : " (gabarit local, fichier de X3 absent)"}, pas de rédaction par modèle.`);
     const ref = dossier.date_reference;
     const apres = [...base.auditions.map((a) => a.date), ...base.debats.map((d) => d.date)].filter((d) => posterieur(d, ref));
     if (apres.length > 0) limites.push(`${apres.length} élément(s) postérieur(s) à la date de référence recopié(s) tels quels (producteurs A1/A2) et ignorés par la synthèse.`);

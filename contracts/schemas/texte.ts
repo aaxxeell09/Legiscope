@@ -35,6 +35,9 @@ export const AmendementTexteSchema = z.object({
   sort: SortSchema,
   // null = Orcet n'a pas de prédiction (404 non facturé).
   prediction: PredictionSchema.nullable(),
+  // Dates de l'open data (P1), pour les nouveautés (A4). Optionnelles tant que P3 ne les recopie pas.
+  date_depot: DateISO.nullable().optional(),
+  date_sort: DateISO.nullable().optional(),
 });
 export type AmendementTexte = z.infer<typeof AmendementTexteSchema>;
 

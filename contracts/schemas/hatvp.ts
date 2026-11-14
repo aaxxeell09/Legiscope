@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { MetaSchema, Url } from "./meta";
+import { MetaSchema, Url , DateISO} from "./meta";
 import { TypeOrganisationSchema } from "./enums";
 
 export const OrganisationHatvpSchema = z.object({
@@ -9,6 +9,8 @@ export const OrganisationHatvpSchema = z.object({
   fiche_url: Url,
   objet: z.string().min(1),
   actions: z.array(z.string().min(1)),
+  // Date de la fiche d'activité HATVP (open data), pour les nouveautés. Optionnelle.
+  date_declaration: DateISO.nullable().optional(),
 });
 export type OrganisationHatvp = z.infer<typeof OrganisationHatvpSchema>;
 
