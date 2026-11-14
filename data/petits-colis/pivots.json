@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:21:21+01:00",
+    "generated_at": "2026-11-14T15:01:11+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -11,7 +11,7 @@
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       }
     ],
-    "limits": "Base general. Loyauté sur 12 mois avant le 2025-11-18 (3499 scrutins, votes exprimés seulement, position majoritaire du groupe au moment du vote). 0 scrutins nominatifs liés au sujet avec un sens lisible sur la mesure. Groupes visés (position sur la mesure opposée ou différente de « contre ») : EPR (pour), LFI-NFP (position inconnue), SOC (pour), DR (pour), ECOS (pour), DEM (pour), HOR (pour), LIOT (pour), UDR (position inconnue), GDR (position inconnue). Au plus 4 députés par groupe ; députés en exercice seulement ; au moins 30 votes exprimés. Score = 1 moins la loyauté générale.",
+    "limits": "Base general. Loyauté sur 12 mois avant le 2025-11-19 (3492 scrutins, votes exprimés seulement, position majoritaire du groupe au moment du vote). 0 scrutins nominatifs liés au sujet avec un sens lisible sur la mesure. Groupes visés (position sur la mesure opposée ou différente de « contre ») : EPR (pour), LFI-NFP (pour), SOC (pour), DR (pour), ECOS (pour), DEM (pour), HOR (pour), LIOT (pour), UDR (position inconnue), GDR (position inconnue). Au plus 4 députés par groupe ; députés en exercice seulement ; au moins 30 votes exprimés. Score = 1 moins la loyauté générale.",
     "producer": "pipeline/pivots",
     "dossier_id": "petits-colis"
   },
@@ -185,8 +185,8 @@
       "id": "PA718838",
       "groupe_id": "PO845425",
       "rang": 4,
-      "score_imprevisibilite": 0.25,
-      "loyaute_12m": 0.75,
+      "score_imprevisibilite": 0.26,
+      "loyaute_12m": 0.74,
       "base": "general",
       "ecarts": [
         {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:22:00+01:00",
+    "generated_at": "2026-11-14T15:01:11+01:00",
     "sources": [
       {
         "label": "Dossier législatif, open data Assemblée nationale",
@@ -15,7 +15,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
       }
     ],
-    "limits": "État au 2025-11-18 (actes et sorts datés au plus tard ce jour). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.",
+    "limits": "État au matin du 2025-11-19 (dépôts du jour connus ; sorts, scrutins, séances et décisions du jour inconnus). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.",
     "producer": "pipeline/pivots",
     "dossier_id": "petits-colis"
   },
@@ -23,7 +23,7 @@
     "label": "Taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe",
     "article": "22",
     "dans_le_texte": true,
-    "redaction_actuelle": "Article 22 du texte initial du gouvernement, non modifié en séance à cette date (1 amendement(s) adopté(s) en commission, sans effet sur le texte examiné en séance). 44 amendements sur l'article restent à examiner.",
+    "redaction_actuelle": "Article 22 du texte initial du gouvernement, non modifié en séance à cette date (1 amendement(s) adopté(s) en commission, sans effet sur le texte examiné en séance). 52 amendements sur l'article restent à examiner.",
     "modifications": [
       {
         "date": "2025-10-22",
@@ -46,7 +46,7 @@
   "texte_etat": {
     "statut": "en_discussion",
     "libelle": "Projet de loi de finances pour 2026 : première lecture, assemblée nationale, séance publique, première partie",
-    "date": "2025-11-18",
+    "date": "2025-11-19",
     "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026",
     "preuve": {
       "sources": [
@@ -55,7 +55,7 @@
           "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
         }
       ],
-      "raisonnement": "Aucune décision de l'Assemblée sur le texte au 2025-11-18 dans le dossier législatif.",
+      "raisonnement": "Aucune décision de l'Assemblée sur le texte au 2025-11-19 dans le dossier législatif.",
       "nature": "fait"
     }
   },
@@ -103,7 +103,7 @@
       "numero": "22",
       "titre": "Taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe",
       "statut": "reste",
-      "sort_detail": "En discussion en séance, 24 amendements en attente au 2025-11-18",
+      "sort_detail": "En discussion en séance, 30 amendements en attente au 2025-11-19",
       "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
     }
   ]

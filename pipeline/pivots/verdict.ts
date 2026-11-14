@@ -176,6 +176,16 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
       preuve: { sources: srcPos, raisonnement: obj.rang === 1 ? `Position majoritaire de chaque groupe ${sourcePositions === "scrutins" ? "sur les scrutins liés" : "dans ses amendements à la mesure"}, traduite en position sur la mesure.` : "Groupes auteurs d'amendements de nature « réduit » ou « reporte » selon l'objectif, ou opposés à la mesure.", nature: "deduction" },
     });
     if (gouv && gouv.position !== "inconnue" && gouv.position !== cible) bloquant.push({ titre: "Mesure portée par le gouvernement", detail: gouv.preuve.raisonnement, preuve: gouv.preuve });
+    // Amendements du gouvernement en attente sur la mesure, qui ne la suppriment ni ne la réduisent : il la retravaille pour la faire adopter.
+    if (obj.rang === 1 && cible === "contre") {
+      for (const a of amdts.filter((x) => x.typeAuteur === "Gouvernement" && x.sur_mesure && enAttente(x) && !["supprime", "reduit", "reporte"].includes(ctx.natures.get(x.id) ?? ""))) {
+        bloquant.push({
+          titre: `Le gouvernement a déposé l'amendement n° ${a.numero} sur l'article ${a.article.replace(/^ART\. /, "")}`,
+          detail: `Déposé le ${a.dateDepot}, en attente : ${(a.expose || a.dispositif).split(/(?<=[.!?])\s/)[0].slice(0, 220)}`,
+          preuve: { sources: [{ label: `Amendement n° ${a.numero}`, url: a.url }], raisonnement: "Le gouvernement, auteur de la mesure, dépose un amendement qui la modifie sans la supprimer ni la réduire : il prépare son adoption. Son sort n'est pas connu à la date de référence.", nature: "deduction" },
+        });
+      }
+    }
     if (gouv && gouv.position === cible) favorable.push({ titre: `Le gouvernement est ${gouv.position} la mesure`, detail: gouv.preuve.raisonnement, preuve: gouv.preuve });
     if (groupesOpp.length) bloquant.push({
       titre: `${groupesOpp.length} groupe(s) ${obj.rang === 1 ? (cible === "contre" ? "pour la mesure" : "contre la mesure") : "contre cet objectif"} : ${groupesOpp.map(sigle).join(", ")}`,
