@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.484Z",
+    "generated_at": "2026-11-14T15:25:31.072Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -2040,17 +2040,13 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 619, non examiné (« Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée. 2° Après le 2° du III, il est inséré… »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 619 (« Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée. 2° Après le 2° du III, il est inséré… »).",
+    "position_probable": "Jimmy Pahun a cosigné l'amendement 621, qui est non examiné, ce qui indique qu'il est probablement contre la mesure.",
+    "argument": "Présenter à ce député l'amendement 621 qu'il a cosigné et qui est resté non examiné, afin de l'encourager à appuyer la suppression de la baisse des crédits de l'apprentissage.",
     "chiffres_utilises": [
-      "619",
-      "42",
-      "6241",
-      "1",
-      "2"
+      "621"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

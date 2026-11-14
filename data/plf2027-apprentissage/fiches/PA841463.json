@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.473Z",
+    "generated_at": "2026-11-14T15:25:25.746Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1922,15 +1922,14 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 29, tombé (« ETAT B : Cet amendement des rapporteurs spéciaux vise à tirer les conséquences de leur rapport d’évaluation sur les conséquences de la diminution des dépenses publiques… »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 29 et de sa déclaration du 29 octobre 2026 en commission : « En conséquence, l’article est supprimé et l’amendement II-CF3029 de M. Emmanuel Maurel tombe. »",
+    "position_probable": "Estelle Mercier est probablement contre la mesure, comme le montre son amendement n° 2975 qui supprime l'article 88 et qui a été adopté.",
+    "argument": "Présenter à ce député l'amendement 2975, qu'il a déposé et qui a été adopté pour supprimer l'article 88, afin de confirmer son soutien à la suppression des baisses de crédits de l'apprentissage.",
     "chiffres_utilises": [
-      "29",
-      "2026-10-29",
-      "2026"
+      "88",
+      "2975"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

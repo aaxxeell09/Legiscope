@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.478Z",
+    "generated_at": "2026-11-14T15:25:31.042Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1686,17 +1686,28 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 921, rejeté (« Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée. 2° Après le 2° du III, il est inséré… »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 921 (« Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée. 2° Après le 2° du III, il est inséré… »).",
+    "position_probable": "Ses actes personnels ne permettent pas de trancher sa position sur la mesure, car il a cosigné des amendements sur l'alternance et le spectacle sans agir directement sur les crédits de l'apprentissage, et sa position probable reste inconnue, bien que son groupe GDR soit contre.",
+    "argument": "Présenter à ce député l'amendement cosigné sur l'alternance dans les territoires d'Outre-mer, qui a été adopté, pour appuyer la demande de maintien des crédits de l'apprentissage.",
     "chiffres_utilises": [
-      "921",
+      "88",
+      "89",
+      "1",
       "42",
       "6241",
-      "1",
-      "2"
+      "2",
+      "0",
+      "3",
+      "2026",
+      "10",
+      "13",
+      "11",
+      "4",
+      "5",
+      "9",
+      "12"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.461Z",
+    "generated_at": "2026-11-14T15:25:14.607Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1900,18 +1900,17 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 222, rejeté (« Article 7 : I. – À l’alinéa 12, après le mot : « amortissement », insérer les mots : « des locaux d’habitation meublés donnés en location soit dans le cadre d’un bail régi… »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 222 et de sa déclaration du 9 avril 2026 en séance : « Par-delà cette proposition de loi, primordiale pour nos communes rurales, c’est en profondeur que le système doit être refondu, revu et amélioré, qu’il s’agisse du contenu et des méthodes d’apprentissage, du temps scolaire ou, enfin, de la véritable reconnaissance du rôle des collectivités locales, dont la mission est de fournir des conditions d’apprentissage de qualité et, en lien avec le milieu associatif et différents professionnels, des… »",
+    "position_probable": "Ses actes vont dans les deux sens : il a cosigné l'amendement 222, rejeté, qui porte sur l'article 7, et il a déclaré en séance le 9 avril 2026 que le système d'apprentissage doit être refondu.",
+    "argument": "Présenter à ce député son intervention du 9 avril 2026 en séance, où il défend la refonte du système d'apprentissage, pour l'inciter à soutenir la baisse des crédits de l'apprentissage et des aides à l'embauche d'apprentis.",
     "chiffres_utilises": [
       "222",
       "7",
-      "12",
-      "2026-04-09",
+      "2026",
       "9",
-      "2026"
+      "2"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

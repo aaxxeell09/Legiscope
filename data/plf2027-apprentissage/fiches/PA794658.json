@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.492Z",
+    "generated_at": "2026-11-14T15:25:31.113Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1913,20 +1913,13 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 476, non examiné (« Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée. 2° Après le 2° du III, il est inséré… »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 476 et de sa déclaration du 28 octobre 2026 en séance : « C’est pour ce dernier que nous proposons qu’un étudiant référent accompagne chaque collégien et chaque lycéen, que l’apprentissage et les métiers manuels soient enfin présentés comme des voies d’excellence et que l’on ait le courage de fermer les formations qui ne mènent ni à la réussite ni à l’emploi. »",
+    "position_probable": "Philippe Fait est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement supprimant l'article 39, qui a été adopté.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement supprimant l'article 39, adopté, s'aligne sur la position de son groupe favorable à la baisse des crédits de l'apprentissage.",
     "chiffres_utilises": [
-      "476",
-      "42",
-      "6241",
-      "1",
-      "2",
-      "2026-10-28",
-      "28",
-      "2026"
+      "39"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

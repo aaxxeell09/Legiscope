@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.468Z",
+    "generated_at": "2026-11-14T15:25:20.458Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1671,18 +1671,17 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 3256, adopté (« Supprime l'article 39 »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 3256 et de sa déclaration du 14 octobre 2026 en séance : « Cette ponction s’ajoute à la baisse de 5 points du taux du FCTVA, à la restriction de la dynamique de TVA transférée et à la réduction des ressources régionales issues de la réforme de l’apprentissage. Le FCTVA accompagne des investissements : diminuer son taux renchérit la rénovation d’une école, d’un équipement public ou d’un chantier de voirie communale. »",
+    "position_probable": "Ses actes vont dans les deux sens, car il a cosigné un amendement non examiné sur l'article 88 et a déclaré en séance le 14 octobre 2026 que la réduction des ressources régionales issues de la réforme de l'apprentissage renchérit les investissements publics.",
+    "argument": "Présenter à ce député la baisse de 5 points du taux du FCTVA qu'il a dénoncée en séance le 14 octobre 2026, car il a cosigné un amendement sur l'article 88 qui vise à protéger les crédits de l'apprentissage.",
     "chiffres_utilises": [
-      "3256",
-      "39",
-      "2026-10-14",
-      "5",
+      "88",
+      "2026",
       "14",
-      "2026"
+      "2",
+      "5"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.471Z",
+    "generated_at": "2026-11-14T15:25:24.737Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -79,7 +79,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1848,15 +1848,16 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A dit en séance le 4 novembre 2026 : « L’exonération de taxe d’apprentissage a été supprimée l’année dernière. L’Inspection générale des affaires sociales (Igas) et l’IGF estimaient qu’elle n’était plus justifiée, car le taux de recours à l’apprentissage dans les structures mentionnées était proche de la moyenne nationale. »",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de sa déclaration du 4 novembre 2026 en séance : « L’exonération de taxe d’apprentissage a été supprimée l’année dernière. L’Inspection générale des affaires sociales (Igas) et l’IGF estimaient qu’elle n’était plus justifiée, car le taux de recours à l’apprentissage dans les structures mentionnées était proche de la moyenne nationale. »",
+    "position_probable": "Philippe Juvin est probablement favorable à la mesure, comme l'indique son intervention en séance le 4 novembre 2026 où il justifie la suppression de l'exonération de taxe d'apprentissage.",
+    "argument": "Présenter à ce député que la commission a donné un avis défavorable à l'amendement visant à accorder un délai de trois ans aux entreprises de l'économie sociale et solidaire pour le paiement de la contribution supplémentaire à l'apprentissage, car il a déclaré en commission le 9 octobre 2026 ne pas voir de raison d'accorder ce délai.",
     "chiffres_utilises": [
-      "2026-11-04",
+      "2026",
       "4",
-      "2026"
+      "3",
+      "9"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

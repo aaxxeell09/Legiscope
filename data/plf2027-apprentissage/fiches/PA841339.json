@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.510Z",
+    "generated_at": "2026-11-14T15:25:31.198Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -2017,11 +2017,22 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés ; seul indice, il a déjà voté autrement que son groupe, ce qui ne dit pas son vote sur la mesure.",
-    "argument": "Présenter à ce député la position du client (U2P) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Bureau de recherches géologiques et minières (BRGM), Comité national de la conchyliculture (CNC), Fédération nationale des syndicats d’agents généraux d’assurance (Agea)) : indice plus faible qu'un acte personnel.",
-    "chiffres_utilises": [],
-    "mode": "gabarit",
-    "modele": null,
+    "position_probable": "Sa position personnelle n'est pas connue, car il n'a ni déposé d'amendement ni fait de déclaration sur la mesure, et son groupe est favorable à la baisse des crédits.",
+    "argument": "Présenter à ce député que son groupe soutient la baisse des crédits de l'apprentissage, ce qui contredit l'objectif de son client, et proposer un premier contact car il n'a déposé aucun amendement ni fait de déclaration sur ce sujet.",
+    "chiffres_utilises": [
+      "88",
+      "89",
+      "0.67",
+      "0",
+      "2026",
+      "10",
+      "20",
+      "21",
+      "22",
+      "28"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.477Z",
+    "generated_at": "2026-11-14T15:25:29.111Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -2151,14 +2151,14 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 22, adopté (« Supprime l'article 39 »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 22 (« Supprime l'article 39 »).",
+    "position_probable": "La députée Marie-Noëlle Battistel est probablement contre la mesure, comme en témoigne son cosignature de l'amendement 1500 visant à supprimer l'article 88, actuellement en attente.",
+    "argument": "Présenter à ce député l'amendement n° 1500, en attente, qui supprime l'article 88, car il a cosigné ce texte et d'autres propositions contre la baisse des crédits de l'apprentissage.",
     "chiffres_utilises": [
-      "22",
-      "39"
+      "88",
+      "1500"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

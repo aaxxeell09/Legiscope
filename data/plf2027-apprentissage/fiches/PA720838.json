@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.485Z",
+    "generated_at": "2026-11-14T15:25:31.078Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1926,17 +1926,24 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 921, rejeté (« Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée. 2° Après le 2° du III, il est inséré… »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 921 (« Après l'article 42 : I. – L’article L. 6241‑1 du code du travail est ainsi modifié : 1° La seconde phrase du second alinéa du I est supprimée. 2° Après le 2° du III, il est inséré… »).",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration sur la mesure, mais son groupe GDR est contre.",
+    "argument": "Présenter à ce député l'amendement cosigné sur l'alternance en Outre-mer, adopté, pour appuyer la position contre la baisse des crédits de l'apprentissage.",
     "chiffres_utilises": [
-      "921",
+      "88",
+      "89",
+      "1",
       "42",
       "6241",
-      "1",
-      "2"
+      "2",
+      "0",
+      "3",
+      "2026",
+      "11",
+      "6",
+      "2030"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

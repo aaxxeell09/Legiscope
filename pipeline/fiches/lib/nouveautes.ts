@@ -546,7 +546,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   if (hatvpSansDate > 0) limites.push(`${hatvpSansDate} déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement.`);
 
   // 9. Agenda open data : réunions passées liées au texte.
-  const agenda = lireAgenda(ctx, limite, idUnique);
+  const agenda = lireAgenda(ctx, limite, idUnique, dateDepotTexte);
   if (agenda === null) limites.push("Agenda open data absent (data/raw/opendata/Agenda.json.zip).");
   else {
     for (const r of agenda) evenements.push(r);
@@ -571,7 +571,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
 }
 
 /** Réunions passées de l'agenda open data qui citent le numéro du texte ou les mots-clés ; null si le zip est absent. */
-function lireAgenda(ctx: Contexte, limite: string, idUnique: (base: string) => string): Evenement[] | null {
+function lireAgenda(ctx: Contexte, limite: string, idUnique: (base: string) => string, depuis: string | null): Evenement[] | null {
   const zip = join(ctx.root, "raw", "opendata", "Agenda.json.zip");
   const dossierReunions = join(ctx.root, "raw", "opendata", "Agenda", "json", "reunion");
   if (!existsSync(zip) && !existsSync(dossierReunions)) return null;
@@ -593,7 +593,8 @@ function lireAgenda(ctx: Contexte, limite: string, idUnique: (base: string) => s
         try { obj = JSON.parse(texte); } catch { continue; }
         const r = obj?.reunion ?? obj;
         const date = String(r?.timeStampDebut ?? r?.timeStamp?.dateDebut ?? r?.dateDebut ?? "").slice(0, 10);
-        if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date > limite || pasEncoreConnu(date, ctx.dossier.date_reference)) continue;
+        // Réunions de la période du texte seulement (depuis son dépôt), passées, pas celles du jour de référence.
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date > limite || (depuis && date < depuis) || pasEncoreConnu(date, ctx.dossier.date_reference)) continue;
         if (/annul/i.test(String(r?.cycleDeVie?.etat ?? ""))) continue;
         const points = r?.ODJ?.pointsODJ?.pointODJ;
         const items = (v: any): string[] => (Array.isArray(v) ? v : v ? [v] : []).map((x: any) => (typeof x === "string" ? x : String(x?.objet ?? x?.["#text"] ?? ""))).filter(Boolean);

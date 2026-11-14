@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.510Z",
+    "generated_at": "2026-11-14T15:25:31.193Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -2035,16 +2035,27 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 2089, adopté (« Article 42 : Supprimer les alinéas 12 à 15 »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 2089 (« Article 42 : Supprimer les alinéas 12 à 15 »).",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration sur la mesure, bien que son groupe soit favorable.",
+    "argument": "Présenter à ce député l'adoption de son amendement sur l'article 42, qui supprime les alinéas 12 à 15, pour montrer qu'il défend déjà la réduction des crédits de l'apprentissage et des aides à l'embauche d'apprentis.",
     "chiffres_utilises": [
-      "2089",
+      "88",
+      "89",
+      "0.67",
       "42",
       "12",
-      "15"
+      "15",
+      "0",
+      "2026",
+      "10",
+      "26",
+      "28",
+      "29",
+      "11",
+      "3",
+      "56"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:20:01.398Z",
+    "generated_at": "2026-11-14T15:25:33.974Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -195,7 +195,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
       }
     ],
-    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3). 1 contre-argument(s) en gabarit.",
+    "limits": "« pour » et « contre » qualifient la mesure, pas l'objectif du client. Un député n'est classé que sur ses propres actes (groupes-action.json, P3).",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -3051,10 +3051,31 @@
   "arguments": {
     "pour": [
       {
-        "argument": "Position pour la baisse des crédits déduite du mot « economies » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "Dans cet esprit, nous continuerons de défendre trois lignes : pas de hausse d’impôts, des économies par l’efficience sur le coût des opérateurs, et aucune fragilisation de ce qui fonctionne pour l’emploi, comme l’apprentissage et l’accompagnement des jeunes.",
-        "orateur_id": "PA794058",
-        "groupe_id": "PO845425",
+        "argument": "L'extension de l'apprentissage aux niveaux 7 et 8 a déformé le soutien public à l'alternance.",
+        "citation": "L’amendement II-CF535 vise à diminuer les aides publiques à l’apprentissage pour les formations préparant un diplôme de niveau 7 ou 8 afin de recentrer le dispositif. En effet, l’extension de l’apprentissage à l’enseignement supérieur, notamment aux niveaux de qualification les plus élevés, a conduit à déformer le soutien public à l’alternance.",
+        "orateur_id": "PA736201",
+        "groupe_id": "PO845439",
+        "date": "2026-10-29",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 34 du 29/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé pour la mesure parce que l'orateur (Sophie Taillé-Polian) la défend : « L'extension de l'apprentissage aux niveaux 7 et 8 a déformé le soutien public à l'alternance. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+          "nature": "deduction"
+        }
+      }
+    ],
+    "contre": [
+      {
+        "argument": "La réduction des crédits fragilise financièrement les CFA et remet en cause la politique d'apprentissage.",
+        "citation": "Cette diminution des aides peut faire craindre la remise en cause de la politique d’apprentissage ambitieuse en place depuis 2018.",
+        "orateur_id": "PA719404",
+        "groupe_id": "PO845407",
         "date": "2026-11-04",
         "lieu": "commission",
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu",
@@ -3065,14 +3086,50 @@
               "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
             }
           ],
-          "raisonnement": "Classé pour la mesure parce que l'orateur (Justine Gruet) la défend : « Position pour la baisse des crédits déduite du mot « economies » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Didier Le Gac) s'y oppose ou veut la réduire : « La baisse des crédits de paiement et le ralentissement des entrées risquent de remettre en cause la politique d'apprentissage ambitieuse. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85. Même argument entendu aussi chez Estelle Mercier (commission du 2026-10-29).",
           "nature": "deduction"
         }
-      }
-    ],
-    "contre": [
+      },
       {
-        "argument": "Position contre la baisse des crédits déduite du mot « retablir les credits » dans une phrase sur apprentissage et aides à l'embauche",
+        "argument": "La baisse des crédits trahit les engagements contractuels et budgétaires pris avec les régions.",
+        "citation": "Mais ces montants, qui n’ont pas été discutés avec les régions, ne correspondent pas à ceux prévus dans les contrats. Nous demandons que les engagements soient tenus pour 2027.",
+        "orateur_id": "PA841463",
+        "groupe_id": "PO845419",
+        "date": "2026-10-29",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 34 du 29/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Estelle Mercier, rapporteure spéciale) s'y oppose ou veut la réduire : « Les crédits prévus ne couvrent pas les engagements contractuels pris avec les régions, il faut les augmenter. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90. Même argument entendu aussi chez Stéphane Delautrette (commission du 2026-10-09).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La captation de la taxe d'apprentissage par l'État détourne les ressources de la formation professionnelle.",
+        "citation": "Permettre à l’État de capter le surplus plutôt que de le reverser directement aux établissements de formation, qu’il s’agisse des écoles d’ingénieurs ou des filières professionnelles comme les baccalauréats professionnels et les brevets d’études professionnelles (BEP), reviendrait à détourner une partie de ces ressources de leur objectif initial.",
+        "orateur_id": "PA840809",
+        "groupe_id": "PO872880",
+        "date": "2026-11-04",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Première séance du mercredi 04 novembre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Gérault Verny) s'y oppose ou veut la réduire : « La captation de la taxe d'apprentissage par l'État détourne les ressources de leur objectif initial de financement de la formation professionnelle. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "La baisse des crédits de France compétences doit être annulée pour revenir au niveau antérieur.",
         "citation": "Il s’agit de rétablir les crédits alloués à France compétences à leur niveau de 2026, soit 516 millions d’euros.",
         "orateur_id": "PA841091",
         "groupe_id": "PO845419",
@@ -3086,178 +3143,83 @@
               "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
             }
           ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (Arnaud Simion) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « retablir les credits » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« retablir les credits »), sans modèle, à relire.",
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Arnaud Simion) s'y oppose ou veut la réduire : « La baisse des crédits de France compétences doit être annulée pour revenir au niveau antérieur. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
           "nature": "deduction"
         }
       },
       {
-        "argument": "Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "Concernant l’apprentissage, l’écart entre les autorisations d’engagement en hausse de 6 % et les crédits de paiement en baisse de 19 % ainsi que les 788 000 entrées prévues traduisent un ralentissement assumé.",
-        "orateur_id": "PA719404",
+        "argument": "L'apprentissage est un moteur de création d'emplois et de baisse du chômage, il faut abonder les crédits.",
+        "citation": "L’apprentissage est un moteur de la création d’emplois ; il a permis de faire baisser le chômage. Il faut donc mettre le paquet en ce domaine : c’est pourquoi notre amendement vise à abonder ces crédits.",
+        "orateur_id": "PA795664",
         "groupe_id": "PO845407",
-        "date": "2026-11-04",
+        "date": "2026-10-29",
         "lieu": "commission",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu",
         "preuve": {
           "sources": [
             {
-              "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+              "label": "Commission des finances, réunion n° 34 du 29/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
             }
           ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (Didier Le Gac) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Paul Midy) s'y oppose ou veut la réduire : « L'apprentissage est un moteur de création d'emplois et de baisse du chômage, il faut donc abonder les crédits. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.95.",
           "nature": "deduction"
         }
       },
       {
-        "argument": "Position contre la baisse des crédits déduite du mot « supprimer » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "Vous avez repoussé tout à l’heure notre amendement visant à supprimer la contribution de 350 euros sur le CPF, au motif que vous aviez déposé un amendement de suppression de l’article 89 ; or cet article plafonne également les frais de jury applicables à la validation des acquis de l’expérience (VAE).",
-        "orateur_id": "PA793736",
+        "argument": "Les crédits financent l'enseignement supérieur privé lucratif au détriment de l'enseignement public.",
+        "citation": "Tirant profit de la réforme de l’apprentissage de 2018, le secteur de l’enseignement supérieur privé lucratif s’est rapidement développé, soutenu par des fonds publics pouvant représenter jusqu’à 70 % du chiffre d’affaires de certains établissements. Nous appelons à cesser cette gabegie et à soutenir en priorité l’enseignement public par un transfert de crédits.",
+        "orateur_id": "PA841845",
         "groupe_id": "PO845413",
-        "date": "2026-11-04",
+        "date": "2026-10-20",
         "lieu": "commission",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu",
         "preuve": {
           "sources": [
             {
-              "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+              "label": "Commission des finances, réunion n° 18 du 20/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu"
             }
           ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (Hadrien Clouet) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « supprimer » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Arnaud Saint-Martin) s'y oppose ou veut la réduire : « Les crédits de l'apprentissage financent l'enseignement supérieur privé lucratif au détriment de l'enseignement public. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
           "nature": "deduction"
         }
       },
       {
-        "argument": "Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "La suppression décidée en 2026, comme l’a rappelé M. le rapporteur général, s’appuyait sur les recommandations de l’IGF et de l’Igas, qui la préconisaient dans un rapport de juillet 2023 pour consolider le financement de l’apprentissage par les employeurs qui y ont recours, que ces entreprises soient à caractère lucratif ou non.",
+        "argument": "La réduction des crédits sacrifie la jeunesse en difficulté et les formations professionnelles.",
+        "citation": "Il a d'ailleurs aussi voté contre le versement d'une compensation financière aux régions pour l'apprentissage et les lycées professionnels. Il est bien beau d'expliquer à longueur de journée qu'on est pour l'enseignement professionnel et le monde du travail, mais en réalité, notre jeunesse, qui est en difficulté, est sacrifiée par le Rassemblement national.",
+        "orateur_id": "PA841515",
+        "groupe_id": "PO845413",
+        "date": "2026-10-09",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, réunion n° 12 du 09/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+            }
+          ],
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Aurélien Le Coq) s'y oppose ou veut la réduire : « La réduction des crédits sacrifie la jeunesse en difficulté et les formations professionnelles. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.85.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "argument": "Le gouvernement s'engage à maintenir le soutien à l'apprentissage, s'opposant à la réduction.",
+        "citation": "Nous préservons le crédit d’impôt recherche (CIR), le pacte Dutreil et le soutien à l’apprentissage.",
         "orateur_id": null,
         "groupe_id": null,
-        "date": "2026-11-04",
-        "lieu": "seance",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
-        "preuve": {
-          "sources": [
-            {
-              "label": "Première séance du mercredi 04 novembre 2026",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
-            }
-          ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-          "nature": "deduction"
-        }
-      },
-      {
-        "argument": "Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "Je suis favorable à la suppression de cette contribution forfaitaire, et j’ai moi-même déposé un amendement en ce sens à l’article 89.",
-        "orateur_id": null,
-        "groupe_id": null,
-        "date": "2026-11-04",
+        "date": "2026-10-01",
         "lieu": "commission",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu",
         "preuve": {
           "sources": [
             {
-              "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+              "label": "Commission des finances, réunion n° 3 du 01/10/2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
             }
           ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (le rapporteur pour avis, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-          "nature": "deduction"
-        }
-      },
-      {
-        "argument": "Position contre la baisse des crédits déduite du mot « supprimer » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "L’amendement II-CF687 vise à supprimer 1,6 milliard de crédits sur un budget de 2,4 milliards : il ne resterait pas grand-chose pour l’apprentissage.",
-        "orateur_id": "PA842271",
-        "groupe_id": "PO845514",
-        "date": "2026-10-29",
-        "lieu": "commission",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu",
-        "preuve": {
-          "sources": [
-            {
-              "label": "Commission des finances, réunion n° 34 du 29/10/2026",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
-            }
-          ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (Emmanuel Maurel, rapporteur spécial) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « supprimer » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
-          "nature": "deduction"
-        }
-      },
-      {
-        "argument": "Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "L’article 88 prévoit la suppression des enveloppes régionales de financement des centres de formation d’apprentis, la mise en extinction des pactes régionaux d’investissement dans les compétences et la mutualisation des contrats d’apprentissage, au risque d’une perte d’expertise.",
-        "orateur_id": "PA841463",
-        "groupe_id": "PO845419",
-        "date": "2026-10-29",
-        "lieu": "commission",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu",
-        "preuve": {
-          "sources": [
-            {
-              "label": "Commission des finances, réunion n° 34 du 29/10/2026",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
-            }
-          ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (Estelle Mercier, rapporteure spéciale) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-          "nature": "deduction"
-        }
-      },
-      {
-        "argument": "Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "Avec 18,9 milliards d’euros prévus pour 2027 contre 20,8 milliards d’euros en 2026, soit une diminution de près de 2 milliards et de 9,5 %, cette mission contribue fortement à l’effort de redressement de nos finances publiques à travers principalement une réforme du financement de la formation professionnelle, avec notamment la suppression de la subvention de 516 millions d’euros à France Compétences et l’arrêt des nouveaux pactes régionaux d’investissement dans les compétences.",
-        "orateur_id": "PA794234",
-        "groupe_id": "PO845470",
-        "date": "2026-10-27",
-        "lieu": "commission",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627019_compte-rendu",
-        "preuve": {
-          "sources": [
-            {
-              "label": "Commission des affaires sociales, réunion n° 19 du 27/10/2026",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627019_compte-rendu"
-            }
-          ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (François Gernigon) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
-          "nature": "deduction"
-        }
-      },
-      {
-        "argument": "Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "Cette ponction s’ajoute à la baisse de 5 points du taux du FCTVA, à la restriction de la dynamique de TVA transférée et à la réduction des ressources régionales issues de la réforme de l’apprentissage.",
-        "orateur_id": "PA942",
-        "groupe_id": "PO845485",
-        "date": "2026-10-14",
-        "lieu": "seance",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
-        "preuve": {
-          "sources": [
-            {
-              "label": "Première séance du mercredi 14 octobre 2026",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
-            }
-          ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Charles de Courson) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
-          "nature": "deduction"
-        }
-      },
-      {
-        "argument": "Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche",
-        "citation": "Derrière la baisse démographique, nous voyons l’opportunité de réorganiser notre école pour mieux remplacer les absences, alléger les effectifs des classes et améliorer les conditions d’apprentissage.",
-        "orateur_id": "PA793716",
-        "groupe_id": "PO845454",
-        "date": "2026-10-06",
-        "lieu": "seance",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-06-octobre-2026",
-        "preuve": {
-          "sources": [
-            {
-              "label": "Première séance du mardi 06 octobre 2026",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-06-octobre-2026"
-            }
-          ],
-          "raisonnement": "Classé contre la mesure parce que l'orateur (M. Laurent Croizier) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+          "raisonnement": "Classé contre la mesure parce que l'orateur (Roland Lescure, ministre de l’économie, des finances et de la souveraineté industrielle, énergétique et numérique, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Le gouvernement s'engage à maintenir le soutien à l'apprentissage, s'opposant ainsi à la réduction des crédits prévue par la mesure. ». Citation recopiée mot pour mot du compte rendu ; classement par le modèle Qwen/Qwen3.8-27B, confiance 0.90.",
           "nature": "deduction"
         }
       }
@@ -3265,25 +3227,29 @@
   },
   "contre_arguments": [
     {
-      "texte": "À l'argument « Position pour la baisse des crédits déduite du mot « economies » dans une phrase sur apprentissage et aides à l'embauche », opposer celui déjà entendu en commission le 4 novembre 2026 : « Position contre la baisse des crédits déduite du mot « retablir les credits » dans une phrase sur apprentissage et aides à l'embauche ». Citation à reprendre : « Il s’agit de rétablir les crédits alloués à France compétences à leur niveau de 2026, soit 516 millions d’euros. »",
-      "repond_a": "Position pour la baisse des crédits déduite du mot « economies » dans une phrase sur apprentissage et aides à l'embauche",
+      "texte": "La réduction des crédits fragilise financièrement les CFA et remet en cause la politique d'apprentissage. L'article 88 prévoit la création d'un fonds national de soutien aux centres de formation d'apprentis (CFA), en complément des mécanismes de financement de droit commun.",
+      "repond_a": "L'extension de l'apprentissage aux niveaux 7 et 8 a déformé le soutien public à l'alternance.",
       "chiffres_utilises": [
-        "2026",
-        "516",
-        "1000000",
-        "2026-11-04",
-        "4"
+        "88"
       ],
-      "mode": "gabarit",
+      "mode": "llm",
       "verifie": true,
       "preuve": {
         "sources": [
           {
-            "label": "Commission du 4 novembre 2026",
+            "label": "commission du 29 octobre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
+          },
+          {
+            "label": "commission du 4 novembre 2026 (argument du camp du client)",
             "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Gabarit de secours : reprend un argument du camp du client déjà entendu dans les débats, sans rédaction par le modèle.",
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
         "nature": "deduction"
       }
     }

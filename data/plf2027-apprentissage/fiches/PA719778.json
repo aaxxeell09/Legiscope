@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.491Z",
+    "generated_at": "2026-11-14T15:25:31.101Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1638,11 +1638,27 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés.",
-    "argument": "Présenter à ce député la position du client (U2P) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Ministère de l’Économie, des finances et de la souveraineté industrielle et numérique, direction du budget, Ministère de l’Europe et des affaires étrangères, Armateurs de France) : indice plus faible qu'un acte personnel.",
-    "chiffres_utilises": [],
-    "mode": "gabarit",
-    "modele": null,
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, mais son groupe soutient la mesure.",
+    "argument": "Présenter à ce député que le cabinet le classe comme perdu pour le client car il a voté pour la mesure, en précisant que les organisations entendues par les rapporteurs de sa commission constituent un indice plus faible qu'un acte personnel.",
+    "chiffres_utilises": [
+      "88",
+      "89",
+      "0.67",
+      "1",
+      "0",
+      "0.87",
+      "2026",
+      "10",
+      "13",
+      "11",
+      "3",
+      "4",
+      "5",
+      "9",
+      "12"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

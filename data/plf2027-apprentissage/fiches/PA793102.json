@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.503Z",
+    "generated_at": "2026-11-14T15:25:31.160Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1915,17 +1915,13 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 545, tombé (« Article 7 : I. – Après l’alinéa 15, insérer l’alinéa suivant : « 4° un bâtiment d’habitation collectif acquis en l’état futur d’achèvement, neuf ou rénové à neuf au sens… »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 545 (« Article 7 : I. – Après l’alinéa 15, insérer l’alinéa suivant : « 4° un bâtiment d’habitation collectif acquis en l’état futur d’achèvement, neuf ou rénové à neuf au sens… »).",
+    "position_probable": "Christian Girard a cosigné l'amendement 674, qui est en attente, et son groupe RN est pour la mesure, ce qui indique qu'il est probablement favorable à la baisse des crédits de l'apprentissage.",
+    "argument": "Présenter à ce député que son groupe soutient la baisse des crédits de l'apprentissage, ce qui contredit l'objectif de son client U2P, et rappeler que son amendement 674, en attente, porte sur un sujet financier distinct de la mesure en discussion.",
     "chiffres_utilises": [
-      "545",
-      "7",
-      "15",
-      "4",
-      "9"
+      "674"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

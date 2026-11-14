@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.461Z",
+    "generated_at": "2026-11-14T15:25:14.614Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -2023,11 +2023,16 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "Position personnelle sur la mesure non connue : aucun amendement et aucune intervention relevés.",
-    "argument": "Présenter à ce député la position du client (U2P) en citant des organisations entendues par les rapporteurs de sa commission sur ce texte (Interprofession de la filière des fruits et légumes frais (Interfel), Chambre d’agriculture, Association Générale des Producteurs de Blé et autres céréales (AGPB)) : indice plus faible qu'un acte personnel.",
-    "chiffres_utilises": [],
-    "mode": "gabarit",
-    "modele": null,
+    "position_probable": "Ses actes sont contradictoires, car il a voté 3 fois pour la mesure et 0 fois contre, ce qui contredit la position de son groupe.",
+    "argument": "Présenter à ce député que son groupe défend la baisse des crédits de l'apprentissage, ce qui contredit ses votes récents en faveur de la mesure, et rappeler que U2P a été entendue par les rapporteurs de sa commission le 26 octobre 2026.",
+    "chiffres_utilises": [
+      "3",
+      "0",
+      "2026",
+      "26"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.480Z",
+    "generated_at": "2026-11-14T15:25:31.053Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -1787,20 +1787,15 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 2528, rejeté (« Après l'article 42 : I. – Le V de l’article L. 6242‑1 du code du travail est complété par deux alinéas ainsi rédigés : « Pour les employeurs relevant de l’économie sociale et… »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 2528 et de sa déclaration du 28 avril 2026 en séance : « Certains programmes qui renforcent l’attractivité de l’école publique, comme le dispositif Emile – Enseignement d’une matière intégré à une langue étrangère –, qui permet l’apprentissage précoce de l’anglais et qui est notamment proposé à l’école Léonie-Wanner, dans ma circonscription, ne disposent pas des ressources nécessaires pour fonctionner pleinement et se limitent, dans cet établissement, au seul niveau CP. »",
+    "position_probable": "Eva Sas est probablement contre la mesure, comme l'indique son groupe, car elle a cosigné l'amendement 2528, rejeté, qui modifie le code du travail.",
+    "argument": "Présenter à ce député l'amendement 2528, cosigné par elle et rejeté, qui visait à compléter l'article L. 6242-1 du code du travail pour les employeurs de l'économie sociale et solidaire, afin de montrer que sa vigilance sur les dispositifs d'emploi rejoint l'objectif de U2P de préserver les crédits de l'apprentissage.",
     "chiffres_utilises": [
       "2528",
-      "42",
-      "6242",
       "1",
-      "2",
-      "2026-04-28",
-      "28",
-      "2026"
+      "6242"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

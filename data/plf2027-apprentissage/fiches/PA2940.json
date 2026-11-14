@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:19:59.475Z",
+    "generated_at": "2026-11-14T15:25:25.756Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -2015,17 +2015,32 @@
     "comptes_rendus_lus": 88
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 2528, rejeté (« Après l'article 42 : I. – Le V de l’article L. 6242‑1 du code du travail est complété par deux alinéas ainsi rédigés : « Pour les employeurs relevant de l’économie sociale et… »).",
-    "argument": "Présenter à ce député la position du client (U2P) en partant de son amendement n° 2528 (« Après l'article 42 : I. – Le V de l’article L. 6242‑1 du code du travail est complété par deux alinéas ainsi rédigés : « Pour les employeurs relevant de l’économie sociale et… »).",
+    "position_probable": "Dominique Voynet est probablement contre la mesure, comme l'indique son groupe, car il n'a déposé ni cosigné aucun amendement ni fait de déclaration personnelle sur ce sujet.",
+    "argument": "Présenter à ce député que son amendement cosigné, qui visait à diminuer les aides publiques à l’apprentissage pour les formations de niveau 7 ou 8, a été rejeté, afin de confirmer son opposition à la baisse des crédits de l’apprentissage.",
     "chiffres_utilises": [
+      "88",
+      "89",
+      "1",
       "2528",
       "42",
       "6242",
-      "1",
-      "2"
+      "6241",
+      "2",
+      "4",
+      "7",
+      "8",
+      "13480",
+      "3250",
+      "2027",
+      "0",
+      "2026",
+      "11",
+      "3",
+      "6",
+      "2030"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }
