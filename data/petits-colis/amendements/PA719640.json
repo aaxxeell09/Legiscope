@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:36:55+01:00",
+    "generated_at": "2026-11-14T13:59:44+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, amendements (17e législature)",
@@ -15,49 +15,35 @@
     "producer": "pipeline/amendements",
     "dossier_id": "petits-colis"
   },
-  "depute_id": "PA610968",
+  "depute_id": "PA719640",
   "amendements": [
     {
-      "id": "AMANR5L17PO838901B1906P1D1N002738",
+      "id": "AMANR5L17PO59048B1906P1D1N001519",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant :« 2 euros »le montant :« 50 euros ».",
+      "resume": "Article 22 : I – À l’alinéa 5, après le mot :« valeur »insérer les mots :« ou d’un poids inférieur à 2 kilos »II. – À l’alinéa 7, compléter la phrase par les mots : « ou…",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519",
+      "numero": "I-CF1519",
+      "sort_libelle": "Tombé",
+      "date_depot": "2025-10-17",
+      "date_sort": "2025-10-22",
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N003395",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "cosignataire",
+      "resume": "Article 22 : I. – À l’alinéa 5, après le mot : « valeur », insérer les mots : « ou d’un poids inférieur à 2 kilos » ;II. – En conséquence, compléter l’alinéa 7 par les mots…",
       "sort": "en_attente",
       "travaille_avec": [],
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738",
-      "numero": "I-2738",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395",
+      "numero": "I-3395",
       "sort_libelle": "En attente au 2025-11-18",
       "date_depot": "2025-10-22",
       "date_sort": null,
       "article": "ART. 22"
-    },
-    {
-      "id": "AMANR5L17PO838901B1906P1D1N002740",
-      "texte_id": "PRJLANR5L17B1906",
-      "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros »le montant :« 25 euros ».",
-      "sort": "retire",
-      "travaille_avec": [],
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740",
-      "numero": "I-2740",
-      "sort_libelle": "Retiré après publication",
-      "date_depot": "2025-10-22",
-      "date_sort": null,
-      "article": "ART. 22"
-    },
-    {
-      "id": "AMANR5L17PO838901B1906P1D1N002871",
-      "texte_id": "PRJLANR5L17B1906",
-      "role": "cosignataire",
-      "resume": "Après l'article 27 : I. – Après la section 15 du chapitre III du titre III du livre III de la deuxième partie du code général des collectivités territoriales, est insérée une…",
-      "sort": "retire",
-      "travaille_avec": [],
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002871",
-      "numero": "I-2871",
-      "sort_libelle": "Retiré après publication",
-      "date_depot": "2025-10-22",
-      "date_sort": null,
-      "article": "APRÈS ART. 27"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:36:55+01:00",
+    "generated_at": "2026-11-14T13:59:44+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, amendements (17e législature)",
@@ -15,35 +15,6 @@
     "producer": "pipeline/amendements",
     "dossier_id": "petits-colis"
   },
-  "depute_id": "PA332523",
-  "amendements": [
-    {
-      "id": "AMANR5L17PO59048B1906P1D1N001774",
-      "texte_id": "PRJLANR5L17B1906",
-      "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant :« 25 euros ».",
-      "sort": "tombe",
-      "travaille_avec": [],
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774",
-      "numero": "I-CF1774",
-      "sort_libelle": "Tombé",
-      "date_depot": "2025-10-18",
-      "date_sort": "2025-10-22",
-      "article": "ART. 22"
-    },
-    {
-      "id": "AMANR5L17PO59048B1906P1D1N001775",
-      "texte_id": "PRJLANR5L17B1906",
-      "role": "cosignataire",
-      "resume": "Article 22 : I. – Sont soumises à une taxe sur les services de commerce électronique permettant la vente à distance de biens matériels expédiés depuis un État ou territoire…",
-      "sort": "rejete",
-      "travaille_avec": [],
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775",
-      "numero": "I-CF1775",
-      "sort_libelle": "Rejeté",
-      "date_depot": "2025-10-18",
-      "date_sort": "2025-10-22",
-      "article": "ART. 22"
-    }
-  ]
+  "depute_id": "PA719372",
+  "amendements": []
 }
