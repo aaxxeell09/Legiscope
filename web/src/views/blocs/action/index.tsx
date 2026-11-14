@@ -131,9 +131,29 @@ function CategoriesDeputes({ groupes, inconnus, raisonVide, dossier, annuaire, d
     <section className="action-section action-deputes">
       <div className="action-section-head"><div><span className="action-kicker">Parlementaires suivis</span><h4>Positions documentées</h4></div></div>
       <div className="action-tabs" role="tablist" aria-label="Catégories de parlementaires">
-        {items.map((item) => <button key={item.key} type="button" role="tab" aria-selected={active === item.key} className="action-tab" onClick={() => setActive(item.key)}><span>{item.label}</span><strong>{item.count}</strong></button>)}
+        {items.map((item, index) => <button
+          key={item.key}
+          type="button"
+          role="tab"
+          aria-selected={active === item.key}
+          aria-controls="action-positions-panel"
+          tabIndex={active === item.key ? 0 : -1}
+          className="action-tab"
+          onClick={() => setActive(item.key)}
+          onKeyDown={(event) => {
+            let next = index;
+            if (event.key === "ArrowRight") next = (index + 1) % items.length;
+            else if (event.key === "ArrowLeft") next = (index - 1 + items.length) % items.length;
+            else if (event.key === "Home") next = 0;
+            else if (event.key === "End") next = items.length - 1;
+            else return;
+            event.preventDefault();
+            setActive(items[next].key);
+            (event.currentTarget.parentElement?.children[next] as HTMLButtonElement | undefined)?.focus();
+          }}
+        ><span>{item.label}</span><strong>{item.count}</strong></button>)}
       </div>
-      <div role="tabpanel" className="action-tabpanel">
+      <div id="action-positions-panel" role="tabpanel" className="action-tabpanel">
         <ColonneGroupe titre={items.find((i) => i.key === active)?.label ?? GROUPE_ACTION[active]} lignes={groupes[active]} raisonVide={raisonVide} dossier={dossier} annuaire={annuaire} disponibles={disponibles} />
       </div>
       <aside className="action-coverage" aria-label="Couverture documentaire">
