@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:55:25.992Z",
+    "generated_at": "2026-11-14T14:01:22.506Z",
     "sources": [],
-    "limits": "42 fiche(s) produite(s) sur 49 député(s) de groupes-action.json et pivots.json. Absents : PA719372 : debats manquant ou invalide ; PA795778 : debats manquant ou invalide ; PA841955 : debats manquant ou invalide ; PA842029 : debats manquant ou invalide ; PA942 : debats manquant ou invalide ; PA719640 : debats manquant ou invalide ; PA840979 : debats manquant ou invalide.",
+    "limits": "49 fiche(s) produite(s) sur 49 député(s) de groupes-action.json et pivots.json.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -24,12 +24,19 @@
     "PA330909",
     "PA841487",
     "PA719138",
+    "PA719372",
     "PA720960",
     "PA720976",
     "PA795762",
+    "PA795778",
     "PA795820",
     "PA841709",
+    "PA841955",
+    "PA842029",
+    "PA942",
     "PA721764",
+    "PA719640",
+    "PA840979",
     "PA1630",
     "PA266797",
     "PA266808",
@@ -50,13 +57,5 @@
     "PA719118",
     "PA722150"
   ],
-  "absents": [
-    "PA719372",
-    "PA795778",
-    "PA841955",
-    "PA842029",
-    "PA942",
-    "PA719640",
-    "PA840979"
-  ]
+  "absents": []
 }

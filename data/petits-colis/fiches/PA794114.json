@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:53:22.565Z",
+    "generated_at": "2026-11-14T14:00:42.790Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -556,6 +556,6 @@
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
-    "date": "2025-11-18"
+    "date": "2025-11-19"
   }
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:55:26.046Z",
+    "generated_at": "2026-11-14T14:01:22.562Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B1906, open data Assemblée nationale",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
       }
     ],
-    "limits": "Événements jusqu'au 18 novembre 2025 inclus (date de référence). data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/petits-colis/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. Flux Hémicycle evenements_parlementaires non lu (pas de cache ; lancer avec --api). 34 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip).",
+    "limits": "Date de référence 19 novembre 2025 lue comme le matin de ce jour : dépôts, publications et déclarations de ce jour connus ; sorts, scrutins, séances et réunions de ce jour pas encore connus. data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/petits-colis/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. Flux Hémicycle evenements_parlementaires non lu (pas de cache ; lancer avec --api). 34 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip).",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -2377,6 +2377,27 @@
       }
     },
     {
+      "id": "ev-seance-2025-11-18",
+      "date": "2025-11-18",
+      "type": "seance",
+      "titre": "Sujet abordé en séance publique le 18 novembre 2025",
+      "detail": "1 intervention relevée, dont : « Depuis bientôt trois ans, le rendement de la TVA baisse. Vous pouvez accuser les petits colis chinois, mais nous ne croyons pas à vos explications. À force de taper sur la consommation populaire et sur les artisans, les gens ne consomment plus ou peu. »",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-18-novembre-2025",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Compte rendu du 18 novembre 2025",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-18-novembre-2025"
+          }
+        ],
+        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-depot-4040",
       "date": "2025-11-17",
       "type": "amendement_depose",
@@ -2725,7 +2746,7 @@
       "date": "2025-10-22",
       "type": "commission",
       "titre": "Sujet abordé en commission le 22 octobre 2025",
-      "detail": "31 interventions relevées, dont : « Nous assistons en effet à un important changement de stratégie de la part des importateurs qui, avant, utilisaient des cargos et des conteneurs, et qui, désormais, fraudent massivement en envoyant de petits colis dont le taux de non-conformité est proche de 50 %. Le meilleur exemple est celui de l’iPhone 17, généralement déclaré au prix de 80 euros quand il arrive de Chine dans un petit colis, alors qu’il en vaut 1 700. »",
+      "detail": "42 interventions relevées, dont : « Nous assistons en effet à un important changement de stratégie de la part des importateurs qui, avant, utilisaient des cargos et des conteneurs, et qui, désormais, fraudent massivement en envoyant de petits colis dont le taux de non-conformité est proche de 50 %. Le meilleur exemple est celui de l’iPhone 17, généralement déclaré au prix de 80 euros quand il arrive de Chine dans un petit colis, alors qu’il en vaut 1 700. »",
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu",
       "effet": "neutre",
@@ -2896,7 +2917,7 @@
       "date": "2025-04-30",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 30 avril 2025",
-      "detail": "1 intervention relevée, dont : « Ce plan, que nous soutenons, prévoit des mesures concrètes visant à faire enfin respecter nos règles, dont les plus fortes devront être prises à l’échelon européen. Je pense en particulier à la volonté française de mettre fin à l’exemption des droits de douane pour les petits colis dans le cadre de la réforme de l’union douanière de l’Union européenne, qui interviendra en 2028, ainsi qu’à l’instauration, à partir de 2026, d’un mécanisme de contribution prenant la forme de frais de gestion forfaitaires appliqués à chaque colis entrant en Europe en vue de financer nos contrôles. »",
+      "detail": "2 interventions relevées, dont : « Les petits colis venus principalement de Chine, introduits à des prix défiant toute concurrence par l’intermédiaire de plateformes numériques, pourraient affluer encore plus massivement sur notre territoire, qui en reçoit déjà 800 millions chaque année. C’est la raison pour laquelle vous avez présenté hier un plan d’action pour la régulation et la sécurité du commerce en ligne. »",
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025",
       "effet": "neutre",
