@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:59:43+01:00",
+    "generated_at": "2026-11-14T15:02:57+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, amendements (17e législature)",
@@ -15,7 +15,7 @@
     "producer": "pipeline/amendements",
     "dossier_id": "petits-colis"
   },
-  "depute_id": "PA842029",
+  "depute_id": "PA342384",
   "amendements": [
     {
       "id": "AMANR5L17PO838901B1906P1D1N004065",
