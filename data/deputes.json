@@ -1,0 +1,6330 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:20:32Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, députés en exercice (AMO10)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/deputes_actifs_mandats_actifs_organes/AMO10_deputes_actifs_mandats_actifs_organes.json.zip"
+      }
+    ],
+    "limits": "Députés en exercice uniquement (574) ; les anciens députés qui ont voté depuis juillet 2024 n'y sont pas. groupe_id null = non-inscrit. Commissions permanentes seulement. Source open data, pas l'API Hémicycle.",
+    "producer": "pipeline/collecte",
+    "dossier_id": null
+  },
+  "deputes": [
+    {
+      "id": "PA1008",
+      "nom": "David",
+      "prenom": "Alain",
+      "groupe_id": "PO845419",
+      "departement": "33",
+      "circonscription": 4,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA1567",
+      "nom": "Guedj",
+      "prenom": "Jérôme",
+      "groupe_id": "PO845419",
+      "departement": "91",
+      "circonscription": 6,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA1592",
+      "nom": "Habib",
+      "prenom": "David",
+      "groupe_id": "PO845485",
+      "departement": "64",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA1630",
+      "nom": "Herbillon",
+      "prenom": "Michel",
+      "groupe_id": "PO845425",
+      "departement": "94",
+      "circonscription": 8,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA1654",
+      "nom": "Hollande",
+      "prenom": "François",
+      "groupe_id": "PO845419",
+      "departement": "19",
+      "circonscription": 1,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA227089",
+      "nom": "Létard",
+      "prenom": "Valérie",
+      "groupe_id": "PO845485",
+      "departement": "59",
+      "circonscription": 21,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA266793",
+      "nom": "Bony",
+      "prenom": "Jean-Yves",
+      "groupe_id": "PO845425",
+      "departement": "15",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA266797",
+      "nom": "Gosselin",
+      "prenom": "Philippe",
+      "groupe_id": "PO845425",
+      "departement": "50",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA266808",
+      "nom": "Rolland",
+      "prenom": "Vincent",
+      "groupe_id": "PO845425",
+      "departement": "73",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA267042",
+      "nom": "Favennec-Bécot",
+      "prenom": "Yannick",
+      "groupe_id": "PO845485",
+      "departement": "53",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA267200",
+      "nom": "Huyghe",
+      "prenom": "Sébastien",
+      "groupe_id": "PO845407",
+      "departement": "59",
+      "circonscription": 5,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA267285",
+      "nom": "Wauquiez",
+      "prenom": "Laurent",
+      "groupe_id": "PO845425",
+      "departement": "43",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA267318",
+      "nom": "Grelier",
+      "prenom": "Jean-Carles",
+      "groupe_id": "PO845454",
+      "departement": "72",
+      "circonscription": 5,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA267763",
+      "nom": "Bataille",
+      "prenom": "Jean-Pierre",
+      "groupe_id": "PO845485",
+      "departement": "59",
+      "circonscription": 15,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA267780",
+      "nom": "Firmin Le Bodo",
+      "prenom": "Agnès",
+      "groupe_id": "PO845470",
+      "departement": "76",
+      "circonscription": 7,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA267794",
+      "nom": "Tabarot",
+      "prenom": "Michèle",
+      "groupe_id": "PO845425",
+      "departement": "06",
+      "circonscription": 9,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA2940",
+      "nom": "Voynet",
+      "prenom": "Dominique",
+      "groupe_id": "PO845439",
+      "departement": "25",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA2952",
+      "nom": "Warsmann",
+      "prenom": "Jean-Luc",
+      "groupe_id": "PO845485",
+      "departement": "08",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA309643",
+      "nom": "Besse",
+      "prenom": "Véronique",
+      "groupe_id": null,
+      "departement": "85",
+      "circonscription": 4,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA330008",
+      "nom": "Breton",
+      "prenom": "Xavier",
+      "groupe_id": "PO845425",
+      "departement": "01",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA330240",
+      "nom": "Ciotti",
+      "prenom": "Éric",
+      "groupe_id": "PO872880",
+      "departement": "06",
+      "circonscription": 1,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA330909",
+      "nom": "Descoeur",
+      "prenom": "Vincent",
+      "groupe_id": "PO845425",
+      "departement": "15",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA331582",
+      "nom": "Vigier",
+      "prenom": "Philippe",
+      "groupe_id": "PO845454",
+      "departement": "28",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA331973",
+      "nom": "Got",
+      "prenom": "Pascale",
+      "groupe_id": "PO845419",
+      "departement": "33",
+      "circonscription": 5,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA332228",
+      "nom": "Benoit",
+      "prenom": "Thierry",
+      "groupe_id": "PO845470",
+      "departement": "35",
+      "circonscription": 6,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA332523",
+      "nom": "Dalloz",
+      "prenom": "Marie-Christine",
+      "groupe_id": "PO845425",
+      "departement": "39",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA333285",
+      "nom": "Garot",
+      "prenom": "Guillaume",
+      "groupe_id": "PO845419",
+      "departement": "53",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA335054",
+      "nom": "Karamanli",
+      "prenom": "Marietta",
+      "groupe_id": "PO845419",
+      "departement": "72",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA335612",
+      "nom": "Lecoq",
+      "prenom": "Jean-Paul",
+      "groupe_id": "PO845514",
+      "departement": "76",
+      "circonscription": 8,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA335999",
+      "nom": "Batho",
+      "prenom": "Delphine",
+      "groupe_id": "PO845439",
+      "departement": "79",
+      "circonscription": 2,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA340343",
+      "nom": "Saulignac",
+      "prenom": "Hervé",
+      "groupe_id": "PO845419",
+      "departement": "07",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA341981",
+      "nom": "Récalde",
+      "prenom": "Marie",
+      "groupe_id": "PO845419",
+      "departement": "33",
+      "circonscription": 6,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA342196",
+      "nom": "Rouaux",
+      "prenom": "Claudia",
+      "groupe_id": "PO845419",
+      "departement": "35",
+      "circonscription": 3,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA342240",
+      "nom": "Bourgeaux",
+      "prenom": "Jean-Luc",
+      "groupe_id": "PO845425",
+      "departement": "35",
+      "circonscription": 7,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA342384",
+      "nom": "Martin",
+      "prenom": "Élisa",
+      "groupe_id": "PO845413",
+      "departement": "38",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA342415",
+      "nom": "Battistel",
+      "prenom": "Marie-Noëlle",
+      "groupe_id": "PO845419",
+      "departement": "38",
+      "circonscription": 4,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA345722",
+      "nom": "Le Grip",
+      "prenom": "Constance",
+      "groupe_id": "PO845407",
+      "departement": "92",
+      "circonscription": 6,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA346782",
+      "nom": "Juvin",
+      "prenom": "Philippe",
+      "groupe_id": "PO845425",
+      "departement": "92",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA368",
+      "nom": "Barnier",
+      "prenom": "Michel",
+      "groupe_id": "PO845425",
+      "departement": "75",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA569",
+      "nom": "Bonnecarrère",
+      "prenom": "Philippe",
+      "groupe_id": null,
+      "departement": "81",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA588884",
+      "nom": "Autain",
+      "prenom": "Clémentine",
+      "groupe_id": "PO845439",
+      "departement": "93",
+      "circonscription": 11,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA605745",
+      "nom": "Sansu",
+      "prenom": "Nicolas",
+      "groupe_id": "PO845514",
+      "departement": "18",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA605782",
+      "nom": "Marcangeli",
+      "prenom": "Laurent",
+      "groupe_id": "PO845470",
+      "departement": "2A",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA606545",
+      "nom": "Roumégas",
+      "prenom": "Jean-Louis",
+      "groupe_id": "PO845439",
+      "departement": "34",
+      "circonscription": 1,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA606573",
+      "nom": "Dombre Coste",
+      "prenom": "Fanny",
+      "groupe_id": "PO845419",
+      "departement": "34",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA606793",
+      "nom": "Baumel",
+      "prenom": "Laurent",
+      "groupe_id": "PO845419",
+      "departement": "37",
+      "circonscription": 4,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA607090",
+      "nom": "Vigier",
+      "prenom": "Jean-Pierre",
+      "groupe_id": "PO845425",
+      "departement": "43",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA607193",
+      "nom": "Errante",
+      "prenom": "Sophie",
+      "groupe_id": null,
+      "departement": "44",
+      "circonscription": 10,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA607395",
+      "nom": "Travert",
+      "prenom": "Stéphane",
+      "groupe_id": "PO845407",
+      "departement": "50",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA607553",
+      "nom": "Potier",
+      "prenom": "Dominique",
+      "groupe_id": "PO845419",
+      "departement": "54",
+      "circonscription": 5,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA607619",
+      "nom": "Molac",
+      "prenom": "Paul",
+      "groupe_id": "PO845485",
+      "departement": "56",
+      "circonscription": 4,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA608172",
+      "nom": "Pirès Beaune",
+      "prenom": "Christine",
+      "groupe_id": "PO845419",
+      "departement": "63",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA608264",
+      "nom": "Capdevielle",
+      "prenom": "Colette",
+      "groupe_id": "PO845419",
+      "departement": "64",
+      "circonscription": 5,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA608416",
+      "nom": "Hetzel",
+      "prenom": "Patrick",
+      "groupe_id": "PO845425",
+      "departement": "67",
+      "circonscription": 7,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA608826",
+      "nom": "Duby-Muller",
+      "prenom": "Virginie",
+      "groupe_id": "PO845425",
+      "departement": "74",
+      "circonscription": 4,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA609332",
+      "nom": "Faure",
+      "prenom": "Olivier",
+      "groupe_id": "PO845419",
+      "departement": "77",
+      "circonscription": 11,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA610002",
+      "nom": "Sas",
+      "prenom": "Eva",
+      "groupe_id": "PO845439",
+      "departement": "75",
+      "circonscription": 8,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA610654",
+      "nom": "Nilor",
+      "prenom": "Jean-Philippe",
+      "groupe_id": "PO845413",
+      "departement": "972",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA610968",
+      "nom": "Amirshahi",
+      "prenom": "Pouria",
+      "groupe_id": "PO845439",
+      "departement": "75",
+      "circonscription": 5,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA642695",
+      "nom": "Bothorel",
+      "prenom": "Éric",
+      "groupe_id": "PO845407",
+      "departement": "22",
+      "circonscription": 5,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA642725",
+      "nom": "Liégeon",
+      "prenom": "Eric",
+      "groupe_id": "PO845425",
+      "departement": "25",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA642734",
+      "nom": "Gérard",
+      "prenom": "Éric",
+      "groupe_id": "PO845485",
+      "departement": "28",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA642764",
+      "nom": "Aviragnet",
+      "prenom": "Joël",
+      "groupe_id": "PO845419",
+      "departement": "31",
+      "circonscription": 8,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA642847",
+      "nom": "Bazin",
+      "prenom": "Thibault",
+      "groupe_id": "PO845425",
+      "departement": "54",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA642935",
+      "nom": "Becht",
+      "prenom": "Olivier",
+      "groupe_id": "PO845407",
+      "departement": "68",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA642988",
+      "nom": "de Lépinau",
+      "prenom": "Hervé",
+      "groupe_id": "PO845401",
+      "departement": "84",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA643089",
+      "nom": "Thiériot",
+      "prenom": "Jean-Louis",
+      "groupe_id": "PO845425",
+      "departement": "77",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA643104",
+      "nom": "Minard",
+      "prenom": "Christelle",
+      "groupe_id": "PO845425",
+      "departement": "28",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA643143",
+      "nom": "Baptiste",
+      "prenom": "Christian",
+      "groupe_id": "PO845419",
+      "departement": "971",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA643157",
+      "nom": "Naillet",
+      "prenom": "Philippe",
+      "groupe_id": "PO845419",
+      "departement": "974",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA643175",
+      "nom": "Dupont",
+      "prenom": "Stella",
+      "groupe_id": null,
+      "departement": "49",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA643184",
+      "nom": "Klinkert",
+      "prenom": "Brigitte",
+      "groupe_id": "PO845407",
+      "departement": "68",
+      "circonscription": 1,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA643192",
+      "nom": "Jourdan",
+      "prenom": "Chantal",
+      "groupe_id": "PO845419",
+      "departement": "61",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA687214",
+      "nom": "Berrios",
+      "prenom": "Sylvain",
+      "groupe_id": "PO845470",
+      "departement": "94",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA712014",
+      "nom": "Ledoux",
+      "prenom": "Vincent",
+      "groupe_id": "PO845407",
+      "departement": "59",
+      "circonscription": 10,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA712015",
+      "nom": "Dive",
+      "prenom": "Julien",
+      "groupe_id": "PO845425",
+      "departement": "02",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA717161",
+      "nom": "Borne",
+      "prenom": "Élisabeth",
+      "groupe_id": "PO845407",
+      "departement": "14",
+      "circonscription": 6,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA717379",
+      "nom": "Maillard",
+      "prenom": "Sylvain",
+      "groupe_id": "PO845407",
+      "departement": "75",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA718674",
+      "nom": "Givernet",
+      "prenom": "Olga",
+      "groupe_id": "PO845407",
+      "departement": "01",
+      "circonscription": 3,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA718784",
+      "nom": "Pauget",
+      "prenom": "Éric",
+      "groupe_id": "PO845425",
+      "departement": "06",
+      "circonscription": 7,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA718820",
+      "nom": "Cestrières",
+      "prenom": "Pauline",
+      "groupe_id": "PO845407",
+      "departement": "12",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA718838",
+      "nom": "Brun",
+      "prenom": "Fabrice",
+      "groupe_id": "PO845425",
+      "departement": "07",
+      "circonscription": 3,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA718850",
+      "nom": "Cordier",
+      "prenom": "Pierre",
+      "groupe_id": "PO845425",
+      "departement": "08",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA719024",
+      "nom": "Blanchet",
+      "prenom": "Christophe",
+      "groupe_id": "PO845454",
+      "departement": "14",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA719032",
+      "nom": "Bouyx",
+      "prenom": "Bertrand",
+      "groupe_id": "PO845470",
+      "departement": "14",
+      "circonscription": 5,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA719080",
+      "nom": "Marsaud",
+      "prenom": "Sandra",
+      "groupe_id": "PO845407",
+      "departement": "16",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA719118",
+      "nom": "Cormier-Bouligeon",
+      "prenom": "François",
+      "groupe_id": "PO845407",
+      "departement": "18",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA719138",
+      "nom": "Castellani",
+      "prenom": "Michel",
+      "groupe_id": "PO845485",
+      "departement": "2B",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA719272",
+      "nom": "Meunier",
+      "prenom": "Frédérique",
+      "groupe_id": "PO845425",
+      "departement": "19",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA719286",
+      "nom": "Colombani",
+      "prenom": "Paul-André",
+      "groupe_id": "PO845485",
+      "departement": "2A",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA719338",
+      "nom": "Melchior",
+      "prenom": "Graziella",
+      "groupe_id": "PO845407",
+      "departement": "29",
+      "circonscription": 5,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA719372",
+      "nom": "Kasbarian",
+      "prenom": "Guillaume",
+      "groupe_id": "PO845407",
+      "departement": "28",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA719388",
+      "nom": "Le Meur",
+      "prenom": "Annaïg",
+      "groupe_id": "PO845407",
+      "departement": "29",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA719404",
+      "nom": "Le Gac",
+      "prenom": "Didier",
+      "groupe_id": "PO845407",
+      "departement": "29",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA719412",
+      "nom": "Le Feur",
+      "prenom": "Sandrine",
+      "groupe_id": "PO845407",
+      "departement": "29",
+      "circonscription": 4,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA719436",
+      "nom": "Meizonnet",
+      "prenom": "Nicolas",
+      "groupe_id": "PO845401",
+      "departement": "30",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA719472",
+      "nom": "Cazeneuve",
+      "prenom": "Jean-René",
+      "groupe_id": "PO845407",
+      "departement": "32",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA719512",
+      "nom": "Vignon",
+      "prenom": "Corinne",
+      "groupe_id": "PO845407",
+      "departement": "31",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA719528",
+      "nom": "Portarrieu",
+      "prenom": "Jean-François",
+      "groupe_id": "PO845470",
+      "departement": "31",
+      "circonscription": 5,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA719550",
+      "nom": "Tanguy",
+      "prenom": "Liliana",
+      "groupe_id": "PO845407",
+      "departement": "29",
+      "circonscription": 7,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA719558",
+      "nom": "Balanant",
+      "prenom": "Erwan",
+      "groupe_id": "PO845454",
+      "departement": "29",
+      "circonscription": 8,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA719578",
+      "nom": "Prud'homme",
+      "prenom": "Loïc",
+      "groupe_id": "PO845413",
+      "departement": "33",
+      "circonscription": 3,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA719632",
+      "nom": "Panonacle",
+      "prenom": "Sophie",
+      "groupe_id": "PO845407",
+      "departement": "33",
+      "circonscription": 8,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA719640",
+      "nom": "Mette",
+      "prenom": "Sophie",
+      "groupe_id": "PO845454",
+      "departement": "33",
+      "circonscription": 9,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA719756",
+      "nom": "Le Nabour",
+      "prenom": "Christine",
+      "groupe_id": "PO845470",
+      "departement": "35",
+      "circonscription": 5,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA719778",
+      "nom": "Jolivet",
+      "prenom": "François",
+      "groupe_id": "PO845470",
+      "departement": "36",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA719798",
+      "nom": "Labaronne",
+      "prenom": "Daniel",
+      "groupe_id": "PO845407",
+      "departement": "37",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA719822",
+      "nom": "Thillaye",
+      "prenom": "Sabine",
+      "groupe_id": "PO845454",
+      "departement": "37",
+      "circonscription": 5,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA719890",
+      "nom": "Brulebois",
+      "prenom": "Danielle",
+      "groupe_id": "PO845407",
+      "departement": "39",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA719914",
+      "nom": "Darrieussecq",
+      "prenom": "Geneviève",
+      "groupe_id": "PO845454",
+      "departement": "40",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA719922",
+      "nom": "Causse",
+      "prenom": "Lionel",
+      "groupe_id": "PO845407",
+      "departement": "40",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA719930",
+      "nom": "Vallaud",
+      "prenom": "Boris",
+      "groupe_id": "PO845419",
+      "departement": "40",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA719938",
+      "nom": "Fesneau",
+      "prenom": "Marc",
+      "groupe_id": "PO845454",
+      "departement": "41",
+      "circonscription": 1,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA719968",
+      "nom": "Bonnet",
+      "prenom": "Sylvie",
+      "groupe_id": "PO845425",
+      "departement": "42",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA720022",
+      "nom": "Lauzzana",
+      "prenom": "Michel",
+      "groupe_id": "PO845407",
+      "departement": "47",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA720038",
+      "nom": "Josso",
+      "prenom": "Sandrine",
+      "groupe_id": "PO845454",
+      "departement": "44",
+      "circonscription": 7,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA720092",
+      "nom": "Ramos",
+      "prenom": "Richard",
+      "groupe_id": "PO845454",
+      "departement": "45",
+      "circonscription": 6,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA720100",
+      "nom": "Pradié",
+      "prenom": "Aurélien",
+      "groupe_id": null,
+      "departement": "46",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA720138",
+      "nom": "Saint-Paul",
+      "prenom": "Laetitia",
+      "groupe_id": "PO845470",
+      "departement": "49",
+      "circonscription": 4,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA720146",
+      "nom": "Masséglia",
+      "prenom": "Denis",
+      "groupe_id": "PO845407",
+      "departement": "49",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA720154",
+      "nom": "Dubré-Chirat",
+      "prenom": "Nicole",
+      "groupe_id": "PO845407",
+      "departement": "49",
+      "circonscription": 6,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA720190",
+      "nom": "Sorre",
+      "prenom": "Bertrand",
+      "groupe_id": "PO845407",
+      "departement": "50",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA720230",
+      "nom": "Magnier",
+      "prenom": "Lise",
+      "groupe_id": "PO845470",
+      "departement": "51",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA720256",
+      "nom": "Bannier",
+      "prenom": "Géraldine",
+      "groupe_id": "PO845454",
+      "departement": "53",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA720334",
+      "nom": "Pahun",
+      "prenom": "Jimmy",
+      "groupe_id": "PO845454",
+      "departement": "56",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA720342",
+      "nom": "Le Peih",
+      "prenom": "Nicole",
+      "groupe_id": "PO845407",
+      "departement": "56",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA720354",
+      "nom": "Jacques",
+      "prenom": "Jean-Michel",
+      "groupe_id": "PO845407",
+      "departement": "56",
+      "circonscription": 6,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA720362",
+      "nom": "Belhaddad",
+      "prenom": "Belkhir",
+      "groupe_id": "PO845419",
+      "departement": "57",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA720370",
+      "nom": "Mendes",
+      "prenom": "Ludovic",
+      "groupe_id": "PO845407",
+      "departement": "57",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA720390",
+      "nom": "End",
+      "prenom": "Jérôme",
+      "groupe_id": "PO845425",
+      "departement": "57",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA720430",
+      "nom": "Bernalicis",
+      "prenom": "Ugo",
+      "groupe_id": "PO845413",
+      "departement": "59",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA720446",
+      "nom": "Liso",
+      "prenom": "Brigitte",
+      "groupe_id": "PO845407",
+      "departement": "59",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA720468",
+      "nom": "Chenu",
+      "prenom": "Sébastien",
+      "groupe_id": "PO845401",
+      "departement": "59",
+      "circonscription": 19,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA720480",
+      "nom": "Parmentier-Lecocq",
+      "prenom": "Charlotte",
+      "groupe_id": "PO845470",
+      "departement": "59",
+      "circonscription": 6,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA720552",
+      "nom": "Rauch",
+      "prenom": "Isabelle",
+      "groupe_id": "PO845470",
+      "departement": "57",
+      "circonscription": 9,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA720560",
+      "nom": "Goulet",
+      "prenom": "Perrine",
+      "groupe_id": "PO845454",
+      "departement": "58",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA720614",
+      "nom": "Le Pen",
+      "prenom": "Marine",
+      "groupe_id": "PO845401",
+      "departement": "62",
+      "circonscription": 11,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA720668",
+      "nom": "Blairy",
+      "prenom": "Emmanuel",
+      "groupe_id": "PO845401",
+      "departement": "62",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA720720",
+      "nom": "Poueyto",
+      "prenom": "Josy",
+      "groupe_id": "PO845454",
+      "departement": "64",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA720728",
+      "nom": "Mattei",
+      "prenom": "Jean-Paul",
+      "groupe_id": "PO845454",
+      "departement": "64",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA720822",
+      "nom": "Bilde",
+      "prenom": "Bruno",
+      "groupe_id": "PO845401",
+      "departement": "62",
+      "circonscription": 12,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA720838",
+      "nom": "Bourouaha",
+      "prenom": "Soumya",
+      "groupe_id": "PO845514",
+      "departement": "93",
+      "circonscription": 4,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA720846",
+      "nom": "Lachaud",
+      "prenom": "Bastien",
+      "groupe_id": "PO845413",
+      "departement": "93",
+      "circonscription": 6,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA720892",
+      "nom": "Panot",
+      "prenom": "Mathilde",
+      "groupe_id": "PO845413",
+      "departement": "94",
+      "circonscription": 10,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA720952",
+      "nom": "Taché",
+      "prenom": "Aurélien",
+      "groupe_id": "PO845413",
+      "departement": "95",
+      "circonscription": 10,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA720960",
+      "nom": "Serva",
+      "prenom": "Olivier",
+      "groupe_id": "PO845485",
+      "departement": "971",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA720976",
+      "nom": "Mathiasin",
+      "prenom": "Max",
+      "groupe_id": "PO845485",
+      "departement": "971",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA720992",
+      "nom": "William",
+      "prenom": "Jiovanny",
+      "groupe_id": "PO845419",
+      "departement": "972",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721004",
+      "nom": "Lakrafi",
+      "prenom": "Amélia",
+      "groupe_id": "PO845407",
+      "departement": "099",
+      "circonscription": 10,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA721024",
+      "nom": "Genetet",
+      "prenom": "Anne",
+      "groupe_id": "PO845407",
+      "departement": "099",
+      "circonscription": 11,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA721062",
+      "nom": "Ratenon",
+      "prenom": "Jean-Hugues",
+      "groupe_id": "PO845413",
+      "departement": "974",
+      "circonscription": 5,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA721110",
+      "nom": "Sanquer",
+      "prenom": "Nicole",
+      "groupe_id": "PO845485",
+      "departement": "987",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA721158",
+      "nom": "Anglade",
+      "prenom": "Pieyre-Alexandre",
+      "groupe_id": "PO845407",
+      "departement": "099",
+      "circonscription": 4,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA721182",
+      "nom": "Petit",
+      "prenom": "Frédéric",
+      "groupe_id": "PO845454",
+      "departement": "099",
+      "circonscription": 7,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA721202",
+      "nom": "Coquerel",
+      "prenom": "Éric",
+      "groupe_id": "PO845413",
+      "departement": "93",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA721210",
+      "nom": "Corbière",
+      "prenom": "Alexis",
+      "groupe_id": "PO845439",
+      "departement": "93",
+      "circonscription": 7,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA721234",
+      "nom": "Petit",
+      "prenom": "Maud",
+      "groupe_id": "PO845454",
+      "departement": "94",
+      "circonscription": 4,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA721270",
+      "nom": "Peu",
+      "prenom": "Stéphane",
+      "groupe_id": "PO845514",
+      "departement": "93",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA721296",
+      "nom": "Gouffier Valente",
+      "prenom": "Guillaume",
+      "groupe_id": "PO845407",
+      "departement": "94",
+      "circonscription": 6,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721314",
+      "nom": "Schellenberger",
+      "prenom": "Raphaël",
+      "groupe_id": null,
+      "departement": "68",
+      "circonscription": 4,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA721336",
+      "nom": "Brocard",
+      "prenom": "Blandine",
+      "groupe_id": "PO845454",
+      "departement": "69",
+      "circonscription": 5,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721410",
+      "nom": "Bonnivard",
+      "prenom": "Émilie",
+      "groupe_id": "PO845425",
+      "departement": "73",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721426",
+      "nom": "Riotton",
+      "prenom": "Véronique",
+      "groupe_id": "PO845407",
+      "departement": "74",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA721458",
+      "nom": "Roseren",
+      "prenom": "Xavier",
+      "groupe_id": "PO845470",
+      "departement": "74",
+      "circonscription": 6,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA721474",
+      "nom": "Viry",
+      "prenom": "Stéphane",
+      "groupe_id": "PO845485",
+      "departement": "88",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA721486",
+      "nom": "Naegelen",
+      "prenom": "Christophe",
+      "groupe_id": "PO845485",
+      "departement": "88",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721584",
+      "nom": "Terlier",
+      "prenom": "Jean",
+      "groupe_id": "PO845407",
+      "departement": "81",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721612",
+      "nom": "Guillerm",
+      "prenom": "Carole",
+      "groupe_id": "PO845454",
+      "departement": "92",
+      "circonscription": 12,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA721632",
+      "nom": "Lemoine",
+      "prenom": "Patricia",
+      "groupe_id": "PO845407",
+      "departement": "77",
+      "circonscription": 5,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA721750",
+      "nom": "Calvez",
+      "prenom": "Céline",
+      "groupe_id": "PO845407",
+      "departement": "92",
+      "circonscription": 5,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA721764",
+      "nom": "Grégoire",
+      "prenom": "Olivia",
+      "groupe_id": "PO845407",
+      "departement": "75",
+      "circonscription": 12,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA721816",
+      "nom": "Boucard",
+      "prenom": "Ian",
+      "groupe_id": "PO845425",
+      "departement": "90",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721844",
+      "nom": "Piron",
+      "prenom": "Béatrice",
+      "groupe_id": "PO845470",
+      "departement": "78",
+      "circonscription": 3,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA721852",
+      "nom": "Lebec",
+      "prenom": "Marie",
+      "groupe_id": "PO845407",
+      "departement": "78",
+      "circonscription": 4,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA721896",
+      "nom": "Faucillon",
+      "prenom": "Elsa",
+      "groupe_id": "PO845514",
+      "departement": "92",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721908",
+      "nom": "Braun-Pivet",
+      "prenom": "Yaël",
+      "groupe_id": "PO845407",
+      "departement": "78",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA721916",
+      "nom": "Pouzyreff",
+      "prenom": "Natalia",
+      "groupe_id": "PO845407",
+      "departement": "78",
+      "circonscription": 6,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA721932",
+      "nom": "Lorho",
+      "prenom": "Marie-France",
+      "groupe_id": "PO845401",
+      "departement": "84",
+      "circonscription": 4,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721960",
+      "nom": "Obono",
+      "prenom": "Danièle",
+      "groupe_id": "PO845413",
+      "departement": "75",
+      "circonscription": 17,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA721984",
+      "nom": "Latombe",
+      "prenom": "Philippe",
+      "groupe_id": "PO845454",
+      "departement": "85",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA722000",
+      "nom": "Buchou",
+      "prenom": "Stéphane",
+      "groupe_id": "PO845407",
+      "departement": "85",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA722070",
+      "nom": "Henriet",
+      "prenom": "Pierre",
+      "groupe_id": "PO845470",
+      "departement": "85",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA722102",
+      "nom": "Vidal",
+      "prenom": "Annie",
+      "groupe_id": "PO845407",
+      "departement": "76",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA722134",
+      "nom": "Fiévet",
+      "prenom": "Jean-Marie",
+      "groupe_id": "PO845407",
+      "departement": "79",
+      "circonscription": 3,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA722142",
+      "nom": "Ruffin",
+      "prenom": "François",
+      "groupe_id": "PO845439",
+      "departement": "80",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA722150",
+      "nom": "Houlié",
+      "prenom": "Sacha",
+      "groupe_id": "PO845419",
+      "departement": "86",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA722162",
+      "nom": "Turquois",
+      "prenom": "Nicolas",
+      "groupe_id": "PO845454",
+      "departement": "86",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA722190",
+      "nom": "Attal",
+      "prenom": "Gabriel",
+      "groupe_id": "PO845407",
+      "departement": "92",
+      "circonscription": 10,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA722252",
+      "nom": "Rixain",
+      "prenom": "Marie-Pierre",
+      "groupe_id": "PO845407",
+      "departement": "91",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA722284",
+      "nom": "Fuchs",
+      "prenom": "Bruno",
+      "groupe_id": "PO845454",
+      "departement": "68",
+      "circonscription": 6,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA722336",
+      "nom": "Thiébaut",
+      "prenom": "Vincent",
+      "groupe_id": "PO845470",
+      "departement": "67",
+      "circonscription": 9,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA722358",
+      "nom": "Gassilloud",
+      "prenom": "Thomas",
+      "groupe_id": "PO845407",
+      "departement": "69",
+      "circonscription": 10,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA722366",
+      "nom": "Fugit",
+      "prenom": "Jean-Luc",
+      "groupe_id": "PO845407",
+      "departement": "69",
+      "circonscription": 11,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA722374",
+      "nom": "Isaac-Sibille",
+      "prenom": "Cyrille",
+      "groupe_id": "PO845454",
+      "departement": "69",
+      "circonscription": 12,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA722382",
+      "nom": "Dirx",
+      "prenom": "Benjamin",
+      "groupe_id": "PO845407",
+      "departement": "71",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA722390",
+      "nom": "Corneloup",
+      "prenom": "Josiane",
+      "groupe_id": "PO845425",
+      "departement": "71",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA736201",
+      "nom": "Taillé-Polian",
+      "prenom": "Sophie",
+      "groupe_id": "PO845439",
+      "departement": "94",
+      "circonscription": 11,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA757225",
+      "nom": "Seo",
+      "prenom": "Mikaele",
+      "groupe_id": "PO845407",
+      "departement": "986",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA759832",
+      "nom": "Pannier-Runacher",
+      "prenom": "Agnès",
+      "groupe_id": "PO845407",
+      "departement": "62",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA774954",
+      "nom": "Blin",
+      "prenom": "Anne-Laure",
+      "groupe_id": "PO845425",
+      "departement": "49",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA774958",
+      "nom": "Leseul",
+      "prenom": "Gérard",
+      "groupe_id": "PO845419",
+      "departement": "76",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA774960",
+      "nom": "Santiago",
+      "prenom": "Isabelle",
+      "groupe_id": "PO845419",
+      "departement": "94",
+      "circonscription": 9,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA774962",
+      "nom": "Lebon",
+      "prenom": "Karine",
+      "groupe_id": "PO845514",
+      "departement": "974",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA791812",
+      "nom": "Chikirou",
+      "prenom": "Sophia",
+      "groupe_id": "PO845413",
+      "departement": "75",
+      "circonscription": 6,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA791824",
+      "nom": "Legrain",
+      "prenom": "Sarah",
+      "groupe_id": "PO845413",
+      "departement": "75",
+      "circonscription": 16,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA793094",
+      "nom": "Ray",
+      "prenom": "Nicolas",
+      "groupe_id": "PO845425",
+      "departement": "03",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA793102",
+      "nom": "Girard",
+      "prenom": "Christian",
+      "groupe_id": "PO845401",
+      "departement": "04",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA793122",
+      "nom": "Daubié",
+      "prenom": "Romain",
+      "groupe_id": "PO845454",
+      "departement": "01",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA793134",
+      "nom": "Buisson",
+      "prenom": "Jérôme",
+      "groupe_id": "PO845401",
+      "departement": "01",
+      "circonscription": 4,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA793146",
+      "nom": "Dragon",
+      "prenom": "Nicolas",
+      "groupe_id": "PO845401",
+      "departement": "02",
+      "circonscription": 1,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA793158",
+      "nom": "Beaurain",
+      "prenom": "José",
+      "groupe_id": "PO845401",
+      "departement": "02",
+      "circonscription": 4,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA793166",
+      "nom": "Dessigny",
+      "prenom": "Jocelyn",
+      "groupe_id": "PO845401",
+      "departement": "02",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA793174",
+      "nom": "Monnet",
+      "prenom": "Yannick",
+      "groupe_id": "PO845514",
+      "departement": "03",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793182",
+      "nom": "Bovet",
+      "prenom": "Jorys",
+      "groupe_id": "PO845401",
+      "departement": "03",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA793194",
+      "nom": "Vuibert",
+      "prenom": "Lionel",
+      "groupe_id": null,
+      "departement": "08",
+      "circonscription": 1,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA793214",
+      "nom": "Abadie-Amiel",
+      "prenom": "Audrey",
+      "groupe_id": "PO845485",
+      "departement": "09",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793218",
+      "nom": "Guitton",
+      "prenom": "Jordan",
+      "groupe_id": "PO845401",
+      "departement": "10",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA793230",
+      "nom": "Ranc",
+      "prenom": "Angélique",
+      "groupe_id": "PO845401",
+      "departement": "10",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793246",
+      "nom": "Falcon",
+      "prenom": "Frédéric",
+      "groupe_id": "PO845401",
+      "departement": "11",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA793254",
+      "nom": "Rancoule",
+      "prenom": "Julien",
+      "groupe_id": "PO845401",
+      "departement": "11",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA793262",
+      "nom": "Alexandre",
+      "prenom": "Laurent",
+      "groupe_id": "PO845413",
+      "departement": "12",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA793270",
+      "nom": "Rousset",
+      "prenom": "Jean-François",
+      "groupe_id": "PO845407",
+      "departement": "12",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793290",
+      "nom": "Lelouis",
+      "prenom": "Gisèle",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA793298",
+      "nom": "Tivoli",
+      "prenom": "Lionel",
+      "groupe_id": "PO845401",
+      "departement": "06",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793322",
+      "nom": "D'Intorni",
+      "prenom": "Christelle",
+      "groupe_id": "PO872880",
+      "departement": "06",
+      "circonscription": 5,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA793334",
+      "nom": "Tribuiani",
+      "prenom": "Cyril",
+      "groupe_id": "PO845401",
+      "departement": "06",
+      "circonscription": 6,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA793342",
+      "nom": "Martin (Alpes-Maritimes)",
+      "prenom": "Alexandra",
+      "groupe_id": "PO845425",
+      "departement": "06",
+      "circonscription": 8,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA793354",
+      "nom": "Mélin",
+      "prenom": "Joëlle",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 9,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793362",
+      "nom": "Gonzalez",
+      "prenom": "José",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 10,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA793374",
+      "nom": "Baubry",
+      "prenom": "Romain",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 15,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA793382",
+      "nom": "Taché",
+      "prenom": "Emmanuel",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 16,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA793394",
+      "nom": "Delaporte",
+      "prenom": "Arthur",
+      "groupe_id": "PO845419",
+      "departement": "14",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA793398",
+      "nom": "Patrier-Leitus",
+      "prenom": "Jérémie",
+      "groupe_id": "PO845470",
+      "departement": "14",
+      "circonscription": 3,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA793432",
+      "nom": "Allisio",
+      "prenom": "Franck",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 12,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA793444",
+      "nom": "Bompard",
+      "prenom": "Manuel",
+      "groupe_id": "PO845413",
+      "departement": "13",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA793452",
+      "nom": "Davi",
+      "prenom": "Hendrik",
+      "groupe_id": "PO845439",
+      "departement": "13",
+      "circonscription": 5,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793464",
+      "nom": "Delogu",
+      "prenom": "Sébastien",
+      "groupe_id": "PO845413",
+      "departement": "13",
+      "circonscription": 7,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA793508",
+      "nom": "Brigand",
+      "prenom": "Hubert",
+      "groupe_id": "PO845425",
+      "departement": "21",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA793520",
+      "nom": "Cosson",
+      "prenom": "Mickaël",
+      "groupe_id": "PO845454",
+      "departement": "22",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA793528",
+      "nom": "Bouloux",
+      "prenom": "Chantal",
+      "groupe_id": "PO845407",
+      "departement": "22",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793532",
+      "nom": "Lepvraud",
+      "prenom": "Murielle",
+      "groupe_id": "PO845413",
+      "departement": "22",
+      "circonscription": 4,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA793548",
+      "nom": "Colombier",
+      "prenom": "Caroline",
+      "groupe_id": "PO845401",
+      "departement": "16",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA793556",
+      "nom": "Gervais",
+      "prenom": "Sabine",
+      "groupe_id": "PO845454",
+      "departement": "17",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793592",
+      "nom": "Grangier",
+      "prenom": "Géraldine",
+      "groupe_id": "PO845401",
+      "departement": "25",
+      "circonscription": 4,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA793608",
+      "nom": "Levavasseur",
+      "prenom": "Katiana",
+      "groupe_id": "PO845401",
+      "departement": "27",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA793616",
+      "nom": "Mauvieux",
+      "prenom": "Kévin",
+      "groupe_id": "PO845401",
+      "departement": "27",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA793624",
+      "nom": "Brun",
+      "prenom": "Philippe",
+      "groupe_id": null,
+      "departement": "27",
+      "circonscription": 4,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA793632",
+      "nom": "Houssin",
+      "prenom": "Timothée",
+      "groupe_id": "PO845401",
+      "departement": "27",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA793656",
+      "nom": "Pollet",
+      "prenom": "Lisette",
+      "groupe_id": "PO845401",
+      "departement": "26",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA793664",
+      "nom": "Pochon",
+      "prenom": "Marie",
+      "groupe_id": "PO845439",
+      "departement": "26",
+      "circonscription": 3,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA793672",
+      "nom": "Loir",
+      "prenom": "Christine",
+      "groupe_id": "PO845401",
+      "departement": "27",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793696",
+      "nom": "Muller",
+      "prenom": "Serge",
+      "groupe_id": "PO845401",
+      "departement": "24",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793708",
+      "nom": "Peytavie",
+      "prenom": "Sébastien",
+      "groupe_id": "PO845439",
+      "departement": "24",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793716",
+      "nom": "Croizier",
+      "prenom": "Laurent",
+      "groupe_id": "PO845454",
+      "departement": "25",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA793736",
+      "nom": "Clouet",
+      "prenom": "Hadrien",
+      "groupe_id": "PO845413",
+      "departement": "31",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA793744",
+      "nom": "Stambach-Terrenoir",
+      "prenom": "Anne",
+      "groupe_id": "PO845413",
+      "departement": "31",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA793756",
+      "nom": "Piquemal",
+      "prenom": "François",
+      "groupe_id": "PO845413",
+      "departement": "31",
+      "circonscription": 4,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA793772",
+      "nom": "Bex",
+      "prenom": "Christophe",
+      "groupe_id": "PO845413",
+      "departement": "31",
+      "circonscription": 7,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA793780",
+      "nom": "Arrighi",
+      "prenom": "Christine",
+      "groupe_id": "PO845439",
+      "departement": "31",
+      "circonscription": 9,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA793796",
+      "nom": "Taupiac",
+      "prenom": "David",
+      "groupe_id": "PO845485",
+      "departement": "32",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA793816",
+      "nom": "Thomin",
+      "prenom": "Mélanie",
+      "groupe_id": "PO845419",
+      "departement": "29",
+      "circonscription": 6,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA793832",
+      "nom": "Gillet",
+      "prenom": "Yoann",
+      "groupe_id": "PO845401",
+      "departement": "30",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA793852",
+      "nom": "Meurin",
+      "prenom": "Pierre",
+      "groupe_id": "PO845401",
+      "departement": "30",
+      "circonscription": 4,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA793872",
+      "nom": "Oziol",
+      "prenom": "Nathalie",
+      "groupe_id": "PO845413",
+      "departement": "34",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA793892",
+      "nom": "Galzy",
+      "prenom": "Stéphanie",
+      "groupe_id": "PO845401",
+      "departement": "34",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA793912",
+      "nom": "Carrière",
+      "prenom": "Sylvain",
+      "groupe_id": "PO845413",
+      "departement": "34",
+      "circonscription": 8,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA793924",
+      "nom": "Bernadeau",
+      "prenom": "Marie-Sophie",
+      "groupe_id": "PO845407",
+      "departement": "33",
+      "circonscription": 10,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA793944",
+      "nom": "Martin (Gironde)",
+      "prenom": "Alexandra",
+      "groupe_id": "PO845407",
+      "departement": "33",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA793948",
+      "nom": "Thierry",
+      "prenom": "Nicolas",
+      "groupe_id": "PO845439",
+      "departement": "33",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA793980",
+      "nom": "Fournier",
+      "prenom": "Charles",
+      "groupe_id": "PO845439",
+      "departement": "37",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA793992",
+      "nom": "Alfandari",
+      "prenom": "Henri",
+      "groupe_id": "PO845470",
+      "departement": "37",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794008",
+      "nom": "Chatelain",
+      "prenom": "Cyrielle",
+      "groupe_id": "PO845439",
+      "departement": "38",
+      "circonscription": 2,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA794022",
+      "nom": "Iordanoff",
+      "prenom": "Jérémie",
+      "groupe_id": "PO845439",
+      "departement": "38",
+      "circonscription": 5,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA794030",
+      "nom": "Jolly",
+      "prenom": "Alexis",
+      "groupe_id": "PO845401",
+      "departement": "38",
+      "circonscription": 6,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794038",
+      "nom": "Neuder",
+      "prenom": "Yannick",
+      "groupe_id": "PO845425",
+      "departement": "38",
+      "circonscription": 7,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794058",
+      "nom": "Gruet",
+      "prenom": "Justine",
+      "groupe_id": "PO845425",
+      "departement": "39",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794082",
+      "nom": "Hignet",
+      "prenom": "Mathilde",
+      "groupe_id": "PO845413",
+      "departement": "35",
+      "circonscription": 4,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794094",
+      "nom": "Bouloux",
+      "prenom": "Mickaël",
+      "groupe_id": "PO845419",
+      "departement": "35",
+      "circonscription": 8,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA794106",
+      "nom": "Taurinya",
+      "prenom": "Andrée",
+      "groupe_id": "PO845413",
+      "departement": "42",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794114",
+      "nom": "Mandon",
+      "prenom": "Emmanuel",
+      "groupe_id": "PO845454",
+      "departement": "42",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA794118",
+      "nom": "Vermorel",
+      "prenom": "Antoine",
+      "groupe_id": "PO845425",
+      "departement": "42",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA794130",
+      "nom": "Kerbrat",
+      "prenom": "Andy",
+      "groupe_id": "PO845413",
+      "departement": "44",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794138",
+      "nom": "Amiot",
+      "prenom": "Ségolène",
+      "groupe_id": "PO845413",
+      "departement": "44",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794146",
+      "nom": "Laernoes",
+      "prenom": "Julie",
+      "groupe_id": "PO845439",
+      "departement": "44",
+      "circonscription": 4,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794154",
+      "nom": "Raux",
+      "prenom": "Jean-Claude",
+      "groupe_id": "PO845439",
+      "departement": "44",
+      "circonscription": 6,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794166",
+      "nom": "Tavel",
+      "prenom": "Matthias",
+      "groupe_id": "PO845413",
+      "departement": "44",
+      "circonscription": 8,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794182",
+      "nom": "Bonnefoy",
+      "prenom": "Jean-Yves",
+      "groupe_id": "PO845425",
+      "departement": "42",
+      "circonscription": 6,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794198",
+      "nom": "Chudeau",
+      "prenom": "Roger",
+      "groupe_id": "PO845401",
+      "departement": "41",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794206",
+      "nom": "Marion",
+      "prenom": "Christophe",
+      "groupe_id": "PO845407",
+      "departement": "41",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794234",
+      "nom": "Gernigon",
+      "prenom": "François",
+      "groupe_id": "PO845470",
+      "departement": "49",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794262",
+      "nom": "Maussion",
+      "prenom": "Patricia",
+      "groupe_id": "PO845454",
+      "departement": "49",
+      "circonscription": 7,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794270",
+      "nom": "Pic",
+      "prenom": "Anna",
+      "groupe_id": "PO845419",
+      "departement": "50",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA794278",
+      "nom": "Albertini",
+      "prenom": "Xavier",
+      "groupe_id": "PO845470",
+      "departement": "51",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794322",
+      "nom": "Ménagé",
+      "prenom": "Thomas",
+      "groupe_id": "PO845401",
+      "departement": "45",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794330",
+      "nom": "Brosse",
+      "prenom": "Anthony",
+      "groupe_id": "PO845407",
+      "departement": "45",
+      "circonscription": 5,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA794354",
+      "nom": "Laporte",
+      "prenom": "Hélène",
+      "groupe_id": "PO845401",
+      "departement": "47",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794418",
+      "nom": "Goulet",
+      "prenom": "Florence",
+      "groupe_id": "PO845401",
+      "departement": "55",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794430",
+      "nom": "Criaud",
+      "prenom": "Michel",
+      "groupe_id": "PO845470",
+      "departement": "56",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA794434",
+      "nom": "Bentz",
+      "prenom": "Christophe",
+      "groupe_id": "PO845401",
+      "departement": "52",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794442",
+      "nom": "Robert-Dehault",
+      "prenom": "Laurence",
+      "groupe_id": "PO845401",
+      "departement": "52",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA794470",
+      "nom": "Gérard",
+      "prenom": "Félicie",
+      "groupe_id": "PO845470",
+      "departement": "59",
+      "circonscription": 7,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA794486",
+      "nom": "Spillebout",
+      "prenom": "Violette",
+      "groupe_id": "PO845407",
+      "departement": "59",
+      "circonscription": 9,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794494",
+      "nom": "Vicot",
+      "prenom": "Roger",
+      "groupe_id": "PO845419",
+      "departement": "59",
+      "circonscription": 11,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794502",
+      "nom": "Taverne",
+      "prenom": "Michaël",
+      "groupe_id": "PO845401",
+      "departement": "59",
+      "circonscription": 12,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794518",
+      "nom": "Marle",
+      "prenom": "Pierre",
+      "groupe_id": "PO845470",
+      "departement": "59",
+      "circonscription": 14,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794530",
+      "nom": "Marchio",
+      "prenom": "Matthieu",
+      "groupe_id": "PO845401",
+      "departement": "59",
+      "circonscription": 16,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA794562",
+      "nom": "Ballard",
+      "prenom": "Philippe",
+      "groupe_id": "PO845401",
+      "departement": "60",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794570",
+      "nom": "Sabatou",
+      "prenom": "Alexandre",
+      "groupe_id": "PO845401",
+      "departement": "60",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA794578",
+      "nom": "Ludmann",
+      "prenom": "Véronique",
+      "groupe_id": "PO845470",
+      "departement": "60",
+      "circonscription": 4,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794582",
+      "nom": "Pfeffer",
+      "prenom": "Kévin",
+      "groupe_id": "PO845401",
+      "departement": "57",
+      "circonscription": 6,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA794590",
+      "nom": "Loubet",
+      "prenom": "Alexandre",
+      "groupe_id": "PO845401",
+      "departement": "57",
+      "circonscription": 7,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794598",
+      "nom": "Jacobelli",
+      "prenom": "Laurent",
+      "groupe_id": "PO845401",
+      "departement": "57",
+      "circonscription": 8,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA794658",
+      "nom": "Fait",
+      "prenom": "Philippe",
+      "groupe_id": "PO845470",
+      "departement": "62",
+      "circonscription": 4,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794670",
+      "nom": "Parmentier",
+      "prenom": "Caroline",
+      "groupe_id": "PO845401",
+      "departement": "62",
+      "circonscription": 9,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794678",
+      "nom": "Frappé",
+      "prenom": "Thierry",
+      "groupe_id": "PO845401",
+      "departement": "62",
+      "circonscription": 10,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794686",
+      "nom": "Maximi",
+      "prenom": "Marianne",
+      "groupe_id": "PO845413",
+      "departement": "63",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA794702",
+      "nom": "Lingemann",
+      "prenom": "Delphine",
+      "groupe_id": "PO845454",
+      "departement": "63",
+      "circonscription": 4,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794710",
+      "nom": "Brugerolles",
+      "prenom": "Julien",
+      "groupe_id": "PO845514",
+      "departement": "63",
+      "circonscription": 5,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794718",
+      "nom": "Engrand",
+      "prenom": "Christine",
+      "groupe_id": null,
+      "departement": "62",
+      "circonscription": 6,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA794734",
+      "nom": "Guiniot",
+      "prenom": "Michel",
+      "groupe_id": "PO845401",
+      "departement": "60",
+      "circonscription": 6,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA794750",
+      "nom": "Liger",
+      "prenom": "Thierry",
+      "groupe_id": "PO845425",
+      "departement": "61",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA794762",
+      "nom": "Dogor-Such",
+      "prenom": "Sandrine",
+      "groupe_id": "PO845401",
+      "departement": "66",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794770",
+      "nom": "Martinez",
+      "prenom": "Michèle",
+      "groupe_id": "PO845401",
+      "departement": "66",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA794778",
+      "nom": "Regol",
+      "prenom": "Sandra",
+      "groupe_id": "PO845439",
+      "departement": "67",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794786",
+      "nom": "Fernandes",
+      "prenom": "Emmanuel",
+      "groupe_id": "PO845413",
+      "departement": "67",
+      "circonscription": 2,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA794798",
+      "nom": "Buffet",
+      "prenom": "Françoise",
+      "groupe_id": "PO845407",
+      "departement": "67",
+      "circonscription": 4,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794802",
+      "nom": "Sitzenstuhl",
+      "prenom": "Charles",
+      "groupe_id": "PO845407",
+      "departement": "67",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA794810",
+      "nom": "Morel",
+      "prenom": "Louise",
+      "groupe_id": "PO845454",
+      "departement": "67",
+      "circonscription": 6,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794830",
+      "nom": "Ott",
+      "prenom": "Hubert",
+      "groupe_id": "PO845454",
+      "departement": "68",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA794838",
+      "nom": "Lemaire",
+      "prenom": "Didier",
+      "groupe_id": "PO845470",
+      "departement": "68",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA794854",
+      "nom": "Echaniz",
+      "prenom": "Iñaki",
+      "groupe_id": "PO845419",
+      "departement": "64",
+      "circonscription": 4,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA794870",
+      "nom": "Ferrer",
+      "prenom": "Sylvie",
+      "groupe_id": "PO845413",
+      "departement": "65",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA794886",
+      "nom": "Blanc",
+      "prenom": "Sophie",
+      "groupe_id": "PO845401",
+      "departement": "66",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794894",
+      "nom": "Sabatini",
+      "prenom": "Anaïs",
+      "groupe_id": "PO845401",
+      "departement": "66",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA794910",
+      "nom": "Hadj-Mimoune",
+      "prenom": "Melouka",
+      "groupe_id": "PO845419",
+      "departement": "69",
+      "circonscription": 6,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA794938",
+      "nom": "Boumertit",
+      "prenom": "Idir",
+      "groupe_id": "PO845413",
+      "departement": "69",
+      "circonscription": 14,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794946",
+      "nom": "Villedieu",
+      "prenom": "Antoine",
+      "groupe_id": "PO845401",
+      "departement": "70",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA794954",
+      "nom": "Salmon",
+      "prenom": "Emeric",
+      "groupe_id": "PO845401",
+      "departement": "70",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA794982",
+      "nom": "Delpech",
+      "prenom": "Julie",
+      "groupe_id": "PO845407",
+      "departement": "72",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA794994",
+      "nom": "Portier",
+      "prenom": "Alexandre",
+      "groupe_id": "PO845425",
+      "departement": "69",
+      "circonscription": 9,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795010",
+      "nom": "Garin",
+      "prenom": "Marie-Charlotte",
+      "groupe_id": "PO845439",
+      "departement": "69",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA795026",
+      "nom": "Violland",
+      "prenom": "Anne-Cécile",
+      "groupe_id": "PO845470",
+      "departement": "74",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795046",
+      "nom": "Yadan",
+      "prenom": "Caroline",
+      "groupe_id": "PO845407",
+      "departement": "099",
+      "circonscription": 8,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA795076",
+      "nom": "Rousseau",
+      "prenom": "Sandrine",
+      "groupe_id": "PO845439",
+      "departement": "75",
+      "circonscription": 9,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA795084",
+      "nom": "Arenas",
+      "prenom": "Rodrigo",
+      "groupe_id": "PO845413",
+      "departement": "75",
+      "circonscription": 10,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795100",
+      "nom": "Martineau",
+      "prenom": "Éric",
+      "groupe_id": "PO845454",
+      "departement": "72",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA795108",
+      "nom": "Leboucher",
+      "prenom": "Élise",
+      "groupe_id": "PO845413",
+      "departement": "72",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA795124",
+      "nom": "Padey",
+      "prenom": "Didier",
+      "groupe_id": "PO845454",
+      "departement": "73",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795136",
+      "nom": "Coulomme",
+      "prenom": "Jean-François",
+      "groupe_id": "PO845413",
+      "departement": "73",
+      "circonscription": 4,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA795156",
+      "nom": "Keloua Hachi",
+      "prenom": "Fatiha",
+      "groupe_id": "PO845419",
+      "departement": "93",
+      "circonscription": 8,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795164",
+      "nom": "Trouvé",
+      "prenom": "Aurélie",
+      "groupe_id": "PO845413",
+      "departement": "93",
+      "circonscription": 9,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA795176",
+      "nom": "Metzdorf",
+      "prenom": "Nicolas",
+      "groupe_id": "PO845407",
+      "departement": "988",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795200",
+      "nom": "Dufour",
+      "prenom": "Alma",
+      "groupe_id": "PO845413",
+      "departement": "76",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA795228",
+      "nom": "Abomangoli",
+      "prenom": "Nadège",
+      "groupe_id": "PO845413",
+      "departement": "93",
+      "circonscription": 10,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA795240",
+      "nom": "Reid Arbelot",
+      "prenom": "Mereana",
+      "groupe_id": "PO845514",
+      "departement": "987",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA795244",
+      "nom": "Lenormand",
+      "prenom": "Stéphane",
+      "groupe_id": "PO845485",
+      "departement": "975",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795258",
+      "nom": "Gumbs",
+      "prenom": "Frantz",
+      "groupe_id": "PO845454",
+      "departement": "977",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795270",
+      "nom": "Poussier-Winsback",
+      "prenom": "Marie-Agnès",
+      "groupe_id": "PO845470",
+      "departement": "76",
+      "circonscription": 9,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA795298",
+      "nom": "Legavre",
+      "prenom": "Jérôme",
+      "groupe_id": "PO845413",
+      "departement": "93",
+      "circonscription": 12,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA795310",
+      "nom": "Guetté",
+      "prenom": "Clémence",
+      "groupe_id": "PO845413",
+      "departement": "94",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA795318",
+      "nom": "Boyard",
+      "prenom": "Louis",
+      "groupe_id": "PO845413",
+      "departement": "94",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA795326",
+      "nom": "Weissberg",
+      "prenom": "Christopher",
+      "groupe_id": "PO845407",
+      "departement": "099",
+      "circonscription": 1,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA795334",
+      "nom": "Larrouquis",
+      "prenom": "Benoît",
+      "groupe_id": "PO845407",
+      "departement": "099",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795350",
+      "nom": "Valletoux",
+      "prenom": "Frédéric",
+      "groupe_id": "PO845470",
+      "departement": "77",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA795362",
+      "nom": "Belluco",
+      "prenom": "Lisa",
+      "groupe_id": "PO845439",
+      "departement": "86",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795374",
+      "nom": "Lecamp",
+      "prenom": "Pascal",
+      "groupe_id": "PO845454",
+      "departement": "86",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA795390",
+      "nom": "Lalanne",
+      "prenom": "Sandrine",
+      "groupe_id": "PO845407",
+      "departement": "94",
+      "circonscription": 5,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795402",
+      "nom": "Coggia",
+      "prenom": "Nathalie",
+      "groupe_id": "PO845407",
+      "departement": "099",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795410",
+      "nom": "Roullaud",
+      "prenom": "Béatrice",
+      "groupe_id": "PO845401",
+      "departement": "77",
+      "circonscription": 6,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795422",
+      "nom": "Maudet",
+      "prenom": "Damien",
+      "groupe_id": "PO845413",
+      "departement": "87",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795430",
+      "nom": "Delautrette",
+      "prenom": "Stéphane",
+      "groupe_id": "PO845419",
+      "departement": "87",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795454",
+      "nom": "Ben Cheikh",
+      "prenom": "Karim",
+      "groupe_id": "PO845439",
+      "departement": "099",
+      "circonscription": 9,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795466",
+      "nom": "Soudais",
+      "prenom": "Ersilia",
+      "groupe_id": "PO845413",
+      "departement": "77",
+      "circonscription": 7,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795482",
+      "nom": "Meunier",
+      "prenom": "Manon",
+      "groupe_id": "PO845413",
+      "departement": "87",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA795516",
+      "nom": "Laisney",
+      "prenom": "Maxime",
+      "groupe_id": "PO845413",
+      "departement": "77",
+      "circonscription": 10,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA795528",
+      "nom": "Rodwell",
+      "prenom": "Charles",
+      "groupe_id": "PO845407",
+      "departement": "78",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795540",
+      "nom": "Grenon",
+      "prenom": "Daniel",
+      "groupe_id": null,
+      "departement": "89",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA795552",
+      "nom": "Odoul",
+      "prenom": "Julien",
+      "groupe_id": "PO845401",
+      "departement": "89",
+      "circonscription": 3,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795588",
+      "nom": "Amrani",
+      "prenom": "Farida",
+      "groupe_id": "PO845413",
+      "departement": "91",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795596",
+      "nom": "Vannier",
+      "prenom": "Paul",
+      "groupe_id": "PO845413",
+      "departement": "95",
+      "circonscription": 5,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795616",
+      "nom": "Bilongo",
+      "prenom": "Carlos Martens",
+      "groupe_id": "PO845413",
+      "departement": "95",
+      "circonscription": 8,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795636",
+      "nom": "Lucas-Lundy",
+      "prenom": "Benjamin",
+      "groupe_id": "PO845439",
+      "departement": "78",
+      "circonscription": 8,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA795644",
+      "nom": "Da Conceicao Carvalho",
+      "prenom": "Nathalie",
+      "groupe_id": "PO845401",
+      "departement": "91",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795664",
+      "nom": "Midy",
+      "prenom": "Paul",
+      "groupe_id": "PO845407",
+      "departement": "91",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795672",
+      "nom": "Le Gall",
+      "prenom": "Arnaud",
+      "groupe_id": "PO845413",
+      "departement": "95",
+      "circonscription": 9,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA795722",
+      "nom": "Olive",
+      "prenom": "Karl",
+      "groupe_id": "PO845407",
+      "departement": "78",
+      "circonscription": 12,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA795730",
+      "nom": "Marchive",
+      "prenom": "Bastien",
+      "groupe_id": "PO845407",
+      "departement": "79",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA795746",
+      "nom": "Léaument",
+      "prenom": "Antoine",
+      "groupe_id": "PO845413",
+      "departement": "91",
+      "circonscription": 10,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795762",
+      "nom": "Califer",
+      "prenom": "Elie",
+      "groupe_id": "PO845419",
+      "departement": "971",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA795778",
+      "nom": "Tanguy",
+      "prenom": "Jean-Philippe",
+      "groupe_id": "PO845401",
+      "departement": "80",
+      "circonscription": 4,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795786",
+      "nom": "Ménaché",
+      "prenom": "Yaël",
+      "groupe_id": "PO845401",
+      "departement": "80",
+      "circonscription": 5,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA795808",
+      "nom": "Sebaihi",
+      "prenom": "Sabrina",
+      "groupe_id": "PO845439",
+      "departement": "92",
+      "circonscription": 4,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA795820",
+      "nom": "Nadeau",
+      "prenom": "Marcellin",
+      "groupe_id": "PO845514",
+      "departement": "972",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795844",
+      "nom": "Erodi",
+      "prenom": "Karen",
+      "groupe_id": "PO845413",
+      "departement": "81",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA795864",
+      "nom": "Cazeneuve",
+      "prenom": "Pierre",
+      "groupe_id": "PO845407",
+      "departement": "92",
+      "circonscription": 7,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795868",
+      "nom": "Castor",
+      "prenom": "Jean-Victor",
+      "groupe_id": "PO845514",
+      "departement": "973",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA795876",
+      "nom": "Rimane",
+      "prenom": "Davy",
+      "groupe_id": "PO845514",
+      "departement": "973",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA795884",
+      "nom": "Ferracci",
+      "prenom": "Marc",
+      "groupe_id": "PO845407",
+      "departement": "099",
+      "circonscription": 6,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795900",
+      "nom": "Hamelet",
+      "prenom": "Marine",
+      "groupe_id": "PO845401",
+      "departement": "82",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA795908",
+      "nom": "Chenevard",
+      "prenom": "Yannick",
+      "groupe_id": "PO845407",
+      "departement": "83",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA795912",
+      "nom": "Lavalette",
+      "prenom": "Laure",
+      "groupe_id": "PO845401",
+      "departement": "83",
+      "circonscription": 2,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA795920",
+      "nom": "Thevenot",
+      "prenom": "Prisca",
+      "groupe_id": "PO845407",
+      "departement": "92",
+      "circonscription": 8,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795954",
+      "nom": "Ibled",
+      "prenom": "Catherine",
+      "groupe_id": "PO845407",
+      "departement": "75",
+      "circonscription": 13,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA795962",
+      "nom": "Missoffe",
+      "prenom": "Joséphine",
+      "groupe_id": "PO845407",
+      "departement": "75",
+      "circonscription": 14,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA795966",
+      "nom": "Rambaud",
+      "prenom": "Stéphane",
+      "groupe_id": "PO845401",
+      "departement": "83",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA795974",
+      "nom": "Lottiaux",
+      "prenom": "Philippe",
+      "groupe_id": "PO845401",
+      "departement": "83",
+      "circonscription": 4,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA795982",
+      "nom": "Saintoul",
+      "prenom": "Aurélien",
+      "groupe_id": "PO845413",
+      "departement": "92",
+      "circonscription": 11,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA795998",
+      "nom": "K/Bidi",
+      "prenom": "Émeline",
+      "groupe_id": "PO845514",
+      "departement": "974",
+      "circonscription": 4,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA796010",
+      "nom": "Maillot",
+      "prenom": "Frédéric",
+      "groupe_id": "PO845514",
+      "departement": "974",
+      "circonscription": 6,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA796018",
+      "nom": "Simonnet",
+      "prenom": "Danielle",
+      "groupe_id": "PO845439",
+      "departement": "75",
+      "circonscription": 15,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA796026",
+      "nom": "Lechanteux",
+      "prenom": "Julie",
+      "groupe_id": "PO845401",
+      "departement": "83",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA796046",
+      "nom": "Delyon",
+      "prenom": "Isabelle",
+      "groupe_id": "PO845401",
+      "departement": "83",
+      "circonscription": 7,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA796050",
+      "nom": "Schreck",
+      "prenom": "Philippe",
+      "groupe_id": "PO845401",
+      "departement": "83",
+      "circonscription": 8,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA796062",
+      "nom": "Portes",
+      "prenom": "Thomas",
+      "groupe_id": "PO845413",
+      "departement": "93",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA796070",
+      "nom": "Gaillard",
+      "prenom": "Perceval",
+      "groupe_id": "PO845413",
+      "departement": "974",
+      "circonscription": 7,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA796078",
+      "nom": "Youssouffa",
+      "prenom": "Estelle",
+      "groupe_id": "PO845485",
+      "departement": "976",
+      "circonscription": 1,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA796090",
+      "nom": "Caron",
+      "prenom": "Aymeric",
+      "groupe_id": "PO845413",
+      "departement": "75",
+      "circonscription": 18,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA796106",
+      "nom": "Bénard",
+      "prenom": "Édouard",
+      "groupe_id": "PO845514",
+      "departement": "76",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA796118",
+      "nom": "Auzanot",
+      "prenom": "Bénédicte",
+      "groupe_id": "PO845401",
+      "departement": "84",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA805166",
+      "nom": "Bergantz",
+      "prenom": "Anne",
+      "groupe_id": "PO845454",
+      "departement": "78",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA817203",
+      "nom": "Miller",
+      "prenom": "Laure",
+      "groupe_id": "PO845407",
+      "departement": "51",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA817211",
+      "nom": "Pilato",
+      "prenom": "René",
+      "groupe_id": "PO845413",
+      "departement": "16",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA822617",
+      "nom": "Froger",
+      "prenom": "Martine",
+      "groupe_id": "PO845419",
+      "departement": "09",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA826635",
+      "nom": "Rousseau",
+      "prenom": "Aurélien",
+      "groupe_id": "PO845419",
+      "departement": "78",
+      "circonscription": 7,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA840067",
+      "nom": "Tomatis",
+      "prenom": "Gabriel",
+      "groupe_id": "PO845401",
+      "departement": "06",
+      "circonscription": 4,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA840075",
+      "nom": "Casterman",
+      "prenom": "Eddy",
+      "groupe_id": "PO845401",
+      "departement": "02",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA840107",
+      "nom": "Chaumeil",
+      "prenom": "Bernard",
+      "groupe_id": "PO845401",
+      "departement": "34",
+      "circonscription": 7,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA840119",
+      "nom": "Delannoy",
+      "prenom": "Sandra",
+      "groupe_id": null,
+      "departement": "59",
+      "circonscription": 3,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA840135",
+      "nom": "Dufosset",
+      "prenom": "Alexandre",
+      "groupe_id": "PO845401",
+      "departement": "59",
+      "circonscription": 18,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA840143",
+      "nom": "Florquin",
+      "prenom": "Guillaume",
+      "groupe_id": "PO845401",
+      "departement": "59",
+      "circonscription": 20,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA840159",
+      "nom": "Clavet",
+      "prenom": "Bruno",
+      "groupe_id": "PO845401",
+      "departement": "62",
+      "circonscription": 3,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA840175",
+      "nom": "Bregman",
+      "prenom": "Dorine",
+      "groupe_id": "PO845419",
+      "departement": "75",
+      "circonscription": 7,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA840195",
+      "nom": "Fiol",
+      "prenom": "Muriel",
+      "groupe_id": "PO845401",
+      "departement": "83",
+      "circonscription": 6,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA840235",
+      "nom": "Frébault",
+      "prenom": "Moerani",
+      "groupe_id": "PO845407",
+      "departement": "987",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA840657",
+      "nom": "Ricourt Vaginay",
+      "prenom": "Sophie",
+      "groupe_id": "PO872880",
+      "departement": "04",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA840665",
+      "nom": "Allemand",
+      "prenom": "Marie-José",
+      "groupe_id": "PO845419",
+      "departement": "05",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA840673",
+      "nom": "Rossi",
+      "prenom": "Valérie",
+      "groupe_id": "PO845419",
+      "departement": "05",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA840685",
+      "nom": "Trébuchet",
+      "prenom": "Vincent",
+      "groupe_id": "PO872880",
+      "departement": "07",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA840701",
+      "nom": "Chaix",
+      "prenom": "Bernard",
+      "groupe_id": "PO872880",
+      "departement": "06",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA840721",
+      "nom": "Chavent",
+      "prenom": "Marc",
+      "groupe_id": "PO872880",
+      "departement": "01",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA840745",
+      "nom": "Jordan",
+      "prenom": "Édouard",
+      "groupe_id": "PO845401",
+      "departement": "11",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA840757",
+      "nom": "Griseti",
+      "prenom": "Monique",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA840765",
+      "nom": "Lhardit",
+      "prenom": "Laurent",
+      "groupe_id": "PO845419",
+      "departement": "13",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA840773",
+      "nom": "Fayssat",
+      "prenom": "Olivier",
+      "groupe_id": "PO872880",
+      "departement": "13",
+      "circonscription": 6,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA840781",
+      "nom": "Tonussi",
+      "prenom": "Romain",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 8,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA840793",
+      "nom": "Pena",
+      "prenom": "Marc",
+      "groupe_id": "PO845419",
+      "departement": "13",
+      "circonscription": 11,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA840801",
+      "nom": "Fouquart",
+      "prenom": "Emmanuel",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 13,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA840809",
+      "nom": "Verny",
+      "prenom": "Gérault",
+      "groupe_id": "PO872880",
+      "departement": "13",
+      "circonscription": 14,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA840817",
+      "nom": "Bruneau",
+      "prenom": "Joël",
+      "groupe_id": "PO845485",
+      "departement": "14",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA840829",
+      "nom": "Barusseau",
+      "prenom": "Fabrice",
+      "groupe_id": "PO845419",
+      "departement": "17",
+      "circonscription": 3,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA840837",
+      "nom": "Markowsky",
+      "prenom": "Pascal",
+      "groupe_id": "PO845401",
+      "departement": "17",
+      "circonscription": 4,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA840849",
+      "nom": "Riotte",
+      "prenom": "Emmanuel",
+      "groupe_id": "PO845470",
+      "departement": "18",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA840857",
+      "nom": "Lechon",
+      "prenom": "Nadine",
+      "groupe_id": "PO845401",
+      "departement": "24",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA840869",
+      "nom": "Joubert",
+      "prenom": "Florence",
+      "groupe_id": "PO845401",
+      "departement": "24",
+      "circonscription": 3,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA840889",
+      "nom": "Bloch",
+      "prenom": "Matthieu",
+      "groupe_id": "PO872880",
+      "departement": "25",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA840903",
+      "nom": "Christophle",
+      "prenom": "Paul",
+      "groupe_id": "PO845419",
+      "departement": "26",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA840915",
+      "nom": "Monnier",
+      "prenom": "Thibaut",
+      "groupe_id": "PO845401",
+      "departement": "26",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA840939",
+      "nom": "Godard",
+      "prenom": "Océane",
+      "groupe_id": "PO845419",
+      "departement": "21",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA840947",
+      "nom": "Hervieu",
+      "prenom": "Catherine",
+      "groupe_id": "PO845439",
+      "departement": "21",
+      "circonscription": 2,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA840955",
+      "nom": "Pribetich",
+      "prenom": "Pierre",
+      "groupe_id": "PO845419",
+      "departement": "21",
+      "circonscription": 3,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA840967",
+      "nom": "Lioret",
+      "prenom": "René",
+      "groupe_id": "PO845401",
+      "departement": "21",
+      "circonscription": 5,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA840979",
+      "nom": "Le Fur",
+      "prenom": "Corentin",
+      "groupe_id": "PO845425",
+      "departement": "22",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA840983",
+      "nom": "Lenoir",
+      "prenom": "Bartolomé",
+      "groupe_id": "PO872880",
+      "departement": "23",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA840997",
+      "nom": "Biteau",
+      "prenom": "Benoît",
+      "groupe_id": "PO845439",
+      "departement": "17",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841023",
+      "nom": "Cadalen",
+      "prenom": "Pierre-Yves",
+      "groupe_id": "PO845413",
+      "departement": "29",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA841047",
+      "nom": "Ceccoli",
+      "prenom": "François-Xavier",
+      "groupe_id": "PO845425",
+      "departement": "2B",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841059",
+      "nom": "Dellong Meng",
+      "prenom": "Catherine",
+      "groupe_id": "PO845401",
+      "departement": "30",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841067",
+      "nom": "Allegret-Pilot",
+      "prenom": "Alexandre",
+      "groupe_id": "PO872880",
+      "departement": "30",
+      "circonscription": 5,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841079",
+      "nom": "Gardet",
+      "prenom": "Laurence",
+      "groupe_id": "PO845401",
+      "departement": "30",
+      "circonscription": 6,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841091",
+      "nom": "Simion",
+      "prenom": "Arnaud",
+      "groupe_id": "PO845419",
+      "departement": "31",
+      "circonscription": 6,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA841107",
+      "nom": "Oberti",
+      "prenom": "Jacques",
+      "groupe_id": "PO845419",
+      "departement": "31",
+      "circonscription": 10,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841135",
+      "nom": "Gilhet",
+      "prenom": "Benoit",
+      "groupe_id": "PO845401",
+      "departement": "34",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841139",
+      "nom": "Gabarron",
+      "prenom": "Julien",
+      "groupe_id": "PO845401",
+      "departement": "34",
+      "circonscription": 6,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841151",
+      "nom": "Fruchon",
+      "prenom": "Alix",
+      "groupe_id": "PO845485",
+      "departement": "36",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA841183",
+      "nom": "Mansouri",
+      "prenom": "Hanane",
+      "groupe_id": "PO872880",
+      "departement": "38",
+      "circonscription": 8,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA841191",
+      "nom": "Nosbé",
+      "prenom": "Sandrine",
+      "groupe_id": "PO845413",
+      "departement": "38",
+      "circonscription": 9,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841199",
+      "nom": "Perez",
+      "prenom": "Thierry",
+      "groupe_id": "PO845401",
+      "departement": "38",
+      "circonscription": 10,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841207",
+      "nom": "Alloncle",
+      "prenom": "Charles",
+      "groupe_id": "PO872880",
+      "departement": "34",
+      "circonscription": 9,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841215",
+      "nom": "Mesmeur",
+      "prenom": "Marie",
+      "groupe_id": "PO845413",
+      "departement": "35",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841223",
+      "nom": "Lahais",
+      "prenom": "Tristan",
+      "groupe_id": "PO845439",
+      "departement": "35",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841243",
+      "nom": "Saint-Pasteur",
+      "prenom": "Sébastien",
+      "groupe_id": "PO845419",
+      "departement": "33",
+      "circonscription": 7,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841251",
+      "nom": "Feld",
+      "prenom": "Mathilde",
+      "groupe_id": "PO845413",
+      "departement": "33",
+      "circonscription": 12,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841295",
+      "nom": "Courbon",
+      "prenom": "Pierrick",
+      "groupe_id": "PO845419",
+      "departement": "42",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841315",
+      "nom": "Benbrahim",
+      "prenom": "Karim",
+      "groupe_id": "PO845419",
+      "departement": "44",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841327",
+      "nom": "Roussel",
+      "prenom": "Fabrice",
+      "groupe_id": "PO845419",
+      "departement": "44",
+      "circonscription": 5,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841339",
+      "nom": "Brard",
+      "prenom": "Jean-Michel",
+      "groupe_id": "PO845470",
+      "departement": "44",
+      "circonscription": 9,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841351",
+      "nom": "Duplessy",
+      "prenom": "Emmanuel",
+      "groupe_id": "PO845439",
+      "departement": "45",
+      "circonscription": 2,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA841359",
+      "nom": "de Pélichy",
+      "prenom": "Constance",
+      "groupe_id": "PO845485",
+      "departement": "45",
+      "circonscription": 3,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841367",
+      "nom": "Proença",
+      "prenom": "Christophe",
+      "groupe_id": "PO845419",
+      "departement": "46",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841377",
+      "nom": "Rey-Rinchet",
+      "prenom": "Emeline",
+      "groupe_id": "PO845425",
+      "departement": "47",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841381",
+      "nom": "Pantel",
+      "prenom": "Sophie",
+      "groupe_id": "PO845419",
+      "departement": "48",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841395",
+      "nom": "Michelet",
+      "prenom": "Maxime",
+      "groupe_id": "PO872880",
+      "departement": "51",
+      "circonscription": 3,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841419",
+      "nom": "Girard",
+      "prenom": "Damien",
+      "groupe_id": "PO845439",
+      "departement": "56",
+      "circonscription": 5,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841431",
+      "nom": "Colin-Oesterlé",
+      "prenom": "Nathalie",
+      "groupe_id": "PO845470",
+      "departement": "57",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA841439",
+      "nom": "Jenft",
+      "prenom": "Pascal",
+      "groupe_id": "PO845401",
+      "departement": "57",
+      "circonscription": 5,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841451",
+      "nom": "Guibert",
+      "prenom": "Julien",
+      "groupe_id": "PO845401",
+      "departement": "58",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841463",
+      "nom": "Mercier",
+      "prenom": "Estelle",
+      "groupe_id": "PO845419",
+      "departement": "54",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841471",
+      "nom": "Hablot",
+      "prenom": "Stéphane",
+      "groupe_id": "PO845419",
+      "departement": "54",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA841479",
+      "nom": "Weber",
+      "prenom": "Frédéric",
+      "groupe_id": "PO845401",
+      "departement": "54",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841487",
+      "nom": "Boulogne",
+      "prenom": "Anthony",
+      "groupe_id": "PO845401",
+      "departement": "54",
+      "circonscription": 6,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841495",
+      "nom": "Amblard",
+      "prenom": "Maxime",
+      "groupe_id": "PO845401",
+      "departement": "55",
+      "circonscription": 1,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841507",
+      "nom": "Bonnet",
+      "prenom": "Nicolas",
+      "groupe_id": "PO845439",
+      "departement": "63",
+      "circonscription": 3,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841515",
+      "nom": "Le Coq",
+      "prenom": "Aurélien",
+      "groupe_id": "PO845413",
+      "departement": "59",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841531",
+      "nom": "Bentorki",
+      "prenom": "Shéhérazade",
+      "groupe_id": "PO845413",
+      "departement": "59",
+      "circonscription": 8,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841543",
+      "nom": "Bodart",
+      "prenom": "Jean",
+      "groupe_id": "PO845485",
+      "departement": "59",
+      "circonscription": 13,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841553",
+      "nom": "Tesson",
+      "prenom": "Thierry",
+      "groupe_id": "PO845401",
+      "departement": "59",
+      "circonscription": 17,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841563",
+      "nom": "Marais-Beuil",
+      "prenom": "Claire",
+      "groupe_id": "PO845401",
+      "departement": "60",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841575",
+      "nom": "Vos",
+      "prenom": "Frédéric-Pierre",
+      "groupe_id": "PO845401",
+      "departement": "60",
+      "circonscription": 5,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841587",
+      "nom": "Magnier",
+      "prenom": "David",
+      "groupe_id": "PO845401",
+      "departement": "60",
+      "circonscription": 7,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841595",
+      "nom": "Chazé",
+      "prenom": "Cendrine",
+      "groupe_id": "PO845425",
+      "departement": "61",
+      "circonscription": 3,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA841605",
+      "nom": "Golliot",
+      "prenom": "Antoine",
+      "groupe_id": "PO845401",
+      "departement": "62",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841613",
+      "nom": "de Fleurian",
+      "prenom": "Marc",
+      "groupe_id": "PO845401",
+      "departement": "62",
+      "circonscription": 7,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA841621",
+      "nom": "Evrard",
+      "prenom": "Auguste",
+      "groupe_id": "PO845401",
+      "departement": "62",
+      "circonscription": 8,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841633",
+      "nom": "Dufau",
+      "prenom": "Peio",
+      "groupe_id": "PO845419",
+      "departement": "64",
+      "circonscription": 6,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841645",
+      "nom": "Bernhardt",
+      "prenom": "Théo",
+      "groupe_id": "PO845401",
+      "departement": "67",
+      "circonscription": 8,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA841657",
+      "nom": "Belouassa-Cherifi",
+      "prenom": "Anaïs",
+      "groupe_id": "PO845413",
+      "departement": "69",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA841665",
+      "nom": "Fégné",
+      "prenom": "Denis",
+      "groupe_id": "PO845419",
+      "departement": "65",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841681",
+      "nom": "Sother",
+      "prenom": "Thierry",
+      "groupe_id": "PO845419",
+      "departement": "67",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841701",
+      "nom": "Balage El Mariky",
+      "prenom": "Léa",
+      "groupe_id": "PO845439",
+      "departement": "75",
+      "circonscription": 3,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841709",
+      "nom": "Hoffman",
+      "prenom": "Emmanuelle",
+      "groupe_id": "PO845407",
+      "departement": "75",
+      "circonscription": 4,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA841713",
+      "nom": "Tavernier",
+      "prenom": "Boris",
+      "groupe_id": "PO845439",
+      "departement": "69",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841717",
+      "nom": "Runel",
+      "prenom": "Sandrine",
+      "groupe_id": "PO845419",
+      "departement": "69",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA841729",
+      "nom": "Lahmar",
+      "prenom": "Abdelkader",
+      "groupe_id": "PO845413",
+      "departement": "69",
+      "circonscription": 7,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841737",
+      "nom": "Gery",
+      "prenom": "Jonathan",
+      "groupe_id": "PO845401",
+      "departement": "69",
+      "circonscription": 8,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841749",
+      "nom": "Joncour",
+      "prenom": "Tiffany",
+      "groupe_id": "PO845401",
+      "departement": "69",
+      "circonscription": 13,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841761",
+      "nom": "Dutremble",
+      "prenom": "Aurélien",
+      "groupe_id": "PO845401",
+      "departement": "71",
+      "circonscription": 3,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841769",
+      "nom": "Michoux",
+      "prenom": "Éric",
+      "groupe_id": "PO872880",
+      "departement": "71",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA841801",
+      "nom": "Carteron",
+      "prenom": "Danièle",
+      "groupe_id": "PO845407",
+      "departement": "74",
+      "circonscription": 2,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841813",
+      "nom": "Herouin-Léautey",
+      "prenom": "Florence",
+      "groupe_id": "PO845419",
+      "departement": "76",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841825",
+      "nom": "Martin",
+      "prenom": "Patrice",
+      "groupe_id": "PO845401",
+      "departement": "76",
+      "circonscription": 6,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841837",
+      "nom": "Le Bourgeois",
+      "prenom": "Robert",
+      "groupe_id": "PO845401",
+      "departement": "76",
+      "circonscription": 10,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841845",
+      "nom": "Saint-Martin",
+      "prenom": "Arnaud",
+      "groupe_id": "PO845413",
+      "departement": "77",
+      "circonscription": 1,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841853",
+      "nom": "Hervieu",
+      "prenom": "Céline",
+      "groupe_id": "PO845419",
+      "departement": "75",
+      "circonscription": 11,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA841873",
+      "nom": "Limongi",
+      "prenom": "Julien",
+      "groupe_id": "PO845401",
+      "departement": "77",
+      "circonscription": 4,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841885",
+      "nom": "Bonnet",
+      "prenom": "Arnaud",
+      "groupe_id": "PO845439",
+      "departement": "77",
+      "circonscription": 8,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841893",
+      "nom": "Thiébault-Martinez",
+      "prenom": "Céline",
+      "groupe_id": "PO845419",
+      "departement": "77",
+      "circonscription": 9,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA841919",
+      "nom": "Diop",
+      "prenom": "Dieynaba",
+      "groupe_id": "PO845419",
+      "departement": "78",
+      "circonscription": 9,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA841927",
+      "nom": "Ronceret",
+      "prenom": "Anne-Sophie",
+      "groupe_id": "PO845407",
+      "departement": "78",
+      "circonscription": 10,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA841931",
+      "nom": "Mazaury",
+      "prenom": "Laurent",
+      "groupe_id": "PO845485",
+      "departement": "78",
+      "circonscription": 11,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA841947",
+      "nom": "Hamdane",
+      "prenom": "Zahia",
+      "groupe_id": "PO845413",
+      "departement": "80",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA841955",
+      "nom": "Renault",
+      "prenom": "Matthias",
+      "groupe_id": "PO845401",
+      "departement": "80",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA841973",
+      "nom": "Carbonnel",
+      "prenom": "Pierre-Henri",
+      "groupe_id": "PO872880",
+      "departement": "82",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA841981",
+      "nom": "Rimbert",
+      "prenom": "Catherine",
+      "groupe_id": "PO845401",
+      "departement": "84",
+      "circonscription": 5,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA841993",
+      "nom": "Paillat",
+      "prenom": "Dominique",
+      "groupe_id": "PO845470",
+      "departement": "85",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA842001",
+      "nom": "Bigot",
+      "prenom": "Guillaume",
+      "groupe_id": "PO845401",
+      "departement": "90",
+      "circonscription": 2,
+      "commissions": [
+        "PO59047"
+      ]
+    },
+    {
+      "id": "PA842013",
+      "nom": "Gustave",
+      "prenom": "Steevy",
+      "groupe_id": "PO845439",
+      "departement": "91",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA842029",
+      "nom": "Lejeune",
+      "prenom": "Claire",
+      "groupe_id": "PO845413",
+      "departement": "91",
+      "circonscription": 7,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA842037",
+      "nom": "Cernon",
+      "prenom": "Bérenger",
+      "groupe_id": "PO845413",
+      "departement": "91",
+      "circonscription": 8,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA842045",
+      "nom": "Ozenne",
+      "prenom": "Julie",
+      "groupe_id": "PO845439",
+      "departement": "91",
+      "circonscription": 9,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA842073",
+      "nom": "Dussausaye",
+      "prenom": "Gaëtan",
+      "groupe_id": "PO845401",
+      "departement": "88",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA842085",
+      "nom": "Humbert",
+      "prenom": "Sébastien",
+      "groupe_id": "PO845401",
+      "departement": "88",
+      "circonscription": 4,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA842097",
+      "nom": "Roy",
+      "prenom": "Sophie-Laurence",
+      "groupe_id": "PO845401",
+      "departement": "89",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA842105",
+      "nom": "Arnault",
+      "prenom": "Raphaël",
+      "groupe_id": "PO845413",
+      "departement": "84",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA842121",
+      "nom": "Tryzna",
+      "prenom": "Nicolas",
+      "groupe_id": "PO845425",
+      "departement": "94",
+      "circonscription": 7,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA842125",
+      "nom": "Lam",
+      "prenom": "Thomas",
+      "groupe_id": "PO845470",
+      "departement": "92",
+      "circonscription": 2,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA842141",
+      "nom": "de Maistre",
+      "prenom": "Élisabeth",
+      "groupe_id": "PO845425",
+      "departement": "92",
+      "circonscription": 9,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA842147",
+      "nom": "Mongardien",
+      "prenom": "Christophe",
+      "groupe_id": "PO845407",
+      "departement": "92",
+      "circonscription": 13,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA842155",
+      "nom": "Diouara",
+      "prenom": "Aly",
+      "groupe_id": "PO845413",
+      "departement": "93",
+      "circonscription": 5,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA842183",
+      "nom": "Blanchard",
+      "prenom": "Benoît",
+      "groupe_id": "PO845470",
+      "departement": "95",
+      "circonscription": 4,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA842187",
+      "nom": "Cathala",
+      "prenom": "Gabrielle",
+      "groupe_id": "PO845413",
+      "departement": "95",
+      "circonscription": 6,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA842195",
+      "nom": "Eskenazi",
+      "prenom": "Romain",
+      "groupe_id": "PO845419",
+      "departement": "95",
+      "circonscription": 7,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA842211",
+      "nom": "Bellay",
+      "prenom": "Béatrice",
+      "groupe_id": "PO845419",
+      "departement": "972",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA842227",
+      "nom": "Rivière",
+      "prenom": "Joseph",
+      "groupe_id": "PO845401",
+      "departement": "974",
+      "circonscription": 3,
+      "commissions": [
+        "PO419610"
+      ]
+    },
+    {
+      "id": "PA842255",
+      "nom": "Sicard",
+      "prenom": "Anne",
+      "groupe_id": "PO845401",
+      "departement": "95",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA842263",
+      "nom": "Hadizadeh",
+      "prenom": "Ayda",
+      "groupe_id": "PO845419",
+      "departement": "95",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA842271",
+      "nom": "Maurel",
+      "prenom": "Emmanuel",
+      "groupe_id": "PO845514",
+      "departement": "95",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA842279",
+      "nom": "Bamana",
+      "prenom": "Anchya",
+      "groupe_id": "PO845401",
+      "departement": "976",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA842299",
+      "nom": "Tjibaou",
+      "prenom": "Emmanuel",
+      "groupe_id": "PO845514",
+      "departement": "988",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA842311",
+      "nom": "Caure",
+      "prenom": "Vincent",
+      "groupe_id": "PO845407",
+      "departement": "099",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA857021",
+      "nom": "Latrèche",
+      "prenom": "Alim",
+      "groupe_id": "PO845407",
+      "departement": "38",
+      "circonscription": 1,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA870009",
+      "nom": "Duparay",
+      "prenom": "Lionel",
+      "groupe_id": "PO845425",
+      "departement": "71",
+      "circonscription": 5,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA878242",
+      "nom": "Valentin",
+      "prenom": "Antoine",
+      "groupe_id": "PO872880",
+      "departement": "74",
+      "circonscription": 3,
+      "commissions": [
+        "PO59046"
+      ]
+    },
+    {
+      "id": "PA879389",
+      "nom": "Lubet",
+      "prenom": "Marie-Philippe",
+      "groupe_id": "PO845407",
+      "departement": "45",
+      "circonscription": 1,
+      "commissions": [
+        "PO419865"
+      ]
+    },
+    {
+      "id": "PA942",
+      "nom": "de Courson",
+      "prenom": "Charles",
+      "groupe_id": "PO845485",
+      "departement": "51",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    }
+  ]
+}

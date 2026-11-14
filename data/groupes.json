@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:20:32Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, députés en exercice (AMO10)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/deputes_actifs_mandats_actifs_organes/AMO10_deputes_actifs_mandats_actifs_organes.json.zip"
+      }
+    ],
+    "limits": "Groupes à la date de l'export open data (2026-11-14), apparentés inclus, 11 non-inscrits exclus. Couleurs officielles de l'Assemblée. Source open data, pas l'API Hémicycle (clé absente).",
+    "producer": "pipeline/collecte",
+    "dossier_id": null
+  },
+  "groupes": [
+    {
+      "id": "PO845401",
+      "sigle": "RN",
+      "nom": "Rassemblement National",
+      "couleur": "#313567",
+      "effectif": 121
+    },
+    {
+      "id": "PO845407",
+      "sigle": "EPR",
+      "nom": "Ensemble pour la République",
+      "couleur": "#7B4591",
+      "effectif": 90
+    },
+    {
+      "id": "PO845413",
+      "sigle": "LFI-NFP",
+      "nom": "La France insoumise - Nouveau Front Populaire",
+      "couleur": "#C00D0D",
+      "effectif": 70
+    },
+    {
+      "id": "PO845419",
+      "sigle": "SOC",
+      "nom": "Socialistes et apparentés",
+      "couleur": "#F5B4CE",
+      "effectif": 68
+    },
+    {
+      "id": "PO845425",
+      "sigle": "DR",
+      "nom": "Droite Républicaine",
+      "couleur": "#8CB0DC",
+      "effectif": 46
+    },
+    {
+      "id": "PO845439",
+      "sigle": "ECOS",
+      "nom": "Écologiste et Social",
+      "couleur": "#77AA79",
+      "effectif": 38
+    },
+    {
+      "id": "PO845454",
+      "sigle": "DEM",
+      "nom": "Les Démocrates",
+      "couleur": "#F07E26",
+      "effectif": 37
+    },
+    {
+      "id": "PO845470",
+      "sigle": "HOR",
+      "nom": "Horizons & Indépendants",
+      "couleur": "#B5E2F9",
+      "effectif": 35
+    },
+    {
+      "id": "PO845485",
+      "sigle": "LIOT",
+      "nom": "Libertés, Indépendants, Outre-mer et Territoires",
+      "couleur": "#FFD96F",
+      "effectif": 24
+    },
+    {
+      "id": "PO872880",
+      "sigle": "UDR",
+      "nom": "Union des droites pour la République",
+      "couleur": "#3367A7",
+      "effectif": 17
+    },
+    {
+      "id": "PO845514",
+      "sigle": "GDR",
+      "nom": "Gauche Démocrate et Républicaine",
+      "couleur": "#830E21",
+      "effectif": 17
+    }
+  ]
+}
