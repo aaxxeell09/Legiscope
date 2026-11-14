@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from "react";
-import { Link, NavLink, matchPath, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, matchPath, useLocation } from "react-router-dom";
 import { useConfig } from "../lib/config";
 
 function Icon({ children }: { children: ReactNode }) {
@@ -10,7 +10,6 @@ function Icon({ children }: { children: ReactNode }) {
 export function TopBar() {
   const config = useConfig();
   const location = useLocation();
-  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
   const dossiers = config?.dossiers ?? [];
@@ -18,6 +17,7 @@ export function TopBar() {
   const fromUrl = matchPath({ path: "/dossier/:id", end: false }, location.pathname)?.params.id;
   const dossier = fromUrl ?? config?.dossier_demo ?? dossiers[0]?.id ?? "";
   const courant = dossiers.find((d) => d.id === dossier);
+  const pageSources = location.pathname === "/sources";
   const close = () => setOpen(false);
 
   return (
@@ -46,14 +46,9 @@ export function TopBar() {
         <div className="sidebar-foot"><span className={`dataset-dot ${config?.dataset === "fixtures" ? "fixtures" : "live"}`} /><span>{config?.dataset === "fixtures" ? "Données de démonstration" : "Données produites"}</span></div>
       </aside>
       <header className="topbar">
-        <div className="topbar-context"><span className="topbar-eyebrow">{courant?.client ?? "Espace de travail"}</span><span className="topbar-title">{courant?.label ?? "Sources et limites"}</span></div>
-        <div className="topbar-actions">
-          <label className="topbar-dossier" htmlFor="dossier-select"><span>Dossier</span>
-            <select id="dossier-select" value={dossier} onChange={(e) => navigate(`/dossier/${e.target.value}`)} disabled={dossiers.length === 0}>
-              {dossiers.length === 0 && <option value="">…</option>}
-              {dossiers.map((d) => <option key={d.id} value={d.id}>{d.client} — {d.label}</option>)}
-            </select>
-          </label>
+        <div className="topbar-context">
+          <span className="topbar-eyebrow">{pageSources ? "Transparence" : (courant?.client ?? "Espace de travail")}</span>
+          <span className="topbar-title">{pageSources ? "Sources et limites" : (courant?.label ?? "Dossier")}</span>
         </div>
       </header>
     </>
