@@ -52,8 +52,9 @@ export default function App() {
   return (
     <ConfigProvider>
       <BrowserRouter>
+        <a className="skip-link" href="#contenu-principal">Aller au contenu principal</a>
         <TopBar />
-        <main className="app-main">
+        <main className="app-main" id="contenu-principal" tabIndex={-1}>
           <Contenu />
         </main>
       </BrowserRouter>
