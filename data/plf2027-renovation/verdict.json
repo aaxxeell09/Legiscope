@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:57:59+01:00",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      }
+    ],
+    "limits": "Verdict proposé, le cabinet décide. Dépôts au plus tard le 2026-11-14 ; sorts, scrutins et séances strictement avant (matin du 2026-11-14). Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de nature « reduit » (réduire) ou « reporte » (repousser), ou opposés à la mesure, contre groupes auteurs d'amendements « aggrave ». Le score se lit « part des sièges favorables à l'objectif », jamais comme une probabilité. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.33, à J-7 0.33, Orcet aucun ; objectif 2 : positions 1, à J-7 1, Orcet aucun ; objectif 3 : positions 1, à J-7 1, Orcet aucun.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-renovation"
+  },
+  "verdicts": [
+    {
+      "objectif_rang": 1,
+      "situation": "defavorable",
+      "score": 0.33,
+      "score_libelle": "part des sièges favorables à l'objectif",
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "elevee",
+        "etabli": [
+          "Positions de 11 groupes sur 1 scrutins nominatifs liés à la mesure",
+          "État du texte : Projet de loi de finances pour 2027 : première partie rejetée par l'Assemblée en première lecture (scrutin n° 9759, 0 pour, 458 contre) ; la navette continue au Sénat",
+          "État de la mesure : absente du texte"
+        ],
+        "inconnu": [
+          "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
+        ]
+      },
+      "lecture": {
+        "texte": "Au Sénat, la situation est défavorable : 7 groupes soutiennent la baisse des crédits, tandis que le texte a été rejeté à l'Assemblée.",
+        "chiffres_utilises": [
+          "7"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "La taxe ne figure pas dans le texte du gouvernement",
+          "detail": "La taxe ne figure pas dans le texte du gouvernement (l'article État B, programme 174 déclaré porte sur autre chose : 0 % de ses amendements citent le sujet). 3 amendements de séance la créaient (HOR, RN, LFI-NFP) : 0 adopté(s), 2 rejeté(s) ou non soutenu(s), puis l'Assemblée a rejeté le texte le 2026-11-04. Elle peut revenir par amendement au Sénat ou en nouvelle lecture.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Scrutin n° 9759",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+              },
+              {
+                "label": "Amendement n° 1997",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001997"
+              },
+              {
+                "label": "Assemblée nationale",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+              }
+            ],
+            "raisonnement": "Le texte transmis au Sénat est celui du gouvernement, sans la taxe ; les amendements qui la créaient ont été rejetés ou sont tombés avec le texte.",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "LFI-NFP, SOC, ECOS contre la mesure",
+          "detail": "3 groupe(s), 176 sièges, dans le sens du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Scrutin n° 3809",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3809"
+              }
+            ],
+            "raisonnement": "Position majoritaire de chaque groupe sur les scrutins liés, traduite en position sur la mesure.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "7 groupe(s) pour la mesure : RN, EPR, DR, DEM, HOR, LIOT, UDR",
+          "detail": "370 sièges en face du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Scrutin n° 3809",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3809"
+              }
+            ],
+            "raisonnement": "Position majoritaire de chaque groupe sur les scrutins liés.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi pour la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 1 pour la mesure, 0 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+              },
+              {
+                "label": "Scrutin n° 3809 (2025-11-14)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3809"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 1 pour la mesure, 0 contre.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    },
+    {
+      "objectif_rang": 2,
+      "situation": "favorable",
+      "score": 1,
+      "score_libelle": "part des sièges favorables à l'objectif",
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "faible",
+        "etabli": [
+          "0 amendements de repli déposés au plus tard le 2026-11-14",
+          "État du texte : Projet de loi de finances pour 2027 : première partie rejetée par l'Assemblée en première lecture (scrutin n° 9759, 0 pour, 458 contre) ; la navette continue au Sénat",
+          "État de la mesure : absente du texte"
+        ],
+        "inconnu": [
+          "Aucun amendement de réduction déposé au plus tard le 2026-11-14",
+          "Position sur la mesure de : RN, EPR, DR, DEM, HOR, LIOT, UDR, GDR (aucun acte de groupe lisible)",
+          "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
+        ]
+      },
+      "lecture": {
+        "texte": "Au Sénat, la situation est favorable car la mesure est absente du texte, malgré l'absence d'amendements de repli déposés.",
+        "chiffres_utilises": [],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "LFI-NFP, SOC, ECOS dans le sens de cet objectif",
+          "detail": "3 groupe(s), 176 sièges, dans le sens du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements de nature « réduit » ou « reporte » selon l'objectif, ou opposés à la mesure.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi pour la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 1 pour la mesure, 0 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+              },
+              {
+                "label": "Scrutin n° 3809 (2025-11-14)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3809"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 1 pour la mesure, 0 contre.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    },
+    {
+      "objectif_rang": 3,
+      "situation": "favorable",
+      "score": 1,
+      "score_libelle": "part des sièges favorables à l'objectif",
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "faible",
+        "etabli": [
+          "0 amendements de repli déposés au plus tard le 2026-11-14",
+          "État du texte : Projet de loi de finances pour 2027 : première partie rejetée par l'Assemblée en première lecture (scrutin n° 9759, 0 pour, 458 contre) ; la navette continue au Sénat",
+          "État de la mesure : absente du texte"
+        ],
+        "inconnu": [
+          "Aucun amendement de report déposé au plus tard le 2026-11-14",
+          "Position sur la mesure de : RN, EPR, DR, DEM, HOR, LIOT, UDR, GDR (aucun acte de groupe lisible)",
+          "Avis du rapporteur et du gouvernement sur les amendements : non publiés dans l'open data"
+        ]
+      },
+      "lecture": {
+        "texte": "Au Sénat, en première lecture, la situation est favorable car 3 groupes soutiennent le report, mais aucun amendement n'est encore déposé.",
+        "chiffres_utilises": [
+          "3"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "LFI-NFP, SOC, ECOS dans le sens de cet objectif",
+          "detail": "3 groupe(s), 176 sièges, dans le sens du client.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendements, open data",
+                "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+              }
+            ],
+            "raisonnement": "Groupes auteurs d'amendements de nature « réduit » ou « reporte » selon l'objectif, ou opposés à la mesure.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi pour la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 1 pour la mesure, 0 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+              },
+              {
+                "label": "Scrutin n° 3809 (2025-11-14)",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3809"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 1 pour la mesure, 0 contre.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    }
+  ]
+}

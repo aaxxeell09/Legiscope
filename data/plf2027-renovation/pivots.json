@@ -1,0 +1,845 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:56:30+01:00",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      }
+    ],
+    "limits": "Base general. Loyauté sur 12 mois avant le 2026-11-14 (6082 scrutins, votes exprimés seulement, position majoritaire du groupe au moment du vote). 1 scrutins nominatifs liés au sujet avec un sens lisible sur la mesure. Groupes visés (position sur la mesure opposée ou différente de « contre ») : RN (pour), EPR (pour), DR (pour), DEM (pour), HOR (pour), LIOT (pour), UDR (pour), GDR (abstention). Au plus 4 députés par groupe ; députés en exercice seulement ; au moins 30 votes exprimés. Score = 1 moins la loyauté générale.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-renovation"
+  },
+  "deputes": [
+    {
+      "id": "PA720446",
+      "groupe_id": "PO845407",
+      "rang": 1,
+      "score_imprevisibilite": 0.34,
+      "loyaute_12m": 0.66,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9774",
+          "date": "2026-11-09",
+          "titre": "L'amendement n° 73 de M. Salmon à l'article 5 bis du projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité (première lecture).",
+          "vote": "contre",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9774"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9740",
+          "date": "2026-11-04",
+          "titre": "L'article 49 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9740"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9696",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 788 de Mme Givernet et l'amendement identique suivant à l'article 42 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9696"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9691",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 1578 de M. Maillard et les amendements identiques suivants à l'article 42 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9691"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9203",
+          "date": "2026-10-29",
+          "titre": "L'ensemble de la proposition de loi créant un corps de fonctionnaires de catégorie B pour les accompagnants d’élèves en situation de handicap (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9203"
+        }
+      ]
+    },
+    {
+      "id": "PA841801",
+      "groupe_id": "PO845407",
+      "rang": 2,
+      "score_imprevisibilite": 0.3,
+      "loyaute_12m": 0.7,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9794",
+          "date": "2026-11-10",
+          "titre": "L'amendement n° 358 du Gouvernement et les amendements identiques suivants de suppression de l'article 16 bis du projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9794"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9633",
+          "date": "2026-11-03",
+          "titre": "L'amendement n° 63 de Mme Vignon et les amendements identiques suivants après l'article 32 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9633"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9622",
+          "date": "2026-11-03",
+          "titre": "L'amendement n° 3664 de M. Attal à l'article 28 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9622"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9616",
+          "date": "2026-11-03",
+          "titre": "L'amendement n° 348 de M. Descoeur à l'article 27 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9616"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9605",
+          "date": "2026-11-03",
+          "titre": "L'amendement n° 2179 de Mme Mette et l'amendement identique suivant après l'article 26 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9605"
+        }
+      ]
+    },
+    {
+      "id": "PA719272",
+      "groupe_id": "PO845425",
+      "rang": 3,
+      "score_imprevisibilite": 0.3,
+      "loyaute_12m": 0.7,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9695",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 2934 de M. de Courson à l'article 42 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9695"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9694",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 2027 de M. Tavel à l'article 42 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9694"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9691",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 1578 de M. Maillard et les amendements identiques suivants à l'article 42 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9691"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9687",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 995 de M. Tryzna et l'amendement identique suivant à l'article 42 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9687"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9686",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 760 de M. Renault à l'article 42 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9686"
+        }
+      ]
+    },
+    {
+      "id": "PA2952",
+      "groupe_id": "PO845485",
+      "rang": 4,
+      "score_imprevisibilite": 0.29,
+      "loyaute_12m": 0.71,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V8433",
+          "date": "2026-07-21",
+          "titre": "L'ensemble du projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l'ordre public, la sécurité et la tranquillité de nos concitoyens (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8433"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8426",
+          "date": "2026-07-20",
+          "titre": "L'amendement n° 1 de M. Jean-René Cazeneuve au projet de loi d'urgence pour la protection et la souveraineté agricoles (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8426"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8425",
+          "date": "2026-07-20",
+          "titre": "L'amendement n° 8 du Gouvernement au projet de loi d'urgence pour la protection et la souveraineté agricoles (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8425"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8424",
+          "date": "2026-07-20",
+          "titre": "L'amendement n° 7 du Gouvernement au projet de loi d'urgence pour la protection et la souveraineté agricoles (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8424"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8423",
+          "date": "2026-07-20",
+          "titre": "La proposition du Gouvernement de prolonger la séance en cours au delà de minuit (projet de loi d'urgence pour la protection et la souveraineté agricoles) (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8423"
+        }
+      ]
+    },
+    {
+      "id": "PA720022",
+      "groupe_id": "PO845407",
+      "rang": 5,
+      "score_imprevisibilite": 0.28,
+      "loyaute_12m": 0.72,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9774",
+          "date": "2026-11-09",
+          "titre": "L'amendement n° 73 de M. Salmon à l'article 5 bis du projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité (première lecture).",
+          "vote": "contre",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9774"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9203",
+          "date": "2026-10-29",
+          "titre": "L'ensemble de la proposition de loi créant un corps de fonctionnaires de catégorie B pour les accompagnants d’élèves en situation de handicap (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9203"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9054",
+          "date": "2026-10-22",
+          "titre": "L'amendement n° 1536 de M. Thierry après l'article 8 du projet de loi de financement de la sécurité sociale pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9054"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9048",
+          "date": "2026-10-22",
+          "titre": "L'amendement n° 1402 de Mme Hamdane et l'amendement identique suivant après l'article 8 du projet de loi de financement de la sécurité sociale pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9048"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9046",
+          "date": "2026-10-22",
+          "titre": "L'amendement n° 1404 de Mme Belouassa-Cherifi et les amendements identiques suivants après l'article 8 du projet de loi de financement de la sécurité sociale pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9046"
+        }
+      ]
+    },
+    {
+      "id": "PA857021",
+      "groupe_id": "PO845407",
+      "rang": 6,
+      "score_imprevisibilite": 0.28,
+      "loyaute_12m": 0.72,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9175",
+          "date": "2026-10-28",
+          "titre": "L'amendement n° 3221 de M. de Courson après l'article 15 (examen prioritaire) du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9175"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9155",
+          "date": "2026-10-27",
+          "titre": "L'amendement n° 1405 de M. Baumel et l'amendement identique suivant après l'article 15 (examen prioritaire) du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9155"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9150",
+          "date": "2026-10-27",
+          "titre": "L'amendement n° 2113 de Mme Feld après l'article 15 (examen prioritaire) du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9150"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9149",
+          "date": "2026-10-27",
+          "titre": "L'amendement n° 2107 de M. Coquerel après l'article 15 (examen prioritaire) du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9149"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9148",
+          "date": "2026-10-27",
+          "titre": "L'amendement n° 1282 de M. Arnaud Bonnet après l'article 15 (examen prioritaire) du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9148"
+        }
+      ]
+    },
+    {
+      "id": "PA841151",
+      "groupe_id": "PO845485",
+      "rang": 7,
+      "score_imprevisibilite": 0.25,
+      "loyaute_12m": 0.75,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9758",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 1 du Gouvernement à l'article liminaire du projet de loi de finances pour 2027 (seconde délibération) (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9758"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9757",
+          "date": "2026-11-04",
+          "titre": "L'article 57 et état A du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9757"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9754",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 1801 de M. Mauvieux et les amendements identiques suivants à l'article 57 et état A du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9754"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9753",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 4038 du Gouvernement à l'article 57 et état A du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9753"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9749",
+          "date": "2026-11-04",
+          "titre": "L'article 51 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9749"
+        }
+      ]
+    },
+    {
+      "id": "PA718838",
+      "groupe_id": "PO845425",
+      "rang": 8,
+      "score_imprevisibilite": 0.24,
+      "loyaute_12m": 0.76,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V8431",
+          "date": "2026-07-21",
+          "titre": "L'ensemble de la proposition de loi visant à protéger les mineurs des risques auxquels les expose l'utilisation des réseaux sociaux (texte de la commission mixte paritaire).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8431"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8280",
+          "date": "2026-07-15",
+          "titre": "L'ensemble de la proposition de loi relative au droit à l'aide à mourir (lecture définitive).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280"
+        },
+        {
+          "scrutin_id": "VTANR5L17V7894",
+          "date": "2026-06-30",
+          "titre": "L'ensemble de la proposition de loi relative au droit à l'aide à mourir (nouvelle lecture).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7894"
+        },
+        {
+          "scrutin_id": "VTANR5L17V7454",
+          "date": "2026-06-23",
+          "titre": "L'ensemble du projet de loi constitutionnelle pour une Corse autonome au sein de la République (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7454"
+        },
+        {
+          "scrutin_id": "VTANR5L17V6746",
+          "date": "2026-05-19",
+          "titre": "L'amendement n° 2205 de M. Martineau à l'article premier du projet de loi d’urgence pour la protection et la souveraineté agricoles (première lecture).",
+          "vote": "contre",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/6746"
+        }
+      ]
+    },
+    {
+      "id": "PA1592",
+      "groupe_id": "PO845485",
+      "rang": 9,
+      "score_imprevisibilite": 0.22,
+      "loyaute_12m": 0.78,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V8433",
+          "date": "2026-07-21",
+          "titre": "L'ensemble du projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l'ordre public, la sécurité et la tranquillité de nos concitoyens (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8433"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8426",
+          "date": "2026-07-20",
+          "titre": "L'amendement n° 1 de M. Jean-René Cazeneuve au projet de loi d'urgence pour la protection et la souveraineté agricoles (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8426"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8425",
+          "date": "2026-07-20",
+          "titre": "L'amendement n° 8 du Gouvernement au projet de loi d'urgence pour la protection et la souveraineté agricoles (texte de la commission mixte paritaire).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8425"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8423",
+          "date": "2026-07-20",
+          "titre": "La proposition du Gouvernement de prolonger la séance en cours au delà de minuit (projet de loi d'urgence pour la protection et la souveraineté agricoles) (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8423"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8280",
+          "date": "2026-07-15",
+          "titre": "L'ensemble de la proposition de loi relative au droit à l'aide à mourir (lecture définitive).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280"
+        }
+      ]
+    },
+    {
+      "id": "PA330008",
+      "groupe_id": "PO845425",
+      "rang": 10,
+      "score_imprevisibilite": 0.22,
+      "loyaute_12m": 0.78,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9758",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 1 du Gouvernement à l'article liminaire du projet de loi de finances pour 2027 (seconde délibération) (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9758"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9757",
+          "date": "2026-11-04",
+          "titre": "L'article 57 et état A du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9757"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9740",
+          "date": "2026-11-04",
+          "titre": "L'article 49 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9740"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9734",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 655 de M. Jean-Philippe Tanguy et l'amendement identique suivant de suppression de l'article 45 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9734"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9695",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 2934 de M. de Courson à l'article 42 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845425",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9695"
+        }
+      ]
+    },
+    {
+      "id": "PA721234",
+      "groupe_id": "PO845454",
+      "rang": 11,
+      "score_imprevisibilite": 0.22,
+      "loyaute_12m": 0.78,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9892",
+          "date": "2026-11-12",
+          "titre": "L'article 8 du projet de loi de finances de fin de gestion pour 2026 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9892"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9848",
+          "date": "2026-11-12",
+          "titre": "L'amendement n° 124 de Mme Mercier à l'article 5 et état B du projet de loi de finances de fin de gestion pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9848"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9835",
+          "date": "2026-11-12",
+          "titre": "L'amendement n° 60 de Mme Lejeune à l'article 5 et état B du projet de loi de finances de fin de gestion pour 2026 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9835"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9833",
+          "date": "2026-11-12",
+          "titre": "L'amendement n° 122 de M. Proença à l'article 5 et état B du projet de loi de finances de fin de gestion pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9833"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9750",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 76 de M. Dufosset et les amendements identiques suivants de suppression de l'article 53 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9750"
+        }
+      ]
+    },
+    {
+      "id": "PA721458",
+      "groupe_id": "PO845470",
+      "rang": 12,
+      "score_imprevisibilite": 0.2,
+      "loyaute_12m": 0.8,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9335",
+          "date": "2026-10-29",
+          "titre": "L'article 2 de la proposition de loi pour protéger durablement les jeunes majeurs de l'aide sociale à l'enfance et de la protection judiciaire de la jeunesse (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9335"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9334",
+          "date": "2026-10-29",
+          "titre": "L'article premier de la proposition de loi pour protéger durablement les jeunes majeurs de l'aide sociale à l'enfance et de la protection judiciaire de la jeunesse (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9334"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9333",
+          "date": "2026-10-29",
+          "titre": "L'amendement n° 4 de Mme Blanc à l'article premier de la proposition de loi pour protéger durablement les jeunes majeurs de l'aide sociale à l'enfance et de la protection judiciaire de la jeunesse (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9333"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9329",
+          "date": "2026-10-29",
+          "titre": "Le sous-amendement n° 52 de M. Valentin à l'amendement n° 3 de Mme Blanc à l'article premier de la proposition de loi pour protéger durablement les jeunes majeurs de l'aide sociale à l'enfance et de la protection judiciaire de la jeunesse (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9329"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9325",
+          "date": "2026-10-29",
+          "titre": "L'amendement n° 5 de Mme Blanc à l'article premier de la proposition de loi pour protéger durablement les jeunes majeurs de l'aide sociale à l'enfance et de la protection judiciaire de la jeunesse (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9325"
+        }
+      ]
+    },
+    {
+      "id": "PA687214",
+      "groupe_id": "PO845470",
+      "rang": 13,
+      "score_imprevisibilite": 0.19,
+      "loyaute_12m": 0.81,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9888",
+          "date": "2026-11-12",
+          "titre": "L'amendement n° 64 de Mme Bentorki à l'article 7 et état D du projet de loi de finances de fin de gestion pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9888"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9833",
+          "date": "2026-11-12",
+          "titre": "L'amendement n° 122 de M. Proença à l'article 5 et état B du projet de loi de finances de fin de gestion pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9833"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9827",
+          "date": "2026-11-12",
+          "titre": "L'amendement n° 123 de Mme Got à l'article 5 et état B du projet de loi de finances de fin de gestion pour 2026 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9827"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9798",
+          "date": "2026-11-10",
+          "titre": "L'amendement n° 107 de M. Saint-Pasteur à l'article 24 du projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9798"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9723",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 745 de M. Jean-Philippe Tanguy après l'article 42 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9723"
+        }
+      ]
+    },
+    {
+      "id": "PA794470",
+      "groupe_id": "PO845470",
+      "rang": 14,
+      "score_imprevisibilite": 0.19,
+      "loyaute_12m": 0.81,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9758",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 1 du Gouvernement à l'article liminaire du projet de loi de finances pour 2027 (seconde délibération) (première lecture).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9758"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9750",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 76 de M. Dufosset et les amendements identiques suivants de suppression de l'article 53 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9750"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9745",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 763 de M. Renault après l'article 49 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9745"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9743",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 657 de Mme Roy et l'amendement identique suivant après l'article 49 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9743"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9742",
+          "date": "2026-11-04",
+          "titre": "L'amendement n° 753 de M. Renault après l'article 49 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9742"
+        }
+      ]
+    },
+    {
+      "id": "PA721336",
+      "groupe_id": "PO845454",
+      "rang": 15,
+      "score_imprevisibilite": 0.19,
+      "loyaute_12m": 0.81,
+      "base": "general",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9596",
+          "date": "2026-11-03",
+          "titre": "L'amendement n° 685 de M. Renault et l'amendement identique suivant après l'article 26 du projet de loi de finances pour 2027 (première lecture).",
+          "vote": "contre",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9596"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8557",
+          "date": "2026-10-06",
+          "titre": "Le sous-amendement n° 1324 de Mme Cathala à l'amendement n° 1146 (rect.) de M. Balanant à l'article 30 (examen prioritaire) de la proposition de loi apportant une réponse intégrale au phénomène des violences sexuelles et sexistes contre les femmes et les enfants (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8557"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8549",
+          "date": "2026-10-06",
+          "titre": "L'amendement n° 1245 de M. Arnaud Bonnet à l'article 19 de la proposition de loi apportant une réponse intégrale au phénomène des violences sexuelles et sexistes contre les femmes et les enfants (première lecture).",
+          "vote": "contre",
+          "position_groupe": "pour",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8549"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8427",
+          "date": "2026-07-20",
+          "titre": "L'ensemble du projet de loi d'urgence pour la protection et la souveraineté agricoles (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "abstention",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8427"
+        },
+        {
+          "scrutin_id": "VTANR5L17V8423",
+          "date": "2026-07-20",
+          "titre": "La proposition du Gouvernement de prolonger la séance en cours au delà de minuit (projet de loi d'urgence pour la protection et la souveraineté agricoles) (texte de la commission mixte paritaire).",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8423"
+        }
+      ]
+    }
+  ]
+}

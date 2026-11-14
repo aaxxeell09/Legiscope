@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:58:30Z",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      }
+    ],
+    "limits": "Aucune limite signalée par les fichiers sources.",
+    "producer": "pipeline/note",
+    "dossier_id": "plf2027-renovation"
+  },
+  "client": "CAPEB",
+  "objectifs": [
+    {
+      "rang": 1,
+      "texte": "Maintenir les crédits de MaPrimeRénov' à leur niveau de 2026",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 2,
+      "texte": "Préserver les aides aux ménages modestes",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 3,
+      "texte": "Reporter la baisse à 2028",
+      "position_cible": "contre"
+    }
+  ],
+  "texte": "L’objectif de maintenir les crédits de MaPrimeRénov’ à leur niveau de 2026 est mal engagé, avec une tendance stable. La mesure de baisse des crédits n’apparaît pas dans le texte initial du gouvernement.\n\nSept groupes de l’Assemblée nationale soutiennent la réduction des crédits. Cette position majoritaire pèse sur la dynamique du dossier. Le texte est actuellement examiné au Sénat, où la suppression ou la réduction de la mesure reste possible avant le retour à l’Assemblée.\n\nLa prochaine étape documentée est l’examen au Sénat, sans date fixée. Suivront la commission mixte paritaire puis une nouvelle lecture à l’Assemblée, également sans date précise.",
+  "chiffres_utilises": [
+    "2026",
+    "7"
+  ],
+  "sources": [
+    {
+      "label": "Scrutin n° 9759",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+    },
+    {
+      "label": "Scrutin n° 3809",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3809"
+    },
+    {
+      "label": "Examen au Sénat : prochaine occasion d'obtenir la suppression ou la réduction de la mesure, avant le retour du texte à l'Assemblée",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+    },
+    {
+      "label": "Commission mixte paritaire",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    }
+  ],
+  "limites": "Aucune limite signalée par les fichiers sources.",
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
+  "verifie": true
+}

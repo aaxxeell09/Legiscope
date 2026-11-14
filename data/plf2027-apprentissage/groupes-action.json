@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:17:32+01:00",
+    "generated_at": "2026-11-14T16:51:26+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -11,7 +11,7 @@
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       }
     ],
-    "limits": "Dépôts au plus tard le 2026-11-14 ; sorts, scrutins et séances strictement avant (matin du 2026-11-14). Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés, interventions classées par A2), jamais sur le groupe seul. Totaux avant coupe : 257 alliés, 73 perdus, 150 actionnables ; 15 gardés par catégorie (score décroissant). Les 83 députés sans acte personnel sur la mesure sont tous dans position_inconnue, avec la position de leur groupe en contexte. Députés en exercice seulement. Perdus = actes contre la cible et loyauté sur 12 mois d'au moins 0,85 envers un groupe lui-même opposé. Sens des amendements lu par règles : déduction de l'outil.",
+    "limits": "Dépôts au plus tard le 2026-11-14 ; sorts, scrutins et séances strictement avant (matin du 2026-11-14). Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés, interventions classées par A2), jamais sur le groupe seul. Totaux avant coupe : 257 alliés, 73 perdus, 148 actionnables ; 15 gardés par catégorie (score décroissant). Les 85 députés sans acte personnel sur la mesure sont tous dans position_inconnue, avec la position de leur groupe en contexte. Députés en exercice seulement. Perdus = actes contre la cible et loyauté sur 12 mois d'au moins 0,85 envers un groupe lui-même opposé. Sens des amendements lu par règles : déduction de l'outil.",
     "producer": "pipeline/pivots",
     "dossier_id": "plf2027-apprentissage"
   },
@@ -307,39 +307,6 @@
       }
     },
     {
-      "depute_id": "PA942",
-      "groupe_id": "PO845485",
-      "score": 0.67,
-      "raison": "a voté, a dit : 2 acte(s) pour la mesure, 2 contre ; 2 vote(s) contre la position de son groupe sur le sujet",
-      "fondement": [
-        "vote",
-        "dit"
-      ],
-      "position_connue": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Scrutin n° 9729 (2026-11-04)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9729"
-          },
-          {
-            "label": "Scrutin n° 9731 (2026-11-04)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9731"
-          },
-          {
-            "label": "Scrutin n° 9741 (2026-11-04)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
-          },
-          {
-            "label": "Intervention du 2026-10-14",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
-          }
-        ],
-        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Charles de Courson s'en est écarté 2 fois sur les scrutins liés.",
-        "nature": "deduction"
-      }
-    },
-    {
       "depute_id": "PA342240",
       "groupe_id": "PO845425",
       "score": 0.67,
@@ -420,6 +387,34 @@
           }
         ],
         "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Perrine Goulet s'en est écarté 2 fois sur les scrutins liés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA841377",
+      "groupe_id": "PO845425",
+      "score": 0.67,
+      "raison": "a voté : 2 acte(s) pour la mesure, 1 contre ; 2 vote(s) contre la position de son groupe sur le sujet",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9729 (2026-11-04)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9729"
+          },
+          {
+            "label": "Scrutin n° 9731 (2026-11-04)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9731"
+          },
+          {
+            "label": "Scrutin n° 9741 (2026-11-04)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes. Son groupe est « contre » sur la mesure ; Emeline Rey-Rinchet s'en est écarté 2 fois sur les scrutins liés.",
         "nature": "deduction"
       }
     }
@@ -828,39 +823,6 @@
       }
     },
     {
-      "depute_id": "PA736201",
-      "groupe_id": "PO845439",
-      "score": 1,
-      "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 4 contre, dans le sens du client",
-      "fondement": [
-        "vote",
-        "depose"
-      ],
-      "position_connue": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Scrutin n° 9729 (2026-11-04)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9729"
-          },
-          {
-            "label": "Scrutin n° 9731 (2026-11-04)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9731"
-          },
-          {
-            "label": "Scrutin n° 9741 (2026-11-04)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
-          },
-          {
-            "label": "Amendement n° 2528",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002528"
-          }
-        ],
-        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
-        "nature": "deduction"
-      }
-    },
-    {
       "depute_id": "PA793174",
       "groupe_id": "PO845514",
       "score": 1,
@@ -879,6 +841,31 @@
           {
             "label": "Amendement n° 2314",
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P2D1N002314"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA793520",
+      "groupe_id": "PO845454",
+      "score": 1,
+      "raison": "a voté, a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+      "fondement": [
+        "vote",
+        "depose"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9741 (2026-11-04)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
+          },
+          {
+            "label": "Amendement n° 30",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000030"
           }
         ],
         "raisonnement": "Classé sur ses propres actes (a voté, a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
@@ -1001,6 +988,26 @@
       }
     },
     {
+      "depute_id": "PA794234",
+      "groupe_id": "PO845470",
+      "score": 1,
+      "raison": "a voté : 1 acte(s) pour la mesure, 0 contre ; loyauté 0.93 à un groupe pour la mesure",
+      "fondement": [
+        "vote"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9741 (2026-11-04)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9741"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a voté), pour la mesure, et loyal à son groupe (93 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
       "depute_id": "PA794658",
       "groupe_id": "PO845470",
       "score": 1,
@@ -1061,26 +1068,6 @@
           }
         ],
         "raisonnement": "Classé sur ses propres actes (a voté), pour la mesure, et loyal à son groupe (99 % des votes sur 12 mois), lui-même pour la mesure.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "depute_id": "PA840809",
-      "groupe_id": "PO872880",
-      "score": 1,
-      "raison": "a voté : 1 acte(s) pour la mesure, 0 contre ; loyauté 0.95 à un groupe pour la mesure",
-      "fondement": [
-        "vote"
-      ],
-      "position_connue": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Scrutin n° 9729 (2026-11-04)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9729"
-          }
-        ],
-        "raisonnement": "Classé sur ses propres actes (a voté), pour la mesure, et loyal à son groupe (95 % des votes sur 12 mois), lui-même pour la mesure.",
         "nature": "deduction"
       }
     },
@@ -1507,6 +1494,21 @@
       }
     },
     {
+      "depute_id": "PA794058",
+      "groupe_id": "PO845425",
+      "position_groupe": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Fiche député",
+            "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA794058"
+          }
+        ],
+        "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+        "nature": "inconnue"
+      }
+    },
+    {
       "depute_id": "PA794118",
       "groupe_id": "PO845425",
       "position_groupe": "contre",
@@ -1785,6 +1787,21 @@
           {
             "label": "Fiche député",
             "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793556"
+          }
+        ],
+        "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",
+        "nature": "inconnue"
+      }
+    },
+    {
+      "depute_id": "PA793716",
+      "groupe_id": "PO845454",
+      "position_groupe": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Fiche député",
+            "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793716"
           }
         ],
         "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2026-11-14. Son groupe est « contre » sur la mesure : contexte, pas un classement.",

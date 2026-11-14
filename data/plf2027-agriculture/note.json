@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:58:12Z",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      }
+    ],
+    "limits": "Aucune limite signalée par les fichiers sources.",
+    "producer": "pipeline/note",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "client": "FNSEA",
+  "objectifs": [
+    {
+      "rang": 1,
+      "texte": "Rétablir les crédits nationaux des filières agricoles à leur niveau de 2026",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 2,
+      "texte": "Limiter la baisse aux dispositifs les moins utilisés",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 3,
+      "texte": "Reporter la baisse à 2028",
+      "position_cible": "contre"
+    }
+  ],
+  "texte": "L’objectif de rétablir les crédits des filières agricoles au niveau de 2026 reste incertain, la tendance étant stable. La mesure est portée par le gouvernement, ce qui freine la progression du dossier.\n\nUn amendement de suppression de l’article 77 a été déposé par le groupe RN. Cette initiative constitue le seul levier identifié pour contester la baisse des crédits.\n\nLa prochaine étape est l’examen au Sénat, sans date fixée. Ce passage offre une occasion d’obtenir la suppression ou la réduction de la mesure avant le retour du texte à l’Assemblée, suivie d’une commission mixte paritaire.",
+  "chiffres_utilises": [
+    "2026",
+    "77"
+  ],
+  "sources": [
+    {
+      "label": "Amendement n° 527",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000527"
+    },
+    {
+      "label": "Texte du projet de loi",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    },
+    {
+      "label": "Examen au Sénat : prochaine occasion d'obtenir la suppression ou la réduction de la mesure, avant le retour du texte à l'Assemblée",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+    },
+    {
+      "label": "Commission mixte paritaire",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    }
+  ],
+  "limites": "Aucune limite signalée par les fichiers sources.",
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
+  "verifie": true
+}

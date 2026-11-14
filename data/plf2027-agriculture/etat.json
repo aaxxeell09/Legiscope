@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:53:55+01:00",
+    "sources": [
+      {
+        "label": "Dossier législatif, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Dossier sur le site de l'Assemblée",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+      }
+    ],
+    "limits": "État au matin du 2026-11-14 (dépôts du jour connus ; sorts, scrutins, séances et décisions du jour inconnus). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-agriculture"
+  },
+  "mesure": {
+    "label": "Baisse des crédits nationaux des filières agricoles (mission Agriculture, programme 149, état B ; article 77)",
+    "article": "77",
+    "dans_le_texte": true,
+    "redaction_actuelle": "Article 77 du texte initial du gouvernement ; l'Assemblée a rejeté le texte le 2026-11-04, le Sénat examine le texte du gouvernement.",
+    "modifications": [
+      {
+        "date": "2026-10-30",
+        "par": "Amendement n° 3464, Guillaume Kasbarian (EPR), en séance",
+        "quoi": "Cet amendement, proposé par Jeunes Agriculteurs, a pour objectif de pallier l’obstacle majeur à l’installation des jeunes : l’accès au foncier.",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003464",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3464",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003464"
+            }
+          ],
+          "raisonnement": "Amendement adopté en séance le 2026-10-30 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-30",
+        "par": "Amendement n° 1235, Christelle Minard (DR), en séance",
+        "quoi": "Cet amendement a pour objectif de lever l’obstacle majeur à l’installation des jeunes : l'accès au foncier.",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001235",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1235",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001235"
+            }
+          ],
+          "raisonnement": "Amendement adopté en séance le 2026-10-30 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-30",
+        "par": "Amendement n° 1743, Alix Fruchon (DR), en séance",
+        "quoi": "Cet amendement a pour vocation une transmission réussie d'exploitation agricole, reposant sur une transition progressive, durant laquelle le jeune agriculteur bénéficie de l'accompagnement du cédant le temps de maîtriser pleinement l'exp...",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001743",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1743",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001743"
+            }
+          ],
+          "raisonnement": "Amendement adopté en séance le 2026-10-30 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-30",
+        "par": "Amendement n° 3077, David Taupiac (LIOT), en séance",
+        "quoi": "Cet amendement, proposé par Jeunes Agriculteurs, a pour objectif de pallier l’obstacle majeur à l’installation des jeunes : l'accès au foncier.",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003077",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3077",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003077"
+            }
+          ],
+          "raisonnement": "Amendement adopté en séance le 2026-10-30 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "par": "Amendement n° 1645, Guillaume Kasbarian (EPR), en commission des finances",
+        "quoi": "Cet amendement, proposé par Jeunes Agriculteurs, a pour objectif de pallier l’obstacle majeur à l’installation des jeunes : l’accès au foncier.",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001645",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1645",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001645"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-08 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "par": "Amendement n° 1223, François Jolivet (HOR), en commission des finances",
+        "quoi": "Cet amendement, proposé par Jeunes Agriculteurs, a pour objectif de pallier l’obstacle majeur à l’installation des jeunes : l’accès au foncier.",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001223",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1223",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001223"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-08 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-13",
+        "par": "Amendement n° 146, Rapporteur, en commission des finances",
+        "quoi": "Suppression de l'article 77",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000146",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 146",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000146"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-13 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-13",
+        "par": "Amendement n° 62, Mathilde Hignet (LFI-NFP), en commission des finances",
+        "quoi": "Suppression de l'article 77",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000062",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 62",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000062"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-13 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-13",
+        "par": "Amendement n° 72, Mélanie Thomin (SOC), en commission des finances",
+        "quoi": "Suppression de l'article 77",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000072",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 72",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000072"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-13 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-13",
+        "par": "Amendement n° 4, Julien Dive (DR), en commission des finances",
+        "quoi": "Suppression de l'article 77",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000004",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 4",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000004"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-13 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-13",
+        "par": "Amendement n° 21, David Taupiac (LIOT), en commission des finances",
+        "quoi": "Suppression de l'article 77",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000021",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 21",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO419610B3210P2D1N000021"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-13 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-22",
+        "par": "Amendement n° 1208, Catherine Hervieu (ECOS), en commission des finances",
+        "quoi": "Suppression de l'article 77",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001208",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1208",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001208"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-22 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-11-04",
+        "par": "Assemblée nationale, séance publique",
+        "quoi": "Rejet de la première partie : tout le projet de loi est rejeté en première lecture, le Sénat est saisi du texte du gouvernement",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9759",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+            }
+          ],
+          "raisonnement": "Le rejet de la première partie d'un projet de loi de finances vaut rejet du texte entier ; les votes de l'Assemblée sur les articles, suppressions comprises, tombent avec lui.",
+          "nature": "fait"
+        }
+      }
+    ]
+  },
+  "texte_etat": {
+    "statut": "rejete",
+    "libelle": "Projet de loi de finances pour 2027 : première partie rejetée par l'Assemblée en première lecture (scrutin n° 9759, 0 pour, 458 contre) ; la navette continue au Sénat",
+    "date": "2026-11-04",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+    "preuve": {
+      "sources": [
+        {
+          "label": "Scrutin n° 9759",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+        }
+      ],
+      "raisonnement": "Le rejet de la première partie d'un projet de loi de finances vaut rejet du texte entier en première lecture à l'Assemblée ; ce n'est pas la fin de la procédure.",
+      "nature": "fait"
+    }
+  },
+  "etape": "Première lecture : rejeté par l'Assemblée le 2026-11-04 ; Sénat, première lecture",
+  "etapes": [
+    {
+      "nom": "Dépôt du projet de loi",
+      "date": "2026-10-01",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    },
+    {
+      "nom": "Commission des finances (rapport général)",
+      "date": "2026-10-10",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "nom": "Séance publique, première lecture : rejeté (scrutin n° 9759)",
+      "date": "2026-11-04",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+    },
+    {
+      "nom": "Sénat, première lecture",
+      "date": null,
+      "statut": "en_cours",
+      "url": "https://www.senat.fr/"
+    },
+    {
+      "nom": "Commission mixte paritaire",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "nom": "Nouvelle lecture à l'Assemblée",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    }
+  ],
+  "articles": [
+    {
+      "numero": "77",
+      "titre": "Baisse des crédits nationaux des filières agricoles (mission Agriculture, programme 149, état B ; article 77)",
+      "statut": "reste",
+      "sort_detail": "Texte rejeté par l'Assemblée le 2026-11-04 ; article à examiner au Sénat",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:58:04Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, agenda des réunions",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+      },
+      {
+        "label": "Dossier législatif DLR5L17N54629",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N54629"
+      },
+      {
+        "label": "État de la mesure (pipeline/pivots)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N54629"
+      },
+      {
+        "label": "Texte PRJLANR5L17B3210, positions et amendements",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      }
+    ],
+    "limits": "Échéances connues au 14 novembre 2026 (réunions inscrites à l'agenda au plus tard ce jour-là ; une séance de ce jour figure comme échéance, son contenu et ses votes ne sont pas utilisés). Aucune réunion de l'agenda de l'Assemblée liée au texte après le 14 novembre 2026. Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null.",
+    "producer": "pipeline/suite",
+    "dossier_id": "plf2027-logement"
+  },
+  "echeances": [
+    {
+      "date": null,
+      "titre": "Commission mixte paritaire",
+      "lieu": "cmp",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Commission mixte paritaire",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+          }
+        ],
+        "raisonnement": "Étape à venir de la procédure, date non publiée à ce jour."
+      }
+    },
+    {
+      "date": null,
+      "titre": "Nouvelle lecture à l'Assemblée",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Nouvelle lecture à l'Assemblée",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+          }
+        ],
+        "raisonnement": "Étape à venir de la procédure, date non publiée à ce jour."
+      }
+    },
+    {
+      "date": null,
+      "titre": "Examen du PLF 2027 au Sénat, première lecture",
+      "lieu": "senat",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Sénat, PLF 2027",
+            "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+          }
+        ],
+        "raisonnement": "Le texte, rejeté par l'Assemblée le 4 novembre 2026, est transmis au Sénat. La page du Sénat (mise à jour le 10 novembre 2026) ne donne encore aucune date d'examen."
+      }
+    }
+  ],
+  "derniere_occasion": {
+    "date": null,
+    "titre": "Examen au Sénat : prochaine occasion d'obtenir la suppression ou la réduction de la mesure, avant le retour du texte à l'Assemblée",
+    "lieu": "senat",
+    "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html",
+    "preuve": {
+      "nature": "deduction",
+      "sources": [
+        {
+          "label": "Sénat, PLF 2027",
+          "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+        },
+        {
+          "label": "Scrutin n° 9759, rejet de la première partie",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+        }
+      ],
+      "raisonnement": "L'Assemblée a rejeté la première partie le 4 novembre 2026 : la procédure continue au Sénat sur le texte du gouvernement. C'est la prochaine étape où la mesure peut être supprimée ou modifiée ; la date n'est pas encore publiée."
+    }
+  },
+  "probables": [
+    {
+      "titre": "Mesure : rejet probable à l'Assemblée si elle revenait au vote aujourd'hui (sièges des groupes selon leur position, pas une probabilité)",
+      "proba": null,
+      "detail": "Groupes favorables à la mesure : aucun (0 sièges). Opposés : DR, DEM, LIOT (107 sièges). Vote à l'Assemblée, pas l'issue finale du dossier.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Positions des groupes, texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "On additionne les sièges des groupes selon leur position connue sur la mesure ; les groupes divisés ou abstentionnistes ne sont pas comptés. Pas de probabilité chiffrée."
+      }
+    },
+    {
+      "titre": "Amendement n° 107 (RN) : 26 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.26,
+      "detail": "Orcet : 0,26 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement vise à créer un dispositif « 100 % Rénov » ayant vocation à se substituer à MaPrimeRénov’, afin de financer massivement la rénovation énergétique et l’adaptation des logements aux épisodes de fortes chaleurs sans imposer a... Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 107",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000107"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,96. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "Amendement n° 337 (RN) : 38 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
+      "proba": 0.38,
+      "detail": "Orcet : 0,38 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Le présent amendement vise à mesurer spécifiquement les délais d’accès au logement social des familles nombreuses. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 337",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000337"
+          },
+          {
+            "label": "Prédictions Orcet (Hémicycle)",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,98. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
+      }
+    },
+    {
+      "titre": "RN et EPR (bloc central) votent ensemble dans 51 % des scrutins d'octobre 2026",
+      "proba": null,
+      "detail": "Accord mensuel sur 1008 scrutins publics : les deux groupes ont la même position majoritaire. Contexte du vote, pas une prédiction.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Open data Assemblée nationale, scrutins",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+          }
+        ],
+        "raisonnement": "Calcul de cohésion (pipeline/cohesion) sur le dernier mois complet avant le 14 novembre 2026. Un accord bas veut dire que le RN ne suit pas le bloc central : c'est sur ce désaccord qu'une majorité peut se défaire."
+      }
+    }
+  ]
+}

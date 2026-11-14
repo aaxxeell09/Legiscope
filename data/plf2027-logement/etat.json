@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:56:14+01:00",
+    "sources": [
+      {
+        "label": "Dossier législatif, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Dossier sur le site de l'Assemblée",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+      }
+    ],
+    "limits": "État au matin du 2026-11-14 (dépôts du jour connus ; sorts, scrutins, séances et décisions du jour inconnus). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-logement"
+  },
+  "mesure": {
+    "label": "Réforme des aides personnelles au logement et baisse des crédits du logement (mission Cohésion des territoires, programmes 109 et 135 ; article 78)",
+    "article": "78",
+    "dans_le_texte": true,
+    "redaction_actuelle": "Article 78 du texte initial du gouvernement ; l'Assemblée a rejeté le texte le 2026-11-04, le Sénat examine le texte du gouvernement.",
+    "modifications": [
+      {
+        "date": "2026-10-23",
+        "par": "Amendement n° 1619, Kévin Mauvieux (RN), en commission des finances",
+        "quoi": "Suppression de l'article 78",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001619",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1619",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001619"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-23 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "par": "Amendement n° 740, Arnaud Bonnet (ECOS), en commission des finances",
+        "quoi": "Suppression de l'article 78",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000740",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 740",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000740"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-23 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "par": "Amendement n° 2620, Rapporteur, en commission des finances",
+        "quoi": "Suppression de l'article 78",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002620",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2620",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002620"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-23 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "par": "Amendement n° 1856, Ersilia Soudais (LFI-NFP), en commission des finances",
+        "quoi": "Suppression de l'article 78",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001856",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1856",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N001856"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-23 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "par": "Amendement n° 2755, Rapporteur, en commission des finances",
+        "quoi": "L’article 126 de la loi de finances pour 2018 a créé un dispositif de réduction de loyer de solidarité (RLS) applicable dans les logements ouvrant droit à l’APL et gérés par les organismes Hlm, à l’exception des logements foyers conventi...",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002755",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2755",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002755"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-23 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "par": "Amendement n° 2759, Rapporteur, en commission des finances",
+        "quoi": "L’article 78 instaure un droit d’option entre le bénéfice des APL versées aux étudiants et les bénéfices fiscaux associés au rattachement de l’étudiant au foyer fiscal ou au versement d’une pension alimentaire pour les 20 % des foyers ay...",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002759",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2759",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N002759"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-23 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "par": "Amendement n° 704, Jean-Philippe Tanguy (RN), en commission des finances",
+        "quoi": "Suppression de l'article 78",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000704",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 704",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P2D1N000704"
+            }
+          ],
+          "raisonnement": "Amendement adopté en commission (le texte examiné en séance reste celui du gouvernement pour un projet de loi de finances) le 2026-10-23 (vote à main levée ou sans scrutin public).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-11-04",
+        "par": "Assemblée nationale, séance publique",
+        "quoi": "Rejet de la première partie : tout le projet de loi est rejeté en première lecture, le Sénat est saisi du texte du gouvernement",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9759",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+            }
+          ],
+          "raisonnement": "Le rejet de la première partie d'un projet de loi de finances vaut rejet du texte entier ; les votes de l'Assemblée sur les articles, suppressions comprises, tombent avec lui.",
+          "nature": "fait"
+        }
+      }
+    ]
+  },
+  "texte_etat": {
+    "statut": "rejete",
+    "libelle": "Projet de loi de finances pour 2027 : première partie rejetée par l'Assemblée en première lecture (scrutin n° 9759, 0 pour, 458 contre) ; la navette continue au Sénat",
+    "date": "2026-11-04",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+    "preuve": {
+      "sources": [
+        {
+          "label": "Scrutin n° 9759",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+        }
+      ],
+      "raisonnement": "Le rejet de la première partie d'un projet de loi de finances vaut rejet du texte entier en première lecture à l'Assemblée ; ce n'est pas la fin de la procédure.",
+      "nature": "fait"
+    }
+  },
+  "etape": "Première lecture : rejeté par l'Assemblée le 2026-11-04 ; Sénat, première lecture",
+  "etapes": [
+    {
+      "nom": "Dépôt du projet de loi",
+      "date": "2026-10-01",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    },
+    {
+      "nom": "Commission des finances (rapport général)",
+      "date": "2026-10-10",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "nom": "Séance publique, première lecture : rejeté (scrutin n° 9759)",
+      "date": "2026-11-04",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+    },
+    {
+      "nom": "Sénat, première lecture",
+      "date": null,
+      "statut": "en_cours",
+      "url": "https://www.senat.fr/"
+    },
+    {
+      "nom": "Commission mixte paritaire",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "nom": "Nouvelle lecture à l'Assemblée",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    }
+  ],
+  "articles": [
+    {
+      "numero": "78",
+      "titre": "Réforme des aides personnelles au logement et baisse des crédits du logement (mission Cohésion des territoires, programm",
+      "statut": "reste",
+      "sort_detail": "Texte rejeté par l'Assemblée le 2026-11-04 ; article à examiner au Sénat",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    }
+  ]
+}

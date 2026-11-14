@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:57:45+01:00",
+    "sources": [
+      {
+        "label": "Dossier législatif, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Dossier sur le site de l'Assemblée",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+      }
+    ],
+    "limits": "État au matin du 2026-11-14 (dépôts du jour connus ; sorts, scrutins, séances et décisions du jour inconnus). Étapes du Sénat, de la CMP et de la nouvelle lecture : non publiées dans l'open data de l'Assemblée, statut déduit de la procédure. Modifications = amendements adoptés sur l'article de la mesure ou qui portent sur elle.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-renovation"
+  },
+  "mesure": {
+    "label": "Baisse des crédits de MaPrimeRénov' et de la rénovation énergétique des logements (mission Écologie, programme 174, état B)",
+    "article": "aucun article du texte du gouvernement",
+    "dans_le_texte": false,
+    "redaction_actuelle": "La taxe ne figure pas dans le texte du gouvernement (l'article État B, programme 174 déclaré porte sur autre chose : 0 % de ses amendements citent le sujet). 3 amendements de séance la créaient (HOR, RN, LFI-NFP) : 0 adopté(s), 2 rejeté(s) ou non soutenu(s), puis l'Assemblée a rejeté le texte le 2026-11-04. Elle peut revenir par amendement au Sénat ou en nouvelle lecture.",
+    "modifications": [
+      {
+        "date": "2026-11-03",
+        "par": "Amendement n° 1997, Claire Lejeune (LFI-NFP), en séance",
+        "quoi": "Rejet d'un amendement qui crée l'imposition (après art. 26)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001997",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 1997",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001997"
+            }
+          ],
+          "raisonnement": "Rejeté le 2026-11-03. Sens lu par l'outil : crée une imposition du sujet (article additionnel).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-11-04",
+        "par": "Assemblée nationale, séance publique",
+        "quoi": "Rejet de la première partie : tout le projet de loi est rejeté, le Sénat est saisi du texte du gouvernement",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9759",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+            }
+          ],
+          "raisonnement": "Le rejet de la première partie vaut rejet du texte entier ; les amendements adoptés tombent avec lui.",
+          "nature": "fait"
+        }
+      }
+    ]
+  },
+  "texte_etat": {
+    "statut": "rejete",
+    "libelle": "Projet de loi de finances pour 2027 : première partie rejetée par l'Assemblée en première lecture (scrutin n° 9759, 0 pour, 458 contre) ; la navette continue au Sénat",
+    "date": "2026-11-04",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+    "preuve": {
+      "sources": [
+        {
+          "label": "Scrutin n° 9759",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+        }
+      ],
+      "raisonnement": "Le rejet de la première partie d'un projet de loi de finances vaut rejet du texte entier en première lecture à l'Assemblée ; ce n'est pas la fin de la procédure.",
+      "nature": "fait"
+    }
+  },
+  "etape": "Première lecture : rejeté par l'Assemblée le 2026-11-04 ; Sénat, première lecture",
+  "etapes": [
+    {
+      "nom": "Dépôt du projet de loi",
+      "date": "2026-10-01",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    },
+    {
+      "nom": "Commission des finances (rapport général)",
+      "date": "2026-10-10",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "nom": "Séance publique, première lecture : rejeté (scrutin n° 9759)",
+      "date": "2026-11-04",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+    },
+    {
+      "nom": "Sénat, première lecture",
+      "date": null,
+      "statut": "en_cours",
+      "url": "https://www.senat.fr/"
+    },
+    {
+      "nom": "Commission mixte paritaire",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    },
+    {
+      "nom": "Nouvelle lecture à l'Assemblée",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    }
+  ],
+  "articles": []
+}

@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T15:58:21Z",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      }
+    ],
+    "limits": "Aucune limite signalée par les fichiers sources.",
+    "producer": "pipeline/note",
+    "dossier_id": "plf2027-logement"
+  },
+  "client": "Union sociale pour l'habitat",
+  "objectifs": [
+    {
+      "rang": 1,
+      "texte": "Maintenir les aides personnelles au logement et les aides à la pierre à leur niveau de 2026",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 2,
+      "texte": "Limiter la réforme aux ménages les plus aisés",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 3,
+      "texte": "Reporter la réforme à 2028",
+      "position_cible": "contre"
+    }
+  ],
+  "texte": "L’objectif de maintenir les aides personnelles au logement et les aides à la pierre à leur niveau de 2026 est en bonne voie, avec une tendance stable. La mesure est portée par le gouvernement, ce qui constitue le principal obstacle à sa suppression.\n\nUn amendement de suppression de l’article 78 a été déposé par le groupe RN. Cette initiative offre une opportunité de faire reculer la réforme, bien que la position du gouvernement reste déterminante pour l’issue du débat.\n\nLa prochaine étape est l’examen au Sénat, sans date fixée. Ce passage constitue la dernière occasion d’obtenir la suppression ou la réduction de la mesure avant le retour du texte à l’Assemblée. S’en suivront la commission mixte paritaire et une nouvelle lecture à l’Assemblée, également sans dates précisées.",
+  "chiffres_utilises": [
+    "2026",
+    "78"
+  ],
+  "sources": [
+    {
+      "label": "Amendement n° 677",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000677"
+    },
+    {
+      "label": "Texte du projet de loi",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    },
+    {
+      "label": "Examen au Sénat : prochaine occasion d'obtenir la suppression ou la réduction de la mesure, avant le retour du texte à l'Assemblée",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+    },
+    {
+      "label": "Commission mixte paritaire",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2027"
+    }
+  ],
+  "limites": "Aucune limite signalée par les fichiers sources.",
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
+  "verifie": true
+}
