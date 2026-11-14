@@ -29,8 +29,40 @@ export default function ActionBloc({ dossier }: { dossier: string }) {
   );
 }
 
+/** Complément 5 : liste `position_inconnue` (champ optionnel, ajouté aux contrats par P0). */
+type PositionInconnue = {
+  depute_id: string;
+  groupe_id: string | null;
+  position_groupe?: string | null;
+  preuve?: DeputeAction["preuve"];
+};
+
+const POSITION_GROUPE: Record<string, string> = {
+  pour: "pour la mesure",
+  contre: "contre la mesure",
+  abstention: "abstention",
+  divise: "divisé",
+};
+
+/** Les trois listes ne gardent que des députés avec un acte personnel ; le reste rejoint « Position inconnue ». */
+function repartir(a: Action) {
+  const brut = a as Action & { position_inconnue?: PositionInconnue[]; groupes: { position_inconnue?: PositionInconnue[] } };
+  const inconnus: PositionInconnue[] = [...(brut.groupes.position_inconnue ?? brut.position_inconnue ?? [])];
+  const garder = (l: DeputeAction[]) =>
+    l.filter((d) => {
+      if (d.fondement.length > 0) return true;
+      if (!inconnus.some((x) => x.depute_id === d.depute_id)) inconnus.push({ depute_id: d.depute_id, groupe_id: d.groupe_id, position_groupe: null, preuve: d.preuve });
+      return false;
+    });
+  return {
+    groupes: { actionnables: garder(a.groupes.actionnables), allies: garder(a.groupes.allies), perdus: garder(a.groupes.perdus) },
+    inconnus,
+  };
+}
+
 function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossier: string; annuaire: Annuaire; disponibles: string[] | null }) {
   const cles: CleGroupeAction[] = ["actionnables", "allies", "perdus"];
+  const { groupes, inconnus } = repartir(a);
   return (
     <>
       <section className="p7-section" style={{ marginTop: 0 }}>
@@ -63,13 +95,14 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
           <ColonneGroupe
             key={k}
             titre={GROUPE_ACTION[k]}
-            lignes={a.groupes[k]}
+            lignes={groupes[k]}
             raisonVide={a.meta.limits}
             dossier={dossier}
             annuaire={annuaire}
             disponibles={disponibles}
           />
         ))}
+        <ColonneInconnus lignes={inconnus} raisonVide={a.meta.limits} annuaire={annuaire} />
       </div>
 
       <div className="p7-cols p7-cols-2 p7-section">
@@ -169,6 +202,39 @@ function ColonneGroupe({
               </li>
             );
           })}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+function ColonneInconnus({ lignes, raisonVide, annuaire }: { lignes: PositionInconnue[]; raisonVide: string; annuaire: Annuaire }) {
+  return (
+    <div className="p7-col">
+      <h4>
+        Position inconnue
+        <span className="text-2">{lignes.length}</span>
+      </h4>
+      {lignes.length === 0 ? (
+        <div className="p7-vide">aucun · {raisonVide}</div>
+      ) : (
+        <ul className="p7-list">
+          {lignes.map((d) => (
+            <li key={d.depute_id} className="p7-item p7-item-muted" data-depute={d.depute_id}>
+              <div className="p7-ligne">
+                <span className="p7-nom">{annuaire.nom(d.depute_id)}</span>
+                <Tag annuaire={annuaire} groupeId={d.groupe_id ?? annuaire.depute(d.depute_id)?.groupe_id} />
+              </div>
+              <div className="p7-ligne">
+                <span className="text-2">position de son groupe : {d.position_groupe ? (POSITION_GROUPE[d.position_groupe] ?? d.position_groupe) : "inconnue"}</span>
+                {d.preuve && (
+                  <span className="p7-droite">
+                    <Pourquoi preuve={d.preuve} />
+                  </span>
+                )}
+              </div>
+            </li>
+          ))}
         </ul>
       )}
     </div>

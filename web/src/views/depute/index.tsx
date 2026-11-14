@@ -98,6 +98,10 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
   const f = r.data!;
   const c = f.couverture;
   const s = f.synthese;
+  // Rapporteur : il a lui-même entendu ces organisations. Membre : ce sont les rapporteurs de sa commission, à part et moins fort.
+  const estRapporteur = (r: string) => r === "rapporteur" || r === "rapporteur_general" || r === "rapporteur_avis";
+  const rapporteur = f.auditions.filter((a) => estRapporteur(a.role));
+  const membre = f.auditions.filter((a) => !estRapporteur(a.role));
 
   return (
     <>
@@ -127,29 +131,17 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
               aucune audition trouvée · {c.rapports_avec_liste} sur {c.rapports_total} rapports publient la liste des personnes entendues
             </div>
           ) : (
-            <ul className="p7-list">
-              {f.auditions.map((a, i) => (
-                <li key={`${a.date}-${i}`} className="p7-item">
-                  <div className="p7-ligne">
-                    <span>{formatDate(a.date)}</span>
-                    <span className="text-2">{ROLE_AUDITION[a.role]}</span>
-                    {a.rapport_url && (
-                      <a className="p7-droite" href={a.rapport_url} target="_blank" rel="noreferrer">
-                        rapport
-                      </a>
-                    )}
-                  </div>
-                  <div className="p7-tags">
-                    {a.organisations.map((o) => (
-                      <span key={o.nom} className="p7-org">
-                        {o.nom}
-                        <span className="text-2">{TYPE_ORG[o.type]}</span>
-                      </span>
-                    ))}
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <>
+              {rapporteur.length > 0 && <ListeAuditions auditions={rapporteur} verbe="a entendu" />}
+              {membre.length > 0 && (
+                <details className="p7-secondaire">
+                  <summary>
+                    Entendues par les rapporteurs de sa commission <span className="text-2">{membre.reduce((n, a) => n + a.organisations.length, 0)}</span>
+                  </summary>
+                  <ListeAuditions auditions={membre} />
+                </details>
+              )}
+            </>
           )}
         </div>
 
@@ -243,6 +235,34 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
       </p>
       <Meta meta={f.meta} />
     </>
+  );
+}
+
+function ListeAuditions({ auditions, verbe }: { auditions: Fiche["auditions"]; verbe?: string }) {
+  return (
+    <ul className="p7-list">
+      {auditions.map((a, i) => (
+        <li key={`${a.date}-${i}`} className="p7-item">
+          <div className="p7-ligne">
+            <span>{formatDate(a.date)}</span>
+            {verbe && <span className="text-2">{ROLE_AUDITION[a.role]}, {verbe}</span>}
+            {a.rapport_url && (
+              <a className="p7-droite" href={a.rapport_url} target="_blank" rel="noreferrer">
+                rapport
+              </a>
+            )}
+          </div>
+          <div className="p7-tags">
+            {a.organisations.map((o) => (
+              <span key={o.nom} className="p7-org">
+                {o.nom}
+                <span className="text-2">{TYPE_ORG[o.type]}</span>
+              </span>
+            ))}
+          </div>
+        </li>
+      ))}
+    </ul>
   );
 }
 

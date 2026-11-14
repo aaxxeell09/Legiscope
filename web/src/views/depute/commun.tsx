@@ -53,6 +53,8 @@ export const SORT: Record<Sort, string> = {
   retire: "retiré",
   tombe: "tombé",
   non_examine: "non examiné",
+  irrecevable: "irrecevable",
+  non_soutenu: "non soutenu",
 };
 
 export const ROLE_AUDITION: Record<RoleAudition, string> = {
