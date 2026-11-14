@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T15:01:11+01:00",
+    "generated_at": "2026-11-14T15:14:04+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -11,7 +11,7 @@
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       }
     ],
-    "limits": "Dépôts au plus tard le 2025-11-19 ; sorts, scrutins et séances strictement avant (matin du 2025-11-19). Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés, interventions classées par A2), jamais sur le groupe seul. Totaux avant coupe : 12 alliés, 177 perdus, 32 actionnables ; 15 gardés par catégorie (score décroissant). Les 342 députés sans acte personnel sur la mesure sont tous dans position_inconnue, avec la position de leur groupe en contexte. Députés en exercice seulement. Perdus = actes contre la cible et loyauté sur 12 mois d'au moins 0,85 envers un groupe lui-même opposé. Sens des amendements lu par règles : déduction de l'outil.",
+    "limits": "Dépôts au plus tard le 2025-11-19 ; sorts, scrutins et séances strictement avant (matin du 2025-11-19). Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés, interventions classées par A2), jamais sur le groupe seul. Totaux avant coupe : 11 alliés, 177 perdus, 32 actionnables ; 15 gardés par catégorie (score décroissant). Les 343 députés sans acte personnel sur la mesure sont tous dans position_inconnue, avec la position de leur groupe en contexte. Députés en exercice seulement. Perdus = actes contre la cible et loyauté sur 12 mois d'au moins 0,85 envers un groupe lui-même opposé. Sens des amendements lu par règles : déduction de l'outil.",
     "producer": "pipeline/pivots",
     "dossier_id": "petits-colis"
   },
@@ -587,26 +587,6 @@
     {
       "depute_id": "PA841955",
       "groupe_id": "PO845401",
-      "score": 1,
-      "raison": "a dit : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
-      "fondement": [
-        "dit"
-      ],
-      "position_connue": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Intervention du 2025-10-22",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
-          }
-        ],
-        "raisonnement": "Classé sur ses propres actes (a dit), majoritairement contre la mesure, comme le client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "depute_id": "PA942",
-      "groupe_id": "PO845485",
       "score": 1,
       "raison": "a dit : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
       "fondement": [
@@ -5659,6 +5639,21 @@
           {
             "label": "Fiche député",
             "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA841543"
+          }
+        ],
+        "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2025-11-19. Son groupe est « pour » sur la mesure : contexte, pas un classement.",
+        "nature": "inconnue"
+      }
+    },
+    {
+      "depute_id": "PA942",
+      "groupe_id": "PO845485",
+      "position_groupe": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Fiche député",
+            "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA942"
           }
         ],
         "raisonnement": "Aucun vote, amendement ou intervention de ce député sur la mesure au 2025-11-19. Son groupe est « pour » sur la mesure : contexte, pas un classement.",
