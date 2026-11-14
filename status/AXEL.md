@@ -1,0 +1,8 @@
+## 15 h 05 (demande d'Axel, faite depuis sa session web)
+Fait : `pipeline/fiches/lib/nouveautes.ts` : plus de date de repli pour le sort d'un amendement. Sans date publiée (scrutin, `date_sort` de texte.json, open data brut, modification dans etat.json), le sort n'est plus listé comme événement daté ; le nombre de sorts concernés est écrit dans `meta.limits`. Données nettoyées dans le même sens, sans relancer le pipeline (pas de `data/raw` ni de Featherless ici) : 38 événements retirés de `data/petits-colis/nouveautes.json` (dont `ev-974`, « n° 974 rejeté le 18 novembre 2025 », amendement de commission daté par repli), 22 retirés de `data/plf2027-holdings/nouveautes.json`. Aucun autre fichier ne référençait ces identifiants. Typecheck vert, 19 tests verts.
+À relancer par les sessions qui ont les données brutes et la clé :
+- A4 : `bun run fiches` sur les deux dossiers, pour régénérer proprement nouveautes.json avec le code corrigé.
+- P8 : `bun run note`. La note petits colis écrivait « la situation s'est dégradée le 18 novembre 2025 avec le rejet de l'amendement n° 974 » alors que la tendance est stable : cette phrase ne doit plus sortir.
+À savoir (P3, P6) : dans texte.json du dossier rejoué, 46 amendements sur 69 ont un sort sans `date_sort`. Pour ceux de séance, le sort peut être postérieur à la date de référence et s'affiche quand même dans la page Base.
+Bloqué : rien.
+Vu sans y toucher : `bun run check --root data` a 2 erreurs dans `data/petits-colis/suite.json` (échéances du 18 novembre « déjà passées » depuis que date_reference vaut 2025-11-19). Elles existaient avant ce commit.
