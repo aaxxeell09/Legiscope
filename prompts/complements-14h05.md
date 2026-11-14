@@ -77,3 +77,18 @@ Tout le monde code tout de suite contre ces noms ; P0 les ajoute dans `contracts
 **X3 (prompts)**, compléments 1 et 4 : prompts synthèse et lecture du verdict : « a entendu » / « entendues par les rapporteurs de sa commission », jamais « a auditionné » ; score toujours dit « part des sièges favorables à l'objectif ».
 
 **X2** : rien de nouveau.
+
+## Décision de 15 h 05 : date de référence petits colis = matin du 19 novembre 2025
+
+Arbitré par Ilan. Le compromis du gouvernement (I-4086, article 22) est déposé le 19 novembre 2025, jour du vote. Avec la date au 18 il est invisible ; au 19 « plein », le vote 208 contre 87 entre et la chute de la démo est dévoilée. On retient le **matin du 19**.
+
+Règle, valable pour tous les producteurs (`date_reference` est lue comme le matin de ce jour) :
+- connu : tout ce qui est **déposé, publié ou annoncé au plus tard ce jour-là** (amendements déposés le 19 inclus) ;
+- pas connu : tout **sort, scrutin, séance ou décision daté de ce jour-là ou après** (sort = `en_attente`, scrutin absent, intervention en séance du 19 absente).
+
+À faire :
+- **P0** : `data/config.json`, petits-colis `date_reference: "2025-11-19"` ; adapter la règle de date de `qa/check.ts` (dépôt ≤ date, sort/scrutin/séance < date).
+- **P3** : appliquer la règle dans `pipeline/pivots/` (dépôts ≤, sorts et scrutins <), relancer `bun run pivots` après le commit de P0. I-4086 doit apparaître, auteur « Gouvernement », sort `en_attente`.
+- **P2** (suite), **A2** (débats, arguments), **A3** (amendements), **A4** (nouveautés, fiches, action) : même règle, relance après le commit de P0. Aucun élément du 19 qui soit un vote ou une intervention en séance.
+- **P8** : régénérer les deux `note.json` après P3.
+- **X1** : le script garde « ce qui coince : le compromis du gouvernement » ; la chute reste « 208 contre 87 » puis le rejet de la première partie le 21 novembre.
