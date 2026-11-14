@@ -42,6 +42,12 @@ Les valeurs de `web/src/tokens.css` sont la source de vérité. Aucun composant 
 
 ## Hiérarchie et densité
 
+### Navigation sans fil d’Ariane redondant
+
+- Le shell et le sélecteur de dossier donnent le contexte global ; ne pas répéter « Dossiers / Vue d’ensemble » dans les pages.
+- Aucun fil d’Ariane ne doit apparaître lorsqu’il répète la navigation latérale ou le titre courant.
+- Le haut du dashboard se limite au client, au titre, à la description utile et au sélecteur d’objectif.
+
 ### Pages de travail
 
 - Point focal unique : le contenu permettant l’action principale (tableau d’amendements dans la Base, verdict dans le dashboard).

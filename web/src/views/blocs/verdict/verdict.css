@@ -38,28 +38,31 @@
 
 .verdict-bandeau {
   display: grid;
-  grid-template-columns: minmax(260px,1.35fr) minmax(170px,.8fr) minmax(200px,1fr);
-  gap: 10px;
-  align-items: stretch;
-  padding: 2px 0 var(--space-4);
-  border-bottom: 1px solid var(--border);
+  grid-template-columns:minmax(300px,1.25fr) minmax(360px,1fr);
+  align-items:center;
+  gap:var(--space-6);
+  padding:var(--space-2) 0 var(--space-5);
+  border-bottom:1px solid var(--border-soft);
 }
 
 .verdict-situation-bloc {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 8px 12px;
-  padding:10px 0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:var(--space-1);
+  padding:var(--space-2) 0;
   min-width:0;
 }
 
-.verdict-dimension { flex-basis:100%; color:var(--text-3); font-size:var(--fs-sm); font-weight:600; }
+.verdict-dimension { color:var(--text-2); font-size:var(--fs-secondary); font-weight:var(--weight-label); line-height:1.4; }
 
 .verdict-situation {
-  font-size: clamp(28px,2.5vw,34px);
-  font-weight: 700;
-  line-height: 1.1;
+  margin-top:var(--space-1);
+  font-size:clamp(34px,3vw,44px);
+  font-weight:var(--weight-page);
+  line-height:1.05;
+  letter-spacing:-.03em;
+  text-wrap:balance;
 }
 
 .verdict-situation-favorable {
@@ -85,33 +88,49 @@
   gap: var(--space-2) var(--space-6);
 }
 .verdict-score {
-  display: inline-flex;
-  flex-direction: column;
-  padding-left: var(--space-3);
-  border-left: 1px solid var(--border-soft);
+  display:inline-flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:var(--space-1);
+  margin-top:var(--space-2);
+  color:var(--text-2);
+  font-size:var(--fs-secondary);
+  line-height:1.45;
 }
 
-.verdict-score-valeur { color:var(--text); font-size:var(--fs-lg); font-weight:600; font-variant-numeric:tabular-nums; }
+.verdict-score-valeur { color:var(--text); font-size:var(--fs-card); font-weight:var(--weight-heading); font-variant-numeric:tabular-nums; }
 
 .verdict-score-libelle {
   color: var(--text-2);
-  max-width:20ch;
-  font-size:var(--fs-sm);
-  line-height:1.25;
+  font-size:var(--fs-secondary);
 }
 
-.verdict-tendance,
-.verdict-confiance {
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  gap:3px;
-  padding:10px 12px;
-  border-radius: var(--radius);
-  background: var(--surface-2);
+.verdict-score .pourquoi { display:inline-flex; align-items:center; }
+.verdict-score .pourquoi-btn { display:grid; place-items:center; width:28px; min-width:28px; height:28px; margin:-6px 0; padding:0; border-radius:var(--radius-sm); text-decoration:none; }
+
+.verdict-indicateurs {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:stretch;
+  gap:var(--space-2);
   min-width:0;
 }
 
+.verdict-indicateur {
+  display:flex;
+  min-height:96px;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  gap:var(--space-1);
+  padding:var(--space-4);
+  border-radius:var(--radius);
+  background:var(--surface-2);
+}
+
+.verdict-indicateur-label { color:var(--text-2); font-size:var(--fs-secondary); font-weight:var(--weight-label); line-height:1.4; }
+.verdict-indicateur-valeur { display:inline-flex; align-items:center; gap:var(--space-2); color:var(--text); font-size:var(--fs-card); font-weight:var(--weight-heading); line-height:1.35; }
+.verdict-tendance-icone { display:inline-grid; width:16px; place-items:center; color:var(--text-2); font-size:var(--fs-body); font-weight:var(--weight-body); }
 .verdict-confiance-ligne {
   display: grid;
   gap: 2px;
@@ -120,8 +139,8 @@
   overflow-wrap:anywhere;
 }
 
-.verdict-tendance-valeur,.verdict-confiance-valeur { font-size:var(--fs-base); font-weight:600; }
-.verdict-confiance-detail summary { margin-top: var(--space-1); color: var(--text-2); font-size: var(--fs-sm); cursor: pointer; }
+.verdict-confiance-detail { width:100%; }
+.verdict-confiance-detail summary { width:max-content; margin-top:var(--space-1); padding:2px 0; color:var(--text-2); font-size:var(--fs-label); font-weight:var(--weight-label); cursor:pointer; }
 .verdict-confiance-detail[open] summary { color: var(--text); }
 
 .verdict-cause {
@@ -264,19 +283,22 @@
 }
 
 @media (max-width: 1180px) {
-  .verdict-bandeau { grid-template-columns:minmax(250px,1.2fr) minmax(0,1fr); }
-  .verdict-situation-bloc { grid-row:1 / span 2; }
-  .verdict-tendance,.verdict-confiance { grid-column:2; }
+  .verdict-bandeau { grid-template-columns:minmax(280px,1.1fr) minmax(320px,1fr); gap:var(--space-4); }
 }
 
 @media (max-width: 900px) {
   .verdict-bandeau {
     grid-template-columns: 1fr;
   }
-  .verdict-situation-bloc,.verdict-tendance,.verdict-confiance { grid-column:auto; grid-row:auto; }
+  .verdict-situation-bloc,.verdict-indicateurs { grid-column:auto; grid-row:auto; }
   .verdict-analyse { grid-template-columns:1fr; }
   .verdict-lecture-suite { grid-column:1; }
   .verdict-cause { grid-template-columns:1fr auto; }
   .verdict-cause-label { grid-column:1 / -1; }
   .verdict-raisons li { grid-template-columns:1fr; gap:3px; }
+}
+
+@media (max-width: 560px) {
+  .verdict-indicateurs { grid-template-columns:1fr; }
+  .verdict-indicateur { min-height:80px; }
 }

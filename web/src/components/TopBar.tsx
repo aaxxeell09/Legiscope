@@ -24,7 +24,6 @@ export function TopBar() {
   const fromState = (location.state as { dossier?: string } | null)?.dossier;
   const dossier = fromUrl ?? fromState ?? config?.dossier_demo ?? dossiers[0]?.id ?? "";
   const courant = dossiers.find((d) => d.id === dossier);
-  const pageSources = location.pathname === "/sources";
   const close = () => { setOpen(false); setDossiersOpen(false); };
 
   const positionMenu = () => {
@@ -160,12 +159,7 @@ export function TopBar() {
         </nav>
         <div className="sidebar-foot"><span className={`dataset-dot ${config?.dataset === "fixtures" ? "fixtures" : "live"}`} /><span>{config?.dataset === "fixtures" ? "Données de démonstration" : "Données produites"}</span></div>
       </aside>
-      <header className="topbar">
-        <div className="topbar-context">
-          <span className="topbar-eyebrow">{pageSources ? "Transparence" : (courant?.client ?? "Espace de travail")}</span>
-          <span className="topbar-title">{pageSources ? "Sources" : (courant?.label ?? "Dossier")}</span>
-        </div>
-      </header>
+      <header className="topbar" aria-hidden="true" />
     </>
   );
 }

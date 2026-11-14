@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import type { Etat as EtatDossier } from "@contracts/index";
 import { useDossier } from "../../lib/config";
-import { useData } from "../../lib/data";
-import { formatDate } from "../../lib/format";
 import { Chargement, Erreur, ErrorBoundary } from "../../components";
 import VerdictBloc from "../blocs/verdict";
 import NouveautesBloc from "../blocs/nouveautes";
@@ -27,7 +24,6 @@ const BLOCS = [
  */
 export default function DossierView() {
   const d = useDossier();
-  const etat = useData<EtatDossier>("etat", d.id || undefined);
   const [objectifRang, setObjectifRang] = useState(1);
 
   useEffect(() => {
@@ -46,42 +42,19 @@ export default function DossierView() {
     );
   }
 
-  const titre = d.label?.replace(/^PLF\s+\d{4}\s*[,—–-]\s*/i, "") ?? d.label;
-  const millesime = d.label?.match(/PLF\s+\d{4}/i)?.[0]?.toUpperCase();
-  const etape = etat.data?.etape ?? "";
-  const institution = /sénat/i.test(etape) ? "Sénat" : /assemblée nationale/i.test(etape) ? "Assemblée nationale" : null;
-  const lecture = etape.split(/[,;:]/)[0]?.trim() || null;
-  const article = /^\d+[A-Za-z]?$/i.test(d.mesure?.article ?? "") ? d.mesure?.article : null;
+  const titreBrut = d.label?.replace(/^PLF\s+\d{4}\s*[,—–-]\s*/i, "") ?? d.label ?? "Dossier";
+  const titre = titreBrut.charAt(0).toUpperCase() + titreBrut.slice(1);
   const mesureCourte = d.mesure?.label && d.mesure.label.length > 120 ? `${d.mesure.label.slice(0, 117).trimEnd()}…` : d.mesure?.label;
 
   return (
     <div className="view dossier" data-view="dossier">
       <header className="dossier-head">
-        <nav className="dossier-breadcrumb" aria-label="Fil d’Ariane">
-          <span>Dossiers</span><span aria-hidden="true">/</span><span>Vue d’ensemble</span>
-        </nav>
-
         <div className="dossier-hero">
           <div className="dossier-heading">
             <div className="dossier-kicker">{d.client}</div>
             <h1>{titre}</h1>
             {d.mesure && <p className="dossier-mesure" title={d.mesure.label}>{mesureCourte}</p>}
           </div>
-          <div className="dossier-head-actions">
-            {d.dateReference ? (
-              <span className="dossier-temporal history-label"><span aria-hidden="true">◷</span><span>Relecture historique<strong>{formatDate(d.dateReference)}</strong></span></span>
-            ) : (
-              <span className="dossier-temporal live-label"><span className="dataset-dot live" /><span>Dossier vivant</span></span>
-            )}
-            <Link className="dossier-base-link" to={`/dossier/${d.id}/base`}><span>Base documentaire</span><span aria-hidden="true">→</span></Link>
-          </div>
-        </div>
-
-        <div className="dossier-context" aria-label="Contexte parlementaire">
-          {millesime && <span>{millesime}</span>}
-          {article && <span>Article {article}</span>}
-          {institution && <span>{institution}</span>}
-          {lecture && <span>{lecture}</span>}
         </div>
 
         <div className="dossier-objectifs-wrap">
@@ -93,6 +66,7 @@ export default function DossierView() {
                 role="tab"
                 key={o.rang}
                 aria-selected={objectifRang === o.rang}
+                title={o.texte}
                 tabIndex={objectifRang === o.rang ? 0 : -1}
                 className={`objectif${objectifRang === o.rang ? " actif" : ""}`}
                 onClick={() => setObjectifRang(o.rang)}

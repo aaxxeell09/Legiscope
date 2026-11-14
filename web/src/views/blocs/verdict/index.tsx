@@ -28,9 +28,9 @@ const TENDANCE_ICONE: Record<VerdictObjectif["tendance"], string> = {
 const SCORE_LIBELLE = "des sièges favorables à l'objectif";
 
 const CONFIANCE: Record<VerdictObjectif["confiance"]["niveau"], string> = {
-  elevee: "élevée",
-  moyenne: "moyenne",
-  faible: "faible",
+  elevee: "Élevée",
+  moyenne: "Moyenne",
+  faible: "Faible",
 };
 
 /** Bloc 1 : un verdict par objectif, le principal ouvert, les replis en onglets. */
@@ -85,22 +85,24 @@ function VerdictObjectifVue({ v }: { v: VerdictObjectif }) {
             <span className="verdict-score">
               <span className="verdict-score-valeur">{formatProba(v.score)}</span>
               <span className="verdict-score-libelle">{libelleScore(v)}</span>
+              {raisonGlobale.sources.length > 0 && <Pourquoi {...raisonGlobale} label="Voir les sources et le raisonnement du score" />}
             </span>
           )}
-          {raisonGlobale.sources.length > 0 && <Pourquoi {...raisonGlobale} />}
         </div>
-        <div className="verdict-tendance" data-tendance={v.tendance}>
-          <span className="text-2">Tendance</span>
-          <span className="verdict-tendance-valeur"><span aria-hidden="true">{TENDANCE_ICONE[v.tendance]}</span> {TENDANCE[v.tendance]}</span>
-        </div>
-        <div className="verdict-confiance">
-          <span className="text-2">Confiance</span>
-          <span className="verdict-confiance-valeur">{CONFIANCE[v.confiance.niveau]}</span>
-          {(v.confiance.etabli.length > 0 || v.confiance.inconnu.length > 0) && <details className="verdict-confiance-detail">
-            <summary>Fondements</summary>
-            {v.confiance.etabli.length > 0 && <div className="verdict-confiance-ligne"><strong>Ce qui est établi</strong>{v.confiance.etabli.join(" ; ")}</div>}
-            {v.confiance.inconnu.length > 0 && <div className="verdict-confiance-ligne"><strong>Ce qui reste inconnu</strong>{v.confiance.inconnu.join(" ; ")}</div>}
-          </details>}
+        <div className="verdict-indicateurs">
+          <div className="verdict-indicateur verdict-tendance" data-tendance={v.tendance}>
+            <span className="verdict-indicateur-label">Tendance</span>
+            <span className="verdict-indicateur-valeur"><span className="verdict-tendance-icone" aria-hidden="true">{TENDANCE_ICONE[v.tendance]}</span>{TENDANCE[v.tendance]}</span>
+          </div>
+          <div className="verdict-indicateur verdict-confiance">
+            <span className="verdict-indicateur-label">Confiance</span>
+            <span className="verdict-indicateur-valeur">{CONFIANCE[v.confiance.niveau]}</span>
+            {(v.confiance.etabli.length > 0 || v.confiance.inconnu.length > 0) && <details className="verdict-confiance-detail">
+              <summary>Fondements</summary>
+              {v.confiance.etabli.length > 0 && <div className="verdict-confiance-ligne"><strong>Ce qui est établi</strong>{v.confiance.etabli.join(" ; ")}</div>}
+              {v.confiance.inconnu.length > 0 && <div className="verdict-confiance-ligne"><strong>Ce qui reste inconnu</strong>{v.confiance.inconnu.join(" ; ")}</div>}
+            </details>}
+          </div>
         </div>
       </div>
 
