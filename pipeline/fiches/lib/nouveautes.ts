@@ -309,7 +309,10 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
     const listerDepot = a.sort === "en_attente" || publiee !== null || importanceDepot === 3;
     if (listerDepot && !posterieur(dateDepot, ref)) {
       evenements.push({
-        id: idUnique(a.sort === "en_attente" ? `ev-${a.numero}` : `ev-depot-${a.numero}`),
+        // L'identifiant du dépôt reste stable lorsque l'amendement passe de
+        // « en attente » à un sort définitif. Les consommateurs (notamment le
+        // Verdict) peuvent ainsi conserver une référence inter-fichiers valide.
+        id: idUnique(`ev-depot-${a.numero}`),
         date: dateDepot,
         type: "amendement_depose",
         titre: `${libelleNumeros(liste)}${groupe ? ` (${groupe})` : ""} déposé${pluriel ? "s" : ""} : ${resumeCourt}`,

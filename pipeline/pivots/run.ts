@@ -1,5 +1,7 @@
 // bun run pivots : régénère pivots.json, etat.json, texte.json, groupes-action.json (et verdict.json) pour chaque dossier.
-// Usage : bun pipeline/pivots/run.ts [--provisoire]   (--provisoire : pivots seuls, base générale)
+// Usage : bun pipeline/pivots/run.ts [--provisoire] [--dossier <id>]
+//   --provisoire : pivots seuls, base générale
+//   --dossier     : limite la régénération à un dossier
 import { join } from "node:path";
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { CACHE, RAW, chargerScrutins } from "./lib/opendata";
@@ -11,6 +13,9 @@ import { execSync } from "node:child_process";
 import { construireVerdict } from "./verdict";
 
 const provisoire = process.argv.includes("--provisoire");
+const dossierArg = process.argv.indexOf("--dossier");
+const dossierId = dossierArg >= 0 ? process.argv[dossierArg + 1] : undefined;
+if (dossierArg >= 0 && !dossierId) throw new Error("--dossier attend un identifiant");
 const FIX = join(DATA, "..", "contracts", "fixtures");
 const config = lireJson(join(DATA, "config.json")) ?? lireJson(join(FIX, "config.json"));
 const groupesJ = lireJson(join(DATA, "groupes.json")) ?? lireJson(join(FIX, "groupes.json"));
@@ -80,7 +85,9 @@ export function contexte(d: Dossier): CtxDossierPlus {
 }
 
 const resume: string[] = [];
-for (const d of config.dossiers as Dossier[]) {
+const dossiers = (config.dossiers as Dossier[]).filter((d) => !dossierId || d.id === dossierId);
+if (dossierId && dossiers.length === 0) throw new Error(`Dossier inconnu : ${dossierId}`);
+for (const d of dossiers) {
   const ctx = contexte(d);
   const pivots = construirePivots(ctx, provisoire ? "general" : "auto");
   ecrireJson(join(DATA, d.id, "pivots.json"), pivots);

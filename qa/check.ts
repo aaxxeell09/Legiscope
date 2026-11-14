@@ -1,5 +1,5 @@
 // Validation de data/ (ou des fixtures) : schémas zod puis intégrité croisée.
-// Usage : bun qa/check.ts [--root data|contracts/fixtures] (défaut : les deux)
+// Usage : bun qa/check.ts [--root data|contracts/fixtures] [--dossier id]
 // Code de sortie 1 dès qu'une erreur est trouvée. Chaque erreur : fichier | champ | valeur.
 
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
@@ -72,7 +72,7 @@ function verifierTexteChiffres(fichier: string, champ: string, texte: string, au
   if (!r.ok) erreur(fichier, champ, r.fautifs, "nombre absent de chiffres_utilises");
 }
 
-function verifierRoot(root: string) {
+function verifierRoot(root: string, dossiersFiltres?: ReadonlySet<string>) {
   if (!existsSync(root)) {
     erreur(root, "(dossier)", undefined, "racine introuvable");
     return;
@@ -129,13 +129,16 @@ function verifierRoot(root: string) {
     config.dossiers.forEach((d, i) => deputeExiste(f, `dossiers.${i}.pivot_demo`, d.pivot_demo));
 
     // Sous-dossiers présents <=> dossiers déclarés (data/raw/ exclu).
-    const presents = readdirSync(root).filter((n) => !n.startsWith(".") && n !== "raw" && statSync(join(root, n)).isDirectory());
-    for (const n of presents) if (!dossierIds.has(n)) erreur(join(root, n), "(dossier)", n, "sous-dossier présent mais absent de config.dossiers");
-    for (const d of config.dossiers) if (!presents.includes(d.id)) erreur(join(root, d.id), "(dossier)", d.id, "dossier déclaré dans config.json mais sous-dossier absent");
+    if (!dossiersFiltres) {
+      const presents = readdirSync(root).filter((n) => !n.startsWith(".") && n !== "raw" && statSync(join(root, n)).isDirectory());
+      for (const n of presents) if (!dossierIds.has(n)) erreur(join(root, n), "(dossier)", n, "sous-dossier présent mais absent de config.dossiers");
+      for (const d of config.dossiers) if (!presents.includes(d.id)) erreur(join(root, d.id), "(dossier)", d.id, "dossier déclaré dans config.json mais sous-dossier absent");
+    }
   }
 
   for (const dossier of config?.dossiers ?? []) {
     const id = dossier.id;
+    if (dossiersFiltres && !dossiersFiltres.has(id)) continue;
     if (!existsSync(join(root, id))) continue;
 
     const texte = charger<Texte>(p(id, "texte"), "texte");
@@ -223,10 +226,17 @@ function verifierRoot(root: string) {
       });
       if (index) {
         const f = p(id, "fiches-index");
-        // Une fiche peut exister pour tout député suivi : pivots.json ou groupes-action.json (actionnables, alliés, perdus).
+        // Une fiche peut exister pour tout député suivi : pivots.json, groupes-action.json ou
+        // action.json publié (actionnables, alliés, perdus). Action est l'entrée réellement consommée
+        // par le front et peut avoir été produit après groupes-action.
         const ga = groupesAction as { actionnables?: { depute_id: string }[]; allies?: { depute_id: string }[]; perdus?: { depute_id: string }[] } | null;
-        const connus = new Set<string>([...pivotIds, ...[...(ga?.actionnables ?? []), ...(ga?.allies ?? []), ...(ga?.perdus ?? [])].map((x) => x.depute_id)]);
-        for (const pa of [...disponibles, ...absents]) if (!connus.has(pa)) erreur(f, "disponibles/absents", pa, "listé mais absent de pivots.json et de groupes-action.json");
+        const actionGroupes = action?.groupes;
+        const suivis = [
+          ...(ga?.actionnables ?? []), ...(ga?.allies ?? []), ...(ga?.perdus ?? []),
+          ...(actionGroupes?.actionnables ?? []), ...(actionGroupes?.allies ?? []), ...(actionGroupes?.perdus ?? []),
+        ];
+        const connus = new Set<string>([...pivotIds, ...suivis.map((x) => x.depute_id)]);
+        for (const pa of [...disponibles, ...absents]) if (!connus.has(pa)) erreur(f, "disponibles/absents", pa, "listé mais absent de pivots.json, groupes-action.json et action.json");
       }
     }
 
@@ -345,15 +355,19 @@ function verifierRoot(root: string) {
 // ---------- arguments ----------
 const args = process.argv.slice(2);
 const roots: string[] = [];
+const dossierArgs: string[] = [];
 for (let i = 0; i < args.length; i++) {
   if (args[i] === "--root") roots.push(...(args[++i] ?? "").split(",").filter(Boolean));
   else if (args[i].startsWith("--root=")) roots.push(...args[i].slice(7).split(",").filter(Boolean));
+  else if (args[i] === "--dossier") dossierArgs.push(...(args[++i] ?? "").split(",").filter(Boolean));
+  else if (args[i].startsWith("--dossier=")) dossierArgs.push(...args[i].slice(10).split(",").filter(Boolean));
   else {
-    console.error(`argument inconnu : ${args[i]}\nusage : bun qa/check.ts [--root data|contracts/fixtures]`);
+    console.error(`argument inconnu : ${args[i]}\nusage : bun qa/check.ts [--root data|contracts/fixtures] [--dossier id]`);
     process.exit(2);
   }
 }
 const explicite = roots.length > 0;
+const dossiersFiltres = dossierArgs.length ? new Set(dossierArgs) : undefined;
 if (!explicite) roots.push("data", "contracts/fixtures");
 
 for (const root of roots) {
@@ -361,8 +375,8 @@ for (const root of roots) {
     avertissements.push(`${root} absent, ignoré (passer --root ${root} pour l'exiger)`);
     continue;
   }
-  verifierRoot(root);
-  verifierCroise(root, erreur);
+  verifierRoot(root, dossiersFiltres);
+  verifierCroise(root, erreur, dossiersFiltres);
 }
 
 for (const a of avertissements) console.log(`! ${a}`);

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "dossier_id": "plf2027-holdings",
+  "published_at": "2026-11-14T16:09:01.783Z",
+  "fichiers": {
+    "verdict.json": {
+      "sha256": "e7ff7c6d173811dad3a2e07a553d9951eb2d76fc0539e726e6547a53500b89a4",
+      "generated_at": "2026-11-14T17:04:52+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "nouveautes.json": {
+      "sha256": "33762fe1cabf52ac94a183691e1f9936060567388369155f7babc91ec981a66f",
+      "generated_at": "2026-11-14T16:03:40.796Z",
+      "producer": "pipeline/fiches"
+    },
+    "suite.json": {
+      "sha256": "767cc8fd750b51da4d01cd5820e449b2e6e9c9ed119ecd1709c85d20d7be45f0",
+      "generated_at": "2026-11-14T16:02:15Z",
+      "producer": "pipeline/suite"
+    },
+    "action.json": {
+      "sha256": "75bbec06d86edbffea7e46f9e31d482b36222a9c915f355fd5aaef359eb3d679",
+      "generated_at": "2026-11-14T16:03:40.804Z",
+      "producer": "pipeline/fiches"
+    },
+    "note.json": {
+      "sha256": "fc98a3e9dd75a111ef6421d30ef06e0c409d102c5258077cdcb27f30c45988e2",
+      "generated_at": "2026-11-14T14:15:28Z",
+      "producer": "pipeline/note"
+    },
+    "etat.json": {
+      "sha256": "7b17c211094a5d85247942396d3ca941f1f1bc4725527f7f78d79169796df7cd",
+      "generated_at": "2026-11-14T17:04:39+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "texte.json": {
+      "sha256": "eb680eed5bdf863efc5796f6182eb7a27f31972ded648fd22182de01d75c3e63",
+      "generated_at": "2026-11-14T17:04:39+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "pivots.json": {
+      "sha256": "5fdf0a5e792da04c5758652aa37fa84e40bb03d3ea5b092b74b906cecfa4bea0",
+      "generated_at": "2026-11-14T17:04:39+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "hatvp.json": {
+      "sha256": "fabf9c43de24e8fa61072534e173832182c0ff783250b3ccbd17dec77dfc883d",
+      "generated_at": "2026-11-14T15:48:11Z",
+      "producer": "pipeline/collecte"
+    },
+    "fiches/index.json": {
+      "sha256": "b6d1c3ea1b0665cfae39d26bd97527fa040f4d4f4040fdcddb3079468f668441",
+      "generated_at": "2026-11-14T16:03:39.045Z",
+      "producer": "pipeline/fiches"
+    }
+  }
+}

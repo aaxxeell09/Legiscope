@@ -75,7 +75,7 @@
       }
     },
     {
-      "id": "ev-2105",
+      "id": "ev-depot-2105",
       "date": "2026-10-30",
       "type": "amendement_depose",
       "titre": "Amendement n° 2105 (LIOT) déposé : Supprime l'article 88",
@@ -100,7 +100,7 @@
       }
     },
     {
-      "id": "ev-1500",
+      "id": "ev-depot-1500",
       "date": "2026-10-29",
       "type": "amendement_depose",
       "titre": "Amendement n° 1500 (SOC) déposé : Supprime l'article 88",
@@ -397,7 +397,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-10",
+      "id": "ev-depot-11",
       "date": "2026-11-10",
       "type": "amendement_depose",
       "titre": "1 amendement déposé sur le texte (EPR)",
@@ -443,7 +443,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-09",
+      "id": "ev-depot-11-2",
       "date": "2026-11-09",
       "type": "amendement_depose",
       "titre": "1 amendement déposé sur le texte (Dem)",
@@ -489,7 +489,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-06",
+      "id": "ev-depot-11-3",
       "date": "2026-11-06",
       "type": "amendement_depose",
       "titre": "7 amendements déposés sur le texte (EPR, Dem)",
@@ -698,7 +698,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-04",
+      "id": "ev-depot-11-4",
       "date": "2026-11-04",
       "type": "amendement_depose",
       "titre": "392 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -765,7 +765,7 @@
       }
     },
     {
-      "id": "ev-2916",
+      "id": "ev-depot-2916",
       "date": "2026-11-03",
       "type": "amendement_depose",
       "titre": "Amendement n° 2916 (SOC) déposé : L’article 89 prévoit une hausse du reste à charge pour les formations financées par le…",
@@ -790,7 +790,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-03",
+      "id": "ev-depot-11-5",
       "date": "2026-11-03",
       "type": "amendement_depose",
       "titre": "215 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -857,7 +857,7 @@
       }
     },
     {
-      "id": "ev-2517",
+      "id": "ev-depot-2517",
       "date": "2026-11-02",
       "type": "amendement_depose",
       "titre": "Amendement n° 2517 (LIOT) déposé : La loi du 5 septembre 2018, dite « pour la liberté de choisir son avenir professionnel »,…",
@@ -882,7 +882,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-02",
+      "id": "ev-depot-11-6",
       "date": "2026-11-02",
       "type": "amendement_depose",
       "titre": "369 amendements déposés sur le texte (SOC, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -928,7 +928,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-31",
+      "id": "ev-depot-10",
       "date": "2026-10-31",
       "type": "amendement_depose",
       "titre": "66 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, GDR, EPR)",
@@ -1111,7 +1111,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-30",
+      "id": "ev-depot-10-2",
       "date": "2026-10-30",
       "type": "amendement_depose",
       "titre": "668 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1274,7 +1274,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-29",
+      "id": "ev-depot-10-3",
       "date": "2026-10-29",
       "type": "amendement_depose",
       "titre": "405 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1425,7 +1425,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-28",
+      "id": "ev-depot-10-4",
       "date": "2026-10-28",
       "type": "amendement_depose",
       "titre": "236 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1492,7 +1492,7 @@
       }
     },
     {
-      "id": "ev-1119",
+      "id": "ev-depot-1119",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1119 (DR) déposé : Depuis 2019, France compétences verse aux régions des fonds leur permettant de soutenir…",
@@ -1517,7 +1517,7 @@
       }
     },
     {
-      "id": "ev-1136",
+      "id": "ev-depot-1136",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1136 (EPR) déposé : L’article 88 prévoit la création d’un fonds national de soutien aux centres de formation…",
@@ -1542,7 +1542,7 @@
       }
     },
     {
-      "id": "ev-1138",
+      "id": "ev-depot-1138",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1138 (EPR) déposé : Le présent amendement vise à reconnaître les formations certifiantes préparant…",
@@ -1567,7 +1567,7 @@
       }
     },
     {
-      "id": "ev-1140",
+      "id": "ev-depot-1140",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1140 (EPR) déposé : Le présent amendement vise à reconnaître que le secteur de l'artisanat est un secteur…",
@@ -1592,7 +1592,7 @@
       }
     },
     {
-      "id": "ev-1141",
+      "id": "ev-depot-1141",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1141 (EPR) déposé : Le présent amendement vise à reconnaître l’accompagnement réalisé par les chambres de…",
@@ -1617,7 +1617,7 @@
       }
     },
     {
-      "id": "ev-1144",
+      "id": "ev-depot-1144",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1144 (EPR) déposé : La participation forfaitaire, désormais assortie d'une majoration, peut représenter une…",
@@ -1642,7 +1642,7 @@
       }
     },
     {
-      "id": "ev-1145",
+      "id": "ev-depot-1145",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1145 (EPR) déposé : Le projet de loi institue une majoration de la participation du titulaire sans en…",
@@ -1667,7 +1667,7 @@
       }
     },
     {
-      "id": "ev-1146",
+      "id": "ev-depot-1146",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1146 (EPR) déposé : Une majoration uniforme pèse proportionnellement bien plus lourd sur les salariés…",
@@ -1692,7 +1692,7 @@
       }
     },
     {
-      "id": "ev-1147",
+      "id": "ev-depot-1147",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1147 (EPR) déposé : L’article 89 instaure une participation majorée pour les formations financées par le…",
@@ -1717,7 +1717,7 @@
       }
     },
     {
-      "id": "ev-1149",
+      "id": "ev-depot-1149",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "2 amendements identiques (n° 1149, n° 1151) (EPR) déposés : Cet amendement vise à revenir sur une mesure prise par voie d’amendement sénatorial lors…",
@@ -1746,7 +1746,7 @@
       }
     },
     {
-      "id": "ev-1150",
+      "id": "ev-depot-1150",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1150 (EPR) déposé : Cet amendement vise à faire évoluer le principe de modulation des niveaux de prise en…",
@@ -1771,7 +1771,7 @@
       }
     },
     {
-      "id": "ev-1153",
+      "id": "ev-depot-1153",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "Amendement n° 1153 (EPR) déposé : Cet amendement est un amendement de repli",
@@ -1842,7 +1842,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-27",
+      "id": "ev-depot-10-5",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "152 amendements déposés sur le texte (SOC, RN, NI, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1909,7 +1909,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-26",
+      "id": "ev-depot-10-6",
       "date": "2026-10-26",
       "type": "amendement_depose",
       "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1955,7 +1955,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-25",
+      "id": "ev-depot-10-7",
       "date": "2026-10-25",
       "type": "amendement_depose",
       "titre": "7 amendements déposés sur le texte (SOC, EPR)",
@@ -1980,7 +1980,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-24",
+      "id": "ev-depot-10-8",
       "date": "2026-10-24",
       "type": "amendement_depose",
       "titre": "4 amendements déposés sur le texte (RN)",
@@ -2005,7 +2005,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-23",
+      "id": "ev-depot-10-9",
       "date": "2026-10-23",
       "type": "amendement_depose",
       "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR)",
@@ -2030,7 +2030,7 @@
       }
     },
     {
-      "id": "ev-674",
+      "id": "ev-depot-674",
       "date": "2026-10-22",
       "type": "amendement_depose",
       "titre": "Amendement n° 674 (RN) déposé : La dette publique constitue un élément central des finances d’un État, influençant…",
@@ -2055,7 +2055,7 @@
       }
     },
     {
-      "id": "ev-771",
+      "id": "ev-depot-771",
       "date": "2026-10-22",
       "type": "amendement_depose",
       "titre": "Amendement n° 771 (DR) déposé : Le présent amendement vise à maintenir le versement de fonds aux régions par France…",
@@ -2080,7 +2080,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-22",
+      "id": "ev-depot-10-10",
       "date": "2026-10-22",
       "type": "amendement_depose",
       "titre": "536 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2126,7 +2126,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-21",
+      "id": "ev-depot-10-11",
       "date": "2026-10-21",
       "type": "amendement_depose",
       "titre": "245 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2235,7 +2235,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-20",
+      "id": "ev-depot-10-12",
       "date": "2026-10-20",
       "type": "amendement_depose",
       "titre": "159 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, EPR, EcoS, DR, Dem)",
@@ -2281,7 +2281,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-19",
+      "id": "ev-depot-10-13",
       "date": "2026-10-19",
       "type": "amendement_depose",
       "titre": "328 amendements déposés sur le texte (UDR, SOC, RN, NI, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2327,7 +2327,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-18",
+      "id": "ev-depot-10-14",
       "date": "2026-10-18",
       "type": "amendement_depose",
       "titre": "13 amendements déposés sur le texte (SOC)",
@@ -2352,7 +2352,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-17",
+      "id": "ev-depot-10-15",
       "date": "2026-10-17",
       "type": "amendement_depose",
       "titre": "92 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, EPR, EcoS)",
@@ -2377,7 +2377,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-16",
+      "id": "ev-depot-10-16",
       "date": "2026-10-16",
       "type": "amendement_depose",
       "titre": "2380 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2465,7 +2465,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-15",
+      "id": "ev-depot-10-17",
       "date": "2026-10-15",
       "type": "amendement_depose",
       "titre": "669 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, GDR, EPR, EcoS, DR, Dem)",
@@ -2578,7 +2578,7 @@
       }
     },
     {
-      "id": "ev-94",
+      "id": "ev-depot-94",
       "date": "2026-10-13",
       "type": "amendement_depose",
       "titre": "2 amendements identiques (n° 94, n° 2172) (SOC) déposés : La loi du 5 septembre 2018, dite « pour la liberté de choisir son avenir professionnel »,…",
@@ -2774,7 +2774,7 @@
       }
     },
     {
-      "id": "ev-30",
+      "id": "ev-depot-30",
       "date": "2026-10-09",
       "type": "amendement_depose",
       "titre": "Amendement n° 30 (EPR) déposé : L'article 88 met fin, à compter du 31 décembre 2026, au financement par France…",

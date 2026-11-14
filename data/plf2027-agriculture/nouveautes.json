@@ -79,7 +79,7 @@
       }
     },
     {
-      "id": "ev-2358",
+      "id": "ev-depot-2358",
       "date": "2026-10-31",
       "type": "amendement_depose",
       "titre": "Amendement n° 2358 (UDR) déposé : Supprime l'article 77",
@@ -104,7 +104,7 @@
       }
     },
     {
-      "id": "ev-2103",
+      "id": "ev-depot-2103",
       "date": "2026-10-30",
       "type": "amendement_depose",
       "titre": "Amendement n° 2103 (LIOT) déposé : Supprime l'article 77",
@@ -129,7 +129,7 @@
       }
     },
     {
-      "id": "ev-2151",
+      "id": "ev-depot-2151",
       "date": "2026-10-30",
       "type": "amendement_depose",
       "titre": "2 amendements identiques (n° 2151, n° 2306) (SOC) déposés : Supprime l'article 77",
@@ -158,7 +158,7 @@
       }
     },
     {
-      "id": "ev-2190",
+      "id": "ev-depot-2190",
       "date": "2026-10-30",
       "type": "amendement_depose",
       "titre": "Amendement n° 2190 (ECOS) déposé : Supprime l'article 77",
@@ -233,7 +233,7 @@
       }
     },
     {
-      "id": "ev-1368",
+      "id": "ev-depot-1368",
       "date": "2026-10-28",
       "type": "amendement_depose",
       "titre": "Amendement n° 1368 (LFI-NFP) déposé : Supprime l'article 77",
@@ -337,7 +337,7 @@
       }
     },
     {
-      "id": "ev-915",
+      "id": "ev-depot-915",
       "date": "2026-10-23",
       "type": "amendement_depose",
       "titre": "4 amendements identiques (n° 915, n° 1300, n° 1583, n° 2346) (EPR) déposés : Supprime l'article 77",
@@ -420,7 +420,7 @@
       }
     },
     {
-      "id": "ev-527",
+      "id": "ev-depot-527",
       "date": "2026-10-19",
       "type": "amendement_depose",
       "titre": "Amendement n° 527 (RN) déposé : Supprime l'article 77",
@@ -669,7 +669,7 @@
       }
     },
     {
-      "id": "ev-67",
+      "id": "ev-depot-67",
       "date": "2026-10-12",
       "type": "amendement_depose",
       "titre": "2 amendements identiques (n° 67, n° 2046) (HOR) déposés : Supprime l'article 77",
@@ -698,7 +698,7 @@
       }
     },
     {
-      "id": "ev-80",
+      "id": "ev-depot-80",
       "date": "2026-10-12",
       "type": "amendement_depose",
       "titre": "4 amendements identiques (n° 80, n° 186, n° 979, n° 1573) (DR) déposés : Supprime l'article 77",
@@ -760,7 +760,7 @@
       }
     },
     {
-      "id": "ev-36",
+      "id": "ev-depot-36",
       "date": "2026-10-09",
       "type": "amendement_depose",
       "titre": "2 amendements identiques (n° 36, n° 2322) (DEM) déposés : Supprime l'article 77",
@@ -1352,7 +1352,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-10",
+      "id": "ev-depot-11",
       "date": "2026-11-10",
       "type": "amendement_depose",
       "titre": "1 amendement déposé sur le texte (EPR)",
@@ -1398,7 +1398,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-09",
+      "id": "ev-depot-11-2",
       "date": "2026-11-09",
       "type": "amendement_depose",
       "titre": "1 amendement déposé sur le texte (Dem)",
@@ -1444,7 +1444,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-06",
+      "id": "ev-depot-11-3",
       "date": "2026-11-06",
       "type": "amendement_depose",
       "titre": "7 amendements déposés sur le texte (EPR, Dem)",
@@ -1532,7 +1532,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-04",
+      "id": "ev-depot-11-4",
       "date": "2026-11-04",
       "type": "amendement_depose",
       "titre": "392 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1649,7 +1649,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-03",
+      "id": "ev-depot-11-5",
       "date": "2026-11-03",
       "type": "amendement_depose",
       "titre": "215 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1766,7 +1766,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-11-02",
+      "id": "ev-depot-11-6",
       "date": "2026-11-02",
       "type": "amendement_depose",
       "titre": "369 amendements déposés sur le texte (SOC, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1791,7 +1791,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-31",
+      "id": "ev-depot-10-2",
       "date": "2026-10-31",
       "type": "amendement_depose",
       "titre": "66 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, GDR, EPR)",
@@ -1941,7 +1941,7 @@
       }
     },
     {
-      "id": "ev-2222",
+      "id": "ev-depot-2222",
       "date": "2026-10-30",
       "type": "amendement_depose",
       "titre": "Amendement n° 2222 (SOC) déposé : Cet amendement vise élargir les aides aux CUMA à la transformation des légumineuses pour…",
@@ -2128,7 +2128,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-30",
+      "id": "ev-depot-10-3",
       "date": "2026-10-30",
       "type": "amendement_depose",
       "titre": "668 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2195,7 +2195,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-29",
+      "id": "ev-depot-10-4",
       "date": "2026-10-29",
       "type": "amendement_depose",
       "titre": "405 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2241,7 +2241,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-28",
+      "id": "ev-depot-10-5",
       "date": "2026-10-28",
       "type": "amendement_depose",
       "titre": "236 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2287,7 +2287,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-27",
+      "id": "ev-depot-10-6",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "152 amendements déposés sur le texte (SOC, RN, NI, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2333,7 +2333,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-26",
+      "id": "ev-depot-10-7",
       "date": "2026-10-26",
       "type": "amendement_depose",
       "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2379,7 +2379,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-25",
+      "id": "ev-depot-10-8",
       "date": "2026-10-25",
       "type": "amendement_depose",
       "titre": "7 amendements déposés sur le texte (SOC, EPR)",
@@ -2404,7 +2404,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-24",
+      "id": "ev-depot-10-9",
       "date": "2026-10-24",
       "type": "amendement_depose",
       "titre": "4 amendements déposés sur le texte (RN)",
@@ -2429,7 +2429,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-23",
+      "id": "ev-depot-10-10",
       "date": "2026-10-23",
       "type": "amendement_depose",
       "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR)",
@@ -2579,7 +2579,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-22",
+      "id": "ev-depot-10-11",
       "date": "2026-10-22",
       "type": "amendement_depose",
       "titre": "536 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2646,7 +2646,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-21",
+      "id": "ev-depot-10-12",
       "date": "2026-10-21",
       "type": "amendement_depose",
       "titre": "245 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2755,7 +2755,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-20",
+      "id": "ev-depot-10-13",
       "date": "2026-10-20",
       "type": "amendement_depose",
       "titre": "159 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, EPR, EcoS, DR, Dem)",
@@ -2822,7 +2822,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-19",
+      "id": "ev-depot-10-14",
       "date": "2026-10-19",
       "type": "amendement_depose",
       "titre": "328 amendements déposés sur le texte (UDR, SOC, RN, NI, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2847,7 +2847,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-18",
+      "id": "ev-depot-10-15",
       "date": "2026-10-18",
       "type": "amendement_depose",
       "titre": "13 amendements déposés sur le texte (SOC)",
@@ -2872,7 +2872,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-17",
+      "id": "ev-depot-10-16",
       "date": "2026-10-17",
       "type": "amendement_depose",
       "titre": "92 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, EPR, EcoS)",
@@ -2897,7 +2897,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-16",
+      "id": "ev-depot-10-17",
       "date": "2026-10-16",
       "type": "amendement_depose",
       "titre": "2380 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -2922,7 +2922,7 @@
       }
     },
     {
-      "id": "ev-depots-2026-10-15",
+      "id": "ev-depot-10-18",
       "date": "2026-10-15",
       "type": "amendement_depose",
       "titre": "669 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, GDR, EPR, EcoS, DR, Dem)",

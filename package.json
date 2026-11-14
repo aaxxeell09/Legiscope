@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node pipeline/publication.mjs --check && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "check": "bun qa/check.ts",
+    "check": "bun qa/check.ts && node pipeline/publication.mjs --check",
+    "publish:data": "node pipeline/publication.mjs",
     "test": "bun test qa/",
     "collecte": "bun pipeline/collecte/run.ts",
     "cohesion": "bun pipeline/cohesion/run.ts",

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "dossier_id": "plf2027-agriculture",
+  "published_at": "2026-11-14T16:09:02.657Z",
+  "fichiers": {
+    "verdict.json": {
+      "sha256": "49cc2040a2388def4ccd73a1e49f0b15e11ab35db6e617b1109fae0faddcb83a",
+      "generated_at": "2026-11-14T17:05:33+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "nouveautes.json": {
+      "sha256": "886e2c1aee58cb9ad77374b80f5bf28a1ba3489257c733e9c2786a25a86de171",
+      "generated_at": "2026-11-14T16:08:17.618Z",
+      "producer": "pipeline/fiches"
+    },
+    "suite.json": {
+      "sha256": "920edff1dbe2f7e6498472c1e8e1208895e791fdeb47cac24fa7bbf08c704963",
+      "generated_at": "2026-11-14T16:02:18Z",
+      "producer": "pipeline/suite"
+    },
+    "action.json": {
+      "sha256": "b6e348624fbfb47e479c834e5962e5f7771c922d6d91885be1b44f904e2af78f",
+      "generated_at": "2026-11-14T16:08:27.046Z",
+      "producer": "pipeline/fiches"
+    },
+    "note.json": {
+      "sha256": "23cf8a5042c280619c424b361becc7f39caf848b30c24be6a5e4195d96d0d350",
+      "generated_at": "2026-11-14T16:03:05Z",
+      "producer": "pipeline/note"
+    },
+    "etat.json": {
+      "sha256": "5ca898aefd622822fc16ddfa99a475ada8ae7dbf79ec8c8f4022a4d9f462b233",
+      "generated_at": "2026-11-14T17:05:21+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "texte.json": {
+      "sha256": "4b0ab712ed2ac98feb44d217971e65c7813e92daceca591c1acf74669bd779e2",
+      "generated_at": "2026-11-14T17:05:21+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "pivots.json": {
+      "sha256": "fbce45c0ad0770ff026aebe1ec3f3706c50c2b2939b665b2af2616929cece7fb",
+      "generated_at": "2026-11-14T17:05:21+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "hatvp.json": {
+      "sha256": "a5b0b6822f021703f362061a26aa86e4d47cff48ffa06d723dc09de8baee165f",
+      "generated_at": "2026-11-14T15:48:13Z",
+      "producer": "pipeline/collecte"
+    },
+    "fiches/index.json": {
+      "sha256": "97a93281eb0d28723eb2b2adb46eed777e84f5cde2c6fccb917835012d3b4364",
+      "generated_at": "2026-11-14T16:08:13.491Z",
+      "producer": "pipeline/fiches"
+    }
+  }
+}

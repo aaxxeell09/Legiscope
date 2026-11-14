@@ -26,7 +26,7 @@ const MOTS_SITUATION: Record<string, string[]> = {
   insuffisant: ["pas assez d'information", "insuffisant", "indécidable"],
 };
 
-export function verifierCroise(root: string, erreur: Erreur) {
+export function verifierCroise(root: string, erreur: Erreur, dossiers?: ReadonlySet<string>) {
   const config = lire(join(root, "config.json"));
   const deputes = lire(join(root, "deputes.json"));
   if (!config?.dossiers) return;
@@ -35,6 +35,7 @@ export function verifierCroise(root: string, erreur: Erreur) {
 
   for (const dossier of config.dossiers) {
     const id: string = dossier.id;
+    if (dossiers && !dossiers.has(id)) continue;
     const dir = join(root, id);
     if (!existsSync(dir)) continue;
     const P = (...x: string[]) => join(dir, ...x);

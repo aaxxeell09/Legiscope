@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "dossier_id": "plf2027-apprentissage",
+  "published_at": "2026-11-14T16:09:02.327Z",
+  "fichiers": {
+    "verdict.json": {
+      "sha256": "41f719cfcd78c6c4088889fb22fa15168f9b628960d45135fa3ae105e5180432",
+      "generated_at": "2026-11-14T17:05:19+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "nouveautes.json": {
+      "sha256": "5c19db8705b0bb51bf881ded64abf1646319c6cd015579ffdf8aef7ee15c8c4d",
+      "generated_at": "2026-11-14T16:03:41.436Z",
+      "producer": "pipeline/fiches"
+    },
+    "suite.json": {
+      "sha256": "d1acda91fbcf814bd4c4a22b62feff04f8762883f9165da4e0897790e0530b4a",
+      "generated_at": "2026-11-14T16:02:18Z",
+      "producer": "pipeline/suite"
+    },
+    "action.json": {
+      "sha256": "36d9a4759cf2eb3409cc29deb108b5625ca87d74063ca5802bd9825296e60931",
+      "generated_at": "2026-11-14T16:03:41.438Z",
+      "producer": "pipeline/fiches"
+    },
+    "note.json": {
+      "sha256": "89961dddec9c26845cea6b52f468a5b0675dfbbafbea86ba8fd980dd4317c7bc",
+      "generated_at": "2026-11-14T16:03:24Z",
+      "producer": "pipeline/note"
+    },
+    "etat.json": {
+      "sha256": "088485763a209d7edbe3f4461b6c71341d0b1d8b4fce4595fb02ffc5c95d3525",
+      "generated_at": "2026-11-14T17:05:07+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "texte.json": {
+      "sha256": "3d95b5b6be4a1c7765e6579dc6f9667805dea56e881747d206e8b84e1823f516",
+      "generated_at": "2026-11-14T17:05:07+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "pivots.json": {
+      "sha256": "f9d168266615fb484e443cbbb25bdc84a8568ac4b0dfeead8f5c68a52763b20b",
+      "generated_at": "2026-11-14T17:05:07+01:00",
+      "producer": "pipeline/pivots"
+    },
+    "hatvp.json": {
+      "sha256": "c358c5d4237f2a1813a7dbb6e311b50e9e630e303e6261e4ded395963bceb52f",
+      "generated_at": "2026-11-14T15:48:13Z",
+      "producer": "pipeline/collecte"
+    },
+    "fiches/index.json": {
+      "sha256": "bf930f8ded0007c1d6231e9ff1b7aa89308dbd2412d54d161f399031f8546153",
+      "generated_at": "2026-11-14T16:03:41.208Z",
+      "producer": "pipeline/fiches"
+    }
+  }
+}
