@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:32:05+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B1906",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B1906"
+      }
+    ],
+    "limits": "Source : open data Assemblée nationale (cache pipeline/amendements/cache/petits-colis.json), 13676 amendements du texte, 95 sur le sujet. Sujet = mots-clés de config.json (petits colis, colis, franchise douanière) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article 22. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Rejeu au 2025-11-18 : amendements déposés après exclus, sort postérieur rendu en_attente (10 cas). « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA794118",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N000719",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Article 22 : Rédiger ainsi l’article 22 :« I. – Les règles relatives au malus sur les importations d’articles de marchandise contenus dans des envois de faible valeur sont…",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719",
+      "numero": "I-CF719",
+      "sort_libelle": "Adopté",
+      "date_depot": "2025-10-17",
+      "date_sort": "2025-10-22",
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N000720",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros »le montant :« 5 euros ».",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000720",
+      "numero": "I-CF720",
+      "sort_libelle": "Tombé",
+      "date_depot": "2025-10-17",
+      "date_sort": "2025-10-22",
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N000721",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant :« 2 euros » le montant :« 4 euros ».",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000721",
+      "numero": "I-CF721",
+      "sort_libelle": "Tombé",
+      "date_depot": "2025-10-17",
+      "date_sort": "2025-10-22",
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N000722",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Article 22 : À l’alinéa 10, substituer au chiffre :« 2 » le chiffre :« 3 ».",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000722",
+      "numero": "I-CF722",
+      "sort_libelle": "Tombé",
+      "date_depot": "2025-10-17",
+      "date_sort": "2025-10-22",
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N001774",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "cosignataire",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant :« 25 euros ».",
+      "sort": "tombe",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774",
+      "numero": "I-CF1774",
+      "sort_libelle": "Tombé",
+      "date_depot": "2025-10-18",
+      "date_sort": "2025-10-22",
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N001775",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "cosignataire",
+      "resume": "Article 22 : I. – Sont soumises à une taxe sur les services de commerce électronique permettant la vente à distance de biens matériels expédiés depuis un État ou territoire…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775",
+      "numero": "I-CF1775",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2025-10-18",
+      "date_sort": "2025-10-22",
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N000936",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant :« 2 euros » le montant :« 3 euros ».",
+      "sort": "retire",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000936",
+      "numero": "I-936",
+      "sort_libelle": "Retiré après publication",
+      "date_depot": "2025-10-21",
+      "date_sort": null,
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N000937",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant :« 2 euros »le montant : « 4 euros ».",
+      "sort": "retire",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000937",
+      "numero": "I-937",
+      "sort_libelle": "Retiré après publication",
+      "date_depot": "2025-10-21",
+      "date_sort": null,
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N000938",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros »le montant : « 5 euros ».",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000938",
+      "numero": "I-938",
+      "sort_libelle": "En attente au 2025-11-18",
+      "date_depot": "2025-10-21",
+      "date_sort": null,
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N000943",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Article 22 : I. – À l'alinéa 1, substituer aux mots : « à la taxe »les mots : « au malus ».II. – En conséquence, à l’alinéa 7, substituer aux mots : « à la taxe »les mots…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000943",
+      "numero": "I-943 (Rect)",
+      "sort_libelle": "En attente au 2025-11-18",
+      "date_depot": "2025-10-21",
+      "date_sort": null,
+      "article": "ART. 22"
+    },
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N002860",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Article 22 : dispositif non publié.",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002860",
+      "numero": "I-2860",
+      "sort_libelle": "Irrecevable (Doublon)",
+      "date_depot": "2025-10-22",
+      "date_sort": null,
+      "article": "ART. 22"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:32:05+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : open data Assemblée nationale (cache pipeline/amendements/cache/plf2027-holdings.json), 13894 amendements du texte, 153 sur le sujet. Sujet = mots-clés de config.json (zucman, holding, holdings, impôt sur la fortune, fortune improductive, patrimoine improductif, ISF, IFF) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article 3. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA841351",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000018",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018",
+      "numero": "I-CF18",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-07",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000043",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le chapitre II bis du titre IV de la première partie du livre premier du code général des impôts est ainsi modifié :1° L’intitulé est ainsi rédigé : «…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043",
+      "numero": "I-CF43",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-07",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000048",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : I. – Le code général des impôts est ainsi modifié :1° Après le 1 de l’article 145, il est inséré un 1 bis ainsi rédigé : « 1 bis. Le régime fiscal des sociétés…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000048",
+      "numero": "I-CF48",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-08",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000174",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts est ainsi rétabli :« Chapitre Ier bis« Impôt de solidarité…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174",
+      "numero": "I-CF174",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-07",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000208",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié :1° L'intitulé de la section X du chapitre III du titre Ier de la première partie du livre Ier est ainsi rédigé…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000208",
+      "numero": "I-CF208",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-08",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N000249",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Au deuxième alinéa du a quinquies du I de l’article 219 du code général des impôts, le taux : « 12 % » est remplacé par le taux : « 100 % ».",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000249",
+      "numero": "I-CF249",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-02",
+      "date_sort": "2026-10-08",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000038",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000038",
+      "numero": "I-38",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-05",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000047",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le chapitre II bis du titre IV de la première partie du livre premier du code général des impôts est ainsi modifié :1° L’intitulé est ainsi rédigé : «…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047",
+      "numero": "I-47",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-05",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000051",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : I. – Le code général des impôts est ainsi modifié :1° Après le 1 de l’article 145, il est inséré un 1 bis ainsi rédigé : « 1 bis. Le régime fiscal des sociétés…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000051",
+      "numero": "I-51",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-05",
+      "date_sort": "2026-10-27",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000054",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : Le code général des impôts est ainsi modifié :1° Le chapitre Ier bis du titre IV de la première partie du livre premier est ainsi rétabli :« Chapitre Ier bis«…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000054",
+      "numero": "I-54",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-05",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000056",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié :1° L’intitulé de la section X du chapitre III du titre Ier de la première partie du livre Ier est ainsi rédigé…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000056",
+      "numero": "I-56",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-05",
+      "date_sort": "2026-10-28",
+      "article": "APRÈS ART. 15"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001550",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 15 : Au deuxième alinéa du a quinquies du I de l’article 219 du code général des impôts, le taux : « 12 % » est remplacé par le taux : « 100 % ».",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001550",
+      "numero": "I-1550",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-27",
+      "article": "APRÈS ART. 15"
+    }
+  ]
+}
