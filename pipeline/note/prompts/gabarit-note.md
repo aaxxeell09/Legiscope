@@ -98,12 +98,17 @@ Limites : compte rendu produit par gabarit, sans rédaction par le modèle, à r
 
 ## Liste autorisée et champs de sortie
 
-- Cas normal, avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer le texte rempli en troisième argument (`gabarit`), avec la liste autorisée du prompt (`note.md`, section Branchement : les nombres du message utilisateur rempli). Cette liste contient déjà tous les nombres du gabarit. `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`.
-- Sans `redigerVerifie` (gabarit seul) : construire la liste variable par variable, comme suit.
+- Avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer le texte rempli en troisième argument (`gabarit`). `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`. La liste autorisée de l'appel doit contenir les nombres des variables injectées, construits comme suit.
 - `chiffres_utilises` : pour chaque variable injectée. Entier (`n_actionnables`, `n_allies`, `n_perdus`) : `String(valeur)`. Date : la date ISO telle quelle. Texte (toutes les autres, `lecture_1` et `limites` compris) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `pipeline/lib/verif.ts`, écrit `String(valeur)`. Liste dédoublonnée.
 - `verifie` : `verifierChiffres(texte, chiffres_utilises).ok`. Le texte fixe des gabarits ne contient aucun nombre.
 - `mode` : `"gabarit"`. `modele` : `null`. `client` et `objectifs` : recopiés depuis `config.json`. `sources` : les `meta.sources` des fichiers lus.
 - Longueur : 171 mots sur la fixture `petits-colis`, 197 sur `plf2027-holdings` (cible : 150). Le gabarit ne coupe aucun titre : la longueur suit celle des titres injectés.
+
+## Prompt associé (`note.md`)
+
+- Format : le prompt système, puis une ligne `--- user ---`, puis le message utilisateur à variables. C'est le format lu par `promptNote` de `pipeline/note/run.ts`.
+- Variables du message utilisateur (celles de `promptNote`) : `client`, `mesure`, `objectif`, `replis`, `date_reference`, `faits` (une ligne `- ...` par fait vérifié), `limites`. Une variable vide donne une ligne vide : le prompt le prévoit pour `limites`.
+- Liste autorisée : celle que construit `pipeline/note/run.ts` (nombres des faits, dates, nombres du gabarit).
 
 ## Exemple rempli (fixtures `petits-colis`)
 

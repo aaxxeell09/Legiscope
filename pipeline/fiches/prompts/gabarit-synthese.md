@@ -91,11 +91,17 @@ Présenter à ce député la position du client ({{client}}) sur la mesure : auc
 
 ## Liste autorisée et champs de sortie
 
-- Cas normal, avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer `position_probable`, un saut de ligne, puis `argument` en troisième argument (`gabarit`), avec la liste autorisée du prompt (`synthese.md`, section Branchement : les nombres du message utilisateur rempli). Cette liste contient déjà tous les nombres du gabarit. `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`.
-- Sans `redigerVerifie` (gabarit seul) : construire la liste variable par variable, comme suit.
+- Avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer le gabarit du champ demandé en troisième argument (`gabarit`). `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`. La liste autorisée de l'appel doit contenir les nombres des variables injectées, construits comme suit.
 - `chiffres_utilises` : pour chaque variable injectée dans `position_probable` ou `argument`. Champ numérique : `String(valeur)` (`n_ecarts`, `loyaute_12m`). Date : la date ISO telle quelle. Texte (`resume`, `citation`, `numero`, `client`, `organisations`) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `pipeline/lib/verif.ts`, écrit `String(valeur)`. Liste dédoublonnée.
 - `verifie` : `verifierChiffres(position_probable + " " + argument, chiffres_utilises).ok`. Le texte fixe des gabarits ne contient aucun nombre : un rejet signale une erreur de mise en forme, à écrire dans `meta.limits`.
 - `mode` : `"gabarit"`. `modele` : `null`. `date` : `date_reference` du dossier si elle est posée, sinon la date du jour.
+
+## Prompt associé (`synthese.md`)
+
+- Format : texte brut, sans variable. Le fichier entier ouvre le message ; l'appelant ajoute `Champ demandé : position_probable` (ou `argument`), puis `Entrée (JSON) :` et l'entrée. C'est ce que fait `rediger` de `pipeline/fiches/lib/redaction.ts`. Un appel par champ, une phrase par appel.
+- Clés lues par le prompt : `client`, `mesure`, `position_cible`, `depute`, `amendements` (`numero`, `role`, `resume`, `sort`, `travaille_avec`), `debats` (`date`, `lieu`, `citation`), `auditions` (`date`, `role`, `organisations`), `position_groupe`.
+- L'entrée ne contient aucun vote brut. Le prompt interdit de citer `position_groupe.confiance`.
+- Liste autorisée : les nombres de l'entrée JSON. Le gabarit `position.vote` écrit `n_ecarts` et `loyaute` : ajouter `String(n_ecarts)` et `String(loyaute_12m)` à la liste quand on l'utilise.
 
 ## Exemple rempli (fixture `petits-colis/fiches/PA721578.json`)
 
