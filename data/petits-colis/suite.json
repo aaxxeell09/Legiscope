@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:26:37Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, agenda des réunions",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+      },
+      {
+        "label": "Dossier législatif DLR5L17N52428",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428"
+      }
+    ],
+    "limits": "Échéances connues au 18 novembre 2025 (réunions inscrites à l'agenda au plus tard ce jour-là). etat.json absent au moment du calcul : étapes de procédure ajoutées d'après le calendrier budgétaire. Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null. texte.json absent au moment du calcul : pas de probable fondé sur les positions des groupes ni sur Orcet. Dossier rejoué au 18 novembre 2025 : Orcet n'existe pas rétroactivement, probabilités à null.",
+    "producer": "pipeline/suite",
+    "dossier_id": "petits-colis"
+  },
+  "echeances": [
+    {
+      "date": "2025-11-18",
+      "titre": "Commission des finances : Examen du texte (09 h 30)",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428",
+      "preuve": {
+        "nature": "fait",
+        "sources": [
+          {
+            "label": "Agenda open data, réunion RUANR5L17S2026IDC458131",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+          }
+        ],
+        "raisonnement": "Réunion inscrite à l'agenda de l'Assemblée le 13 novembre 2025, liée au dossier DLR5L17N52428."
+      }
+    },
+    {
+      "date": "2025-11-18",
+      "titre": "Séance publique de l'Assemblée : Suite de la discussion du projet de loi de finances pour 2026 (première partie) (21 h 30)",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428",
+      "preuve": {
+        "nature": "fait",
+        "sources": [
+          {
+            "label": "Agenda open data, réunion RUANR5L17S2026IDS29932",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+          }
+        ],
+        "raisonnement": "Réunion inscrite à l'agenda de l'Assemblée le 14 novembre 2025, liée au dossier DLR5L17N52428."
+      }
+    },
+    {
+      "date": "2025-11-19",
+      "titre": "Commission des finances : Examen du texte (09 h 00)",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428",
+      "preuve": {
+        "nature": "fait",
+        "sources": [
+          {
+            "label": "Agenda open data, réunion RUANR5L17S2026IDC457961",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+          }
+        ],
+        "raisonnement": "Réunion inscrite à l'agenda de l'Assemblée le 24 octobre 2025, liée au dossier DLR5L17N52428."
+      }
+    },
+    {
+      "date": "2025-11-19",
+      "titre": "Séance publique de l'Assemblée : Suite de la discussion du projet de loi de finances pour 2026 (première partie) (2 réunions, dès 14 h 00)",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428",
+      "preuve": {
+        "nature": "fait",
+        "sources": [
+          {
+            "label": "Agenda open data, réunion RUANR5L17S2026IDS29933",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+          },
+          {
+            "label": "Ordre de discussion : scrutins publics sur l'article ce jour-là",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3987"
+          }
+        ],
+        "raisonnement": "Réunion inscrite à l'agenda de l'Assemblée le 14 novembre 2025, liée au dossier DLR5L17N52428."
+      }
+    },
+    {
+      "date": "2025-11-20",
+      "titre": "Séance publique de l'Assemblée : Suite de la discussion du projet de loi de finances pour 2026 (première partie) (3 réunions, dès 09 h 00)",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428",
+      "preuve": {
+        "nature": "fait",
+        "sources": [
+          {
+            "label": "Agenda open data, réunion RUANR5L17S2026IDS29935",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+          }
+        ],
+        "raisonnement": "Réunion inscrite à l'agenda de l'Assemblée le 14 novembre 2025, liée au dossier DLR5L17N52428."
+      }
+    },
+    {
+      "date": "2025-11-21",
+      "titre": "Séance publique de l'Assemblée : Suite de la discussion du projet de loi de finances pour 2026 (première partie) (3 réunions, dès 09 h 00)",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428",
+      "preuve": {
+        "nature": "fait",
+        "sources": [
+          {
+            "label": "Agenda open data, réunion RUANR5L17S2026IDS29938",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+          }
+        ],
+        "raisonnement": "Réunion inscrite à l'agenda de l'Assemblée le 14 novembre 2025, liée au dossier DLR5L17N52428."
+      }
+    },
+    {
+      "date": null,
+      "titre": "Examen du PLF 2026 au Sénat, première lecture",
+      "lieu": "senat",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2026.html",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Sénat, PLF 2026",
+            "url": "https://www.senat.fr/dossier-legislatif/pjlf2026.html"
+          }
+        ],
+        "raisonnement": "Au 18 novembre 2025, le calendrier du Sénat n'est pas fixé : il dépend de la fin de la première lecture à l'Assemblée."
+      }
+    },
+    {
+      "date": null,
+      "titre": "Commission mixte paritaire",
+      "lieu": "cmp",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2026.html",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Sénat, PLF 2026",
+            "url": "https://www.senat.fr/dossier-legislatif/pjlf2026.html"
+          }
+        ],
+        "raisonnement": "Date non fixée : elle suit la fin de l'examen au Sénat."
+      }
+    }
+  ],
+  "derniere_occasion": {
+    "date": "2025-11-19",
+    "titre": "Séance publique du 19 novembre 2025 : examen de l'article 22 et de ses amendements, dernier moment pour faire adopter la suppression à l'Assemblée en première lecture",
+    "lieu": "seance",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428",
+    "preuve": {
+      "nature": "deduction",
+      "sources": [
+        {
+          "label": "Agenda open data, réunion RUANR5L17S2026IDS29933",
+          "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+        },
+        {
+          "label": "Ordre de discussion : scrutins publics sur l'article ce jour-là",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3987"
+        },
+        {
+          "label": "Dossier législatif DLR5L17N52428",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428"
+        }
+      ],
+      "raisonnement": "L'article 22 vient en discussion en séance ce jour-là, dans la suite de la première partie (la date vient de l'ordre de discussion, le résultat du vote n'est pas utilisé) ; une fois l'article voté, la mesure ne peut plus être modifiée à l'Assemblée avant la nouvelle lecture. Ensuite, l'action se déplace vers le Sénat (objectifs de repli : montant, date d'application)."
+    }
+  },
+  "probables": [
+    {
+      "titre": "RN et EPR (bloc central) votent ensemble dans 63 % des scrutins d'octobre 2025",
+      "proba": null,
+      "detail": "Accord mensuel sur 264 scrutins publics : les deux groupes ont la même position majoritaire. Contexte du vote, pas une prédiction.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Open data Assemblée nationale, scrutins",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+          }
+        ],
+        "raisonnement": "Calcul de cohésion (pipeline/cohesion) sur le dernier mois complet avant le 18 novembre 2025. Un accord bas veut dire que le RN ne suit pas le bloc central : c'est sur ce désaccord qu'une majorité peut se défaire."
+      }
+    }
+  ]
+}

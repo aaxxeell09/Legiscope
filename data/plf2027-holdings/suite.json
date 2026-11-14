@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:26:35Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, agenda des réunions",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
+      },
+      {
+        "label": "Dossier législatif DLR5L17N54629",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N54629"
+      }
+    ],
+    "limits": "Échéances connues au 14 novembre 2026 (réunions inscrites à l'agenda au plus tard ce jour-là). Aucune réunion de l'agenda de l'Assemblée liée au texte après le 14 novembre 2026. etat.json absent au moment du calcul : étapes de procédure ajoutées d'après le calendrier budgétaire. Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null. texte.json absent au moment du calcul : pas de probable fondé sur les positions des groupes ni sur Orcet.",
+    "producer": "pipeline/suite",
+    "dossier_id": "plf2027-holdings"
+  },
+  "echeances": [
+    {
+      "date": null,
+      "titre": "Examen du PLF 2027 au Sénat, première lecture",
+      "lieu": "senat",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Sénat, PLF 2027",
+            "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+          }
+        ],
+        "raisonnement": "Le texte, rejeté par l'Assemblée le 4 novembre 2026, est transmis au Sénat. La page du Sénat (mise à jour le 10 novembre 2026) ne donne encore aucune date d'examen."
+      }
+    },
+    {
+      "date": null,
+      "titre": "Commission mixte paritaire",
+      "lieu": "cmp",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Sénat, PLF 2027",
+            "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+          }
+        ],
+        "raisonnement": "Date non fixée : elle suit la fin de l'examen au Sénat."
+      }
+    },
+    {
+      "date": null,
+      "titre": "Nouvelle lecture à l'Assemblée nationale",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N54629",
+      "preuve": {
+        "nature": "inconnue",
+        "sources": [
+          {
+            "label": "Dossier législatif DLR5L17N54629",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N54629"
+          }
+        ],
+        "raisonnement": "Date non fixée : après l'échec éventuel de la commission mixte paritaire."
+      }
+    }
+  ],
+  "derniere_occasion": {
+    "date": null,
+    "titre": "Examen au Sénat : prochaine occasion d'obtenir la suppression ou la réduction de la mesure, avant le retour du texte à l'Assemblée",
+    "lieu": "senat",
+    "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html",
+    "preuve": {
+      "nature": "deduction",
+      "sources": [
+        {
+          "label": "Sénat, PLF 2027",
+          "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+        },
+        {
+          "label": "Scrutin n° 9759, rejet de la première partie",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+        }
+      ],
+      "raisonnement": "L'Assemblée a rejeté la première partie le 4 novembre 2026 : la procédure continue au Sénat sur le texte du gouvernement. C'est la prochaine étape où la mesure peut être supprimée ou modifiée ; la date n'est pas encore publiée."
+    }
+  },
+  "probables": [
+    {
+      "titre": "RN et EPR (bloc central) votent ensemble dans 51 % des scrutins d'octobre 2026",
+      "proba": null,
+      "detail": "Accord mensuel sur 1008 scrutins publics : les deux groupes ont la même position majoritaire. Contexte du vote, pas une prédiction.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Open data Assemblée nationale, scrutins",
+            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+          }
+        ],
+        "raisonnement": "Calcul de cohésion (pipeline/cohesion) sur le dernier mois complet avant le 14 novembre 2026. Un accord bas veut dire que le RN ne suit pas le bloc central : c'est sur ce désaccord qu'une majorité peut se défaire."
+      }
+    }
+  ]
+}
