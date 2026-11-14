@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.598Z",
+    "generated_at": "2026-11-14T13:31:32.495Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -891,12 +891,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Emmanuel Maurel est probablement contre la mesure, comme en témoignent les amendements cosignés supprimant l'article 3 et adoptés, ainsi que sa déclaration en séance le 16 octobre 2026.",
-    "argument": "Présenter à ce député l'adoption de l'amendement supprimant l'article 3, qui correspond à sa position contre la taxe sur la fortune improductive.",
+    "position_probable": "Emmanuel Maurel est probablement contre la mesure, comme en témoignent sa cosignature d'un amendement supprimant l'article 3, qui a été adopté, et sa déclaration en séance le 16 octobre 2026.",
+    "argument": "Présenter à ce député l'amendement n° 1847, rejeté, qui visait à insérer un chapitre dans le code général des impôts, car il a cosigné ce texte et a déclaré en séance le 16 octobre 2026 que la politique décrite avait lamentablement échoué.",
     "chiffres_utilises": [
       "3",
       "2026",
-      "16"
+      "16",
+      "1847"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

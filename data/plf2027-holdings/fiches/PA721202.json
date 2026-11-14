@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.613Z",
+    "generated_at": "2026-11-14T13:26:34.059Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1252,13 +1252,12 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Éric Coquerel est probablement favorable à la mesure, comme en témoignent ses déclarations en séance le 16 octobre 2026 sur la taxation des holdings et son amendement n° 1275, rejeté.",
-    "argument": "Présenter à ce député que son amendement supprimant l'article 3 a été adopté, car il a défendu en séance le 16 octobre 2026 la taxation des holdings patrimoniales.",
+    "position_probable": "Éric Coquerel est probablement contre la mesure, comme en témoigne son amendement n° 756, cosigné et rejeté, ainsi que sa déclaration en séance le 4 novembre 2026.",
+    "argument": "Présenter à ce député son amendement n° 756, rejeté, qui modifie le code général des impôts, car il a défendu cette mesure en séance le 4 novembre 2026.",
     "chiffres_utilises": [
-      "1275",
-      "2026",
-      "16",
-      "3"
+      "756",
+      "4",
+      "2026"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

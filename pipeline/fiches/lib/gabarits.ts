@@ -78,6 +78,8 @@ export type EntreeSynthese = {
   amendements: { numero: string | null; role: "auteur" | "cosignataire"; resume: string; sort: Sort; travaille_avec: string[]; id?: string }[];
   debats: { date: string; lieu: Lieu; citation: string }[];
   auditions: { date: string; role: string; entendu_par?: string; organisations: string[] }[];
+  /** Classement du cabinet (groupes-action.json, P3) : la synthèse ne doit pas le contredire. */
+  classement_du_cabinet?: { liste: string; position_sur_la_mesure: "pour" | "contre" | null; raison: string; fondement: string[] } | null;
 };
 export type EcartsPivot = { n_ecarts: number; loyaute_12m: number } | null;
 export type Gabarise = { position_probable: string; argument: string; chiffres: string[]; origine: "x3" | "local" };

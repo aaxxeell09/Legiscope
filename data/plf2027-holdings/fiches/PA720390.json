@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.473Z",
+    "generated_at": "2026-11-14T13:28:31.773Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -594,8 +594,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Jérôme End, du groupe DR, est probablement contre la mesure, comme l'indique sa cosignature d'un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député que son amendement cosigné supprimant l'article 3 a été adopté, ce qui montre son accord avec la position de l'Afep contre cette mesure.",
+    "position_probable": "Jérôme End est probablement contre la mesure, comme l'atteste sa cosignature d'un amendement visant à supprimer l'article 3, qui a été adopté.",
+    "argument": "Présenter à ce député le fait qu'il a cosigné un amendement supprimant l'article 3, adopté, pour appuyer la position de l'Afep contre la mesure.",
     "chiffres_utilises": [
       "3"
     ],

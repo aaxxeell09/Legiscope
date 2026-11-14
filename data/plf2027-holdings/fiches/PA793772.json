@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.603Z",
+    "generated_at": "2026-11-14T13:31:36.504Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -556,8 +556,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Christophe Bex est probablement contre la mesure, comme en témoigne son cosignature d'un amendement supprimant l'article 3, qui a été adopté.",
-    "argument": "Présenter à ce député que l'amendement visant à supprimer l'article 3 a été adopté, ce qui confirme son opposition à la taxe sur la fortune improductive.",
+    "position_probable": "Christophe Bex a cosigné un amendement visant à supprimer l'article 3, qui a été adopté.",
+    "argument": "Présenter à ce député l'amendement cosigné supprimant l'article 3, qui a été adopté, pour appuyer la position de l'Afep contre la mesure.",
     "chiffres_utilises": [
       "3"
     ],

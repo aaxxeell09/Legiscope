@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.791Z",
+    "generated_at": "2026-11-14T13:34:16.130Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1252,14 +1252,15 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Vincent Rolland a probablement une position favorable à la mesure, car il a cosigné l'amendement 1774 qui propose de porter la taxe à 25 euros et qui est tombé.",
-    "argument": "Présenter à ce député l'amendement 307 qu'il a déposé et qui a été retiré, afin de montrer que la hausse du montant de la taxe à 5 euros qu'il proposait n'a pas abouti et que la mesure actuelle de 2 euros reste la seule issue possible.",
+    "position_probable": "Vincent Rolland est probablement favorable à la mesure, comme l'indiquent ses amendements 307, 308 et 309 qui proposent d'augmenter le montant de la taxe et qui ont été retirés.",
+    "argument": "Présenter à ce député que la mesure vise les colis de moins de 150 euros, un seuil qui concerne directement le modèle d'Alibaba France, alors qu'il a cosigné l'amendement 1774 visant à porter la taxe à 25 euros, un amendement tombé.",
     "chiffres_utilises": [
-      "1774",
-      "25",
-      "2",
       "307",
-      "5"
+      "308",
+      "309",
+      "150",
+      "1774",
+      "25"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

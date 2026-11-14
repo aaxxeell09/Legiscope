@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.744Z",
+    "generated_at": "2026-11-14T13:33:18.993Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -673,14 +673,16 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Philippe Juvin est probablement favorable à la taxe, comme en témoignent ses amendements 1859, 3016 et 3126 ainsi que ses déclarations en commission le 22 octobre 2025.",
-    "argument": "Présenter à ce député son amendement n° 3016, en attente, qui vise à clarifier la rédaction de l'article 22, car il a déclaré en commission le 22 octobre 2025 être prêt à entendre des propositions d'amélioration technique.",
+    "position_probable": "Philippe Juvin est probablement favorable à la mesure, comme en témoignent ses amendements 1859, 3016 et 3126 ainsi que ses déclarations en commission le 22 octobre 2025.",
+    "argument": "Présenter à ce député le fait que la taxe de 2 euros par article sur les colis de moins de 150 euros ne compense pas la différence de prix avec les plateformes, car il a déclaré en commission le 22 octobre 2025 que ce montant n'est pas à la hauteur de l'enjeu et a déposé l'amendement 1859, rejeté, pour réécrire l'article 22.",
     "chiffres_utilises": [
       "1859",
       "22",
       "3016",
       "3126",
-      "2025"
+      "2025",
+      "2",
+      "150"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

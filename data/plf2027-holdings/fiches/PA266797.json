@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.461Z",
+    "generated_at": "2026-11-14T13:28:08.753Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -453,7 +453,7 @@
   },
   "synthese": {
     "position_probable": "Philippe Gosselin est probablement contre la mesure, car il a cosigné un amendement supprimant l'article 3, qui a été adopté.",
-    "argument": "Présenter à ce député le fait qu'il a cosigné un amendement supprimant l'article 3, adopté, pour appuyer la position de l'Afep contre la taxe sur la fortune improductive.",
+    "argument": "Présenter à ce député le fait qu'il a cosigné un amendement supprimant l'article 3, adopté, qui va dans le sens de la position de l'Afep contre la mesure.",
     "chiffres_utilises": [
       "3"
     ],

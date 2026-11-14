@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.821Z",
+    "generated_at": "2026-11-14T13:35:07.838Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -461,8 +461,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais celle de son groupe est pour la mesure.",
-    "argument": "Présenter à ce député que sa position personnelle n'est pas connue, car aucun amendement, déclaration ou audition n'est enregistré, et qu'un premier contact reste à établir.",
+    "position_probable": "La position personnelle de Brigitte Liso n'est pas connue faute d'amendement ou de déclaration, mais son groupe EPR est favorable à la mesure.",
+    "argument": "Présenter à ce député que son groupe soutient la mesure, ce qui ouvre la porte à un premier contact pour discuter de l'impact sur les colis de moins de 150 euros.",
     "chiffres_utilises": [
       "2",
       "150",

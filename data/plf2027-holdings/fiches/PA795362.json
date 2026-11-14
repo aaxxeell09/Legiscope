@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.587Z",
+    "generated_at": "2026-11-14T13:31:24.832Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1225,14 +1225,18 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Lisa Belluco a cosigné plusieurs amendements rejetés, notamment les numéros 18, 43 et 174, ce qui indique qu'elle est probablement contre la mesure.",
-    "argument": "Présenter à ce député les amendements 18, 43, 174, 38 et 47 qu'il a cosignés et qui ont été rejetés, car ils montrent son intérêt pour la fiscalité du patrimoine et offrent un point d'entrée pour discuter des effets de la taxe sur la fortune improductive.",
+    "position_probable": "Lisa Belluco a cosigné plusieurs amendements, dont les numéros 18, 43, 38, 47, 174, 208 et 56, tous rejetés, ce qui indique qu'elle est probablement favorable à la mesure.",
+    "argument": "Présenter à ce député que la mesure n° 3140 prévoit une taxe de 0,5 % sur les holdings patrimoniaux, un point qui rejoint les amendements qu'il a cosignés et qui ont été rejetés.",
     "chiffres_utilises": [
       "18",
       "43",
       "174",
+      "208",
       "38",
-      "47"
+      "47",
+      "56",
+      "0.5",
+      "3140"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

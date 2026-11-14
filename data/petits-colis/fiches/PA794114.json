@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.740Z",
+    "generated_at": "2026-11-14T13:33:07.277Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "petits-colis"
   },
@@ -561,15 +561,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Emmanuel Mandon a déposé l'amendement 1519, tombé, et cosigné l'amendement 3395, en attente, ce qui indique qu'il est probablement contre la mesure.",
-    "argument": "Présenter à ce député l'amendement 1519, tombé, qui visait à exclure les colis de moins de 2 kilos de la taxe, afin de montrer que sa démarche initiale de limitation de la mesure est restée sans effet.",
+    "position_probable": "A déposé l'amendement n° 1519, tombé (« Article 22 : I – À l’alinéa 5, après le mot :« valeur »insérer les mots :« ou d’un poids inférieur à 2 kilos »II. – À l’alinéa 7, compléter la phrase par les mots : « ou… »).",
+    "argument": "Présenter à ce député l'amendement 1519, tombé, qui visait à exclure les colis de moins de 2 kilos de la taxe, afin de rappeler son engagement contre la mesure.",
     "chiffres_utilises": [
       "1519",
-      "3395",
-      "2"
+      "22",
+      "5",
+      "2",
+      "7"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2025-11-18"
   }

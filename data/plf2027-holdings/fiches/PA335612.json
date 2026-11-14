@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.517Z",
+    "generated_at": "2026-11-14T13:29:14.253Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -382,10 +382,12 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Jean-Paul Lecoq est probablement contre la mesure, car il a cosigné un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député que l'amendement cosigné supprimant l'article 3 a été adopté, ce qui contredit la position de son groupe et offre un levier pour réduire la taxe.",
+    "position_probable": "Jean-Paul Lecoq est probablement favorable à la mesure, comme l'indique sa cosignature d'un amendement supprimant l'article 3, qui a été adopté.",
+    "argument": "Présenter à ce député que la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) pèse sur les entreprises, en rappelant qu'il a cosigné un amendement supprimant l'article 3 qui a été adopté.",
     "chiffres_utilises": [
-      "3"
+      "3",
+      "0.5",
+      "3140"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

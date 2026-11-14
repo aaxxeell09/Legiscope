@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.583Z",
+    "generated_at": "2026-11-14T13:31:11.781Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -330,8 +330,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est favorable à la mesure.",
-    "argument": "Présenter à ce député que la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) pèse sur les entreprises, en s'appuyant sur son audition du 22 octobre 2026 où il a entendu KNDS France.",
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, et la position favorable de son groupe ne suffit pas à la définir.",
+    "argument": "Présenter à ce député que KNDS France a été entendue par les rapporteurs de sa commission le 22 octobre 2026, ce qui constitue un indice plus faible qu'un acte personnel.",
     "chiffres_utilises": [
       "3",
       "0.5",

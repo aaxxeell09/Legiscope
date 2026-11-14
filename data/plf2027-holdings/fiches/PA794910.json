@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.415Z",
+    "generated_at": "2026-11-14T13:27:07.694Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -549,11 +549,10 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Melouka Hadj-Mimoune a cosigné l'amendement n° 471, rejeté, qui visait à rétablir le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts, ce qui indique probablement une position favorable à la mesure.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement n° 471, rejeté, montre qu'il a déjà examiné des modifications au code général des impôts, ce qui permet d'aborder les impacts de la taxe de 0,5 % sur les holdings patrimoniales.",
+    "position_probable": "Melouka Hadj-Mimoune a cosigné l'amendement n° 471, rejeté, qui visait à rétablir un chapitre du code général des impôts, ce qui indique probablement une position contre la mesure.",
+    "argument": "Présenter à ce député que son amendement n° 471, cosigné et rejeté, a déjà montré son attachement à la stabilité fiscale, ce qui rejoint l'objectif de l'Afep de limiter l'impact de la taxe sur les holdings patrimoniales.",
     "chiffres_utilises": [
-      "471",
-      "0.5"
+      "471"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

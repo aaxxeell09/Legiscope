@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.534Z",
+    "generated_at": "2026-11-14T13:29:44.666Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1288,18 +1288,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "François Ruffin est probablement favorable à la mesure, comme en témoignent ses cosignatures sur les amendements 18, 43, 174, 208, 38, 47 et 56, tous rejetés, ainsi que sa déclaration en séance le 21 octobre 2025.",
-    "argument": "Présenter à ce député la position de son groupe, favorable à la taxe sur la fortune improductive, en rappelant qu'il a cosigné l'amendement n° 18, rejeté, pour rétablir l'impôt de solidarité sur la fortune.",
+    "position_probable": "François Ruffin est probablement pour la mesure, comme l'indique sa déclaration en séance le 21 octobre 2025 où il s'oppose au retour d'un impôt sur la fortune.",
+    "argument": "Présenter à ce député les chiffres de l'Afep sur l'impact de la taxe de 0,5 % sur les holdings patrimoniales, car il a cosigné l'amendement n° 18 rejeté et a déclaré en séance le 21 octobre 2025 son opposition à la taxe Zucman.",
     "chiffres_utilises": [
-      "18",
-      "43",
-      "174",
-      "208",
-      "38",
-      "47",
-      "56",
       "2025",
-      "21"
+      "21",
+      "0.5",
+      "18"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

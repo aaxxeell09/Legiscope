@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.732Z",
+    "generated_at": "2026-11-14T13:32:52.673Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1284,11 +1284,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "David Taupiac a probablement une position favorable à la mesure, car il a cosigné l'amendement 1745 qui proposait de porter la taxe à 5 euros, un texte qui a été retiré.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1745, retiré, montre son intérêt pour le montant de la taxe, afin de lui exposer les impacts concrets de la mesure sur les colis de moins de 150 euros.",
+    "position_probable": "David Taupiac est probablement favorable à la mesure, car il a cosigné l'amendement 1745 qui propose de porter la taxe à 5 euros, un amendement retiré.",
+    "argument": "Présenter à ce député l'impact de la taxe de 2 euros sur les colis de moins de 150 euros, car il a cosigné l'amendement 1745 qui proposait de porter ce montant à 5 euros et qui a été retiré.",
     "chiffres_utilises": [
       "1745",
       "5",
+      "2",
       "150"
     ],
     "mode": "llm",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.399Z",
+    "generated_at": "2026-11-14T13:26:55.193Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1167,23 +1167,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni pris la parole, mais son groupe est contre la mesure.",
-    "argument": "Présenter à ce député les arguments de l'Afep contre la taxe sur la fortune improductive, en s'appuyant sur les auditions de sa commission qui ont entendu le MEDEF et les Entrepreneurs le 26 octobre 2026.",
+    "position_probable": "Position personnelle non connue : aucun amendement, aucune intervention et aucun écart de vote relevés sur la mesure.",
+    "argument": "Présenter à ce député les positions de France Assureurs et du MEDEF, entendues le 26 octobre 2026, pour appuyer la demande de l'Afep de retirer la taxe sur la fortune improductive.",
     "chiffres_utilises": [
-      "3",
-      "0.5",
-      "3140",
-      "0.76",
       "2026",
-      "10",
-      "26",
-      "28",
-      "29",
-      "11",
-      "56"
+      "26"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.737Z",
+    "generated_at": "2026-11-14T13:33:01.980Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -552,12 +552,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Jean-Luc Warsmann a cosigné l'amendement 3276, retiré, qui proposait de porter la taxe à 6 euros, ce qui indique qu'il est probablement contre la mesure actuelle.",
-    "argument": "Présenter à ce député que son amendement n° 3276, qui proposait de porter la taxe à 6 euros, a été retiré, afin de montrer que la hausse du coût des colis de moins de 150 euros n'est pas une priorité partagée par tous.",
+    "position_probable": "Jean-Luc Warsmann est probablement favorable à la mesure, car il a cosigné l'amendement 3276 qui a été retiré.",
+    "argument": "Présenter à ce député l'amendement 3276, cosigné par lui et retiré, qui proposait de porter la taxe à 6 euros, pour montrer que sa position initiale était plus stricte que celle du texte actuel.",
     "chiffres_utilises": [
       "3276",
-      "6",
-      "150"
+      "6"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

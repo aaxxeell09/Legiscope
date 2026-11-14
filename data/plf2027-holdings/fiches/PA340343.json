@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.517Z",
+    "generated_at": "2026-11-14T13:29:14.419Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -488,8 +488,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Hervé Saulignac est probablement contre la mesure, comme en témoigne l'amendement n° 364 qu'il a cosigné et qui a été rejeté.",
-    "argument": "Présenter à ce député que son amendement n° 364, qui rétablissait l'impôt plancher, a été rejeté, pour lui montrer que la suppression de la taxe sur la fortune improductive évite une nouvelle hausse de la pression fiscale sur les entreprises.",
+    "position_probable": "Hervé Saulignac est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 364, rejeté.",
+    "argument": "Présenter à ce député le rejet de son amendement cosigné n° 364, qui visait à rétablir un impôt plancher, pour montrer que sa position sur la fiscalité des entreprises est déjà actée et qu'il ne soutiendra pas la taxe sur la fortune improductive.",
     "chiffres_utilises": [
       "364"
     ],

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.509Z",
+    "generated_at": "2026-11-14T13:29:05.108Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1211,17 +1211,10 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Dominique Voynet a cosigné plusieurs amendements, dont les numéros 18, 43, 38, 47, 174, 208 et 56, tous rejetés, ce qui indique probablement une position favorable à la mesure, en cohérence avec celle de son groupe.",
-    "argument": "Présenter à ce député les amendements 18, 43, 174, 38, 47, 208, 56 et 12 qu'il a cosignés et qui ont été rejetés, car ils montrent son opposition à la fiscalité sur le patrimoine.",
+    "position_probable": "Dominique Voynet est probablement favorable à la mesure, comme l'indique sa cosignature de l'amendement n° 18, rejeté.",
+    "argument": "Présenter à ce député le rejet de l'amendement n° 18 qu'il a cosigné, afin de souligner que sa position sur la fiscalité des holdings patrimoniales s'oppose à celle de son groupe.",
     "chiffres_utilises": [
-      "18",
-      "43",
-      "174",
-      "208",
-      "38",
-      "47",
-      "56",
-      "12"
+      "18"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

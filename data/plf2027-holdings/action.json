@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.695Z",
+    "generated_at": "2026-11-14T13:32:36.619Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -2767,7 +2767,7 @@
   },
   "contre_arguments": [
     {
-      "texte": "La holding patrimoniale remplit une fonction économique distincte de la fortune improductive, ce qui invalide l'idée qu'elle sert uniquement à échapper à l'impôt. La taxe de 0,5 % sur les holdings patrimoniales (n° 3140) vise un mécanisme précis qui ne se confond pas avec l'optimisation fiscale générale.",
+      "texte": "La holding patrimoniale sert à structurer une activité économique, ce qui la distingue d'une simple fortune improductive. La mesure impose une taxe de 0,5 % sur les holdings patrimoniales (n° 3140).",
       "repond_a": "Les holdings patrimoniales permettent d'échapper à l'impôt et aux droits de succession.",
       "chiffres_utilises": [
         "0.5",
@@ -2799,8 +2799,72 @@
       }
     },
     {
-      "texte": "L'argument d'efficacité est contredit par le fait que la mesure ne rapporterait même pas 500 millions d'euros par an.",
+      "texte": "La mesure ne constitue pas un outil efficace contre l'optimisation, car elle s'inscrit dans une surenchère fiscale injuste qui pèse sur les entreprises. Cette taxe de 0,5 % sur les holdings patrimoniales ne rapporterait même pas 500 millions d'euros par an.",
       "repond_a": "La taxe est un outil efficace pour contrer l'optimisation et garantir un impôt minimum.",
+      "chiffres_utilises": [
+        "500",
+        "0.5",
+        "1000000"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "commission du 7 octobre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
+          },
+          {
+            "label": "séance publique du 16 octobre 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+          },
+          {
+            "label": "séance publique du 13 octobre 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "La mesure ne corrige aucune injustice, elle taxe des revenus non distribués et frappe les retraités modestes plutôt que les riches. Cette incohérence est confirmée par le fait que la taxe sur les holdings patrimoniales n'est que de 0,5 %.",
+      "repond_a": "La mesure corrige l'injustice fiscale entre rentiers et travailleurs et réduit la précarité.",
+      "chiffres_utilises": [
+        "0.5"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "séance publique du 15 octobre 2026 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+          },
+          {
+            "label": "séance publique du 16 octobre 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+          },
+          {
+            "label": "séance publique du 13 octobre 2026 (argument du camp du client)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "La suppression de l'ISF n'a pas généré d'effets économiques positifs, car la mesure actuelle ne rapporterait même pas 500 millions d'euros par an.",
+      "repond_a": "La suppression de l'ISF a enrichi les plus riches sans effet économique, justifiant la taxation.",
       "chiffres_utilises": [
         "500",
         "1000000"
@@ -2831,71 +2895,7 @@
       }
     },
     {
-      "texte": "La mesure ne corrige aucune injustice, elle impose un impôt sur des gains non encaissés et bouleverse l'économie de l'apport-cession. La taxe sur les holdings patrimoniales (n° 3140) est de 0,5 %.",
-      "repond_a": "La mesure corrige l'injustice fiscale entre rentiers et travailleurs et réduit la précarité.",
-      "chiffres_utilises": [
-        "0.5",
-        "3140"
-      ],
-      "mode": "llm",
-      "verifie": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "séance publique du 15 octobre 2026 (argument adverse)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
-          },
-          {
-            "label": "séance publique du 16 octobre 2026 (argument du camp du client)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
-          },
-          {
-            "label": "séance publique du 13 octobre 2026 (argument du camp du client)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "texte": "La suppression de l'ISF n'a pas entraîné l'augmentation des investissements, des salaires ou de la croissance, ce qui contredit l'idée d'un effet économique positif. La taxe sur les holdings patrimoniales (n° 3140) est fixée à 0,5 %.",
-      "repond_a": "La suppression de l'ISF a enrichi les plus riches sans effet économique, justifiant la taxation.",
-      "chiffres_utilises": [
-        "0.5",
-        "3140"
-      ],
-      "mode": "llm",
-      "verifie": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "commission du 7 octobre 2026 (argument adverse)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627007_compte-rendu"
-          },
-          {
-            "label": "séance publique du 16 octobre 2026 (argument du camp du client)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
-          },
-          {
-            "label": "séance publique du 13 octobre 2026 (argument du camp du client)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
-          },
-          {
-            "label": "Texte PRJLANR5L17B3210",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-          }
-        ],
-        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "texte": "Le redressement des comptes publics doit passer par la maîtrise des dépenses et non par de nouveaux impôts. Les prélèvements obligatoires dépasseront prochainement 44 % du PIB.",
+      "texte": "Le redressement des comptes publics doit passer par la maîtrise des dépenses et non par de nouveaux impôts, car les prélèvements obligatoires dépasseront prochainement 44 % du PIB.",
       "repond_a": "La mesure permet de réduire le déficit public et de financer la justice sociale.",
       "chiffres_utilises": [
         "44"
@@ -2926,7 +2926,7 @@
       }
     },
     {
-      "texte": "L’augmentation de la CEHR reste symbolique et ne s’attaque pas au cœur de l’optimisation fiscale des plus fortunés, qui utilisent d’autres dispositifs pour contourner l’impôt. La mesure en discussion inclut une taxe de 0,5 % sur les holdings patrimoniales (n° 3140).",
+      "texte": "L’augmentation de la CEHR ne s’attaque pas au cœur de l’optimisation fiscale des plus fortunés, qui utilisent d’autres dispositifs pour contourner l’impôt. La mesure n° 3140 impose une taxe de 0,5 % sur les holdings patrimoniales.",
       "repond_a": "La CEHR est insuffisante et inefficace pour taxer les holdings et les hauts patrimoines.",
       "chiffres_utilises": [
         "0.5",
@@ -2986,12 +2986,11 @@
       }
     },
     {
-      "texte": "L'argument des départs fiscaux massifs est infondé, car la mesure constitue une surenchère fiscale injuste qui pèse sur les entreprises et les hauts patrimoines. Les travaux cités indiquent que sur les 350000 redevables recensés avant 2017, on comptait 500 départs par an.",
+      "texte": "L'argument des départs fiscaux massifs est infondé, car la mesure cible des actifs professionnels qui ne sont pas des placements financiers. La taxe de 0,5 % sur les holdings patrimoniales (n° 3140) s'applique à des structures qui détiennent des actifs nécessaires à l'exercice d'une activité professionnelle.",
       "repond_a": "L'argument des départs fiscaux massifs suite à l'ISF est infondé.",
       "chiffres_utilises": [
-        "350000",
-        "2017",
-        "500"
+        "0.5",
+        "3140"
       ],
       "mode": "llm",
       "verifie": true,
@@ -3019,7 +3018,7 @@
       }
     },
     {
-      "texte": "La fiscalité des holdings patrimoniaux ne constitue pas une avancée pour la justice, mais une surenchère fiscale qui pèse sur les entreprises. La taxe de 0,5 % sur les holdings patrimoniales (n° 3140) s'inscrit dans cette logique de prélèvement supplémentaire.",
+      "texte": "La mesure taxe des gains non encaissés, ce qui bouleverse l'économie de l'apport-cession et pèse sur les entreprises. La taxe sur les holdings patrimoniales s'élève à 0,5 % (n° 3140).",
       "repond_a": "La fiscalité des holdings est une avancée pour la justice sans nuire à l'économie.",
       "chiffres_utilises": [
         "0.5",
@@ -3051,7 +3050,7 @@
       }
     },
     {
-      "texte": "La mesure ne crée pas de fracture mais taxe des gains non encaissés, ce qui constitue une surenchère fiscale injuste. La taxe de 0,5 % sur les holdings patrimoniales (n° 3140) pèse sur des revenus non distribués.",
+      "texte": "La mesure ne crée pas de fracture intergénérationnelle, elle impose une surenchère fiscale injuste qui pèse sur les entreprises et les hauts patrimoines. La taxe sur les holdings patrimoniales est fixée à 0,5 % dans le dossier n° 3140.",
       "repond_a": "L'effort demandé est proportionné et évite une fracture intergénérationnelle.",
       "chiffres_utilises": [
         "0.5",
@@ -3083,7 +3082,7 @@
       }
     },
     {
-      "texte": "L'argument d'une co-construction est contredit par le fait que la mesure bouleverse l'économie de l'apport-cession et impose un impôt sur des gains non encaissés. La taxe sur les holdings patrimoniales (n° 3140) est fixée à 0,5 %.",
+      "texte": "La critique sur la co-construction est infondée car la mesure constitue une surenchère fiscale injuste qui pèse sur les entreprises. La taxe de 0,5 % sur les holdings patrimoniales (n° 3140) illustre cette pression fiscale supplémentaire.",
       "repond_a": "L'orateur défend la mesure co-construite et critique l'opposition sur le fond.",
       "chiffres_utilises": [
         "0.5",

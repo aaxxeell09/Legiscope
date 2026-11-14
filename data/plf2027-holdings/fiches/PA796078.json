@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.428Z",
+    "generated_at": "2026-11-14T13:27:16.063Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -345,13 +345,16 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue, car il n'a déposé aucun amendement et n'a pas pris la parole sur la mesure, mais son groupe LIOT est contre.",
-    "argument": "Présenter à ce député que la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) est contestée par l'Afep, car il n'a pas encore d'acte personnel sur le sujet et son audition du 27 octobre 2026 portait sur d'autres thématiques.",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a déposé aucun amendement ni prononcé de déclaration sur la mesure, mais son groupe LIOT est contre.",
+    "argument": "Présenter à ce député les avis des ministères de l’Europe et des affaires étrangères, des armées et de l’intérieur entendus le 27 octobre 2026, car ces institutions qu’il suit de près ont émis des réserves sur la mesure.",
     "chiffres_utilises": [
       "3",
       "0.5",
       "3140",
       "0.76",
+      "5",
+      "1",
+      "4",
       "2026",
       "10",
       "27"

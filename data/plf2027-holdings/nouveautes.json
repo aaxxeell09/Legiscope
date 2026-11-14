@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.661Z",
+    "generated_at": "2026-11-14T13:31:52.647Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -1053,16 +1053,16 @@
       "date": "2026-11-09",
       "type": "rapport",
       "titre": "3 rapports du texte publiés avec la liste des personnes entendues (24 organisations)",
-      "detail": "Organisations entendues : Fondation des Femmes, Collectif féministe contre le viol (CFCV), Fédération nationale des centres d’information sur les droits des femmes et des familles (FNCIDFF), Fédération nationale Solidarité Femmes (FNSF), Caisse nationale des allocations familiales (Cnaf), Départements de France, Caisse centrale de la mutualité sociale agricole (CCMSA), Réseau Restart, Direction générale de la cohésion sociale (DGCS), Direction générale du travail, Office central de lutte contre le travail illégal (OCLTI), Observatoire de l’immigration et de la démographie (OID)….",
+      "detail": "Organisations entendues : Ministère de l’action et des comptes publics, Direction de l’immobilier de l’État (DIE), Pôles régionaux de l’immobilier de l’État (Prie), Fondation des Femmes, Collectif féministe contre le viol (CFCV), Fédération nationale des centres d’information sur les droits des femmes et des familles (FNCIDFF), Fédération nationale Solidarité Femmes (FNSF), Caisse nationale des allocations familiales (Cnaf), Départements de France, Caisse centrale de la mutualité sociale agricole (CCMSA), Réseau Restart, Direction générale de la cohésion sociale (DGCS)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a26.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 9 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a26.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1120,16 +1120,16 @@
       "date": "2026-11-05",
       "type": "rapport",
       "titre": "3 rapports du texte publiés avec la liste des personnes entendues (26 organisations)",
-      "detail": "Organisations entendues : Ministère de la justice, Syndicat national pénitentiaire, Syndicat national des directeurs pénitentiaires, UFAP UNSa Justice, CGT pénitentiaire, FO Justice, SNEPAP FSU, Syndicat Pénitentiaire des Surveillants non gradés (SPS), Ministère des Outre-mer, Ministère de l’action et des comptes publics, Direction générale des Outre-mer (DGOM), Agence des Outre-mer pour la mobilité (LADOM)….",
+      "detail": "Organisations entendues : Ministère des Outre-mer, Ministère de l’action et des comptes publics, Direction générale des Outre-mer (DGOM), Agence des Outre-mer pour la mobilité (LADOM), Service militaire adapté (SMA), Union nationale des fédérations d’organismes HLM (USH), EURODOM, Personnalités qualifiées, Fédération des entreprises des outre-mer (FEDOM), Conseil d’État, Syndicat des juridictions financières (SJF), Syndicat de la juridiction administrative (SJA)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a31.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 5 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a31.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1432,16 +1432,16 @@
       "date": "2026-11-04",
       "type": "rapport",
       "titre": "2 rapports du texte publiés avec la liste des personnes entendues (18 organisations)",
-      "detail": "Organisations entendues : Conseil supérieur de la marine marchande, Brittany Ferries, Corsica Linea, Direction générale des affaires maritimes, de la pêche et de l’aquaculture, Direction de la sécurité sociale, Établissement national des invalides de la Marine (Enim), Conseil supérieur des gens de mer (CSGM), Comité national des pêches maritimes et des élevages marins (CNPMEM), Confédération française de l’encadrement, Fédération nationale des syndicats maritimes (CGT), Union fédérale maritime (CFDT), Fédération des officiers de la marine marchande (Fomm‑Ugict‑CGT)….",
+      "detail": "Organisations entendues : Institut national de la statistique et des études économiques (INSEE), Direction de la recherche, des études, de l’évaluation et des statistiques (DREES), Groupe La Poste, Institut des politiques publiques (IPP), Conseil supérieur de la marine marchande, Brittany Ferries, Corsica Linea, Direction générale des affaires maritimes, de la pêche et de l’aquaculture, Direction de la sécurité sociale, Établissement national des invalides de la Marine (Enim), Conseil supérieur des gens de mer (CSGM), Comité national des pêches maritimes et des élevages marins (CNPMEM)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a36.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 4 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a36.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1499,16 +1499,16 @@
       "date": "2026-11-03",
       "type": "rapport",
       "titre": "4 rapports du texte publiés avec la liste des personnes entendues (80 organisations)",
-      "detail": "Organisations entendues : Organisation de coopération et de développement économiques (OCDE), Direction générale de l’administration et de la fonction publique (DGAFP), Association française des acteurs de l’éducation, Média « Le café pédagogique », Direction générale des relations humaines (DGRH) du ministère de l’éducation nationale, Direction des affaires financières (DAF) du ministère de l’éducation nationale, Institut national de la statistique et des études économiques (Insee), Haut-commissariat à la stratégie et au plan, Direction de l’évaluation, de la prospective et de la performance (DEPP) du ministère de l’éducation nationale, Secrétariat général de l’enseignement catholique, Syndicat national unitaire des instituteurs et professeurs des écoles (SNUipp-FSU), Syndicat national des enseignements de second degré-Fédération syndicale unitaire (SNES-FSU)….",
+      "detail": "Organisations entendues : Armateurs de France, Union française des Pêcheurs Artisans (UFPA), Société nationale de sauvetage en mer (SNSM), Vice-amiral d’escadre Emmanuel de Oliveira, président, École nationale supérieure maritime (ENSM), Direction générale des affaires maritimes, de la pêche et de l’aquaculture (DGAMPA), Organisation de coopération et de développement économiques (OCDE), Direction générale de l’administration et de la fonction publique (DGAFP), Association française des acteurs de l’éducation, Média « Le café pédagogique », Direction générale des relations humaines (DGRH) du ministère de l’éducation nationale, Direction des affaires financières (DAF) du ministère de l’éducation nationale….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a17.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 3 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a17.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1921,16 +1921,16 @@
       "date": "2026-10-22",
       "type": "rapport",
       "titre": "2 rapports du texte publiés avec la liste des personnes entendues (23 organisations)",
-      "detail": "Organisations entendues : Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre), Surfrider Foundation Europe, EDF Power Solutions, Ailes Marines (Iberdrola), Direction générale de l’énergie et du climat (DGEC), France Renouvelables, Syndicat des énergies renouvelables (SER), Cluster maritime français, Agence de la transition écologique (Ademe), Office français de la biodiversité (OFB), Armateurs de France, Union des Ports de France….",
+      "detail": "Organisations entendues : KNDS France, Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre), Surfrider Foundation Europe, EDF Power Solutions, Ailes Marines (Iberdrola), Direction générale de l’énergie et du climat (DGEC), France Renouvelables, Syndicat des énergies renouvelables (SER), Cluster maritime français, Agence de la transition écologique (Ademe), Office français de la biodiversité (OFB), Armateurs de France….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 22 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -2159,16 +2159,16 @@
       "date": "2026-10-16",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 16 octobre 2026",
-      "detail": "6 interventions relevées, dont : « Vous décrivez une politique qui a lamentablement échoué, mais vous dites que c’est ce qu’il faudrait faire maintenant ; c’est merveilleux. Concernant la taxe Zucman, je prends le pari que dans un an, peut-être deux, quelle que soit la prochaine majorité… »",
+      "detail": "2 interventions relevées, dont : « Dès la première année du macronisme, le PFU a été instauré, l’impôt de solidarité sur la fortune (ISF) a été supprimé, certaines niches fiscales ont été créées et d’autres renforcées. Tout cela a contribué à favoriser, de manière assumée, les revenus du capital – nous en parlons depuis plusieurs années et encore plus cette année, parce que ce choix explique beaucoup les déficits. »",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Compte rendu du 16 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
           }
         ],
         "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
@@ -2180,16 +2180,16 @@
       "date": "2026-10-16",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 16 octobre 2026",
-      "detail": "2 interventions relevées, dont : « Dès la première année du macronisme, le PFU a été instauré, l’impôt de solidarité sur la fortune (ISF) a été supprimé, certaines niches fiscales ont été créées et d’autres renforcées. Tout cela a contribué à favoriser, de manière assumée, les revenus du capital – nous en parlons depuis plusieurs années et encore plus cette année, parce que ce choix explique beaucoup les déficits. »",
+      "detail": "6 interventions relevées, dont : « Monsieur le rapporteur général, vous avez, comme souvent, indiqué que les contribuables concernés risqueraient de partir s’ils étaient à nouveau soumis à l’ISF. Les chiffres montrent pourtant qu’entre 2001 et 2006, seuls 0,1 % à 0,2 % des contribuables redevables de l’ISF quittaient la France chaque année, soit 500 personnes environ. »",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Compte rendu du 16 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
           }
         ],
         "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
@@ -2247,7 +2247,7 @@
       "date": "2026-10-15",
       "type": "seance",
       "titre": "Sujet abordé en séance publique le 15 octobre 2026",
-      "detail": "17 interventions relevées, dont : « En tant que député ultramarin, je ne peux m’empêcher d’intervenir à la suite de nos collègues M. Naillet et Mme K/Bidi. »",
+      "detail": "17 interventions relevées, dont : « Je me demande ce que vous ont fait les retraités. Que vous ont-ils fait pour devenir la cible principale des économies budgétaires que vous proposez cette année ? »",
       "importance": 1,
       "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026",
       "effet": "neutre",

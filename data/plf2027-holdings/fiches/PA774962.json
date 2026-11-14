@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.545Z",
+    "generated_at": "2026-11-14T13:29:53.609Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -558,11 +558,11 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Karine Lebon est probablement contre la mesure, comme en témoigne sa cosignature d'un amendement supprimant l'article 3, qui a été adopté.",
-    "argument": "Présenter à ce député le rejet de son amendement n° 1847, car il a déjà cosigné la suppression de l'article 3.",
+    "position_probable": "Karine Lebon est probablement favorable à la mesure, comme l'indique sa cosignature de l'amendement n° 1847, rejeté.",
+    "argument": "Présenter à ce député que l'amendement cosigné supprimant l'article 3 a été adopté, ce qui contredit sa position favorable à la mesure.",
     "chiffres_utilises": [
-      "3",
-      "1847"
+      "1847",
+      "3"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

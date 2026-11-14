@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.811Z",
+    "generated_at": "2026-11-14T13:34:52.264Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -684,11 +684,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Elle a cosigné l'amendement 2738, en attente, qui propose de porter la taxe à 50 euros, ce qui indique probablement une position favorable à une hausse du montant de la mesure.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 2738, actuellement en attente, vise à porter la taxe à 50 euros, ce qui montre qu'il cherche à augmenter la mesure plutôt qu'à la réduire.",
+    "position_probable": "Clémentine Autain est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 2738, actuellement en attente, qui propose de porter le montant à 50 euros.",
+    "argument": "Présenter à ce député l'amendement 2738, en attente, qui propose de porter la taxe à 50 euros, pour montrer que la mesure actuelle de 2 euros est déjà jugée insuffisante par ses cosignataires.",
     "chiffres_utilises": [
       "2738",
-      "50"
+      "50",
+      "2"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

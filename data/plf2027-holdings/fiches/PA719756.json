@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.468Z",
+    "generated_at": "2026-11-14T13:28:23.041Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -521,13 +521,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est contre la mesure.",
-    "argument": "Présenter à ce député les auditions de sa commission du 4 novembre 2026 et du 9 novembre 2026, car il siège dans un groupe hostile à la mesure et n'a pas encore déposé d'amendement.",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni fait de déclaration, mais son groupe est contre la mesure.",
+    "argument": "Présenter à ce député le vote de 5 amendements contre la mesure, qui s'aligne sur la position de son groupe et confirme son opposition à la taxe sur la fortune improductive.",
     "chiffres_utilises": [
       "3",
       "0.5",
       "3140",
       "0.71",
+      "0",
+      "5",
       "2026",
       "11",
       "4",

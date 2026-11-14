@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.492Z",
+    "generated_at": "2026-11-14T13:28:47.798Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -330,13 +330,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "La position personnelle de Thomas Gassilloud n'est pas connue faute d'amendement ou de déclaration, mais son groupe EPR est contre la mesure.",
-    "argument": "Présenter à ce député l'audition de KNDS France le 22 octobre 2026 pour appuyer la position contre la taxe sur la fortune improductive (article 3) et la taxe de 0,5 % sur les holdings patrimoniales (n° 3140).",
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est contre la mesure.",
+    "argument": "Présenter à ce député le fait qu'il a voté contre la mesure, ce qui correspond à la position de son groupe, car il n'a déposé aucun amendement ni pris la parole sur le sujet.",
     "chiffres_utilises": [
       "3",
       "0.5",
       "3140",
       "0.71",
+      "0",
+      "1",
       "2026",
       "10",
       "22"

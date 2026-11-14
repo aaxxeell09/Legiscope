@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.569Z",
+    "generated_at": "2026-11-14T13:31:03.298Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -897,8 +897,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Christophe Proença a cosigné l'amendement n° 364, rejeté, qui rétablit l'impôt plancher, ce qui indique qu'il est probablement favorable à la mesure.",
-    "argument": "Présenter à ce député que son amendement n° 364, qui rétablissait l'impôt plancher, a été rejeté, afin de lui montrer que la suppression de la taxe sur la fortune improductive évite une double imposition des entreprises.",
+    "position_probable": "Christophe Proença a cosigné l'amendement n° 364, rejeté, qui rétablit un impôt plancher, ce qui indique qu'il est probablement favorable à la mesure.",
+    "argument": "Présenter à ce député l'amendement n° 364 qu'il a cosigné et qui a été rejeté, afin de montrer que la mesure qu'il a tenté de modifier n'a pas abouti.",
     "chiffres_utilises": [
       "364"
     ],

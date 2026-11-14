@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.480Z",
+    "generated_at": "2026-11-14T13:28:40.024Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -521,13 +521,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe EPR est contre la mesure.",
-    "argument": "Présenter à ce député les positions des organisations qu'il a entendues, comme le Medef ou la Confédération française de l’encadrement, pour appuyer l'opposition de l'Afep à la taxe sur la fortune improductive.",
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est contre la mesure.",
+    "argument": "Présenter à ce député le vote de 7 fois contre la mesure, aligné sur la position de son groupe, pour confirmer son soutien à l'Afep.",
     "chiffres_utilises": [
       "3",
       "0.5",
       "3140",
       "0.71",
+      "0",
+      "7",
       "2026",
       "11",
       "4",

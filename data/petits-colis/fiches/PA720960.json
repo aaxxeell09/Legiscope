@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.769Z",
+    "generated_at": "2026-11-14T13:33:45.653Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1243,8 +1243,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Olivier Serva devrait probablement se montrer favorable à la mesure, car il a cosigné l'amendement 452, actuellement en attente, qui vise à compléter l'article 22.",
-    "argument": "Présenter à ce député l'amendement 452 qu'il a cosigné et qui est en attente, car il vise à exclure certaines importations de l'article 22, ce qui rejoint l'objectif d'Alibaba France de s'opposer à la taxe.",
+    "position_probable": "Olivier Serva est probablement contre la mesure, car il a cosigné l'amendement 452, actuellement en attente, qui vise à exclure certaines importations de l'article 22.",
+    "argument": "Présenter à ce député l'amendement 452, en attente, qu'il a cosigné pour exclure certaines importations de la taxe, afin de confirmer son soutien à la position d'Alibaba France contre la mesure.",
     "chiffres_utilises": [
       "452",
       "22"

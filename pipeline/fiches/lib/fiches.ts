@@ -21,6 +21,34 @@ export function candidats(ctx: Contexte): string[] {
   return ordre;
 }
 
+const LISTE_LIBELLE: Record<string, string> = { actionnables: "sur qui agir encore (actionnable)", allies: "allié du client", perdus: "perdu pour le client" };
+
+/** Classement de P3 pour ce député, avec la position sur la mesure lue dans la raison (« N acte(s) pour la mesure, M contre »). */
+function classementDe(ctx: Contexte, pa: string): EntreeSynthese["classement_du_cabinet"] {
+  const ga = ctx.groupesAction;
+  if (!ga) return null;
+  for (const liste of ["actionnables", "allies", "perdus"] as const) {
+    const d = ga[liste].find((x) => x.depute_id === pa);
+    if (!d) continue;
+    const m = d.raison.match(/(\d+)\s*acte\(?s?\)?\s*pour la mesure,\s*(\d+)\s*contre/i);
+    let position: "pour" | "contre" | null = null;
+    if (m) position = Number(m[1]) > Number(m[2]) ? "pour" : Number(m[2]) > Number(m[1]) ? "contre" : null;
+    else if (liste === "allies") position = ctx.dossier.objectifs[0].position_cible;
+    else if (liste === "perdus") position = ctx.dossier.objectifs[0].position_cible === "contre" ? "pour" : "contre";
+    return { liste: LISTE_LIBELLE[liste], position_sur_la_mesure: position, raison: d.raison, fondement: d.fondement };
+  }
+  return null;
+}
+
+/** Vrai si la phrase affirme une position sur la mesure contraire au classement. */
+export function contreditLeClassement(texte: string, position: "pour" | "contre" | null): boolean {
+  if (!position) return false;
+  const t = texte.toLowerCase();
+  const ditContre = /(?:probablement |plutôt )?(?:contre|oppos[ée]e? à|défavorable à|hostile à) (?:la|cette) mesure|contre la taxe|s'oppose à la (?:mesure|taxe)/.test(t);
+  const ditPour = /(?:probablement |plutôt )?(?:pour|favorable à|soutient|en faveur de) (?:la|cette) mesure|pour la taxe|favorable à la taxe|soutient la taxe/.test(t);
+  return (position === "pour" && ditContre && !ditPour) || (position === "contre" && ditPour && !ditContre);
+}
+
 async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<{ s: Synthese; origine: "x3" | "local" }> {
   const pa = fiche.depute_id;
   const depute = ctx.deputes.deputes.find((d) => d.id === pa);
@@ -43,6 +71,7 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
     debats: fiche.debats.filter((d) => !posterieur(d.date, ref)).map((d) => ({ date: d.date, lieu: d.lieu, citation: d.citation })),
     // Complément 1 : le rôle dit si le député a lui-même entendu (rapporteur) ou si les organisations ont été
     // entendues par les rapporteurs de sa commission (membre) ; le prompt de X3 lit `entendu_par`.
+    classement_du_cabinet: classementDe(ctx, pa),
     auditions: fiche.auditions.filter((a) => !posterieur(a.date, ref)).map((a) => ({ date: a.date, role: a.role, entendu_par: a.role.startsWith("rapporteur") ? "le député lui-même, comme rapporteur" : "les rapporteurs de sa commission, pas le député lui-même", organisations: a.organisations.map((o) => o.nom) })),
   };
   const pivot = ctx.pivots?.deputes.find((p) => p.id === pa);
@@ -51,8 +80,19 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
   const entreeModele = { ...entree, amendements: entree.amendements.map(({ id: _id, ...reste }) => reste) };
   const prompt = lirePrompt(PROMPT_SYNTHESE);
   const sansCache = regenerer.has(pa);
-  const position = await rediger({ prompt, champ: "position_probable", entree: entreeModele, gabarit: gabarit.position_probable, chiffresGabarit: gabarit.chiffres, etiquette: `${ctx.dossier.id}/fiches/${pa} position_probable`, sansCache });
-  const argument = await rediger({ prompt, champ: "argument", entree: entreeModele, gabarit: gabarit.argument, chiffresGabarit: gabarit.chiffres, etiquette: `${ctx.dossier.id}/fiches/${pa} argument`, sansCache });
+  const attendu = entree.classement_du_cabinet?.position_sur_la_mesure ?? null;
+  const etiquette = `${ctx.dossier.id}/fiches/${pa}`;
+  let position = await rediger({ prompt, champ: "position_probable", entree: entreeModele, gabarit: gabarit.position_probable, chiffresGabarit: gabarit.chiffres, etiquette: `${etiquette} position_probable`, sansCache });
+  // Cohérence avec le classement de P3 (X1, 14 h 30) : une synthèse qui dit le contraire est rappelée une fois, puis remplacée par le gabarit.
+  if (position.mode === "llm" && contreditLeClassement(position.texte, attendu)) {
+    noter(`${etiquette} : synthèse contraire au classement (${attendu} la mesure), nouvel appel`);
+    position = await rediger({ prompt, champ: "position_probable", entree: entreeModele, gabarit: gabarit.position_probable, chiffresGabarit: gabarit.chiffres, etiquette: `${etiquette} position_probable`, sansCache: true });
+    if (position.mode === "llm" && contreditLeClassement(position.texte, attendu)) {
+      noter(`${etiquette} : toujours contraire au classement, gabarit`);
+      position = { texte: gabarit.position_probable, mode: "gabarit", modele: null, chiffres_utilises: gabarit.chiffres, verifie: true, fautifs: [] };
+    }
+  }
+  const argument = await rediger({ prompt, champ: "argument", entree: entreeModele, gabarit: gabarit.argument, chiffresGabarit: gabarit.chiffres, etiquette: `${etiquette} argument`, sansCache });
   const mode = position.mode === "llm" && argument.mode === "llm" ? "llm" : "gabarit";
   return { origine: gabarit.origine, s: {
     position_probable: position.texte,

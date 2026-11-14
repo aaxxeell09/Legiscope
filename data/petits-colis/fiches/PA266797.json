@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.789Z",
+    "generated_at": "2026-11-14T13:34:15.587Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -561,13 +561,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Philippe Gosselin a cosigné l'amendement 1774, tombé, qui proposait de porter la taxe à 25 euros, ce qui indique qu'il est probablement contre la mesure actuelle.",
-    "argument": "Présenter à ce député l'amendement 1774 qu'il a cosigné et qui a été tombé, afin de montrer que la hausse du montant à 25 euros n'a pas été retenue et que la taxe de 2 euros par article sur les colis de moins de 150 euros reste la référence actuelle.",
+    "position_probable": "Philippe Gosselin est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 1774, tombé, qui proposait d'augmenter le montant de la taxe.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui propose de porter la taxe à 25 euros, a été tombée, pour montrer que son soutien à la mesure est conditionné par un niveau de taxation plus élevé.",
     "chiffres_utilises": [
       "1774",
-      "25",
-      "2",
-      "150"
+      "25"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

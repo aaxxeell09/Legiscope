@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.521Z",
+    "generated_at": "2026-11-14T13:29:28.170Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1139,10 +1139,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Soumya Bourouaha est probablement contre la mesure, car elle a cosigné un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député l'adoption de l'amendement supprimant l'article 3, car il a cosigné ce texte qui va dans le sens de la position de son client contre la mesure.",
+    "position_probable": "Soumya Bourouaha est probablement pour la mesure, car elle a cosigné un amendement supprimant l'article 3 qui a été adopté.",
+    "argument": "Présenter à ce député que la mesure n° 3140 vise une taxe de 0,5 % sur les holdings patrimoniales, un sujet qu'il a déjà traité en cosignant l'amendement n° 1847, rejeté, qui modifiait le code général des impôts.",
     "chiffres_utilises": [
-      "3"
+      "3",
+      "0.5",
+      "3140",
+      "1847"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.560Z",
+    "generated_at": "2026-11-14T13:30:24.391Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1222,12 +1222,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Dominique Potier devrait probablement se montrer favorable à la mesure, car il a cosigné l'amendement n° 364, qui a été rejeté.",
-    "argument": "Présenter à ce député que son amendement n° 364, qui rétablissait un impôt plancher, a été rejeté, afin de montrer que la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) constitue une alternative plus ciblée que la mesure d'origine.",
+    "position_probable": "Dominique Potier a cosigné l'amendement n° 364, qui a été rejeté, ce qui indique qu'il est probablement favorable à la mesure.",
+    "argument": "Présenter à ce député que l'Afep s'oppose à la taxe sur la fortune improductive et à la taxe de 0,5 % sur les holdings patrimoniales, car il a cosigné l'amendement n° 364, rejeté, qui rétablit un impôt plancher, et que MEDEF a été entendu par les rapporteurs de sa commission le 26 octobre 2026.",
     "chiffres_utilises": [
       "364",
       "0.5",
-      "3140"
+      "2026",
+      "26"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

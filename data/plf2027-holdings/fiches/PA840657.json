@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.428Z",
+    "generated_at": "2026-11-14T13:27:25.481Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -497,13 +497,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sophie Ricourt Vaginay est probablement contre la mesure, comme en témoigne sa cosignature d'un amendement supprimant l'article 3, qui a été adopté.",
-    "argument": "Présenter à ce député le fait qu'elle a cosigné l'amendement supprimant l'article 3, qui a été adopté, pour appuyer la position de l'Afep contre la taxe sur la fortune improductive.",
+    "position_probable": "A cosigné l'amendement n° 1415, adopté (« Supprime l'article 3 »).",
+    "argument": "Présenter à ce député le fait qu'elle a cosigné un amendement supprimant l'article 3, adopté, pour appuyer la position de l'Afep contre la taxe sur la fortune improductive.",
     "chiffres_utilises": [
+      "1415",
       "3"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

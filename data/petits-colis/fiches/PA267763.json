@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.796Z",
+    "generated_at": "2026-11-14T13:34:25.439Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -561,13 +561,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Jean-Pierre Bataille est probablement contre la mesure, comme en témoignent ses amendements 1442 et 1745, tombé et retiré, qui proposaient de porter la taxe à 5 euros.",
-    "argument": "Présenter à ce député que son amendement n° 1442, qui proposait de porter la taxe à 5 euros, est tombé, pour lui montrer que la mesure actuelle de 2 euros est déjà une limite qu'il a lui-même contestée.",
+    "position_probable": "Jean-Pierre Bataille est probablement favorable à la mesure, car il a déposé l'amendement 1442 qui augmente le montant de la taxe, un amendement tombé.",
+    "argument": "Présenter à ce député que son amendement n° 1442, qui proposait de porter la taxe à 5 euros, a été retiré, ce qui montre qu'il a déjà défendu une version plus forte de la mesure et qu'il reste attaché à son principe.",
     "chiffres_utilises": [
       "1442",
-      "5",
-      "1745",
-      "2"
+      "5"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

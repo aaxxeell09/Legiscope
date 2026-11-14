@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.544Z",
+    "generated_at": "2026-11-14T13:29:53.104Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1171,9 +1171,10 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Gérard Leseul est probablement contre la mesure, comme l'indique sa cosignature de l'amendement n° 364, rejeté, qui vise à rétablir un impôt plancher.",
-    "argument": "Présenter à ce député que son amendement n° 364, qui rétablit l'impôt plancher, a été rejeté, afin de montrer que la taxe sur la fortune improductive n'est pas la seule solution fiscale envisagée.",
+    "position_probable": "Gérard Leseul est probablement pour la mesure, comme l'indique son cosignature de l'amendement n° 471, rejeté.",
+    "argument": "Présenter à ce député que son amendement n° 364, qui rétablit l'impôt plancher, a été rejeté, afin de montrer que la mesure actuelle reste la seule option viable pour le client.",
     "chiffres_utilises": [
+      "471",
       "364"
     ],
     "mode": "llm",

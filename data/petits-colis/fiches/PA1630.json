@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.787Z",
+    "generated_at": "2026-11-14T13:34:08.096Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -675,10 +675,13 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Michel Herbillon est probablement contre la mesure, comme en témoigne sa cosignature de l'amendement 1774 qui a été tombé.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui proposait de porter la taxe à 25 euros et a été retiré, montre qu'il cherche à renforcer la mesure, ce qui contredit l'objectif d'Alibaba France de la réduire.",
+    "position_probable": "Michel Herbillon est probablement favorable à la mesure, car il a cosigné l'amendement 1774 qui a été tombé et l'amendement 1775 qui a été rejeté.",
+    "argument": "Présenter à ce député l'amendement 1774 qu'il a cosigné et qui est tombé, afin de lui montrer que la hausse du montant à 25 euros n'a pas abouti et que la taxe de 2 euros par article sur les colis de moins de 150 euros reste une charge lourde pour Alibaba France.",
     "chiffres_utilises": [
       "1774",
+      "1775",
+      "2",
+      "150",
       "25"
     ],
     "mode": "llm",

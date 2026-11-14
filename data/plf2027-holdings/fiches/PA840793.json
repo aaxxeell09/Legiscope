@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.568Z",
+    "generated_at": "2026-11-14T13:31:02.539Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -488,8 +488,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Marc Pena a cosigné l'amendement n° 364, qui a été rejeté, ce qui indique qu'il est probablement contre la mesure.",
-    "argument": "Présenter à ce député le rejet de son amendement cosigné n° 364, qui visait à rétablir l'impôt plancher, pour montrer que la suppression de la taxe sur la fortune improductive évite d'alourdir la fiscalité des entreprises.",
+    "position_probable": "Marc Pena a cosigné l'amendement n° 364, qui a été rejeté, ce qui indique qu'il est probablement favorable à la mesure.",
+    "argument": "Présenter à ce député que son amendement n° 364, cosigné et rejeté, visait à rétablir un impôt plancher, ce qui montre son intérêt pour la fiscalité des entreprises et offre un point d'entrée pour discuter des impacts de la mesure sur les holdings.",
     "chiffres_utilises": [
       "364"
     ],

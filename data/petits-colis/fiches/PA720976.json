@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.773Z",
+    "generated_at": "2026-11-14T13:33:53.529Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1216,13 +1216,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Max Mathiasin est probablement contre la mesure, car il a cosigné l'amendement n° 452, actuellement en attente, qui propose une exception aux dispositions de l'article 22.",
-    "argument": "Présenter à ce député l'amendement 452 qu'il a cosigné, actuellement en attente, afin de soutenir l'exclusion des importations de la taxe de 2 euros sur les colis de moins de 150 euros.",
+    "position_probable": "Max Mathiasin est probablement contre la mesure, car il a cosigné l'amendement 452, actuellement en attente.",
+    "argument": "Présenter à ce député l'amendement 452, en attente, qu'il a cosigné pour exclure certaines importations de l'article 22, afin de soutenir la position d'Alibaba France contre la taxe.",
     "chiffres_utilises": [
       "452",
-      "22",
-      "2",
-      "150"
+      "22"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

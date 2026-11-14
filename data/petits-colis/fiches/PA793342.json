@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.754Z",
+    "generated_at": "2026-11-14T13:33:29.247Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -863,10 +863,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Alexandra Martin (Alpes-Maritimes) est probablement contre la mesure, comme en témoigne sa cosignature de l'amendement 1774 qui a été retiré.",
-    "argument": "Présenter à ce député l'amendement 1774 qu'elle a cosigné et qui a été retiré, afin de montrer que la hausse de la taxe à 25 euros n'est pas une solution viable pour les acteurs du commerce en ligne.",
+    "position_probable": "Alexandra Martin (Alpes-Maritimes) est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'elle a cosignés et qui ont respectivement été tombé et rejeté.",
+    "argument": "Présenter à ce député le fait que son amendement n° 1774, qui proposait de porter la taxe à 25 euros, est tombé, pour lui montrer que la mesure actuelle reste plus favorable à son client que la version qu'il a soutenue.",
     "chiffres_utilises": [
       "1774",
+      "1775",
       "25"
     ],
     "mode": "llm",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.462Z",
+    "generated_at": "2026-11-14T13:28:13.898Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1116,13 +1116,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "La position personnelle du député Becht sur la mesure n'est pas connue, car il n'a déposé aucun amendement et n'a pas prononcé de déclaration, mais son groupe EPR est contre.",
-    "argument": "Présenter à ce député que son groupe EPR est contre la mesure, car il n'a déposé aucun amendement ni fait de déclaration publique sur le sujet.",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni pris la parole, mais son groupe EPR est contre la mesure.",
+    "argument": "Présenter à ce député que son groupe EPR est contre la mesure, car il n'a déposé aucun amendement ni prononcé de déclaration personnelle sur le sujet.",
     "chiffres_utilises": [
       "3",
       "0.5",
       "3140",
       "0.71",
+      "0",
+      "1",
       "2026",
       "10",
       "20",

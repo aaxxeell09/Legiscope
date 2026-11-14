@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.785Z",
+    "generated_at": "2026-11-14T13:34:07.628Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -713,9 +713,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Olivia Grégoire est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 459, en attente, qui vise à porter le montant à 25 euros.",
-    "argument": "Présenter à ce député l'amendement 459, en attente, qui vise à porter la taxe à 25 euros, pour souligner que sa position actuelle s'éloigne de l'objectif de réduction défendu par Alibaba France.",
+    "position_probable": "Olivia Grégoire est probablement contre la mesure, comme en témoignent ses amendements 4037, 4038, 4039, 4040 et 4059, tous retirés, qui visaient à réduire le montant de la taxe ou à en modifier le périmètre.",
+    "argument": "Présenter à ce député l'amendement 459, en attente, qui vise à porter la taxe à 25 euros, car il a cosigné ce texte avec l'entreprise Kiabi.",
     "chiffres_utilises": [
+      "4037",
+      "4038",
+      "4039",
+      "4040",
+      "4059",
       "459",
       "25"
     ],

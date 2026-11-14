@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.528Z",
+    "generated_at": "2026-11-14T13:29:36.309Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -470,11 +470,11 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Elsa Faucillon est probablement contre la mesure, comme le montre son cosignature d'un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député le rejet de son amendement n° 1847, car il a déjà cosigné la suppression de l'article 3, ce qui montre son opposition à la taxe sur la fortune improductive.",
+    "position_probable": "Elsa Faucillon est probablement pour la mesure, comme en témoigne sa cosignature de l'amendement n° 1847, rejeté.",
+    "argument": "Présenter à ce député que la suppression de l'article 3, qu'elle a cosignée et qui a été adoptée, protège les entreprises de la taxe sur la fortune improductive.",
     "chiffres_utilises": [
-      "3",
-      "1847"
+      "1847",
+      "3"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

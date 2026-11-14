@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.401Z",
+    "generated_at": "2026-11-14T13:27:07.069Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1222,12 +1222,34 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Romain Daubié est probablement contre la mesure, comme en témoignent les amendements qu'il a cosignés sur l'article 3 et qui ont été tombés.",
-    "argument": "Présenter à ce député l'amendement 3821, cosigné et rejeté, qui visait à instituer une contribution après l'article 4, afin de montrer que sa position s'aligne sur l'objectif de l'Afep de réduire la taxe sur la fortune improductive.",
+    "position_probable": "Romain Daubié est probablement contre la mesure, comme l'indiquent les amendements qu'il a cosignés et qui ont été rejetés ou tombés.",
+    "argument": "Présenter à ce député le rejet de son amendement cosigné n° 3821, qui visait à instaurer une contribution après l'article 4, pour montrer que sa position s'aligne sur la volonté de l'Afep de réduire la taxe sur la fortune improductive.",
     "chiffres_utilises": [
       "3",
+      "0.5",
+      "3140",
+      "0.76",
       "4",
-      "3821"
+      "975",
+      "5",
+      "158",
+      "1",
+      "15",
+      "235",
+      "7",
+      "8",
+      "3821",
+      "977",
+      "78",
+      "822",
+      "2",
+      "2026",
+      "10",
+      "26",
+      "28",
+      "29",
+      "11",
+      "56"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

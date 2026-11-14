@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.455Z",
+    "generated_at": "2026-11-14T13:28:04.619Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1135,8 +1135,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Jean-Yves Bony est probablement contre la mesure, comme en témoigne sa cosignature d'un amendement supprimant l'article 3, qui a été adopté.",
-    "argument": "Présenter à ce député l'adoption de l'amendement supprimant l'article 3, qu'il a cosigné, pour confirmer son alignement avec la position de l'Afep contre la taxe sur la fortune improductive.",
+    "position_probable": "Jean-Yves Bony est probablement contre la mesure, car il a cosigné un amendement visant à supprimer l'article 3, qui a été adopté.",
+    "argument": "Présenter à ce député que la suppression de l'article 3, qu'il a cosignée et qui a été adoptée, aligne sa position sur celle de l'Afep contre la taxe sur la fortune improductive.",
     "chiffres_utilises": [
       "3"
     ],

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.830Z",
+    "generated_at": "2026-11-14T13:35:52.898Z",
     "sources": [],
     "limits": "42 fiche(s) produite(s) sur 49 député(s) de groupes-action.json et pivots.json. Absents : PA719372 : auditions, debats manquant ou invalide ; PA795778 : auditions, debats manquant ou invalide ; PA841955 : auditions, debats manquant ou invalide ; PA842029 : auditions, debats manquant ou invalide ; PA942 : auditions, debats manquant ou invalide ; PA719640 : auditions, debats manquant ou invalide ; PA840979 : auditions, debats manquant ou invalide.",
     "producer": "pipeline/fiches",

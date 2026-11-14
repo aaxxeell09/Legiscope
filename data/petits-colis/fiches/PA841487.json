@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.761Z",
+    "generated_at": "2026-11-14T13:33:37.007Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -580,13 +580,15 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Anthony Boulogne est probablement contre la mesure, comme en témoignent ses amendements 974 et 806 visant à supprimer l'article 22, ainsi que ses déclarations en commission le 22 octobre 2025.",
-    "argument": "Présenter à ce député l'amendement 974 qu'il a déposé pour supprimer l'article 22, rejeté, afin de l'inviter à soutenir la position d'Alibaba France contre la taxe.",
+    "position_probable": "Anthony Boulogne est probablement contre la mesure, comme en témoignent ses amendements 974 et 806 qui suppriment l'article 22, ainsi que ses déclarations en commission le 22 octobre 2025.",
+    "argument": "Présenter à ce député l'amendement 974 qu'il a déposé pour supprimer l'article 22 et qui a été rejeté, car il partage son opposition à la taxe de 2 euros par article sur les colis de moins de 150 euros.",
     "chiffres_utilises": [
       "974",
       "22",
       "806",
-      "2025"
+      "2025",
+      "2",
+      "150"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

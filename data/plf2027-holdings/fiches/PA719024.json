@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.300Z",
+    "generated_at": "2026-11-14T13:26:34.067Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -403,12 +403,9 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Christophe Blanchet a déposé plusieurs amendements visant à exonérer des biens immobiliers ou à modifier l'article 3, dont certains ont été rejetés ou sont tombés, ce qui indique qu'il est probablement contre la mesure.",
-    "argument": "Présenter à ce député que son amendement n° 3821, qui visait à instituer une contribution, a été rejeté, afin de lui montrer que la mesure actuelle reste en discussion et que la position de l'Afep contre la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) peut encore être entendue.",
+    "position_probable": "Christophe Blanchet a cosigné l'amendement n° 3821, rejeté, qui institue une contribution, ce qui indique qu'il est probablement contre la mesure.",
+    "argument": "Présenter à ce député que son amendement n° 3821, qui institue une contribution, a été rejeté, afin de montrer que la mesure actuelle reste une option viable pour le client.",
     "chiffres_utilises": [
-      "3",
-      "0.5",
-      "3140",
       "3821"
     ],
     "mode": "llm",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.552Z",
+    "generated_at": "2026-11-14T13:30:09.749Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -808,8 +808,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Hendrik Davi a cosigné les amendements 18, 43, 174, 208, 38, 47 et 56, tous rejetés, ce qui indique qu'il est probablement contre la mesure.",
-    "argument": "Présenter à ce député les amendements 18, 43, 174, 208, 38, 47 et 56 qu'il a cosignés et qui ont été rejetés, afin de montrer que sa position sur la fiscalité des entreprises est déjà connue et que le client Afep partage cette opposition à la mesure.",
+    "position_probable": "Hendrik Davi est probablement favorable à la mesure, comme l'indiquent les amendements n° 18, 43, 174, 208, 38, 47 et 56 qu'il a cosignés et qui ont été rejetés.",
+    "argument": "Présenter à ce député que son amendement n° 18, qui rétablit le chapitre Ier bis du code général des impôts, a été rejeté, afin de souligner que la mesure n° 3140 ne repose pas sur des bases fiscales déjà validées.",
     "chiffres_utilises": [
       "18",
       "43",
@@ -817,7 +817,8 @@
       "208",
       "38",
       "47",
-      "56"
+      "56",
+      "3140"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

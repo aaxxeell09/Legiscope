@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.433Z",
+    "generated_at": "2026-11-14T13:27:29.734Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -385,13 +385,16 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Matthieu Bloch est probablement contre la mesure, comme en témoigne sa cosignature d'un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député le fait qu'il a cosigné l'amendement supprimant l'article 3, adopté, pour appuyer la position de l'Afep contre la mesure.",
+    "position_probable": "A cosigné l'amendement n° 1415, adopté (« Supprime l'article 3 »).",
+    "argument": "Présenter à ce député que la suppression de l'article 3, cosignée par lui et adoptée, protège directement les holdings patrimoniales de la taxe de 0,5 % prévue par le texte n° 3140.",
     "chiffres_utilises": [
-      "3"
+      "1415",
+      "3",
+      "0.5",
+      "3140"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.778Z",
+    "generated_at": "2026-11-14T13:33:59.662Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1243,13 +1243,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Marcellin Nadeau est probablement contre la mesure, car il a cosigné l'amendement 452, actuellement en attente, qui vise à exclure certaines importations de l'article 22.",
-    "argument": "Présenter à ce député l'amendement 452 qu'il a cosigné pour exclure certaines importations de l'article 22, afin de soutenir la position d'Alibaba France contre la taxe de 2 euros par article sur les colis de moins de 150 euros.",
+    "position_probable": "Marcellin Nadeau est probablement contre la mesure, car il a cosigné l'amendement 452, actuellement en attente.",
+    "argument": "Présenter à ce député l'amendement 452, en attente, qu'il a cosigné pour exclure certaines importations de l'article 22, afin de soutenir la position d'Alibaba France contre la taxe.",
     "chiffres_utilises": [
       "452",
-      "22",
-      "2",
-      "150"
+      "22"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

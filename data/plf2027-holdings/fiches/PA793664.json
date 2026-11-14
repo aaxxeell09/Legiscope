@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.559Z",
+    "generated_at": "2026-11-14T13:30:21.219Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1225,8 +1225,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Marie Pochon est probablement contre la mesure, comme en témoignent les amendements n° 18, 43, 174, 208, 38, 47 et 56 qu'elle a cosignés et qui ont été rejetés.",
-    "argument": "Présenter à ce député le rejet de l'amendement n° 18 qu'il a cosigné, afin de montrer que sa position sur la fiscalité des patrimoines est déjà actée.",
+    "position_probable": "Marie Pochon est probablement favorable à la mesure, comme en témoignent les amendements 18, 43, 174, 208, 38, 47 et 56 qu'elle a cosignés et qui ont été rejetés.",
+    "argument": "Présenter à ce député que la mesure n° 3140 prévoit une taxe de 0,5 % sur les holdings patrimoniaux, ce qui rejoint les amendements qu'il a cosignés et qui ont été rejetés.",
     "chiffres_utilises": [
       "18",
       "43",
@@ -1234,7 +1234,9 @@
       "208",
       "38",
       "47",
-      "56"
+      "56",
+      "0.5",
+      "3140"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

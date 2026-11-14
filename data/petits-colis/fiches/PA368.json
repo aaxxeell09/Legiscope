@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.731Z",
+    "generated_at": "2026-11-14T13:32:52.569Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -675,12 +675,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Michel Barnier a cosigné l'amendement 1774 qui visait à porter la taxe à 25 euros, un texte tombé, ce qui indique probablement une position favorable à la mesure.",
-    "argument": "Présenter à ce député le rejet de son amendement 1775, car il a cosigné ce texte visant à taxer les services de commerce électronique.",
+    "position_probable": "Michel Barnier est probablement favorable à la mesure, comme en témoignent les amendements 1774 et 1775 qu'il a cosignés et qui ont respectivement été tombé et rejeté.",
+    "argument": "Présenter à ce député l'amendement 1774 qu'il a cosigné et qui est tombé, afin de lui montrer que la hausse du montant à 25 euros n'a pas abouti et que la taxe de 2 euros par article sur les colis de moins de 150 euros reste une charge lourde pour Alibaba France.",
     "chiffres_utilises": [
       "1774",
-      "25",
-      "1775"
+      "1775",
+      "2",
+      "150",
+      "25"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

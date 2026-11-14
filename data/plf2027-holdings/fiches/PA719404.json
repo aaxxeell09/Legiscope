@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.467Z",
+    "generated_at": "2026-11-14T13:28:19.122Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -531,8 +531,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Didier Le Gac a cosigné un amendement tombé, ce qui indique probablement une position contre la mesure.",
-    "argument": "Présenter à ce député que son amendement cosigné, tombé, visait à insérer une section après le 34° du II de la section 5 du chapitre Ier du titre Ier de la première partie du livre Ier du code général des impôts, afin de montrer que sa vigilance sur la structure fiscale s'aligne sur la position de l'Afep contre la taxe de 0,5 % sur les holdings patrimoniales.",
+    "position_probable": "Didier Le Gac est probablement contre la mesure, comme l'indique son cosignature d'un amendement tombé.",
+    "argument": "Présenter à ce député son cosignature de l'amendement tombé qui modifie le 34° du II de la section 5 du code général des impôts, car cet acte montre qu'il s'oppose à la mesure dans le sens du client.",
     "chiffres_utilises": [
       "3",
       "0.5",
@@ -540,6 +540,7 @@
       "0.71",
       "34",
       "5",
+      "0",
       "2026",
       "11",
       "4",

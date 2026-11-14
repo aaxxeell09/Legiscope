@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.520Z",
+    "generated_at": "2026-11-14T13:29:27.940Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -400,11 +400,12 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Olivier Faure a cosigné l'amendement n° 364, qui a été rejeté, et l'amendement n° 471, également rejeté, ce qui indique qu'il est probablement contre la mesure.",
-    "argument": "Présenter à ce député le rejet de son amendement n° 364, car il a cosigné des textes visant à rétablir des dispositions fiscales qui s'opposent à la taxe sur la fortune improductive défendue par son groupe.",
+    "position_probable": "Olivier Faure devrait probablement se montrer favorable à la mesure, comme en témoigne son cosignature de l'amendement n° 364, rejeté, et de l'amendement n° 471, également rejeté.",
+    "argument": "Présenter à ce député que son amendement n° 364, cosigné et rejeté, montre qu'il a déjà examiné les mécanismes fiscaux de la mesure, ce qui permet d'aborder directement les impacts concrets de la taxe de 0,5 % sur les holdings patrimoniales.",
     "chiffres_utilises": [
       "364",
-      "471"
+      "471",
+      "0.5"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

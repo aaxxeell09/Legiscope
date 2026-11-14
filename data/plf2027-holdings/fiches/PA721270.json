@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.527Z",
+    "generated_at": "2026-11-14T13:29:36.150Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1204,8 +1204,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Stéphane Peu est probablement contre la mesure, car il a cosigné un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député l'adoption de l'amendement supprimant l'article 3, qui va dans le sens de la position de l'Afep contre la taxe sur la fortune improductive.",
+    "position_probable": "Stéphane Peu est probablement favorable à la mesure, comme l'indique sa cosignature d'un amendement supprimant l'article 3 qui a été adopté.",
+    "argument": "Présenter à ce député l'adoption de l'amendement cosigné supprimant l'article 3, car cet acte montre qu'il soutient la suppression de la taxe sur la fortune improductive, ce qui rejoint l'objectif de l'Afep.",
     "chiffres_utilises": [
       "3"
     ],

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.481Z",
+    "generated_at": "2026-11-14T13:28:40.583Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1102,13 +1102,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est contre la mesure.",
-    "argument": "Présenter à ce député l'argumentaire de l'Afep contre la taxe de 0,5 % sur les holdings patrimoniales, en s'appuyant sur les auditions de la commission des affaires culturelles et de l'éducation auxquelles il a participé le 3 novembre 2026.",
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais le groupe RN est contre la mesure.",
+    "argument": "Présenter à ce député les chiffres de la taxe de 0,5 % sur les holdings patrimoniales, car son groupe est contre la mesure et il a voté contre.",
     "chiffres_utilises": [
       "3",
       "0.5",
       "3140",
       "0.76",
+      "0",
+      "1",
       "2026",
       "11",
       "6",

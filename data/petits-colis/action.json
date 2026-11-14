@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:23:54.868Z",
+    "generated_at": "2026-11-14T13:36:33.956Z",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -8340,10 +8340,11 @@
   },
   "contre_arguments": [
     {
-      "texte": "La taxe ne sauvera aucun petit commerce, car elle ne modifie pas les comportements et sera contournée par la fraude. Elle pèsera sur les classes populaires avec un montant de 2 euros par article.",
+      "texte": "La taxe ne sauvera aucun petit commerce, car elle ne modifie pas les comportements et ne traite pas les causes structurelles de la surconsommation. La mesure prévoit une taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe.",
       "repond_a": "La taxe protège les commerces de proximité contre la concurrence déloyale des plateformes étrangères.",
       "chiffres_utilises": [
-        "2"
+        "2",
+        "150"
       ],
       "mode": "llm",
       "verifie": true,
@@ -8367,36 +8368,9 @@
       }
     },
     {
-      "texte": "La taxe de 2 euros par article est socialement injuste car elle frappe les classes populaires et modestes sans résoudre les déséquilibres du commerce mondial. L'amendement n° 191 qui supprime l'article 22 est non soutenu.",
+      "texte": "La taxe de 2 euros par article est socialement injuste car elle frappe les classes populaires et modestes. Elle ne changera rien aux déséquilibres du commerce mondial.",
       "repond_a": "La taxe est préférable à l'inaction ou à la suppression, même si son montant est jugé insuffisant.",
       "chiffres_utilises": [
-        "2",
-        "22",
-        "191"
-      ],
-      "mode": "llm",
-      "verifie": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "commission du 22 octobre 2025 (argument adverse)",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
-          },
-          {
-            "label": "Texte PRJLANR5L17B1906",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
-          }
-        ],
-        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "texte": "La taxe de 2 euros par article ne sauvera aucun petit commerce, car elle sera contournée par la fraude ou des intermédiaires européens. Cette mesure est socialement injuste et économiquement inutile, comme l'ont souligné les orateurs de la commission le 22 octobre 2025.",
-      "repond_a": "La taxe est indispensable pour éviter la fermeture des boutiques face à l'afflux massif de colis.",
-      "chiffres_utilises": [
-        "2025",
-        "22",
         "2"
       ],
       "mode": "llm",
@@ -8417,7 +8391,31 @@
       }
     },
     {
-      "texte": "Avancer le débat ne justifie pas une mesure socialement injuste qui pèse sur les classes populaires et modestes. La taxe de 2 euros par article sur les colis de moins de 150 euros sera une double peine pour ceux qui travaillent.",
+      "texte": "La mesure ne sauvera aucun petit commerce, car elle ne traite pas les causes structurelles de la surconsommation. La taxe de 2 euros par article sur les colis de moins de 150 euros reste dérisoire face à la valeur réelle des marchandises.",
+      "repond_a": "La taxe est indispensable pour éviter la fermeture des boutiques face à l'afflux massif de colis.",
+      "chiffres_utilises": [
+        "2",
+        "150"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "commission du 22 octobre 2025 (argument adverse)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          },
+          {
+            "label": "Texte PRJLANR5L17B1906",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+          }
+        ],
+        "raisonnement": "Rédigé par le modèle à partir des arguments du camp du client déjà entendus et des chiffres du dossier, puis passé au vérificateur de chiffres.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "Faire progresser le débat ne justifie pas une mesure socialement injuste qui pèse sur les classes populaires et modestes. La taxe de 2 euros par article sur les colis de moins de 150 euros sera une double peine, injuste socialement et inutile économiquement.",
       "repond_a": "La taxe est une mesure nécessaire pour faire progresser le débat et organiser la résistance.",
       "chiffres_utilises": [
         "2",
@@ -8441,10 +8439,11 @@
       }
     },
     {
-      "texte": "La taxe de 2 euros par article est socialement injuste car elle frappe les classes populaires et modestes. Elle ne changera rien aux déséquilibres du commerce mondial.",
+      "texte": "La mesure ne traite pas les causes structurelles de la surconsommation et ne propose rien de structurel pour endiguer le fast fashion. La taxe de 2 euros par article sur les colis de moins de 150 euros reste dérisoire face à la valeur réelle de la marchandise.",
       "repond_a": "La taxe est nécessaire pour mettre fin au modèle économique toxique du fast fashion.",
       "chiffres_utilises": [
-        "2"
+        "2",
+        "150"
       ],
       "mode": "llm",
       "verifie": true,
@@ -8468,93 +8467,11 @@
       }
     },
     {
-      "texte": "La taxe ne sauvera aucun petit commerce, car elle frappe les consommateurs sans corriger les déséquilibres du commerce mondial. Elle sera contournée par la fraude, ce qui la rend inefficace.",
+      "texte": "La mesure ne sauvera aucun petit commerce, car elle ne traite pas les causes structurelles de la surconsommation. La taxe de 2 euros par article sur les colis de moins de 150 euros reste dérisoire face à la valeur réelle de la marchandise.",
       "repond_a": "La taxe protège les commerces et maintient le lien social dans les zones rurales.",
       "chiffres_utilises": [
-        "25",
-        "2025",
-        "10",
-        "22",
         "2",
-        "7",
-        "100",
-        "150",
-        "191",
-        "221",
-        "222",
-        "223",
-        "224",
-        "301",
-        "302",
-        "307",
-        "308",
-        "309",
-        "348",
-        "3",
-        "349",
-        "5",
-        "369",
-        "452",
-        "73",
-        "74",
-        "459",
-        "460",
-        "566",
-        "657",
-        "719",
-        "720",
-        "721",
-        "4",
-        "722",
-        "734",
-        "736",
-        "749",
-        "806",
-        "936",
-        "937",
-        "938",
-        "943",
-        "974",
-        "1111",
-        "1173",
-        "1253",
-        "1259",
-        "1260",
-        "1261",
-        "1442",
-        "1511",
-        "1519",
-        "1580",
-        "1745",
-        "1774",
-        "1775",
-        "1834",
-        "1835",
-        "2026",
-        "1859",
-        "2211",
-        "2306",
-        "2538",
-        "2738",
-        "2740",
-        "2802",
-        "2810",
-        "2820",
-        "2824",
-        "2832",
-        "2833",
-        "3016",
-        "3126",
-        "3276",
-        "3395",
-        "3674",
-        "3731",
-        "4037",
-        "4038",
-        "4039",
-        "4040",
-        "4059",
-        "1000000"
+        "150"
       ],
       "mode": "llm",
       "verifie": true,
@@ -8574,7 +8491,7 @@
       }
     },
     {
-      "texte": "Un signal unilatéral ne compense pas l'inefficacité d'une mesure que les entreprises contourneront facilement. La taxe de 2 euros par article sur les colis de moins de 150 euros sera contournée par la fraude ou des intermédiaires européens.",
+      "texte": "Un signal national ne compense pas l'inefficacité de la mesure, qui sera contournée par la fraude et les intermédiaires européens. La taxe de 2 euros par article sur les colis de moins de 150 euros est insuffisante pour modifier les comportements.",
       "repond_a": "L'instauration de la taxe en France enverrait un signal fort pour inciter l'Europe à agir.",
       "chiffres_utilises": [
         "2",
@@ -8598,10 +8515,11 @@
       }
     },
     {
-      "texte": "La simplification douanière ne compense pas l'inefficacité de la mesure, car la taxe sera contournée par la fraude ou des intermédiaires européens. Le montant de 2 euros par article est jugé insuffisant et très facile à dérouter.",
+      "texte": "La simplification douanière ne compense pas l'inefficacité de la mesure, qui sera contournée par la fraude et ne sauvera aucun petit commerce. La taxe de 2 euros par article sur les colis de moins de 150 euros reste dérisoire face à la valeur réelle des marchandises.",
       "repond_a": "La taxe simplifie les opérations douanières face au volume massif de colis.",
       "chiffres_utilises": [
-        "2"
+        "2",
+        "150"
       ],
       "mode": "llm",
       "verifie": true,
@@ -8621,7 +8539,7 @@
       }
     },
     {
-      "texte": "La taxe de 2 euros par article est socialement injuste car elle pèse sur les classes populaires et modestes. Elle ne changera rien aux déséquilibres du commerce mondial, mais frappera encore un peu plus ceux qui travaillent et subissent la vie chère.",
+      "texte": "La taxe de 2 euros par article est socialement injuste car elle pèse sur les classes populaires et modestes. Elle frappe encore un peu plus ceux qui travaillent et subissent la vie chère.",
       "repond_a": "La taxe soutient le plan d'action visant à protéger les consommateurs de la contrefaçon.",
       "chiffres_utilises": [
         "2"
