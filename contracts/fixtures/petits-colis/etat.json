@@ -19,6 +19,22 @@
     "producer": "pipeline/etat",
     "dossier_id": "petits-colis"
   },
+  "texte_etat": {
+    "statut": "en_discussion",
+    "libelle": "Première partie du PLF 2026 en discussion en séance publique",
+    "date": "2025-11-18",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/plf_2026",
+    "preuve": {
+      "nature": "fait",
+      "sources": [
+        {
+          "label": "Dossier législatif PLF 2026",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/plf_2026"
+        }
+      ],
+      "raisonnement": "État du texte entier, distinct de l'état de la mesure (article 22)."
+    }
+  },
   "mesure": {
     "label": "Taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe",
     "article": "22",

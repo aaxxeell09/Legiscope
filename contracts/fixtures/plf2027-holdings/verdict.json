@@ -124,7 +124,8 @@
           "raisonnement": "Scrutin n° 9759 du 4 novembre 2026.",
           "nature": "fait"
         }
-      }
+      },
+      "score_libelle": "part des sièges favorables à l'objectif"
     },
     {
       "objectif_rang": 2,
@@ -167,7 +168,8 @@
         }
       ],
       "bloquant": [],
-      "cause_du_changement": null
+      "cause_du_changement": null,
+      "score_libelle": "part des sièges favorables à l'objectif"
     },
     {
       "objectif_rang": 3,
@@ -194,7 +196,8 @@
       },
       "favorable": [],
       "bloquant": [],
-      "cause_du_changement": null
+      "cause_du_changement": null,
+      "score_libelle": "part des sièges favorables à l'objectif"
     }
   ]
 }

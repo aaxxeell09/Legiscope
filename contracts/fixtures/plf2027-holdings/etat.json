@@ -19,6 +19,22 @@
     "producer": "pipeline/etat",
     "dossier_id": "plf2027-holdings"
   },
+  "texte_etat": {
+    "statut": "rejete",
+    "libelle": "Première partie du PLF 2027 rejetée par l'Assemblée nationale (scrutin n° 9759)",
+    "date": "2026-11-04",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+    "preuve": {
+      "nature": "fait",
+      "sources": [
+        {
+          "label": "Scrutin n° 9759",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+        }
+      ],
+      "raisonnement": "Le texte est rejeté en première lecture ; la mesure continue au Sénat puis en nouvelle lecture."
+    }
+  },
   "mesure": {
     "label": "Taxe sur la fortune improductive (article 3) et taxe de 0,5 % sur les holdings patrimoniales (n° 3140)",
     "article": "3",

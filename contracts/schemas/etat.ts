@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { DateISO, MetaSchema, Url } from "./meta";
-import { StatutArticleSchema, StatutEtapeSchema } from "./enums";
+import { StatutArticleSchema, StatutEtapeSchema, TexteStatutSchema } from "./enums";
 import { PreuveSchema } from "./preuve";
 
 export const EtapeSchema = z.object({
@@ -42,6 +42,10 @@ export type EtatMesure = z.infer<typeof EtatMesureSchema>;
 // En fond : où en est la mesure et le texte, ce qui est voté, ce qui reste.
 export const EtatSchema = z.object({
   meta: MetaSchema,
+  // Complément 6 (14 h 05) : état du texte, distinct de l'état de la mesure. Optionnel.
+  texte_etat: z
+    .object({ statut: TexteStatutSchema, libelle: z.string().min(1), date: DateISO.nullable(), url: Url.nullable(), preuve: PreuveSchema })
+    .optional(),
   mesure: EtatMesureSchema,
   etape: z.string().min(1),
   etapes: z.array(EtapeSchema).min(1),
