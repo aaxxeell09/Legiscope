@@ -129,6 +129,137 @@
         ]
       },
       "pivot_demo": "PA346782"
+    },
+    {
+      "id": "plf2027-agriculture",
+      "label": "PLF 2027, agriculture (crédits des filières)",
+      "texte_id": "PRJLANR5L17B3210",
+      "etat": "en_cours",
+      "client": "FNSEA",
+      "mesure": {
+        "label": "Baisse des crédits nationaux des filières agricoles (mission Agriculture, programme 149, état B ; article 77)",
+        "article": "77",
+        "texte_id": "PRJLANR5L17B3210"
+      },
+      "objectifs": [
+        {
+          "rang": 1,
+          "texte": "Rétablir les crédits nationaux des filières agricoles à leur niveau de 2026",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 2,
+          "texte": "Limiter la baisse aux dispositifs les moins utilisés",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 3,
+          "texte": "Reporter la baisse à 2028",
+          "position_cible": "contre"
+        }
+      ],
+      "date_reference": null,
+      "sujet": {
+        "label": "Agriculture et filières",
+        "mots_cles": [
+          "agricult",
+          "agriculteur",
+          "filière agricole",
+          "filières agricoles",
+          "programme 149",
+          "article 77",
+          "mieux manger"
+        ]
+      },
+      "pivot_demo": null
+    },
+    {
+      "id": "plf2027-logement",
+      "label": "PLF 2027, logement (APL et aides à la pierre)",
+      "texte_id": "PRJLANR5L17B3210",
+      "etat": "en_cours",
+      "client": "Union sociale pour l'habitat",
+      "mesure": {
+        "label": "Réforme des aides personnelles au logement et baisse des crédits du logement (mission Cohésion des territoires, programmes 109 et 135 ; article 78)",
+        "article": "78",
+        "texte_id": "PRJLANR5L17B3210"
+      },
+      "objectifs": [
+        {
+          "rang": 1,
+          "texte": "Maintenir les aides personnelles au logement et les aides à la pierre à leur niveau de 2026",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 2,
+          "texte": "Limiter la réforme aux ménages les plus aisés",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 3,
+          "texte": "Reporter la réforme à 2028",
+          "position_cible": "contre"
+        }
+      ],
+      "date_reference": null,
+      "sujet": {
+        "label": "Logement, APL et aides à la pierre",
+        "mots_cles": [
+          "APL",
+          "aide personnalisée au logement",
+          "aides personnelles au logement",
+          "logement social",
+          "bailleurs sociaux",
+          "prêt à taux zéro",
+          "PTZ",
+          "programme 109",
+          "programme 135",
+          "article 78"
+        ]
+      },
+      "pivot_demo": null
+    },
+    {
+      "id": "plf2027-renovation",
+      "label": "PLF 2027, rénovation énergétique (MaPrimeRénov')",
+      "texte_id": "PRJLANR5L17B3210",
+      "etat": "en_cours",
+      "client": "CAPEB",
+      "mesure": {
+        "label": "Baisse des crédits de MaPrimeRénov' et de la rénovation énergétique des logements (mission Écologie, programme 174, état B)",
+        "article": "État B, programme 174",
+        "texte_id": "PRJLANR5L17B3210"
+      },
+      "objectifs": [
+        {
+          "rang": 1,
+          "texte": "Maintenir les crédits de MaPrimeRénov' à leur niveau de 2026",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 2,
+          "texte": "Préserver les aides aux ménages modestes",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 3,
+          "texte": "Reporter la baisse à 2028",
+          "position_cible": "contre"
+        }
+      ],
+      "date_reference": null,
+      "sujet": {
+        "label": "Rénovation énergétique des logements",
+        "mots_cles": [
+          "MaPrimeRénov",
+          "rénovation énergétique",
+          "rénovation des logements",
+          "passoires thermiques",
+          "programme 174",
+          "chèque énergie"
+        ]
+      },
+      "pivot_demo": null
     }
   ],
   "dossier_demo": "petits-colis",
