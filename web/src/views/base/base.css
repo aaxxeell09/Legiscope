@@ -1,6 +1,8 @@
 /* Page Base (P6). Styles locaux, tokens de tokens.css seulement. */
-.base-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-4); }
+.base-head { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; gap: var(--space-4); padding: 4px 0 8px; }
 .base-head h1 { margin: 0; }
+.base-head p { margin: 5px 0 0; }
+.base-kicker { margin-bottom: 3px; color: var(--text-2); font-size: var(--fs-xs); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .base-mesure-statut { font-weight: 700; }
 .base-mesure-statut.dans { color: var(--warning); }
 .base-mesure-statut.hors { color: var(--success); }
@@ -14,7 +16,11 @@
 .base-statut-fait, .base-statut-vote { color: var(--text); }
 .base-statut-supprime { color: var(--text-2); text-decoration: line-through; }
 .base-sous-titre { margin: var(--space-4) 0 var(--space-2); font-size: var(--fs-base); }
-.base-recherche { width: 100%; max-width: 28em; margin-bottom: var(--space-3); }
+.base-toolbar { display: flex; align-items: flex-end; gap: var(--space-3); margin-bottom: var(--space-3); }
+.base-recherche { flex: 1; min-width: 240px; }
+.base-selects { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.base-selects label { display: flex; flex-direction: column; gap: 3px; color: var(--text-2); font-size: var(--fs-xs); font-weight: 600; }
+.base-selects select { min-width: 112px; height: 36px; padding-block: 5px; }
 .base-auteur { display: inline-flex; gap: var(--space-2); align-items: baseline; white-space: nowrap; }
 .base-texte-etat { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: baseline; margin-bottom: var(--space-3); }
 .base-texte-etat .base-statut { font-weight: 700; font-size: var(--fs-base); }
@@ -24,3 +30,4 @@
 .base-filtres { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3); }
 .base-puce { font-size: var(--fs-sm); padding: 3px 10px; background: transparent; color: var(--text-2); border: 1px solid var(--border); border-radius: var(--radius-pill); cursor: pointer; }
 .base-puce[aria-pressed="true"] { color: #fff; background: var(--text); border-color: var(--text); }
+@media (max-width: 1000px) { .base-toolbar { align-items: stretch; flex-direction: column; } .base-recherche { width: 100%; } }

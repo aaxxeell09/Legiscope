@@ -28,6 +28,7 @@ type Amdt = AmendementTexte & {
   nature?: Nature;
   nature_mode?: "regle" | "llm" | "defaut";
 };
+type Tri = "statut" | "numero" | "recent";
 type TexteEtat = {
   statut: "en_discussion" | "adopte" | "rejete" | "retire";
   libelle: string;
@@ -74,14 +75,25 @@ export default function BaseView() {
   const deputes = useData<Deputes>("deputes");
   const [q, setQ] = useState("");
   const [instit, setInstit] = useState(false);
+  const [sortFiltre, setSortFiltre] = useState<Sort | "">("");
+  const [groupeFiltre, setGroupeFiltre] = useState("");
+  const [natureFiltre, setNatureFiltre] = useState<Nature | "">("");
+  const [tri, setTri] = useState<Tri>("statut");
 
   const groupeParId = useMemo(() => new Map((groupes.data?.groupes ?? []).map((g) => [g.id, g])), [groupes.data]);
   const deputeParId = useMemo(() => new Map((deputes.data?.deputes ?? []).map((p) => [p.id, p])), [deputes.data]);
 
   const amendements = useMemo(() => {
-    const all = [...((texte.data?.amendements ?? []) as Amdt[])].filter((a) => !instit || estInstitutionnel(a)).sort(
-      (a, b) => SORT_ORDRE.indexOf(a.sort) - SORT_ORDRE.indexOf(b.sort) || numeroCle(a.numero) - numeroCle(b.numero),
-    );
+    const all = [...((texte.data?.amendements ?? []) as Amdt[])]
+      .filter((a) => !instit || estInstitutionnel(a))
+      .filter((a) => !sortFiltre || a.sort === sortFiltre)
+      .filter((a) => !groupeFiltre || a.groupe_id === groupeFiltre)
+      .filter((a) => !natureFiltre || a.nature === natureFiltre)
+      .sort((a, b) => {
+        if (tri === "numero") return numeroCle(a.numero) - numeroCle(b.numero);
+        if (tri === "recent") return (b.date_depot ?? "").localeCompare(a.date_depot ?? "") || numeroCle(a.numero) - numeroCle(b.numero);
+        return SORT_ORDRE.indexOf(a.sort) - SORT_ORDRE.indexOf(b.sort) || numeroCle(a.numero) - numeroCle(b.numero);
+      });
     const s = q.trim().toLowerCase();
     if (!s) return all;
     return all.filter((a) => {
@@ -89,7 +101,7 @@ export default function BaseView() {
       const g = a.groupe_id ? groupeParId.get(a.groupe_id) : undefined;
       return [a.numero, a.resume, SORT_LABEL[a.sort], a.auteur_libelle, a.nature && NATURE_LABEL[a.nature], p?.nom, p?.prenom, g?.sigle].some((x) => x && x.toLowerCase().includes(s));
     });
-  }, [texte.data, q, instit, deputeParId, groupeParId]);
+  }, [texte.data, q, instit, sortFiltre, groupeFiltre, natureFiltre, tri, deputeParId, groupeParId]);
   const nInstit = useMemo(() => ((texte.data?.amendements ?? []) as Amdt[]).filter(estInstitutionnel).length, [texte.data]);
 
   const colonnes: Column<Amdt>[] = [
@@ -136,6 +148,7 @@ export default function BaseView() {
         ),
     },
     { key: "sort", label: "Sort", width: "8em", render: (a) => SORT_LABEL[a.sort] },
+    { key: "date", label: "Dépôt", width: "8em", render: (a) => a.date_depot ? formatDate(a.date_depot) : <span className="text-2">inconnue</span> },
     {
       key: "proba",
       label: "Orcet",
@@ -156,14 +169,14 @@ export default function BaseView() {
 
   return (
     <div className="view" data-view="base">
-      <div className="view-title base-head">
-        <h1>Base complète</h1>
-        <span className="text-2">
+      <header className="base-head">
+        <div><div className="base-kicker">Données parlementaires du dossier</div><h1>Base documentaire</h1>
+        <p className="text-2">
           {d.client ?? "…"} · {d.label ?? id}
           {d.dateReference && ` · vu au ${formatDate(d.dateReference)}`}
-        </span>
-        <Link to={`/dossier/${id}`}>Tableau de bord</Link>
-      </div>
+        </p></div>
+        <Link className="btn-secondary" to={`/dossier/${id}`}>Retour au tableau de bord</Link>
+      </header>
 
       <Etat titre="État de la mesure" state={etat} aside={etat.data ? `article ${etat.data.mesure.article}` : undefined}>
         {(e) => (
@@ -262,6 +275,22 @@ export default function BaseView() {
       >
         {() => (
           <>
+            <div className="base-toolbar">
+            <input
+              type="search"
+              className="base-recherche"
+              placeholder="Rechercher un numéro, un auteur ou un mot-clé"
+              aria-label="Rechercher un amendement"
+              value={q}
+              onChange={(ev) => setQ(ev.target.value)}
+            />
+            <div className="base-selects">
+              <label>Statut<select value={sortFiltre} onChange={(e) => setSortFiltre(e.target.value as Sort | "")}><option value="">Tous</option>{SORT_ORDRE.map((s) => <option key={s} value={s}>{SORT_LABEL[s]}</option>)}</select></label>
+              <label>Groupe<select value={groupeFiltre} onChange={(e) => setGroupeFiltre(e.target.value)}><option value="">Tous</option>{[...groupeParId.values()].sort((a,b) => a.sigle.localeCompare(b.sigle)).map((g) => <option key={g.id} value={g.id}>{g.sigle}</option>)}</select></label>
+              <label>Nature<select value={natureFiltre} onChange={(e) => setNatureFiltre(e.target.value as Nature | "")}><option value="">Toutes</option>{(Object.keys(NATURE_LABEL) as Nature[]).map((n) => <option key={n} value={n}>{NATURE_LABEL[n]}</option>)}</select></label>
+              <label>Trier par<select value={tri} onChange={(e) => setTri(e.target.value as Tri)}><option value="statut">Statut</option><option value="recent">Dépôt récent</option><option value="numero">Numéro</option></select></label>
+            </div>
+            </div>
             <div className="base-filtres" role="group" aria-label="Filtrer par auteur">
               <button type="button" className="base-puce" aria-pressed={!instit} onClick={() => setInstit(false)}>
                 tous
@@ -270,15 +299,7 @@ export default function BaseView() {
                 Gouvernement et commission ({nInstit})
               </button>
             </div>
-            <input
-              type="search"
-              className="base-recherche"
-              placeholder="Rechercher : numéro, auteur, groupe, mot"
-              aria-label="Rechercher un amendement"
-              value={q}
-              onChange={(ev) => setQ(ev.target.value)}
-            />
-            <Table columns={colonnes} rows={amendements} rowKey={(a) => a.id} empty={q || instit ? "aucun amendement ne correspond" : "aucun amendement"} />
+            <Table columns={colonnes} rows={amendements} rowKey={(a) => a.id} empty={q || instit || sortFiltre || groupeFiltre || natureFiltre ? "Aucun amendement ne correspond à ces filtres" : "Aucun amendement"} />
           </>
         )}
       </Etat>
