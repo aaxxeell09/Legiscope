@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:38:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tIX.html"
+      }
+    ],
+    "limits": "9 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 5 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA588884",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tIX.html",
+      "date": "2025-10-28",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Secrétariat général des affaires européennes",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tVII.html",
+      "date": "2025-10-29",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction générale des étrangers en France du ministère de l’intérieur",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction nationale de la police aux frontières du ministère de l’intérieur",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office français de l’intégration et de l’immigration (OFII)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office français de protection des réfugiés et apatrides (OFPRA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Représentation permanente de la France auprès de l’Union européenne",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Personnalité qualifiée",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tI.html",
+      "date": "2025-11-04",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’Europe et des affaires étrangères",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère des armées",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Organisation des Nations unies",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Père Srđan Stanković",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tIII.html",
+      "date": "2025-11-12",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’Europe et des affaires étrangères",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la mondialisation",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre de crise et de soutien",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Représentation permanente de la France auprès des Nations unies",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autres diplomates",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’économie, des finances et de la souveraineté industrielle et énergétique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale du Trésor",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Représentants français dans les organisations internationales de développement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence française de développement",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Expertise France",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B1990-tVI.html",
+      "date": "2025-11-14",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’agriculture et de la souveraineté alimentaire",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "o M. Frédéric Lambert, chef du service Europe et international",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "o M. Guilhem Isaac, chef du bureau des négociations commerciales",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "o Mme Charlotte Denoix, adjointe au chef du bureau Vin et autres boissons",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "En Espagne",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Bodega Marques de Risqual",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Bodega Baigorri",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Atout France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération nationale des producteurs de vins et eaux-de-vie de vin à appellations d’origine contrôlées (CNAOC)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 9,
+    "rapports_avec_liste": 5
+  }
+}

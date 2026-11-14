@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:38:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html"
+      }
+    ],
+    "limits": "8 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 1 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA722358",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3394-tIV.html",
+      "date": "2026-10-22",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "KNDS France",
+          "type": "entreprise",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 8,
+    "rapports_avec_liste": 1
+  }
+}

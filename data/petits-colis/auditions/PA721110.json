@@ -1,0 +1,590 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:38:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tIX.html"
+      }
+    ],
+    "limits": "5 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 5 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA721110",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tIX.html",
+      "date": "2025-11-10",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Collectif citoyen J.O.P 2030",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité d’organisation des Jeux olympiques et paralympiques des Alpes Françaises 2030",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national olympique et sportif français",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité paralympique et sportif français",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère des sports, de la jeunesse et de la vie associative",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national du sport, de l’expertise et de la performance",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ligue réunionnaise de football",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale du sport",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société de livraison des ouvrages olympiques Alpes 2030",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence française de lutte contre le dopage",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française de basket-ball",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française de football",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française de gymnastique",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française de judo et disciplines associées",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tVII.html",
+      "date": "2025-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Agence nationale de la recherche (ANR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haut Conseil de l’évaluation de la recherche et de l’enseignement supérieur (Hcéres)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de la santé et de la recherche médicale (Inserm)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Universités",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil national de la recherche scientifique (CNRS)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut de recherche pour le développement (IRD)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (Inrae)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat National des Travailleurs de la Recherche Scientifique (SNTRS-CGT)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CGT Inrae",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat National de la Recherche Scientifique (SNCS-FSU)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CGT des établissements d’enseignement supérieur (CGT-FERC sup)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national de l’enseignement supérieur (SNESUP-FSU)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Unsa Éducation",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Sud recherche",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat National Indépendant de la Recherche Scientifique et de l’Enseignement Supérieur (SNIRS-CFE-CGC)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre de coopération internationale en recherche agronomique pour le développement (Cirad)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de l’enseignement supérieur, de la recherche et de l’espace",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tV.html",
+      "date": "2025-11-14",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "France Télévisions",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Arte-France",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe M6",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des radios libres (SNRL)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Distributeurs indépendants réunis européens (Dire)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des auteurs réalisateurs producteurs (ARP)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des éditeurs de films (Fnef)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des industries du cinéma, de l’audiovisuel et du multimédia (Ficam)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des producteurs de cinéma (UPC)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des producteurs indépendants (API)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des cinémas français (FNCF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des producteurs indépendants (SPI)",
+          "type": "federation",
+          "hatvp_id": "532334588"
+        },
+        {
+          "nom": "Bureau de liaison des organisations du cinéma (Bloc)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national du livre (CNL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France messagerie",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale de la presse d’information spécialisée (FNPS)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des éditeurs de la presse magazine (Sepm)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat de la presse indépendante d’information en ligne (Spiil)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Alliance de la presse d’information générale (Apig)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des producteurs phonographiques français indépendants (Upfi)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des producteurs de phonographiques (SCPP)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national de l’édition phonographique (Snep)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des musiques actuelles (SMA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des labels indépendants (Felin)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des producteurs de phonogrammes en France (SPPF)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Netflix",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Amazon",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "The Walt Disney Company France",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national de la musique (CNM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence France-Presse",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national du cinéma et de l’image animée (CNC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe Canal +",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de la culture",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tIV.html",
+      "date": "2025-11-17",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de l’éducation nationale",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Observatoire des zones prioritaires (OZP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des conseils de parents d’élèves des écoles publiques (FCPE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération syndicale unitaire (FSU)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des enseignants de l’UNSA (SE-Unsa)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des lycées, collèges, écoles et du supérieur (Snalc)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Sud Éducation",
+          "type": "syndicat",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2043-tII.html",
+      "date": "2025-11-18",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Association pour le soutien du théâtre privé (ASTP)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ekhoscènes",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des structures indépendantes de création et de production artistiques (Fscipa)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France festivals",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des musiques actuelles (SMA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Forces musicales",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Scène Ensemble",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndéac",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires de France (AMF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Régions de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société des auteurs et compositeurs dramatiques (SACD)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société des auteurs, compositeurs et éditeurs de musique (Sacem)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile pour l'administration des droits des artistes et musiciens interprètes (Adami)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société civile des auteurs multimédias (Scam)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société de perception et de distribution des droits des artistes-interprètes (Spedidam)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des centres chorégraphiques nationaux (ACCN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des centres dramatiques nationaux (ACDN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des centres de développement chorégraphique nationaux (A-CDCN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des scènes nationales (ASN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des écoles supérieures d’art et de design publiques (ANdÉA)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Manufactures nationales",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil national de l’ordre des architectes (CNOA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAS Pass Culture",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société des auteurs dans les arts graphiques et plastiques (Adagp)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national de la musique (CNM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Universcience",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conservatoire national supérieur de musique et danse de Paris",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École supérieure d’art dramatique du Théâtre national de Strasbourg",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national des arts du cirque",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Pôle d’Enseignement supérieur Spectacle Vivant Bretagne",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre national de danse contemporaine d’Angers",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère de la culture",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale supérieure de création industrielle (ENSCI-Les ateliers)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 5,
+    "rapports_avec_liste": 5
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:38:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tIX.html"
+      }
+    ],
+    "limits": "9 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 2 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA610968",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tIX.html",
+      "date": "2025-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Tribunal du stationnement payant (TSP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil d’État",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat de la juridiction administrative (SJA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union syndicale des magistrats administratifs (USMA)",
+          "type": "syndicat",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2006-tIII.html",
+      "date": "2025-11-18",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction générale des étrangers en France (DGEF)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction nationale de la police aux frontières (DNPAF)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Délégation nationale à la sécurité routière",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des douanes et droits indirects (DGDDI)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la gendarmerie nationale (DGGN)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la police nationale (DGPN)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Lieutenenant-Colonel Duquesne, délégué militaire départemental adjoint des Pyrénées-Atlantiques",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "État-major de la Marine",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 9,
+    "rapports_avec_liste": 2
+  }
+}
