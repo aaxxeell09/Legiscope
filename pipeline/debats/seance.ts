@@ -7,6 +7,7 @@ import { join } from "node:path";
 import type { DossierConfig } from "../../contracts";
 import { RAW } from "./contexte";
 import { anneePLF, contientMotCle, regexMotsCles, sansAccents } from "./texte";
+import { cibleRedirection, telechargerFichier } from "./telecharger";
 import type { Intervention, SourceLue } from "./types";
 
 export const URL_SYSERON = "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip";
@@ -20,10 +21,8 @@ export async function preparerSyseron(log: (s: string) => void): Promise<void> {
   // Les XML déjà décompressés suffisent : on ne retélécharge l'archive que si le dossier manque ou est vide.
   if (existsSync(DOSSIER_XML) && readdirSync(DOSSIER_XML).some((f) => f.endsWith(".xml"))) return;
   if (!existsSync(ZIP)) {
-    log(`téléchargement de ${URL_SYSERON} (62 Mo)`);
-    const r = await fetch(URL_SYSERON);
-    if (!r.ok) throw new Error(`syseron.xml.zip : HTTP ${r.status}`);
-    writeFileSync(ZIP, new Uint8Array(await r.arrayBuffer()));
+    log(`téléchargement de ${URL_SYSERON} (62 Mo, curl)`);
+    await telechargerFichier(URL_SYSERON, ZIP, log);
   }
   log("décompression de syseron.xml.zip");
   const p = Bun.spawnSync(["unzip", "-o", "-q", ZIP, "-d", join(RAW, "syseron")]);
@@ -93,15 +92,8 @@ export async function urlSeance(uid: string): Promise<string> {
   if (!cacheUrls) cacheUrls = existsSync(CACHE_URLS) ? JSON.parse(readFileSync(CACHE_URLS, "utf8")) : {};
   if (cacheUrls![uid]) return cacheUrls![uid];
   const brute = `https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/${uid}`;
-  let finale = brute;
-  try {
-    const r = await fetch(brute, { redirect: "manual" });
-    const loc = r.headers.get("location");
-    if (loc && /^https?:\/\//.test(loc)) finale = loc;
-    else if (loc) finale = new URL(loc, brute).toString();
-  } catch {
-    /* on garde l'URL brute, qui fonctionne aussi */
-  }
+  // Sans redirection ou sans réseau, on garde l'URL brute, qui fonctionne aussi.
+  const finale = cibleRedirection(brute) ?? brute;
   cacheUrls![uid] = finale;
   writeFileSync(CACHE_URLS, JSON.stringify(cacheUrls, null, 2));
   return finale;

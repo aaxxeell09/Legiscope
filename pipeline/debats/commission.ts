@@ -8,6 +8,7 @@ import { join } from "node:path";
 import * as cheerio from "cheerio";
 import type { DossierConfig } from "../../contracts";
 import { RAW } from "./contexte";
+import { telechargerTexte } from "./telecharger";
 import { anneePLF, contientMotCle, regexMotsCles, sansAccents } from "./texte";
 import type { Intervention, SourceLue } from "./types";
 
@@ -37,13 +38,13 @@ async function chargerRaw(annee: number, n: number): Promise<string | null> {
   const f404 = f + ".404";
   if (existsSync(f)) return readFileSync(f, "utf8");
   if (existsSync(f404)) return null;
-  const r = await fetch(urlRawCommission(annee, n));
+  const r = await telechargerTexte(urlRawCommission(annee, n));
   if (r.status === 404) {
     writeFileSync(f404, "");
     return null;
   }
-  if (!r.ok) throw new Error(`${urlRawCommission(annee, n)} : HTTP ${r.status}`);
-  const html = await r.text();
+  if (r.status < 200 || r.status >= 300) throw new Error(`${urlRawCommission(annee, n)} : HTTP ${r.status}`);
+  const html = r.body;
   // La page d'erreur du site est servie en 200 avec un gabarit sans contenu de réunion.
   if (!html.includes("assnatSection") && !/Compte rendu n°/i.test(html)) {
     writeFileSync(f404, "");
