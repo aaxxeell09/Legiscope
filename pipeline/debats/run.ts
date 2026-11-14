@@ -6,7 +6,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ArgumentSchema, ArgumentsSchema, DebatsSchema, type Argument, type Debats, type DossierConfig } from "../../contracts";
 import { chargerContexte, deputesDuDossier, horodatage, normaliserNom, RACINE, type Contexte } from "./contexte";
-import { classerTout, cleDisponible, regrouper, verifierCamp, type ClassementVerifie } from "./classer";
+import { classerParRegles, classerTout, cleDisponible, regrouper, verifierCamp, type ClassementVerifie } from "./classer";
 import { lireCommission } from "./commission";
 import { lireSeances, orateursSeance, preparerSyseron, URL_SYSERON } from "./seance";
 import { extrait, regexMotsCles, sansAccents } from "./texte";
@@ -58,7 +58,9 @@ function dedoublonner(cands: Candidat[]): Candidat[] {
   });
   const gardes: Candidat[] = [];
   for (const c of tri) {
-    const doublon = gardes.some((g) => g.c.citation === c.c.citation || jaccard(g.c.argument, c.c.argument) >= 0.5);
+    // Règles de mots : libellés tous semblables, on ne fusionne que même mot et même orateur ; sinon, libellés proches.
+    const doublon = gardes.some((g) => g.c.citation === c.c.citation
+      || (c.c.origine === "regles" ? g.c.regle === c.c.regle && g.it.orateur_nom === c.it.orateur_nom : jaccard(g.c.argument, c.c.argument) >= 0.5));
     if (!doublon) gardes.push(c);
   }
   return gardes.sort((a, b) => (a.it.date < b.it.date ? 1 : a.it.date > b.it.date ? -1 : 0));
@@ -66,7 +68,7 @@ function dedoublonner(cands: Candidat[]): Candidat[] {
 
 /** Regroupe par le modèle les arguments d'un camp (repli : dédoublonnage lexical) ; garde la citation la plus claire de chaque groupe. */
 async function regrouperCamp(dossier: DossierConfig, camp: "pour" | "contre", cands: Candidat[], log: (s: string) => void): Promise<{ cand: Candidat; libelle: string; aussi: Candidat[] }[]> {
-  const groupes = await regrouper(dossier, camp, cands.map((x) => ({ argument: x.c.argument, citation: x.c.citation })), log);
+  const groupes = cands.some((x) => x.c.origine === "regles") ? null : await regrouper(dossier, camp, cands.map((x) => ({ argument: x.c.argument, citation: x.c.citation })), log);
   if (!groupes) return dedoublonner(cands).map((cand) => ({ cand, libelle: cand.c.argument, aussi: [] }));
   const out = groupes.map((g) => ({ cand: cands[g.meilleure], libelle: g.argument, aussi: g.membres.filter((i) => i !== g.meilleure).map((i) => cands[i]) }));
   return out.sort((a, b) => b.aussi.length - a.aussi.length || (a.cand.it.date < b.cand.it.date ? 1 : a.cand.it.date > b.cand.it.date ? -1 : 0));
@@ -76,7 +78,11 @@ function versArgument(ctx: Contexte, cand: Candidat, libelle?: string, aussi: Ca
   const { it, c } = cand;
   const orateurConnu = it.acteur_id !== null && ctx.deputes.has(it.acteur_id);
   const qui = `${it.orateur_nom}${it.orateur_qualite ? `, ${it.orateur_qualite}` : ""}`;
-  const comment = c.origine === "manuel" ? "classement relu à la main par la session A2" : `classement par le modèle ${c.modele}, confiance ${c.confiance.toFixed(2)}`;
+  const comment = c.origine === "manuel"
+    ? "classement relu à la main par la session A2"
+    : c.origine === "regles"
+      ? `classement par règle de mots (« ${c.regle} »), sans modèle, à relire`
+      : `classement par le modèle ${c.modele}, confiance ${c.confiance.toFixed(2)}`;
   const egalement = aussi.length
     ? ` Même argument entendu aussi chez ${aussi.map((a) => `${a.it.orateur_nom} (${a.it.lieu === "seance" ? "séance" : "commission"} du ${a.it.date})`).join(", ")}.`
     : "";
@@ -147,8 +153,9 @@ async function traiterDossier(ctx: Contexte, dossier: DossierConfig): Promise<vo
   log(`${ids.length} fichiers debats/<PA>.json écrits, ${avecDebats} avec au moins une intervention`);
 
   // 2. Arguments entendus, pour et contre la mesure.
+  // --sans-classement : règles de mots (version rapide), sans modèle ni second avis.
   const { resultats, modeleUtilise, rejets, appels } = sansClassement
-    ? { resultats: new Map(), modeleUtilise: false, rejets: 0, appels: 0 }
+    ? { resultats: new Map(interventions.flatMap((it) => { const c = classerParRegles(dossier, it); return c ? [[it.id, c] as const] : []; })), modeleUtilise: false, rejets: 0, appels: 0 }
     : await classerTout(dossier, interventions, log);
   const candidatsBruts: Candidat[] = [];
   for (const it of interventions) {
@@ -160,7 +167,7 @@ async function traiterDossier(ctx: Contexte, dossier: DossierConfig): Promise<vo
   const cands: Candidat[] = [];
   let desaccords = 0;
   for (const cand of candidatsBruts) {
-    if (cand.c.origine === "manuel") { cands.push(cand); continue; }
+    if (cand.c.origine !== "modele") { cands.push(cand); continue; }
     const v = await verifierCamp(dossier, cand.it, cand.c, log);
     if (v && v.camp !== cand.c.camp) { desaccords += 1; log(`camp contesté ${cand.it.id} : ${cand.c.camp} puis ${v.camp}, écarté`); continue; }
     cands.push(cand);
@@ -169,7 +176,9 @@ async function traiterDossier(ctx: Contexte, dossier: DossierConfig): Promise<vo
   const contre = (await regrouperCamp(dossier, "contre", cands.filter((x) => x.c.camp === "contre"), log)).map((g) => versArgument(ctx, g.cand, g.libelle, g.aussi));
   const limites = [
     `${interventions.length} prises de parole sur le sujet lues dans ${lues.length} comptes rendus (${comptesRendusLus} comptes rendus parcourus) ; ${resultats.size} classées, ${cands.length} retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), ${rejets} rejetées pour citation inexacte, ${desaccords} écartées car le second avis du modèle contredit le camp ; ${pour.length} pour et ${contre.length} contre après dédoublonnage.`,
-    cleDisponible() ? `Classement par le modèle Featherless (${appels} appels à cette exécution, cache sur disque).` : "FEATHERLESS_API_KEY absente : seuls les classements relus à la main (pipeline/debats/classement-manuel) sont utilisés.",
+    sansClassement
+      ? "Version rapide : camp déduit par règles de mots (supprimer, rétablir les crédits, baisse = contre la baisse ; maîtrise, économies = pour), sans modèle, chaque argument à relire."
+      : cleDisponible() ? `Classement par le modèle Featherless (${appels} appels à cette exécution, cache sur disque).` : "FEATHERLESS_API_KEY absente : seuls les classements relus à la main (pipeline/debats/classement-manuel) sont utilisés.",
     `Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du ${dossier.date_reference ?? "jour courant"} (matin) ni après.`,
   ].join(" ");
   const argumentsJson = ArgumentsSchema.parse({

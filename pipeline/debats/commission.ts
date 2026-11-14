@@ -3,16 +3,21 @@
 // par /dyn/docs/CRCANR5L17S<annee>PO59048N<nnn>.raw (HTML). On énumère les numéros d'une session,
 // on met en cache sur disque, on garde les paragraphes sur le sujet, orateur lu dans le gras.
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, statSync, unlinkSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import * as cheerio from "cheerio";
 import type { DossierConfig } from "../../contracts";
 import { RAW } from "./contexte";
 import { telechargerTexte } from "./telecharger";
-import { anneePLF, contientMotCle, regexMotsCles, sansAccents } from "./texte";
+import { anneePLF, contientMotCle, regexMotsCles, sansAccents, sansReglement } from "./texte";
 import type { Intervention, SourceLue } from "./types";
 
-const PO_FINANCES = "PO59048";
+type Organe = { po: string; slug: string; label: string };
+const FINANCES: Organe = { po: "PO59048", slug: "cion_fin", label: "Commission des finances" };
+const AFFAIRES_SOCIALES: Organe = { po: "PO420120", slug: "cion-soc", label: "Commission des affaires sociales" };
+/** Commissions lues par dossier ; finances seule par défaut. L'apprentissage (mission Travail et emploi) passe aussi en affaires sociales. */
+const ORGANES_PAR_DOSSIER: Record<string, Organe[]> = { "plf2027-apprentissage": [FINANCES, AFFAIRES_SOCIALES] };
+let organeCourant: Organe = FINANCES;
 const CACHE = join(RAW, "commission");
 
 const MOIS: Record<string, string> = {
@@ -21,14 +26,14 @@ const MOIS: Record<string, string> = {
 };
 
 export function uidCommission(annee: number, n: number): string {
-  return `CRCANR5L17S${annee}${PO_FINANCES}N${String(n).padStart(3, "0")}`;
+  return `CRCANR5L17S${annee}${organeCourant.po}N${String(n).padStart(3, "0")}`;
 }
 export function urlRawCommission(annee: number, n: number): string {
   return `https://www.assemblee-nationale.fr/dyn/docs/${uidCommission(annee, n)}.raw`;
 }
 export function urlPageCommission(annee: number, n: number): string {
   const ss = `${String(annee - 1).slice(2)}${String(annee).slice(2)}`;
-  return `https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin${ss}${String(n).padStart(3, "0")}_compte-rendu`;
+  return `https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/${organeCourant.slug}/l17${organeCourant.slug}${ss}${String(n).padStart(3, "0")}_compte-rendu`;
 }
 
 /** Télécharge (ou relit le cache) le HTML brut d'une réunion ; null si la page n'existe pas (404). */
@@ -37,7 +42,11 @@ async function chargerRaw(annee: number, n: number): Promise<string | null> {
   const f = join(CACHE, `${uidCommission(annee, n)}.raw`);
   const f404 = f + ".404";
   if (existsSync(f)) return readFileSync(f, "utf8");
-  if (existsSync(f404)) return null;
+  // Un 404 n'est pas définitif pendant la session : le marqueur expire après deux heures.
+  if (existsSync(f404)) {
+    if (Date.now() - statSync(f404).mtimeMs < 2 * 3600 * 1000) return null;
+    unlinkSync(f404);
+  }
   const r = await telechargerTexte(urlRawCommission(annee, n));
   if (r.status === 404) {
     writeFileSync(f404, "");
@@ -120,98 +129,109 @@ export async function lireCommission(dossier: DossierConfig, log: (s: string) =>
   let absents = 0;
   let tropTard = 0;
 
-  for (let n = 1; n <= 400; n++) {
-    const html = await chargerRaw(session, n);
-    if (html === null) {
-      absents += 1;
-      if (absents >= 3) break;
-      continue;
-    }
+  for (const organe of ORGANES_PAR_DOSSIER[dossier.id] ?? [FINANCES]) {
+    organeCourant = organe;
     absents = 0;
-    // Les <br> de l'en-tête (« Mardi<br>14 octobre 2025 ») deviennent des espaces avant la lecture du texte.
-    const $ = cheerio.load(html.replace(/<br\s*\/?>/gi, " "));
-    const date = dateReunion($, html);
-    if (!date) {
-      log(`commission ${uidCommission(session, n)} : date introuvable, ignorée`);
-      continue;
-    }
-    if (date >= limite) { // réunion du jour de référence ou après : pas encore connue ce matin-là
-      tropTard += 1;
-      if (tropTard >= 8) break;
-      continue;
-    }
     tropTard = 0;
-    const plat = sansAccents($("body").text());
-    if (marquePLF && !plat.includes(marquePLF)) continue;
-    scannees += 1;
-    if (!re.test(plat)) continue;
+    for (let n = 1; n <= 400; n++) {
+      const html = await chargerRaw(session, n);
+      if (html === null) {
+        absents += 1;
+        if (absents >= 3) break;
+        continue;
+      }
+      absents = 0;
+      // Les <br> de l'en-tête (« Mardi<br>14 octobre 2025 ») deviennent des espaces avant la lecture du texte.
+      const $ = cheerio.load(html.replace(/<br\s*\/?>/gi, " "));
+      const date = dateReunion($, html);
+      if (!date) {
+        log(`commission ${uidCommission(session, n)} : date introuvable, ignorée`);
+        continue;
+      }
+      if (date >= limite) { // réunion du jour de référence ou après : pas encore connue ce matin-là
+        tropTard += 1;
+        if (tropTard >= 8) break;
+        continue;
+      }
+      tropTard = 0;
+      const plat = sansAccents($("body").text());
+      if (marquePLF && !plat.includes(marquePLF)) continue;
+      scannees += 1;
+      if (!re.test(sansReglement(plat))) continue;
 
-    const url = urlPageCommission(session, n);
-    const label = `Commission des finances, réunion n° ${n} du ${date.slice(8, 10)}/${date.slice(5, 7)}/${date.slice(0, 4)}`;
-    let retenus = 0;
-    let orateur: Orateur | null = null;
-    let articleCourant = "";
-    let contexte = "";
-    let ordre = 0;
+      const url = urlPageCommission(session, n);
+      const label = `${organeCourant.label}, réunion n° ${n} du ${date.slice(8, 10)}/${date.slice(5, 7)}/${date.slice(0, 4)}`;
+      let retenus = 0;
+      let orateur: Orateur | null = null;
+      let articleCourant = "";
+      let contexte = "";
+      let ordre = 0;
 
-    $("p").each((_, el) => {
-      ordre += 1;
-      const $p = $(el);
-      const texteComplet = $p.text().replace(/ /g, " ").replace(/\s+/g, " ").trim();
-      if (!texteComplet) return;
-      const classe = $p.attr("class") ?? "";
-      // Intitulés de section (« Article 22 », « Après l'article 22 », « Avant l'article 3 »).
-      const titre = sansAccents(texteComplet).match(/^(?:article|apres l'article|avant l'article|article additionnel apres l'article)\s+(\d+[a-z]*)\b/);
-      if (titre && texteComplet.length < 200 && (classe.includes("Titre") || /^[A-ZÀ-ÿ]/.test(texteComplet))) {
-        articleCourant = titre[1];
-        contexte = texteComplet;
-        if (!classe.includes("Titre")) {
-          // Un paragraphe qui commence par « Article 22 » mais continue avec du texte n'est pas un titre.
-          if (texteComplet.length > 60) articleCourant = articleCourant;
+      $("p").each((_, el) => {
+        ordre += 1;
+        const $p = $(el);
+        const texteComplet = $p.text().replace(/ /g, " ").replace(/\s+/g, " ").trim();
+        if (!texteComplet) return;
+        const classe = $p.attr("class") ?? "";
+        // Intitulés de section (« Article 22 », « Après l'article 22 », « Avant l'article 3 »).
+        const titre = sansAccents(texteComplet).match(/^(?:article|apres l'article|avant l'article|article additionnel apres l'article)\s+(\d+[a-z]*)\b/);
+        if (titre && texteComplet.length < 200 && (classe.includes("Titre") || /^[A-ZÀ-ÿ]/.test(texteComplet))) {
+          articleCourant = titre[1];
+          contexte = texteComplet;
+          if (!classe.includes("Titre")) {
+            // Un paragraphe qui commence par « Article 22 » mais continue avec du texte n'est pas un titre.
+            if (texteComplet.length > 60) articleCourant = articleCourant;
+          }
+          if (texteComplet.length < 80) return;
         }
-        if (texteComplet.length < 80) return;
-      }
-      // Intitulé d'amendement (« Amendement I-CF1234 de M. X », « Amendements identiques ... ») : contexte des avis qui suivent.
-      if (texteComplet.length < 300 && /^Amendements?\s/i.test(texteComplet) && !$p.find("span[style*='font-weight:bold']").length) {
-        contexte = texteComplet;
-        return;
-      }
-      if (classe.includes("assnat") && !classe.includes("Normal")) return; // en-têtes, sommaire, présence
-      const gras = $p.find("b, strong, span[style*='font-weight:bold']").first();
-      let texte = texteComplet;
-      if (gras.length) {
-        const g = gras.text().replace(/\s+/g, " ").trim();
-        const lu = lireOrateur(g);
-        if (lu && texteComplet.startsWith(g)) {
-          orateur = lu;
-          texte = texteComplet.slice(g.length).trim();
+        // Intitulé d'amendement (« Amendement I-CF1234 de M. X », « Amendements identiques ... ») : contexte des avis qui suivent.
+        if (texteComplet.length < 300 && /^Amendements?\s/i.test(texteComplet) && !$p.find("span[style*='font-weight:bold']").length) {
+          contexte = texteComplet;
+          return;
         }
-      }
-      if (!orateur || orateur.president) return;
-      if (texte.length < 40) return;
-      const motCle = contientMotCle(texte, re);
-      const dansArticle = article !== "" && articleCourant === article;
-      if (!motCle && !dansArticle) return;
-      retenus += 1;
-      interventions.push({
-        id: `${uidCommission(session, n)}#${ordre}`,
-        dossier_id: dossier.id,
-        date,
-        lieu: "commission",
-        url,
-        source_label: label,
-        orateur_nom: orateur.nom,
-        orateur_qualite: orateur.qualite,
-        acteur_id: null,
-        groupe_sigle: orateur.sigle,
-        texte,
-        contexte,
-        mot_cle: motCle,
+        if (classe.includes("assnat") && !classe.includes("Normal")) return; // en-têtes, sommaire, présence
+        // L'orateur est en gras en tête de paragraphe, parfois en plusieurs morceaux contigus (« M. » puis « Théo Bernhardt, rapporteur pour avis. »).
+        let g = "";
+        $p.find("b, strong, span[style*='font-weight:bold']").each((_, b) => {
+          const morceau = $(b).text().replace(/ /g, " ").replace(/\s+/g, " ").trim();
+          if (!morceau) return;
+          const essai = (g + " " + morceau).trim();
+          if (texteComplet.startsWith(essai)) g = essai;
+        });
+        let texte = texteComplet;
+        if (g) {
+          const lu = lireOrateur(g);
+          if (lu) {
+            orateur = lu;
+            texte = texteComplet.slice(g.length).trim();
+          }
+        }
+        if (!orateur || orateur.president) return;
+        if (texte.length < 40) return;
+        const motCle = contientMotCle(texte, re);
+        const dansArticle = article !== "" && articleCourant === article;
+        if (!motCle && !dansArticle) return;
+        retenus += 1;
+        interventions.push({
+          id: `${uidCommission(session, n)}#${ordre}`,
+          dossier_id: dossier.id,
+          date,
+          lieu: "commission",
+          url,
+          source_label: label,
+          orateur_nom: orateur.nom,
+          orateur_qualite: orateur.qualite,
+          acteur_id: null,
+          groupe_sigle: orateur.sigle,
+          texte,
+          contexte,
+          mot_cle: motCle,
+        });
       });
-    });
-    if (retenus > 0) {
-      lues.push({ lieu: "commission", uid: uidCommission(session, n), date, url, label, retenus });
-      log(`commission n° ${n} ${date} : ${retenus} paragraphes`);
+      if (retenus > 0) {
+        lues.push({ lieu: "commission", uid: uidCommission(session, n), date, url, label, retenus });
+        log(`${organeCourant.label.toLowerCase()} n° ${n} ${date} : ${retenus} paragraphes`);
+      }
     }
   }
   return { interventions, lues, scannees };

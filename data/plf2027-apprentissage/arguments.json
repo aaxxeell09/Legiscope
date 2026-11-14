@@ -1,0 +1,399 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:10:43+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Troisième séance du vendredi 25 octobre 2024",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/troisieme-seance-du-vendredi-25-octobre-2024"
+      },
+      {
+        "label": "Première séance du jeudi 09 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-jeudi-09-avril-2026"
+      },
+      {
+        "label": "Première séance du mardi 28 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-28-avril-2026"
+      },
+      {
+        "label": "Troisième séance du mardi 28 avril 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-mardi-28-avril-2026"
+      },
+      {
+        "label": "Première séance du mercredi 27 mai 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-27-mai-2026"
+      },
+      {
+        "label": "Première séance du mardi 16 juin 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mardi-16-juin-2026"
+      },
+      {
+        "label": "Première séance du mercredi 17 juin 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-mercredi-17-juin-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 01 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-01-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du jeudi 01 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-jeudi-01-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 02 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-02-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 06 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-06-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du lundi 12 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-12-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du mardi 13 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du lundi 19 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-19-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 20 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-20-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 21 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-21-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 27 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 28 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-28-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 29 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-29-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 29 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-29-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du mardi 03 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-03-novembre-2026"
+      },
+      {
+        "label": "Première séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 12 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-12-novembre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 3 du 01/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627003_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 10 du 08/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627010_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 12 du 09/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 18 du 20/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627018_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 21 du 21/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627021_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 31 du 26/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627031_compte-rendu"
+      },
+      {
+        "label": "Commission des finances, réunion n° 34 du 29/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires sociales, réunion n° 19 du 27/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627019_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+      },
+      {
+        "label": "Commission des affaires sociales, réunion n° 23 du 04/11/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627023_compte-rendu"
+      }
+    ],
+    "limits": "162 prises de parole sur le sujet lues dans 42 comptes rendus (88 comptes rendus parcourus) ; 11 classées, 11 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 0 rejetées pour citation inexacte, 0 écartées car le second avis du modèle contredit le camp ; 1 pour et 10 contre après dédoublonnage. Version rapide : camp déduit par règles de mots (supprimer, rétablir les crédits, baisse = contre la baisse ; maîtrise, économies = pour), sans modèle, chaque argument à relire. Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "pour": [
+    {
+      "argument": "Position pour la baisse des crédits déduite du mot « economies » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "Dans cet esprit, nous continuerons de défendre trois lignes : pas de hausse d’impôts, des économies par l’efficience sur le coût des opérateurs, et aucune fragilisation de ce qui fonctionne pour l’emploi, comme l’apprentissage et l’accompagnement des jeunes.",
+      "orateur_id": "PA794058",
+      "groupe_id": "PO845425",
+      "date": "2026-11-04",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé pour la mesure parce que l'orateur (Justine Gruet) la défend : « Position pour la baisse des crédits déduite du mot « economies » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« economies »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    }
+  ],
+  "contre": [
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « retablir les credits » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "Il s’agit de rétablir les crédits alloués à France compétences à leur niveau de 2026, soit 516 millions d’euros.",
+      "orateur_id": "PA841091",
+      "groupe_id": "PO845419",
+      "date": "2026-11-04",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Arnaud Simion) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « retablir les credits » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« retablir les credits »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "Concernant l’apprentissage, l’écart entre les autorisations d’engagement en hausse de 6 % et les crédits de paiement en baisse de 19 % ainsi que les 788 000 entrées prévues traduisent un ralentissement assumé.",
+      "orateur_id": "PA719404",
+      "groupe_id": "PO845407",
+      "date": "2026-11-04",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Didier Le Gac) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « supprimer » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "Vous avez repoussé tout à l’heure notre amendement visant à supprimer la contribution de 350 euros sur le CPF, au motif que vous aviez déposé un amendement de suppression de l’article 89 ; or cet article plafonne également les frais de jury applicables à la validation des acquis de l’expérience (VAE).",
+      "orateur_id": "PA793736",
+      "groupe_id": "PO845413",
+      "date": "2026-11-04",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Hadrien Clouet) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « supprimer » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "La suppression décidée en 2026, comme l’a rappelé M. le rapporteur général, s’appuyait sur les recommandations de l’IGF et de l’Igas, qui la préconisaient dans un rapport de juillet 2023 pour consolider le financement de l’apprentissage par les employeurs qui y ont recours, que ces entreprises soient à caractère lucratif ou non.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 04 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. David Amiel, ministre, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "Je suis favorable à la suppression de cette contribution forfaitaire, et j’ai moi-même déposé un amendement en ce sens à l’article 89.",
+      "orateur_id": null,
+      "groupe_id": null,
+      "date": "2026-11-04",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (le rapporteur pour avis, sans identifiant de député dans deputes.json) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « supprimer » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "L’amendement II-CF687 vise à supprimer 1,6 milliard de crédits sur un budget de 2,4 milliards : il ne resterait pas grand-chose pour l’apprentissage.",
+      "orateur_id": "PA842271",
+      "groupe_id": "PO845514",
+      "date": "2026-10-29",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 34 du 29/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Emmanuel Maurel, rapporteur spécial) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « supprimer » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« supprimer »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "L’article 88 prévoit la suppression des enveloppes régionales de financement des centres de formation d’apprentis, la mise en extinction des pactes régionaux d’investissement dans les compétences et la mutualisation des contrats d’apprentissage, au risque d’une perte d’expertise.",
+      "orateur_id": "PA841463",
+      "groupe_id": "PO845419",
+      "date": "2026-10-29",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des finances, réunion n° 34 du 29/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627034_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (Estelle Mercier, rapporteure spéciale) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "Avec 18,9 milliards d’euros prévus pour 2027 contre 20,8 milliards d’euros en 2026, soit une diminution de près de 2 milliards et de 9,5 %, cette mission contribue fortement à l’effort de redressement de nos finances publiques à travers principalement une réforme du financement de la formation professionnelle, avec notamment la suppression de la subvention de 516 millions d’euros à France Compétences et l’arrêt des nouveaux pactes régionaux d’investissement dans les compétences.",
+      "orateur_id": "PA794234",
+      "groupe_id": "PO845470",
+      "date": "2026-10-27",
+      "lieu": "commission",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627019_compte-rendu",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Commission des affaires sociales, réunion n° 19 du 27/10/2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627019_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (François Gernigon) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « suppression » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« suppression »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "Cette ponction s’ajoute à la baisse de 5 points du taux du FCTVA, à la restriction de la dynamique de TVA transférée et à la réduction des ressources régionales issues de la réforme de l’apprentissage.",
+      "orateur_id": "PA942",
+      "groupe_id": "PO845485",
+      "date": "2026-10-14",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mercredi 14 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Charles de Courson) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "argument": "Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche",
+      "citation": "Derrière la baisse démographique, nous voyons l’opportunité de réorganiser notre école pour mieux remplacer les absences, alléger les effectifs des classes et améliorer les conditions d’apprentissage.",
+      "orateur_id": "PA793716",
+      "groupe_id": "PO845454",
+      "date": "2026-10-06",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-06-octobre-2026",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Première séance du mardi 06 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-06-octobre-2026"
+          }
+        ],
+        "raisonnement": "Classé contre la mesure parce que l'orateur (M. Laurent Croizier) s'y oppose ou veut la réduire : « Position contre la baisse des crédits déduite du mot « baisse » dans une phrase sur apprentissage et aides à l'embauche ». Citation recopiée mot pour mot du compte rendu ; classement par règle de mots (« baisse »), sans modèle, à relire.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}

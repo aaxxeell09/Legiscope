@@ -12,7 +12,7 @@ import { z } from "zod";
 import type { DossierConfig } from "../../contracts";
 import { BASE_URL, cleDisponible, MODELE } from "../lib/llm";
 import { RAW } from "./contexte";
-import { citationDansSource } from "./texte";
+import { citationDansSource, phrases, regexMotsCles, sansAccents } from "./texte";
 import type { Intervention } from "./types";
 
 export const ClassementSchema = z.object({
@@ -24,7 +24,7 @@ export const ClassementSchema = z.object({
 });
 export type Classement = z.infer<typeof ClassementSchema>;
 
-export type ClassementVerifie = Classement & { origine: "modele" | "manuel"; modele: string | null };
+export type ClassementVerifie = Classement & { origine: "modele" | "manuel" | "regles"; modele: string | null; regle?: string };
 
 export { cleDisponible };
 const CONCURRENCE = Number(process.env.FEATHERLESS_CONCURRENCE ?? "2");
@@ -311,6 +311,47 @@ export async function verifierCamp(
       log(`vérification ${it.id} : ${String(e).slice(0, 160)}`);
       await Bun.sleep(1500 * 2 ** essai);
     }
+  }
+  return null;
+}
+
+// --- Classement par règles de mots (version rapide, sans modèle) --------------------------------------
+
+/** Mots qui trahissent le camp par rapport à une mesure de baisse de crédits (consigne P0 du 14 novembre, 16 h 05). */
+const MOTS_CONTRE = ["supprimer", "suppression", "rétablir les crédits", "rétablissement des crédits", "baisse", "coupe", "rabot"];
+const MOTS_POUR = ["maîtrise des dépenses", "maîtrise de la dépense", "maîtrise budgétaire", "maîtriser la dépense", "économies", "économie budgétaire"];
+
+/**
+ * Camp déduit de la première phrase qui parle du sujet et contient un mot d'un seul camp.
+ * Citation = cette phrase, donc toujours retrouvée mot pour mot. Confiance fixe 0,7. null si aucune phrase ne tranche.
+ */
+export function classerParRegles(dossier: DossierConfig, it: Intervention): ClassementVerifie | null {
+  const reSujet = regexMotsCles(dossier.sujet.mots_cles);
+  const reContre = regexMotsCles(MOTS_CONTRE);
+  const rePour = regexMotsCles(MOTS_POUR);
+  const ph = phrases(it.texte);
+  for (let i = 0; i < ph.length; i++) {
+    // Même phrase : le mot-clé du sujet ET le mot de camp (une phrase voisine ne suffit pas, trop de faux amis).
+    const plat = sansAccents(ph[i]);
+    if (!reSujet.test(plat)) continue;
+    const mc = plat.match(reContre);
+    const mp = plat.match(rePour);
+    if (!!mc === !!mp) continue; // ni l'un ni l'autre, ou les deux : on ne tranche pas
+    const camp = mc ? "contre" : "pour";
+    const mot = (mc ?? mp)![2];
+    const citation = ph[i].length >= 15 ? ph[i] : [ph[i], ph[i + 1] ?? ""].join(" ").trim();
+    return {
+      sur_le_sujet: true,
+      camp,
+      argument: camp === "contre"
+        ? `Position contre la baisse des crédits déduite du mot « ${mot} » dans une phrase sur ${dossier.sujet.label.toLowerCase()}`
+        : `Position pour la baisse des crédits déduite du mot « ${mot} » dans une phrase sur ${dossier.sujet.label.toLowerCase()}`,
+      citation,
+      confiance: 0.7,
+      origine: "regles",
+      modele: null,
+      regle: mot,
+    };
   }
   return null;
 }

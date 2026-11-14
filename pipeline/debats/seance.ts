@@ -6,7 +6,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join } from "node:path";
 import type { DossierConfig } from "../../contracts";
 import { RAW } from "./contexte";
-import { anneePLF, contientMotCle, regexMotsCles, sansAccents } from "./texte";
+import { anneePLF, contientMotCle, regexMotsCles, sansAccents, sansReglement } from "./texte";
 import { cibleRedirection, telechargerFichier } from "./telecharger";
 import type { Intervention, SourceLue } from "./types";
 
@@ -146,7 +146,7 @@ export async function lireSeances(dossier: DossierConfig, log: (s: string) => vo
     const plat = sansAccents(xml);
     if (marquePLF && !plat.includes(marquePLF)) continue;
     scannees += 1;
-    if (!re.test(plat)) continue;
+    if (!re.test(sansReglement(plat))) continue;
 
     const url = await urlSeance(meta.uid);
     const label = labelSeance(meta);

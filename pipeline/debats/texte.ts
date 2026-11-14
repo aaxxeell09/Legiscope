@@ -21,8 +21,13 @@ export function regexMotsCles(motsCles: string[]): RegExp {
   return new RegExp(`(^|[^a-z0-9])(${parts.join("|")})(?=$|[^a-z0-9])`, "i");
 }
 
+/** Retire les renvois au Règlement de l'Assemblée (« au titre de l'article 88 du Règlement ») : « article 88 » y est un faux ami. */
+export function sansReglement(plat: string): string {
+  return plat.replace(/articles?\s+\d+[a-z]*(?:\s*(?:,|et)\s*\d+[a-z]*)*\s+du\s+reglement/g, " ");
+}
+
 export function contientMotCle(texte: string, re: RegExp): boolean {
-  return re.test(sansAccents(texte));
+  return re.test(sansReglement(sansAccents(texte)));
 }
 
 /** Découpe en phrases (point, point d'interrogation, point d'exclamation, suivis d'un espace et d'une majuscule ou d'un guillemet). */
