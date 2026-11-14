@@ -126,7 +126,7 @@ Présenter à ce député la position du client ({{client}}) sur la mesure : auc
 ## Prompt associé (`synthese.md`)
 
 - Format : texte brut, sans variable. Le fichier entier ouvre le message ; l'appelant ajoute `Champ demandé : position_probable` (ou `argument`), puis `Entrée (JSON) :` et l'entrée. C'est ce que fait `rediger` de `pipeline/fiches/lib/redaction.ts`. Un appel par champ, une phrase par appel.
-- Entrée passée par A4 aujourd'hui : `depute` (`id`, `nom`, `prenom`, `groupe_sigle`), `mesure`, `client`, `position_cible`, `position_groupe` (`position`, `confiance`, ou `null`), `amendements` (`numero`, `role`, `resume`, `sort`, `travaille_avec`), `debats` (`date`, `lieu`, `citation`), `auditions` (`date`, `role`, `entendu_par` : la règle du rôle redite en clair par A4, `organisations` : liste de noms).
+- Entrée passée par A4 aujourd'hui : `depute` (`id`, `nom`, `prenom`, `groupe_sigle`), `mesure`, `client`, `position_cible`, `position_groupe` (`position`, `confiance`, ou `null`), `amendements` (`numero`, `role`, `resume`, `sort`, `travaille_avec`), `debats` (`date`, `lieu`, `citation`), `auditions` (`date`, `role`, `entendu_par` : la règle du rôle redite en clair par A4, `organisations` : liste de noms), `classement_du_cabinet` (`liste`, `position_sur_la_mesure`, `raison`, `fondement`, ou `null` : le classement de P3, que la synthèse ne doit pas contredire).
 - L'entrée ne contient aucun vote brut, ni `n_ecarts`, ni `loyaute_12m`. Le prompt interdit de citer `position_groupe.confiance`.
 - Le prompt lit `auditions[].role` (et `entendu_par`) et applique la règle « a entendu » ou « entendues par les rapporteurs de sa commission ».
 - Liste autorisée : les nombres de l'entrée JSON.
