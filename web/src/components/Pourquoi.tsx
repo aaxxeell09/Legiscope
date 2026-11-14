@@ -1,8 +1,18 @@
 import { useEffect, useId, useRef, useState } from "react";
+import { Badge } from "./Badge";
+
+export type NaturePreuve = "fait" | "deduction" | "inconnue";
 
 export type Justification = {
   sources: { label: string; url: string }[];
   raisonnement: string;
+  nature?: NaturePreuve;
+};
+
+type PourquoiProps = Partial<Justification> & {
+  /** Bloc `preuve` des contrats, passé tel quel : `<Pourquoi preuve={e.preuve} />`. */
+  preuve?: Justification | null;
+  label?: string;
 };
 
 /**
@@ -11,7 +21,10 @@ export type Justification = {
  * raisonnement. Clavier : Entrée ou Espace ouvre, Échap ferme, le focus revient
  * sur le bouton.
  */
-export function Pourquoi({ sources, raisonnement, label = "pourquoi" }: Justification & { label?: string }) {
+export function Pourquoi({ preuve, sources: s0, raisonnement: r0, nature: n0, label = "pourquoi" }: PourquoiProps) {
+  const sources = preuve?.sources ?? s0 ?? [];
+  const raisonnement = preuve?.raisonnement ?? r0 ?? "";
+  const nature = preuve?.nature ?? n0;
   const [open, setOpen] = useState(false);
   const [alignRight, setAlignRight] = useState(false);
   const id = useId();
@@ -58,7 +71,12 @@ export function Pourquoi({ sources, raisonnement, label = "pourquoi" }: Justific
       </button>
       {open && (
         <div id={id} ref={panelRef} className={`pourquoi-panel${alignRight ? " pourquoi-panel-right" : ""}`} role="dialog" aria-label="Pourquoi" tabIndex={-1}>
-          <p className="pourquoi-raison">{raisonnement}</p>
+          {nature && (
+            <div className="pourquoi-nature">
+              <Badge kind={nature} />
+            </div>
+          )}
+          {raisonnement && <p className="pourquoi-raison">{raisonnement}</p>}
           {sources.length > 0 && (
             <ol className="pourquoi-sources">
               {sources.map((s, i) => (

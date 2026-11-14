@@ -16,7 +16,7 @@ export type Meta = {
   sources: { label: string; url: string }[];
   limits: string;
   producer?: string;
-  dossier_id?: string;
+  dossier_id?: string | null;
 };
 
 /**

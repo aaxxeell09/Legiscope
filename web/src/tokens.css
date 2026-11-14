@@ -536,3 +536,120 @@ th.num {
   padding: var(--space-1) var(--space-2);
   font-size: var(--fs-sm);
 }
+
+/* Badge : étiquette texte avec bordure pleine, jamais de pastille */
+.badge {
+  display: inline-block;
+  padding: 0 var(--space-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-2);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.badge-verifie,
+.badge-fait {
+  color: var(--success);
+  border-color: var(--success);
+}
+
+.badge-non-verifie,
+.badge-gabarit {
+  color: var(--warning);
+  border-color: var(--warning);
+}
+
+.badge-deduction {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.badge-inconnue {
+  color: var(--text-2);
+  border-style: dashed;
+}
+
+.badge-importance-3 {
+  color: var(--text);
+  border-color: var(--text);
+  font-weight: 700;
+}
+
+.badge-importance-2 {
+  color: var(--text);
+}
+
+/* Curseur */
+.curseur {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.curseur-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.curseur-preset {
+  font-size: var(--fs-sm);
+  padding: var(--space-1) var(--space-3);
+  min-height: 32px;
+}
+
+.curseur-preset.actif {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+.curseur-ligne {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.curseur-ligne input[type="range"] {
+  flex: 1;
+  padding: 0;
+  min-height: 0;
+  border: none;
+  background: none;
+  accent-color: var(--accent);
+  height: 24px;
+}
+
+.curseur-valeur {
+  font-variant-numeric: tabular-nums;
+  min-width: 12ch;
+  text-align: right;
+}
+
+/* Pourquoi : nature de la preuve */
+.pourquoi-nature {
+  margin-bottom: var(--space-2);
+}
+
+/* En-tête du dossier */
+.dossier-dateref {
+  font-weight: 700;
+  color: var(--warning);
+}
+
+.dossier-lignes dd.dossier-mesure {
+  font-size: var(--fs-base);
+  font-weight: 400;
+}
+
+/* Zone en erreur (ErrorBoundary) */
+.erreur-zone {
+  background: var(--surface);
+  border: 1px solid var(--danger);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
+}

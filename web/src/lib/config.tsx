@@ -1,41 +1,14 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { useParams } from "react-router-dom";
 import { validate } from "./contracts";
+import type { Config, DossierConfig as DossierConfigC, Objectif as ObjectifC } from "@contracts/index";
 
-/** Reflet de `data/config.json` (PLAN.md, 5.1). Validé par `ConfigSchema` de contracts quand il existe. */
-export type Dataset = "live" | "fixtures";
+/** Reflet de `data/config.json`, types tirés des contrats (ConfigSchema). */
 
-export type Objectif = { rang: number; texte: string; position_cible: "pour" | "contre" | string };
-
-export type DossierConfig = {
-  id: string;
-  label: string;
-  texte_id: string;
-  etat: "en_cours" | "clos";
-  sujet: { label: string; mots_cles: string[] };
-  pivot_demo: string | null;
-  /** En-tête du tableau de bord (rendu-final.md, section 2). Doivent exister dans
-   *  `DossierConfigSchema` de contracts/, sinon zod les retire à la validation. */
-  client?: string;
-  /** Objectifs par ordre de préférence : rang 1 = principal, les suivants « à défaut ». */
-  objectifs?: Objectif[];
-  /** Ancienne forme (un seul objectif), tolérée tant que la fixture n'est pas migrée. */
-  objectif?: Omit<Objectif, "rang">;
-  /** Ce qu'on suit : la mesure, pas le texte (rendu-final.md, 2.2). */
-  mesure?: { label: string; article?: string | null; texte_id?: string | null };
-  /** Date de référence quand le dossier est rejoué dans le passé : « vu au 19 nov. 2025 ». */
-  date_reference?: string | null;
-};
-
-export type AppConfig = {
-  produit: { nom: string; accroche: string };
-  dataset: Dataset;
-  dossiers: DossierConfig[];
-  dossier_demo: string;
-  cohesion: {
-    paires_demo: [string, string][];
-    curseur_presets: { label: string; date: string }[];
-  };
-};
+export type Dataset = Config["dataset"];
+export type Objectif = ObjectifC;
+export type DossierConfig = DossierConfigC;
+export type AppConfig = Config;
 
 export type ConfigState =
   | { status: "loading" }
@@ -106,19 +79,55 @@ export function useConfigState(): ConfigState {
   return useContext(ConfigContext);
 }
 
-/** Les objectifs d'un dossier triés par rang, avec l'ancien champ `objectif` comme rang 1 si besoin. */
+/** Les objectifs d'un dossier triés par rang (rang 1 = principal, puis « à défaut »). */
 export function objectifsDe(d: DossierConfig | null | undefined): Objectif[] {
-  if (!d) return [];
-  if (d.objectifs && d.objectifs.length > 0) return [...d.objectifs].sort((a, b) => a.rang - b.rang);
-  if (d.objectif) return [{ rang: 1, ...d.objectif }];
-  return [];
+  if (!d?.objectifs) return [];
+  return [...d.objectifs].sort((a, b) => a.rang - b.rang);
 }
 
-/** Le dossier `id` de la config, ou null (config pas encore lue, ou id inconnu). */
-export function useDossier(id: string | undefined): DossierConfig | null {
-  const config = useConfig();
-  if (!config || !id) return null;
-  return config.dossiers.find((d) => d.id === id) ?? null;
+export type DossierCourant = {
+  /** loading : config pas encore lue ; inconnu : id absent de config.json. */
+  status: "loading" | "error" | "inconnu" | "ok";
+  error?: string;
+  id: string;
+  dossier: DossierConfig | null;
+  client: string | null;
+  label: string | null;
+  mesure: DossierConfig["mesure"] | null;
+  objectifs: Objectif[];
+  principal: Objectif | null;
+  replis: Objectif[];
+  /** AAAA-MM-JJ quand le dossier est rejoué dans le passé, sinon null. */
+  dateReference: string | null;
+};
+
+/**
+ * Le dossier courant : lu dans la route (`/dossier/:id`) ou passé en argument.
+ *
+ *   const { status, dossier, client, principal, replis, dateReference } = useDossier();
+ */
+export function useDossier(idArg?: string): DossierCourant {
+  const params = useParams<{ id?: string }>();
+  const id = idArg ?? params.id ?? "";
+  const s = useContext(ConfigContext);
+  const vide: DossierCourant = { status: "loading", id, dossier: null, client: null, label: null, mesure: null, objectifs: [], principal: null, replis: [], dateReference: null };
+  if (s.status === "loading") return vide;
+  if (s.status === "error") return { ...vide, status: "error", error: s.error };
+  const d = s.config.dossiers.find((x) => x.id === id) ?? null;
+  if (!d) return { ...vide, status: "inconnu" };
+  const objectifs = objectifsDe(d);
+  return {
+    status: "ok",
+    id,
+    dossier: d,
+    client: d.client,
+    label: d.label,
+    mesure: d.mesure,
+    objectifs,
+    principal: objectifs[0] ?? null,
+    replis: objectifs.slice(1),
+    dateReference: d.date_reference ?? null,
+  };
 }
 
 /** La config chargée, ou null tant qu'elle ne l'est pas. */
