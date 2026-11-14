@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import type { Action, DeputeAction, Fiche, FichesIndex } from "@contracts/index";
 import { Chargement, Erreur, Meta, Pourquoi } from "../../components";
 import { useData } from "../../lib/data";
-import { formatDate, formatProba } from "../../lib/format";
+import { formatDate } from "../../lib/format";
 import { useDossier } from "../../lib/config";
 import { FONDEMENT, GROUPE_ACTION, LIEU, ROLE_AUDITION, Redaction, SORT, TYPE_ORG, Tag, useAnnuaire, type CleGroupeAction } from "./commun";
 import "./p7.css";
@@ -56,7 +57,6 @@ export default function DeputeView() {
           <div><span className="p7-classement-label">Position documentée</span><strong>{GROUPE_ACTION[classement.cle]}</strong></div>
           <span className="text-2">{classement.d.raison}</span>
           <span className="text-2">{classement.d.position_connue ? classement.d.fondement.map((f) => FONDEMENT[f]).join(", ") : "position inconnue"}</span>
-          <span className="text-2">Indicateur descriptif : {formatProba(classement.d.score)}</span>
           <Pourquoi preuve={classement.d.preuve} />
         </div>
       )}
@@ -92,6 +92,10 @@ function FicheAbsente({ id, enCours, meta }: { id: string; enCours: boolean; met
 
 function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
   const r = useData<Fiche>("fiche", dossier, pa);
+  const [auditionsOuvertes, setAuditionsOuvertes] = useState(false);
+  const [debatsOuverts, setDebatsOuverts] = useState(false);
+  const [amendementsOuverts, setAmendementsOuverts] = useState(false);
+  const [organisationsOuvertes, setOrganisationsOuvertes] = useState(false);
   if (r.status === "loading") return <Chargement quoi="fiche" />;
   if (r.status === "error") return <Erreur message={r.error ?? "fiche illisible"} />;
   const f = r.data!;
@@ -132,7 +136,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
             </div>
           ) : (
             <>
-              {rapporteur.length > 0 && <ListeAuditions auditions={rapporteur} verbe="a entendu" />}
+              {rapporteur.length > 0 && <ListeAuditions auditions={auditionsOuvertes ? rapporteur : rapporteur.slice(0, 4)} verbe="a entendu" />}
               {membre.length > 0 && (
                 <details className="p7-secondaire">
                   <summary>
@@ -141,6 +145,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
                   <ListeAuditions auditions={membre} />
                 </details>
               )}
+              {rapporteur.length > 4 && <button type="button" className="p7-voir-plus" onClick={() => setAuditionsOuvertes((v) => !v)}>{auditionsOuvertes ? "Réduire" : `Voir toutes les auditions (${rapporteur.length})`}</button>}
             </>
           )}
         </div>
@@ -153,7 +158,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
             <div className="p7-vide">aucune intervention trouvée · {c.comptes_rendus_lus} comptes rendus lus</div>
           ) : (
             <ul className="p7-list">
-              {f.debats.map((d, i) => (
+              {(debatsOuverts ? f.debats : f.debats.slice(0, 5)).map((d, i) => (
                 <li key={`${d.url}-${i}`} className="p7-item">
                   <div className="p7-ligne">
                     <span>{formatDate(d.date)}</span>
@@ -167,6 +172,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
               ))}
             </ul>
           )}
+          {f.debats.length > 5 && <button type="button" className="p7-voir-plus" onClick={() => setDebatsOuverts((v) => !v)}>{debatsOuverts ? "Réduire" : `Voir toutes les interventions (${f.debats.length})`}</button>}
         </div>
 
         <div className="p7-col" id="amendements">
@@ -177,7 +183,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
             <div className="p7-vide">aucun amendement déposé ou cosigné sur ce texte</div>
           ) : (
             <ul className="p7-list">
-              {f.amendements.map((a) => (
+              {(amendementsOuverts ? f.amendements : f.amendements.slice(0, 5)).map((a) => (
                 <li key={a.id} className="p7-item">
                   <div className="p7-ligne">
                     <a href={a.url} target="_blank" rel="noreferrer">
@@ -203,6 +209,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
               ))}
             </ul>
           )}
+          {f.amendements.length > 5 && <button type="button" className="p7-voir-plus" onClick={() => setAmendementsOuverts((v) => !v)}>{amendementsOuverts ? "Réduire" : `Voir tous les amendements (${f.amendements.length})`}</button>}
         </div>
       </div>
 
@@ -214,7 +221,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
           <div className="p7-vide">aucune organisation déclarée sur ce texte</div>
         ) : (
           <ul className="p7-list">
-            {f.hatvp.map((o) => (
+            {(organisationsOuvertes ? f.hatvp : f.hatvp.slice(0, 6)).map((o) => (
               <li key={o.hatvp_id} className="p7-item">
                 <div className="p7-ligne">
                   <a href={o.fiche_url} target="_blank" rel="noreferrer" className="p7-nom">
@@ -228,6 +235,7 @@ function FicheContenu({ dossier, pa }: { dossier: string; pa: string }) {
             ))}
           </ul>
         )}
+        {f.hatvp.length > 6 && <button type="button" className="p7-voir-plus" onClick={() => setOrganisationsOuvertes((v) => !v)}>{organisationsOuvertes ? "Réduire" : `Voir toutes les organisations (${f.hatvp.length})`}</button>}
       </section>
 
       <p className="p7-limites">

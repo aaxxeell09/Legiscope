@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import type { AmendementTexte, Deputes, Etat as EtatData, Groupes, Preuve, Sort, Texte } from "@contracts/index";
 import { Etat, GroupeTag, Meta, Panel, Pourquoi, Proba, Table, type Column } from "../../components";
@@ -29,6 +29,7 @@ type Amdt = AmendementTexte & {
   nature_mode?: "regle" | "llm" | "defaut";
 };
 type Tri = "statut" | "numero" | "recent";
+const PAR_PAGE = 25;
 type TexteEtat = {
   statut: "en_discussion" | "adopte" | "rejete" | "retire";
   libelle: string;
@@ -79,6 +80,7 @@ export default function BaseView() {
   const [groupeFiltre, setGroupeFiltre] = useState("");
   const [natureFiltre, setNatureFiltre] = useState<Nature | "">("");
   const [tri, setTri] = useState<Tri>("statut");
+  const [page, setPage] = useState(1);
 
   const groupeParId = useMemo(() => new Map((groupes.data?.groupes ?? []).map((g) => [g.id, g])), [groupes.data]);
   const deputeParId = useMemo(() => new Map((deputes.data?.deputes ?? []).map((p) => [p.id, p])), [deputes.data]);
@@ -103,6 +105,10 @@ export default function BaseView() {
     });
   }, [texte.data, q, instit, sortFiltre, groupeFiltre, natureFiltre, tri, deputeParId, groupeParId]);
   const nInstit = useMemo(() => ((texte.data?.amendements ?? []) as Amdt[]).filter(estInstitutionnel).length, [texte.data]);
+  const pages = Math.max(1, Math.ceil(amendements.length / PAR_PAGE));
+  const pageCourante = Math.min(page, pages);
+  const amendementsPage = amendements.slice((pageCourante - 1) * PAR_PAGE, pageCourante * PAR_PAGE);
+  useEffect(() => setPage(1), [q, instit, sortFiltre, groupeFiltre, natureFiltre, tri]);
 
   const colonnes: Column<Amdt>[] = [
     {
@@ -275,7 +281,7 @@ export default function BaseView() {
       >
         {() => (
           <>
-            <div className="base-toolbar">
+            <div className="base-toolbar" id="base-results">
             <input
               type="search"
               className="base-recherche"
@@ -299,7 +305,13 @@ export default function BaseView() {
                 Gouvernement et commission ({nInstit})
               </button>
             </div>
-            <Table columns={colonnes} rows={amendements} rowKey={(a) => a.id} empty={q || instit || sortFiltre || groupeFiltre || natureFiltre ? "Aucun amendement ne correspond à ces filtres" : "Aucun amendement"} />
+            <Table columns={colonnes} rows={amendementsPage} rowKey={(a) => a.id} empty={q || instit || sortFiltre || groupeFiltre || natureFiltre ? "Aucun amendement ne correspond à ces filtres" : "Aucun amendement"} />
+            {amendements.length > PAR_PAGE && <nav className="base-pagination" aria-label="Pagination des amendements">
+              <button type="button" disabled={pageCourante === 1} onClick={() => setPage((p) => Math.max(1, p - 1))}>Précédent</button>
+              <span>Page {pageCourante} sur {pages} · {amendements.length} amendements</span>
+              <button type="button" disabled={pageCourante === pages} onClick={() => setPage((p) => Math.min(pages, p + 1))}>Suivant</button>
+              {pageCourante > 1 && <a href="#base-results">Retour en haut des résultats</a>}
+            </nav>}
           </>
         )}
       </Etat>
