@@ -1,0 +1,74 @@
+/* Bloc Suite (P5). */
+.suite {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.suite-occasion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.suite-occasion-date {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--warning);
+}
+
+.suite-occasion-titre {
+  font-size: var(--fs-base);
+}
+
+.suite-titre {
+  margin: 0 0 var(--space-2);
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-2);
+}
+
+.suite-liste {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.suite-echeance,
+.suite-probable {
+  display: grid;
+  grid-template-columns: 8.5em minmax(0, 1fr);
+  gap: var(--space-3);
+  align-items: baseline;
+}
+
+.suite-date {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.suite-echeance a {
+  color: var(--text);
+}
+
+.suite-proba {
+  text-align: right;
+}
+
+.suite-probable-titre {
+  font-weight: 600;
+}
+
+.suite-detail {
+  display: block;
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+}

@@ -1,0 +1,219 @@
+/* Bloc Verdict (P5). Styles locaux, variables de tokens.css seulement. */
+.verdict {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.verdict-onglets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.verdict-onglet {
+  background: none;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: var(--space-2) var(--space-3);
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+  margin-bottom: -1px;
+}
+
+.verdict-onglet:hover {
+  color: var(--text);
+  background: none;
+}
+
+.verdict-onglet.actif {
+  color: var(--text);
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+.verdict-bandeau {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.6fr);
+  gap: var(--space-4);
+  align-items: start;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+
+.verdict-situation-bloc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.verdict-situation {
+  font-size: var(--fs-xxl);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.verdict-situation-favorable {
+  color: var(--success);
+}
+
+.verdict-situation-incertaine {
+  color: var(--warning);
+}
+
+.verdict-situation-defavorable {
+  color: var(--danger);
+}
+
+.verdict-situation-insuffisant {
+  color: var(--text-2);
+  font-size: var(--fs-xl);
+}
+
+.verdict-tendance,
+.verdict-confiance {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.verdict-confiance-ligne {
+  font-size: var(--fs-sm);
+}
+
+.verdict-cause {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.verdict-cause > .text-2:first-child::after {
+  content: " :";
+}
+
+.verdict-lecture {
+  font-size: var(--fs-lg);
+  margin: 0;
+}
+
+.verdict-lecture .badge {
+  font-size: var(--fs-sm);
+}
+
+.verdict-lecture-modele {
+  margin-left: var(--space-2);
+}
+
+.verdict-colonnes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.verdict-colonne h4 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-2);
+}
+
+.verdict-raisons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.verdict-raison-titre {
+  font-weight: 600;
+}
+
+.verdict-raison-detail {
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+}
+
+/* Nature de la preuve : fait sobre, déduction marquée (badge), inconnue en secondaire. */
+.nature-inconnue,
+.nature-inconnue .verdict-raison-titre {
+  color: var(--text-2);
+  font-weight: 400;
+}
+
+.verdict-tendance-panneau {
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-3);
+}
+
+.verdict-tendance-toggle {
+  font-size: var(--fs-sm);
+}
+
+.verdict-tendance-contenu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.verdict-tendance-legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.verdict-tendance-paire {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.verdict-tendance-trait {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+}
+
+.verdict-tendance-graphe {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Badges, au cas où tokens.css ne les style pas encore. */
+.verdict .badge,
+.suite .badge {
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0 var(--space-1);
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  color: var(--text-2);
+  vertical-align: baseline;
+}
+
+.verdict .badge-verifie,
+.suite .badge-verifie {
+  color: var(--success);
+  border-color: var(--success);
+}
+
+.verdict .badge-deduction,
+.suite .badge-deduction {
+  color: var(--warning);
+  border-color: var(--warning);
+}
+
+@media (max-width: 900px) {
+  .verdict-bandeau,
+  .verdict-colonnes {
+    grid-template-columns: 1fr;
+  }
+}
