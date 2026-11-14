@@ -48,22 +48,26 @@ export function chargerContexte(rootForce?: string): Contexte {
   return { root, config, deputes, groupes, parNom, parSigle };
 }
 
-/** Députés à traiter pour un dossier : les trois groupes de groupes-action.json, sinon les pivots. */
+/** Députés à traiter pour un dossier : union des trois groupes de groupes-action.json et des pivots (pivots.json). */
 export function deputesDuDossier(ctx: Contexte, dossier: DossierConfig): { ids: string[]; source: string } {
   const base = join(RACINE, ctx.root, dossier.id);
+  const ids = new Set<string>();
+  const sources: string[] = [];
   const ga = join(base, "groupes-action.json");
   if (existsSync(ga)) {
     const j = JSON.parse(readFileSync(ga, "utf8")) as { actionnables?: { depute_id: string }[]; allies?: { depute_id: string }[]; perdus?: { depute_id: string }[] };
-    const ids = [...(j.actionnables ?? []), ...(j.allies ?? []), ...(j.perdus ?? [])].map((d) => d.depute_id);
-    if (ids.length > 0) return { ids: [...new Set(ids)], source: `${ctx.root}/${dossier.id}/groupes-action.json` };
+    for (const d of [...(j.actionnables ?? []), ...(j.allies ?? []), ...(j.perdus ?? [])]) ids.add(d.depute_id);
+    sources.push(`${ctx.root}/${dossier.id}/groupes-action.json`);
   }
   const pv = join(base, "pivots.json");
   if (existsSync(pv)) {
     const p = lire(pv, (x) => PivotsSchema.parse(x));
-    return { ids: p.deputes.map((d) => d.id), source: `${ctx.root}/${dossier.id}/pivots.json` };
+    for (const d of p.deputes) ids.add(d.id);
+    sources.push(`${ctx.root}/${dossier.id}/pivots.json`);
   }
-  // Sur data/ sans liste de P3 (groupes-action.json ni pivots.json) : aucun fichier par député, on le dit.
-  return { ids: [], source: `${ctx.root}/${dossier.id}/ : ni groupes-action.json ni pivots.json` };
+  // Sur data/ sans liste de P3 : aucun fichier par député, on le dit.
+  if (ids.size === 0) return { ids: [], source: `${ctx.root}/${dossier.id}/ : ni groupes-action.json ni pivots.json` };
+  return { ids: [...ids], source: sources.join(" et ") };
 }
 
 export function horodatage(): string {

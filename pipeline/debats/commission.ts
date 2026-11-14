@@ -127,7 +127,8 @@ export async function lireCommission(dossier: DossierConfig, log: (s: string) =>
       continue;
     }
     absents = 0;
-    const $ = cheerio.load(html);
+    // Les <br> de l'en-tête (« Mardi<br>14 octobre 2025 ») deviennent des espaces avant la lecture du texte.
+    const $ = cheerio.load(html.replace(/<br\s*\/?>/gi, " "));
     const date = dateReunion($, html);
     if (!date) {
       log(`commission ${uidCommission(session, n)} : date introuvable, ignorée`);
@@ -149,6 +150,7 @@ export async function lireCommission(dossier: DossierConfig, log: (s: string) =>
     let retenus = 0;
     let orateur: Orateur | null = null;
     let articleCourant = "";
+    let contexte = "";
     let ordre = 0;
 
     $("p").each((_, el) => {
@@ -161,11 +163,17 @@ export async function lireCommission(dossier: DossierConfig, log: (s: string) =>
       const titre = sansAccents(texteComplet).match(/^(?:article|apres l'article|avant l'article|article additionnel apres l'article)\s+(\d+[a-z]*)\b/);
       if (titre && texteComplet.length < 200 && (classe.includes("Titre") || /^[A-ZÀ-ÿ]/.test(texteComplet))) {
         articleCourant = titre[1];
+        contexte = texteComplet;
         if (!classe.includes("Titre")) {
           // Un paragraphe qui commence par « Article 22 » mais continue avec du texte n'est pas un titre.
           if (texteComplet.length > 60) articleCourant = articleCourant;
         }
         if (texteComplet.length < 80) return;
+      }
+      // Intitulé d'amendement (« Amendement I-CF1234 de M. X », « Amendements identiques ... ») : contexte des avis qui suivent.
+      if (texteComplet.length < 300 && /^Amendements?\s/i.test(texteComplet) && !$p.find("span[style*='font-weight:bold']").length) {
+        contexte = texteComplet;
+        return;
       }
       if (classe.includes("assnat") && !classe.includes("Normal")) return; // en-têtes, sommaire, présence
       const gras = $p.find("b, strong, span[style*='font-weight:bold']").first();
@@ -196,6 +204,7 @@ export async function lireCommission(dossier: DossierConfig, log: (s: string) =>
         acteur_id: null,
         groupe_sigle: orateur.sigle,
         texte,
+        contexte,
         mot_cle: motCle,
       });
     });

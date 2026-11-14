@@ -17,17 +17,17 @@ const CACHE_ORATEURS = join(RAW, "orateurs-seance.json");
 
 export async function preparerSyseron(log: (s: string) => void): Promise<void> {
   mkdirSync(RAW, { recursive: true });
+  // Les XML déjà décompressés suffisent : on ne retélécharge l'archive que si le dossier manque ou est vide.
+  if (existsSync(DOSSIER_XML) && readdirSync(DOSSIER_XML).some((f) => f.endsWith(".xml"))) return;
   if (!existsSync(ZIP)) {
     log(`téléchargement de ${URL_SYSERON} (62 Mo)`);
     const r = await fetch(URL_SYSERON);
     if (!r.ok) throw new Error(`syseron.xml.zip : HTTP ${r.status}`);
     writeFileSync(ZIP, new Uint8Array(await r.arrayBuffer()));
   }
-  if (!existsSync(DOSSIER_XML) || readdirSync(DOSSIER_XML).length === 0) {
-    log("décompression de syseron.xml.zip");
-    const p = Bun.spawnSync(["unzip", "-o", "-q", ZIP, "-d", join(RAW, "syseron")]);
-    if (p.exitCode !== 0) throw new Error(`unzip : ${p.stderr.toString()}`);
-  }
+  log("décompression de syseron.xml.zip");
+  const p = Bun.spawnSync(["unzip", "-o", "-q", ZIP, "-d", join(RAW, "syseron")]);
+  if (p.exitCode !== 0) throw new Error(`unzip : ${p.stderr.toString()}`);
 }
 
 export function fichiersSeance(): string[] {
@@ -168,7 +168,9 @@ export async function lireSeances(dossier: DossierConfig, log: (s: string) => vo
       const tok = m[0];
       if (tok.startsWith("<point")) {
         const tag = tok.match(/<point\b[^>]*>/)![0];
-        pile.push({ art: attr(tag, "art").trim(), titre: nettoyerTexte(m[1] ?? ""), typeDebat: "" });
+        const adt = attr(tag, "adt").trim();
+        const titre = nettoyerTexte(m[1] ?? "") || (adt ? `Amendement n° ${adt}` : "");
+        pile.push({ art: attr(tag, "art").trim(), titre, typeDebat: "" });
         continue;
       }
       if (tok === "</point>") {
@@ -207,6 +209,7 @@ export async function lireSeances(dossier: DossierConfig, log: (s: string) => vo
         acteur_id: attr(tag, "id_acteur") || null,
         groupe_sigle: null,
         texte,
+        contexte: pile.map((p) => p.titre).filter(Boolean).slice(-2).join(", "),
         mot_cle: motCle,
       });
     }

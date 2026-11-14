@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:47:39+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés petits colis, colis, franchise douanière ou article 22 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien après 2025-11-18. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/petits-colis/groupes-action.json et data/petits-colis/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA346782",
+  "debats": [
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Avis défavorable. Une telle taxe, et c’est d’ailleurs toute la différence avec la proposition précédente, sera introduite au niveau européen : tous les pays en sont d’accord.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "De plus, on ne peut nier le véritable déferlement de petits colis en provenance de Chine, lequel constitue une menace très grave pour notre commerce et notre industrie textile.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "J’applaudis donc l’Union européenne de travailler sur cette question. Certes, le montant de 2 euros par article n’est pas à la hauteur de l’enjeu, mais cela reste préférable à la suppression de cet article.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "La question soulevée à cet article 22 est très complexe, car nous voulons répondre à des objectifs parfois contradictoires.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Premièrement, le petit commerce et l’industrie textile s’écroulent, en raison d’un déferlement de produits étrangers.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Deuxièmement, dans la mesure où il y a un accord européen en la matière, nous avons le droit d’introduire une taxe sur les petits colis. Or, si nous en créons une très élevée, nos colis n’atterriront plus à Roissy mais à Liège, et nous tuerons nos plateformes logistiques.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Troisièmement, la taxe doit être suffisamment élevée si nous voulons sauver le petit commerce ; il est évident que 2 euros ne compensent pas la différence de prix avec les plateformes.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Quatrièmement, il y a l’effet du dispositif sur le consommateur.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Je suggère une taxe élevée de 25 euros par article – montant qui peut être revu – et qui s’appliquerait non à chaque colis individuellement, mais aux sociétés mettant en relation les vendeurs et les acheteurs, en fonction du nombre de paquets gérés. De cette manière, il n’y aurait plus d’intérêt à faire atterrir les produits en Belgique plutôt qu’en France.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Ces amendements sont une manière de faire progresser le débat. Je suis prêt à entendre toutes vos propositions d’amélioration technique, mais il faut absolument que nous avancions dans ce domaine.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Entendons-nous bien : ces amendements visent à répondre à une situation politique gravissime. Le pire serait de ne rien faire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Au fond, M. Kasbarian a raison.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Comment fonctionnerait le dispositif que je propose et qui cible plutôt la Chine, même si les amendements ne le disent évidemment pas ? La taxe toucherait les plateformes qui déclarent un chiffre d’affaires en France et qui, ne serait-ce que pour des raisons fiscales, en l’occurrence de TVA, sont obligées de déclarer combien de colis elles reçoivent dans notre pays. Voilà la base sur laquelle le dispositif s’appliquerait.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Ce que je demande, c’est l’adoption de ces amendements afin que nous ayons ce débat très complexe en séance avec le gouvernement. L’année prochaine, 6,5 milliards de colis arriveront de Chine en Europe. Si nous ne faisons rien, nous n’aurons plus qu’à fermer les boutiques !",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

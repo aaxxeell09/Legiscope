@@ -20,6 +20,8 @@ export type Intervention = {
   groupe_sigle: string | null;
   /** Paragraphe entier, balises retirées. */
   texte: string;
+  /** Ce qui est en discussion au moment de la prise de parole (article, amendement), vide si inconnu. */
+  contexte: string;
   /** Vrai si le paragraphe contient un mot-clé ; faux s'il est retenu par sa position (article de la mesure). */
   mot_cle: boolean;
 };

@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:47:39+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Deuxième séance du lundi 17 novembre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-lundi-17-novembre-2025"
+      },
+      {
+        "label": "Troisième séance du lundi 17 novembre 2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-lundi-17-novembre-2025"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés petits colis, colis, franchise douanière ou article 22 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien après 2025-11-18. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/petits-colis/groupes-action.json et data/petits-colis/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA610002",
+  "debats": [
+    {
+      "date": "2025-11-17",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "La majoration de la taxation des cartes grises permet certes de contribuer à ce financement mais nous préférerions une imposition du trafic aérien et des espaces de publicité dans les transports, une écotaxe poids lourds ou un fléchage des recettes de la taxation des petits colis vers le financement des transports.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-lundi-17-novembre-2025"
+    },
+    {
+      "date": "2025-11-17",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Pour expliquer cette baisse de la TVA, vous évoquez les petits colis importés. Sous-valorisés et parfois indûment déclarés comme des envois destinés à des particuliers, ils échappent aux droits de douane et donnent lieu à des fraudes à la TVA.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/troisieme-seance-du-lundi-17-novembre-2025"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}

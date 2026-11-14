@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:47:39+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des finances, réunion n° 13 du 22/10/2025",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés petits colis, colis, franchise douanière ou article 22 du texte) ; 91 comptes rendus lus (séance et commission des finances), rien après 2025-11-18. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/petits-colis/groupes-action.json et data/petits-colis/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA794118",
+  "debats": [
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Nous assistons en effet à un important changement de stratégie de la part des importateurs qui, avant, utilisaient des cargos et des conteneurs, et qui, désormais, fraudent massivement en envoyant de petits colis dont le taux de non-conformité est proche de 50 %. Le meilleur exemple est celui de l’iPhone 17, généralement déclaré au prix de 80 euros quand il arrive de Chine dans un petit colis, alors qu’il en vaut 1 700.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Les États-Unis en ont pris conscience, raison pour laquelle, depuis le 30 juillet, ils appliquent des droits de douane ou des taxes de l’ordre de 50 % sur les produits inférieurs à 100 dollars. Et si nous sommes inondés de colis Shein et Temu en Europe, c’est aussi parce que les Américains ont réglé le problème chez eux. Ils n’ont plus de petits colis et sont revenus au système d’importation classique, par conteneurs, qui peut être contrôlé.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Il est donc faux de dire que nous ne pouvons rien faire et que le mouvement est inexorable pour nos petits commerces. Lors de l’examen de la proposition de loi relative à la fast fashion de notre collègue Anne-Cécile Violland, nous avons unanimement approuvé l’introduction d’une taxe de 5 euros par article, en faveur de laquelle le Rassemblement national avait voté ; je m’étonne qu’il en vienne à se contredire.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    },
+    {
+      "date": "2025-10-22",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B1906",
+      "citation": "Le présent amendement vise à préciser que la taxe prévue à l’article 22 concerne les petits colis importés, et non ceux échangés entre acteurs français.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 91
+  }
+}
