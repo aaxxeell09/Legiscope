@@ -1,0 +1,792 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:38:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tIX.html"
+      }
+    ],
+    "limits": "9 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 9 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA794118",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tIX.html",
+      "date": "2025-10-30",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Secrétariat général pour l’investissement (SGPI)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse des dépôts et des consignations (CDC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale de la recherche (ANR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut de recherches pour l’agriculture, l’alimentation et l’environnement (INRAE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des vins Côtes de Gascogne",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Vignerons indépendants de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut français du vin et de la vigne",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Rives et Eaux du Sud-Ouest",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SAGE Neste et Rivière de Gascogne",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Coopérative Unicoque",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agreenculture",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut Arvalis",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tI.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Institut national de l’environnement industriel et des risques (Ineris)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement (Cerema)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agéa",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Dr. Julien Arnoult, responsable des études et des relations institutionnelles",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des services énergie environnement (Fedene)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des énergies renouvelables (SER)",
+          "type": "federation",
+          "hatvp_id": "532334588"
+        },
+        {
+          "nom": "Syndicat national des entrepreneurs de la filière déchets (Snefid)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération professionnelle des entreprises du recyclage, du réemploi et de l’économie circulaire (Federrec)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des activités de la dépollution et de l’environnement (Fnade)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de sûreté nucléaire et de radioprotection (ASNR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de la transition écologique (Ademe)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Bureau de recherches géologiques et minières (BRGM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office national des forêts",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de la recherche pour l’agriculture, l’alimentation et l’environnement (Inrae)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires de France (AMF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse centrale de réassurance (CCR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "DREAL Grand Est",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "DREAL Bourgogne-Franche-Comté",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Assureurs",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France nature environnement (FNE)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Greenpeace",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Zero Waste",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la prévention des risques (DGPR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Commission nationale du débat public",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale des travaux publics de l’État (ENTPE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission de régulation de l’énergie (CRE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale des ponts et chaussées (ENPC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de contrôle des nuisances aéroportuaires (Acnusa)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Force ouvrière de l’équipement, de l’environnement, des transports et des services (FEETS-FO)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national de l’environnement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des contrôleurs du trafic aérien (SNCTA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ministère chargé de la transition écologique",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tIII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Office français de la biodiversité (OFB)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de l’information géographique et forestière (IGN)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France nature environnement (FNE)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’eau Seine-Normandie",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’eau Loire-Bretagne",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’eau Rhône-Méditerranée-Corse",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l'aménagement, du logement et de la nature (Dgaln)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commissariat général au développement durable (CGDD)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tIV.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Métropole de Lyon",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Grenoble-Alpes Métropole",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires ruraux de France (AMRF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Santé Publique France",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Les #Gueux",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française des motards en colère (FFMC)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ligue de défense des conducteurs (LDC)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Flexfuel Décalaminage",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération française du bâtiment (FFB)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires de France (AMF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse autonome nationale de la sécurité sociale dans les mines (CANSSM)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "La Plateforme Automobile (PFA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération des associations agréées de surveillance de la qualité de l’air (Atmo France)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de services et de paiement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mobilians",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambre syndicale internationale de l’automobile et du motocycle (CSIAM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction régionale de l’environnement, de l’aménagement et du logement (Dreal) Occitanie",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale pour la garantie des droits des mineurs",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse des dépôts",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’énergie et du climat",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale de l’habitat (Anah)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’urbanisme, de l’habitat et des paysages (DHUP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale du Trésor (DGT)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Organisation des transporteurs routiers européens (Otre)",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tV.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Régions de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de régulation des transports (ART)",
+          "type": "administration",
+          "hatvp_id": "775661390"
+        },
+        {
+          "nom": "Établissement public de sécurité ferroviaire (EPSF)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société des Grands Projets (SGP)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de financement des infrastructures de transports de France (AFITF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Voies navigables de France (VNF)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif « Oui au train de nuit ! »",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Réseau action climat",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des associations d’usagers des transports (FNAUT)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe SNCF",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupement des autorités responsables de transport (GART)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "European Sleeper",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des infrastructures, des transports et des mobilités",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tVI.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Syndicat des compagnies aériennes régionales et autonomes (SCARA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des aéroports français (UAF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil territorial de Saint-Barthélemy",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale de l’aviation et de ses métiers (FNAM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national du personnel navigant commercial (SNPNC-FO)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des navigants de l’aviation civile (UNAC)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’aviation civile (DGAC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Wallis et Futuna",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Nouvelle-Calédonie",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ultramarins Doubout",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Aéroport de La Réunion Roland-Garros",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "L’Agence de l’outre-mer pour la mobilité (LADOM)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité du tourisme de la Guyane",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société anonyme de la raffinerie des Antilles (SARA)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Air Austral",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Air Tahiti Nui",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Air Tahiti",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "French Bee et Air Caraïbes",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Aircalin",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Corsair",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectivité territoriale de Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Air France",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Aéroport Félix-Éboué (Cayenne-Rochambeau)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Aéroport de Tahiti",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association d’usagers des transports aériens de Mayotte (Autam)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Air Moana",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif « Défense guyanaise pour l’accès aux transports » (DGAT)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tVII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ifremer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Filiale Genavir",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale supérieure maritime (ENSM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fondation Tara Océan",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut polaire français Paul-Émile Victor (IPEV)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut de recherche pour le développement (IRD)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture (Dgampa)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2047-tVIII.html",
+      "date": "2025-11-07",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires de France (AMF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France villes et territoires durables",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des conseils d’architecture, d’urbanisme et de l’environnement (FNCAUE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Intercommunalités de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général à la planification écologique (SGPE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale de la cohésion des territoires (ANCT)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil d’architecture, d’urbanisme et de l’environnement (CAUE) de l’Aude",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des collectivités territoriales (DGCL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’aménagement, du logement et de la nature (DGALN)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général pour les affaires régionales (SGAR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Région Occitanie",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Carcassonne Agglo",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des pôles territoriaux et des pays (ANPP)",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 9,
+    "rapports_avec_liste": 9
+  }
+}

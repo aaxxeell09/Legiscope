@@ -39,21 +39,23 @@ const maintenant = () => {
 };
 const sansAccents = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
-/** Députés à traiter : groupes-action.json (définitif), sinon pivots.json (provisoire). */
+/** Députés à traiter : les trois groupes de groupes-action.json (définitif) et les pivots de pivots.json (provisoire), réunis. */
 function deputesDuDossier(dossierId: string): { ids: string[]; source: string } {
+  const ids = new Set<string>();
+  const sources: string[] = [];
   const ga = join(ROOT, dossierId, "groupes-action.json");
   if (existsSync(ga)) {
     const g: any = lire(ga);
-    const ids = new Set<string>();
     for (const k of ["actionnables", "allies", "perdus"]) for (const d of g[k] ?? []) if (d?.depute_id) ids.add(d.depute_id);
-    if (ids.size) return { ids: [...ids], source: ga };
+    sources.push(ga);
   }
   const pv = join(ROOT, dossierId, "pivots.json");
   if (existsSync(pv)) {
-    const p = PivotsSchema.parse(lire(pv));
-    return { ids: p.deputes.map((d) => d.id), source: pv };
+    for (const d of PivotsSchema.parse(lire(pv)).deputes) ids.add(d.id);
+    sources.push(pv);
   }
-  return { ids: [], source: `aucune liste (ni groupes-action.json ni pivots.json dans ${ROOT}/${dossierId})` };
+  if (ids.size === 0) return { ids: [], source: `aucune liste (ni groupes-action.json ni pivots.json dans ${ROOT}/${dossierId})` };
+  return { ids: [...ids], source: sources.join(" + ") };
 }
 
 function roleDe(qualite: string): RoleAudition {

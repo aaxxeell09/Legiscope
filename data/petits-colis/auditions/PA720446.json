@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:38:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      }
+    ],
+    "limits": "Aucun rapport de ce texte rattaché à ce député (ni rapporteur, ni membre d'une commission qui a produit un rapport). Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA720446",
+  "auditions": [],
+  "couverture": {
+    "rapports_total": 0,
+    "rapports_avec_liste": 0
+  }
+}

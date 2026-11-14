@@ -1,0 +1,403 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:38:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2048-tIII.html"
+      }
+    ],
+    "limits": "8 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 6 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 0 feuille(s) de rapport sans page en ligne ignorée(s) Rien de postérieur au 2025-11-18 (58 rapport(s) publié(s) après cette date ignoré(s)). Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA793342",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2048-tIII.html",
+      "date": "2025-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Cour des comptes",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Haut Comité d’évaluation de la condition militaire (HCECM)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil supérieur de la fonction militaire (CSFM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2048-tVI.html",
+      "date": "2025-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "1. Auditions",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Airbus",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe Safran",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Thales",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’armement",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commandement de l’armée de l’Air et de l’Espace",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commandement territorial de l’armée de l’Air et de l’Espace",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commandement de la défense aérienne et des opérations aériennes",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "État-major de l'armée de l'Air et de l'Espace",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "État-major de l’armée de l’Air et de l’Espace",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "2. Déplacement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "MBDA",
+          "type": "entreprise",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2048-tVIII.html",
+      "date": "2025-11-13",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction générale de la gendarmerie nationale (DGGN)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2048-tI.html",
+      "date": "2025-11-14",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Représentants des associations du G12 « monde combattant »",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Associations des associations de rapatriés d’Indochine",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Auvergne Rhône-Alpes des affaires algériennes",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association citoyenneté française (ACF)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association de défense des Harkis (ADH)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association départementale Harkis Dordogne veuves et orphelins (ADHVO)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des enfants de harkis des Hauts-de-France (AEHHF)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des Français rapatriés d’Afrique du Nord (AFRAN)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association du Lot-et-Garonne",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Harkis et anciens combattants de la Marne",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Justice Information (AJIR)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Leucatoise des François d’Afrique du Nord (ALFA)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association SIKRAH, devoir de mémoire pour les Harkis",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Supplétifs Anciens Combattants Harkis et leurs Enfants (SACHE)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cœur du Var",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif citoyenneté française (CCF)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif des associations de Harkis des Alpes-Maritimes (CAHAM)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Coordination jeunesse Harkis Ariégeoise pour les Harkis (CJHA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale de reconnaissance des harkis (FNRH)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération Nationale des Rapatriés (FNR)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Hameau de Forestage du Lodévois (HFL)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Harkis et citoyens français",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Harkis et leurs amis",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Harkis Occitanie Mémoires (HOM)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Harkis reconnaissance et devoir de mémoire",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mémoire d’hier et d’aujourd’hui pour demain (MHAD)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mémoire et avenir des Harkis, des rapatriés d’Algérie et leurs sympathisants (MAHRAS)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mémoire Harkis du Camp de Bias (MHCB)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mouvement Jeunes Harkis",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "UDACFME du Rhône",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des Familles de Harkis (UFH)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union nationale des anciens combattants Français musulmans et leurs sympathisants (UNACFME)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cérémonie d’hommage national aux harkis au mémorial de Rivesaltes",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2048-tII.html",
+      "date": "2025-11-14",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Secrétariat général pour l’investissement",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de recherche en sciences et technologies du numérique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Pasqal",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Alice & Bob",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Quandela",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Représentants de la DGSE",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du renseignement et de la sécurité de la défense",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des relations internationales et de la stratégie",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École polytechnique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’innovation de défense",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B2048-tV.html",
+      "date": "2025-11-14",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "État-major de la Marine",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "GICAN",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Piriou",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Seaowl Group",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Naval Group",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Exail",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 8,
+    "rapports_avec_liste": 6
+  }
+}

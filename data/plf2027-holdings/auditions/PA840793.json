@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:38:33+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html"
+      }
+    ],
+    "limits": "4 rapport(s) rattaché(s) (rapporteur ou membre de la commission), 2 avec une liste de personnes entendues ; le rôle « membre » signifie que la commission du député a produit le rapport, pas que le député a assisté à l'audition. Listes lues dans les pages HTML des rapports (extraction heuristique : gras = organisation, M./Mme = personne ; clé Featherless absente) ; types d'organisation déduits du nom, « autre » quand le nom ne suffit pas. 48 feuille(s) de rapport sans page en ligne ignorée(s) Identifiants HATVP rapprochés par nom avec hatvp.json.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA840793",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tII.html",
+      "date": "2026-11-05",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Ministère de la justice",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national pénitentiaire",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des directeurs pénitentiaires",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "UFAP UNSa Justice",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "CGT pénitentiaire",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "FO Justice",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "SNEPAP FSU",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat Pénitentiaire des Surveillants non gradés (SPS)",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVII.html",
+      "date": "2026-11-06",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction interministérielle de la transformation publique (DITP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’immobilier de l’État (DIE) du ministère de l’Action et des comptes publics",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des outre-mer (DGOM) du ministère des Outre-mer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Préfecture de Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Rectorat de Martinique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupe des instituts du service public (G-ISP)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut régional d’administration de Lille",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de la Réunion",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université des Antilles",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Guyane",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Université de Mayotte",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des anciens élèves des IRA (AAEIRA)",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 2
+  }
+}
