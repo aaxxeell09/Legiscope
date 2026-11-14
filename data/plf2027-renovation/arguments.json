@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T17:02:13+01:00",
+    "generated_at": "2026-11-14T17:02:33+01:00",
     "sources": [
       {
         "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
@@ -143,7 +143,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2627010_compte-rendu"
       }
     ],
-    "limits": "94 prises de parole sur le sujet lues dans 33 comptes rendus (90 comptes rendus parcourus) ; 84 classées, 16 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 10 rejetées pour citation inexacte, 7 écartées car le second avis du modèle contredit le camp ; 3 pour et 5 contre après dédoublonnage. Classement par le modèle Featherless (94 appels à cette exécution, cache sur disque). Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
+    "limits": "94 prises de parole sur le sujet lues dans 33 comptes rendus (90 comptes rendus parcourus) ; 84 classées, 16 retenues (confiance ≥ 0,7, citation retrouvée mot pour mot), 10 rejetées pour citation inexacte, 7 écartées car le second avis du modèle contredit le camp ; 3 pour et 5 contre après dédoublonnage. Classement par le modèle Featherless (0 appels à cette exécution, cache sur disque). Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien daté du jour courant (matin) ni après.",
     "producer": "pipeline/debats",
     "dossier_id": "plf2027-renovation"
   },
