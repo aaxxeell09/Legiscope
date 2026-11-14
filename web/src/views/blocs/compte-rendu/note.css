@@ -11,8 +11,8 @@
 }
 .note-document-head > div { display: flex; min-width: 0; flex-direction: column; gap: 4px; }
 .note-document-head span, .note-eyebrow {
-  color: var(--text-3); font-size: 10px; font-weight: 700; letter-spacing: .1em;
-  line-height: 1.4; text-transform: uppercase;
+  color: var(--text-3); font-size: 12px; font-weight: 500; letter-spacing: 0;
+  line-height: 1.4;
 }
 .note-document-head strong, .note-title {
   color: var(--text); font-size: clamp(18px, 2vw, 23px); font-weight: 650;
@@ -26,8 +26,8 @@
   border-bottom: 1px solid var(--border-soft);
 }
 .note-essential-label {
-  display: block; margin-bottom: 8px; color: var(--text-3); font-size: 10px;
-  font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+  display: block; margin-bottom: 8px; color: var(--text-3); font-size: 12px;
+  font-weight: 500; letter-spacing: 0;
 }
 .note-essential p, .note-essential-text {
   margin: 0; color: var(--text); font-size: clamp(16px, 1.35vw, 18px);
@@ -51,7 +51,7 @@
 .note-editor:focus {
   border-color: var(--text-2); outline: 3px solid color-mix(in srgb, var(--text) 8%, transparent); outline-offset: 1px;
 }
-.note-local-hint { margin-top: 8px; margin-bottom: 0; color: var(--text-3); font-size: 11px; line-height: 1.5; }
+.note-local-hint { margin-top: 8px; margin-bottom: 0; color: var(--text-3); font-size: 12px; line-height: 1.4; }
 
 .note-toolbar, .note-actions {
   display: flex; align-items: center; gap: 8px; width: 100%; margin: 0;
