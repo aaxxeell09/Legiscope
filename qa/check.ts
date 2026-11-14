@@ -220,7 +220,10 @@ function verifierRoot(root: string) {
       });
       if (index) {
         const f = p(id, "fiches-index");
-        for (const pa of [...disponibles, ...absents]) if (!pivotIds.has(pa)) erreur(f, "disponibles/absents", pa, "listé mais absent de pivots.json");
+        // Une fiche peut exister pour tout député suivi : pivots.json ou groupes-action.json (actionnables, alliés, perdus).
+        const ga = groupesAction as { actionnables?: { depute_id: string }[]; allies?: { depute_id: string }[]; perdus?: { depute_id: string }[] } | null;
+        const connus = new Set<string>([...pivotIds, ...[...(ga?.actionnables ?? []), ...(ga?.allies ?? []), ...(ga?.perdus ?? [])].map((x) => x.depute_id)]);
+        for (const pa of [...disponibles, ...absents]) if (!connus.has(pa)) erreur(f, "disponibles/absents", pa, "listé mais absent de pivots.json et de groupes-action.json");
       }
     }
 
