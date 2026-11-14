@@ -92,3 +92,7 @@ Règle, valable pour tous les producteurs (`date_reference` est lue comme le mat
 - **P2** (suite), **A2** (débats, arguments), **A3** (amendements), **A4** (nouveautés, fiches, action) : même règle, relance après le commit de P0. Aucun élément du 19 qui soit un vote ou une intervention en séance.
 - **P8** : régénérer les deux `note.json` après P3.
 - **X1** : le script garde « ce qui coince : le compromis du gouvernement » ; la chute reste « 208 contre 87 » puis le rejet de la première partie le 21 novembre.
+
+## 15 h 05 : relance A4 après la date au matin du 19
+
+P3 a recalculé petits colis au matin du 19 (88b178f). `bun run check` ne bloque plus que sur `data/petits-colis/fiches/index.json` : PA842029 et PA608416 y sont listés mais ne sont plus dans `pivots.json` ni `groupes-action.json`. **A4** : `git pull`, régénère fiches, `index.json`, `nouveautes.json` et `action.json` des deux dossiers sur les fichiers actuels de P3, `bun run check` vert, commit, push.
