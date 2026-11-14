@@ -1,9 +1,9 @@
 import { useState } from "react";
 import type { Etat as EtatDossier, RaisonVerdict, Verdict, VerdictObjectif } from "@contracts/index";
-import { Badge, Etat, Meta, Pourquoi, Proba } from "../../../components";
+import { Badge, Etat, Meta, Pourquoi } from "../../../components";
 import { useConfig } from "../../../lib/config";
 import { useData } from "../../../lib/data";
-import { formatDate, formatDateTime } from "../../../lib/format";
+import { formatDate, formatDateTime, formatProba } from "../../../lib/format";
 import { Tendance } from "./Tendance";
 import "./verdict.css";
 
@@ -18,6 +18,12 @@ const TENDANCE: Record<VerdictObjectif["tendance"], string> = {
   amelioration: "en amélioration depuis la dernière analyse",
   stable: "stable depuis la dernière analyse",
   degradation: "en dégradation depuis la dernière analyse",
+};
+
+const TENDANCE_ICONE: Record<VerdictObjectif["tendance"], string> = {
+  amelioration: "↗",
+  stable: "→",
+  degradation: "↘",
 };
 
 const SCORE_LIBELLE = "des sièges favorables à l'objectif";
@@ -67,6 +73,12 @@ function VerdictContenu({ verdict, dossier }: { verdict: Verdict; dossier: strin
     return r === 1 ? texte : `À défaut : ${texte}`;
   };
 
+  const deplacer = (direction: -1 | 1) => {
+    const index = verdicts.findIndex((v) => v.objectif_rang === courant.objectif_rang);
+    const suivant = verdicts[(index + direction + verdicts.length) % verdicts.length];
+    if (suivant) setRang(suivant.objectif_rang);
+  };
+
   return (
     <div className="verdict">
       <EtatLigne dossier={dossier} />
@@ -82,6 +94,10 @@ function VerdictContenu({ verdict, dossier }: { verdict: Verdict; dossier: strin
               aria-controls="verdict-panneau"
               className={v.objectif_rang === courant.objectif_rang ? "verdict-onglet actif" : "verdict-onglet"}
               onClick={() => setRang(v.objectif_rang)}
+              onKeyDown={(e) => {
+                if (e.key === "ArrowRight") { e.preventDefault(); deplacer(1); }
+                if (e.key === "ArrowLeft") { e.preventDefault(); deplacer(-1); }
+              }}
             >
               {libelle(v.objectif_rang)}
             </button>
@@ -113,12 +129,13 @@ function VerdictObjectifVue({ v, genere }: { v: VerdictObjectif; genere: string 
     <>
       <div className="verdict-bandeau">
         <div className="verdict-situation-bloc">
+          <span className="verdict-dimension">Situation actuelle</span>
           <span className={`verdict-situation verdict-situation-${v.situation}`} data-situation={v.situation}>
             {SITUATION[v.situation]}
           </span>
           {v.score !== null && (
             <span className="verdict-score">
-              <Proba value={v.score} size="md" />
+              <span className="verdict-score-valeur">{formatProba(v.score)}</span>
               <span className="verdict-score-libelle">{libelleScore(v)}</span>
             </span>
           )}
@@ -126,29 +143,22 @@ function VerdictObjectifVue({ v, genere }: { v: VerdictObjectif; genere: string 
         </div>
         <div className="verdict-tendance" data-tendance={v.tendance}>
           <span className="text-2">Tendance</span>
-          <span>{TENDANCE[v.tendance]}</span>
+          <span className="verdict-tendance-valeur"><span aria-hidden="true">{TENDANCE_ICONE[v.tendance]}</span> {TENDANCE[v.tendance]}</span>
         </div>
         <div className="verdict-confiance">
           <span className="text-2">Confiance</span>
-          <span>{CONFIANCE[v.confiance.niveau]}</span>
-          {v.confiance.etabli.length > 0 && (
-            <span className="verdict-confiance-ligne">
-              <span className="text-2">établi : </span>
-              {v.confiance.etabli.join(" ; ")}
-            </span>
-          )}
-          {v.confiance.inconnu.length > 0 && (
-            <span className="verdict-confiance-ligne">
-              <span className="text-2">inconnu : </span>
-              {v.confiance.inconnu.join(" ; ")}
-            </span>
-          )}
+          <span className="verdict-confiance-valeur">{CONFIANCE[v.confiance.niveau]}</span>
+          {(v.confiance.etabli.length > 0 || v.confiance.inconnu.length > 0) && <details className="verdict-confiance-detail">
+            <summary>Voir les fondements</summary>
+            {v.confiance.etabli.length > 0 && <div className="verdict-confiance-ligne"><strong>Ce qui est établi</strong>{v.confiance.etabli.join(" ; ")}</div>}
+            {v.confiance.inconnu.length > 0 && <div className="verdict-confiance-ligne"><strong>Ce qui reste inconnu</strong>{v.confiance.inconnu.join(" ; ")}</div>}
+          </details>}
         </div>
       </div>
 
       {v.cause_du_changement && (
         <div className="verdict-cause">
-          <span className="text-2">Ce qui a fait bouger le verdict</span>
+          <span className="text-2">{v.tendance === "stable" ? "Événement important" : "Élément associé à l’évolution"}</span>
           <span className={natureClass(v.cause_du_changement.preuve.nature)}>{v.cause_du_changement.titre}</span>
           <NatureMarque nature={v.cause_du_changement.preuve.nature} />{" "}
           <Pourquoi preuve={v.cause_du_changement.preuve} />
