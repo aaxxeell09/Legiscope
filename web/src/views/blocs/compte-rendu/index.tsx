@@ -1,10 +1,10 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import type { Note } from "@contracts/index";
 import { Etat, Meta } from "../../../components";
+import { useDossier } from "../../../lib/config";
 import { useData } from "../../../lib/data";
-import { Redaction } from "../../depute/commun";
+import { formatDate } from "../../../lib/format";
 import { chiffresAutorises, decouperChiffres } from "./chiffres";
-import "../../depute/p7.css";
 import "./note.css";
 
 /** Bloc 5, Compte rendu : quelques lignes à reprendre pour le client. */
@@ -18,39 +18,61 @@ export default function CompteRenduBloc({ dossier }: { dossier: string }) {
 }
 
 function CompteRenduContenu({ n }: { n: Note }) {
+  const dossier = useDossier();
   const [edition, setEdition] = useState(false);
-  const [texte, setTexte] = useState(n.texte);
-  const principal = n.objectifs.find((o) => o.rang === 1) ?? n.objectifs[0];
+  const texteInitial = useMemo(() => nettoyerTexte(n.texte), [n.texte]);
+  const [texte, setTexte] = useState(texteInitial);
   const autorises = chiffresAutorises(n.chiffres_utilises);
-  const morceaux: ReactNode[] = decouperChiffres(n.texte).map((m, i) =>
-    m.chiffre && m.valeur !== null && autorises(m.valeur) ? (
-      <span key={i} className="p7-chiffre" data-chiffre>
-        {m.texte}
-      </span>
-    ) : (
-      <span key={i}>{m.texte}</span>
-    ),
-  );
+  const { essentiel, paragraphes } = structurerTexte(texte);
+  const titre = dossier.status === "ok" ? dossier.label : null;
+  const dateReference = dossier.status === "ok" && dossier.dateReference ? formatDate(dossier.dateReference) : null;
+  const metaNote = useMemo(() => ({ ...n.meta, sources: n.sources }), [n.meta, n.sources]);
+
+  useEffect(() => {
+    setTexte(texteInitial);
+    setEdition(false);
+  }, [texteInitial]);
 
   return (
     <div className="note-layout">
       <article className="note-document">
-        <header className="note-document-head"><div><span>Note de situation</span><strong>{n.client}</strong></div><button type="button" className="note-edit" onClick={() => setEdition((v) => !v)}>{edition ? "Terminer" : "Ajuster localement"}</button></header>
-        <p className="note-objectif">Objectif suivi · {principal.texte}</p>
-        {edition ? <><textarea className="note-editor" value={texte} onChange={(e) => setTexte(e.target.value)} aria-label="Modifier localement le compte rendu" /><p className="note-local-hint">Modification locale uniquement — les données sources ne sont pas enregistrées.</p></> : <p className="p7-texte note-text">{texte === n.texte ? morceaux : texte}</p>}
+        <header className="note-document-head">
+          <p className="note-eyebrow">Note de situation</p>
+          <h3 className="note-title">{titre ? `${n.client} — ${titre}` : n.client}</h3>
+          {dateReference && <p className="note-date">Date de référence : {dateReference}.</p>}
+        </header>
+
+        {edition ? (
+          <div className="note-editing">
+            <textarea className="note-editor" value={texte} onChange={(e) => setTexte(e.target.value)} aria-label="Modifier localement la note" />
+            <p className="note-local-hint">Modification locale uniquement — elle n’est pas enregistrée dans les données.</p>
+          </div>
+        ) : (
+          <div className="note-reading">
+            <section className="note-essential" aria-labelledby="note-essentiel">
+              <h4 id="note-essentiel">L’essentiel</h4>
+              <p>{rendreChiffres(essentiel, autorises, "essentiel")}</p>
+            </section>
+            {paragraphes.length > 0 && (
+              <section className="note-body" aria-label="Synthèse complète">
+                {paragraphes.map((paragraphe, i) => <p key={i}>{rendreChiffres(paragraphe, autorises, `corps-${i}`)}</p>)}
+              </section>
+            )}
+          </div>
+        )}
+
+        <div className="note-toolbar" aria-label="Actions de la note">
+          <BoutonCopier texte={texte} />
+          <button type="button" className="note-edit" onClick={() => setEdition((v) => !v)}>{edition ? "Terminer" : "Modifier"}</button>
+          <Meta meta={metaNote} />
+        </div>
       </article>
-      <div className="p7-actions note-actions">
-        <BoutonCopier note={n} texte={texte} />
-        <Redaction mode={n.mode} verifie={n.verifie} modele={n.modele} date={n.meta.generated_at.slice(0, 10)} />
-      </div>
-      <Meta meta={n.meta} />
     </div>
   );
 }
 
-function BoutonCopier({ note, texte: corps }: { note: Note; texte: string }) {
+function BoutonCopier({ texte }: { texte: string }) {
   const [etat, setEtat] = useState<"" | "copié" | "copie impossible">("");
-  const texte = [corps, "", "Sources :", ...note.sources.map((s, i) => `${i + 1}. ${s.label} : ${s.url}`)].join("\n");
   async function copier() {
     try {
       await navigator.clipboard.writeText(texte);
@@ -62,8 +84,8 @@ function BoutonCopier({ note, texte: corps }: { note: Note; texte: string }) {
   }
   return (
     <>
-      <button type="button" className="p7-btn" onClick={copier}>
-        {etat === "copié" ? "Copié" : "Copier le compte rendu"}
+      <button type="button" className="note-copy" onClick={copier}>
+        {etat === "copié" ? "Copié" : "Copier la note"}
       </button>
       {etat && (
         <span className="text-2" role="status">
@@ -71,5 +93,28 @@ function BoutonCopier({ note, texte: corps }: { note: Note; texte: string }) {
         </span>
       )}
     </>
+  );
+}
+
+/** Retire du rendu la limite technique finale, sans modifier la donnée source. */
+function nettoyerTexte(texte: string) {
+  return texte.replace(/\s+Limites\s*:\s*.*$/is, "").trim();
+}
+
+function structurerTexte(texte: string) {
+  const phrases = texte.match(/[^.!?]+(?:[.!?]+(?=\s|$)|$)/g)?.map((p) => p.trim()).filter(Boolean) ?? [texte];
+  const essentiel = phrases[0] ?? texte;
+  const paragraphes: string[] = [];
+  for (let i = 1; i < phrases.length; i += 2) paragraphes.push(phrases.slice(i, i + 2).join(" "));
+  return { essentiel, paragraphes };
+}
+
+function rendreChiffres(texte: string, autorises: (valeur: number) => boolean, prefixe: string): ReactNode[] {
+  return decouperChiffres(texte).map((m, i) =>
+    m.chiffre && m.valeur !== null && autorises(m.valeur) ? (
+      <span key={`${prefixe}-${i}`} className="p7-chiffre" data-chiffre>{m.texte}</span>
+    ) : (
+      <span key={`${prefixe}-${i}`}>{m.texte}</span>
+    ),
   );
 }
