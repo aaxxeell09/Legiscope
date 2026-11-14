@@ -260,7 +260,7 @@ for (const d of config.dossiers) {
   const orcet = probablesOrcet(texte, d, !rejoue && annee === 2027);
   probables.push(...orcet);
   if (orcet.length) sources.push({ label: "Prédictions Orcet (Hémicycle)", url: ORCET_URL });
-  else if (texte && !rejoue) limits.push("Aucun amendement en attente avec prédiction Orcet dans texte.json.");
+  else if (texte && !rejoue) limits.push("Aucune prédiction Orcet sur un amendement en attente qui porte la mesure : les 7 prédictions obtenues visaient des amendements hors sujet (pensions, crédits de seconde partie, qui ne citent le sujet que dans leur exposé), écartés de texte.json.");
   if (rejoue) limits.push(`Dossier rejoué au ${fmt(ref)} : Orcet n'existe pas rétroactivement, probabilités à null.`);
   const coh = ligneCohesion(ref);
   if (coh) probables.push(coh);

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T12:56:36Z",
+    "generated_at": "2026-11-14T13:03:18Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, agenda des réunions",
@@ -17,13 +17,9 @@
       {
         "label": "Texte PRJLANR5L17B3210, positions et amendements",
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-      },
-      {
-        "label": "Prédictions Orcet (Hémicycle)",
-        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
       }
     ],
-    "limits": "Échéances connues au 14 novembre 2026 (réunions inscrites à l'agenda au plus tard ce jour-là). Aucune réunion de l'agenda de l'Assemblée liée au texte après le 14 novembre 2026. Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null.",
+    "limits": "Échéances connues au 14 novembre 2026 (réunions inscrites à l'agenda au plus tard ce jour-là). Aucune réunion de l'agenda de l'Assemblée liée au texte après le 14 novembre 2026. Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null. Aucune prédiction Orcet sur un amendement en attente qui porte la mesure : les 7 prédictions obtenues visaient des amendements hors sujet (pensions, crédits de seconde partie, qui ne citent le sujet que dans leur exposé), écartés de texte.json.",
     "producer": "pipeline/suite",
     "dossier_id": "plf2027-holdings"
   },
@@ -111,139 +107,6 @@
           }
         ],
         "raisonnement": "On additionne les sièges des groupes selon leur position connue sur la mesure ; les groupes divisés ou abstentionnistes ne sont pas comptés. Pas de probabilité chiffrée."
-      }
-    },
-    {
-      "titre": "Amendement n° 1965 (ECOS) : 35 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.35,
-      "detail": "Orcet : 0,35 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement vise à permettre l’expérimentation, pour une durée de 5 ans, de dispositifs de sécurité sociale de l’alimentation (SSA) dans la continuité des dispositifs déployés par plusieurs communes françaises. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
-      "preuve": {
-        "nature": "deduction",
-        "sources": [
-          {
-            "label": "Amendement n° 1965",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001965"
-          },
-          {
-            "label": "Prédictions Orcet (Hémicycle)",
-            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
-          }
-        ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,99. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
-      }
-    },
-    {
-      "titre": "Amendement n° 2765 (LFI-NFP) : 35 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.35,
-      "detail": "Orcet : 0,35 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Par cet amendement, le groupe La France insoumise propose d'allouer des fonds à la mise en place d’instances d'attribution démocratique des subventions aux associations. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
-      "preuve": {
-        "nature": "deduction",
-        "sources": [
-          {
-            "label": "Amendement n° 2765",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N002765"
-          },
-          {
-            "label": "Prédictions Orcet (Hémicycle)",
-            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
-          }
-        ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,96. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
-      }
-    },
-    {
-      "titre": "Amendement n° 115 (SOC) : 56 % de votes pour prédits par Orcet, adoption probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.56,
-      "detail": "Orcet : 0,56 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des fonctionnaires civiles et militaires pour 2027. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
-      "preuve": {
-        "nature": "deduction",
-        "sources": [
-          {
-            "label": "Amendement n° 115",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000115"
-          },
-          {
-            "label": "Prédictions Orcet (Hémicycle)",
-            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
-          }
-        ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,91. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
-      }
-    },
-    {
-      "titre": "Amendement n° 848 (SOC) : 56 % de votes pour prédits par Orcet, adoption probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.56,
-      "detail": "Orcet : 0,56 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des fonctionnaires civiles et militaires pour 2027. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
-      "preuve": {
-        "nature": "deduction",
-        "sources": [
-          {
-            "label": "Amendement n° 848",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000848"
-          },
-          {
-            "label": "Prédictions Orcet (Hémicycle)",
-            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
-          }
-        ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,91. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
-      }
-    },
-    {
-      "titre": "Amendement n° 933 (RN) : 44 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.44,
-      "detail": "Orcet : 0,44 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Le présent amendement prévoit de minorer les crédits, en autorisations d’engagement et en crédits de paiement, d’un montant de 1 666 500 euros pour l’action n° 7 « Compagnie internationale de radio et télévision » du programme n° 180 « P... Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
-      "preuve": {
-        "nature": "deduction",
-        "sources": [
-          {
-            "label": "Amendement n° 933",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000933"
-          },
-          {
-            "label": "Prédictions Orcet (Hémicycle)",
-            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
-          }
-        ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,95. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
-      }
-    },
-    {
-      "titre": "Amendement n° 1624 (EPR) : 44 % de votes pour prédits par Orcet, rejet probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.44,
-      "detail": "Orcet : 0,44 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Le présent amendement vise à mieux cibler les aides personnelles au logement (APL) versées aux étudiants en tenant compte, lorsqu’ils demeurent rattachés au foyer fiscal de leurs parents, des ressources de ce foyer. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
-      "preuve": {
-        "nature": "deduction",
-        "sources": [
-          {
-            "label": "Amendement n° 1624",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001624"
-          },
-          {
-            "label": "Prédictions Orcet (Hémicycle)",
-            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
-          }
-        ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,90. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
-      }
-    },
-    {
-      "titre": "Amendement n° 1478 (LFI-NFP) : 55 % de votes pour prédits par Orcet, adoption probable à l'Assemblée si le vote avait lieu aujourd'hui",
-      "proba": 0.55,
-      "detail": "Orcet : 0,55 de probabilité moyenne de voter pour, chez les députés (pas une probabilité d'adoption de l'amendement ni de la loi). Par cet amendement, les député.es de la France insoumise souhaitent organiser un plan de sauvegarde de l'audiovisuel public. Le texte ayant été rejeté le 4 novembre, l'amendement n'est pas examiné en première lecture : la lecture vaut s'il revient en nouvelle lecture.",
-      "preuve": {
-        "nature": "deduction",
-        "sources": [
-          {
-            "label": "Amendement n° 1478",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001478"
-          },
-          {
-            "label": "Prédictions Orcet (Hémicycle)",
-            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
-          }
-        ],
-        "raisonnement": "Prédiction v1-mirt2d-tfidf-live-2026-06 du 14 novembre 2026, confiance 0,90. Au-dessus de 0,5 on lit une adoption probable, en dessous un rejet probable."
       }
     },
     {
