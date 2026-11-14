@@ -10,7 +10,7 @@ import {
   ConfigSchema, NoteSchema, SCHEMAS, dataPath,
   type Action, type Config, type Deputes, type Etat, type Nouveautes, type Groupes, type Kind, type Note, type Source, type Suite, type Texte, type Verdict,
 } from "../../contracts/index";
-import { coutCumule, redigerVerifie } from "../lib/llm";
+import { chiffresUtilises, coutCumule, redigerVerifie } from "../lib/llm";
 import { verifierChiffres } from "../lib/verif";
 
 type Dossier = Config["dossiers"][number];
@@ -42,6 +42,10 @@ function nombresDe(s: string): string[] {
   return [...s.replace(/(\d)[   ](?=\d{3}(?!\d))/g, "$1").matchAll(/(?<![\p{L}\d])\d+(?:[.,]\d+)?(?![\p{L}\d])/gu)].map((m) => m[0].replace(",", "."));
 }
 
+const resumeCourt = (r: string) => {
+  const m = r.replace(/^(cet amendement|l.amendement) (vise à|propose de|a pour objet de)\s*/i, "").replace(/\.$/, "").split(/\s+/);
+  return min1(m.slice(0, 12).join(" ") + (m.length > 12 ? "…" : ""));
+};
 const pct = (p: number) => `${Math.round(p * 100)} %`;
 const dateFr = (iso: string) => {
   const [a, m, j] = iso.split("-").map(Number);
@@ -118,7 +122,7 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
         const g = sigle(x.groupe_id);
         ajouter(
           7,
-          `Amendement n° ${x.numero}${g ? ` (${g})` : ""}, ${x.resume.replace(/\.$/, "")} : Orcet prédit en moyenne ${pct(x.prediction!.proba_pour)} de votes pour.`,
+          `Amendement n° ${x.numero}${g ? ` (${g})` : ""}, ${resumeCourt(x.resume)} : Orcet prédit en moyenne ${pct(x.prediction!.proba_pour)} de votes pour.`,
           [x.numero, String(x.prediction!.proba_pour)],
           { label: `Amendement n° ${x.numero}`, url: x.url },
         );
@@ -130,10 +134,11 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
   // 3. Prochaines dates.
   if (s) {
     const occ = s.derniere_occasion;
-    if (occ?.date) ajouter(3, `Dernière occasion d'agir : ${dateFr(occ.date)}, ${min1(occ.titre.replace(/\.$/, ""))}.`, [occ.date], { label: occ.titre, url: occ.url });
     const proch = s.echeances.find((e) => e.date && (!ref || e.date >= ref) && e.date !== occ?.date);
-    if (proch?.date) ajouter(7, `Ensuite : ${dateFr(proch.date)}, ${min1(proch.titre.replace(/\.$/, ""))}.`, [proch.date], { label: proch.titre, url: proch.url });
-    const prob = s.probables.find((p) => p.proba !== null);
+    if (proch?.date) ajouter(occ?.date && proch.date < occ.date ? 3 : 7, `${occ?.date && proch.date < occ.date ? "Prochaine date" : "Ensuite"} : ${dateFr(proch.date)}, ${min1(proch.titre.replace(/\.$/, ""))}.`, [proch.date], { label: proch.titre, url: proch.url });
+    if (occ?.date) ajouter(3, `Dernière occasion d'agir : ${dateFr(occ.date)}, ${min1(occ.titre.replace(/\.$/, ""))}.`, [occ.date], { label: occ.titre, url: occ.url });
+    // Une prédiction Orcet sur un amendement n'est jamais une issue : ces probables sont écartés (garde-fou).
+    const prob = s.probables.find((p) => p.proba !== null && !/amendement|n° \d/i.test(p.titre));
     if (prob) ajouter(8, `Issue la plus probable selon l'outil : ${prob.titre.replace(/\.$/, "")} (${pct(prob.proba!)}).`, [String(prob.proba)]);
   } else limites.push("prochaines dates pas encore disponibles");
 
@@ -154,6 +159,21 @@ function construireFaits(d: Dossier, v: Verdict | null, s: Suite | null, a: Acti
 
   // Ne garde que les chiffres réellement utiles et sans doublon.
   return { phrases, prios, chiffres: [...new Set(chiffres)], sources, limites };
+}
+
+/** Formulations interdites (rendu final) ou non fondées sur les faits fournis. Renvoie les extraits fautifs. */
+function interdits(texte: string, f: Faits): string[] {
+  const regles: RegExp[] = [
+    /chances? d'adoption/i, /probabilit\S* (que la loi|d'adoption)/i, /influençable/i,
+    /\b\d{1,2} ?h ?\d{2}\b/,
+    /(il faut|il convient d['e]|nous recommandons?|il est recommandé) [^.]*/i, /(rejet|adoption) (probable|improbable|quasi certain)/i, /perspectives? d'adoption/i, /rend\S* (leur|son|sa|un|une) (rejet|adoption)/i, /ciblant [^.]*/i, /sur qui agir ?:[^.]*/i, /en priorité ceux [^.]*/i, /(cibler|consolider) [^.]*/i,
+    /(sera|seront|devrait être) (adopté|rejeté)e?s?/i, /le plus probable à être/i,
+  ];
+  const faits = f.phrases.join(" ").toLowerCase();
+  return regles.flatMap((re) => {
+    const m = texte.match(re);
+    return m && !faits.includes(m[0].toLowerCase()) ? [m[0]] : [];
+  });
 }
 
 function dedoublonnerSources(src: Source[]): Source[] {
@@ -205,14 +225,17 @@ function promptNote(d: Dossier, f: Faits): { system: string; user: string } {
   return {
     system:
       "Tu rédiges le compte rendu qu'un cabinet d'affaires publiques adapte puis envoie à son client. " +
-      "Français, phrases courtes, ton factuel, pas de jargon, pas de titre, pas de liste. Environ 150 mots. " +
+      "Français, phrases courtes, ton factuel, pas de jargon, pas de titre, pas de liste. 150 mots au plus, jamais davantage. " +
+      "Tu décris, tu ne conseilles pas : aucune phrase ne dit au cabinet quoi faire, qui cibler ou sur qui agir, sauf la liste de députés fournie. " +
       "Tu n'utilises que les faits fournis, tu n'inventes rien. Tu n'écris aucun nombre absent de la liste autorisée. " +
-      "Une prédiction Orcet est une moyenne des probabilités individuelles de voter pour, jamais une probabilité d'adoption. " +
-      "Un vote en commission n'est pas une adoption ; l'Assemblée n'est pas l'issue finale. Ne mélange jamais rejeté, retiré, tombé et non examiné.",
+      "Écris les probabilités en pourcentage (0.24 s'écrit 24 %). Une prédiction Orcet est une moyenne des probabilités individuelles de voter pour, jamais une probabilité d'adoption. " +
+      "N'en déduis jamais qu'un amendement ou la mesure sera adopté ou rejeté, et n'écris jamais « chances d'adoption ». " +
+      "Tu ne donnes aucun conseil ni aucune cible qui ne figure pas mot pour mot dans les faits ; si aucun député n'est cité, tu n'en désignes pas. " +
+      "Pas d'heure, seulement des dates. Un vote en commission n'est pas une adoption ; l'Assemblée n'est pas l'issue finale. Ne mélange jamais rejeté, retiré, tombé et non examiné.",
     user:
       `Client : ${vars.client}. Mesure suivie : ${vars.mesure}. Objectif principal : ${vars.objectif}. Replis : ${vars.replis || "aucun"}. ` +
       `Situation au ${vars.date_reference}.\n\nFaits :\n${vars.faits}\n\n` +
-      "Rédige le compte rendu dans cet ordre : verdict et pourquoi, ce qui a bougé, prochaines dates, sur qui agir. Termine par une phrase de limites si elles existent : " +
+      `Rédige le compte rendu dans cet ordre : verdict et pourquoi, ce qui a bougé, prochaines dates${f.phrases.some((p) => p.startsWith("Députés sur qui agir")) ? ", sur qui agir (uniquement les députés cités)" : ". Ne dis pas sur qui agir : la liste n'est pas encore prête"}. Termine par une phrase de limites si elles existent : ` +
       (vars.limites || "aucune") + ".",
   };
 }
@@ -327,7 +350,18 @@ async function traiter(d: Dossier, cfg: Config): Promise<{ id: string; mode: str
   const gx3 = gabaritX3(d, { v, s, a, n, e }, limitesTexte);
   const texteGabarit = gx3 ?? gabaritIntegre(d, f);
   if (gx3) autorises.push(...nombresDe(gx3).filter((c) => !autorises.includes(c)), ...[s?.derniere_occasion?.date, s?.echeances[0]?.date, ...(n?.evenements ?? []).slice(0, 2).map((ev) => ev.date)].filter((c): c is string => !!c));
-  const r = await redigerVerifie(promptNote(d, f), autorises, texteGabarit);
+  // Garde-fous du rendu final, contrôlés après le vérificateur de chiffres : 2 relances au plus, sinon gabarit.
+  const prompt = promptNote(d, f);
+  let r = await redigerVerifie(prompt, autorises, texteGabarit);
+  for (let relance = 0; r.mode === "llm" && relance < 2; relance++) {
+    const fautes = interdits(r.texte, f);
+    if (!fautes.length) break;
+    console.warn(`${d.id} : garde-fou (${fautes.join(" | ")}), relance`);
+    r = await redigerVerifie({ system: prompt.system, user: prompt.user + `\n\nN'écris surtout pas : ${fautes.map((x) => `« ${x} »`).join(", ")}.` }, autorises, texteGabarit);
+    if (relance === 1 && r.mode === "llm" && interdits(r.texte, f).length) {
+      r = { texte: texteGabarit, mode: "gabarit", chiffres_utilises: chiffresUtilises(texteGabarit, autorises), fautifs: [], modele: null, verifie: verifierChiffres(texteGabarit, autorises).ok, tentatives: r.tentatives };
+    }
+  }
   const metaSources = dedoublonnerSources([...(v?.meta.sources ?? []), ...(t?.meta.sources ?? [])]);
   const sources = dedoublonnerSources(f.sources).slice(0, 8);
   const limitesNote = limitesTexte || "Aucune limite signalée par les fichiers sources.";

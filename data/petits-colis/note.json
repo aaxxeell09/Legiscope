@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:44:45Z",
+    "sources": [
+      {
+        "label": "Scrutins publics, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
+      },
+      {
+        "label": "Amendements, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Prédictions Orcet (Hémicycle)",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Texte",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      },
+      {
+        "label": "Amendements du texte PRJLANR5L17B1906, open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      }
+    ],
+    "limits": "Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes ; députés à approcher pas encore disponibles.",
+    "producer": "pipeline/note",
+    "dossier_id": "petits-colis"
+  },
+  "client": "Alibaba France",
+  "objectifs": [
+    {
+      "rang": 1,
+      "texte": "Empêcher que la taxe soit votée",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 2,
+      "texte": "Réduire son montant",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 3,
+      "texte": "Repousser son application",
+      "position_cible": "contre"
+    }
+  ],
+  "texte": "Pour Alibaba France. Objectif principal, « Empêcher que la taxe soit votée » : mal engagé, chances estimées par l'outil 26 %, tendance stable. À l'Assemblée nationale, en première lecture, la situation est défavorable car la mesure est portée par le gouvernement et soutenue par 7 groupes, face à un seul groupe contre. Ce qui joue pour le client : amendement de suppression de l'article 22 déposé par le groupe RN. Ce qui coince : mesure portée par le gouvernement. Prochaine date : 18 novembre 2025, commission des finances : Examen du texte (09 h 30). Dernière occasion d'agir : 19 novembre 2025, séance publique du 19 novembre 2025 : examen de l'article 22 et de ses amendements, dernier moment pour faire adopter la suppression à l'Assemblée en première lecture.",
+  "chiffres_utilises": [
+    "0.26",
+    "26",
+    "7",
+    "22",
+    "2025-11-18",
+    "18",
+    "2025",
+    "09",
+    "30",
+    "2025-11-19",
+    "19"
+  ],
+  "sources": [
+    {
+      "label": "Amendement n° 806",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+    },
+    {
+      "label": "Texte du projet de loi",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+    },
+    {
+      "label": "Commission des finances : Examen du texte (09 h 30)",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428"
+    },
+    {
+      "label": "Séance publique du 19 novembre 2025 : examen de l'article 22 et de ses amendements, dernier moment pour faire adopter la suppression à l'Assemblée en première lecture",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428"
+    }
+  ],
+  "limites": "Rejoué à la date de référence du 18 novembre 2025 ; amendements sans prédiction Orcet exclus des comptes ; députés à approcher pas encore disponibles.",
+  "mode": "gabarit",
+  "modele": null,
+  "verifie": true
+}
