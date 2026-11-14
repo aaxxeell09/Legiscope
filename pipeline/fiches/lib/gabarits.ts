@@ -77,7 +77,7 @@ export type EntreeSynthese = {
   position_groupe: { position: string | null; confiance: number } | null;
   amendements: { numero: string | null; role: "auteur" | "cosignataire"; resume: string; sort: Sort; travaille_avec: string[]; id?: string }[];
   debats: { date: string; lieu: Lieu; citation: string }[];
-  auditions: { date: string; role: string; organisations: string[] }[];
+  auditions: { date: string; role: string; entendu_par?: string; organisations: string[] }[];
 };
 export type EcartsPivot = { n_ecarts: number; loyaute_12m: number } | null;
 export type Gabarise = { position_probable: string; argument: string; chiffres: string[]; origine: "x3" | "local" };
@@ -90,7 +90,9 @@ export function gabaritSynthese(e: EntreeSynthese, pivot: EcartsPivot): Gabarise
   const k = e.amendements.find((a) => a.role === "auteur") ?? e.amendements[0] ?? null;
   const j = [...e.debats].sort((a, b) => (a.date < b.date ? 1 : -1))[0] ?? null;
   const numero = k ? k.numero ?? (k.id?.match(/N0*(\d+)$/)?.[1] ?? "") : "";
-  const organisations = [...new Set(e.auditions.flatMap((a) => a.organisations))].slice(0, 3).join(", ");
+  // Complément 1 : « a entendu » seulement pour un rapporteur ; les auditions d'un simple membre vont dans une variable à part.
+  const organisations = [...new Set(e.auditions.filter((a) => a.role.startsWith("rapporteur")).flatMap((a) => a.organisations))].slice(0, 3).join(", ");
+  const organisations_commission = [...new Set(e.auditions.filter((a) => !a.role.startsWith("rapporteur")).flatMap((a) => a.organisations))].slice(0, 3).join(", ");
   const nEcarts = pivot?.n_ecarts ?? 0;
   const vars: Record<string, string> = {
     client: e.client,
@@ -105,9 +107,10 @@ export function gabaritSynthese(e: EntreeSynthese, pivot: EcartsPivot): Gabarise
     s: nEcarts > 1 ? "s" : "",
     loyaute: pivot ? dec(pivot.loyaute_12m) : "",
     organisations,
+    organisations_commission,
   };
   const idPosition = k ? "position.depose" : j ? "position.dit" : pivot && nEcarts >= 1 ? "position.vote" : "position.inconnue";
-  const idArgument = k && j ? "argument.depose_dit" : k ? "argument.depose" : j ? "argument.dit" : organisations ? "argument.auditions" : "argument.contact";
+  const idArgument = k && j ? "argument.depose_dit" : k ? "argument.depose" : j ? "argument.dit" : organisations ? "argument.auditions" : organisations_commission && lireGabaritsMd(MD_SYNTHESE).has("argument.auditions_commission") ? "argument.auditions_commission" : "argument.contact";
   const gp = gabarit(MD_SYNTHESE, idPosition);
   const ga = gabarit(MD_SYNTHESE, idArgument);
   const chiffres = new Set<string>();

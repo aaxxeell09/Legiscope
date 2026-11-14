@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:08:36.093Z",
+    "generated_at": "2026-11-14T13:13:00.981Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -385,16 +385,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sébastien Saint-Pasteur est probablement contre la mesure, comme en témoigne l'amendement n° 364 qu'il a cosigné et qui a été rejeté.",
-    "argument": "Présenter à ce député que l'Afep s'oppose à la taxe de 0,5 % sur les holdings patrimoniales, en s'appuyant sur l'audition de KNDS France du 22 octobre 2026 pour illustrer les effets concrets de cette mesure sur les entreprises.",
+    "position_probable": "A cosigné l'amendement n° 364, rejeté (« Après l'article 4 : I. – Le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts est ainsi rétabli :« CHAPITRE IER BIS« Impôt plancher sur la… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 364 (« Après l'article 4 : I. – Le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts est ainsi rétabli :« CHAPITRE IER BIS« Impôt plancher sur la… »).",
     "chiffres_utilises": [
       "364",
-      "0.5",
-      "2026",
-      "22"
+      "4"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

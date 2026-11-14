@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:08:36.120Z",
+    "generated_at": "2026-11-14T13:13:00.990Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -556,13 +556,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Christophe Bex est probablement contre la mesure, comme en témoigne son cosignature d'un amendement visant à supprimer l'article 3, qui a été adopté.",
-    "argument": "Présenter à ce député l'adoption de l'amendement supprimant l'article 3, car il a cosigné ce texte et son groupe soutient la mesure.",
+    "position_probable": "A cosigné l'amendement n° 756, rejeté (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Avant le chapitre II du titre IV de la première partie du livre Ier, il est inséré un chapitre I ter… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 756 (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Avant le chapitre II du titre IV de la première partie du livre Ier, il est inséré un chapitre I ter… »).",
     "chiffres_utilises": [
-      "3"
+      "756",
+      "4",
+      "1"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

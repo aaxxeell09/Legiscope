@@ -9,12 +9,16 @@ import { lirePrompt, rediger } from "./redaction";
 
 const PROMPT_SYNTHESE = "pipeline/fiches/prompts/synthese.md";
 
-/** Les députés à traiter : les pivots, `pivot_demo` en premier. */
+/** Les députés à traiter (P0, 14 h 15) : `pivot_demo` d'abord, puis les actionnables, les alliés et les perdus de groupes-action.json, puis les pivots restants. */
 export function candidats(ctx: Contexte): string[] {
-  const ids = (ctx.pivots?.deputes ?? []).map((p) => p.id);
+  const ordre: string[] = [];
+  const ajouter = (id: string) => { if (!ordre.includes(id)) ordre.push(id); };
   const demo = ctx.dossier.pivot_demo;
-  if (demo && ids.includes(demo)) return [demo, ...ids.filter((x) => x !== demo)];
-  return ids;
+  if (demo) ajouter(demo);
+  const ga = ctx.groupesAction;
+  for (const liste of [ga?.actionnables, ga?.allies, ga?.perdus]) for (const d of liste ?? []) ajouter(d.depute_id);
+  for (const p of ctx.pivots?.deputes ?? []) ajouter(p.id);
+  return ordre;
 }
 
 async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<{ s: Synthese; origine: "x3" | "local" }> {
@@ -37,7 +41,9 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
       travaille_avec: a.travaille_avec,
     })),
     debats: fiche.debats.filter((d) => !posterieur(d.date, ref)).map((d) => ({ date: d.date, lieu: d.lieu, citation: d.citation })),
-    auditions: fiche.auditions.filter((a) => !posterieur(a.date, ref)).map((a) => ({ date: a.date, role: a.role, organisations: a.organisations.map((o) => o.nom) })),
+    // Complément 1 : le rôle dit si le député a lui-même entendu (rapporteur) ou si les organisations ont été
+    // entendues par les rapporteurs de sa commission (membre) ; le prompt de X3 lit `entendu_par`.
+    auditions: fiche.auditions.filter((a) => !posterieur(a.date, ref)).map((a) => ({ date: a.date, role: a.role, entendu_par: a.role.startsWith("rapporteur") ? "le député lui-même, comme rapporteur" : "les rapporteurs de sa commission, pas le député lui-même", organisations: a.organisations.map((o) => o.nom) })),
   };
   const pivot = ctx.pivots?.deputes.find((p) => p.id === pa);
   const gabarit = gabaritSynthese(entree, pivot ? { n_ecarts: pivot.ecarts.length, loyaute_12m: pivot.loyaute_12m } : null);
@@ -72,15 +78,17 @@ export async function construireFiches(ctx: Contexte): Promise<FichesIndex> {
   const raisons: string[] = [];
   const modes: string[] = [];
 
-  for (const pa of candidats(ctx)) {
+  // Deux fiches à la fois (limite de concurrence du client P8) ; l'ordre des listes est conservé.
+  const liste = candidats(ctx);
+  const resultats = new Map<string, { ok: true; mode: string } | { ok: false; raison: string }>();
+  const traiter = async (pa: string) => {
     const auditions = lireKind(root, dossier.id, "auditions", pa);
     const debats = lireKind(root, dossier.id, "debats", pa);
     const amendements = lireKind(root, dossier.id, "amendements", pa);
     const manquants = [["auditions", auditions], ["debats", debats], ["amendements", amendements]].filter(([, v]) => !v).map(([k]) => k as string);
     if (manquants.length > 0 || !ctx.hatvp) {
-      absents.push(pa);
-      raisons.push(`${pa} : ${[...manquants, ...(ctx.hatvp ? [] : ["hatvp.json"])].join(", ")} manquant ou invalide`);
-      continue;
+      resultats.set(pa, { ok: false, raison: `${pa} : ${[...manquants, ...(ctx.hatvp ? [] : ["hatvp.json"])].join(", ")} manquant ou invalide` });
+      return;
     }
     const base: Omit<Fiche, "synthese"> = {
       meta: {
@@ -105,15 +113,23 @@ export async function construireFiches(ctx: Contexte): Promise<FichesIndex> {
     if (apres.length > 0) limites.push(`${apres.length} élément(s) postérieur(s) à la date de référence recopié(s) tels quels (producteurs A1/A2) et ignorés par la synthèse.`);
     const fiche: Fiche = { ...base, meta: { ...base.meta, limits: limites.join(" ") }, synthese: s };
     ecrireJson(dataPath(dossier.id, "fiche", pa, root), fiche);
-    disponibles.push(pa);
-    modes.push(`${pa}:${s.mode}`);
+    resultats.set(pa, { ok: true, mode: s.mode });
+  };
+  let suivant = 0;
+  const ouvrier = async () => { while (suivant < liste.length) await traiter(liste[suivant++]); };
+  await Promise.all([ouvrier(), ouvrier()]);
+  for (const pa of liste) {
+    const r = resultats.get(pa);
+    if (!r) continue;
+    if (r.ok) { disponibles.push(pa); modes.push(`${pa}:${r.mode}`); }
+    else { absents.push(pa); raisons.push(r.raison); }
   }
 
   const index: FichesIndex = {
     meta: {
       generated_at: maintenant(),
       sources: [],
-      limits: `${disponibles.length} fiche(s) produite(s) sur ${disponibles.length + absents.length} pivot(s).${raisons.length ? " Absents : " + raisons.join(" ; ") + "." : ""} Index limité aux pivots de pivots.json (qa/check).`,
+      limits: `${disponibles.length} fiche(s) produite(s) sur ${disponibles.length + absents.length} député(s) de groupes-action.json et pivots.json.${raisons.length ? " Absents : " + raisons.join(" ; ") + "." : ""}`,
       producer: "pipeline/fiches",
       dossier_id: dossier.id,
     },

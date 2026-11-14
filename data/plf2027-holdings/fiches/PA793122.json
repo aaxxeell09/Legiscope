@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:12:15.325Z",
+    "generated_at": "2026-11-14T13:13:00.925Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1222,13 +1222,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Romain Daubié est probablement contre la mesure, comme en témoignent les amendements qu'il a cosignés sur l'article 3 et qui ont été rejetés ou tombés.",
-    "argument": "Présenter à ce député les amendements qu'il a cosignés sur l'article 3, dont l'un a été rejeté et l'autre est tombé, pour appuyer la position de l'Afep contre la taxe sur la fortune improductive.",
+    "position_probable": "A cosigné l'amendement n° 796, rejeté (« Après l'article 4 : I. – Le I de l’article 975 du code général des impôts est complété par un alinéa ainsi rédigé :« Sont exonérés les biens ou droits immobiliers détenus… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 796 (« Après l'article 4 : I. – Le I de l’article 975 du code général des impôts est complété par un alinéa ainsi rédigé :« Sont exonérés les biens ou droits immobiliers détenus… »).",
     "chiffres_utilises": [
-      "3"
+      "796",
+      "4",
+      "975"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

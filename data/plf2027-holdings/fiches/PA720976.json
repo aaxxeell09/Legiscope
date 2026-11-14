@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:12:06.447Z",
+    "generated_at": "2026-11-14T13:13:00.924Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1167,23 +1167,11 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe LIOT est contre la mesure.",
-    "argument": "Présenter à ce député les auditions qu'il a menées le 26 octobre 2026 avec le MEDEF et le 29 octobre 2026 avec la Direction générale du Trésor, afin de lui montrer que la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) risque de pénaliser les structures qu'il a entendues.",
-    "chiffres_utilises": [
-      "3",
-      "0.5",
-      "3140",
-      "0.76",
-      "2026",
-      "10",
-      "26",
-      "28",
-      "29",
-      "11",
-      "56"
-    ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "position_probable": "Position personnelle non connue : aucun amendement, aucune intervention et aucun écart de vote relevés sur la mesure.",
+    "argument": "Présenter à ce député la position du client (Afep) : il a déjà entendu Interprofession de la filière des fruits et légumes frais (Interfel), Chambre d’agriculture, Association Générale des Producteurs de Blé et autres céréales (AGPB) sur ce texte.",
+    "chiffres_utilises": [],
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

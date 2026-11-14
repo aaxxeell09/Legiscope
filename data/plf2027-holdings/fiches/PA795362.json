@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:08:36.102Z",
+    "generated_at": "2026-11-14T13:13:00.986Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1225,19 +1225,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Lisa Belluco a cosigné plusieurs amendements, dont les numéros 18, 43, 38, 47, 174, 208 et 56, tous rejetés, ce qui indique probablement une position favorable à la mesure.",
-    "argument": "Présenter à ce député le rejet de l'amendement n° 18 qu'il a cosigné, afin de montrer que sa position sur la fiscalité du patrimoine est déjà actée et de l'orienter vers la défense de la position de l'Afep contre la mesure.",
+    "position_probable": "A cosigné l'amendement n° 18, rejeté (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 18 (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier… »).",
     "chiffres_utilises": [
       "18",
-      "43",
-      "174",
-      "208",
-      "38",
-      "47",
-      "56"
+      "4",
+      "1"
     ],
-    "mode": "llm",
-    "modele": "Qwen/Qwen3.8-27B",
+    "mode": "gabarit",
+    "modele": null,
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,0 +1,1153 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:13:00.944Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Rapports sur le projet de loi de finances pour 2027",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tI.html"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA719922",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tI.html",
+      "date": "2026-10-20",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Bureau de recherches géologiques et minières (BRGM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national de la conchyliculture (CNC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des syndicats d’agents généraux d’assurance (Agea)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des professionnels de la réassurance en France (Apref)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France assureurs",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Caisse centrale de réassurance (CCR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des élus des littoraux (Anel)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association nationale des élus de la montagne (Anem)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de l’environnement industriel et des risques (Ineris)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de la prévention des risques (DGPR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut des risques majeurs (IRMa)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de la transition écologique (Ademe)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de sûreté nucléaire et de radioprotection (ASNR)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires de France (AMF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conseil national de l’ordre des architectes",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération professionnelle des entreprises de services pour l’énergie et l’environnement (FEDENE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des activités de la dépollution et de l’environnement (FNADE)",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tIV.html",
+      "date": "2026-10-20",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "France Renouvelables",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des énergies renouvelables (SER)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union française de l’électricité (UFE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Réseau de transport d’électricité (RTE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Enedis",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commission de régulation de l’énergie (CRE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Territoire d’énergie de l’Ardèche",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat départemental d’énergies du Cantal",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Amorce",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des collectivités concédantes et régies (FNCCR)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de la transition écologique (Ademe)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Chambre Syndicale Internationale de l’Automobile et du Motocycle (CSIAM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mobilians",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupement des professionnels des certificats d’économie d’énergie (GPCEE)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Médiateur de l’énergie",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale pour la cohésion des territoires (ANCT)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Charge France",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’énergie et du climat (DGEC)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tV.html",
+      "date": "2026-10-20",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Association des sociétés françaises d’autoroutes (ASFA)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Stellantis France",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Renault Group",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Établissement public de sécurité ferroviaire (EPSF)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Délégation à la sécurité routière (DSR)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de financement des infrastructures de transport de France (Afitf)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de régulation des transports (ART)",
+          "type": "administration",
+          "hatvp_id": "784358970"
+        },
+        {
+          "nom": "Groupe SNCF",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des acteurs de l’autopartage (AAA)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des infrastructures, des transports et des mobilités (DGITM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Voies navigables de France (VNF)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société des grands projets (SGP)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tII.html",
+      "date": "2026-10-21",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Fédération FEETS-Force ouvrière",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération UNSA-Développement durable",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national des contrôleurs du trafic aérien (SNCTA)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires de France (AMF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France urbaine",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Départements de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Régions de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des collectivités concédantes et régies (FNCCR)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement (Cerema)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Banque des territoires",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Mission performance de la direction générale de l’aménagement, du logement et de la nature (DGALN)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général du ministère de la transition écologique",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de la transition écologique (Ademe)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tIII.html",
+      "date": "2026-10-21",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Fédération des parcs nationaux de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ligue pour la protection des oiseaux (LPO)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Nature Environnement (FNE)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité des usagers du Bassin de Thau",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union nationale de l’apiculture française (Unaf)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat national unifié des personnels des forêts et des espaces naturels (Snupfen)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Canopée",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office national des forêts (ONF)",
+          "type": "administration",
+          "hatvp_id": "303215016"
+        },
+        {
+          "nom": "Bloom",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "WWF",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "MedPAN",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’aménagement, du logement et de la nature (DGALN)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Commissariat général au développement durable (CGDD)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général à la planification écologique (SGPE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’eau Loire-Bretagne",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’eau Seine-Normandie",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’eau Rhône Méditerranée",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Guyane Nature Environnement",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office français de la biodiversité (OFB)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Météo France",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Institut national de l’information géographique et forestière (IGN)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Conservatoire de l’espace littoral et des rivages lacustres (CELRL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement (Cerema)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVI.html",
+      "date": "2026-10-21",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Direction du transport aérien (DTA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union syndicale de l’aviation civile",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association d’usagers des transports aériens de Mayotte (Autam)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Aéroport de La Réunion Roland-Garros",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Département-Région de Mayotte",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale de l’aviation et de ses métiers (FNAM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Collectif « Défense guyanaise pour l’accès aux transports » (DGAT)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des aéroports français (UAF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Corsair",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Air France",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Autorité de la concurrence",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de l’outre-mer pour la mobilité (Ladom)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction du budget",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des outre-mer (DGOM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Air Tahiti Nui",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’aviation civile en Nouvelle-Calédonie",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Aircalin",
+          "type": "autre",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVII.html",
+      "date": "2026-10-22",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Centre de documentation, de recherche et d’expérimentations sur les pollutions accidentelles des eaux (Cedre)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Surfrider Foundation Europe",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "EDF Power Solutions",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ailes Marines (Iberdrola)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale de l’énergie et du climat (DGEC)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France Renouvelables",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Syndicat des énergies renouvelables (SER)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Cluster maritime français",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence de la transition écologique (Ademe)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Office français de la biodiversité (OFB)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Armateurs de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union des Ports de France",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Lycée de la mer & pôle de formation maritime Paul Bousquet",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Lycée Professionnel Maritime et Aquacole Daniel Rigolet",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Lycée professionnel maritime de Ciboure",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des affaires maritimes, de la pêche et de l’aquaculture (DGAMPA)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Groupement des industries de construction et activités navales (Gican)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Ifremer",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "École nationale supérieure maritime (ENSM)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Transports & Environnement (T&E)",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Société nationale du sauvetage en mer (SNSM)",
+          "type": "entreprise",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Comité national des pêches maritimes et des élevages marins (CNPMEM)",
+          "type": "association",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html",
+      "date": "2026-10-28",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Fédération nationale de l’immobilier (FNAIM)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des responsables de copropriétés (ARC)",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union nationale des propriétaires immobiliers (UNPI)",
+          "type": "federation",
+          "hatvp_id": "W751003603"
+        },
+        {
+          "nom": "Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "France urbaine",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence parisienne du climat",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "NegaWatt",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Rénovons-CLER-Réseau pour la transition énergétique",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Observatoire national de rénovation énergétique (ONRE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Observatoire national de la précarité énergétique (ONPE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Secrétariat général à la planification écologique (SGPE)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association Force ouvrière consommateurs (Afoc)",
+          "type": "syndicat",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Union nationale des locataires indépendants (Unli)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fondation pour le logement des défavorisés",
+          "type": "association",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération nationale du Logement (CNL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Confédération Consommation, Logement, Cadre de Vie (CLCV)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération locale des agences de l’énergie et du climat (Flame)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Fédération nationale des offices publics de l’habitat (OPH)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Entreprises sociales pour l’habitat",
+          "type": "autre",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Association des maires de France (AMF)",
+          "type": "federation",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction générale des collectivités locales (DGCL)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale de la cohésion des territoires (ANCT)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Direction de l’habitat, de l’urbanisme et des paysages (DHUP)",
+          "type": "administration",
+          "hatvp_id": null
+        },
+        {
+          "nom": "Agence nationale de l’habitat (Anah)",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001067",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié :1° Le premier alinéa est ainsi modifié :a) À la première phrase, les…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001067"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001415",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié :1° Le premier alinéa est ainsi modifié :a) À la première phrase, les…",
+      "sort": "non_examine",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001415"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "784668618",
+      "nom": "MOUVEMENT DES ENTREPRISES DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784668618",
+      "objet": "PLF 2026 : alerter sur les incohérences de la rédaction du projet de taxe sur les holdings patrimoniales par rapport aux objectifs annoncés",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "326943016",
+      "nom": "ASSO FRANCAI ENTREPRIS PRIVEES",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=326943016",
+      "objet": "PLF 2026 - TAXE HOLDING SUR LES BIENS SOMPTUAIRES : EXONERER LES OEUVRES D'ART EXPOSEES OU ACQUISES EN VUE D'EXPOSITION AU PUBLIC",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "784855876",
+      "nom": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876",
+      "objet": "PLF 2026 : soutenir la sécurisation de la taxe sur les holdings patrimoniales en en limitant l'assiette aux biens dits somptuaires non affectés à une activité professionnelle",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "349889154",
+      "nom": "OXFAM FRANCE",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=349889154",
+      "objet": "Inciter à l'instauration d'un impôt plancher sur le patrimoine des ultra-riches (taxe zucman)\n",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "582041943",
+      "nom": "PERNOD RICARD",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=582041943",
+      "objet": "EXPLIQUER EN QUOI L’AUGMENTATION DES TAXES SUR LE PATRIMOINE SERAIENT PREJUDICIABLE EN MATIERE DE SOUVERAINETE ECONOMIQUE POUR DES ENTREPRISES FAMILIALES COMME PERNOD RICARD",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "420077562",
+      "nom": "ASSOCIATION A T T A C",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=420077562",
+      "objet": "Faire adopter au Sénat l'impôt plancher sur la fortune (IPF) / taxe Zucman",
+      "actions": [
+        "transmission d'expertise",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "PLF 2025 : Modifier l'assiette de l'impôt sur la fortune improductive pour en dissocier les fonds monétaires",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles"
+      ]
+    },
+    {
+      "hatvp_id": "341737062",
+      "nom": "CNP ASSURANCES",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=341737062",
+      "objet": "Projet de loi de finances 2026 (PLF 2026) : expliquer en quoi l'inclusion de l'assurance vie dans l'assiette de l'impôt sur la fortune immobilière serait préjudiciable.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "784358970",
+      "nom": "COMITE PROFESSION GALERIE ART",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784358970",
+      "objet": "PLF 2026 : Maintenir un cadre fiscal équitable pour le marché de l'art en France",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "303215016",
+      "nom": "CONFEDERATION DES PETITES ET MOYENNES ENTREPRISES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=303215016",
+      "objet": "PLF 2026 - Supprimer la taxe sur le patrimoine financier des holdings patrimoniales",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "434255329",
+      "nom": "CPME CORREZE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434255329",
+      "objet": "Oeuvrer pour ne pas taxer davantage les holdings ce qui reviendrait à pénaliser l’investissement, la transmission et la solidité du tissu entrepreneurial ",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "552081317",
+      "nom": "ELECTRICITE DE FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=552081317",
+      "objet": "Eviter le risque d’exclusion d'acteurs labélisés RGE détenus par une holding ne pouvant pas avoir cette qualification pour la réalisation de travaux de rénovation énergétique (PPL Cazenave)",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "431853530",
+      "nom": "ESL & NETWORK FRANCE SAS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=431853530",
+      "objet": "PLF 2026 : alerter sur l'impact pour l'épargne d'un amendement visant à transformer l’Impôt sur la Fortune Immobilière (IFI) en Impôt sur le Patrimoine Improductif (IPI)",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784409013",
+      "nom": "FEDERATION FRANCAISE DE L ASSURANCE (FFA)",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784409013",
+      "objet": "PLF 2026 : expliquer en quoi l'inclusion de l'assurance vie dans l'assiette de l'impôt sur la fortune immobilière serait préjudiciable",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "302998554",
+      "nom": "FEDERATION NATIONALE DE LA PROPRIETE PRIVEE RURALE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=302998554",
+      "objet": "Projet de loi de finances 2026 et \"impôt sur la fortune improductive\": Exclure de l'IFI les terres agricoles qui sont des biens productifs",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "304426240",
+      "nom": "FEDERATION NATIONALE MUTUALITE FRANCAISE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=304426240",
+      "objet": "PLF 2025* : Empêcher la diminution du taux de réduction des dons déductibles de l’impôt sur la fortune immobilière ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "349165779",
+      "nom": "FRANCE INVEST",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=349165779",
+      "objet": "LF 2026 : Eviter les dispositifs fiscaux entrainant des freins au financement des entreprises via les acteurs du Capital Investissement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "532572112",
+      "nom": "IMAGE 7",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112",
+      "objet": "Défense du régime fiscal de l'apport-cession permettant le report dans le temps des plus-values imposables lorsque les titres sont cédés par la société holding (art 150 OB ter du CGI). ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "945408011",
+      "nom": "INSTITUT NATIONAL BITCOIN",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=945408011",
+      "objet": "Obtenir l'ouverture de la procédure de contrôle des investissements étrangers dans le cadre de la cession d'Exaion à Mara Holdings et la suppression de la clause de non-concurrence imposée à EDF",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "880044755",
+      "nom": "MOBILIS FAMILY OFFICE HOLDIN",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=880044755",
+      "objet": "Expliquer les impacts économiques, juridiques et patrimoniaux de la taxe sur les holdings et contribuer aux échanges sur son évolution afin d’en préserver la cohérence.",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "388522286",
+      "nom": "UI DES COTES D'ARMOR",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=388522286",
+      "objet": "S’opposer à une taxation des holdings qui soutiennent l’investissement patrimonial de nos entreprises, afin d’éviter une dépendance accrue vis‑à‑vis de capitaux issus de fonds de pension étrangers.",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "W751003603",
+      "nom": "UNION NATIONALE DES PROPRIETAIRES IMMOBILIERS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751003603",
+      "objet": "Transformation de l'IFI en un impôt sur la fortune improductive excluant les biens mis en location",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "777461146",
+      "nom": "UNION PATRONALE DES INDUSTRIES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=777461146",
+      "objet": "S’opposer à une taxation des holdings qui soutiennent l’investissement patrimonial de nos entreprises, afin d’éviter une dépendance accrue vis‑à‑vis de capitaux issus de fonds de pension étrangers.",
+      "actions": [
+        "rencontre"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 8,
+    "rapports_avec_liste": 8,
+    "comptes_rendus_lus": 83
+  },
+  "synthese": {
+    "position_probable": "A cosigné l'amendement n° 1067, non examiné (« Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié :1° Le premier alinéa est ainsi modifié :a) À la première phrase, les… »).",
+    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1067 (« Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié :1° Le premier alinéa est ainsi modifié :a) À la première phrase, les… »).",
+    "chiffres_utilises": [
+      "1067",
+      "5",
+      "2",
+      "150",
+      "0",
+      "1"
+    ],
+    "mode": "gabarit",
+    "modele": null,
+    "verifie": true,
+    "date": "2026-11-14"
+  }
+}

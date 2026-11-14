@@ -12,6 +12,7 @@ import {
   type Nouveautes, type Suite, type Action, type Etat,
 } from "../contracts/index";
 import { verifierChiffres } from "./verif";
+import { verifierCroise } from "./croise";
 
 type Erreur = { fichier: string; champ: string; valeur: unknown; message?: string };
 const erreurs: Erreur[] = [];
@@ -318,6 +319,7 @@ for (const root of roots) {
     continue;
   }
   verifierRoot(root);
+  verifierCroise(root, erreur);
 }
 
 for (const a of avertissements) console.log(`! ${a}`);
