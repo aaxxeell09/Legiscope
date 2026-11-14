@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.514Z",
+    "generated_at": "2026-11-14T14:59:02.763Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -659,7 +659,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000452",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : Compléter cet article par les deux alinéas suivants :« XIII. – Les dispositions du présent article ne s’appliquent pas aux importations effectuées dans les…",
+      "resume": "Article 22 : Compléter cet article par les deux alinéas suivants : « XIII. – Les dispositions du présent article ne s’appliquent pas aux importations effectuées dans les…",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452"
@@ -668,7 +668,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N001745",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : I. – À la fin de l’alinéa 10, substituer au montant :« 2 euros »le montant :« 5 euros » ;II. – En conséquence, après l’alinéa 14, insérer l’alinéa suivant :«…",
+      "resume": "Article 22 : I. – À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros » ; II. – En conséquence, après l’alinéa 14, insérer l’alinéa suivant…",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001745"
@@ -677,7 +677,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N002538",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros »le montant : « 10 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 10 euros ».",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002538"
@@ -1109,12 +1109,13 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Nicole Sanquer est probablement pour la mesure, comme le montrent les amendements 1745 et 2538 qu'elle a cosignés pour augmenter le montant de la taxe.",
-    "argument": "Présenter à ce député l'amendement 452, en attente, qui exclut certaines importations de la mesure, car il a cosigné ce texte et il peut ainsi défendre une exception favorable à Alibaba France.",
+    "position_probable": "Nicole Sanquer est probablement favorable à la mesure, comme en témoignent les amendements 1745 et 2538 qu'elle a cosignés pour augmenter le montant de la taxe.",
+    "argument": "Présenter à ce député l'amendement 452, en attente, qui prévoit une exception aux dispositions de l'article 22, car il a cosigné ce texte et son groupe soutient la mesure.",
     "chiffres_utilises": [
       "1745",
       "2538",
-      "452"
+      "452",
+      "22"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

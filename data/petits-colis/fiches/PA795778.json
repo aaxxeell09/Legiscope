@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.673Z",
+    "generated_at": "2026-11-14T14:59:02.828Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -27,7 +27,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -143,7 +143,7 @@
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
       "resume": "Article 22 : dispositif non publié.",
-      "sort": "non_examine",
+      "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004075"
     },
@@ -152,7 +152,7 @@
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
       "resume": "Article 22 : dispositif non publié.",
-      "sort": "non_examine",
+      "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004076"
     },
@@ -161,7 +161,7 @@
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
       "resume": "Article 22 : dispositif non publié.",
-      "sort": "non_examine",
+      "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004077"
     },
@@ -170,7 +170,7 @@
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
       "resume": "Article 22 : dispositif non publié.",
-      "sort": "non_examine",
+      "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004078"
     },
@@ -179,7 +179,7 @@
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
       "resume": "Article 22 : dispositif non publié.",
-      "sort": "non_examine",
+      "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004079"
     },
@@ -188,7 +188,7 @@
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
       "resume": "Article 22 : dispositif non publié.",
-      "sort": "non_examine",
+      "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004080"
     },
@@ -196,7 +196,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N004081",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 2, après le mot :« transport » insérer les mots :« , du commerce ».",
+      "resume": "Article 22 : À l’alinéa 2, après le mot : « transport » insérer les mots : « , du commerce ».",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004081"
@@ -205,7 +205,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N004082",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 2, après le mot : « transport » insérer les mots :« , de la sûreté ».",
+      "resume": "Article 22 : À l’alinéa 2, après le mot : « transport » insérer les mots : « , de la sûreté ».",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004082"
@@ -214,7 +214,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N004083",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 2, après le mot :« transport » insérer les mots : « , de la protection environnementale ».",
+      "resume": "Article 22 : À l’alinéa 2, après le mot : « transport » insérer les mots : « , de la protection environnementale ».",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004083"
@@ -223,7 +223,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N004084",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 2, après le mot :« transport »insérer les mots : « , de la protection sociale ».",
+      "resume": "Article 22 : À l’alinéa 2, après le mot : « transport » insérer les mots : « , de la protection sociale ».",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004084"
@@ -232,7 +232,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N004085",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 2, après le mot :« transport »insérer les mots : « , des diverses normes ».",
+      "resume": "Article 22 : À l’alinéa 2, après le mot : « transport » insérer les mots : « , des diverses normes ».",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004085"
@@ -242,7 +242,7 @@
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
       "resume": "Article 22 : dispositif non publié.",
-      "sort": "non_examine",
+      "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004088"
     },
@@ -251,7 +251,7 @@
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
       "resume": "Article 22 : dispositif non publié.",
-      "sort": "non_examine",
+      "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004089"
     }
@@ -683,12 +683,11 @@
   },
   "synthese": {
     "position_probable": "Jean-Philippe Tanguy est probablement contre la mesure, comme l'indiquent ses déclarations en commission le 22 octobre 2025 et en séance le 18 novembre 2025.",
-    "argument": "Présenter à ce député la citation du 22 octobre 2025 en commission où il affirme que la mesure ne sauvera aucun petit commerce, car il est l'auteur de l'amendement 4081 en attente qui modifie l'article 22.",
+    "argument": "Présenter à ce député que la mesure taxe les familles modestes, car il a déclaré en commission le 22 octobre 2025 que cette taxe ne sauvera aucun petit commerce.",
     "chiffres_utilises": [
       "22",
       "2025",
-      "18",
-      "4081"
+      "18"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

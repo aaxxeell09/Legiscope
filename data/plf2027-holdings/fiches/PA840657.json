@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:03:59.407Z",
+    "generated_at": "2026-11-14T14:58:56.716Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -212,7 +212,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001431",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ».II. – Le…",
+      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ». II. – Le…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
@@ -221,7 +221,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001432",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – L’article 975 du code général des impôts est complété par un VII ainsi rédigé :« VII. – Sont déductibles de l’impôt sur la fortune immobilière l’ensemble…",
+      "resume": "Après l'article 4 : I. – L’article 975 du code général des impôts est complété par un VII ainsi rédigé : « VII. – Sont déductibles de l’impôt sur la fortune immobilière l’ensemble…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001432"
@@ -230,7 +230,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001437",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Les articles 964, 965 à 972 ter et 973 à 976 sont abrogés.II. – La perte de recettes pour l’État est compensée à due concurrence par la création d’une…",
+      "resume": "Après l'article 4 : I. – Les articles 964, 965 à 972 ter et 973 à 976 sont abrogés. II. – La perte de recettes pour l’État est compensée à due concurrence par la création d’une…",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001437"
@@ -248,7 +248,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001275",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Avant le dernier alinéa du I de l’article 973 du code général des impôts, il est inséré un alinéa ainsi rédigé :« Pour les immeubles classés ou inscrits…",
+      "resume": "Après l'article 4 : I. – Avant le dernier alinéa du I de l’article 973 du code général des impôts, il est inséré un alinéa ainsi rédigé : « Pour les immeubles classés ou inscrits…",
       "sort": "non_examine",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001275"
@@ -257,7 +257,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001440",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ».II. – Le…",
+      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ». II. – Le…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"
@@ -540,10 +540,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sophie Ricourt Vaginay est probablement favorable à la mesure, car elle a cosigné un amendement supprimant l'article 3 qui a été adopté.",
-    "argument": "Présenter à ce député l'amendement cosigné qui supprime l'article 3 et a été adopté, car il montre qu'elle a déjà agi pour réduire la mesure, ce qui correspond à l'objectif de son client.",
+    "position_probable": "Sophie Ricourt Vaginay est probablement favorable à la mesure, car elle a cosigné l'amendement n° 1431 qui augmente le taux à 50 %, amendement rejeté.",
+    "argument": "Présenter à ce député le fait qu'elle a cosigné l'amendement n° 1431, rejeté, qui porte le taux de 30 % à 50 %, pour lui montrer que sa position sur la mesure est favorable à son client.",
     "chiffres_utilises": [
-      "3"
+      "0.5",
+      "1431",
+      "50",
+      "30"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

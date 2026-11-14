@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.599Z",
+    "generated_at": "2026-11-14T14:59:02.779Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -882,7 +882,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N001745",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : I. – À la fin de l’alinéa 10, substituer au montant :« 2 euros »le montant :« 5 euros » ;II. – En conséquence, après l’alinéa 14, insérer l’alinéa suivant :«…",
+      "resume": "Article 22 : I. – À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros » ; II. – En conséquence, après l’alinéa 14, insérer l’alinéa suivant…",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N001745"
@@ -1314,8 +1314,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "David Taupiac est probablement favorable à la mesure, car il a cosigné l'amendement 1745, qui a été retiré, visant à porter la taxe à 5 euros.",
-    "argument": "Présenter à ce député que son amendement 1745, qui proposait de porter la taxe à 5 euros, a été retiré, afin de lui montrer que la mesure actuelle de 2 euros est déjà une concession par rapport à sa proposition initiale.",
+    "position_probable": "David Taupiac est probablement favorable à la mesure, car il a cosigné l'amendement 1745, qui est retiré, visant à porter la taxe à 5 euros.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 1745, retiré, a visé à porter la taxe de 2 euros à 5 euros, ce qui montre son attachement à la mesure que votre client souhaite réduire.",
     "chiffres_utilises": [
       "1745",
       "5",

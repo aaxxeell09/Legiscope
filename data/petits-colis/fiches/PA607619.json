@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.611Z",
+    "generated_at": "2026-11-14T14:59:02.786Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -148,7 +148,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N002538",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros »le montant : « 10 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 10 euros ».",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002538"
@@ -580,12 +580,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Paul Molac est probablement favorable à la mesure, car il a cosigné l'amendement 2538, actuellement en attente, qui propose de porter la taxe à 10 euros.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 2538, qui porte la taxe à 10 euros, est en attente, afin de lui montrer que la mesure actuelle de 2 euros est déjà un compromis qu'il a lui-même renforcé.",
+    "position_probable": "Paul Molac est probablement favorable à la mesure, car il a cosigné l'amendement 2538, actuellement en attente, qui porte la taxe de 2 euros à 10 euros.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 2538, actuellement en attente, vise à porter la taxe de 2 euros à 10 euros, ce qui renforce la position de son groupe LIOT en faveur de la mesure.",
     "chiffres_utilises": [
+      "2",
       "2538",
-      "10",
-      "2"
+      "10"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

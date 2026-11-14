@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:02.551Z",
+    "generated_at": "2026-11-14T14:58:56.796Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -203,7 +203,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000364",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts est ainsi rétabli :« CHAPITRE IER BIS« Impôt plancher sur la…",
+      "resume": "Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « CHAPITRE IER BIS « Impôt plancher…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000364"
@@ -212,7 +212,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000367",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 5 : Compléter cet article par les neufs alinéas suivants :« I. – L’article 167 bis du code général des impôts est ainsi modifié :« 1° Au IV, après la première…",
+      "resume": "Article 5 : Compléter cet article par les neufs alinéas suivants : « I. – L’article 167 bis du code général des impôts est ainsi modifié : « 1° Au IV, après la première…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000367"
@@ -221,7 +221,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000372",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli :« Art. 220 quater – Les entreprises dont les produits sont composés à plus de 60 % de…",
+      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli : « Art. 220 quater – Les entreprises dont les produits sont composés à plus de 60 % de…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000372"
@@ -230,7 +230,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000470",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié :1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «…",
+      "resume": "Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié : 1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «…",
       "sort": "adopte",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000470"
@@ -239,7 +239,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000471",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier bis…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I er bis du titre IV de la première partie du livre I er est ainsi rétabli : « Chapitre I er…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000471"
@@ -248,7 +248,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001362",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli :« Art. 220 quater. – Les entreprises dont les produits sont composés à plus de 60 % de…",
+      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli : « Art. 220 quater. – Les entreprises dont les produits sont composés à plus de 60 % de…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001362"
@@ -531,8 +531,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Hervé Saulignac est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement n° 471, rejeté.",
-    "argument": "Présenter à ce député que son amendement n° 364, qui rétablit l'impôt plancher, a été rejeté, afin de montrer que la mesure actuelle reste la seule issue possible pour le client.",
+    "position_probable": "Hervé Saulignac est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement n° 471, rejeté, qui rétablit le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts.",
+    "argument": "Présenter à ce député que son amendement n° 364, qui rétablit l'impôt plancher, a été rejeté, afin de montrer que la suppression de la taxe sur la fortune improductive reste possible.",
     "chiffres_utilises": [
       "471",
       "364"

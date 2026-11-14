@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.729Z",
+    "generated_at": "2026-11-14T14:59:02.879Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -337,7 +337,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N002738",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant :« 2 euros »le montant :« 50 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 50 euros ».",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
@@ -346,7 +346,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N002740",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros »le montant :« 25 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 25 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
@@ -778,12 +778,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Jean-Louis Roumégas est probablement favorable à la mesure, comme l'indiquent les amendements 2738 et 2740 qu'il a cosignés et qui proposent d'augmenter le montant de la taxe.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 2738, qui porte la taxe à 50 euros, est en attente, afin de l'inviter à retirer ce texte et à soutenir la position d'Alibaba France contre la mesure.",
+    "position_probable": "Jean-Louis Roumégas est probablement favorable à la mesure, car il a cosigné l'amendement 2738, en attente, qui porte le montant de la taxe à 50 euros.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 2738, qui porte la taxe à 50 euros, est en attente, afin de lui montrer que la mesure actuelle de 2 euros est déjà une étape modérée par rapport à ses propres propositions.",
     "chiffres_utilises": [
       "2738",
-      "2740",
-      "50"
+      "50",
+      "2"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

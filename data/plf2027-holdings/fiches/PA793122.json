@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:03:59.394Z",
+    "generated_at": "2026-11-14T14:58:56.701Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -934,7 +934,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000796",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le I de l’article 975 du code général des impôts est complété par un alinéa ainsi rédigé :« Sont exonérés les biens ou droits immobiliers détenus…",
+      "resume": "Après l'article 4 : I. – Le I de l’article 975 du code général des impôts est complété par un alinéa ainsi rédigé : « Sont exonérés les biens ou droits immobiliers détenus…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000796"
@@ -943,7 +943,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N003780",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : Rédiger ainsi cet article :« I. – Le a du 5 de l’article 158 du code général des impôts est ainsi modifié :« 1° Le deuxième alinéa est ainsi modifié :« a) À la…",
+      "resume": "Article 3 : Rédiger ainsi cet article : « I. – Le a du 5 de l’article 158 du code général des impôts est ainsi modifié : « 1° Le deuxième alinéa est ainsi modifié : « a) À…",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003780"
@@ -952,7 +952,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N003781",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : Rédiger ainsi cet article :« I. – Le code général des impôts est ainsi modifié :« A. – Au 5 de l’article 158 :« 1° Le a est ainsi modifié :« a) Le deuxième…",
+      "resume": "Article 3 : Rédiger ainsi cet article : « I. – Le code général des impôts est ainsi modifié : « A. – Au 5 de l’article 158 : « 1° Le a est ainsi modifié : « a) Le deuxième…",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003781"
@@ -961,7 +961,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N003807",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : I. – L’article 235 ter C du code général des impôts est ainsi modifié :1° Le A du II est ainsi modifié :a) Après le d du 7°, il est inséré un 8° ainsi rédigé…",
+      "resume": "Après l'article 15 : I. – L’article 235 ter C du code général des impôts est ainsi modifié : 1° Le A du II est ainsi modifié : a) Après le d du 7°, il est inséré un 8° ainsi rédigé…",
       "sort": "adopte",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003807"
@@ -970,7 +970,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N003821",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Après l’article 977 du code général des impôts, il est inséré un article 977 bis ainsi rédigé :« Art. 977 bis. – I. – Il est institué une contribution…",
+      "resume": "Après l'article 4 : I. – Après l’article 977 du code général des impôts, il est inséré un article 977 bis ainsi rédigé : « Art. 977 bis . – I. – Il est institué une contribution…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821"
@@ -979,7 +979,7 @@
       "id": "AMANR5L17PO838901B3210P2D1N001624",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 78 : L’article L. 822‑8 du code de la construction et de l’habitation est complété par deux alinéas ainsi rédigés :« Lorsque le demandeur ou l’allocataire poursuit…",
+      "resume": "Après l'article 78 : L’article L. 822‑8 du code de la construction et de l’habitation est complété par deux alinéas ainsi rédigés : « Lorsque le demandeur ou l’allocataire poursuit…",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N001624"
@@ -1262,8 +1262,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car il n'a ni déposé d'amendement ni fait de déclaration, et son groupe Démocratie en Marche est contre.",
-    "argument": "Présenter à ce député que la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) pèsera sur les entreprises, en s'appuyant sur les auditions de la MEDEF et de l'U2P par les rapporteurs de sa commission, ce qui constitue un indice plus faible qu'un acte personnel.",
+    "position_probable": "Sa position personnelle sur la mesure n'est pas connue, car il n'a déposé ni cosigné d'amendement la modifiant directement et n'a pas pris la parole, mais son groupe Démocratie en Marche est contre la mesure.",
+    "argument": "Présenter à ce député que le MEDEF a été entendu par les rapporteurs de sa commission le 29 octobre 2026, ce qui constitue un indice plus faible qu'un acte personnel, pour appuyer la position de l'Afep contre la mesure.",
     "chiffres_utilises": [
       "3",
       "0.5",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.691Z",
+    "generated_at": "2026-11-14T14:59:02.843Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -23,7 +23,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -124,7 +124,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N000719",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : Rédiger ainsi l’article 22 :« I. – Les règles relatives au malus sur les importations d’articles de marchandise contenus dans des envois de faible valeur sont…",
+      "resume": "Article 22 : Rédiger ainsi l’article 22 : « I. – Les règles relatives au malus sur les importations d’articles de marchandise contenus dans des envois de faible valeur sont…",
       "sort": "adopte",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719"
@@ -133,7 +133,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N000720",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros »le montant :« 5 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000720"
@@ -142,7 +142,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N000721",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant :« 2 euros » le montant :« 4 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 4 euros ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000721"
@@ -151,7 +151,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N000722",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au chiffre :« 2 » le chiffre :« 3 ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au chiffre : « 2 » le chiffre : « 3 ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000722"
@@ -160,7 +160,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N001774",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant :« 25 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 25 euros ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
@@ -178,7 +178,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000307",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros »le montant : « 5 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000307"
@@ -187,7 +187,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000308",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros »le montant : « 7 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 7 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000308"
@@ -196,7 +196,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000309",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros »le montant : « 10 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 10 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000309"
@@ -205,7 +205,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000936",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant :« 2 euros » le montant :« 3 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 3 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000936"
@@ -214,7 +214,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000937",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant :« 2 euros »le montant : « 4 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 4 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000937"
@@ -223,7 +223,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000943",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : I. – À l'alinéa 1, substituer aux mots : « à la taxe »les mots : « au malus ».II. – En conséquence, à l’alinéa 7, substituer aux mots : « à la taxe »les mots…",
+      "resume": "Article 22 : I. – À l'alinéa 1, substituer aux mots : « à la taxe » les mots : « au malus ». II. – En conséquence, à l’alinéa 7, substituer aux mots : « à la taxe » les…",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000943"
@@ -655,21 +655,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Corentin Le Fur est probablement favorable à la mesure, comme en témoignent ses cosignatures sur l'amendement 719, qui a été adopté, et sur l'amendement 943, qui est en attente.",
-    "argument": "Présenter à ce député que son amendement n° 719, qui a été adopté, a permis de retenir le montant de 2 euros, alors que ses cosignatures sur les amendements n° 720, n° 721, n° 722, n° 1774, n° 307, n° 308, n° 309, n° 936 et n° 937 visant à augmenter ce montant ont toutes été rejetées, tombées ou retirées.",
+    "position_probable": "Corentin Le Fur est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement 719, qui a été adopté.",
+    "argument": "Présenter à ce député que son amendement n° 719, qui a été adopté, renforce la taxe de 2 euros par article sur les colis de moins de 150 euros, ce qui va à l'encontre de l'objectif d'Alibaba France.",
     "chiffres_utilises": [
       "719",
-      "943",
       "2",
-      "720",
-      "721",
-      "722",
-      "1774",
-      "307",
-      "308",
-      "309",
-      "936",
-      "937"
+      "150"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

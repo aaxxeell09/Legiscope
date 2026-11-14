@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.696Z",
+    "generated_at": "2026-11-14T14:59:02.847Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -337,7 +337,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N001774",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant :« 25 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 25 euros ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
@@ -778,8 +778,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Michel Herbillon est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'il a cosignés et qui sont tombés ou rejetés.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros, a été tombé, pour lui rappeler son engagement en faveur de la mesure.",
+    "position_probable": "Michel Herbillon est probablement favorable à la mesure, comme l'indiquent les amendements 1774 et 1775 qu'il a cosignés et qui ont respectivement été tombé et rejeté.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 1774, qui porte la taxe à 25 euros et est tombé, montre qu'il soutient une version renforcée de la mesure, ce qui rend difficile l'argumentation d'Alibaba France contre la taxe.",
     "chiffres_utilises": [
       "1774",
       "1775",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:03:59.395Z",
+    "generated_at": "2026-11-14T14:58:56.702Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -233,7 +233,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000470",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié :1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «…",
+      "resume": "Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié : 1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «…",
       "sort": "adopte",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000470"
@@ -242,7 +242,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000471",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier bis…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I er bis du titre IV de la première partie du livre I er est ainsi rétabli : « Chapitre I er…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000471"
@@ -251,7 +251,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001362",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli :« Art. 220 quater. – Les entreprises dont les produits sont composés à plus de 60 % de…",
+      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli : « Art. 220 quater. – Les entreprises dont les produits sont composés à plus de 60 % de…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001362"
@@ -534,10 +534,12 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Ses actes vont dans des sens opposés, car il a cosigné l'amendement n° 471 rejeté ainsi que d'autres amendements adoptés ou rejetés, sans que sa position personnelle sur la mesure ne soit tranchée.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement n° 471, rejeté, montre qu'il a déjà testé une modification du code général des impôts, ce qui permet d'aborder la taxe sur la fortune improductive en s'appuyant sur ses travaux antérieurs.",
+    "position_probable": "Ses actes sont contradictoires, car il a cosigné l'amendement n° 471 qui a été rejeté, ainsi que d'autres amendements dont l'un a été adopté.",
+    "argument": "Présenter à ce député que son amendement n° 471, cosigné et rejeté, visait à rétablir un chapitre du code général des impôts, ce qui montre son intérêt pour la structure fiscale, alors que la mesure en discussion est la taxe sur la fortune improductive et la taxe de 0,5 % sur les holdings patrimoniales (n° 3140).",
     "chiffres_utilises": [
-      "471"
+      "471",
+      "0.5",
+      "3140"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

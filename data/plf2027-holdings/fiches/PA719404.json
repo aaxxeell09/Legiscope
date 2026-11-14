@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:02.509Z",
+    "generated_at": "2026-11-14T14:58:56.758Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -228,17 +228,7 @@
     }
   ],
   "debats": [],
-  "amendements": [
-    {
-      "id": "AMANR5L17PO59048B3210P1D1N000075",
-      "texte_id": "PRJLANR5L17B3210",
-      "role": "cosignataire",
-      "resume": "APRÈS ART. 3 : I. – Après le 34° du II de la section 5 du chapitre Ier du titre Ier de la première partie du livre Ier du code général des impôts, est insérée une section…",
-      "sort": "tombe",
-      "travaille_avec": [],
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000075"
-    }
-  ],
+  "amendements": [],
   "hatvp": [
     {
       "hatvp_id": "784668618",
@@ -516,16 +506,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Didier Le Gac est probablement contre la mesure, comme l'indique son cosignature d'un amendement tombé.",
-    "argument": "Présenter à ce député que son groupe EPR est contre la mesure, ce qui renforce son rôle d'allié pour le client.",
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est contre la mesure.",
+    "argument": "Présenter à ce député le fait qu'il a entendu le 4 novembre 2026 le Conseil supérieur de la marine marchande et Brittany Ferries en sa qualité de rapporteur, afin de lui montrer l'impact concret de la mesure sur les acteurs économiques qu'il a directement consultés.",
     "chiffres_utilises": [
       "3",
       "0.5",
       "3140",
       "0.71",
-      "34",
-      "5",
       "0",
+      "5",
       "2026",
       "11",
       "4",

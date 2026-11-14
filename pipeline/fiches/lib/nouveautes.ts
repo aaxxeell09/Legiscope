@@ -6,7 +6,7 @@
 // audition, dépôt d'amendement de groupe ; 1 = le reste. Effet sur le verdict de
 // l'objectif visé : déduction écrite dans la preuve. Rien après date_reference.
 
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { dataPath, type AmendementTexte, type Effet, type Evenement, type Nouveautes, type Preuve, type Sort, type Source } from "../../../contracts/index";
 import { candidats } from "./fiches";
@@ -86,7 +86,7 @@ function sensDuSort(sort: Sort): 1 | -1 | 0 {
   return 0;
 }
 
-type Scrutin = { id: string; numero: string | null; titre: string; date: string; url: string; chemin: string };
+type Scrutin = { id: string; numero: string | null; titre: string; date: string; url: string; chemin: string; lie?: boolean };
 
 function texteBrut(v: unknown): string {
   return typeof v === "string" ? v : "";
@@ -108,6 +108,10 @@ export function lireScrutins(ctx: Contexte): Scrutin[] {
       if (b && typeof b === "object") entrees.push({ s: b.scrutin ?? b, chemin });
     }
   }
+  // Scrutins liés au sujet retenus par P1 (data/raw/<dossier>/scrutins-lies.json) : rattachés d'office.
+  const lies = lireJsonBrut(join(ctx.root, "raw", ctx.dossier.id, "scrutins-lies.json")) as any;
+  const listeLies: any[] = Array.isArray(lies) ? lies : Array.isArray(lies?.scrutins) ? lies.scrutins : [];
+  for (const s of listeLies) if (s && typeof s === "object" && s.meme_texte !== false) entrees.push({ s: { ...s, lie: true }, chemin: "scrutins-lies.json" });
   // Écarts des pivots (P3) : scrutins liés au sujet déjà datés et titrés, sans appel API.
   for (const pv of ctx.pivots?.deputes ?? []) for (const e of pv.ecarts) entrees.push({ s: { id: e.scrutin_id, date: e.date, titre: e.titre, url: e.url }, chemin: "pivots.json" });
   const vus = new Set<string>();
@@ -121,7 +125,7 @@ export function lireScrutins(ctx: Contexte): Scrutin[] {
     const numero = (id.match(/V(\d+)$/) ?? [null, null])[1] ?? (typeof s.numero === "number" || typeof s.numero === "string" ? String(s.numero) : null);
     const url = texteBrut(s.url) || (numero ? `https://www.assemblee-nationale.fr/dyn/17/scrutins/${numero}` : "");
     if (!url) continue;
-    out.push({ id, numero, titre, date, url, chemin });
+    out.push({ id, numero, titre, date, url, chemin, lie: s.lie === true });
   }
   return out;
 }
@@ -202,14 +206,25 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
   // Scrutins bruts liés au sujet (P1).
   // Un scrutin n'est rattaché au texte que s'il est postérieur à son dépôt (les écarts des pivots couvrent d'autres textes).
   const dateDepotTexte = (ctx.etat?.etapes ?? []).filter((e) => e.date && e.statut !== "a_venir").map((e) => e.date as string).sort()[0] ?? null;
-  const scrutins = lireScrutins(ctx).filter((s) => scrutinLie(ctx, s) && !pasEncoreConnu(s.date, ref) && (!dateDepotTexte || s.date >= dateDepotTexte));
+  const scrutins = lireScrutins(ctx).filter((s) => (s.lie || scrutinLie(ctx, s)) && !pasEncoreConnu(s.date, ref) && (!dateDepotTexte || s.date >= dateDepotTexte));
   if (!existsSync(join(root, "raw", "scrutins"))) limites.push("data/raw/scrutins absent : aucun scrutin nominatif lu.");
+  // Rattachement scrutin ↔ amendement par numéro, seulement si le scrutin est du même texte (retenu par P1, ou titre citant le texte).
+  const titreTexte = (ctx.texte?.texte.titre ?? "").toLowerCase();
+  const anneeTexte = (titreTexte.match(/\b(20\d\d)\b/) ?? [null, null])[1];
+  const memeTexte = (s: Scrutin) => {
+    const t = s.titre.toLowerCase();
+    if (s.lie === true || (titreTexte.length > 0 && t.includes(titreTexte)) || t.includes(dossier.texte_id.toLowerCase())) return true;
+    // Libellés courts des écarts (« au PLF 2026 », « loi de finances pour 2026 »).
+    return anneeTexte !== null && t.includes(anneeTexte) && /loi de finances|plf/i.test(t);
+  };
   const scrutinParNumero = new Map<string, Scrutin>();
-  for (const s of scrutins) for (const n of numerosDuTitre(s.titre)) if (!scrutinParNumero.has(n)) scrutinParNumero.set(n, s);
+  for (const s of scrutins) if (memeTexte(s)) for (const n of numerosDuTitre(s.titre)) if (!scrutinParNumero.has(n)) scrutinParNumero.set(n, s);
 
   // Dates publiées : brut P1 (date_depot, date_sort), puis exemples du jeu evenements_parlementaires.
   const brutes = lireDatesBrutes(ctx);
-  const evTexte: EvenementsTexte | null = await lireEvenementsTexte(dossier.texte_id, rafraichirApi);
+  // Le flux couvre 30 jours : inutile (5 crédits) pour un dossier rejoué à une date plus ancienne.
+  const fluxUtile = !ref || ref >= new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+  const evTexte: EvenementsTexte | null = await lireEvenementsTexte(dossier.texte_id, rafraichirApi && fluxUtile);
   const depotsJeu = datesDepotDepuisEvenements(evTexte);
   if (!brutes) limites.push(`data/raw/${dossier.id}/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées.`);
   const dateDepotPubliee = (a: AmendementTexte): { date: string; provenance: string } | null => {
@@ -278,7 +293,8 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
     const rang = objectifVise(ctx, a);
     const groupe = sigleGroupe(ctx, a.groupe_id) ?? ((a as any).auteur_type && (a as any).auteur_type !== "depute" ? String((a as any).auteur_libelle ?? "Gouvernement") : null);
     const srcAm: Source[] = liste.slice(0, 3).map((x) => ({ label: `Amendement n° ${x.numero}`, url: x.url }));
-    const scrutin = liste.map((x) => scrutinParNumero.get(x.numero) ?? null).find(Boolean) ?? null;
+    // Un amendement n'est rattaché à un scrutin que s'il a été voté (adopté ou rejeté) : un amendement tombé ou retiré n'a pas de vote.
+    const scrutin = a.sort === "adopte" || a.sort === "rejete" ? liste.map((x) => scrutinParNumero.get(x.numero) ?? null).find(Boolean) ?? null : null;
     const allie = camp !== "inconnu" && camp === campClient(ctx);
     const duClient = liste.some((x) => avecClient.has(x.id));
     const suppression = supprimeLaMesure(a);
@@ -317,7 +333,7 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
       const dateSort = dateSortPubliee;
       if (pasEncoreConnu(dateSort, ref)) continue;
       const sens = sensDuSort(a.sort);
-      const importanceSort = scrutin || (a.sort === "adopte" && (camp !== "inconnu" || duClient || suppression)) || (a.sort === "rejete" && (duClient || (suppression && allie))) ? 3 : (a.sort === "rejete" && camp !== "inconnu") || a.sort === "adopte" ? 2 : 1;
+      const importanceSort = (scrutin && (camp !== "inconnu" || duClient || suppression)) || (a.sort === "adopte" && (camp !== "inconnu" || duClient || suppression)) || (a.sort === "rejete" && (duClient || (suppression && allie))) ? 3 : scrutin || (a.sort === "rejete" && camp !== "inconnu") || a.sort === "adopte" ? 2 : 1;
       evenements.push({
         id: idUnique(`ev-${a.numero}`),
         date: dateSort,
@@ -557,30 +573,37 @@ export async function construireNouveautes(ctx: Contexte, argumentsEntendus: { p
 /** Réunions passées de l'agenda open data qui citent le numéro du texte ou les mots-clés ; null si le zip est absent. */
 function lireAgenda(ctx: Contexte, limite: string, idUnique: (base: string) => string): Evenement[] | null {
   const zip = join(ctx.root, "raw", "opendata", "Agenda.json.zip");
-  if (!existsSync(zip)) return null;
-  const numeroTexte = (ctx.dossier.texte_id.match(/B(\d+)$/) ?? [null, null])[1];
+  const dossierReunions = join(ctx.root, "raw", "opendata", "Agenda", "json", "reunion");
+  if (!existsSync(zip) && !existsSync(dossierReunions)) return null;
   const mots = ctx.dossier.sujet.mots_cles.map((m) => m.toLowerCase());
   const out: Evenement[] = [];
   try {
-    const liste = Bun.spawnSync(["unzip", "-Z1", zip]).stdout.toString().split("\n").filter((n) => n.endsWith(".json"));
-    const lot = 400;
-    for (let i = 0; i < liste.length; i += lot) {
-      const noms = liste.slice(i, i + lot);
-      const brut = Bun.spawnSync(["unzip", "-p", zip, ...noms]).stdout.toString();
-      for (const texte of decouperJson(brut)) {
+    // Source : le dossier dézippé (un fichier par réunion) s'il existe, sinon le zip lu par lots.
+    const textes: string[] = [];
+    if (existsSync(dossierReunions)) {
+      for (const n of listerJson(dossierReunions)) textes.push(readFileSync(n, "utf8"));
+    } else {
+      const liste = Bun.spawnSync(["unzip", "-Z1", zip]).stdout.toString().split("\n").filter((n) => n.endsWith(".json"));
+      const lot = 400;
+      for (let i = 0; i < liste.length; i += lot) textes.push(...decouperJson(Bun.spawnSync(["unzip", "-p", zip, ...liste.slice(i, i + lot)]).stdout.toString()));
+    }
+    {
+      for (const texte of textes) {
         let obj: any;
         try { obj = JSON.parse(texte); } catch { continue; }
         const r = obj?.reunion ?? obj;
-        const date = String(r?.timeStamp?.dateDebut ?? r?.dateDebut ?? "").slice(0, 10);
+        const date = String(r?.timeStampDebut ?? r?.timeStamp?.dateDebut ?? r?.dateDebut ?? "").slice(0, 10);
         if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date > limite || pasEncoreConnu(date, ctx.dossier.date_reference)) continue;
         if (/annul/i.test(String(r?.cycleDeVie?.etat ?? ""))) continue;
         const points = r?.ODJ?.pointsODJ?.pointODJ;
-        const objets: string[] = (Array.isArray(points) ? points : points ? [points] : []).map((p: any) => String(p?.objet ?? "")).filter(Boolean);
+        const items = (v: any): string[] => (Array.isArray(v) ? v : v ? [v] : []).map((x: any) => (typeof x === "string" ? x : String(x?.objet ?? x?.["#text"] ?? ""))).filter(Boolean);
+        const objets: string[] = [...items(points), ...items(r?.ODJ?.convocationODJ?.item), ...items(r?.ODJ?.resumeODJ?.item)];
         const tout = objets.join(" | ").toLowerCase();
-        const lie = (numeroTexte && new RegExp(`n[°º]\\s*${numeroTexte}(?!\\d)`).test(tout)) || mots.some((m) => tout.includes(m));
+        // Seuls les mots-clés du sujet rattachent une réunion : le numéro du texte attraperait toutes les réunions du budget.
+        const lie = mots.some((m) => tout.includes(m));
         if (!lie || objets.length === 0) continue;
         const uid = String(r?.uid ?? `${date}-${out.length}`);
-        const organe = String(r?.lieu?.libelleLong ?? r?.organeReuniRef ?? "réunion");
+        const organe = String(r?.lieu?.libelleLong ?? (typeof r?.lieu === "string" ? r.lieu : null) ?? r?.organeReuniRef ?? "réunion");
         out.push({
           id: idUnique(`ev-agenda-${slug(uid)}`),
           date,

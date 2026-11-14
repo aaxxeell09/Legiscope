@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.685Z",
+    "generated_at": "2026-11-14T14:59:02.838Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -337,7 +337,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000459",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros »le montant :« 25 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 25 euros ».",
       "sort": "en_attente",
       "travaille_avec": [
         "l’entreprise Kiabi"
@@ -348,7 +348,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N004037",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À la seconde phrase de l’alinéa 4, substituer au montant :« 25 »le montant :« 30 ».",
+      "resume": "Article 22 : À la seconde phrase de l’alinéa 4, substituer au montant : « 25 » le montant : « 30 ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004037"
@@ -357,7 +357,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N004038",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À la seconde phrase de l’alinéa 4, substituer au montant : « 25 »le montant : « 20 ».",
+      "resume": "Article 22 : À la seconde phrase de l’alinéa 4, substituer au montant : « 25 » le montant : « 20 ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004038"
@@ -366,7 +366,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N004039",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : I. – À la première phrase de l’alinéa 4, substituer aux mots : « d’articles de marchandise »les mots :« de colis ». II. – En conséquence, à la seconde phrase…",
+      "resume": "Article 22 : I. – À la première phrase de l’alinéa 4, substituer aux mots : « d’articles de marchandise » les mots : « de colis ». II. – En conséquence, à la seconde phrase…",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004039"
@@ -384,7 +384,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N004059",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À la seconde phrase de l’alinéa 4, substituer au montant : « 25 »le montant : « 20 ».",
+      "resume": "Article 22 : À la seconde phrase de l’alinéa 4, substituer au montant : « 25 » le montant : « 20 ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004059"
@@ -816,14 +816,10 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Olivia Grégoire est probablement contre la mesure, comme en témoignent ses amendements 4037, 4038, 4039, 4040 et 4059, tous retirés, qui visaient à réduire ou supprimer la taxe.",
-    "argument": "Présenter à ce député l'amendement 459, en attente, qui porte la taxe à 25 euros, en soulignant que son travail avec l'entreprise Kiabi montre qu'elle privilégie la protection des acteurs nationaux face à la concurrence déloyale.",
+    "position_probable": "Olivia Grégoire est probablement contre la mesure, comme le montre son amendement n° 4037, retiré, qui proposait de réduire le montant de la taxe.",
+    "argument": "Présenter à ce député l'amendement 459, cosigné avec l'entreprise Kiabi et en attente, qui propose de porter la taxe à 25 euros, afin de souligner que cette hausse aggrave la mesure que le client souhaite réduire.",
     "chiffres_utilises": [
       "4037",
-      "4038",
-      "4039",
-      "4040",
-      "4059",
       "459",
       "25"
     ],

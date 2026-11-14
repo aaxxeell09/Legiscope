@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.701Z",
+    "generated_at": "2026-11-14T14:59:02.852Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -814,7 +814,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N001774",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant :« 25 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 25 euros ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
@@ -832,7 +832,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000307",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros »le montant : « 5 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000307"
@@ -841,7 +841,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000308",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros »le montant : « 7 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 7 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000308"
@@ -850,7 +850,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000309",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros »le montant : « 10 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 10 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000309"
@@ -1282,16 +1282,14 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Vincent Rolland est probablement favorable à la mesure, comme l'indiquent les amendements 307, 308 et 309 qu'il a déposés et qui ont été retirés, ainsi que les amendements 1774 et 1775 qu'il a cosignés et qui ont été tombé et rejeté.",
-    "argument": "Présenter à ce député que son amendement 1774, qui proposait de porter la taxe à 25 euros, est tombé, afin de lui montrer que la mesure actuelle de 2 euros reste la seule issue possible pour limiter l'impact sur les colis de moins de 150 euros.",
+    "position_probable": "Vincent Rolland est probablement pour la mesure, car il a cosigné l'amendement 1774, tombé, et déposé les amendements 307, 308 et 309, retirés, qui proposent d'augmenter le montant de la taxe.",
+    "argument": "Présenter à ce député que son amendement n° 1774, qui proposait de porter la taxe à 25 euros, est tombé, afin de lui montrer que la mesure reste à 2 euros et que son initiative d'aggravation n'a pas abouti.",
     "chiffres_utilises": [
       "1774",
-      "1775",
       "307",
       "308",
       "309",
       "2",
-      "150",
       "25"
     ],
     "mode": "llm",

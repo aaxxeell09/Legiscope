@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.690Z",
+    "generated_at": "2026-11-14T14:59:02.842Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -23,7 +23,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -117,7 +117,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N001519",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : I – À l’alinéa 5, après le mot :« valeur »insérer les mots :« ou d’un poids inférieur à 2 kilos »II. – À l’alinéa 7, compléter la phrase par les mots : « ou…",
+      "resume": "Article 22 : I – À l’alinéa 5, après le mot : « valeur » insérer les mots : « ou d’un poids inférieur à 2 kilos » II. – À l’alinéa 7, compléter la phrase par les mots : «…",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519"
@@ -126,7 +126,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N003395",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : I. – À l’alinéa 5, après le mot : « valeur », insérer les mots : « ou d’un poids inférieur à 2 kilos » ;II. – En conséquence, compléter l’alinéa 7 par les mots…",
+      "resume": "Article 22 : I. – À l’alinéa 5, après le mot : « valeur », insérer les mots : « ou d’un poids inférieur à 2 kilos » ; II. – En conséquence, compléter l’alinéa 7 par les…",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395"
@@ -558,15 +558,13 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sophie Mette est probablement pour la mesure, comme le montrent ses cosignatures sur les amendements 1519 et 3395 ainsi que sa déclaration en séance le 30 avril 2025.",
-    "argument": "Présenter à ce député que son amendement 3395, en attente, vise à exclure les colis de moins de 2 kilos de la taxe, ce qui pourrait réduire l'impact de la mesure sur les petits colis de moins de 150 euros.",
+    "position_probable": "Sophie Mette est probablement favorable à la mesure, comme le montrent les amendements 1519 et 3395 qu'elle a cosignés et sa déclaration en séance le 30 avril 2025.",
+    "argument": "Présenter à ce député l'argument de la concurrence déloyale des plateformes numériques, qu'elle a elle-même soulevé en séance le 30 avril 2025, pour l'inciter à retirer sa cosignature de l'amendement 3395, actuellement en attente.",
     "chiffres_utilises": [
       "1519",
       "3395",
       "2025",
-      "30",
-      "2",
-      "150"
+      "30"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

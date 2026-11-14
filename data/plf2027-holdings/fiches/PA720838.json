@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:02.556Z",
+    "generated_at": "2026-11-14T14:58:56.801Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -798,7 +798,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001847",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Avant le chapitre II du titre IV de la première partie du livre premier du code général des impôts, il est inséré un chapitre I ter ainsi rédigé :«…",
+      "resume": "Après l'article 4 : I. – Avant le chapitre II du titre IV de la première partie du livre premier du code général des impôts, il est inséré un chapitre I ter ainsi rédigé : «…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847"
@@ -816,7 +816,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N003931",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre I bis du titre IV de la première partie du livre premier est ainsi rétabli :« Chapitre I bis«…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I bis du titre IV de la première partie du livre premier est ainsi rétabli : « Chapitre I…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003931"
@@ -1099,10 +1099,11 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Soumya Bourouaha est probablement favorable à la mesure, comme l'indique sa cosignature de l'amendement 1847, rejeté, qui modifie le code général des impôts.",
-    "argument": "Présenter à ce député que son groupe GDR soutient la mesure, ce qui contraste avec sa cosignature de l'amendement n° 1847 rejeté.",
+    "position_probable": "Soumya Bourouaha est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement n° 1847, rejeté, et de l'amendement n° 3931, rejeté.",
+    "argument": "Présenter à ce député que l'amendement n° 1847, qu'il a cosigné, a été rejeté, afin de lui montrer que sa tentative d'aggraver la mesure n'a pas abouti et de l'inciter à reconsidérer son soutien à la taxe sur la fortune improductive.",
     "chiffres_utilises": [
-      "1847"
+      "1847",
+      "3931"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

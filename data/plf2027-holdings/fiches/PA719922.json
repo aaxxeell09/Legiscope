@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:02.514Z",
+    "generated_at": "2026-11-14T14:58:56.762Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -928,7 +928,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001067",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié :1° Le premier alinéa est ainsi modifié :a) À la première phrase, les…",
+      "resume": "Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié : 1° Le premier alinéa est ainsi modifié : a) À la première phrase, les…",
       "sort": "non_examine",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001067"
@@ -937,7 +937,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001415",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié :1° Le premier alinéa est ainsi modifié :a) À la première phrase, les…",
+      "resume": "Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié : 1° Le premier alinéa est ainsi modifié : a) À la première phrase, les…",
       "sort": "non_examine",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001415"
@@ -1220,11 +1220,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Lionel Causse a cosigné un amendement non examiné sur l'article 150‑0 B ter du code général des impôts, ce qui indique probablement une position contre la mesure, en cohérence avec le classement du cabinet.",
-    "argument": "Présenter à ce député que son groupe EPR est contre la mesure, car il a cosigné un amendement non examiné visant à modifier l'article 150-0 B ter du code général des impôts.",
+    "position_probable": "Lionel Causse a cosigné un amendement non examiné visant à modifier l'article 150-0 B ter du code général des impôts, ce qui indique probablement une position contre la mesure, alignée sur celle de son groupe.",
+    "argument": "Présenter à ce député que son groupe EPR est contre la mesure, ce qui correspond à la position de son client, et rappeler que les organisations entendues par les rapporteurs de sa commission le 20 octobre 2026 constituent un indice plus faible qu'un acte personnel.",
     "chiffres_utilises": [
       "150",
-      "0"
+      "0",
+      "2026",
+      "20"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

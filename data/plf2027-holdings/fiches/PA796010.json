@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:02.605Z",
+    "generated_at": "2026-11-14T14:58:56.858Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -23,7 +23,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -831,7 +831,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001847",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Avant le chapitre II du titre IV de la première partie du livre premier du code général des impôts, il est inséré un chapitre I ter ainsi rédigé :«…",
+      "resume": "Après l'article 4 : I. – Avant le chapitre II du titre IV de la première partie du livre premier du code général des impôts, il est inséré un chapitre I ter ainsi rédigé : «…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847"
@@ -849,7 +849,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N003931",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre I bis du titre IV de la première partie du livre premier est ainsi rétabli :« Chapitre I bis«…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I bis du titre IV de la première partie du livre premier est ainsi rétabli : « Chapitre I…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003931"
@@ -1132,14 +1132,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Frédéric Maillot est probablement favorable à la mesure, comme en témoignent ses interventions en séance le 15 octobre 2026 où il défend la suppression de l'article 3 et son cosignature de l'amendement n° 1847, rejeté.",
-    "argument": "Présenter à ce député que l’Afep s’oppose à la taxe de 0,5 % sur les holdings patrimoniales (n° 3140), car il a cosigné l’amendement n° 1847, rejeté, qui modifie le code général des impôts.",
+    "position_probable": "Frédéric Maillot est probablement favorable à la mesure, comme en témoigne sa déclaration en séance le 15 octobre 2026 où il annonce la suppression de l'article 3, ainsi que sa cosignature de l'amendement n° 1847 rejeté.",
+    "argument": "Présenter à ce député que l'amendement n° 1847, qu'il a cosigné et qui a été rejeté, visait à rétablir un chapitre du code général des impôts, ce qui montre son attachement à la structure fiscale existante que la mesure n° 3140 remet en cause.",
     "chiffres_utilises": [
       "3",
       "1847",
       "2026",
       "15",
-      "0.5",
       "3140"
     ],
     "mode": "llm",

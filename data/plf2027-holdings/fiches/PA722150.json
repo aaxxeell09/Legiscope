@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:02.571Z",
+    "generated_at": "2026-11-14T14:58:56.817Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -203,7 +203,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000367",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 5 : Compléter cet article par les neufs alinéas suivants :« I. – L’article 167 bis du code général des impôts est ainsi modifié :« 1° Au IV, après la première…",
+      "resume": "Article 5 : Compléter cet article par les neufs alinéas suivants : « I. – L’article 167 bis du code général des impôts est ainsi modifié : « 1° Au IV, après la première…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000367"
@@ -212,7 +212,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000372",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli :« Art. 220 quater – Les entreprises dont les produits sont composés à plus de 60 % de…",
+      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli : « Art. 220 quater – Les entreprises dont les produits sont composés à plus de 60 % de…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000372"
@@ -221,7 +221,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000470",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié :1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «…",
+      "resume": "Après l'article 5 : I. – L’article 167 bis du code général des impôts est ainsi modifié : 1° Au IV, après la première occurrence du mot : « territoire », sont insérés les mots : «…",
       "sort": "adopte",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000470"
@@ -230,7 +230,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001362",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli :« Art. 220 quater. – Les entreprises dont les produits sont composés à plus de 60 % de…",
+      "resume": "Après l'article 15 : L’article 220 quater du code général des impôts est ainsi rétabli : « Art. 220 quater. – Les entreprises dont les produits sont composés à plus de 60 % de…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001362"
@@ -513,14 +513,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Sacha Houlié a cosigné plusieurs amendements, dont un adopté et trois rejetés, qui modifient le code général des impôts, ce qui indique qu'il soutient probablement la mesure.",
-    "argument": "Présenter à ce député que son groupe soutient la mesure, ce qui contraste avec son classement de perdu pour le client, afin de clarifier sa position réelle avant tout contact.",
+    "position_probable": "Sacha Houlié a cosigné un amendement adopté sur l'article 5, ce qui indique qu'il est probablement favorable à la mesure.",
+    "argument": "Présenter à ce député que son groupe soutient la mesure, ce qui contraste avec son classement de député perdu pour le client, afin de clarifier sa position réelle lors du rendez-vous.",
     "chiffres_utilises": [
+      "5",
       "3",
       "0.5",
       "3140",
       "0.76",
-      "5",
       "167",
       "1",
       "15",

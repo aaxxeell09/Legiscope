@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:03:59.377Z",
+    "generated_at": "2026-11-14T14:58:56.682Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -233,7 +233,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N003182",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : Rédiger ainsi l’alinéa 2 :« 1° La première phrase est complétée par les mots : « , dont 2 200 € au maximum pour les contribuables célibataires, veufs, séparés…",
+      "resume": "Article 3 : Rédiger ainsi l’alinéa 2 : « 1° La première phrase est complétée par les mots : « , dont 2 200 € au maximum pour les contribuables célibataires, veufs, séparés…",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003182"
@@ -242,7 +242,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N003183",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : Rédiger ainsi l’alinéa 2 :« 1° À la fin de la première phrase, le montant : « 4 439 € » est remplacé par les mots : « 2 200 € pour les contribuables…",
+      "resume": "Article 3 : Rédiger ainsi l’alinéa 2 : « 1° À la fin de la première phrase, le montant : « 4 439 € » est remplacé par les mots : « 2 200 € pour les contribuables…",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003183"
@@ -251,7 +251,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N003221",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : Après l’article 235 ter ZD du code général des impôts, il est inséré un article 235 ter ZD bis A ainsi rédigé :« Art. 235 ter ZD bis A. – I. Pour l’application…",
+      "resume": "Après l'article 15 : Après l’article 235 ter ZD du code général des impôts, il est inséré un article 235 ter ZD bis A ainsi rédigé : « Art. 235 ter ZD bis A. – I. Pour…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221"
@@ -535,11 +535,9 @@
   },
   "synthese": {
     "position_probable": "Paul-André Colombani est probablement favorable à la mesure, comme l'indique son cosignature de l'amendement n° 3221, rejeté.",
-    "argument": "Présenter à ce député que le groupe LIOT est contre la mesure, ce qui rejoint sa position personnelle, tout en précisant que les organisations du secteur maritime ont été entendues par les rapporteurs de sa commission le 9 novembre 2026.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement n° 3221, rejeté, montre qu'il soutient le renforcement de la mesure, ce qui contredit l'objectif de l'Afep.",
     "chiffres_utilises": [
-      "3221",
-      "2026",
-      "9"
+      "3221"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

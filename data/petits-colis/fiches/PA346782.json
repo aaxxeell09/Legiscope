@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.627Z",
+    "generated_at": "2026-11-14T14:59:02.795Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -23,7 +23,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -226,7 +226,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N003126",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : Rédiger ainsi cet article :« I. – Sont soumises à une taxe sur les services de commerce électronique permettant la vente à distance de biens matériels expédiés…",
+      "resume": "Article 22 : Rédiger ainsi cet article : « I. – Sont soumises à une taxe sur les services de commerce électronique permettant la vente à distance de biens matériels…",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
@@ -658,15 +658,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Philippe Juvin est probablement favorable à la mesure, comme en témoignent ses amendements 1859, 3016 et 3126 ainsi que ses déclarations en commission le 22 octobre 2025.",
-    "argument": "Présenter à ce député que la taxe de 2 euros par article est jugée insuffisante par lui-même en commission le 22 octobre 2025, car il a défendu un amendement n° 1859 visant à la rendre plus lourde, ce qui montre qu'il cherche à renforcer la mesure plutôt qu'à la supprimer.",
+    "position_probable": "Philippe Juvin est probablement favorable à la mesure, comme l'indiquent ses déclarations en commission le 22 octobre 2025 et l'amendement n° 1859 qu'il a déposé et qui a été rejeté.",
+    "argument": "Présenter à ce député que son amendement n° 1859 a été rejeté, ce qui montre qu'il est ouvert à d'autres formulations techniques pour éviter l'impact négatif sur les plateformes logistiques qu'il a lui-même souligné en commission le 22 octobre 2025.",
     "chiffres_utilises": [
       "1859",
       "22",
-      "3016",
-      "3126",
-      "2025",
-      "2"
+      "2025"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:03:59.317Z",
+    "generated_at": "2026-11-14T14:58:56.620Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -55,7 +55,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-13-octobre-2026"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -733,7 +733,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000756",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Avant le chapitre II du titre IV de la première partie du livre Ier, il est inséré un chapitre I ter…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Avant le chapitre II du titre IV de la première partie du livre I er , il est inséré un chapitre I ter…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000756"
@@ -751,7 +751,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000872",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : Modifier ainsi le 2° du I de l’article 219 du code général des impôts :1° Au deuxième alinéa du a bis, les mots : « et afférentes à des éléments autres que les…",
+      "resume": "Après l'article 15 : Modifier ainsi le 2° du I de l’article 219 du code général des impôts : 1° Au deuxième alinéa du a bis , les mots : « et afférentes à des éléments autres que…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000872"
@@ -760,7 +760,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000873",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié :1° Au deuxième alinéa du I. de l’article 216, le taux : « 5 % » et le taux : « 1 % » sont remplacés par le taux…",
+      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié : 1° Au deuxième alinéa du I. de l’article 216, le taux : « 5 % » et le taux : « 1 % » sont remplacés par le taux…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000873"
@@ -769,7 +769,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000874",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : Après le j du 6 de l’article 145 du code général des impôts, il est rétabli un k ainsi rédigé :« k. À l’ensemble des sommes distribuées perçues par les…",
+      "resume": "Après l'article 15 : Après le j du 6 de l’article 145 du code général des impôts, il est rétabli un k ainsi rédigé : « k. À l’ensemble des sommes distribuées perçues par les…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000874"
@@ -778,7 +778,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001275",
       "texte_id": "PRJLANR5L17B3210",
       "role": "auteur",
-      "resume": "Après l'article 4 : I. – Avant le chapitre II du titre IV de la première partie du livre premier du code général des impôts, il est inséré un chapitre I ter ainsi rédigé :«…",
+      "resume": "Après l'article 4 : I. – Avant le chapitre II du titre IV de la première partie du livre premier du code général des impôts, il est inséré un chapitre I ter ainsi rédigé : «…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001275"
@@ -787,7 +787,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001316",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre I bis du titre IV de la première partie du livre premier du code général des impôts est ainsi…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I bis du titre IV de la première partie du livre premier du code général des impôts est…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001316"
@@ -805,7 +805,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001323",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le chapitre I bis du titre IV de la première partie du livre premier du code général des impôts est rétabli et ainsi rédigé :« Art. 885 A. – Sont soumises…",
+      "resume": "Après l'article 4 : I. – Le chapitre I bis du titre IV de la première partie du livre premier du code général des impôts est rétabli et ainsi rédigé : « Art. 885 A. – Sont…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001323"
@@ -814,7 +814,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001368",
       "texte_id": "PRJLANR5L17B3210",
       "role": "auteur",
-      "resume": "Après l'article 10 : L’article 787 B du code général des impôts est ainsi modifié :1° La seconde phrase du deuxième alinéa est remplacée par une phrase ainsi rédigée : « N’est pas…",
+      "resume": "Après l'article 10 : L’article 787 B du code général des impôts est ainsi modifié : 1° La seconde phrase du deuxième alinéa est remplacée par une phrase ainsi rédigée : « N’est pas…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001368"
@@ -832,7 +832,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001458",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : Rédiger ainsi cet article : « Le deuxième alinéa du a du 5 de l’article 158 du code général des impôts est remplacé par trois alinéas ainsi rédigés :« «…",
+      "resume": "Article 3 : Rédiger ainsi cet article : « Le deuxième alinéa du a du 5 de l’article 158 du code général des impôts est remplacé par trois alinéas ainsi rédigés : « «…",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001458"
@@ -850,7 +850,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000318",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : Rédiger ainsi cet article :« I. – Le deuxième alinéa du a du 5 de l’article 158 du code général des impôts est remplacé par trois alinéas ainsi rédigés :«…",
+      "resume": "Article 3 : Rédiger ainsi cet article : « I. – Le deuxième alinéa du a du 5 de l’article 158 du code général des impôts est remplacé par trois alinéas ainsi rédigés : «…",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000318"
@@ -859,7 +859,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001046",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Après le chapitre I du titre IV de la première partie du livre Ier du code général des impôts, il est…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Après le chapitre I du titre IV de la première partie du livre I er du code général des impôts, il est…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001046"
@@ -868,7 +868,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001077",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre I bis du titre IV de la première partie du livre premier est rétabli et ainsi rédigé :« Art.…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I bis du titre IV de la première partie du livre premier est rétabli et ainsi rédigé : «…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001077"
@@ -877,7 +877,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001078",
       "texte_id": "PRJLANR5L17B3210",
       "role": "auteur",
-      "resume": "Après l'article 4 : I. – Au premier alinéa du V de l’article L. 4122‑8 du code de la défense, la référence : « 982 » est remplacée par la référence : « 885 W ».II. – Le code…",
+      "resume": "Après l'article 4 : I. – Au premier alinéa du V de l’article L. 4122‑8 du code de la défense, la référence : « 982 » est remplacée par la référence : « 885 W ». II. – Le code…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001078"
@@ -904,7 +904,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001091",
       "texte_id": "PRJLANR5L17B3210",
       "role": "auteur",
-      "resume": "Après l'article 10 : L’article 787 B du code général des impôts est ainsi modifié :1° La seconde phrase du deuxième alinéa est ainsi rédigée :« N’est pas davantage considérée comme…",
+      "resume": "Après l'article 10 : L’article 787 B du code général des impôts est ainsi modifié : 1° La seconde phrase du deuxième alinéa est ainsi rédigée : « N’est pas davantage considérée…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001091"
@@ -913,7 +913,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N002566",
       "texte_id": "PRJLANR5L17B3210",
       "role": "auteur",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre I bis du titre IV de la première partie du livre premier est ainsi rétabli :« Chapitre I bis«…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I bis du titre IV de la première partie du livre premier est ainsi rétabli : « Chapitre I…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002566"
@@ -922,7 +922,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N002618",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : Le I de l’article 219 du code général des impôts est ainsi modifié :1° Au a bis, les mots : « et afférentes à des éléments autres que les titres de…",
+      "resume": "Après l'article 15 : Le I de l’article 219 du code général des impôts est ainsi modifié : 1° Au a bis , les mots : « et afférentes à des éléments autres que les titres de…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002618"
@@ -931,7 +931,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N002619",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié :1° Le deuxième alinéa du I de l’article 216 est ainsi modifié :a) À la première phrase, le taux : « 5 % » est…",
+      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié : 1° Le deuxième alinéa du I de l’article 216 est ainsi modifié : a) À la première phrase, le taux : « 5 % » est…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002619"
@@ -940,7 +940,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N002620",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : Le k de l’article 145 du code général des impôts est ainsi rétabli :« k. A l’ensemble des sommes distribuées perçues par les compagnies financières holding…",
+      "resume": "Après l'article 15 : Le k de l’article 145 du code général des impôts est ainsi rétabli : « k. A l’ensemble des sommes distribuées perçues par les compagnies financières holding…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002620"
@@ -949,7 +949,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N002627",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 3 : L’article 111 du code général des impôts est complété par un f ainsi rédigé :« f. Les revenus perçus par les entités et sociétés définies aux articles L. 517‑1…",
+      "resume": "Après l'article 3 : L’article 111 du code général des impôts est complété par un f ainsi rédigé : « f . Les revenus perçus par les entités et sociétés définies aux articles L.…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002627"
@@ -1232,11 +1232,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Éric Coquerel est probablement favorable à la mesure, comme en témoignent ses amendements déposés ou cosignés visant à supprimer l'article 3, dont l'un a été adopté.",
-    "argument": "Présenter à ce député que son amendement n° 756, qui modifie le code général des impôts, a été rejeté, afin de lui montrer que la mesure reste en vigueur et que son action n'a pas abouti.",
+    "position_probable": "Éric Coquerel est probablement favorable à la mesure, comme en témoignent ses amendements n° 756 et n° 1275, tous deux rejetés, ainsi que sa déclaration en séance le 4 novembre 2026.",
+    "argument": "Présenter à ce député que son amendement n° 756, qui visait à modifier le code général des impôts, a été rejeté, afin de lui montrer que la mesure reste en vigueur malgré ses tentatives de la contourner.",
     "chiffres_utilises": [
-      "3",
-      "756"
+      "756",
+      "4",
+      "2",
+      "1275",
+      "2026"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

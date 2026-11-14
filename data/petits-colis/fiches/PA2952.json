@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.610Z",
+    "generated_at": "2026-11-14T14:59:02.786Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -148,7 +148,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N003276",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros »le montant : « 6 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 6 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003276"
@@ -580,11 +580,10 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Jean-Luc Warsmann est probablement favorable à la mesure, car il a cosigné l'amendement 3276, qui a été retiré.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 3276, retiré, vise à porter la taxe de 2 euros à 6 euros, ce qui montre qu'il soutient le principe de la mesure et qu'il est donc possible de discuter avec lui de ses limites.",
+    "position_probable": "Jean-Luc Warsmann est probablement favorable à la mesure, car il a cosigné l'amendement 3276, qui a été retiré, visant à porter la taxe à 6 euros.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement 3276, retiré, a visé une hausse de la taxe à 6 euros, ce qui montre qu'il soutient le principe de la mesure et qu'il reste un interlocuteur à convaincre pour la réduire.",
     "chiffres_utilises": [
       "3276",
-      "2",
       "6"
     ],
     "mode": "llm",

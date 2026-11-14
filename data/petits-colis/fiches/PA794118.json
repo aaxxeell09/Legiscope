@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:15:21.505Z",
+    "generated_at": "2026-11-14T14:59:02.761Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -23,7 +23,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -879,7 +879,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N000719",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : Rédiger ainsi l’article 22 :« I. – Les règles relatives au malus sur les importations d’articles de marchandise contenus dans des envois de faible valeur sont…",
+      "resume": "Article 22 : Rédiger ainsi l’article 22 : « I. – Les règles relatives au malus sur les importations d’articles de marchandise contenus dans des envois de faible valeur sont…",
       "sort": "adopte",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000719"
@@ -888,7 +888,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N000720",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros »le montant :« 5 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000720"
@@ -897,7 +897,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N000721",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant :« 2 euros » le montant :« 4 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 4 euros ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000721"
@@ -906,7 +906,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N000722",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 10, substituer au chiffre :« 2 » le chiffre :« 3 ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au chiffre : « 2 » le chiffre : « 3 ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000722"
@@ -915,7 +915,7 @@
       "id": "AMANR5L17PO59048B1906P1D1N001774",
       "texte_id": "PRJLANR5L17B1906",
       "role": "cosignataire",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant :« 25 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 25 euros ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
@@ -933,7 +933,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000936",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant :« 2 euros » le montant :« 3 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 3 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000936"
@@ -942,7 +942,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000937",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant :« 2 euros »le montant : « 4 euros ».",
+      "resume": "Article 22 : À la fin de l’alinéa 10, substituer au montant : « 2 euros » le montant : « 4 euros ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000937"
@@ -951,7 +951,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000938",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros »le montant : « 5 euros ».",
+      "resume": "Article 22 : À l’alinéa 10, substituer au montant : « 2 euros » le montant : « 5 euros ».",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000938"
@@ -960,7 +960,7 @@
       "id": "AMANR5L17PO838901B1906P1D1N000943",
       "texte_id": "PRJLANR5L17B1906",
       "role": "auteur",
-      "resume": "Article 22 : I. – À l'alinéa 1, substituer aux mots : « à la taxe »les mots : « au malus ».II. – En conséquence, à l’alinéa 7, substituer aux mots : « à la taxe »les mots…",
+      "resume": "Article 22 : I. – À l'alinéa 1, substituer aux mots : « à la taxe » les mots : « au malus ». II. – En conséquence, à l’alinéa 7, substituer aux mots : « à la taxe » les…",
       "sort": "en_attente",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000943"
@@ -1401,10 +1401,21 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Antoine Vermorel est probablement favorable à la mesure, comme le montre son amendement numéro 719, adopté, qui renforce le dispositif sur les importations d’articles de faible valeur.",
-    "argument": "Présenter à ce député que son amendement n° 719, qui a été adopté, a déjà renforcé la mesure, ce qui rend sa position favorable à la taxe difficile à contester.",
+    "position_probable": "Antoine Vermorel est probablement favorable à la mesure, comme en témoignent ses amendements n° 719, 720, 721, 722, 936, 937, 938 et 943 ainsi que sa déclaration en commission le 22 octobre 2025.",
+    "argument": "Présenter à ce député le fait que son amendement n° 719, qui a été adopté, a permis de maintenir la taxe de 2 euros par article sur les colis de moins de 150 euros, afin de montrer que sa position actuelle est cohérente avec l'adoption de cette mesure.",
     "chiffres_utilises": [
-      "719"
+      "719",
+      "22",
+      "720",
+      "721",
+      "722",
+      "936",
+      "937",
+      "938",
+      "943",
+      "2025",
+      "2",
+      "150"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:03:59.423Z",
+    "generated_at": "2026-11-14T14:58:56.729Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -66,7 +66,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001431",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ».II. – Le…",
+      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ». II. – Le…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
@@ -75,7 +75,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001432",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – L’article 975 du code général des impôts est complété par un VII ainsi rédigé :« VII. – Sont déductibles de l’impôt sur la fortune immobilière l’ensemble…",
+      "resume": "Après l'article 4 : I. – L’article 975 du code général des impôts est complété par un VII ainsi rédigé : « VII. – Sont déductibles de l’impôt sur la fortune immobilière l’ensemble…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001432"
@@ -84,7 +84,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N001437",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Les articles 964, 965 à 972 ter et 973 à 976 sont abrogés.II. – La perte de recettes pour l’État est compensée à due concurrence par la création d’une…",
+      "resume": "Après l'article 4 : I. – Les articles 964, 965 à 972 ter et 973 à 976 sont abrogés. II. – La perte de recettes pour l’État est compensée à due concurrence par la création d’une…",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001437"
@@ -102,7 +102,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N001440",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ».II. – Le…",
+      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ». II. – Le…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"

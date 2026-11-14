@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:02.586Z",
+    "generated_at": "2026-11-14T14:58:56.837Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -928,7 +928,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000018",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I er bis du titre IV de la première partie du livre I er est ainsi rétabli : « Chapitre I er…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018"
@@ -937,7 +937,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000043",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le chapitre II bis du titre IV de la première partie du livre premier du code général des impôts est ainsi modifié :1° L’intitulé est ainsi rédigé : «…",
+      "resume": "Après l'article 4 : I. – Le chapitre II bis du titre IV de la première partie du livre premier du code général des impôts est ainsi modifié : 1° L’intitulé est ainsi rédigé : «…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043"
@@ -946,7 +946,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000048",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : I. – Le code général des impôts est ainsi modifié :1° Après le 1 de l’article 145, il est inséré un 1 bis ainsi rédigé : « 1 bis. Le régime fiscal des sociétés…",
+      "resume": "Après l'article 15 : I. – Le code général des impôts est ainsi modifié : 1° Après le 1 de l’article 145, il est inséré un 1 bis ainsi rédigé : « 1 bis . Le régime fiscal des…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000048"
@@ -955,7 +955,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000174",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts est ainsi rétabli :« Chapitre Ier bis« Impôt de solidarité…",
+      "resume": "Après l'article 4 : I. – Le chapitre I er bis du titre IV de la première partie du livre I er du code général des impôts est ainsi rétabli : « Chapitre I er bis « Impôt de…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174"
@@ -964,7 +964,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000208",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié :1° L'intitulé de la section X du chapitre III du titre Ier de la première partie du livre Ier est ainsi rédigé…",
+      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié : 1° L'intitulé de la section X du chapitre III du titre Ier de la première partie du livre Ier est ainsi rédigé…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000208"
@@ -982,7 +982,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000038",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier…",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre I er bis du titre IV de la première partie du livre I er est ainsi rétabli : « Chapitre I er…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000038"
@@ -991,7 +991,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000047",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : I. – Le chapitre II bis du titre IV de la première partie du livre premier du code général des impôts est ainsi modifié :1° L’intitulé est ainsi rédigé : «…",
+      "resume": "Après l'article 4 : I. – Le chapitre II bis du titre IV de la première partie du livre premier du code général des impôts est ainsi modifié : 1° L’intitulé est ainsi rédigé : «…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047"
@@ -1000,7 +1000,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000051",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : I. – Le code général des impôts est ainsi modifié :1° Après le 1 de l’article 145, il est inséré un 1 bis ainsi rédigé : « 1 bis. Le régime fiscal des sociétés…",
+      "resume": "Après l'article 15 : I. – Le code général des impôts est ainsi modifié : 1° Après le 1 de l’article 145, il est inséré un 1 bis ainsi rédigé : « 1 bis . Le régime fiscal des…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000051"
@@ -1009,7 +1009,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000054",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 4 : Le code général des impôts est ainsi modifié :1° Le chapitre Ier bis du titre IV de la première partie du livre premier est ainsi rétabli :« Chapitre Ier bis«…",
+      "resume": "Après l'article 4 : Le code général des impôts est ainsi modifié : 1° Le chapitre I er bis du titre IV de la première partie du livre premier est ainsi rétabli : « Chapitre I er…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000054"
@@ -1018,7 +1018,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000056",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié :1° L’intitulé de la section X du chapitre III du titre Ier de la première partie du livre Ier est ainsi rédigé…",
+      "resume": "Après l'article 15 : Le code général des impôts est ainsi modifié : 1° L’intitulé de la section X du chapitre III du titre I er de la première partie du livre I er est ainsi rédigé…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000056"
@@ -1310,36 +1310,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Marie Pochon est probablement favorable à la mesure, comme le montre son cosignature de l'amendement n° 18, rejeté.",
-    "argument": "Présenter à ce député que son groupe soutient la mesure, ce qui contraste avec les amendements qu'il a cosignés et qui ont été rejetés.",
+    "position_probable": "Marie Pochon est probablement pour la mesure, comme l'indiquent les amendements 18, 43, 174, 208 et 38 qu'elle a cosignés et qui ont été rejetés.",
+    "argument": "Présenter à ce député le fait qu'il a cosigné l'amendement n° 18, rejeté, qui rétablit le chapitre I er bis du code général des impôts, car cet acte montre son soutien à la mesure que le client souhaite réduire.",
     "chiffres_utilises": [
       "18",
-      "3",
-      "0.5",
-      "3140",
-      "0.81",
-      "4",
-      "1",
       "43",
-      "15",
-      "145",
       "174",
       "208",
-      "219",
-      "12",
-      "100",
-      "38",
-      "47",
-      "56",
-      "21",
-      "0",
-      "0.95",
-      "5",
-      "2026",
-      "10",
-      "20",
-      "22",
-      "28"
+      "38"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

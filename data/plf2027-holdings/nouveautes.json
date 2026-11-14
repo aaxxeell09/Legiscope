@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:02.802Z",
+    "generated_at": "2026-11-14T14:59:02.697Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -23,11 +23,40 @@
         "url": "https://hemicycle.ai"
       }
     ],
-    "limits": "data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/plf2027-holdings/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. 29 sort(s) d'amendement sans date publiée : non listé(s) comme événement daté (aucune date de repli). Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip).",
+    "limits": "Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
   "evenements": [
+    {
+      "id": "ev-756",
+      "date": "2026-11-04",
+      "type": "scrutin",
+      "titre": "2 amendements identiques (n° 756, n° 1046) (LFI-NFP) rejetés (scrutin n° 9714) : Par cet amendement d'appel, le groupe de la France insoumise propose d’instaurer une…",
+      "detail": "Par cet amendement d'appel, le groupe de la France insoumise propose d’instaurer une contribution féministe sur les très grandes fortunes, pour financer à hauteur de 3 milliards d’euros par an la lutte contre les violences sexistes et se...",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9714",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9714",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9714"
+          },
+          {
+            "label": "Amendement n° 756",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000756"
+          },
+          {
+            "label": "Amendement n° 1046",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001046"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 4 novembre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
     {
       "id": "ev-9759",
       "date": "2026-11-04",
@@ -46,6 +75,56 @@
           }
         ],
         "raisonnement": "Étape « Séance publique, première lecture : rejeté (scrutin n° 9759) » lue dans etat.json avec son scrutin. Le texte porte la mesure : son rejet joue contre la mesure, d'où l'effet sur l'objectif du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-43",
+      "date": "2026-10-30",
+      "type": "scrutin",
+      "titre": "Amendement n° 43 (ECOS) rejeté (scrutin n° 9389) : Cet amendement vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt…",
+      "detail": "Cet amendement vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt sur la fortune personnelle.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9389",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9389",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9389"
+          },
+          {
+            "label": "Amendement n° 43",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000043"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 30 octobre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-3221",
+      "date": "2026-10-28",
+      "type": "scrutin",
+      "titre": "Amendement n° 3221 (LIOT) rejeté (scrutin n° 9175) : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
+      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9175",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9175",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9175"
+          },
+          {
+            "label": "Amendement n° 3221",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 28 octobre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -79,6 +158,35 @@
       }
     },
     {
+      "id": "ev-1069",
+      "date": "2026-10-16",
+      "type": "scrutin",
+      "titre": "2 amendements identiques (n° 1069, n° 1316) (LFI-NFP) rejetés (scrutin n° 8857) : À travers cet amendement, le groupe parlementaire LFI propose le rétablissement d'un…",
+      "detail": "À travers cet amendement, le groupe parlementaire LFI propose le rétablissement d'un impôt de solidarité sur la fortune (ISF) renforcé, intégrant un volet climatique afin de faire contribuer les plus riches à la hauteur de leurs immenses...",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8857",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 8857",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8857"
+          },
+          {
+            "label": "Amendement n° 1069",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001069"
+          },
+          {
+            "label": "Amendement n° 1316",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001316"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 16 octobre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
       "id": "ev-1077",
       "date": "2026-10-16",
       "type": "scrutin",
@@ -108,31 +216,106 @@
       }
     },
     {
-      "id": "ev-1069",
-      "date": "2026-10-06",
+      "id": "ev-364",
+      "date": "2026-10-16",
       "type": "scrutin",
-      "titre": "2 amendements identiques (n° 1069, n° 1316) (LFI-NFP) rejetés (scrutin n° 8555) : À travers cet amendement, le groupe parlementaire LFI propose le rétablissement d'un…",
-      "detail": "À travers cet amendement, le groupe parlementaire LFI propose le rétablissement d'un impôt de solidarité sur la fortune (ISF) renforcé, intégrant un volet climatique afin de faire contribuer les plus riches à la hauteur de leurs immenses...",
+      "titre": "2 amendements identiques (n° 364, n° 471) (SOC) rejetés (scrutin n° 8860) : Cet amendement des députés Socialistes et apparentés décline les travaux menés par…",
+      "detail": "Cet amendement des députés Socialistes et apparentés décline les travaux menés par l’économiste Gabriel Zucman – Prix Bernacer en 2018 et Médaille John-Bates-Clark en 2023 – vise à instaurer un prélèvement annuel plancher de 2 % pour les...",
       "importance": 3,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8555",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8860",
       "effet": "renforce",
       "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
-            "label": "Scrutin n° 8555",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8555"
+            "label": "Scrutin n° 8860",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8860"
           },
           {
-            "label": "Amendement n° 1069",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001069"
+            "label": "Amendement n° 364",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000364"
           },
           {
-            "label": "Amendement n° 1316",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001316"
+            "label": "Amendement n° 471",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000471"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 6 octobre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 16 octobre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-47",
+      "date": "2026-10-16",
+      "type": "scrutin",
+      "titre": "Amendement n° 47 (ECOS) rejeté (scrutin n° 8863) : Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune…",
+      "detail": "Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt sur la fortune personnelle.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8863",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 8863",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8863"
+          },
+          {
+            "label": "Amendement n° 47",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 16 octobre 2026. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-797",
+      "date": "2026-10-16",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 797 (HOR) adopté : De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune…",
+      "detail": "De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune immobilière restent vacants ou sont proposés à des loyers élevés, alors que les ménages modestes et les classes moyennes peinent à se loger.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000797",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 797",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000797"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « reduit » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1706",
+      "date": "2026-10-08",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1706 (LIOT) adopté : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
+      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
+      "importance": 3,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001706",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1706",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001706"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « adopté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -179,27 +362,139 @@
       }
     },
     {
-      "id": "ev-47",
-      "date": "2026-10-16",
-      "type": "amendement_sort",
-      "titre": "Amendement n° 47 (ECOS) rejeté : Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune…",
-      "detail": "Cet amendement du groupe Écologiste et Social vise à transformer l’impôt sur la fortune immobilière (IFI) en un impôt sur la fortune personnelle.",
+      "id": "ev-1432",
+      "date": "2026-10-30",
+      "type": "scrutin",
+      "titre": "Amendement n° 1432 (UDR) rejeté (scrutin n° 9457) : Cet amendement présenté par le Groupe UDR vise à retrancher de l’assiette de l’impôt sur…",
+      "detail": "Cet amendement présenté par le Groupe UDR vise à retrancher de l’assiette de l’impôt sur la fortune immobilière (IFI) les dépenses d’entretien des bâtiments classés ou inscrits au titre des monuments historiques.",
       "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9457",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9457",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9457"
+          },
+          {
+            "label": "Amendement n° 1432",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001432"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 30 octobre 2026. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-56",
+      "date": "2026-10-28",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 56 (ECOS) rejeté : Cet amendement du groupe Écologiste et Social vise à renforcer la taxe sur les holdings…",
+      "detail": "Cet amendement du groupe Écologiste et Social vise à renforcer la taxe sur les holdings patrimoniales, dont la portée a été fortement réduite au cours de l’examen du projet de loi de finances pour 2026.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000056",
       "effet": "renforce",
       "objectif_rang": 2,
       "preuve": {
         "sources": [
           {
-            "label": "Amendement n° 47",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000047"
+            "label": "Amendement n° 56",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000056"
           },
           {
             "label": "Texte PRJLANR5L17B3210",
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-18",
+      "date": "2026-10-19",
+      "type": "scrutin",
+      "titre": "2 amendements identiques (n° 18, n° 38) (ECOS) rejetés (scrutin n° 8878) : Cet amendement vise à instaurer un impôt plancher sur la fortune (IPF), ciblant les 0,01…",
+      "detail": "Cet amendement vise à instaurer un impôt plancher sur la fortune (IPF), ciblant les 0,01 % des contribuables les plus riches, c’est-à-dire les personnes détenant plus de 100 millions d’euros de patrimoine net.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8878",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 8878",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8878"
+          },
+          {
+            "label": "Amendement n° 18",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000018"
+          },
+          {
+            "label": "Amendement n° 38",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000038"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 19 octobre 2026. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1275",
+      "date": "2026-10-16",
+      "type": "scrutin",
+      "titre": "2 amendements identiques (n° 1275, n° 2566) (LFI-NFP) rejetés (scrutin n° 8859) : Cet amendement du groupe LFI propose d’instaurer une contribution différentielle…",
+      "detail": "Cet amendement du groupe LFI propose d’instaurer une contribution différentielle garantissant aux contribuables détenant plus de 100 millions d’euros de patrimoine net une imposition minimale équivalente à 2 % de celui-ci, dite « taxe Zu...",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8859",
+      "effet": "neutre",
+      "objectif_rang": 3,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 8859",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8859"
+          },
+          {
+            "label": "Amendement n° 1275",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001275"
+          },
+          {
+            "label": "Amendement n° 2566",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N002566"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 16 octobre 2026. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-666",
+      "date": "2026-10-16",
+      "type": "scrutin",
+      "titre": "2 amendements identiques (n° 666, n° 963) (RN) rejetés (scrutin n° 8864) : Cet amendement vise à remplacer l’Impôt sur la Fortune Immobilière (IFI) par un Impôt sur…",
+      "detail": "Cet amendement vise à remplacer l’Impôt sur la Fortune Immobilière (IFI) par un Impôt sur la Fortune Financière (IFF) défendu par le Rassemblement National au nom de la justice fiscale.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8864",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 8864",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8864"
+          },
+          {
+            "label": "Amendement n° 666",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000666"
+          },
+          {
+            "label": "Amendement n° 963",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000963"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210, scrutin nominatif du 16 octobre 2026. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -225,6 +520,31 @@
           }
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « aggrave » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-208",
+      "date": "2026-10-08",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 208 (ECOS) rejeté : Cet amendement vise à renforcer la taxe sur les holdings patrimoniales, dont la portée a…",
+      "detail": "Cet amendement vise à renforcer la taxe sur les holdings patrimoniales, dont la portée a été fortement réduite au cours de l’examen du projet de loi de finances pour 2026.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000208",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 208",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000208"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -308,6 +628,110 @@
           }
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « reduit » (texte.json). Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-174",
+      "date": "2026-10-07",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 174 (ECOS) rejeté : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique applicable…",
+      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique applicable aux foyers dont le patrimoine net est supérieur à 1,3 million d’euros.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 174",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000174"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1847",
+      "date": "2026-10-07",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 1847, n° 3931) (GDR) rejetés : Adopté par l’Assemblée nationale en février 2025 lors de la niche parlementaire du groupe…",
+      "detail": "Adopté par l’Assemblée nationale en février 2025 lors de la niche parlementaire du groupe Écologiste, cet amendement vise à inscrire dans notre système fiscal un impôt plancher sur la fortune, plus connu sous le nom de « taxe Zucman ».",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1847",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847"
+          },
+          {
+            "label": "Amendement n° 3931",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003931"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-887",
+      "date": "2026-10-07",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 887 rejeté : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui…",
+      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui concerne les foyers dont le patrimoine net est supérieur à 1 million d’euros.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000887",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 887",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000887"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-889",
+      "date": "2026-10-07",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 889 rejeté : La création d’une contribution différentielle sur les hauts patrimoines répond à un…",
+      "detail": "La création d’une contribution différentielle sur les hauts patrimoines répond à un impératif de justice fiscale et de solidarité nationale dans un contexte marqué par une concentration croissante des richesses.",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000889",
+      "effet": "renforce",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 889",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000889"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -645,6 +1069,27 @@
       }
     },
     {
+      "id": "ev-agenda-ruanr5l17s2027idc461440",
+      "date": "2026-11-10",
+      "type": "agenda",
+      "titre": "Réunion du 10 novembre 2026 sur le texte (Salle 6350 – Palais Bourbon, 1er étage)",
+      "detail": "– Table ronde, ouverte à la presse, réunissant M. Denis Anne, enseignant chercheur associé au laboratoire ÉRUDITE (Équipe de recherche sur l’utilisation des données individuelles en lien avec la théorie économique) de l’université Gustave Eiffel, M. Yannick L’Horty, professeur d’économie à l’univers",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-depots-2026-11-10",
       "date": "2026-11-10",
       "type": "amendement_depose",
@@ -800,6 +1245,27 @@
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2027idc461591",
+      "date": "2026-11-04",
+      "type": "agenda",
+      "titre": "Réunion du 4 novembre 2026 sur le texte (Salle Lamartine – 101 rue de l'Université, 1er sous-sol)",
+      "detail": "Examen du texte",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
         "nature": "fait"
       }
     },
@@ -1506,6 +1972,81 @@
       }
     },
     {
+      "id": "ev-1275-2",
+      "date": "2026-10-16",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1275 (UDR) non examiné : Le présent amendement vise à prendre en compte, dans l’assiette de l’impôt sur la fortune…",
+      "detail": "Le présent amendement vise à prendre en compte, dans l’assiette de l’impôt sur la fortune immobilière, les dépenses d’entretien et de réparation engagées par les propriétaires de bâtiments classés ou inscrits au titre des monuments histo... (non soutenu)",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001275",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1275",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001275"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1526",
+      "date": "2026-10-16",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1526 non examiné : Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui…",
+      "detail": "Cet amendement vise à mettre en place un impôt sur la fortune (ISF) climatique qui concerne les foyers dont le patrimoine net est supérieur à 1 million d’euros. (non soutenu)",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001526",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1526",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001526"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1528",
+      "date": "2026-10-16",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1528 non examiné : La création d’une contribution différentielle sur les hauts patrimoines répond à un…",
+      "detail": "La création d’une contribution différentielle sur les hauts patrimoines répond à un impératif de justice fiscale et de solidarité nationale dans un contexte marqué par une concentration croissante des richesses. (non soutenu)",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001528",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1528",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001528"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « aggrave » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
       "id": "ev-3821",
       "date": "2026-10-16",
       "type": "amendement_sort",
@@ -1526,7 +2067,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
           }
         ],
-        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -1749,6 +2290,27 @@
       }
     },
     {
+      "id": "ev-agenda-ruanr5l17s2027idc461443",
+      "date": "2026-10-13",
+      "type": "agenda",
+      "titre": "Réunion du 13 octobre 2026 sur le texte (Salle 6634)",
+      "detail": "- Audition de l’Association de lutte contre la piraterie audiovisuelle (ALPA) – M. Frédéric Delacroix, délégué général, M. Étienne Brohon, responsable des agents assermentés, Mme Hortense de Labriffe, déléguée générale de l’Association des producteurs indépendants (API), Mme Hélène Herschel, délégué",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-rapports-2026-10-13",
       "date": "2026-10-13",
       "type": "rapport",
@@ -1937,6 +2499,85 @@
           }
         ],
         "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de dépôt publiée (texte.json). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1323",
+      "date": "2026-10-07",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 1323 (LFI-NFP) rejeté : Par cet amendement de repli, le groupe LFI propose de rétablir, dès le 1 er janvier 2027,…",
+      "detail": "Par cet amendement de repli, le groupe LFI propose de rétablir, dès le 1 er janvier 2027, un impôt sur la fortune pour les foyers dont le patrimoine net excède 1 million d’euros.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001323",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1323",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001323"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-1431",
+      "date": "2026-10-07",
+      "type": "amendement_sort",
+      "titre": "2 amendements identiques (n° 1431, n° 1440) (UDR) rejetés : Cet amendement du groupe UDR porte de 30 % à 50 % l’abattement applicable à la valeur de…",
+      "detail": "Cet amendement du groupe UDR porte de 30 % à 50 % l’abattement applicable à la valeur de la résidence principale pour le calcul de l’impôt sur la fortune immobilière.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 1431",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431"
+          },
+          {
+            "label": "Amendement n° 1440",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « autre » (texte.json) : sans effet sur la mesure. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "id": "ev-678",
+      "date": "2026-10-07",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 678 (HOR) non examiné : De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune…",
+      "detail": "De nombreux logements détenus par des contribuables assujettis à l’impôt sur la fortune immobilière restent vacants ou sont proposés à des loyers élevés, alors que les ménages modestes et les classes moyennes peinent à se loger. (non soutenu)",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000678",
+      "effet": "neutre",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 678",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000678"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « non examiné » lu dans le texte PRJLANR5L17B3210 ; date du sort de l'open data (brut P1). Camp : nature « reduit » (texte.json). Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
         "nature": "deduction"
       }
     },
@@ -2149,6 +2790,447 @@
       }
     },
     {
+      "id": "ev-agenda-ruanr5l17s2026idc461229",
+      "date": "2026-09-30",
+      "type": "agenda",
+      "titre": "Réunion du 30 septembre 2026 sur le texte (Salle 6350 – Palais Bourbon, 1er étage)",
+      "detail": "– Audition de M. Patrick LEFAS, vice-président du Conseil des prélèvements obligatoires, sur l’étude demandée en application de l’article L. 411-3 du code des juridictions financières, portant sur l’évolution depuis 2017 des montants réels d’impôt sur le revenu et des réductions d’impôts et crédits ",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc460643",
+      "date": "2026-07-01",
+      "type": "agenda",
+      "titre": "Réunion du 1er juillet 2026 sur le texte (Salle 6242 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "- Examen du rapport de la mission d’information sur « Création, diffusion et acquisition des connaissances : comment l’intelligence artificielle transforme notre éducation et notre culture » (M. Roger Chudeau, président, et Mme Céline Calvez, rapporteure)",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc460566",
+      "date": "2026-06-24",
+      "type": "agenda",
+      "titre": "Réunion du 24 juin 2026 sur le texte (Salle 6242 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "Examen du texte",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc460208",
+      "date": "2026-05-20",
+      "type": "agenda",
+      "titre": "Réunion du 20 mai 2026 sur le texte (8ème Bureau – Palais Bourbon, 1er étage)",
+      "detail": "Table ronde :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc459989",
+      "date": "2026-05-12",
+      "type": "agenda",
+      "titre": "Réunion du 12 mai 2026 sur le texte (Salle 6242 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "Examen du texte",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc459659",
+      "date": "2026-05-06",
+      "type": "agenda",
+      "titre": "Réunion du 6 mai 2026 sur le texte (Salle 6351 – Palais Bourbon, 1ème étage)",
+      "detail": "Audition de M. Gabriel ZUCMAN, économiste.",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc459641",
+      "date": "2026-04-29",
+      "type": "agenda",
+      "titre": "Réunion du 29 avril 2026 sur le texte (Salle 6351 – Palais Bourbon, 1ème étage)",
+      "detail": "- Examen de la proposition de loi, modifiée par le Sénat, facilitant l’exercice en France des médecins diplômés au Royaume-Uni ayant commencé leurs études avant le Brexit (n° 2608) (M. Vincent Caure, rapporteur)",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc459783",
+      "date": "2026-04-16",
+      "type": "agenda",
+      "titre": "Réunion du 16 avril 2026 sur le texte (Salle 6351 – Palais Bourbon, 1ème étage)",
+      "detail": "La répartition des dépenses entre l’assurance maladie obligatoire et l’assurance maladie complémentaire \rÀ 9 heures 30\r– Audition conjointe de la direction générale du Trésor (délégation en attente), et de Mme Évelyne Massé, première secrétaire générale adjointe de l’Autorité de contrôle prudentiel ",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc459478",
+      "date": "2026-04-08",
+      "type": "agenda",
+      "titre": "Réunion du 8 avril 2026 sur le texte (Salle 6350 – Palais Bourbon, 1er étage)",
+      "detail": "Audition de la Direction de la législation fiscale :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc459191",
+      "date": "2026-02-26",
+      "type": "agenda",
+      "titre": "Réunion du 26 février 2026 sur le texte (Salle 6237 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "Table ronde, ouverte à la presse, réunissant les avocates suivantes :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idfl459092",
+      "date": "2026-02-25",
+      "type": "agenda",
+      "titre": "Réunion du 25 février 2026 sur le texte (Salon international de l'agriculture - Paris Expo Porte de Versailles)",
+      "detail": "Déplacement au Salon international de l'agriculture 2026 afin d'y rencontrer le syndicat des Brasseurs de France ainsi que différents brasseurs",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc459096",
+      "date": "2026-02-19",
+      "type": "agenda",
+      "titre": "Réunion du 19 février 2026 sur le texte (Salle 6242 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "Examen du texte",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc459166",
+      "date": "2026-02-17",
+      "type": "agenda",
+      "titre": "Réunion du 17 février 2026 sur le texte (Salle 6237 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "Audition, ouverte à la presse, des sociétés représentant la production cinématographique :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc459146",
+      "date": "2026-02-16",
+      "type": "agenda",
+      "titre": "Réunion du 16 février 2026 sur le texte (Salle 6242 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "- Table ronde réunissant Mmes Margaux Missika, productrice pour l’Upian et Binta Bah, chargée des affaires juridiques du Syndicat des producteurs indépendants (SPI) ; Mmes Amanda Borghino, déléguée générale adjointe et Catherine Lebailly, déléguée aux affaires juridiques de Union syndicale de la pro",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc458731",
+      "date": "2026-02-05",
+      "type": "agenda",
+      "titre": "Réunion du 5 février 2026 sur le texte (Salle Lamartine – 101 rue de l'Université, 1er sous-sol)",
+      "detail": "– Audition, ouverte à la presse, de Mme Laurence Bloch, ancienne directrice des antennes et de la stratégie éditoriale de Radio France, ancienne directrice de France Inter et autrice d’un rapport sur la holding France Médias",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc458663",
+      "date": "2026-01-22",
+      "type": "agenda",
+      "titre": "Réunion du 22 janvier 2026 sur le texte (Salle 6241 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "Audition de M. François Haas, directeur général adjoint de la stabilité financière et des opérations, et Mme Diane Griffon, chargée de mission à la Banque de France",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc458248",
+      "date": "2026-01-15",
+      "type": "agenda",
+      "titre": "Réunion du 15 janvier 2026 sur le texte (Salle 4016 –  9 rue de Bourgogne, Rez-de-chaussée)",
+      "detail": "Audition M. le lieutenant-colonel Sébastien Noël, breveté de la 26e promotion de l’École de Guerre, auteur de différentes publications sur la logistique militaire.",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc458573",
+      "date": "2026-01-06",
+      "type": "agenda",
+      "titre": "Réunion du 6 janvier 2026 sur le texte (Salle 6242 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "Audition ouverte à la presse, de la plateforme « Assurer l’avenir de la PMI » réunissant :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc458495",
+      "date": "2025-12-16",
+      "type": "agenda",
+      "titre": "Réunion du 16 décembre 2025 sur le texte (Salle 1 – 95, rue de l’Université)",
+      "detail": "Banque de France\rM. Olivier Garnier, directeur général des statistiques et études internationales\rMme Véronique Bensaid-Cohen, conseillère parlementaire\rMme Diane Griffon, chargée de mission",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc458288",
+      "date": "2025-12-02",
+      "type": "agenda",
+      "titre": "Réunion du 2 décembre 2025 sur le texte (Salon Visconti)",
+      "detail": "– Compte rendu des différents échanges récents avec l’Ambassadeur du Portugal en France ;\r– Compte rendu de la visite à Lisbonne d’une délégation parlementaire conduite par la présidente de l’Assemblée nationale (14 novembre 2025) ;\r– Échange de vues avec M. Yves Léonard, historien spécialiste de l’",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2026idc457827",
+      "date": "2025-11-04",
+      "type": "agenda",
+      "titre": "Réunion du 4 novembre 2025 sur le texte (Salle 6242 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "Examen du texte",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
       "id": "ev-seance-2025-10-21",
       "date": "2025-10-21",
       "type": "seance",
@@ -2166,6 +3248,405 @@
           }
         ],
         "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc457334",
+      "date": "2025-09-24",
+      "type": "agenda",
+      "titre": "Réunion du 24 septembre 2025 sur le texte (Salle 6242 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "– Table ronde sur la rentrée universitaire réunissant des membres du Conseil national de l’enseignement supérieur et de la recherche (Cneser) représentant les personnels et les étudiants des établissements publics à caractère scientifique, culturel et professionnel et des établissements publics de r",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc457309",
+      "date": "2025-09-03",
+      "type": "agenda",
+      "titre": "Réunion du 3 septembre 2025 sur le texte (Visioconférence sans salle)",
+      "detail": "Table ronde « Syndicats »\r\rCFE Energies \rM. Alexandre Grillat, secrétaire général\rM. Alexis Quentin, délégué fédéral affaires publiques France\r\rFNEM-FO\rMme Sandrine Tellier, secrétaire générale\rMme Sandrine Lhenry, représentante FO au sein de différentes instances EDF\r\rFCE-CFDT\rM. Sébastien Michel, ",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc457183",
+      "date": "2025-07-11",
+      "type": "agenda",
+      "titre": "Réunion du 11 juillet 2025 sur le texte (Sénat)",
+      "detail": "Rencontre avec la présidente de l'Assemblée de Maurice, Mme Shirin Aumeeruddy-Cziffra",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc457152",
+      "date": "2025-07-10",
+      "type": "agenda",
+      "titre": "Réunion du 10 juillet 2025 sur le texte (Salle 6566 – Palais Bourbon, 2ème étage)",
+      "detail": "Table ronde des diffuseurs \r– La Chambre syndicale de l'édition musicale (CSDEM) – Mme Juliette Metz, présidente, Mme Sophie Waldteufel, déléguée générale \r– La Fédération des professionnels de l'art contemporain – M. Ludovic Julié, secrétaire général \r– Le Syndicat national de l'édition   M. Renaud",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc457049",
+      "date": "2025-07-03",
+      "type": "agenda",
+      "titre": "Réunion du 3 juillet 2025 sur le texte (8ème Bureau – Palais Bourbon, 1er étage)",
+      "detail": "Table ronde institutions protection sociale :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc456888",
+      "date": "2025-06-19",
+      "type": "agenda",
+      "titre": "Réunion du 19 juin 2025 sur le texte (Salle 6566 – Palais Bourbon, 2ème étage)",
+      "detail": "Table ronde représentants institutions :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc456584",
+      "date": "2025-05-28",
+      "type": "agenda",
+      "titre": "Réunion du 28 mai 2025 sur le texte (Salon Visconti – 101 rue de l'Université, Rez-de-chaussée)",
+      "detail": "Table ronde :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc456484",
+      "date": "2025-05-21",
+      "type": "agenda",
+      "titre": "Réunion du 21 mai 2025 sur le texte (Salle 6566 – Palais Bourbon, 2ème étage)",
+      "detail": "Table ronde avec 3 fédérations de tailles différentes comptant une forte majorité d’adhérents masculins :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc456223",
+      "date": "2025-05-15",
+      "type": "agenda",
+      "titre": "Réunion du 15 mai 2025 sur le texte (Salle 6350 – Palais Bourbon, 1er étage)",
+      "detail": "Table ronde, ouverte à la presse, des services déconcentrés impliqués dans l’instruction des projets industriels, réunissant :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc456199",
+      "date": "2025-04-23",
+      "type": "agenda",
+      "titre": "Réunion du 23 avril 2025 sur le texte (Visioconférence sans salle)",
+      "detail": "Table ronde sur la santé mentale des adolescents réunissant :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc455525",
+      "date": "2025-03-17",
+      "type": "agenda",
+      "titre": "Réunion du 17 mars 2025 sur le texte (Salle 7070 – 103 rue de l'Université, Rez-de-chaussée)",
+      "detail": "Audition, non ouverte à la presse, de l'Association scientifique et technique de l’eau et l’environnement (ASTEE) en présence MM. Denis GUILBERT, vice-président, en charge du lien avec les collectivités territoriales, Frédéric BLANCHET, président de la commission Eau potable et Mme Adeline CLIFFORD,",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc454694",
+      "date": "2025-02-12",
+      "type": "agenda",
+      "titre": "Réunion du 12 février 2025 sur le texte (Salle 6351 – Palais Bourbon, 1ème étage)",
+      "detail": "Examen du texte",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc454695",
+      "date": "2025-02-12",
+      "type": "agenda",
+      "titre": "Réunion du 12 février 2025 sur le texte (Salle 6351 – Palais Bourbon, 1ème étage)",
+      "detail": "– Examen, en application de l’article 140, alinéa 2, du Règlement, de la recevabilité de la proposition de résolution tendant à la création d’une commission d’enquête relative à l’organisation du système de santé et aux difficultés d’accès aux soins (n° 877) (M. Christophe Naegelen, rapporteur)\r– Au",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc454494",
+      "date": "2025-01-30",
+      "type": "agenda",
+      "titre": "Réunion du 30 janvier 2025 sur le texte (Salle 6237 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "- À 10 heures :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc453798",
+      "date": "2024-11-21",
+      "type": "agenda",
+      "titre": "Réunion du 21 novembre 2024 sur le texte (Salle 6237 – Palais Bourbon, 2ème sous-sol)",
+      "detail": "- À 9 heures 30 :",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc453820",
+      "date": "2024-11-13",
+      "type": "agenda",
+      "titre": "Réunion du 13 novembre 2024 sur le texte (4ème Bureau – Palais Bourbon, 1er étage)",
+      "detail": "17h",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc454153",
+      "date": "2024-11-13",
+      "type": "agenda",
+      "titre": "Réunion du 13 novembre 2024 sur le texte (Salon Mars II – 101 rue de l'Université, Rez-de-chaussée)",
+      "detail": "Office français de la biodiversité\rMme Patricia Bruchet, directrice des grands prédateurs terrestres\rM. Mathieu Garel, chargé de recherche au service « Anthropisation et fonctionnement des écosystèmes terrestres »\rM. Jules Chiffard, chargé de recherche au service « Santé de la faune et fonctionnemen",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc453746",
+      "date": "2024-11-06",
+      "type": "agenda",
+      "titre": "Réunion du 6 novembre 2024 sur le texte (salle 3 - 95 RU)",
+      "detail": "Fédération Française des télécoms (FFT)\rM. Olivier Riffard, directeur général adjoint de la FFT\rMme Marie Lhermelin, secrétaire générale adjointe ALTICE SFR \rM. Antoine Faillie, directeur stratégie et réseaux mobiles Orange \rM. Hervé de Tournadre, directeur des affaires règlementaires Bouygues Telec",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda-ruanr5l17s2025idc453666",
+      "date": "2024-10-30",
+      "type": "agenda",
+      "titre": "Réunion du 30 octobre 2024 sur le texte (Salle 7044 – 103 rue de l'Université, 2ème sous-sol)",
+      "detail": "M. Éric Gaume, expert hydrologue, directeur du département Géotechnique Environnement Risques Naturels et Sciences de la Terre (GERS) de l’Université Gustave Eiffel (ex IFSTTAR, ex LCPC)\r\rM. Bruno Ledoux, spécialiste du grand cycle de l’eau et des politiques locales de sa gestion, animateur du résea",
+      "importance": 1,
+      "url": "https://data.assemblee-nationale.fr/reunions/reunions",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Agenda open data de l'Assemblée",
+            "url": "https://data.assemblee-nationale.fr/reunions/reunions"
+          }
+        ],
+        "raisonnement": "Réunion de l'agenda open data dont l'ordre du jour cite le texte ou le sujet ; sans effet sur le verdict par elle-même.",
         "nature": "fait"
       }
     }

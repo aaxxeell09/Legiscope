@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T14:04:02.519Z",
+    "generated_at": "2026-11-14T14:58:56.767Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
       },
       {
-        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       },
       {
@@ -242,7 +242,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000198",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : À l’alinéa 2, substituer au montant :« 3 000 € »le montant :« 4 000 € ».",
+      "resume": "Article 3 : À l’alinéa 2, substituer au montant : « 3 000 € » le montant : « 4 000 € ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000198"
@@ -251,7 +251,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000203",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : À l’alinéa 2, substituer au montant :« 3 000 € »le montant :« 3 500 € ».",
+      "resume": "Article 3 : À l’alinéa 2, substituer au montant : « 3 000 € » le montant : « 3 500 € ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000203"
@@ -269,7 +269,7 @@
       "id": "AMANR5L17PO59048B3210P1D1N000447",
       "texte_id": "PRJLANR5L17B3210",
       "role": "auteur",
-      "resume": "Après l'article 3 : I. – L’article 199 quindecies du code général des impôts est complété par un alinéa ainsi rédigé :« Lorsque ces contribuables perçoivent des revenus locatifs…",
+      "resume": "Après l'article 3 : I. – L’article 199 quindecies du code général des impôts est complété par un alinéa ainsi rédigé : « Lorsque ces contribuables perçoivent des revenus locatifs…",
       "sort": "rejete",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N000447"
@@ -287,7 +287,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000416",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : À l’alinéa 2, substituer au montant :« 3 000 € »le montant :« 4 000 € ».",
+      "resume": "Article 3 : À l’alinéa 2, substituer au montant : « 3 000 € » le montant : « 4 000 € ».",
       "sort": "tombe",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000416"
@@ -296,7 +296,7 @@
       "id": "AMANR5L17PO838901B3210P1D1N000417",
       "texte_id": "PRJLANR5L17B3210",
       "role": "cosignataire",
-      "resume": "Article 3 : À l’alinéa 2, substituer au montant :« 3 000 € »le montant :« 3 500 € ».",
+      "resume": "Article 3 : À l’alinéa 2, substituer au montant : « 3 000 € » le montant : « 3 500 € ».",
       "sort": "retire",
       "travaille_avec": [],
       "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000417"
@@ -579,8 +579,8 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Jérôme End est probablement contre la mesure, comme l'indique son cosignature d'un amendement supprimant l'article 3, qui a été adopté.",
-    "argument": "Présenter à ce député que son amendement cosigné supprimant l'article 3 a été adopté, ce qui confirme son opposition à la mesure et soutient l'objectif du client.",
+    "position_probable": "Jérôme End est probablement contre la mesure, comme l'indique sa cosignature d'un amendement supprimant l'article 3, qui a été adopté.",
+    "argument": "Présenter à ce député le fait qu'il a cosigné un amendement supprimant l'article 3, qui a été adopté, car cela montre qu'il partage l'objectif du client de faire reculer la mesure.",
     "chiffres_utilises": [
       "3"
     ],
