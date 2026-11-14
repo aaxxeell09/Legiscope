@@ -1,0 +1,115 @@
+{
+  "produit": {
+    "nom": "Bascule",
+    "accroche": "Bascule vous dit quel vote peut basculer, et grâce à qui."
+  },
+  "dataset": "fixtures",
+  "dossiers": [
+    {
+      "id": "plf2027-holdings",
+      "label": "PLF 2027, taxe sur les holdings (Zucman)",
+      "client": "Afep",
+      "objectifs": [
+        {
+          "rang": 1,
+          "texte": "Empêcher la taxe sur les holdings et la fortune improductive",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 2,
+          "texte": "Limiter son assiette",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 3,
+          "texte": "Repousser son entrée en vigueur",
+          "position_cible": "contre"
+        }
+      ],
+      "mesure": {
+        "label": "Taxe sur la fortune improductive (article 3) et taxe de 0,5 % sur les holdings patrimoniales (n° 3140)",
+        "article": "3",
+        "texte_id": "PRJLANR5L17B3210"
+      },
+      "date_reference": null,
+      "texte_id": "PRJLANR5L17B3210",
+      "etat": "en_cours",
+      "sujet": {
+        "label": "Taxe sur les holdings et la fortune improductive",
+        "mots_cles": [
+          "zucman",
+          "holding",
+          "holdings",
+          "impôt sur la fortune",
+          "fortune improductive",
+          "patrimoine improductif",
+          "ISF",
+          "IFF"
+        ]
+      },
+      "pivot_demo": null
+    },
+    {
+      "id": "petits-colis",
+      "label": "PLF 2026, taxe petits colis",
+      "client": "Alibaba France",
+      "objectifs": [
+        {
+          "rang": 1,
+          "texte": "Empêcher que la taxe soit votée",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 2,
+          "texte": "Réduire son montant",
+          "position_cible": "contre"
+        },
+        {
+          "rang": 3,
+          "texte": "Repousser son application",
+          "position_cible": "contre"
+        }
+      ],
+      "mesure": {
+        "label": "Taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe",
+        "article": "22",
+        "texte_id": "PRJLANR5L17B1906"
+      },
+      "date_reference": "2025-11-19",
+      "texte_id": "PRJLANR5L17B1906",
+      "etat": "clos",
+      "sujet": {
+        "label": "Taxe sur les petits colis",
+        "mots_cles": [
+          "petits colis",
+          "colis",
+          "franchise douanière"
+        ]
+      },
+      "pivot_demo": null
+    }
+  ],
+  "dossier_demo": "petits-colis",
+  "cohesion": {
+    "paires_demo": [
+      [
+        "PO845401",
+        "PO845407"
+      ]
+    ],
+    "curseur_presets": [
+      {
+        "label": "Avant la censure Barnier",
+        "date": "2024-11-15"
+      },
+      {
+        "label": "Avant la censure Bayrou",
+        "date": "2025-08-25"
+      },
+      {
+        "label": "Aujourd'hui",
+        "date": "2026-11-14"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+/* Page Base (P6). Styles locaux, tokens de tokens.css seulement. */
+.base-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-4); }
+.base-head h1 { margin: 0; }
+.base-mesure-statut { font-weight: 700; }
+.base-mesure-statut.dans { color: var(--warning); }
+.base-mesure-statut.hors { color: var(--success); }
+.base-redaction { margin: var(--space-2) 0 var(--space-3); }
+.base-liste { list-style: none; margin: 0; padding: 0; }
+.base-liste > li { padding: var(--space-2) 0; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: baseline; }
+.base-liste > li:first-child { border-top: 0; }
+.base-date { color: var(--text-2); font-size: var(--fs-sm); min-width: 8.5em; }
+.base-statut { font-size: var(--fs-sm); color: var(--text-2); min-width: 6em; }
+.base-statut-en_cours, .base-statut-reste { color: var(--warning); }
+.base-statut-fait, .base-statut-vote { color: var(--text); }
+.base-statut-supprime { color: var(--text-2); text-decoration: line-through; }
+.base-sous-titre { margin: var(--space-4) 0 var(--space-2); font-size: var(--fs-base); }
+.base-recherche { width: 100%; max-width: 28em; margin-bottom: var(--space-3); }
+.base-auteur { display: inline-flex; gap: var(--space-2); align-items: baseline; white-space: nowrap; }
