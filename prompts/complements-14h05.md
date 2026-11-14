@@ -96,3 +96,7 @@ Règle, valable pour tous les producteurs (`date_reference` est lue comme le mat
 ## 15 h 05 : relance A4 après la date au matin du 19
 
 P3 a recalculé petits colis au matin du 19 (88b178f). `bun run check` ne bloque plus que sur `data/petits-colis/fiches/index.json` : PA842029 et PA608416 y sont listés mais ne sont plus dans `pivots.json` ni `groupes-action.json`. **A4** : `git pull`, régénère fiches, `index.json`, `nouveautes.json` et `action.json` des deux dossiers sur les fichiers actuels de P3, `bun run check` vert, commit, push.
+
+## 15 h 15 : relance A4 (index des fiches)
+
+P3 a relancé le verdict (6486a95, cause de l'objectif 1 de petits colis = dépôt du compromis I-4086). Sa relance précédente (5b49763) a sorti PA942 des alliés de petits colis après la mise à jour des arguments par A2 ; `data/petits-colis/fiches/index.json` le liste encore, `bun run check` est rouge. **A4** : `git pull`, `bun run fiches` sur les deux dossiers, `bun run check` vert, commit, push.
