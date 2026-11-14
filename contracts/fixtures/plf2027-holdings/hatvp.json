@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API entreprises (HATVP)",
+        "url": "https://api.hemicycle.ai/v1/entreprises"
+      }
+    ],
+    "limits": "Déclarations HATVP mentionnant le texte ; identifiants HATVP non vérifiés dans les fixtures.",
+    "producer": "pipeline/collecte",
+    "dossier_id": "plf2027-holdings"
+  },
+  "organisations": [
+    {
+      "hatvp_id": "317486009",
+      "nom": "Afep",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=317486009",
+      "objet": "Taxe sur les holdings et la fortune improductive, PLF 2027",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "425088391",
+      "nom": "Medef",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=425088391",
+      "objet": "Fiscalité du patrimoine, PLF 2027",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "602514378",
+      "nom": "France Invest",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=602514378",
+      "objet": "Taxe sur les holdings patrimoniales, PLF 2027",
+      "actions": [
+        "envoi de position"
+      ]
+    }
+  ]
+}

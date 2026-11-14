@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/"
+      }
+    ],
+    "limits": "Aucun rapport rattaché à ce député sur ce texte.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA728307",
+  "auditions": [],
+  "couverture": {
+    "rapports_total": 0,
+    "rapports_avec_liste": 0
+  }
+}

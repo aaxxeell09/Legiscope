@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/"
+      }
+    ],
+    "limits": "Annexes « personnes entendues » des rapports de la commission des finances, extraites par Featherless.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA721578",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1990-tii.html",
+      "date": "2025-10-16",
+      "role": "rapporteur_general",
+      "organisations": [
+        {
+          "nom": "Fédération du e-commerce et de la vente à distance (Fevad)",
+          "type": "federation",
+          "hatvp_id": "812604106"
+        },
+        {
+          "nom": "Alibaba France",
+          "type": "entreprise",
+          "hatvp_id": "530476110"
+        },
+        {
+          "nom": "Direction générale des douanes et droits indirects",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": null,
+      "date": "2025-10-22",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Mouvement des entreprises de France (Medef)",
+          "type": "federation",
+          "hatvp_id": "425088391"
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 2
+  }
+}

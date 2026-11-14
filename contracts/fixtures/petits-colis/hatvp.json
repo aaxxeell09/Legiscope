@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API entreprises (HATVP)",
+        "url": "https://api.hemicycle.ai/v1/entreprises"
+      }
+    ],
+    "limits": "Déclarations HATVP mentionnant le texte ; identifiants HATVP non vérifiés dans les fixtures.",
+    "producer": "pipeline/collecte",
+    "dossier_id": "petits-colis"
+  },
+  "organisations": [
+    {
+      "hatvp_id": "530476110",
+      "nom": "Alibaba France",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=530476110",
+      "objet": "Taxe sur les petits colis, PLF 2026",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "812604106",
+      "nom": "Fevad",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=812604106",
+      "objet": "Franchise douanière et taxe sur les petits colis",
+      "actions": [
+        "rencontre",
+        "envoi de position"
+      ]
+    }
+  ]
+}

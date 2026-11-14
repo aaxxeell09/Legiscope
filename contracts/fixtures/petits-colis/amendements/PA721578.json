@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API amendements",
+        "url": "https://api.hemicycle.ai/v1/amendements"
+      }
+    ],
+    "limits": "Mention « travaillé avec » extraite de l'exposé des motifs.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA721578",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N000806",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Supprime l'article 22 (taxe sur les petits colis).",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "Alibaba France",
+        "Fevad"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002384",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Relève le seuil de la franchise douanière à 300 euros.",
+      "sort": "rejete",
+      "travaille_avec": [
+        "Alibaba France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2384"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (syseron)",
+        "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/debats"
+      }
+    ],
+    "limits": "Interventions avec identifiant d'orateur uniquement ; commission lue en HTML.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA731263",
+  "debats": [
+    {
+      "date": "2026-11-02",
+      "lieu": "seance",
+      "citation": "Taxer les holdings, c'est taxer l'outil de travail de ceux qui investissent en France.",
+      "texte_id": "PRJLANR5L17B3210",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02"
+    },
+    {
+      "date": "2026-10-14",
+      "lieu": "commission",
+      "citation": "Une taxe sur la fortune improductive ne rapportera rien si les holdings animatrices en sont exclues.",
+      "texte_id": "PRJLANR5L17B3210",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20261014"
+    },
+    {
+      "date": "2026-10-31",
+      "lieu": "seance",
+      "citation": "La taxe Zucman n'est pas un impôt sur l'entreprise, c'est un impôt sur l'accumulation.",
+      "texte_id": "PRJLANR5L17B3210",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-10-31"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 9
+  }
+}

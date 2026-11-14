@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (syseron)",
+        "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/debats"
+      }
+    ],
+    "limits": "Interventions avec identifiant d'orateur uniquement ; commission lue en HTML.",
+    "producer": "pipeline/debats",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA732086",
+  "debats": [
+    {
+      "date": "2025-11-19",
+      "lieu": "seance",
+      "citation": "Cette taxe pèse d'abord sur les ménages modestes qui achètent en ligne faute de mieux.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 9
+  }
+}

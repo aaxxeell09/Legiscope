@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "Événements jusqu'au 14 novembre 2026.",
+    "producer": "pipeline/nouveautes",
+    "dossier_id": "plf2027-holdings"
+  },
+  "evenements": [
+    {
+      "id": "ev-9759",
+      "date": "2026-11-04",
+      "type": "scrutin",
+      "importance": 3,
+      "titre": "Première partie du PLF 2027 rejetée (scrutin n° 9759)",
+      "detail": "Le texte part au Sénat dans sa version initiale ; le n° 3140 tombe.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9759, rejet de la première partie",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+          }
+        ],
+        "raisonnement": "Vote sur l'ensemble de la première partie ; conséquence directe sur l'objectif du client.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-3140",
+      "date": "2026-11-02",
+      "type": "scrutin",
+      "importance": 3,
+      "titre": "Amendement n° 3140 adopté : taxe de 0,5 % sur les holdings patrimoniales",
+      "detail": "Scrutin n° 9730 ; RN et Démocrates divisés.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9730",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730"
+          }
+        ],
+        "raisonnement": "Première majorité en faveur d'une taxe sur les holdings dans cette législature.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-senat",
+      "date": "2026-11-10",
+      "type": "agenda",
+      "importance": 2,
+      "titre": "Première partie inscrite en commission des finances du Sénat",
+      "detail": "Examen à partir du 19 novembre 2026 en séance.",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Sénat, PLF 2027",
+            "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+          }
+        ],
+        "raisonnement": "Calendrier publié par le Sénat.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-2841",
+      "date": "2026-10-31",
+      "type": "scrutin",
+      "importance": 2,
+      "titre": "Taxe Zucman (n° 2841) rejetée (scrutin n° 9712)",
+      "detail": "Rejetée par le bloc central, la droite et une partie du RN.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9712",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9712",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9712"
+          }
+        ],
+        "raisonnement": "Le rejet montre la ligne de partage : taxe large rejetée, taxe ciblée possible.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-hatvp",
+      "date": "2026-10-20",
+      "type": "hatvp",
+      "importance": 1,
+      "titre": "L'Afep déclare une rencontre à la HATVP",
+      "detail": "Objet : taxe sur les holdings et la fortune improductive.",
+      "url": "https://www.hatvp.fr/fiche-organisation/?organisation=317486009",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "HATVP",
+            "url": "https://www.hatvp.fr/"
+          }
+        ],
+        "raisonnement": "Déclaration publique du client lui-même ; sans effet sur le vote.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapport",
+      "date": "2026-10-15",
+      "type": "rapport",
+      "importance": 1,
+      "titre": "Rapport de la commission des finances n° 3302 publié",
+      "detail": "Annexe des personnes entendues : Afep, Medef, DGFiP, France Invest.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3302-tii.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport n° 3302",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3302-tii.html"
+          }
+        ],
+        "raisonnement": "Liste des auditions et avis du rapporteur général.",
+        "nature": "fait"
+      }
+    }
+  ]
+}

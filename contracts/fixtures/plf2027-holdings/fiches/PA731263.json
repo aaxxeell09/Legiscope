@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/"
+      },
+      {
+        "label": "Comptes rendus de séance (syseron)",
+        "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/debats"
+      },
+      {
+        "label": "Hémicycle API amendements",
+        "url": "https://api.hemicycle.ai/v1/amendements"
+      },
+      {
+        "label": "Hémicycle API entreprises (HATVP)",
+        "url": "https://api.hemicycle.ai/v1/entreprises"
+      }
+    ],
+    "limits": "Fusion des trois producteurs et de la HATVP ; synthèse vérifiée par qa/verif.ts.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA731263",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3302-tii.html",
+      "date": "2026-10-15",
+      "role": "rapporteur_general",
+      "organisations": [
+        {
+          "nom": "Association française des entreprises privées (Afep)",
+          "type": "association",
+          "hatvp_id": "317486009"
+        },
+        {
+          "nom": "Mouvement des entreprises de France (Medef)",
+          "type": "federation",
+          "hatvp_id": "425088391"
+        },
+        {
+          "nom": "Direction générale des finances publiques",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": null,
+      "date": "2026-10-20",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "France Invest",
+          "type": "federation",
+          "hatvp_id": "602514378"
+        },
+        {
+          "nom": "Conseil des prélèvements obligatoires",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [
+    {
+      "date": "2026-11-02",
+      "lieu": "seance",
+      "citation": "Taxer les holdings, c'est taxer l'outil de travail de ceux qui investissent en France.",
+      "texte_id": "PRJLANR5L17B3210",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02"
+    },
+    {
+      "date": "2026-10-14",
+      "lieu": "commission",
+      "citation": "Une taxe sur la fortune improductive ne rapportera rien si les holdings animatrices en sont exclues.",
+      "texte_id": "PRJLANR5L17B3210",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20261014"
+    },
+    {
+      "date": "2026-10-31",
+      "lieu": "seance",
+      "citation": "La taxe Zucman n'est pas un impôt sur l'entreprise, c'est un impôt sur l'accumulation.",
+      "texte_id": "PRJLANR5L17B3210",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-10-31"
+    }
+  ],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N003140",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Crée une taxe de 0,5 % sur l'actif net non réinvesti des holdings patrimoniales.",
+      "sort": "adopte",
+      "travaille_avec": [
+        "France Invest"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "317486009",
+      "nom": "Afep",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=317486009",
+      "objet": "Taxe sur les holdings et la fortune improductive, PLF 2027",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "425088391",
+      "nom": "Medef",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=425088391",
+      "objet": "Fiscalité du patrimoine, PLF 2027",
+      "actions": [
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "602514378",
+      "nom": "France Invest",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=602514378",
+      "objet": "Taxe sur les holdings patrimoniales, PLF 2027",
+      "actions": [
+        "envoi de position"
+      ]
+    }
+  ],
+  "synthese": {
+    "position_probable": "Auteur de la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) ; favorable à une taxe ciblée, hostile à la taxe Zucman.",
+    "argument": "Présenter le nombre de holdings animatrices de sa circonscription touchées par le n° 3140 et proposer l'exonération des réinvestissements sous 24 mois du n° 3602.",
+    "chiffres_utilises": [
+      "0.5",
+      "3140",
+      "24",
+      "3602"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
+    "verifie": true,
+    "date": "2026-11-14"
+  },
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 2,
+    "comptes_rendus_lus": 9
+  }
+}

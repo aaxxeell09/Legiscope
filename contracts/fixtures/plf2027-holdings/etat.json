@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "État au 14 novembre 2026 : première partie rejetée par l'Assemblée, texte au Sénat.",
+    "producer": "pipeline/etat",
+    "dossier_id": "plf2027-holdings"
+  },
+  "mesure": {
+    "label": "Taxe sur la fortune improductive (article 3) et taxe de 0,5 % sur les holdings patrimoniales (n° 3140)",
+    "article": "3",
+    "dans_le_texte": true,
+    "redaction_actuelle": "Projet initial du gouvernement : article 3, taxe sur la fortune improductive. La taxe de 0,5 % sur les holdings patrimoniales (n° 3140, article 3 bis) et l'exclusion des holdings animatrices (n° 3107) sont tombées avec le rejet de la première partie le 4 novembre 2026.",
+    "modifications": [
+      {
+        "date": "2026-11-02",
+        "par": "Amendement n° 3140 (Les Démocrates)",
+        "quoi": "Ajout d'un article 3 bis : taxe de 0,5 % sur l'actif net non réinvesti des holdings patrimoniales (tombé le 4 novembre 2026)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3140",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140"
+            },
+            {
+              "label": "Scrutin n° 9759, rejet de la première partie",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+            }
+          ],
+          "raisonnement": "Adopté par le scrutin n° 9730, tombé avec le rejet de la première partie (scrutin n° 9759).",
+          "nature": "fait"
+        }
+      },
+      {
+        "date": "2026-11-02",
+        "par": "Amendement n° 3107 (Ensemble pour la République)",
+        "quoi": "Exclusion des holdings animatrices du champ de l'article 3 (tombée le 4 novembre 2026)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3107",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3107",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3107"
+            },
+            {
+              "label": "Scrutin n° 9759, rejet de la première partie",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+            }
+          ],
+          "raisonnement": "Adopté en séance, tombé avec le rejet de la première partie.",
+          "nature": "fait"
+        }
+      }
+    ]
+  },
+  "etape": "Première lecture, Sénat (première partie rejetée par l'Assemblée nationale le 4 novembre 2026)",
+  "etapes": [
+    {
+      "nom": "Commission des finances, Assemblée nationale",
+      "date": "2026-10-15",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20261014"
+    },
+    {
+      "nom": "Séance publique, première lecture, Assemblée nationale (première partie rejetée)",
+      "date": "2026-11-04",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+    },
+    {
+      "nom": "Sénat, première lecture",
+      "date": "2026-11-19",
+      "statut": "en_cours",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+    },
+    {
+      "nom": "Commission mixte paritaire",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+    },
+    {
+      "nom": "Nouvelle lecture, Assemblée nationale",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour"
+    }
+  ],
+  "articles": [
+    {
+      "numero": "2",
+      "titre": "Barème de l'impôt sur le revenu",
+      "statut": "reste",
+      "sort_detail": "Voté le 24 octobre 2026 puis tombé avec le rejet de la première partie ; à réexaminer au Sénat",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+    },
+    {
+      "numero": "3",
+      "titre": "Taxe sur la fortune improductive",
+      "statut": "vote",
+      "sort_detail": "Modifié par le n° 3107 (exclusion des holdings animatrices) puis tombé avec le rejet de la première partie le 4 novembre 2026",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3107"
+    },
+    {
+      "numero": "3 bis",
+      "titre": "Taxe sur les holdings patrimoniales (n° 3140)",
+      "statut": "supprime",
+      "sort_detail": "Adopté le 2 novembre 2026, supprimé par le rejet de la première partie le 4 novembre 2026",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140"
+    }
+  ]
+}

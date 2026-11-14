@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B1906",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "Événements jusqu'au 19 novembre 2025 inclus (date de référence).",
+    "producer": "pipeline/nouveautes",
+    "dossier_id": "petits-colis"
+  },
+  "evenements": [
+    {
+      "id": "ev-2231",
+      "date": "2025-11-19",
+      "type": "amendement_depose",
+      "importance": 3,
+      "titre": "Amendement de compromis n° 2231 déposé",
+      "detail": "Mode de paiement de la taxe à la charge de la plateforme ; lève la réserve de LFI.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2231",
+      "effet": "affaiblit",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2231",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2231"
+          }
+        ],
+        "raisonnement": "Le compromis retire à LFI son motif d'abstention : la majorité en faveur de l'article s'élargit.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-806",
+      "date": "2025-11-17",
+      "type": "amendement_depose",
+      "importance": 3,
+      "titre": "Amendement de suppression n° 806 déposé par le RN",
+      "detail": "Suppression de l'article 22.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806",
+      "effet": "renforce",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 806",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+          }
+        ],
+        "raisonnement": "Seul amendement qui supprime la mesure ; porte la position du client.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-2470",
+      "date": "2025-11-19",
+      "type": "scrutin",
+      "importance": 2,
+      "titre": "Amendement n° 2470 adopté : entrée en vigueur au 1er janvier 2026",
+      "detail": "Scrutin n° 4401.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401",
+      "effet": "affaiblit",
+      "objectif_rang": 3,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle API scrutins",
+            "url": "https://api.hemicycle.ai/v1/scrutins"
+          }
+        ],
+        "raisonnement": "Le calendrier avancé montre que la majorité veut une application rapide.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-2384",
+      "date": "2025-11-18",
+      "type": "scrutin",
+      "importance": 2,
+      "titre": "Amendement n° 2384 rejeté (franchise à 300 euros)",
+      "detail": "Scrutin n° 4388.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4388",
+      "effet": "affaiblit",
+      "objectif_rang": 2,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Hémicycle API scrutins",
+            "url": "https://api.hemicycle.ai/v1/scrutins"
+          }
+        ],
+        "raisonnement": "Le rejet du relèvement de franchise confirme l'isolement du RN sur le sujet.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-hatvp",
+      "date": "2025-11-14",
+      "type": "hatvp",
+      "importance": 1,
+      "titre": "Alibaba France déclare une rencontre à la HATVP",
+      "detail": "Objet : taxe sur les petits colis, PLF 2026.",
+      "url": "https://www.hatvp.fr/fiche-organisation/?organisation=530476110",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "HATVP",
+            "url": "https://www.hatvp.fr/"
+          }
+        ],
+        "raisonnement": "Déclaration publique du client lui-même ; sans effet sur le vote.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-agenda",
+      "date": "2025-11-12",
+      "type": "agenda",
+      "importance": 1,
+      "titre": "Article 22 inscrit à l'ordre du jour de la séance du 20 novembre",
+      "detail": "Conférence des présidents.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Ordre du jour",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour"
+          }
+        ],
+        "raisonnement": "Fixe la date limite d'action.",
+        "nature": "fait"
+      }
+    }
+  ]
+}

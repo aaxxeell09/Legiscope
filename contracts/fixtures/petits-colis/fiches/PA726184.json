@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/"
+      },
+      {
+        "label": "Comptes rendus de séance (syseron)",
+        "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/debats"
+      },
+      {
+        "label": "Hémicycle API amendements",
+        "url": "https://api.hemicycle.ai/v1/amendements"
+      },
+      {
+        "label": "Hémicycle API entreprises (HATVP)",
+        "url": "https://api.hemicycle.ai/v1/entreprises"
+      }
+    ],
+    "limits": "Fusion des trois producteurs et de la HATVP ; synthèse vérifiée par qa/verif.ts.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA726184",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1990-tii.html",
+      "date": "2025-10-16",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Fédération du e-commerce et de la vente à distance (Fevad)",
+          "type": "federation",
+          "hatvp_id": "812604106"
+        },
+        {
+          "nom": "Alibaba France",
+          "type": "entreprise",
+          "hatvp_id": "530476110"
+        },
+        {
+          "nom": "Direction générale des douanes et droits indirects",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [
+    {
+      "date": "2025-11-19",
+      "lieu": "seance",
+      "citation": "Cette taxe pèse d'abord sur les ménages modestes qui achètent en ligne faute de mieux.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19"
+    },
+    {
+      "date": "2025-10-28",
+      "lieu": "commission",
+      "citation": "Je ne voterai pas une taxe que la douane ne peut pas percevoir au 1er janvier.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20251028"
+    }
+  ],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002601",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Affecte le produit de la taxe au fonds de soutien au commerce de proximité.",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2601"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "530476110",
+      "nom": "Alibaba France",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=530476110",
+      "objet": "Taxe sur les petits colis, PLF 2026",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "812604106",
+      "nom": "Fevad",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=812604106",
+      "objet": "Franchise douanière et taxe sur les petits colis",
+      "actions": [
+        "rencontre",
+        "envoi de position"
+      ]
+    }
+  ],
+  "synthese": null,
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 1,
+    "comptes_rendus_lus": 9
+  }
+}

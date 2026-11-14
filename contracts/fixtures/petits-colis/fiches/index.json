@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [],
+    "limits": "4 fiches produites sur 6 pivots.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "petits-colis"
+  },
+  "disponibles": [
+    "PA721578",
+    "PA723081",
+    "PA725443",
+    "PA726184"
+  ],
+  "absents": [
+    "PA728307",
+    "PA732086"
+  ]
+}

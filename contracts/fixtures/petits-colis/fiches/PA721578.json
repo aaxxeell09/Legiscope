@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/"
+      },
+      {
+        "label": "Comptes rendus de séance (syseron)",
+        "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/debats"
+      },
+      {
+        "label": "Hémicycle API amendements",
+        "url": "https://api.hemicycle.ai/v1/amendements"
+      },
+      {
+        "label": "Hémicycle API entreprises (HATVP)",
+        "url": "https://api.hemicycle.ai/v1/entreprises"
+      }
+    ],
+    "limits": "Fusion des trois producteurs et de la HATVP ; synthèse vérifiée par qa/verif.ts.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA721578",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1990-tii.html",
+      "date": "2025-10-16",
+      "role": "rapporteur_general",
+      "organisations": [
+        {
+          "nom": "Fédération du e-commerce et de la vente à distance (Fevad)",
+          "type": "federation",
+          "hatvp_id": "812604106"
+        },
+        {
+          "nom": "Alibaba France",
+          "type": "entreprise",
+          "hatvp_id": "530476110"
+        },
+        {
+          "nom": "Direction générale des douanes et droits indirects",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    },
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": null,
+      "date": "2025-10-22",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Mouvement des entreprises de France (Medef)",
+          "type": "federation",
+          "hatvp_id": "425088391"
+        }
+      ]
+    }
+  ],
+  "debats": [
+    {
+      "date": "2025-11-19",
+      "lieu": "seance",
+      "citation": "Cette taxe pèse d'abord sur les ménages modestes qui achètent en ligne faute de mieux.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19"
+    },
+    {
+      "date": "2025-10-28",
+      "lieu": "commission",
+      "citation": "Je ne voterai pas une taxe que la douane ne peut pas percevoir au 1er janvier.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20251028"
+    },
+    {
+      "date": "2025-11-18",
+      "lieu": "seance",
+      "citation": "Les plateformes qui expédient des millions de colis par an doivent participer au financement de nos douanes.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-18"
+    }
+  ],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N000806",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Supprime l'article 22 (taxe sur les petits colis).",
+      "sort": "en_attente",
+      "travaille_avec": [
+        "Alibaba France",
+        "Fevad"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002384",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Relève le seuil de la franchise douanière à 300 euros.",
+      "sort": "rejete",
+      "travaille_avec": [
+        "Alibaba France"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2384"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "530476110",
+      "nom": "Alibaba France",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=530476110",
+      "objet": "Taxe sur les petits colis, PLF 2026",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "812604106",
+      "nom": "Fevad",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=812604106",
+      "objet": "Franchise douanière et taxe sur les petits colis",
+      "actions": [
+        "rencontre",
+        "envoi de position"
+      ]
+    }
+  ],
+  "synthese": {
+    "position_probable": "Auteur de l'amendement de suppression n° 806 ; votera contre l'article 22 avec son groupe.",
+    "argument": "Lui fournir l'estimation du coût de la taxe pour les ménages modestes afin d'étayer son intervention en séance du 20 novembre 2025.",
+    "chiffres_utilises": [
+      "806",
+      "22",
+      "2025-11-20"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
+    "verifie": true,
+    "date": "2025-11-19"
+  },
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 2,
+    "comptes_rendus_lus": 9
+  }
+}

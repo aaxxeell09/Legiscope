@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Scrutin n° 9759",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+      },
+      {
+        "label": "Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      }
+    ],
+    "limits": "Prédictions Orcet du 3 novembre 2026 ; première partie rejetée le 4 novembre 2026, texte au Sénat.",
+    "producer": "pipeline/note",
+    "dossier_id": "plf2027-holdings"
+  },
+  "client": "Afep",
+  "objectifs": [
+    {
+      "rang": 1,
+      "texte": "Empêcher la taxe sur les holdings et la fortune improductive",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 2,
+      "texte": "Limiter son assiette",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 3,
+      "texte": "Repousser son entrée en vigueur",
+      "position_cible": "contre"
+    }
+  ],
+  "texte": "La première partie du PLF 2027 a été rejetée par l'Assemblée nationale le 4 novembre 2026 (scrutin n° 9759) : la taxe de 0,5 % sur les holdings patrimoniales (n° 3140), adoptée en séance le 2 novembre 2026, tombe avec elle, de même que l'exclusion des holdings animatrices (n° 3107). La taxe Zucman (n° 2841) avait été rejetée le 31 octobre 2026. Le texte est au Sénat, qui repart du projet initial. Sur les 8 amendements du sujet, 2 ont été adoptés et 3 rejetés ; Orcet prédisait 54 % de votes pour sur le n° 3140 avec une confiance de 0.6. Le RN et les Démocrates sont divisés, LIOT n'a pas de position ; la gauche, 4 groupes, soutient une taxe sur les holdings. Les 6 pivots identifiés sur 2 scrutins liés ont une loyauté de 12 mois comprise entre 0.66 et 0.81 ; 4 ont une fiche d'approche. L'Afep, le Medef et France Invest ont déclaré une action à la HATVP. Risque principal : le retour du n° 3140 en nouvelle lecture. Probabilité estimée que l'objectif soit atteint : 64 %.",
+  "chiffres_utilises": [
+    "2026-11-04",
+    "9759",
+    "0.5",
+    "3140",
+    "2026-11-02",
+    "3107",
+    "2841",
+    "2026-10-31",
+    "8",
+    "2",
+    "3",
+    "0.54",
+    "0.6",
+    "4",
+    "6",
+    "12",
+    "0.66",
+    "0.81",
+    "0.64"
+  ],
+  "sources": [
+    {
+      "label": "Scrutin n° 9759, Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+    },
+    {
+      "label": "Prédictions Orcet",
+      "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+    },
+    {
+      "label": "Rapport de la commission des finances n° 3302",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3302-tii.html"
+    }
+  ],
+  "limites": "Prédictions Orcet du 3 novembre 2026 ; première partie rejetée le 4 novembre 2026, texte au Sénat.",
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
+  "verifie": true
+}

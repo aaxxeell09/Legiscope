@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API textes et amendements",
+        "url": "https://api.hemicycle.ai/v1/textes/PRJLANR5L17B1906"
+      },
+      {
+        "label": "Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      }
+    ],
+    "limits": "Positions calculées sur 3 scrutins nominatifs liés au sujet.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "petits-colis"
+  },
+  "texte": {
+    "id": "PRJLANR5L17B1906",
+    "titre": "Projet de loi de finances pour 2026",
+    "etape": "Première lecture, Assemblée nationale, séance publique, première partie",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+  },
+  "positions": [
+    {
+      "groupe_id": "PO845401",
+      "position": "contre",
+      "confiance": 0.86,
+      "base": "3 scrutins liés, 12 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO845407",
+      "position": "pour",
+      "confiance": 0.91,
+      "base": "3 scrutins liés, 8 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO845413",
+      "position": "pour",
+      "confiance": 0.58,
+      "base": "3 scrutins liés, 9 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO845419",
+      "position": "divise",
+      "confiance": 0.52,
+      "base": "3 scrutins liés, 4 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO845425",
+      "position": "pour",
+      "confiance": 0.83,
+      "base": "3 scrutins liés, 6 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO845439",
+      "position": "pour",
+      "confiance": 0.69,
+      "base": "3 scrutins liés, 3 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO845454",
+      "position": "pour",
+      "confiance": 0.88,
+      "base": "3 scrutins liés, 5 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO845470",
+      "position": "pour",
+      "confiance": 0.85,
+      "base": "3 scrutins liés, 2 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO845485",
+      "position": "divise",
+      "confiance": 0.5,
+      "base": "3 scrutins liés, 2 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO845514",
+      "position": "pour",
+      "confiance": 0.64,
+      "base": "3 scrutins liés, 3 amendements",
+      "n_scrutins_sujet": 3
+    },
+    {
+      "groupe_id": "PO872880",
+      "position": "pour",
+      "confiance": 0.8,
+      "base": "3 scrutins liés, 1 amendement",
+      "n_scrutins_sujet": 3
+    }
+  ],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N000806",
+      "numero": "806",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806",
+      "auteur_id": "PA721578",
+      "cosignataires_ids": [
+        "PA720892",
+        "PA722325"
+      ],
+      "groupe_id": "PO845401",
+      "resume": "Supprime l'article 22 (taxe sur les petits colis).",
+      "sort": "en_attente",
+      "prediction": {
+        "proba_pour": 0.24,
+        "confiance": 0.78,
+        "modele": "orcet-v2",
+        "date": "2025-11-19"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002231",
+      "numero": "2231",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2231",
+      "auteur_id": "PA723081",
+      "cosignataires_ids": [
+        "PA732086",
+        "PA732474"
+      ],
+      "groupe_id": "PO845407",
+      "resume": "Amendement de compromis : précise le mode de paiement de la taxe de 2 euros par colis de moins de 150 euros, à la charge de la plateforme.",
+      "sort": "en_attente",
+      "prediction": {
+        "proba_pour": 0.71,
+        "confiance": 0.8,
+        "modele": "orcet-v2",
+        "date": "2025-11-19"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002384",
+      "numero": "2384",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2384",
+      "auteur_id": "PA721578",
+      "cosignataires_ids": [
+        "PA720892"
+      ],
+      "groupe_id": "PO845401",
+      "resume": "Relève le seuil de la franchise douanière à 300 euros.",
+      "sort": "rejete",
+      "prediction": {
+        "proba_pour": 0.29,
+        "confiance": 0.73,
+        "modele": "orcet-v2",
+        "date": "2025-11-19"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002470",
+      "numero": "2470",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2470",
+      "auteur_id": "PA728307",
+      "cosignataires_ids": [
+        "PA727852"
+      ],
+      "groupe_id": "PO845425",
+      "resume": "Avance l'entrée en vigueur de la taxe au 1er janvier 2026.",
+      "sort": "adopte",
+      "prediction": {
+        "proba_pour": 0.64,
+        "confiance": 0.66,
+        "modele": "orcet-v2",
+        "date": "2025-11-19"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002512",
+      "numero": "2512",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2512",
+      "auteur_id": "PA725443",
+      "cosignataires_ids": [
+        "PA735141"
+      ],
+      "groupe_id": "PO845413",
+      "resume": "Porte la taxe à 5 euros par colis.",
+      "sort": "en_attente",
+      "prediction": {
+        "proba_pour": 0.33,
+        "confiance": 0.7,
+        "modele": "orcet-v2",
+        "date": "2025-11-19"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002601",
+      "numero": "2601",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2601",
+      "auteur_id": "PA726184",
+      "cosignataires_ids": [
+        "PA729989"
+      ],
+      "groupe_id": "PO845419",
+      "resume": "Affecte le produit de la taxe au fonds de soutien au commerce de proximité.",
+      "sort": "en_attente",
+      "prediction": null
+    },
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002733",
+      "numero": "2733",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2733",
+      "auteur_id": "PA738665",
+      "cosignataires_ids": [],
+      "groupe_id": null,
+      "resume": "Exonère les colis en provenance des collectivités d'outre-mer.",
+      "sort": "en_attente",
+      "prediction": {
+        "proba_pour": 0.48,
+        "confiance": 0.51,
+        "modele": "orcet-v2",
+        "date": "2025-11-19"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (syseron)",
+        "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/debats"
+      }
+    ],
+    "limits": "Interventions avec identifiant d'orateur uniquement ; commission lue en HTML.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA732528",
+  "debats": [],
+  "couverture": {
+    "comptes_rendus_lus": 4
+  }
+}

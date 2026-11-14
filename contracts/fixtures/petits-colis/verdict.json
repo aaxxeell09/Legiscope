@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B1906",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "Rejoué à la date de référence du 19 novembre 2025. Avis du rapporteur général et du gouvernement pris en compte, visibles dans les preuves.",
+    "producer": "pipeline/verdict",
+    "dossier_id": "petits-colis"
+  },
+  "verdicts": [
+    {
+      "objectif_rang": 1,
+      "situation": "defavorable",
+      "score": 0.12,
+      "tendance": "degradation",
+      "confiance": {
+        "niveau": "elevee",
+        "etabli": [
+          "Positions des 11 groupes sur 3 scrutins liés",
+          "Amendement de suppression n° 806 déposé par le RN",
+          "Avis favorable du gouvernement et du rapporteur général"
+        ],
+        "inconnu": [
+          "Vote de LFI : réserve levée par le compromis n° 2231, non confirmée par un scrutin"
+        ]
+      },
+      "lecture": {
+        "texte": "La mesure est portée par le gouvernement et soutenue par 9 groupes sur 11 ; seul le RN annonce un vote contre.",
+        "chiffres_utilises": [
+          "9",
+          "11"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "Le RN a déposé un amendement de suppression de l'article 22",
+          "detail": "L'amendement n° 806 supprime l'article 22 ; le RN, 121 députés, annonce un vote contre en séance.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendement n° 806",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+              },
+              {
+                "label": "Positions des groupes",
+                "url": "https://api.hemicycle.ai/v1/agregats/positions-groupes"
+              }
+            ],
+            "raisonnement": "Un groupe de 121 députés porte la position du client. Il reste minoritaire sans le soutien d'au moins un autre groupe.",
+            "nature": "fait"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "Le gouvernement prépare un amendement de compromis sur le mode de paiement",
+          "detail": "L'amendement n° 2231 met la taxe à la charge de la plateforme, ce qui lève la réserve de LFI sur les ménages.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendement n° 2231",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2231"
+              },
+              {
+                "label": "Prédictions Orcet",
+                "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+              }
+            ],
+            "raisonnement": "Avec LFI, le socle gouvernemental et la droite, l'article dispose d'une majorité large. Orcet prédit 71 % de votes pour sur le compromis.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "Socle gouvernemental et Droite Républicaine favorables",
+          "detail": "EPR, DEM, HOR et DR affichent une position pour avec une confiance supérieure à 0.8 sur 3 scrutins liés.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Hémicycle API scrutins",
+                "url": "https://api.hemicycle.ai/v1/scrutins"
+              }
+            ],
+            "raisonnement": "Positions majoritaires calculées sur les scrutins des 17, 18 et 19 novembre 2025.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": {
+        "evenement_id": "ev-2231",
+        "titre": "Dépôt du compromis n° 2231 sur le mode de paiement",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2231",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2231"
+            }
+          ],
+          "raisonnement": "Déposé le 19 novembre 2025 ; retire à LFI son motif d'abstention.",
+          "nature": "fait"
+        }
+      }
+    },
+    {
+      "objectif_rang": 2,
+      "situation": "insuffisant",
+      "score": null,
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "faible",
+        "etabli": [
+          "Montant de 2 euros dans le texte initial"
+        ],
+        "inconnu": [
+          "Aucun amendement de réduction du montant déposé",
+          "Position du Sénat sur le montant"
+        ]
+      },
+      "lecture": {
+        "texte": "Aucun amendement ne réduit le montant de 2 euros ; le n° 2512 le porte à 5 euros.",
+        "chiffres_utilises": [
+          "2",
+          "2512",
+          "5"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [],
+      "bloquant": [
+        {
+          "titre": "Le seul amendement sur le montant l'augmente",
+          "detail": "Le n° 2512 (LFI) porte la taxe à 5 euros par colis.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendement n° 2512",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2512"
+              },
+              {
+                "label": "Prédictions Orcet",
+                "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+              }
+            ],
+            "raisonnement": "Dépôt du n° 2512 ; Orcet prédit 33 % de votes pour.",
+            "nature": "fait"
+          }
+        }
+      ],
+      "cause_du_changement": null
+    },
+    {
+      "objectif_rang": 3,
+      "situation": "defavorable",
+      "score": 0.2,
+      "tendance": "degradation",
+      "confiance": {
+        "niveau": "elevee",
+        "etabli": [
+          "Amendement n° 2470 adopté le 19 novembre 2025 : entrée en vigueur au 1er janvier 2026"
+        ],
+        "inconnu": [
+          "Capacité de la douane à percevoir la taxe dès janvier 2026"
+        ]
+      },
+      "lecture": {
+        "texte": "L'entrée en vigueur a été avancée au 1er janvier 2026 par le n° 2470, adopté le 19 novembre 2025.",
+        "chiffres_utilises": [
+          "2026-01-01",
+          "2470",
+          "2025-11-19"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "La douane doute de pouvoir percevoir la taxe dès janvier",
+          "detail": "Un pivot a dit en commission qu'il ne voterait pas une taxe que la douane ne peut pas percevoir au 1er janvier.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Commission des finances, 28 octobre 2025",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20251028"
+              }
+            ],
+            "raisonnement": "Intervention en commission des finances le 28 octobre 2025.",
+            "nature": "fait"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "Entrée en vigueur avancée au 1er janvier 2026",
+          "detail": "Scrutin n° 4401 du 19 novembre 2025.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendement n° 2470",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2470"
+              },
+              {
+                "label": "Scrutin n° 4401",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401"
+              }
+            ],
+            "raisonnement": "Amendement n° 2470 adopté.",
+            "nature": "fait"
+          }
+        }
+      ],
+      "cause_du_changement": {
+        "evenement_id": "ev-2470",
+        "titre": "Adoption du n° 2470 (entrée en vigueur au 1er janvier 2026)",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 4401",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401"
+            }
+          ],
+          "raisonnement": "Scrutin n° 4401.",
+          "nature": "fait"
+        }
+      }
+    }
+  ]
+}

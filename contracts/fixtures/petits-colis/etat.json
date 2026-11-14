@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B1906",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "État au 19 novembre 2025.",
+    "producer": "pipeline/etat",
+    "dossier_id": "petits-colis"
+  },
+  "mesure": {
+    "label": "Taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe",
+    "article": "22",
+    "dans_le_texte": true,
+    "redaction_actuelle": "Texte initial du gouvernement (taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe), modifié par le n° 2470 : entrée en vigueur au 1er janvier 2026. Examen en séance prévu le 20 novembre 2025.",
+    "modifications": [
+      {
+        "date": "2025-11-19",
+        "par": "Amendement n° 2470 (Droite Républicaine)",
+        "quoi": "Entrée en vigueur avancée au 1er janvier 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2470",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2470",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2470"
+            },
+            {
+              "label": "Scrutin n° 4401",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401"
+            }
+          ],
+          "raisonnement": "Adopté par le scrutin n° 4401.",
+          "nature": "fait"
+        }
+      }
+    ]
+  },
+  "etape": "Première lecture, Assemblée nationale, séance publique, première partie",
+  "etapes": [
+    {
+      "nom": "Dépôt du projet de loi",
+      "date": "2025-10-14",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+    },
+    {
+      "nom": "Commission des finances",
+      "date": "2025-10-22",
+      "statut": "fait",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20251022"
+    },
+    {
+      "nom": "Séance publique, première partie",
+      "date": "2025-11-19",
+      "statut": "en_cours",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19"
+    },
+    {
+      "nom": "Vote solennel sur la première partie",
+      "date": "2025-11-25",
+      "statut": "a_venir",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour"
+    },
+    {
+      "nom": "Sénat, première lecture",
+      "date": null,
+      "statut": "a_venir",
+      "url": "https://www.senat.fr/"
+    }
+  ],
+  "articles": [
+    {
+      "numero": "21",
+      "titre": "Droits de douane sur les colis hors Union européenne",
+      "statut": "vote",
+      "sort_detail": "Adopté le 17 novembre 2025 (scrutin n° 4375)",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4375"
+    },
+    {
+      "numero": "22",
+      "titre": "Taxe sur les petits colis",
+      "statut": "reste",
+      "sort_detail": "Examen prévu le 20 novembre 2025 ; 7 amendements dont 5 en attente",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+    },
+    {
+      "numero": "23",
+      "titre": "Taxe sur les emballages d'expédition",
+      "statut": "supprime",
+      "sort_detail": "Supprimé en commission des finances le 22 octobre 2025",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20251022"
+    }
+  ]
+}

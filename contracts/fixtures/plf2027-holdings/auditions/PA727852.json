@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/"
+      }
+    ],
+    "limits": "Annexes « personnes entendues » des rapports de la commission des finances, extraites par Featherless.",
+    "producer": "pipeline/auditions",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA727852",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B3210",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3302-tii.html",
+      "date": "2026-10-15",
+      "role": "membre",
+      "organisations": [
+        {
+          "nom": "Association française des entreprises privées (Afep)",
+          "type": "association",
+          "hatvp_id": "317486009"
+        },
+        {
+          "nom": "Mouvement des entreprises de France (Medef)",
+          "type": "federation",
+          "hatvp_id": "425088391"
+        },
+        {
+          "nom": "Direction générale des finances publiques",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 1
+  }
+}

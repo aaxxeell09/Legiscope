@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API textes et amendements",
+        "url": "https://api.hemicycle.ai/v1/textes/PRJLANR5L17B3210"
+      },
+      {
+        "label": "Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      }
+    ],
+    "limits": "Positions calculées sur 2 scrutins nominatifs liés au sujet ; première partie rejetée le 4 novembre 2026.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-holdings"
+  },
+  "texte": {
+    "id": "PRJLANR5L17B3210",
+    "titre": "Projet de loi de finances pour 2027",
+    "etape": "Première lecture, Sénat (première partie rejetée par l'Assemblée nationale le 4 novembre 2026)",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+  },
+  "positions": [
+    {
+      "groupe_id": "PO845401",
+      "position": "divise",
+      "confiance": 0.5,
+      "base": "2 scrutins liés, 12 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO845407",
+      "position": "contre",
+      "confiance": 0.78,
+      "base": "2 scrutins liés, 8 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO845413",
+      "position": "pour",
+      "confiance": 0.9,
+      "base": "2 scrutins liés, 9 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO845419",
+      "position": "pour",
+      "confiance": 0.88,
+      "base": "2 scrutins liés, 4 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO845425",
+      "position": "contre",
+      "confiance": 0.85,
+      "base": "2 scrutins liés, 6 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO845439",
+      "position": "pour",
+      "confiance": 0.86,
+      "base": "2 scrutins liés, 3 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO845454",
+      "position": "divise",
+      "confiance": 0.47,
+      "base": "2 scrutins liés, 5 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO845470",
+      "position": "contre",
+      "confiance": 0.74,
+      "base": "2 scrutins liés, 2 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO845485",
+      "position": null,
+      "confiance": 0.3,
+      "base": "2 scrutins liés, 2 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO845514",
+      "position": "pour",
+      "confiance": 0.82,
+      "base": "2 scrutins liés, 3 amendements",
+      "n_scrutins_sujet": 2
+    },
+    {
+      "groupe_id": "PO872880",
+      "position": "contre",
+      "confiance": 0.8,
+      "base": "2 scrutins liés, 1 amendement",
+      "n_scrutins_sujet": 2
+    }
+  ],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N003140",
+      "numero": "3140",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140",
+      "auteur_id": "PA731263",
+      "cosignataires_ids": [
+        "PA734149",
+        "PA721578",
+        "PA732086"
+      ],
+      "groupe_id": "PO845454",
+      "resume": "Crée une taxe de 0,5 % sur l'actif net non réinvesti des holdings patrimoniales.",
+      "sort": "adopte",
+      "prediction": {
+        "proba_pour": 0.54,
+        "confiance": 0.6,
+        "modele": "orcet-v2",
+        "date": "2026-11-03"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N002841",
+      "numero": "2841",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/2841",
+      "auteur_id": "PA726184",
+      "cosignataires_ids": [
+        "PA729242",
+        "PA735141"
+      ],
+      "groupe_id": "PO845419",
+      "resume": "Crée une taxe de 2 % sur le patrimoine au-delà de 100 millions d'euros (taxe Zucman).",
+      "sort": "rejete",
+      "prediction": {
+        "proba_pour": 0.38,
+        "confiance": 0.8,
+        "modele": "orcet-v2",
+        "date": "2026-11-03"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N002988",
+      "numero": "2988",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/2988",
+      "auteur_id": "PA729242",
+      "cosignataires_ids": [
+        "PA724791"
+      ],
+      "groupe_id": "PO845439",
+      "resume": "Porte la taxe Zucman à 3 % sur les patrimoines de plus de 100 millions d'euros.",
+      "sort": "rejete",
+      "prediction": {
+        "proba_pour": 0.3,
+        "confiance": 0.82,
+        "modele": "orcet-v2",
+        "date": "2026-11-03"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N003107",
+      "numero": "3107",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3107",
+      "auteur_id": "PA724696",
+      "cosignataires_ids": [
+        "PA723810",
+        "PA732474"
+      ],
+      "groupe_id": "PO845407",
+      "resume": "Exclut les holdings animatrices du champ de la taxe sur la fortune improductive.",
+      "sort": "adopte",
+      "prediction": {
+        "proba_pour": 0.57,
+        "confiance": 0.63,
+        "modele": "orcet-v2",
+        "date": "2026-11-03"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001187",
+      "numero": "1187",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/1187",
+      "auteur_id": "PA720892",
+      "cosignataires_ids": [
+        "PA721578",
+        "PA722325"
+      ],
+      "groupe_id": "PO845401",
+      "resume": "Supprime la taxe sur la fortune improductive.",
+      "sort": "rejete",
+      "prediction": {
+        "proba_pour": 0.44,
+        "confiance": 0.7,
+        "modele": "orcet-v2",
+        "date": "2026-11-03"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N003301",
+      "numero": "3301",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3301",
+      "auteur_id": "PA723810",
+      "cosignataires_ids": [],
+      "groupe_id": "PO845407",
+      "resume": "Demande un rapport sur le rendement de la taxe sur la fortune improductive.",
+      "sort": "retire",
+      "prediction": {
+        "proba_pour": 0.61,
+        "confiance": 0.55,
+        "modele": "orcet-v2",
+        "date": "2026-11-03"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N003550",
+      "numero": "3550",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3550",
+      "auteur_id": "PA737917",
+      "cosignataires_ids": [],
+      "groupe_id": null,
+      "resume": "Exonère les holdings familiales de moins de 50 millions d'euros d'actif.",
+      "sort": "non_examine",
+      "prediction": {
+        "proba_pour": 0.22,
+        "confiance": 0.77,
+        "modele": "orcet-v2",
+        "date": "2026-11-03"
+      }
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N003602",
+      "numero": "3602",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3602",
+      "auteur_id": "PA732474",
+      "cosignataires_ids": [
+        "PA732528"
+      ],
+      "groupe_id": "PO845470",
+      "resume": "Exonère les holdings qui réinvestissent leur actif dans les 24 mois.",
+      "sort": "tombe",
+      "prediction": null
+    }
+  ]
+}

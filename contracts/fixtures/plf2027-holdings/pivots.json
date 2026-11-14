@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API loyauté",
+        "url": "https://api.hemicycle.ai/v1/agregats/loyaute-deputes"
+      }
+    ],
+    "limits": "Base sujet : 2 scrutins nominatifs liés, plus le scrutin de rejet de la première partie.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "plf2027-holdings"
+  },
+  "deputes": [
+    {
+      "id": "PA731263",
+      "groupe_id": "PO845454",
+      "rang": 1,
+      "score_imprevisibilite": 0.34,
+      "loyaute_12m": 0.66,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9730",
+          "date": "2026-11-02",
+          "titre": "Amendement n° 3140 au PLF 2027, taxe sur les holdings patrimoniales",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9712",
+          "date": "2026-10-31",
+          "titre": "Amendement n° 2841 au PLF 2027, taxe Zucman",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9712",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454"
+        }
+      ]
+    },
+    {
+      "id": "PA721578",
+      "groupe_id": "PO845401",
+      "rang": 2,
+      "score_imprevisibilite": 0.31,
+      "loyaute_12m": 0.69,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9730",
+          "date": "2026-11-02",
+          "titre": "Amendement n° 3140 au PLF 2027, taxe sur les holdings patrimoniales",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845401"
+        }
+      ]
+    },
+    {
+      "id": "PA734149",
+      "groupe_id": "PO845485",
+      "rang": 3,
+      "score_imprevisibilite": 0.28,
+      "loyaute_12m": 0.72,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9730",
+          "date": "2026-11-02",
+          "titre": "Amendement n° 3140 au PLF 2027, taxe sur les holdings patrimoniales",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9712",
+          "date": "2026-10-31",
+          "titre": "Amendement n° 2841 au PLF 2027, taxe Zucman",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9712",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9759",
+          "date": "2026-11-04",
+          "titre": "Première partie du projet de loi de finances pour 2027, ensemble (rejet)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845485"
+        }
+      ]
+    },
+    {
+      "id": "PA724696",
+      "groupe_id": "PO845407",
+      "rang": 4,
+      "score_imprevisibilite": 0.25,
+      "loyaute_12m": 0.75,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9730",
+          "date": "2026-11-02",
+          "titre": "Amendement n° 3140 au PLF 2027, taxe sur les holdings patrimoniales",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730",
+          "vote": "pour",
+          "position_groupe": null,
+          "groupe_id_au_vote": "PO845407"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9712",
+          "date": "2026-10-31",
+          "titre": "Amendement n° 2841 au PLF 2027, taxe Zucman",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9712",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407"
+        }
+      ]
+    },
+    {
+      "id": "PA732528",
+      "groupe_id": "PO845470",
+      "rang": 5,
+      "score_imprevisibilite": 0.22,
+      "loyaute_12m": 0.78,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9730",
+          "date": "2026-11-02",
+          "titre": "Amendement n° 3140 au PLF 2027, taxe sur les holdings patrimoniales",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845470"
+        }
+      ]
+    },
+    {
+      "id": "PA727852",
+      "groupe_id": "PO845425",
+      "rang": 6,
+      "score_imprevisibilite": 0.19,
+      "loyaute_12m": 0.81,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V9730",
+          "date": "2026-11-02",
+          "titre": "Amendement n° 3140 au PLF 2027, taxe sur les holdings patrimoniales",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845425"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9712",
+          "date": "2026-10-31",
+          "titre": "Amendement n° 2841 au PLF 2027, taxe Zucman",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9712",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845425"
+        },
+        {
+          "scrutin_id": "VTANR5L17V9759",
+          "date": "2026-11-04",
+          "titre": "Première partie du projet de loi de finances pour 2027, ensemble (rejet)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845425"
+        }
+      ]
+    }
+  ]
+}

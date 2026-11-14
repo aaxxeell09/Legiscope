@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API amendements",
+        "url": "https://api.hemicycle.ai/v1/amendements"
+      }
+    ],
+    "limits": "Mention « travaillé avec » extraite de l'exposé des motifs.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA724696",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N003107",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "auteur",
+      "resume": "Exclut les holdings animatrices du champ de la taxe sur la fortune improductive.",
+      "sort": "adopte",
+      "travaille_avec": [
+        "Afep"
+      ],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3107"
+    }
+  ]
+}

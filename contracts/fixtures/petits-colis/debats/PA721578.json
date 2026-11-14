@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (syseron)",
+        "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/debats"
+      }
+    ],
+    "limits": "Interventions avec identifiant d'orateur uniquement ; commission lue en HTML.",
+    "producer": "pipeline/debats",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA721578",
+  "debats": [
+    {
+      "date": "2025-11-19",
+      "lieu": "seance",
+      "citation": "Cette taxe pèse d'abord sur les ménages modestes qui achètent en ligne faute de mieux.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19"
+    },
+    {
+      "date": "2025-10-28",
+      "lieu": "commission",
+      "citation": "Je ne voterai pas une taxe que la douane ne peut pas percevoir au 1er janvier.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20251028"
+    },
+    {
+      "date": "2025-11-18",
+      "lieu": "seance",
+      "citation": "Les plateformes qui expédient des millions de colis par an doivent participer au financement de nos douanes.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-18"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 9
+  }
+}

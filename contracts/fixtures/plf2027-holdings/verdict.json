@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "État au 14 novembre 2026 ; avis du rapporteur général et du gouvernement pris en compte, visibles dans les preuves.",
+    "producer": "pipeline/verdict",
+    "dossier_id": "plf2027-holdings"
+  },
+  "verdicts": [
+    {
+      "objectif_rang": 1,
+      "situation": "favorable",
+      "score": 0.64,
+      "tendance": "amelioration",
+      "confiance": {
+        "niveau": "moyenne",
+        "etabli": [
+          "Rejet de la première partie le 4 novembre 2026 (scrutin n° 9759)",
+          "Positions des groupes sur 2 scrutins liés"
+        ],
+        "inconnu": [
+          "Position de la majorité sénatoriale sur l'article 3",
+          "Dépôt ou non du n° 3140 en nouvelle lecture"
+        ]
+      },
+      "lecture": {
+        "texte": "Le rejet de la première partie le 4 novembre 2026 fait tomber la taxe de 0,5 % sur les holdings (n° 3140) ; elle peut revenir en nouvelle lecture.",
+        "chiffres_utilises": [
+          "2026-11-04",
+          "0.5",
+          "3140"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "La première partie du PLF 2027 a été rejetée par l'Assemblée",
+          "detail": "Scrutin n° 9759 du 4 novembre 2026 : tous les amendements adoptés en séance, dont le n° 3140, tombent.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Scrutin n° 9759, rejet de la première partie",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+              }
+            ],
+            "raisonnement": "Le rejet de la première partie renvoie au Sénat le projet initial du gouvernement, sans taxe sur les holdings.",
+            "nature": "fait"
+          }
+        },
+        {
+          "titre": "Le Sénat repart du texte initial",
+          "detail": "La majorité sénatoriale est hostile à toute taxe sur les holdings ; le gouvernement n'a pas redéposé la mesure.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Sénat, PLF 2027",
+                "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+              }
+            ],
+            "raisonnement": "Position de la commission des finances du Sénat et absence d'amendement du gouvernement au 14 novembre 2026.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "bloquant": [
+        {
+          "titre": "Le n° 3140 a réuni une majorité en séance",
+          "detail": "Adopté le 2 novembre 2026 avec le RN et les Démocrates divisés ; Orcet prédisait 54 % de votes pour.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Scrutin n° 9730",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730"
+              },
+              {
+                "label": "Prédictions Orcet",
+                "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+              }
+            ],
+            "raisonnement": "Scrutin n° 9730 et prédiction Orcet (0.54, confiance 0.6) : la majorité peut se reformer en nouvelle lecture.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "La gauche redéposera la taxe Zucman en nouvelle lecture",
+          "detail": "4 groupes ont voté pour le n° 2841 le 31 octobre 2026.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Scrutin n° 9712",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9712"
+              }
+            ],
+            "raisonnement": "Positions majoritaires LFI, SOC, EcoS et GDR sur le scrutin n° 9712.",
+            "nature": "deduction"
+          }
+        }
+      ],
+      "cause_du_changement": {
+        "evenement_id": "ev-9759",
+        "titre": "Rejet de la première partie du PLF 2027",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Scrutin n° 9759, rejet de la première partie",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+            }
+          ],
+          "raisonnement": "Scrutin n° 9759 du 4 novembre 2026.",
+          "nature": "fait"
+        }
+      }
+    },
+    {
+      "objectif_rang": 2,
+      "situation": "favorable",
+      "score": 0.7,
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "moyenne",
+        "etabli": [
+          "Exclusion des holdings animatrices (n° 3107) adoptée le 2 novembre 2026, tombée le 4 novembre 2026"
+        ],
+        "inconnu": [
+          "Reprise du n° 3107 par le Sénat ou en nouvelle lecture"
+        ]
+      },
+      "lecture": {
+        "texte": "L'exclusion des holdings animatrices (n° 3107) a réuni une majorité le 2 novembre 2026 ; elle devra être redéposée.",
+        "chiffres_utilises": [
+          "3107",
+          "2026-11-02"
+        ],
+        "mode": "llm",
+        "modele": "Qwen/Qwen3.8-27B",
+        "verifie": true
+      },
+      "favorable": [
+        {
+          "titre": "Majorité acquise pour exclure les holdings animatrices",
+          "detail": "Le n° 3107 (EPR, travaillé avec l'Afep) a été adopté avant de tomber avec la première partie.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Amendement n° 3107",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3107"
+              }
+            ],
+            "raisonnement": "Adoption du n° 3107 en séance le 2 novembre 2026.",
+            "nature": "fait"
+          }
+        }
+      ],
+      "bloquant": [],
+      "cause_du_changement": null
+    },
+    {
+      "objectif_rang": 3,
+      "situation": "insuffisant",
+      "score": null,
+      "tendance": "stable",
+      "confiance": {
+        "niveau": "faible",
+        "etabli": [],
+        "inconnu": [
+          "Aucun amendement de report d'entrée en vigueur déposé",
+          "Calendrier de la nouvelle lecture"
+        ]
+      },
+      "lecture": {
+        "texte": "Aucun amendement de report d'entrée en vigueur n'a été déposé sur le n° 3140 ni sur l'article 3.",
+        "chiffres_utilises": [
+          "3140",
+          "3"
+        ],
+        "mode": "gabarit",
+        "modele": null,
+        "verifie": true
+      },
+      "favorable": [],
+      "bloquant": [],
+      "cause_du_changement": null
+    }
+  ]
+}

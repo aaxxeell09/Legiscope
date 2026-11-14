@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Amendement n° 806",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+      },
+      {
+        "label": "HATVP, Alibaba France",
+        "url": "https://www.hatvp.fr/fiche-organisation/?organisation=530476110"
+      }
+    ],
+    "limits": "Rejoué à la date de référence du 19 novembre 2025, veille du vote de l'article 22 ; prédictions Orcet du même jour.",
+    "producer": "pipeline/note",
+    "dossier_id": "petits-colis"
+  },
+  "client": "Alibaba France",
+  "objectifs": [
+    {
+      "rang": 1,
+      "texte": "Empêcher que la taxe soit votée",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 2,
+      "texte": "Réduire son montant",
+      "position_cible": "contre"
+    },
+    {
+      "rang": 3,
+      "texte": "Repousser son application",
+      "position_cible": "contre"
+    }
+  ],
+  "texte": "À la veille du vote de l'article 22, la taxe de 2 euros par colis de moins de 150 euros est portée par le gouvernement et soutenue par 9 groupes sur 11 ; seul le RN annonce un vote contre, les socialistes et LIOT sont divisés. L'amendement de suppression n° 806 du RN est en attente ; Orcet lui prédit 24 % de votes pour, avec une confiance de 0.78. L'amendement de compromis n° 2231 sur le mode de paiement, qui lève la réserve de LFI, est prédit à 71 % de votes pour. Sur les 7 amendements du sujet, 2 ont déjà été tranchés : le relèvement de la franchise à 300 euros (n° 2384) a été rejeté le 18 novembre 2025 et l'entrée en vigueur au 1er janvier 2026 (n° 2470) a été adoptée le 19 novembre 2025. Les 6 pivots identifiés sur 3 scrutins liés ont une loyauté de 12 mois comprise entre 0.66 et 0.81 ; 4 ont une fiche d'approche. Alibaba France a déclaré 2 actions à la HATVP sur ce texte. Objectif du client : empêcher le vote de la taxe ; probabilité estimée 12 %.",
+  "chiffres_utilises": [
+    "22",
+    "2",
+    "150",
+    "9",
+    "11",
+    "806",
+    "0.24",
+    "0.78",
+    "2231",
+    "0.71",
+    "7",
+    "300",
+    "2384",
+    "2025-11-18",
+    "2026-01-01",
+    "2470",
+    "2025-11-19",
+    "6",
+    "3",
+    "12",
+    "0.66",
+    "0.81",
+    "4",
+    "0.12"
+  ],
+  "sources": [
+    {
+      "label": "Amendement n° 806, Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
+    },
+    {
+      "label": "Fiche HATVP Alibaba France",
+      "url": "https://www.hatvp.fr/fiche-organisation/?organisation=530476110"
+    },
+    {
+      "label": "Prédictions Orcet",
+      "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+    }
+  ],
+  "limites": "Rejoué à la date de référence du 19 novembre 2025, veille du vote de l'article 22 ; prédictions Orcet du même jour.",
+  "mode": "llm",
+  "modele": "Qwen/Qwen3.8-27B",
+  "verifie": true
+}

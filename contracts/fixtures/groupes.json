@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API organes",
+        "url": "https://api.hemicycle.ai/v1/organes"
+      }
+    ],
+    "limits": "Effectifs au 14 novembre 2026, apparentés inclus, non-inscrits exclus.",
+    "producer": "pipeline/collecte",
+    "dossier_id": null
+  },
+  "groupes": [
+    {
+      "id": "PO845401",
+      "sigle": "RN",
+      "nom": "Rassemblement National",
+      "couleur": "#0D378A",
+      "effectif": 121
+    },
+    {
+      "id": "PO845407",
+      "sigle": "EPR",
+      "nom": "Ensemble pour la République",
+      "couleur": "#F2C200",
+      "effectif": 90
+    },
+    {
+      "id": "PO845413",
+      "sigle": "LFI-NFP",
+      "nom": "La France insoumise - Nouveau Front Populaire",
+      "couleur": "#CC2443",
+      "effectif": 70
+    },
+    {
+      "id": "PO845419",
+      "sigle": "SOC",
+      "nom": "Socialistes et apparentés",
+      "couleur": "#FF8080",
+      "effectif": 68
+    },
+    {
+      "id": "PO845425",
+      "sigle": "DR",
+      "nom": "Droite Républicaine",
+      "couleur": "#2A6CB0",
+      "effectif": 46
+    },
+    {
+      "id": "PO845439",
+      "sigle": "EcoS",
+      "nom": "Écologiste et Social",
+      "couleur": "#00A95C",
+      "effectif": 38
+    },
+    {
+      "id": "PO845454",
+      "sigle": "DEM",
+      "nom": "Les Démocrates",
+      "couleur": "#FF9900",
+      "effectif": 37
+    },
+    {
+      "id": "PO845470",
+      "sigle": "HOR",
+      "nom": "Horizons & Indépendants",
+      "couleur": "#1F8BA6",
+      "effectif": 35
+    },
+    {
+      "id": "PO845485",
+      "sigle": "LIOT",
+      "nom": "Libertés, Indépendants, Outre-mer et Territoires",
+      "couleur": "#B07AA1",
+      "effectif": 24
+    },
+    {
+      "id": "PO845514",
+      "sigle": "GDR",
+      "nom": "Gauche Démocrate et Républicaine",
+      "couleur": "#DD0000",
+      "effectif": 17
+    },
+    {
+      "id": "PO872880",
+      "sigle": "UDR",
+      "nom": "Union des droites pour la République",
+      "couleur": "#1C2A5A",
+      "effectif": 17
+    }
+  ]
+}

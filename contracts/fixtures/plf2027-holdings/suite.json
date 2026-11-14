@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "Échéances connues au 14 novembre 2026 ; dates du Sénat et de la nouvelle lecture non fixées pour certaines.",
+    "producer": "pipeline/suite",
+    "dossier_id": "plf2027-holdings"
+  },
+  "echeances": [
+    {
+      "date": "2026-11-19",
+      "titre": "Examen de la première partie au Sénat, séance publique",
+      "lieu": "senat",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Sénat, PLF 2027",
+            "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+          }
+        ],
+        "raisonnement": "Calendrier publié par le Sénat le 10 novembre 2026.",
+        "nature": "fait"
+      }
+    },
+    {
+      "date": null,
+      "titre": "Commission mixte paritaire",
+      "lieu": "cmp",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Sénat, PLF 2027",
+            "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+          }
+        ],
+        "raisonnement": "Date non fixée ; dépend de la fin de l'examen au Sénat.",
+        "nature": "fait"
+      }
+    },
+    {
+      "date": null,
+      "titre": "Nouvelle lecture à l'Assemblée nationale",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Ordre du jour",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour"
+          }
+        ],
+        "raisonnement": "Date non fixée ; c'est là que le n° 3140 peut revenir.",
+        "nature": "fait"
+      }
+    }
+  ],
+  "derniere_occasion": {
+    "date": null,
+    "titre": "Nouvelle lecture à l'Assemblée nationale : dernière occasion d'empêcher le retour du n° 3140",
+    "lieu": "seance",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour",
+    "preuve": {
+      "sources": [
+        {
+          "label": "Ordre du jour",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour"
+        }
+      ],
+      "raisonnement": "Date non fixée au 14 novembre 2026 ; dépend du Sénat et de la CMP.",
+      "nature": "inconnue"
+    }
+  },
+  "probables": [
+    {
+      "titre": "Retour du n° 3140 en nouvelle lecture",
+      "proba": null,
+      "detail": "Pas de prédiction Orcet : l'amendement n'est pas redéposé à ce jour.",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9730",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9730"
+          }
+        ],
+        "raisonnement": "Majorité réunie le 2 novembre 2026 ; auteur et cosignataires non interrogés.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "titre": "Maintien du texte initial au Sénat, sans taxe sur les holdings",
+      "proba": null,
+      "detail": "Pas de prédiction : le Sénat n'est pas couvert.",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Sénat, PLF 2027",
+            "url": "https://www.senat.fr/dossier-legislatif/pjlf2027.html"
+          }
+        ],
+        "raisonnement": "Position de la majorité sénatoriale.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "titre": "Nouveau dépôt de la taxe Zucman par la gauche",
+      "proba": null,
+      "detail": "Pas de prédiction : amendement non déposé.",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Scrutin n° 9712",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9712"
+          }
+        ],
+        "raisonnement": "4 groupes ont voté pour le n° 2841.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}

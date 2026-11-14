@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale",
+        "url": "https://data.assemblee-nationale.fr/"
+      },
+      {
+        "label": "Comptes rendus de séance (syseron)",
+        "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/debats"
+      },
+      {
+        "label": "Hémicycle API amendements",
+        "url": "https://api.hemicycle.ai/v1/amendements"
+      },
+      {
+        "label": "Hémicycle API entreprises (HATVP)",
+        "url": "https://api.hemicycle.ai/v1/entreprises"
+      }
+    ],
+    "limits": "Fusion des trois producteurs et de la HATVP ; synthèse vérifiée par qa/verif.ts.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA725443",
+  "auditions": [
+    {
+      "texte_id": "PRJLANR5L17B1906",
+      "rapport_url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1990-tii.html",
+      "date": "2025-10-16",
+      "role": "rapporteur_avis",
+      "organisations": [
+        {
+          "nom": "Fédération du e-commerce et de la vente à distance (Fevad)",
+          "type": "federation",
+          "hatvp_id": "812604106"
+        },
+        {
+          "nom": "Alibaba France",
+          "type": "entreprise",
+          "hatvp_id": "530476110"
+        },
+        {
+          "nom": "Direction générale des douanes et droits indirects",
+          "type": "administration",
+          "hatvp_id": null
+        }
+      ]
+    }
+  ],
+  "debats": [
+    {
+      "date": "2025-11-19",
+      "lieu": "seance",
+      "citation": "Cette taxe pèse d'abord sur les ménages modestes qui achètent en ligne faute de mieux.",
+      "texte_id": "PRJLANR5L17B1906",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025/seance-du-2025-11-19"
+    }
+  ],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002512",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Porte la taxe à 5 euros par colis.",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2512"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "530476110",
+      "nom": "Alibaba France",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=530476110",
+      "objet": "Taxe sur les petits colis, PLF 2026",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "812604106",
+      "nom": "Fevad",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=812604106",
+      "objet": "Franchise douanière et taxe sur les petits colis",
+      "actions": [
+        "rencontre",
+        "envoi de position"
+      ]
+    }
+  ],
+  "synthese": {
+    "position_probable": "Position déduite de 3 écarts avec son groupe sur 12 mois ; loyauté 0.72.",
+    "argument": "Aborder le député sur l'amendement n° 2512 qu'il a déposé et sur les organisations entendues en commission.",
+    "chiffres_utilises": [
+      "3",
+      "12",
+      "0.72",
+      "2512"
+    ],
+    "mode": "gabarit",
+    "modele": null,
+    "verifie": true,
+    "date": "2026-11-14"
+  },
+  "couverture": {
+    "rapports_total": 4,
+    "rapports_avec_liste": 1,
+    "comptes_rendus_lus": 9
+  }
+}

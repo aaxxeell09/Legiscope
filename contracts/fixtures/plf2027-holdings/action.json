@@ -1,0 +1,425 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "« pour » et « contre » qualifient la mesure (taxe sur les holdings), pas l'objectif du client. Un député n'est classé que sur ses propres actes.",
+    "producer": "pipeline/action",
+    "dossier_id": "plf2027-holdings"
+  },
+  "decideurs": [
+    {
+      "role": "gouvernement",
+      "depute_id": null,
+      "nom": "Gouvernement (ministre chargé du budget)",
+      "groupe_id": null,
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Avis défavorable au n° 3140 et au n° 2841 en séance ; auteur de l'article 3 (fortune improductive) dans sa rédaction initiale.",
+        "nature": "fait"
+      }
+    },
+    {
+      "role": "rapporteur_general",
+      "depute_id": "PA723810",
+      "nom": "Député Test E",
+      "groupe_id": "PO845407",
+      "position": "contre",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport n° 3302",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3302-tii.html"
+          }
+        ],
+        "raisonnement": "Avis défavorable au n° 3140 dans le rapport n° 3302 et en séance le 2 novembre 2026.",
+        "nature": "fait"
+      }
+    },
+    {
+      "role": "chef_de_file",
+      "depute_id": "PA731263",
+      "nom": "Député Test S",
+      "groupe_id": "PO845454",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3140",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140"
+          }
+        ],
+        "raisonnement": "Auteur du n° 3140 ; orateur du groupe sur l'article 3.",
+        "nature": "fait"
+      }
+    },
+    {
+      "role": "president_commission",
+      "depute_id": "PA724791",
+      "nom": "Député Test G",
+      "groupe_id": "PO845413",
+      "position": "pour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 2988",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/2988"
+          }
+        ],
+        "raisonnement": "Cosignataire du n° 2988 (taxe Zucman à 3 %).",
+        "nature": "fait"
+      }
+    }
+  ],
+  "groupes": {
+    "actionnables": [
+      {
+        "depute_id": "PA731263",
+        "groupe_id": "PO845454",
+        "score": 0.52,
+        "raison": "Auteur du n° 3140, ouvert à l'exonération des réinvestissements (n° 3602).",
+        "fiche": true,
+        "fondement": [
+          "depose",
+          "dit"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3140",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140"
+            },
+            {
+              "label": "Amendement n° 3602",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3602"
+            }
+          ],
+          "raisonnement": "Dépôt du n° 3140 ; soutien déclaré au n° 3602 en séance le 2 novembre 2026.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "depute_id": "PA721578",
+        "groupe_id": "PO845401",
+        "score": 0.47,
+        "raison": "Cosignataire du n° 3140 dans un groupe divisé ; a voté contre la taxe Zucman.",
+        "fiche": true,
+        "fondement": [
+          "depose",
+          "vote"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3140",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140"
+            },
+            {
+              "label": "Scrutin n° 9712",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9712"
+            }
+          ],
+          "raisonnement": "Cosignature du n° 3140 ; vote contre le n° 2841 le 31 octobre 2026.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "depute_id": "PA734149",
+        "groupe_id": "PO845485",
+        "score": 0.44,
+        "raison": "Cosignataire du n° 3140 ; groupe sans position.",
+        "fiche": true,
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3140",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140"
+            }
+          ],
+          "raisonnement": "Cosignature du n° 3140 ; LIOT sans position majoritaire sur les 2 scrutins liés.",
+          "nature": "deduction"
+        }
+      },
+      {
+        "depute_id": "PA727852",
+        "groupe_id": "PO845425",
+        "score": 0.5,
+        "raison": "Position personnelle non connue : aucun dépôt, vote nominatif ou intervention sur la mesure ; son groupe est contre, ce qui ne suffit pas à le classer.",
+        "fiche": false,
+        "fondement": [],
+        "position_connue": false,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Hémicycle API scrutins",
+              "url": "https://api.hemicycle.ai/v1/scrutins"
+            }
+          ],
+          "raisonnement": "Absent des 2 scrutins liés ; aucune cosignature ni intervention repérée.",
+          "nature": "inconnue"
+        }
+      }
+    ],
+    "allies": [
+      {
+        "depute_id": "PA724696",
+        "groupe_id": "PO845407",
+        "score": 0.82,
+        "raison": "Auteur du n° 3107 (exclusion des holdings animatrices) ; a voté contre le n° 3140.",
+        "fiche": true,
+        "fondement": [
+          "depose",
+          "vote"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3107",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3107"
+            }
+          ],
+          "raisonnement": "Dépôt du n° 3107, travaillé avec l'Afep ; position du groupe contre (confiance 0.78).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "depute_id": "PA732528",
+        "groupe_id": "PO845470",
+        "score": 0.78,
+        "raison": "Cosignataire du n° 3602 (exonération des réinvestissements).",
+        "fiche": false,
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 3602",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3602"
+            }
+          ],
+          "raisonnement": "Cosignature du n° 3602 ; position du groupe contre (confiance 0.74).",
+          "nature": "deduction"
+        }
+      }
+    ],
+    "perdus": [
+      {
+        "depute_id": "PA726184",
+        "groupe_id": "PO845419",
+        "score": 0.05,
+        "raison": "Auteur de la taxe Zucman (n° 2841).",
+        "fiche": false,
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2841",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/2841"
+            }
+          ],
+          "raisonnement": "Dépôt du n° 2841 ; position du groupe pour (confiance 0.88).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "depute_id": "PA724791",
+        "groupe_id": "PO845413",
+        "score": 0.04,
+        "raison": "Cosignataire du n° 2988 (taxe Zucman à 3 %).",
+        "fiche": false,
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2988",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/2988"
+            }
+          ],
+          "raisonnement": "Cosignature du n° 2988 ; position du groupe pour (confiance 0.9).",
+          "nature": "deduction"
+        }
+      },
+      {
+        "depute_id": "PA735141",
+        "groupe_id": "PO845514",
+        "score": 0.06,
+        "raison": "Cosignataire du n° 2841.",
+        "fiche": false,
+        "fondement": [
+          "depose"
+        ],
+        "position_connue": true,
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 2841",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/2841"
+            }
+          ],
+          "raisonnement": "Cosignature du n° 2841 ; position du groupe pour (confiance 0.82).",
+          "nature": "deduction"
+        }
+      }
+    ]
+  },
+  "arguments": {
+    "pour": [
+      {
+        "argument": "Taxer l'accumulation plutôt que l'entreprise",
+        "citation": "La taxe Zucman n'est pas un impôt sur l'entreprise, c'est un impôt sur l'accumulation.",
+        "orateur_id": "PA726184",
+        "groupe_id": "PO845419",
+        "date": "2026-10-31",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-10-31",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Séance du 31 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-10-31"
+            }
+          ],
+          "raisonnement": "Intervention en séance, orateur identifié.",
+          "nature": "fait"
+        }
+      },
+      {
+        "argument": "Les holdings patrimoniales servent à différer l'impôt",
+        "citation": "Une holding patrimoniale qui ne réinvestit pas n'est qu'un report d'impôt sans fin.",
+        "orateur_id": "PA731263",
+        "groupe_id": "PO845454",
+        "date": "2026-11-02",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Séance du 2 novembre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02"
+            }
+          ],
+          "raisonnement": "Intervention en séance, orateur identifié.",
+          "nature": "fait"
+        }
+      }
+    ],
+    "contre": [
+      {
+        "argument": "Taxer les holdings, c'est taxer l'outil de travail",
+        "citation": "Taxer les holdings, c'est taxer l'outil de travail de ceux qui investissent en France.",
+        "orateur_id": "PA724696",
+        "groupe_id": "PO845407",
+        "date": "2026-11-02",
+        "lieu": "seance",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Séance du 2 novembre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026/seance-du-2026-11-02"
+            }
+          ],
+          "raisonnement": "Intervention en séance, orateur identifié.",
+          "nature": "fait"
+        }
+      },
+      {
+        "argument": "Une taxe inefficace si les holdings animatrices sont exclues",
+        "citation": "Une taxe sur la fortune improductive ne rapportera rien si les holdings animatrices en sont exclues.",
+        "orateur_id": "PA732528",
+        "groupe_id": "PO845470",
+        "date": "2026-10-14",
+        "lieu": "commission",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20261014",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Commission des finances, 14 octobre 2026",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin20261014"
+            }
+          ],
+          "raisonnement": "Intervention en commission des finances, lue en HTML.",
+          "nature": "fait"
+        }
+      }
+    ]
+  },
+  "contre_arguments": [
+    {
+      "texte": "Sur les 4 000 holdings patrimoniales recensées, 9 sur 10 détiennent des participations dans des PME : la taxe de 0,5 % frappe l'investissement, pas l'accumulation.",
+      "repond_a": "Taxer l'accumulation plutôt que l'entreprise",
+      "chiffres_utilises": [
+        "4000",
+        "9",
+        "10",
+        "0.5"
+      ],
+      "mode": "llm",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3140",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210/AN/3140"
+          },
+          {
+            "label": "France Invest",
+            "url": "https://www.franceinvest.eu/"
+          }
+        ],
+        "raisonnement": "Croise le recensement de France Invest et le périmètre exact du n° 3140.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "texte": "Le report d'imposition n'est pas une exonération : l'impôt est dû à la sortie de la holding.",
+      "repond_a": "Les holdings patrimoniales servent à différer l'impôt",
+      "chiffres_utilises": [],
+      "mode": "gabarit",
+      "verifie": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Gabarit de secours ; à étayer avec le rapport du Conseil des prélèvements obligatoires.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}

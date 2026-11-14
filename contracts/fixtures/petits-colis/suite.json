@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Texte PRJLANR5L17B1906",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+      },
+      {
+        "label": "Prédictions Orcet",
+        "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+      },
+      {
+        "label": "Hémicycle API scrutins",
+        "url": "https://api.hemicycle.ai/v1/scrutins"
+      }
+    ],
+    "limits": "Échéances connues au 19 novembre 2025.",
+    "producer": "pipeline/suite",
+    "dossier_id": "petits-colis"
+  },
+  "echeances": [
+    {
+      "date": "2025-11-20",
+      "titre": "Examen de l'article 22 en séance publique",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Ordre du jour",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour"
+          }
+        ],
+        "raisonnement": "Inscrit à l'ordre du jour par la conférence des présidents du 12 novembre 2025.",
+        "nature": "fait"
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "titre": "Vote solennel sur la première partie du PLF 2026",
+      "lieu": "seance",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Ordre du jour",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour"
+          }
+        ],
+        "raisonnement": "Date annoncée par la conférence des présidents.",
+        "nature": "fait"
+      }
+    },
+    {
+      "date": "2025-12-01",
+      "titre": "Transmission au Sénat",
+      "lieu": "senat",
+      "url": "https://www.senat.fr/",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Sénat",
+            "url": "https://www.senat.fr/"
+          }
+        ],
+        "raisonnement": "Calendrier budgétaire : le Sénat dispose de 20 jours après l'Assemblée.",
+        "nature": "fait"
+      }
+    }
+  ],
+  "derniere_occasion": {
+    "date": "2025-11-20",
+    "titre": "Séance publique du 20 novembre 2025 : dernier examen de l'article 22 à l'Assemblée en première lecture",
+    "lieu": "seance",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour",
+    "preuve": {
+      "sources": [
+        {
+          "label": "Ordre du jour",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/ordre-du-jour"
+        }
+      ],
+      "raisonnement": "Après ce vote, la mesure ne peut plus être modifiée à l'Assemblée avant la nouvelle lecture.",
+      "nature": "fait"
+    }
+  },
+  "probables": [
+    {
+      "titre": "Adoption de l'article 22",
+      "proba": 0.88,
+      "detail": "Majorité large, RN seul contre.",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Prédictions Orcet",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          },
+          {
+            "label": "Hémicycle API scrutins",
+            "url": "https://api.hemicycle.ai/v1/scrutins"
+          }
+        ],
+        "raisonnement": "Positions des groupes et prédictions Orcet sur les amendements de l'article.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "titre": "Rejet de l'amendement de suppression n° 806",
+      "proba": 0.76,
+      "detail": "Orcet prédit 24 % de votes pour.",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Prédictions Orcet",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Moyenne des probabilités individuelles de voter pour : 0.24, confiance 0.78.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "titre": "Adoption du compromis n° 2231",
+      "proba": 0.71,
+      "detail": "Orcet prédit 71 % de votes pour.",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Prédictions Orcet",
+            "url": "https://api.hemicycle.ai/v1/orcet/predictions"
+          }
+        ],
+        "raisonnement": "Moyenne des probabilités individuelles de voter pour : 0.71, confiance 0.8.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "titre": "Modification du dispositif au Sénat",
+      "proba": null,
+      "detail": "Pas de prédiction : le Sénat n'est pas couvert.",
+      "preuve": {
+        "sources": [
+          {
+            "label": "Sénat",
+            "url": "https://www.senat.fr/"
+          }
+        ],
+        "raisonnement": "Hors périmètre des données ; mentionné pour mémoire.",
+        "nature": "deduction"
+      }
+    }
+  ]
+}

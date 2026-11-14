@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API amendements",
+        "url": "https://api.hemicycle.ai/v1/amendements"
+      }
+    ],
+    "limits": "Mention « travaillé avec » extraite de l'exposé des motifs.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA728307",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B1906P1D1N002470",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "auteur",
+      "resume": "Avance l'entrée en vigueur de la taxe au 1er janvier 2026.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906/AN/2470"
+    }
+  ]
+}

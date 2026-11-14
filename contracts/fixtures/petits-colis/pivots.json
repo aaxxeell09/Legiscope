@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API loyauté",
+        "url": "https://api.hemicycle.ai/v1/agregats/loyaute-deputes"
+      }
+    ],
+    "limits": "Base sujet : 3 scrutins nominatifs liés.",
+    "producer": "pipeline/pivots",
+    "dossier_id": "petits-colis"
+  },
+  "deputes": [
+    {
+      "id": "PA721578",
+      "groupe_id": "PO845401",
+      "rang": 1,
+      "score_imprevisibilite": 0.34,
+      "loyaute_12m": 0.66,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V4401",
+          "date": "2025-11-19",
+          "titre": "Amendement n° 2470 au PLF 2026, date d'entrée en vigueur de la taxe",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845401"
+        },
+        {
+          "scrutin_id": "VTANR5L17V4388",
+          "date": "2025-11-18",
+          "titre": "Amendement n° 2384 au PLF 2026, seuil de la franchise douanière",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4388",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845401"
+        }
+      ]
+    },
+    {
+      "id": "PA723081",
+      "groupe_id": "PO845407",
+      "rang": 2,
+      "score_imprevisibilite": 0.31,
+      "loyaute_12m": 0.69,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V4401",
+          "date": "2025-11-19",
+          "titre": "Amendement n° 2470 au PLF 2026, date d'entrée en vigueur de la taxe",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845407"
+        }
+      ]
+    },
+    {
+      "id": "PA725443",
+      "groupe_id": "PO845413",
+      "rang": 3,
+      "score_imprevisibilite": 0.28,
+      "loyaute_12m": 0.72,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V4401",
+          "date": "2025-11-19",
+          "titre": "Amendement n° 2470 au PLF 2026, date d'entrée en vigueur de la taxe",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845413"
+        },
+        {
+          "scrutin_id": "VTANR5L17V4388",
+          "date": "2025-11-18",
+          "titre": "Amendement n° 2384 au PLF 2026, seuil de la franchise douanière",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4388",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845413"
+        },
+        {
+          "scrutin_id": "VTANR5L17V4375",
+          "date": "2025-11-17",
+          "titre": "Article 21 du PLF 2026, droits de douane sur les colis",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4375",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845413"
+        }
+      ]
+    },
+    {
+      "id": "PA726184",
+      "groupe_id": "PO845419",
+      "rang": 4,
+      "score_imprevisibilite": 0.25,
+      "loyaute_12m": 0.75,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V4401",
+          "date": "2025-11-19",
+          "titre": "Amendement n° 2470 au PLF 2026, date d'entrée en vigueur de la taxe",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401",
+          "vote": "pour",
+          "position_groupe": null,
+          "groupe_id_au_vote": "PO845419"
+        },
+        {
+          "scrutin_id": "VTANR5L17V4388",
+          "date": "2025-11-18",
+          "titre": "Amendement n° 2384 au PLF 2026, seuil de la franchise douanière",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4388",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845419"
+        }
+      ]
+    },
+    {
+      "id": "PA728307",
+      "groupe_id": "PO845425",
+      "rang": 5,
+      "score_imprevisibilite": 0.22,
+      "loyaute_12m": 0.78,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V4401",
+          "date": "2025-11-19",
+          "titre": "Amendement n° 2470 au PLF 2026, date d'entrée en vigueur de la taxe",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845425"
+        }
+      ]
+    },
+    {
+      "id": "PA732086",
+      "groupe_id": "PO845454",
+      "rang": 6,
+      "score_imprevisibilite": 0.19,
+      "loyaute_12m": 0.81,
+      "base": "sujet",
+      "ecarts": [
+        {
+          "scrutin_id": "VTANR5L17V4401",
+          "date": "2025-11-19",
+          "titre": "Amendement n° 2470 au PLF 2026, date d'entrée en vigueur de la taxe",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4401",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454"
+        },
+        {
+          "scrutin_id": "VTANR5L17V4388",
+          "date": "2025-11-18",
+          "titre": "Amendement n° 2384 au PLF 2026, seuil de la franchise douanière",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4388",
+          "vote": "abstention",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454"
+        },
+        {
+          "scrutin_id": "VTANR5L17V4375",
+          "date": "2025-11-17",
+          "titre": "Article 21 du PLF 2026, droits de douane sur les colis",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4375",
+          "vote": "pour",
+          "position_groupe": "contre",
+          "groupe_id_au_vote": "PO845454"
+        }
+      ]
+    }
+  ]
+}

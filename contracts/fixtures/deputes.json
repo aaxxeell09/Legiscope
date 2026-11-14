@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T12:50:00+01:00",
+    "sources": [
+      {
+        "label": "Hémicycle API",
+        "url": "https://api.hemicycle.ai/v1/acteurs"
+      }
+    ],
+    "limits": "Instantané du jour. Noms fictifs dans les fixtures.",
+    "producer": "pipeline/collecte",
+    "dossier_id": null
+  },
+  "deputes": [
+    {
+      "id": "PA720892",
+      "nom": "Test A",
+      "prenom": "Député",
+      "groupe_id": "PO845401",
+      "departement": "75",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA721578",
+      "nom": "Test B",
+      "prenom": "Député",
+      "groupe_id": "PO845401",
+      "departement": "69",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA722325",
+      "nom": "Test C",
+      "prenom": "Député",
+      "groupe_id": "PO845401",
+      "departement": "13",
+      "circonscription": 3,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA723081",
+      "nom": "Test D",
+      "prenom": "Député",
+      "groupe_id": "PO845407",
+      "departement": "59",
+      "circonscription": 4,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA723810",
+      "nom": "Test E",
+      "prenom": "Député",
+      "groupe_id": "PO845407",
+      "departement": "33",
+      "circonscription": 5,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA724696",
+      "nom": "Test F",
+      "prenom": "Député",
+      "groupe_id": "PO845407",
+      "departement": "44",
+      "circonscription": 6,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA724791",
+      "nom": "Test G",
+      "prenom": "Député",
+      "groupe_id": "PO845413",
+      "departement": "31",
+      "circonscription": 7,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA724899",
+      "nom": "Test H",
+      "prenom": "Député",
+      "groupe_id": "PO845413",
+      "departement": "67",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA725443",
+      "nom": "Test I",
+      "prenom": "Député",
+      "groupe_id": "PO845413",
+      "departement": "35",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA726184",
+      "nom": "Test J",
+      "prenom": "Député",
+      "groupe_id": "PO845419",
+      "departement": "06",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA727006",
+      "nom": "Test K",
+      "prenom": "Député",
+      "groupe_id": "PO845419",
+      "departement": "38",
+      "circonscription": 4,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA727530",
+      "nom": "Test L",
+      "prenom": "Député",
+      "groupe_id": "PO845419",
+      "departement": "76",
+      "circonscription": 5,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA727852",
+      "nom": "Test M",
+      "prenom": "Député",
+      "groupe_id": "PO845425",
+      "departement": "29",
+      "circonscription": 6,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA728307",
+      "nom": "Test N",
+      "prenom": "Député",
+      "groupe_id": "PO845425",
+      "departement": "34",
+      "circonscription": 7,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA728760",
+      "nom": "Test O",
+      "prenom": "Député",
+      "groupe_id": "PO845425",
+      "departement": "974",
+      "circonscription": 1,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA729242",
+      "nom": "Test P",
+      "prenom": "Député",
+      "groupe_id": "PO845439",
+      "departement": "2A",
+      "circonscription": 2,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA729989",
+      "nom": "Test Q",
+      "prenom": "Député",
+      "groupe_id": "PO845439",
+      "departement": "75",
+      "circonscription": 3,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA730554",
+      "nom": "Test R",
+      "prenom": "Député",
+      "groupe_id": "PO845439",
+      "departement": "69",
+      "circonscription": 4,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA731263",
+      "nom": "Test S",
+      "prenom": "Député",
+      "groupe_id": "PO845454",
+      "departement": "13",
+      "circonscription": 5,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA731631",
+      "nom": "Test T",
+      "prenom": "Député",
+      "groupe_id": "PO845454",
+      "departement": "59",
+      "circonscription": 6,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA732086",
+      "nom": "Test U",
+      "prenom": "Député",
+      "groupe_id": "PO845454",
+      "departement": "33",
+      "circonscription": 7,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA732474",
+      "nom": "Test V",
+      "prenom": "Député",
+      "groupe_id": "PO845470",
+      "departement": "44",
+      "circonscription": 1,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA732528",
+      "nom": "Test W",
+      "prenom": "Député",
+      "groupe_id": "PO845470",
+      "departement": "31",
+      "circonscription": 2,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA733427",
+      "nom": "Test X",
+      "prenom": "Député",
+      "groupe_id": "PO845470",
+      "departement": "67",
+      "circonscription": 3,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA734149",
+      "nom": "Test Y",
+      "prenom": "Député",
+      "groupe_id": "PO845485",
+      "departement": "35",
+      "circonscription": 4,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA734306",
+      "nom": "Test Z",
+      "prenom": "Député",
+      "groupe_id": "PO845485",
+      "departement": "06",
+      "circonscription": 5,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA734582",
+      "nom": "Test AA",
+      "prenom": "Député",
+      "groupe_id": "PO845485",
+      "departement": "38",
+      "circonscription": 6,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA735141",
+      "nom": "Test AB",
+      "prenom": "Député",
+      "groupe_id": "PO845514",
+      "departement": "76",
+      "circonscription": 7,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA735150",
+      "nom": "Test AC",
+      "prenom": "Député",
+      "groupe_id": "PO845514",
+      "departement": "29",
+      "circonscription": 1,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA735685",
+      "nom": "Test AD",
+      "prenom": "Député",
+      "groupe_id": "PO845514",
+      "departement": "34",
+      "circonscription": 2,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA736342",
+      "nom": "Test AE",
+      "prenom": "Député",
+      "groupe_id": "PO872880",
+      "departement": "974",
+      "circonscription": 3,
+      "commissions": [
+        "PO59048"
+      ]
+    },
+    {
+      "id": "PA737013",
+      "nom": "Test AF",
+      "prenom": "Député",
+      "groupe_id": "PO872880",
+      "departement": "2A",
+      "circonscription": 4,
+      "commissions": [
+        "PO419604"
+      ]
+    },
+    {
+      "id": "PA737811",
+      "nom": "Test AG",
+      "prenom": "Député",
+      "groupe_id": "PO872880",
+      "departement": "75",
+      "circonscription": 5,
+      "commissions": [
+        "PO420120"
+      ]
+    },
+    {
+      "id": "PA737917",
+      "nom": "Test AH",
+      "prenom": "Député",
+      "groupe_id": null,
+      "departement": "69",
+      "circonscription": 6,
+      "commissions": [
+        "PO59051"
+      ]
+    },
+    {
+      "id": "PA738665",
+      "nom": "Test AI",
+      "prenom": "Député",
+      "groupe_id": null,
+      "departement": "13",
+      "circonscription": 7,
+      "commissions": [
+        "PO420120"
+      ]
+    }
+  ]
+}
