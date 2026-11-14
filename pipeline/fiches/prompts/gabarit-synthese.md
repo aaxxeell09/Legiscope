@@ -91,7 +91,9 @@ Présenter à ce député la position du client ({{client}}) sur la mesure : auc
 
 ## Liste autorisée et champs de sortie
 
-- `chiffres_utilises` : pour chaque variable injectée dans `position_probable` ou `argument`. Champ numérique : `String(valeur)` (`n_ecarts`, `loyaute_12m`). Date : la date ISO telle quelle. Texte (`resume`, `citation`, `numero`, `client`, `organisations`) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `qa/verif.ts`, écrit `String(valeur)`. Liste dédoublonnée.
+- Cas normal, avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer `position_probable`, un saut de ligne, puis `argument` en troisième argument (`gabarit`), avec la liste autorisée du prompt (`synthese.md`, section Branchement : les nombres du message utilisateur rempli). Cette liste contient déjà tous les nombres du gabarit. `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`.
+- Sans `redigerVerifie` (gabarit seul) : construire la liste variable par variable, comme suit.
+- `chiffres_utilises` : pour chaque variable injectée dans `position_probable` ou `argument`. Champ numérique : `String(valeur)` (`n_ecarts`, `loyaute_12m`). Date : la date ISO telle quelle. Texte (`resume`, `citation`, `numero`, `client`, `organisations`) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `pipeline/lib/verif.ts`, écrit `String(valeur)`. Liste dédoublonnée.
 - `verifie` : `verifierChiffres(position_probable + " " + argument, chiffres_utilises).ok`. Le texte fixe des gabarits ne contient aucun nombre : un rejet signale une erreur de mise en forme, à écrire dans `meta.limits`.
 - `mode` : `"gabarit"`. `modele` : `null`. `date` : `date_reference` du dossier si elle est posée, sinon la date du jour.
 

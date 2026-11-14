@@ -90,7 +90,9 @@ Les cas 3 et 4 ne valent que pour l'objectif principal : les positions des group
 
 ## Liste autorisée et champs de sortie
 
-- `chiffres_utilises` : pour chaque variable injectée. Entier (`n_pour`, `n_contre`, `n_autres`, `n_total`) : `String(valeur)`. Texte (`etape`, `favorable_1`, `bloquant_1`, `inconnu_1`) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `qa/verif.ts`, écrit `String(valeur)`. Liste dédoublonnée.
+- Cas normal, avec `redigerVerifie` de `pipeline/lib/llm.ts` : passer la phrase remplie en troisième argument (`gabarit`), avec la liste autorisée du prompt (`lecture.md`, section Branchement : les nombres du message utilisateur rempli). Cette liste contient déjà tous les nombres du gabarit. `redigerVerifie` rend `chiffres_utilises`, `verifie`, `mode: "gabarit"` et `modele: null`.
+- Sans `redigerVerifie` (gabarit seul) : construire la liste variable par variable, comme suit.
+- `chiffres_utilises` : pour chaque variable injectée. Entier (`n_pour`, `n_contre`, `n_autres`, `n_total`) : `String(valeur)`. Texte (`etape`, `favorable_1`, `bloquant_1`, `inconnu_1`) : chaque nombre renvoyé par `extraireJetons(normaliser(valeur))` et `extraireMotsNombres(normaliser(valeur))` de `pipeline/lib/verif.ts`, écrit `String(valeur)`. Liste dédoublonnée.
 - `verifie` : `verifierChiffres(texte, chiffres_utilises).ok`. Le texte fixe des gabarits ne contient aucun nombre.
 - `mode` : `"gabarit"`. `modele` : `null`.
 
