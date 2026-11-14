@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.957Z",
+    "generated_at": "2026-11-14T13:18:49.972Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1211,15 +1211,20 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 18, rejeté (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier… »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 18 (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier… »).",
+    "position_probable": "Dominique Voynet a cosigné plusieurs amendements, dont les numéros 18, 43, 38, 47, 174, 208 et 56, tous rejetés, ce qui indique probablement une position favorable à la mesure, en cohérence avec celle de son groupe.",
+    "argument": "Présenter à ce député les amendements 18, 43, 174, 38, 47, 208, 56 et 12 qu'il a cosignés et qui ont été rejetés, car ils montrent son opposition à la fiscalité sur le patrimoine.",
     "chiffres_utilises": [
       "18",
-      "4",
-      "1"
+      "43",
+      "174",
+      "208",
+      "38",
+      "47",
+      "56",
+      "12"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

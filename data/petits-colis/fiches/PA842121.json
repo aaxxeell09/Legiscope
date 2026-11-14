@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:07:20.880Z",
+    "generated_at": "2026-11-14T13:22:38.814Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -542,8 +542,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est pour la mesure.",
-    "argument": "Présenter à ce député les auditions qu'il a menées le 12 novembre 2025 avec la direction du budget et la direction générale du Trésor, afin d'aborder l'impact de la taxe de 2 euros sur les colis de moins de 150 euros.",
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, et la position pour de son groupe ne reflète pas nécessairement la sienne.",
+    "argument": "Présenter à ce député les auditions des rapporteurs de sa commission du 12 novembre 2025 et du 18 novembre 2025, car il n'a pas d'acte personnel sur la mesure et un premier contact reste à établir.",
     "chiffres_utilises": [
       "2",
       "150",

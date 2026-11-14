@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.919Z",
+    "generated_at": "2026-11-14T13:16:48.166Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -549,17 +549,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 3182, tombé (« Article 3 : Rédiger ainsi l’alinéa 2 :« 1° La première phrase est complétée par les mots : « , dont 2 200 € au maximum pour les contribuables célibataires, veufs, séparés… »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 3182 (« Article 3 : Rédiger ainsi l’alinéa 2 :« 1° La première phrase est complétée par les mots : « , dont 2 200 € au maximum pour les contribuables célibataires, veufs, séparés… »).",
+    "position_probable": "Paul-André Colombani est probablement contre la mesure, comme l'indique sa cosignature de l'amendement n° 3221, qui a été rejeté.",
+    "argument": "Présenter à ce député le rejet de l'amendement n° 3221 qu'il a cosigné, afin de souligner que sa tentative de modifier le texte a déjà échoué et que la position de l'Afep contre la mesure reste la seule cohérente avec l'issue de ses propres propositions.",
     "chiffres_utilises": [
-      "3182",
-      "3",
-      "2",
-      "1",
-      "2200"
+      "3221"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

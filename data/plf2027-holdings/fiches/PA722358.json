@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.952Z",
+    "generated_at": "2026-11-14T13:18:37.917Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -330,11 +330,19 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Position personnelle non connue : aucun amendement, aucune intervention et aucun écart de vote relevés sur la mesure.",
-    "argument": "Présenter à ce député la position du client (Afep) : il a déjà entendu KNDS France sur ce texte.",
-    "chiffres_utilises": [],
-    "mode": "gabarit",
-    "modele": null,
+    "position_probable": "La position personnelle de Thomas Gassilloud n'est pas connue faute d'amendement ou de déclaration, mais son groupe EPR est contre la mesure.",
+    "argument": "Présenter à ce député l'audition de KNDS France le 22 octobre 2026 pour appuyer la position contre la taxe sur la fortune improductive (article 3) et la taxe de 0,5 % sur les holdings patrimoniales (n° 3140).",
+    "chiffres_utilises": [
+      "3",
+      "0.5",
+      "3140",
+      "0.71",
+      "2026",
+      "10",
+      "22"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

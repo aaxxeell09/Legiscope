@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:06:30.007Z",
+    "generated_at": "2026-11-14T13:20:33.949Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -23,7 +23,7 @@
         "url": "https://hemicycle.ai"
       }
     ],
-    "limits": "data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/plf2027-holdings/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. 3 amendement(s) de texte.json écarté(s) : ni mot-clé du sujet, ni article de la mesure dans le résumé, ni présence dans les fichiers amendements/<PA>.json. Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip). 37 amendement(s) sans date de dépôt publiée : prédiction Orcet ou dernière étape du texte, dit dans chaque preuve.",
+    "limits": "data/raw/scrutins absent : aucun scrutin nominatif lu. data/raw/plf2027-holdings/amendements.json (P1) absent sur cette machine : dates de dépôt et de sort non publiées. 1 amendement(s) de texte.json écarté(s) : ni mot-clé du sujet, ni article de la mesure dans le résumé, ni présence dans les fichiers amendements/<PA>.json. Flux Hémicycle (cache) : 187 lignes sur 30 jours, dépôts comptés par jour. 23 déclaration(s) HATVP sans date dans hatvp.json, non listée(s) comme événement. Agenda open data absent (data/raw/opendata/Agenda.json.zip). 37 amendement(s) sans date de dépôt publiée : prédiction Orcet ou dernière étape du texte, dit dans chaque preuve.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -562,16 +562,16 @@
       "date": "2026-11-09",
       "type": "rapport",
       "titre": "3 rapports du texte publiés avec la liste des personnes entendues (24 organisations)",
-      "detail": "Organisations entendues : Ministère de l’action et des comptes publics, Direction de l’immobilier de l’État (DIE), Pôles régionaux de l’immobilier de l’État (Prie), Fondation des Femmes, Collectif féministe contre le viol (CFCV), Fédération nationale des centres d’information sur les droits des femmes et des familles (FNCIDFF), Fédération nationale Solidarité Femmes (FNSF), Caisse nationale des allocations familiales (Cnaf), Départements de France, Caisse centrale de la mutualité sociale agricole (CCMSA), Réseau Restart, Direction générale de la cohésion sociale (DGCS)….",
+      "detail": "Organisations entendues : Fondation des Femmes, Collectif féministe contre le viol (CFCV), Fédération nationale des centres d’information sur les droits des femmes et des familles (FNCIDFF), Fédération nationale Solidarité Femmes (FNSF), Caisse nationale des allocations familiales (Cnaf), Départements de France, Caisse centrale de la mutualité sociale agricole (CCMSA), Réseau Restart, Direction générale de la cohésion sociale (DGCS), Direction générale du travail, Office central de lutte contre le travail illégal (OCLTI), Observatoire de l’immigration et de la démographie (OID)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a26.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tII.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 9 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a26.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tII.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -608,16 +608,16 @@
       "date": "2026-11-06",
       "type": "rapport",
       "titre": "4 rapports du texte publiés avec la liste des personnes entendues (108 organisations)",
-      "detail": "Organisations entendues : Direction interministérielle de la transformation publique (DITP), Direction de l’immobilier de l’État (DIE) du ministère de l’Action et des comptes publics, Direction générale des outre-mer (DGOM) du ministère des Outre-mer, Préfecture de Martinique, Rectorat de Martinique, Groupe des instituts du service public (G-ISP), Institut régional d’administration de Lille, Université de la Réunion, Université des Antilles, Université de Guyane, Université de Mayotte, Association des anciens élèves des IRA (AAEIRA)….",
+      "detail": "Organisations entendues : Centre national de la musique (CNM), Association des centres chorégraphiques nationaux (ACCN), Association de centres de développement chorégraphique nationaux (A‑CDCN), Association des centres dramatiques nationaux (ACDN), Association des scènes nationales (ASN), Syndicat national des entreprises artistiques et culturelles (Syndéac), Scènes Ensemble, Forces Musicales, Sociétés des auteurs et compositeurs dramatiques (SACD), Sociétés des auteurs, compositeurs et éditeurs de musique (Sacem), Administration des droits des artistes et musiciens interprètes (Adami), Société civile des auteurs multimédias (Scam)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tII.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 6 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3392-tVII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tII.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -825,6 +825,31 @@
       }
     },
     {
+      "id": "ev-3221",
+      "date": "2026-11-04",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 3221 (LIOT) rejeté : Le présent amendement vise à clarifier la définition des titres de placement afin de…",
+      "detail": "Le présent amendement vise à clarifier la définition des titres de placement afin de lever toute ambiguïté sur leur qualification comptable et fiscale.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3221",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003221"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date du sort non publiée, date de la dernière étape connue. Camp : résumé neutre, groupe de l'auteur (LIOT) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
+      }
+    },
+    {
       "id": "ev-43",
       "date": "2026-11-04",
       "type": "amendement_sort",
@@ -958,16 +983,16 @@
       "date": "2026-11-04",
       "type": "rapport",
       "titre": "2 rapports du texte publiés avec la liste des personnes entendues (18 organisations)",
-      "detail": "Organisations entendues : Institut national de la statistique et des études économiques (INSEE), Direction de la recherche, des études, de l’évaluation et des statistiques (DREES), Groupe La Poste, Institut des politiques publiques (IPP), Conseil supérieur de la marine marchande, Brittany Ferries, Corsica Linea, Direction générale des affaires maritimes, de la pêche et de l’aquaculture, Direction de la sécurité sociale, Établissement national des invalides de la Marine (Enim), Conseil supérieur des gens de mer (CSGM), Comité national des pêches maritimes et des élevages marins (CNPMEM)….",
+      "detail": "Organisations entendues : Conseil supérieur de la marine marchande, Brittany Ferries, Corsica Linea, Direction générale des affaires maritimes, de la pêche et de l’aquaculture, Direction de la sécurité sociale, Établissement national des invalides de la Marine (Enim), Conseil supérieur des gens de mer (CSGM), Comité national des pêches maritimes et des élevages marins (CNPMEM), Confédération française de l’encadrement, Fédération nationale des syndicats maritimes (CGT), Union fédérale maritime (CFDT), Fédération des officiers de la marine marchande (Fomm‑Ugict‑CGT)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a36.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 4 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B3291-tIII-a36.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3422-tIV.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1628,6 +1653,31 @@
         ],
         "raisonnement": "Compte des dépôts par jour et par groupe dans le flux Hémicycle consulté le 2026-11-14 ; sans effet sur le verdict faute de lien avec la mesure.",
         "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-3821",
+      "date": "2026-10-16",
+      "type": "amendement_sort",
+      "titre": "Amendement n° 3821 (DEM) rejeté : La rénovation énergétique du parc immobilier constitue une nécessité environnementale,…",
+      "detail": "La rénovation énergétique du parc immobilier constitue une nécessité environnementale, économique et sociale.",
+      "importance": 1,
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3821",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003821"
+          },
+          {
+            "label": "Texte PRJLANR5L17B3210",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+          }
+        ],
+        "raisonnement": "Sort « rejeté » lu dans le texte PRJLANR5L17B3210 ; date de la modification de la mesure dans etat.json. Camp : résumé neutre, groupe de l'auteur (DEM) classé contre la mesure ; sens de l'amendement non lu, effet neutre. Un amendement retiré, tombé, non soutenu, irrecevable ou non examiné n'a pas d'effet sur le verdict.",
+        "nature": "deduction"
       }
     },
     {

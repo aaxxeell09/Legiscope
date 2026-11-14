@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.968Z",
+    "generated_at": "2026-11-14T13:19:27.602Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -470,16 +470,25 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 367, rejeté (« Article 5 : Compléter cet article par les neufs alinéas suivants :« I. – L’article 167 bis du code général des impôts est ainsi modifié :« 1° Au IV, après la première… »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 367 (« Article 5 : Compléter cet article par les neufs alinéas suivants :« I. – L’article 167 bis du code général des impôts est ainsi modifié :« 1° Au IV, après la première… »).",
+    "position_probable": "Sacha Houlié a cosigné plusieurs amendements rejetés et un amendement adopté, ce qui indique probablement une position favorable à la mesure, en cohérence avec celle de son groupe.",
+    "argument": "Présenter à ce député que la mesure n° 3140 vise une taxe de 0,5 % sur les holdings patrimoniaux, ce qui rejoint les amendements qu'il a cosignés sur l'article 167 bis du code général des impôts.",
     "chiffres_utilises": [
-      "367",
+      "3",
+      "0.5",
+      "3140",
+      "0.76",
       "5",
       "167",
-      "1"
+      "1",
+      "15",
+      "220",
+      "60",
+      "2026",
+      "11",
+      "6"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:07:20.875Z",
+    "generated_at": "2026-11-14T13:21:06.118Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -552,8 +552,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Paul Molac a cosigné l'amendement 2538, actuellement en attente, qui propose de porter la taxe à 10 euros, ce qui indique qu'il est probablement contre la mesure telle qu'elle est prévue.",
-    "argument": "Présenter à ce député que son cosignature de l'amendement 2538, actuellement en attente, vise à porter la taxe à 10 euros, ce qui renforce l'argument d'Alibaba France contre la mesure.",
+    "position_probable": "Paul Molac a cosigné l'amendement 2538, actuellement en attente, qui propose de porter la taxe à 10 euros, ce qui indique qu'il est probablement contre la mesure actuelle.",
+    "argument": "Présenter à ce député l'amendement 2538 qu'il a cosigné et qui est en attente, afin de montrer que sa volonté d'augmenter la taxe à 10 euros s'oppose directement à la position d'Alibaba France contre la mesure.",
     "chiffres_utilises": [
       "2538",
       "10"

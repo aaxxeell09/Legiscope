@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:07:20.845Z",
+    "generated_at": "2026-11-14T13:20:34.019Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1366,13 +1366,17 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Antoine Vermorel est probablement contre la mesure, comme en témoigne l'amendement 719 qu'il a déposé et qui a été adopté.",
-    "argument": "Présenter à ce député le taux de non-conformité proche de 50 % qu'il a lui-même cité en commission le 22 octobre 2025, afin de montrer que la fraude rend la taxe de 2 euros inefficace pour Alibaba France.",
+    "position_probable": "Antoine Vermorel est probablement favorable à la taxe, comme en témoignent ses amendements n° 720 et n° 721 qui visaient à porter le montant à 5 euros et 4 euros, ainsi que sa déclaration en commission le 22 octobre 2025.",
+    "argument": "Présenter à ce député le taux de non-conformité proche de 50 % qu'il a cité en commission le 22 octobre 2025 pour justifier la nécessité de contrôler les petits colis, afin de soutenir la réduction de la taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe.",
     "chiffres_utilises": [
-      "719",
-      "2",
       "22",
+      "720",
+      "5",
+      "721",
+      "4",
       "2025",
+      "2",
+      "150",
       "50"
     ],
     "mode": "llm",

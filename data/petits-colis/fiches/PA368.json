@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:07:20.874Z",
+    "generated_at": "2026-11-14T13:20:51.821Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -675,11 +675,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Michel Barnier a cosigné l'amendement 1774, tombé, qui proposait de porter la taxe à 25 euros, ce qui indique qu'il est probablement contre la mesure actuelle.",
-    "argument": "Présenter à ce député que l'amendement 1774, qu'il a cosigné pour porter la taxe à 25 euros, est tombé, afin de montrer que son initiative a déjà été écartée et que la mesure actuelle reste une charge lourde pour son client.",
+    "position_probable": "Michel Barnier a cosigné l'amendement 1774 qui visait à porter la taxe à 25 euros, un texte tombé, ce qui indique probablement une position favorable à la mesure.",
+    "argument": "Présenter à ce député le rejet de son amendement 1775, car il a cosigné ce texte visant à taxer les services de commerce électronique.",
     "chiffres_utilises": [
       "1774",
-      "25"
+      "25",
+      "1775"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

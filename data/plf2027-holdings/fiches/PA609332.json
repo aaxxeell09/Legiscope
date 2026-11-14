@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.963Z",
+    "generated_at": "2026-11-14T13:19:06.638Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -400,14 +400,14 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 364, rejeté (« Après l'article 4 : I. – Le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts est ainsi rétabli :« CHAPITRE IER BIS« Impôt plancher sur la… »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 364 (« Après l'article 4 : I. – Le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts est ainsi rétabli :« CHAPITRE IER BIS« Impôt plancher sur la… »).",
+    "position_probable": "Olivier Faure a cosigné l'amendement n° 364, qui a été rejeté, et l'amendement n° 471, également rejeté, ce qui indique qu'il est probablement contre la mesure.",
+    "argument": "Présenter à ce député le rejet de son amendement n° 364, car il a cosigné des textes visant à rétablir des dispositions fiscales qui s'opposent à la taxe sur la fortune improductive défendue par son groupe.",
     "chiffres_utilises": [
       "364",
-      "4"
+      "471"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

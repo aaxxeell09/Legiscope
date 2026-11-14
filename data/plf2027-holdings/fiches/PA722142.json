@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.910Z",
+    "generated_at": "2026-11-14T13:16:35.822Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1288,13 +1288,18 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "François Ruffin est probablement favorable à la mesure, comme l'indique sa déclaration en séance le 21 octobre 2025 où il s'oppose au retour d'un impôt sur la fortune.",
-    "argument": "Présenter à ce député que son amendement n° 18, rejeté, visait à rétablir un chapitre du code général des impôts, afin de souligner que la mesure n° 3140 s'inscrit dans une logique fiscale distincte de ses propositions.",
+    "position_probable": "François Ruffin est probablement favorable à la mesure, comme en témoignent ses cosignatures sur les amendements 18, 43, 174, 208, 38, 47 et 56, tous rejetés, ainsi que sa déclaration en séance le 21 octobre 2025.",
+    "argument": "Présenter à ce député la position de son groupe, favorable à la taxe sur la fortune improductive, en rappelant qu'il a cosigné l'amendement n° 18, rejeté, pour rétablir l'impôt de solidarité sur la fortune.",
     "chiffres_utilises": [
+      "18",
+      "43",
+      "174",
+      "208",
+      "38",
+      "47",
+      "56",
       "2025",
-      "21",
-      "3140",
-      "18"
+      "21"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

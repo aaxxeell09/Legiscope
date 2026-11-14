@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.932Z",
+    "generated_at": "2026-11-14T13:17:35.621Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -439,15 +439,20 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 18, rejeté (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier… »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 18 (« Après l'article 4 : I. – Le code général des impôts est ainsi modifié : 1° Le chapitre Ier bis du titre IV de la première partie du livre Ier est ainsi rétabli :« Chapitre Ier… »).",
+    "position_probable": "Damien Girard a cosigné plusieurs amendements rejetés, notamment les numéros 18, 43, 174, 208, 38, 47 et 56, ce qui indique qu'il est probablement contre la mesure.",
+    "argument": "Présenter à ce député que son cosignature de l'amendement n° 18, rejeté, montre son intérêt pour la fiscalité du patrimoine, afin de lui exposer les risques de la taxe de 0,5 % sur les holdings.",
     "chiffres_utilises": [
       "18",
-      "4",
-      "1"
+      "43",
+      "174",
+      "208",
+      "38",
+      "47",
+      "56",
+      "0.5"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

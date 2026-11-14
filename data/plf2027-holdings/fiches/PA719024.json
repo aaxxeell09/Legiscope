@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.916Z",
+    "generated_at": "2026-11-14T13:16:35.827Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -403,15 +403,16 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A déposé l'amendement n° 1282, tombé (« Article 3 : Compléter cet article par l’alinéa suivant :« 4° Après la première phrase, est insérée une phrase ainsi rédigée : « Au titre des pensions de retraite… »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1282 (« Article 3 : Compléter cet article par l’alinéa suivant :« 4° Après la première phrase, est insérée une phrase ainsi rédigée : « Au titre des pensions de retraite… »).",
+    "position_probable": "Christophe Blanchet a déposé plusieurs amendements visant à exonérer des biens immobiliers ou à modifier l'article 3, dont certains ont été rejetés ou sont tombés, ce qui indique qu'il est probablement contre la mesure.",
+    "argument": "Présenter à ce député que son amendement n° 3821, qui visait à instituer une contribution, a été rejeté, afin de lui montrer que la mesure actuelle reste en discussion et que la position de l'Afep contre la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) peut encore être entendue.",
     "chiffres_utilises": [
-      "1282",
       "3",
-      "4"
+      "0.5",
+      "3140",
+      "3821"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

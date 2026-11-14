@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:07:20.853Z",
+    "generated_at": "2026-11-14T13:20:34.021Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -1059,11 +1059,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Nicole Sanquer a cosigné l'amendement 452, en attente, qui exclut certaines importations de la taxe, ce qui indique probablement une position contre la mesure.",
-    "argument": "Présenter à ce député l'amendement 452, en attente, qu'elle a cosigné pour exclure certaines importations de la taxe de 2 euros, afin de montrer que sa position sur la mesure est déjà nuancée.",
+    "position_probable": "Elle a cosigné l'amendement 452, en attente, qui exclut certaines importations de la taxe, ainsi que l'amendement 2538, en attente, qui porte le montant à 10 euros, ce qui indique qu'elle est probablement contre la mesure actuelle.",
+    "argument": "Présenter à ce député l'amendement 452, en attente, qu'elle a cosigné pour exclure certaines importations de la taxe, afin de soutenir la position d'Alibaba France contre la mesure.",
     "chiffres_utilises": [
       "452",
-      "2"
+      "10",
+      "2538"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

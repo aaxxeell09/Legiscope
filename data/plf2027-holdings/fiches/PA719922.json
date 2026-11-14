@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.944Z",
+    "generated_at": "2026-11-14T13:18:19.841Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -1135,18 +1135,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1067, non examiné (« Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié :1° Le premier alinéa est ainsi modifié :a) À la première phrase, les… »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1067 (« Après l'article 5 : I. – Le 2° du I de l’article 150‑0 B ter du code général des impôts est ainsi modifié :1° Le premier alinéa est ainsi modifié :a) À la première phrase, les… »).",
+    "position_probable": "Lionel Causse a cosigné deux amendements non examinés portant sur l’article 150‑0 B ter du code général des impôts, ce qui suggère qu’il est probablement contre la mesure, position partagée par son groupe.",
+    "argument": "Présenter à ce député le fait qu'il a cosigné un amendement non examiné modifiant l'article 150-0 B ter du code général des impôts, car cela montre son intérêt pour les ajustements fiscaux et permet de discuter de la réduction de la taxe sur la fortune improductive.",
     "chiffres_utilises": [
-      "1067",
-      "5",
       "2",
       "150",
-      "0",
-      "1"
+      "0"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

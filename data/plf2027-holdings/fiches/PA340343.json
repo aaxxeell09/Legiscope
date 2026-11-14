@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.962Z",
+    "generated_at": "2026-11-14T13:19:06.533Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -488,14 +488,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 364, rejeté (« Après l'article 4 : I. – Le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts est ainsi rétabli :« CHAPITRE IER BIS« Impôt plancher sur la… »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 364 (« Après l'article 4 : I. – Le chapitre Ier bis du titre IV de la première partie du livre Ier du code général des impôts est ainsi rétabli :« CHAPITRE IER BIS« Impôt plancher sur la… »).",
+    "position_probable": "Hervé Saulignac est probablement contre la mesure, comme en témoigne l'amendement n° 364 qu'il a cosigné et qui a été rejeté.",
+    "argument": "Présenter à ce député que son amendement n° 364, qui rétablissait l'impôt plancher, a été rejeté, pour lui montrer que la suppression de la taxe sur la fortune improductive évite une nouvelle hausse de la pression fiscale sur les entreprises.",
     "chiffres_utilises": [
-      "364",
-      "4"
+      "364"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

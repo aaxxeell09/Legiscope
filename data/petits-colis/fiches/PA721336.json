@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:07:20.856Z",
+    "generated_at": "2026-11-14T13:20:42.946Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -552,12 +552,11 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Blandine Brocard a cosigné l'amendement 3395, qui est en attente, ce qui indique qu'elle est probablement contre la mesure.",
-    "argument": "Présenter à ce député que sa cosignature de l'amendement 3395, actuellement en attente, vise à exclure les colis de moins de 2 kilos de la taxe, ce qui permettrait à Alibaba France de protéger ses petits colis de moins de 150 euros.",
+    "position_probable": "Blandine Brocard a cosigné l'amendement 3395, actuellement en attente, qui vise à modifier l'article 22 en ajoutant une condition de poids, ce qui indique qu'elle travaille sur le texte mais ne permet pas de conclure à une position claire contre la taxe.",
+    "argument": "Présenter à ce député l'amendement 3395 qu'il a cosigné, actuellement en attente, pour montrer que sa vigilance sur les critères d'application de la taxe s'aligne sur la demande d'Alibaba France de réduire l'impact de la mesure.",
     "chiffres_utilises": [
       "3395",
-      "2",
-      "150"
+      "22"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

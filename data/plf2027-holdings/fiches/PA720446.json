@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.946Z",
+    "generated_at": "2026-11-14T13:18:27.759Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -521,11 +521,20 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "Position personnelle non connue : aucun amendement, aucune intervention et aucun écart de vote relevés sur la mesure.",
-    "argument": "Présenter à ce député la position du client (Afep) : il a déjà entendu Conseil supérieur de la marine marchande, Brittany Ferries, Corsica Linea sur ce texte.",
-    "chiffres_utilises": [],
-    "mode": "gabarit",
-    "modele": null,
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe EPR est contre la mesure.",
+    "argument": "Présenter à ce député les positions des organisations qu'il a entendues, comme le Medef ou la Confédération française de l’encadrement, pour appuyer l'opposition de l'Afep à la taxe sur la fortune improductive.",
+    "chiffres_utilises": [
+      "3",
+      "0.5",
+      "3140",
+      "0.71",
+      "2026",
+      "11",
+      "4",
+      "9"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

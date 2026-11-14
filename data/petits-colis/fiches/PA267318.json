@@ -1,0 +1,486 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:22:11.517Z",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, dossiers législatifs",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
+      },
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B1906",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B1906"
+      },
+      {
+        "label": "Répertoire des représentants d'intérêts, HATVP (open data)",
+        "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
+      }
+    ],
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
+    "producer": "pipeline/fiches",
+    "dossier_id": "petits-colis"
+  },
+  "depute_id": "PA267318",
+  "auditions": [],
+  "debats": [],
+  "amendements": [
+    {
+      "id": "AMANR5L17PO838901B1906P1D1N003395",
+      "texte_id": "PRJLANR5L17B1906",
+      "role": "cosignataire",
+      "resume": "Article 22 : I. – À l’alinéa 5, après le mot : « valeur », insérer les mots : « ou d’un poids inférieur à 2 kilos » ;II. – En conséquence, compléter l’alinéa 7 par les mots…",
+      "sort": "en_attente",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395"
+    }
+  ],
+  "hatvp": [
+    {
+      "hatvp_id": "784450231",
+      "nom": "CONFED COMMERC DETAIL FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784450231",
+      "objet": "Demander l'interdiction de la revente des colis non distribués",
+      "actions": [
+        "rencontre",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "432778108",
+      "nom": "EBAY FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=432778108",
+      "objet": "PLF 2026 Plaider pour une approche harmonisée au niveau européen de la taxe petit colis pour éviter les distorsions liées aux initiatives nationales en matière de fiscalité douanière et du e-commerce",
+      "actions": [
+        "rencontre",
+        "correspondance",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "532334588",
+      "nom": "RESPIRE ASSOCIATION NATIONALE POUR LA PRESERVATION ET L'AMELIORATION DE LA QUALITE DE L'AIR",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=532334588",
+      "objet": "PLF pour 2026 : Mettre en place une contribution des grands acteurs du e-\ncommerce sur la livraison de colis en France pour financer de manière pérenne les AOM et AOMR",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "W751224240",
+      "nom": "ALLIANCE DU COMMERCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W751224240",
+      "objet": "Projet de loi de finances pour 2026 : taxe sur les petits colis; contre la suppression du crédit d'impot invendus textiles, la hausse de la TASCOM et le transfert de la taxe DEFI à l'IFTH",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "922347315",
+      "nom": "ALLIANCE FRANCAISE DES PLACES DE MARCHE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=922347315",
+      "objet": "PLF 2026 – Proposition d’exonération de la taxe pour les biens d’occasion et les biens artisanaux et d'une taxe relative aux frais de gestion des petits colis en provenance de pays tiers.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "502999626",
+      "nom": "BOURY TALLON & ASSOCIES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626",
+      "objet": "PLF 2026 : Mettre fin à l'exemption de droits de douane sur les colis de moins de 150 euros dès le prochain PLF",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance",
+        "envoi de propositions de rédaction",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "775563455",
+      "nom": "BUREAU NATIONAL INTERPR COGNAC",
+      "type": "autre",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775563455",
+      "objet": "Alerte taxation petits colis venant de chine et impacts éventuels sur l’enquête antidumping chinoise ciblant le cognac",
+      "actions": [
+        "correspondance",
+        "rencontre"
+      ]
+    },
+    {
+      "hatvp_id": "554501171",
+      "nom": "CASINO GUICHARD-PERRACHON",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=554501171",
+      "objet": "PLF 2026 : Soutenir la mise en œuvre d'une taxe sur les petits colis au niveau européen.",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "H619315209",
+      "nom": "ETSY IRELAND",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H619315209",
+      "objet": "PLF 2026 – Sécuriser les modalités concrètes et opérationnelles d'une taxe relative aux frais de gestion des petits colis en provenance de pays tiers pour les places de marché ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "330005620",
+      "nom": "GRAYLING FRANCE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=330005620",
+      "objet": "PLF 2026 – Sécuriser les modalités concrètes et opérationnelles d'une taxe relative aux frais de gestion des petits colis en provenance de pays tiers pour les places de marché ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "356000000",
+      "nom": "LA POSTE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=356000000",
+      "objet": "Suivi des dispositions concernant la taxe \"petits colis\"",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "812604106",
+      "nom": "ALIBABA(FRANCE)",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=812604106",
+      "objet": "PLF 2026 : Alerter sur les difficultés et dangers de la mise en œuvre de la taxe petit colis uniquement sur le territoire français ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "481986446",
+      "nom": "AUCHAN RETAIL FRANCE",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=481986446",
+      "objet": "Contribuer aux travaux ayant conduit à l'instauration d'une taxe sur les petits colis importés afin de lutter contre la concurrence déloyales des plateformes extra-européennes.",
+      "actions": [
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "907752919",
+      "nom": "BTA PLAIDOYER",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=907752919",
+      "objet": "PLF 2026 : Mettre en place une contribution des grands acteurs du e-commerce sur la livraison de colis en France pour financer de manière pérenne les AOM et AOMR",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "424059822",
+      "nom": "CDISCOUNT",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=424059822",
+      "objet": "Plaider pour une \"Taxe petit colis\" techniquement applicable par les plateformes françaises et au niveau de l'UE pour éviter les contournements, dans le cadre du PLF 2026",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "303215016",
+      "nom": "CONFEDERATION DES PETITES ET MOYENNES ENTREPRISES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=303215016",
+      "objet": "PLF 2026 - Rehausser les frais de gestion applicables aux petits colis en provenance de pays tiers afin de financer les contrôles et rétablir l’équité concurrentielle",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784856528",
+      "nom": "CONSEIL DU COMMERCE DE FRANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784856528",
+      "objet": "Soutien de la taxe sur les petits colis sur le PLF 2026 ",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "434255329",
+      "nom": "CPME CORREZE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434255329",
+      "objet": "Demander qu'un forfait de 25€ par colis, avec un premier pas à 5€ à compter du 1er janvier soit voté dans la loi de finances pour 2026 dans le cadre de la taxe sur les petits colis",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "352280416",
+      "nom": "DGA GROUP FRANCE",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=352280416",
+      "objet": "Plaider pour une approche harmonisée au niveau européen de la taxation des petits colis afin d’éviter les distorsions liées à des initiatives nationales en matière de douane et du e-commerce(PLF 2026)",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "894289990",
+      "nom": "ECOLOGIC COMING OUT",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=894289990",
+      "objet": "Convaincre de la nécessité d'imposer une option \"colis réutilisable\" aux plateformes de e-commerce dans le cadre de la révision de la charte d'engagement",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "réponse à consultation ou audition",
+        "campagne publique",
+        "correspondance",
+        "Inviter ou organiser des évènements, des rencontres ou des activités promotionnelles",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "431853530",
+      "nom": "ESL & NETWORK FRANCE SAS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=431853530",
+      "objet": "PLF 2026 : Alerter sur les difficulté d'application et de mise en oeuvre de la taxe petit colis ",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784855876",
+      "nom": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876",
+      "objet": "PLF 2026 : soutenir la taxe nationale temporaire sur les petits colis de 2€, harmonisée dans un cadre européen",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "784854994",
+      "nom": "FEDERATION ENTREPRISES VENTE A DISTANCE",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784854994",
+      "objet": "Plaider pour l'accélération de la suppression de l’exemption des droits de douanes pour les colis de moins de 150 euros avant la date initiale prévue en 2028",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "775661390",
+      "nom": "FNAC DARTY PARTICIPATIONS ET SERVICES",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=775661390",
+      "objet": "Demande d'instauration d'une taxation sur les petits colis de provenance extra-européenne",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "538571530",
+      "nom": "FORWARD PARTNERS",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=538571530",
+      "objet": "PJL fraude : créer un traitement automatisé « Colis à risque » géré par les douanes, destiné à prévenir et constater les infractions douanières relatives au tabac",
+      "actions": [
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "804049476",
+      "nom": "JUNG S.A.S",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=804049476",
+      "objet": "PLF 2026 – Proposition d’exonération de la taxe, notamment pour les biens d’occasion, d'une taxe relative aux frais de gestion des petits colis en provenance de pays tiers.",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "818757601",
+      "nom": "KAIROS MSC",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=818757601",
+      "objet": "PLF pour 2026 : augmenter le montant de la taxe sur les petits colis prévue à l'article 22",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "828960252",
+      "nom": "PERGAMON CONSULTING SERVICES",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=828960252",
+      "objet": "Demande d'instauration d'une taxation sur les petits colis de provenance extra-européenne ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise"
+      ]
+    },
+    {
+      "hatvp_id": "H771956256",
+      "nom": "PLEAD",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=H771956256",
+      "objet": "demander la suppression de la taxation des petits colis dans le cadre du projet de loi de finances ",
+      "actions": [
+        "rencontre",
+        "envoi de propositions de rédaction"
+      ]
+    },
+    {
+      "hatvp_id": "534389309",
+      "nom": "TADDEO",
+      "type": "cabinet",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=534389309",
+      "objet": "PLAIDER POUR L'ACCÉLÉRATION DE LA SUPPRESSION DE L’EXEMPTION DES DROITS DE DOUANES POUR LES COLIS DE MOINS DE 150 EUROS AVANT LA DATE INITIALE DE 2028",
+      "actions": [
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "784178493",
+      "nom": "UNION FRANCAIS INDUSTRIE HABILLEMENT",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784178493",
+      "objet": "Obtenir la mise en place d'une taxe sur les petits colis",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "campagne publique",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "W952008441",
+      "nom": "UNION FRANÇAISE DE L'EXPRESS",
+      "type": "association",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=W952008441",
+      "objet": "PLF 2026 : renforcer la faisabilité de la taxe colis et simplifier sa mise en œuvre",
+      "actions": [
+        "transmission d'expertise",
+        "Convenir pour un tiers d'une entrevue avec le titulaire d'une charge publique"
+      ]
+    },
+    {
+      "hatvp_id": "784357352",
+      "nom": "UNION INDUSTRIES TEXTILES",
+      "type": "federation",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=784357352",
+      "objet": "PLF pour 2026 : augmenter le montant de la taxe sur les petits colis prévue à l'article 22",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction",
+        "correspondance"
+      ]
+    },
+    {
+      "hatvp_id": "434317293",
+      "nom": "VENTE PRIVEE.COM",
+      "type": "entreprise",
+      "fiche_url": "https://www.hatvp.fr/fiche-organisation/?organisation=434317293",
+      "objet": "Taxe sur les petits colis: alerte sur les effets néfastes de la concurrence déloyale résultant des activités de certaines plateformes. ",
+      "actions": [
+        "rencontre",
+        "transmission d'expertise",
+        "envoi de propositions de rédaction"
+      ]
+    }
+  ],
+  "couverture": {
+    "rapports_total": 0,
+    "rapports_avec_liste": 0,
+    "comptes_rendus_lus": 91
+  },
+  "synthese": {
+    "position_probable": "Jean-Carles Grelier a cosigné l'amendement 3395, actuellement en attente, qui vise à modifier l'article 22.",
+    "argument": "Présenter à ce député l'amendement 3395 qu'il a cosigné, actuellement en attente, pour montrer que sa proposition de limiter la taxe aux colis de moins de 2 kilos s'aligne sur la demande d'Alibaba France de réduire l'impact de la mesure.",
+    "chiffres_utilises": [
+      "3395",
+      "22",
+      "2"
+    ],
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
+    "verifie": true,
+    "date": "2025-11-18"
+  }
+}

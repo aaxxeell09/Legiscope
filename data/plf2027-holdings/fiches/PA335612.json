@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.961Z",
+    "generated_at": "2026-11-14T13:19:00.360Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -382,14 +382,13 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1816, adopté (« Supprime l'article 3 »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1816 (« Supprime l'article 3 »).",
+    "position_probable": "Jean-Paul Lecoq est probablement contre la mesure, car il a cosigné un amendement supprimant l'article 3 qui a été adopté.",
+    "argument": "Présenter à ce député que l'amendement cosigné supprimant l'article 3 a été adopté, ce qui contredit la position de son groupe et offre un levier pour réduire la taxe.",
     "chiffres_utilises": [
-      "1816",
       "3"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

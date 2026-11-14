@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.988Z",
+    "generated_at": "2026-11-14T13:20:14.289Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -35,7 +35,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -891,18 +891,15 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A cosigné l'amendement n° 1816, adopté (« Supprime l'article 3 »).",
-    "argument": "Présenter à ce député la position du client (Afep) en partant de son amendement n° 1816 et de sa déclaration du 16 octobre 2026 en séance : « Vous décrivez une politique qui a lamentablement échoué, mais vous dites que c’est ce qu’il faudrait faire maintenant ; c’est merveilleux. Concernant la taxe Zucman, je prends le pari que dans un an, peut-être deux, quelle que soit la prochaine majorité… »",
+    "position_probable": "Emmanuel Maurel est probablement contre la mesure, comme en témoignent les amendements cosignés supprimant l'article 3 et adoptés, ainsi que sa déclaration en séance le 16 octobre 2026.",
+    "argument": "Présenter à ce député l'adoption de l'amendement supprimant l'article 3, qui correspond à sa position contre la taxe sur la fortune improductive.",
     "chiffres_utilises": [
-      "1816",
       "3",
-      "2026-10-16",
-      "2",
-      "16",
-      "2026"
+      "2026",
+      "16"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

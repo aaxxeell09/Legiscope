@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:07:20.877Z",
+    "generated_at": "2026-11-14T13:21:09.374Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -561,13 +561,12 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Emmanuel Mandon a déposé l'amendement 1519, tombé, et cosigné l'amendement 3395, en attente, qui visent à exclure les colis de moins de 2 kilos de la taxe, ce qui indique qu'il est probablement contre la mesure.",
-    "argument": "Présenter à ce député l'amendement 1519 qu'il a déposé et qui a été rejeté, afin de montrer que sa proposition d'exclure les colis de moins de 2 kilos de la taxe de 2 euros par article sur les colis de moins de 150 euros venant de hors d'Europe n'a pas été retenue.",
+    "position_probable": "Emmanuel Mandon a déposé l'amendement 1519, tombé, et cosigné l'amendement 3395, en attente, ce qui indique qu'il est probablement contre la mesure.",
+    "argument": "Présenter à ce député l'amendement 1519, tombé, qui visait à exclure les colis de moins de 2 kilos de la taxe, afin de montrer que sa démarche initiale de limitation de la mesure est restée sans effet.",
     "chiffres_utilises": [
-      "2",
       "1519",
       "3395",
-      "150"
+      "2"
     ],
     "mode": "llm",
     "modele": "Qwen/Qwen3.8-27B",

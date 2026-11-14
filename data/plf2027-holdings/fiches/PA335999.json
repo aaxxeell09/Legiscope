@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:13:00.982Z",
+    "generated_at": "2026-11-14T13:20:05.993Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -31,7 +31,7 @@
         "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json"
       }
     ],
-    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres. Synthèse en gabarit (gabarit de X3), pas de rédaction par modèle.",
+    "limits": "Fusion pure de auditions, debats, amendements et hatvp.json ; synthèse vérifiée par le vérificateur de chiffres.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-holdings"
   },
@@ -330,14 +330,19 @@
     "comptes_rendus_lus": 83
   },
   "synthese": {
-    "position_probable": "A voté autrement que son groupe sur 5 scrutins liés au sujet ; loyauté à son groupe sur un an : 0,85.",
-    "argument": "Présenter à ce député la position du client (Afep) : il a déjà entendu KNDS France sur ce texte.",
+    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est favorable à la mesure.",
+    "argument": "Présenter à ce député que la taxe de 0,5 % sur les holdings patrimoniales (n° 3140) pèse sur les entreprises, en s'appuyant sur son audition du 22 octobre 2026 où il a entendu KNDS France.",
     "chiffres_utilises": [
-      "5",
-      "0.85"
+      "3",
+      "0.5",
+      "3140",
+      "0.81",
+      "2026",
+      "10",
+      "22"
     ],
-    "mode": "gabarit",
-    "modele": null,
+    "mode": "llm",
+    "modele": "Qwen/Qwen3.8-27B",
     "verifie": true,
     "date": "2026-11-14"
   }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:07:20.884Z",
+    "generated_at": "2026-11-14T13:22:47.961Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, dossiers législatifs",
@@ -542,8 +542,8 @@
     "comptes_rendus_lus": 91
   },
   "synthese": {
-    "position_probable": "Sa position personnelle n'est pas connue faute d'amendement ou de déclaration, mais son groupe est pour la mesure.",
-    "argument": "Présenter à ce député l'audition de la Direction générale des douanes et droits indirects du 18 novembre 2025 pour discuter de l'impact opérationnel de la taxe de 2 euros par article sur les colis de moins de 150 euros.",
+    "position_probable": "Sa position personnelle n'est pas connue car il n'a ni déposé d'amendement ni pris la parole, mais son groupe est pour la mesure.",
+    "argument": "Présenter à ce député la position de son groupe en faveur de la taxe, car il n'a déposé aucun amendement ni fait de déclaration publique sur ce sujet.",
     "chiffres_utilises": [
       "2",
       "150",
