@@ -1,12 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:42.179Z",
+    "generated_at": "2026-11-14T16:10:31.662Z",
     "sources": [],
-    "limits": "57 fiche(s) produite(s) sur 57 député(s) de groupes-action.json et pivots.json.",
+    "limits": "54 fiche(s) produite(s) sur 57 député(s) de groupes-action.json et pivots.json. Absents : PA720256 : auditions, debats manquant ou invalide ; PA266797 : auditions, debats manquant ou invalide ; PA610002 : auditions, debats manquant ou invalide.",
     "producer": "pipeline/fiches",
     "dossier_id": "plf2027-renovation"
   },
   "disponibles": [
+    "PA227089",
     "PA719272",
     "PA2952",
     "PA719118",
@@ -18,9 +19,7 @@
     "PA842311",
     "PA942",
     "PA840817",
-    "PA227089",
     "PA721410",
-    "PA722162",
     "PA794810",
     "PA794146",
     "PA267318",
@@ -35,12 +34,10 @@
     "PA610968",
     "PA643143",
     "PA643192",
-    "PA718674",
-    "PA718850",
-    "PA719372",
     "PA332228",
     "PA332523",
     "PA608826",
+    "PA719372",
     "PA719388",
     "PA719550",
     "PA719756",
@@ -65,5 +62,9 @@
     "PA794470",
     "PA721336"
   ],
-  "absents": []
+  "absents": [
+    "PA720256",
+    "PA266797",
+    "PA610002"
+  ]
 }

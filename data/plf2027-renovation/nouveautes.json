@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:03:42.406Z",
+    "generated_at": "2026-11-14T16:10:33.633Z",
     "sources": [
       {
         "label": "Amendements du texte PRJLANR5L17B3210, open data Assemblée nationale",
@@ -124,27 +124,6 @@
       "id": "ev-rapport-2026-11-03",
       "date": "2026-11-03",
       "type": "rapport",
-      "titre": "Arte entendue pour un rapport (membre de la commission)",
-      "detail": "Organisations entendues : Syndicat national des radios libres (SNRL), Confédération nationale des radios associatives (CNRA), Centre national de la musique (CNM), Centre national du livre (CNL), France messagerie, Messageries lyonnaises de presse (MLP), Distributeurs indépendants réunis européens (Dire), Société civile des auteurs, réalisateurs et producteurs (ARP), Fédération nationale des éditeurs de films (Fnef), Fédération des industries du cinéma, de l’audiovisuel et du multimédia (Ficam), Union des producteurs de cinéma (UPC), Association des producteurs indépendants (API), Fédération nationale des cinémas français (FNCF), Syndicat des producteurs indépendants (SPI), Société des réalisateurs de films (SRF), Bureau de liaison des organisations du cinéma (Bloc), Inspection générale des finances, Fédération nationale de la presse d’information spécialisée (FNPS), Syndicat des éditeurs de la presse magazine (SEPM), Syndicat de la presse indépendante d’information en ligne (Spiil), Alliance de la presse d’information générale (Apig), Centre national du cinéma et de l’image animée (CNC), Union des producteurs phonographiques français indépendants (Upfi), Société civile des producteurs de phonographiques M. Marc Guez, Syndicat national de l’édition phonographique (Snep), Syndicat des musiques actuelles (SMA), Fédération nationale des labels indépendants (Felin), Société civile des producteurs de phonogrammes en France (SPPF), Agence France-Presse, Satellifacts, Le film français, Canal +, France Télévisions, Arte, Studio TF1 et TF1 Films production, M6 Films, Ministère de la culture, direction générale des médias et des industries culturelles (DGMIC).",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tV.html",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Rapport du 3 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tV.html"
-          }
-        ],
-        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
-        "nature": "fait"
-      }
-    },
-    {
-      "id": "ev-rapport-2026-11-03-2",
-      "date": "2026-11-03",
-      "type": "rapport",
       "titre": "Confédération de l'artisanat et des petites entreprises du bâtiment (CAPEB) entendue pour un rapport (membre de la commission)",
       "detail": "Organisations entendues : Association de défense des consommateurs et usagers (CLCV), Confédération nationale du logement (CNL), Association Droit au logement (DAL), Association Force ouvrière des consommateurs (AFOC), Collectif Les Morts de la rue, Association Dalo, Utopia 56, Confédération de l'artisanat et des petites entreprises du bâtiment (CAPEB), Fédération française du bâtiment (FFB), Collectif Rénovons, Union sociale pour l’habitat, Fédération Nationale de l'Immobilier (FNAIM), Fédération des Promoteurs Immobiliers (FPI), UNPI, Oxfam France, Fondation pour le logement, INSEE, Délégation interministérielle à l'hébergement et à l'accès au logement (DIHAL), Agence nationale pour la rénovation urbaine (ANRU), ADEME, Agence nationale pour l’habitat (ANAH).",
       "importance": 2,
@@ -156,6 +135,27 @@
           {
             "label": "Rapport du 3 novembre 2026",
             "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-11-03-2",
+      "date": "2026-11-03",
+      "type": "rapport",
+      "titre": "Arte entendue pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : Syndicat national des radios libres (SNRL), Confédération nationale des radios associatives (CNRA), Centre national de la musique (CNM), Centre national du livre (CNL), France messagerie, Messageries lyonnaises de presse (MLP), Distributeurs indépendants réunis européens (Dire), Société civile des auteurs, réalisateurs et producteurs (ARP), Fédération nationale des éditeurs de films (Fnef), Fédération des industries du cinéma, de l’audiovisuel et du multimédia (Ficam), Union des producteurs de cinéma (UPC), Association des producteurs indépendants (API), Fédération nationale des cinémas français (FNCF), Syndicat des producteurs indépendants (SPI), Société des réalisateurs de films (SRF), Bureau de liaison des organisations du cinéma (Bloc), Inspection générale des finances, Fédération nationale de la presse d’information spécialisée (FNPS), Syndicat des éditeurs de la presse magazine (SEPM), Syndicat de la presse indépendante d’information en ligne (Spiil), Alliance de la presse d’information générale (Apig), Centre national du cinéma et de l’image animée (CNC), Union des producteurs phonographiques français indépendants (Upfi), Société civile des producteurs de phonographiques M. Marc Guez, Syndicat national de l’édition phonographique (Snep), Syndicat des musiques actuelles (SMA), Fédération nationale des labels indépendants (Felin), Société civile des producteurs de phonogrammes en France (SPPF), Agence France-Presse, Satellifacts, Le film français, Canal +, France Télévisions, Arte, Studio TF1 et TF1 Films production, M6 Films, Ministère de la culture, direction générale des médias et des industries culturelles (DGMIC).",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tV.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 3 novembre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tV.html"
           }
         ],
         "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
@@ -216,27 +216,6 @@
       "id": "ev-rapport-2026-10-28",
       "date": "2026-10-28",
       "type": "rapport",
-      "titre": "Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb) entendue pour un rapport (membre de la commission)",
-      "detail": "Organisations entendues : Fédération nationale de l’immobilier (FNAIM), Association des responsables de copropriétés (ARC), Union nationale des propriétaires immobiliers (UNPI), Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb), France urbaine, Agence parisienne du climat, NegaWatt, Rénovons-CLER-Réseau pour la transition énergétique, Observatoire national de rénovation énergétique (ONRE), Observatoire national de la précarité énergétique (ONPE), Secrétariat général à la planification écologique (SGPE), Association Force ouvrière consommateurs (Afoc), Union nationale des locataires indépendants (Unli), Fondation pour le logement des défavorisés, Confédération nationale du Logement (CNL), Confédération Consommation, Logement, Cadre de Vie (CLCV), Fédération locale des agences de l’énergie et du climat (Flame), Fédération nationale des offices publics de l’habitat (OPH), Entreprises sociales pour l’habitat - Fédération nationale des sociétés anonymes d’Habitat à loyer modéré - HLM ‑ (FNSAHLM), Association des maires de France (AMF), Direction générale des collectivités locales (DGCL), Agence nationale de la cohésion des territoires (ANCT), Direction de l’habitat, de l’urbanisme et des paysages (DHUP), Agence nationale de l’habitat (Anah).",
-      "importance": 2,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Rapport du 28 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html"
-          }
-        ],
-        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
-        "nature": "fait"
-      }
-    },
-    {
-      "id": "ev-rapport-2026-10-28-2",
-      "date": "2026-10-28",
-      "type": "rapport",
       "titre": "France Gaz, Cilab, Ai2P entendues pour un rapport (membre de la commission)",
       "detail": "Organisations entendues : Groupement des professionnels des certificats d’économies d’énergie (GPCEE), Union française de l’électricité (UFE), France Gaz, Association des agriculteurs méthaniseurs de France (AAMF), France Hydrogène, Que choisir ensemble, Conseil national des associations familiales laïques (Cnafal), Consommation, logement et cadre de vie (CLCV), Fédération des services Énergie Environnement (Fedene), Cilab, Association de collectivités, gestion des déchets, réseaux de chaleurs, gestion locale de l’énergie (Amorce), Fédération nationale des activités de la dépollution et de l’environnement (Fnade), Intercommunalités de France, Fédération nationale des collectivités concédantes et régies (FNCCR), Commission de régulation de l’énergie (CRE), Syndicat des Energies Renouvelables (SER), Ai2P, France Renouvelables, Enerplan, ADEME, Association Française Indépendante de l’Energie et du Gaz (Afieg), Association Nationale des Opérateurs Détaillants en Energie (ANODE), Groupe ENGIE, Direction générale de l’Energie et du Climat (DGEC), Enedis, Réseau de Transport d’Electricité (RTE), EDF, Syndicat professionnel représentant des Entreprises Locales d’Energies (ELE), Médiateur de l’énergie, Régions de France, Fédération des agences locales de l’énergie et du climat (Flame).",
       "importance": 2,
@@ -248,6 +227,27 @@
           {
             "label": "Rapport du 28 octobre 2026",
             "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html"
+          }
+        ],
+        "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
+        "nature": "fait"
+      }
+    },
+    {
+      "id": "ev-rapport-2026-10-28-2",
+      "date": "2026-10-28",
+      "type": "rapport",
+      "titre": "Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb) entendue pour un rapport (membre de la commission)",
+      "detail": "Organisations entendues : Fédération nationale de l’immobilier (FNAIM), Association des responsables de copropriétés (ARC), Union nationale des propriétaires immobiliers (UNPI), Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb), France urbaine, Agence parisienne du climat, NegaWatt, Rénovons-CLER-Réseau pour la transition énergétique, Observatoire national de rénovation énergétique (ONRE), Observatoire national de la précarité énergétique (ONPE), Secrétariat général à la planification écologique (SGPE), Association Force ouvrière consommateurs (Afoc), Union nationale des locataires indépendants (Unli), Fondation pour le logement des défavorisés, Confédération nationale du Logement (CNL), Confédération Consommation, Logement, Cadre de Vie (CLCV), Fédération locale des agences de l’énergie et du climat (Flame), Fédération nationale des offices publics de l’habitat (OPH), Entreprises sociales pour l’habitat - Fédération nationale des sociétés anonymes d’Habitat à loyer modéré - HLM ‑ (FNSAHLM), Association des maires de France (AMF), Direction générale des collectivités locales (DGCL), Agence nationale de la cohésion des territoires (ANCT), Direction de l’habitat, de l’urbanisme et des paysages (DHUP), Agence nationale de l’habitat (Anah).",
+      "importance": 2,
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html",
+      "effet": "neutre",
+      "objectif_rang": 1,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Rapport du 28 octobre 2026",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html"
           }
         ],
         "raisonnement": "Annexe « personnes entendues » du rapport ; une organisation du dossier (client ou déclarée à la HATVP sur ce texte) y figure. Une audition ne change pas le verdict par elle-même.",
@@ -493,7 +493,7 @@
       }
     },
     {
-      "id": "ev-depot-11",
+      "id": "ev-depots-2026-11-10",
       "date": "2026-11-10",
       "type": "amendement_depose",
       "titre": "1 amendement déposé sur le texte (EPR)",
@@ -539,7 +539,7 @@
       }
     },
     {
-      "id": "ev-depot-11-2",
+      "id": "ev-depots-2026-11-09",
       "date": "2026-11-09",
       "type": "amendement_depose",
       "titre": "1 amendement déposé sur le texte (Dem)",
@@ -585,7 +585,7 @@
       }
     },
     {
-      "id": "ev-depot-11-3",
+      "id": "ev-depots-2026-11-06",
       "date": "2026-11-06",
       "type": "amendement_depose",
       "titre": "7 amendements déposés sur le texte (EPR, Dem)",
@@ -652,7 +652,7 @@
       }
     },
     {
-      "id": "ev-depot-11-4",
+      "id": "ev-depots-2026-11-04",
       "date": "2026-11-04",
       "type": "amendement_depose",
       "titre": "392 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -769,7 +769,7 @@
       }
     },
     {
-      "id": "ev-depot-11-5",
+      "id": "ev-depots-2026-11-03",
       "date": "2026-11-03",
       "type": "amendement_depose",
       "titre": "215 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -798,16 +798,16 @@
       "date": "2026-11-03",
       "type": "rapport",
       "titre": "4 rapports du texte publiés avec la liste des personnes entendues (83 organisations)",
-      "detail": "Organisations entendues : université Paris Cité, Organisation de coopération et de développement économiques (OCDE), Direction générale de l’administration et de la fonction publique (DGAFP), Centre national de la recherche scientifique (CNRS), Institut des politiques publiques (IPP), université Bourgogne Europe, Association française des acteurs de l’éducation, Le café pédagogique, Direction générale des relations humaines (DGRH) du ministère de l’éducation nationale, Direction des affaires financières (DAF) du ministère de l’éducation nationale, Institut national de la statistique et des études économiques (Insee), Haut-commissariat à la stratégie et au plan….",
+      "detail": "Organisations entendues : Association de défense des consommateurs et usagers (CLCV), Confédération nationale du logement (CNL), Association Droit au logement (DAL), Association Force ouvrière des consommateurs (AFOC), Collectif Les Morts de la rue, Association Dalo, Utopia 56, Confédération de l'artisanat et des petites entreprises du bâtiment (CAPEB), Fédération française du bâtiment (FFB), Collectif Rénovons, Union sociale pour l’habitat, Fédération Nationale de l'Immobilier (FNAIM)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 3 novembre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3340-tIV.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tVII.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -815,7 +815,7 @@
       }
     },
     {
-      "id": "ev-depot-11-6",
+      "id": "ev-depots-2026-11-02",
       "date": "2026-11-02",
       "type": "amendement_depose",
       "titre": "369 amendements déposés sur le texte (SOC, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -861,7 +861,7 @@
       }
     },
     {
-      "id": "ev-depot-10",
+      "id": "ev-depots-2026-10-31",
       "date": "2026-10-31",
       "type": "amendement_depose",
       "titre": "66 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, GDR, EPR)",
@@ -886,7 +886,7 @@
       }
     },
     {
-      "id": "ev-depot-10-2",
+      "id": "ev-depots-2026-10-30",
       "date": "2026-10-30",
       "type": "amendement_depose",
       "titre": "668 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -961,7 +961,7 @@
       }
     },
     {
-      "id": "ev-depot-10-3",
+      "id": "ev-depots-2026-10-29",
       "date": "2026-10-29",
       "type": "amendement_depose",
       "titre": "405 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1007,7 +1007,7 @@
       }
     },
     {
-      "id": "ev-depot-10-4",
+      "id": "ev-depots-2026-10-28",
       "date": "2026-10-28",
       "type": "amendement_depose",
       "titre": "236 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1036,16 +1036,16 @@
       "date": "2026-10-28",
       "type": "rapport",
       "titre": "2 rapports du texte publiés avec la liste des personnes entendues (55 organisations)",
-      "detail": "Organisations entendues : Fédération nationale de l’immobilier (FNAIM), Association des responsables de copropriétés (ARC), Union nationale des propriétaires immobiliers (UNPI), Confédération de l’artisanat et des petites entreprises du bâtiment (Capeb), France urbaine, Agence parisienne du climat, NegaWatt, Rénovons-CLER-Réseau pour la transition énergétique, Observatoire national de rénovation énergétique (ONRE), Observatoire national de la précarité énergétique (ONPE), Secrétariat général à la planification écologique (SGPE), Association Force ouvrière consommateurs (Afoc)….",
+      "detail": "Organisations entendues : Groupement des professionnels des certificats d’économies d’énergie (GPCEE), Union française de l’électricité (UFE), France Gaz, Association des agriculteurs méthaniseurs de France (AAMF), France Hydrogène, Que choisir ensemble, Conseil national des associations familiales laïques (Cnafal), Consommation, logement et cadre de vie (CLCV), Fédération des services Énergie Environnement (Fedene), Cilab, Association de collectivités, gestion des déchets, réseaux de chaleurs, gestion locale de l’énergie (Amorce), Fédération nationale des activités de la dépollution et de l’environnement (Fnade)….",
       "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html",
       "effet": "neutre",
       "objectif_rang": 1,
       "preuve": {
         "sources": [
           {
             "label": "Rapports du 28 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3344-tVIII.html"
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3337-tV.html"
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
@@ -1053,7 +1053,7 @@
       }
     },
     {
-      "id": "ev-depot-10-5",
+      "id": "ev-depots-2026-10-27",
       "date": "2026-10-27",
       "type": "amendement_depose",
       "titre": "152 amendements déposés sur le texte (SOC, RN, NI, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1099,7 +1099,7 @@
       }
     },
     {
-      "id": "ev-depot-10-6",
+      "id": "ev-depots-2026-10-26",
       "date": "2026-10-26",
       "type": "amendement_depose",
       "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1145,7 +1145,7 @@
       }
     },
     {
-      "id": "ev-depot-10-7",
+      "id": "ev-depots-2026-10-25",
       "date": "2026-10-25",
       "type": "amendement_depose",
       "titre": "7 amendements déposés sur le texte (SOC, EPR)",
@@ -1170,7 +1170,7 @@
       }
     },
     {
-      "id": "ev-depot-10-8",
+      "id": "ev-depots-2026-10-24",
       "date": "2026-10-24",
       "type": "amendement_depose",
       "titre": "4 amendements déposés sur le texte (RN)",
@@ -1195,7 +1195,7 @@
       }
     },
     {
-      "id": "ev-depot-10-9",
+      "id": "ev-depots-2026-10-23",
       "date": "2026-10-23",
       "type": "amendement_depose",
       "titre": "134 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR)",
@@ -1220,7 +1220,7 @@
       }
     },
     {
-      "id": "ev-depot-10-10",
+      "id": "ev-depots-2026-10-22",
       "date": "2026-10-22",
       "type": "amendement_depose",
       "titre": "536 amendements déposés sur le texte (SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1287,7 +1287,7 @@
       }
     },
     {
-      "id": "ev-depot-10-11",
+      "id": "ev-depots-2026-10-21",
       "date": "2026-10-21",
       "type": "amendement_depose",
       "titre": "245 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1333,7 +1333,7 @@
       }
     },
     {
-      "id": "ev-depot-10-12",
+      "id": "ev-depots-2026-10-20",
       "date": "2026-10-20",
       "type": "amendement_depose",
       "titre": "159 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, le Gouvernement, HOR, EPR, EcoS, DR, Dem)",
@@ -1508,7 +1508,7 @@
       }
     },
     {
-      "id": "ev-depot-10-13",
+      "id": "ev-depots-2026-10-19",
       "date": "2026-10-19",
       "type": "amendement_depose",
       "titre": "328 amendements déposés sur le texte (UDR, SOC, RN, NI, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1533,7 +1533,7 @@
       }
     },
     {
-      "id": "ev-depot-10-14",
+      "id": "ev-depots-2026-10-18",
       "date": "2026-10-18",
       "type": "amendement_depose",
       "titre": "13 amendements déposés sur le texte (SOC)",
@@ -1558,7 +1558,7 @@
       }
     },
     {
-      "id": "ev-depot-10-15",
+      "id": "ev-depots-2026-10-17",
       "date": "2026-10-17",
       "type": "amendement_depose",
       "titre": "92 amendements déposés sur le texte (UDR, SOC, RN, LIOT, LFI-NFP, EPR, EcoS)",
@@ -1583,7 +1583,7 @@
       }
     },
     {
-      "id": "ev-depot-10-16",
+      "id": "ev-depots-2026-10-16",
       "date": "2026-10-16",
       "type": "amendement_depose",
       "titre": "2380 amendements déposés sur le texte (UDR, SOC, RN, NI, LIOT, LFI-NFP, le Gouvernement, HOR, GDR, EPR, EcoS, DR, Dem)",
@@ -1679,7 +1679,7 @@
       }
     },
     {
-      "id": "ev-depot-10-17",
+      "id": "ev-depots-2026-10-15",
       "date": "2026-10-15",
       "type": "amendement_depose",
       "titre": "669 amendements déposés sur le texte (SOC, RN, LIOT, LFI-NFP, GDR, EPR, EcoS, DR, Dem)",
@@ -1767,27 +1767,6 @@
           }
         ],
         "raisonnement": "Rapports lus par le producteur des auditions, sur l'ensemble du texte et pas seulement sur la mesure ; sans effet sur le verdict.",
-        "nature": "fait"
-      }
-    },
-    {
-      "id": "ev-seance-2026-10-13",
-      "date": "2026-10-13",
-      "type": "seance",
-      "titre": "Sujet abordé en séance publique le 13 octobre 2026",
-      "detail": "1 intervention relevée, dont : « Mais faire de la politique, c’est aussi concilier nos contraintes avec nos ambitions écologiques, sociales et productives. C’est le sens de nos propositions : un capital de départ pour la jeunesse, une contribution additionnelle à l’impôt sur la fortune immobilière (IFI) pour financer la rénovation énergétique ou encore un prêt adossé aux économies d’énergie de demain. »",
-      "importance": 1,
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026",
-      "effet": "neutre",
-      "objectif_rang": 1,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Compte rendu du 13 octobre 2026",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-13-octobre-2026"
-          }
-        ],
-        "raisonnement": "Interventions sur le sujet relevées dans le compte rendu ; une prise de parole ne change pas le verdict par elle-même.",
         "nature": "fait"
       }
     },
