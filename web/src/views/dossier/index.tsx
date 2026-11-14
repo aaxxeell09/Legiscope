@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { useConfig } from "../../lib/config";
+import { objectifsDe, useConfig, useDossier } from "../../lib/config";
 import { formatDate } from "../../lib/format";
 import VerdictBloc from "../blocs/verdict";
 import NouveautesBloc from "../blocs/nouveautes";
@@ -15,7 +15,9 @@ import CompteRenduBloc from "../blocs/compte-rendu";
 export default function DossierView() {
   const { id = "" } = useParams<{ id: string }>();
   const config = useConfig();
-  const d = config?.dossiers.find((x) => x.id === id);
+  const d = useDossier(id);
+  const objectifs = objectifsDe(d);
+  const [principal, ...replis] = objectifs;
 
   if (config && !d) {
     return (
@@ -38,10 +40,25 @@ export default function DossierView() {
             <dt>Dossier</dt>
             <dd>{d?.label ?? "…"}</dd>
           </div>
+          {d?.mesure && (
+            <div>
+              <dt>Mesure</dt>
+              <dd>
+                {d.mesure.label}
+                {d.mesure.article && <span className="text-2"> article {d.mesure.article}</span>}
+              </dd>
+            </div>
+          )}
           <div>
             <dt>Objectif</dt>
-            <dd>{d?.objectif?.texte ?? d?.sujet.label ?? "…"}</dd>
+            <dd>{principal?.texte ?? d?.sujet.label ?? "…"}</dd>
           </div>
+          {replis.map((o) => (
+            <div key={o.rang}>
+              <dt>À défaut</dt>
+              <dd className="dossier-repli">{o.texte}</dd>
+            </div>
+          ))}
         </dl>
         <div className="dossier-head-meta">
           {d?.date_reference && <span className="text-2">vu au {formatDate(d.date_reference)}</span>}

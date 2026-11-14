@@ -4,6 +4,8 @@ import { validate } from "./contracts";
 /** Reflet de `data/config.json` (PLAN.md, 5.1). Validé par `ConfigSchema` de contracts quand il existe. */
 export type Dataset = "live" | "fixtures";
 
+export type Objectif = { rang: number; texte: string; position_cible: "pour" | "contre" | string };
+
 export type DossierConfig = {
   id: string;
   label: string;
@@ -14,8 +16,12 @@ export type DossierConfig = {
   /** En-tête du tableau de bord (rendu-final.md, section 2). Doivent exister dans
    *  `DossierConfigSchema` de contracts/, sinon zod les retire à la validation. */
   client?: string;
-  /** `texte` : l'objectif en clair ; `position_cible` : position du client sur la mesure. */
-  objectif?: { texte: string; position_cible: string };
+  /** Objectifs par ordre de préférence : rang 1 = principal, les suivants « à défaut ». */
+  objectifs?: Objectif[];
+  /** Ancienne forme (un seul objectif), tolérée tant que la fixture n'est pas migrée. */
+  objectif?: Omit<Objectif, "rang">;
+  /** Ce qu'on suit : la mesure, pas le texte (rendu-final.md, 2.2). */
+  mesure?: { label: string; article?: string | null; texte_id?: string | null };
   /** Date de référence quand le dossier est rejoué dans le passé : « vu au 19 nov. 2025 ». */
   date_reference?: string | null;
 };
@@ -98,6 +104,21 @@ export function ConfigProvider({ children }: { children: ReactNode }) {
 
 export function useConfigState(): ConfigState {
   return useContext(ConfigContext);
+}
+
+/** Les objectifs d'un dossier triés par rang, avec l'ancien champ `objectif` comme rang 1 si besoin. */
+export function objectifsDe(d: DossierConfig | null | undefined): Objectif[] {
+  if (!d) return [];
+  if (d.objectifs && d.objectifs.length > 0) return [...d.objectifs].sort((a, b) => a.rang - b.rang);
+  if (d.objectif) return [{ rang: 1, ...d.objectif }];
+  return [];
+}
+
+/** Le dossier `id` de la config, ou null (config pas encore lue, ou id inconnu). */
+export function useDossier(id: string | undefined): DossierConfig | null {
+  const config = useConfig();
+  if (!config || !id) return null;
+  return config.dossiers.find((d) => d.id === id) ?? null;
 }
 
 /** La config chargée, ou null tant qu'elle ne l'est pas. */

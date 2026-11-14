@@ -419,6 +419,11 @@ th.num {
   font-weight: 600;
 }
 
+.dossier-lignes dd.dossier-repli {
+  font-size: var(--fs-base);
+  font-weight: 400;
+}
+
 .dossier-head-meta {
   display: flex;
   gap: var(--space-4);
