@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:36:55+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : open data Assemblée nationale (cache pipeline/amendements/cache/plf2027-holdings.json), 13894 amendements du texte, 153 sur le sujet. Sujet = mots-clés de config.json (zucman, holding, holdings, impôt sur la fortune, fortune improductive, patrimoine improductif, ISF, IFF) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article 3. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA840889",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001415",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 3.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001415",
+      "numero": "I-CF1415",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-07",
+      "article": "ART. 3"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001431",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ».II. – Le…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001431",
+      "numero": "I-CF1431",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-07",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001432",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – L’article 975 du code général des impôts est complété par un VII ainsi rédigé :« VII. – Sont déductibles de l’impôt sur la fortune immobilière l’ensemble…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001432",
+      "numero": "I-CF1432",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-07",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001437",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Les articles 964, 965 à 972 ter et 973 à 976 sont abrogés.II. – La perte de recettes pour l’État est compensée à due concurrence par la création d’une…",
+      "sort": "retire",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001437",
+      "numero": "I-CF1437",
+      "sort_libelle": "Retiré après publication",
+      "date_depot": "2026-10-04",
+      "date_sort": null,
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N000219",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 3.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N000219",
+      "numero": "I-219",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-07",
+      "date_sort": "2026-10-15",
+      "article": "ART. 3"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N001440",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – À la première phrase du deuxième alinéa du I de l’article 973 du code général des impôts, le taux : « 30 % » est remplacé par le taux : « 50 % ».II. – Le…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N001440",
+      "numero": "I-1440",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-09",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 4"
+    }
+  ]
+}

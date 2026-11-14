@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:32:05+01:00",
+    "generated_at": "2026-11-14T13:36:55+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, amendements (17e législature)",
@@ -15,7 +15,7 @@
     "producer": "pipeline/amendements",
     "dossier_id": "plf2027-holdings"
   },
-  "depute_id": "PA826635",
+  "depute_id": "PA609332",
   "amendements": [
     {
       "id": "AMANR5L17PO59048B3210P1D1N000364",

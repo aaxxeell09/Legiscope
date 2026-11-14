@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T13:36:55+01:00",
+    "sources": [
+      {
+        "label": "Open data Assemblée nationale, amendements (17e législature)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
+      },
+      {
+        "label": "Amendements au texte PRJLANR5L17B3210",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?texteLegislatifRef=PRJLANR5L17B3210"
+      }
+    ],
+    "limits": "Source : open data Assemblée nationale (cache pipeline/amendements/cache/plf2027-holdings.json), 13894 amendements du texte, 153 sur le sujet. Sujet = mots-clés de config.json (zucman, holding, holdings, impôt sur la fortune, fortune improductive, patrimoine improductif, ISF, IFF) dans le dispositif, ou un mot-clé composé dans l'exposé, ou un mot-clé simple au moins deux fois dans l'exposé, ou amendement sur l'article 3. Rôle : auteur ou cosignataire nommé ; un député couvert par « et les membres du groupe » n'est pas compté. Sort unifié : « non soutenu » et « irrecevable » sont tous deux rendus par non_examine (enum), le libellé exact est dans sort_libelle. Pas de date de référence : sorts au jour de l'archive. « travaillé avec » : formules repérées dans l'exposé des motifs (travaillé avec, proposé par, en lien avec, issu des travaux de), nom pris tel quel, sans inférence.",
+    "producer": "pipeline/amendements",
+    "dossier_id": "plf2027-holdings"
+  },
+  "depute_id": "PA793174",
+  "amendements": [
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001816",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 3.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001816",
+      "numero": "I-CF1816",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-07",
+      "article": "ART. 3"
+    },
+    {
+      "id": "AMANR5L17PO59048B3210P1D1N001847",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Avant le chapitre II du titre IV de la première partie du livre premier du code général des impôts, il est inséré un chapitre I ter ainsi rédigé :«…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B3210P1D1N001847",
+      "numero": "I-CF1847",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-04",
+      "date_sort": "2026-10-07",
+      "article": "APRÈS ART. 4"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003899",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Supprime l'article 3.",
+      "sort": "adopte",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003899",
+      "numero": "I-3899",
+      "sort_libelle": "Adopté",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-10-15",
+      "article": "ART. 3"
+    },
+    {
+      "id": "AMANR5L17PO838901B3210P1D1N003931",
+      "texte_id": "PRJLANR5L17B3210",
+      "role": "cosignataire",
+      "resume": "Après l'article 4 : I. – Le code général des impôts est ainsi modifié :1° Le chapitre I bis du titre IV de la première partie du livre premier est ainsi rétabli :« Chapitre I bis«…",
+      "sort": "rejete",
+      "travaille_avec": [],
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P1D1N003931",
+      "numero": "I-3931",
+      "sort_libelle": "Rejeté",
+      "date_depot": "2026-10-10",
+      "date_sort": "2026-10-16",
+      "article": "APRÈS ART. 4"
+    }
+  ]
+}
