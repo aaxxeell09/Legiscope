@@ -102,7 +102,7 @@ Pas de serveur applicatif. Le pipeline prépare des fichiers JSON, l'interface l
 ```mermaid
 flowchart LR
   subgraph S["Sources"]
-    H["API Hémicycle<br/>prédictions Orcet, agrégats"]
+    H["API Hémicycle<br/>prédictions Orcet,<br/>flux d'événements"]
     AN["Open data Assemblée nationale<br/>dossiers, amendements, scrutins et votes,<br/>comptes rendus, agenda"]
     HA["HATVP<br/>représentants d'intérêts"]
   end
@@ -130,9 +130,9 @@ flowchart LR
 ```
 
 - **L'open data de l'Assemblée nationale** fournit l'essentiel : dossiers, amendements, scrutins et votes nominatifs, comptes rendus.
-- **L'API Hémicycle** fournit les prédictions du modèle Orcet et des agrégats (accord entre groupes, loyauté des députés), voir [pipeline/collecte/api.ts](pipeline/collecte/api.ts).
+- **L'API Hémicycle** fournit les prédictions du modèle Orcet et, en option, un flux d'événements parlementaires, voir [pipeline/collecte/api.ts](pipeline/collecte/api.ts) et [pipeline/fiches/lib/evenements-api.ts](pipeline/fiches/lib/evenements-api.ts).
 - **Orcet** donne, pour un amendement en attente, la moyenne des probabilités individuelles de voter pour. Ce n'est pas une probabilité d'adoption. Sans prédiction, rien n'est affiché.
-- **Featherless** donne accès au modèle de langage (`Qwen/Qwen3.8-27B` par défaut, voir [pipeline/lib/llm.ts](pipeline/lib/llm.ts)). Il extrait les personnes entendues dans les rapports, classe les interventions des débats et rédige des textes à partir de chiffres déjà calculés. Il ne voit aucun vote et ne calcule aucun chiffre.
+- **Featherless** donne accès au modèle de langage (`Qwen/Qwen3.8-27B` par défaut, voir [pipeline/lib/llm.ts](pipeline/lib/llm.ts)). Il extrait les personnes entendues dans les rapports, classe les interventions des débats et la nature de certains amendements, et rédige des textes à partir de chiffres déjà calculés. Il ne voit aucun vote et ne calcule aucun chiffre.
 - **Le verdict et le classement des députés sont calculés par des règles**, pas par le modèle. Le score du verdict est un indicateur descriptif construit par le projet, pas une prédiction validée statistiquement.
 
 Détail dans [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) et [docs/DATA_AND_AI.md](docs/DATA_AND_AI.md).
@@ -178,7 +178,7 @@ Les résultats obtenus sur une copie fraîche du dépôt sont consignés dans [d
 |---|---|---|
 | [Open data de l'Assemblée nationale](https://data.assemblee-nationale.fr) | Députés et groupes, dossiers législatifs, amendements, scrutins et votes nominatifs, comptes rendus de séance, agenda. Les rapports et les comptes rendus de commission sont lus sur [assemblee-nationale.fr](https://www.assemblee-nationale.fr) | [Licence Ouverte](https://data.assemblee-nationale.fr/licence-ouverte-open-licence) (Etalab) |
 | [HATVP](https://www.hatvp.fr), [répertoire des représentants d'intérêts](https://www.data.gouv.fr/datasets/repertoire-des-representants-dinterets) | Organisations ayant déclaré une action de représentation d'intérêts sur le sujet | Licence Ouverte (Etalab) |
-| [API Hémicycle](https://hemicycle.ai/api) | Prédictions Orcet sur les amendements en attente, agrégats (accord entre groupes, loyauté des députés), flux d'événements parlementaires en option | Service à clé, conditions d'utilisation d'Hémicycle |
+| [API Hémicycle](https://hemicycle.ai/api) | Prédictions Orcet sur les amendements en attente, flux d'événements parlementaires en option. Deux agrégats (accord entre groupes, loyauté des députés) sont collectés mais ne sont pas encore exploités | Service à clé, conditions d'utilisation d'Hémicycle |
 | [Featherless](https://featherless.ai) | Accès à un modèle de langage ouvert, pour l'extraction et la rédaction | Service à clé |
 
 ## Limites
