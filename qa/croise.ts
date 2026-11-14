@@ -105,7 +105,9 @@ export function verifierCroise(root: string, erreur: Erreur) {
     //    on vérifie la cohérence interne (texte rejeté ou retiré => la mesure n'est plus « dans le texte » examiné).
     const etat = lire(P("etat.json"));
     const te = etat?.texte_etat;
-    if (te && etat?.mesure && (te.statut === "rejete" || te.statut === "retire") && etat.mesure.dans_le_texte === true && dossier.date_reference === null) {
+    // Un texte rejeté en première lecture à l'Assemblée part au Sénat tel que déposé : la mesure du gouvernement y reste.
+    // Seul un texte retiré rend « dans_le_texte: true » incohérent.
+    if (te && etat?.mesure && te.statut === "retire" && etat.mesure.dans_le_texte === true && dossier.date_reference === null) {
       ecart(erreur, P("etat.json"), P("etat.json"), "mesure.dans_le_texte vs texte_etat.statut", etat.mesure.dans_le_texte, te.statut);
     }
   }
