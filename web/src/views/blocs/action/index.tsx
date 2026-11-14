@@ -17,6 +17,7 @@ import {
   type CleGroupeAction,
 } from "../../depute/commun";
 import "../../depute/p7.css";
+import "./action.css";
 
 /** Bloc 4, Action : qui décide, sur qui agir, avec quels arguments. */
 export default function ActionBloc({ dossier }: { dossier: string }) {
@@ -62,28 +63,25 @@ function repartir(a: Action) {
 }
 
 function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossier: string; annuaire: Annuaire; disponibles: string[] | null }) {
-  const cles: CleGroupeAction[] = ["actionnables", "allies", "perdus"];
   const { groupes, inconnus } = repartir(a);
   return (
     <>
-      <section className="p7-section" style={{ marginTop: 0 }}>
-        <h4>Ceux qui décident</h4>
+      <section className="action-section action-decideurs">
+        <div className="action-section-head"><div><span className="action-kicker">Acteurs institutionnels</span><h4>Ceux qui décident</h4></div><span className="action-count">{a.decideurs.length}</span></div>
         {a.decideurs.length === 0 ? (
           <div className="p7-vide">aucun · {a.meta.limits}</div>
         ) : (
-          <ul className="p7-list p7-decideurs">
+          <ul className="action-decideurs-list">
             {a.decideurs.map((d, i) => (
-              <li key={`${d.role}-${d.depute_id ?? i}`} className="p7-item">
-                <div className="text-2">{ROLE_DECIDEUR[d.role]}</div>
-                <div className="p7-ligne">
+              <li key={`${d.role}-${d.depute_id ?? i}`} className="action-decideur">
+                <div className="action-role">{ROLE_DECIDEUR[d.role]}</div>
+                <div className="p7-ligne action-personne">
                   <span className="p7-nom">{d.depute_id ? annuaire.nom(d.depute_id) || d.nom : d.nom}</span>
                   {d.groupe_id ? <Tag annuaire={annuaire} groupeId={d.groupe_id} /> : d.role === "gouvernement" && !/gouvernement/i.test(d.nom) && <span className="text-2">gouvernement</span>}
                 </div>
-                <div className="p7-ligne">
-                  <span className={d.position === "inconnue" ? "text-2" : undefined}>{POSITION_DECIDEUR[d.position]}</span>
-                  <span className="p7-droite">
-                    <Pourquoi preuve={d.preuve} />
-                  </span>
+                <div className="action-position">
+                  <span className={`action-position-label action-position-${d.position}`}>{POSITION_DECIDEUR[d.position]}</span>
+                  <Pourquoi preuve={d.preuve} />
                 </div>
               </li>
             ))}
@@ -91,41 +89,26 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
         )}
       </section>
 
-      <div className="p7-cols">
-        {cles.map((k) => (
-          <ColonneGroupe
-            key={k}
-            titre={GROUPE_ACTION[k]}
-            lignes={groupes[k]}
-            raisonVide={a.meta.limits}
-            dossier={dossier}
-            annuaire={annuaire}
-            disponibles={disponibles}
-          />
-        ))}
-        <ColonneInconnus lignes={inconnus} raisonVide={a.meta.limits} annuaire={annuaire} />
-      </div>
+      <CategoriesDeputes groupes={groupes} inconnus={inconnus} raisonVide={a.meta.limits} dossier={dossier} annuaire={annuaire} disponibles={disponibles} />
 
-      <div className="p7-cols p7-cols-2 p7-section">
-        <ColonneArguments titre="Arguments entendus pour la mesure" args={a.arguments.pour} annuaire={annuaire} raisonVide={a.meta.limits} />
-        <ColonneArguments titre="Arguments entendus contre la mesure" args={a.arguments.contre} annuaire={annuaire} raisonVide={a.meta.limits} />
-      </div>
+      <section className="action-section action-arguments">
+        <div className="action-section-head"><div><span className="action-kicker">Débat public</span><h4>Arguments documentés</h4></div></div>
+        <div className="p7-cols p7-cols-2 action-arguments-grid"><ColonneArguments titre="Arguments favorables à la mesure" args={a.arguments.pour} annuaire={annuaire} raisonVide={a.meta.limits} /><ColonneArguments titre="Arguments défavorables à la mesure" args={a.arguments.contre} annuaire={annuaire} raisonVide={a.meta.limits} /></div>
+      </section>
 
-      <section className="p7-section">
-        <h4>Contre-arguments à amener</h4>
+      <section className="action-section action-reponses">
+        <div className="action-section-head"><div><span className="action-kicker">Analyse générée</span><h4>Réponses analytiques proposées</h4></div><span className="action-count">{a.contre_arguments.length}</span></div>
         {a.contre_arguments.length === 0 ? (
           <div className="p7-vide">aucun · {a.meta.limits}</div>
         ) : (
-          <ul className="p7-list">
+          <ul className="action-reponses-list">
             {a.contre_arguments.map((c, i) => (
-              <li key={i} className="p7-item">
-                <div>{c.texte}</div>
-                <div className="p7-ligne">
-                  <span className="text-2">répond à : {c.repond_a}</span>
-                  <span className="p7-droite p7-ligne">
+              <li key={i} className="action-reponse">
+                <div className="action-reponse-cible"><span>Répond à</span>{c.repond_a}</div>
+                <div className="action-reponse-texte">{c.texte}</div>
+                <div className="action-reponse-meta">
                     <Redaction mode={c.mode} verifie={c.verifie} />
                     <Pourquoi preuve={c.preuve} />
-                  </span>
                 </div>
               </li>
             ))}
@@ -135,6 +118,30 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
 
       <Meta meta={a.meta} />
     </>
+  );
+}
+
+type GroupesRepartis = ReturnType<typeof repartir>["groupes"];
+type Categorie = CleGroupeAction | "inconnus";
+
+function CategoriesDeputes({ groupes, inconnus, raisonVide, dossier, annuaire, disponibles }: { groupes: GroupesRepartis; inconnus: PositionInconnue[]; raisonVide: string; dossier: string; annuaire: Annuaire; disponibles: string[] | null }) {
+  const [active, setActive] = useState<Categorie>("actionnables");
+  const items: { key: Categorie; label: string; count: number }[] = [
+    { key: "actionnables", label: "Positions à approfondir", count: groupes.actionnables.length },
+    { key: "allies", label: "Positions convergentes", count: groupes.allies.length },
+    { key: "perdus", label: "Positions opposées", count: groupes.perdus.length },
+    { key: "inconnus", label: "Positions non établies", count: inconnus.length },
+  ];
+  return (
+    <section className="action-section action-deputes">
+      <div className="action-section-head"><div><span className="action-kicker">Parlementaires suivis</span><h4>Positions documentées</h4></div></div>
+      <div className="action-tabs" role="tablist" aria-label="Catégories de parlementaires">
+        {items.map((item) => <button key={item.key} type="button" role="tab" aria-selected={active === item.key} className="action-tab" onClick={() => setActive(item.key)}><span>{item.label}</span><strong>{item.count}</strong></button>)}
+      </div>
+      <div role="tabpanel" className="action-tabpanel">
+        {active === "inconnus" ? <ColonneInconnus lignes={inconnus} raisonVide={raisonVide} annuaire={annuaire} /> : <ColonneGroupe titre={items.find((i) => i.key === active)?.label ?? GROUPE_ACTION[active]} lignes={groupes[active]} raisonVide={raisonVide} dossier={dossier} annuaire={annuaire} disponibles={disponibles} />}
+      </div>
+    </section>
   );
 }
 
@@ -249,8 +256,10 @@ function ColonneInconnus({ lignes, raisonVide, annuaire }: { lignes: PositionInc
 }
 
 function ColonneArguments({ titre, args, annuaire, raisonVide }: { titre: string; args: Argument[]; annuaire: Annuaire; raisonVide: string }) {
+  const [developpe, setDeveloppe] = useState(false);
+  const visibles = developpe ? args : args.slice(0, 4);
   return (
-    <div className="p7-col">
+    <div className="p7-col action-argument-col">
       <h4>
         {titre}
         <span className="text-2">{args.length}</span>
@@ -259,7 +268,7 @@ function ColonneArguments({ titre, args, annuaire, raisonVide }: { titre: string
         <div className="p7-vide">aucun · {raisonVide}</div>
       ) : (
         <ul className="p7-list">
-          {args.map((g, i) => (
+          {visibles.map((g, i) => (
             <li key={`${g.url}-${i}`} className="p7-item">
               <div className="p7-nom">{g.argument}</div>
               <p className="p7-citation">« {g.citation} »</p>
@@ -283,6 +292,7 @@ function ColonneArguments({ titre, args, annuaire, raisonVide }: { titre: string
           ))}
         </ul>
       )}
+      {args.length > 4 && <button type="button" className="p7-voir-plus" onClick={() => setDeveloppe((v) => !v)}>{developpe ? "Réduire" : `Voir les ${args.length} arguments`}</button>}
     </div>
   );
 }
