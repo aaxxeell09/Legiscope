@@ -4,7 +4,7 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { ArgumentSchema, DebatsSchema, type Argument, type Debats, type DossierConfig } from "../../contracts";
+import { ArgumentSchema, ArgumentsSchema, DebatsSchema, type Argument, type Debats, type DossierConfig } from "../../contracts";
 import { chargerContexte, deputesDuDossier, horodatage, normaliserNom, RACINE, type Contexte } from "./contexte";
 import { classerTout, cleDisponible, regrouper, verifierCamp, type ClassementVerifie } from "./classer";
 import { lireCommission } from "./commission";
@@ -172,7 +172,7 @@ async function traiterDossier(ctx: Contexte, dossier: DossierConfig): Promise<vo
     cleDisponible() ? `Classement par le modèle Featherless (${appels} appels à cette exécution, cache sur disque).` : "FEATHERLESS_API_KEY absente : seuls les classements relus à la main (pipeline/debats/classement-manuel) sont utilisés.",
     `Orateur sans identifiant (ministre, rapporteur, député absent de deputes.json) : orateur_id null, nom dans preuve.raisonnement. Rien après ${dossier.date_reference ?? "ce jour"}.`,
   ].join(" ");
-  const argumentsJson = {
+  const argumentsJson = ArgumentsSchema.parse({
     meta: {
       generated_at: horodatage(),
       sources: [...sourcesCommunes, ...lues.map((l) => ({ label: l.label, url: l.url }))],
@@ -182,7 +182,7 @@ async function traiterDossier(ctx: Contexte, dossier: DossierConfig): Promise<vo
     },
     pour,
     contre,
-  };
+  });
   writeFileSync(join(dirDossier, "arguments.json"), JSON.stringify(argumentsJson, null, 2) + "\n");
   log(`arguments.json : ${pour.length} pour, ${contre.length} contre (modèle ${modeleUtilise ? "appelé" : "non appelé"})`);
 
