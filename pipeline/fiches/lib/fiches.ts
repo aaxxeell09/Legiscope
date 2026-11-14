@@ -44,8 +44,9 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
   // L'entrée du modèle ne contient aucun vote brut (règle 5.13) ; identifiants techniques retirés.
   const entreeModele = { ...entree, amendements: entree.amendements.map(({ id: _id, ...reste }) => reste) };
   const prompt = lirePrompt(PROMPT_SYNTHESE);
-  const position = await rediger({ prompt, champ: "position_probable", entree: entreeModele, gabarit: gabarit.position_probable, chiffresGabarit: gabarit.chiffres, etiquette: `${ctx.dossier.id}/fiches/${pa} position_probable` });
-  const argument = await rediger({ prompt, champ: "argument", entree: entreeModele, gabarit: gabarit.argument, chiffresGabarit: gabarit.chiffres, etiquette: `${ctx.dossier.id}/fiches/${pa} argument` });
+  const sansCache = regenerer.has(pa);
+  const position = await rediger({ prompt, champ: "position_probable", entree: entreeModele, gabarit: gabarit.position_probable, chiffresGabarit: gabarit.chiffres, etiquette: `${ctx.dossier.id}/fiches/${pa} position_probable`, sansCache });
+  const argument = await rediger({ prompt, champ: "argument", entree: entreeModele, gabarit: gabarit.argument, chiffresGabarit: gabarit.chiffres, etiquette: `${ctx.dossier.id}/fiches/${pa} argument`, sansCache });
   const mode = position.mode === "llm" && argument.mode === "llm" ? "llm" : "gabarit";
   return { origine: gabarit.origine, s: {
     position_probable: position.texte,
@@ -56,6 +57,12 @@ async function synthese(ctx: Contexte, fiche: Omit<Fiche, "synthese">): Promise<
     verifie: position.verifie && argument.verifie,
     date: ref ?? aujourdhui(),
   } };
+}
+
+let regenerer = new Set<string>();
+/** Députés dont la synthèse est rappelée au modèle hors cache (option --regenerer). */
+export function regenererPour(ids: string[]) {
+  regenerer = new Set(ids);
 }
 
 export async function construireFiches(ctx: Contexte): Promise<FichesIndex> {

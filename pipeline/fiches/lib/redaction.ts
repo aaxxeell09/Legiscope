@@ -104,6 +104,8 @@ export async function rediger(args: {
   chiffresGabarit?: string[];
   chiffresAutorises?: string[];
   etiquette: string;
+  /** true : rappelle le modèle même si une rédaction identique est en cache (régénération ciblée). */
+  sansCache?: boolean;
 }): Promise<Redige> {
   const m = await chargerLlm();
   if (!m || !args.prompt) {
@@ -114,7 +116,7 @@ export async function rediger(args: {
   const prompt = `${args.prompt}\n\nChamp demandé : ${args.champ}\n\nEntrée (JSON) :\n${JSON.stringify(args.entree, null, 1)}`;
   // Cache disque : même prompt, même champ, même entrée → même texte, sans rappeler le modèle.
   const fichierCache = join(CACHE, `${cleCache(args.prompt, args.champ, args.entree)}.json`);
-  if (!sansCache && existsSync(fichierCache)) {
+  if (!sansCache && !args.sansCache && existsSync(fichierCache)) {
     try {
       const c = JSON.parse(readFileSync(fichierCache, "utf8")) as Redige;
       if (c.mode === "llm" && verifierChiffres(c.texte, c.chiffres_utilises).ok) {

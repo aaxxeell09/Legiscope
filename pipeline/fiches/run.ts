@@ -2,12 +2,13 @@
 // Usage : bun run fiches [--root data] [--dossier <id>] [--gabarit] [--api] [--sans-cache]
 //   --api : rafraîchit le flux Hémicycle evenements_parlementaires (5 crédits par texte), sinon cache.
 //   --sans-cache : rappelle le modèle même si une rédaction identique est en cache (pipeline/fiches/.cache/redaction/).
+//   --regenerer PA1,PA2 : rappelle le modèle pour la synthèse de ces seuls députés.
 // Rejouable : tout est régénéré depuis les fichiers des autres producteurs.
 
 import { SCHEMAS, dataPath } from "../../contracts/index";
 import { construireAction, lireArguments } from "./lib/action";
 import { chargerContexte } from "./lib/contexte";
-import { construireFiches } from "./lib/fiches";
+import { construireFiches, regenererPour } from "./lib/fiches";
 import { lireJsonBrut, lireKind, noter, rapport } from "./lib/io";
 import { construireNouveautes } from "./lib/nouveautes";
 import { coutLlm, forcerGabarit, ignorerCache, raisonDuGabarit, statsCache } from "./lib/redaction";
@@ -20,6 +21,7 @@ function args() {
   let gabarit = false;
   let api = false;
   let sansCache = false;
+  let regenerer: string[] = [];
   for (let i = 0; i < a.length; i++) {
     if (a[i] === "--root") root = a[++i] ?? root;
     else if (a[i].startsWith("--root=")) root = a[i].slice(7);
@@ -28,18 +30,21 @@ function args() {
     else if (a[i] === "--gabarit") gabarit = true;
     else if (a[i] === "--api") api = true;
     else if (a[i] === "--sans-cache") sansCache = true;
+    else if (a[i] === "--regenerer") regenerer = (a[++i] ?? "").split(",").filter(Boolean);
+    else if (a[i].startsWith("--regenerer=")) regenerer = a[i].slice(12).split(",").filter(Boolean);
     else {
-      console.error(`argument inconnu : ${a[i]}\nusage : bun run fiches [--root data] [--dossier <id>] [--gabarit] [--api] [--sans-cache]`);
+      console.error(`argument inconnu : ${a[i]}\nusage : bun run fiches [--root data] [--dossier <id>] [--gabarit] [--api] [--sans-cache] [--regenerer PA,...]`);
       process.exit(2);
     }
   }
-  return { root: root.replace(/\/$/, ""), dossier, gabarit, api, sansCache };
+  return { root: root.replace(/\/$/, ""), dossier, gabarit, api, sansCache, regenerer };
 }
 
 async function main() {
-  const { root, dossier: seul, gabarit, api, sansCache } = args();
+  const { root, dossier: seul, gabarit, api, sansCache, regenerer } = args();
   forcerGabarit(gabarit);
   ignorerCache(sansCache);
+  regenererPour(regenerer);
   const config = lireKind(root, null, "config");
   const groupes = lireKind(root, null, "groupes");
   const deputes = lireKind(root, null, "deputes");
