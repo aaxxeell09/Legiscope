@@ -85,6 +85,7 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
   for (const obj of d.objectifs) {
     const cible = obj.position_cible;
     const favorable: any[] = [], bloquant: any[] = [], etabli: string[] = [], inconnu: string[] = [];
+    const rejets: string[] = [];
     let base: Map<string, Pos>, base7: Map<string, Pos>, porteurs: AmdtSujet[];
     let niveau: "elevee" | "moyenne" | "faible";
 
@@ -184,11 +185,30 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
     if (nouveautes?.evenements) {
       const ev = nouveautes.evenements
         .filter((e: any) => e.effet !== "neutre" && e.date > j7 && e.date <= ref && (e.objectif_rang == null || e.objectif_rang === obj.rang))
+        .filter((e: any) => causeValide(e, obj.rang, cible))
         .sort((a: any, b: any) => b.importance - a.importance || (a.date < b.date ? 1 : -1))[0];
       if (ev) cause = { evenement_id: ev.id, titre: ev.titre, preuve: ev.preuve };
     }
 
     // ---- lecture ----
+    function causeValide(e: any, rang: number, cib: "pour" | "contre"): boolean {
+      // Un événement d'amendement n'est retenu que si l'amendement porte sur la mesure (article ou dispositif)
+      // et si son effet annoncé concorde avec le sens lu par P3. Sinon : rejeté et compté dans rejets.
+      if (!String(e.type).startsWith("amendement")) return true;
+      const uid = String(e.url ?? "").match(/AMANR5L17[A-Z0-9]+/)?.[0];
+      const a = uid ? amdts.find((x) => x.id === uid) : undefined;
+      if (!a || !a.pertinent) { rejets.push(`${e.id} : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu)`); return false; }
+      if (!a.sens) { rejets.push(`${e.id} : sens de l'amendement sur la mesure non lu`); return false; }
+      const dir = cib === "contre" ? -1 : 1; // sens qui sert le client
+      let attendu: string;
+      if (e.type === "amendement_sort") {
+        const adopte = /adopt/i.test(e.titre);
+        attendu = (a.sens === dir) === adopte ? "renforce" : "affaiblit";
+      } else attendu = a.sens === dir ? "renforce" : "affaiblit";
+      if (rang > 1 && a.sens === dir && /^supprimer cet article/i.test(a.dispositif)) attendu = "renforce";
+      if (e.effet !== attendu) { rejets.push(`${e.id} : effet « ${e.effet} » annoncé, mais l'amendement ${a.sens > 0 ? "renforce" : "réduit"} la mesure (${a.sens_raison}), donc « ${attendu} » pour cet objectif`); return false; }
+      return true;
+    }
     const c = obj.rang === 1 ? cpt(positions) : { pour: 0, contre: 0, autres: 0 };
     const etapeTxt = sansPoint(etat.etape);
     let gid = "lecture.sans_raison";
@@ -228,10 +248,11 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
       favorable,
       bloquant,
       cause_du_changement: cause,
-      _trace: { score_positions: s0.score, score_j7: score7, orcet: orc, groupes_connus: s0.nConnus },
+      _trace: { rejets, score_positions: s0.score, score_j7: score7, orcet: orc, groupes_connus: s0.nConnus },
     });
   }
   const traces = verdicts.map((v) => `objectif ${v.objectif_rang} : positions ${v._trace.score_positions === null ? "-" : r2(v._trace.score_positions)}, à J-7 ${v._trace.score_j7 === null ? "-" : r2(v._trace.score_j7)}, Orcet ${v._trace.orcet ? r2(v._trace.orcet.moyenne) + " sur " + v._trace.orcet.n : "aucun"}`).join(" ; ");
+  const rejetsTxt = [...new Set(verdicts.flatMap((v) => v._trace.rejets.map((r: string) => `objectif ${v.objectif_rang}, ${r}`)))];
   for (const v of verdicts) delete v._trace;
   return {
     meta: {
@@ -246,7 +267,8 @@ export async function construireVerdict(ctx: CtxDossierPlus, etat: any, texte: a
         `Verdict proposé, le cabinet décide. Données au plus tard le ${ref}. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), ` +
         `corrigé à ${POIDS_ORCET * 100} % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de ${SEUIL_FAVORABLE}, défavorable sous ${SEUIL_DEFAVORABLE}, « insuffisant » sous 3 groupes de position connue. ` +
         `Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de réduction ou de report, ou opposés à la mesure, contre groupes qui la renforcent. ` +
-        `Avis du rapporteur et du gouvernement non publiés. Traces : ${traces}.`,
+        `Avis du rapporteur et du gouvernement non publiés. Traces : ${traces}.` +
+        (rejetsTxt.length ? ` Événements de nouveautes.json écartés comme cause du changement : ${rejetsTxt.join(" ; ")}.` : ""),
       producer: PRODUCER,
       dossier_id: d.id,
     },

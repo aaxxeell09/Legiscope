@@ -57,10 +57,11 @@ function predictionOrcet(dossierId: string, uid: string, avant: (x: string | nul
 export function construireTexte(ctx: CtxDossierPlus) {
   const { d, positions, sourcePositions, lies, amdts, groupes, deputes } = ctx;
   const { ref, avant } = coupure(d);
-  const exclus = { irrecevables: 0, hors_deputes: 0, apres_ref: 0 };
+  const exclus = { irrecevables: 0, hors_deputes: 0, apres_ref: 0, hors_sujet: 0 };
   const amendements: any[] = [];
   for (const a of amdts) {
     if (a.texte !== d.mesure.texte_id) continue;
+    if (!a.pertinent) { exclus.hors_sujet++; continue; }
     if (!avant(a.dateDepot)) { exclus.apres_ref++; continue; }
     const s = sortUnifie(a, avant);
     if (s.sort === null) { exclus.irrecevables++; continue; }
@@ -103,7 +104,7 @@ export function construireTexte(ctx: CtxDossierPlus) {
         { label: "Texte", url: texteUrl },
       ],
       limits:
-        `Données au plus tard le ${ref}. Amendements du sujet : mots-clés de la configuration dans le dispositif ou l'exposé, plus tous les amendements de l'article ${d.mesure.article ?? "(aucun)"}. ` +
+        `Données au plus tard le ${ref}. Amendements du sujet : amendements de l'article de la mesure, plus ceux qui citent un mot-clé de la configuration dans leur dispositif. ${exclus.hors_sujet} amendements qui ne le citent que dans l'exposé sont écartés (ex. retraites, crédits de seconde partie). ` +
         `Exclus : ${exclus.irrecevables} irrecevables ou retirés avant publication, ${exclus.hors_deputes} déposés par le gouvernement, la commission ou un ancien député, ${exclus.apres_ref} déposés après la date de référence. ` +
         `Un sort postérieur à la date de référence est « en_attente ». « non_examine » regroupe ici les amendements non soutenus (écrit dans le résumé). ` +
         `Positions des groupes : ${sourcePositions === "scrutins" ? `${nLies} scrutins nominatifs liés de sens lisible (position majoritaire du groupe traduite en position sur la mesure)` : "amendements déposés par le groupe (aucun scrutin nominatif lié avant la date de référence)"} ; « divise » sous 60 % de votes dans un même sens. ` +

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:58:50+01:00",
+    "generated_at": "2026-11-14T14:02:26+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
       }
     ],
-    "limits": "Verdict proposé, le cabinet décide. Données au plus tard le 2026-11-14. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de réduction ou de report, ou opposés à la mesure, contre groupes qui la renforcent. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.66, à J-7 0.66, Orcet aucun ; objectif 2 : positions 0.78, à J-7 0.78, Orcet aucun ; objectif 3 : positions 0.78, à J-7 0.78, Orcet aucun.",
+    "limits": "Verdict proposé, le cabinet décide. Données au plus tard le 2026-11-14. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de réduction ou de report, ou opposés à la mesure, contre groupes qui la renforcent. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.66, à J-7 0.66, Orcet aucun ; objectif 2 : positions 0.78, à J-7 0.78, Orcet aucun ; objectif 3 : positions 0.78, à J-7 0.78, Orcet aucun. Événements de nouveautes.json écartés comme cause du changement : objectif 1, ev-115 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu).",
     "producer": "pipeline/pivots",
     "dossier_id": "plf2027-holdings"
   },
@@ -39,7 +39,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la situation est favorable car la mesure, absente du texte du gouvernement et rejetée par l'Assemblée, est contestée par 7 groupes contre 4, ce qui limite les chances de son adoption.",
+        "texte": "Au Sénat, en première lecture, la situation est favorable car la mesure, absente du texte du gouvernement et rejetée par l'Assemblée, est contestée par 7 groupes contre 4, avec un rapporteur général agissant contre elle.",
         "chiffres_utilises": [
           "4",
           "7"
@@ -144,28 +144,7 @@
           }
         }
       ],
-      "cause_du_changement": {
-        "evenement_id": "ev-115",
-        "titre": "2 amendements identiques (n° 115, n° 848) (SOC) déposés : Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des…",
-        "preuve": {
-          "sources": [
-            {
-              "label": "Amendement n° 115",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000115"
-            },
-            {
-              "label": "Amendement n° 848",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000848"
-            },
-            {
-              "label": "Texte PRJLANR5L17B3210",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
-            }
-          ],
-          "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la prédiction Orcet (date de dépôt non publiée dans texte.json). Camp : amendement de suppression. Effet déduit du camp de l'amendement par rapport à la position du client.",
-          "nature": "deduction"
-        }
-      }
+      "cause_du_changement": null
     },
     {
       "objectif_rang": 2,
@@ -182,12 +161,10 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la situation est favorable à l'objectif de repli de l'Afep, car 8 groupes représentant 440 sièges soutiennent la limitation de l'assiette et le rapporteur général a déposé 15 amendements contre la mesure, face à 3 groupes opposés.",
+        "texte": "Au Sénat, en première lecture, la situation est favorable à l'objectif de repli de limiter l'assiette, car 8 groupes soutiennent cette position et le rapporteur général a déposé 15 amendements contre la mesure.",
         "chiffres_utilises": [
-          "3",
           "15",
-          "8",
-          "440"
+          "8"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -268,11 +245,10 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la situation est favorable car 8 groupes, soit 440 sièges, soutiennent l'objectif de repousser l'entrée en vigueur de la mesure, tandis que le rapporteur général a agi contre elle à 15 reprises.",
+        "texte": "Au Sénat, en première lecture, la situation est favorable au client car 8 groupes, soit 440 sièges, soutiennent l'objectif de repousser l'entrée en vigueur de la mesure, tandis que le rapporteur général a agi contre elle.",
         "chiffres_utilises": [
           "8",
-          "440",
-          "15"
+          "440"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",

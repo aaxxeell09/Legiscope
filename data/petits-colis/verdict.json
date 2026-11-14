@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:59:04+01:00",
+    "generated_at": "2026-11-14T14:02:44+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -19,7 +19,7 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
       }
     ],
-    "limits": "Verdict proposé, le cabinet décide. Données au plus tard le 2025-11-18. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de réduction ou de report, ou opposés à la mesure, contre groupes qui la renforcent. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.26, à J-7 0.26, Orcet aucun ; objectif 2 : positions 0.71, à J-7 0.71, Orcet aucun ; objectif 3 : positions 0.46, à J-7 0.26, Orcet aucun.",
+    "limits": "Verdict proposé, le cabinet décide. Données au plus tard le 2025-11-18. Score = part des sièges des groupes de position connue qui vont dans le sens du client (groupe divisé ou abstentionniste compté pour moitié), corrigé à 30 % par la moyenne Orcet des amendements en attente qui portent la position du client quand il y en a. Favorable à partir de 0.55, défavorable sous 0.4, « insuffisant » sous 3 groupes de position connue. Tendance : score contre le même calcul sept jours plus tôt (écart de plus de 0,03). Replis : groupes auteurs d'amendements de réduction ou de report, ou opposés à la mesure, contre groupes qui la renforcent. Avis du rapporteur et du gouvernement non publiés. Traces : objectif 1 : positions 0.26, à J-7 0.26, Orcet aucun ; objectif 2 : positions 0.71, à J-7 0.71, Orcet aucun ; objectif 3 : positions 0.46, à J-7 0.26, Orcet aucun. Événements de nouveautes.json écartés comme cause du changement : objectif 1, ev-61 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-1224 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-1611 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-1786 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-2147 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-2176 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 1, ev-2274 : amendement hors sujet (le sujet n'est cité que dans l'exposé, ou amendement inconnu) ; objectif 2, ev-938 : effet « renforce » annoncé, mais l'amendement renforce la mesure (relève le montant (2 à 5)), donc « affaiblit » pour cet objectif.",
     "producer": "pipeline/pivots",
     "dossier_id": "petits-colis"
   },
@@ -185,7 +185,7 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée nationale, en première lecture, la situation est favorable car 4 groupes, soit 325 sièges, soutiennent des amendements comme le n° 460 visant à réduire la taxe, malgré l'opposition du gouvernement et de 134 sièges.",
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est favorable car 4 groupes, dont 325 sièges, soutiennent des amendements comme le n° 460 visant à réduire la taxe, malgré l'opposition du gouvernement et de 134 sièges.",
         "chiffres_utilises": [
           "460",
           "4",
@@ -297,13 +297,13 @@
         }
       ],
       "cause_du_changement": {
-        "evenement_id": "ev-938",
-        "titre": "Amendement n° 938 (DR) déposé : Le présent amendement vise à relever le montant de la taxe de 2 à 5 euros",
+        "evenement_id": "ev-460",
+        "titre": "Amendement n° 460 (EPR) déposé : Le présent amendement vise à exclure les articles de seconde main, les produits…",
         "preuve": {
           "sources": [
             {
-              "label": "Amendement n° 938",
-              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000938"
+              "label": "Amendement n° 460",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000460"
             },
             {
               "label": "Texte PRJLANR5L17B1906",
@@ -332,7 +332,7 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée nationale, en première lecture, la situation est incertaine car si 2 groupes soutiennent l'objectif de repli, la mesure est portée par le gouvernement et 6 groupes s'y opposent.",
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est incertaine car, si 2 groupes soutiennent le client, la mesure est portée par le gouvernement et 6 groupes s'opposent à son report.",
         "chiffres_utilises": [
           "2",
           "6"
