@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T16:58:14+01:00",
+    "generated_at": "2026-11-14T17:07:05+01:00",
     "sources": [
       {
         "label": "Open data Assemblée nationale, amendements (17e législature), via data/raw de P1",
@@ -15,7 +15,7 @@
     "producer": "pipeline/amendements",
     "dossier_id": "plf2027-renovation"
   },
-  "depute_id": "PA722162",
+  "depute_id": "PA720256",
   "amendements": [
     {
       "id": "AMANR5L17PO59048B3210P1D1N001751",
