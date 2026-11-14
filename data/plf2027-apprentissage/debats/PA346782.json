@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:19:46+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du mercredi 04 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du mardi 03 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-03-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du lundi 02 novembre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 30 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+      },
+      {
+        "label": "Première séance du mardi 27 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du lundi 19 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-19-octobre-2026"
+      },
+      {
+        "label": "Première séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Troisième séance du vendredi 16 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+      },
+      {
+        "label": "Première séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Deuxième séance du jeudi 15 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+      },
+      {
+        "label": "Commission des finances, réunion n° 12 du 09/10/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés apprenti, apprentissage, aide à l'embauche, France compétences, article 88, article 89 ou article 88 du texte) ; 88 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-apprentissage/groupes-action.json et data/plf2027-apprentissage/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA346782",
+  "debats": [
+    {
+      "date": "2026-11-04",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’exonération de taxe d’apprentissage a été supprimée l’année dernière. L’Inspection générale des affaires sociales (Igas) et l’IGF estimaient qu’elle n’était plus justifiée, car le taux de recours à l’apprentissage dans les structures mentionnées était proche de la moyenne nationale.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-04-novembre-2026"
+    },
+    {
+      "date": "2026-11-03",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’amendement a été rejeté, comme les autres, lors de la réunion de commission tenue au titre de l’article 88. Néanmoins, lorsqu’un conseil a conduit à une fraude, je ne vois pas pour quelle raison le prestataire pourrait conserver une partie de la rémunération perçue à cette occasion.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-mardi-03-novembre-2026"
+    },
+    {
+      "date": "2026-11-02",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La commission réunie au titre de l’article 88 ne s’est pas prononcée sur cet amendement. Si j’ai bien compris, il propose d’étendre l’exonération au cas où le diagnostic est réalisé en avance.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026"
+    },
+    {
+      "date": "2026-11-02",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’amendement a été repoussé au cours d’une réunion tenue au titre de l’article 88, ce qui signifie qu’aucun débat n’a eu lieu. À titre personnel, j’y suis favorable sur le principe, bien que je voie deux difficultés de rédaction.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-02-novembre-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Elle a accepté cet amendement quand elle s’est réunie en application de l’article 88.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-30-octobre-2026"
+    },
+    {
+      "date": "2026-10-27",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Elle a donné un avis défavorable à cet amendement lors de l’examen au titre de l’article 88. Si vous aviez subordonné le bénéfice du suramortissement industriel au fait que les opérations soient réalisées dans l’Union européenne, nous aurions pu discuter.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mardi-27-octobre-2026"
+    },
+    {
+      "date": "2026-10-19",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "En 2018, des compétences relatives à l’apprentissage ont été transférées des régions vers l’État. Les régions bénéficiaient alors de ressources affectées à l’apprentissage supérieures aux besoins réels des dépenses.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-lundi-19-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La commission a donné un avis défavorable lors d’une réunion tenue en application de l’article 88.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "L’amendement a été repoussé par la commission réunie en application de l’article 88.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La commission, réunie en article 88, avait repoussé l’amendement, après s’être interrogée en particulier sur ce point précis : que se passe-t-il si l’acquéreur ne respecte pas son engagement de faire du logement sa résidence principale pendant au moins cinq ans ? Le vendeur subirait alors la conséquence d’une décision unilatérale de l’acheteur.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Les amendements no 2044 et 3688 ont recueilli un avis défavorable de la commission au titre de l’article 88, tandis qu’elle a approuvé celui de M. Labaronne, qui corrige l’un des défauts de l’amendement présenté il y a quelques minutes par M.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Lors de la réunion qu’elle a tenue au titre de l’article 88, la commission avait repoussé l’amendement.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-16",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Lors de la réunion qu’elle a tenue en application de l’article 88, la commission a repoussé cet amendement. Outre cela, je m’interrogeais, cher collègue : sachant que posséder un logement classé F ou G est déjà pénalisant, ne serait-ce qu’à cause des factures d’énergie ou de la baisse de la valeur immobilière, votre amendement ne tend-il pas à introduire une sorte de double peine ?",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/troisieme-seance-du-vendredi-16-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La commission a repoussé cet amendement, assurément intéressant, au titre de l’article 88. J’ai deux questions.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Au titre de l’article 88, la commission a émis un avis défavorable sur cet amendement. Même si je comprends son objet, je m’interroge sur deux points.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Il est défavorable, au titre de l’article 88 de notre règlement. En outre, même si la mesure présente un intérêt, il semble que l’application du barème des frais relève de la compétence du gouvernement, et non de celle du législateur.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "La commission a repoussé l’amendement au titre de l’article 88 mais pour ma part, je m’en remettrai à la sagesse de l’Assemblée. J’ignore si cette disposition applicable aux médecins a amélioré la qualité de la couverture de la permanence des soins.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Or ce dernier point ferait passer le dispositif au-dessus des seuils de notification à la Commission européenne en matière d’aides d’État, car il s’agit bien, indirectement, d’une telle aide. La commission avait donné un avis défavorable lors de sa réunion au titre de l’article 88.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-15",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Mme la députée l’a rappelé, il s’agit d’associations qui bénéficient déjà d’une réduction d’impôt, mais à un taux de 66 %. C’est pourquoi, réunie en application de l’article 88, la commission a repoussé cet amendement.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/deuxieme-seance-du-jeudi-15-octobre-2026"
+    },
+    {
+      "date": "2026-10-09",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cette année, un effort brut de 7,3 milliards d’euros leur est demandé, réparti de la façon suivante : 2,5 milliards d’euros du fait de ce que l’on appelle le « nouveau Dilico » (dispositif de lissage conjoncturel des recettes fiscales des collectivités territoriales), la contribution progressive à l’effort budgétaire (CPEB) ; 2,1 milliards d’euros d’économies sur le fonds de compensation pour la TVA (FCTVA) ; 1,1 milliard d’euros du fait de la…",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+    },
+    {
+      "date": "2026-10-09",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Je ne vois pas de raison d’accorder un délai de trois ans aux entreprises de l’ESS (économie sociale et solidaire) avant d’exiger le paiement de la contribution supplémentaire à l’apprentissage. Avis défavorable.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+    },
+    {
+      "date": "2026-10-09",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "D’une part, des efforts sont déployés pour rationaliser le CPF. D’autre part, France Compétences, qui bénéficie du produit de la taxe d’apprentissage, perdra environ 1,1 milliard d’euros dans le cadre du présent budget.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+    },
+    {
+      "date": "2026-10-09",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Ainsi, il ne serait pas opportun d’élargir l’application du taux réduit, d’autant que les entreprises que vous visez ont aussi recours à l’apprentissage. Avis défavorable.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2627012_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 88
+  }
+}

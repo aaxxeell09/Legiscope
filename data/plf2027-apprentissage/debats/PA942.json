@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:19:46+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Première séance du mercredi 14 octobre 2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés apprenti, apprentissage, aide à l'embauche, France compétences, article 88, article 89 ou article 88 du texte) ; 88 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-apprentissage/groupes-action.json et data/plf2027-apprentissage/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA942",
+  "debats": [
+    {
+      "date": "2026-10-14",
+      "lieu": "seance",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Cette ponction s’ajoute à la baisse de 5 points du taux du FCTVA, à la restriction de la dynamique de TVA transférée et à la réduction des ressources régionales issues de la réforme de l’apprentissage. Le FCTVA accompagne des investissements : diminuer son taux renchérit la rénovation d’une école, d’un équipement public ou d’un chantier de voirie communale.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-mercredi-14-octobre-2026"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 88
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:19:46+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés apprenti, apprentissage, aide à l'embauche, France compétences, article 88, article 89 ou article 88 du texte) ; 88 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-apprentissage/groupes-action.json et data/plf2027-apprentissage/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA840817",
+  "debats": [],
+  "couverture": {
+    "comptes_rendus_lus": 88
+  }
+}

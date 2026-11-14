@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "generated_at": "2026-11-14T16:19:46+01:00",
+    "sources": [
+      {
+        "label": "Comptes rendus de séance (open data AN, syseron.xml.zip)",
+        "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/syceronbrut/syseron.xml.zip"
+      },
+      {
+        "label": "Comptes rendus de la commission des finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances"
+      },
+      {
+        "label": "Commission des affaires sociales, réunion n° 22 du 04/11/2026",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+      }
+    ],
+    "limits": "Interventions sur le sujet (mots-clés apprenti, apprentissage, aide à l'embauche, France compétences, article 88, article 89 ou article 88 du texte) ; 88 comptes rendus lus (séance et commission des finances), rien daté du jour courant (matin) ni après. Séance attribuée par l'identifiant d'acteur du compte rendu ; commission attribuée par le nom. Liste des députés : data/plf2027-apprentissage/groupes-action.json et data/plf2027-apprentissage/pivots.json.",
+    "producer": "pipeline/debats",
+    "dossier_id": "plf2027-apprentissage"
+  },
+  "depute_id": "PA719404",
+  "debats": [
+    {
+      "date": "2026-11-04",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Concernant l’apprentissage, l’écart entre les autorisations d’engagement en hausse de 6 % et les crédits de paiement en baisse de 19 % ainsi que les 788 000 entrées prévues traduisent un ralentissement assumé. Cette diminution des aides peut faire craindre la remise en cause de la politique d’apprentissage ambitieuse en place depuis 2018.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+    },
+    {
+      "date": "2026-11-04",
+      "lieu": "commission",
+      "texte_id": "PRJLANR5L17B3210",
+      "citation": "Par ailleurs, pour France compétences, l’absence de subventions et l’écrêtement de 1,1 milliard d’euros fait craindre un risque de durcissement des conditions d’accès au compte personnel de formation (CPF), alors que la participation forfaitaire pour le salarié pourrait passer de 150 à 350 euros.",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2627022_compte-rendu"
+    }
+  ],
+  "couverture": {
+    "comptes_rendus_lus": 88
+  }
+}
