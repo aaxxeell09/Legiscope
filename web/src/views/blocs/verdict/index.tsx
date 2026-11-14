@@ -3,7 +3,7 @@ import type { RaisonVerdict, Verdict, VerdictObjectif } from "@contracts/index";
 import { Badge, Etat, Meta, Pourquoi } from "../../../components";
 import { useConfig } from "../../../lib/config";
 import { useData } from "../../../lib/data";
-import { formatDateTime, formatProba } from "../../../lib/format";
+import { formatProba } from "../../../lib/format";
 import { Tendance } from "./Tendance";
 import "./verdict.css";
 
@@ -53,7 +53,7 @@ function VerdictContenu({ verdict, dossier, objectifRang }: { verdict: Verdict; 
   return (
     <div className="verdict">
       <div className="verdict-panneau">
-        <VerdictObjectifVue v={courant} genere={verdict.meta.generated_at} />
+        <VerdictObjectifVue v={courant} />
       </div>
 
       <Tendance dossier={dossierCfg} />
@@ -62,7 +62,7 @@ function VerdictContenu({ verdict, dossier, objectifRang }: { verdict: Verdict; 
   );
 }
 
-function VerdictObjectifVue({ v, genere }: { v: VerdictObjectif; genere: string }) {
+function VerdictObjectifVue({ v }: { v: VerdictObjectif }) {
   const raisonGlobale = {
     sources: [...v.favorable, ...v.bloquant, ...(v.cause_du_changement ? [v.cause_du_changement] : [])]
       .flatMap((x) => x.preuve.sources)
@@ -113,7 +113,6 @@ function VerdictObjectifVue({ v, genere }: { v: VerdictObjectif; genere: string 
 
       <p className="verdict-lecture">
         {v.lecture.texte} {v.lecture.mode === "gabarit" ? <Badge kind="gabarit" /> : <Badge kind={v.lecture.verifie ? "verifie" : "non-verifie"} />}
-        <span className="text-2 verdict-lecture-modele">{v.lecture.modele ?? "sans modèle"}, {formatDateTime(genere)}</span>
       </p>
 
       <div className="verdict-colonnes">

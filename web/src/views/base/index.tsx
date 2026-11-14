@@ -157,7 +157,7 @@ export default function BaseView() {
     { key: "date", label: "Dépôt", width: "8em", render: (a) => a.date_depot ? formatDate(a.date_depot) : <span className="text-2">inconnue</span> },
     {
       key: "proba",
-      label: "Orcet",
+      label: "Indicateur de vote",
       align: "right",
       width: "13em",
       render: (a) => <Proba value={a.prediction?.proba_pour ?? null} size="sm" label={a.prediction ? "votes pour prédits" : undefined} />,
