@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T17:01:20+01:00",
+    "generated_at": "2026-11-14T17:05:05+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -42,8 +42,9 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée, en première lecture, la situation est défavorable car le gouvernement et 8 groupes soutiennent la mesure, face à un seul groupe.",
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est défavorable car le gouvernement et 8 groupes soutiennent la mesure, face à 1 seul groupe contre.",
         "chiffres_utilises": [
+          "1",
           "8"
         ],
         "mode": "llm",
@@ -187,7 +188,7 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée, en première lecture, la situation est défavorable car le gouvernement porte la mesure et 7 groupes s'opposent à la réduction du montant.",
+        "texte": "À l'Assemblée, en première lecture, la situation est défavorable car le gouvernement porte la mesure et 7 groupes s'opposent à sa réduction.",
         "chiffres_utilises": [
           "7"
         ],
@@ -268,7 +269,7 @@
         }
       ],
       "cause_du_changement": {
-        "evenement_id": "ev-depot-4065",
+        "evenement_id": "ev-4065",
         "titre": "Amendement n° 4065 (LFI-NFP) déposé : Par ce sous-amendement, le groupe LFI s’inscrit dans la volonté du rapporteur de : -…",
         "preuve": {
           "sources": [

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T17:01:49+01:00",
+    "generated_at": "2026-11-14T17:05:33+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -45,7 +45,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la situation est incertaine car le gouvernement soutient la mesure, mais 3 groupes s'y opposent et des amendements de suppression sont en attente.",
+        "texte": "Au Sénat, la situation est incertaine car le gouvernement porte la mesure, mais 3 groupes s'y opposent et des amendements de suppression sont en attente.",
         "chiffres_utilises": [
           "3"
         ],
@@ -176,7 +176,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la situation est favorable car 3 groupes soutiennent l'objectif, mais le gouvernement porte la mesure et aucun amendement n'a été déposé.",
+        "texte": "Au Sénat, la situation est favorable car 3 groupes soutiennent l'objectif, malgré le gouvernement porteur de la mesure.",
         "chiffres_utilises": [
           "3"
         ],
@@ -257,7 +257,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la situation est favorable car 3 groupes soutiennent le report, malgré le gouvernement contre et l'absence d'amendement.",
+        "texte": "Au Sénat, en première lecture, la situation est favorable car 3 groupes soutiennent le report, malgré l'appui du gouvernement.",
         "chiffres_utilises": [
           "3"
         ],

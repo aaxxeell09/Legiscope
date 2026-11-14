@@ -171,7 +171,7 @@
           "mieux manger"
         ]
       },
-      "pivot_demo": null
+      "pivot_demo": "PA642764"
     },
     {
       "id": "plf2027-logement",
@@ -217,7 +217,7 @@
           "article 78"
         ]
       },
-      "pivot_demo": null
+      "pivot_demo": "PA607553"
     },
     {
       "id": "plf2027-renovation",
@@ -259,7 +259,7 @@
           "chèque énergie"
         ]
       },
-      "pivot_demo": null
+      "pivot_demo": "PA227089"
     }
   ],
   "dossier_demo": "petits-colis",

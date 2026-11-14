@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T17:01:34+01:00",
+    "generated_at": "2026-11-14T17:05:19+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -192,7 +192,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la situation est favorable car 7 groupes soutiennent l'objectif, malgré le gouvernement et le rapporteur qui défendent la mesure.",
+        "texte": "Au Sénat, la situation est favorable car 7 groupes soutiennent l'objectif, mais le gouvernement porte la mesure et aucun amendement n'a été déposé.",
         "chiffres_utilises": [
           "7"
         ],
@@ -281,9 +281,11 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la situation est favorable car 7 groupes soutiennent le report, mais le gouvernement porte la mesure et aucun amendement n'a été déposé.",
+        "texte": "Au Sénat, la situation est favorable car 7 groupes, soit 300 sièges, soutiennent le report à 2028, malgré l'opposition du gouvernement.",
         "chiffres_utilises": [
-          "7"
+          "2028",
+          "7",
+          "300"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",

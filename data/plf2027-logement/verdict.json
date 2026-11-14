@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T17:02:00+01:00",
+    "generated_at": "2026-11-14T17:06:00+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -260,7 +260,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la situation est favorable car 3 groupes soutiennent le report, mais le gouvernement porte la mesure.",
+        "texte": "Au Sénat, la situation est favorable car 3 groupes soutiennent le report, malgré l'opposition du gouvernement et l'absence d'amendements déposés.",
         "chiffres_utilises": [
           "3"
         ],

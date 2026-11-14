@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T17:00:55+01:00",
+    "generated_at": "2026-11-14T17:04:52+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -42,10 +42,9 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la situation est favorable car la mesure est absente du texte et 7 groupes, soit 370 sièges, s'y opposent.",
+        "texte": "Au Sénat, la mesure est absente du texte, favorable au client, car 7 groupes la contestent et l'Assemblée l'a rejetée.",
         "chiffres_utilises": [
-          "7",
-          "370"
+          "7"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -169,7 +168,7 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la mesure est absente du texte, ce qui favorise l'objectif de limiter son assiette.",
+        "texte": "Au Sénat, en première lecture, la mesure est absente du texte rejeté par l'Assemblée, une situation favorable à l'objectif de repli.",
         "chiffres_utilises": [],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -240,8 +239,11 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, la mesure est absente du texte, ce qui est favorable à l'objectif de report, même si aucun amendement de repli n'a été déposé.",
-        "chiffres_utilises": [],
+        "texte": "Au Sénat, la mesure est absente du texte, ce qui favorise l'objectif de report, soutenu par 7 groupes et 370 sièges.",
+        "chiffres_utilises": [
+          "7",
+          "370"
+        ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
         "verifie": true
