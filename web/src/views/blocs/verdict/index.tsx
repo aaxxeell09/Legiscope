@@ -81,7 +81,6 @@ function VerdictContenu({ verdict, dossier }: { verdict: Verdict; dossier: strin
 
   return (
     <div className="verdict">
-      <EtatLigne dossier={dossier} />
       {verdicts.length > 1 && (
         <div className="verdict-onglets" role="tablist" aria-label="Objectifs">
           {verdicts.map((v) => (
@@ -110,8 +109,11 @@ function VerdictContenu({ verdict, dossier }: { verdict: Verdict; dossier: strin
       </div>
 
       <Tendance dossier={dossierCfg} />
-
-      <Meta meta={verdict.meta} />
+      <details className="verdict-fondements">
+        <summary>Fondements techniques et sources</summary>
+        <EtatLigne dossier={dossier} />
+        <Meta meta={verdict.meta} />
+      </details>
     </div>
   );
 }
@@ -212,6 +214,8 @@ function EtatLigne({ dossier }: { dossier: string }) {
 }
 
 function Colonne({ titre, vide, raisons }: { titre: string; vide: string; raisons: RaisonVerdict[] }) {
+  const [developpe, setDeveloppe] = useState(false);
+  const visibles = developpe ? raisons : raisons.slice(0, 3);
   return (
     <div className="verdict-colonne">
       <h4>{titre}</h4>
@@ -219,7 +223,7 @@ function Colonne({ titre, vide, raisons }: { titre: string; vide: string; raison
         <p className="text-2">{vide}</p>
       ) : (
         <ul className="verdict-raisons">
-          {raisons.map((r, i) => (
+          {visibles.map((r, i) => (
             <li key={`${r.titre}-${i}`} className={natureClass(r.preuve.nature)} data-nature={r.preuve.nature}>
               <div className="verdict-raison-titre">
                 {r.titre} <NatureMarque nature={r.preuve.nature} />{" "}
@@ -230,6 +234,7 @@ function Colonne({ titre, vide, raisons }: { titre: string; vide: string; raison
           ))}
         </ul>
       )}
+      {raisons.length > 3 && <button type="button" className="verdict-voir-plus" onClick={() => setDeveloppe((v) => !v)}>{developpe ? "Réduire" : `Voir les ${raisons.length} éléments`}</button>}
     </div>
   );
 }
