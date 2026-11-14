@@ -38,13 +38,6 @@ type PositionInconnue = {
   preuve?: DeputeAction["preuve"];
 };
 
-const POSITION_GROUPE: Record<string, string> = {
-  pour: "pour la mesure",
-  contre: "contre la mesure",
-  abstention: "abstention",
-  divise: "divisé",
-};
-
 /** Les trois listes ne gardent que des députés avec un acte personnel ; le reste rejoint « Position inconnue ». */
 function repartir(a: Action) {
   const brut = a as Action & { position_inconnue?: PositionInconnue[]; groupes: { position_inconnue?: PositionInconnue[] } };
@@ -63,9 +56,7 @@ function repartir(a: Action) {
 
 function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossier: string; annuaire: Annuaire; disponibles: string[] | null }) {
   const { groupes, inconnus } = repartir(a);
-  const [tousDecideurs, setTousDecideurs] = useState(false);
   const [toutesReponses, setToutesReponses] = useState(false);
-  const decideursVisibles = tousDecideurs ? a.decideurs : a.decideurs.slice(0, 4);
   const reponsesVisibles = toutesReponses ? a.contre_arguments : a.contre_arguments.slice(0, 4);
   return (
     <>
@@ -75,7 +66,7 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
           <div className="p7-vide">Aucun acteur documenté.</div>
         ) : (
           <ul className="action-decideurs-list">
-            {decideursVisibles.map((d, i) => (
+            {a.decideurs.map((d, i) => (
               <li key={`${d.role}-${d.depute_id ?? i}`} className="action-decideur">
                 <div className="action-role">{ROLE_DECIDEUR[d.role]}</div>
                 <div className="p7-ligne action-personne">
@@ -90,7 +81,6 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
             ))}
           </ul>
         )}
-        {a.decideurs.length > 4 && <button type="button" className="action-disclosure" onClick={() => setTousDecideurs((v) => !v)}>{tousDecideurs ? "Réduire" : `Voir tous les acteurs (${a.decideurs.length})`}</button>}
       </section>
 
       <CategoriesDeputes groupes={groupes} inconnus={inconnus} raisonVide="Aucune position documentée." dossier={dossier} annuaire={annuaire} disponibles={disponibles} />
@@ -108,7 +98,8 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
           <ul className="action-reponses-list">
             {reponsesVisibles.map((c, i) => (
               <li key={i} className="action-reponse">
-                <div className="action-reponse-cible"><span>Répond à</span>{c.repond_a}</div>
+                <div className="action-reponse-cible"><span>Argument initial</span>{c.repond_a}</div>
+                <span className="action-reponse-label">Réponse analytique proposée</span>
                 <div className="action-reponse-texte">{c.texte}</div>
                 <div className="action-reponse-meta">
                     <Redaction mode={c.mode} verifie={c.verifie} />
@@ -127,7 +118,7 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
 }
 
 type GroupesRepartis = ReturnType<typeof repartir>["groupes"];
-type Categorie = CleGroupeAction | "inconnus";
+type Categorie = CleGroupeAction;
 
 function CategoriesDeputes({ groupes, inconnus, raisonVide, dossier, annuaire, disponibles }: { groupes: GroupesRepartis; inconnus: PositionInconnue[]; raisonVide: string; dossier: string; annuaire: Annuaire; disponibles: string[] | null }) {
   const [active, setActive] = useState<Categorie>("actionnables");
@@ -135,7 +126,6 @@ function CategoriesDeputes({ groupes, inconnus, raisonVide, dossier, annuaire, d
     { key: "actionnables", label: "Positions à approfondir", count: groupes.actionnables.length },
     { key: "allies", label: "Positions convergentes", count: groupes.allies.length },
     { key: "perdus", label: "Positions opposées", count: groupes.perdus.length },
-    { key: "inconnus", label: "Positions non établies", count: inconnus.length },
   ];
   return (
     <section className="action-section action-deputes">
@@ -144,8 +134,13 @@ function CategoriesDeputes({ groupes, inconnus, raisonVide, dossier, annuaire, d
         {items.map((item) => <button key={item.key} type="button" role="tab" aria-selected={active === item.key} className="action-tab" onClick={() => setActive(item.key)}><span>{item.label}</span><strong>{item.count}</strong></button>)}
       </div>
       <div role="tabpanel" className="action-tabpanel">
-        {active === "inconnus" ? <ColonneInconnus lignes={inconnus} raisonVide={raisonVide} annuaire={annuaire} /> : <ColonneGroupe titre={items.find((i) => i.key === active)?.label ?? GROUPE_ACTION[active]} lignes={groupes[active]} raisonVide={raisonVide} dossier={dossier} annuaire={annuaire} disponibles={disponibles} />}
+        <ColonneGroupe titre={items.find((i) => i.key === active)?.label ?? GROUPE_ACTION[active]} lignes={groupes[active]} raisonVide={raisonVide} dossier={dossier} annuaire={annuaire} disponibles={disponibles} />
       </div>
+      <aside className="action-coverage" aria-label="Couverture documentaire">
+        <strong>{inconnus.length}</strong>
+        <span>{inconnus.length > 1 ? "députés sans position personnelle documentée" : "député sans position personnelle documentée"} sur cette mesure.</span>
+        <small>La position d'un groupe ne constitue pas une position individuelle.</small>
+      </aside>
     </section>
   );
 }
@@ -216,42 +211,6 @@ function ColonneGroupe({
               </li>
             );
           })}
-        </ul>
-      )}
-      {lignes.length > 5 && <button type="button" className="p7-voir-plus" onClick={() => setDeveloppe((v) => !v)}>{developpe ? "Réduire" : `Voir les ${lignes.length} positions`}</button>}
-    </div>
-  );
-}
-
-function ColonneInconnus({ lignes, raisonVide, annuaire }: { lignes: PositionInconnue[]; raisonVide: string; annuaire: Annuaire }) {
-  const [developpe, setDeveloppe] = useState(false);
-  const visibles = developpe ? lignes : lignes.slice(0, 5);
-  return (
-    <div className="p7-col">
-      <h4>
-        Position inconnue
-        <span className="text-2">{lignes.length}</span>
-      </h4>
-      {lignes.length === 0 ? (
-        <div className="p7-vide">aucun · {raisonVide}</div>
-      ) : (
-        <ul className="p7-list">
-          {visibles.map((d) => (
-            <li key={d.depute_id} className="p7-item p7-item-muted" data-depute={d.depute_id}>
-              <div className="p7-ligne">
-                <span className="p7-nom">{annuaire.nom(d.depute_id)}</span>
-                <Tag annuaire={annuaire} groupeId={d.groupe_id ?? annuaire.depute(d.depute_id)?.groupe_id} />
-              </div>
-              <div className="p7-ligne">
-                <span className="text-2">position de son groupe : {d.position_groupe ? (POSITION_GROUPE[d.position_groupe] ?? d.position_groupe) : "inconnue"}</span>
-                {d.preuve && (
-                  <span className="p7-droite">
-                    <Pourquoi preuve={d.preuve} />
-                  </span>
-                )}
-              </div>
-            </li>
-          ))}
         </ul>
       )}
       {lignes.length > 5 && <button type="button" className="p7-voir-plus" onClick={() => setDeveloppe((v) => !v)}>{developpe ? "Réduire" : `Voir les ${lignes.length} positions`}</button>}
