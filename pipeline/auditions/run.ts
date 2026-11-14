@@ -70,19 +70,38 @@ interface RapportLu {
   methode: "modele" | "heuristique" | null;
 }
 
+// Cache des extractions par page (data/raw, non commité) : une page lue par le modèle ne l'est qu'une fois.
+const CACHE_ORGS = "data/raw/opendata/rapports";
+function cacheOrgs(uid: string): string {
+  return join(CACHE_ORGS, `${uid}.${modeleDisponible() ? "modele" : "heuristique"}.json`);
+}
+
 async function lireRapport(feuille: RapportFeuille): Promise<RapportLu | null> {
   const html = await lireHtml(feuille.uid);
   if (html === null) return null; // pas en ligne
-  const sections = sectionsAuditions(html);
   const date = feuille.date_publication_web ?? feuille.date_depot ?? "";
-  if (sections.length === 0) return { feuille, date, organisations: null, methode: null };
-  let organisations = await extraireParModele(sections);
-  let methode: RapportLu["methode"] = "modele";
-  if (!organisations || organisations.length === 0) {
-    organisations = extraireHeuristique(sections);
-    methode = "heuristique";
+  const cache = cacheOrgs(feuille.uid);
+  if (existsSync(cache) && !args.includes("--sans-cache")) {
+    const c = lire<{ organisations: OrganisationExtraite[] | null; methode: RapportLu["methode"] }>(cache);
+    return { feuille, date, organisations: c.organisations, methode: c.methode };
   }
-  return { feuille, date, organisations: organisations.length ? organisations : null, methode: organisations.length ? methode : null };
+  const sections = sectionsAuditions(html);
+  let organisations: OrganisationExtraite[] | null = null;
+  let methode: RapportLu["methode"] = null;
+  if (sections.length > 0) {
+    organisations = await extraireParModele(sections);
+    methode = "modele";
+    if (!organisations || organisations.length === 0) {
+      organisations = extraireHeuristique(sections);
+      methode = "heuristique";
+    }
+    if (organisations.length === 0) {
+      organisations = null;
+      methode = null;
+    }
+  }
+  writeFileSync(cache, JSON.stringify({ uid: feuille.uid, methode, organisations }, null, 1));
+  return { feuille, date, organisations, methode };
 }
 
 async function enParallele<T, R>(items: T[], n: number, f: (x: T) => Promise<R>): Promise<R[]> {
