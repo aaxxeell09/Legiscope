@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:39:32+01:00",
+    "generated_at": "2026-11-14T13:58:50+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -144,7 +144,28 @@
           }
         }
       ],
-      "cause_du_changement": null
+      "cause_du_changement": {
+        "evenement_id": "ev-115",
+        "titre": "2 amendements identiques (n° 115, n° 848) (SOC) déposés : Cet amendement vise à supprimer la désindexation partielle des pensions de retraite des…",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 115",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000115"
+            },
+            {
+              "label": "Amendement n° 848",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B3210P2D1N000848"
+            },
+            {
+              "label": "Texte PRJLANR5L17B3210",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi"
+            }
+          ],
+          "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B3210 ; date de la prédiction Orcet (date de dépôt non publiée dans texte.json). Camp : amendement de suppression. Effet déduit du camp de l'amendement par rapport à la position du client.",
+          "nature": "deduction"
+        }
+      }
     },
     {
       "objectif_rang": 2,
@@ -161,8 +182,9 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la situation est favorable car 8 groupes, soit 440 sièges, soutiennent la limitation de l'assiette, tandis que le rapporteur général a déposé 15 amendements contre la mesure.",
+        "texte": "Au Sénat, en première lecture, la situation est favorable à l'objectif de repli de l'Afep, car 8 groupes représentant 440 sièges soutiennent la limitation de l'assiette et le rapporteur général a déposé 15 amendements contre la mesure, face à 3 groupes opposés.",
         "chiffres_utilises": [
+          "3",
           "15",
           "8",
           "440"
@@ -246,10 +268,11 @@
         ]
       },
       "lecture": {
-        "texte": "Au Sénat, en première lecture, la situation est favorable au client car 8 groupes, soit 440 sièges, soutiennent l'objectif de repousser l'entrée en vigueur de la mesure, tandis que le rapporteur général a agi contre elle.",
+        "texte": "Au Sénat, en première lecture, la situation est favorable car 8 groupes, soit 440 sièges, soutiennent l'objectif de repousser l'entrée en vigueur de la mesure, tandis que le rapporteur général a agi contre elle à 15 reprises.",
         "chiffres_utilises": [
           "8",
-          "440"
+          "440",
+          "15"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",

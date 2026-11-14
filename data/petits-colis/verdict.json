@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:39:45+01:00",
+    "generated_at": "2026-11-14T13:59:04+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -91,28 +91,6 @@
             "raisonnement": "Position majoritaire de chaque groupe dans ses amendements à la mesure, traduite en position sur la mesure.",
             "nature": "deduction"
           }
-        },
-        {
-          "titre": "Le rapporteur général Philippe Juvin a agi contre la mesure",
-          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
-          "preuve": {
-            "sources": [
-              {
-                "label": "Dossier législatif",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
-              },
-              {
-                "label": "Amendement n° 3126",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
-              },
-              {
-                "label": "Amendement n° 1859",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
-              }
-            ],
-            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
-            "nature": "deduction"
-          }
         }
       ],
       "bloquant": [
@@ -143,9 +121,52 @@
             "raisonnement": "Position majoritaire de chaque groupe dans ses amendements à la mesure.",
             "nature": "deduction"
           }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi pour la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 3 pour la mesure, 2 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+              },
+              {
+                "label": "Amendement n° 3126",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+              },
+              {
+                "label": "Amendement n° 1859",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+              },
+              {
+                "label": "Intervention du 2025-10-22",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 3 pour la mesure, 2 contre.",
+            "nature": "deduction"
+          }
         }
       ],
-      "cause_du_changement": null
+      "cause_du_changement": {
+        "evenement_id": "ev-depot-974",
+        "titre": "Amendement n° 974 (RN) déposé : Supprime l'article 22",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 974",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
+            },
+            {
+              "label": "Texte PRJLANR5L17B1906",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+            }
+          ],
+          "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : amendement de suppression ; supprime l'article de la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+          "nature": "deduction"
+        }
+      }
     },
     {
       "objectif_rang": 2,
@@ -164,9 +185,12 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée nationale, en première lecture, la situation est favorable car 4 groupes, dont le rapporteur général, soutiennent la réduction de la taxe, malgré l'opposition du gouvernement et de 4 autres groupes.",
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est favorable car 4 groupes, soit 325 sièges, soutiennent des amendements comme le n° 460 visant à réduire la taxe, malgré l'opposition du gouvernement et de 134 sièges.",
         "chiffres_utilises": [
-          "4"
+          "460",
+          "4",
+          "325",
+          "134"
         ],
         "mode": "llm",
         "modele": "Qwen/Qwen3.8-27B",
@@ -214,28 +238,6 @@
             "raisonnement": "Groupes auteurs d'amendements de repli, ou opposés à la mesure.",
             "nature": "deduction"
           }
-        },
-        {
-          "titre": "Le rapporteur général Philippe Juvin a agi contre la mesure",
-          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
-          "preuve": {
-            "sources": [
-              {
-                "label": "Dossier législatif",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
-              },
-              {
-                "label": "Amendement n° 3126",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
-              },
-              {
-                "label": "Amendement n° 1859",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
-              }
-            ],
-            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
-            "nature": "deduction"
-          }
         }
       ],
       "bloquant": [
@@ -266,9 +268,52 @@
             "raisonnement": "Groupes auteurs d'amendements qui renforcent la mesure.",
             "nature": "deduction"
           }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi pour la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 3 pour la mesure, 2 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+              },
+              {
+                "label": "Amendement n° 3126",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+              },
+              {
+                "label": "Amendement n° 1859",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+              },
+              {
+                "label": "Intervention du 2025-10-22",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 3 pour la mesure, 2 contre.",
+            "nature": "deduction"
+          }
         }
       ],
-      "cause_du_changement": null
+      "cause_du_changement": {
+        "evenement_id": "ev-938",
+        "titre": "Amendement n° 938 (DR) déposé : Le présent amendement vise à relever le montant de la taxe de 2 à 5 euros",
+        "preuve": {
+          "sources": [
+            {
+              "label": "Amendement n° 938",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000938"
+            },
+            {
+              "label": "Texte PRJLANR5L17B1906",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
+            }
+          ],
+          "raisonnement": "Dépôt lu dans le texte PRJLANR5L17B1906 ; date de la dernière étape connue du texte (date de dépôt non publiée). Camp : le résumé réduit, exonère ou reporte la mesure. Effet déduit du camp de l'amendement par rapport à la position du client.",
+          "nature": "deduction"
+        }
+      }
     },
     {
       "objectif_rang": 3,
@@ -287,7 +332,7 @@
         ]
       },
       "lecture": {
-        "texte": "À l'Assemblée nationale, en première lecture, la situation est incertaine car si 2 groupes soutiennent l'objectif de repli, la mesure est portée par le gouvernement et 6 groupes s'opposent à cet objectif.",
+        "texte": "À l'Assemblée nationale, en première lecture, la situation est incertaine car si 2 groupes soutiennent l'objectif de repli, la mesure est portée par le gouvernement et 6 groupes s'y opposent.",
         "chiffres_utilises": [
           "2",
           "6"
@@ -308,28 +353,6 @@
               }
             ],
             "raisonnement": "Groupes auteurs d'amendements de repli, ou opposés à la mesure.",
-            "nature": "deduction"
-          }
-        },
-        {
-          "titre": "Le rapporteur général Philippe Juvin a agi contre la mesure",
-          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
-          "preuve": {
-            "sources": [
-              {
-                "label": "Dossier législatif",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
-              },
-              {
-                "label": "Amendement n° 3126",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
-              },
-              {
-                "label": "Amendement n° 1859",
-                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
-              }
-            ],
-            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
             "nature": "deduction"
           }
         }
@@ -360,6 +383,32 @@
               }
             ],
             "raisonnement": "Groupes auteurs d'amendements qui renforcent la mesure.",
+            "nature": "deduction"
+          }
+        },
+        {
+          "titre": "Le rapporteur général Philippe Juvin a agi pour la mesure",
+          "detail": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 3 pour la mesure, 2 contre.",
+          "preuve": {
+            "sources": [
+              {
+                "label": "Dossier législatif",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PLF_2026"
+              },
+              {
+                "label": "Amendement n° 3126",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+              },
+              {
+                "label": "Amendement n° 1859",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+              },
+              {
+                "label": "Intervention du 2025-10-22",
+                "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+              }
+            ],
+            "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 3 pour la mesure, 2 contre.",
             "nature": "deduction"
           }
         }

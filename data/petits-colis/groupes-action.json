@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:39:32+01:00",
+    "generated_at": "2026-11-14T13:58:51+01:00",
     "sources": [
       {
         "label": "Scrutins publics, open data Assemblée nationale",
@@ -11,7 +11,7 @@
         "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/amendements_div_legis/Amendements.json.zip"
       }
     ],
-    "limits": "Données au plus tard le 2025-11-18. Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés ; interventions non encore disponibles), jamais sur le groupe seul. Totaux avant coupe : 9 alliés, 108 perdus, 27 actionnables ; 15 gardés par catégorie (score décroissant). Députés en exercice seulement. Perdus = actes contre la cible et loyauté sur 12 mois d'au moins 0,85 envers un groupe lui-même opposé. Sens des amendements lu par règles : déduction de l'outil.",
+    "limits": "Données au plus tard le 2025-11-18. Classement sur les actes propres de chaque député (votes sur les scrutins liés, amendements déposés ou cosignés, interventions classées par A2), jamais sur le groupe seul. Totaux avant coupe : 13 alliés, 108 perdus, 28 actionnables ; 15 gardés par catégorie (score décroissant). Députés en exercice seulement. Perdus = actes contre la cible et loyauté sur 12 mois d'au moins 0,85 envers un groupe lui-même opposé. Sens des amendements lu par règles : déduction de l'outil.",
     "producer": "pipeline/pivots",
     "dossier_id": "petits-colis"
   },
@@ -253,6 +253,35 @@
       }
     },
     {
+      "depute_id": "PA346782",
+      "groupe_id": "PO845425",
+      "score": 0.2,
+      "raison": "a déposé ou cosigné, a dit : 3 acte(s) pour la mesure, 2 contre ; loyauté à son groupe 0.8, sous le seuil de 0,85",
+      "fondement": [
+        "depose",
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3126",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+          },
+          {
+            "label": "Amendement n° 1859",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+          },
+          {
+            "label": "Intervention du 2025-10-22",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          }
+        ],
+        "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
+        "nature": "deduction"
+      }
+    },
+    {
       "depute_id": "PA266793",
       "groupe_id": "PO845425",
       "score": 0.19,
@@ -355,54 +384,35 @@
         "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
         "nature": "deduction"
       }
-    },
-    {
-      "depute_id": "PA332523",
-      "groupe_id": "PO845425",
-      "score": 0.17,
-      "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté à son groupe 0.83, sous le seuil de 0,85",
-      "fondement": [
-        "depose"
-      ],
-      "position_connue": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 1775",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001775"
-          },
-          {
-            "label": "Amendement n° 1774",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001774"
-          }
-        ],
-        "raisonnement": "A agi pour la mesure, mais vote moins souvent avec son groupe que la moyenne : position qui peut encore bouger.",
-        "nature": "deduction"
-      }
     }
   ],
   "allies": [
     {
-      "depute_id": "PA346782",
-      "groupe_id": "PO845425",
+      "depute_id": "PA841487",
+      "groupe_id": "PO845401",
       "score": 1,
-      "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+      "raison": "a déposé ou cosigné, a dit : 0 acte(s) pour la mesure, 3 contre, dans le sens du client",
       "fondement": [
-        "depose"
+        "depose",
+        "dit"
       ],
       "position_connue": true,
       "preuve": {
         "sources": [
           {
-            "label": "Amendement n° 3126",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003126"
+            "label": "Amendement n° 806",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
           },
           {
-            "label": "Amendement n° 1859",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+            "label": "Amendement n° 974",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
+          },
+          {
+            "label": "Intervention du 2025-10-22",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
           }
         ],
-        "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+        "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné, a dit), majoritairement contre la mesure, comme le client.",
         "nature": "deduction"
       }
     },
@@ -427,6 +437,26 @@
           }
         ],
         "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA719372",
+      "groupe_id": "PO845407",
+      "score": 1,
+      "raison": "a dit : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Intervention du 2025-10-22",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a dit), majoritairement contre la mesure, comme le client.",
         "nature": "deduction"
       }
     },
@@ -491,6 +521,26 @@
       }
     },
     {
+      "depute_id": "PA795778",
+      "groupe_id": "PO845401",
+      "score": 1,
+      "raison": "a dit : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
+      "fondement": [
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Intervention du 2025-10-22",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a dit), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
       "depute_id": "PA795820",
       "groupe_id": "PO845514",
       "score": 1,
@@ -504,30 +554,6 @@
           {
             "label": "Amendement n° 452",
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000452"
-          }
-        ],
-        "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "depute_id": "PA841487",
-      "groupe_id": "PO845401",
-      "score": 1,
-      "raison": "a déposé ou cosigné : 0 acte(s) pour la mesure, 2 contre, dans le sens du client",
-      "fondement": [
-        "depose"
-      ],
-      "position_connue": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 806",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
-          },
-          {
-            "label": "Amendement n° 974",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
           }
         ],
         "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
@@ -555,6 +581,66 @@
           }
         ],
         "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA841955",
+      "groupe_id": "PO845401",
+      "score": 1,
+      "raison": "a dit : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Intervention du 2025-10-22",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a dit), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA842029",
+      "groupe_id": "PO845413",
+      "score": 1,
+      "raison": "a dit : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Intervention du 2025-10-22",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a dit), majoritairement contre la mesure, comme le client.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA942",
+      "groupe_id": "PO845485",
+      "score": 1,
+      "raison": "a dit : 0 acte(s) pour la mesure, 1 contre, dans le sens du client",
+      "fondement": [
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Intervention du 2025-10-22",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a dit), majoritairement contre la mesure, comme le client.",
         "nature": "deduction"
       }
     },
@@ -592,6 +678,68 @@
     }
   ],
   "perdus": [
+    {
+      "depute_id": "PA719640",
+      "groupe_id": "PO845454",
+      "score": 1,
+      "raison": "a déposé ou cosigné, a dit : 3 acte(s) pour la mesure, 0 contre ; loyauté 0.92 à un groupe pour la mesure",
+      "fondement": [
+        "depose",
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 3395",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N003395"
+          },
+          {
+            "label": "Amendement n° 1519",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001519"
+          },
+          {
+            "label": "Intervention du 2025-04-30",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-30-avril-2025"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné, a dit), pour la mesure, et loyal à son groupe (92 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
+    {
+      "depute_id": "PA840979",
+      "groupe_id": "PO845425",
+      "score": 1,
+      "raison": "a déposé ou cosigné, a dit : 11 acte(s) pour la mesure, 0 contre ; loyauté 0.89 à un groupe pour la mesure",
+      "fondement": [
+        "depose",
+        "dit"
+      ],
+      "position_connue": true,
+      "preuve": {
+        "sources": [
+          {
+            "label": "Amendement n° 721",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000721"
+          },
+          {
+            "label": "Amendement n° 307",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000307"
+          },
+          {
+            "label": "Amendement n° 937",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000937"
+          },
+          {
+            "label": "Amendement n° 936",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000936"
+          }
+        ],
+        "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné, a dit), pour la mesure, et loyal à son groupe (89 % des votes sur 12 mois), lui-même pour la mesure.",
+        "nature": "deduction"
+      }
+    },
     {
       "depute_id": "PA1630",
       "groupe_id": "PO845425",
@@ -899,54 +1047,6 @@
         "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (87 % des votes sur 12 mois), lui-même pour la mesure.",
         "nature": "deduction"
       }
-    },
-    {
-      "depute_id": "PA610002",
-      "groupe_id": "PO845439",
-      "score": 1,
-      "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.95 à un groupe pour la mesure",
-      "fondement": [
-        "depose"
-      ],
-      "position_connue": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2740",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
-          },
-          {
-            "label": "Amendement n° 2738",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
-          }
-        ],
-        "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (95 % des votes sur 12 mois), lui-même pour la mesure.",
-        "nature": "deduction"
-      }
-    },
-    {
-      "depute_id": "PA610968",
-      "groupe_id": "PO845439",
-      "score": 1,
-      "raison": "a déposé ou cosigné : 2 acte(s) pour la mesure, 0 contre ; loyauté 0.96 à un groupe pour la mesure",
-      "fondement": [
-        "depose"
-      ],
-      "position_connue": true,
-      "preuve": {
-        "sources": [
-          {
-            "label": "Amendement n° 2740",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002740"
-          },
-          {
-            "label": "Amendement n° 2738",
-            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N002738"
-          }
-        ],
-        "raisonnement": "Classé sur ses propres actes (a déposé ou cosigné), pour la mesure, et loyal à son groupe (96 % des votes sur 12 mois), lui-même pour la mesure.",
-        "nature": "deduction"
-      }
     }
   ],
   "decideurs": [
@@ -972,7 +1072,7 @@
       "depute_id": "PA346782",
       "nom": "Philippe Juvin",
       "groupe_id": "PO845425",
-      "position": "contre",
+      "position": "pour",
       "preuve": {
         "sources": [
           {
@@ -986,9 +1086,13 @@
           {
             "label": "Amendement n° 1859",
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N001859"
+          },
+          {
+            "label": "Intervention du 2025-10-22",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
           }
         ],
-        "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+        "raisonnement": "Rapporteur général de la commission des finances sur ce projet de loi (dossier législatif). Position lue sur ses propres actes : 3 pour la mesure, 2 contre.",
         "nature": "deduction"
       }
     },
@@ -1028,9 +1132,13 @@
           {
             "label": "Amendement n° 974",
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO59048B1906P1D1N000974"
+          },
+          {
+            "label": "Intervention du 2025-10-22",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526013_compte-rendu"
           }
         ],
-        "raisonnement": "Chef de file présumé du groupe RN : auteur de 2 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 0 pour la mesure, 2 contre.",
+        "raisonnement": "Chef de file présumé du groupe RN : auteur de 2 amendements du sujet, le plus actif de son groupe (déduction, pas une désignation publiée). Position lue sur ses propres actes : 0 pour la mesure, 3 contre.",
         "nature": "deduction"
       }
     },
