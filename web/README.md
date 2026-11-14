@@ -1,100 +1,106 @@
-# web/ : le front de Bascule
+# web/ : l'interface de LegiSpot
 
-Vite, React, TypeScript, react-router, Recharts. Pas de serveur : un tableau de bord par dossier (rendu-final.md), qui lit des fichiers JSON.
+Ce dossier contient l'interface : une application React (Vite, TypeScript, React Router, Recharts) sans serveur applicatif. Elle lit les fichiers JSON produits par le pipeline dans `data/` et les affiche comme un tableau de bord par dossier. Le nom interne dans le code est `bascule` (`package.json`, plugins Vite, variables d'environnement).
 
-## Lancer
+## Commandes
+
+À lancer depuis la racine du dépôt (les scripts sont dans `package.json`, la configuration dans `vite.config.ts`) :
 
 ```sh
-bun install          # à la racine du dépôt, une fois
-bun run dev          # http://localhost:5173
-bun run build        # produit dist/ à la racine du dépôt
-bun run preview      # sert dist/
-bun run typecheck    # tsc --noEmit sur web/, contracts/, qa/, pipeline/
+npm install          # ou bun install (le dépôt suit bun.lock)
+npm run dev          # http://localhost:5173
+npm run build        # site statique dans dist/, à la racine du dépôt
+npm run preview      # sert dist/
+npm run typecheck    # tsc --noEmit sur web/, contracts/, qa/, pipeline/
 ```
 
 ## Routes
 
+Déclarées dans `src/App.tsx`.
+
 | Route | Vue | Fichier |
 |---|---|---|
-| `/` | redirige vers `/dossier/<config.dossier_demo>` | `App.tsx` |
-| `/dossier/:id` | tableau de bord du dossier : en-tête et cinq blocs | `views/dossier/index.tsx` |
-| `/dossier/:id/depute/:pa` | fiche d'un député sur ce dossier | `views/depute/index.tsx` |
-| `/dossier/:id/base` | base complète : état du texte, articles, amendements | `views/base/index.tsx` |
-| `/sources` | sources et limites | `views/sources/index.tsx` |
+| `/` | Redirige vers `/dossier/<config.dossier_demo>`, à défaut le premier dossier de la configuration | `src/App.tsx` |
+| `/dossier/:id` | Vue d'ensemble du dossier : en-tête et cinq blocs | `src/views/dossier/index.tsx` |
+| `/dossier/:id/base` | Base documentaire : textes et articles, amendements du dossier | `src/views/base/index.tsx` |
+| `/dossier/:id/depute/:pa` | Fiche d'un député dans le contexte du dossier | `src/views/depute/index.tsx` |
+| `/sources` | Liste des sources institutionnelles | `src/views/sources/index.tsx` |
+| toute autre adresse | « Page introuvable », avec un lien de retour | `src/App.tsx` |
 
-## Le tableau de bord
+Un identifiant de dossier absent de `config.json` affiche « Dossier inconnu ».
 
-`views/dossier/index.tsx` pose l'en-tête (Client, Dossier, Objectif, lus dans `config.dossiers[]` : `client`, `label`, `objectif.texte`, plus « vu au 19 nov. 2025 » quand `date_reference` est posée), un lien « Base complète », puis cinq emplacements :
-
-```
-Verdict                       (pleine largeur)
-Nouveautés 50 % | Suite 50 %
-Action                        (pleine largeur)
-Compte rendu                  (pleine largeur)
-```
-
-Chaque emplacement rend un composant de `views/blocs/<nom>/index.tsx` (`verdict`, `nouveautes`, `suite`, `action`, `compte-rendu`), export par défaut, props `{ dossier: string }`. Ces cinq dossiers appartiennent chacun à une session ; `views/dossier/index.tsx` et la grille CSS (`.dossier-grille` dans `tokens.css`) appartiennent à P0. Un bloc charge ses propres données avec `useData` et finit par un `<Meta>`.
-
-## Où sont les choses
+## Structure
 
 | Chemin | Rôle |
 |---|---|
-| `web/src/App.tsx` | Routes, `ConfigProvider`, `TopBar` |
-| `web/src/tokens.css` | Variables du thème (couleurs, tailles, `--stroke` 3 px pour les graphiques), styles de base, des primitives, de la grille du tableau de bord |
-| `web/src/components/` | `Meta`, `GroupeTag`, `Proba`, `Panel`, `Table`, `TopBar`, `Pourquoi` (export groupé dans `index.ts`) |
-| `web/src/lib/data.ts` | `useData<T>(kind, dossier?, pa?)` |
-| `web/src/lib/config.tsx` | Lecture unique de `config.json`, `useConfig()` |
-| `web/src/lib/contracts.ts` | Pont vers les schémas zod de `contracts/` |
-| `web/src/lib/format.ts` | `formatProba`, `formatDate`, `formatDateTime`, `formatMois`, `formatNom`, `formatNombre` |
+| `index.html`, `src/main.tsx` | Point d'entrée, charge `tokens.css` puis `App` |
+| `src/App.tsx` | `ConfigProvider`, routeur, lien d'évitement, `TopBar`, états globaux (chargement ou erreur de `config.json`), `ErrorBoundary` par page |
+| `src/tokens.css` | Variables du thème et styles communs : coquille, panneaux, tableaux, badges, preuve, grille du tableau de bord |
+| `src/components/` | Composants partagés, exportés par `index.ts` |
+| `src/lib/config.tsx` | Lecture unique de `config.json`, `useConfig()`, `useDossier()`, `baseFor()` |
+| `src/lib/data.ts` | `useData<T>(kind, dossier?, pa?)`, `pathFor()`, cache par URL |
+| `src/lib/contracts.ts` | Pont vers les schémas Zod de `contracts/`, `validate()` |
+| `src/lib/format.ts` | `formatProba`, `formatDate`, `formatDateTime`, `formatMois`, `formatNom`, `formatNombre` |
+| `src/views/dossier/` | En-tête du dossier et grille des cinq blocs |
+| `src/views/blocs/` | Un dossier par bloc : `verdict`, `nouveautes`, `suite`, `action`, `compte-rendu` |
+| `src/views/base/`, `src/views/depute/`, `src/views/sources/` | Les trois autres pages |
 
-Une vue ou un bloc n'importe que depuis `components`, `lib/*` et `@contracts/index` (types). Il ne touche ni `App.tsx` ni `tokens.css` : besoin d'une variable ou d'une primitive, l'écrire dans `status/`.
+## Tableau de bord
 
-## Primitives
+`views/dossier/index.tsx` pose l'en-tête : client, titre du dossier, mesure, mention « Relecture historique » avec la date quand `date_reference` est posée (sinon « Dossier vivant »), lien vers la Base documentaire, contexte parlementaire, puis les objectifs sous forme d'onglets (« Principal », « Repli 1 », etc.). L'onglet choisi est transmis au bloc Verdict.
 
-- `<Pourquoi sources={[{label, url}]} raisonnement="…" />` : règle de fiabilité, un par information. Bouton texte « pourquoi », panneau avec le raisonnement et les sources en liens. Entrée ou Espace ouvre, Échap ferme et rend le focus au bouton, clic hors du panneau ferme.
-- `<Meta meta={data.meta} />` : une ligne en pied de bloc ou de vue, sources en liens, « généré le », limites. `data-testid="meta"`.
-- `<GroupeTag sigle="RN" couleur="#0D378A" />` : sigle sur la couleur du groupe, texte noir ou blanc selon la luminance.
-- `<Proba value={0.71} size="lg" label="de votes pour prédits" />` : « 71 % » ; vert ≥ 0,6, orange de 0,4 à 0,6, rouge < 0,4, gris « pas de prédiction » pour `null`.
-- `<Panel title="Positions" aside="8 groupes">…</Panel>` : titre, bordure, contenu.
-- `<Table columns={…} rows={…} rowKey={r => r.id} onRowClick={…} isRowMuted={r => !r.fiche} />` : colonnes typées (`render`, `align`, `width`), ligne cliquable, ligne grisée, message « vide ».
-- `<TopBar />` : nom du produit, sélecteur de dossier (navigue vers `/dossier/:id`), lien Sources. Déjà posée par `App.tsx`.
+La grille (`.dossier-grille` dans `tokens.css`) place Verdict sur toute la largeur, Nouveautés et Suite côte à côte, puis Action et Compte rendu sur toute la largeur. Sous 1100 px, elle passe sur une colonne. Chaque bloc est un composant exporté par défaut de `views/blocs/<nom>/index.tsx`, charge ses propres données avec `useData` et est isolé par un `ErrorBoundary` : un bloc en erreur n'emporte pas la page.
 
-## Comment un bloc charge ses données
+## Composants partagés
 
-```tsx
-import type { Verdict } from "@contracts/index";
-import { useData } from "../../../lib/data";
-import { Meta, Panel, Pourquoi } from "../../../components";
+| Composant | Rôle |
+|---|---|
+| `TopBar` | Barre latérale (marque, menu « Dossier actif », liens Vue d'ensemble, Base documentaire, Sources, indicateur « Données produites » ou « Données de démonstration ») et bandeau de contexte en haut de page. Sous 780 px, la barre latérale s'ouvre par un bouton « Menu » |
+| `Pourquoi` | La preuve d'une information, voir ci-dessous |
+| `Meta` | Pied de bloc réduit aux sources, voir ci-dessous |
+| `Etat`, `Chargement`, `Erreur` | Enveloppe d'un bloc selon l'état de `useData` : chargement, erreur, contenu |
+| `ErrorBoundary` | Attrape une erreur de rendu et affiche son message à la place de la zone |
+| `Panel` | Surface avec titre et élément à droite du titre |
+| `Table` | Tableau à colonnes typées, ligne cliquable (clavier compris), ligne grisée, message quand il est vide |
+| `Badge` | Étiquette courte : nature de la preuve, mode de rédaction, importance, chiffres contrôlés ou non |
+| `GroupeTag` | Sigle d'un groupe sur sa couleur, texte noir ou blanc selon la luminance |
+| `Proba` | Pourcentage coloré par seuils (0,6 et 0,4), « pas de prédiction » pour `null` |
+| `Curseur` | Curseur de date avec préréglages, utilisé par le panneau « Tendance » du Verdict |
 
-export default function VerdictBloc({ dossier }: { dossier: string }) {
-  const r = useData<Verdict>("verdict", dossier);
-  if (r.status === "loading") return <Panel title="Verdict"><div className="status">Chargement</div></Panel>;
-  if (r.status === "error") return <Panel title="Verdict"><div className="status status-error">{r.error}</div></Panel>;
-  const v = r.data!;
-  return (<Panel title="Verdict">… <Meta meta={v.meta} /></Panel>);
-}
-```
+### La preuve : `Pourquoi`
 
-`useData` :
+`<Pourquoi preuve={e.preuve} />` (ou `sources`, `raisonnement`, `nature` passés séparément) affiche une **icône d'information « ⓘ »**, pas un bouton texte. Son libellé accessible est « Voir les sources et le raisonnement ». Le clic ouvre un panneau (`role="dialog"`) qui contient, dans l'ordre : la nature de la preuve en badge (« fait publié », « déduction », « inconnu »), le raisonnement, la liste des sources en liens, un bouton « Fermer ». Échap ferme et rend le focus à l'icône, un clic hors du panneau ferme. Le composant est utilisé dans les blocs Verdict, Nouveautés, Suite et Action, et dans la fiche du député.
 
-1. lit `config.json` une seule fois (`ConfigProvider` dans `App.tsx`) ;
-2. résout le chemin : `groupes | deputes | cohesion` à la racine ; `verdict | nouveautes | suite | action | etat | texte | pivots | hatvp | note | fiches_index` sous `/<dossier>/<kind>.json` (`fiches_index` → `/<dossier>/fiches/index.json`) ; `auditions | debats | amendements | fiche` sous `/<dossier>/<kind>/<PA>.json` (la fiche sous `/<dossier>/fiches/<PA>.json`) ;
-3. préfixe selon `config.dataset` : `live` lit `data/` (servi à la racine du site), `fixtures` lit `contracts/fixtures/` (servi sous `/fixtures/`) ;
-4. valide la réponse avec le schéma zod de `contracts/index.ts` (`VerdictSchema`, ou la map `SCHEMAS`) et refuse un fichier dont `meta.dossier_id` diffère du dossier demandé ; sans schéma exporté pour ce kind, les données passent telles quelles avec un avertissement console ;
-5. met en cache par URL ; `clearDataCache()` vide le cache.
+### Le pied : `Meta`
 
-Statuts : `loading | ok | error`, avec `data` ou `error` (message qui nomme l'URL et le premier champ fautif).
+`<Meta meta={data.meta} />` affiche un seul élément repliable « Sources » : les sources du fichier, dédoublonnées par URL, en liens. La date de génération, les limites et le producteur restent dans les JSON et ne sont pas affichés. Sans source, le composant ne rend rien.
 
-## Où le front lit les fichiers
+## Chargement des données
 
-- `data/` est le `publicDir` de Vite (`vite.config.ts`, pas de lien symbolique) : `data/config.json` est servi à `/config.json`, `data/petits-colis/verdict.json` à `/petits-colis/verdict.json`. Au build, `data/` est copié à la racine de `dist/` et `dist/raw/` est retiré (réponses brutes de l'API, volumineuses).
-- `contracts/fixtures/` est servi sous `/fixtures/` par le plugin Vite `bascule-fixtures` en dev, et copié dans `dist/fixtures/` au build. Les fixtures reproduisent l'arborescence de `data/`.
-- Choix fait : le préfixe `live` est vide (pas `/data/`), parce que `publicDir` sert toujours à la racine du site ; un préfixe `/data/` aurait demandé une réécriture en dev qui n'existerait pas dans `dist/`. Le préfixe se change en un endroit, `baseFor()` dans `web/src/lib/config.tsx`.
-- `config.json` est toujours lu dans `data/` ; s'il manque (clone frais sans données), `contracts/fixtures/config.json` est lu à la place et le jeu passe en `fixtures`.
-- `contracts/index.ts` est importé par le module virtuel `virtual:contracts` (plugin `bascule-contracts`) : s'il n'existe pas, le module est vide, le build passe, et `useData` renvoie les données sans les valider.
+1. `ConfigProvider` lit `/config.json` une fois. **Repli :** si ce fichier est absent ou illisible, il lit `/fixtures/config.json` et force le jeu `fixtures`.
+2. `useData` construit l'adresse du fichier avec `pathFor()` : `groupes`, `deputes`, `cohesion` à la racine ; `verdict`, `nouveautes`, `suite`, `action`, `etat`, `texte`, `pivots`, `hatvp`, `note` sous `/<dossier>/<kind>.json` ; `fiches_index` sous `/<dossier>/fiches/index.json` ; `fiche` sous `/<dossier>/fiches/<PA>.json` ; `auditions`, `debats`, `amendements` sous `/<dossier>/<kind>/<PA>.json`.
+3. Le préfixe dépend de `config.dataset` (`baseFor()`) : vide pour `live` (`data/` est servi à la racine du site), `/fixtures` pour `fixtures` (`contracts/fixtures/`, même arborescence).
+4. La réponse est validée par le schéma Zod du type demandé. Un schéma absent est une erreur : aucun JSON n'est accepté sans validation. Un fichier dont `meta.dossier_id` diffère du dossier demandé est refusé.
+5. Le résultat est mis en cache par URL. États rendus : `loading`, `ok`, `error` (le message nomme l'adresse et le champ fautif).
 
-Variables d'environnement du build et du dev : `BASCULE_DATA_DIR` et `BASCULE_CONTRACTS_DIR` remplacent `data/` et `contracts/` (tests, captures).
+Le repli sur les fixtures porte sur le jeu entier, pas fichier par fichier : en `live`, un fichier manquant met son bloc en erreur. `contracts/fixtures/` contient deux dossiers (`petits-colis`, `plf2027-holdings`) avec des députés fictifs.
+
+## Ce que fait `vite.config.ts`
+
+- `root` vaut `web`, `publicDir` vaut `data/` : `data/config.json` est servi à `/config.json`.
+- Le plugin `bascule-fixtures` sert `contracts/fixtures/` sous `/fixtures/` en développement. En développement comme en prévisualisation, il répond 404 en JSON pour un fichier `.json` absent, au lieu de la page de l'application.
+- Au build, `data/` est copié dans `dist/` sans `data/raw/`, et les fixtures dans `dist/fixtures/`.
+- Le plugin `bascule-contracts` expose `contracts/index.ts` par le module `virtual:contracts`. Alias : `@contracts` et `@web`.
+
+Deux variables d'environnement sont lues, toutes deux facultatives :
+
+| Variable | Effet |
+|---|---|
+| `BASCULE_DATA_DIR` | Remplace `data/` par un autre dossier |
+| `BASCULE_CONTRACTS_DIR` | Remplace `contracts/` (schémas et fixtures) par un autre dossier |
+
+Le code de `src/` ne lit aucune variable d'environnement.
 
 ## Thème
 
-Sombre, type terminal financier : fond `#0b0e14`, surface `#141922`, texte `#e6edf3`, texte secondaire `#a6b0bc`, accent `#5ab4ff`, succès `#4ade80`, alerte `#fbbf24`, danger `#ff8585`, bordure `#2a3340`. Chaque couleur de texte fait au moins 7:1 sur le fond et sur la surface. Police monospace système, 16 px de base, rien sous 14 px, traits de graphique `var(--stroke)` = 3 px. Pas de flèche dans les boutons, pas de liseré coloré, pas de pastille, pas de texte explicatif.
+Thème clair unique (`color-scheme: light`), défini par les variables de `src/tokens.css` : fond ivoire `--bg`, surfaces blanches et pierre, texte presque noir, accent bleu, vert, ambre et rouge réservés aux états. Police Inter, chargée depuis Google Fonts, avec repli sur les polices du système. Les intentions de conception sont décrites dans [.interface-design/system.md](../.interface-design/system.md).
