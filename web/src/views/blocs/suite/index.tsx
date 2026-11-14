@@ -43,9 +43,7 @@ function SuiteContenu({ s }: { s: Suite }) {
       <section>
         <h4 className="suite-titre">Prochaines échéances</h4>
         {echeances.length === 0 ? (
-          <p className="text-2">
-            aucune échéance connue{s.meta.limits ? ` ; ${s.meta.limits}` : ""}
-          </p>
+          <p className="text-2">Aucune échéance connue.</p>
         ) : (
           <><EcheanceLigne e={premiere} prioritaire />{suivantes.length > 0 && <details className="suite-autres"><summary>Voir les autres échéances <span>{suivantes.length}</span></summary><div className="suite-liste">{suivantes.map((e, i) => <EcheanceLigne key={`${e.date}-${i}`} e={e} />)}</div></details>}</>
         )}

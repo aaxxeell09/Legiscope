@@ -72,7 +72,7 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
       <section className="action-section action-decideurs">
         <div className="action-section-head"><div><span className="action-kicker">Acteurs institutionnels</span><h4>Ceux qui décident</h4></div><span className="action-count">{a.decideurs.length}</span></div>
         {a.decideurs.length === 0 ? (
-          <div className="p7-vide">aucun · {a.meta.limits}</div>
+          <div className="p7-vide">Aucun acteur documenté.</div>
         ) : (
           <ul className="action-decideurs-list">
             {decideursVisibles.map((d, i) => (
@@ -93,17 +93,17 @@ function ActionContenu({ a, dossier, annuaire, disponibles }: { a: Action; dossi
         {a.decideurs.length > 4 && <button type="button" className="action-disclosure" onClick={() => setTousDecideurs((v) => !v)}>{tousDecideurs ? "Réduire" : `Voir tous les acteurs (${a.decideurs.length})`}</button>}
       </section>
 
-      <CategoriesDeputes groupes={groupes} inconnus={inconnus} raisonVide={a.meta.limits} dossier={dossier} annuaire={annuaire} disponibles={disponibles} />
+      <CategoriesDeputes groupes={groupes} inconnus={inconnus} raisonVide="Aucune position documentée." dossier={dossier} annuaire={annuaire} disponibles={disponibles} />
 
       <section className="action-section action-arguments">
         <div className="action-section-head"><div><span className="action-kicker">Débat public</span><h4>Arguments documentés</h4></div></div>
-        <div className="p7-cols p7-cols-2 action-arguments-grid"><ColonneArguments titre="Arguments favorables à la mesure" args={a.arguments.pour} annuaire={annuaire} raisonVide={a.meta.limits} /><ColonneArguments titre="Arguments défavorables à la mesure" args={a.arguments.contre} annuaire={annuaire} raisonVide={a.meta.limits} /></div>
+        <div className="p7-cols p7-cols-2 action-arguments-grid"><ColonneArguments titre="Arguments favorables à la mesure" args={a.arguments.pour} annuaire={annuaire} raisonVide="Aucun argument documenté." /><ColonneArguments titre="Arguments défavorables à la mesure" args={a.arguments.contre} annuaire={annuaire} raisonVide="Aucun argument documenté." /></div>
       </section>
 
       <section className="action-section action-reponses">
-        <div className="action-section-head"><div><span className="action-kicker">Analyse générée</span><h4>Réponses analytiques proposées</h4></div><span className="action-count">{a.contre_arguments.length}</span></div>
+        <div className="action-section-head"><div><span className="action-kicker">Éléments de réponse</span><h4>Réponses analytiques proposées</h4></div><span className="action-count">{a.contre_arguments.length}</span></div>
         {a.contre_arguments.length === 0 ? (
-          <div className="p7-vide">aucun · {a.meta.limits}</div>
+          <div className="p7-vide">Aucune réponse documentée.</div>
         ) : (
           <ul className="action-reponses-list">
             {reponsesVisibles.map((c, i) => (
