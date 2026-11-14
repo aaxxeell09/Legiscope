@@ -132,6 +132,7 @@ const cohesion = {
       "Non-inscrits exclus. UDR suivi sous PO847173 jusqu'en juillet 2025 puis PO872880.",
       `Signaux : baisse de plus de ${SEUIL_DROP} par rapport au mois précédent ayant des scrutins, mois de ${MIN_SCRUTINS_SIGNAL} scrutins au moins ; « suivi de censure » si une censure ou un refus de confiance tombe entre le début du mois et 60 jours après sa fin.`,
       "Nominations et dissolution : dates publiques, sources encyclopédiques.",
+      "Fichier commun aux deux dossiers : pour un dossier rejoué, seuls les mois antérieurs au mois de sa date de référence et les événements antérieurs à cette date sont connus (petits colis, matin du 19 novembre 2025 : courbe jusqu'à octobre 2025, le vote du 19 novembre est la chute, pas une donnée connue). La Suite applique cette coupure ; le front doit l'appliquer à la courbe.",
     ].join(" "),
     producer: "pipeline/cohesion",
     dossier_id: null,

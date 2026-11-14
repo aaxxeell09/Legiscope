@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T13:03:20Z",
+    "generated_at": "2026-11-14T14:01:57Z",
     "sources": [
       {
         "label": "Open data Assemblée nationale, agenda des réunions",
@@ -19,43 +19,11 @@
         "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
       }
     ],
-    "limits": "Échéances connues au 18 novembre 2025 (réunions inscrites à l'agenda au plus tard ce jour-là). Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null. Dossier rejoué au 18 novembre 2025 : Orcet n'existe pas rétroactivement, probabilités à null.",
+    "limits": "Échéances connues au matin du 19 novembre 2025 (réunions inscrites à l'agenda au plus tard ce jour-là ; une séance de ce jour figure comme échéance, son contenu et ses votes ne sont pas utilisés). Dates du Sénat, de la commission mixte paritaire et de la nouvelle lecture inconnues quand elles valent null. Dossier rejoué au matin du 19 novembre 2025 (règle de 14 h 57 : dépôts du jour connus ; sorts, scrutins et séances du jour inconnus) : Orcet n'existe pas rétroactivement, probabilités à null.",
     "producer": "pipeline/suite",
     "dossier_id": "petits-colis"
   },
   "echeances": [
-    {
-      "date": "2025-11-18",
-      "titre": "Commission des finances : Examen du texte (09 h 30)",
-      "lieu": "commission",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428",
-      "preuve": {
-        "nature": "fait",
-        "sources": [
-          {
-            "label": "Agenda open data, réunion RUANR5L17S2026IDC458131",
-            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
-          }
-        ],
-        "raisonnement": "Réunion inscrite à l'agenda de l'Assemblée le 13 novembre 2025, liée au dossier DLR5L17N52428."
-      }
-    },
-    {
-      "date": "2025-11-18",
-      "titre": "Séance publique de l'Assemblée : Suite de la discussion du projet de loi de finances pour 2026 (première partie) (21 h 30)",
-      "lieu": "seance",
-      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52428",
-      "preuve": {
-        "nature": "fait",
-        "sources": [
-          {
-            "label": "Agenda open data, réunion RUANR5L17S2026IDS29932",
-            "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip"
-          }
-        ],
-        "raisonnement": "Réunion inscrite à l'agenda de l'Assemblée le 14 novembre 2025, liée au dossier DLR5L17N52428."
-      }
-    },
     {
       "date": "2025-11-19",
       "titre": "Commission des finances : Examen du texte (09 h 00)",
@@ -199,9 +167,9 @@
   },
   "probables": [
     {
-      "titre": "Mesure : adoption probable à l'Assemblée si le vote avait lieu le 18 novembre 2025 (sièges des groupes selon leur position, pas une probabilité)",
+      "titre": "Mesure : adoption probable à l'Assemblée si le vote avait lieu le 19 novembre 2025 (sièges des groupes selon leur position, pas une probabilité)",
       "proba": null,
-      "detail": "Groupes favorables à la mesure : EPR, SOC, DR, ECOS, DEM, HOR, LIOT (338 sièges). Opposés : RN (121 sièges). Vote à l'Assemblée, pas l'issue finale du dossier.",
+      "detail": "Groupes favorables à la mesure : EPR, LFI-NFP, SOC, DR, ECOS, DEM, HOR, LIOT (408 sièges). Opposés : RN (121 sièges). Vote à l'Assemblée, pas l'issue finale du dossier.",
       "preuve": {
         "nature": "deduction",
         "sources": [
@@ -210,13 +178,13 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1906_projet-loi"
           }
         ],
-        "raisonnement": "Orcet n'existe pas rétroactivement au 18 novembre 2025 : pas de probabilité chiffrée. On additionne les sièges des groupes selon leur position connue sur la mesure ; les groupes divisés ou abstentionnistes ne sont pas comptés."
+        "raisonnement": "Orcet n'existe pas rétroactivement au matin du 19 novembre 2025 : pas de probabilité chiffrée. On additionne les sièges des groupes selon leur position connue sur la mesure ; les groupes divisés ou abstentionnistes ne sont pas comptés."
       }
     },
     {
-      "titre": "Amendement de suppression n° 806 (RN) : rejet probable à l'Assemblée si le vote avait lieu le 18 novembre 2025 (pas de prédiction Orcet à cette date)",
+      "titre": "Amendement de suppression n° 806 (RN) : rejet probable à l'Assemblée si le vote avait lieu le 19 novembre 2025 (pas de prédiction Orcet à cette date)",
       "proba": null,
-      "detail": "La suppression rassemble les groupes opposés à la mesure (121 sièges) face aux groupes favorables (338 sièges).",
+      "detail": "La suppression rassemble les groupes opposés à la mesure (121 sièges) face aux groupes favorables (408 sièges).",
       "preuve": {
         "nature": "deduction",
         "sources": [
@@ -225,7 +193,22 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N000806"
           }
         ],
-        "raisonnement": "Orcet n'existe pas rétroactivement au 18 novembre 2025 (proba null). Lecture depuis les positions des groupes sur la mesure."
+        "raisonnement": "Orcet n'existe pas rétroactivement au matin du 19 novembre 2025 (proba null). Lecture depuis les positions des groupes sur la mesure."
+      }
+    },
+    {
+      "titre": "Amendement du gouvernement n° 4086 : adoption probable à l'Assemblée si le vote avait lieu le 19 novembre 2025 (pas de prédiction Orcet à cette date)",
+      "proba": null,
+      "detail": "Le présent amendement a pour objet de modifier le redevable de la taxe afin de l’aligner sur le redevable de la TVA plutôt que sur celui des droits de douanes. Déposé le 19 novembre 2025. Les groupes favorables à la mesure (408 sièges) le soutiennent en principe ; les opposés (121 sièges) votent contre la mesure elle-même.",
+      "preuve": {
+        "nature": "deduction",
+        "sources": [
+          {
+            "label": "Amendement n° 4086",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/AMANR5L17PO838901B1906P1D1N004086"
+          }
+        ],
+        "raisonnement": "Un amendement du gouvernement sur sa propre mesure est soutenu par les groupes qui la soutiennent. Lecture des positions des groupes au matin du 19 novembre 2025, pas une probabilité."
       }
     },
     {
@@ -240,7 +223,7 @@
             "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip"
           }
         ],
-        "raisonnement": "Calcul de cohésion (pipeline/cohesion) sur le dernier mois complet avant le 18 novembre 2025. Un accord bas veut dire que le RN ne suit pas le bloc central : c'est sur ce désaccord qu'une majorité peut se défaire."
+        "raisonnement": "Calcul de cohésion (pipeline/cohesion) sur le dernier mois complet avant le 19 novembre 2025. Un accord bas veut dire que le RN ne suit pas le bloc central : c'est sur ce désaccord qu'une majorité peut se défaire."
       }
     }
   ]
